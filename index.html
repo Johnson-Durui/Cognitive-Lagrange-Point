@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>认知拉格朗日点 · 寻找人类思维的永恒僵局</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Canvas Layer -->
+  <canvas id="cosmos"></canvas>
+
+  <!-- Title Screen -->
+  <div id="title-screen">
+    <div class="title-content">
+      <div class="title-line" id="title-main"></div>
+      <div class="title-dot">·</div>
+      <div class="title-sub" id="title-sub">寻找人类思维的永恒僵局</div>
+      <div class="title-divider"></div>
+      <div class="title-enter" id="title-enter">点击进入星图</div>
+    </div>
+  </div>
+
+  <!-- Navigation Hint -->
+  <div id="nav-hint">
+    <span class="hint-item">拖拽移动</span>
+    <span class="hint-sep">·</span>
+    <span class="hint-item">滚轮缩放</span>
+    <span class="hint-sep">·</span>
+    <span class="hint-item">点击节点探索</span>
+  </div>
+
+  <!-- System Labels (positioned via JS) -->
+  <div id="system-labels"></div>
+
+  <!-- Node Tooltip -->
+  <div id="tooltip">
+    <div class="tooltip-name"></div>
+    <div class="tooltip-subtitle"></div>
+  </div>
+
+  <!-- Detail Panel -->
+  <div id="detail-panel">
+    <button id="detail-close" aria-label="关闭">✕</button>
+    <div class="detail-scroll">
+      <div class="detail-system"></div>
+      <h1 class="detail-title"></h1>
+      <h2 class="detail-subtitle"></h2>
+      <div class="detail-divider"></div>
+      <div class="detail-tension">
+        <span class="tension-left"></span>
+        <span class="tension-icon">⊙</span>
+        <span class="tension-right"></span>
+      </div>
+      <blockquote class="detail-question"></blockquote>
+      <div class="detail-body"></div>
+    </div>
+  </div>
+
+  <!-- Overlay for panel background -->
+  <div id="overlay"></div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
