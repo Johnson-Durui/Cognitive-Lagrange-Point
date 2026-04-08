@@ -2,7 +2,7 @@
    认知拉格朗日点 · 内容数据
    ======================================== */
 
-window.SYSTEMS = [
+export const SYSTEMS = [
   // ── System 1: 经典哲学悖论 ──
   {
     id: 'philosophy',
@@ -207,3 +207,7 @@ window.SYSTEMS = [
     ]
   }
 ];
+
+if (typeof window !== 'undefined') {
+  window.SYSTEMS = SYSTEMS;
+}

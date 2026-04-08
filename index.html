@@ -3,13 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>认知拉格朗日点 · 寻找人类思维的永恒僵局</title>
+  <title>认知拉格朗日点 · 人生决策引擎</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=20260408a">
 </head>
 <body>
+  <!-- Toast 通知容器 -->
+  <div id="toast-container"></div>
+
   <!-- Canvas Layer -->
   <canvas id="cosmos"></canvas>
 
@@ -18,23 +21,524 @@
     <div class="title-content">
       <div class="title-line" id="title-main"></div>
       <div class="title-dot">·</div>
-      <div class="title-sub" id="title-sub">寻找人类思维的永恒僵局</div>
+      <div class="title-sub" id="title-sub">把纠结拆开，看清它是有答案，还是本来没有答案</div>
       <div class="title-divider"></div>
-      <div class="title-enter" id="title-enter">点击进入星图</div>
+      <div class="title-enter" id="title-enter">进入决策星图</div>
     </div>
   </div>
 
-  <!-- Navigation Hint -->
-  <div id="nav-hint">
-    <span class="hint-item">拖拽移动</span>
-    <span class="hint-sep">·</span>
-    <span class="hint-item">滚轮缩放</span>
-    <span class="hint-sep">·</span>
-    <span class="hint-item">点击节点探索</span>
+  <!-- Detection Flow Screen -->
+  <div id="detection-screen" class="detection-screen hidden">
+    <div class="detection-header">
+      <div class="detection-header-copy">
+        <div class="detection-title" id="detection-title">🔬 双引擎检测</div>
+        <div class="detection-subtitle" id="detection-question-preview"></div>
+      </div>
+      <div class="detection-header-actions">
+        <button id="engineb-history-toggle" class="detection-header-btn">📜 历史恢复</button>
+        <button id="detection-close" class="detection-close" aria-label="返回首页">← 返回首页</button>
+      </div>
+    </div>
+
+    <div id="thinking-process-section" class="thinking-section hidden">
+      <button type="button" class="thinking-header" id="thinking-toggle" aria-expanded="true">
+        <span class="thinking-copy">
+          <span class="thinking-title" id="thinking-title">实时思考流</span>
+          <span class="thinking-current" id="thinking-current">系统正在拆解这个问题…</span>
+        </span>
+        <span class="thinking-arrow" id="thinking-arrow">折叠</span>
+      </button>
+      <div id="thinking-logs" class="thinking-logs"></div>
+    </div>
+
+    <!-- Engine B History Panel -->
+    <div id="engineb-history-panel" class="engineb-history-panel hidden">
+      <div class="history-panel-header">
+        <h3>历史恢复记录</h3>
+        <button id="history-panel-close">×</button>
+      </div>
+      <div id="engineb-sessions-list" class="engineb-sessions-list">
+        <div class="history-empty">正在加载历史恢复记录...</div>
+      </div>
+    </div>
+
+    <!-- Engine B Step 0: B1 Diagnosis Questions -->
+    <div id="detection-step0" class="detection-step">
+      <div class="step-content">
+        <div class="step-label" id="step0-label">🧭 决策突破 · 卡点诊断</div>
+        <div class="b1-progress" id="b1-progress">
+          <span id="b1-progress-text">问题 1/3</span>
+          <div class="b1-progress-bar"><div class="b1-progress-fill" id="b1-fill"></div></div>
+        </div>
+        <div class="b1-question-card" id="b1-current-question">
+          <div class="b1-question-text" id="b1-question-text">正在生成追问...</div>
+          <div class="b1-options" id="b1-options"></div>
+          <input type="text" id="b1-open-input" class="b1-open-input hidden" placeholder="请输入你的回答...">
+          <button id="b1-submit" type="button" class="detection-button" onclick="submitB1Answer()">提交回答</button>
+        </div>
+        <div class="b1-loading" id="b1-loading">
+          <div class="loading-spinner large"></div>
+          <span class="loading-text animated" id="b1-loading-title">系统正在分析你的问题...</span>
+          <div class="loading-subtext" id="b1-loading-status">准备诊断卡点…</div>
+          <div class="loading-stream" id="b1-loading-stream"></div>
+          <details class="thinking-details hidden" id="b1-thinking-details">
+            <summary>查看处理过程</summary>
+            <div class="thinking-log" id="b1-thinking-log"></div>
+          </details>
+          <div class="loading-skeleton">
+            <div class="skeleton skeleton-text full"></div>
+            <div class="skeleton skeleton-text medium"></div>
+            <div class="skeleton skeleton-text short"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Step 1: Problem Understanding -->
+    <div id="detection-step1" class="detection-step">
+      <div class="step-content">
+        <div class="step-label">问题张力拆解</div>
+          <div class="step-tensions" id="step1-tensions">
+            <div class="tension-analyzing">🧠 系统正在分析问题结构...</div>
+          </div>
+        <div class="step-classifications" id="step1-classifications">
+          <div class="classification-bar">
+            <div class="classification-label">两难选择（有答案但代价大）</div>
+            <div class="classification-track"><div class="classification-fill" style="width:0%"></div></div>
+            <div class="classification-percent">--</div>
+          </div>
+          <div class="classification-bar">
+            <div class="classification-label">信息不足（查完资料就能选）</div>
+            <div class="classification-track"><div class="classification-fill" style="width:0%"></div></div>
+            <div class="classification-percent">--</div>
+          </div>
+          <div class="classification-bar">
+            <div class="classification-label">拉格朗日点（结构性无解）</div>
+            <div class="classification-track"><div class="classification-fill clp-fill" style="width:0%"></div></div>
+            <div class="classification-percent">--</div>
+          </div>
+        </div>
+        <button id="step1-start" class="detection-button" disabled>开始深度检测</button>
+      </div>
+    </div>
+
+    <!-- Step 2: Three Filters -->
+    <div id="detection-step2" class="detection-step">
+      <div class="step-content">
+        <div class="step-label">真实筛选</div>
+        <div class="filters-grid">
+          <div class="filter-card" id="filter1-card">
+            <div class="filter-header">
+              <span class="filter-number">1</span>
+              <span class="filter-name">信息注入测试</span>
+            </div>
+            <div class="filter-progress"><div class="filter-progress-bar"></div></div>
+            <div class="filter-status">等待中</div>
+            <div class="filter-log" id="filter1-log"></div>
+          </div>
+          <div class="filter-card" id="filter2-card">
+            <div class="filter-header">
+              <span class="filter-number">2</span>
+              <span class="filter-name">多框架稳定性测试</span>
+            </div>
+            <div class="filter-progress"><div class="filter-progress-bar"></div></div>
+            <div class="filter-status">等待中</div>
+            <div class="filter-log" id="filter2-log"></div>
+          </div>
+          <div class="filter-card" id="filter3-card">
+            <div class="filter-header">
+              <span class="filter-number">3</span>
+              <span class="filter-name">重述稳定性测试</span>
+            </div>
+            <div class="filter-progress"><div class="filter-progress-bar"></div></div>
+            <div class="filter-status">等待中</div>
+            <div class="filter-log" id="filter3-log"></div>
+          </div>
+        </div>
+        <div class="agents-panel" id="agents-panel">
+          <div class="agents-title">7个思维框架正在评估...</div>
+          <div class="agents-grid" id="agents-grid">
+            <div class="agent-row" data-agent="功利主义者"><span class="agent-name">功利主义者</span><div class="agent-bar"><div class="agent-bar-fill"></div></div><span class="agent-result">--</span></div>
+            <div class="agent-row" data-agent="义务论者"><span class="agent-name">义务论者</span><div class="agent-bar"><div class="agent-bar-fill"></div></div><span class="agent-result">--</span></div>
+            <div class="agent-row" data-agent="自由主义者"><span class="agent-name">自由主义者</span><div class="agent-bar"><div class="agent-bar-fill"></div></div><span class="agent-result">--</span></div>
+            <div class="agent-row" data-agent="社群主义者"><span class="agent-name">社群主义者</span><div class="agent-bar"><div class="agent-bar-fill"></div></div><span class="agent-result">--</span></div>
+            <div class="agent-row" data-agent="实用主义者"><span class="agent-name">实用主义者</span><div class="agent-bar"><div class="agent-bar-fill"></div></div><span class="agent-result">--</span></div>
+            <div class="agent-row" data-agent="虚无主义者"><span class="agent-name">虚无主义者</span><div class="agent-bar"><div class="agent-bar-fill"></div></div><span class="agent-result">--</span></div>
+            <div class="agent-row" data-agent="关怀伦理者"><span class="agent-name">关怀伦理者</span><div class="agent-bar"><div class="agent-bar-fill"></div></div><span class="agent-result">--</span></div>
+          </div>
+          <div class="balance-display" id="balance-display">
+            <div class="balance-title">力矩天平</div>
+            <div class="balance-beam">
+              <div class="balance-side pro"><span class="balance-label">正方</span><span class="balance-value" id="pro-moment">0</span></div>
+              <div class="balance-needle"><span>⚖</span></div>
+              <div class="balance-side con"><span class="balance-label">反方</span><span class="balance-value" id="con-moment">0</span></div>
+            </div>
+            <div class="balance-diff">力矩差: <span id="balance-diff-value">--</span>%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Step 3: Result -->
+    <div id="detection-step3" class="detection-step">
+      <div class="step-content">
+        <div class="step-label">当前判断</div>
+        <div id="detection-result" class="detection-result"></div>
+      </div>
+    </div>
+
+    <!-- Engine B Step 4: C1 Recommendation -->
+    <div id="detection-step4" class="detection-step">
+      <div class="step-content">
+        <div class="step-label">🧭 决策突破 · 推荐与行动</div>
+        <div class="loop-status hidden" id="ab-loop-status"></div>
+        <div class="b2-info-panel" id="b2-info-panel">
+          <div class="b2-info-title">📋 补充的关键信息</div>
+          <div class="b2-info-list" id="b2-info-list"></div>
+        </div>
+        <div class="engineb-panel" id="b3-panel">
+          <div class="engineb-panel-title">🧭 新的判断框架</div>
+          <div class="engineb-card-list" id="b3-list"></div>
+        </div>
+        <div class="engineb-panel" id="b4-panel">
+          <div class="engineb-panel-title">🪞 经验对照案例</div>
+          <div class="engineb-card-list" id="b4-list"></div>
+        </div>
+        <div class="engineb-panel" id="b5-panel">
+          <div class="engineb-panel-title">🌊 情绪镜像</div>
+          <div class="engineb-emotion-card" id="b5-content"></div>
+        </div>
+        <div class="c1-result" id="c1-result">
+          <div class="c1-balance-comparison">
+            <div class="c1-balance-side pro">
+              <div class="c1-balance-label">正方力量</div>
+              <div class="c1-balance-bar"><div class="c1-bar-fill pro" id="c1-pro-bar"></div></div>
+              <div class="c1-balance-value" id="c1-pro-value">--</div>
+            </div>
+            <div class="c1-balance-side con">
+              <div class="c1-balance-label">反方力量</div>
+              <div class="c1-balance-bar"><div class="c1-bar-fill con" id="c1-con-bar"></div></div>
+              <div class="c1-balance-value" id="c1-con-value">--</div>
+            </div>
+          </div>
+          <div class="c1-recommendation" id="c1-recommendation"></div>
+          <div class="c1-action-plan" id="c1-action-plan"></div>
+          <div class="c1-reasoning" id="c1-reasoning"></div>
+          <details class="thinking-details thinking-result hidden" id="c1-trace-details">
+            <summary>查看本轮处理过程</summary>
+            <div class="thinking-log" id="c1-trace-log"></div>
+          </details>
+        </div>
+        <div class="c1-actions">
+          <button class="result-action" id="engineb-reset-btn" onclick="resetEngineB()">🔄 重新诊断</button>
+          <button class="result-action" id="engineb-start-sim-btn" onclick="startSimulator()">🔮 启动选择模拟器</button>
+          <button class="result-action" id="engineb-report-btn" onclick="downloadFinalReportPdf('engineb-report-btn')">📕 完整版 PDF</button>
+          <button class="result-action" id="engineb-summary-report-btn" onclick="downloadFinalSummaryPdf('engineb-summary-report-btn')">📘 AI 总结版 PDF</button>
+          <button class="result-action" id="engineb-browse-btn" onclick="closeDetection(); showView('cosmos'); enterExploring();">📚 浏览星图</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Engine B Step 5: Simulator Results -->
+    <div id="detection-step5" class="detection-step">
+      <div class="step-content">
+        <div class="step-label">🔮 选择模拟器 · 未来预演</div>
+
+        <!-- Simulator Loading -->
+        <div class="sim-loading" id="sim-loading">
+          <div class="loading-spinner"></div>
+          <span class="loading-text" id="sim-loading-title">正在生成未来时间线...</span>
+          <div class="loading-subtext" id="sim-loading-status">准备模拟参数…</div>
+          <div class="loading-stream" id="sim-loading-stream"></div>
+          <details class="thinking-details hidden" id="sim-thinking-details">
+            <summary>查看处理过程</summary>
+            <div class="thinking-log" id="sim-thinking-log"></div>
+          </details>
+        </div>
+
+        <div class="sim-error" id="sim-error" style="display:none;">
+          <div class="sim-error-card">
+            <div class="sim-error-title" id="sim-error-title">这次处理没有顺利完成</div>
+            <div class="sim-error-message" id="sim-error-message"></div>
+            <details class="thinking-details hidden" id="sim-error-trace-details">
+              <summary>查看处理过程</summary>
+              <div class="thinking-log" id="sim-error-trace-log"></div>
+            </details>
+            <div class="sim-error-actions">
+              <button class="result-action" onclick="retrySimulator()">再试一次</button>
+              <button class="result-action" onclick="returnToRecommendation()">返回建议结论</button>
+              <button class="result-action" onclick="resetEngineB()">重新诊断</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Simulator Questions -->
+        <div class="sim-questions" id="sim-questions" style="display:none;">
+          <div class="sim-progress" id="sim-progress">
+            <span id="sim-progress-text">参数收集 1/3</span>
+          </div>
+          <div class="sim-question-card">
+            <div class="sim-question-text" id="sim-question-text"></div>
+            <div class="sim-options" id="sim-options"></div>
+            <input type="text" id="sim-open-input" class="sim-open-input hidden" placeholder="请输入你的回答...">
+            <button id="sim-submit" type="button" class="detection-button" onclick="submitSimAnswer()">提交</button>
+          </div>
+        </div>
+
+        <!-- Simulator Results -->
+        <div class="sim-results" id="sim-results" style="display:none;">
+          <!-- Final Insight -->
+          <div class="sim-insight" id="sim-insight"></div>
+
+          <!-- Timeline Comparison -->
+          <div class="sim-timeline-compare" id="sim-timeline-compare">
+            <div class="sim-choice-column" id="sim-choice-a">
+              <div class="sim-choice-header">选项A</div>
+              <div class="sim-timelines" id="sim-timelines-a"></div>
+            </div>
+            <div class="sim-choice-column" id="sim-choice-b">
+              <div class="sim-choice-header">选项B</div>
+              <div class="sim-timelines" id="sim-timelines-b"></div>
+            </div>
+          </div>
+
+          <!-- Action Maps -->
+          <div class="sim-action-maps" id="sim-action-maps"></div>
+
+          <!-- Crossroads -->
+          <div class="sim-crossroads" id="sim-crossroads"></div>
+
+          <!-- Worst Case Survival -->
+          <div class="sim-survival" id="sim-survival"></div>
+          <details class="thinking-details thinking-result hidden" id="sim-trace-details">
+            <summary>查看本轮处理过程</summary>
+            <div class="thinking-log" id="sim-trace-log"></div>
+          </details>
+
+          <div class="sim-actions">
+            <button class="result-action" id="sim-report-btn" onclick="downloadFinalReportPdf('sim-report-btn')">📕 完整版 PDF</button>
+            <button class="result-action" id="sim-summary-report-btn" onclick="downloadFinalSummaryPdf('sim-summary-report-btn')">📘 AI 总结版 PDF</button>
+            <button class="result-action" onclick="resetEngineB()">🔄 重新诊断</button>
+            <button class="result-action" onclick="closeDetection(); showView('cosmos'); enterExploring();">📚 浏览星图</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Force Analysis View -->
+  <div id="force-analysis-view" class="force-view hidden">
+    <div class="force-header">
+      <button id="force-back" class="force-back">← 返回</button>
+      <div class="force-title" id="force-title">力量解剖</div>
+    </div>
+    <div class="force-tabs">
+      <button class="force-tab active" data-tab="balance">⚖️ 力量天平</button>
+      <button class="force-tab" data-tab="oscillation">📊 振荡曲线</button>
+      <button class="force-tab" data-tab="perturbation">🎮 扰动实验室</button>
+      <button class="force-tab" data-tab="map">🗺️ 断层线位置</button>
+    </div>
+    <div class="force-content" id="force-content">
+      <!-- Balance View -->
+      <div class="force-balance-view" id="force-balance-view">
+        <div class="balance-title-main">力量天平</div>
+        <div class="balance-columns">
+          <div class="balance-column pro-column">
+            <div class="column-header">◄ 正方</div>
+            <div class="forces-list" id="pro-forces-list"></div>
+          </div>
+          <div class="balance-center">
+            <div class="center-balance">⚖</div>
+            <div class="center-diff" id="center-balance-diff"></div>
+          </div>
+          <div class="balance-column con-column">
+            <div class="column-header">反方 ►</div>
+            <div class="forces-list" id="con-forces-list"></div>
+          </div>
+        </div>
+      </div>
+      <!-- Oscillation View -->
+      <div class="force-oscillation-view hidden" id="force-oscillation-view">
+        <div class="oscillation-header">
+          <div class="oscillation-title">AI持续思考50轮的倾向变化</div>
+          <div class="oscillation-stats">
+            <span>振荡类型: <strong id="osc-type">--</strong></span>
+            <span>振荡周期: <strong id="osc-period">--</strong></span>
+          </div>
+        </div>
+        <canvas id="oscillation-canvas" width="800" height="300"></canvas>
+        <div class="oscillation-keypoints" id="oscillation-keypoints"></div>
+      </div>
+      <!-- Perturbation View -->
+      <div class="force-perturbation-view hidden" id="force-perturbation-view">
+        <div class="perturbation-title">给这个拉格朗日点施加条件扰动</div>
+        <div class="perturbation-input-row">
+          <input type="text" id="perturbation-input" class="perturbation-input" placeholder="输入一个附加条件，比如：如果当事人是你的亲人">
+          <button id="perturbation-submit" class="perturbation-submit">🔨 施加扰动</button>
+        </div>
+        <div class="perturbation-history" id="perturbation-history"></div>
+      </div>
+      <!-- Fault Map Mini View -->
+      <div class="force-faultmap-view hidden" id="force-faultmap-view">
+        <div class="faultmap-mini-title">该拉格朗日点在断层线地图上的位置</div>
+        <canvas id="faultmap-mini-canvas" width="600" height="400"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <!-- Round Detail Modal -->
+  <div id="round-modal" class="round-modal hidden">
+    <div class="round-modal-content">
+      <button id="round-close" class="round-close" aria-label="关闭">×</button>
+      <div class="round-title" id="round-title">第N轮思考详情</div>
+      <div class="round-content" id="round-content"></div>
+      <div class="round-nav">
+        <button id="round-prev" class="round-nav-btn">← 上一轮</button>
+        <button id="round-next" class="round-nav-btn">下一轮 →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Home Entry -->
+  <div id="home-entry" class="home-entry hidden">
+    <div class="home-content">
+      <div class="home-eyebrow">认知双引擎决策系统</div>
+      <div class="home-hero">
+        <div class="home-hero-main">
+          <h1 class="home-title">认知拉格朗日点</h1>
+          <p class="home-subtitle">把一个纠结拆开，看清它到底是“有答案”，还是“本来就没有答案”。</p>
+          <div class="home-hero-strip" aria-label="核心能力">
+            <div class="home-hero-signal">
+              <div class="home-hero-signal-kicker">双引擎分诊</div>
+              <div class="home-hero-signal-copy">先判断这是结构性无解，还是卡点导致的假平衡。</div>
+            </div>
+            <div class="home-hero-signal">
+              <div class="home-hero-signal-kicker">未来时间线</div>
+              <div class="home-hero-signal-copy">如果答案存在，继续把每个选择推演到未来节点。</div>
+            </div>
+            <div class="home-hero-signal">
+              <div class="home-hero-signal-kicker">完整沉淀</div>
+              <div class="home-hero-signal-copy">每次推演都会被保存，可恢复、可回看、可导出报告。</div>
+            </div>
+          </div>
+        </div>
+        <div class="home-hero-note">
+          <div class="home-hero-note-kicker">决策星图画布</div>
+          <div class="home-hero-note-title">不是只给一句建议，而是把你的决策轨迹沉淀下来。</div>
+          <div class="home-hero-note-text">从首页开始一轮新的推演，或者回到上次中断的位置，所有结果都会沉淀成你的个人决策星图。</div>
+          <div class="home-hero-note-list">
+            <div class="home-hero-note-item">继续上次中断的阶段，不用从头再来</div>
+            <div class="home-hero-note-item">在星图里回看每一次结构判断与突破建议</div>
+            <div class="home-hero-note-item">导出覆盖“开始到结论”的完整 PDF 报告</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="home-main-grid">
+        <section class="home-primary-panel">
+          <div class="home-primary-head">
+            <div>
+              <div class="home-panel-kicker">开始新推演</div>
+              <div class="home-panel-title">开始一轮新的推演</div>
+            </div>
+            <div class="home-panel-badge">问题 → 判断 → 行动地图</div>
+          </div>
+          <div class="home-quote">"不是所有问题都有答案。找到那些没有答案的问题，本身就是一种答案。"</div>
+          <div class="home-primary-flow" aria-label="推演流程">
+            <div class="home-flow-step">
+              <span class="home-flow-index">01</span>
+              <span class="home-flow-copy">输入你真正卡住的问题</span>
+            </div>
+            <div class="home-flow-step">
+              <span class="home-flow-index">02</span>
+              <span class="home-flow-copy">系统判断是无解平衡还是可突破决策</span>
+            </div>
+            <div class="home-flow-step">
+              <span class="home-flow-index">03</span>
+              <span class="home-flow-copy">生成建议、未来模拟和后续行动路径</span>
+            </div>
+          </div>
+
+          <div class="home-tier-block">
+            <div class="home-tier-title">选择思考深度</div>
+            <div id="home-tier-selector" class="home-tier-selector"></div>
+            <div id="home-tier-budget" class="home-tier-budget"></div>
+          </div>
+
+          <div class="home-input-shell">
+            <div class="home-input-label">你的问题</div>
+            <div class="home-input-group">
+              <input type="text" id="home-question" class="home-question" placeholder="输入你正在纠结的问题...">
+              <button id="home-start" class="home-start">🧭 开始推演</button>
+            </div>
+            <div class="home-primary-note">
+              系统会先判断这是“结构性无解”，还是“卡点导致的假平衡”，然后给出下一步。
+            </div>
+          </div>
+        </section>
+
+        <aside class="home-secondary-panel">
+          <section id="home-session-card" class="home-session-card hidden">
+            <div class="home-panel-kicker">继续上次</div>
+            <div class="home-panel-title">继续上次推演</div>
+            <div id="home-session-meta" class="home-session-meta"></div>
+            <div id="home-session-question" class="home-session-question"></div>
+            <div id="home-session-summary" class="home-session-summary"></div>
+            <div class="home-session-actions">
+              <button id="home-session-continue" class="home-session-btn primary">继续推演</button>
+              <button id="home-session-report" class="home-session-btn">导出报告</button>
+              <button id="home-session-dismiss" class="home-session-btn ghost">忽略这次</button>
+            </div>
+          </section>
+
+          <section class="home-history-card">
+            <div class="home-panel-kicker">最近记录</div>
+            <div class="home-panel-title">最近推演</div>
+            <div id="home-history-list" class="home-history-list">
+              <div class="home-history-empty">正在加载最近的决策轨迹...</div>
+            </div>
+          </section>
+        </aside>
+      </div>
+
+      <div class="home-links">
+        <button id="home-browse" class="home-link">
+          <span class="home-link-label">🌌 进入决策星图</span>
+          <span class="home-link-meta">从全局视角浏览历史推演与当前决策状态</span>
+        </button>
+        <button id="home-map" class="home-link">
+          <span class="home-link-label">🧭 查看最近决策记录</span>
+          <span class="home-link-meta">快速定位到右侧历史列表，继续或回看最近一次推演</span>
+        </button>
+      </div>
+    </div>
   </div>
 
   <!-- System Labels (positioned via JS) -->
   <div id="system-labels"></div>
+
+  <!-- Cosmos HUD -->
+  <aside id="cosmos-hud" class="cosmos-hud hidden" aria-live="polite">
+    <div class="cosmos-hud-kicker">Decision Cosmos</div>
+    <div id="cosmos-hud-title" class="cosmos-hud-title">等待进入星图</div>
+    <div id="cosmos-hud-meta" class="cosmos-hud-meta">当前还没有激活的决策上下文</div>
+    <div class="cosmos-hud-strip">
+      <div class="cosmos-hud-metric">
+        <div id="cosmos-hud-balance-label" class="cosmos-hud-metric-label">力量平衡 · 正 50 / 反 50</div>
+        <div class="cosmos-hud-balance-track">
+          <div id="cosmos-hud-pro-fill" class="cosmos-hud-balance-fill pro"></div>
+          <div id="cosmos-hud-con-fill" class="cosmos-hud-balance-fill con"></div>
+        </div>
+      </div>
+      <div class="cosmos-hud-metric">
+        <div id="cosmos-hud-phase-label" class="cosmos-hud-metric-label">第一幕 · 结构判断</div>
+        <div class="cosmos-hud-phase-track">
+          <div id="cosmos-hud-phase-fill" class="cosmos-hud-phase-fill"></div>
+        </div>
+      </div>
+    </div>
+    <div id="cosmos-hud-chips" class="cosmos-hud-chips"></div>
+  </aside>
 
   <!-- Node Tooltip -->
   <div id="tooltip">
@@ -57,13 +561,25 @@
       </div>
       <blockquote class="detail-question"></blockquote>
       <div class="detail-body"></div>
+      <div class="detail-actions">
+        <button id="detail-force" class="detail-action">🔬 进入力量解剖</button>
+        <button id="detail-engineb" class="detail-action highlight">🧠 开启深度推演</button>
+      </div>
     </div>
   </div>
 
   <!-- Overlay for panel background -->
   <div id="overlay"></div>
 
-  <script src="data.js"></script>
-  <script src="app.js"></script>
+  <!-- Navigation UI (Visible in Cosmos) -->
+  <div id="nav-hint" class="nav-hint">
+    <button id="nav-back-home" class="nav-hint-btn">🌌 返回首页 / 新检测</button>
+    <div class="nav-separator"></div>
+    <span>🖱️ 拖拽移动 · 滚轮缩放 · 点击节点探索</span>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/7.3.2/pixi.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+  <script type="module" src="app.js?v=20260408a"></script>
 </body>
 </html>

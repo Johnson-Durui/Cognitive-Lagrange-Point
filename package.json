@@ -1,0 +1,18 @@
+{
+  "name": "cognitive-lagrange-point",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 4174",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1 --port 4174",
+    "verify:all": "npm run build && python3 -m py_compile server.py server_core.py server_shared.py server_runtime.py server_detection.py decision/pipeline.py research/api.py && python3 -m unittest tests.test_decision_api_smoke tests.test_decision_tier_regression tests.test_engine_b_runtime && node tests/stale_decision_snapshot_probe.mjs && env PW_BROWSER=webkit node tests/stale_decision_snapshot_probe.mjs && node tests/decision_flicker_probe.mjs && node tests/thinking_log_dedupe.mjs && env PW_BROWSER=chromium node tests/submit_button_e2e.mjs && env PW_BROWSER=webkit node tests/home_hero_layout_smoke.mjs && echo '✅ 全链路验证通过！'"
+  },
+  "dependencies": {
+    "esprima": "^4.0.1"
+  },
+  "devDependencies": {
+    "playwright": "^1.59.1",
+    "vite": "^8.0.4"
+  }
+}

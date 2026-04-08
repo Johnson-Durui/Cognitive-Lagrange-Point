@@ -79,7 +79,7 @@ def run_miner(miner_id: str = "A") -> list[CandidateQuestion]:
     dim_name, dim_desc = MINER_DIMENSIONS[miner_id]
     system = MINER_SYSTEM.format(dimension=f"{dim_name}——{dim_desc}")
 
-    print(f"  ⛏  矿工{miner_id}正在 [{dim_name}] 中搜索候选问题...")
+    print(f"  ⛏  矿工{miner_id}正在 [{dim_name}] 中搜索候选问题...", flush=True)
 
     raw = call_agent_json(system, "请开始搜索。", max_tokens=8192)
 
@@ -94,5 +94,5 @@ def run_miner(miner_id: str = "A") -> list[CandidateQuestion]:
         )
         candidates.append(cq)
 
-    print(f"  ✓  矿工{miner_id}产出 {len(candidates)} 个候选问题")
+    print(f"  ✓  矿工{miner_id}产出 {len(candidates)} 个候选问题", flush=True)
     return candidates

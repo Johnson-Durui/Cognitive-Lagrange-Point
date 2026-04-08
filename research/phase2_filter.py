@@ -1,6 +1,7 @@
 """认知拉格朗日点 · 阶段二：多框架稳定性筛选（筛子2）"""
 
 import concurrent.futures
+import os
 import time
 from .api import call_agent_json
 from .models import CandidateQuestion
@@ -36,8 +37,47 @@ STANCE_SYSTEM = """你是一个坚定的{stance_name}。{stance_desc}
 
 只输出JSON对象，不要输出其他任何内容。"""
 
+FILTER_WORKERS = max(1, int(os.environ.get("CLP_FILTER_WORKERS", "7")))
+FILTER_RETRY_PASSES = max(1, int(os.environ.get("CLP_FILTER_RETRY_PASSES", "3")))
+FILTER_RETRY_BACKOFF = float(os.environ.get("CLP_FILTER_RETRY_BACKOFF", "2"))
+FILTER2_BALANCE_THRESHOLD = float(os.environ.get("CLP_FILTER2_BALANCE_THRESHOLD", "20"))
+FILTER2_MAX_DIRECTION_SHARE = float(os.environ.get("CLP_FILTER2_MAX_DIRECTION_SHARE", "0.72"))
+
 # 最少需要多少个Agent成功才算有效评估
-MIN_VALID_AGENTS = 4
+MIN_VALID_AGENTS = max(1, int(os.environ.get("CLP_MIN_VALID_AGENTS", "4")))
+
+
+def _normalize_direction(value: object) -> str:
+    text = str(value or "").strip().lower()
+    if text in {"正方", "pro", "support", "支持", "赞成", "yes"}:
+        return "正方"
+    if text in {"反方", "con", "oppose", "反对", "不支持", "no"}:
+        return "反方"
+    return ""
+
+
+def _normalize_strength(value: object) -> int | None:
+    try:
+        strength = int(round(float(value)))
+    except (TypeError, ValueError):
+        return None
+    return max(0, min(100, strength))
+
+
+def _normalize_stance_result(raw: object, stance_name: str) -> dict | None:
+    if not isinstance(raw, dict):
+        return None
+    direction = _normalize_direction(raw.get("lean_direction", raw.get("direction")))
+    strength = _normalize_strength(raw.get("lean_strength", raw.get("strength")))
+    if not direction or strength is None:
+        return None
+    return {
+        "stance": stance_name,
+        "lean_direction": direction,
+        "lean_strength": strength,
+        "core_argument": str(raw.get("core_argument", raw.get("argument", "")) or "").strip(),
+        "self_doubt": str(raw.get("self_doubt", raw.get("weakness", "")) or "").strip(),
+    }
 
 
 def _evaluate_stance(stance_name: str, stance_desc: str, question: str) -> dict:
@@ -47,41 +87,140 @@ def _evaluate_stance(stance_name: str, stance_desc: str, question: str) -> dict:
     return call_agent_json(system, user_msg, max_tokens=1024)
 
 
-def evaluate_candidate(candidate: CandidateQuestion) -> CandidateQuestion:
-    """对单个候选问题运行7个哲学立场Agent的评估。"""
-    print(f"    ⚖  测试 {candidate.id}: {candidate.question_text[:40]}...")
+def _resolve_stances(stances: list[tuple[str, str]] | None) -> list[tuple[str, str]]:
+    if not stances:
+        return list(STANCES)
+    normalized = []
+    for name, desc in stances:
+        normalized.append((str(name), str(desc)))
+    return normalized or list(STANCES)
 
-    results = []
-    # 降低并发到3，减少中转站空响应
-    with concurrent.futures.ThreadPoolExecutor(max_workers=3) as executor:
-        futures = {}
-        for name, desc in STANCES:
-            f = executor.submit(_evaluate_stance, name, desc, candidate.question_text)
-            futures[f] = name
 
+def _resolve_min_valid_agents(
+    stances: list[tuple[str, str]],
+    min_valid_agents: int | None,
+) -> int:
+    total = max(1, len(stances))
+    try:
+        if min_valid_agents is not None:
+            value = int(min_valid_agents)
+            return max(1, min(total, value))
+    except (TypeError, ValueError):
+        pass
+    if total >= MIN_VALID_AGENTS:
+        return MIN_VALID_AGENTS
+    if total <= 2:
+        return total
+    return max(2, total - 1)
+
+
+def _normalize_results_order(
+    results_by_stance: dict[str, dict],
+    stances: list[tuple[str, str]] | None = None,
+) -> list[dict]:
+    ordered = []
+    for stance_name, _ in _resolve_stances(stances):
+        if stance_name in results_by_stance:
+            ordered.append(results_by_stance[stance_name])
+    return ordered
+
+
+def _evaluate_pending_stances(
+    question: str,
+    pending_stances: list[tuple[str, str]],
+    *,
+    worker_limit: int = FILTER_WORKERS,
+) -> tuple[dict[str, dict], list[str]]:
+    """并发评估尚未成功的立场，返回成功结果和失败名单。"""
+    successes: dict[str, dict] = {}
+    failed: list[str] = []
+
+    worker_count = min(max(1, worker_limit), len(pending_stances))
+    with concurrent.futures.ThreadPoolExecutor(max_workers=worker_count) as executor:
+        futures = {
+            executor.submit(_evaluate_stance, name, desc, question): name
+            for name, desc in pending_stances
+        }
         for future in concurrent.futures.as_completed(futures):
             stance_name = futures[future]
             try:
                 result = future.result()
-                result["stance"] = stance_name
-                results.append(result)
-            except Exception as e:
-                err_msg = str(e)
-                # 只打印简短错误
-                short_err = err_msg[:80] if len(err_msg) > 80 else err_msg
-                print(f"      ⚠ {stance_name} 失败: {short_err}")
-                continue
+                normalized = _normalize_stance_result(result, stance_name)
+                if normalized is None:
+                    print(f"      ⚠ {stance_name} 返回了无效结构，记为失败并等待补跑", flush=True)
+                    failed.append(stance_name)
+                    continue
+                successes[stance_name] = normalized
+            except Exception as exc:
+                short_err = str(exc)
+                if len(short_err) > 80:
+                    short_err = short_err[:80]
+                print(f"      ⚠ {stance_name} 失败: {short_err}", flush=True)
+                failed.append(stance_name)
 
+    return successes, failed
+
+
+def evaluate_question_balance(
+    question: str,
+    *,
+    cached_results: list | None = None,
+    stances: list[tuple[str, str]] | None = None,
+    balance_threshold: float | None = None,
+    max_direction_share: float | None = None,
+    min_valid_agents: int | None = None,
+) -> dict:
+    """对任意问题运行 7 个哲学立场 Agent，返回平衡评估结果。"""
+    selected_stances = _resolve_stances(stances)
+    selected_names = {name for name, _ in selected_stances}
+    effective_balance_threshold = (
+        FILTER2_BALANCE_THRESHOLD if balance_threshold is None else float(balance_threshold)
+    )
+    effective_max_direction_share = (
+        FILTER2_MAX_DIRECTION_SHARE if max_direction_share is None else float(max_direction_share)
+    )
+    effective_min_valid_agents = _resolve_min_valid_agents(selected_stances, min_valid_agents)
+
+    results_by_stance = {
+        item["stance"]: item
+        for item in (cached_results or [])
+        if isinstance(item, dict) and item.get("stance") in selected_names
+    }
+
+    pending = [
+        (name, desc)
+        for name, desc in selected_stances
+        if name not in results_by_stance
+    ]
+
+    for round_idx in range(FILTER_RETRY_PASSES):
+        if not pending:
+            break
+
+        if round_idx > 0:
+            delay = FILTER_RETRY_BACKOFF * round_idx
+            print(f"      ⟳ 补跑 {len(pending)} 个失败Agent，等待 {delay:.1f}s...", flush=True)
+            time.sleep(delay)
+
+        successes, failed_names = _evaluate_pending_stances(question, pending)
+        results_by_stance.update(successes)
+        pending = [(name, desc) for name, desc in selected_stances if name in failed_names]
+
+    results = _normalize_results_order(results_by_stance, selected_stances)
     valid_count = len(results)
 
-    # 如果成功的Agent太少，标记为无效
-    if valid_count < MIN_VALID_AGENTS:
-        print(f"      ⚠ 仅{valid_count}/{len(STANCES)}个Agent成功，数据不足，标记为待重试")
-        candidate.passed_filter_2 = None  # None = 无效，需重试
-        candidate.filter_2_balance_score = -1
-        candidate.filter_2_distribution = f"{valid_count}/7有效"
-        candidate.filter_2_details = results
-        return candidate
+    if valid_count < effective_min_valid_agents:
+        return {
+            "passed": None,
+            "balance_score": -1,
+            "distribution": f"{valid_count}/{len(selected_stances)}有效",
+            "details": results,
+            "valid_count": valid_count,
+            "pro_count": sum(1 for r in results if r.get("lean_direction") == "正方"),
+            "con_count": sum(1 for r in results if r.get("lean_direction") == "反方"),
+            "pro_moment": sum(r.get("lean_strength", 0) for r in results if r.get("lean_direction") == "正方"),
+            "con_moment": sum(r.get("lean_strength", 0) for r in results if r.get("lean_direction") == "反方"),
+        }
 
     # 计算力矩
     pro_count = sum(1 for r in results if r.get("lean_direction") == "正方")
@@ -96,44 +235,126 @@ def evaluate_candidate(candidate: CandidateQuestion) -> CandidateQuestion:
 
     # 判定（按有效Agent比例调整阈值）
     total_valid = pro_count + con_count
-    direction_ok = total_valid > 0 and max(pro_count, con_count) / total_valid <= 0.72  # 不超过约5:2
-    balance_ok = balance_score < 20  # 稍微放宽到20%
+    direction_ok = total_valid > 0 and max(pro_count, con_count) / total_valid <= effective_max_direction_share
+    balance_ok = balance_score < effective_balance_threshold
 
-    candidate.passed_filter_2 = direction_ok and balance_ok
-    candidate.filter_2_balance_score = round(balance_score, 1)
-    candidate.filter_2_distribution = distribution
-    candidate.filter_2_details = results
+    return {
+        "passed": direction_ok and balance_ok,
+        "balance_score": round(balance_score, 1),
+        "distribution": distribution,
+        "details": results,
+        "valid_count": valid_count,
+        "pro_count": pro_count,
+        "con_count": con_count,
+        "pro_moment": pro_moment,
+        "con_moment": con_moment,
+    }
+
+
+def evaluate_candidate(
+    candidate: CandidateQuestion,
+    *,
+    stances: list[tuple[str, str]] | None = None,
+    balance_threshold: float | None = None,
+    max_direction_share: float | None = None,
+    min_valid_agents: int | None = None,
+) -> CandidateQuestion:
+    """对单个候选问题运行7个哲学立场Agent的评估。"""
+    print(f"    ⚖  测试 {candidate.id}: {candidate.question_text[:40]}...", flush=True)
+    selected_stances = _resolve_stances(stances)
+    selected_names = {name for name, _ in selected_stances}
+    effective_min_valid_agents = _resolve_min_valid_agents(selected_stances, min_valid_agents)
+
+    cached_valid = sum(
+        1
+        for item in candidate.filter_2_details
+        if isinstance(item, dict) and item.get("stance") in selected_names
+    )
+    cached_names = {
+        item.get("stance")
+        for item in candidate.filter_2_details
+        if isinstance(item, dict) and item.get("stance") in selected_names
+    }
+    if candidate.passed_filter_2 is not None and cached_valid >= effective_min_valid_agents and selected_names.issubset(cached_names):
+        print("      ↺ 已有筛选结果，跳过重复调用", flush=True)
+        return candidate
+
+    outcome = evaluate_question_balance(
+        candidate.question_text,
+        cached_results=candidate.filter_2_details,
+        stances=selected_stances,
+        balance_threshold=balance_threshold,
+        max_direction_share=max_direction_share,
+        min_valid_agents=effective_min_valid_agents,
+    )
+
+    if outcome["passed"] is None:
+        print(
+            f"      ⚠ 仅{outcome['valid_count']}/{len(selected_stances)}个Agent成功，数据不足，保留断点等待下次补跑",
+            flush=True,
+        )
+        candidate.passed_filter_2 = None
+        candidate.filter_2_balance_score = outcome["balance_score"]
+        candidate.filter_2_distribution = outcome["distribution"]
+        candidate.filter_2_details = outcome["details"]
+        return candidate
+
+    candidate.passed_filter_2 = outcome["passed"]
+    candidate.filter_2_balance_score = outcome["balance_score"]
+    candidate.filter_2_distribution = outcome["distribution"]
+    candidate.filter_2_details = outcome["details"]
 
     status = "✓ 通过" if candidate.passed_filter_2 else "✗ 淘汰"
-    print(f"      {status} | 分布 {distribution} ({valid_count}/7有效) | 平衡度 {balance_score:.1f}%")
+    print(
+        f"      {status} | 分布 {candidate.filter_2_distribution} ({outcome['valid_count']}/{len(selected_stances)}有效) | 平衡度 {candidate.filter_2_balance_score:.1f}%",
+        flush=True,
+    )
 
     return candidate
 
 
-def run_filter2(candidates: list[CandidateQuestion]) -> list[CandidateQuestion]:
+def run_filter2(
+    candidates: list[CandidateQuestion],
+    checkpoint_hook=None,
+) -> list[CandidateQuestion]:
     """对所有候选问题运行筛子2，返回通过的候选。"""
-    print(f"\n  ⚖  筛子2：多框架稳定性测试（{len(candidates)}个候选 × 7个哲学Agent）")
-    print(f"  {'─' * 60}")
+    import concurrent.futures
+
+    print(f"\n  ⚖  筛子2：多框架稳定性测试（{len(candidates)}个候选 × 7个哲学Agent）", flush=True)
+    print(f"  {'─' * 60}", flush=True)
 
     survivors = []
-    retry_queue = []
 
-    for cand in candidates:
+    # Process candidates in parallel
+    # Use ThreadPoolExecutor since API calls are I/O-bound and release GIL
+    max_workers = int(os.environ.get("CLP_FILTER_CANDIDATE_WORKERS", "4"))
+
+    def process_candidate(cand):
+        """Process single candidate, returns (candidate, passed)"""
         evaluate_candidate(cand)
-        if cand.passed_filter_2 is True:
-            survivors.append(cand)
-        elif cand.passed_filter_2 is None:
-            retry_queue.append(cand)
+        return cand
 
-    # 重试失败的候选（一次）
-    if retry_queue:
-        print(f"\n  ⟳ 重试 {len(retry_queue)} 个数据不足的候选...")
-        time.sleep(2)  # 给中转站一点喘息时间
-        for cand in retry_queue:
-            cand.passed_filter_2 = None  # reset
-            evaluate_candidate(cand)
+    if max_workers > 1 and len(candidates) > 1:
+        print(f"  ⚡ 并行处理 {len(candidates)} 个候选（{max_workers} workers）", flush=True)
+        with concurrent.futures.ThreadPoolExecutor(max_workers=max_workers) as executor:
+            futures = {executor.submit(process_candidate, cand): cand for cand in candidates}
+            for future in concurrent.futures.as_completed(futures):
+                cand = future.result()
+                if checkpoint_hook is not None:
+                    checkpoint_hook()
+                if cand.passed_filter_2 is True:
+                    survivors.append(cand)
+                # Progress indicator
+                done = len(survivors) + sum(1 for f in futures if f.done())
+                print(f"  \r  进度: {done}/{len(candidates)} 已处理 | 通过: {len(survivors)}", flush=True)
+    else:
+        # Sequential processing
+        for cand in candidates:
+            process_candidate(cand)
+            if checkpoint_hook is not None:
+                checkpoint_hook()
             if cand.passed_filter_2 is True:
                 survivors.append(cand)
 
-    print(f"\n  ⚖  筛子2结果：{len(survivors)}/{len(candidates)} 个候选通过")
+    print(f"\n  ⚖  筛子2结果：{len(survivors)}/{len(candidates)} 个候选通过", flush=True)
     return survivors
