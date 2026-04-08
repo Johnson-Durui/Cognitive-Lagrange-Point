@@ -301,21 +301,25 @@ function ensureStyles() {
     .qvo-topbar p { margin: 0; max-width: min(760px, 70vw); color: rgba(233, 240, 255, 0.72); font-size: 13px; letter-spacing: 0.04em; }
     .qvo-kicker, .qvo-panel-title { color: #f3d486; letter-spacing: 0.22em; text-transform: uppercase; font-size: 11px; }
     .qvo-mode-switch { display: flex; gap: 8px; padding: 8px; border: 1px solid rgba(230, 221, 173, 0.2); border-radius: 999px; background: rgba(9, 12, 31, 0.62); backdrop-filter: blur(18px); pointer-events: auto; }
-    .qvo-mode-switch button, .qvo-universe-button, .qvo-bio-button, .qvo-audio-button { border: 1px solid rgba(255, 255, 255, 0.14); color: #f8fbff; background: rgba(255, 255, 255, 0.06); border-radius: 999px; padding: 10px 14px; cursor: pointer; transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease; }
+    .qvo-mode-switch button, .qvo-universe-button, .qvo-bio-button, .qvo-audio-button { appearance: none; -webkit-appearance: none; box-sizing: border-box; font: inherit; border: 1px solid rgba(255, 255, 255, 0.14); color: #f8fbff; background: rgba(255, 255, 255, 0.06); border-radius: 999px; padding: 10px 14px; cursor: pointer; transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease; }
     .qvo-mode-switch button:hover, .qvo-universe-button:hover, .qvo-bio-button:hover, .qvo-audio-button:hover { transform: translateY(-1px); background: rgba(255, 255, 255, 0.13); border-color: rgba(243, 212, 134, 0.55); }
     .qvo-mode-switch .is-active { background: linear-gradient(135deg, rgba(96, 220, 216, 0.2), rgba(243, 212, 134, 0.22)); border-color: rgba(243, 212, 134, 0.5); }
-    .qvo-panel { position: absolute; right: 24px; top: 128px; width: min(390px, calc(100vw - 32px)); display: grid; gap: 12px; padding: 18px; border: 1px solid rgba(188, 218, 255, 0.18); border-radius: 24px; background: linear-gradient(180deg, rgba(9, 13, 36, 0.78), rgba(5, 8, 24, 0.58)); box-shadow: 0 24px 90px rgba(0, 0, 0, 0.38); backdrop-filter: blur(22px); }
+    .qvo-panel { position: absolute; right: 18px; top: clamp(92px, 15vh, 128px); width: min(372px, calc(100vw - 32px)); max-height: min(620px, calc(100vh - 172px)); overflow-y: auto; overscroll-behavior: contain; display: grid; align-content: start; gap: 11px; padding: 16px; border: 1px solid rgba(188, 218, 255, 0.18); border-radius: 24px; background: linear-gradient(180deg, rgba(9, 13, 36, 0.82), rgba(5, 8, 24, 0.66)); box-shadow: 0 24px 90px rgba(0, 0, 0, 0.38); backdrop-filter: blur(22px); scrollbar-width: thin; scrollbar-color: rgba(243, 212, 134, 0.42) rgba(255, 255, 255, 0.05); }
+    .qvo-panel::-webkit-scrollbar { width: 8px; }
+    .qvo-panel::-webkit-scrollbar-thumb { background: rgba(243, 212, 134, 0.42); border-radius: 999px; }
+    .qvo-panel::-webkit-scrollbar-track { background: rgba(255,255,255,0.05); border-radius: 999px; }
     .qvo-universe-list { display: grid; gap: 10px; }
-    .qvo-universe-button { width: 100%; border-radius: 18px; padding: 13px 14px; text-align: left; display: grid; gap: 6px; }
+    .qvo-universe-button { width: 100%; max-width: 100%; border-radius: 18px; padding: 12px 13px; text-align: left; display: grid; gap: 6px; color: #f8fbff !important; background: rgba(255, 255, 255, 0.06) !important; }
     .qvo-universe-button strong { display: flex; justify-content: space-between; gap: 10px; font-size: 14px; }
-    .qvo-universe-button small { color: rgba(237, 243, 255, 0.7); line-height: 1.5; }
-    .qvo-universe-button.is-active { background: linear-gradient(135deg, rgba(71, 226, 218, 0.18), rgba(244, 205, 112, 0.18)); border-color: var(--qvo-accent, #f3d486); box-shadow: 0 0 28px rgba(87, 231, 224, 0.12); }
-    .qvo-diary { min-height: 104px; padding: 14px; border-radius: 18px; color: rgba(246, 248, 255, 0.82); background: rgba(255, 255, 255, 0.055); line-height: 1.65; font-size: 13px; }
+    .qvo-universe-button strong span:first-child { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .qvo-universe-button small { color: rgba(237, 243, 255, 0.72); line-height: 1.45; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+    .qvo-universe-button.is-active { background: linear-gradient(135deg, rgba(71, 226, 218, 0.18), rgba(244, 205, 112, 0.18)) !important; border-color: var(--qvo-accent, #f3d486); box-shadow: 0 0 28px rgba(87, 231, 224, 0.12); }
+    .qvo-diary { min-height: 96px; max-height: 150px; overflow-y: auto; padding: 13px; border-radius: 18px; color: rgba(246, 248, 255, 0.82); background: rgba(255, 255, 255, 0.055); line-height: 1.58; font-size: 13px; }
     .qvo-diary p { margin: 0 0 8px; }
     .qvo-observer { display: grid; gap: 8px; color: rgba(246, 248, 255, 0.72); font-size: 12px; }
     .qvo-observer meter { width: 100%; height: 10px; }
     .qvo-bio-actions, .qvo-audio-actions { display: flex; gap: 8px; flex-wrap: wrap; }
-    .qvo-bio-button, .qvo-audio-button { flex: 1; min-width: 128px; border-radius: 14px; padding: 9px 11px; font-size: 12px; }
+    .qvo-bio-button, .qvo-audio-button { flex: 1; min-width: 0; border-radius: 14px; padding: 9px 11px; font-size: 12px; color: #f8fbff !important; background: rgba(255, 255, 255, 0.06) !important; }
     .qvo-bio-readout { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
     .qvo-bio-readout span { padding: 8px; border-radius: 12px; background: rgba(255,255,255,0.055); color: rgba(246,248,255,0.78); }
     .qvo-bio-video { width: 1px; height: 1px; opacity: 0; position: absolute; pointer-events: none; }
@@ -333,6 +337,21 @@ function ensureStyles() {
       .qvo-panel { left: 12px; right: 12px; top: auto; bottom: 72px; width: auto; max-height: 46vh; overflow: auto; border-radius: 20px; }
       .qvo-footer { left: 14px; right: 14px; bottom: 12px; flex-direction: column; gap: 4px; }
       .qvo-mode-switch button { padding: 9px 12px; }
+    }
+    @media (max-height: 720px) and (min-width: 761px) {
+      .qvo-topbar h2 { font-size: clamp(24px, 3.2vw, 42px); }
+      .qvo-topbar p { max-width: min(640px, 62vw); }
+      .qvo-panel { top: 86px; right: 14px; width: min(340px, calc(100vw - 28px)); max-height: calc(100vh - 132px); gap: 8px; padding: 13px; border-radius: 20px; }
+      .qvo-universe-list { gap: 7px; }
+      .qvo-universe-button { padding: 9px 11px; border-radius: 15px; }
+      .qvo-universe-button strong { font-size: 13px; }
+      .qvo-universe-button small { font-size: 11px; line-height: 1.35; -webkit-line-clamp: 1; }
+      .qvo-diary { min-height: 70px; max-height: 92px; padding: 10px; font-size: 12px; line-height: 1.42; }
+      .qvo-bio-readout { grid-template-columns: 1fr; gap: 6px; }
+      .qvo-bio-readout span { padding: 6px 8px; }
+      .qvo-audio-actions, .qvo-bio-actions { gap: 6px; }
+      .qvo-bio-button, .qvo-audio-button { padding: 7px 9px; font-size: 11px; }
+      .qvo-footer { bottom: 10px; font-size: 11px; opacity: 0.72; }
     }
   `;
   document.head.appendChild(style);
