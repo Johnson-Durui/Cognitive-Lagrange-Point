@@ -34,6 +34,7 @@ import {
   submitCurrentB1Answer,
   submitCurrentSimAnswer,
 } from './frontend/modules/engine-b.js';
+import { registerQuantumVibeOracle } from './frontend/modules/quantum-vibe-oracle.js';
 import './frontend/modules/ui-bridge.js';
 import { showView, closeDetail } from './frontend/modules/ui-handlers.js';
 
@@ -335,6 +336,7 @@ function init() {
   } catch (error) {
     console.error('DecisionFlowView Init Failed', error);
   }
+  registerQuantumVibeOracle();
 
   const initialSystems = [
     ...(Array.isArray(SYSTEMS) ? SYSTEMS : []),

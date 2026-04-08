@@ -418,6 +418,7 @@ export function renderDecisionSession(decision, { force = false, clearCache = fa
   rememberDecisionProgress(decision);
   state.currentDecision = decision;
   state.currentDecisionId = decision.decision_id || '';
+  window.decisionData = decision;
   saveDecisionId(state.currentDecisionId);
   state.engineBSession = decision.engineb_session || null;
 
