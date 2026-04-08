@@ -1,256 +1,194 @@
-# 认知拉格朗日点 · 人生决策引擎
+# 认知拉格朗日点 · Cognitive Lagrange Point
 
-> 一个判断人类思维中"真正无解问题"的系统，以及帮助解决"有答案但看不见"问题的决策辅助工具。
+> 把人生两难选择，变成结构化、可执行的未来路径。
 
-## 项目概述
+![Cognitive Lagrange Point Showcase](docs/showcase/Cognitive_Lagrange_Point_preview.png)
 
-### 核心理念
+## 一句话
 
-人类思维中存在两类困境：
-1. **拉格朗日点** - 结构性无解的永恒僵局（如电车难题）
-2. **认知卡点** - 有答案但暂时看不见的问题（如该跳槽还是留守）
+这是一个 AI 决策引擎：用户输入一个纠结问题，系统先判断它到底是“结构性无解”，还是“有答案但暂时看不见”；如果答案存在，就继续诊断卡点、补齐认知、推演未来，并导出客户可读的决策报告。
 
-本系统通过双引擎架构处理这两类问题：
-- **引擎A**：检测并证明一个问题是否真的是拉格朗日点
-- **引擎B**：帮助诊断并突破认知卡点，找到隐藏的答案
+## 展示材料
 
-### 系统一句话总结
+- [展示文稿 PDF](docs/showcase/Cognitive_Lagrange_Point.pdf)
+- [完整报告样例 PDF](docs/showcase/decision_sample_report.pdf)
+- [展示交接文件](SHOWCASE_HANDOFF.md)
+- [技术交接文件](TECHNICAL_HANDOFF.md)
 
-> "扔进去任何一个让你纠结的问题。系统先判断有没有答案——有答案的，帮你找到答案（诊断卡点→补全认知→给出建议→模拟未来），没答案的，证明给你看为什么没有，帮你放下。无论哪种，你走出来的时候都不再纠结。"
+## 当前能力
 
----
+- 双引擎决策主线：Engine A 负责结构检测，Engine B 负责决策突破。
+- 四档思考深度：`quick`、`deep`、`pro`、`ultra`。
+- Ultra 模式：在 Pro 的出版级推演基础上追加 Monte Carlo 多代理碰撞。
+- 第三幕未来模拟：顺风、平稳、逆风三种路径，行动地图、关键岔路口、最坏情况保护卡。
+- 双 PDF 交付：完整版 PDF + AI 总结版 PDF。
+- 本地外部声音快照、心理偏差识别、第三条路、后悔分数和概率对比。
+- SSE 实时状态流、历史恢复、Safari/移动端交互回归探针。
+- PixiJS/WebGL 未来路径画布作为可选增强，默认保留稳定 Canvas 星图。
+
+## 产品流程
+
+```mermaid
+flowchart LR
+    A["输入纠结问题"] --> B["第一幕：结构检测"]
+    B --> C{"是否是认知拉格朗日点？"}
+    C -->|是| D["证明结构性平衡\n生成完整报告"]
+    C -->|否| E["第二幕：Engine B 卡点诊断"]
+    E --> F["B1-B5：追问、补信息、换框架、经验对照、情绪镜像"]
+    F --> G["C1：建议与行动方案"]
+    G --> H["第三幕：未来选择模拟器"]
+    H --> I["B7-B9：三种未来、行动地图、最终对比"]
+    I --> J["导出完整版 PDF + AI 总结版 PDF"]
+```
 
 ## 技术架构
 
-### 技术栈
+| 层级 | 当前实现 |
+| --- | --- |
+| 前端 | Vite + ESM 模块化 + Canvas + 可选 PixiJS/WebGL |
+| 后端 | FastAPI + SSE + SQLite + 本地状态恢复 |
+| AI 调用 | OpenAI-compatible API，JSON 修复与 low/medium/high 降级策略 |
+| 决策管线 | `decision/` 产品协议 + `research/engine_b/` 多代理决策运行时 |
+| 报告 | `fpdf2` 稳定导出，WeasyPrint 作为可选增强入口 |
+| 测试 | Python `unittest` + Playwright 浏览器探针 + Vite build |
 
-| 层级 | 技术 |
-|------|------|
-| 前端 | Vanilla JS + CSS3（无框架） |
-| 后端 | Python（同步批处理） |
-| AI | OpenAI API（兼容格式） |
-| 状态 | 文件持久化（checkpoint.json） |
+## 快速启动
 
-### 项目规模
-
-```
-总计代码量：约 16,000 行
-├── research/          # 研究管道（9,674 行）
-│   ├── api.py        # AI API 调用封装
-│   ├── models.py     # 数据模型
-│   ├── engine_b/     # 引擎B（新增，1,004 行）
-│   │   ├── agents.py
-│   │   ├── models.py
-│   │   └── state.py
-│   ├── phase1_mining.py      # 候选问题挖掘
-│   ├── phase2_filter*.py      # 三轮筛选
-│   ├── phase3_*.py           # 力量解剖/稳定性/振荡
-│   └── phase4_*.py           # 断层线/隧道效应
-├── server.py         # Web 后端（1,036 行）
-├── app.js           # 前端逻辑（3,257 行）
-├── style.css        # 样式（3,353 行）
-└── index.html       # 页面结构
-```
-
----
-
-## 核心功能
-
-### 引擎A · 拉格朗日检测（研究中）
-
-通过三轮筛选检测问题是否为真正的拉格朗日点：
-
-1. **信息注入测试** - 注入更多信息后平衡是否打破
-2. **多框架稳定性测试** - 7种哲学立场是否仍保持平衡
-3. **重述稳定性测试** - 10种不同表述是否保持平衡
-
-通过后进行深度分析：
-- 力量解剖（正方/反方力量）
-- 稳定性测试（长期是否保持平衡）
-- 振荡曲线（思考过程的摆动轨迹）
-- 断层线归属（与其他拉格朗日点的关系）
-
-### 引擎B · 决策突破（已贯通）
-
-当问题"不是拉格朗日点"时（99%的情况），引擎B介入：
-
-| Agent | 功能 | 状态 |
-|--------|------|------|
-| B1 | 卡点诊断 - 3-5个追问判定卡点类型 | ✅ 已完成 |
-| B2 | 信息侦探 - 补充缺失的关键信息 | ✅ 已完成 |
-| B3 | 认知解锁 - 提供理解信息的思维框架 | ✅ 已完成 |
-| B4 | 经验模拟 - 3类经验对照案例 | ✅ 已完成 |
-| B5 | 认知镜像 - 识别情绪干扰 | ✅ 已完成 |
-| B6 | 模拟参数收集 - 安全垫/可逆性/最怕什么 | ✅ 已完成 |
-| B7 | 时间线生成 - 顺风/平稳/逆风三条线 | ✅ 已完成 |
-| B8 | 应对预案 - 岔路口+信号灯+生存方案 | ✅ 已完成 |
-| B9 | 对比总览 - 两个选项全景对比+行动地图 | ✅ 已完成 |
-
-**选择模拟器流程**：
-```
-用户问题 → B1诊断 → B2-B5补全 → C1重新评估
-    ↓
-点击"启动选择模拟器"
-    ↓
-B6收集个人参数（安全垫/可逆性/最怕什么）
-    ↓
-B7 生成选项A/B的三条时间线（顺风/平稳/逆风）
-    ↓
-B8 生成应对预案（岔路口+信号灯+生存方案）
-    ↓
-B9 生成对比总览+行动地图+最终洞察
-    ↓
-用户得到：未来12个月的完整行动指南
-```
-
-### 二次检测（待实现）
-
-当引擎B补全后力矩差仍<15%，说明问题可能是"隐藏的拉格朗日点"，需要送回引擎A进行深度检测。
-
----
-
-## 文件结构
-
-```
-claudecode/
-├── index.html          # 页面入口
-├── style.css           # 全部样式
-├── app.js             # 前端交互逻辑
-├── server.py           # Python Web 后端
-│
-├── research/           # 研究管道
-│   ├── __init__.py
-│   ├── api.py         # AI API 调用（call_agent_json）
-│   ├── models.py      # 数据模型（dataclass）
-│   ├── checkpoint.py  # 状态持久化
-│   ├── run.py         # 管道入口
-│   │
-│   ├── engine_b/      # 引擎B（决策突破模式）
-│   │   ├── __init__.py
-│   │   ├── models.py  # EngineBSession, Timeline, Crossroad 等
-│   │   ├── state.py   # 会话状态持久化
-│   │   └── agents.py   # B1-B9 Agent 实现
-│   │
-│   ├── phase1_mining.py   # 候选问题挖掘
-│   ├── phase2_filter*.py  # 三轮筛选
-│   ├── phase3_*.py        # 力量解剖/稳定性/振荡
-│   ├── phase4_*.py         # 断层线/隧道效应
-│   └── output/             # 研究结果输出
-│
-├── data.js           # 预设星图数据（4大类别）
-├── discovered-data.js  # 发现的新拉格朗日点
-├── .env.clp          # API 配置（不上传git）
-└── FIRST_RUN.md      # 初始运行说明
-```
-
----
-
-## API 端点
-
-### 研究管道
-```
-GET  /api/status        # 实验状态
-GET  /api/log          # 运行时日志
-GET  /api/config       # 配置信息
-GET  /api/discovered   # 发现的拉格朗日点
-GET  /api/runs         # 历史实验列表
-POST /api/start        # 启动实验
-POST /api/stop         # 停止实验
-```
-
-### 引擎B
-```
-POST /api/engineb/start           # 启动引擎B会话
-POST /api/engineb/answer         # 提交B1追问回答
-GET  /api/engineb/status         # 查询会话状态
-POST /api/engineb/reset           # 重置会话
-POST /api/engineb/simulate/start  # 启动选择模拟器
-POST /api/engineb/simulate/answer # 提交模拟器参数
-```
-
----
-
-## 升级历史
-
-### v0.1（Phase 1 MVP）
-- ✅ 引擎B基础：B1诊断 + B2信息补全 + C1重新评估
-- ✅ 基础会话持久化
-
-### v0.2（Phase 2 完整引擎B）
-- ✅ B3认知解锁
-- ✅ B4经验模拟（经验对照案例）
-- ✅ B5情绪镜像
-
-### v0.3（Phase 3 选择模拟器）
-- ✅ B6模拟参数收集
-- ✅ B7时间线生成
-- ✅ B8应对预案
-- ✅ B9对比总览
-
-### v0.4（P2 优化）
-- ✅ 会话持久化（localStorage）
-- ✅ 刷新页面恢复进度
-- ✅ 加载状态优化（skeleton）
-- ✅ 移动端适配
-
----
-
-## 待优化方向
-
-### Phase 完整性
-| 功能 | 优先级 | 难度 |
-|------|--------|------|
-| 二次检测（Step3.5） | P0 | 高 |
-| 引擎A集成 | P0 | 高 |
-
-### 技术优化
-| 功能 | 优先级 | 难度 |
-|------|--------|------|
-| API错误处理+重试 | P1 | 低 |
-| Token消耗优化 | P2 | 中 |
-| 相似问题缓存 | P2 | 中 |
-
-### 产品化
-| 功能 | 优先级 | 难度 |
-|------|--------|------|
-| 时间线可视化 | P2 | 中 |
-| 历史记录系统 | P2 | 中 |
-| 里程碑提醒 | P3 | 低 |
-| 移动端优化 | P3 | 低 |
-
----
-
-## 运行方式
+### 1. 安装依赖
 
 ```bash
-# 1. 配置 API
-cp .env.clp.example .env.clp
-# 编辑 .env.clp 填入 API Key
-
-# 2. 启动服务
-python server.py
-# 访问 http://localhost:4173
-
-# 3. 使用 Web 控制台运行研究管道
+python3 -m pip install -r requirements.txt
+npm install
 ```
 
----
+### 2. 配置模型
 
-## Token 预算
+复制示例配置：
 
-| 场景 | 消耗 |
-|------|------|
-| 日常决策（引擎B单独） | 10-20万/次 |
-| 日常决策+选择模拟器 | 26-46万/次 |
-| 疑似拉格朗日点（引擎A完整） | 50-100万/次 |
-| 二次检测确认 | 76-166万/次 |
+```bash
+cp .env.clp.example .env.clp
+```
 
----
+然后填写：
 
-## 团队交接注意事项
+```bash
+CLP_API_KEY=你的_key
+CLP_BASE_URL=https://your-openai-compatible-proxy.example/v1
+CLP_MODEL=你的模型
+```
 
-1. **.env.clp 不上传** - 包含 API Key
-2. **engine_b/ 是新增模块** - 与原有 research/ 模块独立
-3. **API 兼容格式** - 使用 OpenAI 兼容接口，支持第三方中转
-4. **文件持久化** - 研究结果存在 research/output/
-5. **前端无框架** - 纯 Vanilla JS，便于理解但不利于大型化
+真实 `.env.clp` 已被 `.gitignore` 排除，不会提交到 GitHub。
+
+### 3. 启动
+
+```bash
+python3 server.py
+```
+
+打开：
+
+- [http://127.0.0.1:4173](http://127.0.0.1:4173)
+- WebGL 增强星图：[http://127.0.0.1:4173/?webgl=1](http://127.0.0.1:4173/?webgl=1)
+
+开发模式：
+
+```bash
+npm run dev
+```
+
+默认 Vite 开发端口为 `4174`。
+
+## 核心目录
+
+```text
+.
+├── app.js                         # 前端入口与全局状态桥接
+├── index.html                     # 页面结构
+├── style.css                      # 产品样式
+├── server.py                      # FastAPI 入口
+├── decision/                      # 新版决策协议、档位、报告聚合
+├── frontend/                      # ESM 模块化前端
+│   ├── components/                # 决策流、时间线、档位选择、Pixi 星图
+│   ├── core/                      # 状态、渲染、交互
+│   └── modules/                   # Engine A/B、UI bridge、decision engine
+├── research/
+│   ├── api.py                     # 模型调用、JSON 修复、降级策略
+│   ├── engine_b/                  # Engine B B1-B9 与 Ultra Monte Carlo
+│   ├── output_formatter.py        # 完整版 PDF 与 AI 总结版 PDF
+│   └── phase*.py                  # Engine A 研究筛子与后续分析
+├── docs/showcase/                 # 展示文稿、报告样例与预览图
+└── tests/                         # 单元测试与浏览器回归探针
+```
+
+## API 摘要
+
+| 接口 | 作用 |
+| --- | --- |
+| `POST /api/decision/start` | 启动新版决策流程 |
+| `GET /api/decision/status?id=...` | 获取决策状态 |
+| `GET /api/decision/events?id=...` | SSE 实时状态流 |
+| `POST /api/decision/answer` | 提交 B1/B6 等回答 |
+| `POST /api/decision/upgrade` | 升级思考深度 |
+| `GET /api/decision/report?id=...` | 导出完整版 PDF |
+| `GET /api/decision/summary-report?id=...` | 导出 AI 总结版 PDF |
+| `GET /api/final-report/pdf` | 旧会话兼容的最终完整版 PDF |
+| `GET /api/final-report/summary-pdf` | 旧会话兼容的 AI 总结版 PDF |
+
+## 验证
+
+完整验证：
+
+```bash
+npm run verify:all
+```
+
+提交前已通过：
+
+```bash
+python3 -m py_compile server.py server_core.py server_detection.py server_runtime.py server_shared.py decision/*.py research/api.py research/output_formatter.py research/engine_b/*.py research/*.py
+npm run build
+python3 -m unittest tests.test_api_extract_text tests.test_api_json_rescue tests.test_decision_api_smoke tests.test_decision_pipeline_normalization tests.test_decision_summary_report tests.test_decision_tier_regression tests.test_decision_upgrade tests.test_engine_b_agents tests.test_engine_b_runtime tests.test_flash_classifier tests.test_single_detect_profiles
+npm run verify:all
+```
+
+## 报告导出
+
+系统会在最终页提供两种 PDF：
+
+- 完整版 PDF：适合归档和复盘，包含完整流程、时间线、行动地图、日志摘要和轨迹附录。
+- AI 总结版 PDF：适合直接发给客户或团队成员，压缩成结论、理由、7 天行动、风险护栏和备忘。
+
+相关配置：
+
+```bash
+CLP_PDF_RENDERER=fpdf
+CLP_SUMMARY_REPORT_MAX_TOKENS=3200
+CLP_SUMMARY_REPORT_DISABLE_AI=0
+```
+
+## Ultra 配置
+
+Ultra 的 Monte Carlo 和 LLM 委员会开关在 `.env.clp.example` 中：
+
+```bash
+CLP_ULTRA_MC_ESTIMATED_TOKENS=10000000
+CLP_ULTRA_MC_BRANCHES=800
+CLP_ULTRA_MC_PERSONAS=40
+CLP_ULTRA_MC_LLM_PANELS=8
+CLP_ULTRA_MC_LLM_MAX_TOKENS=8192
+```
+
+如果想省 token，选择 `pro`；如果想让系统进行更厚的多代理碰撞，选择 `ultra`。
+
+## 交接文件
+
+- [HANDOFF.md](HANDOFF.md)：总览版
+- [SHOWCASE_HANDOFF.md](SHOWCASE_HANDOFF.md)：对外展示和其他 AI 快速理解
+- [TECHNICAL_HANDOFF.md](TECHNICAL_HANDOFF.md)：技术接手
+- [REDESIGN_HANDOFF.md](REDESIGN_HANDOFF.md)：重构路线和真实进度
+
+## 安全说明
+
+- `.env.clp`、运行日志、SQLite 数据库、生成 PDF、`node_modules/`、`dist/` 均不会提交。
+- 仓库只保留示例配置 `.env.clp.example`。
+- `docs/showcase/` 中的 PDF 是展示资产，不包含 API key。

@@ -16,6 +16,24 @@ PROJECT_ROOT = os.path.dirname(os.path.dirname(__file__))
 DISCOVERED_DATA_JS = os.path.join(PROJECT_ROOT, "discovered-data.js")
 
 
+def _decision_report_font_path() -> str:
+    candidates = [
+        os.environ.get("CLP_PDF_FONT_PATH", "").strip(),
+        "/System/Library/Fonts/STHeiti Medium.ttc",
+        "/System/Library/Fonts/PingFang.ttc",
+        "/Library/Fonts/Arial Unicode.ttf",
+        "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+        "/usr/share/fonts/opentype/noto/NotoSerifCJK-Regular.ttc",
+        "/usr/share/fonts/truetype/noto/NotoSansCJK-Regular.ttc",
+    ]
+    for path in candidates:
+        if path and os.path.exists(path):
+            return path
+    raise FileNotFoundError(
+        "未找到可用于中文 PDF 的字体。请安装 Noto CJK 字体，或设置 CLP_PDF_FONT_PATH。"
+    )
+
+
 def _archive_dir() -> str | None:
     value = os.environ.get("CLP_ARCHIVE_DIR", "").strip()
     return value or None
@@ -81,7 +99,7 @@ def generate_pdf(
     social_conflict_predictions = social_conflict_predictions or []
     metadata = metadata or {}
 
-    CN_FONT = "/System/Library/Fonts/STHeiti Medium.ttc"
+    CN_FONT = _decision_report_font_path()
 
     class PDF(FPDF):
         def header(self):
@@ -198,7 +216,7 @@ def generate_pdf(
     pdf.set_auto_page_break(auto=True, margin=25)
 
     # 注册中文字体
-    _heiti = "/System/Library/Fonts/STHeiti Medium.ttc"
+    _heiti = _decision_report_font_path()
     pdf.add_font("STHeiti", "", _heiti)
     pdf.add_font("STHeiti", "B", _heiti)
     pdf.add_font("STHeiti", "I", _heiti)
@@ -1369,7 +1387,7 @@ def generate_decision_pdf_report(
     decision_data = decision_data if isinstance(decision_data, dict) else {}
     metadata = metadata if isinstance(metadata, dict) else {}
 
-    font_path = "/System/Library/Fonts/STHeiti Medium.ttc"
+    font_path = _decision_report_font_path()
     safe_question = _decision_report_pdf_text(question, default="未提供问题")
     generated_at = metadata.get("generated_at") or datetime.now().strftime("%Y-%m-%d %H:%M")
     decision_logs = _decision_report_lines(decision_data.get("logs") or [])
@@ -3161,7 +3179,7 @@ def generate_decision_summary_pdf_report(
         except Exception as exc:
             print(f"  ⚠ AI 摘要 PDF 生成使用本地降级文案: {exc}")
 
-    font_path = "/System/Library/Fonts/STHeiti Medium.ttc"
+    font_path = _decision_report_font_path()
     generated_at = metadata.get("generated_at") or datetime.now().strftime("%Y-%m-%d %H:%M")
     safe_question = _decision_report_pdf_text(question, default="未提供问题")
 
