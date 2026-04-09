@@ -442,15 +442,15 @@ function ensureStyles() {
     .qvo-shell { position: relative; width: 100%; height: 100%; overflow: hidden; background: radial-gradient(circle at 50% 35%, rgba(78, 42, 142, 0.42), #040511 58%, #010208 100%); isolation: isolate; }
     .qvo-shell::before { content: ""; position: absolute; inset: 0; pointer-events: none; background: radial-gradient(circle at 20% 20%, rgba(46, 219, 209, 0.16), transparent 32%), radial-gradient(circle at 80% 74%, rgba(236, 190, 95, 0.14), transparent 36%), linear-gradient(120deg, rgba(95, 50, 181, 0.18), transparent 46%, rgba(33, 222, 218, 0.1)); mix-blend-mode: screen; }
     .qvo-canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; touch-action: none; }
-    .qvo-topbar { position: absolute; top: 22px; left: 22px; right: 22px; display: flex; justify-content: space-between; gap: 18px; align-items: flex-start; pointer-events: none; }
+    .qvo-topbar { position: absolute; z-index: 6; top: 22px; left: 22px; right: 22px; display: flex; justify-content: space-between; gap: 18px; align-items: flex-start; pointer-events: none; }
     .qvo-topbar h2 { margin: 4px 0 6px; font-size: clamp(26px, 4vw, 54px); line-height: 1; letter-spacing: 0.08em; text-shadow: 0 0 28px rgba(92, 234, 236, 0.34); }
     .qvo-topbar p { margin: 0; max-width: min(760px, 70vw); color: rgba(233, 240, 255, 0.72); font-size: 13px; letter-spacing: 0.04em; }
     .qvo-kicker, .qvo-panel-title { color: #f3d486; letter-spacing: 0.22em; text-transform: uppercase; font-size: 11px; }
-    .qvo-mode-switch { display: flex; gap: 8px; padding: 8px; border: 1px solid rgba(230, 221, 173, 0.2); border-radius: 999px; background: rgba(9, 12, 31, 0.62); backdrop-filter: blur(18px); pointer-events: auto; }
-    .qvo-mode-switch button, .qvo-universe-button, .qvo-bio-button, .qvo-audio-button { appearance: none; -webkit-appearance: none; box-sizing: border-box; font: inherit; border: 1px solid rgba(255, 255, 255, 0.14); color: #f8fbff; background: rgba(255, 255, 255, 0.06); border-radius: 999px; padding: 10px 14px; cursor: pointer; transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease; }
+    .qvo-mode-switch { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 6px; max-width: min(520px, calc(100vw - 44px)); padding: 6px; border: 1px solid rgba(230, 221, 173, 0.2); border-radius: 999px; background: rgba(9, 12, 31, 0.62); backdrop-filter: blur(18px); pointer-events: auto; }
+    .qvo-mode-switch button, .qvo-universe-button, .qvo-bio-button, .qvo-audio-button { appearance: none; -webkit-appearance: none; box-sizing: border-box; font: inherit; white-space: nowrap; border: 1px solid rgba(255, 255, 255, 0.14); color: #f8fbff; background: rgba(255, 255, 255, 0.06); border-radius: 999px; padding: 10px 14px; cursor: pointer; transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease; }
     .qvo-mode-switch button:hover, .qvo-universe-button:hover, .qvo-bio-button:hover, .qvo-audio-button:hover { transform: translateY(-1px); background: rgba(255, 255, 255, 0.13); border-color: rgba(243, 212, 134, 0.55); }
     .qvo-mode-switch .is-active { background: linear-gradient(135deg, rgba(96, 220, 216, 0.2), rgba(243, 212, 134, 0.22)); border-color: rgba(243, 212, 134, 0.5); }
-    .qvo-panel { position: absolute; right: 18px; top: clamp(92px, 15vh, 128px); width: min(372px, calc(100vw - 32px)); max-height: min(620px, calc(100vh - 172px)); overflow-y: auto; overscroll-behavior: contain; display: grid; align-content: start; gap: 11px; padding: 16px; border: 1px solid rgba(188, 218, 255, 0.18); border-radius: 24px; background: linear-gradient(180deg, rgba(9, 13, 36, 0.82), rgba(5, 8, 24, 0.66)); box-shadow: 0 24px 90px rgba(0, 0, 0, 0.38); backdrop-filter: blur(22px); scrollbar-width: thin; scrollbar-color: rgba(243, 212, 134, 0.42) rgba(255, 255, 255, 0.05); }
+    .qvo-panel { position: absolute; z-index: 5; right: 18px; top: clamp(128px, 18vh, 156px); width: min(372px, calc(100vw - 32px)); max-height: min(560px, calc(100vh - 176px)); overflow-y: auto; overscroll-behavior: contain; display: grid; align-content: start; gap: 11px; padding: 16px; border: 1px solid rgba(188, 218, 255, 0.18); border-radius: 24px; background: linear-gradient(180deg, rgba(9, 13, 36, 0.82), rgba(5, 8, 24, 0.66)); box-shadow: 0 24px 90px rgba(0, 0, 0, 0.38); backdrop-filter: blur(22px); scrollbar-width: thin; scrollbar-color: rgba(243, 212, 134, 0.42) rgba(255, 255, 255, 0.05); }
     .qvo-panel::-webkit-scrollbar { width: 8px; }
     .qvo-panel::-webkit-scrollbar-thumb { background: rgba(243, 212, 134, 0.42); border-radius: 999px; }
     .qvo-panel::-webkit-scrollbar-track { background: rgba(255,255,255,0.05); border-radius: 999px; }
@@ -473,9 +473,9 @@ function ensureStyles() {
     .qvo-heartbeat-ring { border: 1px solid rgba(242, 101, 134, 0.44); animation: qvo-heart-ring 1.6s ease-out infinite; }
     .qvo-breath-wave { width: 100%; height: 42px; display: block; overflow: visible; }
     .qvo-breath-wave path { fill: none; stroke: rgba(86, 231, 224, 0.9); stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; filter: drop-shadow(0 0 12px rgba(86, 231, 224, 0.36)); }
-    .qvo-bio-actions, .qvo-audio-actions { display: flex; gap: 8px; flex-wrap: wrap; }
+    .qvo-bio-actions, .qvo-audio-actions { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
     .qvo-bio-button, .qvo-audio-button { flex: 1; min-width: 0; border-radius: 14px; padding: 9px 11px; font-size: 12px; color: #f8fbff !important; background: rgba(255, 255, 255, 0.06) !important; }
-    .qvo-export-button { box-shadow: 0 0 24px rgba(243, 212, 134, 0.18); }
+    .qvo-export-button { box-shadow: 0 0 24px rgba(243, 212, 134, 0.18); background: linear-gradient(135deg, rgba(89, 48, 190, 0.32), rgba(243, 212, 134, 0.22)) !important; border-color: rgba(243, 212, 134, 0.46) !important; }
     .qvo-export-backdrop[hidden], .qvo-export-menu[hidden] { display: none !important; }
     .qvo-export-backdrop { position: absolute; inset: 0; z-index: 7; background: rgba(1, 4, 14, 0.46); backdrop-filter: blur(6px); }
     .qvo-export-menu { position: absolute; z-index: 8; right: 26px; bottom: 108px; width: min(360px, calc(100vw - 28px)); display: grid; gap: 14px; padding: 16px; border-radius: 20px; border: 1px solid rgba(243, 212, 134, 0.28); background: linear-gradient(180deg, rgba(8, 12, 34, 0.95), rgba(5, 8, 22, 0.92)); box-shadow: 0 28px 84px rgba(0, 0, 0, 0.45); backdrop-filter: blur(20px); }
@@ -516,7 +516,7 @@ function ensureStyles() {
     @media (max-height: 720px) and (min-width: 761px) {
       .qvo-topbar h2 { font-size: clamp(24px, 3.2vw, 42px); }
       .qvo-topbar p { max-width: min(640px, 62vw); }
-      .qvo-panel { top: 86px; right: 14px; width: min(340px, calc(100vw - 28px)); max-height: calc(100vh - 132px); gap: 8px; padding: 13px; border-radius: 20px; }
+      .qvo-panel { top: 132px; right: 14px; width: min(340px, calc(100vw - 28px)); max-height: calc(100vh - 154px); gap: 8px; padding: 13px; border-radius: 20px; }
       .qvo-universe-list { gap: 7px; }
       .qvo-universe-button { padding: 9px 11px; border-radius: 15px; }
       .qvo-universe-button strong { font-size: 13px; }
@@ -524,7 +524,7 @@ function ensureStyles() {
       .qvo-diary { min-height: 70px; max-height: 92px; padding: 10px; font-size: 12px; line-height: 1.42; }
       .qvo-bio-readout { grid-template-columns: 1fr; gap: 6px; }
       .qvo-bio-readout span { padding: 6px 8px; }
-      .qvo-audio-actions, .qvo-bio-actions { gap: 6px; }
+      .qvo-audio-actions, .qvo-bio-actions { gap: 6px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
       .qvo-bio-button, .qvo-audio-button { padding: 7px 9px; font-size: 11px; }
       .qvo-footer { bottom: 10px; font-size: 11px; opacity: 0.72; }
     }
@@ -1234,14 +1234,14 @@ class QuantumVibeOracle {
   }
 
   installExportUi() {
-    const actions = this.root.querySelector('.qvo-audio-actions');
-    if (actions && !actions.querySelector('[data-qvo-export-trigger]')) {
+    const tools = this.root.querySelector('.qvo-mode-switch');
+    if (tools && !tools.querySelector('[data-qvo-export-trigger]')) {
       const button = document.createElement('button');
       button.type = 'button';
-      button.className = 'qvo-audio-button qvo-export-button';
+      button.className = 'qvo-export-button';
       button.dataset.qvoExportTrigger = 'true';
       button.textContent = '📸 导出量子艺术图';
-      actions.appendChild(button);
+      tools.appendChild(button);
     }
 
     if (this.root.querySelector('[data-qvo-export-menu]')) return;
