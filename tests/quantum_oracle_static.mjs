@@ -20,5 +20,8 @@ assert.match(moduleSource, /indexedDB/i, 'quantum state must persist through Ind
 assert.match(template, /Quantum Vibe Oracle/, 'quantum universe template should be present');
 assert.match(template, /data-qvo-bio-enable/, 'bio resonance control should be present');
 assert.match(template, /data-qvo-audio-toggle/, 'audio mute control should be present');
+assert.match(template, /data-qvo-flight-toggle/, 'free flight control should be present');
+assert.match(template, /data-qvo-save/, 'save quantum state control should be present');
+assert.match(template, /data-qvo-story-orb/, 'particle story overlay should be present');
 
 console.log('Quantum Vibe Oracle static checks passed.');

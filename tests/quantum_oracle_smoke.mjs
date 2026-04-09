@@ -42,12 +42,14 @@ const result = await page.evaluate(() => ({
   buttons: document.querySelectorAll('[data-qvo-universe]').length,
   hasBio: Boolean(document.querySelector('[data-qvo-bio-enable]')),
   hasAudio: Boolean(document.querySelector('[data-qvo-audio-toggle]')),
+  hasFlight: Boolean(document.querySelector('[data-qvo-flight-toggle]')),
+  hasSave: Boolean(document.querySelector('[data-qvo-save]')),
   renderer: document.querySelector('[data-qvo-renderer]')?.textContent || '',
 }));
 
 await browser.close();
 console.log(JSON.stringify({ result, errors }, null, 2));
 
-if (!result.root || result.buttons !== 3 || !result.hasBio || !result.hasAudio) {
+if (!result.root || result.buttons !== 3 || !result.hasBio || !result.hasAudio || !result.hasFlight || !result.hasSave) {
   process.exit(1);
 }

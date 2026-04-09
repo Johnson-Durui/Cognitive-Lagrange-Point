@@ -1,5 +1,6 @@
 <section class="qvo-shell" role="dialog" aria-modal="true" aria-label="Quantum Vibe Oracle">
   <canvas class="qvo-canvas" data-qvo-canvas></canvas>
+  <div class="qvo-story-orb" data-qvo-story-orb hidden></div>
 
   <div class="qvo-collapse" data-qvo-collapse>
     <div class="qvo-collapse-core"></div>
@@ -29,6 +30,15 @@
       <span>观测者效应</span>
       <meter min="0" max="100" value="8" data-qvo-observer-meter></meter>
       <small data-qvo-observer-copy>鼠标 / 触摸 / 可选生物信号会轻微扰动概率场。</small>
+      <div class="qvo-bio-visuals">
+        <div class="qvo-heart-cluster">
+          <span class="qvo-heartbeat-dot" data-qvo-heartbeat></span>
+          <span class="qvo-heartbeat-ring" data-qvo-heartbeat-ring></span>
+        </div>
+        <svg class="qvo-breath-wave" viewBox="0 0 220 48" preserveAspectRatio="none" aria-hidden="true">
+          <path data-qvo-breath-path d="M0,24 C20,24 30,10 50,10 C70,10 80,38 100,38 C120,38 130,10 150,10 C170,10 180,24 220,24"></path>
+        </svg>
+      </div>
       <div class="qvo-bio-readout">
         <span data-qvo-heart>心率 -- bpm</span>
         <span data-qvo-breath>呼吸 --%</span>
@@ -36,9 +46,11 @@
       </div>
       <div class="qvo-audio-actions">
         <button type="button" class="qvo-audio-button" data-qvo-audio-toggle>静音量子音景</button>
+        <button type="button" class="qvo-audio-button" data-qvo-flight-toggle>开启自由飞行</button>
       </div>
       <div class="qvo-bio-actions">
         <button type="button" class="qvo-bio-button" data-qvo-bio-enable>允许生物共振</button>
+        <button type="button" class="qvo-bio-button" data-qvo-save>保存当前量子状态</button>
       </div>
     </div>
   </aside>

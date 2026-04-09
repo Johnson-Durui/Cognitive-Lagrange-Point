@@ -83,9 +83,14 @@ function getDeviceProfile() {
   const lowPower = isSmall || isCoarse || memory <= 4 || cores <= 4 || pixelRatio > 2.2;
   return {
     lowPower,
-    particleBudget: lowPower ? 14000 : 42000,
+    particleBudget: lowPower ? 26000 : 40000,
     pixelRatio: Math.min(pixelRatio, lowPower ? 1.25 : 1.75),
   };
+}
+
+function easeOutCubic(value) {
+  const t = clamp(value, 0, 1);
+  return 1 - ((1 - t) ** 3);
 }
 
 function getDecisionId(data) {
@@ -149,6 +154,46 @@ function extractValidationMetrics(data) {
   };
 }
 
+function collectTimelineHighlights(choice, limit = 3) {
+  const timelines = choice?.timelines || {};
+  const scenarios = ['tailwind', 'steady', 'headwind'];
+  const lines = [];
+  scenarios.forEach((scenario) => {
+    const nodes = timelines?.[scenario]?.nodes || [];
+    nodes.slice(0, 2).forEach((node) => {
+      const text = compactText(node?.signal || node?.key_action || node?.external_state || node?.inner_feeling);
+      if (text) lines.push(`${node?.time || scenario}：${text}`);
+    });
+  });
+  return lines.slice(0, limit);
+}
+
+function buildUniverseStoryHighlights(data, key, fallbackLines = []) {
+  const simulator = data.simulator_output || {};
+  const choiceA = simulator.choice_a || {};
+  const choiceB = simulator.choice_b || {};
+  const thirdPath = simulator.third_path || data.engineb_session?.alternative_path || {};
+  const storyMap = {
+    A: [
+      ...collectTimelineHighlights(choiceA, 3),
+      ...listify(simulator.action_map_a, 2),
+      ...listify(simulator.crossroads, 1),
+    ],
+    B: [
+      ...collectTimelineHighlights(choiceB, 3),
+      ...listify(simulator.action_map_b, 2),
+      ...listify(simulator.final_insight, 1),
+    ],
+    C: [
+      ...listify(thirdPath, 3),
+      ...listify(simulator.worst_case_survival_plan, 2),
+      ...listify(simulator.market_signals, 1),
+    ],
+  };
+  const merged = [...storyMap[key], ...fallbackLines].filter(Boolean);
+  return Array.from(new Set(merged)).slice(0, 5);
+}
+
 function buildUniverseData(data, persistedState = {}) {
   const probabilities = extractProbabilities(data);
   const metrics = extractValidationMetrics(data);
@@ -184,6 +229,7 @@ function buildUniverseData(data, persistedState = {}) {
       ],
       valueLines,
       emotionLines,
+      storyHighlights: buildUniverseStoryHighlights(data, 'A', valueLines),
       seed: `${seedBase}:A`,
     },
     {
@@ -204,6 +250,7 @@ function buildUniverseData(data, persistedState = {}) {
       ],
       valueLines,
       emotionLines,
+      storyHighlights: buildUniverseStoryHighlights(data, 'B', emotionLines),
       seed: `${seedBase}:B`,
       recommended: true,
     },
@@ -225,6 +272,7 @@ function buildUniverseData(data, persistedState = {}) {
       ],
       valueLines,
       emotionLines,
+      storyHighlights: buildUniverseStoryHighlights(data, 'C', guardrails),
       seed: `${seedBase}:C`,
     },
   ];
@@ -280,8 +328,9 @@ async function loadTemplate() {
   return `
     <section class="qvo-shell" role="dialog" aria-modal="true" aria-label="Quantum Vibe Oracle">
       <canvas class="qvo-canvas" data-qvo-canvas></canvas>
+      <div class="qvo-story-orb" data-qvo-story-orb hidden></div>
       <header class="qvo-topbar"><div><div class="qvo-kicker">Quantum Vibe Oracle</div><h2>量子 vibe 预言机</h2><p data-qvo-question></p></div><div class="qvo-mode-switch"><button type="button" data-qvo-close>理性模式</button><button type="button" class="is-active" data-qvo-poetic>量子诗意模式</button></div></header>
-      <aside class="qvo-panel"><div class="qvo-panel-title">三条可漫游多宇宙</div><div class="qvo-universe-list" data-qvo-universe-list></div><div class="qvo-diary" data-qvo-diary></div><meter min="0" max="100" value="8" data-qvo-observer-meter></meter></aside>
+      <aside class="qvo-panel"><div class="qvo-panel-title">三条可漫游多宇宙</div><div class="qvo-universe-list" data-qvo-universe-list></div><div class="qvo-diary" data-qvo-diary></div><div class="qvo-observer"><meter min="0" max="100" value="8" data-qvo-observer-meter></meter><small data-qvo-observer-copy></small><div class="qvo-bio-visuals"><div class="qvo-heart-cluster"><span class="qvo-heartbeat-dot" data-qvo-heartbeat></span><span class="qvo-heartbeat-ring" data-qvo-heartbeat-ring></span></div><svg class="qvo-breath-wave" viewBox="0 0 220 48" preserveAspectRatio="none"><path data-qvo-breath-path d="M0,24 C20,24 30,10 50,10 C70,10 80,38 100,38 C120,38 130,10 150,10 C170,10 180,24 220,24"></path></svg></div><div class="qvo-bio-readout"><span data-qvo-heart></span><span data-qvo-breath></span><span data-qvo-hrv></span></div><div class="qvo-audio-actions"><button type="button" class="qvo-audio-button" data-qvo-audio-toggle>静音量子音景</button><button type="button" class="qvo-audio-button" data-qvo-flight-toggle>开启自由飞行</button></div><div class="qvo-bio-actions"><button type="button" class="qvo-bio-button" data-qvo-bio-enable>允许生物共振</button><button type="button" class="qvo-bio-button" data-qvo-save>保存当前量子状态</button></div></div></aside>
       <footer class="qvo-footer"><span data-qvo-renderer>Renderer: preparing…</span><span>拖拽旋转 · 滚轮缩放 · 点击宇宙卡片飞行</span></footer>
     </section>
   `;
@@ -308,6 +357,8 @@ function ensureStyles() {
     .qvo-panel::-webkit-scrollbar { width: 8px; }
     .qvo-panel::-webkit-scrollbar-thumb { background: rgba(243, 212, 134, 0.42); border-radius: 999px; }
     .qvo-panel::-webkit-scrollbar-track { background: rgba(255,255,255,0.05); border-radius: 999px; }
+    .qvo-story-orb[hidden] { display: none !important; }
+    .qvo-story-orb { position: absolute; z-index: 4; max-width: 280px; padding: 12px 14px; border-radius: 16px; background: rgba(7, 10, 29, 0.86); border: 1px solid rgba(243, 212, 134, 0.36); box-shadow: 0 18px 48px rgba(0, 0, 0, 0.34); color: rgba(248, 251, 255, 0.92); font-size: 12px; line-height: 1.55; pointer-events: none; transform: translate(-50%, -115%); backdrop-filter: blur(18px); }
     .qvo-universe-list { display: grid; gap: 10px; }
     .qvo-universe-button { width: 100%; max-width: 100%; border-radius: 18px; padding: 12px 13px; text-align: left; display: grid; gap: 6px; color: #f8fbff !important; background: rgba(255, 255, 255, 0.06) !important; }
     .qvo-universe-button strong { display: flex; justify-content: space-between; gap: 10px; font-size: 14px; }
@@ -318,6 +369,13 @@ function ensureStyles() {
     .qvo-diary p { margin: 0 0 8px; }
     .qvo-observer { display: grid; gap: 8px; color: rgba(246, 248, 255, 0.72); font-size: 12px; }
     .qvo-observer meter { width: 100%; height: 10px; }
+    .qvo-bio-visuals { display: grid; grid-template-columns: 48px 1fr; gap: 10px; align-items: center; }
+    .qvo-heart-cluster { position: relative; width: 42px; height: 42px; display: grid; place-items: center; }
+    .qvo-heartbeat-dot, .qvo-heartbeat-ring { position: absolute; inset: 0; border-radius: 50%; }
+    .qvo-heartbeat-dot { width: 16px; height: 16px; margin: auto; background: radial-gradient(circle, #fff2d1 0, #f26586 30%, #6426ff 100%); box-shadow: 0 0 18px rgba(242, 101, 134, 0.65); transform-origin: center; animation: qvo-heart-pulse 1.6s ease-in-out infinite; }
+    .qvo-heartbeat-ring { border: 1px solid rgba(242, 101, 134, 0.44); animation: qvo-heart-ring 1.6s ease-out infinite; }
+    .qvo-breath-wave { width: 100%; height: 42px; display: block; overflow: visible; }
+    .qvo-breath-wave path { fill: none; stroke: rgba(86, 231, 224, 0.9); stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; filter: drop-shadow(0 0 12px rgba(86, 231, 224, 0.36)); }
     .qvo-bio-actions, .qvo-audio-actions { display: flex; gap: 8px; flex-wrap: wrap; }
     .qvo-bio-button, .qvo-audio-button { flex: 1; min-width: 0; border-radius: 14px; padding: 9px 11px; font-size: 12px; color: #f8fbff !important; background: rgba(255, 255, 255, 0.06) !important; }
     .qvo-bio-readout { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
@@ -331,10 +389,13 @@ function ensureStyles() {
     .qvo-collapse-copy span { display: block; color: #f3d486; letter-spacing: 0.2em; font-size: 11px; text-transform: uppercase; }
     .qvo-collapse-copy strong { display: block; margin-top: 8px; font-size: clamp(16px, 3vw, 28px); font-weight: 600; }
     @keyframes qvo-collapse-core { 0% { transform: scale(4.2) rotate(0deg); opacity: 0.05; } 58% { transform: scale(0.68) rotate(220deg); opacity: 1; } 100% { transform: scale(1.24) rotate(360deg); opacity: 0; } }
+    @keyframes qvo-heart-pulse { 0%, 100% { transform: scale(0.92); } 30% { transform: scale(1.18); } 55% { transform: scale(0.98); } }
+    @keyframes qvo-heart-ring { 0% { transform: scale(0.6); opacity: 0.7; } 80% { transform: scale(1.28); opacity: 0; } 100% { opacity: 0; } }
     @media (max-width: 760px) {
       .qvo-topbar { top: 14px; left: 14px; right: 14px; flex-direction: column; }
       .qvo-topbar p { max-width: 100%; }
       .qvo-panel { left: 12px; right: 12px; top: auto; bottom: 72px; width: auto; max-height: 46vh; overflow: auto; border-radius: 20px; }
+      .qvo-story-orb { left: 50% !important; right: auto; bottom: 60vh; transform: translateX(-50%); max-width: calc(100vw - 36px); }
       .qvo-footer { left: 14px; right: 14px; bottom: 12px; flex-direction: column; gap: 4px; }
       .qvo-mode-switch button { padding: 9px 12px; }
     }
@@ -421,7 +482,7 @@ function makeLabelSprite(THREE, text, { color = '#ffffff', width = 640, height =
 function createQuantumParticleField(THREE, universe, { budget, collapseUniform, rendererType = 'WebGL' }) {
   const random = createSeededRandom(`${universe.seed}:luxury-particles`);
   const probability = clamp(universe.probability, 1, 95);
-  const count = Math.round(clamp(budget * (0.12 + probability / 100), budget * 0.12, budget * 0.62));
+  const count = Math.round(clamp(budget * (probability / 100), 1800, budget * 0.7));
   const positions = new Float32Array(count * 3);
   const seeds = new Float32Array(count);
   const scales = new Float32Array(count);
@@ -461,6 +522,7 @@ function createQuantumParticleField(THREE, universe, { budget, collapseUniform, 
     uColor: { value: color },
     uProbability: { value: probability / 100 },
     uPixelRatio: { value: Math.min(window.devicePixelRatio || 1, 1.75) },
+    uHighlight: { value: 0 },
   };
 
   const material = rendererType === 'WebGPU'
@@ -500,7 +562,7 @@ function createQuantumParticleField(THREE, universe, { budget, collapseUniform, 
         p *= mix(0.08, 1.0 + uObserver * 0.18, uCollapse);
         vec4 mvPosition = modelViewMatrix * vec4(p, 1.0);
         gl_Position = projectionMatrix * mvPosition;
-        gl_PointSize = aScale * (72.0 / max(0.35, -mvPosition.z)) * uPixelRatio * (0.72 + uProbability * 1.2) * mix(0.58, 1.05, flicker);
+        gl_PointSize = aScale * (72.0 / max(0.35, -mvPosition.z)) * uPixelRatio * (0.72 + uProbability * 1.2 + uHighlight * 0.4) * mix(0.58, 1.05, flicker);
         vPulse = 0.42 + 0.42 * waveA + 0.24 * flicker;
         vSeed = aSeed;
       }
@@ -509,6 +571,7 @@ function createQuantumParticleField(THREE, universe, { budget, collapseUniform, 
       uniform vec3 uColor;
       uniform float uObserver;
       uniform float uProbability;
+      uniform float uHighlight;
       varying float vPulse;
       varying float vSeed;
       void main() {
@@ -519,9 +582,9 @@ function createQuantumParticleField(THREE, universe, { budget, collapseUniform, 
         float halo = smoothstep(0.5, 0.18, dist) * 0.42;
         vec3 gold = vec3(1.0, 0.78, 0.34);
         vec3 cyan = vec3(0.18, 0.94, 0.92);
-        vec3 color = mix(uColor, gold, vSeed * 0.32);
+        vec3 color = mix(uColor, gold, vSeed * 0.32 + uHighlight * 0.14);
         color = mix(color, cyan, max(0.0, uObserver - 0.52) * 0.35);
-        float alpha = (core + halo) * (0.24 + uProbability * 0.84 + uObserver * 0.22) * clamp(vPulse, 0.24, 1.2);
+        float alpha = (core + halo) * (0.24 + uProbability * 0.84 + uObserver * 0.22 + uHighlight * 0.28) * clamp(vPulse, 0.24, 1.2);
         gl_FragColor = vec4(color, alpha);
       }
     `,
@@ -530,6 +593,8 @@ function createQuantumParticleField(THREE, universe, { budget, collapseUniform, 
   points.userData.quantumUniforms = uniforms;
   points.userData.spin = 0.1 + probability / 260;
   points.userData.baseProbability = probability;
+  points.userData.baseSize = 0.045 + probability / 2500;
+  points.userData.baseOpacity = 0.42 + probability / 180;
   return points;
 }
 
@@ -642,6 +707,7 @@ class QuantumAudioEngine {
     this.chimeTimer = 0;
     this.muted = false;
     this.mode = 'hopeful';
+    this.modeLayers = {};
   }
 
   async start() {
@@ -665,6 +731,7 @@ class QuantumAudioEngine {
     this.master.connect(this.context.destination);
     this.createHum();
     this.createWind();
+    this.createModeLayers();
     this.scheduleChimes();
     await this.context.resume?.();
   }
@@ -715,6 +782,25 @@ class QuantumAudioEngine {
     this.windSource.start();
   }
 
+  createModeLayers() {
+    const configs = {
+      stable: { type: 'sine', freq: 110, gain: 0.045 },
+      hopeful: { type: 'triangle', freq: 147, gain: 0.055 },
+      ethereal: { type: 'sine', freq: 294, gain: 0.038 },
+    };
+    Object.entries(configs).forEach(([key, config]) => {
+      const oscillator = this.context.createOscillator();
+      const gain = this.context.createGain();
+      oscillator.type = config.type;
+      oscillator.frequency.value = config.freq;
+      gain.gain.value = 0.0001;
+      oscillator.connect(gain);
+      gain.connect(this.filter);
+      oscillator.start();
+      this.modeLayers[key] = { oscillator, gain, baseGain: config.gain, baseFreq: config.freq };
+    });
+  }
+
   scheduleChimes() {
     const play = () => {
       if (!this.context || this.muted) return;
@@ -751,6 +837,9 @@ class QuantumAudioEngine {
     this.humOscillators.forEach((item, index) => {
       item.oscillator.frequency.linearRampToValueAtTime(item.baseFrequency * config.ratios[index], now + 0.8);
     });
+    Object.entries(this.modeLayers).forEach(([key, layer]) => {
+      layer.gain.gain.linearRampToValueAtTime(key === this.mode && !this.muted ? layer.baseGain : 0.0001, now + 0.9);
+    });
   }
 
   applyBioFeedback({ breath = 0.5, heartRate = 70, calmness = 0.5 } = {}) {
@@ -765,17 +854,25 @@ class QuantumAudioEngine {
       item.oscillator.detune.linearRampToValueAtTime((heartFactor - calmFactor) * 18 + index * breathFactor * 4, now + 0.18);
     });
     if (this.windGain) this.windGain.gain.linearRampToValueAtTime(0.035 + breathFactor * 0.08, now + 0.18);
+    Object.values(this.modeLayers).forEach((layer, index) => {
+      layer.oscillator.detune.linearRampToValueAtTime((calmFactor - heartFactor) * 32 + breathFactor * (index + 1) * 9, now + 0.18);
+      layer.gain.gain.linearRampToValueAtTime(this.muted ? 0.0001 : clamp(layer.baseGain * (0.72 + calmFactor * 0.42 - heartFactor * 0.16), 0.0001, 0.12), now + 0.18);
+    });
   }
 
   setMuted(muted) {
     this.muted = Boolean(muted);
     if (!this.context || !this.master) return;
     this.master.gain.linearRampToValueAtTime(this.muted ? 0 : 0.18, this.context.currentTime + 0.2);
+    Object.values(this.modeLayers).forEach((layer) => {
+      layer.gain.gain.linearRampToValueAtTime(this.muted ? 0.0001 : layer.baseGain, this.context.currentTime + 0.2);
+    });
   }
 
   stop() {
     window.clearInterval(this.chimeTimer);
     this.humOscillators.forEach((item) => item.oscillator.stop?.());
+    Object.values(this.modeLayers).forEach((layer) => layer.oscillator.stop?.());
     this.windSource?.stop?.();
     this.context?.close?.();
     this.context = null;
@@ -939,8 +1036,14 @@ class QuantumVibeOracle {
     this.bioFeedback = null;
     this.saveTimer = 0;
     this.hoveredUniverseId = '';
+    this.freeFlightEnabled = false;
+    this.keyState = {};
+    this.pointerLook = { yaw: 0, pitch: 0 };
+    this.pointerState = { lastX: 0, lastY: 0 };
     this.onPointerMove = this.onPointerMove.bind(this);
     this.onBioSignal = this.onBioSignal.bind(this);
+    this.onKeyDown = this.onKeyDown.bind(this);
+    this.onKeyUp = this.onKeyUp.bind(this);
   }
 
   async mount() {
@@ -954,6 +1057,7 @@ class QuantumVibeOracle {
     this.root.querySelector('[data-qvo-question]').textContent = this.data.question || '当前决策';
     this.renderUniverseButtons();
     this.bindUi();
+    this.updateObserverMeter();
     await this.audio.start();
     await this.setupThree();
     this.audio.setUniverseMode(this.getActiveUniverse()?.soundMode || 'hopeful');
@@ -965,9 +1069,13 @@ class QuantumVibeOracle {
     this.root.querySelector('[data-qvo-close]')?.addEventListener('click', () => this.close());
     this.root.querySelector('[data-qvo-poetic]')?.addEventListener('click', () => showToast('量子诗意模式已开启：继续在宇宙里观测你的选择。', 'info', 1800));
     this.root.querySelector('[data-qvo-audio-toggle]')?.addEventListener('click', (event) => this.toggleAudio(event.currentTarget));
+    this.root.querySelector('[data-qvo-flight-toggle]')?.addEventListener('click', (event) => this.toggleFreeFlight(event.currentTarget));
     this.root.querySelector('[data-qvo-bio-enable]')?.addEventListener('click', () => this.enableBioFeedback());
+    this.root.querySelector('[data-qvo-save]')?.addEventListener('click', () => this.saveCurrentQuantumState());
     window.addEventListener('pointermove', this.onPointerMove, { passive: true });
     window.addEventListener('clp:observer-bio-signal', this.onBioSignal);
+    window.addEventListener('keydown', this.onKeyDown);
+    window.addEventListener('keyup', this.onKeyUp);
     this.saveTimer = window.setInterval(() => this.saveState({ heartbeatAt: new Date().toISOString() }), 8000);
   }
 
@@ -991,7 +1099,10 @@ class QuantumVibeOracle {
     if (diary && universe) {
       const values = universe.valueLines.length ? `<br><br>价值锚点：${escapeHtml(universe.valueLines.join(' / '))}` : '';
       const emotion = universe.emotionLines.length ? `<br>情绪镜像：${escapeHtml(universe.emotionLines.join(' / '))}` : '';
-      diary.innerHTML = universe.diary.map((line) => `<p>${escapeHtml(line)}</p>`).join('') + values + emotion;
+      const story = universe.storyHighlights?.length
+        ? `<br><br><strong>平行自我日记</strong>${universe.storyHighlights.map((line) => `<p>${escapeHtml(line)}</p>`).join('')}`
+        : '';
+      diary.innerHTML = universe.diary.map((line) => `<p>${escapeHtml(line)}</p>`).join('') + story + values + emotion;
     }
     this.root.querySelectorAll('[data-qvo-universe]').forEach((button) => {
       button.classList.toggle('is-active', button.dataset.qvoUniverse === this.activeUniverseId);
@@ -1080,7 +1191,7 @@ class QuantumVibeOracle {
   addUniverses() {
     const THREE = this.THREE;
     this.universeGroups = this.universes.map((universe) => createUniverseGroup(THREE, universe, {
-      budget: this.device.particleBudget / 3,
+      budget: this.device.particleBudget,
       collapseUniform: this.collapseUniform,
       rendererType: this.rendererType,
     }));
@@ -1096,7 +1207,8 @@ class QuantumVibeOracle {
     const THREE = this.THREE;
     if (!THREE || !this.camera) return;
     const target = new THREE.Vector3(...universe.position);
-    this.flightTarget = { position: target.clone().add(new THREE.Vector3(0, 2.6, 5.4)), lookAt: target };
+    const closeIn = this.freeFlightEnabled ? new THREE.Vector3(0, 1.55, 2.45) : new THREE.Vector3(0, 2.6, 5.4);
+    this.flightTarget = { position: target.clone().add(closeIn), lookAt: target };
     if (instant) {
       this.camera.position.copy(this.flightTarget.position);
       this.controls.target.copy(this.flightTarget.lookAt);
@@ -1108,6 +1220,28 @@ class QuantumVibeOracle {
   toggleAudio(button) {
     this.audio.setMuted(!this.audio.muted);
     if (button) button.textContent = this.audio.muted ? '开启量子音景' : '静音量子音景';
+  }
+
+  toggleFreeFlight(button) {
+    this.freeFlightEnabled = !this.freeFlightEnabled;
+    this.controls.enablePan = !this.freeFlightEnabled;
+    this.controls.autoRotate = !this.freeFlightEnabled;
+    if (button) button.textContent = this.freeFlightEnabled ? '退出自由飞行' : '开启自由飞行';
+    showToast(this.freeFlightEnabled ? '自由飞行已开启：WASD / QE / Shift 可穿梭量子宇宙。' : '已回到轨道漫游模式。', 'info', 2200);
+  }
+
+  async saveCurrentQuantumState() {
+    await this.saveState({ savedManuallyAt: new Date().toISOString() });
+    showToast('当前量子状态已保存。', 'success', 2200);
+  }
+
+  onKeyDown(event) {
+    if (!this.freeFlightEnabled) return;
+    this.keyState[event.key.toLowerCase()] = true;
+  }
+
+  onKeyUp(event) {
+    delete this.keyState[event.key.toLowerCase()];
   }
 
   async enableBioFeedback() {
@@ -1137,6 +1271,14 @@ class QuantumVibeOracle {
     const centerY = window.innerHeight / 2;
     const distance = Math.hypot(event.clientX - centerX, event.clientY - centerY);
     this.observerEnergy = clamp(8 + (distance / Math.max(window.innerWidth, window.innerHeight)) * 80, 5, 96);
+    if (this.freeFlightEnabled && event.buttons) {
+      const dx = event.clientX - this.pointerState.lastX;
+      const dy = event.clientY - this.pointerState.lastY;
+      this.pointerLook.yaw -= dx * 0.0025;
+      this.pointerLook.pitch = clamp(this.pointerLook.pitch - dy * 0.002, -1.1, 1.1);
+    }
+    this.pointerState.lastX = event.clientX;
+    this.pointerState.lastY = event.clientY;
     this.updateObserverMeter();
     this.detectHoveredUniverse(event.clientX, event.clientY);
   }
@@ -1159,6 +1301,27 @@ class QuantumVibeOracle {
       const burst = new THREE.Vector3(...best.group.userData.universe.position);
       this.controls.target.lerp(burst, 0.12);
     }
+    if (best?.group?.userData?.universe) {
+      this.showStoryOrb(best.group.userData.universe, clientX, clientY);
+    } else {
+      this.hideStoryOrb();
+    }
+  }
+
+  showStoryOrb(universe, x, y) {
+    const orb = this.root?.querySelector('[data-qvo-story-orb]');
+    if (!orb || !universe) return;
+    const story = universe.storyHighlights?.[0] || universe.diary?.[0] || '平行时间线正在展开。';
+    orb.hidden = false;
+    orb.innerHTML = `<strong>${escapeHtml(universe.shortTitle)} · ${Math.round(universe.probability)}%</strong><div>${escapeHtml(story)}</div>`;
+    orb.style.left = `${x}px`;
+    orb.style.top = `${y}px`;
+  }
+
+  hideStoryOrb() {
+    const orb = this.root?.querySelector('[data-qvo-story-orb]');
+    if (!orb) return;
+    orb.hidden = true;
   }
 
   onBioSignal(event) {
@@ -1184,26 +1347,39 @@ class QuantumVibeOracle {
     const heart = this.root?.querySelector('[data-qvo-heart]');
     const breath = this.root?.querySelector('[data-qvo-breath]');
     const hrv = this.root?.querySelector('[data-qvo-hrv]');
+    const heartDot = this.root?.querySelector('[data-qvo-heartbeat]');
+    const heartRing = this.root?.querySelector('[data-qvo-heartbeat-ring]');
+    const breathPath = this.root?.querySelector('[data-qvo-breath-path]');
     if (heart) heart.textContent = `心率 ${Math.round(this.bioSignal.heartRate)} bpm`;
     if (breath) breath.textContent = `呼吸 ${Math.round(this.bioSignal.breath * 100)}%`;
     if (hrv) hrv.textContent = `HRV ${Math.round(this.bioSignal.hrv * 100)}%`;
+    if (heartDot) heartDot.style.animationDuration = `${clamp(1.45 - (this.bioSignal.heartRate - 60) / 180, 0.55, 1.6)}s`;
+    if (heartRing) heartRing.style.animationDuration = `${clamp(1.45 - (this.bioSignal.heartRate - 60) / 180, 0.55, 1.6)}s`;
+    if (breathPath) {
+      const amp = 6 + this.bioSignal.breath * 14;
+      const calm = 24 - this.bioSignal.calmness * 7;
+      breathPath.setAttribute('d', `M0,24 C20,24 30,${24 - amp} 50,${24 - amp} C70,${24 - amp} 80,${24 + amp} 100,${24 + amp} C120,${24 + amp} 130,${calm - amp * 0.4} 150,${calm - amp * 0.4} C170,${calm - amp * 0.4} 180,24 220,24`);
+    }
   }
 
   animate() {
     const time = (performance.now() - this.startedAt) / 1000;
     this.raf = requestAnimationFrame(() => this.animate());
-    this.collapseUniform.value = clamp(time / 2.8, 0, 1);
+    const collapse = easeOutCubic(time / 2.4);
+    this.collapseUniform.value = clamp(collapse, 0, 1);
     if (this.nebula) {
       this.nebula.rotation.y += 0.0009 + this.bioSignal.breath * 0.0008;
       this.nebula.rotation.x = Math.sin(time * 0.12) * 0.04;
     }
     const observerPulse = 1 + this.observerEnergy / 750;
     this.universeGroups?.forEach((group, index) => {
+      const targetPosition = group.userData.universe?.position || [0, 0, 0];
       const isActive = group.userData.universe?.id === this.activeUniverseId;
       const isHovered = group.userData.universe?.id === this.hoveredUniverseId;
       const bioBoost = group.userData.universe?.recommended ? this.bioSignal.calmness * 0.28 : 0;
+      group.position.lerp(new this.THREE.Vector3(...targetPosition).multiplyScalar(collapse), 0.08);
       group.rotation.y += (0.002 + (group.userData.universe?.probability || 30) / 50000) * observerPulse;
-      group.scale.lerp(new this.THREE.Vector3(1, 1, 1).multiplyScalar(isActive || isHovered ? 1.08 + bioBoost : 1), 0.04);
+      group.scale.lerp(new this.THREE.Vector3(1, 1, 1).multiplyScalar((isActive || isHovered ? 1.08 + bioBoost : 1) * (0.72 + collapse * 0.32)), 0.04);
       group.children.forEach((child) => {
         if (child.userData?.waveSpeed) {
           const pulse = 1 + Math.sin(time * child.userData.waveSpeed + index) * 0.035 * observerPulse;
@@ -1217,10 +1393,41 @@ class QuantumVibeOracle {
             uniforms.uTime.value = time;
             uniforms.uObserver.value = clamp(this.observerEnergy / 100 + bioBoost, 0, 1.35);
             uniforms.uPixelRatio.value = this.device.pixelRatio;
+            uniforms.uHighlight.value = isHovered ? 1 : (isActive ? 0.4 : 0);
+          } else {
+            child.material.size = child.userData.baseSize * (isHovered ? 1.38 : (isActive ? 1.14 : 1));
+            child.material.opacity = child.userData.baseOpacity * (isHovered ? 1.28 : 1);
           }
         }
       });
     });
+    if (this.freeFlightEnabled && this.camera) {
+      const forward = new this.THREE.Vector3();
+      this.camera.getWorldDirection(forward);
+      const right = new this.THREE.Vector3().crossVectors(forward, new this.THREE.Vector3(0, 1, 0)).normalize();
+      const up = new this.THREE.Vector3(0, 1, 0);
+      const velocity = new this.THREE.Vector3();
+      const speed = (this.keyState.shift ? 0.32 : 0.16) * (0.55 + this.bioSignal.calmness * 0.6);
+      if (this.keyState.w) velocity.add(forward);
+      if (this.keyState.s) velocity.sub(forward);
+      if (this.keyState.a) velocity.sub(right);
+      if (this.keyState.d) velocity.add(right);
+      if (this.keyState.q) velocity.sub(up);
+      if (this.keyState.e) velocity.add(up);
+      if (velocity.lengthSq() > 0) {
+        velocity.normalize().multiplyScalar(speed);
+        this.camera.position.add(velocity);
+        this.controls.target.add(velocity);
+      }
+      const lookDirection = new this.THREE.Vector3(
+        Math.sin(this.pointerLook.yaw) * Math.cos(this.pointerLook.pitch),
+        Math.sin(this.pointerLook.pitch),
+        Math.cos(this.pointerLook.yaw) * Math.cos(this.pointerLook.pitch),
+      );
+      if (lookDirection.lengthSq() > 0.0001) {
+        this.controls.target.copy(this.camera.position.clone().add(lookDirection.multiplyScalar(4.2)));
+      }
+    }
     if (this.flightTarget) {
       this.camera.position.lerp(this.flightTarget.position, 0.045);
       this.controls.target.lerp(this.flightTarget.lookAt, 0.06);
@@ -1233,8 +1440,9 @@ class QuantumVibeOracle {
   }
 
   playCollapse() {
-    window.setTimeout(() => this.root?.querySelector('[data-qvo-collapse]')?.classList.add('is-done'), 2200);
-    window.setTimeout(() => this.root?.querySelector('[data-qvo-collapse]')?.remove(), 3400);
+    this.universeGroups?.forEach((group) => group.position.set(0, 0, 0));
+    window.setTimeout(() => this.root?.querySelector('[data-qvo-collapse]')?.classList.add('is-done'), 2400);
+    window.setTimeout(() => this.root?.querySelector('[data-qvo-collapse]')?.remove(), 3600);
   }
 
   resize() {
@@ -1278,6 +1486,8 @@ class QuantumVibeOracle {
     if (this.saveTimer) window.clearInterval(this.saveTimer);
     window.removeEventListener('pointermove', this.onPointerMove);
     window.removeEventListener('clp:observer-bio-signal', this.onBioSignal);
+    window.removeEventListener('keydown', this.onKeyDown);
+    window.removeEventListener('keyup', this.onKeyUp);
     this.bioFeedback?.stop();
     this.audio.stop();
     this.controls?.dispose?.();
