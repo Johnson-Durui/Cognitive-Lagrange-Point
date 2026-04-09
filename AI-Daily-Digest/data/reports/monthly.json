@@ -1,0 +1,610 @@
+{
+  "label": "月报",
+  "window_days": 30,
+  "generated_at": "2026-04-09T19:50:26.660483+08:00",
+  "count": 26,
+  "summary": "近 30 天里，最集中的主题是 RAG、智能体、编码。",
+  "top_items": [
+    {
+      "id": "arxiv::http://arxiv.org/abs/2604.07338v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Appear2Meaning: A Cross-Cultural Benchmark for Structured Cultural Metadata Inference from Images",
+      "html_url": "http://arxiv.org/abs/2604.07338v1",
+      "pdf_url": "https://arxiv.org/pdf/2604.07338v1",
+      "description": "Recent advances in vision-language models (VLMs) have improved image captioning for cultural heritage. However, inferring structured cultural metadata (e.g., creator, origin, period) from visual input remains underexplored. We introduce a multi-category, cross-cultural benchmark for this task and evaluate VLMs using an LLM-as-Judge framework that measures semantic alignment with reference annotations. To assess cultural reasoning, we report exact-match, partial-match, and attribute-level accuracy across cultural regions. Results show that models capture fragmented signals and exhibit substantial performance variation across cultures and metadata types, leading to inconsistent and weakly grounded predictions. These findings highlight the limitations of current VLMs in structured cultural metadata inference beyond visual perception.",
+      "authors": [
+        "Yuechen Jiang",
+        "Enze Zhang",
+        "Md Mohsinul Kabir",
+        "Qianqian Xie",
+        "Stavroula Golfomitsou",
+        "Konstantinos Arvanitis",
+        "Sophia Ananiadou"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.CL",
+        "cs.MM"
+      ],
+      "published_at": "2026-04-08T17:53:26+00:00",
+      "updated_at": "2026-04-08T17:53:26+00:00",
+      "primary_category": "cs.CV",
+      "heuristic_score": 19.352,
+      "summary": "Appear2Meaning: A Cross-Cultural Benchmark for Structured Cultural Metadata Inference from Images 是最近值得追踪的一篇 AI 论文。论文摘要显示：Recent advances in vision-language models (VLMs) have improved image captioning for cultural heritage. However, inferring structured cultural metadata (e.g., creator, origin, period) from visual input remains underexplored. We introduce a m...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CV, cs.CL",
+        "作者数: 7"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "llm",
+        "rag",
+        "model"
+      ],
+      "summary_markdown": "**摘要**：Appear2Meaning: A Cross-Cultural Benchmark for Structured Cultural Metadata Inference from Images 是最近值得追踪的一篇 AI 论文。论文摘要显示：Recent advances in vision-language models (VLMs) have improved image captioning for cultural heritage. However, inferring structured cultural metadata (e.g., creator, origin, period) from visual input remains underexplored. We introduce a m...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV, cs.CL\n- 作者数: 7",
+      "detail_path": "items/arxiv-appear2meaning-a-cross-cultural-benchmark-for-structured-cultural-metadata-inference-from-.html",
+      "first_seen_at": "2026-04-09T09:24:46.894274+00:00",
+      "last_seen_at": "2026-04-09T11:52:43.203856+00:00",
+      "last_curated_at": "2026-04-09T11:52:43.203856+00:00",
+      "last_notified_at": "2026-04-09T11:52:43.203830+00:00",
+      "focus_hits": [
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        },
+        {
+          "keyword": "inference",
+          "weight": 1.8
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "reasoning",
+      "personalized_score": 188.0,
+      "selection_reason": "它和你关注的 reasoning 方向重合度高，适合放进今天的论文精读候选。",
+      "themes": [
+        "编码",
+        "RAG",
+        "推理"
+      ]
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2604.07274v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "A Systematic Study of Retrieval Pipeline Design for Retrieval-Augmented Medical Question Answering",
+      "html_url": "http://arxiv.org/abs/2604.07274v1",
+      "pdf_url": "https://arxiv.org/pdf/2604.07274v1",
+      "description": "Large language models (LLMs) have demonstrated strong capabilities in medical question answering; however, purely parametric models often suffer from knowledge gaps and limited factual grounding. Retrieval-augmented generation (RAG) addresses this limitation by integrating external knowledge retrieval into the reasoning process. Despite increasing interest in RAG-based medical systems, the impact of individual retrieval components on performance remains insufficiently understood. This study presents a systematic evaluation of retrieval-augmented medical question answering using the MedQA USMLE benchmark and a structured textbook-based knowledge corpus. We analyze the interaction between language models, embedding models, retrieval strategies, query reformulation, and cross-encoder reranking within a unified experimental framework comprising forty configurations. Results show that retrieval augmentation significantly improves zero-shot medical question answering performance. The best-performing configuration was dense retrieval with query reformulation and reranking achieved 60.49% accuracy. Domain-specialized language models were also found to better utilize retrieved medical evidence than general-purpose models. The analysis further reveals a clear tradeoff between retrieval effectiveness and computational cost, with simpler dense retrieval configurations providing strong performance while maintaining higher throughput. All experiments were conducted on a single consumer-grade GPU, demonstrating that systematic evaluation of retrieval-augmented medical QA systems can be performed under modest computational resources.",
+      "authors": [
+        "Nusrat Sultana",
+        "Abdullah Muhammad Moosa",
+        "Kazi Afzalur Rahman",
+        "Sajal Chandra Banik"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "published_at": "2026-04-08T16:37:22+00:00",
+      "updated_at": "2026-04-08T16:37:22+00:00",
+      "primary_category": "cs.CL",
+      "heuristic_score": 17.9,
+      "summary": "A Systematic Study of Retrieval Pipeline Design for Retrieval-Augmented Medical Question Answering 是最近值得追踪的一篇 AI 论文。论文摘要显示：Large language models (LLMs) have demonstrated strong capabilities in medical question answering; however, purely parametric models often suffer from knowledge gaps and limited factual grounding. Retrieval-augmented generation (RAG) address...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CL, cs.AI",
+        "作者数: 4"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "llm",
+        "rag",
+        "model"
+      ],
+      "summary_markdown": "**摘要**：A Systematic Study of Retrieval Pipeline Design for Retrieval-Augmented Medical Question Answering 是最近值得追踪的一篇 AI 论文。论文摘要显示：Large language models (LLMs) have demonstrated strong capabilities in medical question answering; however, purely parametric models often suffer from knowledge gaps and limited factual grounding. Retrieval-augmented generation (RAG) address...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL, cs.AI\n- 作者数: 4",
+      "detail_path": "items/arxiv-a-systematic-study-of-retrieval-pipeline-design-for-retrieval-augmented-medical-question-a.html",
+      "first_seen_at": "2026-04-09T09:24:46.894274+00:00",
+      "last_seen_at": "2026-04-09T11:52:43.203856+00:00",
+      "last_curated_at": "2026-04-09T11:52:43.203856+00:00",
+      "last_notified_at": "2026-04-09T11:52:43.203830+00:00",
+      "focus_hits": [
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "reasoning",
+      "personalized_score": 170.0,
+      "selection_reason": "它和你关注的 reasoning 方向重合度高，适合放进今天的论文精读候选。",
+      "themes": [
+        "编码",
+        "RAG",
+        "推理"
+      ]
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2604.07348v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "MoRight: Motion Control Done Right",
+      "html_url": "http://arxiv.org/abs/2604.07348v1",
+      "pdf_url": "https://arxiv.org/pdf/2604.07348v1",
+      "description": "Generating motion-controlled videos--where user-specified actions drive physically plausible scene dynamics under freely chosen viewpoints--demands two capabilities: (1) disentangled motion control, allowing users to separately control the object motion and adjust camera viewpoint; and (2) motion causality, ensuring that user-driven actions trigger coherent reactions from other objects rather than merely displacing pixels. Existing methods fall short on both fronts: they entangle camera and object motion into a single tracking signal and treat motion as kinematic displacement without modeling causal relationships between object motion. We introduce MoRight, a unified framework that addresses both limitations through disentangled motion modeling. Object motion is specified in a canonical static-view and transferred to an arbitrary target camera viewpoint via temporal cross-view attention, enabling disentangled camera and object control. We further decompose motion into active (user-driven) and passive (consequence) components, training the model to learn motion causality from data. At inference, users can either supply active motion and MoRight predicts consequences (forward reasoning), or specify desired passive outcomes and MoRight recovers plausible driving actions (inverse reasoning), all while freely adjusting the camera viewpoint. Experiments on three benchmarks demonstrate state-of-the-art performance in generation quality, motion controllability, and interaction awareness.",
+      "authors": [
+        "Shaowei Liu",
+        "Xuanchi Ren",
+        "Tianchang Shen",
+        "Huan Ling",
+        "Saurabh Gupta",
+        "Shenlong Wang",
+        "Sanja Fidler",
+        "Jun Gao"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.GR",
+        "cs.LG",
+        "cs.RO"
+      ],
+      "published_at": "2026-04-08T17:59:22+00:00",
+      "updated_at": "2026-04-08T17:59:22+00:00",
+      "primary_category": "cs.CV",
+      "heuristic_score": 17.78,
+      "summary": "MoRight: Motion Control Done Right 是最近值得追踪的一篇 AI 论文。论文摘要显示：Generating motion-controlled videos--where user-specified actions drive physically plausible scene dynamics under freely chosen viewpoints--demands two capabilities: (1) disentangled motion control, allowing users to separately control the ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CV, cs.AI",
+        "作者数: 8"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "model",
+        "benchmark",
+        "inference"
+      ],
+      "summary_markdown": "**摘要**：MoRight: Motion Control Done Right 是最近值得追踪的一篇 AI 论文。论文摘要显示：Generating motion-controlled videos--where user-specified actions drive physically plausible scene dynamics under freely chosen viewpoints--demands two capabilities: (1) disentangled motion control, allowing users to separately control the ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV, cs.AI\n- 作者数: 8",
+      "detail_path": "items/arxiv-moright-motion-control-done-right.html",
+      "first_seen_at": "2026-04-09T09:24:46.894274+00:00",
+      "last_seen_at": "2026-04-09T11:52:43.203856+00:00",
+      "last_curated_at": "2026-04-09T11:52:43.203856+00:00",
+      "last_notified_at": "2026-04-09T11:52:43.203830+00:00",
+      "focus_hits": [
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "inference",
+          "weight": 1.8
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "reasoning",
+      "personalized_score": 166.0,
+      "selection_reason": "它和你关注的 reasoning 方向重合度高，适合放进今天的论文精读候选。",
+      "themes": [
+        "推理",
+        "多模态",
+        "机器人"
+      ]
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2604.07304v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Chatbot-Based Assessment of Code Understanding in Automated Programming Assessment Systems",
+      "html_url": "http://arxiv.org/abs/2604.07304v1",
+      "pdf_url": "https://arxiv.org/pdf/2604.07304v1",
+      "description": "Large Language Models (LLMs) challenge conventional automated programming assessment because students can now produce functionally correct code without demonstrating corresponding understanding. This paper makes two contributions. First, it reports a saturation-based scoping review of conversational assessment approaches in programming education. The review identifies three dominant architectural families: rule-based or template-driven systems, LLM-based systems, and hybrid systems. Across the literature, conversational agents appear promising for scalable feedback and deeper probing of code understanding, but important limitations remain around hallucinations, over-reliance, privacy, integrity, and deployment constraints. Second, the paper synthesizes these findings into a Hybrid Socratic Framework for integrating conversational verification into Automated Programming Assessment Systems (APASs). The framework combines deterministic code analysis with a dual-agent conversational layer, knowledge tracking, scaffolded questioning, and guardrails that tie prompts to runtime facts. The paper also discusses practical safeguards against LLM-generated explanations, including proctored deployment modes, randomized trace questions, stepwise reasoning tied to concrete execution states, and local-model deployment options for privacy-sensitive settings. Rather than replacing conventional testing, the framework is intended as a complementary layer for verifying whether students understand the code they submit.",
+      "authors": [
+        "Eduard Frankford",
+        "Erik Cikalleshi",
+        "Ruth Breu"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "published_at": "2026-04-08T17:11:30+00:00",
+      "updated_at": "2026-04-08T17:11:30+00:00",
+      "primary_category": "cs.SE",
+      "heuristic_score": 13.902,
+      "summary": "这篇论文针对LLM时代学生可轻松生成正确代码却缺乏理解的问题，提出混合苏格拉底框架，将确定性代码分析与双代理对话层结合，用于自动化编程评估系统（APAS）。框架通过知识追踪、脚手式提问和基于运行时事实的护栏，提升代码理解验证的准确性和可扩展性。同时讨论了幻觉、隐私等实际防护措施，作为传统测试的补充层。",
+      "brief": "LLM时代编程评估新框架：混合苏格拉底对话验证学生代码理解，避免作弊隐患。",
+      "problem": "LLM让学生能生成正确代码却无真正理解，挑战传统自动化编程评估的有效性。",
+      "why_it_matters": "AI时代编程教育急需防作弊工具，此框架提供可落地验证方案，提升评估公平性。",
+      "target_reader": "编程教育从业者、AI教育工具开发者、在线课程平台。",
+      "core_innovation": "Hybrid Socratic Framework：双代理对话+知识追踪+运行时护栏，结合确定性分析防LLM幻觉。",
+      "highlights": [
+        "识别三种对话评估架构：规则基、LLM基、混合基。",
+        "实用防护：监考模式、随机追踪题、本地模型部署保隐私。"
+      ],
+      "practicality": "高落地潜力，支持本地部署和现有APAS集成，解决隐私与诚信痛点。",
+      "relevance_score": 9,
+      "tags": [
+        "LLM",
+        "教育AI",
+        "编程评估"
+      ],
+      "themes": [
+        "智能体",
+        "推理",
+        "RAG"
+      ],
+      "selection_reason": "契合用户关注LLM、agent、reasoning关键词，核心创新与教育落地潜力强，值得每日重点关注。",
+      "summary_markdown": "**摘要**：这篇论文针对LLM时代学生可轻松生成正确代码却缺乏理解的问题，提出混合苏格拉底框架，将确定性代码分析与双代理对话层结合，用于自动化编程评估系统（APAS）。框架通过知识追踪、脚手式提问和基于运行时事实的护栏，提升代码理解验证的准确性和可扩展性。同时讨论了幻觉、隐私等实际防护措施，作为传统测试的补充层。\n\n**核心创新**：Hybrid Socratic Framework：双代理对话+知识追踪+运行时护栏，结合确定性分析防LLM幻觉。\n\n**实用性**：高落地潜力，支持本地部署和现有APAS集成，解决隐私与诚信痛点。\n\n**相关性评分**：9/10\n\n**亮点**：\n- 识别三种对话评估架构：规则基、LLM基、混合基。\n- 实用防护：监考模式、随机追踪题、本地模型部署保隐私。",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 166.0,
+      "detail_path": "items/arxiv-chatbot-based-assessment-of-code-understanding-in-automated-programming-assessment-systems.html",
+      "first_seen_at": "2026-04-09T11:50:14.780111+00:00",
+      "last_seen_at": "2026-04-09T11:52:43.203856+00:00",
+      "last_curated_at": "2026-04-09T11:52:43.203856+00:00",
+      "last_notified_at": "2026-04-09T11:52:43.203830+00:00"
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2604.07277v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Android Coach: Improve Online Agentic Training Efficiency with Single State Multiple Actions",
+      "html_url": "http://arxiv.org/abs/2604.07277v1",
+      "pdf_url": "https://arxiv.org/pdf/2604.07277v1",
+      "description": "Online reinforcement learning (RL) serves as an effective method for enhancing the capabilities of Android agents. However, guiding agents to learn through online interaction is prohibitively expensive due to the high latency of emulators and the sample inefficiency of existing RL algorithms. We identify a fundamental limitation in current approaches: the Single State Single Action paradigm, which updates the policy with one-to-one state-action pairs from online one-way rollouts without fully exploring each costly emulator state. In this paper, we propose Android Coach, a novel framework that shifts the training paradigm to Single State Multiple Actions, allowing the agent to sample and utilize multiple actions for a single online state. We enable this without additional emulator overhead by learning a critic that estimates action values. To ensure the critic serves as a reliable coach, we integrate a process reward model and introduce a group-wise advantage estimator based on the averaged critic outputs. Extensive experiments demonstrate the effectiveness and efficiency of Android Coach: it achieves 7.5% and 8.3% success rate improvements on AndroidLab and AndroidWorld over UI-TARS-1.5-7B, and attains 1.4x higher training efficiency than Single State Single Action methods PPO and GRPO at matched success rates.",
+      "authors": [
+        "Guo Gan",
+        "Yuxuan Ding",
+        "Cong Chen",
+        "Yuwei Ren",
+        "Yin Huang",
+        "Hong Zhou"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "published_at": "2026-04-08T16:40:26+00:00",
+      "updated_at": "2026-04-08T16:40:26+00:00",
+      "primary_category": "cs.LG",
+      "heuristic_score": 17.565,
+      "summary": "Android Coach: Improve Online Agentic Training Efficiency with Single State Multiple Actions 是最近值得追踪的一篇 AI 论文。论文摘要显示：Online reinforcement learning (RL) serves as an effective method for enhancing the capabilities of Android agents. However, guiding agents to learn through online interaction is prohibitively expensive due to the high latency of emulators a...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.LG, cs.AI",
+        "作者数: 6"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "agent",
+        "rag",
+        "model"
+      ],
+      "summary_markdown": "**摘要**：Android Coach: Improve Online Agentic Training Efficiency with Single State Multiple Actions 是最近值得追踪的一篇 AI 论文。论文摘要显示：Online reinforcement learning (RL) serves as an effective method for enhancing the capabilities of Android agents. However, guiding agents to learn through online interaction is prohibitively expensive due to the high latency of emulators a...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.LG, cs.AI\n- 作者数: 6",
+      "detail_path": "items/arxiv-android-coach-improve-online-agentic-training-efficiency-with-single-state-multiple-action.html",
+      "first_seen_at": "2026-04-09T09:24:46.894274+00:00",
+      "last_seen_at": "2026-04-09T11:52:43.203856+00:00",
+      "last_curated_at": "2026-04-09T11:52:43.203856+00:00",
+      "last_notified_at": "2026-04-09T11:52:43.203830+00:00",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 160.0,
+      "selection_reason": "它和你关注的 agent 方向重合度高，适合放进今天的论文精读候选。",
+      "themes": [
+        "智能体",
+        "RAG",
+        "机器人"
+      ]
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2604.07296v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "OpenSpatial: A Principled Data Engine for Empowering Spatial Intelligence",
+      "html_url": "http://arxiv.org/abs/2604.07296v1",
+      "pdf_url": "https://arxiv.org/pdf/2604.07296v1",
+      "description": "Spatial understanding is a fundamental cornerstone of human-level intelligence. Nonetheless, current research predominantly focuses on domain-specific data production, leaving a critical void: the absence of a principled, open-source engine capable of fully unleashing the potential of high-quality spatial data. To bridge this gap, we elucidate the design principles of a robust data generation system and introduce OpenSpatial -- an open-source data engine engineered for high quality, extensive scalability, broad task diversity, and optimized efficiency. OpenSpatial adopts 3D bounding boxes as the fundamental primitive to construct a comprehensive data hierarchy across five foundational tasks: Spatial Measurement (SM), Spatial Relationship (SR), Camera Perception (CP), Multi-view Consistency (MC), and Scene-Aware Reasoning (SAR). Leveraging this scalable infrastructure, we curate OpenSpatial-3M, a large-scale dataset comprising 3 million high-fidelity samples. Extensive evaluations demonstrate that versatile models trained on our dataset achieve state-of-the-art performance across a wide spectrum of spatial reasoning benchmarks. Notably, the best-performing model exhibits a substantial average improvement of 19 percent, relatively. Furthermore, we provide a systematic analysis of how data attributes influence spatial perception. By open-sourcing both the engine and the 3M-scale dataset, we provide a robust foundation to accelerate future research in spatial intelligence.",
+      "authors": [
+        "Jianhui Liu",
+        "Haoze Sun",
+        "Wenbo Li",
+        "Yanbing Zhang",
+        "Rui Yang",
+        "Zhiliang Zhu",
+        "Yijun Yang",
+        "Shenghe Zheng",
+        "Nan Jiang",
+        "Jiaxiu Jiang",
+        "Haoyang Huang",
+        "Tien-Tsin Wong",
+        "Nan Duan",
+        "Xiaojuan Qi"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "published_at": "2026-04-08T17:03:02+00:00",
+      "updated_at": "2026-04-08T17:03:02+00:00",
+      "primary_category": "cs.CL",
+      "heuristic_score": 15.366,
+      "summary": "OpenSpatial提出一个原则性开源数据引擎，针对空间智能生成高质量、可扩展数据，构建3M规模数据集OpenSpatial-3M，覆盖空间测量、关系、相机感知等多任务。在该数据集上训练的模型在多项空间推理基准上取得SOTA，平均提升19%。开源引擎和数据集为空间智能研究提供坚实基础。",
+      "core_innovation": "以3D边界框为基本原语构建数据层次结构，实现高质、可扩展、多任务空间数据生成。",
+      "highlights": [
+        "生成3M高保真样本，覆盖5大空间任务",
+        "训练模型在基准上平均提升19%",
+        "开源引擎+数据集，系统分析数据属性影响"
+      ],
+      "practicality": "高：开源工具易复用，支持大规模训练和下游任务落地。",
+      "relevance_score": 9,
+      "tags": [
+        "多模态",
+        "推理",
+        "开源模型",
+        "空间智能"
+      ],
+      "summary_markdown": "**摘要**：OpenSpatial提出一个原则性开源数据引擎，针对空间智能生成高质量、可扩展数据，构建3M规模数据集OpenSpatial-3M，覆盖空间测量、关系、相机感知等多任务。在该数据集上训练的模型在多项空间推理基准上取得SOTA，平均提升19%。开源引擎和数据集为空间智能研究提供坚实基础。\n\n**核心创新**：以3D边界框为基本原语构建数据层次结构，实现高质、可扩展、多任务空间数据生成。\n\n**实用性**：高：开源工具易复用，支持大规模训练和下游任务落地。\n\n**相关性评分**：9/10\n\n**亮点**：\n- 生成3M高保真样本，覆盖5大空间任务\n- 训练模型在基准上平均提升19%\n- 开源引擎+数据集，系统分析数据属性影响",
+      "detail_path": "items/arxiv-openspatial-a-principled-data-engine-for-empowering-spatial-intelligence.html",
+      "first_seen_at": "2026-04-09T09:49:00.584525+00:00",
+      "last_seen_at": "2026-04-09T11:52:43.203856+00:00",
+      "last_curated_at": "2026-04-09T11:52:43.203856+00:00",
+      "last_notified_at": "2026-04-09T11:52:43.203830+00:00",
+      "brief": "开源数据引擎OpenSpatial生成3M空间智能数据集，训练模型空间推理SOTA提升19%。",
+      "problem": "当前空间智能研究缺乏原则性开源引擎，无法高效生成高质量、多样化空间数据。",
+      "why_it_matters": "填补空间数据生成空白，推动多模态和场景推理模型向人类级智能迈进。",
+      "target_reader": "关注多模态、推理、开源模型的研究者和开发者。",
+      "themes": [
+        "多模态",
+        "推理",
+        "开源模型"
+      ],
+      "selection_reason": "核心创新填补空间数据引擎空白，与用户关注的多模态、推理、开源模型高度匹配，落地潜力强值得重点关注。",
+      "focus_hits": [
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "reasoning",
+      "personalized_score": 160.0
+    },
+    {
+      "id": "github::coleam00/Archon",
+      "kind": "repo",
+      "source": "github",
+      "source_tags": [
+        "trending"
+      ],
+      "name": "Archon",
+      "title": "coleam00/Archon",
+      "full_name": "coleam00/Archon",
+      "html_url": "https://github.com/coleam00/Archon",
+      "description": "The first open-source harness builder for AI coding. Make AI coding deterministic and repeatable.",
+      "stars": 14061,
+      "stars_today": 0,
+      "language": "TypeScript",
+      "topics": [],
+      "created_at": "",
+      "updated_at": "",
+      "heuristic_score": 12.6,
+      "summary": "Archon 是首个开源 AI 编码 harness 构建器，能让 AI 编码过程确定性和可重复。项目使用 TypeScript 开发，已获 14061 stars，聚焦解决 AI 辅助编程的随机性痛点。通过标准化 harness，它为开发者提供可靠的 AI 编码框架，推动 agentic coding 落地。",
+      "brief": "Archon：首个开源 AI 编码 harness 构建器，让 AI 编程确定性、可重复，已 14k stars。",
+      "problem": "AI 辅助编码过程随机不可控，难以重复和标准化。",
+      "why_it_matters": "它填补开源 AI 编码工具空白，推动 agentic coding 从实验到生产级应用。",
+      "target_reader": "AI 开发者、coding agent 爱好者、开源追踪者。",
+      "core_innovation": "首个开源 harness 构建器，实现 AI 编码的确定性和可重复性。",
+      "highlights": [
+        "TypeScript 实现，易上手部署",
+        "14k stars 验证高势能",
+        "标准化 AI 编码流程，提升可靠性"
+      ],
+      "practicality": "高度实用，直接解决生产环境中 AI 编码痛点，值得立即追踪。",
+      "relevance_score": 9,
+      "tags": [
+        "AI 编码",
+        "开源工具",
+        "Harness"
+      ],
+      "themes": [
+        "智能体",
+        "编码",
+        "开源模型"
+      ],
+      "selection_reason": "Archon 作为高势能开源项目（14k stars），代表 AI coding agent 新方向，匹配用户关注关键词，值得每日摘要追踪。",
+      "summary_markdown": "**摘要**：Archon 是首个开源 AI 编码 harness 构建器，能让 AI 编码过程确定性和可重复。项目使用 TypeScript 开发，已获 14061 stars，聚焦解决 AI 辅助编程的随机性痛点。通过标准化 harness，它为开发者提供可靠的 AI 编码框架，推动 agentic coding 落地。\n\n**核心创新**：首个开源 harness 构建器，实现 AI 编码的确定性和可重复性。\n\n**实用性**：高度实用，直接解决生产环境中 AI 编码痛点，值得立即追踪。\n\n**相关性评分**：9/10\n\n**亮点**：\n- TypeScript 实现，易上手部署\n- 14k stars 验证高势能\n- 标准化 AI 编码流程，提升可靠性",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "coding",
+          "weight": 2.6
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 151.62,
+      "detail_path": "items/github-coleam00-archon.html",
+      "first_seen_at": "2026-04-09T11:50:14.780111+00:00",
+      "last_seen_at": "2026-04-09T11:52:43.203856+00:00",
+      "last_curated_at": "2026-04-09T11:52:43.203856+00:00",
+      "last_notified_at": "2026-04-09T11:52:43.203830+00:00"
+    },
+    {
+      "id": "github::HKUDS/DeepTutor",
+      "kind": "repo",
+      "source": "github",
+      "source_tags": [
+        "trending"
+      ],
+      "name": "DeepTutor",
+      "title": "HKUDS/DeepTutor",
+      "full_name": "HKUDS/DeepTutor",
+      "html_url": "https://github.com/HKUDS/DeepTutor",
+      "description": "\"DeepTutor: Agent-Native Personalized Learning Assistant\"",
+      "stars": 14076,
+      "stars_today": 0,
+      "language": "Python",
+      "topics": [],
+      "created_at": "",
+      "updated_at": "",
+      "heuristic_score": 12.6,
+      "summary": "DeepTutor 是 HKUDS 推出的 Agent-Native 个性化学习助手，利用 AI 代理技术提供自适应教学和实时反馈，已获 14076 stars。项目融合 LLM 和多模态交互，针对教育场景优化学习路径。代表教育 AI 代理的新方向，值得开发者与教育从业者追踪。",
+      "brief": "HKUDS DeepTutor：代理原生个性化学习助手，14k stars，高势能教育 AI 项目。",
+      "problem": "传统学习工具缺乏个性化、自适应反馈，无法根据学生实时需求调整教学。",
+      "why_it_matters": "教育 AI 代理正成为热点，DeepTutor 展示 agentic 架构在个性化学习中的高实用潜力。",
+      "target_reader": "AI 开发者、教育科技从业者、开源爱好者。",
+      "core_innovation": "Agent-Native 设计，实现动态教学路径与多模态交互。",
+      "highlights": [
+        "14k stars，社区认可度高",
+        "融合 LLM 代理与教育场景，自适应学习反馈",
+        "开源 Python 项目，便于二次开发"
+      ],
+      "practicality": "高：即插即用教育工具，易扩展至在线平台。",
+      "relevance_score": 9,
+      "tags": [
+        "AI Agent",
+        "教育 AI",
+        "开源模型"
+      ],
+      "themes": [
+        "智能体",
+        "RAG",
+        "推理"
+      ],
+      "selection_reason": "DeepTutor 作为高星教育 AI 代理项目，契合用户关注 agentic 和 open-source model 关键词，代表实用高势能新方向。",
+      "summary_markdown": "**摘要**：DeepTutor 是 HKUDS 推出的 Agent-Native 个性化学习助手，利用 AI 代理技术提供自适应教学和实时反馈，已获 14076 stars。项目融合 LLM 和多模态交互，针对教育场景优化学习路径。代表教育 AI 代理的新方向，值得开发者与教育从业者追踪。\n\n**核心创新**：Agent-Native 设计，实现动态教学路径与多模态交互。\n\n**实用性**：高：即插即用教育工具，易扩展至在线平台。\n\n**相关性评分**：9/10\n\n**亮点**：\n- 14k stars，社区认可度高\n- 融合 LLM 代理与教育场景，自适应学习反馈\n- 开源 Python 项目，便于二次开发",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 147.63,
+      "detail_path": "items/github-hkuds-deeptutor.html",
+      "first_seen_at": "2026-04-09T11:50:14.780111+00:00",
+      "last_seen_at": "2026-04-09T11:52:43.203856+00:00",
+      "last_curated_at": "2026-04-09T11:52:43.203856+00:00",
+      "last_notified_at": "2026-04-09T11:52:43.203830+00:00"
+    }
+  ],
+  "top_themes": [
+    {
+      "theme": "RAG",
+      "count": 4
+    },
+    {
+      "theme": "智能体",
+      "count": 4
+    },
+    {
+      "theme": "编码",
+      "count": 3
+    },
+    {
+      "theme": "推理",
+      "count": 3
+    },
+    {
+      "theme": "多模态",
+      "count": 2
+    }
+  ],
+  "highlights": [
+    {
+      "title": "Appear2Meaning: A Cross-Cultural Benchmark for Structured Cultural Metadata Inference from Images",
+      "source": "arxiv",
+      "selection_reason": "它和你关注的 reasoning 方向重合度高，适合放进今天的论文精读候选。"
+    },
+    {
+      "title": "A Systematic Study of Retrieval Pipeline Design for Retrieval-Augmented Medical Question Answering",
+      "source": "arxiv",
+      "selection_reason": "它和你关注的 reasoning 方向重合度高，适合放进今天的论文精读候选。"
+    },
+    {
+      "title": "MoRight: Motion Control Done Right",
+      "source": "arxiv",
+      "selection_reason": "它和你关注的 reasoning 方向重合度高，适合放进今天的论文精读候选。"
+    }
+  ]
+}

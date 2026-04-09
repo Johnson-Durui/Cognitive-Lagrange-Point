@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ page_title }}</title>
+    <meta name="description" content="{{ page_description }}" />
+    <link rel="stylesheet" href="{{ asset_prefix }}assets/app.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">AI Daily Digest</p>
+          <h1 id="page-title"></h1>
+          <p id="page-subtitle" class="hero-subtitle"></p>
+        </div>
+        <div class="hero-actions">
+          <a class="hero-link" href="{{ asset_prefix }}index.html">今日精选</a>
+          <a class="hero-link" href="{{ asset_prefix }}archive/index.html">历史归档</a>
+        </div>
+      </header>
+
+      <main class="content-grid">
+        <aside class="filters-panel">
+          <section class="panel-card emphasis-card">
+            <h2>今日必看</h2>
+            <div id="must-watch-list" class="mini-list"></div>
+          </section>
+
+          <section class="panel-card">
+            <h2>主题聚类</h2>
+            <div id="theme-clusters" class="mini-list"></div>
+          </section>
+
+          <section class="panel-card">
+            <h2>趋势报告</h2>
+            <div id="report-links" class="mini-list"></div>
+          </section>
+
+          <section class="panel-card">
+            <h2>快速检索</h2>
+            <label class="field">
+              <span>搜索标题 / 摘要</span>
+              <input id="search-input" type="search" placeholder="例如：agent、reasoning、multimodal" />
+            </label>
+            <label class="field">
+              <span>来源</span>
+              <select id="source-filter">
+                <option value="">全部</option>
+              </select>
+            </label>
+            <label class="field">
+              <span>标签</span>
+              <select id="tag-filter">
+                <option value="">全部</option>
+              </select>
+            </label>
+            <label class="field">
+              <span>时间范围</span>
+              <select id="date-filter">
+                <option value="all">全部</option>
+                <option value="7">近 7 天</option>
+                <option value="30">近 30 天</option>
+              </select>
+            </label>
+          </section>
+
+          <section class="panel-card">
+            <h2>阅读状态</h2>
+            <div class="legend-list">
+              <span><strong>收藏</strong>：保存在当前浏览器</span>
+              <span><strong>已读</strong>：帮助你区分已看过的项目</span>
+            </div>
+          </section>
+        </aside>
+
+        <section class="results-panel">
+          <div class="results-head">
+            <div>
+              <h2>内容列表</h2>
+              <p id="results-meta" class="meta-text"></p>
+            </div>
+          </div>
+          <div id="section-strip" class="section-strip"></div>
+          <div id="card-list" class="card-list"></div>
+          <div id="empty-state" class="empty-state" hidden>
+            没有匹配当前条件的内容，试试清空筛选器。
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script>
+      window.AI_DIGEST_BOOTSTRAP = {{ bootstrap_json | safe }};
+    </script>
+    <script src="{{ asset_prefix }}assets/app.js"></script>
+  </body>
+  </html>

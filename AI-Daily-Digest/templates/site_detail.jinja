@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ page_title }}</title>
+    <meta name="description" content="{{ page_description }}" />
+    <link rel="stylesheet" href="{{ asset_prefix }}assets/app.css" />
+  </head>
+  <body>
+    <div class="page-shell detail-shell">
+      <header class="detail-hero">
+        <a class="hero-link" href="{{ asset_prefix }}index.html">返回今日精选</a>
+        <a class="hero-link" href="{{ asset_prefix }}archive/index.html">返回历史归档</a>
+      </header>
+
+      <main class="detail-layout">
+        <article class="detail-card">
+          <p class="detail-source">{{ item.source|upper }} · {{ item.kind }}</p>
+          <h1>{{ item.title or item.full_name }}</h1>
+          <p class="detail-summary">{{ item.summary or item.description }}</p>
+
+          <div class="detail-actions">
+            <button class="toggle-button" data-action="favorite" data-item-key="{{ item.id }}">收藏</button>
+            <button class="toggle-button" data-action="read" data-item-key="{{ item.id }}">标记已读</button>
+            <a class="primary-link" href="{{ item.html_url }}" target="_blank" rel="noreferrer">打开原文</a>
+            {% if item.pdf_url %}
+            <a class="primary-link" href="{{ item.pdf_url }}" target="_blank" rel="noreferrer">PDF</a>
+            {% endif %}
+          </div>
+
+          <section class="detail-section">
+            <h2>核心创新</h2>
+            <p>{{ item.core_innovation }}</p>
+          </section>
+
+          {% if item.selection_reason or item.why_it_matters %}
+          <section class="detail-section">
+            <h2>为什么入选今天的日报</h2>
+            <p>{{ item.selection_reason or item.why_it_matters }}</p>
+          </section>
+          {% endif %}
+
+          {% if item.problem or item.target_reader %}
+          <section class="detail-section">
+            <h2>快速判断</h2>
+            {% if item.problem %}<p><strong>它解决的问题：</strong>{{ item.problem }}</p>{% endif %}
+            {% if item.target_reader %}<p><strong>适合谁先看：</strong>{{ item.target_reader }}</p>{% endif %}
+          </section>
+          {% endif %}
+
+          <section class="detail-section">
+            <h2>实用性</h2>
+            <p>{{ item.practicality }}</p>
+          </section>
+
+          <section class="detail-section">
+            <h2>亮点</h2>
+            <ul>
+              {% for highlight in item.highlights or [] %}
+              <li>{{ highlight }}</li>
+              {% endfor %}
+            </ul>
+          </section>
+
+          <section class="detail-section">
+            <h2>元信息</h2>
+            <div class="meta-grid">
+              <span>相关性评分：{{ item.relevance_score }}/10</span>
+              {% if item.language %}<span>语言：{{ item.language }}</span>{% endif %}
+              {% if item.stars is not none %}<span>Stars：{{ item.stars }}</span>{% endif %}
+              {% if item.stars_today %}<span>今日热度：+{{ item.stars_today }}</span>{% endif %}
+              {% if item.primary_category %}<span>主分类：{{ item.primary_category }}</span>{% endif %}
+              {% if item.published_at %}<span>发布时间：{{ item.published_at }}</span>{% endif %}
+            </div>
+          </section>
+
+          {% if item.themes or item.tags or item.topics or item.categories %}
+          <section class="detail-section">
+            <h2>主题与标签</h2>
+            <div class="tag-list">
+              {% for tag in item.themes or item.tags or item.topics or item.categories %}
+              <span class="tag-chip">{{ tag }}</span>
+              {% endfor %}
+            </div>
+          </section>
+          {% endif %}
+        </article>
+      </main>
+    </div>
+
+    <script>
+      window.AI_DIGEST_BOOTSTRAP = {{ bootstrap_json | safe }};
+    </script>
+    <script src="{{ asset_prefix }}assets/app.js"></script>
+  </body>
+  </html>

@@ -1,0 +1,86 @@
+{% set repo_count = digest.stats.repo_count %}
+{% set paper_count = digest.stats.paper_count %}
+## AI Daily Digest | {{ digest.date }}
+
+生成时间：{{ digest.generated_at }}
+
+今日概览：
+- GitHub 项目：{{ repo_count }} 个
+- arXiv 论文：{{ paper_count }} 篇
+
+{% if digest.empty_message %}
+{{ digest.empty_message }}
+{% endif %}
+
+### 今日必看
+{% for item in digest.sections.must_watch %}
+- **{{ item.title or item.full_name }}**：{{ item.selection_reason or item.why_it_matters }}
+{% endfor %}
+
+### 今日主题
+{% for cluster in digest.theme_clusters %}
+- {{ cluster.theme }}：{{ cluster.count }} 条，代表项：{{ ", ".join(cluster.leaders) }}
+{% endfor %}
+
+### GitHub 每日热门与新项目
+{% if digest.repos %}
+{% for item in digest.repos %}
+#### {{ loop.index }}. {{ item.full_name or item.title }}
+- 链接：{{ item.html_url }}
+- Stars：{{ item.stars }}{{ (" | 今日热度：+" ~ item.stars_today) if item.stars_today else "" }}
+- 相关性评分：{{ item.relevance_score }}/10
+- 个性化评分：{{ item.personalized_score }}
+- 主题：{{ ", ".join(item.themes or []) }}
+- 入选理由：{{ item.selection_reason }}
+- 它在解决：{{ item.problem }}
+- 摘要：{{ item.summary }}
+- 核心创新：{{ item.core_innovation }}
+- 实用性：{{ item.practicality }}
+{% if item.highlights %}
+- 亮点：
+{% for highlight in item.highlights %}
+  - {{ highlight }}
+{% endfor %}
+{% endif %}
+
+{% endfor %}
+{% else %}
+今天没有筛出新的高相关 GitHub 项目。
+{% endif %}
+
+### arXiv 顶级论文
+{% if digest.papers %}
+{% for item in digest.papers %}
+#### {{ loop.index }}. {{ item.title }}
+- 链接：{{ item.html_url }}
+- PDF：{{ item.pdf_url }}
+- 分类：{{ ", ".join(item.categories or []) }}
+- 相关性评分：{{ item.relevance_score }}/10
+- 个性化评分：{{ item.personalized_score }}
+- 主题：{{ ", ".join(item.themes or []) }}
+- 入选理由：{{ item.selection_reason }}
+- 它在解决：{{ item.problem }}
+- 摘要：{{ item.summary }}
+- 核心创新：{{ item.core_innovation }}
+- 实用性：{{ item.practicality }}
+{% if item.highlights %}
+- 亮点：
+{% for highlight in item.highlights %}
+  - {{ highlight }}
+{% endfor %}
+{% endif %}
+
+{% endfor %}
+{% else %}
+今天没有筛出新的高相关论文。
+{% endif %}
+
+### 站点入口
+- 首页：{{ "index.html" }}
+- 历史归档：{{ "archive/index.html" }}
+{% if digest.reports.weekly %}
+- 周报：{{ "reports/weekly.html" }}
+{% endif %}
+{% if digest.reports.monthly %}
+- 月报：{{ "reports/monthly.html" }}
+{% endif %}

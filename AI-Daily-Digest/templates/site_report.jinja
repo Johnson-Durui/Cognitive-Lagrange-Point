@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ page_title }}</title>
+    <meta name="description" content="{{ page_description }}" />
+    <link rel="stylesheet" href="{{ asset_prefix }}assets/app.css" />
+  </head>
+  <body>
+    <div class="page-shell detail-shell">
+      <header class="detail-hero">
+        <a class="hero-link" href="{{ asset_prefix }}index.html">返回今日精选</a>
+        <a class="hero-link" href="{{ asset_prefix }}archive/index.html">返回历史归档</a>
+      </header>
+
+      <main class="detail-layout">
+        <article class="detail-card">
+          <p class="detail-source">REPORT · {{ report.label }}</p>
+          <h1>{{ report.label }}</h1>
+          <p class="detail-summary">{{ report.summary }}</p>
+
+          {% if report.top_themes %}
+          <section class="detail-section">
+            <h2>高频主题</h2>
+            <div class="tag-list">
+              {% for item in report.top_themes %}
+              <span class="tag-chip">{{ item.theme }} · {{ item.count }}</span>
+              {% endfor %}
+            </div>
+          </section>
+          {% endif %}
+
+          {% if report.highlights %}
+          <section class="detail-section">
+            <h2>重点项目</h2>
+            <div class="report-list">
+              {% for item in report.highlights %}
+              <article class="report-card">
+                <h3>{{ item.title }}</h3>
+                <p>{{ item.selection_reason }}</p>
+              </article>
+              {% endfor %}
+            </div>
+          </section>
+          {% endif %}
+        </article>
+      </main>
+    </div>
+  </body>
+  </html>

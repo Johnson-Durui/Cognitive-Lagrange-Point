@@ -1,0 +1,130 @@
+project:
+  name: AI-Daily-Digest
+  site_title: AI Daily Digest
+  timezone: Asia/Shanghai
+
+github:
+  token_env: GITHUB_TOKEN
+
+sources:
+  github:
+    enabled: true
+    created_lookback_days: 1
+    min_stars: 5
+    max_new_per_topic: 8
+    max_trending_items: 30
+    max_candidates: 18
+    top_k: 8
+    topics:
+      - ai
+      - llm
+      - agents
+      - agentic-ai
+      - machine-learning
+      - generative-ai
+      - multimodal
+      - diffusion-models
+    keywords:
+      - ai
+      - llm
+      - agent
+      - agentic
+      - gpt
+      - rag
+      - copilot
+      - multimodal
+      - diffusion
+      - model
+      - benchmark
+      - inference
+      - training
+  arxiv:
+    enabled: true
+    lookback_days: 2
+    max_results: 30
+    max_candidates: 16
+    top_k: 6
+    categories:
+      - cs.AI
+      - cs.LG
+      - cs.CL
+      - cs.CV
+      - cs.RO
+      - stat.ML
+
+filtering:
+  user_keywords:
+    - ai agent
+    - coding agent
+    - multimodal
+    - reasoning
+    - inference
+    - open-source model
+    - benchmark
+    - robotics
+    - voice ai
+    - rag
+    - long context
+    - research tooling
+  exclude_keywords:
+    - awesome-list
+    - interview
+    - course
+    - tutorial
+    - paper-list
+
+ranking:
+  focus_areas:
+    agent: 3.0
+    coding: 2.6
+    reasoning: 2.4
+    rag: 2.2
+    multimodal: 2.0
+    inference: 1.8
+    benchmark: 1.6
+    robotics: 1.6
+    voice: 1.4
+  must_watch_count: 3
+  worth_scan_count: 5
+  paper_spotlight_count: 3
+  theme_count: 5
+
+storage:
+  history_path: history.json
+  data_dir: data
+  archive_days: 30
+  dedupe_days: 7
+
+llm:
+  provider: xai
+  api_key_env: GROK_API_KEY
+  model: grok-4-1-fast-non-reasoning
+  base_url: https://api.x.ai/v1
+  temperature: 0.2
+  timeout_seconds: 45
+
+notification:
+  provider: wecom
+  title_prefix: AI Daily Digest
+  wecom_webhook_env: WECOM_WEBHOOK_URL
+  pushplus_token_env: PUSHPLUS_TOKEN
+  timeout_seconds: 20
+  mode: detailed
+  target_chars: 3000
+  hard_max_chars: 3900
+  wecom_max_bytes: 3900
+
+website:
+  base_url: "https://johnson-durui.github.io/Cognitive-Lagrange-Point/"
+  max_archive_items: 200
+
+reports:
+  enabled: true
+  weekly_window_days: 7
+  monthly_window_days: 30
+  top_items_per_report: 8
+
+runtime:
+  request_timeout_seconds: 20
+  summary_max_items_per_digest: 14
+  keep_empty_digest: true

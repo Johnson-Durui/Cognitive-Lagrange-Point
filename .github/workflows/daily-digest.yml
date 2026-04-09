@@ -1,0 +1,94 @@
+name: AI Daily Digest
+
+on:
+  workflow_dispatch:
+  schedule:
+    # 00:00 UTC = 08:00 Asia/Shanghai (Beijing time)
+    - cron: "0 0 * * *"
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: ai-daily-digest
+  cancel-in-progress: false
+
+jobs:
+  build-digest:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Export runtime secrets
+        shell: bash
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GROK_API_KEY: ${{ secrets.GROK_API_KEY }}
+          WECOM_WEBHOOK_URL: ${{ secrets.WECOM_WEBHOOK_URL }}
+          PUSHPLUS_TOKEN: ${{ secrets.PUSHPLUS_TOKEN }}
+        run: |
+          {
+            echo "GROK_API_KEY=${GROK_API_KEY}"
+            echo "WECOM_WEBHOOK_URL=${WECOM_WEBHOOK_URL}"
+            echo "PUSHPLUS_TOKEN=${PUSHPLUS_TOKEN}"
+            if [ -n "${GH_TOKEN}" ]; then
+              echo "GITHUB_TOKEN=${GH_TOKEN}"
+            else
+              echo "GITHUB_TOKEN=${{ github.token }}"
+            fi
+          } >> "$GITHUB_ENV"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r AI-Daily-Digest/requirements.txt
+
+      - name: Run tests
+        run: python -m unittest discover -s AI-Daily-Digest/tests
+
+      - name: Generate digest and site
+        run: python AI-Daily-Digest/main.py --config AI-Daily-Digest/config.yaml
+
+      - name: Upload GitHub Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: AI-Daily-Digest/site
+
+      - name: Commit updated history and data
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet -- AI-Daily-Digest/history.json AI-Daily-Digest/data; then
+            echo "No data changes to commit."
+            exit 0
+          fi
+          git add AI-Daily-Digest/history.json AI-Daily-Digest/data
+          git commit -m "Update AI Daily Digest data for $(date -u +%F)"
+          git push
+
+  deploy-pages:
+    needs: build-digest
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
