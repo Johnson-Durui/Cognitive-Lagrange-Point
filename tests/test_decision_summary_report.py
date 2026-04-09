@@ -23,7 +23,10 @@ class DecisionSummaryReportTest(unittest.TestCase):
 
             self.assertEqual(Path(generated), output_path)
             self.assertTrue(output_path.exists())
-            self.assertEqual(output_path.read_bytes()[:8], b"%PDF-1.3")
+            self.assertTrue(
+                output_path.read_bytes().startswith(b"%PDF-1."),
+                "summary report should be emitted as a valid PDF regardless of minor version",
+            )
 
 
 if __name__ == "__main__":
