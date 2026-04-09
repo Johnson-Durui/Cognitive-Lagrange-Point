@@ -318,6 +318,103 @@ async function savePersistedQuantumState(stateSnapshot) {
   });
 }
 
+function formatExportTimestamp(date = new Date()) {
+  const pad = (value) => String(value).padStart(2, '0');
+  return `${date.getFullYear()}${pad(date.getMonth() + 1)}${pad(date.getDate())}-${pad(date.getHours())}${pad(date.getMinutes())}${pad(date.getSeconds())}`;
+}
+
+function sanitizeFilename(value) {
+  return compactText(value, '量子vibe').replace(/[<>:"/\\|?*\u0000-\u001F]+/g, '-');
+}
+
+function getResolutionPreset(key) {
+  return {
+    '2k': { width: 2560, height: 1440, label: '2K' },
+    '4k': { width: 3840, height: 2160, label: '4K' },
+    '8k': { width: 7680, height: 4320, label: '8K' },
+  }[key] || { width: 3840, height: 2160, label: '4K' };
+}
+
+function dataUrlToUint8Array(dataUrl) {
+  const base64 = String(dataUrl).split(',')[1] || '';
+  const binary = atob(base64);
+  const bytes = new Uint8Array(binary.length);
+  for (let i = 0; i < binary.length; i += 1) bytes[i] = binary.charCodeAt(i);
+  return bytes;
+}
+
+function toBase64Utf8(text) {
+  const bytes = new TextEncoder().encode(text);
+  let binary = '';
+  bytes.forEach((byte) => {
+    binary += String.fromCharCode(byte);
+  });
+  return btoa(binary);
+}
+
+function crc32(bytes) {
+  let crc = -1;
+  for (let i = 0; i < bytes.length; i += 1) {
+    crc ^= bytes[i];
+    for (let bit = 0; bit < 8; bit += 1) {
+      crc = (crc >>> 1) ^ (0xEDB88320 & -(crc & 1));
+    }
+  }
+  return (crc ^ -1) >>> 0;
+}
+
+function buildPngTextChunk(keyword, text) {
+  const encoder = new TextEncoder();
+  const payload = encoder.encode(`${keyword}\0${text}`);
+  const type = encoder.encode('tEXt');
+  const chunk = new Uint8Array(4 + 4 + payload.length + 4);
+  const view = new DataView(chunk.buffer);
+  view.setUint32(0, payload.length);
+  chunk.set(type, 4);
+  chunk.set(payload, 8);
+  view.setUint32(8 + payload.length, crc32(chunk.slice(4, 8 + payload.length)));
+  return chunk;
+}
+
+function injectPngMetadata(dataUrl, metadata) {
+  const bytes = dataUrlToUint8Array(dataUrl);
+  const signature = bytes.slice(0, 8);
+  const chunks = [];
+  let offset = 8;
+  while (offset < bytes.length) {
+    const length = new DataView(bytes.buffer, bytes.byteOffset + offset, 4).getUint32(0);
+    const chunkSize = 12 + length;
+    const chunk = bytes.slice(offset, offset + chunkSize);
+    const type = String.fromCharCode(...chunk.slice(4, 8));
+    if (type === 'IEND') {
+      chunks.push(buildPngTextChunk('CLPQuantumState', toBase64Utf8(JSON.stringify(metadata))));
+    }
+    chunks.push(chunk);
+    offset += chunkSize;
+  }
+  return new Blob([signature, ...chunks], { type: 'image/png' });
+}
+
+function downloadBlob(blob, filename) {
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement('a');
+  link.href = url;
+  link.download = filename;
+  document.body.appendChild(link);
+  link.click();
+  link.remove();
+  window.setTimeout(() => URL.revokeObjectURL(url), 1200);
+}
+
+function loadImageFromDataUrl(dataUrl) {
+  return new Promise((resolve, reject) => {
+    const img = new Image();
+    img.onload = () => resolve(img);
+    img.onerror = reject;
+    img.src = dataUrl;
+  });
+}
+
 async function loadTemplate() {
   try {
     const response = await fetch(TEMPLATE_URL);
@@ -378,6 +475,22 @@ function ensureStyles() {
     .qvo-breath-wave path { fill: none; stroke: rgba(86, 231, 224, 0.9); stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; filter: drop-shadow(0 0 12px rgba(86, 231, 224, 0.36)); }
     .qvo-bio-actions, .qvo-audio-actions { display: flex; gap: 8px; flex-wrap: wrap; }
     .qvo-bio-button, .qvo-audio-button { flex: 1; min-width: 0; border-radius: 14px; padding: 9px 11px; font-size: 12px; color: #f8fbff !important; background: rgba(255, 255, 255, 0.06) !important; }
+    .qvo-export-button { box-shadow: 0 0 24px rgba(243, 212, 134, 0.18); }
+    .qvo-export-backdrop[hidden], .qvo-export-menu[hidden] { display: none !important; }
+    .qvo-export-backdrop { position: absolute; inset: 0; z-index: 7; background: rgba(1, 4, 14, 0.46); backdrop-filter: blur(6px); }
+    .qvo-export-menu { position: absolute; z-index: 8; right: 26px; bottom: 108px; width: min(360px, calc(100vw - 28px)); display: grid; gap: 14px; padding: 16px; border-radius: 20px; border: 1px solid rgba(243, 212, 134, 0.28); background: linear-gradient(180deg, rgba(8, 12, 34, 0.95), rgba(5, 8, 22, 0.92)); box-shadow: 0 28px 84px rgba(0, 0, 0, 0.45); backdrop-filter: blur(20px); }
+    .qvo-export-head p { margin: 6px 0 0; font-size: 12px; line-height: 1.5; color: rgba(236, 243, 255, 0.74); }
+    .qvo-export-group { display: grid; gap: 8px; }
+    .qvo-export-group > span, .qvo-export-group > label { color: rgba(245, 248, 255, 0.9); font-size: 12px; }
+    .qvo-export-mode-list { display: flex; flex-wrap: wrap; gap: 8px; }
+    .qvo-export-chip, .qvo-export-menu select, .qvo-export-primary, .qvo-export-secondary { appearance: none; -webkit-appearance: none; font: inherit; color: #f8fbff; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.14); border-radius: 12px; padding: 10px 12px; }
+    .qvo-export-chip { cursor: pointer; }
+    .qvo-export-chip.is-active { background: linear-gradient(135deg, rgba(86, 231, 224, 0.18), rgba(243, 212, 134, 0.18)); border-color: rgba(243, 212, 134, 0.54); }
+    .qvo-export-grid { display: grid; gap: 12px; }
+    .qvo-export-check { display: flex; align-items: center; gap: 8px; color: rgba(238, 244, 255, 0.78); font-size: 12px; }
+    .qvo-export-actions { display: flex; gap: 10px; }
+    .qvo-export-primary { flex: 1; cursor: pointer; background: linear-gradient(135deg, rgba(86, 231, 224, 0.2), rgba(243, 212, 134, 0.22)); border-color: rgba(243, 212, 134, 0.56); }
+    .qvo-export-secondary { cursor: pointer; }
     .qvo-bio-readout { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
     .qvo-bio-readout span { padding: 8px; border-radius: 12px; background: rgba(255,255,255,0.055); color: rgba(246,248,255,0.78); }
     .qvo-bio-video { width: 1px; height: 1px; opacity: 0; position: absolute; pointer-events: none; }
@@ -396,6 +509,7 @@ function ensureStyles() {
       .qvo-topbar p { max-width: 100%; }
       .qvo-panel { left: 12px; right: 12px; top: auto; bottom: 72px; width: auto; max-height: 46vh; overflow: auto; border-radius: 20px; }
       .qvo-story-orb { left: 50% !important; right: auto; bottom: 60vh; transform: translateX(-50%); max-width: calc(100vw - 36px); }
+      .qvo-export-menu { left: 12px; right: 12px; width: auto; bottom: 82px; }
       .qvo-footer { left: 14px; right: 14px; bottom: 12px; flex-direction: column; gap: 4px; }
       .qvo-mode-switch button { padding: 9px 12px; }
     }
@@ -1040,6 +1154,15 @@ class QuantumVibeOracle {
     this.keyState = {};
     this.pointerLook = { yaw: 0, pitch: 0 };
     this.pointerState = { lastX: 0, lastY: 0 };
+    this.exportState = {
+      mode: 'current',
+      resolution: '4k',
+      universeId: this.activeUniverseId,
+      includeMetadata: false,
+    };
+    this.exportBurstEnergy = 0;
+    this.longPressTimer = 0;
+    this.longPressOrigin = null;
     this.onPointerMove = this.onPointerMove.bind(this);
     this.onBioSignal = this.onBioSignal.bind(this);
     this.onKeyDown = this.onKeyDown.bind(this);
@@ -1055,6 +1178,7 @@ class QuantumVibeOracle {
     document.body.appendChild(this.root);
     document.body.style.overflow = 'hidden';
     this.root.querySelector('[data-qvo-question]').textContent = this.data.question || '当前决策';
+    this.installExportUi();
     this.renderUniverseButtons();
     this.bindUi();
     this.updateObserverMeter();
@@ -1072,10 +1196,27 @@ class QuantumVibeOracle {
     this.root.querySelector('[data-qvo-flight-toggle]')?.addEventListener('click', (event) => this.toggleFreeFlight(event.currentTarget));
     this.root.querySelector('[data-qvo-bio-enable]')?.addEventListener('click', () => this.enableBioFeedback());
     this.root.querySelector('[data-qvo-save]')?.addEventListener('click', () => this.saveCurrentQuantumState());
+    this.root.querySelector('[data-qvo-export-trigger]')?.addEventListener('click', () => this.openExportMenu());
+    this.root.querySelector('[data-qvo-export-backdrop]')?.addEventListener('click', () => this.closeExportMenu());
+    this.root.querySelector('[data-qvo-export-cancel]')?.addEventListener('click', () => this.closeExportMenu());
+    this.root.querySelector('[data-qvo-export-confirm]')?.addEventListener('click', () => this.handleExportRequest());
+    this.root.querySelectorAll('[data-qvo-export-mode]').forEach((button) => {
+      button.addEventListener('click', () => this.setExportMode(button.dataset.qvoExportMode || 'current'));
+    });
+    this.root.querySelector('[data-qvo-export-resolution]')?.addEventListener('change', (event) => {
+      this.exportState.resolution = event.currentTarget.value || '4k';
+    });
+    this.root.querySelector('[data-qvo-export-universe]')?.addEventListener('change', (event) => {
+      this.exportState.universeId = event.currentTarget.value || this.activeUniverseId;
+    });
+    this.root.querySelector('[data-qvo-export-meta]')?.addEventListener('change', (event) => {
+      this.exportState.includeMetadata = Boolean(event.currentTarget.checked);
+    });
     window.addEventListener('pointermove', this.onPointerMove, { passive: true });
     window.addEventListener('clp:observer-bio-signal', this.onBioSignal);
     window.addEventListener('keydown', this.onKeyDown);
     window.addEventListener('keyup', this.onKeyUp);
+    this.bindLongPressExport();
     this.saveTimer = window.setInterval(() => this.saveState({ heartbeatAt: new Date().toISOString() }), 8000);
   }
 
@@ -1090,6 +1231,117 @@ class QuantumVibeOracle {
     `).join('');
     list.querySelectorAll('[data-qvo-universe]').forEach((button) => button.addEventListener('click', () => this.focusUniverse(button.dataset.qvoUniverse)));
     this.updateDiary(this.activeUniverseId);
+  }
+
+  installExportUi() {
+    const actions = this.root.querySelector('.qvo-audio-actions');
+    if (actions && !actions.querySelector('[data-qvo-export-trigger]')) {
+      const button = document.createElement('button');
+      button.type = 'button';
+      button.className = 'qvo-audio-button qvo-export-button';
+      button.dataset.qvoExportTrigger = 'true';
+      button.textContent = '📸 导出量子艺术图';
+      actions.appendChild(button);
+    }
+
+    if (this.root.querySelector('[data-qvo-export-menu]')) return;
+
+    const dominantUniverse = this.getDominantUniverse()?.id || this.activeUniverseId;
+    const exportMount = document.createElement('div');
+    exportMount.innerHTML = `
+      <div class="qvo-export-backdrop" data-qvo-export-backdrop hidden></div>
+      <section class="qvo-export-menu" data-qvo-export-menu hidden>
+        <div class="qvo-export-head">
+          <div>
+            <div class="qvo-panel-title">导出量子艺术图</div>
+            <p>保留当前量子粒子、辉光、轨道与生物反馈快照。</p>
+          </div>
+        </div>
+        <div class="qvo-export-group">
+          <span>导出模式</span>
+          <div class="qvo-export-mode-list">
+            <button type="button" class="qvo-export-chip is-active" data-qvo-export-mode="current">当前视角艺术图</button>
+            <button type="button" class="qvo-export-chip" data-qvo-export-mode="universe">单宇宙特写</button>
+            <button type="button" class="qvo-export-chip" data-qvo-export-mode="poster">量子海报模式</button>
+          </div>
+        </div>
+        <div class="qvo-export-group" data-qvo-export-universe-wrap hidden>
+          <label for="qvo-export-universe">特写宇宙</label>
+          <select id="qvo-export-universe" data-qvo-export-universe>
+            ${this.universes.map((item) => `<option value="${item.id}" ${item.id === dominantUniverse ? 'selected' : ''}>${escapeHtml(item.title)}</option>`).join('')}
+          </select>
+        </div>
+        <div class="qvo-export-grid">
+          <label class="qvo-export-group">
+            <span>分辨率</span>
+            <select data-qvo-export-resolution>
+              <option value="2k">2K · 2560×1440</option>
+              <option value="4k" selected>4K · 3840×2160</option>
+              <option value="8k">8K · 7680×4320</option>
+            </select>
+          </label>
+          <label class="qvo-export-check">
+            <input type="checkbox" data-qvo-export-meta>
+            <span>把量子状态 JSON 写进 PNG 元数据</span>
+          </label>
+        </div>
+        <div class="qvo-export-actions">
+          <button type="button" class="qvo-export-secondary" data-qvo-export-cancel>取消</button>
+          <button type="button" class="qvo-export-primary" data-qvo-export-confirm>开始导出</button>
+        </div>
+      </section>
+    `;
+    this.root.appendChild(exportMount.firstElementChild);
+    this.root.appendChild(exportMount.lastElementChild);
+  }
+
+  bindLongPressExport() {
+    const canvas = this.root.querySelector('[data-qvo-canvas]');
+    if (!canvas) return;
+    const clear = () => {
+      if (this.longPressTimer) {
+        window.clearTimeout(this.longPressTimer);
+        this.longPressTimer = 0;
+      }
+      this.longPressOrigin = null;
+    };
+    canvas.addEventListener('pointerdown', (event) => {
+      this.longPressOrigin = { x: event.clientX, y: event.clientY };
+      clearTimeout(this.longPressTimer);
+      this.longPressTimer = window.setTimeout(() => {
+        this.openExportMenu();
+        clear();
+      }, 520);
+    });
+    canvas.addEventListener('pointermove', (event) => {
+      if (!this.longPressOrigin) return;
+      if (Math.hypot(event.clientX - this.longPressOrigin.x, event.clientY - this.longPressOrigin.y) > 14) clear();
+    });
+    ['pointerup', 'pointercancel', 'pointerleave'].forEach((type) => canvas.addEventListener(type, clear));
+  }
+
+  setExportMode(mode) {
+    this.exportState.mode = mode || 'current';
+    this.root.querySelectorAll('[data-qvo-export-mode]').forEach((button) => {
+      button.classList.toggle('is-active', button.dataset.qvoExportMode === this.exportState.mode);
+    });
+    const wrap = this.root.querySelector('[data-qvo-export-universe-wrap]');
+    if (wrap) wrap.hidden = this.exportState.mode !== 'universe';
+  }
+
+  openExportMenu() {
+    const backdrop = this.root.querySelector('[data-qvo-export-backdrop]');
+    const menu = this.root.querySelector('[data-qvo-export-menu]');
+    if (!backdrop || !menu) return;
+    backdrop.hidden = false;
+    menu.hidden = false;
+  }
+
+  closeExportMenu() {
+    const backdrop = this.root.querySelector('[data-qvo-export-backdrop]');
+    const menu = this.root.querySelector('[data-qvo-export-menu]');
+    if (backdrop) backdrop.hidden = true;
+    if (menu) menu.hidden = true;
   }
 
   updateDiary(universeId) {
@@ -1111,6 +1363,171 @@ class QuantumVibeOracle {
 
   getActiveUniverse() {
     return this.universes.find((item) => item.id === this.activeUniverseId) || this.universes[1] || this.universes[0];
+  }
+
+  getDominantUniverse() {
+    return [...this.universes].sort((left, right) => right.probability - left.probability)[0] || this.getActiveUniverse();
+  }
+
+  buildExportFilename(universe) {
+    const title = sanitizeFilename(this.data.question || '量子决策');
+    const universeLabel = sanitizeFilename(universe?.shortTitle || universe?.title || '当前视角');
+    return `量子vibe-${title}-${universeLabel}-${formatExportTimestamp()}.png`;
+  }
+
+  async waitForFlightSettle(timeout = 2400) {
+    const started = performance.now();
+    return new Promise((resolve) => {
+      const poll = () => {
+        if (!this.flightTarget || performance.now() - started > timeout) {
+          resolve();
+          return;
+        }
+        requestAnimationFrame(poll);
+      };
+      poll();
+    });
+  }
+
+  triggerExportCelebration() {
+    this.exportBurstEnergy = 1;
+    showToast('量子粒子正在为这张艺术图聚光…', 'info', 1800);
+  }
+
+  async handleExportRequest() {
+    const mode = this.exportState.mode || 'current';
+    const resolution = getResolutionPreset(this.exportState.resolution);
+    const universe = this.universes.find((item) => item.id === (this.exportState.universeId || this.activeUniverseId))
+      || this.getActiveUniverse();
+
+    this.closeExportMenu();
+    this.triggerExportCelebration();
+
+    if (mode === 'universe') {
+      this.focusUniverse(universe.id, { instant: false });
+      await this.waitForFlightSettle(2600);
+    }
+
+    const snapshotDataUrl = await this.captureCurrentView(resolution.width, resolution.height);
+    const finalBlob = mode === 'poster'
+      ? await this.buildPosterBlob(snapshotDataUrl, resolution, universe)
+      : (
+        this.exportState.includeMetadata
+          ? injectPngMetadata(snapshotDataUrl, await this.buildQuantumSnapshotMetadata(universe, resolution, mode))
+          : new Blob([dataUrlToUint8Array(snapshotDataUrl)], { type: 'image/png' })
+      );
+
+    downloadBlob(finalBlob, this.buildExportFilename(mode === 'current' ? this.getDominantUniverse() : universe));
+    await this.saveState({ lastExportedAt: new Date().toISOString(), lastExportMode: mode });
+    showToast('量子艺术图已保存至下载文件夹 ✨', 'success', 3200);
+  }
+
+  async captureCurrentView(width, height) {
+    const canvas = this.renderer?.domElement;
+    if (!canvas || !this.renderer || !this.camera) throw new Error('量子宇宙尚未完成初始化。');
+    const storyOrb = this.root.querySelector('[data-qvo-story-orb]');
+    const menu = this.root.querySelector('[data-qvo-export-menu]');
+    const backdrop = this.root.querySelector('[data-qvo-export-backdrop]');
+    const wasStoryHidden = storyOrb?.hidden;
+    if (storyOrb) storyOrb.hidden = true;
+    if (menu) menu.hidden = true;
+    if (backdrop) backdrop.hidden = true;
+
+    const originalAspect = this.camera.aspect;
+    this.renderer.setPixelRatio(1);
+    this.renderer.setSize(width, height);
+    this.camera.aspect = width / height;
+    this.camera.updateProjectionMatrix();
+    this.updateSceneFrame((performance.now() - this.startedAt) / 1000);
+    await new Promise((resolve) => requestAnimationFrame(resolve));
+    this.updateSceneFrame((performance.now() - this.startedAt) / 1000);
+    const dataUrl = canvas.toDataURL('image/png', 1.0);
+
+    this.renderer.setPixelRatio(this.device.pixelRatio);
+    this.renderer.setSize(window.innerWidth, window.innerHeight);
+    this.camera.aspect = originalAspect;
+    this.camera.updateProjectionMatrix();
+    if (storyOrb) storyOrb.hidden = wasStoryHidden ?? true;
+    return dataUrl;
+  }
+
+  async buildPosterBlob(baseDataUrl, resolution, universe) {
+    const width = resolution.width;
+    const height = resolution.height;
+    const canvas = document.createElement('canvas');
+    canvas.width = width;
+    canvas.height = height;
+    const ctx = canvas.getContext('2d');
+    const image = await loadImageFromDataUrl(baseDataUrl);
+    ctx.drawImage(image, 0, 0, width, height);
+
+    const gradient = ctx.createLinearGradient(0, 0, width * 0.72, height);
+    gradient.addColorStop(0, 'rgba(5, 8, 24, 0.1)');
+    gradient.addColorStop(0.48, 'rgba(5, 8, 24, 0.6)');
+    gradient.addColorStop(1, 'rgba(3, 5, 18, 0.92)');
+    ctx.fillStyle = gradient;
+    ctx.fillRect(0, 0, width, height);
+
+    ctx.fillStyle = '#f3d486';
+    ctx.font = `600 ${Math.round(width * 0.018)}px "Noto Serif SC", serif`;
+    ctx.fillText('QUANTUM VIBE ORACLE', width * 0.06, height * 0.12);
+
+    ctx.fillStyle = '#f8fbff';
+    ctx.font = `700 ${Math.round(width * 0.042)}px "Noto Serif SC", serif`;
+    const title = compactText(this.data.question || '当前决策', '当前决策');
+    const maxTitleWidth = width * 0.48;
+    const words = [];
+    let line = '';
+    title.split('').forEach((char) => {
+      const next = line + char;
+      if (ctx.measureText(next).width > maxTitleWidth && line) {
+        words.push(line);
+        line = char;
+      } else {
+        line = next;
+      }
+    });
+    if (line) words.push(line);
+    words.slice(0, 3).forEach((item, index) => ctx.fillText(item, width * 0.06, height * (0.19 + index * 0.055)));
+
+    const probabilities = this.universes.map((item) => `${item.key} ${Math.round(item.probability)}%`).join(' / ');
+    const stats = [
+      `当前推荐：${universe.shortTitle}`,
+      `Monte Carlo：${probabilities}`,
+      `生物反馈：HR ${Math.round(this.bioSignal.heartRate)} · HRV ${Math.round(this.bioSignal.hrv * 100)}% · 呼吸 ${Math.round(this.bioSignal.breath * 100)}%`,
+      `粒子总数：${this.device.particleBudget.toLocaleString()}`,
+      `导出时间：${new Date().toLocaleString('zh-CN')}`,
+    ];
+    ctx.font = `500 ${Math.round(width * 0.013)}px "Noto Serif SC", serif`;
+    ctx.fillStyle = 'rgba(242, 246, 255, 0.9)';
+    stats.forEach((item, index) => ctx.fillText(item, width * 0.06, height * (0.43 + index * 0.038)));
+
+    ctx.strokeStyle = 'rgba(243, 212, 134, 0.72)';
+    ctx.lineWidth = Math.max(2, width * 0.0014);
+    ctx.strokeRect(width * 0.055, height * 0.095, width * 0.49, height * 0.46);
+
+    const posterDataUrl = canvas.toDataURL('image/png', 1.0);
+    return this.exportState.includeMetadata
+      ? injectPngMetadata(posterDataUrl, await this.buildQuantumSnapshotMetadata(universe, resolution, 'poster'))
+      : new Blob([dataUrlToUint8Array(posterDataUrl)], { type: 'image/png' });
+  }
+
+  async buildQuantumSnapshotMetadata(universe, resolution, mode) {
+    const persisted = await loadPersistedQuantumState(this.decisionId);
+    return {
+      kind: 'clp-quantum-snapshot',
+      mode,
+      resolution,
+      decisionId: this.decisionId,
+      question: this.data.question,
+      activeUniverseId: this.activeUniverseId,
+      exportedUniverse: universe?.id || this.activeUniverseId,
+      bioSignal: this.bioSignal,
+      probabilities: this.universes.map((item) => ({ id: item.id, title: item.title, probability: item.probability })),
+      particleBudget: this.device.particleBudget,
+      persistedState: persisted,
+      exportedAt: new Date().toISOString(),
+    };
   }
 
   async setupThree() {
@@ -1365,13 +1782,18 @@ class QuantumVibeOracle {
   animate() {
     const time = (performance.now() - this.startedAt) / 1000;
     this.raf = requestAnimationFrame(() => this.animate());
+    this.updateSceneFrame(time);
+  }
+
+  updateSceneFrame(time) {
     const collapse = easeOutCubic(time / 2.4);
     this.collapseUniform.value = clamp(collapse, 0, 1);
+    this.exportBurstEnergy = Math.max(0, this.exportBurstEnergy - 0.018);
     if (this.nebula) {
-      this.nebula.rotation.y += 0.0009 + this.bioSignal.breath * 0.0008;
+      this.nebula.rotation.y += 0.0009 + this.bioSignal.breath * 0.0008 + this.exportBurstEnergy * 0.01;
       this.nebula.rotation.x = Math.sin(time * 0.12) * 0.04;
     }
-    const observerPulse = 1 + this.observerEnergy / 750;
+    const observerPulse = 1 + this.observerEnergy / 750 + this.exportBurstEnergy * 0.9;
     this.universeGroups?.forEach((group, index) => {
       const targetPosition = group.userData.universe?.position || [0, 0, 0];
       const isActive = group.userData.universe?.id === this.activeUniverseId;
@@ -1379,10 +1801,10 @@ class QuantumVibeOracle {
       const bioBoost = group.userData.universe?.recommended ? this.bioSignal.calmness * 0.28 : 0;
       group.position.lerp(new this.THREE.Vector3(...targetPosition).multiplyScalar(collapse), 0.08);
       group.rotation.y += (0.002 + (group.userData.universe?.probability || 30) / 50000) * observerPulse;
-      group.scale.lerp(new this.THREE.Vector3(1, 1, 1).multiplyScalar((isActive || isHovered ? 1.08 + bioBoost : 1) * (0.72 + collapse * 0.32)), 0.04);
+      group.scale.lerp(new this.THREE.Vector3(1, 1, 1).multiplyScalar((isActive || isHovered ? 1.08 + bioBoost : 1) * (0.72 + collapse * 0.32 + this.exportBurstEnergy * 0.16)), 0.04);
       group.children.forEach((child) => {
         if (child.userData?.waveSpeed) {
-          const pulse = 1 + Math.sin(time * child.userData.waveSpeed + index) * 0.035 * observerPulse;
+          const pulse = 1 + Math.sin(time * child.userData.waveSpeed + index) * 0.035 * observerPulse + this.exportBurstEnergy * 0.12;
           child.scale.setScalar(pulse);
           child.rotation.z += 0.0025 * observerPulse;
         }
@@ -1393,10 +1815,10 @@ class QuantumVibeOracle {
             uniforms.uTime.value = time;
             uniforms.uObserver.value = clamp(this.observerEnergy / 100 + bioBoost, 0, 1.35);
             uniforms.uPixelRatio.value = this.device.pixelRatio;
-            uniforms.uHighlight.value = isHovered ? 1 : (isActive ? 0.4 : 0);
+            uniforms.uHighlight.value = (isHovered ? 1 : (isActive ? 0.4 : 0)) + this.exportBurstEnergy * 0.8;
           } else {
-            child.material.size = child.userData.baseSize * (isHovered ? 1.38 : (isActive ? 1.14 : 1));
-            child.material.opacity = child.userData.baseOpacity * (isHovered ? 1.28 : 1);
+            child.material.size = child.userData.baseSize * ((isHovered ? 1.38 : (isActive ? 1.14 : 1)) + this.exportBurstEnergy * 0.38);
+            child.material.opacity = child.userData.baseOpacity * (isHovered ? 1.28 : 1) + this.exportBurstEnergy * 0.16;
           }
         }
       });
@@ -1453,7 +1875,8 @@ class QuantumVibeOracle {
   }
 
   async saveState(extra = {}) {
-    await savePersistedQuantumState({
+    this.persistedState = {
+      ...this.persistedState,
       decisionId: this.decisionId,
       activeUniverseId: this.activeUniverseId,
       observerEnergy: this.observerEnergy,
@@ -1462,7 +1885,8 @@ class QuantumVibeOracle {
       validationMetrics: extractValidationMetrics(this.data),
       updatedAt: new Date().toISOString(),
       ...extra,
-    });
+    };
+    await savePersistedQuantumState(this.persistedState);
   }
 
   disposeObject(object) {
