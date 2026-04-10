@@ -6,6 +6,7 @@ import { showToast } from '../utils.js';
 import { detectArtExperienceCapability } from '../art-experience/capability.js';
 import { easeOutCubic, getDeviceProfile, safeNumber, wait } from '../art-experience/common.js';
 import { extractProbabilities, getCurrentDecisionData, getDecisionId } from '../art-experience/decision-data.js';
+import { lockBodyScroll, unlockBodyScroll } from '../art-experience/overlay-lock.js';
 import { buildSoulBlueprint } from './blueprint.js';
 import { exportGlb, exportLoopVideo, exportStill } from './export.js';
 import { clearVoiceInputs, handlePhotoInput, stopVoiceCapture, toggleVoiceCapture } from './media.js';
@@ -142,7 +143,7 @@ export class DivineSoulTopologyController {
     this.root.className = 'dst-root';
     this.root.innerHTML = buildTemplate();
     document.body.appendChild(this.root);
-    document.body.style.overflow = 'hidden';
+    lockBodyScroll();
 
     this.root.querySelector('[data-dst-question]').textContent = this.data.question || '当前决策';
     this.root.querySelector('[data-dst-story]').value = this.storyText;
@@ -577,7 +578,7 @@ export class DivineSoulTopologyController {
     this.composer?.dispose?.();
     this.renderer?.dispose?.();
     this.root?.remove();
-    document.body.style.overflow = '';
+    unlockBodyScroll();
     if (!silent) showToast('已回到理性模式。', 'info', 1600);
   }
 }

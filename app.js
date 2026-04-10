@@ -53,8 +53,10 @@ let divineModulePromise = null;
 async function loadDivineSoulTopologyModule() {
   if (!divineModulePromise) {
     artDebugState.divineLoadCount += 1;
+    console.debug('[ART] divine:load:start', artDebugState.divineLoadCount);
     divineModulePromise = import('./frontend/modules/divine-soul-topology/index.js').then((module) => {
       artDebugState.divineModuleLoaded = true;
+      console.debug('[ART] divine:load:done');
       return module;
     });
   }

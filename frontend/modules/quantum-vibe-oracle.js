@@ -16,6 +16,7 @@ import {
   getCurrentDecisionData as getSharedDecisionData,
   getDecisionId as getSharedDecisionId,
 } from './art-experience/decision-data.js';
+import { lockBodyScroll, unlockBodyScroll } from './art-experience/overlay-lock.js';
 import { loadThreeExperienceStack } from './art-experience/three-loader.js';
 import { getRecord, openIndexedDb, putRecord } from './art-experience/storage-base.js';
 
@@ -1107,7 +1108,7 @@ class QuantumVibeOracle {
     this.root.className = 'qvo-root';
     this.root.innerHTML = template;
     document.body.appendChild(this.root);
-    document.body.style.overflow = 'hidden';
+    lockBodyScroll();
     this.root.querySelector('[data-qvo-question]').textContent = this.data.question || '当前决策';
     this.installExportUi();
     this.renderUniverseButtons();
@@ -1861,7 +1862,7 @@ class QuantumVibeOracle {
     if (this.scene) this.disposeObject(this.scene);
     this.renderer?.dispose?.();
     this.root?.remove();
-    document.body.style.overflow = '';
+    unlockBodyScroll();
     activeOracle = null;
     showToast('已回到理性报告视图。', 'info', 1600);
   }
@@ -1875,27 +1876,35 @@ function syncWebglQueryHint() {
   window.history.replaceState({}, '', next);
 }
 
-export function registerQuantumVibeOracle() {
-  window.openQuantumVibeOracle = async (explicitData) => {
-    try {
-      if (activeOracle) {
-        showToast('量子宇宙已经开启。', 'info', 1600);
-        return activeOracle;
-      }
-      syncWebglQueryHint();
-      const decisionData = getCurrentDecisionData(explicitData);
-      window.decisionData = decisionData;
-      const decisionId = getDecisionId(decisionData);
-      const persisted = await loadPersistedQuantumState(decisionId);
-      activeOracle = new QuantumVibeOracle(decisionData, persisted);
-      await activeOracle.mount();
+export async function openQuantumVibeOracle(explicitData) {
+  const startedAt = performance.now();
+  try {
+    if (activeOracle) {
+      showToast('量子宇宙已经开启。', 'info', 1600);
       return activeOracle;
-    } catch (error) {
-      console.error('Quantum Vibe Oracle failed to open:', error);
-      activeOracle = null;
-      showToast(`量子宇宙启动失败：${error.message || error}`, 'error', 5200);
-      return null;
     }
-  };
-  window.closeQuantumVibeOracle = () => activeOracle?.close();
+    syncWebglQueryHint();
+    const decisionData = getCurrentDecisionData(explicitData);
+    window.decisionData = decisionData;
+    const decisionId = getDecisionId(decisionData);
+    const persisted = await loadPersistedQuantumState(decisionId);
+    activeOracle = new QuantumVibeOracle(decisionData, persisted);
+    await activeOracle.mount();
+    console.debug('[QVO] open:ms', Math.round(performance.now() - startedAt));
+    return activeOracle;
+  } catch (error) {
+    console.error('Quantum Vibe Oracle failed to open:', error);
+    activeOracle = null;
+    showToast(`量子宇宙启动失败：${error.message || error}`, 'error', 5200);
+    return null;
+  }
+}
+
+export function closeQuantumVibeOracle() {
+  return activeOracle?.close();
+}
+
+export function registerQuantumVibeOracle() {
+  window.openQuantumVibeOracle = openQuantumVibeOracle;
+  window.closeQuantumVibeOracle = closeQuantumVibeOracle;
 }
