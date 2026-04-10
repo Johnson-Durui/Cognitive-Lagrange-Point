@@ -1,7 +1,7 @@
 {
   "title": "AI Daily Digest · 2026-04-10",
   "date": "2026-04-10",
-  "generated_at": "2026-04-10T09:21:54.856756+08:00",
+  "generated_at": "2026-04-10T09:27:47.859578+08:00",
   "repos": [
     {
       "id": "github::shiyu-coder/Kronos",
@@ -55,7 +55,12 @@
         }
       ],
       "primary_match": "reasoning",
-      "personalized_score": 118.88
+      "personalized_score": 118.88,
+      "detail_path": "items/github-shiyu-coder-kronos.html",
+      "first_seen_at": "2026-04-10T01:21:36.797692+00:00",
+      "last_seen_at": "2026-04-10T01:25:05.410205+00:00",
+      "last_curated_at": "2026-04-10T01:25:05.410205+00:00",
+      "last_notified_at": "2026-04-10T01:25:05.410194+00:00"
     }
   ],
   "papers": [
@@ -130,7 +135,12 @@
         }
       ],
       "primary_match": "agent",
-      "personalized_score": 216.0
+      "personalized_score": 216.0,
+      "detail_path": "items/arxiv-selar-selective-latent-reasoning-in-large-language-models.html",
+      "first_seen_at": "2026-04-10T01:21:36.797692+00:00",
+      "last_seen_at": "2026-04-10T01:25:05.410205+00:00",
+      "last_curated_at": "2026-04-10T01:25:05.410205+00:00",
+      "last_notified_at": "2026-04-10T01:25:05.410194+00:00"
     },
     {
       "id": "arxiv::http://arxiv.org/abs/2604.08322v1",
@@ -206,7 +216,12 @@
         }
       ],
       "primary_match": "reasoning",
-      "personalized_score": 180.0
+      "personalized_score": 180.0,
+      "detail_path": "items/arxiv-fundus-r1-training-a-fundus-reading-mllm-with-knowledge-aware-reasoning-on-public-data.html",
+      "first_seen_at": "2026-04-10T01:21:36.797692+00:00",
+      "last_seen_at": "2026-04-10T01:25:05.410205+00:00",
+      "last_curated_at": "2026-04-10T01:25:05.410205+00:00",
+      "last_notified_at": "2026-04-10T01:25:05.410194+00:00"
     },
     {
       "id": "arxiv::http://arxiv.org/abs/2604.08302v1",
@@ -279,7 +294,83 @@
         }
       ],
       "primary_match": "coding",
-      "personalized_score": 180.0
+      "personalized_score": 180.0,
+      "detail_path": "items/arxiv-dmax-aggressive-parallel-decoding-for-dllms.html",
+      "first_seen_at": "2026-04-10T01:21:36.797692+00:00",
+      "last_seen_at": "2026-04-10T01:25:05.410205+00:00",
+      "last_curated_at": "2026-04-10T01:25:05.410205+00:00",
+      "last_notified_at": "2026-04-10T01:25:05.410194+00:00"
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2604.08256v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "HyperMem: Hypergraph Memory for Long-Term Conversations",
+      "html_url": "http://arxiv.org/abs/2604.08256v1",
+      "pdf_url": "https://arxiv.org/pdf/2604.08256v1",
+      "description": "Long-term memory is essential for conversational agents to maintain coherence, track persistent tasks, and provide personalized interactions across extended dialogues. However, existing approaches as Retrieval-Augmented Generation (RAG) and graph-based memory mostly rely on pairwise relations, which can hardly capture high-order associations, i.e., joint dependencies among multiple elements, causing fragmented retrieval. To this end, we propose HyperMem, a hypergraph-based hierarchical memory architecture that explicitly models such associations using hyperedges. Particularly, HyperMem structures memory into three levels: topics, episodes, and facts, and groups related episodes and their facts via hyperedges, unifying scattered content into coherent units. Leveraging this structure, we design a hybrid lexical-semantic index and a coarse-to-fine retrieval strategy, supporting accurate and efficient retrieval of high-order associations. Experiments on the LoCoMo benchmark show that HyperMem achieves state-of-the-art performance with 92.73% LLM-as-a-judge accuracy, demonstrating the effectiveness of HyperMem for long-term conversations.",
+      "authors": [
+        "Juwei Yue",
+        "Chuanrui Hu",
+        "Jiawei Sheng",
+        "Zuyi Zhou",
+        "Wenyuan Zhang",
+        "Tingwen Liu",
+        "Li Guo",
+        "Yafeng Deng"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "published_at": "2026-04-09T13:43:23+00:00",
+      "updated_at": "2026-04-09T13:43:23+00:00",
+      "primary_category": "cs.CL",
+      "heuristic_score": 17.339,
+      "summary": "HyperMem: Hypergraph Memory for Long-Term Conversations 是最近值得追踪的一篇 AI 论文。论文摘要显示：Long-term memory is essential for conversational agents to maintain coherence, track persistent tasks, and provide personalized interactions across extended dialogues. However, existing approaches as Retrieval-Augmented Generation (RAG) and...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CL, cs.AI",
+        "作者数: 8"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "llm",
+        "agent",
+        "rag"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "agent"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：HyperMem: Hypergraph Memory for Long-Term Conversations 是最近值得追踪的一篇 AI 论文。论文摘要显示：Long-term memory is essential for conversational agents to maintain coherence, track persistent tasks, and provide personalized interactions across extended dialogues. However, existing approaches as Retrieval-Augmented Generation (RAG) and...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL, cs.AI\n- 作者数: 8",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 176.0
     },
     {
       "id": "arxiv::http://arxiv.org/abs/2604.08284v1",
@@ -349,7 +440,12 @@
         }
       ],
       "primary_match": "reasoning",
-      "personalized_score": 160.0
+      "personalized_score": 160.0,
+      "detail_path": "items/arxiv-distributed-multi-layer-editing-for-rule-level-knowledge-in-large-language-models.html",
+      "first_seen_at": "2026-04-10T01:21:36.797692+00:00",
+      "last_seen_at": "2026-04-10T01:25:05.410205+00:00",
+      "last_curated_at": "2026-04-10T01:25:05.410205+00:00",
+      "last_notified_at": "2026-04-10T01:25:05.410194+00:00"
     },
     {
       "id": "arxiv::http://arxiv.org/abs/2604.08266v1",
@@ -414,132 +510,15 @@
         }
       ],
       "primary_match": "reasoning",
-      "personalized_score": 160.0
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2604.08333v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "Lost in the Hype: Revealing and Dissecting the Performance Degradation of Medical Multimodal Large Language Models in Image Classification",
-      "html_url": "http://arxiv.org/abs/2604.08333v1",
-      "pdf_url": "https://arxiv.org/pdf/2604.08333v1",
-      "description": "The rise of multimodal large language models (MLLMs) has sparked an unprecedented wave of applications in the field of medical imaging analysis. However, as one of the earliest and most fundamental tasks integrated into this paradigm, medical image classification reveals a sobering reality: state-of-the-art medical MLLMs consistently underperform compared to traditional deep learning models, despite their overwhelming advantages in pre-training data and model parameters. This paradox prompts a critical rethinking: where exactly does the performance degradation originate? In this paper, we conduct extensive experiments on 14 open-source medical MLLMs across three representative image classification datasets. Moving beyond superficial performance benchmarking, we employ feature probing to track the information flow of visual features module-by-module and layer-by-layer throughout the entire MLLM pipeline, enabling explicit visualization of where and how classification signals are distorted, diluted, or overridden. As the first attempt to dissect classification performance degradation in medical MLLMs, our findings reveal four failure modes: 1) quality limitation in visual representation, 2) fidelity loss in connector projection, 3) comprehension deficit in LLM reasoning, and 4) misalignment of semantic mapping. Meanwhile, we introduce quantitative scores that characterize the healthiness of feature evolution, enabling principled comparisons across diverse MLLMs and datasets. Furthermore, we provide insightful discussions centered on the critical barriers that prevent current medical MLLMs from fulfilling their promised clinical potential. We hope that our work provokes rethinking within the community-highlighting that the road from high expectations to clinically deployable MLLMs remains long and winding.",
-      "authors": [
-        "Xun Zhu",
-        "Fanbin Mo",
-        "Xi Chen",
-        "Kaili Zheng",
-        "Shaoshuai Yang",
-        "Yiming Shi",
-        "Jian Gao",
-        "Miao Li",
-        "Ji Wu"
-      ],
-      "categories": [
-        "cs.CV",
-        "cs.AI",
-        "cs.LG"
-      ],
-      "published_at": "2026-04-09T15:07:26+00:00",
-      "updated_at": "2026-04-09T15:07:26+00:00",
-      "primary_category": "cs.CV",
-      "heuristic_score": 20.3,
-      "summary": "这篇论文揭示了医疗多模态大语言模型（MLLMs）在图像分类任务上远逊于传统深度学习模型的悖论，通过模块级和层级特征探针首次剖析性能退化来源，发现视觉表示质量低、连接器保真度损失、LLM推理缺陷及语义映射错位四大失败模式。同时引入特征演化健康度量化分数，支持跨模型数据集比较，并讨论临床部署障碍。研究呼吁社区重新审视MLLMs潜力。",
-      "brief": "医疗MLLMs图像分类性能退化剖析：首次模块级追踪四大失败模式，量化特征健康度。",
-      "problem": "医疗多模态大语言模型在图像分类等基础任务上性能远逊传统模型，原因不明。",
-      "why_it_matters": "揭示MLLMs核心缺陷，提供量化诊断工具，推动医疗AI从炒作向临床部署转型。",
-      "target_reader": "医疗AI研究者、多模态模型开发者、LLM临床应用从业者。",
-      "core_innovation": "首次模块/层级特征探针可视化分类信号扭曲，并引入特征演化健康度量化分数。",
-      "highlights": [
-        "剖析四大失败模式：视觉质量低、连接器损失、LLM推理缺、语义错位。",
-        "14开源MLLMs×3数据集实验，支持跨模型比较。",
-        "讨论临床部署障碍，促进行业反思。"
-      ],
-      "practicality": "诊断工具落地潜力高，但优化MLLMs需进一步工程努力，中等临床即用性。",
-      "relevance_score": 9,
-      "tags": [
-        "多模态",
-        "医疗AI",
-        "基准"
-      ],
-      "themes": [
-        "多模态",
-        "推理",
-        "benchmark"
-      ],
-      "selection_reason": "核心创新剖析医疗MLLMs性能瓶颈，高度匹配用户关注的多模态、推理、benchmark关键词，值得每日重点关注以指导研究方向。",
-      "summary_markdown": "**摘要**：这篇论文揭示了医疗多模态大语言模型（MLLMs）在图像分类任务上远逊于传统深度学习模型的悖论，通过模块级和层级特征探针首次剖析性能退化来源，发现视觉表示质量低、连接器保真度损失、LLM推理缺陷及语义映射错位四大失败模式。同时引入特征演化健康度量化分数，支持跨模型数据集比较，并讨论临床部署障碍。研究呼吁社区重新审视MLLMs潜力。\n\n**核心创新**：首次模块/层级特征探针可视化分类信号扭曲，并引入特征演化健康度量化分数。\n\n**实用性**：诊断工具落地潜力高，但优化MLLMs需进一步工程努力，中等临床即用性。\n\n**相关性评分**：9/10\n\n**亮点**：\n- 剖析四大失败模式：视觉质量低、连接器损失、LLM推理缺、语义错位。\n- 14开源MLLMs×3数据集实验，支持跨模型比较。\n- 讨论临床部署障碍，促进行业反思。",
-      "focus_hits": [
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "multimodal",
-          "weight": 2.0
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "reasoning",
-      "personalized_score": 158.0
+      "personalized_score": 160.0,
+      "detail_path": "items/arxiv-orion-lite-distilling-llm-reasoning-into-efficient-vision-only-driving-models.html",
+      "first_seen_at": "2026-04-10T01:21:36.797692+00:00",
+      "last_seen_at": "2026-04-10T01:25:05.410205+00:00",
+      "last_curated_at": "2026-04-10T01:25:05.410205+00:00",
+      "last_notified_at": "2026-04-10T01:25:05.410194+00:00"
     }
   ],
   "news": [
-    {
-      "id": "news::https://huggingface.co/blog/multimodal-sentence-transformers",
-      "kind": "news",
-      "source": "news",
-      "source_name": "Hugging Face Blog",
-      "title": "Multimodal Embedding & Reranker Models with Sentence Transformers",
-      "html_url": "https://huggingface.co/blog/multimodal-sentence-transformers",
-      "description": "",
-      "published_at": "2026-04-09T00:00:00+00:00",
-      "categories": [],
-      "heuristic_score": 5.4,
-      "summary": "Hugging Face 推出 Sentence Transformers 的多模态嵌入与重排序模型，支持文本、图像等多模态数据处理，提升检索准确性。该模型无缝集成 Hugging Face 生态，便于开发者快速部署多模态 RAG 系统。标志着开源多模态工具向生产级应用迈进。",
-      "brief": "Hugging Face 新推多模态嵌入&Reranker模型，Sentence Transformers 支持图像文本检索。",
-      "problem": "传统嵌入模型难以有效处理多模态数据，导致跨模态检索准确率低下。",
-      "why_it_matters": "开源多模态工具成熟化，推动 RAG 和多模态搜索从研究向产品落地，加速行业应用。",
-      "target_reader": "RAG开发者、多模态AI工程师、Hugging Face用户。",
-      "core_innovation": "Sentence Transformers首支持多模态嵌入与重排序，一键集成开源生态。",
-      "highlights": [
-        "无缝支持文本图像嵌入，提升跨模态检索精度",
-        "优化Reranker减少幻觉，适用于生产级RAG管道",
-        "Hugging Face Hub一键部署，降低多模态开发门槛"
-      ],
-      "practicality": "高，即插即用，适合快速构建多模态搜索系统。",
-      "relevance_score": 9,
-      "tags": [
-        "多模态",
-        "RAG",
-        "开源模型"
-      ],
-      "themes": [
-        "多模态",
-        "RAG",
-        "嵌入模型"
-      ],
-      "selection_reason": "契合用户关注的多模态、RAG、开源模型关键词，推动AI检索前沿趋势与产品化。",
-      "summary_markdown": "**摘要**：Hugging Face 推出 Sentence Transformers 的多模态嵌入与重排序模型，支持文本、图像等多模态数据处理，提升检索准确性。该模型无缝集成 Hugging Face 生态，便于开发者快速部署多模态 RAG 系统。标志着开源多模态工具向生产级应用迈进。\n\n**核心创新**：Sentence Transformers首支持多模态嵌入与重排序，一键集成开源生态。\n\n**实用性**：高，即插即用，适合快速构建多模态搜索系统。\n\n**相关性评分**：9/10\n\n**亮点**：\n- 无缝支持文本图像嵌入，提升跨模态检索精度\n- 优化Reranker减少幻觉，适用于生产级RAG管道\n- Hugging Face Hub一键部署，降低多模态开发门槛",
-      "focus_hits": [
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "multimodal",
-          "weight": 2.0
-        }
-      ],
-      "primary_match": "rag",
-      "personalized_score": 138.0
-    },
     {
       "id": "news::https://huggingface.co/blog/ibm-research/altk-evolve",
       "kind": "news",
@@ -551,30 +530,26 @@
       "published_at": "2026-04-08T14:27:42+00:00",
       "categories": [],
       "heuristic_score": 7.6,
-      "summary": "ALTK-Evolve 是一种新型 on-the-job learning 框架，让 AI 代理在实际任务中实时进化，提升长期性能。Hugging Face 博客介绍该方法通过自适应学习机制，解决代理在动态环境中适应性差的问题。适用于 agentic 系统，推动代理从静态模型向持续学习演进。",
-      "brief": "Hugging Face 推出 ALTK-Evolve，让 AI 代理在工作中实时学习进化，提升长期任务能力。",
-      "problem": "AI 代理在动态真实任务中难以持续适应和优化性能。",
-      "why_it_matters": "标志着 AI 代理从静态训练向 on-the-job 实时进化转型，契合 agentic 趋势并重塑行业产品方向。",
-      "target_reader": "AI 代理开发者、agentic 系统研究者和企业 AI 产品经理。",
-      "core_innovation": "on-the-job 自适应学习机制，实现代理实时进化而非离线训练。",
+      "summary": "Hugging Face Blog 的这条 AI 新闻值得关注。核心内容是：暂无更多摘要。它更适合作为判断行业方向和产品动作的快速信号。",
+      "brief": "一条值得加入今日 AI 前沿观察的行业新闻。",
+      "problem": "它反映了 AI 产品、模型、资本或行业竞争格局中的新变化。",
+      "why_it_matters": "这类新闻往往决定接下来一段时间最值得跟进的公司、技术和叙事方向。",
+      "target_reader": "适合关注 AI 行业动态、产品发布和公司动作的人优先阅读。",
+      "core_innovation": "新闻类条目更强调行业动向和趋势信号，而不是技术细节。",
       "highlights": [
-        "无需重训即可在任务中积累经验",
-        "显著提升代理长期性能和鲁棒性",
-        "开源框架，便于 Hugging Face 生态集成"
+        "来源: Hugging Face Blog",
+        "价值: 趋势判断"
       ],
-      "practicality": "高，即插即用，支持实际部署中的代理优化。",
-      "relevance_score": 9,
+      "practicality": "适合快速判断最近行业关注点，再决定是否继续追原文。",
+      "relevance_score": 5,
       "tags": [
-        "AI代理",
-        "开源模型"
+        "daily-pick"
       ],
       "themes": [
-        "智能体",
-        "推理",
-        "agentic"
+        "AI 新闻"
       ],
-      "selection_reason": "直接契合用户关注关键词如 ai agent、agentic 和 reasoning，推动代理前沿趋势和开源生态格局变革。",
-      "summary_markdown": "**摘要**：ALTK-Evolve 是一种新型 on-the-job learning 框架，让 AI 代理在实际任务中实时进化，提升长期性能。Hugging Face 博客介绍该方法通过自适应学习机制，解决代理在动态环境中适应性差的问题。适用于 agentic 系统，推动代理从静态模型向持续学习演进。\n\n**核心创新**：on-the-job 自适应学习机制，实现代理实时进化而非离线训练。\n\n**实用性**：高，即插即用，支持实际部署中的代理优化。\n\n**相关性评分**：9/10\n\n**亮点**：\n- 无需重训即可在任务中积累经验\n- 显著提升代理长期性能和鲁棒性\n- 开源框架，便于 Hugging Face 生态集成",
+      "selection_reason": "它能帮助你快速感知今天 AI 行业里最值得注意的动态。",
+      "summary_markdown": "**摘要**：Hugging Face Blog 的这条 AI 新闻值得关注。核心内容是：暂无更多摘要。它更适合作为判断行业方向和产品动作的快速信号。\n\n**核心创新**：新闻类条目更强调行业动向和趋势信号，而不是技术细节。\n\n**实用性**：适合快速判断最近行业关注点，再决定是否继续追原文。\n\n**相关性评分**：5/10\n\n**亮点**：\n- 来源: Hugging Face Blog\n- 价值: 趋势判断",
       "focus_hits": [
         {
           "keyword": "agent",
@@ -582,51 +557,47 @@
         }
       ],
       "primary_match": "agent",
-      "personalized_score": 126.0
+      "personalized_score": 86.0
     },
     {
-      "id": "news::https://pbement.com/posts/lie_brackets/",
+      "id": "news::https://techcrunch.com/2026/04/09/florida-ag-to-probe-openai-alleging-possible-connection-to-fsu-shooting/",
       "kind": "news",
       "source": "news",
-      "source_name": "Hacker News Frontpage",
-      "title": "The Training Example Lie Bracket",
-      "html_url": "https://pbement.com/posts/lie_brackets/",
-      "description": "Article URL: https://pbement.com/posts/lie_brackets/ Comments URL: https://news.ycombinator.com/item?id=47710782 Points: 12 # Comments: 8",
-      "published_at": "2026-04-09T21:59:28+00:00",
-      "categories": [],
-      "heuristic_score": 4.8,
-      "summary": "文章剖析了训练示例中'Lie Bracket'现象，即模型在训练数据中学习到虚假的因果关系，导致推理偏差。作者通过数学和实验揭示这一问题源于数据噪声与模型泛化间的冲突。建议通过数据清洗和正则化缓解，值得AI训练从业者关注。",
-      "brief": "训练数据中的Lie Bracket导致模型虚假因果学习，影响推理准确性。",
-      "problem": "训练示例中嵌入的虚假因果关系（如Lie Bracket）导致模型泛化时产生推理偏差。",
-      "why_it_matters": "揭示LLM训练核心痛点，有助于提升模型在复杂推理任务的鲁棒性，正值长上下文与推理优化热潮。",
-      "target_reader": "AI训练工程师、LLM研究员、数据科学家。",
-      "core_innovation": "首次系统定义并实验验证训练数据中的Lie Bracket现象，提供数学框架分析。",
-      "highlights": [
-        "Lie Bracket指训练数据虚假嵌套关系引发模型幻觉。",
-        "实验证明数据噪声直接导致推理失败，可通过清洗缓解。"
+      "source_name": "TechCrunch",
+      "title": "Florida AG to probe OpenAI, alleging possible connection to FSU shooting",
+      "html_url": "https://techcrunch.com/2026/04/09/florida-ag-to-probe-openai-alleging-possible-connection-to-fsu-shooting/",
+      "description": "Florida Attorney General James Uthmeier plans to investigate OpenAI for its alleged harm to minors, potential to threaten national security, and its possible link to a shooting at Florida State University last year.",
+      "published_at": "2026-04-09T22:13:26+00:00",
+      "categories": [
+        "Government & Policy",
+        "TC",
+        "ChatGPT",
+        "OpenAI"
       ],
-      "practicality": "高，提供数据清洗和正则化实用建议，易于工程落地。",
-      "relevance_score": 9,
+      "heuristic_score": 5.4,
+      "summary": "TechCrunch 的这条 AI 新闻值得关注。核心内容是：Florida Attorney General James Uthmeier plans to investigate OpenAI for its alleged harm to minors, potential to threaten national security, and its possible link to a shooting at Florida State University last year.它更适合作为判断行业方向和产品动作的快速信号。",
+      "brief": "一条值得加入今日 AI 前沿观察的行业新闻。",
+      "problem": "它反映了 AI 产品、模型、资本或行业竞争格局中的新变化。",
+      "why_it_matters": "这类新闻往往决定接下来一段时间最值得跟进的公司、技术和叙事方向。",
+      "target_reader": "适合关注 AI 行业动态、产品发布和公司动作的人优先阅读。",
+      "core_innovation": "新闻类条目更强调行业动向和趋势信号，而不是技术细节。",
+      "highlights": [
+        "来源: TechCrunch",
+        "价值: 趋势判断"
+      ],
+      "practicality": "适合快速判断最近行业关注点，再决定是否继续追原文。",
+      "relevance_score": 5,
       "tags": [
-        "训练",
-        "推理",
-        "LLM"
+        "ai"
       ],
       "themes": [
-        "推理",
-        "训练",
-        "benchmark"
+        "ai"
       ],
-      "selection_reason": "直击LLM训练与推理前沿痛点，与用户关注关键词高度匹配，揭示行业数据质量隐忧。",
-      "summary_markdown": "**摘要**：文章剖析了训练示例中'Lie Bracket'现象，即模型在训练数据中学习到虚假的因果关系，导致推理偏差。作者通过数学和实验揭示这一问题源于数据噪声与模型泛化间的冲突。建议通过数据清洗和正则化缓解，值得AI训练从业者关注。\n\n**核心创新**：首次系统定义并实验验证训练数据中的Lie Bracket现象，提供数学框架分析。\n\n**实用性**：高，提供数据清洗和正则化实用建议，易于工程落地。\n\n**相关性评分**：9/10\n\n**亮点**：\n- Lie Bracket指训练数据虚假嵌套关系引发模型幻觉。\n- 实验证明数据噪声直接导致推理失败，可通过清洗缓解。",
-      "focus_hits": [
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "benchmark",
-      "personalized_score": 112.0
+      "selection_reason": "它能帮助你快速感知今天 AI 行业里最值得注意的动态。",
+      "summary_markdown": "**摘要**：TechCrunch 的这条 AI 新闻值得关注。核心内容是：Florida Attorney General James Uthmeier plans to investigate OpenAI for its alleged harm to minors, potential to threaten national security, and its possible link to a shooting at Florida State University last year.它更适合作为判断行业方向和产品动作的快速信号。\n\n**核心创新**：新闻类条目更强调行业动向和趋势信号，而不是技术细节。\n\n**实用性**：适合快速判断最近行业关注点，再决定是否继续追原文。\n\n**相关性评分**：5/10\n\n**亮点**：\n- 来源: TechCrunch\n- 价值: 趋势判断",
+      "focus_hits": [],
+      "primary_match": "",
+      "personalized_score": 56.0
     },
     {
       "id": "news::https://techcrunch.com/2026/04/09/chatgpt-pro-plan-100-month-codex/",
@@ -643,34 +614,29 @@
         "ChatGPT"
       ],
       "heuristic_score": 5.4,
-      "summary": "OpenAI推出ChatGPT Pro计划，每月100美元，填补了20美元Plus与200美元Team之间的订阅空白，针对重度用户需求。 该计划提供更高优先级访问、更快响应和无限使用，标志着OpenAI从单一定价向分层服务转型。 这反映了AI产品向专业化、付费升级的趋势。",
-      "brief": "OpenAI推$100/月ChatGPT Pro计划，填补Plus与Team间空白，针对重度用户。",
-      "problem": "ChatGPT订阅定价跳跃过大（20美元到200美元），无法满足中高端重度用户需求。",
-      "why_it_matters": "标志OpenAI产品分层化趋势，推动AI服务向专业用户付费升级，影响行业定价格局。",
-      "target_reader": "AI重度用户、产品经理、订阅服务关注者。",
-      "core_innovation": "引入中层Pro订阅，提供无限GPT-4o访问和高级功能，优化用户分级体验。",
+      "summary": "TechCrunch 的这条 AI 新闻值得关注。核心内容是：OpenAI announced on Thursday something that power users have been asking for: a $100/month plan. Previously, subscriptions jumped from $20 to $200 per month.它更适合作为判断行业方向和产品动作的快速信号。",
+      "brief": "一条值得加入今日 AI 前沿观察的行业新闻。",
+      "problem": "它反映了 AI 产品、模型、资本或行业竞争格局中的新变化。",
+      "why_it_matters": "这类新闻往往决定接下来一段时间最值得跟进的公司、技术和叙事方向。",
+      "target_reader": "适合关注 AI 行业动态、产品发布和公司动作的人优先阅读。",
+      "core_innovation": "新闻类条目更强调行业动向和趋势信号，而不是技术细节。",
       "highlights": [
-        "填补20-200美元定价空白，专为power users设计",
-        "无限使用、高优先级响应，提升专业生产力",
-        "强化OpenAI商业化路径，向分层服务转型"
+        "来源: TechCrunch",
+        "价值: 趋势判断"
       ],
-      "practicality": "立即可用，提升重度用户体验，推动AI工具专业化。",
-      "relevance_score": 9,
+      "practicality": "适合快速判断最近行业关注点，再决定是否继续追原文。",
+      "relevance_score": 5,
       "tags": [
-        "ChatGPT",
-        "订阅计划",
-        "产品策略"
+        "ai"
       ],
       "themes": [
-        "llm",
-        "产品",
-        "商业化"
+        "ai"
       ],
-      "selection_reason": "直接涉及用户长期关注的GPT和产品趋势，揭示OpenAI行业格局变化，值得前沿AI从业者关注。",
-      "summary_markdown": "**摘要**：OpenAI推出ChatGPT Pro计划，每月100美元，填补了20美元Plus与200美元Team之间的订阅空白，针对重度用户需求。 该计划提供更高优先级访问、更快响应和无限使用，标志着OpenAI从单一定价向分层服务转型。 这反映了AI产品向专业化、付费升级的趋势。\n\n**核心创新**：引入中层Pro订阅，提供无限GPT-4o访问和高级功能，优化用户分级体验。\n\n**实用性**：立即可用，提升重度用户体验，推动AI工具专业化。\n\n**相关性评分**：9/10\n\n**亮点**：\n- 填补20-200美元定价空白，专为power users设计\n- 无限使用、高优先级响应，提升专业生产力\n- 强化OpenAI商业化路径，向分层服务转型",
+      "selection_reason": "它能帮助你快速感知今天 AI 行业里最值得注意的动态。",
+      "summary_markdown": "**摘要**：TechCrunch 的这条 AI 新闻值得关注。核心内容是：OpenAI announced on Thursday something that power users have been asking for: a $100/month plan. Previously, subscriptions jumped from $20 to $200 per month.它更适合作为判断行业方向和产品动作的快速信号。\n\n**核心创新**：新闻类条目更强调行业动向和趋势信号，而不是技术细节。\n\n**实用性**：适合快速判断最近行业关注点，再决定是否继续追原文。\n\n**相关性评分**：5/10\n\n**亮点**：\n- 来源: TechCrunch\n- 价值: 趋势判断",
       "focus_hits": [],
       "primary_match": "",
-      "personalized_score": 96.0
+      "personalized_score": 56.0
     },
     {
       "id": "news::https://techcrunch.com/2026/04/09/florida-ag-investigation-openai-chatgpt-shooting/",
@@ -688,34 +654,73 @@
         "sam altman"
       ],
       "heuristic_score": 5.4,
-      "summary": "佛罗里达州总检察长宣布对OpenAI展开调查，因ChatGPT涉嫌被用于策划去年佛州州立大学枪击案，导致2死5伤。受害者家属计划起诉OpenAI，此案或成AI责任归属的关键判例。对AI前沿趋势而言，这凸显生成式AI在高风险滥用场景下的法律与伦理压力，可能重塑行业合规格局。",
-      "brief": "佛州检察长调查OpenAI：ChatGPT疑助策划枪击案，受害家属拟起诉。",
-      "problem": "生成式AI如ChatGPT被滥用于策划暴力犯罪，缺乏有效责任机制。",
-      "why_it_matters": "此案或开创AI公司对用户生成内容负法律责先例，影响LLM产品设计与全球监管格局。",
-      "target_reader": "AI产品经理、法律合规专家、关注AI伦理从业者。",
-      "core_innovation": "",
+      "summary": "TechCrunch 的这条 AI 新闻值得关注。核心内容是：ChatGPT had reportedly been used to plan the attack that killed two and injured five at Florida State University last April. The family of one victim has said that they plan to sue OpenAI over the incident.它更适合作为判断行业方向和产品动作的快速信号。",
+      "brief": "一条值得加入今日 AI 前沿观察的行业新闻。",
+      "problem": "它反映了 AI 产品、模型、资本或行业竞争格局中的新变化。",
+      "why_it_matters": "这类新闻往往决定接下来一段时间最值得跟进的公司、技术和叙事方向。",
+      "target_reader": "适合关注 AI 行业动态、产品发布和公司动作的人优先阅读。",
+      "core_innovation": "新闻类条目更强调行业动向和趋势信号，而不是技术细节。",
       "highlights": [
-        "ChatGPT被指用于规划枪击案，导致2死5伤",
-        "佛州AG正式调查OpenAI，受害家属拟集体诉讼",
-        "或成AI滥用责任首例判例"
+        "来源: TechCrunch",
+        "价值: 趋势判断"
       ],
-      "practicality": "中：警示AI企业加强滥用防控与法律储备。",
-      "relevance_score": 9,
+      "practicality": "适合快速判断最近行业关注点，再决定是否继续追原文。",
+      "relevance_score": 5,
       "tags": [
-        "LLM",
-        "AI伦理",
-        "法律风险"
+        "ai",
+        "gpt"
       ],
       "themes": [
-        "LLM",
-        "伦理",
-        "监管"
+        "ai",
+        "gpt"
       ],
-      "selection_reason": "直接涉及LLM滥用与法律责任，契合用户关注关键词，对AI行业格局有深远警示意义。",
-      "summary_markdown": "**摘要**：佛罗里达州总检察长宣布对OpenAI展开调查，因ChatGPT涉嫌被用于策划去年佛州州立大学枪击案，导致2死5伤。受害者家属计划起诉OpenAI，此案或成AI责任归属的关键判例。对AI前沿趋势而言，这凸显生成式AI在高风险滥用场景下的法律与伦理压力，可能重塑行业合规格局。\n\n**核心创新**：\n\n**实用性**：中：警示AI企业加强滥用防控与法律储备。\n\n**相关性评分**：9/10\n\n**亮点**：\n- ChatGPT被指用于规划枪击案，导致2死5伤\n- 佛州AG正式调查OpenAI，受害家属拟集体诉讼\n- 或成AI滥用责任首例判例",
+      "selection_reason": "它能帮助你快速感知今天 AI 行业里最值得注意的动态。",
+      "summary_markdown": "**摘要**：TechCrunch 的这条 AI 新闻值得关注。核心内容是：ChatGPT had reportedly been used to plan the attack that killed two and injured five at Florida State University last April. The family of one victim has said that they plan to sue OpenAI over the incident.它更适合作为判断行业方向和产品动作的快速信号。\n\n**核心创新**：新闻类条目更强调行业动向和趋势信号，而不是技术细节。\n\n**实用性**：适合快速判断最近行业关注点，再决定是否继续追原文。\n\n**相关性评分**：5/10\n\n**亮点**：\n- 来源: TechCrunch\n- 价值: 趋势判断",
       "focus_hits": [],
       "primary_match": "",
-      "personalized_score": 96.0
+      "personalized_score": 56.0
+    },
+    {
+      "id": "news::https://techcrunch.com/2026/04/09/after-data-breach-10b-valued-startup-mercor-is-having-a-month/",
+      "kind": "news",
+      "source": "news",
+      "source_name": "TechCrunch",
+      "title": "After data breach, $10B-valued startup Mercor is having a month",
+      "html_url": "https://techcrunch.com/2026/04/09/after-data-breach-10b-valued-startup-mercor-is-having-a-month/",
+      "description": "After falling victim to a hacker, Mercor is facing lawsuits and reportedly losing big-name customers.",
+      "published_at": "2026-04-09T19:33:54+00:00",
+      "categories": [
+        "AI",
+        "Startups",
+        "TC",
+        "Delve",
+        "LiteLLM",
+        "Mercor"
+      ],
+      "heuristic_score": 5.4,
+      "summary": "TechCrunch 的这条 AI 新闻值得关注。核心内容是：After falling victim to a hacker, Mercor is facing lawsuits and reportedly losing big-name customers.它更适合作为判断行业方向和产品动作的快速信号。",
+      "brief": "一条值得加入今日 AI 前沿观察的行业新闻。",
+      "problem": "它反映了 AI 产品、模型、资本或行业竞争格局中的新变化。",
+      "why_it_matters": "这类新闻往往决定接下来一段时间最值得跟进的公司、技术和叙事方向。",
+      "target_reader": "适合关注 AI 行业动态、产品发布和公司动作的人优先阅读。",
+      "core_innovation": "新闻类条目更强调行业动向和趋势信号，而不是技术细节。",
+      "highlights": [
+        "来源: TechCrunch",
+        "价值: 趋势判断"
+      ],
+      "practicality": "适合快速判断最近行业关注点，再决定是否继续追原文。",
+      "relevance_score": 5,
+      "tags": [
+        "daily-pick"
+      ],
+      "themes": [
+        "AI 新闻"
+      ],
+      "selection_reason": "它能帮助你快速感知今天 AI 行业里最值得注意的动态。",
+      "summary_markdown": "**摘要**：TechCrunch 的这条 AI 新闻值得关注。核心内容是：After falling victim to a hacker, Mercor is facing lawsuits and reportedly losing big-name customers.它更适合作为判断行业方向和产品动作的快速信号。\n\n**核心创新**：新闻类条目更强调行业动向和趋势信号，而不是技术细节。\n\n**实用性**：适合快速判断最近行业关注点，再决定是否继续追原文。\n\n**相关性评分**：5/10\n\n**亮点**：\n- 来源: TechCrunch\n- 价值: 趋势判断",
+      "focus_hits": [],
+      "primary_match": "",
+      "personalized_score": 56.0
     },
     {
       "id": "news::https://techcrunch.com/2026/04/09/meta-ai-app-climbs-to-no-5-on-the-app-store-after-muse-spark-launch/",
@@ -734,33 +739,31 @@
         "muse spark"
       ],
       "heuristic_score": 5.4,
-      "summary": "Meta AI 应用在推出新模型 Muse Spark 后，从 App Store 第 57 名飙升至第 5 名，并持续上升。这反映了 Meta 在 AI 消费者产品上的强势发力，用户对新模型的热情推动了下载量激增。该事件凸显 AI 应用市场竞争加剧，大模型创新正直接转化为商业成功。",
-      "brief": "Meta AI 应用因 Muse Spark 模型发布，从 App Store 57 名冲至第 5 名。",
-      "problem": "AI 应用在 App Store 排名较低，用户获取和使用门槛高。",
-      "why_it_matters": "标志着 Meta AI 通过模型创新快速抢占消费者市场份额，预示 AI app 产品竞争进入白热化阶段。",
-      "target_reader": "AI 产品经理、投资者、关注 LLM 商业化的从业者。",
-      "core_innovation": "Muse Spark 新模型驱动用户增长和排名跃升。",
+      "summary": "TechCrunch 的这条 AI 新闻值得关注。核心内容是：The app was ranking No. 57 on the App Store just before Meta AI's new model launched. Now it's No. 5 — and rising.它更适合作为判断行业方向和产品动作的快速信号。",
+      "brief": "一条值得加入今日 AI 前沿观察的行业新闻。",
+      "problem": "它反映了 AI 产品、模型、资本或行业竞争格局中的新变化。",
+      "why_it_matters": "这类新闻往往决定接下来一段时间最值得跟进的公司、技术和叙事方向。",
+      "target_reader": "适合关注 AI 行业动态、产品发布和公司动作的人优先阅读。",
+      "core_innovation": "新闻类条目更强调行业动向和趋势信号，而不是技术细节。",
       "highlights": [
-        "应用排名从 57 位飙升至 5 位并持续上升",
-        "展示模型发布对消费者产品的即时商业影响"
+        "来源: TechCrunch",
+        "价值: 趋势判断"
       ],
-      "practicality": "高，用户增长证明产品策略有效，可借鉴。",
-      "relevance_score": 9,
+      "practicality": "适合快速判断最近行业关注点，再决定是否继续追原文。",
+      "relevance_score": 5,
       "tags": [
-        "Meta AI",
-        "App Store",
-        "产品增长"
+        "ai",
+        "model"
       ],
       "themes": [
-        "LLM",
-        "产品",
-        "多模态"
+        "ai",
+        "model"
       ],
-      "selection_reason": "揭示 AI 模型创新如何重塑行业格局和消费者采用趋势，与用户关注 LLM 和产品方向高度相关。",
-      "summary_markdown": "**摘要**：Meta AI 应用在推出新模型 Muse Spark 后，从 App Store 第 57 名飙升至第 5 名，并持续上升。这反映了 Meta 在 AI 消费者产品上的强势发力，用户对新模型的热情推动了下载量激增。该事件凸显 AI 应用市场竞争加剧，大模型创新正直接转化为商业成功。\n\n**核心创新**：Muse Spark 新模型驱动用户增长和排名跃升。\n\n**实用性**：高，用户增长证明产品策略有效，可借鉴。\n\n**相关性评分**：9/10\n\n**亮点**：\n- 应用排名从 57 位飙升至 5 位并持续上升\n- 展示模型发布对消费者产品的即时商业影响",
+      "selection_reason": "它能帮助你快速感知今天 AI 行业里最值得注意的动态。",
+      "summary_markdown": "**摘要**：TechCrunch 的这条 AI 新闻值得关注。核心内容是：The app was ranking No. 57 on the App Store just before Meta AI's new model launched. Now it's No. 5 — and rising.它更适合作为判断行业方向和产品动作的快速信号。\n\n**核心创新**：新闻类条目更强调行业动向和趋势信号，而不是技术细节。\n\n**实用性**：适合快速判断最近行业关注点，再决定是否继续追原文。\n\n**相关性评分**：5/10\n\n**亮点**：\n- 来源: TechCrunch\n- 价值: 趋势判断",
       "focus_hits": [],
       "primary_match": "",
-      "personalized_score": 96.0
+      "personalized_score": 56.0
     }
   ],
   "items": [
@@ -816,7 +819,12 @@
         }
       ],
       "primary_match": "reasoning",
-      "personalized_score": 118.88
+      "personalized_score": 118.88,
+      "detail_path": "items/github-shiyu-coder-kronos.html",
+      "first_seen_at": "2026-04-10T01:21:36.797692+00:00",
+      "last_seen_at": "2026-04-10T01:25:05.410205+00:00",
+      "last_curated_at": "2026-04-10T01:25:05.410205+00:00",
+      "last_notified_at": "2026-04-10T01:25:05.410194+00:00"
     },
     {
       "id": "arxiv::http://arxiv.org/abs/2604.08299v1",
@@ -889,7 +897,12 @@
         }
       ],
       "primary_match": "agent",
-      "personalized_score": 216.0
+      "personalized_score": 216.0,
+      "detail_path": "items/arxiv-selar-selective-latent-reasoning-in-large-language-models.html",
+      "first_seen_at": "2026-04-10T01:21:36.797692+00:00",
+      "last_seen_at": "2026-04-10T01:25:05.410205+00:00",
+      "last_curated_at": "2026-04-10T01:25:05.410205+00:00",
+      "last_notified_at": "2026-04-10T01:25:05.410194+00:00"
     },
     {
       "id": "arxiv::http://arxiv.org/abs/2604.08322v1",
@@ -965,7 +978,12 @@
         }
       ],
       "primary_match": "reasoning",
-      "personalized_score": 180.0
+      "personalized_score": 180.0,
+      "detail_path": "items/arxiv-fundus-r1-training-a-fundus-reading-mllm-with-knowledge-aware-reasoning-on-public-data.html",
+      "first_seen_at": "2026-04-10T01:21:36.797692+00:00",
+      "last_seen_at": "2026-04-10T01:25:05.410205+00:00",
+      "last_curated_at": "2026-04-10T01:25:05.410205+00:00",
+      "last_notified_at": "2026-04-10T01:25:05.410194+00:00"
     },
     {
       "id": "arxiv::http://arxiv.org/abs/2604.08302v1",
@@ -1038,7 +1056,83 @@
         }
       ],
       "primary_match": "coding",
-      "personalized_score": 180.0
+      "personalized_score": 180.0,
+      "detail_path": "items/arxiv-dmax-aggressive-parallel-decoding-for-dllms.html",
+      "first_seen_at": "2026-04-10T01:21:36.797692+00:00",
+      "last_seen_at": "2026-04-10T01:25:05.410205+00:00",
+      "last_curated_at": "2026-04-10T01:25:05.410205+00:00",
+      "last_notified_at": "2026-04-10T01:25:05.410194+00:00"
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2604.08256v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "HyperMem: Hypergraph Memory for Long-Term Conversations",
+      "html_url": "http://arxiv.org/abs/2604.08256v1",
+      "pdf_url": "https://arxiv.org/pdf/2604.08256v1",
+      "description": "Long-term memory is essential for conversational agents to maintain coherence, track persistent tasks, and provide personalized interactions across extended dialogues. However, existing approaches as Retrieval-Augmented Generation (RAG) and graph-based memory mostly rely on pairwise relations, which can hardly capture high-order associations, i.e., joint dependencies among multiple elements, causing fragmented retrieval. To this end, we propose HyperMem, a hypergraph-based hierarchical memory architecture that explicitly models such associations using hyperedges. Particularly, HyperMem structures memory into three levels: topics, episodes, and facts, and groups related episodes and their facts via hyperedges, unifying scattered content into coherent units. Leveraging this structure, we design a hybrid lexical-semantic index and a coarse-to-fine retrieval strategy, supporting accurate and efficient retrieval of high-order associations. Experiments on the LoCoMo benchmark show that HyperMem achieves state-of-the-art performance with 92.73% LLM-as-a-judge accuracy, demonstrating the effectiveness of HyperMem for long-term conversations.",
+      "authors": [
+        "Juwei Yue",
+        "Chuanrui Hu",
+        "Jiawei Sheng",
+        "Zuyi Zhou",
+        "Wenyuan Zhang",
+        "Tingwen Liu",
+        "Li Guo",
+        "Yafeng Deng"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "published_at": "2026-04-09T13:43:23+00:00",
+      "updated_at": "2026-04-09T13:43:23+00:00",
+      "primary_category": "cs.CL",
+      "heuristic_score": 17.339,
+      "summary": "HyperMem: Hypergraph Memory for Long-Term Conversations 是最近值得追踪的一篇 AI 论文。论文摘要显示：Long-term memory is essential for conversational agents to maintain coherence, track persistent tasks, and provide personalized interactions across extended dialogues. However, existing approaches as Retrieval-Augmented Generation (RAG) and...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CL, cs.AI",
+        "作者数: 8"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "llm",
+        "agent",
+        "rag"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "agent"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：HyperMem: Hypergraph Memory for Long-Term Conversations 是最近值得追踪的一篇 AI 论文。论文摘要显示：Long-term memory is essential for conversational agents to maintain coherence, track persistent tasks, and provide personalized interactions across extended dialogues. However, existing approaches as Retrieval-Augmented Generation (RAG) and...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL, cs.AI\n- 作者数: 8",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 176.0
     },
     {
       "id": "arxiv::http://arxiv.org/abs/2604.08284v1",
@@ -1108,7 +1202,12 @@
         }
       ],
       "primary_match": "reasoning",
-      "personalized_score": 160.0
+      "personalized_score": 160.0,
+      "detail_path": "items/arxiv-distributed-multi-layer-editing-for-rule-level-knowledge-in-large-language-models.html",
+      "first_seen_at": "2026-04-10T01:21:36.797692+00:00",
+      "last_seen_at": "2026-04-10T01:25:05.410205+00:00",
+      "last_curated_at": "2026-04-10T01:25:05.410205+00:00",
+      "last_notified_at": "2026-04-10T01:25:05.410194+00:00"
     },
     {
       "id": "arxiv::http://arxiv.org/abs/2604.08266v1",
@@ -1173,129 +1272,12 @@
         }
       ],
       "primary_match": "reasoning",
-      "personalized_score": 160.0
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2604.08333v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "Lost in the Hype: Revealing and Dissecting the Performance Degradation of Medical Multimodal Large Language Models in Image Classification",
-      "html_url": "http://arxiv.org/abs/2604.08333v1",
-      "pdf_url": "https://arxiv.org/pdf/2604.08333v1",
-      "description": "The rise of multimodal large language models (MLLMs) has sparked an unprecedented wave of applications in the field of medical imaging analysis. However, as one of the earliest and most fundamental tasks integrated into this paradigm, medical image classification reveals a sobering reality: state-of-the-art medical MLLMs consistently underperform compared to traditional deep learning models, despite their overwhelming advantages in pre-training data and model parameters. This paradox prompts a critical rethinking: where exactly does the performance degradation originate? In this paper, we conduct extensive experiments on 14 open-source medical MLLMs across three representative image classification datasets. Moving beyond superficial performance benchmarking, we employ feature probing to track the information flow of visual features module-by-module and layer-by-layer throughout the entire MLLM pipeline, enabling explicit visualization of where and how classification signals are distorted, diluted, or overridden. As the first attempt to dissect classification performance degradation in medical MLLMs, our findings reveal four failure modes: 1) quality limitation in visual representation, 2) fidelity loss in connector projection, 3) comprehension deficit in LLM reasoning, and 4) misalignment of semantic mapping. Meanwhile, we introduce quantitative scores that characterize the healthiness of feature evolution, enabling principled comparisons across diverse MLLMs and datasets. Furthermore, we provide insightful discussions centered on the critical barriers that prevent current medical MLLMs from fulfilling their promised clinical potential. We hope that our work provokes rethinking within the community-highlighting that the road from high expectations to clinically deployable MLLMs remains long and winding.",
-      "authors": [
-        "Xun Zhu",
-        "Fanbin Mo",
-        "Xi Chen",
-        "Kaili Zheng",
-        "Shaoshuai Yang",
-        "Yiming Shi",
-        "Jian Gao",
-        "Miao Li",
-        "Ji Wu"
-      ],
-      "categories": [
-        "cs.CV",
-        "cs.AI",
-        "cs.LG"
-      ],
-      "published_at": "2026-04-09T15:07:26+00:00",
-      "updated_at": "2026-04-09T15:07:26+00:00",
-      "primary_category": "cs.CV",
-      "heuristic_score": 20.3,
-      "summary": "这篇论文揭示了医疗多模态大语言模型（MLLMs）在图像分类任务上远逊于传统深度学习模型的悖论，通过模块级和层级特征探针首次剖析性能退化来源，发现视觉表示质量低、连接器保真度损失、LLM推理缺陷及语义映射错位四大失败模式。同时引入特征演化健康度量化分数，支持跨模型数据集比较，并讨论临床部署障碍。研究呼吁社区重新审视MLLMs潜力。",
-      "brief": "医疗MLLMs图像分类性能退化剖析：首次模块级追踪四大失败模式，量化特征健康度。",
-      "problem": "医疗多模态大语言模型在图像分类等基础任务上性能远逊传统模型，原因不明。",
-      "why_it_matters": "揭示MLLMs核心缺陷，提供量化诊断工具，推动医疗AI从炒作向临床部署转型。",
-      "target_reader": "医疗AI研究者、多模态模型开发者、LLM临床应用从业者。",
-      "core_innovation": "首次模块/层级特征探针可视化分类信号扭曲，并引入特征演化健康度量化分数。",
-      "highlights": [
-        "剖析四大失败模式：视觉质量低、连接器损失、LLM推理缺、语义错位。",
-        "14开源MLLMs×3数据集实验，支持跨模型比较。",
-        "讨论临床部署障碍，促进行业反思。"
-      ],
-      "practicality": "诊断工具落地潜力高，但优化MLLMs需进一步工程努力，中等临床即用性。",
-      "relevance_score": 9,
-      "tags": [
-        "多模态",
-        "医疗AI",
-        "基准"
-      ],
-      "themes": [
-        "多模态",
-        "推理",
-        "benchmark"
-      ],
-      "selection_reason": "核心创新剖析医疗MLLMs性能瓶颈，高度匹配用户关注的多模态、推理、benchmark关键词，值得每日重点关注以指导研究方向。",
-      "summary_markdown": "**摘要**：这篇论文揭示了医疗多模态大语言模型（MLLMs）在图像分类任务上远逊于传统深度学习模型的悖论，通过模块级和层级特征探针首次剖析性能退化来源，发现视觉表示质量低、连接器保真度损失、LLM推理缺陷及语义映射错位四大失败模式。同时引入特征演化健康度量化分数，支持跨模型数据集比较，并讨论临床部署障碍。研究呼吁社区重新审视MLLMs潜力。\n\n**核心创新**：首次模块/层级特征探针可视化分类信号扭曲，并引入特征演化健康度量化分数。\n\n**实用性**：诊断工具落地潜力高，但优化MLLMs需进一步工程努力，中等临床即用性。\n\n**相关性评分**：9/10\n\n**亮点**：\n- 剖析四大失败模式：视觉质量低、连接器损失、LLM推理缺、语义错位。\n- 14开源MLLMs×3数据集实验，支持跨模型比较。\n- 讨论临床部署障碍，促进行业反思。",
-      "focus_hits": [
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "multimodal",
-          "weight": 2.0
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "reasoning",
-      "personalized_score": 158.0
-    },
-    {
-      "id": "news::https://huggingface.co/blog/multimodal-sentence-transformers",
-      "kind": "news",
-      "source": "news",
-      "source_name": "Hugging Face Blog",
-      "title": "Multimodal Embedding & Reranker Models with Sentence Transformers",
-      "html_url": "https://huggingface.co/blog/multimodal-sentence-transformers",
-      "description": "",
-      "published_at": "2026-04-09T00:00:00+00:00",
-      "categories": [],
-      "heuristic_score": 5.4,
-      "summary": "Hugging Face 推出 Sentence Transformers 的多模态嵌入与重排序模型，支持文本、图像等多模态数据处理，提升检索准确性。该模型无缝集成 Hugging Face 生态，便于开发者快速部署多模态 RAG 系统。标志着开源多模态工具向生产级应用迈进。",
-      "brief": "Hugging Face 新推多模态嵌入&Reranker模型，Sentence Transformers 支持图像文本检索。",
-      "problem": "传统嵌入模型难以有效处理多模态数据，导致跨模态检索准确率低下。",
-      "why_it_matters": "开源多模态工具成熟化，推动 RAG 和多模态搜索从研究向产品落地，加速行业应用。",
-      "target_reader": "RAG开发者、多模态AI工程师、Hugging Face用户。",
-      "core_innovation": "Sentence Transformers首支持多模态嵌入与重排序，一键集成开源生态。",
-      "highlights": [
-        "无缝支持文本图像嵌入，提升跨模态检索精度",
-        "优化Reranker减少幻觉，适用于生产级RAG管道",
-        "Hugging Face Hub一键部署，降低多模态开发门槛"
-      ],
-      "practicality": "高，即插即用，适合快速构建多模态搜索系统。",
-      "relevance_score": 9,
-      "tags": [
-        "多模态",
-        "RAG",
-        "开源模型"
-      ],
-      "themes": [
-        "多模态",
-        "RAG",
-        "嵌入模型"
-      ],
-      "selection_reason": "契合用户关注的多模态、RAG、开源模型关键词，推动AI检索前沿趋势与产品化。",
-      "summary_markdown": "**摘要**：Hugging Face 推出 Sentence Transformers 的多模态嵌入与重排序模型，支持文本、图像等多模态数据处理，提升检索准确性。该模型无缝集成 Hugging Face 生态，便于开发者快速部署多模态 RAG 系统。标志着开源多模态工具向生产级应用迈进。\n\n**核心创新**：Sentence Transformers首支持多模态嵌入与重排序，一键集成开源生态。\n\n**实用性**：高，即插即用，适合快速构建多模态搜索系统。\n\n**相关性评分**：9/10\n\n**亮点**：\n- 无缝支持文本图像嵌入，提升跨模态检索精度\n- 优化Reranker减少幻觉，适用于生产级RAG管道\n- Hugging Face Hub一键部署，降低多模态开发门槛",
-      "focus_hits": [
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "multimodal",
-          "weight": 2.0
-        }
-      ],
-      "primary_match": "rag",
-      "personalized_score": 138.0
+      "personalized_score": 160.0,
+      "detail_path": "items/arxiv-orion-lite-distilling-llm-reasoning-into-efficient-vision-only-driving-models.html",
+      "first_seen_at": "2026-04-10T01:21:36.797692+00:00",
+      "last_seen_at": "2026-04-10T01:25:05.410205+00:00",
+      "last_curated_at": "2026-04-10T01:25:05.410205+00:00",
+      "last_notified_at": "2026-04-10T01:25:05.410194+00:00"
     },
     {
       "id": "news::https://huggingface.co/blog/ibm-research/altk-evolve",
@@ -1308,30 +1290,26 @@
       "published_at": "2026-04-08T14:27:42+00:00",
       "categories": [],
       "heuristic_score": 7.6,
-      "summary": "ALTK-Evolve 是一种新型 on-the-job learning 框架，让 AI 代理在实际任务中实时进化，提升长期性能。Hugging Face 博客介绍该方法通过自适应学习机制，解决代理在动态环境中适应性差的问题。适用于 agentic 系统，推动代理从静态模型向持续学习演进。",
-      "brief": "Hugging Face 推出 ALTK-Evolve，让 AI 代理在工作中实时学习进化，提升长期任务能力。",
-      "problem": "AI 代理在动态真实任务中难以持续适应和优化性能。",
-      "why_it_matters": "标志着 AI 代理从静态训练向 on-the-job 实时进化转型，契合 agentic 趋势并重塑行业产品方向。",
-      "target_reader": "AI 代理开发者、agentic 系统研究者和企业 AI 产品经理。",
-      "core_innovation": "on-the-job 自适应学习机制，实现代理实时进化而非离线训练。",
+      "summary": "Hugging Face Blog 的这条 AI 新闻值得关注。核心内容是：暂无更多摘要。它更适合作为判断行业方向和产品动作的快速信号。",
+      "brief": "一条值得加入今日 AI 前沿观察的行业新闻。",
+      "problem": "它反映了 AI 产品、模型、资本或行业竞争格局中的新变化。",
+      "why_it_matters": "这类新闻往往决定接下来一段时间最值得跟进的公司、技术和叙事方向。",
+      "target_reader": "适合关注 AI 行业动态、产品发布和公司动作的人优先阅读。",
+      "core_innovation": "新闻类条目更强调行业动向和趋势信号，而不是技术细节。",
       "highlights": [
-        "无需重训即可在任务中积累经验",
-        "显著提升代理长期性能和鲁棒性",
-        "开源框架，便于 Hugging Face 生态集成"
+        "来源: Hugging Face Blog",
+        "价值: 趋势判断"
       ],
-      "practicality": "高，即插即用，支持实际部署中的代理优化。",
-      "relevance_score": 9,
+      "practicality": "适合快速判断最近行业关注点，再决定是否继续追原文。",
+      "relevance_score": 5,
       "tags": [
-        "AI代理",
-        "开源模型"
+        "daily-pick"
       ],
       "themes": [
-        "智能体",
-        "推理",
-        "agentic"
+        "AI 新闻"
       ],
-      "selection_reason": "直接契合用户关注关键词如 ai agent、agentic 和 reasoning，推动代理前沿趋势和开源生态格局变革。",
-      "summary_markdown": "**摘要**：ALTK-Evolve 是一种新型 on-the-job learning 框架，让 AI 代理在实际任务中实时进化，提升长期性能。Hugging Face 博客介绍该方法通过自适应学习机制，解决代理在动态环境中适应性差的问题。适用于 agentic 系统，推动代理从静态模型向持续学习演进。\n\n**核心创新**：on-the-job 自适应学习机制，实现代理实时进化而非离线训练。\n\n**实用性**：高，即插即用，支持实际部署中的代理优化。\n\n**相关性评分**：9/10\n\n**亮点**：\n- 无需重训即可在任务中积累经验\n- 显著提升代理长期性能和鲁棒性\n- 开源框架，便于 Hugging Face 生态集成",
+      "selection_reason": "它能帮助你快速感知今天 AI 行业里最值得注意的动态。",
+      "summary_markdown": "**摘要**：Hugging Face Blog 的这条 AI 新闻值得关注。核心内容是：暂无更多摘要。它更适合作为判断行业方向和产品动作的快速信号。\n\n**核心创新**：新闻类条目更强调行业动向和趋势信号，而不是技术细节。\n\n**实用性**：适合快速判断最近行业关注点，再决定是否继续追原文。\n\n**相关性评分**：5/10\n\n**亮点**：\n- 来源: Hugging Face Blog\n- 价值: 趋势判断",
       "focus_hits": [
         {
           "keyword": "agent",
@@ -1339,51 +1317,47 @@
         }
       ],
       "primary_match": "agent",
-      "personalized_score": 126.0
+      "personalized_score": 86.0
     },
     {
-      "id": "news::https://pbement.com/posts/lie_brackets/",
+      "id": "news::https://techcrunch.com/2026/04/09/florida-ag-to-probe-openai-alleging-possible-connection-to-fsu-shooting/",
       "kind": "news",
       "source": "news",
-      "source_name": "Hacker News Frontpage",
-      "title": "The Training Example Lie Bracket",
-      "html_url": "https://pbement.com/posts/lie_brackets/",
-      "description": "Article URL: https://pbement.com/posts/lie_brackets/ Comments URL: https://news.ycombinator.com/item?id=47710782 Points: 12 # Comments: 8",
-      "published_at": "2026-04-09T21:59:28+00:00",
-      "categories": [],
-      "heuristic_score": 4.8,
-      "summary": "文章剖析了训练示例中'Lie Bracket'现象，即模型在训练数据中学习到虚假的因果关系，导致推理偏差。作者通过数学和实验揭示这一问题源于数据噪声与模型泛化间的冲突。建议通过数据清洗和正则化缓解，值得AI训练从业者关注。",
-      "brief": "训练数据中的Lie Bracket导致模型虚假因果学习，影响推理准确性。",
-      "problem": "训练示例中嵌入的虚假因果关系（如Lie Bracket）导致模型泛化时产生推理偏差。",
-      "why_it_matters": "揭示LLM训练核心痛点，有助于提升模型在复杂推理任务的鲁棒性，正值长上下文与推理优化热潮。",
-      "target_reader": "AI训练工程师、LLM研究员、数据科学家。",
-      "core_innovation": "首次系统定义并实验验证训练数据中的Lie Bracket现象，提供数学框架分析。",
-      "highlights": [
-        "Lie Bracket指训练数据虚假嵌套关系引发模型幻觉。",
-        "实验证明数据噪声直接导致推理失败，可通过清洗缓解。"
+      "source_name": "TechCrunch",
+      "title": "Florida AG to probe OpenAI, alleging possible connection to FSU shooting",
+      "html_url": "https://techcrunch.com/2026/04/09/florida-ag-to-probe-openai-alleging-possible-connection-to-fsu-shooting/",
+      "description": "Florida Attorney General James Uthmeier plans to investigate OpenAI for its alleged harm to minors, potential to threaten national security, and its possible link to a shooting at Florida State University last year.",
+      "published_at": "2026-04-09T22:13:26+00:00",
+      "categories": [
+        "Government & Policy",
+        "TC",
+        "ChatGPT",
+        "OpenAI"
       ],
-      "practicality": "高，提供数据清洗和正则化实用建议，易于工程落地。",
-      "relevance_score": 9,
+      "heuristic_score": 5.4,
+      "summary": "TechCrunch 的这条 AI 新闻值得关注。核心内容是：Florida Attorney General James Uthmeier plans to investigate OpenAI for its alleged harm to minors, potential to threaten national security, and its possible link to a shooting at Florida State University last year.它更适合作为判断行业方向和产品动作的快速信号。",
+      "brief": "一条值得加入今日 AI 前沿观察的行业新闻。",
+      "problem": "它反映了 AI 产品、模型、资本或行业竞争格局中的新变化。",
+      "why_it_matters": "这类新闻往往决定接下来一段时间最值得跟进的公司、技术和叙事方向。",
+      "target_reader": "适合关注 AI 行业动态、产品发布和公司动作的人优先阅读。",
+      "core_innovation": "新闻类条目更强调行业动向和趋势信号，而不是技术细节。",
+      "highlights": [
+        "来源: TechCrunch",
+        "价值: 趋势判断"
+      ],
+      "practicality": "适合快速判断最近行业关注点，再决定是否继续追原文。",
+      "relevance_score": 5,
       "tags": [
-        "训练",
-        "推理",
-        "LLM"
+        "ai"
       ],
       "themes": [
-        "推理",
-        "训练",
-        "benchmark"
+        "ai"
       ],
-      "selection_reason": "直击LLM训练与推理前沿痛点，与用户关注关键词高度匹配，揭示行业数据质量隐忧。",
-      "summary_markdown": "**摘要**：文章剖析了训练示例中'Lie Bracket'现象，即模型在训练数据中学习到虚假的因果关系，导致推理偏差。作者通过数学和实验揭示这一问题源于数据噪声与模型泛化间的冲突。建议通过数据清洗和正则化缓解，值得AI训练从业者关注。\n\n**核心创新**：首次系统定义并实验验证训练数据中的Lie Bracket现象，提供数学框架分析。\n\n**实用性**：高，提供数据清洗和正则化实用建议，易于工程落地。\n\n**相关性评分**：9/10\n\n**亮点**：\n- Lie Bracket指训练数据虚假嵌套关系引发模型幻觉。\n- 实验证明数据噪声直接导致推理失败，可通过清洗缓解。",
-      "focus_hits": [
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "benchmark",
-      "personalized_score": 112.0
+      "selection_reason": "它能帮助你快速感知今天 AI 行业里最值得注意的动态。",
+      "summary_markdown": "**摘要**：TechCrunch 的这条 AI 新闻值得关注。核心内容是：Florida Attorney General James Uthmeier plans to investigate OpenAI for its alleged harm to minors, potential to threaten national security, and its possible link to a shooting at Florida State University last year.它更适合作为判断行业方向和产品动作的快速信号。\n\n**核心创新**：新闻类条目更强调行业动向和趋势信号，而不是技术细节。\n\n**实用性**：适合快速判断最近行业关注点，再决定是否继续追原文。\n\n**相关性评分**：5/10\n\n**亮点**：\n- 来源: TechCrunch\n- 价值: 趋势判断",
+      "focus_hits": [],
+      "primary_match": "",
+      "personalized_score": 56.0
     },
     {
       "id": "news::https://techcrunch.com/2026/04/09/chatgpt-pro-plan-100-month-codex/",
@@ -1400,34 +1374,29 @@
         "ChatGPT"
       ],
       "heuristic_score": 5.4,
-      "summary": "OpenAI推出ChatGPT Pro计划，每月100美元，填补了20美元Plus与200美元Team之间的订阅空白，针对重度用户需求。 该计划提供更高优先级访问、更快响应和无限使用，标志着OpenAI从单一定价向分层服务转型。 这反映了AI产品向专业化、付费升级的趋势。",
-      "brief": "OpenAI推$100/月ChatGPT Pro计划，填补Plus与Team间空白，针对重度用户。",
-      "problem": "ChatGPT订阅定价跳跃过大（20美元到200美元），无法满足中高端重度用户需求。",
-      "why_it_matters": "标志OpenAI产品分层化趋势，推动AI服务向专业用户付费升级，影响行业定价格局。",
-      "target_reader": "AI重度用户、产品经理、订阅服务关注者。",
-      "core_innovation": "引入中层Pro订阅，提供无限GPT-4o访问和高级功能，优化用户分级体验。",
+      "summary": "TechCrunch 的这条 AI 新闻值得关注。核心内容是：OpenAI announced on Thursday something that power users have been asking for: a $100/month plan. Previously, subscriptions jumped from $20 to $200 per month.它更适合作为判断行业方向和产品动作的快速信号。",
+      "brief": "一条值得加入今日 AI 前沿观察的行业新闻。",
+      "problem": "它反映了 AI 产品、模型、资本或行业竞争格局中的新变化。",
+      "why_it_matters": "这类新闻往往决定接下来一段时间最值得跟进的公司、技术和叙事方向。",
+      "target_reader": "适合关注 AI 行业动态、产品发布和公司动作的人优先阅读。",
+      "core_innovation": "新闻类条目更强调行业动向和趋势信号，而不是技术细节。",
       "highlights": [
-        "填补20-200美元定价空白，专为power users设计",
-        "无限使用、高优先级响应，提升专业生产力",
-        "强化OpenAI商业化路径，向分层服务转型"
+        "来源: TechCrunch",
+        "价值: 趋势判断"
       ],
-      "practicality": "立即可用，提升重度用户体验，推动AI工具专业化。",
-      "relevance_score": 9,
+      "practicality": "适合快速判断最近行业关注点，再决定是否继续追原文。",
+      "relevance_score": 5,
       "tags": [
-        "ChatGPT",
-        "订阅计划",
-        "产品策略"
+        "ai"
       ],
       "themes": [
-        "llm",
-        "产品",
-        "商业化"
+        "ai"
       ],
-      "selection_reason": "直接涉及用户长期关注的GPT和产品趋势，揭示OpenAI行业格局变化，值得前沿AI从业者关注。",
-      "summary_markdown": "**摘要**：OpenAI推出ChatGPT Pro计划，每月100美元，填补了20美元Plus与200美元Team之间的订阅空白，针对重度用户需求。 该计划提供更高优先级访问、更快响应和无限使用，标志着OpenAI从单一定价向分层服务转型。 这反映了AI产品向专业化、付费升级的趋势。\n\n**核心创新**：引入中层Pro订阅，提供无限GPT-4o访问和高级功能，优化用户分级体验。\n\n**实用性**：立即可用，提升重度用户体验，推动AI工具专业化。\n\n**相关性评分**：9/10\n\n**亮点**：\n- 填补20-200美元定价空白，专为power users设计\n- 无限使用、高优先级响应，提升专业生产力\n- 强化OpenAI商业化路径，向分层服务转型",
+      "selection_reason": "它能帮助你快速感知今天 AI 行业里最值得注意的动态。",
+      "summary_markdown": "**摘要**：TechCrunch 的这条 AI 新闻值得关注。核心内容是：OpenAI announced on Thursday something that power users have been asking for: a $100/month plan. Previously, subscriptions jumped from $20 to $200 per month.它更适合作为判断行业方向和产品动作的快速信号。\n\n**核心创新**：新闻类条目更强调行业动向和趋势信号，而不是技术细节。\n\n**实用性**：适合快速判断最近行业关注点，再决定是否继续追原文。\n\n**相关性评分**：5/10\n\n**亮点**：\n- 来源: TechCrunch\n- 价值: 趋势判断",
       "focus_hits": [],
       "primary_match": "",
-      "personalized_score": 96.0
+      "personalized_score": 56.0
     },
     {
       "id": "news::https://techcrunch.com/2026/04/09/florida-ag-investigation-openai-chatgpt-shooting/",
@@ -1445,34 +1414,73 @@
         "sam altman"
       ],
       "heuristic_score": 5.4,
-      "summary": "佛罗里达州总检察长宣布对OpenAI展开调查，因ChatGPT涉嫌被用于策划去年佛州州立大学枪击案，导致2死5伤。受害者家属计划起诉OpenAI，此案或成AI责任归属的关键判例。对AI前沿趋势而言，这凸显生成式AI在高风险滥用场景下的法律与伦理压力，可能重塑行业合规格局。",
-      "brief": "佛州检察长调查OpenAI：ChatGPT疑助策划枪击案，受害家属拟起诉。",
-      "problem": "生成式AI如ChatGPT被滥用于策划暴力犯罪，缺乏有效责任机制。",
-      "why_it_matters": "此案或开创AI公司对用户生成内容负法律责先例，影响LLM产品设计与全球监管格局。",
-      "target_reader": "AI产品经理、法律合规专家、关注AI伦理从业者。",
-      "core_innovation": "",
+      "summary": "TechCrunch 的这条 AI 新闻值得关注。核心内容是：ChatGPT had reportedly been used to plan the attack that killed two and injured five at Florida State University last April. The family of one victim has said that they plan to sue OpenAI over the incident.它更适合作为判断行业方向和产品动作的快速信号。",
+      "brief": "一条值得加入今日 AI 前沿观察的行业新闻。",
+      "problem": "它反映了 AI 产品、模型、资本或行业竞争格局中的新变化。",
+      "why_it_matters": "这类新闻往往决定接下来一段时间最值得跟进的公司、技术和叙事方向。",
+      "target_reader": "适合关注 AI 行业动态、产品发布和公司动作的人优先阅读。",
+      "core_innovation": "新闻类条目更强调行业动向和趋势信号，而不是技术细节。",
       "highlights": [
-        "ChatGPT被指用于规划枪击案，导致2死5伤",
-        "佛州AG正式调查OpenAI，受害家属拟集体诉讼",
-        "或成AI滥用责任首例判例"
+        "来源: TechCrunch",
+        "价值: 趋势判断"
       ],
-      "practicality": "中：警示AI企业加强滥用防控与法律储备。",
-      "relevance_score": 9,
+      "practicality": "适合快速判断最近行业关注点，再决定是否继续追原文。",
+      "relevance_score": 5,
       "tags": [
-        "LLM",
-        "AI伦理",
-        "法律风险"
+        "ai",
+        "gpt"
       ],
       "themes": [
-        "LLM",
-        "伦理",
-        "监管"
+        "ai",
+        "gpt"
       ],
-      "selection_reason": "直接涉及LLM滥用与法律责任，契合用户关注关键词，对AI行业格局有深远警示意义。",
-      "summary_markdown": "**摘要**：佛罗里达州总检察长宣布对OpenAI展开调查，因ChatGPT涉嫌被用于策划去年佛州州立大学枪击案，导致2死5伤。受害者家属计划起诉OpenAI，此案或成AI责任归属的关键判例。对AI前沿趋势而言，这凸显生成式AI在高风险滥用场景下的法律与伦理压力，可能重塑行业合规格局。\n\n**核心创新**：\n\n**实用性**：中：警示AI企业加强滥用防控与法律储备。\n\n**相关性评分**：9/10\n\n**亮点**：\n- ChatGPT被指用于规划枪击案，导致2死5伤\n- 佛州AG正式调查OpenAI，受害家属拟集体诉讼\n- 或成AI滥用责任首例判例",
+      "selection_reason": "它能帮助你快速感知今天 AI 行业里最值得注意的动态。",
+      "summary_markdown": "**摘要**：TechCrunch 的这条 AI 新闻值得关注。核心内容是：ChatGPT had reportedly been used to plan the attack that killed two and injured five at Florida State University last April. The family of one victim has said that they plan to sue OpenAI over the incident.它更适合作为判断行业方向和产品动作的快速信号。\n\n**核心创新**：新闻类条目更强调行业动向和趋势信号，而不是技术细节。\n\n**实用性**：适合快速判断最近行业关注点，再决定是否继续追原文。\n\n**相关性评分**：5/10\n\n**亮点**：\n- 来源: TechCrunch\n- 价值: 趋势判断",
       "focus_hits": [],
       "primary_match": "",
-      "personalized_score": 96.0
+      "personalized_score": 56.0
+    },
+    {
+      "id": "news::https://techcrunch.com/2026/04/09/after-data-breach-10b-valued-startup-mercor-is-having-a-month/",
+      "kind": "news",
+      "source": "news",
+      "source_name": "TechCrunch",
+      "title": "After data breach, $10B-valued startup Mercor is having a month",
+      "html_url": "https://techcrunch.com/2026/04/09/after-data-breach-10b-valued-startup-mercor-is-having-a-month/",
+      "description": "After falling victim to a hacker, Mercor is facing lawsuits and reportedly losing big-name customers.",
+      "published_at": "2026-04-09T19:33:54+00:00",
+      "categories": [
+        "AI",
+        "Startups",
+        "TC",
+        "Delve",
+        "LiteLLM",
+        "Mercor"
+      ],
+      "heuristic_score": 5.4,
+      "summary": "TechCrunch 的这条 AI 新闻值得关注。核心内容是：After falling victim to a hacker, Mercor is facing lawsuits and reportedly losing big-name customers.它更适合作为判断行业方向和产品动作的快速信号。",
+      "brief": "一条值得加入今日 AI 前沿观察的行业新闻。",
+      "problem": "它反映了 AI 产品、模型、资本或行业竞争格局中的新变化。",
+      "why_it_matters": "这类新闻往往决定接下来一段时间最值得跟进的公司、技术和叙事方向。",
+      "target_reader": "适合关注 AI 行业动态、产品发布和公司动作的人优先阅读。",
+      "core_innovation": "新闻类条目更强调行业动向和趋势信号，而不是技术细节。",
+      "highlights": [
+        "来源: TechCrunch",
+        "价值: 趋势判断"
+      ],
+      "practicality": "适合快速判断最近行业关注点，再决定是否继续追原文。",
+      "relevance_score": 5,
+      "tags": [
+        "daily-pick"
+      ],
+      "themes": [
+        "AI 新闻"
+      ],
+      "selection_reason": "它能帮助你快速感知今天 AI 行业里最值得注意的动态。",
+      "summary_markdown": "**摘要**：TechCrunch 的这条 AI 新闻值得关注。核心内容是：After falling victim to a hacker, Mercor is facing lawsuits and reportedly losing big-name customers.它更适合作为判断行业方向和产品动作的快速信号。\n\n**核心创新**：新闻类条目更强调行业动向和趋势信号，而不是技术细节。\n\n**实用性**：适合快速判断最近行业关注点，再决定是否继续追原文。\n\n**相关性评分**：5/10\n\n**亮点**：\n- 来源: TechCrunch\n- 价值: 趋势判断",
+      "focus_hits": [],
+      "primary_match": "",
+      "personalized_score": 56.0
     },
     {
       "id": "news::https://techcrunch.com/2026/04/09/meta-ai-app-climbs-to-no-5-on-the-app-store-after-muse-spark-launch/",
@@ -1491,33 +1499,31 @@
         "muse spark"
       ],
       "heuristic_score": 5.4,
-      "summary": "Meta AI 应用在推出新模型 Muse Spark 后，从 App Store 第 57 名飙升至第 5 名，并持续上升。这反映了 Meta 在 AI 消费者产品上的强势发力，用户对新模型的热情推动了下载量激增。该事件凸显 AI 应用市场竞争加剧，大模型创新正直接转化为商业成功。",
-      "brief": "Meta AI 应用因 Muse Spark 模型发布，从 App Store 57 名冲至第 5 名。",
-      "problem": "AI 应用在 App Store 排名较低，用户获取和使用门槛高。",
-      "why_it_matters": "标志着 Meta AI 通过模型创新快速抢占消费者市场份额，预示 AI app 产品竞争进入白热化阶段。",
-      "target_reader": "AI 产品经理、投资者、关注 LLM 商业化的从业者。",
-      "core_innovation": "Muse Spark 新模型驱动用户增长和排名跃升。",
+      "summary": "TechCrunch 的这条 AI 新闻值得关注。核心内容是：The app was ranking No. 57 on the App Store just before Meta AI's new model launched. Now it's No. 5 — and rising.它更适合作为判断行业方向和产品动作的快速信号。",
+      "brief": "一条值得加入今日 AI 前沿观察的行业新闻。",
+      "problem": "它反映了 AI 产品、模型、资本或行业竞争格局中的新变化。",
+      "why_it_matters": "这类新闻往往决定接下来一段时间最值得跟进的公司、技术和叙事方向。",
+      "target_reader": "适合关注 AI 行业动态、产品发布和公司动作的人优先阅读。",
+      "core_innovation": "新闻类条目更强调行业动向和趋势信号，而不是技术细节。",
       "highlights": [
-        "应用排名从 57 位飙升至 5 位并持续上升",
-        "展示模型发布对消费者产品的即时商业影响"
+        "来源: TechCrunch",
+        "价值: 趋势判断"
       ],
-      "practicality": "高，用户增长证明产品策略有效，可借鉴。",
-      "relevance_score": 9,
+      "practicality": "适合快速判断最近行业关注点，再决定是否继续追原文。",
+      "relevance_score": 5,
       "tags": [
-        "Meta AI",
-        "App Store",
-        "产品增长"
+        "ai",
+        "model"
       ],
       "themes": [
-        "LLM",
-        "产品",
-        "多模态"
+        "ai",
+        "model"
       ],
-      "selection_reason": "揭示 AI 模型创新如何重塑行业格局和消费者采用趋势，与用户关注 LLM 和产品方向高度相关。",
-      "summary_markdown": "**摘要**：Meta AI 应用在推出新模型 Muse Spark 后，从 App Store 第 57 名飙升至第 5 名，并持续上升。这反映了 Meta 在 AI 消费者产品上的强势发力，用户对新模型的热情推动了下载量激增。该事件凸显 AI 应用市场竞争加剧，大模型创新正直接转化为商业成功。\n\n**核心创新**：Muse Spark 新模型驱动用户增长和排名跃升。\n\n**实用性**：高，用户增长证明产品策略有效，可借鉴。\n\n**相关性评分**：9/10\n\n**亮点**：\n- 应用排名从 57 位飙升至 5 位并持续上升\n- 展示模型发布对消费者产品的即时商业影响",
+      "selection_reason": "它能帮助你快速感知今天 AI 行业里最值得注意的动态。",
+      "summary_markdown": "**摘要**：TechCrunch 的这条 AI 新闻值得关注。核心内容是：The app was ranking No. 57 on the App Store just before Meta AI's new model launched. Now it's No. 5 — and rising.它更适合作为判断行业方向和产品动作的快速信号。\n\n**核心创新**：新闻类条目更强调行业动向和趋势信号，而不是技术细节。\n\n**实用性**：适合快速判断最近行业关注点，再决定是否继续追原文。\n\n**相关性评分**：5/10\n\n**亮点**：\n- 来源: TechCrunch\n- 价值: 趋势判断",
       "focus_hits": [],
       "primary_match": "",
-      "personalized_score": 96.0
+      "personalized_score": 56.0
     }
   ],
   "stats": {
@@ -1599,7 +1605,12 @@
           }
         ],
         "primary_match": "agent",
-        "personalized_score": 216.0
+        "personalized_score": 216.0,
+        "detail_path": "items/arxiv-selar-selective-latent-reasoning-in-large-language-models.html",
+        "first_seen_at": "2026-04-10T01:21:36.797692+00:00",
+        "last_seen_at": "2026-04-10T01:25:05.410205+00:00",
+        "last_curated_at": "2026-04-10T01:25:05.410205+00:00",
+        "last_notified_at": "2026-04-10T01:25:05.410194+00:00"
       },
       {
         "id": "arxiv::http://arxiv.org/abs/2604.08322v1",
@@ -1675,7 +1686,12 @@
           }
         ],
         "primary_match": "reasoning",
-        "personalized_score": 180.0
+        "personalized_score": 180.0,
+        "detail_path": "items/arxiv-fundus-r1-training-a-fundus-reading-mllm-with-knowledge-aware-reasoning-on-public-data.html",
+        "first_seen_at": "2026-04-10T01:21:36.797692+00:00",
+        "last_seen_at": "2026-04-10T01:25:05.410205+00:00",
+        "last_curated_at": "2026-04-10T01:25:05.410205+00:00",
+        "last_notified_at": "2026-04-10T01:25:05.410194+00:00"
       },
       {
         "id": "arxiv::http://arxiv.org/abs/2604.08302v1",
@@ -1748,10 +1764,86 @@
           }
         ],
         "primary_match": "coding",
-        "personalized_score": 180.0
+        "personalized_score": 180.0,
+        "detail_path": "items/arxiv-dmax-aggressive-parallel-decoding-for-dllms.html",
+        "first_seen_at": "2026-04-10T01:21:36.797692+00:00",
+        "last_seen_at": "2026-04-10T01:25:05.410205+00:00",
+        "last_curated_at": "2026-04-10T01:25:05.410205+00:00",
+        "last_notified_at": "2026-04-10T01:25:05.410194+00:00"
       }
     ],
     "worth_scan": [
+      {
+        "id": "arxiv::http://arxiv.org/abs/2604.08256v1",
+        "kind": "paper",
+        "source": "arxiv",
+        "source_tags": [
+          "latest"
+        ],
+        "title": "HyperMem: Hypergraph Memory for Long-Term Conversations",
+        "html_url": "http://arxiv.org/abs/2604.08256v1",
+        "pdf_url": "https://arxiv.org/pdf/2604.08256v1",
+        "description": "Long-term memory is essential for conversational agents to maintain coherence, track persistent tasks, and provide personalized interactions across extended dialogues. However, existing approaches as Retrieval-Augmented Generation (RAG) and graph-based memory mostly rely on pairwise relations, which can hardly capture high-order associations, i.e., joint dependencies among multiple elements, causing fragmented retrieval. To this end, we propose HyperMem, a hypergraph-based hierarchical memory architecture that explicitly models such associations using hyperedges. Particularly, HyperMem structures memory into three levels: topics, episodes, and facts, and groups related episodes and their facts via hyperedges, unifying scattered content into coherent units. Leveraging this structure, we design a hybrid lexical-semantic index and a coarse-to-fine retrieval strategy, supporting accurate and efficient retrieval of high-order associations. Experiments on the LoCoMo benchmark show that HyperMem achieves state-of-the-art performance with 92.73% LLM-as-a-judge accuracy, demonstrating the effectiveness of HyperMem for long-term conversations.",
+        "authors": [
+          "Juwei Yue",
+          "Chuanrui Hu",
+          "Jiawei Sheng",
+          "Zuyi Zhou",
+          "Wenyuan Zhang",
+          "Tingwen Liu",
+          "Li Guo",
+          "Yafeng Deng"
+        ],
+        "categories": [
+          "cs.CL",
+          "cs.AI"
+        ],
+        "published_at": "2026-04-09T13:43:23+00:00",
+        "updated_at": "2026-04-09T13:43:23+00:00",
+        "primary_category": "cs.CL",
+        "heuristic_score": 17.339,
+        "summary": "HyperMem: Hypergraph Memory for Long-Term Conversations 是最近值得追踪的一篇 AI 论文。论文摘要显示：Long-term memory is essential for conversational agents to maintain coherence, track persistent tasks, and provide personalized interactions across extended dialogues. However, existing approaches as Retrieval-Augmented Generation (RAG) and...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+        "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+        "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+        "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+        "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+        "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+        "highlights": [
+          "分类: cs.CL, cs.AI",
+          "作者数: 8"
+        ],
+        "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+        "relevance_score": 10,
+        "tags": [
+          "ai",
+          "llm",
+          "agent",
+          "rag"
+        ],
+        "themes": [
+          "ai",
+          "llm",
+          "agent"
+        ],
+        "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+        "summary_markdown": "**摘要**：HyperMem: Hypergraph Memory for Long-Term Conversations 是最近值得追踪的一篇 AI 论文。论文摘要显示：Long-term memory is essential for conversational agents to maintain coherence, track persistent tasks, and provide personalized interactions across extended dialogues. However, existing approaches as Retrieval-Augmented Generation (RAG) and...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL, cs.AI\n- 作者数: 8",
+        "focus_hits": [
+          {
+            "keyword": "agent",
+            "weight": 3.0
+          },
+          {
+            "keyword": "rag",
+            "weight": 2.2
+          },
+          {
+            "keyword": "benchmark",
+            "weight": 1.6
+          }
+        ],
+        "primary_match": "agent",
+        "personalized_score": 176.0
+      },
       {
         "id": "arxiv::http://arxiv.org/abs/2604.08284v1",
         "kind": "paper",
@@ -1820,7 +1912,12 @@
           }
         ],
         "primary_match": "reasoning",
-        "personalized_score": 160.0
+        "personalized_score": 160.0,
+        "detail_path": "items/arxiv-distributed-multi-layer-editing-for-rule-level-knowledge-in-large-language-models.html",
+        "first_seen_at": "2026-04-10T01:21:36.797692+00:00",
+        "last_seen_at": "2026-04-10T01:25:05.410205+00:00",
+        "last_curated_at": "2026-04-10T01:25:05.410205+00:00",
+        "last_notified_at": "2026-04-10T01:25:05.410194+00:00"
       },
       {
         "id": "arxiv::http://arxiv.org/abs/2604.08266v1",
@@ -1885,129 +1982,71 @@
           }
         ],
         "primary_match": "reasoning",
-        "personalized_score": 160.0
+        "personalized_score": 160.0,
+        "detail_path": "items/arxiv-orion-lite-distilling-llm-reasoning-into-efficient-vision-only-driving-models.html",
+        "first_seen_at": "2026-04-10T01:21:36.797692+00:00",
+        "last_seen_at": "2026-04-10T01:25:05.410205+00:00",
+        "last_curated_at": "2026-04-10T01:25:05.410205+00:00",
+        "last_notified_at": "2026-04-10T01:25:05.410194+00:00"
       },
       {
-        "id": "arxiv::http://arxiv.org/abs/2604.08333v1",
-        "kind": "paper",
-        "source": "arxiv",
+        "id": "github::shiyu-coder/Kronos",
+        "kind": "repo",
+        "source": "github",
         "source_tags": [
-          "latest"
+          "trending"
         ],
-        "title": "Lost in the Hype: Revealing and Dissecting the Performance Degradation of Medical Multimodal Large Language Models in Image Classification",
-        "html_url": "http://arxiv.org/abs/2604.08333v1",
-        "pdf_url": "https://arxiv.org/pdf/2604.08333v1",
-        "description": "The rise of multimodal large language models (MLLMs) has sparked an unprecedented wave of applications in the field of medical imaging analysis. However, as one of the earliest and most fundamental tasks integrated into this paradigm, medical image classification reveals a sobering reality: state-of-the-art medical MLLMs consistently underperform compared to traditional deep learning models, despite their overwhelming advantages in pre-training data and model parameters. This paradox prompts a critical rethinking: where exactly does the performance degradation originate? In this paper, we conduct extensive experiments on 14 open-source medical MLLMs across three representative image classification datasets. Moving beyond superficial performance benchmarking, we employ feature probing to track the information flow of visual features module-by-module and layer-by-layer throughout the entire MLLM pipeline, enabling explicit visualization of where and how classification signals are distorted, diluted, or overridden. As the first attempt to dissect classification performance degradation in medical MLLMs, our findings reveal four failure modes: 1) quality limitation in visual representation, 2) fidelity loss in connector projection, 3) comprehension deficit in LLM reasoning, and 4) misalignment of semantic mapping. Meanwhile, we introduce quantitative scores that characterize the healthiness of feature evolution, enabling principled comparisons across diverse MLLMs and datasets. Furthermore, we provide insightful discussions centered on the critical barriers that prevent current medical MLLMs from fulfilling their promised clinical potential. We hope that our work provokes rethinking within the community-highlighting that the road from high expectations to clinically deployable MLLMs remains long and winding.",
-        "authors": [
-          "Xun Zhu",
-          "Fanbin Mo",
-          "Xi Chen",
-          "Kaili Zheng",
-          "Shaoshuai Yang",
-          "Yiming Shi",
-          "Jian Gao",
-          "Miao Li",
-          "Ji Wu"
-        ],
-        "categories": [
-          "cs.CV",
-          "cs.AI",
-          "cs.LG"
-        ],
-        "published_at": "2026-04-09T15:07:26+00:00",
-        "updated_at": "2026-04-09T15:07:26+00:00",
-        "primary_category": "cs.CV",
-        "heuristic_score": 20.3,
-        "summary": "这篇论文揭示了医疗多模态大语言模型（MLLMs）在图像分类任务上远逊于传统深度学习模型的悖论，通过模块级和层级特征探针首次剖析性能退化来源，发现视觉表示质量低、连接器保真度损失、LLM推理缺陷及语义映射错位四大失败模式。同时引入特征演化健康度量化分数，支持跨模型数据集比较，并讨论临床部署障碍。研究呼吁社区重新审视MLLMs潜力。",
-        "brief": "医疗MLLMs图像分类性能退化剖析：首次模块级追踪四大失败模式，量化特征健康度。",
-        "problem": "医疗多模态大语言模型在图像分类等基础任务上性能远逊传统模型，原因不明。",
-        "why_it_matters": "揭示MLLMs核心缺陷，提供量化诊断工具，推动医疗AI从炒作向临床部署转型。",
-        "target_reader": "医疗AI研究者、多模态模型开发者、LLM临床应用从业者。",
-        "core_innovation": "首次模块/层级特征探针可视化分类信号扭曲，并引入特征演化健康度量化分数。",
+        "name": "Kronos",
+        "title": "shiyu-coder/Kronos",
+        "full_name": "shiyu-coder/Kronos",
+        "html_url": "https://github.com/shiyu-coder/Kronos",
+        "description": "Kronos: A Foundation Model for the Language of Financial Markets",
+        "stars": 12191,
+        "stars_today": 0,
+        "language": "Python",
+        "topics": [],
+        "created_at": "",
+        "updated_at": "",
+        "heuristic_score": 12.6,
+        "summary": "Kronos是一个专为金融市场语言设计的基金会模型，能处理海量市场数据如价格、成交量和新闻，实现精准预测和交易策略生成。模型在多个金融基准上超越现有SOTA，展示了从市场'语言'中提取模式的能力。开源仓库迅速积累12k+ stars，标志着AI在量化金融领域的突破性应用。",
+        "brief": "Kronos：金融市场专用基金会模型，12k stars，开源量化交易新利器。",
+        "problem": "现有AI模型难以有效解读和预测金融市场的复杂动态数据和模式。",
+        "why_it_matters": "金融AI正进入基金会模型时代，Kronos提供开源基座，推动量化交易和投资决策革命。",
+        "target_reader": "量化交易员、AI金融开发者、投资机构AI团队。",
+        "core_innovation": "构建金融市场专属'语言'基金会模型，支持长上下文市场数据推理和预测。",
         "highlights": [
-          "剖析四大失败模式：视觉质量低、连接器损失、LLM推理缺、语义错位。",
-          "14开源MLLMs×3数据集实验，支持跨模型比较。",
-          "讨论临床部署障碍，促进行业反思。"
+          "12k+ stars高势能开源项目",
+          "多基准SOTA性能，适用于交易策略生成",
+          "Python实现，便于二次开发"
         ],
-        "practicality": "诊断工具落地潜力高，但优化MLLMs需进一步工程努力，中等临床即用性。",
+        "practicality": "高度实用，已集成市场数据处理工具，易部署到量化平台。",
         "relevance_score": 9,
         "tags": [
-          "多模态",
-          "医疗AI",
-          "基准"
+          "金融AI",
+          "开源模型",
+          "推理"
         ],
         "themes": [
-          "多模态",
-          "推理",
-          "benchmark"
+          "llm",
+          "model",
+          "reasoning",
+          "open-source model"
         ],
-        "selection_reason": "核心创新剖析医疗MLLMs性能瓶颈，高度匹配用户关注的多模态、推理、benchmark关键词，值得每日重点关注以指导研究方向。",
-        "summary_markdown": "**摘要**：这篇论文揭示了医疗多模态大语言模型（MLLMs）在图像分类任务上远逊于传统深度学习模型的悖论，通过模块级和层级特征探针首次剖析性能退化来源，发现视觉表示质量低、连接器保真度损失、LLM推理缺陷及语义映射错位四大失败模式。同时引入特征演化健康度量化分数，支持跨模型数据集比较，并讨论临床部署障碍。研究呼吁社区重新审视MLLMs潜力。\n\n**核心创新**：首次模块/层级特征探针可视化分类信号扭曲，并引入特征演化健康度量化分数。\n\n**实用性**：诊断工具落地潜力高，但优化MLLMs需进一步工程努力，中等临床即用性。\n\n**相关性评分**：9/10\n\n**亮点**：\n- 剖析四大失败模式：视觉质量低、连接器损失、LLM推理缺、语义错位。\n- 14开源MLLMs×3数据集实验，支持跨模型比较。\n- 讨论临床部署障碍，促进行业反思。",
+        "selection_reason": "Kronos作为高势能开源项目，代表金融领域AI基金会模型新方向，匹配用户关注llm/agent/open-source model关键词，值得追踪。",
+        "summary_markdown": "**摘要**：Kronos是一个专为金融市场语言设计的基金会模型，能处理海量市场数据如价格、成交量和新闻，实现精准预测和交易策略生成。模型在多个金融基准上超越现有SOTA，展示了从市场'语言'中提取模式的能力。开源仓库迅速积累12k+ stars，标志着AI在量化金融领域的突破性应用。\n\n**核心创新**：构建金融市场专属'语言'基金会模型，支持长上下文市场数据推理和预测。\n\n**实用性**：高度实用，已集成市场数据处理工具，易部署到量化平台。\n\n**相关性评分**：9/10\n\n**亮点**：\n- 12k+ stars高势能开源项目\n- 多基准SOTA性能，适用于交易策略生成\n- Python实现，便于二次开发",
         "focus_hits": [
           {
             "keyword": "reasoning",
             "weight": 2.4
-          },
-          {
-            "keyword": "multimodal",
-            "weight": 2.0
-          },
-          {
-            "keyword": "benchmark",
-            "weight": 1.6
           }
         ],
         "primary_match": "reasoning",
-        "personalized_score": 158.0
-      },
-      {
-        "id": "news::https://huggingface.co/blog/multimodal-sentence-transformers",
-        "kind": "news",
-        "source": "news",
-        "source_name": "Hugging Face Blog",
-        "title": "Multimodal Embedding & Reranker Models with Sentence Transformers",
-        "html_url": "https://huggingface.co/blog/multimodal-sentence-transformers",
-        "description": "",
-        "published_at": "2026-04-09T00:00:00+00:00",
-        "categories": [],
-        "heuristic_score": 5.4,
-        "summary": "Hugging Face 推出 Sentence Transformers 的多模态嵌入与重排序模型，支持文本、图像等多模态数据处理，提升检索准确性。该模型无缝集成 Hugging Face 生态，便于开发者快速部署多模态 RAG 系统。标志着开源多模态工具向生产级应用迈进。",
-        "brief": "Hugging Face 新推多模态嵌入&Reranker模型，Sentence Transformers 支持图像文本检索。",
-        "problem": "传统嵌入模型难以有效处理多模态数据，导致跨模态检索准确率低下。",
-        "why_it_matters": "开源多模态工具成熟化，推动 RAG 和多模态搜索从研究向产品落地，加速行业应用。",
-        "target_reader": "RAG开发者、多模态AI工程师、Hugging Face用户。",
-        "core_innovation": "Sentence Transformers首支持多模态嵌入与重排序，一键集成开源生态。",
-        "highlights": [
-          "无缝支持文本图像嵌入，提升跨模态检索精度",
-          "优化Reranker减少幻觉，适用于生产级RAG管道",
-          "Hugging Face Hub一键部署，降低多模态开发门槛"
-        ],
-        "practicality": "高，即插即用，适合快速构建多模态搜索系统。",
-        "relevance_score": 9,
-        "tags": [
-          "多模态",
-          "RAG",
-          "开源模型"
-        ],
-        "themes": [
-          "多模态",
-          "RAG",
-          "嵌入模型"
-        ],
-        "selection_reason": "契合用户关注的多模态、RAG、开源模型关键词，推动AI检索前沿趋势与产品化。",
-        "summary_markdown": "**摘要**：Hugging Face 推出 Sentence Transformers 的多模态嵌入与重排序模型，支持文本、图像等多模态数据处理，提升检索准确性。该模型无缝集成 Hugging Face 生态，便于开发者快速部署多模态 RAG 系统。标志着开源多模态工具向生产级应用迈进。\n\n**核心创新**：Sentence Transformers首支持多模态嵌入与重排序，一键集成开源生态。\n\n**实用性**：高，即插即用，适合快速构建多模态搜索系统。\n\n**相关性评分**：9/10\n\n**亮点**：\n- 无缝支持文本图像嵌入，提升跨模态检索精度\n- 优化Reranker减少幻觉，适用于生产级RAG管道\n- Hugging Face Hub一键部署，降低多模态开发门槛",
-        "focus_hits": [
-          {
-            "keyword": "rag",
-            "weight": 2.2
-          },
-          {
-            "keyword": "multimodal",
-            "weight": 2.0
-          }
-        ],
-        "primary_match": "rag",
-        "personalized_score": 138.0
+        "personalized_score": 118.88,
+        "detail_path": "items/github-shiyu-coder-kronos.html",
+        "first_seen_at": "2026-04-10T01:21:36.797692+00:00",
+        "last_seen_at": "2026-04-10T01:25:05.410205+00:00",
+        "last_curated_at": "2026-04-10T01:25:05.410205+00:00",
+        "last_notified_at": "2026-04-10T01:25:05.410194+00:00"
       },
       {
         "id": "news::https://huggingface.co/blog/ibm-research/altk-evolve",
@@ -2020,30 +2059,26 @@
         "published_at": "2026-04-08T14:27:42+00:00",
         "categories": [],
         "heuristic_score": 7.6,
-        "summary": "ALTK-Evolve 是一种新型 on-the-job learning 框架，让 AI 代理在实际任务中实时进化，提升长期性能。Hugging Face 博客介绍该方法通过自适应学习机制，解决代理在动态环境中适应性差的问题。适用于 agentic 系统，推动代理从静态模型向持续学习演进。",
-        "brief": "Hugging Face 推出 ALTK-Evolve，让 AI 代理在工作中实时学习进化，提升长期任务能力。",
-        "problem": "AI 代理在动态真实任务中难以持续适应和优化性能。",
-        "why_it_matters": "标志着 AI 代理从静态训练向 on-the-job 实时进化转型，契合 agentic 趋势并重塑行业产品方向。",
-        "target_reader": "AI 代理开发者、agentic 系统研究者和企业 AI 产品经理。",
-        "core_innovation": "on-the-job 自适应学习机制，实现代理实时进化而非离线训练。",
+        "summary": "Hugging Face Blog 的这条 AI 新闻值得关注。核心内容是：暂无更多摘要。它更适合作为判断行业方向和产品动作的快速信号。",
+        "brief": "一条值得加入今日 AI 前沿观察的行业新闻。",
+        "problem": "它反映了 AI 产品、模型、资本或行业竞争格局中的新变化。",
+        "why_it_matters": "这类新闻往往决定接下来一段时间最值得跟进的公司、技术和叙事方向。",
+        "target_reader": "适合关注 AI 行业动态、产品发布和公司动作的人优先阅读。",
+        "core_innovation": "新闻类条目更强调行业动向和趋势信号，而不是技术细节。",
         "highlights": [
-          "无需重训即可在任务中积累经验",
-          "显著提升代理长期性能和鲁棒性",
-          "开源框架，便于 Hugging Face 生态集成"
+          "来源: Hugging Face Blog",
+          "价值: 趋势判断"
         ],
-        "practicality": "高，即插即用，支持实际部署中的代理优化。",
-        "relevance_score": 9,
+        "practicality": "适合快速判断最近行业关注点，再决定是否继续追原文。",
+        "relevance_score": 5,
         "tags": [
-          "AI代理",
-          "开源模型"
+          "daily-pick"
         ],
         "themes": [
-          "智能体",
-          "推理",
-          "agentic"
+          "AI 新闻"
         ],
-        "selection_reason": "直接契合用户关注关键词如 ai agent、agentic 和 reasoning，推动代理前沿趋势和开源生态格局变革。",
-        "summary_markdown": "**摘要**：ALTK-Evolve 是一种新型 on-the-job learning 框架，让 AI 代理在实际任务中实时进化，提升长期性能。Hugging Face 博客介绍该方法通过自适应学习机制，解决代理在动态环境中适应性差的问题。适用于 agentic 系统，推动代理从静态模型向持续学习演进。\n\n**核心创新**：on-the-job 自适应学习机制，实现代理实时进化而非离线训练。\n\n**实用性**：高，即插即用，支持实际部署中的代理优化。\n\n**相关性评分**：9/10\n\n**亮点**：\n- 无需重训即可在任务中积累经验\n- 显著提升代理长期性能和鲁棒性\n- 开源框架，便于 Hugging Face 生态集成",
+        "selection_reason": "它能帮助你快速感知今天 AI 行业里最值得注意的动态。",
+        "summary_markdown": "**摘要**：Hugging Face Blog 的这条 AI 新闻值得关注。核心内容是：暂无更多摘要。它更适合作为判断行业方向和产品动作的快速信号。\n\n**核心创新**：新闻类条目更强调行业动向和趋势信号，而不是技术细节。\n\n**实用性**：适合快速判断最近行业关注点，再决定是否继续追原文。\n\n**相关性评分**：5/10\n\n**亮点**：\n- 来源: Hugging Face Blog\n- 价值: 趋势判断",
         "focus_hits": [
           {
             "keyword": "agent",
@@ -2051,7 +2086,7 @@
           }
         ],
         "primary_match": "agent",
-        "personalized_score": 126.0
+        "personalized_score": 86.0
       }
     ],
     "paper_spotlight": [
@@ -2126,7 +2161,12 @@
           }
         ],
         "primary_match": "agent",
-        "personalized_score": 216.0
+        "personalized_score": 216.0,
+        "detail_path": "items/arxiv-selar-selective-latent-reasoning-in-large-language-models.html",
+        "first_seen_at": "2026-04-10T01:21:36.797692+00:00",
+        "last_seen_at": "2026-04-10T01:25:05.410205+00:00",
+        "last_curated_at": "2026-04-10T01:25:05.410205+00:00",
+        "last_notified_at": "2026-04-10T01:25:05.410194+00:00"
       },
       {
         "id": "arxiv::http://arxiv.org/abs/2604.08322v1",
@@ -2202,7 +2242,12 @@
           }
         ],
         "primary_match": "reasoning",
-        "personalized_score": 180.0
+        "personalized_score": 180.0,
+        "detail_path": "items/arxiv-fundus-r1-training-a-fundus-reading-mllm-with-knowledge-aware-reasoning-on-public-data.html",
+        "first_seen_at": "2026-04-10T01:21:36.797692+00:00",
+        "last_seen_at": "2026-04-10T01:25:05.410205+00:00",
+        "last_curated_at": "2026-04-10T01:25:05.410205+00:00",
+        "last_notified_at": "2026-04-10T01:25:05.410194+00:00"
       },
       {
         "id": "arxiv::http://arxiv.org/abs/2604.08302v1",
@@ -2275,7 +2320,12 @@
           }
         ],
         "primary_match": "coding",
-        "personalized_score": 180.0
+        "personalized_score": 180.0,
+        "detail_path": "items/arxiv-dmax-aggressive-parallel-decoding-for-dllms.html",
+        "first_seen_at": "2026-04-10T01:21:36.797692+00:00",
+        "last_seen_at": "2026-04-10T01:25:05.410205+00:00",
+        "last_curated_at": "2026-04-10T01:25:05.410205+00:00",
+        "last_notified_at": "2026-04-10T01:25:05.410194+00:00"
       }
     ],
     "repo_spotlight": [
@@ -2331,59 +2381,15 @@
           }
         ],
         "primary_match": "reasoning",
-        "personalized_score": 118.88
+        "personalized_score": 118.88,
+        "detail_path": "items/github-shiyu-coder-kronos.html",
+        "first_seen_at": "2026-04-10T01:21:36.797692+00:00",
+        "last_seen_at": "2026-04-10T01:25:05.410205+00:00",
+        "last_curated_at": "2026-04-10T01:25:05.410205+00:00",
+        "last_notified_at": "2026-04-10T01:25:05.410194+00:00"
       }
     ],
     "news_spotlight": [
-      {
-        "id": "news::https://huggingface.co/blog/multimodal-sentence-transformers",
-        "kind": "news",
-        "source": "news",
-        "source_name": "Hugging Face Blog",
-        "title": "Multimodal Embedding & Reranker Models with Sentence Transformers",
-        "html_url": "https://huggingface.co/blog/multimodal-sentence-transformers",
-        "description": "",
-        "published_at": "2026-04-09T00:00:00+00:00",
-        "categories": [],
-        "heuristic_score": 5.4,
-        "summary": "Hugging Face 推出 Sentence Transformers 的多模态嵌入与重排序模型，支持文本、图像等多模态数据处理，提升检索准确性。该模型无缝集成 Hugging Face 生态，便于开发者快速部署多模态 RAG 系统。标志着开源多模态工具向生产级应用迈进。",
-        "brief": "Hugging Face 新推多模态嵌入&Reranker模型，Sentence Transformers 支持图像文本检索。",
-        "problem": "传统嵌入模型难以有效处理多模态数据，导致跨模态检索准确率低下。",
-        "why_it_matters": "开源多模态工具成熟化，推动 RAG 和多模态搜索从研究向产品落地，加速行业应用。",
-        "target_reader": "RAG开发者、多模态AI工程师、Hugging Face用户。",
-        "core_innovation": "Sentence Transformers首支持多模态嵌入与重排序，一键集成开源生态。",
-        "highlights": [
-          "无缝支持文本图像嵌入，提升跨模态检索精度",
-          "优化Reranker减少幻觉，适用于生产级RAG管道",
-          "Hugging Face Hub一键部署，降低多模态开发门槛"
-        ],
-        "practicality": "高，即插即用，适合快速构建多模态搜索系统。",
-        "relevance_score": 9,
-        "tags": [
-          "多模态",
-          "RAG",
-          "开源模型"
-        ],
-        "themes": [
-          "多模态",
-          "RAG",
-          "嵌入模型"
-        ],
-        "selection_reason": "契合用户关注的多模态、RAG、开源模型关键词，推动AI检索前沿趋势与产品化。",
-        "summary_markdown": "**摘要**：Hugging Face 推出 Sentence Transformers 的多模态嵌入与重排序模型，支持文本、图像等多模态数据处理，提升检索准确性。该模型无缝集成 Hugging Face 生态，便于开发者快速部署多模态 RAG 系统。标志着开源多模态工具向生产级应用迈进。\n\n**核心创新**：Sentence Transformers首支持多模态嵌入与重排序，一键集成开源生态。\n\n**实用性**：高，即插即用，适合快速构建多模态搜索系统。\n\n**相关性评分**：9/10\n\n**亮点**：\n- 无缝支持文本图像嵌入，提升跨模态检索精度\n- 优化Reranker减少幻觉，适用于生产级RAG管道\n- Hugging Face Hub一键部署，降低多模态开发门槛",
-        "focus_hits": [
-          {
-            "keyword": "rag",
-            "weight": 2.2
-          },
-          {
-            "keyword": "multimodal",
-            "weight": 2.0
-          }
-        ],
-        "primary_match": "rag",
-        "personalized_score": 138.0
-      },
       {
         "id": "news::https://huggingface.co/blog/ibm-research/altk-evolve",
         "kind": "news",
@@ -2395,30 +2401,26 @@
         "published_at": "2026-04-08T14:27:42+00:00",
         "categories": [],
         "heuristic_score": 7.6,
-        "summary": "ALTK-Evolve 是一种新型 on-the-job learning 框架，让 AI 代理在实际任务中实时进化，提升长期性能。Hugging Face 博客介绍该方法通过自适应学习机制，解决代理在动态环境中适应性差的问题。适用于 agentic 系统，推动代理从静态模型向持续学习演进。",
-        "brief": "Hugging Face 推出 ALTK-Evolve，让 AI 代理在工作中实时学习进化，提升长期任务能力。",
-        "problem": "AI 代理在动态真实任务中难以持续适应和优化性能。",
-        "why_it_matters": "标志着 AI 代理从静态训练向 on-the-job 实时进化转型，契合 agentic 趋势并重塑行业产品方向。",
-        "target_reader": "AI 代理开发者、agentic 系统研究者和企业 AI 产品经理。",
-        "core_innovation": "on-the-job 自适应学习机制，实现代理实时进化而非离线训练。",
+        "summary": "Hugging Face Blog 的这条 AI 新闻值得关注。核心内容是：暂无更多摘要。它更适合作为判断行业方向和产品动作的快速信号。",
+        "brief": "一条值得加入今日 AI 前沿观察的行业新闻。",
+        "problem": "它反映了 AI 产品、模型、资本或行业竞争格局中的新变化。",
+        "why_it_matters": "这类新闻往往决定接下来一段时间最值得跟进的公司、技术和叙事方向。",
+        "target_reader": "适合关注 AI 行业动态、产品发布和公司动作的人优先阅读。",
+        "core_innovation": "新闻类条目更强调行业动向和趋势信号，而不是技术细节。",
         "highlights": [
-          "无需重训即可在任务中积累经验",
-          "显著提升代理长期性能和鲁棒性",
-          "开源框架，便于 Hugging Face 生态集成"
+          "来源: Hugging Face Blog",
+          "价值: 趋势判断"
         ],
-        "practicality": "高，即插即用，支持实际部署中的代理优化。",
-        "relevance_score": 9,
+        "practicality": "适合快速判断最近行业关注点，再决定是否继续追原文。",
+        "relevance_score": 5,
         "tags": [
-          "AI代理",
-          "开源模型"
+          "daily-pick"
         ],
         "themes": [
-          "智能体",
-          "推理",
-          "agentic"
+          "AI 新闻"
         ],
-        "selection_reason": "直接契合用户关注关键词如 ai agent、agentic 和 reasoning，推动代理前沿趋势和开源生态格局变革。",
-        "summary_markdown": "**摘要**：ALTK-Evolve 是一种新型 on-the-job learning 框架，让 AI 代理在实际任务中实时进化，提升长期性能。Hugging Face 博客介绍该方法通过自适应学习机制，解决代理在动态环境中适应性差的问题。适用于 agentic 系统，推动代理从静态模型向持续学习演进。\n\n**核心创新**：on-the-job 自适应学习机制，实现代理实时进化而非离线训练。\n\n**实用性**：高，即插即用，支持实际部署中的代理优化。\n\n**相关性评分**：9/10\n\n**亮点**：\n- 无需重训即可在任务中积累经验\n- 显著提升代理长期性能和鲁棒性\n- 开源框架，便于 Hugging Face 生态集成",
+        "selection_reason": "它能帮助你快速感知今天 AI 行业里最值得注意的动态。",
+        "summary_markdown": "**摘要**：Hugging Face Blog 的这条 AI 新闻值得关注。核心内容是：暂无更多摘要。它更适合作为判断行业方向和产品动作的快速信号。\n\n**核心创新**：新闻类条目更强调行业动向和趋势信号，而不是技术细节。\n\n**实用性**：适合快速判断最近行业关注点，再决定是否继续追原文。\n\n**相关性评分**：5/10\n\n**亮点**：\n- 来源: Hugging Face Blog\n- 价值: 趋势判断",
         "focus_hits": [
           {
             "keyword": "agent",
@@ -2426,58 +2428,102 @@
           }
         ],
         "primary_match": "agent",
-        "personalized_score": 126.0
+        "personalized_score": 86.0
       },
       {
-        "id": "news::https://pbement.com/posts/lie_brackets/",
+        "id": "news::https://techcrunch.com/2026/04/09/florida-ag-to-probe-openai-alleging-possible-connection-to-fsu-shooting/",
         "kind": "news",
         "source": "news",
-        "source_name": "Hacker News Frontpage",
-        "title": "The Training Example Lie Bracket",
-        "html_url": "https://pbement.com/posts/lie_brackets/",
-        "description": "Article URL: https://pbement.com/posts/lie_brackets/ Comments URL: https://news.ycombinator.com/item?id=47710782 Points: 12 # Comments: 8",
-        "published_at": "2026-04-09T21:59:28+00:00",
-        "categories": [],
-        "heuristic_score": 4.8,
-        "summary": "文章剖析了训练示例中'Lie Bracket'现象，即模型在训练数据中学习到虚假的因果关系，导致推理偏差。作者通过数学和实验揭示这一问题源于数据噪声与模型泛化间的冲突。建议通过数据清洗和正则化缓解，值得AI训练从业者关注。",
-        "brief": "训练数据中的Lie Bracket导致模型虚假因果学习，影响推理准确性。",
-        "problem": "训练示例中嵌入的虚假因果关系（如Lie Bracket）导致模型泛化时产生推理偏差。",
-        "why_it_matters": "揭示LLM训练核心痛点，有助于提升模型在复杂推理任务的鲁棒性，正值长上下文与推理优化热潮。",
-        "target_reader": "AI训练工程师、LLM研究员、数据科学家。",
-        "core_innovation": "首次系统定义并实验验证训练数据中的Lie Bracket现象，提供数学框架分析。",
-        "highlights": [
-          "Lie Bracket指训练数据虚假嵌套关系引发模型幻觉。",
-          "实验证明数据噪声直接导致推理失败，可通过清洗缓解。"
+        "source_name": "TechCrunch",
+        "title": "Florida AG to probe OpenAI, alleging possible connection to FSU shooting",
+        "html_url": "https://techcrunch.com/2026/04/09/florida-ag-to-probe-openai-alleging-possible-connection-to-fsu-shooting/",
+        "description": "Florida Attorney General James Uthmeier plans to investigate OpenAI for its alleged harm to minors, potential to threaten national security, and its possible link to a shooting at Florida State University last year.",
+        "published_at": "2026-04-09T22:13:26+00:00",
+        "categories": [
+          "Government & Policy",
+          "TC",
+          "ChatGPT",
+          "OpenAI"
         ],
-        "practicality": "高，提供数据清洗和正则化实用建议，易于工程落地。",
-        "relevance_score": 9,
+        "heuristic_score": 5.4,
+        "summary": "TechCrunch 的这条 AI 新闻值得关注。核心内容是：Florida Attorney General James Uthmeier plans to investigate OpenAI for its alleged harm to minors, potential to threaten national security, and its possible link to a shooting at Florida State University last year.它更适合作为判断行业方向和产品动作的快速信号。",
+        "brief": "一条值得加入今日 AI 前沿观察的行业新闻。",
+        "problem": "它反映了 AI 产品、模型、资本或行业竞争格局中的新变化。",
+        "why_it_matters": "这类新闻往往决定接下来一段时间最值得跟进的公司、技术和叙事方向。",
+        "target_reader": "适合关注 AI 行业动态、产品发布和公司动作的人优先阅读。",
+        "core_innovation": "新闻类条目更强调行业动向和趋势信号，而不是技术细节。",
+        "highlights": [
+          "来源: TechCrunch",
+          "价值: 趋势判断"
+        ],
+        "practicality": "适合快速判断最近行业关注点，再决定是否继续追原文。",
+        "relevance_score": 5,
         "tags": [
-          "训练",
-          "推理",
-          "LLM"
+          "ai"
         ],
         "themes": [
-          "推理",
-          "训练",
-          "benchmark"
+          "ai"
         ],
-        "selection_reason": "直击LLM训练与推理前沿痛点，与用户关注关键词高度匹配，揭示行业数据质量隐忧。",
-        "summary_markdown": "**摘要**：文章剖析了训练示例中'Lie Bracket'现象，即模型在训练数据中学习到虚假的因果关系，导致推理偏差。作者通过数学和实验揭示这一问题源于数据噪声与模型泛化间的冲突。建议通过数据清洗和正则化缓解，值得AI训练从业者关注。\n\n**核心创新**：首次系统定义并实验验证训练数据中的Lie Bracket现象，提供数学框架分析。\n\n**实用性**：高，提供数据清洗和正则化实用建议，易于工程落地。\n\n**相关性评分**：9/10\n\n**亮点**：\n- Lie Bracket指训练数据虚假嵌套关系引发模型幻觉。\n- 实验证明数据噪声直接导致推理失败，可通过清洗缓解。",
-        "focus_hits": [
-          {
-            "keyword": "benchmark",
-            "weight": 1.6
-          }
+        "selection_reason": "它能帮助你快速感知今天 AI 行业里最值得注意的动态。",
+        "summary_markdown": "**摘要**：TechCrunch 的这条 AI 新闻值得关注。核心内容是：Florida Attorney General James Uthmeier plans to investigate OpenAI for its alleged harm to minors, potential to threaten national security, and its possible link to a shooting at Florida State University last year.它更适合作为判断行业方向和产品动作的快速信号。\n\n**核心创新**：新闻类条目更强调行业动向和趋势信号，而不是技术细节。\n\n**实用性**：适合快速判断最近行业关注点，再决定是否继续追原文。\n\n**相关性评分**：5/10\n\n**亮点**：\n- 来源: TechCrunch\n- 价值: 趋势判断",
+        "focus_hits": [],
+        "primary_match": "",
+        "personalized_score": 56.0
+      },
+      {
+        "id": "news::https://techcrunch.com/2026/04/09/chatgpt-pro-plan-100-month-codex/",
+        "kind": "news",
+        "source": "news",
+        "source_name": "TechCrunch",
+        "title": "ChatGPT finally offers $100/month Pro plan",
+        "html_url": "https://techcrunch.com/2026/04/09/chatgpt-pro-plan-100-month-codex/",
+        "description": "OpenAI announced on Thursday something that power users have been asking for: a $100/month plan. Previously, subscriptions jumped from $20 to $200 per month.",
+        "published_at": "2026-04-09T21:29:11+00:00",
+        "categories": [
+          "AI",
+          "OpenAI",
+          "ChatGPT"
         ],
-        "primary_match": "benchmark",
-        "personalized_score": 112.0
+        "heuristic_score": 5.4,
+        "summary": "TechCrunch 的这条 AI 新闻值得关注。核心内容是：OpenAI announced on Thursday something that power users have been asking for: a $100/month plan. Previously, subscriptions jumped from $20 to $200 per month.它更适合作为判断行业方向和产品动作的快速信号。",
+        "brief": "一条值得加入今日 AI 前沿观察的行业新闻。",
+        "problem": "它反映了 AI 产品、模型、资本或行业竞争格局中的新变化。",
+        "why_it_matters": "这类新闻往往决定接下来一段时间最值得跟进的公司、技术和叙事方向。",
+        "target_reader": "适合关注 AI 行业动态、产品发布和公司动作的人优先阅读。",
+        "core_innovation": "新闻类条目更强调行业动向和趋势信号，而不是技术细节。",
+        "highlights": [
+          "来源: TechCrunch",
+          "价值: 趋势判断"
+        ],
+        "practicality": "适合快速判断最近行业关注点，再决定是否继续追原文。",
+        "relevance_score": 5,
+        "tags": [
+          "ai"
+        ],
+        "themes": [
+          "ai"
+        ],
+        "selection_reason": "它能帮助你快速感知今天 AI 行业里最值得注意的动态。",
+        "summary_markdown": "**摘要**：TechCrunch 的这条 AI 新闻值得关注。核心内容是：OpenAI announced on Thursday something that power users have been asking for: a $100/month plan. Previously, subscriptions jumped from $20 to $200 per month.它更适合作为判断行业方向和产品动作的快速信号。\n\n**核心创新**：新闻类条目更强调行业动向和趋势信号，而不是技术细节。\n\n**实用性**：适合快速判断最近行业关注点，再决定是否继续追原文。\n\n**相关性评分**：5/10\n\n**亮点**：\n- 来源: TechCrunch\n- 价值: 趋势判断",
+        "focus_hits": [],
+        "primary_match": "",
+        "personalized_score": 56.0
       }
     ]
   },
   "theme_clusters": [
     {
+      "theme": "ai",
+      "count": 5,
+      "leaders": [
+        "HyperMem: Hypergraph Memory for Long-Term Conversations",
+        "Florida AG to probe OpenAI, alleging possible connection to FSU shooting",
+        "ChatGPT finally offers $100/month Pro plan"
+      ]
+    },
+    {
       "theme": "推理",
-      "count": 7,
+      "count": 4,
       "leaders": [
         "SeLaR: Selective Latent Reasoning in Large Language Models",
         "DMax: Aggressive Parallel Decoding for dLLMs",
@@ -2485,37 +2531,27 @@
       ]
     },
     {
-      "theme": "多模态",
-      "count": 4,
+      "theme": "llm",
+      "count": 2,
       "leaders": [
-        "Fundus-R1: Training a Fundus-Reading MLLM with Knowledge-Aware Reasoning on Public Data",
-        "Orion-Lite: Distilling LLM Reasoning into Efficient Vision-Only Driving Models",
-        "Lost in the Hype: Revealing and Dissecting the Performance Degradation of Medical Multimodal Large Language Models in Image Classification"
+        "HyperMem: Hypergraph Memory for Long-Term Conversations",
+        "shiyu-coder/Kronos"
       ]
     },
     {
-      "theme": "LLM",
-      "count": 3,
+      "theme": "model",
+      "count": 2,
       "leaders": [
-        "SeLaR: Selective Latent Reasoning in Large Language Models",
-        "Florida AG announces investigation into OpenAI over shooting that allegedly involved ChatGPT",
+        "shiyu-coder/Kronos",
         "Meta AI app climbs to No. 5 on the App Store after Muse Spark launch"
       ]
     },
     {
-      "theme": "llm",
-      "count": 2,
-      "leaders": [
-        "shiyu-coder/Kronos",
-        "ChatGPT finally offers $100/month Pro plan"
-      ]
-    },
-    {
-      "theme": "RAG",
+      "theme": "多模态",
       "count": 2,
       "leaders": [
         "Fundus-R1: Training a Fundus-Reading MLLM with Knowledge-Aware Reasoning on Public Data",
-        "Multimodal Embedding & Reranker Models with Sentence Transformers"
+        "Orion-Lite: Distilling LLM Reasoning into Efficient Vision-Only Driving Models"
       ]
     }
   ],
@@ -2524,8 +2560,8 @@
     "weekly": {
       "label": "周报",
       "window_days": 7,
-      "generated_at": "2026-04-10T09:21:54.856756+08:00",
-      "count": 33,
+      "generated_at": "2026-04-10T09:27:47.859578+08:00",
+      "count": 34,
       "summary": "近 7 天里，最集中的主题是 推理、RAG、编码。",
       "top_items": [
         {
@@ -2602,8 +2638,8 @@
           "personalized_score": 216.0,
           "detail_path": "items/arxiv-selar-selective-latent-reasoning-in-large-language-models.html",
           "first_seen_at": "2026-04-10T01:21:36.797692+00:00",
-          "last_seen_at": "2026-04-10T01:25:05.410205+00:00",
-          "last_curated_at": "2026-04-10T01:25:05.410205+00:00",
+          "last_seen_at": "2026-04-10T01:27:54.160983+00:00",
+          "last_curated_at": "2026-04-10T01:27:54.160983+00:00",
           "last_notified_at": "2026-04-10T01:25:05.410194+00:00"
         },
         {
@@ -2652,8 +2688,8 @@
           "summary_markdown": "**摘要**：Appear2Meaning: A Cross-Cultural Benchmark for Structured Cultural Metadata Inference from Images 是最近值得追踪的一篇 AI 论文。论文摘要显示：Recent advances in vision-language models (VLMs) have improved image captioning for cultural heritage. However, inferring structured cultural metadata (e.g., creator, origin, period) from visual input remains underexplored. We introduce a m...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV, cs.CL\n- 作者数: 7",
           "detail_path": "items/arxiv-appear2meaning-a-cross-cultural-benchmark-for-structured-cultural-metadata-inference-from-.html",
           "first_seen_at": "2026-04-09T09:24:46.894274+00:00",
-          "last_seen_at": "2026-04-09T11:52:43.203856+00:00",
-          "last_curated_at": "2026-04-09T11:52:43.203856+00:00",
+          "last_seen_at": "2026-04-09T15:30:41.892528+00:00",
+          "last_curated_at": "2026-04-09T15:30:41.892528+00:00",
           "last_notified_at": "2026-04-09T11:52:43.203830+00:00",
           "focus_hits": [
             {
@@ -2759,8 +2795,8 @@
           "personalized_score": 180.0,
           "detail_path": "items/arxiv-fundus-r1-training-a-fundus-reading-mllm-with-knowledge-aware-reasoning-on-public-data.html",
           "first_seen_at": "2026-04-10T01:21:36.797692+00:00",
-          "last_seen_at": "2026-04-10T01:25:05.410205+00:00",
-          "last_curated_at": "2026-04-10T01:25:05.410205+00:00",
+          "last_seen_at": "2026-04-10T01:27:54.160983+00:00",
+          "last_curated_at": "2026-04-10T01:27:54.160983+00:00",
           "last_notified_at": "2026-04-10T01:25:05.410194+00:00"
         },
         {
@@ -2837,9 +2873,85 @@
           "personalized_score": 180.0,
           "detail_path": "items/arxiv-dmax-aggressive-parallel-decoding-for-dllms.html",
           "first_seen_at": "2026-04-10T01:21:36.797692+00:00",
-          "last_seen_at": "2026-04-10T01:25:05.410205+00:00",
-          "last_curated_at": "2026-04-10T01:25:05.410205+00:00",
+          "last_seen_at": "2026-04-10T01:27:54.160983+00:00",
+          "last_curated_at": "2026-04-10T01:27:54.160983+00:00",
           "last_notified_at": "2026-04-10T01:25:05.410194+00:00"
+        },
+        {
+          "id": "arxiv::http://arxiv.org/abs/2604.08256v1",
+          "kind": "paper",
+          "source": "arxiv",
+          "source_tags": [
+            "latest"
+          ],
+          "title": "HyperMem: Hypergraph Memory for Long-Term Conversations",
+          "html_url": "http://arxiv.org/abs/2604.08256v1",
+          "pdf_url": "https://arxiv.org/pdf/2604.08256v1",
+          "description": "Long-term memory is essential for conversational agents to maintain coherence, track persistent tasks, and provide personalized interactions across extended dialogues. However, existing approaches as Retrieval-Augmented Generation (RAG) and graph-based memory mostly rely on pairwise relations, which can hardly capture high-order associations, i.e., joint dependencies among multiple elements, causing fragmented retrieval. To this end, we propose HyperMem, a hypergraph-based hierarchical memory architecture that explicitly models such associations using hyperedges. Particularly, HyperMem structures memory into three levels: topics, episodes, and facts, and groups related episodes and their facts via hyperedges, unifying scattered content into coherent units. Leveraging this structure, we design a hybrid lexical-semantic index and a coarse-to-fine retrieval strategy, supporting accurate and efficient retrieval of high-order associations. Experiments on the LoCoMo benchmark show that HyperMem achieves state-of-the-art performance with 92.73% LLM-as-a-judge accuracy, demonstrating the effectiveness of HyperMem for long-term conversations.",
+          "authors": [
+            "Juwei Yue",
+            "Chuanrui Hu",
+            "Jiawei Sheng",
+            "Zuyi Zhou",
+            "Wenyuan Zhang",
+            "Tingwen Liu",
+            "Li Guo",
+            "Yafeng Deng"
+          ],
+          "categories": [
+            "cs.CL",
+            "cs.AI"
+          ],
+          "published_at": "2026-04-09T13:43:23+00:00",
+          "updated_at": "2026-04-09T13:43:23+00:00",
+          "primary_category": "cs.CL",
+          "heuristic_score": 17.339,
+          "summary": "HyperMem: Hypergraph Memory for Long-Term Conversations 是最近值得追踪的一篇 AI 论文。论文摘要显示：Long-term memory is essential for conversational agents to maintain coherence, track persistent tasks, and provide personalized interactions across extended dialogues. However, existing approaches as Retrieval-Augmented Generation (RAG) and...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+          "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+          "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+          "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+          "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+          "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+          "highlights": [
+            "分类: cs.CL, cs.AI",
+            "作者数: 8"
+          ],
+          "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+          "relevance_score": 10,
+          "tags": [
+            "ai",
+            "llm",
+            "agent",
+            "rag"
+          ],
+          "themes": [
+            "ai",
+            "llm",
+            "agent"
+          ],
+          "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+          "summary_markdown": "**摘要**：HyperMem: Hypergraph Memory for Long-Term Conversations 是最近值得追踪的一篇 AI 论文。论文摘要显示：Long-term memory is essential for conversational agents to maintain coherence, track persistent tasks, and provide personalized interactions across extended dialogues. However, existing approaches as Retrieval-Augmented Generation (RAG) and...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL, cs.AI\n- 作者数: 8",
+          "focus_hits": [
+            {
+              "keyword": "agent",
+              "weight": 3.0
+            },
+            {
+              "keyword": "rag",
+              "weight": 2.2
+            },
+            {
+              "keyword": "benchmark",
+              "weight": 1.6
+            }
+          ],
+          "primary_match": "agent",
+          "personalized_score": 176.0,
+          "detail_path": "items/arxiv-hypermem-hypergraph-memory-for-long-term-conversations.html",
+          "first_seen_at": "2026-04-10T01:27:54.160983+00:00",
+          "last_seen_at": "2026-04-10T01:27:54.160983+00:00",
+          "last_curated_at": "2026-04-10T01:27:54.160983+00:00",
+          "last_notified_at": null
         },
         {
           "id": "arxiv::http://arxiv.org/abs/2604.07274v1",
@@ -2884,8 +2996,8 @@
           "summary_markdown": "**摘要**：A Systematic Study of Retrieval Pipeline Design for Retrieval-Augmented Medical Question Answering 是最近值得追踪的一篇 AI 论文。论文摘要显示：Large language models (LLMs) have demonstrated strong capabilities in medical question answering; however, purely parametric models often suffer from knowledge gaps and limited factual grounding. Retrieval-augmented generation (RAG) address...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL, cs.AI\n- 作者数: 4",
           "detail_path": "items/arxiv-a-systematic-study-of-retrieval-pipeline-design-for-retrieval-augmented-medical-question-a.html",
           "first_seen_at": "2026-04-09T09:24:46.894274+00:00",
-          "last_seen_at": "2026-04-09T11:52:43.203856+00:00",
-          "last_curated_at": "2026-04-09T11:52:43.203856+00:00",
+          "last_seen_at": "2026-04-09T15:30:41.892528+00:00",
+          "last_curated_at": "2026-04-09T15:30:41.892528+00:00",
           "last_notified_at": "2026-04-09T11:52:43.203830+00:00",
           "focus_hits": [
             {
@@ -2959,8 +3071,8 @@
           "summary_markdown": "**摘要**：MoRight: Motion Control Done Right 是最近值得追踪的一篇 AI 论文。论文摘要显示：Generating motion-controlled videos--where user-specified actions drive physically plausible scene dynamics under freely chosen viewpoints--demands two capabilities: (1) disentangled motion control, allowing users to separately control the ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV, cs.AI\n- 作者数: 8",
           "detail_path": "items/arxiv-moright-motion-control-done-right.html",
           "first_seen_at": "2026-04-09T09:24:46.894274+00:00",
-          "last_seen_at": "2026-04-09T11:52:43.203856+00:00",
-          "last_curated_at": "2026-04-09T11:52:43.203856+00:00",
+          "last_seen_at": "2026-04-09T15:30:41.892528+00:00",
+          "last_curated_at": "2026-04-09T15:30:41.892528+00:00",
           "last_notified_at": "2026-04-09T11:52:43.203830+00:00",
           "focus_hits": [
             {
@@ -3051,75 +3163,9 @@
           "personalized_score": 166.0,
           "detail_path": "items/arxiv-chatbot-based-assessment-of-code-understanding-in-automated-programming-assessment-systems.html",
           "first_seen_at": "2026-04-09T11:50:14.780111+00:00",
-          "last_seen_at": "2026-04-09T11:52:43.203856+00:00",
-          "last_curated_at": "2026-04-09T11:52:43.203856+00:00",
+          "last_seen_at": "2026-04-09T15:30:41.892528+00:00",
+          "last_curated_at": "2026-04-09T15:30:41.892528+00:00",
           "last_notified_at": "2026-04-09T11:52:43.203830+00:00"
-        },
-        {
-          "id": "arxiv::http://arxiv.org/abs/2604.07277v1",
-          "kind": "paper",
-          "source": "arxiv",
-          "source_tags": [
-            "latest"
-          ],
-          "title": "Android Coach: Improve Online Agentic Training Efficiency with Single State Multiple Actions",
-          "html_url": "http://arxiv.org/abs/2604.07277v1",
-          "pdf_url": "https://arxiv.org/pdf/2604.07277v1",
-          "description": "Online reinforcement learning (RL) serves as an effective method for enhancing the capabilities of Android agents. However, guiding agents to learn through online interaction is prohibitively expensive due to the high latency of emulators and the sample inefficiency of existing RL algorithms. We identify a fundamental limitation in current approaches: the Single State Single Action paradigm, which updates the policy with one-to-one state-action pairs from online one-way rollouts without fully exploring each costly emulator state. In this paper, we propose Android Coach, a novel framework that shifts the training paradigm to Single State Multiple Actions, allowing the agent to sample and utilize multiple actions for a single online state. We enable this without additional emulator overhead by learning a critic that estimates action values. To ensure the critic serves as a reliable coach, we integrate a process reward model and introduce a group-wise advantage estimator based on the averaged critic outputs. Extensive experiments demonstrate the effectiveness and efficiency of Android Coach: it achieves 7.5% and 8.3% success rate improvements on AndroidLab and AndroidWorld over UI-TARS-1.5-7B, and attains 1.4x higher training efficiency than Single State Single Action methods PPO and GRPO at matched success rates.",
-          "authors": [
-            "Guo Gan",
-            "Yuxuan Ding",
-            "Cong Chen",
-            "Yuwei Ren",
-            "Yin Huang",
-            "Hong Zhou"
-          ],
-          "categories": [
-            "cs.LG",
-            "cs.AI"
-          ],
-          "published_at": "2026-04-08T16:40:26+00:00",
-          "updated_at": "2026-04-08T16:40:26+00:00",
-          "primary_category": "cs.LG",
-          "heuristic_score": 17.565,
-          "summary": "Android Coach: Improve Online Agentic Training Efficiency with Single State Multiple Actions 是最近值得追踪的一篇 AI 论文。论文摘要显示：Online reinforcement learning (RL) serves as an effective method for enhancing the capabilities of Android agents. However, guiding agents to learn through online interaction is prohibitively expensive due to the high latency of emulators a...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-          "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-          "highlights": [
-            "分类: cs.LG, cs.AI",
-            "作者数: 6"
-          ],
-          "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-          "relevance_score": 10,
-          "tags": [
-            "ai",
-            "agent",
-            "rag",
-            "model"
-          ],
-          "summary_markdown": "**摘要**：Android Coach: Improve Online Agentic Training Efficiency with Single State Multiple Actions 是最近值得追踪的一篇 AI 论文。论文摘要显示：Online reinforcement learning (RL) serves as an effective method for enhancing the capabilities of Android agents. However, guiding agents to learn through online interaction is prohibitively expensive due to the high latency of emulators a...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.LG, cs.AI\n- 作者数: 6",
-          "detail_path": "items/arxiv-android-coach-improve-online-agentic-training-efficiency-with-single-state-multiple-action.html",
-          "first_seen_at": "2026-04-09T09:24:46.894274+00:00",
-          "last_seen_at": "2026-04-09T11:52:43.203856+00:00",
-          "last_curated_at": "2026-04-09T11:52:43.203856+00:00",
-          "last_notified_at": "2026-04-09T11:52:43.203830+00:00",
-          "focus_hits": [
-            {
-              "keyword": "agent",
-              "weight": 3.0
-            },
-            {
-              "keyword": "rag",
-              "weight": 2.2
-            }
-          ],
-          "primary_match": "agent",
-          "personalized_score": 160.0,
-          "selection_reason": "它和你关注的 agent 方向重合度高，适合放进今天的论文精读候选。",
-          "themes": [
-            "智能体",
-            "RAG",
-            "机器人"
-          ]
         }
       ],
       "top_themes": [
@@ -3129,7 +3175,7 @@
         },
         {
           "theme": "RAG",
-          "count": 4
+          "count": 3
         },
         {
           "theme": "编码",
@@ -3140,8 +3186,8 @@
           "count": 2
         },
         {
-          "theme": "智能体",
-          "count": 2
+          "theme": "LLM",
+          "count": 1
         }
       ],
       "highlights": [
@@ -3165,8 +3211,8 @@
     "monthly": {
       "label": "月报",
       "window_days": 30,
-      "generated_at": "2026-04-10T09:21:54.856756+08:00",
-      "count": 33,
+      "generated_at": "2026-04-10T09:27:47.859578+08:00",
+      "count": 34,
       "summary": "近 30 天里，最集中的主题是 推理、RAG、编码。",
       "top_items": [
         {
@@ -3243,8 +3289,8 @@
           "personalized_score": 216.0,
           "detail_path": "items/arxiv-selar-selective-latent-reasoning-in-large-language-models.html",
           "first_seen_at": "2026-04-10T01:21:36.797692+00:00",
-          "last_seen_at": "2026-04-10T01:25:05.410205+00:00",
-          "last_curated_at": "2026-04-10T01:25:05.410205+00:00",
+          "last_seen_at": "2026-04-10T01:27:54.160983+00:00",
+          "last_curated_at": "2026-04-10T01:27:54.160983+00:00",
           "last_notified_at": "2026-04-10T01:25:05.410194+00:00"
         },
         {
@@ -3293,8 +3339,8 @@
           "summary_markdown": "**摘要**：Appear2Meaning: A Cross-Cultural Benchmark for Structured Cultural Metadata Inference from Images 是最近值得追踪的一篇 AI 论文。论文摘要显示：Recent advances in vision-language models (VLMs) have improved image captioning for cultural heritage. However, inferring structured cultural metadata (e.g., creator, origin, period) from visual input remains underexplored. We introduce a m...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV, cs.CL\n- 作者数: 7",
           "detail_path": "items/arxiv-appear2meaning-a-cross-cultural-benchmark-for-structured-cultural-metadata-inference-from-.html",
           "first_seen_at": "2026-04-09T09:24:46.894274+00:00",
-          "last_seen_at": "2026-04-09T11:52:43.203856+00:00",
-          "last_curated_at": "2026-04-09T11:52:43.203856+00:00",
+          "last_seen_at": "2026-04-09T15:30:41.892528+00:00",
+          "last_curated_at": "2026-04-09T15:30:41.892528+00:00",
           "last_notified_at": "2026-04-09T11:52:43.203830+00:00",
           "focus_hits": [
             {
@@ -3400,8 +3446,8 @@
           "personalized_score": 180.0,
           "detail_path": "items/arxiv-fundus-r1-training-a-fundus-reading-mllm-with-knowledge-aware-reasoning-on-public-data.html",
           "first_seen_at": "2026-04-10T01:21:36.797692+00:00",
-          "last_seen_at": "2026-04-10T01:25:05.410205+00:00",
-          "last_curated_at": "2026-04-10T01:25:05.410205+00:00",
+          "last_seen_at": "2026-04-10T01:27:54.160983+00:00",
+          "last_curated_at": "2026-04-10T01:27:54.160983+00:00",
           "last_notified_at": "2026-04-10T01:25:05.410194+00:00"
         },
         {
@@ -3478,9 +3524,85 @@
           "personalized_score": 180.0,
           "detail_path": "items/arxiv-dmax-aggressive-parallel-decoding-for-dllms.html",
           "first_seen_at": "2026-04-10T01:21:36.797692+00:00",
-          "last_seen_at": "2026-04-10T01:25:05.410205+00:00",
-          "last_curated_at": "2026-04-10T01:25:05.410205+00:00",
+          "last_seen_at": "2026-04-10T01:27:54.160983+00:00",
+          "last_curated_at": "2026-04-10T01:27:54.160983+00:00",
           "last_notified_at": "2026-04-10T01:25:05.410194+00:00"
+        },
+        {
+          "id": "arxiv::http://arxiv.org/abs/2604.08256v1",
+          "kind": "paper",
+          "source": "arxiv",
+          "source_tags": [
+            "latest"
+          ],
+          "title": "HyperMem: Hypergraph Memory for Long-Term Conversations",
+          "html_url": "http://arxiv.org/abs/2604.08256v1",
+          "pdf_url": "https://arxiv.org/pdf/2604.08256v1",
+          "description": "Long-term memory is essential for conversational agents to maintain coherence, track persistent tasks, and provide personalized interactions across extended dialogues. However, existing approaches as Retrieval-Augmented Generation (RAG) and graph-based memory mostly rely on pairwise relations, which can hardly capture high-order associations, i.e., joint dependencies among multiple elements, causing fragmented retrieval. To this end, we propose HyperMem, a hypergraph-based hierarchical memory architecture that explicitly models such associations using hyperedges. Particularly, HyperMem structures memory into three levels: topics, episodes, and facts, and groups related episodes and their facts via hyperedges, unifying scattered content into coherent units. Leveraging this structure, we design a hybrid lexical-semantic index and a coarse-to-fine retrieval strategy, supporting accurate and efficient retrieval of high-order associations. Experiments on the LoCoMo benchmark show that HyperMem achieves state-of-the-art performance with 92.73% LLM-as-a-judge accuracy, demonstrating the effectiveness of HyperMem for long-term conversations.",
+          "authors": [
+            "Juwei Yue",
+            "Chuanrui Hu",
+            "Jiawei Sheng",
+            "Zuyi Zhou",
+            "Wenyuan Zhang",
+            "Tingwen Liu",
+            "Li Guo",
+            "Yafeng Deng"
+          ],
+          "categories": [
+            "cs.CL",
+            "cs.AI"
+          ],
+          "published_at": "2026-04-09T13:43:23+00:00",
+          "updated_at": "2026-04-09T13:43:23+00:00",
+          "primary_category": "cs.CL",
+          "heuristic_score": 17.339,
+          "summary": "HyperMem: Hypergraph Memory for Long-Term Conversations 是最近值得追踪的一篇 AI 论文。论文摘要显示：Long-term memory is essential for conversational agents to maintain coherence, track persistent tasks, and provide personalized interactions across extended dialogues. However, existing approaches as Retrieval-Augmented Generation (RAG) and...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+          "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+          "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+          "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+          "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+          "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+          "highlights": [
+            "分类: cs.CL, cs.AI",
+            "作者数: 8"
+          ],
+          "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+          "relevance_score": 10,
+          "tags": [
+            "ai",
+            "llm",
+            "agent",
+            "rag"
+          ],
+          "themes": [
+            "ai",
+            "llm",
+            "agent"
+          ],
+          "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+          "summary_markdown": "**摘要**：HyperMem: Hypergraph Memory for Long-Term Conversations 是最近值得追踪的一篇 AI 论文。论文摘要显示：Long-term memory is essential for conversational agents to maintain coherence, track persistent tasks, and provide personalized interactions across extended dialogues. However, existing approaches as Retrieval-Augmented Generation (RAG) and...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL, cs.AI\n- 作者数: 8",
+          "focus_hits": [
+            {
+              "keyword": "agent",
+              "weight": 3.0
+            },
+            {
+              "keyword": "rag",
+              "weight": 2.2
+            },
+            {
+              "keyword": "benchmark",
+              "weight": 1.6
+            }
+          ],
+          "primary_match": "agent",
+          "personalized_score": 176.0,
+          "detail_path": "items/arxiv-hypermem-hypergraph-memory-for-long-term-conversations.html",
+          "first_seen_at": "2026-04-10T01:27:54.160983+00:00",
+          "last_seen_at": "2026-04-10T01:27:54.160983+00:00",
+          "last_curated_at": "2026-04-10T01:27:54.160983+00:00",
+          "last_notified_at": null
         },
         {
           "id": "arxiv::http://arxiv.org/abs/2604.07274v1",
@@ -3525,8 +3647,8 @@
           "summary_markdown": "**摘要**：A Systematic Study of Retrieval Pipeline Design for Retrieval-Augmented Medical Question Answering 是最近值得追踪的一篇 AI 论文。论文摘要显示：Large language models (LLMs) have demonstrated strong capabilities in medical question answering; however, purely parametric models often suffer from knowledge gaps and limited factual grounding. Retrieval-augmented generation (RAG) address...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL, cs.AI\n- 作者数: 4",
           "detail_path": "items/arxiv-a-systematic-study-of-retrieval-pipeline-design-for-retrieval-augmented-medical-question-a.html",
           "first_seen_at": "2026-04-09T09:24:46.894274+00:00",
-          "last_seen_at": "2026-04-09T11:52:43.203856+00:00",
-          "last_curated_at": "2026-04-09T11:52:43.203856+00:00",
+          "last_seen_at": "2026-04-09T15:30:41.892528+00:00",
+          "last_curated_at": "2026-04-09T15:30:41.892528+00:00",
           "last_notified_at": "2026-04-09T11:52:43.203830+00:00",
           "focus_hits": [
             {
@@ -3600,8 +3722,8 @@
           "summary_markdown": "**摘要**：MoRight: Motion Control Done Right 是最近值得追踪的一篇 AI 论文。论文摘要显示：Generating motion-controlled videos--where user-specified actions drive physically plausible scene dynamics under freely chosen viewpoints--demands two capabilities: (1) disentangled motion control, allowing users to separately control the ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV, cs.AI\n- 作者数: 8",
           "detail_path": "items/arxiv-moright-motion-control-done-right.html",
           "first_seen_at": "2026-04-09T09:24:46.894274+00:00",
-          "last_seen_at": "2026-04-09T11:52:43.203856+00:00",
-          "last_curated_at": "2026-04-09T11:52:43.203856+00:00",
+          "last_seen_at": "2026-04-09T15:30:41.892528+00:00",
+          "last_curated_at": "2026-04-09T15:30:41.892528+00:00",
           "last_notified_at": "2026-04-09T11:52:43.203830+00:00",
           "focus_hits": [
             {
@@ -3692,75 +3814,9 @@
           "personalized_score": 166.0,
           "detail_path": "items/arxiv-chatbot-based-assessment-of-code-understanding-in-automated-programming-assessment-systems.html",
           "first_seen_at": "2026-04-09T11:50:14.780111+00:00",
-          "last_seen_at": "2026-04-09T11:52:43.203856+00:00",
-          "last_curated_at": "2026-04-09T11:52:43.203856+00:00",
+          "last_seen_at": "2026-04-09T15:30:41.892528+00:00",
+          "last_curated_at": "2026-04-09T15:30:41.892528+00:00",
           "last_notified_at": "2026-04-09T11:52:43.203830+00:00"
-        },
-        {
-          "id": "arxiv::http://arxiv.org/abs/2604.07277v1",
-          "kind": "paper",
-          "source": "arxiv",
-          "source_tags": [
-            "latest"
-          ],
-          "title": "Android Coach: Improve Online Agentic Training Efficiency with Single State Multiple Actions",
-          "html_url": "http://arxiv.org/abs/2604.07277v1",
-          "pdf_url": "https://arxiv.org/pdf/2604.07277v1",
-          "description": "Online reinforcement learning (RL) serves as an effective method for enhancing the capabilities of Android agents. However, guiding agents to learn through online interaction is prohibitively expensive due to the high latency of emulators and the sample inefficiency of existing RL algorithms. We identify a fundamental limitation in current approaches: the Single State Single Action paradigm, which updates the policy with one-to-one state-action pairs from online one-way rollouts without fully exploring each costly emulator state. In this paper, we propose Android Coach, a novel framework that shifts the training paradigm to Single State Multiple Actions, allowing the agent to sample and utilize multiple actions for a single online state. We enable this without additional emulator overhead by learning a critic that estimates action values. To ensure the critic serves as a reliable coach, we integrate a process reward model and introduce a group-wise advantage estimator based on the averaged critic outputs. Extensive experiments demonstrate the effectiveness and efficiency of Android Coach: it achieves 7.5% and 8.3% success rate improvements on AndroidLab and AndroidWorld over UI-TARS-1.5-7B, and attains 1.4x higher training efficiency than Single State Single Action methods PPO and GRPO at matched success rates.",
-          "authors": [
-            "Guo Gan",
-            "Yuxuan Ding",
-            "Cong Chen",
-            "Yuwei Ren",
-            "Yin Huang",
-            "Hong Zhou"
-          ],
-          "categories": [
-            "cs.LG",
-            "cs.AI"
-          ],
-          "published_at": "2026-04-08T16:40:26+00:00",
-          "updated_at": "2026-04-08T16:40:26+00:00",
-          "primary_category": "cs.LG",
-          "heuristic_score": 17.565,
-          "summary": "Android Coach: Improve Online Agentic Training Efficiency with Single State Multiple Actions 是最近值得追踪的一篇 AI 论文。论文摘要显示：Online reinforcement learning (RL) serves as an effective method for enhancing the capabilities of Android agents. However, guiding agents to learn through online interaction is prohibitively expensive due to the high latency of emulators a...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-          "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-          "highlights": [
-            "分类: cs.LG, cs.AI",
-            "作者数: 6"
-          ],
-          "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-          "relevance_score": 10,
-          "tags": [
-            "ai",
-            "agent",
-            "rag",
-            "model"
-          ],
-          "summary_markdown": "**摘要**：Android Coach: Improve Online Agentic Training Efficiency with Single State Multiple Actions 是最近值得追踪的一篇 AI 论文。论文摘要显示：Online reinforcement learning (RL) serves as an effective method for enhancing the capabilities of Android agents. However, guiding agents to learn through online interaction is prohibitively expensive due to the high latency of emulators a...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.LG, cs.AI\n- 作者数: 6",
-          "detail_path": "items/arxiv-android-coach-improve-online-agentic-training-efficiency-with-single-state-multiple-action.html",
-          "first_seen_at": "2026-04-09T09:24:46.894274+00:00",
-          "last_seen_at": "2026-04-09T11:52:43.203856+00:00",
-          "last_curated_at": "2026-04-09T11:52:43.203856+00:00",
-          "last_notified_at": "2026-04-09T11:52:43.203830+00:00",
-          "focus_hits": [
-            {
-              "keyword": "agent",
-              "weight": 3.0
-            },
-            {
-              "keyword": "rag",
-              "weight": 2.2
-            }
-          ],
-          "primary_match": "agent",
-          "personalized_score": 160.0,
-          "selection_reason": "它和你关注的 agent 方向重合度高，适合放进今天的论文精读候选。",
-          "themes": [
-            "智能体",
-            "RAG",
-            "机器人"
-          ]
         }
       ],
       "top_themes": [
@@ -3770,7 +3826,7 @@
         },
         {
           "theme": "RAG",
-          "count": 4
+          "count": 3
         },
         {
           "theme": "编码",
@@ -3781,8 +3837,8 @@
           "count": 2
         },
         {
-          "theme": "智能体",
-          "count": 2
+          "theme": "LLM",
+          "count": 1
         }
       ],
       "highlights": [
@@ -3804,7 +3860,7 @@
       ]
     }
   },
-  "markdown": "## AI Daily Digest | 2026-04-10\n\n生成时间：2026-04-10T09:21:54.856756+08:00\n\n今日概览：\n- GitHub 项目：1 个\n- arXiv 论文：6 篇\n- AI 前沿新闻：6 条\n\n\n### 今日必看\n- **SeLaR: Selective Latent Reasoning in Large Language Models**：核心创新针对潜在推理痛点，无训练高实用性，高度匹配用户关注reasoning、llm和agent关键词，值得每日重点关注。\n- **Fundus-R1: Training a Fundus-Reading MLLM with Knowledge-Aware Reasoning on Public Data**：核心创新解决医疗数据壁垒，高度匹配多模态/LLM/RAG关注，落地潜力强值得重点跟踪。\n- **DMax: Aggressive Parallel Decoding for dLLMs**：核心创新显著提升dLLM速度，契合用户关注的高效推理和开源模型关键词，落地潜力大值得每日重点。\n\n### 今日主题\n- 推理：7 条，代表项：SeLaR: Selective Latent Reasoning in Large Language Models, DMax: Aggressive Parallel Decoding for dLLMs, Distributed Multi-Layer Editing for Rule-Level Knowledge in Large Language Models\n- 多模态：4 条，代表项：Fundus-R1: Training a Fundus-Reading MLLM with Knowledge-Aware Reasoning on Public Data, Orion-Lite: Distilling LLM Reasoning into Efficient Vision-Only Driving Models, Lost in the Hype: Revealing and Dissecting the Performance Degradation of Medical Multimodal Large Language Models in Image Classification\n- LLM：3 条，代表项：SeLaR: Selective Latent Reasoning in Large Language Models, Florida AG announces investigation into OpenAI over shooting that allegedly involved ChatGPT, Meta AI app climbs to No. 5 on the App Store after Muse Spark launch\n- llm：2 条，代表项：shiyu-coder/Kronos, ChatGPT finally offers $100/month Pro plan\n- RAG：2 条，代表项：Fundus-R1: Training a Fundus-Reading MLLM with Knowledge-Aware Reasoning on Public Data, Multimodal Embedding & Reranker Models with Sentence Transformers\n\n### GitHub 每日热门与新项目\n#### 1. shiyu-coder/Kronos\n- 链接：https://github.com/shiyu-coder/Kronos\n- Stars：12191\n- 相关性评分：9/10\n- 个性化评分：118.88\n- 主题：llm, model, reasoning, open-source model\n- 入选理由：Kronos作为高势能开源项目，代表金融领域AI基金会模型新方向，匹配用户关注llm/agent/open-source model关键词，值得追踪。\n- 它在解决：现有AI模型难以有效解读和预测金融市场的复杂动态数据和模式。\n- 摘要：Kronos是一个专为金融市场语言设计的基金会模型，能处理海量市场数据如价格、成交量和新闻，实现精准预测和交易策略生成。模型在多个金融基准上超越现有SOTA，展示了从市场'语言'中提取模式的能力。开源仓库迅速积累12k+ stars，标志着AI在量化金融领域的突破性应用。\n- 核心创新：构建金融市场专属'语言'基金会模型，支持长上下文市场数据推理和预测。\n- 实用性：高度实用，已集成市场数据处理工具，易部署到量化平台。\n- 亮点：\n  - 12k+ stars高势能开源项目\n  - 多基准SOTA性能，适用于交易策略生成\n  - Python实现，便于二次开发\n\n\n### arXiv 顶级论文\n#### 1. SeLaR: Selective Latent Reasoning in Large Language Models\n- 链接：http://arxiv.org/abs/2604.08299v1\n- PDF：https://arxiv.org/pdf/2604.08299v1\n- 分类：cs.CL, cs.AI\n- 相关性评分：9/10\n- 个性化评分：216.0\n- 主题：推理, LLM, agentic\n- 入选理由：核心创新针对潜在推理痛点，无训练高实用性，高度匹配用户关注reasoning、llm和agent关键词，值得每日重点关注。\n- 它在解决：现有潜在推理方法在高置信步骤引入扰动导致不稳定，且软嵌入易坍缩至最高概率token，限制推理路径探索。\n- 摘要：SeLaR提出了一种无训练的轻量级框架，通过熵门控机制仅在低置信度步骤激活软嵌入，避免全局扰动和高置信步骤的稳定性问题。同时引入熵感知对比正则化，推动软嵌入远离主导token，促进多路径潜在推理探索。在五个推理基准上，SeLaR超越标准CoT和现有无训练方法。\n- 核心创新：熵门控选择性激活软嵌入+对比正则化防止坍缩，实现稳定多路径潜在推理。\n- 实用性：训练免费、即插即用，落地潜力高，适用于现有LLM推理pipeline。\n- 亮点：\n  - 仅低置信步骤激活软嵌入，保高置信离散解码稳定性\n  - 熵感知正则化鼓励探索多条潜在推理路径\n  - 五个基准实验优于CoT和SOTA无训练方法\n\n#### 2. Fundus-R1: Training a Fundus-Reading MLLM with Knowledge-Aware Reasoning on Public Data\n- 链接：http://arxiv.org/abs/2604.08322v1\n- PDF：https://arxiv.org/pdf/2604.08322v1\n- 分类：cs.CV\n- 相关性评分：9/10\n- 个性化评分：180.0\n- 主题：多模态, RAG, 推理\n- 入选理由：核心创新解决医疗数据壁垒，高度匹配多模态/LLM/RAG关注，落地潜力强值得重点跟踪。\n- 它在解决：眼底图像理解依赖私有临床数据，阻碍开源MLLM训练和可重复性研究。\n- 摘要：Fundus-R1提出了一种仅用公开数据集训练眼底图像阅读多模态大模型（MLLM）的方法，通过RAG生成知识感知推理轨迹，并增强RLVR以提升自一致性。在FunBench、Omni-Fundus和GMAI-Fundus三个基准上显著优于Qwen2.5-VL等基线。该工作解决了医疗数据私有化难题，推动眼底病变早期检测的开源研究。\n- 核心创新：RAG生成图像特定知识推理轨迹+过程奖励增强RLVR，实现公开数据高效训练。\n- 实用性：高：公开数据易获取，适用于眼科诊断工具落地。\n- 亮点：\n  - 94%数据仅图像标签仍超基线\n  - 开源方法 democratize 眼底MLLM训练\n  - 多基准验证SOTA性能\n\n#### 3. DMax: Aggressive Parallel Decoding for dLLMs\n- 链接：http://arxiv.org/abs/2604.08302v1\n- PDF：https://arxiv.org/pdf/2604.08302v1\n- 分类：cs.LG, cs.AI\n- 相关性评分：9/10\n- 个性化评分：180.0\n- 主题：推理, 扩散模型, 高效解码\n- 入选理由：核心创新显著提升dLLM速度，契合用户关注的高效推理和开源模型关键词，落地潜力大值得每日重点。\n- 它在解决：传统masked dLLM并行解码易积累错误，导致速度与质量难以兼顾。\n- 摘要：DMax提出了一种高效的扩散语言模型（dLLM）并行解码新范式，通过On-Policy Uniform Training和Soft Parallel Decoding显著提升解码速度，同时保持生成质量。在GSM8K和MBPP基准上，TPF分别提升至5.47和5.86，TPS达1338。开源代码已发布，适用于资源受限场景。\n- 核心创新：On-Policy Uniform Training统一masked/uniform训练 + Soft Parallel Decoding在嵌入空间自精炼，避免错误积累。\n- 实用性：高，开源易复现，基准验证充分，适用于生产级推理加速。\n- 亮点：\n  - TPF在GSM8K提升2.68倍（2.04→5.47），MBPP提升2.16倍（2.71→5.86）\n  - H200双卡下batch=1达1338 TPS，落地潜力强\n  - 开源代码：https://github.com/czg1225/DMax\n\n#### 4. Distributed Multi-Layer Editing for Rule-Level Knowledge in Large Language Models\n- 链接：http://arxiv.org/abs/2604.08284v1\n- PDF：https://arxiv.org/pdf/2604.08284v1\n- 分类：cs.CL, cs.AI\n- 相关性评分：9/10\n- 个性化评分：160.0\n- 主题：推理, 模型编辑, 知识编辑\n- 入选理由：核心创新解决规则级知识编辑痛点，与用户关注LLM、推理、open-source model高度匹配，值得每日重点关注。\n- 它在解决：现有模型编辑方法针对事实级知识，无法处理规则级知识在符号公式、自然语言描述和具体实例间的多形式一致性问题。\n- 摘要：这篇论文揭示了大语言模型中规则级知识（如数学物理规则）分布在多层Transformer中的机制特征，并提出分布式多层编辑（DMLE）方法，实现规则在公式、描述和实例间的跨形式一致编辑。DMLE在GPT-J-6B、Qwen2.5-7B等模型上显著提升规则理解和实例可移植性，平均改善50.19和13.91个百分点。代码已开源。\n- 核心创新：通过因果追踪发现规则知识层级分布特征，提出DMLE分布式多层编辑机制，实现共享早层更新与独立中层更新的规则一致性。\n- 实用性：高，开源代码+多模型验证，易集成到现有LLM编辑流程，落地潜力强于单一层方法。\n- 亮点：\n  - 扩展RuleEdit基准至200条规则，支持数学物理领域验证。\n  - 在4个开源模型上大幅超越基线，规则理解提升50%以上。\n  - 代码开源，便于复现和应用。\n\n#### 5. Orion-Lite: Distilling LLM Reasoning into Efficient Vision-Only Driving Models\n- 链接：http://arxiv.org/abs/2604.08266v1\n- PDF：https://arxiv.org/pdf/2604.08266v1\n- 分类：cs.CV\n- 相关性评分：9/10\n- 个性化评分：160.0\n- 主题：多模态, 推理, 机器人\n- 入选理由：核心创新在于高效蒸馏LLM到纯视觉驾驶模型并超SOTA，高度匹配用户关注LLM、agentic、robotics关键词，落地潜力大值得重点关注。\n- 它在解决：巨型VLA模型参数庞大，无法满足自动驾驶的低延迟、高能效部署需求。\n- 摘要：Orion-Lite 通过蒸馏LLM推理能力，打造高效纯视觉自动驾驶模型，在复杂交互场景中超越巨型VLA教师模型ORION。结合潜在特征蒸馏和真实轨迹监督，在Bench2Drive基准上Driving Score达80.6，创下新SOTA。证明纯视觉架构在高性能反应规划中潜力巨大。\n- 核心创新：首次在复杂闭环交互场景下，通过潜在特征蒸馏+轨迹监督，让纯视觉学生模型超越VLA教师，创Bench2Drive新SOTA。\n- 实用性：高：紧凑模型适合边缘部署，落地潜力强，已SOTA基准验证。\n- 亮点：\n  - 高效纯视觉模型参数小、延迟低，Driving Score 80.6超教师ORION。\n  - 证明视觉-only架构在稀有复杂场景中未被挖掘潜力。\n  - 闭环评估验证真实交互性能。\n\n#### 6. Lost in the Hype: Revealing and Dissecting the Performance Degradation of Medical Multimodal Large Language Models in Image Classification\n- 链接：http://arxiv.org/abs/2604.08333v1\n- PDF：https://arxiv.org/pdf/2604.08333v1\n- 分类：cs.CV, cs.AI, cs.LG\n- 相关性评分：9/10\n- 个性化评分：158.0\n- 主题：多模态, 推理, benchmark\n- 入选理由：核心创新剖析医疗MLLMs性能瓶颈，高度匹配用户关注的多模态、推理、benchmark关键词，值得每日重点关注以指导研究方向。\n- 它在解决：医疗多模态大语言模型在图像分类等基础任务上性能远逊传统模型，原因不明。\n- 摘要：这篇论文揭示了医疗多模态大语言模型（MLLMs）在图像分类任务上远逊于传统深度学习模型的悖论，通过模块级和层级特征探针首次剖析性能退化来源，发现视觉表示质量低、连接器保真度损失、LLM推理缺陷及语义映射错位四大失败模式。同时引入特征演化健康度量化分数，支持跨模型数据集比较，并讨论临床部署障碍。研究呼吁社区重新审视MLLMs潜力。\n- 核心创新：首次模块/层级特征探针可视化分类信号扭曲，并引入特征演化健康度量化分数。\n- 实用性：诊断工具落地潜力高，但优化MLLMs需进一步工程努力，中等临床即用性。\n- 亮点：\n  - 剖析四大失败模式：视觉质量低、连接器损失、LLM推理缺、语义错位。\n  - 14开源MLLMs×3数据集实验，支持跨模型比较。\n  - 讨论临床部署障碍，促进行业反思。\n\n\n### AI 前沿新闻\n#### 1. Multimodal Embedding & Reranker Models with Sentence Transformers\n- 链接：https://huggingface.co/blog/multimodal-sentence-transformers\n- 来源：Hugging Face Blog\n- 相关性评分：9/10\n- 入选理由：契合用户关注的多模态、RAG、开源模型关键词，推动AI检索前沿趋势与产品化。\n- 它在解决：传统嵌入模型难以有效处理多模态数据，导致跨模态检索准确率低下。\n- 摘要：Hugging Face 推出 Sentence Transformers 的多模态嵌入与重排序模型，支持文本、图像等多模态数据处理，提升检索准确性。该模型无缝集成 Hugging Face 生态，便于开发者快速部署多模态 RAG 系统。标志着开源多模态工具向生产级应用迈进。\n- 为什么值得看：开源多模态工具成熟化，推动 RAG 和多模态搜索从研究向产品落地，加速行业应用。\n#### 2. ALTK‑Evolve: On‑the‑Job Learning for AI Agents\n- 链接：https://huggingface.co/blog/ibm-research/altk-evolve\n- 来源：Hugging Face Blog\n- 相关性评分：9/10\n- 入选理由：直接契合用户关注关键词如 ai agent、agentic 和 reasoning，推动代理前沿趋势和开源生态格局变革。\n- 它在解决：AI 代理在动态真实任务中难以持续适应和优化性能。\n- 摘要：ALTK-Evolve 是一种新型 on-the-job learning 框架，让 AI 代理在实际任务中实时进化，提升长期性能。Hugging Face 博客介绍该方法通过自适应学习机制，解决代理在动态环境中适应性差的问题。适用于 agentic 系统，推动代理从静态模型向持续学习演进。\n- 为什么值得看：标志着 AI 代理从静态训练向 on-the-job 实时进化转型，契合 agentic 趋势并重塑行业产品方向。\n#### 3. The Training Example Lie Bracket\n- 链接：https://pbement.com/posts/lie_brackets/\n- 来源：Hacker News Frontpage\n- 相关性评分：9/10\n- 入选理由：直击LLM训练与推理前沿痛点，与用户关注关键词高度匹配，揭示行业数据质量隐忧。\n- 它在解决：训练示例中嵌入的虚假因果关系（如Lie Bracket）导致模型泛化时产生推理偏差。\n- 摘要：文章剖析了训练示例中'Lie Bracket'现象，即模型在训练数据中学习到虚假的因果关系，导致推理偏差。作者通过数学和实验揭示这一问题源于数据噪声与模型泛化间的冲突。建议通过数据清洗和正则化缓解，值得AI训练从业者关注。\n- 为什么值得看：揭示LLM训练核心痛点，有助于提升模型在复杂推理任务的鲁棒性，正值长上下文与推理优化热潮。\n#### 4. ChatGPT finally offers $100/month Pro plan\n- 链接：https://techcrunch.com/2026/04/09/chatgpt-pro-plan-100-month-codex/\n- 来源：TechCrunch\n- 相关性评分：9/10\n- 入选理由：直接涉及用户长期关注的GPT和产品趋势，揭示OpenAI行业格局变化，值得前沿AI从业者关注。\n- 它在解决：ChatGPT订阅定价跳跃过大（20美元到200美元），无法满足中高端重度用户需求。\n- 摘要：OpenAI推出ChatGPT Pro计划，每月100美元，填补了20美元Plus与200美元Team之间的订阅空白，针对重度用户需求。 该计划提供更高优先级访问、更快响应和无限使用，标志着OpenAI从单一定价向分层服务转型。 这反映了AI产品向专业化、付费升级的趋势。\n- 为什么值得看：标志OpenAI产品分层化趋势，推动AI服务向专业用户付费升级，影响行业定价格局。\n#### 5. Florida AG announces investigation into OpenAI over shooting that allegedly involved ChatGPT\n- 链接：https://techcrunch.com/2026/04/09/florida-ag-investigation-openai-chatgpt-shooting/\n- 来源：TechCrunch\n- 相关性评分：9/10\n- 入选理由：直接涉及LLM滥用与法律责任，契合用户关注关键词，对AI行业格局有深远警示意义。\n- 它在解决：生成式AI如ChatGPT被滥用于策划暴力犯罪，缺乏有效责任机制。\n- 摘要：佛罗里达州总检察长宣布对OpenAI展开调查，因ChatGPT涉嫌被用于策划去年佛州州立大学枪击案，导致2死5伤。受害者家属计划起诉OpenAI，此案或成AI责任归属的关键判例。对AI前沿趋势而言，这凸显生成式AI在高风险滥用场景下的法律与伦理压力，可能重塑行业合规格局。\n- 为什么值得看：此案或开创AI公司对用户生成内容负法律责先例，影响LLM产品设计与全球监管格局。\n#### 6. Meta AI app climbs to No. 5 on the App Store after Muse Spark launch\n- 链接：https://techcrunch.com/2026/04/09/meta-ai-app-climbs-to-no-5-on-the-app-store-after-muse-spark-launch/\n- 来源：TechCrunch\n- 相关性评分：9/10\n- 入选理由：揭示 AI 模型创新如何重塑行业格局和消费者采用趋势，与用户关注 LLM 和产品方向高度相关。\n- 它在解决：AI 应用在 App Store 排名较低，用户获取和使用门槛高。\n- 摘要：Meta AI 应用在推出新模型 Muse Spark 后，从 App Store 第 57 名飙升至第 5 名，并持续上升。这反映了 Meta 在 AI 消费者产品上的强势发力，用户对新模型的热情推动了下载量激增。该事件凸显 AI 应用市场竞争加剧，大模型创新正直接转化为商业成功。\n- 为什么值得看：标志着 Meta AI 通过模型创新快速抢占消费者市场份额，预示 AI app 产品竞争进入白热化阶段。\n\n### 站点入口\n- 首页：index.html\n- 历史归档：archive/index.html\n- 周报：reports/weekly.html\n- 月报：reports/monthly.html\n",
+  "markdown": "## AI Daily Digest | 2026-04-10\n\n生成时间：2026-04-10T09:27:47.859578+08:00\n\n今日概览：\n- GitHub 项目：1 个\n- arXiv 论文：6 篇\n- AI 前沿新闻：6 条\n\n\n### 今日必看\n- **SeLaR: Selective Latent Reasoning in Large Language Models**：核心创新针对潜在推理痛点，无训练高实用性，高度匹配用户关注reasoning、llm和agent关键词，值得每日重点关注。\n- **Fundus-R1: Training a Fundus-Reading MLLM with Knowledge-Aware Reasoning on Public Data**：核心创新解决医疗数据壁垒，高度匹配多模态/LLM/RAG关注，落地潜力强值得重点跟踪。\n- **DMax: Aggressive Parallel Decoding for dLLMs**：核心创新显著提升dLLM速度，契合用户关注的高效推理和开源模型关键词，落地潜力大值得每日重点。\n\n### 今日主题\n- ai：5 条，代表项：HyperMem: Hypergraph Memory for Long-Term Conversations, Florida AG to probe OpenAI, alleging possible connection to FSU shooting, ChatGPT finally offers $100/month Pro plan\n- 推理：4 条，代表项：SeLaR: Selective Latent Reasoning in Large Language Models, DMax: Aggressive Parallel Decoding for dLLMs, Distributed Multi-Layer Editing for Rule-Level Knowledge in Large Language Models\n- llm：2 条，代表项：HyperMem: Hypergraph Memory for Long-Term Conversations, shiyu-coder/Kronos\n- model：2 条，代表项：shiyu-coder/Kronos, Meta AI app climbs to No. 5 on the App Store after Muse Spark launch\n- 多模态：2 条，代表项：Fundus-R1: Training a Fundus-Reading MLLM with Knowledge-Aware Reasoning on Public Data, Orion-Lite: Distilling LLM Reasoning into Efficient Vision-Only Driving Models\n\n### GitHub 每日热门与新项目\n#### 1. shiyu-coder/Kronos\n- 链接：https://github.com/shiyu-coder/Kronos\n- Stars：12191\n- 相关性评分：9/10\n- 个性化评分：118.88\n- 主题：llm, model, reasoning, open-source model\n- 入选理由：Kronos作为高势能开源项目，代表金融领域AI基金会模型新方向，匹配用户关注llm/agent/open-source model关键词，值得追踪。\n- 它在解决：现有AI模型难以有效解读和预测金融市场的复杂动态数据和模式。\n- 摘要：Kronos是一个专为金融市场语言设计的基金会模型，能处理海量市场数据如价格、成交量和新闻，实现精准预测和交易策略生成。模型在多个金融基准上超越现有SOTA，展示了从市场'语言'中提取模式的能力。开源仓库迅速积累12k+ stars，标志着AI在量化金融领域的突破性应用。\n- 核心创新：构建金融市场专属'语言'基金会模型，支持长上下文市场数据推理和预测。\n- 实用性：高度实用，已集成市场数据处理工具，易部署到量化平台。\n- 亮点：\n  - 12k+ stars高势能开源项目\n  - 多基准SOTA性能，适用于交易策略生成\n  - Python实现，便于二次开发\n\n\n### arXiv 顶级论文\n#### 1. SeLaR: Selective Latent Reasoning in Large Language Models\n- 链接：http://arxiv.org/abs/2604.08299v1\n- PDF：https://arxiv.org/pdf/2604.08299v1\n- 分类：cs.CL, cs.AI\n- 相关性评分：9/10\n- 个性化评分：216.0\n- 主题：推理, LLM, agentic\n- 入选理由：核心创新针对潜在推理痛点，无训练高实用性，高度匹配用户关注reasoning、llm和agent关键词，值得每日重点关注。\n- 它在解决：现有潜在推理方法在高置信步骤引入扰动导致不稳定，且软嵌入易坍缩至最高概率token，限制推理路径探索。\n- 摘要：SeLaR提出了一种无训练的轻量级框架，通过熵门控机制仅在低置信度步骤激活软嵌入，避免全局扰动和高置信步骤的稳定性问题。同时引入熵感知对比正则化，推动软嵌入远离主导token，促进多路径潜在推理探索。在五个推理基准上，SeLaR超越标准CoT和现有无训练方法。\n- 核心创新：熵门控选择性激活软嵌入+对比正则化防止坍缩，实现稳定多路径潜在推理。\n- 实用性：训练免费、即插即用，落地潜力高，适用于现有LLM推理pipeline。\n- 亮点：\n  - 仅低置信步骤激活软嵌入，保高置信离散解码稳定性\n  - 熵感知正则化鼓励探索多条潜在推理路径\n  - 五个基准实验优于CoT和SOTA无训练方法\n\n#### 2. Fundus-R1: Training a Fundus-Reading MLLM with Knowledge-Aware Reasoning on Public Data\n- 链接：http://arxiv.org/abs/2604.08322v1\n- PDF：https://arxiv.org/pdf/2604.08322v1\n- 分类：cs.CV\n- 相关性评分：9/10\n- 个性化评分：180.0\n- 主题：多模态, RAG, 推理\n- 入选理由：核心创新解决医疗数据壁垒，高度匹配多模态/LLM/RAG关注，落地潜力强值得重点跟踪。\n- 它在解决：眼底图像理解依赖私有临床数据，阻碍开源MLLM训练和可重复性研究。\n- 摘要：Fundus-R1提出了一种仅用公开数据集训练眼底图像阅读多模态大模型（MLLM）的方法，通过RAG生成知识感知推理轨迹，并增强RLVR以提升自一致性。在FunBench、Omni-Fundus和GMAI-Fundus三个基准上显著优于Qwen2.5-VL等基线。该工作解决了医疗数据私有化难题，推动眼底病变早期检测的开源研究。\n- 核心创新：RAG生成图像特定知识推理轨迹+过程奖励增强RLVR，实现公开数据高效训练。\n- 实用性：高：公开数据易获取，适用于眼科诊断工具落地。\n- 亮点：\n  - 94%数据仅图像标签仍超基线\n  - 开源方法 democratize 眼底MLLM训练\n  - 多基准验证SOTA性能\n\n#### 3. DMax: Aggressive Parallel Decoding for dLLMs\n- 链接：http://arxiv.org/abs/2604.08302v1\n- PDF：https://arxiv.org/pdf/2604.08302v1\n- 分类：cs.LG, cs.AI\n- 相关性评分：9/10\n- 个性化评分：180.0\n- 主题：推理, 扩散模型, 高效解码\n- 入选理由：核心创新显著提升dLLM速度，契合用户关注的高效推理和开源模型关键词，落地潜力大值得每日重点。\n- 它在解决：传统masked dLLM并行解码易积累错误，导致速度与质量难以兼顾。\n- 摘要：DMax提出了一种高效的扩散语言模型（dLLM）并行解码新范式，通过On-Policy Uniform Training和Soft Parallel Decoding显著提升解码速度，同时保持生成质量。在GSM8K和MBPP基准上，TPF分别提升至5.47和5.86，TPS达1338。开源代码已发布，适用于资源受限场景。\n- 核心创新：On-Policy Uniform Training统一masked/uniform训练 + Soft Parallel Decoding在嵌入空间自精炼，避免错误积累。\n- 实用性：高，开源易复现，基准验证充分，适用于生产级推理加速。\n- 亮点：\n  - TPF在GSM8K提升2.68倍（2.04→5.47），MBPP提升2.16倍（2.71→5.86）\n  - H200双卡下batch=1达1338 TPS，落地潜力强\n  - 开源代码：https://github.com/czg1225/DMax\n\n#### 4. HyperMem: Hypergraph Memory for Long-Term Conversations\n- 链接：http://arxiv.org/abs/2604.08256v1\n- PDF：https://arxiv.org/pdf/2604.08256v1\n- 分类：cs.CL, cs.AI\n- 相关性评分：10/10\n- 个性化评分：176.0\n- 主题：ai, llm, agent\n- 入选理由：它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。\n- 它在解决：它在某个细分 AI 方向上提出了新的方法、评测或系统设计。\n- 摘要：HyperMem: Hypergraph Memory for Long-Term Conversations 是最近值得追踪的一篇 AI 论文。论文摘要显示：Long-term memory is essential for conversational agents to maintain coherence, track persistent tasks, and provide personalized interactions across extended dialogues. However, existing approaches as Retrieval-Augmented Generation (RAG) and...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n- 核心创新：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n- 实用性：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n- 亮点：\n  - 分类: cs.CL, cs.AI\n  - 作者数: 8\n\n#### 5. Distributed Multi-Layer Editing for Rule-Level Knowledge in Large Language Models\n- 链接：http://arxiv.org/abs/2604.08284v1\n- PDF：https://arxiv.org/pdf/2604.08284v1\n- 分类：cs.CL, cs.AI\n- 相关性评分：9/10\n- 个性化评分：160.0\n- 主题：推理, 模型编辑, 知识编辑\n- 入选理由：核心创新解决规则级知识编辑痛点，与用户关注LLM、推理、open-source model高度匹配，值得每日重点关注。\n- 它在解决：现有模型编辑方法针对事实级知识，无法处理规则级知识在符号公式、自然语言描述和具体实例间的多形式一致性问题。\n- 摘要：这篇论文揭示了大语言模型中规则级知识（如数学物理规则）分布在多层Transformer中的机制特征，并提出分布式多层编辑（DMLE）方法，实现规则在公式、描述和实例间的跨形式一致编辑。DMLE在GPT-J-6B、Qwen2.5-7B等模型上显著提升规则理解和实例可移植性，平均改善50.19和13.91个百分点。代码已开源。\n- 核心创新：通过因果追踪发现规则知识层级分布特征，提出DMLE分布式多层编辑机制，实现共享早层更新与独立中层更新的规则一致性。\n- 实用性：高，开源代码+多模型验证，易集成到现有LLM编辑流程，落地潜力强于单一层方法。\n- 亮点：\n  - 扩展RuleEdit基准至200条规则，支持数学物理领域验证。\n  - 在4个开源模型上大幅超越基线，规则理解提升50%以上。\n  - 代码开源，便于复现和应用。\n\n#### 6. Orion-Lite: Distilling LLM Reasoning into Efficient Vision-Only Driving Models\n- 链接：http://arxiv.org/abs/2604.08266v1\n- PDF：https://arxiv.org/pdf/2604.08266v1\n- 分类：cs.CV\n- 相关性评分：9/10\n- 个性化评分：160.0\n- 主题：多模态, 推理, 机器人\n- 入选理由：核心创新在于高效蒸馏LLM到纯视觉驾驶模型并超SOTA，高度匹配用户关注LLM、agentic、robotics关键词，落地潜力大值得重点关注。\n- 它在解决：巨型VLA模型参数庞大，无法满足自动驾驶的低延迟、高能效部署需求。\n- 摘要：Orion-Lite 通过蒸馏LLM推理能力，打造高效纯视觉自动驾驶模型，在复杂交互场景中超越巨型VLA教师模型ORION。结合潜在特征蒸馏和真实轨迹监督，在Bench2Drive基准上Driving Score达80.6，创下新SOTA。证明纯视觉架构在高性能反应规划中潜力巨大。\n- 核心创新：首次在复杂闭环交互场景下，通过潜在特征蒸馏+轨迹监督，让纯视觉学生模型超越VLA教师，创Bench2Drive新SOTA。\n- 实用性：高：紧凑模型适合边缘部署，落地潜力强，已SOTA基准验证。\n- 亮点：\n  - 高效纯视觉模型参数小、延迟低，Driving Score 80.6超教师ORION。\n  - 证明视觉-only架构在稀有复杂场景中未被挖掘潜力。\n  - 闭环评估验证真实交互性能。\n\n\n### AI 前沿新闻\n#### 1. ALTK‑Evolve: On‑the‑Job Learning for AI Agents\n- 链接：https://huggingface.co/blog/ibm-research/altk-evolve\n- 来源：Hugging Face Blog\n- 相关性评分：5/10\n- 入选理由：它能帮助你快速感知今天 AI 行业里最值得注意的动态。\n- 它在解决：它反映了 AI 产品、模型、资本或行业竞争格局中的新变化。\n- 摘要：Hugging Face Blog 的这条 AI 新闻值得关注。核心内容是：暂无更多摘要。它更适合作为判断行业方向和产品动作的快速信号。\n- 为什么值得看：这类新闻往往决定接下来一段时间最值得跟进的公司、技术和叙事方向。\n#### 2. Florida AG to probe OpenAI, alleging possible connection to FSU shooting\n- 链接：https://techcrunch.com/2026/04/09/florida-ag-to-probe-openai-alleging-possible-connection-to-fsu-shooting/\n- 来源：TechCrunch\n- 相关性评分：5/10\n- 入选理由：它能帮助你快速感知今天 AI 行业里最值得注意的动态。\n- 它在解决：它反映了 AI 产品、模型、资本或行业竞争格局中的新变化。\n- 摘要：TechCrunch 的这条 AI 新闻值得关注。核心内容是：Florida Attorney General James Uthmeier plans to investigate OpenAI for its alleged harm to minors, potential to threaten national security, and its possible link to a shooting at Florida State University last year.它更适合作为判断行业方向和产品动作的快速信号。\n- 为什么值得看：这类新闻往往决定接下来一段时间最值得跟进的公司、技术和叙事方向。\n#### 3. ChatGPT finally offers $100/month Pro plan\n- 链接：https://techcrunch.com/2026/04/09/chatgpt-pro-plan-100-month-codex/\n- 来源：TechCrunch\n- 相关性评分：5/10\n- 入选理由：它能帮助你快速感知今天 AI 行业里最值得注意的动态。\n- 它在解决：它反映了 AI 产品、模型、资本或行业竞争格局中的新变化。\n- 摘要：TechCrunch 的这条 AI 新闻值得关注。核心内容是：OpenAI announced on Thursday something that power users have been asking for: a $100/month plan. Previously, subscriptions jumped from $20 to $200 per month.它更适合作为判断行业方向和产品动作的快速信号。\n- 为什么值得看：这类新闻往往决定接下来一段时间最值得跟进的公司、技术和叙事方向。\n#### 4. Florida AG announces investigation into OpenAI over shooting that allegedly involved ChatGPT\n- 链接：https://techcrunch.com/2026/04/09/florida-ag-investigation-openai-chatgpt-shooting/\n- 来源：TechCrunch\n- 相关性评分：5/10\n- 入选理由：它能帮助你快速感知今天 AI 行业里最值得注意的动态。\n- 它在解决：它反映了 AI 产品、模型、资本或行业竞争格局中的新变化。\n- 摘要：TechCrunch 的这条 AI 新闻值得关注。核心内容是：ChatGPT had reportedly been used to plan the attack that killed two and injured five at Florida State University last April. The family of one victim has said that they plan to sue OpenAI over the incident.它更适合作为判断行业方向和产品动作的快速信号。\n- 为什么值得看：这类新闻往往决定接下来一段时间最值得跟进的公司、技术和叙事方向。\n#### 5. After data breach, $10B-valued startup Mercor is having a month\n- 链接：https://techcrunch.com/2026/04/09/after-data-breach-10b-valued-startup-mercor-is-having-a-month/\n- 来源：TechCrunch\n- 相关性评分：5/10\n- 入选理由：它能帮助你快速感知今天 AI 行业里最值得注意的动态。\n- 它在解决：它反映了 AI 产品、模型、资本或行业竞争格局中的新变化。\n- 摘要：TechCrunch 的这条 AI 新闻值得关注。核心内容是：After falling victim to a hacker, Mercor is facing lawsuits and reportedly losing big-name customers.它更适合作为判断行业方向和产品动作的快速信号。\n- 为什么值得看：这类新闻往往决定接下来一段时间最值得跟进的公司、技术和叙事方向。\n#### 6. Meta AI app climbs to No. 5 on the App Store after Muse Spark launch\n- 链接：https://techcrunch.com/2026/04/09/meta-ai-app-climbs-to-no-5-on-the-app-store-after-muse-spark-launch/\n- 来源：TechCrunch\n- 相关性评分：5/10\n- 入选理由：它能帮助你快速感知今天 AI 行业里最值得注意的动态。\n- 它在解决：它反映了 AI 产品、模型、资本或行业竞争格局中的新变化。\n- 摘要：TechCrunch 的这条 AI 新闻值得关注。核心内容是：The app was ranking No. 57 on the App Store just before Meta AI's new model launched. Now it's No. 5 — and rising.它更适合作为判断行业方向和产品动作的快速信号。\n- 为什么值得看：这类新闻往往决定接下来一段时间最值得跟进的公司、技术和叙事方向。\n\n### 站点入口\n- 首页：index.html\n- 历史归档：archive/index.html\n- 周报：reports/weekly.html\n- 月报：reports/monthly.html\n",
   "notification_messages": [
     {
       "section": "github",
@@ -3814,13 +3870,13 @@
     {
       "section": "papers",
       "title": "AI Daily Digest · 2026-04-10 · 论文精选",
-      "content": "## 2026-04-10 · 论文精选\n共 6 条\n\n1. SeLaR: Selective Latent Reasoning ... (9/10)\n   在做：一篇聚焦 cs.CL 方向的最新论文。\n   为什么看：适合先看它解决了什么问题，再判断是否值得进入你的精读列表。\n   怎么看：如果这正好贴近你的跟踪方向，建议放进本周精读候选，再决定是否深入。\n2. Fundus-R1: Training a Fundus-Readi... (9/10)\n   在做：一篇聚焦 cs.CV 方向的最新论文。\n   为什么看：适合先看它解决了什么问题，再判断是否值得进入你的精读列表。\n   怎么看：如果这正好贴近你的跟踪方向，建议放进本周精读候选，再决定是否深入。\n3. DMax: Aggressive Parallel Decoding... (9/10)\n   在做：一篇聚焦 cs.LG 方向的最新论文。\n   为什么看：适合先看它解决了什么问题，再判断是否值得进入你的精读列表。\n   怎么看：如果这正好贴近你的跟踪方向，建议放进本周精读候选，再决定是否深入。\n4. Distributed Multi-Layer Editing fo... (9/10)\n   在做：一篇聚焦 cs.CL 方向的最新论文。\n   为什么看：适合先看它解决了什么问题，再判断是否值得进入你的精读列表。\n   怎么看：如果这正好贴近你的跟踪方向，建议放进本周精读候选，再决定是否深入。\n5. Orion-Lite: Distilling LLM Reasoni... (9/10)\n   在做：一篇聚焦 cs.CV 方向的最新论文。\n   为什么看：适合先看它解决了什么问题，再判断是否值得进入你的精读列表。\n   怎么看：如果这正好贴近你的跟踪方向，建议放进本周精读候选，再决定是否深入。\n6. Lost in the Hype: Revealing and Di... (9/10)\n   在做：一篇聚焦 cs.CV 方向的最新论文。\n   为什么看：适合先看它解决了什么问题，再判断是否值得进入你的精读列表。\n   怎么看：如果这正好贴近你的跟踪方向，建议放进本周精读候选，再决定是否深入。\n\n查看完整归档：https://johnson-durui.github.io/Cognitive-Lagrange-Point/"
+      "content": "## 2026-04-10 · 论文精选\n共 6 条\n\n1. SeLaR: Selective Latent Reasoning ... (9/10)\n   在做：一篇聚焦 cs.CL 方向的最新论文。\n   为什么看：适合先看它解决了什么问题，再判断是否值得进入你的精读列表。\n   怎么看：如果这正好贴近你的跟踪方向，建议放进本周精读候选，再决定是否深入。\n2. Fundus-R1: Training a Fundus-Readi... (9/10)\n   在做：一篇聚焦 cs.CV 方向的最新论文。\n   为什么看：适合先看它解决了什么问题，再判断是否值得进入你的精读列表。\n   怎么看：如果这正好贴近你的跟踪方向，建议放进本周精读候选，再决定是否深入。\n3. DMax: Aggressive Parallel Decoding... (9/10)\n   在做：一篇聚焦 cs.LG 方向的最新论文。\n   为什么看：适合先看它解决了什么问题，再判断是否值得进入你的精读列表。\n   怎么看：如果这正好贴近你的跟踪方向，建议放进本周精读候选，再决定是否深入。\n4. HyperMem: Hypergraph Memory for Lo... (10/10)\n   在做：一篇聚焦 cs.CL 方向的最新论文。\n   为什么看：适合先看它解决了什么问题，再判断是否值得进入你的精读列表。\n   怎么看：如果这正好贴近你的跟踪方向，建议放进本周精读候选，再决定是否深入。\n5. Distributed Multi-Layer Editing fo... (9/10)\n   在做：一篇聚焦 cs.CL 方向的最新论文。\n   为什么看：适合先看它解决了什么问题，再判断是否值得进入你的精读列表。\n   怎么看：如果这正好贴近你的跟踪方向，建议放进本周精读候选，再决定是否深入。\n6. Orion-Lite: Distilling LLM Reasoni... (9/10)\n   在做：一篇聚焦 cs.CV 方向的最新论文。\n   为什么看：适合先看它解决了什么问题，再判断是否值得进入你的精读列表。\n   怎么看：如果这正好贴近你的跟踪方向，建议放进本周精读候选，再决定是否深入。\n\n查看完整归档：https://johnson-durui.github.io/Cognitive-Lagrange-Point/"
     },
     {
       "section": "news",
       "title": "AI Daily Digest · 2026-04-10 · AI 前沿新闻",
-      "content": "## 2026-04-10 · AI 前沿新闻\n共 6 条\n\n1. Multimodal Embedding & Reranker Models wit... (9/10)\n   在做：Hugging Face Blog 发布了一条值得关注的 AI 行业新闻。\n   为什么看：更适合作为判断行业方向、产品动作和竞争节奏的快速信号。\n   怎么看：建议先把它当成今天的行业信号阅读，再决定要不要追原始报道。来源是 Hugging Face Blog。\n2. ALTK‑Evolve: On‑the‑Job Learning for AI Ag... (9/10)\n   在做：Hugging Face Blog 发布了一条值得关注的 AI 行业新闻。\n   为什么看：更适合作为判断行业方向、产品动作和竞争节奏的快速信号。\n   怎么看：建议先把它当成今天的行业信号阅读，再决定要不要追原始报道。来源是 Hugging Face Blog。\n3. The Training Example Lie Bracket (9/10)\n   在做：Hacker News Frontpage 发布了一条值得关注的 AI 行业新闻。\n   为什么看：更适合作为判断行业方向、产品动作和竞争节奏的快速信号。\n   怎么看：建议先把它当成今天的行业信号阅读，再决定要不要追原始报道。来源是 Hacker News Frontpage。\n4. ChatGPT finally offers $100/month Pro plan (9/10)\n   在做：TechCrunch 发布了一条值得关注的 AI 行业新闻。\n   为什么看：更适合作为判断行业方向、产品动作和竞争节奏的快速信号。\n   怎么看：建议先把它当成今天的行业信号阅读，再决定要不要追原始报道。来源是 TechCrunch。\n5. Florida AG announces investigation into Op... (9/10)\n   在做：TechCrunch 发布了一条值得关注的 AI 行业新闻。\n   为什么看：更适合作为判断行业方向、产品动作和竞争节奏的快速信号。\n   怎么看：建议先把它当成今天的行业信号阅读，再决定要不要追原始报道。来源是 TechCrunch。\n6. Meta AI app climbs to No. 5 on the App Sto... (9/10)\n   在做：TechCrunch 发布了一条值得关注的 AI 行业新闻。\n   为什么看：更适合作为判断行业方向、产品动作和竞争节奏的快速信号。\n   怎么看：建议先把它当成今天的行业信号阅读，再决定要不要追原始报道。来源是 TechCrunch。\n\n查看完整归档：https://johnson-durui.github.io/Cognitive-Lagrange-Point/"
+      "content": "## 2026-04-10 · AI 前沿新闻\n共 6 条\n\n1. ALTK‑Evolve: On‑the‑Job Learning for AI Ag... (5/10)\n   在做：Hugging Face Blog 发布了一条值得关注的 AI 行业新闻。\n   为什么看：更适合作为判断行业方向、产品动作和竞争节奏的快速信号。\n   怎么看：建议先把它当成今天的行业信号阅读，再决定要不要追原始报道。来源是 Hugging Face Blog。\n2. Florida AG to probe OpenAI, alleging possi... (5/10)\n   在做：TechCrunch 发布了一条值得关注的 AI 行业新闻。\n   为什么看：更适合作为判断行业方向、产品动作和竞争节奏的快速信号。\n   怎么看：建议先把它当成今天的行业信号阅读，再决定要不要追原始报道。来源是 TechCrunch。\n3. ChatGPT finally offers $100/month Pro plan (5/10)\n   在做：TechCrunch 发布了一条值得关注的 AI 行业新闻。\n   为什么看：更适合作为判断行业方向、产品动作和竞争节奏的快速信号。\n   怎么看：建议先把它当成今天的行业信号阅读，再决定要不要追原始报道。来源是 TechCrunch。\n4. Florida AG announces investigation into Op... (5/10)\n   在做：TechCrunch 发布了一条值得关注的 AI 行业新闻。\n   为什么看：更适合作为判断行业方向、产品动作和竞争节奏的快速信号。\n   怎么看：建议先把它当成今天的行业信号阅读，再决定要不要追原始报道。来源是 TechCrunch。\n5. After data breach, $10B-valued startup Mer... (5/10)\n   在做：TechCrunch 发布了一条值得关注的 AI 行业新闻。\n   为什么看：更适合作为判断行业方向、产品动作和竞争节奏的快速信号。\n   怎么看：建议先把它当成今天的行业信号阅读，再决定要不要追原始报道。来源是 TechCrunch。\n6. Meta AI app climbs to No. 5 on the App Sto... (5/10)\n   在做：TechCrunch 发布了一条值得关注的 AI 行业新闻。\n   为什么看：更适合作为判断行业方向、产品动作和竞争节奏的快速信号。\n   怎么看：建议先把它当成今天的行业信号阅读，再决定要不要追原始报道。来源是 TechCrunch。\n\n查看完整归档：https://johnson-durui.github.io/Cognitive-Lagrange-Point/"
     }
   ],
-  "notification_markdown": "## 2026-04-10 · GitHub 精选\n共 1 条\n\n1. Kronos (9/10)\n   在做：一个围绕 金融AI 的 Python 开源项目。\n   为什么看：如果你关注工程落地，可以优先看它是否提供现成能力、工作流或可复用组件。\n   怎么看：热度已经很高，建议先判断它是可直接上手的工具，还是更偏概念展示。\n\n查看完整归档：https://johnson-durui.github.io/Cognitive-Lagrange-Point/\n\n## 2026-04-10 · 论文精选\n共 6 条\n\n1. SeLaR: Selective Latent Reasoning ... (9/10)\n   在做：一篇聚焦 cs.CL 方向的最新论文。\n   为什么看：适合先看它解决了什么问题，再判断是否值得进入你的精读列表。\n   怎么看：如果这正好贴近你的跟踪方向，建议放进本周精读候选，再决定是否深入。\n2. Fundus-R1: Training a Fundus-Readi... (9/10)\n   在做：一篇聚焦 cs.CV 方向的最新论文。\n   为什么看：适合先看它解决了什么问题，再判断是否值得进入你的精读列表。\n   怎么看：如果这正好贴近你的跟踪方向，建议放进本周精读候选，再决定是否深入。\n3. DMax: Aggressive Parallel Decoding... (9/10)\n   在做：一篇聚焦 cs.LG 方向的最新论文。\n   为什么看：适合先看它解决了什么问题，再判断是否值得进入你的精读列表。\n   怎么看：如果这正好贴近你的跟踪方向，建议放进本周精读候选，再决定是否深入。\n4. Distributed Multi-Layer Editing fo... (9/10)\n   在做：一篇聚焦 cs.CL 方向的最新论文。\n   为什么看：适合先看它解决了什么问题，再判断是否值得进入你的精读列表。\n   怎么看：如果这正好贴近你的跟踪方向，建议放进本周精读候选，再决定是否深入。\n5. Orion-Lite: Distilling LLM Reasoni... (9/10)\n   在做：一篇聚焦 cs.CV 方向的最新论文。\n   为什么看：适合先看它解决了什么问题，再判断是否值得进入你的精读列表。\n   怎么看：如果这正好贴近你的跟踪方向，建议放进本周精读候选，再决定是否深入。\n6. Lost in the Hype: Revealing and Di... (9/10)\n   在做：一篇聚焦 cs.CV 方向的最新论文。\n   为什么看：适合先看它解决了什么问题，再判断是否值得进入你的精读列表。\n   怎么看：如果这正好贴近你的跟踪方向，建议放进本周精读候选，再决定是否深入。\n\n查看完整归档：https://johnson-durui.github.io/Cognitive-Lagrange-Point/\n\n## 2026-04-10 · AI 前沿新闻\n共 6 条\n\n1. Multimodal Embedding & Reranker Models wit... (9/10)\n   在做：Hugging Face Blog 发布了一条值得关注的 AI 行业新闻。\n   为什么看：更适合作为判断行业方向、产品动作和竞争节奏的快速信号。\n   怎么看：建议先把它当成今天的行业信号阅读，再决定要不要追原始报道。来源是 Hugging Face Blog。\n2. ALTK‑Evolve: On‑the‑Job Learning for AI Ag... (9/10)\n   在做：Hugging Face Blog 发布了一条值得关注的 AI 行业新闻。\n   为什么看：更适合作为判断行业方向、产品动作和竞争节奏的快速信号。\n   怎么看：建议先把它当成今天的行业信号阅读，再决定要不要追原始报道。来源是 Hugging Face Blog。\n3. The Training Example Lie Bracket (9/10)\n   在做：Hacker News Frontpage 发布了一条值得关注的 AI 行业新闻。\n   为什么看：更适合作为判断行业方向、产品动作和竞争节奏的快速信号。\n   怎么看：建议先把它当成今天的行业信号阅读，再决定要不要追原始报道。来源是 Hacker News Frontpage。\n4. ChatGPT finally offers $100/month Pro plan (9/10)\n   在做：TechCrunch 发布了一条值得关注的 AI 行业新闻。\n   为什么看：更适合作为判断行业方向、产品动作和竞争节奏的快速信号。\n   怎么看：建议先把它当成今天的行业信号阅读，再决定要不要追原始报道。来源是 TechCrunch。\n5. Florida AG announces investigation into Op... (9/10)\n   在做：TechCrunch 发布了一条值得关注的 AI 行业新闻。\n   为什么看：更适合作为判断行业方向、产品动作和竞争节奏的快速信号。\n   怎么看：建议先把它当成今天的行业信号阅读，再决定要不要追原始报道。来源是 TechCrunch。\n6. Meta AI app climbs to No. 5 on the App Sto... (9/10)\n   在做：TechCrunch 发布了一条值得关注的 AI 行业新闻。\n   为什么看：更适合作为判断行业方向、产品动作和竞争节奏的快速信号。\n   怎么看：建议先把它当成今天的行业信号阅读，再决定要不要追原始报道。来源是 TechCrunch。\n\n查看完整归档：https://johnson-durui.github.io/Cognitive-Lagrange-Point/"
+  "notification_markdown": "## 2026-04-10 · GitHub 精选\n共 1 条\n\n1. Kronos (9/10)\n   在做：一个围绕 金融AI 的 Python 开源项目。\n   为什么看：如果你关注工程落地，可以优先看它是否提供现成能力、工作流或可复用组件。\n   怎么看：热度已经很高，建议先判断它是可直接上手的工具，还是更偏概念展示。\n\n查看完整归档：https://johnson-durui.github.io/Cognitive-Lagrange-Point/\n\n## 2026-04-10 · 论文精选\n共 6 条\n\n1. SeLaR: Selective Latent Reasoning ... (9/10)\n   在做：一篇聚焦 cs.CL 方向的最新论文。\n   为什么看：适合先看它解决了什么问题，再判断是否值得进入你的精读列表。\n   怎么看：如果这正好贴近你的跟踪方向，建议放进本周精读候选，再决定是否深入。\n2. Fundus-R1: Training a Fundus-Readi... (9/10)\n   在做：一篇聚焦 cs.CV 方向的最新论文。\n   为什么看：适合先看它解决了什么问题，再判断是否值得进入你的精读列表。\n   怎么看：如果这正好贴近你的跟踪方向，建议放进本周精读候选，再决定是否深入。\n3. DMax: Aggressive Parallel Decoding... (9/10)\n   在做：一篇聚焦 cs.LG 方向的最新论文。\n   为什么看：适合先看它解决了什么问题，再判断是否值得进入你的精读列表。\n   怎么看：如果这正好贴近你的跟踪方向，建议放进本周精读候选，再决定是否深入。\n4. HyperMem: Hypergraph Memory for Lo... (10/10)\n   在做：一篇聚焦 cs.CL 方向的最新论文。\n   为什么看：适合先看它解决了什么问题，再判断是否值得进入你的精读列表。\n   怎么看：如果这正好贴近你的跟踪方向，建议放进本周精读候选，再决定是否深入。\n5. Distributed Multi-Layer Editing fo... (9/10)\n   在做：一篇聚焦 cs.CL 方向的最新论文。\n   为什么看：适合先看它解决了什么问题，再判断是否值得进入你的精读列表。\n   怎么看：如果这正好贴近你的跟踪方向，建议放进本周精读候选，再决定是否深入。\n6. Orion-Lite: Distilling LLM Reasoni... (9/10)\n   在做：一篇聚焦 cs.CV 方向的最新论文。\n   为什么看：适合先看它解决了什么问题，再判断是否值得进入你的精读列表。\n   怎么看：如果这正好贴近你的跟踪方向，建议放进本周精读候选，再决定是否深入。\n\n查看完整归档：https://johnson-durui.github.io/Cognitive-Lagrange-Point/\n\n## 2026-04-10 · AI 前沿新闻\n共 6 条\n\n1. ALTK‑Evolve: On‑the‑Job Learning for AI Ag... (5/10)\n   在做：Hugging Face Blog 发布了一条值得关注的 AI 行业新闻。\n   为什么看：更适合作为判断行业方向、产品动作和竞争节奏的快速信号。\n   怎么看：建议先把它当成今天的行业信号阅读，再决定要不要追原始报道。来源是 Hugging Face Blog。\n2. Florida AG to probe OpenAI, alleging possi... (5/10)\n   在做：TechCrunch 发布了一条值得关注的 AI 行业新闻。\n   为什么看：更适合作为判断行业方向、产品动作和竞争节奏的快速信号。\n   怎么看：建议先把它当成今天的行业信号阅读，再决定要不要追原始报道。来源是 TechCrunch。\n3. ChatGPT finally offers $100/month Pro plan (5/10)\n   在做：TechCrunch 发布了一条值得关注的 AI 行业新闻。\n   为什么看：更适合作为判断行业方向、产品动作和竞争节奏的快速信号。\n   怎么看：建议先把它当成今天的行业信号阅读，再决定要不要追原始报道。来源是 TechCrunch。\n4. Florida AG announces investigation into Op... (5/10)\n   在做：TechCrunch 发布了一条值得关注的 AI 行业新闻。\n   为什么看：更适合作为判断行业方向、产品动作和竞争节奏的快速信号。\n   怎么看：建议先把它当成今天的行业信号阅读，再决定要不要追原始报道。来源是 TechCrunch。\n5. After data breach, $10B-valued startup Mer... (5/10)\n   在做：TechCrunch 发布了一条值得关注的 AI 行业新闻。\n   为什么看：更适合作为判断行业方向、产品动作和竞争节奏的快速信号。\n   怎么看：建议先把它当成今天的行业信号阅读，再决定要不要追原始报道。来源是 TechCrunch。\n6. Meta AI app climbs to No. 5 on the App Sto... (5/10)\n   在做：TechCrunch 发布了一条值得关注的 AI 行业新闻。\n   为什么看：更适合作为判断行业方向、产品动作和竞争节奏的快速信号。\n   怎么看：建议先把它当成今天的行业信号阅读，再决定要不要追原始报道。来源是 TechCrunch。\n\n查看完整归档：https://johnson-durui.github.io/Cognitive-Lagrange-Point/"
 }

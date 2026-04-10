@@ -1,9 +1,9 @@
 {
   "label": "周报",
   "window_days": 7,
-  "generated_at": "2026-04-09T23:30:35.043748+08:00",
-  "count": 26,
-  "summary": "近 7 天里，最集中的主题是 RAG、智能体、编码。",
+  "generated_at": "2026-04-10T09:27:47.859578+08:00",
+  "count": 34,
+  "summary": "近 7 天里，最集中的主题是 推理、RAG、编码。",
   "top_items": [
     {
       "id": "arxiv::http://arxiv.org/abs/2604.08299v1",
@@ -79,8 +79,8 @@
       "personalized_score": 216.0,
       "detail_path": "items/arxiv-selar-selective-latent-reasoning-in-large-language-models.html",
       "first_seen_at": "2026-04-10T01:21:36.797692+00:00",
-      "last_seen_at": "2026-04-10T01:25:05.410205+00:00",
-      "last_curated_at": "2026-04-10T01:25:05.410205+00:00",
+      "last_seen_at": "2026-04-10T01:27:54.160983+00:00",
+      "last_curated_at": "2026-04-10T01:27:54.160983+00:00",
       "last_notified_at": "2026-04-10T01:25:05.410194+00:00"
     },
     {
@@ -236,8 +236,8 @@
       "personalized_score": 180.0,
       "detail_path": "items/arxiv-fundus-r1-training-a-fundus-reading-mllm-with-knowledge-aware-reasoning-on-public-data.html",
       "first_seen_at": "2026-04-10T01:21:36.797692+00:00",
-      "last_seen_at": "2026-04-10T01:25:05.410205+00:00",
-      "last_curated_at": "2026-04-10T01:25:05.410205+00:00",
+      "last_seen_at": "2026-04-10T01:27:54.160983+00:00",
+      "last_curated_at": "2026-04-10T01:27:54.160983+00:00",
       "last_notified_at": "2026-04-10T01:25:05.410194+00:00"
     },
     {
@@ -314,9 +314,85 @@
       "personalized_score": 180.0,
       "detail_path": "items/arxiv-dmax-aggressive-parallel-decoding-for-dllms.html",
       "first_seen_at": "2026-04-10T01:21:36.797692+00:00",
-      "last_seen_at": "2026-04-10T01:25:05.410205+00:00",
-      "last_curated_at": "2026-04-10T01:25:05.410205+00:00",
+      "last_seen_at": "2026-04-10T01:27:54.160983+00:00",
+      "last_curated_at": "2026-04-10T01:27:54.160983+00:00",
       "last_notified_at": "2026-04-10T01:25:05.410194+00:00"
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2604.08256v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "HyperMem: Hypergraph Memory for Long-Term Conversations",
+      "html_url": "http://arxiv.org/abs/2604.08256v1",
+      "pdf_url": "https://arxiv.org/pdf/2604.08256v1",
+      "description": "Long-term memory is essential for conversational agents to maintain coherence, track persistent tasks, and provide personalized interactions across extended dialogues. However, existing approaches as Retrieval-Augmented Generation (RAG) and graph-based memory mostly rely on pairwise relations, which can hardly capture high-order associations, i.e., joint dependencies among multiple elements, causing fragmented retrieval. To this end, we propose HyperMem, a hypergraph-based hierarchical memory architecture that explicitly models such associations using hyperedges. Particularly, HyperMem structures memory into three levels: topics, episodes, and facts, and groups related episodes and their facts via hyperedges, unifying scattered content into coherent units. Leveraging this structure, we design a hybrid lexical-semantic index and a coarse-to-fine retrieval strategy, supporting accurate and efficient retrieval of high-order associations. Experiments on the LoCoMo benchmark show that HyperMem achieves state-of-the-art performance with 92.73% LLM-as-a-judge accuracy, demonstrating the effectiveness of HyperMem for long-term conversations.",
+      "authors": [
+        "Juwei Yue",
+        "Chuanrui Hu",
+        "Jiawei Sheng",
+        "Zuyi Zhou",
+        "Wenyuan Zhang",
+        "Tingwen Liu",
+        "Li Guo",
+        "Yafeng Deng"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "published_at": "2026-04-09T13:43:23+00:00",
+      "updated_at": "2026-04-09T13:43:23+00:00",
+      "primary_category": "cs.CL",
+      "heuristic_score": 17.339,
+      "summary": "HyperMem: Hypergraph Memory for Long-Term Conversations 是最近值得追踪的一篇 AI 论文。论文摘要显示：Long-term memory is essential for conversational agents to maintain coherence, track persistent tasks, and provide personalized interactions across extended dialogues. However, existing approaches as Retrieval-Augmented Generation (RAG) and...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CL, cs.AI",
+        "作者数: 8"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "llm",
+        "agent",
+        "rag"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "agent"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：HyperMem: Hypergraph Memory for Long-Term Conversations 是最近值得追踪的一篇 AI 论文。论文摘要显示：Long-term memory is essential for conversational agents to maintain coherence, track persistent tasks, and provide personalized interactions across extended dialogues. However, existing approaches as Retrieval-Augmented Generation (RAG) and...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL, cs.AI\n- 作者数: 8",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 176.0,
+      "detail_path": "items/arxiv-hypermem-hypergraph-memory-for-long-term-conversations.html",
+      "first_seen_at": "2026-04-10T01:27:54.160983+00:00",
+      "last_seen_at": "2026-04-10T01:27:54.160983+00:00",
+      "last_curated_at": "2026-04-10T01:27:54.160983+00:00",
+      "last_notified_at": null
     },
     {
       "id": "arxiv::http://arxiv.org/abs/2604.07274v1",
@@ -531,278 +607,6 @@
       "last_seen_at": "2026-04-09T15:30:41.892528+00:00",
       "last_curated_at": "2026-04-09T15:30:41.892528+00:00",
       "last_notified_at": "2026-04-09T11:52:43.203830+00:00"
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2604.07277v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "Android Coach: Improve Online Agentic Training Efficiency with Single State Multiple Actions",
-      "html_url": "http://arxiv.org/abs/2604.07277v1",
-      "pdf_url": "https://arxiv.org/pdf/2604.07277v1",
-      "description": "Online reinforcement learning (RL) serves as an effective method for enhancing the capabilities of Android agents. However, guiding agents to learn through online interaction is prohibitively expensive due to the high latency of emulators and the sample inefficiency of existing RL algorithms. We identify a fundamental limitation in current approaches: the Single State Single Action paradigm, which updates the policy with one-to-one state-action pairs from online one-way rollouts without fully exploring each costly emulator state. In this paper, we propose Android Coach, a novel framework that shifts the training paradigm to Single State Multiple Actions, allowing the agent to sample and utilize multiple actions for a single online state. We enable this without additional emulator overhead by learning a critic that estimates action values. To ensure the critic serves as a reliable coach, we integrate a process reward model and introduce a group-wise advantage estimator based on the averaged critic outputs. Extensive experiments demonstrate the effectiveness and efficiency of Android Coach: it achieves 7.5% and 8.3% success rate improvements on AndroidLab and AndroidWorld over UI-TARS-1.5-7B, and attains 1.4x higher training efficiency than Single State Single Action methods PPO and GRPO at matched success rates.",
-      "authors": [
-        "Guo Gan",
-        "Yuxuan Ding",
-        "Cong Chen",
-        "Yuwei Ren",
-        "Yin Huang",
-        "Hong Zhou"
-      ],
-      "categories": [
-        "cs.LG",
-        "cs.AI"
-      ],
-      "published_at": "2026-04-08T16:40:26+00:00",
-      "updated_at": "2026-04-08T16:40:26+00:00",
-      "primary_category": "cs.LG",
-      "heuristic_score": 17.565,
-      "summary": "Android Coach: Improve Online Agentic Training Efficiency with Single State Multiple Actions 是最近值得追踪的一篇 AI 论文。论文摘要显示：Online reinforcement learning (RL) serves as an effective method for enhancing the capabilities of Android agents. However, guiding agents to learn through online interaction is prohibitively expensive due to the high latency of emulators a...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.LG, cs.AI",
-        "作者数: 6"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "agent",
-        "rag",
-        "model"
-      ],
-      "summary_markdown": "**摘要**：Android Coach: Improve Online Agentic Training Efficiency with Single State Multiple Actions 是最近值得追踪的一篇 AI 论文。论文摘要显示：Online reinforcement learning (RL) serves as an effective method for enhancing the capabilities of Android agents. However, guiding agents to learn through online interaction is prohibitively expensive due to the high latency of emulators a...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.LG, cs.AI\n- 作者数: 6",
-      "detail_path": "items/arxiv-android-coach-improve-online-agentic-training-efficiency-with-single-state-multiple-action.html",
-      "first_seen_at": "2026-04-09T09:24:46.894274+00:00",
-      "last_seen_at": "2026-04-09T15:30:41.892528+00:00",
-      "last_curated_at": "2026-04-09T15:30:41.892528+00:00",
-      "last_notified_at": "2026-04-09T11:52:43.203830+00:00",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 160.0,
-      "selection_reason": "它和你关注的 agent 方向重合度高，适合放进今天的论文精读候选。",
-      "themes": [
-        "智能体",
-        "RAG",
-        "机器人"
-      ]
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2604.07296v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "OpenSpatial: A Principled Data Engine for Empowering Spatial Intelligence",
-      "html_url": "http://arxiv.org/abs/2604.07296v1",
-      "pdf_url": "https://arxiv.org/pdf/2604.07296v1",
-      "description": "Spatial understanding is a fundamental cornerstone of human-level intelligence. Nonetheless, current research predominantly focuses on domain-specific data production, leaving a critical void: the absence of a principled, open-source engine capable of fully unleashing the potential of high-quality spatial data. To bridge this gap, we elucidate the design principles of a robust data generation system and introduce OpenSpatial -- an open-source data engine engineered for high quality, extensive scalability, broad task diversity, and optimized efficiency. OpenSpatial adopts 3D bounding boxes as the fundamental primitive to construct a comprehensive data hierarchy across five foundational tasks: Spatial Measurement (SM), Spatial Relationship (SR), Camera Perception (CP), Multi-view Consistency (MC), and Scene-Aware Reasoning (SAR). Leveraging this scalable infrastructure, we curate OpenSpatial-3M, a large-scale dataset comprising 3 million high-fidelity samples. Extensive evaluations demonstrate that versatile models trained on our dataset achieve state-of-the-art performance across a wide spectrum of spatial reasoning benchmarks. Notably, the best-performing model exhibits a substantial average improvement of 19 percent, relatively. Furthermore, we provide a systematic analysis of how data attributes influence spatial perception. By open-sourcing both the engine and the 3M-scale dataset, we provide a robust foundation to accelerate future research in spatial intelligence.",
-      "authors": [
-        "Jianhui Liu",
-        "Haoze Sun",
-        "Wenbo Li",
-        "Yanbing Zhang",
-        "Rui Yang",
-        "Zhiliang Zhu",
-        "Yijun Yang",
-        "Shenghe Zheng",
-        "Nan Jiang",
-        "Jiaxiu Jiang",
-        "Haoyang Huang",
-        "Tien-Tsin Wong",
-        "Nan Duan",
-        "Xiaojuan Qi"
-      ],
-      "categories": [
-        "cs.CL"
-      ],
-      "published_at": "2026-04-08T17:03:02+00:00",
-      "updated_at": "2026-04-08T17:03:02+00:00",
-      "primary_category": "cs.CL",
-      "heuristic_score": 15.366,
-      "summary": "OpenSpatial提出一个原则性开源数据引擎，针对空间智能生成高质量、可扩展数据，构建3M规模数据集OpenSpatial-3M，覆盖空间测量、关系、相机感知等多任务。在该数据集上训练的模型在多项空间推理基准上取得SOTA，平均提升19%。开源引擎和数据集为空间智能研究提供坚实基础。",
-      "core_innovation": "以3D边界框为基本原语构建数据层次结构，实现高质、可扩展、多任务空间数据生成。",
-      "highlights": [
-        "生成3M高保真样本，覆盖5大空间任务",
-        "训练模型在基准上平均提升19%",
-        "开源引擎+数据集，系统分析数据属性影响"
-      ],
-      "practicality": "高：开源工具易复用，支持大规模训练和下游任务落地。",
-      "relevance_score": 9,
-      "tags": [
-        "多模态",
-        "推理",
-        "开源模型",
-        "空间智能"
-      ],
-      "summary_markdown": "**摘要**：OpenSpatial提出一个原则性开源数据引擎，针对空间智能生成高质量、可扩展数据，构建3M规模数据集OpenSpatial-3M，覆盖空间测量、关系、相机感知等多任务。在该数据集上训练的模型在多项空间推理基准上取得SOTA，平均提升19%。开源引擎和数据集为空间智能研究提供坚实基础。\n\n**核心创新**：以3D边界框为基本原语构建数据层次结构，实现高质、可扩展、多任务空间数据生成。\n\n**实用性**：高：开源工具易复用，支持大规模训练和下游任务落地。\n\n**相关性评分**：9/10\n\n**亮点**：\n- 生成3M高保真样本，覆盖5大空间任务\n- 训练模型在基准上平均提升19%\n- 开源引擎+数据集，系统分析数据属性影响",
-      "detail_path": "items/arxiv-openspatial-a-principled-data-engine-for-empowering-spatial-intelligence.html",
-      "first_seen_at": "2026-04-09T09:49:00.584525+00:00",
-      "last_seen_at": "2026-04-09T15:30:41.892528+00:00",
-      "last_curated_at": "2026-04-09T15:30:41.892528+00:00",
-      "last_notified_at": "2026-04-09T11:52:43.203830+00:00",
-      "brief": "开源数据引擎OpenSpatial生成3M空间智能数据集，训练模型空间推理SOTA提升19%。",
-      "problem": "当前空间智能研究缺乏原则性开源引擎，无法高效生成高质量、多样化空间数据。",
-      "why_it_matters": "填补空间数据生成空白，推动多模态和场景推理模型向人类级智能迈进。",
-      "target_reader": "关注多模态、推理、开源模型的研究者和开发者。",
-      "themes": [
-        "多模态",
-        "推理",
-        "开源模型"
-      ],
-      "selection_reason": "核心创新填补空间数据引擎空白，与用户关注的多模态、推理、开源模型高度匹配，落地潜力强值得重点关注。",
-      "focus_hits": [
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "reasoning",
-      "personalized_score": 160.0
-    },
-    {
-      "id": "github::coleam00/Archon",
-      "kind": "repo",
-      "source": "github",
-      "source_tags": [
-        "trending"
-      ],
-      "name": "Archon",
-      "title": "coleam00/Archon",
-      "full_name": "coleam00/Archon",
-      "html_url": "https://github.com/coleam00/Archon",
-      "description": "The first open-source harness builder for AI coding. Make AI coding deterministic and repeatable.",
-      "stars": 14061,
-      "stars_today": 0,
-      "language": "TypeScript",
-      "topics": [],
-      "created_at": "",
-      "updated_at": "",
-      "heuristic_score": 12.6,
-      "summary": "Archon 是首个开源 AI 编码 harness 构建器，能让 AI 编码过程确定性和可重复。项目使用 TypeScript 开发，已获 14061 stars，聚焦解决 AI 辅助编程的随机性痛点。通过标准化 harness，它为开发者提供可靠的 AI 编码框架，推动 agentic coding 落地。",
-      "brief": "Archon：首个开源 AI 编码 harness 构建器，让 AI 编程确定性、可重复，已 14k stars。",
-      "problem": "AI 辅助编码过程随机不可控，难以重复和标准化。",
-      "why_it_matters": "它填补开源 AI 编码工具空白，推动 agentic coding 从实验到生产级应用。",
-      "target_reader": "AI 开发者、coding agent 爱好者、开源追踪者。",
-      "core_innovation": "首个开源 harness 构建器，实现 AI 编码的确定性和可重复性。",
-      "highlights": [
-        "TypeScript 实现，易上手部署",
-        "14k stars 验证高势能",
-        "标准化 AI 编码流程，提升可靠性"
-      ],
-      "practicality": "高度实用，直接解决生产环境中 AI 编码痛点，值得立即追踪。",
-      "relevance_score": 9,
-      "tags": [
-        "AI 编码",
-        "开源工具",
-        "Harness"
-      ],
-      "themes": [
-        "智能体",
-        "编码",
-        "开源模型"
-      ],
-      "selection_reason": "Archon 作为高势能开源项目（14k stars），代表 AI coding agent 新方向，匹配用户关注关键词，值得每日摘要追踪。",
-      "summary_markdown": "**摘要**：Archon 是首个开源 AI 编码 harness 构建器，能让 AI 编码过程确定性和可重复。项目使用 TypeScript 开发，已获 14061 stars，聚焦解决 AI 辅助编程的随机性痛点。通过标准化 harness，它为开发者提供可靠的 AI 编码框架，推动 agentic coding 落地。\n\n**核心创新**：首个开源 harness 构建器，实现 AI 编码的确定性和可重复性。\n\n**实用性**：高度实用，直接解决生产环境中 AI 编码痛点，值得立即追踪。\n\n**相关性评分**：9/10\n\n**亮点**：\n- TypeScript 实现，易上手部署\n- 14k stars 验证高势能\n- 标准化 AI 编码流程，提升可靠性",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "coding",
-          "weight": 2.6
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 151.62,
-      "detail_path": "items/github-coleam00-archon.html",
-      "first_seen_at": "2026-04-09T11:50:14.780111+00:00",
-      "last_seen_at": "2026-04-09T15:30:41.892528+00:00",
-      "last_curated_at": "2026-04-09T15:30:41.892528+00:00",
-      "last_notified_at": "2026-04-09T11:52:43.203830+00:00"
-    },
-    {
-      "id": "github::HKUDS/DeepTutor",
-      "kind": "repo",
-      "source": "github",
-      "source_tags": [
-        "trending"
-      ],
-      "name": "DeepTutor",
-      "title": "HKUDS/DeepTutor",
-      "full_name": "HKUDS/DeepTutor",
-      "html_url": "https://github.com/HKUDS/DeepTutor",
-      "description": "\"DeepTutor: Agent-Native Personalized Learning Assistant\"",
-      "stars": 14076,
-      "stars_today": 0,
-      "language": "Python",
-      "topics": [],
-      "created_at": "",
-      "updated_at": "",
-      "heuristic_score": 12.6,
-      "summary": "DeepTutor 是 HKUDS 推出的 Agent-Native 个性化学习助手，利用 AI 代理技术提供自适应教学和实时反馈，已获 14076 stars。项目融合 LLM 和多模态交互，针对教育场景优化学习路径。代表教育 AI 代理的新方向，值得开发者与教育从业者追踪。",
-      "brief": "HKUDS DeepTutor：代理原生个性化学习助手，14k stars，高势能教育 AI 项目。",
-      "problem": "传统学习工具缺乏个性化、自适应反馈，无法根据学生实时需求调整教学。",
-      "why_it_matters": "教育 AI 代理正成为热点，DeepTutor 展示 agentic 架构在个性化学习中的高实用潜力。",
-      "target_reader": "AI 开发者、教育科技从业者、开源爱好者。",
-      "core_innovation": "Agent-Native 设计，实现动态教学路径与多模态交互。",
-      "highlights": [
-        "14k stars，社区认可度高",
-        "融合 LLM 代理与教育场景，自适应学习反馈",
-        "开源 Python 项目，便于二次开发"
-      ],
-      "practicality": "高：即插即用教育工具，易扩展至在线平台。",
-      "relevance_score": 9,
-      "tags": [
-        "AI Agent",
-        "教育 AI",
-        "开源模型"
-      ],
-      "themes": [
-        "智能体",
-        "RAG",
-        "推理"
-      ],
-      "selection_reason": "DeepTutor 作为高星教育 AI 代理项目，契合用户关注 agentic 和 open-source model 关键词，代表实用高势能新方向。",
-      "summary_markdown": "**摘要**：DeepTutor 是 HKUDS 推出的 Agent-Native 个性化学习助手，利用 AI 代理技术提供自适应教学和实时反馈，已获 14076 stars。项目融合 LLM 和多模态交互，针对教育场景优化学习路径。代表教育 AI 代理的新方向，值得开发者与教育从业者追踪。\n\n**核心创新**：Agent-Native 设计，实现动态教学路径与多模态交互。\n\n**实用性**：高：即插即用教育工具，易扩展至在线平台。\n\n**相关性评分**：9/10\n\n**亮点**：\n- 14k stars，社区认可度高\n- 融合 LLM 代理与教育场景，自适应学习反馈\n- 开源 Python 项目，便于二次开发",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 147.63,
-      "detail_path": "items/github-hkuds-deeptutor.html",
-      "first_seen_at": "2026-04-09T11:50:14.780111+00:00",
-      "last_seen_at": "2026-04-09T15:30:41.892528+00:00",
-      "last_curated_at": "2026-04-09T15:30:41.892528+00:00",
-      "last_notified_at": "2026-04-09T11:52:43.203830+00:00"
     }
   ],
   "top_themes": [
@@ -812,7 +616,7 @@
     },
     {
       "theme": "RAG",
-      "count": 4
+      "count": 3
     },
     {
       "theme": "编码",
@@ -823,8 +627,8 @@
       "count": 2
     },
     {
-      "theme": "智能体",
-      "count": 2
+      "theme": "LLM",
+      "count": 1
     }
   ],
   "highlights": [
