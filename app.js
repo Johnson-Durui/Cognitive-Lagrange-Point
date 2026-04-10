@@ -35,6 +35,7 @@ import {
   submitCurrentSimAnswer,
 } from './frontend/modules/engine-b.js';
 import { registerQuantumVibeOracle } from './frontend/modules/quantum-vibe-oracle.js';
+import { registerDivineSoulTopology } from './frontend/modules/divine-soul-topology.js';
 import './frontend/modules/ui-bridge.js';
 import { showView, closeDetail } from './frontend/modules/ui-handlers.js';
 
@@ -337,6 +338,7 @@ function init() {
     console.error('DecisionFlowView Init Failed', error);
   }
   registerQuantumVibeOracle();
+  registerDivineSoulTopology();
 
   const initialSystems = [
     ...(Array.isArray(SYSTEMS) ? SYSTEMS : []),

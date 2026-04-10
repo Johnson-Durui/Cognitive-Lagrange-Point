@@ -1192,6 +1192,11 @@ class QuantumVibeOracle {
   bindUi() {
     this.root.querySelector('[data-qvo-close]')?.addEventListener('click', () => this.close());
     this.root.querySelector('[data-qvo-poetic]')?.addEventListener('click', () => showToast('量子诗意模式已开启：继续在宇宙里观测你的选择。', 'info', 1800));
+    this.root.querySelector('[data-qvo-topology]')?.addEventListener('click', async () => {
+      const data = this.data;
+      await this.close();
+      await window.openDivineSoulTopology?.(data);
+    });
     this.root.querySelector('[data-qvo-audio-toggle]')?.addEventListener('click', (event) => this.toggleAudio(event.currentTarget));
     this.root.querySelector('[data-qvo-flight-toggle]')?.addEventListener('click', (event) => this.toggleFreeFlight(event.currentTarget));
     this.root.querySelector('[data-qvo-bio-enable]')?.addEventListener('click', () => this.enableBioFeedback());
@@ -1235,6 +1240,13 @@ class QuantumVibeOracle {
 
   installExportUi() {
     const tools = this.root.querySelector('.qvo-mode-switch');
+    if (tools && !tools.querySelector('[data-qvo-topology]')) {
+      const button = document.createElement('button');
+      button.type = 'button';
+      button.dataset.qvoTopology = 'true';
+      button.textContent = '神魂拓扑';
+      tools.appendChild(button);
+    }
     if (tools && !tools.querySelector('[data-qvo-export-trigger]')) {
       const button = document.createElement('button');
       button.type = 'button';
