@@ -35,9 +35,44 @@ import {
   submitCurrentSimAnswer,
 } from './frontend/modules/engine-b.js';
 import { registerQuantumVibeOracle } from './frontend/modules/quantum-vibe-oracle.js';
-import { registerDivineSoulTopology } from './frontend/modules/divine-soul-topology.js';
 import './frontend/modules/ui-bridge.js';
 import { showView, closeDetail } from './frontend/modules/ui-handlers.js';
+
+const artDebugState = {
+  divineModuleLoaded: false,
+  divineLoadCount: 0,
+  divineOpenCount: 0,
+};
+
+if (typeof window !== 'undefined') {
+  window.__CLP_ART_DEBUG__ = artDebugState;
+}
+
+let divineModulePromise = null;
+
+async function loadDivineSoulTopologyModule() {
+  if (!divineModulePromise) {
+    artDebugState.divineLoadCount += 1;
+    divineModulePromise = import('./frontend/modules/divine-soul-topology/index.js').then((module) => {
+      artDebugState.divineModuleLoaded = true;
+      return module;
+    });
+  }
+  return divineModulePromise;
+}
+
+function registerDivineSoulTopologyProxy() {
+  window.openDivineSoulTopology = async (explicitData) => {
+    artDebugState.divineOpenCount += 1;
+    const module = await loadDivineSoulTopologyModule();
+    return module.openDivineSoulTopology(explicitData);
+  };
+  window.closeDivineSoulTopology = async () => {
+    if (!divineModulePromise) return null;
+    const module = await loadDivineSoulTopologyModule();
+    return module.closeDivineSoulTopology?.();
+  };
+}
 
 const DECISION_PHASE_LABELS = {
   act1: '第一幕 · 结构判断',
@@ -314,6 +349,7 @@ function init() {
     getInteraction: () => getCurrentInteractionDebug(),
     hitTest: (x, y) => hitTestInteractiveNode(x, y),
   };
+  window.__CLP_ART_DEBUG__ = artDebugState;
 
   window.addEventListener('clp:future-path-selected', (event) => {
     const path = event.detail?.path || {};
@@ -338,7 +374,7 @@ function init() {
     console.error('DecisionFlowView Init Failed', error);
   }
   registerQuantumVibeOracle();
-  registerDivineSoulTopology();
+  registerDivineSoulTopologyProxy();
 
   const initialSystems = [
     ...(Array.isArray(SYSTEMS) ? SYSTEMS : []),
