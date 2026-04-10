@@ -3,8 +3,9 @@ name: AI Daily Digest
 on:
   workflow_dispatch:
   schedule:
-    # 00:00 UTC = 08:00 Asia/Shanghai (Beijing time)
-    - cron: "0 0 * * *"
+    # GitHub cron at exact top-of-hour can be flaky; run slightly before and after 08:00 Asia/Shanghai.
+    - cron: "57 23 * * *"
+    - cron: "7 0 * * *"
 
 permissions:
   contents: write

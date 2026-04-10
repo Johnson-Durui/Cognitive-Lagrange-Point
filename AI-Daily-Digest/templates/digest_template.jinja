@@ -7,6 +7,7 @@
 今日概览：
 - GitHub 项目：{{ repo_count }} 个
 - arXiv 论文：{{ paper_count }} 篇
+- AI 前沿新闻：{{ digest.stats.news_count }} 条
 
 {% if digest.empty_message %}
 {{ digest.empty_message }}
@@ -73,6 +74,22 @@
 {% endfor %}
 {% else %}
 今天没有筛出新的高相关论文。
+{% endif %}
+
+### AI 前沿新闻
+{% if digest.news %}
+{% for item in digest.news %}
+#### {{ loop.index }}. {{ item.title }}
+- 链接：{{ item.html_url }}
+- 来源：{{ item.source_name }}
+- 相关性评分：{{ item.relevance_score }}/10
+- 入选理由：{{ item.selection_reason }}
+- 它在解决：{{ item.problem }}
+- 摘要：{{ item.summary }}
+- 为什么值得看：{{ item.why_it_matters }}
+{% endfor %}
+{% else %}
+今天没有筛出新的高相关 AI 前沿新闻。
 {% endif %}
 
 ### 站点入口

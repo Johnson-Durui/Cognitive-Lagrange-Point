@@ -32,7 +32,7 @@ class PipelineSmokeTest(unittest.TestCase):
             encoding="utf-8",
         )
 
-        for filename in ("__init__.py", "github_fetcher.py", "arxiv_fetcher.py"):
+        for filename in ("__init__.py", "github_fetcher.py", "arxiv_fetcher.py", "news_fetcher.py"):
             source = PROJECT_ROOT / "fetchers" / filename
             (self.project_root / "fetchers" / filename).write_text(source.read_text(encoding="utf-8"), encoding="utf-8")
 
@@ -94,13 +94,41 @@ class PipelineSmokeTest(unittest.TestCase):
             "tags": ["reasoning"],
             "summary_markdown": "mock",
         }
+        news_item = {
+            "id": "news::https://example.com/news",
+            "kind": "news",
+            "source": "news",
+            "source_name": "TechCrunch",
+            "title": "AI company ships new agent platform",
+            "html_url": "https://example.com/news",
+            "description": "A new AI agent platform was announced.",
+            "published_at": "2026-04-09T00:00:00+00:00",
+            "heuristic_score": 7.2,
+            "summary": "这条新闻概述了一家 AI 公司发布新的智能体平台。",
+            "brief": "新的智能体平台发布。",
+            "problem": "新闻体现了智能体产品化速度正在加快。",
+            "why_it_matters": "适合用来判断近期 AI 产品与竞争节奏。",
+            "target_reader": "适合关注 AI 行业动态的人。",
+            "core_innovation": "更偏行业动态，不是技术论文。",
+            "highlights": ["来源 TechCrunch", "偏产品发布"],
+            "practicality": "适合快速扫读。",
+            "relevance_score": 8,
+            "tags": ["agent"],
+            "themes": ["智能体"],
+            "selection_reason": "它能反映 AI 行业产品方向。",
+            "summary_markdown": "mock",
+        }
 
         with patch.object(digest_main.GitHubFetcher, "fetch_candidates", return_value=[repo_item]), patch.object(
             digest_main.ArxivFetcher, "fetch_candidates", return_value=[paper_item]
         ), patch.object(
+            digest_main.NewsFetcher, "fetch_candidates", return_value=[news_item]
+        ), patch.object(
             digest_main.Summarizer, "summarize_repositories", return_value=[repo_item]
         ), patch.object(
             digest_main.Summarizer, "summarize_papers", return_value=[paper_item]
+        ), patch.object(
+            digest_main.Summarizer, "summarize_news", return_value=[news_item]
         ), patch.object(
             digest_main.Notifier, "send_markdown", return_value={"ok": True}
         ):
@@ -119,9 +147,10 @@ class PipelineSmokeTest(unittest.TestCase):
         self.assertTrue(weekly_report.exists())
 
         payload = json.loads(latest_json.read_text(encoding="utf-8"))
-        self.assertEqual(payload["stats"]["total_count"], 2)
+        self.assertEqual(payload["stats"]["total_count"], 3)
         self.assertIn("sections", payload)
         self.assertIn("reports", payload)
+        self.assertIn("notification_messages", payload)
 
 
 if __name__ == "__main__":

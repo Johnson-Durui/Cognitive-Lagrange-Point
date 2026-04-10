@@ -51,6 +51,21 @@ sources:
       - cs.CV
       - cs.RO
       - stat.ML
+  news:
+    enabled: true
+    lookback_days: 2
+    max_per_feed: 8
+    max_candidates: 18
+    top_k: 6
+    feeds:
+      - name: TechCrunch
+        url: https://techcrunch.com/feed/
+      - name: VentureBeat
+        url: https://feeds.venturebeat.com/VentureBeat
+      - name: Hugging Face Blog
+        url: https://huggingface.co/blog/feed.xml
+      - name: Hacker News Frontpage
+        url: https://hnrss.org/frontpage
 
 filtering:
   user_keywords:
@@ -113,6 +128,7 @@ notification:
   target_chars: 3000
   hard_max_chars: 3900
   wecom_max_bytes: 3900
+  split_messages: true
 
 website:
   base_url: "https://johnson-durui.github.io/Cognitive-Lagrange-Point/"

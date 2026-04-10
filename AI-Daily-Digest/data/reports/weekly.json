@@ -6,6 +6,84 @@
   "summary": "近 7 天里，最集中的主题是 RAG、智能体、编码。",
   "top_items": [
     {
+      "id": "arxiv::http://arxiv.org/abs/2604.08299v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "SeLaR: Selective Latent Reasoning in Large Language Models",
+      "html_url": "http://arxiv.org/abs/2604.08299v1",
+      "pdf_url": "https://arxiv.org/pdf/2604.08299v1",
+      "description": "Chain-of-Thought (CoT) has become a cornerstone of reasoning in large language models, yet its effectiveness is constrained by the limited expressiveness of discrete token sampling. Recent latent reasoning approaches attempt to alleviate this limitation by replacing discrete tokens with soft embeddings (probability-weighted mixtures of token embeddings) or hidden states, but they commonly suffer from two issues: (1) global activation injects perturbations into high-confidence steps, impairing reasoning stability; and (2) soft embeddings quickly collapse toward the highest-probability token, limiting exploration of alternative trajectories. To address these challenges, we propose SeLaR (Selective Latent Reasoning), a lightweight and training-free framework. SeLaR introduces an entropy-gated mechanism that activates soft embeddings only at low-confidence steps, while preserving discrete decoding at high-confidence steps. Additionally, we propose an entropy-aware contrastive regularization that pushes soft embeddings away from the dominant (highest-probability) token's direction, encouraging sustained exploration of multiple latent reasoning paths. Experiments on five reasoning benchmarks demonstrate that SeLaR consistently outperforms standard CoT and state-of-the-art training-free methods.",
+      "authors": [
+        "Renyu Fu",
+        "Guibo Luo"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "published_at": "2026-04-09T14:32:07+00:00",
+      "updated_at": "2026-04-09T14:32:07+00:00",
+      "primary_category": "cs.CL",
+      "heuristic_score": 17.536,
+      "summary": "SeLaR提出了一种无训练的轻量级框架，通过熵门控机制仅在低置信度步骤激活软嵌入，避免全局扰动和高置信步骤的稳定性问题。同时引入熵感知对比正则化，推动软嵌入远离主导token，促进多路径潜在推理探索。在五个推理基准上，SeLaR超越标准CoT和现有无训练方法。",
+      "brief": "SeLaR优化潜在推理，仅低置信步骤用软嵌入，提升LLM推理稳定性与探索性，无需训练即优于CoT。",
+      "problem": "现有潜在推理方法在高置信步骤引入扰动导致不稳定，且软嵌入易坍缩至最高概率token，限制推理路径探索。",
+      "why_it_matters": "提供无训练即用的推理增强方案，能立即提升LLM在复杂任务上的表现，推动agentic和reasoning应用落地。",
+      "target_reader": "关注LLM推理优化、agent开发者和研究者的AI从业者。",
+      "core_innovation": "熵门控选择性激活软嵌入+对比正则化防止坍缩，实现稳定多路径潜在推理。",
+      "highlights": [
+        "仅低置信步骤激活软嵌入，保高置信离散解码稳定性",
+        "熵感知正则化鼓励探索多条潜在推理路径",
+        "五个基准实验优于CoT和SOTA无训练方法"
+      ],
+      "practicality": "训练免费、即插即用，落地潜力高，适用于现有LLM推理pipeline。",
+      "relevance_score": 9,
+      "tags": [
+        "推理",
+        "LLM",
+        "潜在推理"
+      ],
+      "themes": [
+        "推理",
+        "LLM",
+        "agentic"
+      ],
+      "selection_reason": "核心创新针对潜在推理痛点，无训练高实用性，高度匹配用户关注reasoning、llm和agent关键词，值得每日重点关注。",
+      "summary_markdown": "**摘要**：SeLaR提出了一种无训练的轻量级框架，通过熵门控机制仅在低置信度步骤激活软嵌入，避免全局扰动和高置信步骤的稳定性问题。同时引入熵感知对比正则化，推动软嵌入远离主导token，促进多路径潜在推理探索。在五个推理基准上，SeLaR超越标准CoT和现有无训练方法。\n\n**核心创新**：熵门控选择性激活软嵌入+对比正则化防止坍缩，实现稳定多路径潜在推理。\n\n**实用性**：训练免费、即插即用，落地潜力高，适用于现有LLM推理pipeline。\n\n**相关性评分**：9/10\n\n**亮点**：\n- 仅低置信步骤激活软嵌入，保高置信离散解码稳定性\n- 熵感知正则化鼓励探索多条潜在推理路径\n- 五个基准实验优于CoT和SOTA无训练方法",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "coding",
+          "weight": 2.6
+        },
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 216.0,
+      "detail_path": "items/arxiv-selar-selective-latent-reasoning-in-large-language-models.html",
+      "first_seen_at": "2026-04-10T01:21:36.797692+00:00",
+      "last_seen_at": "2026-04-10T01:25:05.410205+00:00",
+      "last_curated_at": "2026-04-10T01:25:05.410205+00:00",
+      "last_notified_at": "2026-04-10T01:25:05.410194+00:00"
+    },
+    {
       "id": "arxiv::http://arxiv.org/abs/2604.07338v1",
       "kind": "paper",
       "source": "arxiv",
@@ -80,6 +158,165 @@
         "RAG",
         "推理"
       ]
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2604.08322v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Fundus-R1: Training a Fundus-Reading MLLM with Knowledge-Aware Reasoning on Public Data",
+      "html_url": "http://arxiv.org/abs/2604.08322v1",
+      "pdf_url": "https://arxiv.org/pdf/2604.08322v1",
+      "description": "Fundus imaging such as CFP, OCT and UWF is crucial for the early detection of retinal anomalies and diseases. Fundus image understanding, due to its knowledge-intensive nature, poses a challenging vision-language task. An emerging approach to addressing the task is to post-train a generic multimodal large language model (MLLM), either by supervised finetuning (SFT) or by reinforcement learning with verifiable rewards (RLVR), on a considerable amount of in-house samples paired with high-quality clinical reports. However, these valuable samples are not publicly accessible, which not only hinders reproducibility but also practically limits research to few players. To overcome the barrier, we make a novel attempt to train a reasoning-enhanced fundus-reading MLLM, which we term Fundus-R1, using exclusively public datasets, wherein over 94\\% of the data are annotated with only image-level labels. Our technical contributions are two-fold. First, we propose a RAG-based method for composing image-specific, knowledge-aware reasoning traces. Such auto-generated traces link visual findings identified by a generic MLLM to the image labels in terms of ophthalmic knowledge. Second, we enhance RLVR with a process reward that encourages self-consistency of the generated reasoning trace in each rollout. Extensive experiments on three fundus-reading benchmarks, i.e., FunBench, Omni-Fundus and GMAI-Fundus, show that Fundus-R1 clearly outperforms multiple baselines, including its generic counterpart (Qwen2.5-VL) and a stronger edition post-trained without using the generated traces. This work paves the way for training powerful fundus-reading MLLMs with publicly available data.",
+      "authors": [
+        "Yuchuan Deng",
+        "Qijie Wei",
+        "Kaiheng Qian",
+        "Jiazhen Liu",
+        "Zijie Xin",
+        "Bangxiang Lan",
+        "Jingyu Liu",
+        "Jianfeng Dong",
+        "Xirong Li"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "published_at": "2026-04-09T14:55:22+00:00",
+      "updated_at": "2026-04-09T14:55:22+00:00",
+      "primary_category": "cs.CV",
+      "heuristic_score": 22.7,
+      "summary": "Fundus-R1提出了一种仅用公开数据集训练眼底图像阅读多模态大模型（MLLM）的方法，通过RAG生成知识感知推理轨迹，并增强RLVR以提升自一致性。在FunBench、Omni-Fundus和GMAI-Fundus三个基准上显著优于Qwen2.5-VL等基线。该工作解决了医疗数据私有化难题，推动眼底病变早期检测的开源研究。",
+      "brief": "用公开数据+RAG+RLVR训练出SOTA眼底阅读MLLM，媲美私有数据模型。",
+      "problem": "眼底图像理解依赖私有临床数据，阻碍开源MLLM训练和可重复性研究。",
+      "why_it_matters": "医疗AI开源化关键突破，仅用94%图像标签数据即可媲美高成本私有训练，加速全球眼科AI应用。",
+      "target_reader": "多模态/MLLM/医疗AI研究者。",
+      "core_innovation": "RAG生成图像特定知识推理轨迹+过程奖励增强RLVR，实现公开数据高效训练。",
+      "highlights": [
+        "94%数据仅图像标签仍超基线",
+        "开源方法 democratize 眼底MLLM训练",
+        "多基准验证SOTA性能"
+      ],
+      "practicality": "高：公开数据易获取，适用于眼科诊断工具落地。",
+      "relevance_score": 9,
+      "tags": [
+        "多模态",
+        "RAG",
+        "推理",
+        "医疗AI"
+      ],
+      "themes": [
+        "多模态",
+        "RAG",
+        "推理"
+      ],
+      "selection_reason": "核心创新解决医疗数据壁垒，高度匹配多模态/LLM/RAG关注，落地潜力强值得重点跟踪。",
+      "summary_markdown": "**摘要**：Fundus-R1提出了一种仅用公开数据集训练眼底图像阅读多模态大模型（MLLM）的方法，通过RAG生成知识感知推理轨迹，并增强RLVR以提升自一致性。在FunBench、Omni-Fundus和GMAI-Fundus三个基准上显著优于Qwen2.5-VL等基线。该工作解决了医疗数据私有化难题，推动眼底病变早期检测的开源研究。\n\n**核心创新**：RAG生成图像特定知识推理轨迹+过程奖励增强RLVR，实现公开数据高效训练。\n\n**实用性**：高：公开数据易获取，适用于眼科诊断工具落地。\n\n**相关性评分**：9/10\n\n**亮点**：\n- 94%数据仅图像标签仍超基线\n- 开源方法 democratize 眼底MLLM训练\n- 多基准验证SOTA性能",
+      "focus_hits": [
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        },
+        {
+          "keyword": "multimodal",
+          "weight": 2.0
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "reasoning",
+      "personalized_score": 180.0,
+      "detail_path": "items/arxiv-fundus-r1-training-a-fundus-reading-mllm-with-knowledge-aware-reasoning-on-public-data.html",
+      "first_seen_at": "2026-04-10T01:21:36.797692+00:00",
+      "last_seen_at": "2026-04-10T01:25:05.410205+00:00",
+      "last_curated_at": "2026-04-10T01:25:05.410205+00:00",
+      "last_notified_at": "2026-04-10T01:25:05.410194+00:00"
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2604.08302v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "DMax: Aggressive Parallel Decoding for dLLMs",
+      "html_url": "http://arxiv.org/abs/2604.08302v1",
+      "pdf_url": "https://arxiv.org/pdf/2604.08302v1",
+      "description": "We present DMax, a new paradigm for efficient diffusion language models (dLLMs). It mitigates error accumulation in parallel decoding, enabling aggressive decoding parallelism while preserving generation quality. Unlike conventional masked dLLMs that decode through a binary mask-to-token transition, DMax reformulates decoding as a progressive self-refinement from mask embeddings to token embeddings. At the core of our approach is On-Policy Uniform Training, a novel training strategy that efficiently unifies masked and uniform dLLMs, equipping the model to recover clean tokens from both masked inputs and its own erroneous predictions. Building on this foundation, we further propose Soft Parallel Decoding. We represent each intermediate decoding state as an interpolation between the predicted token embedding and the mask embedding, enabling iterative self-revising in embedding space. Extensive experiments across a variety of benchmarks demonstrate the effectiveness of DMax. Compared with the original LLaDA-2.0-mini, our method improves TPF on GSM8K from 2.04 to 5.47 while preserving accuracy. On MBPP, it increases TPF from 2.71 to 5.86 while maintaining comparable performance. On two H200 GPUs, our model achieves an average of 1,338 TPS at batch size 1. Code is available at: https://github.com/czg1225/DMax",
+      "authors": [
+        "Zigeng Chen",
+        "Gongfan Fang",
+        "Xinyin Ma",
+        "Ruonan Yu",
+        "Xinchao Wang"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "published_at": "2026-04-09T14:35:42+00:00",
+      "updated_at": "2026-04-09T14:35:42+00:00",
+      "primary_category": "cs.LG",
+      "heuristic_score": 19.956,
+      "summary": "DMax提出了一种高效的扩散语言模型（dLLM）并行解码新范式，通过On-Policy Uniform Training和Soft Parallel Decoding显著提升解码速度，同时保持生成质量。在GSM8K和MBPP基准上，TPF分别提升至5.47和5.86，TPS达1338。开源代码已发布，适用于资源受限场景。",
+      "brief": "DMax革新dLLM并行解码，速度提升2-3倍，质量不变，开源可用。",
+      "problem": "传统masked dLLM并行解码易积累错误，导致速度与质量难以兼顾。",
+      "why_it_matters": "dLLM正成为LLM高效推理新方向，此创新大幅提升其实用部署速度，值得AI研究者和工程师关注。",
+      "target_reader": "LLM推理优化工程师、dLLM研究者。",
+      "core_innovation": "On-Policy Uniform Training统一masked/uniform训练 + Soft Parallel Decoding在嵌入空间自精炼，避免错误积累。",
+      "highlights": [
+        "TPF在GSM8K提升2.68倍（2.04→5.47），MBPP提升2.16倍（2.71→5.86）",
+        "H200双卡下batch=1达1338 TPS，落地潜力强",
+        "开源代码：https://github.com/czg1225/DMax"
+      ],
+      "practicality": "高，开源易复现，基准验证充分，适用于生产级推理加速。",
+      "relevance_score": 9,
+      "tags": [
+        "diffusion",
+        "inference",
+        "dLLM",
+        "parallel decoding"
+      ],
+      "themes": [
+        "推理",
+        "扩散模型",
+        "高效解码"
+      ],
+      "selection_reason": "核心创新显著提升dLLM速度，契合用户关注的高效推理和开源模型关键词，落地潜力大值得每日重点。",
+      "summary_markdown": "**摘要**：DMax提出了一种高效的扩散语言模型（dLLM）并行解码新范式，通过On-Policy Uniform Training和Soft Parallel Decoding显著提升解码速度，同时保持生成质量。在GSM8K和MBPP基准上，TPF分别提升至5.47和5.86，TPS达1338。开源代码已发布，适用于资源受限场景。\n\n**核心创新**：On-Policy Uniform Training统一masked/uniform训练 + Soft Parallel Decoding在嵌入空间自精炼，避免错误积累。\n\n**实用性**：高，开源易复现，基准验证充分，适用于生产级推理加速。\n\n**相关性评分**：9/10\n\n**亮点**：\n- TPF在GSM8K提升2.68倍（2.04→5.47），MBPP提升2.16倍（2.71→5.86）\n- H200双卡下batch=1达1338 TPS，落地潜力强\n- 开源代码：https://github.com/czg1225/DMax",
+      "focus_hits": [
+        {
+          "keyword": "coding",
+          "weight": 2.6
+        },
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        },
+        {
+          "keyword": "inference",
+          "weight": 1.8
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "coding",
+      "personalized_score": 180.0,
+      "detail_path": "items/arxiv-dmax-aggressive-parallel-decoding-for-dllms.html",
+      "first_seen_at": "2026-04-10T01:21:36.797692+00:00",
+      "last_seen_at": "2026-04-10T01:25:05.410205+00:00",
+      "last_curated_at": "2026-04-10T01:25:05.410205+00:00",
+      "last_notified_at": "2026-04-10T01:25:05.410194+00:00"
     },
     {
       "id": "arxiv::http://arxiv.org/abs/2604.07274v1",
@@ -570,41 +807,41 @@
   ],
   "top_themes": [
     {
+      "theme": "推理",
+      "count": 4
+    },
+    {
       "theme": "RAG",
       "count": 4
     },
     {
-      "theme": "智能体",
-      "count": 4
-    },
-    {
       "theme": "编码",
-      "count": 3
-    },
-    {
-      "theme": "推理",
-      "count": 3
+      "count": 2
     },
     {
       "theme": "多模态",
       "count": 2
+    },
+    {
+      "theme": "智能体",
+      "count": 2
     }
   ],
   "highlights": [
+    {
+      "title": "SeLaR: Selective Latent Reasoning in Large Language Models",
+      "source": "arxiv",
+      "selection_reason": "核心创新针对潜在推理痛点，无训练高实用性，高度匹配用户关注reasoning、llm和agent关键词，值得每日重点关注。"
+    },
     {
       "title": "Appear2Meaning: A Cross-Cultural Benchmark for Structured Cultural Metadata Inference from Images",
       "source": "arxiv",
       "selection_reason": "它和你关注的 reasoning 方向重合度高，适合放进今天的论文精读候选。"
     },
     {
-      "title": "A Systematic Study of Retrieval Pipeline Design for Retrieval-Augmented Medical Question Answering",
+      "title": "Fundus-R1: Training a Fundus-Reading MLLM with Knowledge-Aware Reasoning on Public Data",
       "source": "arxiv",
-      "selection_reason": "它和你关注的 reasoning 方向重合度高，适合放进今天的论文精读候选。"
-    },
-    {
-      "title": "MoRight: Motion Control Done Right",
-      "source": "arxiv",
-      "selection_reason": "它和你关注的 reasoning 方向重合度高，适合放进今天的论文精读候选。"
+      "selection_reason": "核心创新解决医疗数据壁垒，高度匹配多模态/LLM/RAG关注，落地潜力强值得重点跟踪。"
     }
   ]
 }

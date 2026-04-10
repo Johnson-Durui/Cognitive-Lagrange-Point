@@ -17,6 +17,7 @@ from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 from fetchers.arxiv_fetcher import ArxivFetcher
 from fetchers.github_fetcher import GitHubFetcher
+from fetchers.news_fetcher import NewsFetcher
 from notifier import Notifier
 from summarizer import Summarizer
 
@@ -75,8 +76,10 @@ class DailyDigestApp:
             logger=logger,
         )
         self.arxiv_fetcher = ArxivFetcher(config["sources"]["arxiv"], all_keywords, logger=logger)
+        self.news_fetcher = NewsFetcher(config["sources"]["news"], all_keywords, logger=logger)
         self.summarizer = Summarizer(config["llm"], all_keywords, logger=logger)
         self.notifier = Notifier(config["notification"], logger=logger)
+        self.event_name = os.getenv("GITHUB_EVENT_NAME", "").strip()
         self.jinja_env = Environment(
             loader=FileSystemLoader(self.project_root / "templates"),
             autoescape=select_autoescape(["html", "xml"]),
@@ -93,13 +96,16 @@ class DailyDigestApp:
 
         github_since = now_bjt.date() - timedelta(days=int(self.config["sources"]["github"].get("created_lookback_days", 1)))
         arxiv_since = now_bjt - timedelta(days=int(self.config["sources"]["arxiv"].get("lookback_days", 2)))
+        news_since = now_bjt - timedelta(days=int(self.config["sources"]["news"].get("lookback_days", 2)))
 
         self.logger.info("Starting digest run for %s", today)
         github_candidates = self.github_fetcher.fetch_candidates(github_since)
         arxiv_candidates = self.arxiv_fetcher.fetch_candidates(arxiv_since.astimezone(timezone.utc))
+        news_candidates = self.news_fetcher.fetch_candidates(news_since.astimezone(timezone.utc))
 
         repo_candidates = self._filter_candidates(github_candidates, history)
         paper_candidates = self._filter_candidates(arxiv_candidates, history)
+        news_candidates = self._filter_candidates(news_candidates, history)
 
         repo_items = self.summarizer.summarize_repositories(
             repo_candidates,
@@ -111,23 +117,31 @@ class DailyDigestApp:
             top_k=int(self.config["sources"]["arxiv"].get("top_k", 6)),
             max_candidates=int(self.config["sources"]["arxiv"].get("max_candidates", 16)),
         )
+        news_items = self.summarizer.summarize_news(
+            news_candidates,
+            top_k=int(self.config["sources"]["news"].get("top_k", 6)),
+            max_candidates=int(self.config["sources"]["news"].get("max_candidates", 18)),
+        )
         repo_items = self._decorate_ranked_items(repo_items, source="github")
         paper_items = self._decorate_ranked_items(paper_items, source="arxiv")
+        news_items = self._decorate_ranked_items(news_items, source="news")
         repo_items = self._same_day_items(history, digest_date=today, source="github", fallback_items=repo_items)
         paper_items = self._same_day_items(history, digest_date=today, source="arxiv", fallback_items=paper_items)
+        news_items = self._same_day_items(history, digest_date=today, source="news", fallback_items=news_items)
 
-        digest = self._build_digest(today, generated_at, repo_items, paper_items)
+        digest = self._build_digest(today, generated_at, repo_items, paper_items, news_items)
         self._update_history(history, digest, notified_at=None)
         digest["reports"] = self._build_reports(history, digest)
         digest["markdown"] = self._render_markdown(digest)
-        digest["notification_markdown"] = self._render_notification_markdown(digest)
+        digest["notification_messages"] = self._render_notification_messages(digest)
+        digest["notification_markdown"] = "\n\n".join(message["content"] for message in digest["notification_messages"])
         self._persist_digest_files(history, digest)
         self._generate_site(history, digest)
 
         notify_result: dict[str, Any] = {"ok": False, "skipped": True}
         if not skip_notify:
             try:
-                notify_result = self.notifier.send_markdown(digest["title"], digest["notification_markdown"])
+                notify_result = self._send_notification_messages(history, digest)
                 if notify_result.get("ok"):
                     notified_at = datetime.now(timezone.utc).isoformat()
                     self._update_history(history, digest, notified_at=notified_at)
@@ -164,9 +178,11 @@ class DailyDigestApp:
 
     def _load_history(self) -> dict[str, Any]:
         if not self.history_path.exists():
-            return {"generated_at": None, "items": {}, "digests": []}
+            return {"generated_at": None, "items": {}, "digests": [], "notifications": {}}
         with self.history_path.open("r", encoding="utf-8") as handle:
-            return json.load(handle)
+            history = json.load(handle)
+        history.setdefault("notifications", {})
+        return history
 
     def _save_history(self, history: dict[str, Any]) -> None:
         with self.history_path.open("w", encoding="utf-8") as handle:
@@ -213,8 +229,9 @@ class DailyDigestApp:
         generated_at: str,
         repo_items: list[dict[str, Any]],
         paper_items: list[dict[str, Any]],
+        news_items: list[dict[str, Any]],
     ) -> dict[str, Any]:
-        total_items = len(repo_items) + len(paper_items)
+        total_items = len(repo_items) + len(paper_items) + len(news_items)
         empty_allowed = bool(self.runtime_config.get("keep_empty_digest", True))
         if total_items == 0 and not empty_allowed:
             raise RuntimeError("No items found and empty digests are disabled.")
@@ -226,14 +243,16 @@ class DailyDigestApp:
             "generated_at": generated_at,
             "repos": repo_items,
             "papers": paper_items,
-            "items": [*repo_items, *paper_items],
+            "news": news_items,
+            "items": [*repo_items, *paper_items, *news_items],
             "stats": {
                 "repo_count": len(repo_items),
                 "paper_count": len(paper_items),
+                "news_count": len(news_items),
                 "total_count": total_items,
             },
-            "sections": self._build_sections(repo_items, paper_items),
-            "theme_clusters": self._theme_clusters([*repo_items, *paper_items]),
+            "sections": self._build_sections(repo_items, paper_items, news_items),
+            "theme_clusters": self._theme_clusters([*repo_items, *paper_items, *news_items]),
             "empty_message": "今天没有筛出足够新的高相关项目，系统已保留历史站点内容。" if total_items == 0 else "",
         }
         return digest
@@ -277,10 +296,12 @@ class DailyDigestApp:
         if source == "github":
             score += min(float(item.get("stars", 0)), 50000) / 2500
             score += min(float(item.get("stars_today", 0)), 300) / 18
-        else:
+        elif source == "arxiv":
             category = item.get("primary_category") or ""
             if category in {"cs.AI", "cs.LG", "cs.CL", "cs.CV"}:
                 score += 8
+        else:
+            score += 6
 
         primary_match = focus_hits[0]["keyword"] if focus_hits else ""
         selection_reason = item.get("selection_reason") or self._default_selection_reason(item, source=source, primary_match=primary_match)
@@ -299,9 +320,24 @@ class DailyDigestApp:
             if primary_match:
                 return f"它和你关注的 {primary_match} 方向高度相关，适合优先看是否能直接复用。"
             return "它兼具热度和主题相关性，适合进入今天的 GitHub 观察清单。"
-        if primary_match:
+        if source == "arxiv" and primary_match:
             return f"它和你关注的 {primary_match} 方向重合度高，适合放进今天的论文精读候选。"
-        return "它代表了一个值得继续追踪的研究方向，适合先把核心方法抓住。"
+        if source == "arxiv":
+            return "它代表了一个值得继续追踪的研究方向，适合先把核心方法抓住。"
+        if primary_match:
+            return f"它和你关注的 {primary_match} 方向相关，适合作为今天的 AI 行业动态快速阅读。"
+        return "它能帮助你快速感知今天 AI 行业里最值得注意的动态。"
+
+    def _notification_already_sent(self, history: dict[str, Any], *, digest_date: str, section: str) -> bool:
+        if self.event_name != "schedule":
+            return False
+        return bool(history.get("notifications", {}).get(digest_date, {}).get(section))
+
+    def _record_notification_sent(self, history: dict[str, Any], *, digest_date: str, section: str, notified_at: str) -> None:
+        notifications = history.setdefault("notifications", {})
+        day_record = notifications.setdefault(digest_date, {})
+        day_record[section] = notified_at
+        self._save_history(history)
 
     def _infer_themes(self, item: dict[str, Any]) -> list[str]:
         text = " ".join(
@@ -327,8 +363,13 @@ class DailyDigestApp:
         themes = [label for label, keys in theme_rules if any(key in text for key in keys)]
         return themes[:3] or ["AI 前沿"]
 
-    def _build_sections(self, repo_items: list[dict[str, Any]], paper_items: list[dict[str, Any]]) -> dict[str, list[dict[str, Any]]]:
-        combined = [*repo_items, *paper_items]
+    def _build_sections(
+        self,
+        repo_items: list[dict[str, Any]],
+        paper_items: list[dict[str, Any]],
+        news_items: list[dict[str, Any]],
+    ) -> dict[str, list[dict[str, Any]]]:
+        combined = [*repo_items, *paper_items, *news_items]
         combined.sort(
             key=lambda item: (
                 item.get("personalized_score", 0),
@@ -344,6 +385,7 @@ class DailyDigestApp:
             "worth_scan": combined[must_watch_count : must_watch_count + worth_scan_count],
             "paper_spotlight": paper_items[:paper_spotlight_count],
             "repo_spotlight": repo_items[:paper_spotlight_count],
+            "news_spotlight": news_items[:paper_spotlight_count],
         }
 
     def _theme_clusters(self, items: list[dict[str, Any]]) -> list[dict[str, Any]]:
@@ -414,102 +456,96 @@ class DailyDigestApp:
         template = self.jinja_env.get_template("digest_template.jinja")
         return template.render(digest=digest)
 
-    def _render_notification_markdown(self, digest: dict[str, Any]) -> str:
-        """企业微信适合读详细扫描版：不放 URL，但尽量给到可快速判断的信息。"""
+    def _render_notification_messages(self, digest: dict[str, Any]) -> list[dict[str, Any]]:
         notification_config = self.config.get("notification", {})
-        target_chars = int(notification_config.get("target_chars", 3000))
         hard_max_chars = int(notification_config.get("hard_max_chars", 3900))
         wecom_max_bytes = int(notification_config.get("wecom_max_bytes", 3900))
-        title = digest["title"]
-        lines = [
-            f"## {digest['date']} AI Daily Digest",
-            f"GitHub {digest['stats']['repo_count']} 个 | arXiv {digest['stats']['paper_count']} 篇",
-            "",
-        ]
-
-        if digest["empty_message"]:
-            lines.append(digest["empty_message"])
-            return "\n".join(lines)
-
-        if digest["repos"]:
-            lines.append("### GitHub 精选")
-            for index, item in enumerate(digest["repos"], start=1):
-                lines.extend(self._notification_item_lines(index, item, kind="repo", detail_level="detailed"))
-            lines.append("")
-
-        if digest["papers"]:
-            lines.append("### arXiv 精选")
-            for index, item in enumerate(digest["papers"], start=1):
-                lines.extend(self._notification_item_lines(index, item, kind="paper", detail_level="detailed"))
-            lines.append("")
-
         site_url = self.website_config.get("base_url", "").strip()
-        if site_url:
-            lines.append(f"站点：{site_url}")
+        sections = [
+            ("github", "GitHub 精选", digest.get("repos", []), "repo"),
+            ("papers", "论文精选", digest.get("papers", []), "paper"),
+            ("news", "AI 前沿新闻", digest.get("news", []), "news"),
+        ]
+        messages: list[dict[str, Any]] = []
 
-        rendered = "\n".join(lines).strip()
-        if len(rendered) < target_chars:
-            rendered = self._expand_notification_markdown(digest, base_lines=lines, target_chars=target_chars, hard_max_chars=hard_max_chars)
-        if len(rendered) > hard_max_chars or not self._fits_wecom_markdown(title, rendered, wecom_max_bytes):
+        for section_key, section_title, items, kind in sections:
             lines = [
-                f"## {digest['date']} AI Daily Digest",
-                f"GitHub {digest['stats']['repo_count']} 个 | arXiv {digest['stats']['paper_count']} 篇",
+                f"## {digest['date']} · {section_title}",
+                f"共 {len(items)} 条",
                 "",
             ]
-            if digest["repos"]:
-                lines.append("### GitHub 精选")
-                for index, item in enumerate(digest["repos"], start=1):
-                    lines.extend(self._notification_item_lines(index, item, kind="repo", detail_level="medium"))
-                lines.append("")
-            if digest["papers"]:
-                lines.append("### arXiv 精选")
-                for index, item in enumerate(digest["papers"], start=1):
-                    lines.extend(self._notification_item_lines(index, item, kind="paper", detail_level="medium"))
-            rendered = "\n".join(lines).strip()
-        if len(rendered) > hard_max_chars or not self._fits_wecom_markdown(title, rendered, wecom_max_bytes):
-            lines = [
-                f"## {digest['date']} AI Daily Digest",
-                f"GitHub {digest['stats']['repo_count']} 个 | arXiv {digest['stats']['paper_count']} 篇",
-                "",
-            ]
-            if digest["repos"]:
-                lines.append("### GitHub 精选")
-                for index, item in enumerate(digest["repos"], start=1):
-                    lines.extend(self._notification_item_lines(index, item, kind="repo", detail_level="compact"))
-                lines.append("")
-            if digest["papers"]:
-                lines.append("### arXiv 精选")
-                for index, item in enumerate(digest["papers"], start=1):
-                    lines.extend(self._notification_item_lines(index, item, kind="paper", detail_level="compact"))
-            rendered = "\n".join(lines).strip()
-        return rendered
-
-    def _expand_notification_markdown(
-        self,
-        digest: dict[str, Any],
-        *,
-        base_lines: list[str],
-        target_chars: int,
-        hard_max_chars: int,
-    ) -> str:
-        """尽量把微信文案扩展到接近目标长度，但不碰企业微信上限。"""
-        lines = list(base_lines)
-        rendered = "\n".join(lines).strip()
-        if len(rendered) >= target_chars:
-            return rendered
-
-        if digest["repos"] or digest["papers"]:
-            lines.append("### 今日判断建议")
-            if digest["repos"]:
-                lines.append("- GitHub 侧更偏工具与工程落地，适合先看能否直接复用到你的工作流。")
-            if digest["papers"]:
-                lines.append("- 论文侧更偏研究趋势和方法进展，适合挑与你当前关注方向最接近的 2-3 篇深入。")
-            lines.append("")
+            if not items:
+                lines.append("今天这一栏暂无足够高质量内容。")
+            else:
+                for index, item in enumerate(items, start=1):
+                    lines.extend(self._notification_item_lines(index, item, kind=kind, detail_level="detailed"))
+            if site_url:
+                lines.extend(["", f"查看完整归档：{site_url}"])
             rendered = "\n".join(lines).strip()
 
-        if len(rendered) > hard_max_chars:
-            return rendered[:hard_max_chars]
-        return rendered
+            if len(rendered) > hard_max_chars or not self._fits_wecom_markdown(section_title, rendered, wecom_max_bytes):
+                lines = [
+                    f"## {digest['date']} · {section_title}",
+                    f"共 {len(items)} 条",
+                    "",
+                ]
+                if not items:
+                    lines.append("今天这一栏暂无足够高质量内容。")
+                else:
+                    for index, item in enumerate(items, start=1):
+                        lines.extend(self._notification_item_lines(index, item, kind=kind, detail_level="medium"))
+                rendered = "\n".join(lines).strip()
+
+            if len(rendered) > hard_max_chars or not self._fits_wecom_markdown(section_title, rendered, wecom_max_bytes):
+                lines = [
+                    f"## {digest['date']} · {section_title}",
+                    f"共 {len(items)} 条",
+                    "",
+                ]
+                if not items:
+                    lines.append("今天这一栏暂无足够高质量内容。")
+                else:
+                    for index, item in enumerate(items, start=1):
+                        lines.extend(self._notification_item_lines(index, item, kind=kind, detail_level="compact"))
+                rendered = "\n".join(lines).strip()
+
+            messages.append(
+                {
+                    "section": section_key,
+                    "title": f"{digest['title']} · {section_title}",
+                    "content": rendered,
+                }
+            )
+
+        return messages
+
+    def _send_notification_messages(self, history: dict[str, Any], digest: dict[str, Any]) -> dict[str, Any]:
+        results = []
+        all_ok = True
+        any_sent = False
+        for message in digest.get("notification_messages", []):
+            section = message["section"]
+            if self._notification_already_sent(history, digest_date=digest["date"], section=section):
+                results.append({"section": section, "ok": True, "skipped": True, "reason": "already_sent_for_schedule"})
+                continue
+            try:
+                response = self.notifier.send_markdown(message["title"], message["content"])
+                result = {"section": section, **response}
+                results.append(result)
+                if response.get("ok"):
+                    any_sent = True
+                    self._record_notification_sent(
+                        history,
+                        digest_date=digest["date"],
+                        section=section,
+                        notified_at=datetime.now(timezone.utc).isoformat(),
+                    )
+                else:
+                    all_ok = False
+            except Exception as exc:  # pragma: no cover - network/runtime dependent
+                results.append({"section": section, "ok": False, "error": str(exc)})
+                all_ok = False
+        return {"ok": all_ok and any(result.get("ok") for result in results), "results": results, "any_sent": any_sent}
 
     def _fits_wecom_markdown(self, title: str, content: str, max_bytes: int) -> bool:
         payload_text = f"# {title}\n\n{content}"
@@ -538,6 +574,8 @@ class DailyDigestApp:
     def _notification_title(self, item: dict[str, Any], *, kind: str) -> str:
         if kind == "repo":
             return item.get("name") or item.get("full_name") or item.get("title", "项目")
+        if kind == "news":
+            return self._trim_text(item.get("title", "AI 新闻"), 42)
         title = item.get("title", "论文")
         return self._trim_text(title, 34)
 
@@ -565,9 +603,7 @@ class DailyDigestApp:
         if not text:
             text = "值得加入今天的重点跟踪清单"
 
-        if kind == "repo" and not text.endswith(("。", "！", "？")):
-            text += "。"
-        if kind == "paper" and not text.endswith(("。", "！", "？")):
+        if kind in {"repo", "paper", "news"} and not text.endswith(("。", "！", "？")):
             text += "。"
         return self._trim_text(text, limit)
 
@@ -606,6 +642,11 @@ class DailyDigestApp:
                 text = "热度已经很高，建议先判断它是可直接上手的工具，还是更偏概念展示。"
             else:
                 text = "建议先看 README、使用方式和最近提交，再判断成熟度。"
+            return self._trim_text(text, limit)
+
+        if kind == "news":
+            source_name = item.get("source_name", "新闻源")
+            text = f"建议先把它当成今天的行业信号阅读，再决定要不要追原始报道。来源是 {source_name}。"
             return self._trim_text(text, limit)
 
         category = item.get("primary_category") or (item.get("categories") or [""])[0]
@@ -665,6 +706,13 @@ class DailyDigestApp:
         for keys, brief, followup in paper_rules:
             if all(key in text for key in keys):
                 return {"brief": brief, "followup": followup}
+
+        if kind == "news":
+            source_name = item.get("source_name", "新闻源")
+            return {
+                "brief": f"{source_name} 发布了一条值得关注的 AI 行业新闻",
+                "followup": "更适合作为判断行业方向、产品动作和竞争节奏的快速信号",
+            }
 
         category = item.get("primary_category") or (item.get("categories") or ["AI"])[0]
         return {

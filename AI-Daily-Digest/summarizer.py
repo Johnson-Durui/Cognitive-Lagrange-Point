@@ -44,6 +44,15 @@ class Summarizer:
     def summarize_paper(self, item: dict[str, Any]) -> dict[str, Any]:
         return self._summarize_single(item, kind="paper")
 
+    def summarize_news(
+        self,
+        items: list[dict[str, Any]],
+        *,
+        top_k: int,
+        max_candidates: int,
+    ) -> list[dict[str, Any]]:
+        return self._summarize_items(items, kind="news", top_k=top_k, max_candidates=max_candidates)
+
     def _summarize_items(
         self,
         items: list[dict[str, Any]],
@@ -161,7 +170,7 @@ class Summarizer:
                     "请重点评价：这个仓库是否代表一个值得追踪的新方向、实用工具或高势能开源项目。",
                 ]
             )
-        else:
+        elif kind == "paper":
             base.extend(
                 [
                     f"论文标题：{item.get('title', '')}",
@@ -169,6 +178,15 @@ class Summarizer:
                     f"分类：{', '.join(item.get('categories', []))}",
                     f"作者：{', '.join(item.get('authors', []))}",
                     "请重点评价：这篇论文的核心创新、落地潜力，以及是否值得加入每日重点关注列表。",
+                ]
+            )
+        elif kind == "news":
+            base.extend(
+                [
+                    f"新闻标题：{item.get('title', '')}",
+                    f"来源：{item.get('source_name', '')}",
+                    f"内容摘要：{item.get('description', '')}",
+                    "请重点评价：这条新闻对 AI 前沿趋势、产品方向或行业格局意味着什么。",
                 ]
             )
 
@@ -245,7 +263,7 @@ class Summarizer:
             ]
             themes = matched_tags or ["开源工具"]
             selection_reason = "它兼具热度和相关性，适合进入今天的开源观察清单。"
-        else:
+        elif kind == "paper":
             summary = (
                 f"{title} 是最近值得追踪的一篇 AI 论文。"
                 f"论文摘要显示：{short_description or '暂无摘要。'}"
@@ -263,6 +281,25 @@ class Summarizer:
             ]
             themes = matched_tags or [item.get("primary_category") or "研究进展"]
             selection_reason = "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
+        else:
+            source_name = item.get("source_name", "新闻源")
+            summary = (
+                f"{source_name} 的这条 AI 新闻值得关注。"
+                f"核心内容是：{short_description or '暂无更多摘要。'}"
+                "它更适合作为判断行业方向和产品动作的快速信号。"
+            )
+            brief = "一条值得加入今日 AI 前沿观察的行业新闻。"
+            problem = "它反映了 AI 产品、模型、资本或行业竞争格局中的新变化。"
+            why_it_matters = "这类新闻往往决定接下来一段时间最值得跟进的公司、技术和叙事方向。"
+            target_reader = "适合关注 AI 行业动态、产品发布和公司动作的人优先阅读。"
+            innovation = "新闻类条目更强调行业动向和趋势信号，而不是技术细节。"
+            practicality = "适合快速判断最近行业关注点，再决定是否继续追原文。"
+            highlights = [
+                f"来源: {source_name}",
+                "价值: 趋势判断",
+            ]
+            themes = matched_tags or ["AI 新闻"]
+            selection_reason = "它能帮助你快速感知今天 AI 行业里最值得注意的动态。"
 
         return {
             "summary": summary,
