@@ -80,7 +80,7 @@ async function main() {
         || hasSimQuestion
         || (questionText && questionText !== '正在生成追问...')
       );
-    }, null, { timeout: 120000 });
+    }, null, { timeout: 20000 });
   } catch (error) {
     waitTimedOut = true;
     console.warn('[decision_flicker_probe] waitForFunction timed out, continuing with current detection view snapshot.');

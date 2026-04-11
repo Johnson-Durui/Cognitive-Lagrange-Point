@@ -34,11 +34,14 @@ import {
   submitCurrentB1Answer,
   submitCurrentSimAnswer,
 } from './frontend/modules/engine-b.js';
-import { registerQuantumVibeOracle } from './frontend/modules/quantum-vibe-oracle.js';
+import { registerQuantumVibeOracle } from './frontend/modules/quantum-vibe-oracle-lazy.js';
 import './frontend/modules/ui-bridge.js';
 import { showView, closeDetail } from './frontend/modules/ui-handlers.js';
 
 const artDebugState = {
+  quantumModuleLoaded: false,
+  quantumLoadCount: 0,
+  quantumOpenCount: 0,
   divineModuleLoaded: false,
   divineLoadCount: 0,
   divineOpenCount: 0,
