@@ -1,88 +1,10 @@
 {
   "label": "周报",
   "window_days": 7,
-  "generated_at": "2026-04-16T14:24:55.542131+08:00",
-  "count": 64,
-  "summary": "近 7 天里，最集中的主题是 ai、agent、推理。",
+  "generated_at": "2026-04-17T14:23:08.654871+08:00",
+  "count": 40,
+  "summary": "近 7 天里，最集中的主题是 ai、agent、llm。",
   "top_items": [
-    {
-      "id": "arxiv::http://arxiv.org/abs/2604.08299v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "SeLaR: Selective Latent Reasoning in Large Language Models",
-      "html_url": "http://arxiv.org/abs/2604.08299v1",
-      "pdf_url": "https://arxiv.org/pdf/2604.08299v1",
-      "description": "Chain-of-Thought (CoT) has become a cornerstone of reasoning in large language models, yet its effectiveness is constrained by the limited expressiveness of discrete token sampling. Recent latent reasoning approaches attempt to alleviate this limitation by replacing discrete tokens with soft embeddings (probability-weighted mixtures of token embeddings) or hidden states, but they commonly suffer from two issues: (1) global activation injects perturbations into high-confidence steps, impairing reasoning stability; and (2) soft embeddings quickly collapse toward the highest-probability token, limiting exploration of alternative trajectories. To address these challenges, we propose SeLaR (Selective Latent Reasoning), a lightweight and training-free framework. SeLaR introduces an entropy-gated mechanism that activates soft embeddings only at low-confidence steps, while preserving discrete decoding at high-confidence steps. Additionally, we propose an entropy-aware contrastive regularization that pushes soft embeddings away from the dominant (highest-probability) token's direction, encouraging sustained exploration of multiple latent reasoning paths. Experiments on five reasoning benchmarks demonstrate that SeLaR consistently outperforms standard CoT and state-of-the-art training-free methods.",
-      "authors": [
-        "Renyu Fu",
-        "Guibo Luo"
-      ],
-      "categories": [
-        "cs.CL",
-        "cs.AI"
-      ],
-      "published_at": "2026-04-09T14:32:07+00:00",
-      "updated_at": "2026-04-09T14:32:07+00:00",
-      "primary_category": "cs.CL",
-      "heuristic_score": 17.536,
-      "summary": "SeLaR提出了一种无训练的轻量级框架，通过熵门控机制仅在低置信度步骤激活软嵌入，避免全局扰动和高置信步骤的稳定性问题。同时引入熵感知对比正则化，推动软嵌入远离主导token，促进多路径潜在推理探索。在五个推理基准上，SeLaR超越标准CoT和现有无训练方法。",
-      "brief": "SeLaR优化潜在推理，仅低置信步骤用软嵌入，提升LLM推理稳定性与探索性，无需训练即优于CoT。",
-      "problem": "现有潜在推理方法在高置信步骤引入扰动导致不稳定，且软嵌入易坍缩至最高概率token，限制推理路径探索。",
-      "why_it_matters": "提供无训练即用的推理增强方案，能立即提升LLM在复杂任务上的表现，推动agentic和reasoning应用落地。",
-      "target_reader": "关注LLM推理优化、agent开发者和研究者的AI从业者。",
-      "core_innovation": "熵门控选择性激活软嵌入+对比正则化防止坍缩，实现稳定多路径潜在推理。",
-      "highlights": [
-        "仅低置信步骤激活软嵌入，保高置信离散解码稳定性",
-        "熵感知正则化鼓励探索多条潜在推理路径",
-        "五个基准实验优于CoT和SOTA无训练方法"
-      ],
-      "practicality": "训练免费、即插即用，落地潜力高，适用于现有LLM推理pipeline。",
-      "relevance_score": 9,
-      "tags": [
-        "推理",
-        "LLM",
-        "潜在推理"
-      ],
-      "themes": [
-        "推理",
-        "LLM",
-        "agentic"
-      ],
-      "selection_reason": "核心创新针对潜在推理痛点，无训练高实用性，高度匹配用户关注reasoning、llm和agent关键词，值得每日重点关注。",
-      "summary_markdown": "**摘要**：SeLaR提出了一种无训练的轻量级框架，通过熵门控机制仅在低置信度步骤激活软嵌入，避免全局扰动和高置信步骤的稳定性问题。同时引入熵感知对比正则化，推动软嵌入远离主导token，促进多路径潜在推理探索。在五个推理基准上，SeLaR超越标准CoT和现有无训练方法。\n\n**核心创新**：熵门控选择性激活软嵌入+对比正则化防止坍缩，实现稳定多路径潜在推理。\n\n**实用性**：训练免费、即插即用，落地潜力高，适用于现有LLM推理pipeline。\n\n**相关性评分**：9/10\n\n**亮点**：\n- 仅低置信步骤激活软嵌入，保高置信离散解码稳定性\n- 熵感知正则化鼓励探索多条潜在推理路径\n- 五个基准实验优于CoT和SOTA无训练方法",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "coding",
-          "weight": 2.6
-        },
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 216.0,
-      "detail_path": "items/arxiv-selar-selective-latent-reasoning-in-large-language-models.html",
-      "first_seen_at": "2026-04-10T01:21:36.797692+00:00",
-      "last_seen_at": "2026-04-10T01:27:54.160983+00:00",
-      "last_curated_at": "2026-04-10T01:27:54.160983+00:00",
-      "last_notified_at": "2026-04-10T01:25:05.410194+00:00"
-    },
     {
       "id": "arxiv::http://arxiv.org/abs/2604.13019v1",
       "kind": "paper",
@@ -572,39 +494,44 @@
       "last_notified_at": null
     },
     {
-      "id": "arxiv::http://arxiv.org/abs/2604.07338v1",
+      "id": "arxiv::http://arxiv.org/abs/2604.14142v1",
       "kind": "paper",
       "source": "arxiv",
       "source_tags": [
         "latest"
       ],
-      "title": "Appear2Meaning: A Cross-Cultural Benchmark for Structured Cultural Metadata Inference from Images",
-      "html_url": "http://arxiv.org/abs/2604.07338v1",
-      "pdf_url": "https://arxiv.org/pdf/2604.07338v1",
-      "description": "Recent advances in vision-language models (VLMs) have improved image captioning for cultural heritage. However, inferring structured cultural metadata (e.g., creator, origin, period) from visual input remains underexplored. We introduce a multi-category, cross-cultural benchmark for this task and evaluate VLMs using an LLM-as-Judge framework that measures semantic alignment with reference annotations. To assess cultural reasoning, we report exact-match, partial-match, and attribute-level accuracy across cultural regions. Results show that models capture fragmented signals and exhibit substantial performance variation across cultures and metadata types, leading to inconsistent and weakly grounded predictions. These findings highlight the limitations of current VLMs in structured cultural metadata inference beyond visual perception.",
+      "title": "From $P(y|x)$ to $P(y)$: Investigating Reinforcement Learning in Pre-train Space",
+      "html_url": "http://arxiv.org/abs/2604.14142v1",
+      "pdf_url": "https://arxiv.org/pdf/2604.14142v1",
+      "description": "While reinforcement learning with verifiable rewards (RLVR) significantly enhances LLM reasoning by optimizing the conditional distribution P(y|x), its potential is fundamentally bounded by the base model's existing output distribution. Optimizing the marginal distribution P(y) in the Pre-train Space addresses this bottleneck by encoding reasoning ability and preserving broad exploration capacity. Yet, conventional pre-training relies on static corpora for passive learning, leading to a distribution shift that hinders targeted reasoning enhancement. In this paper, we introduce PreRL (Pre-train Space RL), which applies reward-driven online updates directly to P(y). We theoretically and empirically validate the strong gradient alignment between log P(y) and log P(y|x), establishing PreRL as a viable surrogate for standard RL. Furthermore, we uncover a critical mechanism: Negative Sample Reinforcement (NSR) within PreRL serves as an exceptionally effective driver for reasoning. NSR-PreRL rapidly prunes incorrect reasoning spaces while stimulating endogenous reflective behaviors, increasing transition and reflection thoughts by 14.89x and 6.54x, respectively. Leveraging these insights, we propose Dual Space RL (DSRL), a Policy Reincarnation strategy that initializes models with NSR-PreRL to expand the reasoning horizon before transitioning to standard RL for fine-grained optimization. Extensive experiments demonstrate that DSRL consistently outperforms strong baselines, proving that pre-train space pruning effectively steers the policy toward a refined correct reasoning subspace.",
       "authors": [
-        "Yuechen Jiang",
-        "Enze Zhang",
-        "Md Mohsinul Kabir",
-        "Qianqian Xie",
-        "Stavroula Golfomitsou",
-        "Konstantinos Arvanitis",
-        "Sophia Ananiadou"
+        "Yuqiao Tan",
+        "Minzheng Wang",
+        "Bo Liu",
+        "Zichen Liu",
+        "Tian Liang",
+        "Shizhu He",
+        "Jun Zhao",
+        "Kang Liu"
       ],
       "categories": [
-        "cs.CV",
-        "cs.CL",
-        "cs.MM"
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
       ],
-      "published_at": "2026-04-08T17:53:26+00:00",
-      "updated_at": "2026-04-08T17:53:26+00:00",
-      "primary_category": "cs.CV",
-      "heuristic_score": 19.352,
-      "summary": "Appear2Meaning: A Cross-Cultural Benchmark for Structured Cultural Metadata Inference from Images 是最近值得追踪的一篇 AI 论文。论文摘要显示：Recent advances in vision-language models (VLMs) have improved image captioning for cultural heritage. However, inferring structured cultural metadata (e.g., creator, origin, period) from visual input remains underexplored. We introduce a m...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "published_at": "2026-04-15T17:59:01+00:00",
+      "updated_at": "2026-04-15T17:59:01+00:00",
+      "primary_category": "cs.LG",
+      "heuristic_score": 17.9,
+      "summary": "From $P(y|x)$ to $P(y)$: Investigating Reinforcement Learning in Pre-train Space 是最近值得追踪的一篇 AI 论文。论文摘要显示：While reinforcement learning with verifiable rewards (RLVR) significantly enhances LLM reasoning by optimizing the conditional distribution P(y|x), its potential is fundamentally bounded by the base model's existing output distribution. Opt...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
       "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
       "highlights": [
-        "分类: cs.CV, cs.CL",
-        "作者数: 7"
+        "分类: cs.LG, cs.AI",
+        "作者数: 8"
       ],
       "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
       "relevance_score": 10,
@@ -614,13 +541,18 @@
         "rag",
         "model"
       ],
-      "summary_markdown": "**摘要**：Appear2Meaning: A Cross-Cultural Benchmark for Structured Cultural Metadata Inference from Images 是最近值得追踪的一篇 AI 论文。论文摘要显示：Recent advances in vision-language models (VLMs) have improved image captioning for cultural heritage. However, inferring structured cultural metadata (e.g., creator, origin, period) from visual input remains underexplored. We introduce a m...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV, cs.CL\n- 作者数: 7",
-      "detail_path": "items/arxiv-appear2meaning-a-cross-cultural-benchmark-for-structured-cultural-metadata-inference-from-.html",
-      "first_seen_at": "2026-04-09T09:24:46.894274+00:00",
-      "last_seen_at": "2026-04-09T15:30:41.892528+00:00",
-      "last_curated_at": "2026-04-09T15:30:41.892528+00:00",
-      "last_notified_at": "2026-04-09T11:52:43.203830+00:00",
+      "themes": [
+        "ai",
+        "llm",
+        "rag"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：From $P(y|x)$ to $P(y)$: Investigating Reinforcement Learning in Pre-train Space 是最近值得追踪的一篇 AI 论文。论文摘要显示：While reinforcement learning with verifiable rewards (RLVR) significantly enhances LLM reasoning by optimizing the conditional distribution P(y|x), its potential is fundamentally bounded by the base model's existing output distribution. Opt...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.LG, cs.AI\n- 作者数: 8",
       "focus_hits": [
+        {
+          "keyword": "coding",
+          "weight": 2.6
+        },
         {
           "keyword": "reasoning",
           "weight": 2.4
@@ -628,54 +560,113 @@
         {
           "keyword": "rag",
           "weight": 2.2
+        }
+      ],
+      "primary_match": "coding",
+      "personalized_score": 180.0,
+      "detail_path": "items/arxiv-from-p-y-x-to-p-y-investigating-reinforcement-learning-in-pre-train-space.html",
+      "first_seen_at": "2026-04-16T06:22:14.064597+00:00",
+      "last_seen_at": "2026-04-16T06:25:03.900685+00:00",
+      "last_curated_at": "2026-04-16T06:25:03.900685+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2604.08538v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "ParseBench: A Document Parsing Benchmark for AI Agents",
+      "html_url": "http://arxiv.org/abs/2604.08538v1",
+      "pdf_url": "https://arxiv.org/pdf/2604.08538v1",
+      "description": "AI agents are changing the requirements for document parsing. What matters is \\emph{semantic correctness}: parsed output must preserve the structure and meaning needed for autonomous decisions, including correct table structure, precise chart data, semantically meaningful formatting, and visual grounding. Existing benchmarks do not fully capture this setting for enterprise automation, relying on narrow document distributions and text-similarity metrics that miss agent-critical failures. We introduce \\textbf{ParseBench}, a benchmark of ${\\sim}2{,}000$ human-verified pages from enterprise documents spanning insurance, finance, and government, organized around five capability dimensions: tables, charts, content faithfulness, semantic formatting, and visual grounding. Across 14 methods spanning vision-language models, specialized document parsers, and LlamaParse, the benchmark reveals a fragmented capability landscape: no method is consistently strong across all five dimensions. LlamaParse Agentic achieves the highest overall score at \\agenticoverall\\%, and the benchmark highlights the remaining capability gaps across current systems. Dataset and evaluation code are available on \\href{https://huggingface.co/datasets/llamaindex/ParseBench}{HuggingFace} and \\href{https://github.com/run-llama/ParseBench}{GitHub}.",
+      "authors": [
+        "Boyang Zhang",
+        "Sebastián G. Acosta",
+        "Preston Carlson",
+        "Sacha Bron",
+        "Pierre-Loïc Doulcet",
+        "Simon Suo"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "published_at": "2026-04-09T17:59:36+00:00",
+      "updated_at": "2026-04-09T17:59:36+00:00",
+      "primary_category": "cs.CV",
+      "heuristic_score": 19.959,
+      "summary": "ParseBench: A Document Parsing Benchmark for AI Agents 是最近值得追踪的一篇 AI 论文。论文摘要显示：AI agents are changing the requirements for document parsing. What matters is \\emph{semantic correctness}: parsed output must preserve the structure and meaning needed for autonomous decisions, including correct table structure, precise cha...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CV",
+        "作者数: 6"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "agent",
+        "agentic",
+        "rag"
+      ],
+      "themes": [
+        "ai",
+        "agent",
+        "agentic"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：ParseBench: A Document Parsing Benchmark for AI Agents 是最近值得追踪的一篇 AI 论文。论文摘要显示：AI agents are changing the requirements for document parsing. What matters is \\emph{semantic correctness}: parsed output must preserve the structure and meaning needed for autonomous decisions, including correct table structure, precise cha...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV\n- 作者数: 6",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
         },
         {
-          "keyword": "inference",
-          "weight": 1.8
+          "keyword": "rag",
+          "weight": 2.2
         },
         {
           "keyword": "benchmark",
           "weight": 1.6
         }
       ],
-      "primary_match": "reasoning",
-      "personalized_score": 188.0,
-      "selection_reason": "它和你关注的 reasoning 方向重合度高，适合放进今天的论文精读候选。",
-      "themes": [
-        "编码",
-        "RAG",
-        "推理"
-      ]
+      "primary_match": "agent",
+      "personalized_score": 176.0,
+      "detail_path": "items/arxiv-parsebench-a-document-parsing-benchmark-for-ai-agents.html",
+      "first_seen_at": "2026-04-11T05:19:40.780585+00:00",
+      "last_seen_at": "2026-04-11T05:39:24.541875+00:00",
+      "last_curated_at": "2026-04-11T05:39:24.541875+00:00",
+      "last_notified_at": null
     }
   ],
   "top_themes": [
     {
       "theme": "ai",
-      "count": 6
+      "count": 8
     },
     {
       "theme": "agent",
-      "count": 3
+      "count": 4
     },
     {
-      "theme": "推理",
-      "count": 1
-    },
-    {
-      "theme": "LLM",
-      "count": 1
+      "theme": "llm",
+      "count": 2
     },
     {
       "theme": "gpt",
       "count": 1
+    },
+    {
+      "theme": "rag",
+      "count": 1
     }
   ],
   "highlights": [
-    {
-      "title": "SeLaR: Selective Latent Reasoning in Large Language Models",
-      "source": "arxiv",
-      "selection_reason": "核心创新针对潜在推理痛点，无训练高实用性，高度匹配用户关注reasoning、llm和agent关键词，值得每日重点关注。"
-    },
     {
       "title": "See, Point, Refine: Multi-Turn Approach to GUI Grounding with Visual Feedback",
       "source": "arxiv",
@@ -683,6 +674,11 @@
     },
     {
       "title": "Act Wisely: Cultivating Meta-Cognitive Tool Use in Agentic Multimodal Models",
+      "source": "arxiv",
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
+    },
+    {
+      "title": "Visual Preference Optimization with Rubric Rewards",
       "source": "arxiv",
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     }
