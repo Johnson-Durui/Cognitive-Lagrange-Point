@@ -1,9 +1,9 @@
 {
   "label": "月报",
   "window_days": 30,
-  "generated_at": "2026-04-20T15:30:04.113209+08:00",
-  "count": 78,
-  "summary": "近 30 天里，最集中的主题是 ai、agent、推理。",
+  "generated_at": "2026-04-21T14:23:28.372757+08:00",
+  "count": 85,
+  "summary": "近 30 天里，最集中的主题是 ai、agent、gpt。",
   "top_items": [
     {
       "id": "arxiv::http://arxiv.org/abs/2604.08299v1",
@@ -237,6 +237,88 @@
       "first_seen_at": "2026-04-11T05:19:40.780585+00:00",
       "last_seen_at": "2026-04-11T05:39:24.541875+00:00",
       "last_curated_at": "2026-04-11T05:39:24.541875+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2604.18584v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "MathNet: a Global Multimodal Benchmark for Mathematical Reasoning and Retrieval",
+      "html_url": "http://arxiv.org/abs/2604.18584v1",
+      "pdf_url": "https://arxiv.org/pdf/2604.18584v1",
+      "description": "Mathematical problem solving remains a challenging test of reasoning for large language and multimodal models, yet existing benchmarks are limited in size, language coverage, and task diversity. We introduce MathNet, a high-quality, large-scale, multimodal, and multilingual dataset of Olympiad-level math problems together with a benchmark for evaluating mathematical reasoning in generative models and mathematical retrieval in embedding-based systems. MathNet spans 47 countries, 17 languages, and two decades of competitions, comprising 30,676 expert-authored problems with solutions across diverse domains. In addition to the core dataset, we construct a retrieval benchmark consisting of mathematically equivalent and structurally similar problem pairs curated by human experts. MathNet supports three tasks: (i) Problem Solving, (ii) Math-Aware Retrieval, and (iii) Retrieval-Augmented Problem Solving. Experimental results show that even state-of-the-art reasoning models (78.4% for Gemini-3.1-Pro and 69.3% for GPT-5) remain challenged, while embedding models struggle to retrieve equivalent problems. We further show that retrieval-augmented generation performance is highly sensitive to retrieval quality; for example, DeepSeek-V3.2-Speciale achieves gains of up to 12%, obtaining the highest scores on the benchmark. MathNet provides the largest high-quality Olympiad dataset together with the first benchmark for evaluating mathematical problem retrieval, and we publicly release both the dataset and benchmark at https://mathnet.mit.edu.",
+      "authors": [
+        "Shaden Alshammari",
+        "Kevin Wen",
+        "Abrar Zainal",
+        "Mark Hamilton",
+        "Navid Safaei",
+        "Sultan Albarakati",
+        "William T. Freeman",
+        "Antonio Torralba"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.DL",
+        "cs.IR",
+        "cs.LG"
+      ],
+      "published_at": "2026-04-20T17:59:49+00:00",
+      "updated_at": "2026-04-20T17:59:49+00:00",
+      "primary_category": "cs.AI",
+      "heuristic_score": 20.239,
+      "summary": "MathNet: a Global Multimodal Benchmark for Mathematical Reasoning and Retrieval 是最近值得追踪的一篇 AI 论文。论文摘要显示：Mathematical problem solving remains a challenging test of reasoning for large language and multimodal models, yet existing benchmarks are limited in size, language coverage, and task diversity. We introduce MathNet, a high-quality, large-s...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.AI, cs.DL",
+        "作者数: 8"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "gpt",
+        "rag",
+        "multimodal"
+      ],
+      "themes": [
+        "ai",
+        "gpt",
+        "rag"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：MathNet: a Global Multimodal Benchmark for Mathematical Reasoning and Retrieval 是最近值得追踪的一篇 AI 论文。论文摘要显示：Mathematical problem solving remains a challenging test of reasoning for large language and multimodal models, yet existing benchmarks are limited in size, language coverage, and task diversity. We introduce MathNet, a high-quality, large-s...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI, cs.DL\n- 作者数: 8",
+      "focus_hits": [
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        },
+        {
+          "keyword": "multimodal",
+          "weight": 2.0
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "reasoning",
+      "personalized_score": 190.0,
+      "detail_path": "items/arxiv-mathnet-a-global-multimodal-benchmark-for-mathematical-reasoning-and-retrieval.html",
+      "first_seen_at": "2026-04-21T06:23:42.089185+00:00",
+      "last_seen_at": "2026-04-21T06:23:42.089185+00:00",
+      "last_curated_at": "2026-04-21T06:23:42.089185+00:00",
       "last_notified_at": null
     },
     {
@@ -570,92 +652,20 @@
       "last_seen_at": "2026-04-15T06:23:00.022434+00:00",
       "last_curated_at": "2026-04-15T06:23:00.022434+00:00",
       "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2604.07338v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "Appear2Meaning: A Cross-Cultural Benchmark for Structured Cultural Metadata Inference from Images",
-      "html_url": "http://arxiv.org/abs/2604.07338v1",
-      "pdf_url": "https://arxiv.org/pdf/2604.07338v1",
-      "description": "Recent advances in vision-language models (VLMs) have improved image captioning for cultural heritage. However, inferring structured cultural metadata (e.g., creator, origin, period) from visual input remains underexplored. We introduce a multi-category, cross-cultural benchmark for this task and evaluate VLMs using an LLM-as-Judge framework that measures semantic alignment with reference annotations. To assess cultural reasoning, we report exact-match, partial-match, and attribute-level accuracy across cultural regions. Results show that models capture fragmented signals and exhibit substantial performance variation across cultures and metadata types, leading to inconsistent and weakly grounded predictions. These findings highlight the limitations of current VLMs in structured cultural metadata inference beyond visual perception.",
-      "authors": [
-        "Yuechen Jiang",
-        "Enze Zhang",
-        "Md Mohsinul Kabir",
-        "Qianqian Xie",
-        "Stavroula Golfomitsou",
-        "Konstantinos Arvanitis",
-        "Sophia Ananiadou"
-      ],
-      "categories": [
-        "cs.CV",
-        "cs.CL",
-        "cs.MM"
-      ],
-      "published_at": "2026-04-08T17:53:26+00:00",
-      "updated_at": "2026-04-08T17:53:26+00:00",
-      "primary_category": "cs.CV",
-      "heuristic_score": 19.352,
-      "summary": "Appear2Meaning: A Cross-Cultural Benchmark for Structured Cultural Metadata Inference from Images 是最近值得追踪的一篇 AI 论文。论文摘要显示：Recent advances in vision-language models (VLMs) have improved image captioning for cultural heritage. However, inferring structured cultural metadata (e.g., creator, origin, period) from visual input remains underexplored. We introduce a m...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CV, cs.CL",
-        "作者数: 7"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "llm",
-        "rag",
-        "model"
-      ],
-      "summary_markdown": "**摘要**：Appear2Meaning: A Cross-Cultural Benchmark for Structured Cultural Metadata Inference from Images 是最近值得追踪的一篇 AI 论文。论文摘要显示：Recent advances in vision-language models (VLMs) have improved image captioning for cultural heritage. However, inferring structured cultural metadata (e.g., creator, origin, period) from visual input remains underexplored. We introduce a m...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV, cs.CL\n- 作者数: 7",
-      "detail_path": "items/arxiv-appear2meaning-a-cross-cultural-benchmark-for-structured-cultural-metadata-inference-from-.html",
-      "first_seen_at": "2026-04-09T09:24:46.894274+00:00",
-      "last_seen_at": "2026-04-09T15:30:41.892528+00:00",
-      "last_curated_at": "2026-04-09T15:30:41.892528+00:00",
-      "last_notified_at": "2026-04-09T11:52:43.203830+00:00",
-      "focus_hits": [
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "inference",
-          "weight": 1.8
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "reasoning",
-      "personalized_score": 188.0,
-      "selection_reason": "它和你关注的 reasoning 方向重合度高，适合放进今天的论文精读候选。",
-      "themes": [
-        "编码",
-        "RAG",
-        "推理"
-      ]
     }
   ],
   "top_themes": [
     {
       "theme": "ai",
-      "count": 6
+      "count": 7
     },
     {
       "theme": "agent",
       "count": 3
+    },
+    {
+      "theme": "gpt",
+      "count": 2
     },
     {
       "theme": "推理",
@@ -663,10 +673,6 @@
     },
     {
       "theme": "LLM",
-      "count": 1
-    },
-    {
-      "theme": "gpt",
       "count": 1
     }
   ],
