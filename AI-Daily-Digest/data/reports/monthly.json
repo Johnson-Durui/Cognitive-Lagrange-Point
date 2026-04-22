@@ -1,9 +1,9 @@
 {
   "label": "月报",
   "window_days": 30,
-  "generated_at": "2026-04-21T14:25:13.903235+08:00",
-  "count": 85,
-  "summary": "近 30 天里，最集中的主题是 ai、agent、gpt。",
+  "generated_at": "2026-04-22T14:22:56.063664+08:00",
+  "count": 96,
+  "summary": "近 30 天里，最集中的主题是 ai、agent、llm。",
   "top_items": [
     {
       "id": "arxiv::http://arxiv.org/abs/2604.08299v1",
@@ -237,6 +237,86 @@
       "first_seen_at": "2026-04-11T05:19:40.780585+00:00",
       "last_seen_at": "2026-04-11T05:39:24.541875+00:00",
       "last_curated_at": "2026-04-11T05:39:24.541875+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2604.19689v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "A-MAR: Agent-based Multimodal Art Retrieval for Fine-Grained Artwork Understanding",
+      "html_url": "http://arxiv.org/abs/2604.19689v1",
+      "pdf_url": "https://arxiv.org/pdf/2604.19689v1",
+      "description": "Understanding artworks requires multi-step reasoning over visual content and cultural, historical, and stylistic context. While recent multimodal large language models show promise in artwork explanation, they rely on implicit reasoning and internalized knowl- edge, limiting interpretability and explicit evidence grounding. We propose A-MAR, an Agent-based Multimodal Art Retrieval framework that explicitly conditions retrieval on structured reasoning plans. Given an artwork and a user query, A-MAR first decomposes the task into a structured reasoning plan that specifies the goals and evidence requirements for each step. Retrieval is then conditionedon this plan, enabling targeted evidence selection and supporting step-wise, grounded explanations. To evaluate agent-based multi- modal reasoning within the art domain, we introduce ArtCoT-QA. This diagnostic benchmark features multi-step reasoning chains for diverse art-related queries, enabling a granular analysis that extends beyond simple final answer accuracy. Experiments on SemArt and Artpedia show that A-MAR consistently outperforms static, non planned retrieval and strong MLLM baselines in final explanation quality, while evaluations on ArtCoT-QA further demonstrate its advantages in evidence grounding and multi-step reasoning ability. These results highlight the importance of reasoning-conditioned retrieval for knowledge-intensive multimodal understanding and position A-MAR as a step toward interpretable, goal-driven AI systems, with particular relevance to cultural industries. The code and data are available at: https://github.com/ShuaiWang97/A-MAR.",
+      "authors": [
+        "Shuai Wang",
+        "Hongyi Zhu",
+        "Jia-Hong Huang",
+        "Yixian Shen",
+        "Chengxi Zeng",
+        "Stevan Rudinac",
+        "Monika Kackovic",
+        "Nachoem Wijnberg",
+        "Marcel Worring"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "published_at": "2026-04-21T17:11:48+00:00",
+      "updated_at": "2026-04-21T17:11:48+00:00",
+      "primary_category": "cs.AI",
+      "heuristic_score": 20.3,
+      "summary": "A-MAR: Agent-based Multimodal Art Retrieval for Fine-Grained Artwork Understanding 是最近值得追踪的一篇 AI 论文。论文摘要显示：Understanding artworks requires multi-step reasoning over visual content and cultural, historical, and stylistic context. While recent multimodal large language models show promise in artwork explanation, they rely on implicit reasoning and...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.AI",
+        "作者数: 9"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "llm",
+        "agent",
+        "multimodal"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "agent"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：A-MAR: Agent-based Multimodal Art Retrieval for Fine-Grained Artwork Understanding 是最近值得追踪的一篇 AI 论文。论文摘要显示：Understanding artworks requires multi-step reasoning over visual content and cultural, historical, and stylistic context. While recent multimodal large language models show promise in artwork explanation, they rely on implicit reasoning and...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI\n- 作者数: 9",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "multimodal",
+          "weight": 2.0
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 198.0,
+      "detail_path": "items/arxiv-a-mar-agent-based-multimodal-art-retrieval-for-fine-grained-artwork-understanding.html",
+      "first_seen_at": "2026-04-22T06:23:01.716108+00:00",
+      "last_seen_at": "2026-04-22T06:23:01.716108+00:00",
+      "last_curated_at": "2026-04-22T06:23:01.716108+00:00",
       "last_notified_at": null
     },
     {
@@ -571,87 +651,6 @@
       "last_seen_at": "2026-04-11T05:39:24.541875+00:00",
       "last_curated_at": "2026-04-11T05:39:24.541875+00:00",
       "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2604.13018v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "Toward Autonomous Long-Horizon Engineering for ML Research",
-      "html_url": "http://arxiv.org/abs/2604.13018v1",
-      "pdf_url": "https://arxiv.org/pdf/2604.13018v1",
-      "description": "Autonomous AI research has advanced rapidly, but long-horizon ML research engineering remains difficult: agents must sustain coherent progress across task comprehension, environment setup, implementation, experimentation, and debugging over hours or days. We introduce AiScientist, a system for autonomous long-horizon engineering for ML research built on a simple principle: strong long-horizon performance requires both structured orchestration and durable state continuity. To this end, AiScientist combines hierarchical orchestration with a permission-scoped File-as-Bus workspace: a top-level Orchestrator maintains stage-level control through concise summaries and a workspace map, while specialized agents repeatedly re-ground on durable artifacts such as analyses, plans, code, and experimental evidence rather than relying primarily on conversational handoffs, yielding thin control over thick state. Across two complementary benchmarks, AiScientist improves PaperBench score by 10.54 points on average over the best matched baseline and achieves 81.82 Any Medal% on MLE-Bench Lite. Ablation studies further show that File-as-Bus protocol is a key driver of performance, reducing PaperBench by 6.41 points and MLE-Bench Lite by 31.82 points when removed. These results suggest that long-horizon ML research engineering is a systems problem of coordinating specialized work over durable project state, rather than a purely local reasoning problem.",
-      "authors": [
-        "Guoxin Chen",
-        "Jie Chen",
-        "Lei Chen",
-        "Jiale Zhao",
-        "Fanzhe Meng",
-        "Wayne Xin Zhao",
-        "Ruihua Song",
-        "Cheng Chen",
-        "Ji-Rong Wen",
-        "Kai Jia"
-      ],
-      "categories": [
-        "cs.CL"
-      ],
-      "published_at": "2026-04-14T17:55:16+00:00",
-      "updated_at": "2026-04-14T17:55:16+00:00",
-      "primary_category": "cs.CL",
-      "heuristic_score": 15.319,
-      "summary": "Toward Autonomous Long-Horizon Engineering for ML Research 是最近值得追踪的一篇 AI 论文。论文摘要显示：Autonomous AI research has advanced rapidly, but long-horizon ML research engineering remains difficult: agents must sustain coherent progress across task comprehension, environment setup, implementation, experimentation, and debugging over...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CL",
-        "作者数: 10"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 9,
-      "tags": [
-        "ai",
-        "agent",
-        "rag",
-        "benchmark"
-      ],
-      "themes": [
-        "ai",
-        "agent",
-        "rag"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：Toward Autonomous Long-Horizon Engineering for ML Research 是最近值得追踪的一篇 AI 论文。论文摘要显示：Autonomous AI research has advanced rapidly, but long-horizon ML research engineering remains difficult: agents must sustain coherent progress across task comprehension, environment setup, implementation, experimentation, and debugging over...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：9/10\n\n**亮点**：\n- 分类: cs.CL\n- 作者数: 10",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 190.0,
-      "detail_path": "items/arxiv-toward-autonomous-long-horizon-engineering-for-ml-research.html",
-      "first_seen_at": "2026-04-15T06:23:00.022434+00:00",
-      "last_seen_at": "2026-04-15T06:23:00.022434+00:00",
-      "last_curated_at": "2026-04-15T06:23:00.022434+00:00",
-      "last_notified_at": null
     }
   ],
   "top_themes": [
@@ -661,7 +660,11 @@
     },
     {
       "theme": "agent",
-      "count": 3
+      "count": 2
+    },
+    {
+      "theme": "llm",
+      "count": 2
     },
     {
       "theme": "gpt",
@@ -669,10 +672,6 @@
     },
     {
       "theme": "推理",
-      "count": 1
-    },
-    {
-      "theme": "LLM",
       "count": 1
     }
   ],

@@ -1,71 +1,76 @@
 {
   "label": "周报",
   "window_days": 7,
-  "generated_at": "2026-04-21T14:25:13.903235+08:00",
-  "count": 41,
-  "summary": "近 7 天里，最集中的主题是 ai、agent、gpt。",
+  "generated_at": "2026-04-22T14:22:56.063664+08:00",
+  "count": 44,
+  "summary": "近 7 天里，最集中的主题是 ai、llm、rag。",
   "top_items": [
     {
-      "id": "arxiv::http://arxiv.org/abs/2604.13019v1",
+      "id": "arxiv::http://arxiv.org/abs/2604.19689v1",
       "kind": "paper",
       "source": "arxiv",
       "source_tags": [
         "latest"
       ],
-      "title": "See, Point, Refine: Multi-Turn Approach to GUI Grounding with Visual Feedback",
-      "html_url": "http://arxiv.org/abs/2604.13019v1",
-      "pdf_url": "https://arxiv.org/pdf/2604.13019v1",
-      "description": "Computer Use Agents (CUAs) fundamentally rely on graphical user interface (GUI) grounding to translate language instructions into executable screen actions, but editing-level grounding in dense coding interfaces, where sub-pixel accuracy is required to interact with dense IDE elements, remains underexplored. Existing approaches typically rely on single-shot coordinate prediction, which lacks a mechanism for error correction and often fails in high-density interfaces. In this technical report, we conduct an empirical study of pixel-precise cursor localization in coding environments. Instead of a single-step execution, our agent engages in an iterative refinement process, utilizing visual feedback from previous attempts to reach the target element. This closed-loop grounding mechanism allows the agent to self-correct displacement errors and adapt to dynamic UI changes. We evaluate our approach across GPT-5.4, Claude, and Qwen on a suite of complex coding benchmarks, demonstrating that multi-turn refinement significantly outperforms state-of-the-art single-shot models in both click precision and overall task success rate. Our results suggest that iterative visual reasoning is a critical component for the next generation of reliable software engineering agents. Code: https://github.com/microsoft/precision-cua-bench.",
+      "title": "A-MAR: Agent-based Multimodal Art Retrieval for Fine-Grained Artwork Understanding",
+      "html_url": "http://arxiv.org/abs/2604.19689v1",
+      "pdf_url": "https://arxiv.org/pdf/2604.19689v1",
+      "description": "Understanding artworks requires multi-step reasoning over visual content and cultural, historical, and stylistic context. While recent multimodal large language models show promise in artwork explanation, they rely on implicit reasoning and internalized knowl- edge, limiting interpretability and explicit evidence grounding. We propose A-MAR, an Agent-based Multimodal Art Retrieval framework that explicitly conditions retrieval on structured reasoning plans. Given an artwork and a user query, A-MAR first decomposes the task into a structured reasoning plan that specifies the goals and evidence requirements for each step. Retrieval is then conditionedon this plan, enabling targeted evidence selection and supporting step-wise, grounded explanations. To evaluate agent-based multi- modal reasoning within the art domain, we introduce ArtCoT-QA. This diagnostic benchmark features multi-step reasoning chains for diverse art-related queries, enabling a granular analysis that extends beyond simple final answer accuracy. Experiments on SemArt and Artpedia show that A-MAR consistently outperforms static, non planned retrieval and strong MLLM baselines in final explanation quality, while evaluations on ArtCoT-QA further demonstrate its advantages in evidence grounding and multi-step reasoning ability. These results highlight the importance of reasoning-conditioned retrieval for knowledge-intensive multimodal understanding and position A-MAR as a step toward interpretable, goal-driven AI systems, with particular relevance to cultural industries. The code and data are available at: https://github.com/ShuaiWang97/A-MAR.",
       "authors": [
-        "Himangi Mittal",
-        "Gaurav Mittal",
-        "Nelson Daniel Troncoso",
-        "Yu Hu"
+        "Shuai Wang",
+        "Hongyi Zhu",
+        "Jia-Hong Huang",
+        "Yixian Shen",
+        "Chengxi Zeng",
+        "Stevan Rudinac",
+        "Monika Kackovic",
+        "Nachoem Wijnberg",
+        "Marcel Worring"
       ],
       "categories": [
-        "cs.CV"
+        "cs.AI"
       ],
-      "published_at": "2026-04-14T17:55:46+00:00",
-      "updated_at": "2026-04-14T17:55:46+00:00",
-      "primary_category": "cs.CV",
-      "heuristic_score": 17.566,
-      "summary": "See, Point, Refine: Multi-Turn Approach to GUI Grounding with Visual Feedback 是最近值得追踪的一篇 AI 论文。论文摘要显示：Computer Use Agents (CUAs) fundamentally rely on graphical user interface (GUI) grounding to translate language instructions into executable screen actions, but editing-level grounding in dense coding interfaces, where sub-pixel accuracy is...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "published_at": "2026-04-21T17:11:48+00:00",
+      "updated_at": "2026-04-21T17:11:48+00:00",
+      "primary_category": "cs.AI",
+      "heuristic_score": 20.3,
+      "summary": "A-MAR: Agent-based Multimodal Art Retrieval for Fine-Grained Artwork Understanding 是最近值得追踪的一篇 AI 论文。论文摘要显示：Understanding artworks requires multi-step reasoning over visual content and cultural, historical, and stylistic context. While recent multimodal large language models show promise in artwork explanation, they rely on implicit reasoning and...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
       "brief": "这是一篇值得加入今日论文雷达的最新工作。",
       "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
       "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
       "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
       "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
       "highlights": [
-        "分类: cs.CV",
-        "作者数: 4"
+        "分类: cs.AI",
+        "作者数: 9"
       ],
       "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
       "relevance_score": 10,
       "tags": [
         "ai",
+        "llm",
         "agent",
-        "gpt",
-        "model"
+        "multimodal"
       ],
       "themes": [
         "ai",
-        "agent",
-        "gpt"
+        "llm",
+        "agent"
       ],
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：See, Point, Refine: Multi-Turn Approach to GUI Grounding with Visual Feedback 是最近值得追踪的一篇 AI 论文。论文摘要显示：Computer Use Agents (CUAs) fundamentally rely on graphical user interface (GUI) grounding to translate language instructions into executable screen actions, but editing-level grounding in dense coding interfaces, where sub-pixel accuracy is...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV\n- 作者数: 4",
+      "summary_markdown": "**摘要**：A-MAR: Agent-based Multimodal Art Retrieval for Fine-Grained Artwork Understanding 是最近值得追踪的一篇 AI 论文。论文摘要显示：Understanding artworks requires multi-step reasoning over visual content and cultural, historical, and stylistic context. While recent multimodal large language models show promise in artwork explanation, they rely on implicit reasoning and...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI\n- 作者数: 9",
       "focus_hits": [
         {
           "keyword": "agent",
           "weight": 3.0
         },
         {
-          "keyword": "coding",
-          "weight": 2.6
-        },
-        {
           "keyword": "reasoning",
           "weight": 2.4
+        },
+        {
+          "keyword": "multimodal",
+          "weight": 2.0
         },
         {
           "keyword": "benchmark",
@@ -73,11 +78,11 @@
         }
       ],
       "primary_match": "agent",
-      "personalized_score": 204.0,
-      "detail_path": "items/arxiv-see-point-refine-multi-turn-approach-to-gui-grounding-with-visual-feedback.html",
-      "first_seen_at": "2026-04-15T06:23:00.022434+00:00",
-      "last_seen_at": "2026-04-15T06:23:00.022434+00:00",
-      "last_curated_at": "2026-04-15T06:23:00.022434+00:00",
+      "personalized_score": 198.0,
+      "detail_path": "items/arxiv-a-mar-agent-based-multimodal-art-retrieval-for-fine-grained-artwork-understanding.html",
+      "first_seen_at": "2026-04-22T06:23:01.716108+00:00",
+      "last_seen_at": "2026-04-22T06:23:01.716108+00:00",
+      "last_curated_at": "2026-04-22T06:23:01.716108+00:00",
       "last_notified_at": null
     },
     {
@@ -163,177 +168,6 @@
       "last_notified_at": null
     },
     {
-      "id": "arxiv::http://arxiv.org/abs/2604.13029v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "Visual Preference Optimization with Rubric Rewards",
-      "html_url": "http://arxiv.org/abs/2604.13029v1",
-      "pdf_url": "https://arxiv.org/pdf/2604.13029v1",
-      "description": "The effectiveness of Direct Preference Optimization (DPO) depends on preference data that reflect the quality differences that matter in multimodal tasks. Existing pipelines often rely on off-policy perturbations or coarse outcome-based signals, which are not well suited to fine-grained visual reasoning. We propose rDPO, a preference optimization framework based on instance-specific rubrics. For each image-instruction pair, we create a checklist-style rubric of essential and additional criteria to score responses from any possible policies. The instruction-rubric pool is built offline and reused during the construction of on-policy data. On public reward modeling benchmarks, rubric-based prompting massively improves a 30B-A3B judge and brings it close to GPT-5.4. On public downstream benchmarks, rubric-based filtering raises the macro average to 82.69, whereas outcome-based filtering drops it to 75.82 from 81.14. When evaluating scalability on a comprehensive benchmark, rDPO achieves 61.01, markedly outperforming the style-constrained baseline (52.36) and surpassing the 59.48 base model. Together, these results show that visual preference optimization benefits from combining on-policy data construction with instance-specific criterion-level feedback.",
-      "authors": [
-        "Ya-Qi Yu",
-        "Fangyu Hong",
-        "Xiangyang Qu",
-        "Hao Wang",
-        "Gaojie Wu",
-        "Qiaoyu Luo",
-        "Nuo Xu",
-        "Huixin Wang",
-        "Wuheng Xu",
-        "Yongxin Liao",
-        "Zihao Chen",
-        "Haonan Li",
-        "Ziming Li",
-        "Dezhi Peng",
-        "Minghui Liao",
-        "Jihao Wu",
-        "Haoyu Ren",
-        "Dandan Tu"
-      ],
-      "categories": [
-        "cs.CV",
-        "cs.AI"
-      ],
-      "published_at": "2026-04-14T17:58:22+00:00",
-      "updated_at": "2026-04-14T17:58:22+00:00",
-      "primary_category": "cs.CV",
-      "heuristic_score": 19.887,
-      "summary": "Visual Preference Optimization with Rubric Rewards 是最近值得追踪的一篇 AI 论文。论文摘要显示：The effectiveness of Direct Preference Optimization (DPO) depends on preference data that reflect the quality differences that matter in multimodal tasks. Existing pipelines often rely on off-policy perturbations or coarse outcome-based sig...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CV, cs.AI",
-        "作者数: 18"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "gpt",
-        "rag",
-        "multimodal"
-      ],
-      "themes": [
-        "ai",
-        "gpt",
-        "rag"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：Visual Preference Optimization with Rubric Rewards 是最近值得追踪的一篇 AI 论文。论文摘要显示：The effectiveness of Direct Preference Optimization (DPO) depends on preference data that reflect the quality differences that matter in multimodal tasks. Existing pipelines often rely on off-policy perturbations or coarse outcome-based sig...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV, cs.AI\n- 作者数: 18",
-      "focus_hits": [
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "multimodal",
-          "weight": 2.0
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "reasoning",
-      "personalized_score": 190.0,
-      "detail_path": "items/arxiv-visual-preference-optimization-with-rubric-rewards.html",
-      "first_seen_at": "2026-04-15T06:23:00.022434+00:00",
-      "last_seen_at": "2026-04-15T06:23:00.022434+00:00",
-      "last_curated_at": "2026-04-15T06:23:00.022434+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2604.13018v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "Toward Autonomous Long-Horizon Engineering for ML Research",
-      "html_url": "http://arxiv.org/abs/2604.13018v1",
-      "pdf_url": "https://arxiv.org/pdf/2604.13018v1",
-      "description": "Autonomous AI research has advanced rapidly, but long-horizon ML research engineering remains difficult: agents must sustain coherent progress across task comprehension, environment setup, implementation, experimentation, and debugging over hours or days. We introduce AiScientist, a system for autonomous long-horizon engineering for ML research built on a simple principle: strong long-horizon performance requires both structured orchestration and durable state continuity. To this end, AiScientist combines hierarchical orchestration with a permission-scoped File-as-Bus workspace: a top-level Orchestrator maintains stage-level control through concise summaries and a workspace map, while specialized agents repeatedly re-ground on durable artifacts such as analyses, plans, code, and experimental evidence rather than relying primarily on conversational handoffs, yielding thin control over thick state. Across two complementary benchmarks, AiScientist improves PaperBench score by 10.54 points on average over the best matched baseline and achieves 81.82 Any Medal% on MLE-Bench Lite. Ablation studies further show that File-as-Bus protocol is a key driver of performance, reducing PaperBench by 6.41 points and MLE-Bench Lite by 31.82 points when removed. These results suggest that long-horizon ML research engineering is a systems problem of coordinating specialized work over durable project state, rather than a purely local reasoning problem.",
-      "authors": [
-        "Guoxin Chen",
-        "Jie Chen",
-        "Lei Chen",
-        "Jiale Zhao",
-        "Fanzhe Meng",
-        "Wayne Xin Zhao",
-        "Ruihua Song",
-        "Cheng Chen",
-        "Ji-Rong Wen",
-        "Kai Jia"
-      ],
-      "categories": [
-        "cs.CL"
-      ],
-      "published_at": "2026-04-14T17:55:16+00:00",
-      "updated_at": "2026-04-14T17:55:16+00:00",
-      "primary_category": "cs.CL",
-      "heuristic_score": 15.319,
-      "summary": "Toward Autonomous Long-Horizon Engineering for ML Research 是最近值得追踪的一篇 AI 论文。论文摘要显示：Autonomous AI research has advanced rapidly, but long-horizon ML research engineering remains difficult: agents must sustain coherent progress across task comprehension, environment setup, implementation, experimentation, and debugging over...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CL",
-        "作者数: 10"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 9,
-      "tags": [
-        "ai",
-        "agent",
-        "rag",
-        "benchmark"
-      ],
-      "themes": [
-        "ai",
-        "agent",
-        "rag"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：Toward Autonomous Long-Horizon Engineering for ML Research 是最近值得追踪的一篇 AI 论文。论文摘要显示：Autonomous AI research has advanced rapidly, but long-horizon ML research engineering remains difficult: agents must sustain coherent progress across task comprehension, environment setup, implementation, experimentation, and debugging over...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：9/10\n\n**亮点**：\n- 分类: cs.CL\n- 作者数: 10",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 190.0,
-      "detail_path": "items/arxiv-toward-autonomous-long-horizon-engineering-for-ml-research.html",
-      "first_seen_at": "2026-04-15T06:23:00.022434+00:00",
-      "last_seen_at": "2026-04-15T06:23:00.022434+00:00",
-      "last_curated_at": "2026-04-15T06:23:00.022434+00:00",
-      "last_notified_at": null
-    },
-    {
       "id": "arxiv::http://arxiv.org/abs/2604.14142v1",
       "kind": "paper",
       "source": "arxiv",
@@ -411,62 +245,151 @@
       "last_notified_at": null
     },
     {
-      "id": "github::shanraisshan/claude-code-best-practice",
-      "kind": "repo",
-      "source": "github",
+      "id": "arxiv::http://arxiv.org/abs/2604.19710v1",
+      "kind": "paper",
+      "source": "arxiv",
       "source_tags": [
-        "trending"
+        "latest"
       ],
-      "name": "claude-code-best-practice",
-      "title": "shanraisshan/claude-code-best-practice",
-      "full_name": "shanraisshan/claude-code-best-practice",
-      "html_url": "https://github.com/shanraisshan/claude-code-best-practice",
-      "description": "from vibe coding to agentic engineering - practice makes claude perfect",
-      "stars": 44269,
-      "stars_today": 0,
-      "language": "HTML",
-      "topics": [],
-      "created_at": "",
-      "updated_at": "",
-      "heuristic_score": 17.8,
-      "summary": "shanraisshan/claude-code-best-practice 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：from vibe coding to agentic engineering - practice makes claude perfect结合关键词命中和热度信号，它适合加入今日重点观察列表。",
-      "brief": "这是一个值得快速关注的开源 AI 项目。",
-      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
-      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
-      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
-      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
+      "title": "SpanVLA: Efficient Action Bridging and Learning from Negative-Recovery Samples for Vision-Language-Action Model",
+      "html_url": "http://arxiv.org/abs/2604.19710v1",
+      "pdf_url": "https://arxiv.org/pdf/2604.19710v1",
+      "description": "Vision-Language-Action (VLA) models offer a promising autonomous driving paradigm for leveraging world knowledge and reasoning capabilities, especially in long-tail scenarios. However, existing VLA models often struggle with the high latency in action generation using an autoregressive generation framework and exhibit limited robustness. In this paper, we propose SpanVLA, a novel end-to-end autonomous driving framework, integrating an autoregressive reasoning and a flow-matching action expert. First, SpanVLA introduces an efficient bridge to leverage the vision and reasoning guidance of VLM to efficiently plan future trajectories using a flow-matching policy conditioned on historical trajectory initialization, which significantly reduces inference time. Second, to further improve the performance and robustness of the SpanVLA model, we propose a GRPO-based post-training method to enable the VLA model not only to learn from positive driving samples but also to learn how to avoid the typical negative behaviors and learn recovery behaviors. We further introduce mReasoning, a new real-world driving reasoning dataset, focusing on complex, reasoning-demanding scenarios and negative-recovery samples. Extensive experiments on the NAVSIM (v1 and v2) demonstrate the competitive performance of the SpanVLA model. Additionally, the qualitative results across diverse scenarios highlight the planning performance and robustness of our model.",
+      "authors": [
+        "Zewei Zhou",
+        "Ruining Yang",
+        "Xuewei",
+        "Qi",
+        "Yiluan Guo",
+        "Sherry X. Chen",
+        "Tao Feng",
+        "Kateryna Pistunova",
+        "Yishan Shen",
+        "Lili Su",
+        "Jiaqi Ma"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "published_at": "2026-04-21T17:34:19+00:00",
+      "updated_at": "2026-04-21T17:34:19+00:00",
+      "primary_category": "cs.CV",
+      "heuristic_score": 17.71,
+      "summary": "SpanVLA: Efficient Action Bridging and Learning from Negative-Recovery Samples for Vision-Language-Action Model 是最近值得追踪的一篇 AI 论文。论文摘要显示：Vision-Language-Action (VLA) models offer a promising autonomous driving paradigm for leveraging world knowledge and reasoning capabilities, especially in long-tail scenarios. However, existing VLA models often struggle with the high latenc...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
       "highlights": [
-        "Stars: 44269",
-        "语言: HTML"
+        "分类: cs.CV",
+        "作者数: 11"
       ],
-      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
       "relevance_score": 10,
       "tags": [
-        "agent",
-        "agentic"
+        "ai",
+        "rag",
+        "model",
+        "inference"
       ],
       "themes": [
-        "agent",
-        "agentic"
+        "ai",
+        "rag",
+        "model"
       ],
-      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：shanraisshan/claude-code-best-practice 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：from vibe coding to agentic engineering - practice makes claude perfect结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：10/10\n\n**亮点**：\n- Stars: 44269\n- 语言: HTML",
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：SpanVLA: Efficient Action Bridging and Learning from Negative-Recovery Samples for Vision-Language-Action Model 是最近值得追踪的一篇 AI 论文。论文摘要显示：Vision-Language-Action (VLA) models offer a promising autonomous driving paradigm for leveraging world knowledge and reasoning capabilities, especially in long-tail scenarios. However, existing VLA models often struggle with the high latenc...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV\n- 作者数: 11",
       "focus_hits": [
         {
-          "keyword": "agent",
-          "weight": 3.0
+          "keyword": "reasoning",
+          "weight": 2.4
         },
         {
-          "keyword": "coding",
-          "weight": 2.6
+          "keyword": "rag",
+          "weight": 2.2
+        },
+        {
+          "keyword": "inference",
+          "weight": 1.8
         }
       ],
-      "primary_match": "agent",
-      "personalized_score": 173.71,
-      "detail_path": "items/github-shanraisshan-claude-code-best-practice.html",
-      "first_seen_at": "2026-04-11T05:19:40.780585+00:00",
-      "last_seen_at": "2026-04-15T06:23:00.022434+00:00",
-      "last_curated_at": "2026-04-15T06:23:00.022434+00:00",
+      "primary_match": "reasoning",
+      "personalized_score": 172.0,
+      "detail_path": "items/arxiv-spanvla-efficient-action-bridging-and-learning-from-negative-recovery-samples-for-vision-l.html",
+      "first_seen_at": "2026-04-22T06:23:01.716108+00:00",
+      "last_seen_at": "2026-04-22T06:23:01.716108+00:00",
+      "last_curated_at": "2026-04-22T06:23:01.716108+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2604.19716v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Discovering a Shared Logical Subspace: Steering LLM Logical Reasoning via Alignment of Natural-Language and Symbolic Views",
+      "html_url": "http://arxiv.org/abs/2604.19716v1",
+      "pdf_url": "https://arxiv.org/pdf/2604.19716v1",
+      "description": "Large Language Models (LLMs) still struggle with multi-step logical reasoning. Existing approaches either purely refine the reasoning chain in natural language form or attach a symbolic solver as an external module. In this work, we instead ask whether LLMs contain a shared internal logical subspace that simultaneously aligns natural-language and symbolic-language views of the reasoning process. Our hypothesis is that this logical subspace captures logical reasoning capabilities in LLMs that are shared across views while remaining independent of surface forms. To verify this, we employ Canonical Correlation Analysis on the paired residual activations from natural-language and symbolic-language reasoning chains, learning a low-dimensional subspace with maximum cross-view correlation. Furthermore, we design a training-free approach that steers LLMs reasoning chain along this logical subspace, thereby leveraging the complementary reasoning signals from both views. Experiments on four logical reasoning benchmarks demonstrate the effectiveness of our approach, improving accuracy by up to 11 percentage points and generalizing well on out-of-domain problems.",
+      "authors": [
+        "Feihao Fang",
+        "My T. Thai",
+        "Yuanyuan Lei"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "published_at": "2026-04-21T17:42:54+00:00",
+      "updated_at": "2026-04-21T17:42:54+00:00",
+      "primary_category": "cs.CL",
+      "heuristic_score": 19.761,
+      "summary": "Discovering a Shared Logical Subspace: Steering LLM Logical Reasoning via Alignment of Natural-Language and Symbolic Views 是最近值得追踪的一篇 AI 论文。论文摘要显示：Large Language Models (LLMs) still struggle with multi-step logical reasoning. Existing approaches either purely refine the reasoning chain in natural language form or attach a symbolic solver as an external module. In this work, we instead...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CL",
+        "作者数: 3"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "llm",
+        "rag",
+        "model"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "rag"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：Discovering a Shared Logical Subspace: Steering LLM Logical Reasoning via Alignment of Natural-Language and Symbolic Views 是最近值得追踪的一篇 AI 论文。论文摘要显示：Large Language Models (LLMs) still struggle with multi-step logical reasoning. Existing approaches either purely refine the reasoning chain in natural language form or attach a symbolic solver as an external module. In this work, we instead...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL\n- 作者数: 3",
+      "focus_hits": [
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "reasoning",
+      "personalized_score": 170.0,
+      "detail_path": "items/arxiv-discovering-a-shared-logical-subspace-steering-llm-logical-reasoning-via-alignment-of-natu.html",
+      "first_seen_at": "2026-04-22T06:23:01.716108+00:00",
+      "last_seen_at": "2026-04-22T06:23:01.716108+00:00",
+      "last_curated_at": "2026-04-22T06:23:01.716108+00:00",
       "last_notified_at": null
     },
     {
@@ -629,33 +552,107 @@
       "last_seen_at": "2026-04-16T06:25:03.900685+00:00",
       "last_curated_at": "2026-04-16T06:25:03.900685+00:00",
       "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2604.19697v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Unveiling Fine-Grained Visual Traces: Evaluating Multimodal Interleaved Reasoning Chains in Multimodal STEM Tasks",
+      "html_url": "http://arxiv.org/abs/2604.19697v1",
+      "pdf_url": "https://arxiv.org/pdf/2604.19697v1",
+      "description": "Multimodal large language models (MLLMs) have shown promising reasoning abilities, yet evaluating their performance in specialized domains remains challenging. STEM reasoning is a particularly valuable testbed because it provides highly verifiable feedback, but existing benchmarks often permit unimodal shortcuts due to modality redundancy and focus mainly on final-answer accuracy, overlooking the reasoning process itself. To address this challenge, we introduce StepSTEM: a graduate-level benchmark of 283 problems across mathematics, physics, chemistry, biology, and engineering for fine-grained evaluation of cross-modal reasoning in MLLMs. StepSTEM is constructed through a rigorous curation pipeline that enforces strict complementarity between textual and visual inputs. We further propose a general step-level evaluation framework for both text-only chain-of-thought and interleaved image-text reasoning, using dynamic programming to align predicted reasoning steps with multiple reference solutions. Experiments across a wide range of models show that current MLLMs still rely heavily on textual reasoning, with even Gemini 3.1 Pro and Claude Opus 4.6 achieving only 38.29% accuracy. These results highlight substantial headroom for genuine cross-modal STEM reasoning and position StepSTEM as a benchmark for fine-grained evaluation of multimodal reasoning. Source code is available at https://github.com/lll-hhh/STEPSTEM.",
+      "authors": [
+        "Jing Jin",
+        "Hao Liu",
+        "Yan Bai",
+        "Yihang Lou",
+        "Zhenke Wang",
+        "Tianrun Yuan",
+        "Juntong Chen",
+        "Yongkang Zhu",
+        "Fanhu Zeng",
+        "Xuanyu Zhu",
+        "Yige Xu"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "published_at": "2026-04-21T17:17:37+00:00",
+      "updated_at": "2026-04-21T17:17:37+00:00",
+      "primary_category": "cs.CV",
+      "heuristic_score": 17.691,
+      "summary": "Unveiling Fine-Grained Visual Traces: Evaluating Multimodal Interleaved Reasoning Chains in Multimodal STEM Tasks 是最近值得追踪的一篇 AI 论文。论文摘要显示：Multimodal large language models (MLLMs) have shown promising reasoning abilities, yet evaluating their performance in specialized domains remains challenging. STEM reasoning is a particularly valuable testbed because it provides highly ver...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CV",
+        "作者数: 11"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "llm",
+        "multimodal",
+        "model"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "multimodal"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：Unveiling Fine-Grained Visual Traces: Evaluating Multimodal Interleaved Reasoning Chains in Multimodal STEM Tasks 是最近值得追踪的一篇 AI 论文。论文摘要显示：Multimodal large language models (MLLMs) have shown promising reasoning abilities, yet evaluating their performance in specialized domains remains challenging. STEM reasoning is a particularly valuable testbed because it provides highly ver...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV\n- 作者数: 11",
+      "focus_hits": [
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "multimodal",
+          "weight": 2.0
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "reasoning",
+      "personalized_score": 168.0,
+      "detail_path": "items/arxiv-unveiling-fine-grained-visual-traces-evaluating-multimodal-interleaved-reasoning-chains-in.html",
+      "first_seen_at": "2026-04-22T06:23:01.716108+00:00",
+      "last_seen_at": "2026-04-22T06:23:01.716108+00:00",
+      "last_curated_at": "2026-04-22T06:23:01.716108+00:00",
+      "last_notified_at": null
     }
   ],
   "top_themes": [
     {
       "theme": "ai",
-      "count": 7
-    },
-    {
-      "theme": "agent",
-      "count": 3
-    },
-    {
-      "theme": "gpt",
-      "count": 2
+      "count": 8
     },
     {
       "theme": "llm",
+      "count": 5
+    },
+    {
+      "theme": "rag",
       "count": 2
     },
     {
-      "theme": "agentic",
+      "theme": "gpt",
       "count": 1
     }
   ],
   "highlights": [
     {
-      "title": "See, Point, Refine: Multi-Turn Approach to GUI Grounding with Visual Feedback",
+      "title": "A-MAR: Agent-based Multimodal Art Retrieval for Fine-Grained Artwork Understanding",
       "source": "arxiv",
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     },
@@ -665,7 +662,7 @@
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     },
     {
-      "title": "Visual Preference Optimization with Rubric Rewards",
+      "title": "From $P(y|x)$ to $P(y)$: Investigating Reinforcement Learning in Pre-train Space",
       "source": "arxiv",
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     }
