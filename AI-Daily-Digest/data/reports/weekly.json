@@ -1,10 +1,170 @@
 {
   "label": "周报",
   "window_days": 7,
-  "generated_at": "2026-04-23T09:15:17.814304+08:00",
-  "count": 48,
-  "summary": "近 7 天里，最集中的主题是 ai、llm、rag。",
+  "generated_at": "2026-04-23T11:43:32.464319+08:00",
+  "count": 54,
+  "summary": "近 7 天里，最集中的主题是 ai、llm、agent。",
   "top_items": [
+    {
+      "id": "arxiv::http://arxiv.org/abs/2604.20795v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Automatic Ontology Construction Using LLMs as an External Layer of Memory, Verification, and Planning for Hybrid Intelligent Systems",
+      "html_url": "http://arxiv.org/abs/2604.20795v1",
+      "pdf_url": "https://arxiv.org/pdf/2604.20795v1",
+      "description": "This paper presents a hybrid architecture for intelligent systems in which large language models (LLMs) are extended with an external ontological memory layer. Instead of relying solely on parametric knowledge and vector-based retrieval (RAG), the proposed approach constructs and maintains a structured knowledge graph using RDF/OWL representations, enabling persistent, verifiable, and semantically grounded reasoning. The core contribution is an automated pipeline for ontology construction from heterogeneous data sources, including documents, APIs, and dialogue logs. The system performs entity recognition, relation extraction, normalization, and triple generation, followed by validation using SHACL and OWL constraints, and continuous graph updates. During inference, LLMs operate over a combined context that integrates vector-based retrieval with graph-based reasoning and external tool interaction. Experimental observations on planning tasks, including the Tower of Hanoi benchmark, indicate that ontology augmentation improves performance in multi-step reasoning scenarios compared to baseline LLM systems. In addition, the ontology layer enables formal validation of generated outputs, transforming the system into a generation-verification-correction pipeline. The proposed architecture addresses key limitations of current LLM-based systems, including lack of long-term memory, weak structural understanding, and limited reasoning capabilities. It provides a foundation for building agent-based systems, robotics applications, and enterprise AI solutions that require persistent knowledge, explainability, and reliable decision-making.",
+      "authors": [
+        "Pavel Salovskii",
+        "Iuliia Gorshkova"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "published_at": "2026-04-22T17:19:43+00:00",
+      "updated_at": "2026-04-22T17:19:43+00:00",
+      "primary_category": "cs.AI",
+      "heuristic_score": 25.1,
+      "summary": "Automatic Ontology Construction Using LLMs as an External Layer of Memory, Verification, and Planning for Hybrid Intelligent Systems 是最近值得追踪的一篇 AI 论文。论文摘要显示：This paper presents a hybrid architecture for intelligent systems in which large language models (LLMs) are extended with an external ontological memory layer. Instead of relying solely on parametric knowledge and vector-based retrieval (RA...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.AI",
+        "作者数: 2"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "llm",
+        "agent",
+        "rag"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "agent"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：Automatic Ontology Construction Using LLMs as an External Layer of Memory, Verification, and Planning for Hybrid Intelligent Systems 是最近值得追踪的一篇 AI 论文。论文摘要显示：This paper presents a hybrid architecture for intelligent systems in which large language models (LLMs) are extended with an external ontological memory layer. Instead of relying solely on parametric knowledge and vector-based retrieval (RA...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI\n- 作者数: 2",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        },
+        {
+          "keyword": "inference",
+          "weight": 1.8
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        },
+        {
+          "keyword": "robotics",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 234.0,
+      "detail_path": "items/arxiv-automatic-ontology-construction-using-llms-as-an-external-layer-of-memory-verification-and.html",
+      "first_seen_at": "2026-04-23T03:43:39.024812+00:00",
+      "last_seen_at": "2026-04-23T03:43:39.024812+00:00",
+      "last_curated_at": "2026-04-23T03:43:39.024812+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2604.20779v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "SWE-chat: Coding Agent Interactions From Real Users in the Wild",
+      "html_url": "http://arxiv.org/abs/2604.20779v1",
+      "pdf_url": "https://arxiv.org/pdf/2604.20779v1",
+      "description": "AI coding agents are being adopted at scale, yet we lack empirical evidence on how people actually use them and how much of their output is useful in practice. We present SWE-chat, the first large-scale dataset of real coding agent sessions collected from open-source developers in the wild. The dataset currently contains 6,000 sessions, comprising more than 63,000 user prompts and 355,000 agent tool calls. SWE-chat is a living dataset; our collection pipeline automatically and continually discovers and processes sessions from public repositories. Leveraging SWE-chat, we provide an initial empirical characterization of real-world coding agent usage and failure modes. We find that coding patterns are bimodal: in 41% of sessions, agents author virtually all committed code (\"vibe coding\"), while in 23%, humans write all code themselves. Despite rapidly improving capabilities, coding agents remain inefficient in natural settings. Just 44% of all agent-produced code survives into user commits, and agent-written code introduces more security vulnerabilities than code authored by humans. Furthermore, users push back against agent outputs -- through corrections, failure reports, and interruptions -- in 44% of all turns. By capturing complete interaction traces with human vs. agent code authorship attribution, SWE-chat provides an empirical foundation for moving beyond curated benchmarks towards an evidence-based understanding of how AI agents perform in real developer workflows.",
+      "authors": [
+        "Joachim Baumann",
+        "Vishakh Padmakumar",
+        "Xiang Li",
+        "John Yang",
+        "Diyi Yang",
+        "Sanmi Koyejo"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CY",
+        "cs.SE"
+      ],
+      "published_at": "2026-04-22T17:08:19+00:00",
+      "updated_at": "2026-04-22T17:08:19+00:00",
+      "primary_category": "cs.AI",
+      "heuristic_score": 17.767,
+      "summary": "SWE-chat: Coding Agent Interactions From Real Users in the Wild 是最近值得追踪的一篇 AI 论文。论文摘要显示：AI coding agents are being adopted at scale, yet we lack empirical evidence on how people actually use them and how much of their output is useful in practice. We present SWE-chat, the first large-scale dataset of real coding agent sessions...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.AI, cs.CY",
+        "作者数: 6"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "agent",
+        "rag",
+        "benchmark"
+      ],
+      "themes": [
+        "ai",
+        "agent",
+        "rag"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：SWE-chat: Coding Agent Interactions From Real Users in the Wild 是最近值得追踪的一篇 AI 论文。论文摘要显示：AI coding agents are being adopted at scale, yet we lack empirical evidence on how people actually use them and how much of their output is useful in practice. We present SWE-chat, the first large-scale dataset of real coding agent sessions...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI, cs.CY\n- 作者数: 6",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "coding",
+          "weight": 2.6
+        },
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 202.0,
+      "detail_path": "items/arxiv-swe-chat-coding-agent-interactions-from-real-users-in-the-wild.html",
+      "first_seen_at": "2026-04-23T03:43:39.024812+00:00",
+      "last_seen_at": "2026-04-23T03:43:39.024812+00:00",
+      "last_curated_at": "2026-04-23T03:43:39.024812+00:00",
+      "last_notified_at": null
+    },
     {
       "id": "arxiv::http://arxiv.org/abs/2604.19689v1",
       "kind": "paper",
@@ -83,6 +243,95 @@
       "first_seen_at": "2026-04-22T06:23:01.716108+00:00",
       "last_seen_at": "2026-04-22T06:25:50.559257+00:00",
       "last_curated_at": "2026-04-22T06:25:50.559257+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2604.20796v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "LLaDA2.0-Uni: Unifying Multimodal Understanding and Generation with Diffusion Large Language Model",
+      "html_url": "http://arxiv.org/abs/2604.20796v1",
+      "pdf_url": "https://arxiv.org/pdf/2604.20796v1",
+      "description": "We present LLaDA2.0-Uni, a unified discrete diffusion large language model (dLLM) that supports multimodal understanding and generation within a natively integrated framework. Its architecture combines a fully semantic discrete tokenizer, a MoE-based dLLM backbone, and a diffusion decoder. By discretizing continuous visual inputs via SigLIP-VQ, the model enables block-level masked diffusion for both text and vision inputs within the backbone, while the decoder reconstructs visual tokens into high-fidelity images. Inference efficiency is enhanced beyond parallel decoding through prefix-aware optimizations in the backbone and few-step distillation in the decoder. Supported by carefully curated large-scale data and a tailored multi-stage training pipeline, LLaDA2.0-Uni matches specialized VLMs in multimodal understanding while delivering strong performance in image generation and editing. Its native support for interleaved generation and reasoning establishes a promising and scalable paradigm for next-generation unified foundation models. Codes and models are available at https://github.com/inclusionAI/LLaDA2.0-Uni.",
+      "authors": [
+        "Inclusion AI",
+        "Tiwei Bie",
+        "Haoxing Chen",
+        "Tieyuan Chen",
+        "Zhenglin Cheng",
+        "Long Cui",
+        "Kai Gan",
+        "Zhicheng Huang",
+        "Zhenzhong Lan",
+        "Haoquan Li",
+        "Jianguo Li",
+        "Tao Lin",
+        "Qi Qin",
+        "Hongjun Wang",
+        "Xiaomei Wang",
+        "Haoyuan Wu",
+        "Yi Xin",
+        "Junbo Zhao"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "published_at": "2026-04-22T17:20:42+00:00",
+      "updated_at": "2026-04-22T17:20:42+00:00",
+      "primary_category": "cs.CV",
+      "heuristic_score": 22.113,
+      "summary": "LLaDA2.0-Uni: Unifying Multimodal Understanding and Generation with Diffusion Large Language Model 是最近值得追踪的一篇 AI 论文。论文摘要显示：We present LLaDA2.0-Uni, a unified discrete diffusion large language model (dLLM) that supports multimodal understanding and generation within a natively integrated framework. Its architecture combines a fully semantic discrete tokenizer, a...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CV",
+        "作者数: 18"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "llm",
+        "multimodal",
+        "diffusion"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "multimodal"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：LLaDA2.0-Uni: Unifying Multimodal Understanding and Generation with Diffusion Large Language Model 是最近值得追踪的一篇 AI 论文。论文摘要显示：We present LLaDA2.0-Uni, a unified discrete diffusion large language model (dLLM) that supports multimodal understanding and generation within a natively integrated framework. Its architecture combines a fully semantic discrete tokenizer, a...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV\n- 作者数: 18",
+      "focus_hits": [
+        {
+          "keyword": "coding",
+          "weight": 2.6
+        },
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "multimodal",
+          "weight": 2.0
+        },
+        {
+          "keyword": "inference",
+          "weight": 1.8
+        }
+      ],
+      "primary_match": "coding",
+      "personalized_score": 196.0,
+      "detail_path": "items/arxiv-llada2-0-uni-unifying-multimodal-understanding-and-generation-with-diffusion-large-languag.html",
+      "first_seen_at": "2026-04-23T03:43:39.024812+00:00",
+      "last_seen_at": "2026-04-23T03:43:39.024812+00:00",
+      "last_curated_at": "2026-04-23T03:43:39.024812+00:00",
       "last_notified_at": null
     },
     {
@@ -391,245 +640,6 @@
       "last_seen_at": "2026-04-22T06:25:50.559257+00:00",
       "last_curated_at": "2026-04-22T06:25:50.559257+00:00",
       "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2604.18530v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "OGER: A Robust Offline-Guided Exploration Reward for Hybrid Reinforcement Learning",
-      "html_url": "http://arxiv.org/abs/2604.18530v1",
-      "pdf_url": "https://arxiv.org/pdf/2604.18530v1",
-      "description": "Recent advancements in Reinforcement Learning with Verifiable Rewards (RLVR) have significantly improved Large Language Model (LLM) reasoning, yet models often struggle to explore novel trajectories beyond their initial latent space. While offline teacher guidance and entropy-driven strategies have been proposed to address this, they often lack deep integration or are constrained by the model's inherent capacity. In this paper, we propose OGER, a novel framework that unifies offline teacher guidance and online reinforcement learning through a specialized reward modeling lens. OGER employs multi-teacher collaborative training and constructs an auxiliary exploration reward that leverages both offline trajectories and the model's own entropy to incentivize autonomous exploration. Extensive experiments across mathematical and general reasoning benchmarks demonstrate that OGER significantly outperforms competitive baselines, achieving substantial gains in mathematical reasoning while maintaining robust generalization to out-of-domain tasks. We provide a comprehensive analysis of training dynamics and conduct detailed ablation studies to validate the effectiveness of our entropy-aware reward modulation. Our code is available at https://github.com/ecoli-hit/OGER.git.",
-      "authors": [
-        "Xinyu Ma",
-        "Mingzhou Xu",
-        "Xuebo Liu",
-        "Chang Jin",
-        "Qiang Wang",
-        "Derek F. Wong",
-        "Min Zhang"
-      ],
-      "categories": [
-        "cs.AI"
-      ],
-      "published_at": "2026-04-20T17:26:00+00:00",
-      "updated_at": "2026-04-20T17:26:00+00:00",
-      "primary_category": "cs.AI",
-      "heuristic_score": 19.9,
-      "summary": "OGER: A Robust Offline-Guided Exploration Reward for Hybrid Reinforcement Learning 是最近值得追踪的一篇 AI 论文。论文摘要显示：Recent advancements in Reinforcement Learning with Verifiable Rewards (RLVR) have significantly improved Large Language Model (LLM) reasoning, yet models often struggle to explore novel trajectories beyond their initial latent space. While ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.AI",
-        "作者数: 7"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "llm",
-        "rag",
-        "model"
-      ],
-      "themes": [
-        "ai",
-        "llm",
-        "rag"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：OGER: A Robust Offline-Guided Exploration Reward for Hybrid Reinforcement Learning 是最近值得追踪的一篇 AI 论文。论文摘要显示：Recent advancements in Reinforcement Learning with Verifiable Rewards (RLVR) have significantly improved Large Language Model (LLM) reasoning, yet models often struggle to explore novel trajectories beyond their initial latent space. While ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI\n- 作者数: 7",
-      "focus_hits": [
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "reasoning",
-      "personalized_score": 170.0,
-      "detail_path": "items/arxiv-oger-a-robust-offline-guided-exploration-reward-for-hybrid-reinforcement-learning.html",
-      "first_seen_at": "2026-04-21T06:23:42.089185+00:00",
-      "last_seen_at": "2026-04-21T06:25:38.784192+00:00",
-      "last_curated_at": "2026-04-21T06:25:38.784192+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2604.14144v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "SpatialEvo: Self-Evolving Spatial Intelligence via Deterministic Geometric Environments",
-      "html_url": "http://arxiv.org/abs/2604.14144v1",
-      "pdf_url": "https://arxiv.org/pdf/2604.14144v1",
-      "description": "Spatial reasoning over three-dimensional scenes is a core capability for embodied intelligence, yet continuous model improvement remains bottlenecked by the cost of geometric annotation. The self-evolving paradigm offers a promising path, but its reliance on model consensus to construct pseudo-labels causes training to reinforce rather than correct the model's own geometric errors. We identify a property unique to 3D spatial reasoning that circumvents this limitation: ground truth is a deterministic consequence of the underlying geometry, computable exactly from point clouds and camera poses without any model involvement. Building on this insight, we present SpatialEvo, a self-evolving framework for 3D spatial reasoning, centered on the Deterministic Geometric Environment (DGE). The DGE formalizes 16 spatial reasoning task categories under explicit geometric validation rules and converts unannotated 3D scenes into zero-noise interactive oracles, replacing model consensus with objective physical feedback. A single shared-parameter policy co-evolves across questioner and solver roles under DGE constraints: the questioner generates physically valid spatial questions grounded in scene observations, while the solver derives precise answers against DGE-verified ground truth. A task-adaptive scheduler endogenously concentrates training on the model's weakest categories, producing a dynamic curriculum without manual design. Experiments across nine benchmarks demonstrate that SpatialEvo achieves the highest average score at both 3B and 7B scales, with consistent gains on spatial reasoning benchmarks and no degradation on general visual understanding.",
-      "authors": [
-        "Dinging Li",
-        "Yingxiu Zhao",
-        "Xinrui Cheng",
-        "Kangheng Lin",
-        "Hongbo Peng",
-        "Hongxing Li",
-        "Zixuan Wang",
-        "Yuhong Dai",
-        "Haodong Li",
-        "Jia Wang",
-        "Yukang Shi",
-        "Liang Zhao",
-        "Jianjian Sun",
-        "Zheng Ge",
-        "Xiangyu Zhang",
-        "Weiming Lu",
-        "Jun Xiao",
-        "Yueting Zhuang",
-        "Yongliang Shen"
-      ],
-      "categories": [
-        "cs.CV",
-        "cs.CL"
-      ],
-      "published_at": "2026-04-15T17:59:12+00:00",
-      "updated_at": "2026-04-15T17:59:12+00:00",
-      "primary_category": "cs.CV",
-      "heuristic_score": 17.9,
-      "summary": "SpatialEvo: Self-Evolving Spatial Intelligence via Deterministic Geometric Environments 是最近值得追踪的一篇 AI 论文。论文摘要显示：Spatial reasoning over three-dimensional scenes is a core capability for embodied intelligence, yet continuous model improvement remains bottlenecked by the cost of geometric annotation. The self-evolving paradigm offers a promising path, b...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CV, cs.CL",
-        "作者数: 19"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "rag",
-        "model",
-        "benchmark"
-      ],
-      "themes": [
-        "ai",
-        "rag",
-        "model"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：SpatialEvo: Self-Evolving Spatial Intelligence via Deterministic Geometric Environments 是最近值得追踪的一篇 AI 论文。论文摘要显示：Spatial reasoning over three-dimensional scenes is a core capability for embodied intelligence, yet continuous model improvement remains bottlenecked by the cost of geometric annotation. The self-evolving paradigm offers a promising path, b...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV, cs.CL\n- 作者数: 19",
-      "focus_hits": [
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "reasoning",
-      "personalized_score": 170.0,
-      "detail_path": "items/arxiv-spatialevo-self-evolving-spatial-intelligence-via-deterministic-geometric-environments.html",
-      "first_seen_at": "2026-04-16T06:22:14.064597+00:00",
-      "last_seen_at": "2026-04-16T06:25:03.900685+00:00",
-      "last_curated_at": "2026-04-16T06:25:03.900685+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2604.19697v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "Unveiling Fine-Grained Visual Traces: Evaluating Multimodal Interleaved Reasoning Chains in Multimodal STEM Tasks",
-      "html_url": "http://arxiv.org/abs/2604.19697v1",
-      "pdf_url": "https://arxiv.org/pdf/2604.19697v1",
-      "description": "Multimodal large language models (MLLMs) have shown promising reasoning abilities, yet evaluating their performance in specialized domains remains challenging. STEM reasoning is a particularly valuable testbed because it provides highly verifiable feedback, but existing benchmarks often permit unimodal shortcuts due to modality redundancy and focus mainly on final-answer accuracy, overlooking the reasoning process itself. To address this challenge, we introduce StepSTEM: a graduate-level benchmark of 283 problems across mathematics, physics, chemistry, biology, and engineering for fine-grained evaluation of cross-modal reasoning in MLLMs. StepSTEM is constructed through a rigorous curation pipeline that enforces strict complementarity between textual and visual inputs. We further propose a general step-level evaluation framework for both text-only chain-of-thought and interleaved image-text reasoning, using dynamic programming to align predicted reasoning steps with multiple reference solutions. Experiments across a wide range of models show that current MLLMs still rely heavily on textual reasoning, with even Gemini 3.1 Pro and Claude Opus 4.6 achieving only 38.29% accuracy. These results highlight substantial headroom for genuine cross-modal STEM reasoning and position StepSTEM as a benchmark for fine-grained evaluation of multimodal reasoning. Source code is available at https://github.com/lll-hhh/STEPSTEM.",
-      "authors": [
-        "Jing Jin",
-        "Hao Liu",
-        "Yan Bai",
-        "Yihang Lou",
-        "Zhenke Wang",
-        "Tianrun Yuan",
-        "Juntong Chen",
-        "Yongkang Zhu",
-        "Fanhu Zeng",
-        "Xuanyu Zhu",
-        "Yige Xu"
-      ],
-      "categories": [
-        "cs.CV"
-      ],
-      "published_at": "2026-04-21T17:17:37+00:00",
-      "updated_at": "2026-04-21T17:17:37+00:00",
-      "primary_category": "cs.CV",
-      "heuristic_score": 17.691,
-      "summary": "Unveiling Fine-Grained Visual Traces: Evaluating Multimodal Interleaved Reasoning Chains in Multimodal STEM Tasks 是最近值得追踪的一篇 AI 论文。论文摘要显示：Multimodal large language models (MLLMs) have shown promising reasoning abilities, yet evaluating their performance in specialized domains remains challenging. STEM reasoning is a particularly valuable testbed because it provides highly ver...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CV",
-        "作者数: 11"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "llm",
-        "multimodal",
-        "model"
-      ],
-      "themes": [
-        "ai",
-        "llm",
-        "multimodal"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：Unveiling Fine-Grained Visual Traces: Evaluating Multimodal Interleaved Reasoning Chains in Multimodal STEM Tasks 是最近值得追踪的一篇 AI 论文。论文摘要显示：Multimodal large language models (MLLMs) have shown promising reasoning abilities, yet evaluating their performance in specialized domains remains challenging. STEM reasoning is a particularly valuable testbed because it provides highly ver...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV\n- 作者数: 11",
-      "focus_hits": [
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "multimodal",
-          "weight": 2.0
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "reasoning",
-      "personalized_score": 168.0,
-      "detail_path": "items/arxiv-unveiling-fine-grained-visual-traces-evaluating-multimodal-interleaved-reasoning-chains-in.html",
-      "first_seen_at": "2026-04-22T06:23:01.716108+00:00",
-      "last_seen_at": "2026-04-22T06:25:50.559257+00:00",
-      "last_curated_at": "2026-04-22T06:25:50.559257+00:00",
-      "last_notified_at": null
     }
   ],
   "top_themes": [
@@ -642,27 +652,31 @@
       "count": 5
     },
     {
-      "theme": "rag",
-      "count": 2
+      "theme": "agent",
+      "count": 1
     },
     {
       "theme": "gpt",
+      "count": 1
+    },
+    {
+      "theme": "rag",
       "count": 1
     }
   ],
   "highlights": [
     {
+      "title": "Automatic Ontology Construction Using LLMs as an External Layer of Memory, Verification, and Planning for Hybrid Intelligent Systems",
+      "source": "arxiv",
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
+    },
+    {
+      "title": "SWE-chat: Coding Agent Interactions From Real Users in the Wild",
+      "source": "arxiv",
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
+    },
+    {
       "title": "A-MAR: Agent-based Multimodal Art Retrieval for Fine-Grained Artwork Understanding",
-      "source": "arxiv",
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
-    },
-    {
-      "title": "MathNet: a Global Multimodal Benchmark for Mathematical Reasoning and Retrieval",
-      "source": "arxiv",
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
-    },
-    {
-      "title": "From $P(y|x)$ to $P(y)$: Investigating Reinforcement Learning in Pre-train Space",
       "source": "arxiv",
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     }
