@@ -1,6 +1,459 @@
 {
-  "generated_at": "2026-04-28T01:24:49.502089+00:00",
+  "generated_at": "2026-04-28T04:02:41.711670+00:00",
   "items": [
+    {
+      "id": "arxiv::http://arxiv.org/abs/2604.24698v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "The Chameleon's Limit: Investigating Persona Collapse and Homogenization in Large Language Models",
+      "html_url": "http://arxiv.org/abs/2604.24698v1",
+      "pdf_url": "https://arxiv.org/pdf/2604.24698v1",
+      "description": "Applications based on large language models (LLMs), such as multi-agent simulations, require population diversity among agents. We identify a pervasive failure mode we term \\emph{Persona Collapse}: agents each assigned a distinct profile nonetheless converge into a narrow behavioral mode, producing a homogeneous simulated population. To quantify persona collapse, we propose a framework that measures how much of the persona space a population occupies (Coverage), how evenly agents spread across it (Uniformity), and how rich the resulting behavioral patterns are (Complexity). Evaluating ten LLMs on personality simulation (BFI-44), moral reasoning, and self-introduction, we observe persona collapse along two axes: (1) Dimensions: a model can appear diverse on one axis yet structurally degenerate on another, and (2) Domains: the same model may collapse the most in personality yet be the most diverse in moral reasoning. Furthermore, item-level diagnostics reveal that behavioral variation tracks coarse demographic stereotypes rather than the fine-grained individual differences specified in each persona. Counter-intuitively, \\textbf{the models achieving the highest per-persona fidelity consistently produce the most stereotyped populations}. We release our toolkit and data to support population-level evaluation of LLMs.",
+      "authors": [
+        "Yunze Xiao",
+        "Vivienne J. Zhang",
+        "Chenghao Yang",
+        "Ningshan Ma",
+        "Weihao Xuan",
+        "Jen-tse Huang"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "published_at": "2026-04-27T17:01:48+00:00",
+      "updated_at": "2026-04-27T17:01:48+00:00",
+      "primary_category": "cs.CL",
+      "heuristic_score": 17.566,
+      "summary": "The Chameleon's Limit: Investigating Persona Collapse and Homogenization in Large Language Models 是最近值得追踪的一篇 AI 论文。论文摘要显示：Applications based on large language models (LLMs), such as multi-agent simulations, require population diversity among agents. We identify a pervasive failure mode we term \\emph{Persona Collapse}: agents each assigned a distinct profile no...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CL",
+        "作者数: 6"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "llm",
+        "agent",
+        "rag"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "agent"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：The Chameleon's Limit: Investigating Persona Collapse and Homogenization in Large Language Models 是最近值得追踪的一篇 AI 论文。论文摘要显示：Applications based on large language models (LLMs), such as multi-agent simulations, require population diversity among agents. We identify a pervasive failure mode we term \\emph{Persona Collapse}: agents each assigned a distinct profile no...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL\n- 作者数: 6",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 184.0,
+      "detail_path": "items/arxiv-the-chameleon-s-limit-investigating-persona-collapse-and-homogenization-in-large-language-.html",
+      "first_seen_at": "2026-04-28T04:02:41.711670+00:00",
+      "last_seen_at": "2026-04-28T04:02:41.711670+00:00",
+      "last_curated_at": "2026-04-28T04:02:41.711670+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2604.24700v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Green Shielding: A User-Centric Approach Towards Trustworthy AI",
+      "html_url": "http://arxiv.org/abs/2604.24700v1",
+      "pdf_url": "https://arxiv.org/pdf/2604.24700v1",
+      "description": "Large language models (LLMs) are increasingly deployed, yet their outputs can be highly sensitive to routine, non-adversarial variation in how users phrase queries, a gap not well addressed by existing red-teaming efforts. We propose Green Shielding, a user-centric agenda for building evidence-backed deployment guidance by characterizing how benign input variation shifts model behavior. We operationalize this agenda through the CUE criteria: benchmarks with authentic Context, reference standards and metrics that capture true Utility, and perturbations that reflect realistic variations in the Elicitation of model behavior. Guided by the PCS framework and developed with practicing physicians, we instantiate Green Shielding in medical diagnosis through HealthCareMagic-Diagnosis (HCM-Dx), a benchmark of patient-authored queries, together with structured reference diagnosis sets and clinically grounded metrics for evaluating differential diagnosis lists. We also study perturbation regimes that capture routine input variation and show that prompt-level factors shift model behavior along clinically meaningful dimensions. Across multiple frontier LLMs, these shifts trace out Pareto-like tradeoffs. In particular, neutralization, which removes common user-level factors while preserving clinical content, increases plausibility and yields more concise, clinician-like differentials, but reduces coverage of highly likely and safety-critical conditions. Together, these results show that interaction choices can systematically shift task-relevant properties of model outputs and support user-facing guidance for safer deployment in high-stakes domains. Although instantiated here in medical diagnosis, the agenda extends naturally to other decision-support settings and agentic AI systems.",
+      "authors": [
+        "Aaron J. Li",
+        "Nicolas Sanchez",
+        "Hao Huang",
+        "Ruijiang Dong",
+        "Jaskaran Bains",
+        "Katrin Jaradeh",
+        "Zhen Xiang",
+        "Bo Li",
+        "Feng Liu",
+        "Aaron Kornblith",
+        "Bin Yu"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "published_at": "2026-04-27T17:04:17+00:00",
+      "updated_at": "2026-04-27T17:04:17+00:00",
+      "primary_category": "cs.CL",
+      "heuristic_score": 20.3,
+      "summary": "Green Shielding: A User-Centric Approach Towards Trustworthy AI 是最近值得追踪的一篇 AI 论文。论文摘要显示：Large language models (LLMs) are increasingly deployed, yet their outputs can be highly sensitive to routine, non-adversarial variation in how users phrase queries, a gap not well addressed by existing red-teaming efforts. We propose Green ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CL, cs.AI",
+        "作者数: 11"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "llm",
+        "agent",
+        "agentic"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "agent"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：Green Shielding: A User-Centric Approach Towards Trustworthy AI 是最近值得追踪的一篇 AI 论文。论文摘要显示：Large language models (LLMs) are increasingly deployed, yet their outputs can be highly sensitive to routine, non-adversarial variation in how users phrase queries, a gap not well addressed by existing red-teaming efforts. We propose Green ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL, cs.AI\n- 作者数: 11",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 176.0,
+      "detail_path": "items/arxiv-green-shielding-a-user-centric-approach-towards-trustworthy-ai.html",
+      "first_seen_at": "2026-04-28T04:02:41.711670+00:00",
+      "last_seen_at": "2026-04-28T04:02:41.711670+00:00",
+      "last_curated_at": "2026-04-28T04:02:41.711670+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2604.24715v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Long-Context Aware Upcycling: A New Frontier for Hybrid LLM Scaling",
+      "html_url": "http://arxiv.org/abs/2604.24715v1",
+      "pdf_url": "https://arxiv.org/pdf/2604.24715v1",
+      "description": "Hybrid sequence models that combine efficient Transformer components with linear sequence modeling blocks are a promising alternative to pure Transformers, but most are still pretrained from scratch and therefore fail to reuse existing Transformer checkpoints. We study upcycling as a practical path to convert pretrained Transformer LLMs into hybrid architectures while preserving short-context quality and improving long-context capability. We call our solution \\emph{HyLo} (HYbrid LOng-context): a long-context upcycling recipe that combines architectural adaptation with efficient Transformer blocks, Multi-Head Latent Attention (MLA), and linear blocks (Mamba2 or Gated DeltaNet), together with staged long-context training and teacher-guided distillation for stable optimization. HyLo extends usable context length by up to $32\\times$ through efficient post-training and reduces KV-cache memory by more than $90\\%$, enabling up to 2M-token prefill and decoding in our \\texttt{vLLM} inference stack, while comparable Llama baselines run out of memory beyond 64K context. Across 1B- and 3B-scale settings (Llama- and Qwen-based variants), HyLo delivers consistently strong short- and long-context performance and significantly outperforms state-of-the-art upcycled hybrid baselines on long-context evaluations such as RULER. Notably, at similar scale, HyLo-Qwen-1.7B trained on only 10B tokens significantly outperforms JetNemotron (trained on 400B tokens) on GSM8K, Lm-Harness common sense reasoning and RULER-64K.",
+      "authors": [
+        "Parsa Ashrafi Fashi",
+        "Utkarsh Saxena",
+        "Mehdi Rezagholizadeh",
+        "Aref Jafari",
+        "Akash Haridas",
+        "Mingyu Yang",
+        "Vansh Bhatia",
+        "Guihong Li",
+        "Vikram Appia",
+        "Emad Barsoum"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.LG"
+      ],
+      "published_at": "2026-04-27T17:23:37+00:00",
+      "updated_at": "2026-04-27T17:23:37+00:00",
+      "primary_category": "cs.CL",
+      "heuristic_score": 17.799,
+      "summary": "Long-Context Aware Upcycling: A New Frontier for Hybrid LLM Scaling 是最近值得追踪的一篇 AI 论文。论文摘要显示：Hybrid sequence models that combine efficient Transformer components with linear sequence modeling blocks are a promising alternative to pure Transformers, but most are still pretrained from scratch and therefore fail to reuse existing Tran...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CL, cs.LG",
+        "作者数: 10"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "llm",
+        "model",
+        "inference"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "model"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：Long-Context Aware Upcycling: A New Frontier for Hybrid LLM Scaling 是最近值得追踪的一篇 AI 论文。论文摘要显示：Hybrid sequence models that combine efficient Transformer components with linear sequence modeling blocks are a promising alternative to pure Transformers, but most are still pretrained from scratch and therefore fail to reuse existing Tran...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL, cs.LG\n- 作者数: 10",
+      "focus_hits": [
+        {
+          "keyword": "coding",
+          "weight": 2.6
+        },
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "inference",
+          "weight": 1.8
+        }
+      ],
+      "primary_match": "coding",
+      "personalized_score": 176.0,
+      "detail_path": "items/arxiv-long-context-aware-upcycling-a-new-frontier-for-hybrid-llm-scaling.html",
+      "first_seen_at": "2026-04-28T04:02:41.711670+00:00",
+      "last_seen_at": "2026-04-28T04:02:41.711670+00:00",
+      "last_curated_at": "2026-04-28T04:02:41.711670+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2604.24696v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "NeuroClaw Technical Report",
+      "html_url": "http://arxiv.org/abs/2604.24696v1",
+      "pdf_url": "https://arxiv.org/pdf/2604.24696v1",
+      "description": "Agentic artificial intelligence systems promise to accelerate scientific workflows, but neuroimaging poses unique challenges: heterogeneous modalities (sMRI, fMRI, dMRI, EEG), long multi-stage pipelines, and persistent reproducibility risks. To address this gap, we present NeuroClaw, a domain-specialized multi-agent research assistant for executable and reproducible neuroimaging research. NeuroClaw operates directly on raw neuroimaging data across formats and modalities, grounding decisions in dataset semantics and BIDS metadata so users need not prepare curated inputs or bespoke model code. The platform combines harness engineering with end-to-end environment management, including pinned Python environments, Docker support, automated installers for common neuroimaging tools, and GPU configuration. In practice, this layer emphasizes checkpointing, post-execution verification, structured audit traces, and controlled runtime setup, making toolchains more transparent while improving reproducibility and auditability. A three-tier skill/agent hierarchy separates user-facing interaction, high-level orchestration, and low-level tool skills to decompose complex workflows into safe, reusable units. Alongside the NeuroClaw framework, we introduce NeuroBench, a system-level benchmark for executability, artifact validity, and reproducibility readiness. Across multiple multimodal LLMs, NeuroClaw-enabled runs yield consistent and substantial score improvements compared with direct agent invocation. Project homepage: https://cuhk-aim-group.github.io/NeuroClaw/index.html",
+      "authors": [
+        "Cheng Wang",
+        "Zhibin He",
+        "Zhihao Peng",
+        "Shengyuan Liu",
+        "Yufan Hu",
+        "Lichao Sun",
+        "Xiang Li",
+        "Yixuan Yuan"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "published_at": "2026-04-27T16:57:14+00:00",
+      "updated_at": "2026-04-27T16:57:14+00:00",
+      "primary_category": "cs.CV",
+      "heuristic_score": 20.276,
+      "summary": "NeuroClaw Technical Report 是最近值得追踪的一篇 AI 论文。论文摘要显示：Agentic artificial intelligence systems promise to accelerate scientific workflows, but neuroimaging poses unique challenges: heterogeneous modalities (sMRI, fMRI, dMRI, EEG), long multi-stage pipelines, and persistent reproducibility risks...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CV",
+        "作者数: 8"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "llm",
+        "agent",
+        "agentic"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "agent"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：NeuroClaw Technical Report 是最近值得追踪的一篇 AI 论文。论文摘要显示：Agentic artificial intelligence systems promise to accelerate scientific workflows, but neuroimaging poses unique challenges: heterogeneous modalities (sMRI, fMRI, dMRI, EEG), long multi-stage pipelines, and persistent reproducibility risks...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV\n- 作者数: 8",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "multimodal",
+          "weight": 2.0
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 174.0,
+      "detail_path": "items/arxiv-neuroclaw-technical-report.html",
+      "first_seen_at": "2026-04-28T04:02:41.711670+00:00",
+      "last_seen_at": "2026-04-28T04:02:41.711670+00:00",
+      "last_curated_at": "2026-04-28T04:02:41.711670+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2604.24697v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Can Current Agents Close the Discovery-to-Application Gap? A Case Study in Minecraft",
+      "html_url": "http://arxiv.org/abs/2604.24697v1",
+      "pdf_url": "https://arxiv.org/pdf/2604.24697v1",
+      "description": "Discovering causal regularities and applying them to build functional systems--the discovery-to-application loop--is a hallmark of general intelligence, yet evaluating this capacity has been hindered by the vast complexity gap between scientific discovery and real-world engineering. We introduce SciCrafter, a Minecraft-based benchmark that operationalizes this loop through parameterized redstone circuit tasks. Agents must ignite lamps in specified patterns (e.g., simultaneously or in timed sequences); scaling target parameters substantially increases construction complexity and required knowledge, forcing genuine discovery rather than reliance on memorized solutions. Evaluating frontier models including GPT-5.2, Gemini-3-Pro, and Claude-Opus-4.5 under a general-purpose code agent scaffold, we find that all plateau at approximately 26% success rate. To diagnose these failures, we decompose the loop into four capacities--knowledge gap identification, experimental discovery, knowledge consolidation, and knowledge application--and design targeted interventions whose marginal contributions serve as proxies for corresponding gaps. Our analysis reveals that although the general knowledge application capability still remains as the biggest gap across all models, for frontier models the knowledge gap identification starts to become a major hurdle--indicating the bottleneck is shifting from solving problems right to raising the right problems for current AI. We release SciCrafter as a diagnostic probe for future research on AI systems that navigate the full discovery-to-application loop.",
+      "authors": [
+        "Zhou Ziheng",
+        "Huacong Tang",
+        "Jinyuan Zhang",
+        "Haowei Lin",
+        "Bangcheng Yang",
+        "Qian Long",
+        "Fang Sun",
+        "Yizhou Sun",
+        "Yitao Liang",
+        "Ying Nian Wu",
+        "Demetri Terzopoulos",
+        "Xiaofeng Gao"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "published_at": "2026-04-27T16:58:04+00:00",
+      "updated_at": "2026-04-27T16:58:04+00:00",
+      "primary_category": "cs.AI",
+      "heuristic_score": 17.9,
+      "summary": "Can Current Agents Close the Discovery-to-Application Gap? A Case Study in Minecraft 是最近值得追踪的一篇 AI 论文。论文摘要显示：Discovering causal regularities and applying them to build functional systems--the discovery-to-application loop--is a hallmark of general intelligence, yet evaluating this capacity has been hindered by the vast complexity gap between scien...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.AI",
+        "作者数: 12"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "llm",
+        "agent",
+        "gpt"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "agent"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：Can Current Agents Close the Discovery-to-Application Gap? A Case Study in Minecraft 是最近值得追踪的一篇 AI 论文。论文摘要显示：Discovering causal regularities and applying them to build functional systems--the discovery-to-application loop--is a hallmark of general intelligence, yet evaluating this capacity has been hindered by the vast complexity gap between scien...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI\n- 作者数: 12",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 154.0,
+      "detail_path": "items/arxiv-can-current-agents-close-the-discovery-to-application-gap-a-case-study-in-minecraft.html",
+      "first_seen_at": "2026-04-28T04:02:41.711670+00:00",
+      "last_seen_at": "2026-04-28T04:02:41.711670+00:00",
+      "last_curated_at": "2026-04-28T04:02:41.711670+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2604.24710v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Case-Specific Rubrics for Clinical AI Evaluation: Methodology, Validation, and LLM-Clinician Agreement Across 823 Encounters",
+      "html_url": "http://arxiv.org/abs/2604.24710v1",
+      "pdf_url": "https://arxiv.org/pdf/2604.24710v1",
+      "description": "Objective. Clinical AI documentation systems require evaluation methodologies that are clinically valid, economically viable, and sensitive to iterative changes. Methods requiring expert review per scoring instance are too slow and expensive for safe, iterative deployment. We present a case-specific, clinician-authored rubric methodology for clinical AI evaluation and examine whether LLM-generated rubrics can approximate clinician agreement. Materials and Methods. Twenty clinicians authored 1,646 rubrics for 823 clinical cases (736 real-world, 87 synthetic) across primary care, psychiatry, oncology, and behavioral health. Each rubric was validated by confirming that an LLM-based scoring agent consistently scored clinician-preferred outputs higher than rejected ones. Seven versions of an EHR-embedded AI agent for clinicians were evaluated across all cases. Results. Clinician-authored rubrics discriminated effectively between high- and low-quality outputs (median score gap: 82.9%) with high scoring stability (median range: 0.00%). Median scores improved from 84% to 95%. In later experiments, clinician-LLM ranking agreement (tau: 0.42-0.46) matched or exceeded clinician-clinician agreement (tau: 0.38-0.43), attributable to both ceiling compression and LLM rubric improvement. Discussion. This convergence supports incorporating LLM rubrics alongside clinician-authored ones. At roughly 1,000 times lower cost, LLM rubrics enable substantially greater evaluation coverage, while continued clinical authorship grounds evaluation in expert judgment. Ceiling compression poses a methodological challenge for future inter-rater agreement studies. Conclusion. Case-specific rubrics offer a path for clinical AI evaluation that preserves expert judgment while enabling automation at three orders lower cost. Clinician-authored rubrics establish the baseline against which LLM rubrics are validated.",
+      "authors": [
+        "Aaryan Shah",
+        "Andrew Hines",
+        "Alexia Downs",
+        "Denis Bajet",
+        "Paulius Mui",
+        "Fabiano Araujo",
+        "Laura Offutt",
+        "Aida Rutledge",
+        "Elizabeth Jimenez"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "published_at": "2026-04-27T17:17:56+00:00",
+      "updated_at": "2026-04-27T17:17:56+00:00",
+      "primary_category": "cs.AI",
+      "heuristic_score": 15.5,
+      "summary": "Case-Specific Rubrics for Clinical AI Evaluation: Methodology, Validation, and LLM-Clinician Agreement Across 823 Encounters 是最近值得追踪的一篇 AI 论文。论文摘要显示：Objective. Clinical AI documentation systems require evaluation methodologies that are clinically valid, economically viable, and sensitive to iterative changes. Methods requiring expert review per scoring instance are too slow and expensiv...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.AI, cs.CL",
+        "作者数: 9"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 9,
+      "tags": [
+        "ai",
+        "llm",
+        "agent",
+        "rag"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "agent"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：Case-Specific Rubrics for Clinical AI Evaluation: Methodology, Validation, and LLM-Clinician Agreement Across 823 Encounters 是最近值得追踪的一篇 AI 论文。论文摘要显示：Objective. Clinical AI documentation systems require evaluation methodologies that are clinically valid, economically viable, and sensitive to iterative changes. Methods requiring expert review per scoring instance are too slow and expensiv...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：9/10\n\n**亮点**：\n- 分类: cs.AI, cs.CL\n- 作者数: 9",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 150.0,
+      "detail_path": "items/arxiv-case-specific-rubrics-for-clinical-ai-evaluation-methodology-validation-and-llm-clinician-.html",
+      "first_seen_at": "2026-04-28T04:02:41.711670+00:00",
+      "last_seen_at": "2026-04-28T04:02:41.711670+00:00",
+      "last_curated_at": "2026-04-28T04:02:41.711670+00:00",
+      "last_notified_at": null
+    },
     {
       "id": "github::TauricResearch/TradingAgents",
       "kind": "repo",
@@ -13,7 +466,7 @@
       "full_name": "TauricResearch/TradingAgents",
       "html_url": "https://github.com/TauricResearch/TradingAgents",
       "description": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
-      "stars": 53806,
+      "stars": 53946,
       "stars_today": 0,
       "language": "Python",
       "topics": [],
@@ -27,7 +480,7 @@
       "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
       "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
       "highlights": [
-        "Stars: 53806",
+        "Stars: 53946",
         "语言: Python"
       ],
       "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
@@ -41,7 +494,7 @@
         "agent"
       ],
       "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：TauricResearch/TradingAgents 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：TradingAgents: Multi-Agents LLM Financial Trading Framework结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 53806\n- 语言: Python",
+      "summary_markdown": "**摘要**：TauricResearch/TradingAgents 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：TradingAgents: Multi-Agents LLM Financial Trading Framework结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 53946\n- 语言: Python",
       "focus_hits": [
         {
           "keyword": "agent",
@@ -52,8 +505,8 @@
       "personalized_score": 130.0,
       "detail_path": "items/github-tauricresearch-tradingagents.html",
       "first_seen_at": "2026-04-28T01:24:49.502089+00:00",
-      "last_seen_at": "2026-04-28T01:24:49.502089+00:00",
-      "last_curated_at": "2026-04-28T01:24:49.502089+00:00",
+      "last_seen_at": "2026-04-28T04:02:41.711670+00:00",
+      "last_curated_at": "2026-04-28T04:02:41.711670+00:00",
       "last_notified_at": null
     },
     {
@@ -68,7 +521,7 @@
       "full_name": "mattpocock/skills",
       "html_url": "https://github.com/mattpocock/skills",
       "description": "Skills for Real Engineers. Straight from my .claude directory.",
-      "stars": 30452,
+      "stars": 31278,
       "stars_today": 0,
       "language": "Shell",
       "topics": [],
@@ -82,7 +535,7 @@
       "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
       "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
       "highlights": [
-        "Stars: 30452",
+        "Stars: 31278",
         "语言: Shell"
       ],
       "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
@@ -94,14 +547,14 @@
         "ai"
       ],
       "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：mattpocock/skills 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Skills for Real Engineers. Straight from my .claude directory.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 30452\n- 语言: Shell",
+      "summary_markdown": "**摘要**：mattpocock/skills 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Skills for Real Engineers. Straight from my .claude directory.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 31278\n- 语言: Shell",
       "focus_hits": [],
       "primary_match": "",
-      "personalized_score": 82.18,
+      "personalized_score": 82.51,
       "detail_path": "items/github-mattpocock-skills.html",
       "first_seen_at": "2026-04-26T01:17:12.638291+00:00",
-      "last_seen_at": "2026-04-28T01:24:49.502089+00:00",
-      "last_curated_at": "2026-04-28T01:24:49.502089+00:00",
+      "last_seen_at": "2026-04-28T04:02:41.711670+00:00",
+      "last_curated_at": "2026-04-28T04:02:41.711670+00:00",
       "last_notified_at": null
     },
     {
@@ -116,7 +569,7 @@
       "full_name": "gastownhall/beads",
       "html_url": "https://github.com/gastownhall/beads",
       "description": "Beads - A memory upgrade for your coding agent",
-      "stars": 22212,
+      "stars": 22280,
       "stars_today": 0,
       "language": "Go",
       "topics": [],
@@ -130,7 +583,7 @@
       "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
       "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
       "highlights": [
-        "Stars: 22212",
+        "Stars: 22280",
         "语言: Go"
       ],
       "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
@@ -144,7 +597,7 @@
         "coding agent"
       ],
       "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：gastownhall/beads 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Beads - A memory upgrade for your coding agent结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 22212\n- 语言: Go",
+      "summary_markdown": "**摘要**：gastownhall/beads 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Beads - A memory upgrade for your coding agent结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 22280\n- 语言: Go",
       "focus_hits": [
         {
           "keyword": "agent",
@@ -156,11 +609,11 @@
         }
       ],
       "primary_match": "agent",
-      "personalized_score": 134.88,
+      "personalized_score": 134.91,
       "detail_path": "items/github-gastownhall-beads.html",
       "first_seen_at": "2026-04-27T01:18:06.082535+00:00",
-      "last_seen_at": "2026-04-28T01:24:49.502089+00:00",
-      "last_curated_at": "2026-04-28T01:24:49.502089+00:00",
+      "last_seen_at": "2026-04-28T04:02:41.711670+00:00",
+      "last_curated_at": "2026-04-28T04:02:41.711670+00:00",
       "last_notified_at": null
     },
     {
@@ -175,7 +628,7 @@
       "full_name": "microsoft/VibeVoice",
       "html_url": "https://github.com/microsoft/VibeVoice",
       "description": "Open-Source Frontier Voice AI",
-      "stars": 43128,
+      "stars": 43294,
       "stars_today": 0,
       "language": "Python",
       "topics": [],
@@ -189,7 +642,7 @@
       "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
       "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
       "highlights": [
-        "Stars: 43128",
+        "Stars: 43294",
         "语言: Python"
       ],
       "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
@@ -203,7 +656,7 @@
         "voice ai"
       ],
       "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：microsoft/VibeVoice 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Open-Source Frontier Voice AI结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 43128\n- 语言: Python",
+      "summary_markdown": "**摘要**：microsoft/VibeVoice 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Open-Source Frontier Voice AI结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 43294\n- 语言: Python",
       "focus_hits": [
         {
           "keyword": "voice",
@@ -211,11 +664,11 @@
         }
       ],
       "primary_match": "voice",
-      "personalized_score": 101.25,
+      "personalized_score": 101.32,
       "detail_path": "items/github-microsoft-vibevoice.html",
       "first_seen_at": "2026-04-28T01:24:49.502089+00:00",
-      "last_seen_at": "2026-04-28T01:24:49.502089+00:00",
-      "last_curated_at": "2026-04-28T01:24:49.502089+00:00",
+      "last_seen_at": "2026-04-28T04:02:41.711670+00:00",
+      "last_curated_at": "2026-04-28T04:02:41.711670+00:00",
       "last_notified_at": null
     },
     {
@@ -230,7 +683,7 @@
       "full_name": "deepseek-ai/DeepSeek-V3",
       "html_url": "https://github.com/deepseek-ai/DeepSeek-V3",
       "description": "",
-      "stars": 103109,
+      "stars": 103158,
       "stars_today": 0,
       "language": "Python",
       "topics": [],
@@ -244,7 +697,7 @@
       "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
       "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
       "highlights": [
-        "Stars: 103109",
+        "Stars: 103158",
         "语言: Python"
       ],
       "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
@@ -256,14 +709,14 @@
         "开源工具"
       ],
       "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：deepseek-ai/DeepSeek-V3 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：暂无详细介绍。结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 103109\n- 语言: Python",
+      "summary_markdown": "**摘要**：deepseek-ai/DeepSeek-V3 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：暂无详细介绍。结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 103158\n- 语言: Python",
       "focus_hits": [],
       "primary_match": "",
       "personalized_score": 90.0,
       "detail_path": "items/github-deepseek-ai-deepseek-v3.html",
       "first_seen_at": "2026-04-28T01:24:49.502089+00:00",
-      "last_seen_at": "2026-04-28T01:24:49.502089+00:00",
-      "last_curated_at": "2026-04-28T01:24:49.502089+00:00",
+      "last_seen_at": "2026-04-28T04:02:41.711670+00:00",
+      "last_curated_at": "2026-04-28T04:02:41.711670+00:00",
       "last_notified_at": null
     },
     {
@@ -278,13 +731,13 @@
       "full_name": "CJackHwang/ds2api",
       "html_url": "https://github.com/CJackHwang/ds2api",
       "description": "Deepseek to API: A lightweight, high-performance full-stack middleware converting client protocols to universal APIs. Supports multi-account rotation, compiled binaries, Vercel Serverless, and Docker. Compatible with Google, Claude, and OpenAI API formats.",
-      "stars": 1846,
+      "stars": 1911,
       "stars_today": 0,
       "language": "Go",
       "topics": [],
       "created_at": "",
       "updated_at": "",
-      "heuristic_score": 6.292,
+      "heuristic_score": 6.422,
       "summary": "CJackHwang/ds2api 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Deepseek to API: A lightweight, high-performance full-stack middleware converting client protocols to universal APIs. Supports multi-account rotation, compiled binaries, Vercel Serverless, and Docker. Compatible with Google, Claude, and Ope...结合关键词命中和热度信号，它适合加入今日重点观察列表。",
       "brief": "这是一个值得快速关注的开源 AI 项目。",
       "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
@@ -292,7 +745,7 @@
       "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
       "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
       "highlights": [
-        "Stars: 1846",
+        "Stars: 1911",
         "语言: Go"
       ],
       "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
@@ -304,14 +757,14 @@
         "ai"
       ],
       "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：CJackHwang/ds2api 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Deepseek to API: A lightweight, high-performance full-stack middleware converting client protocols to universal APIs. Supports multi-account rotation, compiled binaries, Vercel Serverless, and Docker. Compatible with Google, Claude, and Ope...结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：5/10\n\n**亮点**：\n- Stars: 1846\n- 语言: Go",
+      "summary_markdown": "**摘要**：CJackHwang/ds2api 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Deepseek to API: A lightweight, high-performance full-stack middleware converting client protocols to universal APIs. Supports multi-account rotation, compiled binaries, Vercel Serverless, and Docker. Compatible with Google, Claude, and Ope...结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：5/10\n\n**亮点**：\n- Stars: 1911\n- 语言: Go",
       "focus_hits": [],
       "primary_match": "",
-      "personalized_score": 50.74,
+      "personalized_score": 50.76,
       "detail_path": "items/github-cjackhwang-ds2api.html",
       "first_seen_at": "2026-04-26T01:17:12.638291+00:00",
-      "last_seen_at": "2026-04-28T01:24:49.502089+00:00",
-      "last_curated_at": "2026-04-28T01:24:49.502089+00:00",
+      "last_seen_at": "2026-04-28T04:02:41.711670+00:00",
+      "last_curated_at": "2026-04-28T04:02:41.711670+00:00",
       "last_notified_at": null
     },
     {
@@ -7510,7 +7963,7 @@
       "full_name": "abhigyanpatwari/GitNexus",
       "html_url": "https://github.com/abhigyanpatwari/GitNexus",
       "description": "GitNexus: The Zero-Server Code Intelligence Engine - GitNexus is a client-side knowledge graph creator that runs entirely in your browser. Drop in a GitHub repo or ZIP file, and get an interactive knowledge graph wit a built in Graph RAG Agent. Perfect for code exploration",
-      "stars": 31564,
+      "stars": 31760,
       "stars_today": 0,
       "language": "TypeScript",
       "topics": [],
@@ -7520,7 +7973,7 @@
       "summary": "abhigyanpatwari/GitNexus 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：GitNexus: The Zero-Server Code Intelligence Engine - GitNexus is a client-side knowledge graph creator that runs entirely in your browser. Drop in a GitHub repo or ZIP file, and get an interactive knowledge graph wit a built in Graph RAG Ag...结合关键词命中和热度信号，它适合加入今日重点观察列表。",
       "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
       "highlights": [
-        "Stars: 31564",
+        "Stars: 31760",
         "语言: TypeScript"
       ],
       "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
@@ -7529,11 +7982,11 @@
         "agent",
         "rag"
       ],
-      "summary_markdown": "**摘要**：abhigyanpatwari/GitNexus 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：GitNexus: The Zero-Server Code Intelligence Engine - GitNexus is a client-side knowledge graph creator that runs entirely in your browser. Drop in a GitHub repo or ZIP file, and get an interactive knowledge graph wit a built in Graph RAG Ag...结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 31564\n- 语言: TypeScript",
+      "summary_markdown": "**摘要**：abhigyanpatwari/GitNexus 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：GitNexus: The Zero-Server Code Intelligence Engine - GitNexus is a client-side knowledge graph creator that runs entirely in your browser. Drop in a GitHub repo or ZIP file, and get an interactive knowledge graph wit a built in Graph RAG Ag...结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 31760\n- 语言: TypeScript",
       "detail_path": "items/github-abhigyanpatwari-gitnexus.html",
       "first_seen_at": "2026-04-09T09:24:46.894274+00:00",
-      "last_seen_at": "2026-04-28T01:24:49.502089+00:00",
-      "last_curated_at": "2026-04-28T01:24:49.502089+00:00",
+      "last_seen_at": "2026-04-28T04:02:41.711670+00:00",
+      "last_curated_at": "2026-04-28T04:02:41.711670+00:00",
       "last_notified_at": "2026-04-09T11:52:43.203830+00:00",
       "focus_hits": [
         {
@@ -7546,7 +7999,7 @@
         }
       ],
       "primary_match": "agent",
-      "personalized_score": 144.63,
+      "personalized_score": 144.7,
       "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
       "themes": [
         "agent",
@@ -8160,7 +8613,7 @@
     {
       "date": "2026-04-28",
       "title": "AI Daily Digest · 2026-04-28",
-      "generated_at": "2026-04-28T09:24:36.701145+08:00",
+      "generated_at": "2026-04-28T12:02:30.755277+08:00",
       "notified_at": null,
       "repo_ids": [
         "github::abhigyanpatwari/GitNexus",
@@ -8171,7 +8624,14 @@
         "github::mattpocock/skills",
         "github::CJackHwang/ds2api"
       ],
-      "paper_ids": [],
+      "paper_ids": [
+        "arxiv::http://arxiv.org/abs/2604.24698v1",
+        "arxiv::http://arxiv.org/abs/2604.24700v1",
+        "arxiv::http://arxiv.org/abs/2604.24715v1",
+        "arxiv::http://arxiv.org/abs/2604.24696v1",
+        "arxiv::http://arxiv.org/abs/2604.24697v1",
+        "arxiv::http://arxiv.org/abs/2604.24710v1"
+      ],
       "digest_json": "data/digests/2026-04-28.json",
       "digest_markdown": "data/digests/2026-04-28.md"
     },
@@ -8576,8 +9036,8 @@
     "weekly": {
       "label": "周报",
       "window_days": 7,
-      "generated_at": "2026-04-28T09:24:36.701145+08:00",
-      "count": 54,
+      "generated_at": "2026-04-28T12:02:30.755277+08:00",
+      "count": 60,
       "summary": "近 7 天里，最集中的主题是 ai、llm、agent。",
       "top_items": [
         {
@@ -8992,6 +9452,79 @@
           "last_notified_at": null
         },
         {
+          "id": "arxiv::http://arxiv.org/abs/2604.24698v1",
+          "kind": "paper",
+          "source": "arxiv",
+          "source_tags": [
+            "latest"
+          ],
+          "title": "The Chameleon's Limit: Investigating Persona Collapse and Homogenization in Large Language Models",
+          "html_url": "http://arxiv.org/abs/2604.24698v1",
+          "pdf_url": "https://arxiv.org/pdf/2604.24698v1",
+          "description": "Applications based on large language models (LLMs), such as multi-agent simulations, require population diversity among agents. We identify a pervasive failure mode we term \\emph{Persona Collapse}: agents each assigned a distinct profile nonetheless converge into a narrow behavioral mode, producing a homogeneous simulated population. To quantify persona collapse, we propose a framework that measures how much of the persona space a population occupies (Coverage), how evenly agents spread across it (Uniformity), and how rich the resulting behavioral patterns are (Complexity). Evaluating ten LLMs on personality simulation (BFI-44), moral reasoning, and self-introduction, we observe persona collapse along two axes: (1) Dimensions: a model can appear diverse on one axis yet structurally degenerate on another, and (2) Domains: the same model may collapse the most in personality yet be the most diverse in moral reasoning. Furthermore, item-level diagnostics reveal that behavioral variation tracks coarse demographic stereotypes rather than the fine-grained individual differences specified in each persona. Counter-intuitively, \\textbf{the models achieving the highest per-persona fidelity consistently produce the most stereotyped populations}. We release our toolkit and data to support population-level evaluation of LLMs.",
+          "authors": [
+            "Yunze Xiao",
+            "Vivienne J. Zhang",
+            "Chenghao Yang",
+            "Ningshan Ma",
+            "Weihao Xuan",
+            "Jen-tse Huang"
+          ],
+          "categories": [
+            "cs.CL"
+          ],
+          "published_at": "2026-04-27T17:01:48+00:00",
+          "updated_at": "2026-04-27T17:01:48+00:00",
+          "primary_category": "cs.CL",
+          "heuristic_score": 17.566,
+          "summary": "The Chameleon's Limit: Investigating Persona Collapse and Homogenization in Large Language Models 是最近值得追踪的一篇 AI 论文。论文摘要显示：Applications based on large language models (LLMs), such as multi-agent simulations, require population diversity among agents. We identify a pervasive failure mode we term \\emph{Persona Collapse}: agents each assigned a distinct profile no...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+          "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+          "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+          "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+          "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+          "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+          "highlights": [
+            "分类: cs.CL",
+            "作者数: 6"
+          ],
+          "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+          "relevance_score": 10,
+          "tags": [
+            "ai",
+            "llm",
+            "agent",
+            "rag"
+          ],
+          "themes": [
+            "ai",
+            "llm",
+            "agent"
+          ],
+          "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+          "summary_markdown": "**摘要**：The Chameleon's Limit: Investigating Persona Collapse and Homogenization in Large Language Models 是最近值得追踪的一篇 AI 论文。论文摘要显示：Applications based on large language models (LLMs), such as multi-agent simulations, require population diversity among agents. We identify a pervasive failure mode we term \\emph{Persona Collapse}: agents each assigned a distinct profile no...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL\n- 作者数: 6",
+          "focus_hits": [
+            {
+              "keyword": "agent",
+              "weight": 3.0
+            },
+            {
+              "keyword": "reasoning",
+              "weight": 2.4
+            },
+            {
+              "keyword": "rag",
+              "weight": 2.2
+            }
+          ],
+          "primary_match": "agent",
+          "personalized_score": 184.0,
+          "detail_path": "items/arxiv-the-chameleon-s-limit-investigating-persona-collapse-and-homogenization-in-large-language-.html",
+          "first_seen_at": "2026-04-28T04:02:41.711670+00:00",
+          "last_seen_at": "2026-04-28T04:02:41.711670+00:00",
+          "last_curated_at": "2026-04-28T04:02:41.711670+00:00",
+          "last_notified_at": null
+        },
+        {
           "id": "arxiv::http://arxiv.org/abs/2604.21896v1",
           "kind": "paper",
           "source": "arxiv",
@@ -9062,135 +9595,66 @@
           "last_notified_at": null
         },
         {
-          "id": "arxiv::http://arxiv.org/abs/2604.19710v1",
+          "id": "arxiv::http://arxiv.org/abs/2604.24700v1",
           "kind": "paper",
           "source": "arxiv",
           "source_tags": [
             "latest"
           ],
-          "title": "SpanVLA: Efficient Action Bridging and Learning from Negative-Recovery Samples for Vision-Language-Action Model",
-          "html_url": "http://arxiv.org/abs/2604.19710v1",
-          "pdf_url": "https://arxiv.org/pdf/2604.19710v1",
-          "description": "Vision-Language-Action (VLA) models offer a promising autonomous driving paradigm for leveraging world knowledge and reasoning capabilities, especially in long-tail scenarios. However, existing VLA models often struggle with the high latency in action generation using an autoregressive generation framework and exhibit limited robustness. In this paper, we propose SpanVLA, a novel end-to-end autonomous driving framework, integrating an autoregressive reasoning and a flow-matching action expert. First, SpanVLA introduces an efficient bridge to leverage the vision and reasoning guidance of VLM to efficiently plan future trajectories using a flow-matching policy conditioned on historical trajectory initialization, which significantly reduces inference time. Second, to further improve the performance and robustness of the SpanVLA model, we propose a GRPO-based post-training method to enable the VLA model not only to learn from positive driving samples but also to learn how to avoid the typical negative behaviors and learn recovery behaviors. We further introduce mReasoning, a new real-world driving reasoning dataset, focusing on complex, reasoning-demanding scenarios and negative-recovery samples. Extensive experiments on the NAVSIM (v1 and v2) demonstrate the competitive performance of the SpanVLA model. Additionally, the qualitative results across diverse scenarios highlight the planning performance and robustness of our model.",
+          "title": "Green Shielding: A User-Centric Approach Towards Trustworthy AI",
+          "html_url": "http://arxiv.org/abs/2604.24700v1",
+          "pdf_url": "https://arxiv.org/pdf/2604.24700v1",
+          "description": "Large language models (LLMs) are increasingly deployed, yet their outputs can be highly sensitive to routine, non-adversarial variation in how users phrase queries, a gap not well addressed by existing red-teaming efforts. We propose Green Shielding, a user-centric agenda for building evidence-backed deployment guidance by characterizing how benign input variation shifts model behavior. We operationalize this agenda through the CUE criteria: benchmarks with authentic Context, reference standards and metrics that capture true Utility, and perturbations that reflect realistic variations in the Elicitation of model behavior. Guided by the PCS framework and developed with practicing physicians, we instantiate Green Shielding in medical diagnosis through HealthCareMagic-Diagnosis (HCM-Dx), a benchmark of patient-authored queries, together with structured reference diagnosis sets and clinically grounded metrics for evaluating differential diagnosis lists. We also study perturbation regimes that capture routine input variation and show that prompt-level factors shift model behavior along clinically meaningful dimensions. Across multiple frontier LLMs, these shifts trace out Pareto-like tradeoffs. In particular, neutralization, which removes common user-level factors while preserving clinical content, increases plausibility and yields more concise, clinician-like differentials, but reduces coverage of highly likely and safety-critical conditions. Together, these results show that interaction choices can systematically shift task-relevant properties of model outputs and support user-facing guidance for safer deployment in high-stakes domains. Although instantiated here in medical diagnosis, the agenda extends naturally to other decision-support settings and agentic AI systems.",
           "authors": [
-            "Zewei Zhou",
-            "Ruining Yang",
-            "Xuewei",
-            "Qi",
-            "Yiluan Guo",
-            "Sherry X. Chen",
-            "Tao Feng",
-            "Kateryna Pistunova",
-            "Yishan Shen",
-            "Lili Su",
-            "Jiaqi Ma"
+            "Aaron J. Li",
+            "Nicolas Sanchez",
+            "Hao Huang",
+            "Ruijiang Dong",
+            "Jaskaran Bains",
+            "Katrin Jaradeh",
+            "Zhen Xiang",
+            "Bo Li",
+            "Feng Liu",
+            "Aaron Kornblith",
+            "Bin Yu"
           ],
           "categories": [
-            "cs.CV"
+            "cs.CL",
+            "cs.AI"
           ],
-          "published_at": "2026-04-21T17:34:19+00:00",
-          "updated_at": "2026-04-21T17:34:19+00:00",
-          "primary_category": "cs.CV",
-          "heuristic_score": 17.71,
-          "summary": "SpanVLA: Efficient Action Bridging and Learning from Negative-Recovery Samples for Vision-Language-Action Model 是最近值得追踪的一篇 AI 论文。论文摘要显示：Vision-Language-Action (VLA) models offer a promising autonomous driving paradigm for leveraging world knowledge and reasoning capabilities, especially in long-tail scenarios. However, existing VLA models often struggle with the high latenc...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+          "published_at": "2026-04-27T17:04:17+00:00",
+          "updated_at": "2026-04-27T17:04:17+00:00",
+          "primary_category": "cs.CL",
+          "heuristic_score": 20.3,
+          "summary": "Green Shielding: A User-Centric Approach Towards Trustworthy AI 是最近值得追踪的一篇 AI 论文。论文摘要显示：Large language models (LLMs) are increasingly deployed, yet their outputs can be highly sensitive to routine, non-adversarial variation in how users phrase queries, a gap not well addressed by existing red-teaming efforts. We propose Green ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
           "brief": "这是一篇值得加入今日论文雷达的最新工作。",
           "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
           "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
           "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
           "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
           "highlights": [
-            "分类: cs.CV",
+            "分类: cs.CL, cs.AI",
             "作者数: 11"
           ],
           "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
           "relevance_score": 10,
           "tags": [
             "ai",
-            "rag",
-            "model",
-            "inference"
-          ],
-          "themes": [
-            "ai",
-            "rag",
-            "model"
-          ],
-          "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-          "summary_markdown": "**摘要**：SpanVLA: Efficient Action Bridging and Learning from Negative-Recovery Samples for Vision-Language-Action Model 是最近值得追踪的一篇 AI 论文。论文摘要显示：Vision-Language-Action (VLA) models offer a promising autonomous driving paradigm for leveraging world knowledge and reasoning capabilities, especially in long-tail scenarios. However, existing VLA models often struggle with the high latenc...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV\n- 作者数: 11",
-          "focus_hits": [
-            {
-              "keyword": "reasoning",
-              "weight": 2.4
-            },
-            {
-              "keyword": "rag",
-              "weight": 2.2
-            },
-            {
-              "keyword": "inference",
-              "weight": 1.8
-            }
-          ],
-          "primary_match": "reasoning",
-          "personalized_score": 172.0,
-          "detail_path": "items/arxiv-spanvla-efficient-action-bridging-and-learning-from-negative-recovery-samples-for-vision-l.html",
-          "first_seen_at": "2026-04-22T06:23:01.716108+00:00",
-          "last_seen_at": "2026-04-22T06:25:50.559257+00:00",
-          "last_curated_at": "2026-04-22T06:25:50.559257+00:00",
-          "last_notified_at": null
-        },
-        {
-          "id": "arxiv::http://arxiv.org/abs/2604.19716v1",
-          "kind": "paper",
-          "source": "arxiv",
-          "source_tags": [
-            "latest"
-          ],
-          "title": "Discovering a Shared Logical Subspace: Steering LLM Logical Reasoning via Alignment of Natural-Language and Symbolic Views",
-          "html_url": "http://arxiv.org/abs/2604.19716v1",
-          "pdf_url": "https://arxiv.org/pdf/2604.19716v1",
-          "description": "Large Language Models (LLMs) still struggle with multi-step logical reasoning. Existing approaches either purely refine the reasoning chain in natural language form or attach a symbolic solver as an external module. In this work, we instead ask whether LLMs contain a shared internal logical subspace that simultaneously aligns natural-language and symbolic-language views of the reasoning process. Our hypothesis is that this logical subspace captures logical reasoning capabilities in LLMs that are shared across views while remaining independent of surface forms. To verify this, we employ Canonical Correlation Analysis on the paired residual activations from natural-language and symbolic-language reasoning chains, learning a low-dimensional subspace with maximum cross-view correlation. Furthermore, we design a training-free approach that steers LLMs reasoning chain along this logical subspace, thereby leveraging the complementary reasoning signals from both views. Experiments on four logical reasoning benchmarks demonstrate the effectiveness of our approach, improving accuracy by up to 11 percentage points and generalizing well on out-of-domain problems.",
-          "authors": [
-            "Feihao Fang",
-            "My T. Thai",
-            "Yuanyuan Lei"
-          ],
-          "categories": [
-            "cs.CL"
-          ],
-          "published_at": "2026-04-21T17:42:54+00:00",
-          "updated_at": "2026-04-21T17:42:54+00:00",
-          "primary_category": "cs.CL",
-          "heuristic_score": 19.761,
-          "summary": "Discovering a Shared Logical Subspace: Steering LLM Logical Reasoning via Alignment of Natural-Language and Symbolic Views 是最近值得追踪的一篇 AI 论文。论文摘要显示：Large Language Models (LLMs) still struggle with multi-step logical reasoning. Existing approaches either purely refine the reasoning chain in natural language form or attach a symbolic solver as an external module. In this work, we instead...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-          "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-          "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-          "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-          "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-          "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-          "highlights": [
-            "分类: cs.CL",
-            "作者数: 3"
-          ],
-          "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-          "relevance_score": 10,
-          "tags": [
-            "ai",
             "llm",
-            "rag",
-            "model"
+            "agent",
+            "agentic"
           ],
           "themes": [
             "ai",
             "llm",
-            "rag"
+            "agent"
           ],
           "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-          "summary_markdown": "**摘要**：Discovering a Shared Logical Subspace: Steering LLM Logical Reasoning via Alignment of Natural-Language and Symbolic Views 是最近值得追踪的一篇 AI 论文。论文摘要显示：Large Language Models (LLMs) still struggle with multi-step logical reasoning. Existing approaches either purely refine the reasoning chain in natural language form or attach a symbolic solver as an external module. In this work, we instead...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL\n- 作者数: 3",
+          "summary_markdown": "**摘要**：Green Shielding: A User-Centric Approach Towards Trustworthy AI 是最近值得追踪的一篇 AI 论文。论文摘要显示：Large language models (LLMs) are increasingly deployed, yet their outputs can be highly sensitive to routine, non-adversarial variation in how users phrase queries, a gap not well addressed by existing red-teaming efforts. We propose Green ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL, cs.AI\n- 作者数: 11",
           "focus_hits": [
             {
-              "keyword": "reasoning",
-              "weight": 2.4
+              "keyword": "agent",
+              "weight": 3.0
             },
             {
               "keyword": "rag",
@@ -9201,12 +9665,12 @@
               "weight": 1.6
             }
           ],
-          "primary_match": "reasoning",
-          "personalized_score": 170.0,
-          "detail_path": "items/arxiv-discovering-a-shared-logical-subspace-steering-llm-logical-reasoning-via-alignment-of-natu.html",
-          "first_seen_at": "2026-04-22T06:23:01.716108+00:00",
-          "last_seen_at": "2026-04-22T06:25:50.559257+00:00",
-          "last_curated_at": "2026-04-22T06:25:50.559257+00:00",
+          "primary_match": "agent",
+          "personalized_score": 176.0,
+          "detail_path": "items/arxiv-green-shielding-a-user-centric-approach-towards-trustworthy-ai.html",
+          "first_seen_at": "2026-04-28T04:02:41.711670+00:00",
+          "last_seen_at": "2026-04-28T04:02:41.711670+00:00",
+          "last_curated_at": "2026-04-28T04:02:41.711670+00:00",
           "last_notified_at": null
         }
       ],
@@ -9217,7 +9681,7 @@
         },
         {
           "theme": "llm",
-          "count": 5
+          "count": 6
         },
         {
           "theme": "agent",
@@ -9225,10 +9689,6 @@
         },
         {
           "theme": "gpt",
-          "count": 1
-        },
-        {
-          "theme": "rag",
           "count": 1
         }
       ],
@@ -9253,8 +9713,8 @@
     "monthly": {
       "label": "月报",
       "window_days": 30,
-      "generated_at": "2026-04-28T09:24:36.701145+08:00",
-      "count": 129,
+      "generated_at": "2026-04-28T12:02:30.755277+08:00",
+      "count": 135,
       "summary": "近 30 天里，最集中的主题是 ai、llm、agent。",
       "top_items": [
         {
