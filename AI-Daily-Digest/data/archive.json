@@ -1,6 +1,380 @@
 {
-  "generated_at": "2026-04-30T01:25:47.446142+00:00",
+  "generated_at": "2026-04-30T04:01:00.436418+00:00",
   "items": [
+    {
+      "id": "arxiv::http://arxiv.org/abs/2604.26940v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Select to Think: Unlocking SLM Potential with Local Sufficiency",
+      "html_url": "http://arxiv.org/abs/2604.26940v1",
+      "pdf_url": "https://arxiv.org/pdf/2604.26940v1",
+      "description": "Small language models (SLMs) offer computational efficiency for scalable deployment, yet they often fall short of the reasoning power exhibited by their larger counterparts (LLMs). To mitigate this gap, current approaches invoke an LLM to generate tokens at points of reasoning divergence, but these external calls introduce substantial latency and costs. Alternatively, standard distillation is often hindered by the capacity limitation, as SLMs struggle to accurately mimic the LLM's complex generative distribution. We address this dilemma by identifying local sufficiency: at divergence points, the LLM's preferred token consistently resides within the SLM's top-K next-token predictions, even when failing to emerge as the SLM top-1 choice. We therefore propose SELECT TO THINK (S2T), which reframes the LLM's role from open-ended generation to selection among the SLM's proposals, simplifying the supervision signal to discrete candidate rankings. Leveraging this, we introduce S2T-LOCAL, which distills the selection logic into the SLM, empowering it to perform autonomous re-ranking without inference-time LLM dependency. Empirically, we demonstrate that a 1.5B SLM's top-8 candidates capture the 32B LLM's choice with 95% hit rate. Translating this potential into performance, S2T-LOCAL improves greedy decoding by 24.1% on average across benchmarks, effectively matching the efficacy of 8-path self-consistency while operating with single-trajectory efficiency.",
+      "authors": [
+        "Wenxuan Ye",
+        "Yangyang Zhang",
+        "Xueli An",
+        "Georg Carle",
+        "Yunpu Ma"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "published_at": "2026-04-29T17:51:39+00:00",
+      "updated_at": "2026-04-29T17:51:39+00:00",
+      "primary_category": "cs.CL",
+      "heuristic_score": 20.139,
+      "summary": "Select to Think: Unlocking SLM Potential with Local Sufficiency 是最近值得追踪的一篇 AI 论文。论文摘要显示：Small language models (SLMs) offer computational efficiency for scalable deployment, yet they often fall short of the reasoning power exhibited by their larger counterparts (LLMs). To mitigate this gap, current approaches invoke an LLM to g...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CL",
+        "作者数: 5"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "llm",
+        "rag",
+        "model"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "rag"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：Select to Think: Unlocking SLM Potential with Local Sufficiency 是最近值得追踪的一篇 AI 论文。论文摘要显示：Small language models (SLMs) offer computational efficiency for scalable deployment, yet they often fall short of the reasoning power exhibited by their larger counterparts (LLMs). To mitigate this gap, current approaches invoke an LLM to g...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL\n- 作者数: 5",
+      "focus_hits": [
+        {
+          "keyword": "coding",
+          "weight": 2.6
+        },
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        },
+        {
+          "keyword": "inference",
+          "weight": 1.8
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "coding",
+      "personalized_score": 214.0,
+      "detail_path": "items/arxiv-select-to-think-unlocking-slm-potential-with-local-sufficiency.html",
+      "first_seen_at": "2026-04-30T04:01:00.436418+00:00",
+      "last_seen_at": "2026-04-30T04:01:00.436418+00:00",
+      "last_curated_at": "2026-04-30T04:01:00.436418+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2604.26951v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Turning the TIDE: Cross-Architecture Distillation for Diffusion Large Language Models",
+      "html_url": "http://arxiv.org/abs/2604.26951v1",
+      "pdf_url": "https://arxiv.org/pdf/2604.26951v1",
+      "description": "Diffusion large language models (dLLMs) offer parallel decoding and bidirectional context, but state-of-the-art dLLMs require billions of parameters for competitive performance. While existing distillation methods for dLLMs reduce inference steps within a single architecture, none address cross-architecture knowledge transfer, in which the teacher and student differ in architecture, attention mechanism, and tokenizer. We present TIDE, the first framework for cross-architecture dLLM distillation, comprising three modular components: (1) TIDAL, which jointly modulates distillation strength across training progress and diffusion timestep to account for the teacher's noise-dependent reliability; (2) CompDemo, which enriches the teacher's context via complementary mask splitting to improve predictions under heavy masking; and (3) Reverse CALM, a cross-tokenizer objective that inverts chunk-level likelihood matching, yielding bounded gradients and dual-end noise filtering. Distilling 8B dense and 16B MoE teachers into a 0.6B student via two heterogeneous pipelines outperforms the baseline by an average of 1.53 points across eight benchmarks, yielding notable gains in code generation, where HumanEval scores reach 48.78 compared to 32.3 for the AR baseline.",
+      "authors": [
+        "Gongbo Zhang",
+        "Wen Wang",
+        "Ye Tian",
+        "Li Yuan"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "published_at": "2026-04-29T17:59:01+00:00",
+      "updated_at": "2026-04-29T17:59:01+00:00",
+      "primary_category": "cs.CL",
+      "heuristic_score": 22.286,
+      "summary": "Turning the TIDE: Cross-Architecture Distillation for Diffusion Large Language Models 是最近值得追踪的一篇 AI 论文。论文摘要显示：Diffusion large language models (dLLMs) offer parallel decoding and bidirectional context, but state-of-the-art dLLMs require billions of parameters for competitive performance. While existing distillation methods for dLLMs reduce inference...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CL, cs.AI",
+        "作者数: 4"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "llm",
+        "rag",
+        "diffusion"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "rag"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：Turning the TIDE: Cross-Architecture Distillation for Diffusion Large Language Models 是最近值得追踪的一篇 AI 论文。论文摘要显示：Diffusion large language models (dLLMs) offer parallel decoding and bidirectional context, but state-of-the-art dLLMs require billions of parameters for competitive performance. While existing distillation methods for dLLMs reduce inference...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL, cs.AI\n- 作者数: 4",
+      "focus_hits": [
+        {
+          "keyword": "coding",
+          "weight": 2.6
+        },
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        },
+        {
+          "keyword": "inference",
+          "weight": 1.8
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "coding",
+      "personalized_score": 190.0,
+      "detail_path": "items/arxiv-turning-the-tide-cross-architecture-distillation-for-diffusion-large-language-models.html",
+      "first_seen_at": "2026-04-30T04:01:00.436418+00:00",
+      "last_seen_at": "2026-04-30T04:01:00.436418+00:00",
+      "last_curated_at": "2026-04-30T04:01:00.436418+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2604.26934v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "World2VLM: Distilling World Model Imagination into VLMs for Dynamic Spatial Reasoning",
+      "html_url": "http://arxiv.org/abs/2604.26934v1",
+      "pdf_url": "https://arxiv.org/pdf/2604.26934v1",
+      "description": "Vision-language models (VLMs) have shown strong performance on static visual understanding, yet they still struggle with dynamic spatial reasoning that requires imagining how scenes evolve under egocentric motion. Recent efforts address this limitation either by scaling spatial supervision with synthetic data or by coupling VLMs with world models at inference time. However, the former often lacks explicit modeling of motion-conditioned state transitions, while the latter incurs substantial computational overhead. In this work, we propose World2VLM, a training framework that distills spatial imagination from a generative world model into a vision-language model. Given an initial observation and a parameterized camera trajectory, we use a view-consistent world model to synthesize geometrically aligned future views and derive structured supervision for both forward (action-to-outcome) and inverse (outcome-to-action) spatial reasoning. We post-train the VLM with a two-stage recipe on a compact dataset generated by this pipeline and evaluate it on multiple spatial reasoning benchmarks. World2VLM delivers consistent improvements over the base model across diverse benchmarks, including SAT-Real, SAT-Synthesized, VSI-Bench, and MindCube. It also outperforms the test-time world-model-coupled methods while eliminating the need for expensive inference-time generation. Our results suggest that world models can serve not only as inference-time tools, but also as effective training-time teachers, enabling VLMs to internalize spatial imagination in a scalable and efficient manner.",
+      "authors": [
+        "Wanyue Zhang",
+        "Wenxiang Wu",
+        "Wang Xu",
+        "Jiaxin Luo",
+        "Helu Zhi",
+        "Yibin Huang",
+        "Shuo Ren",
+        "Zitao Liu",
+        "Jiajun Zhang"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "published_at": "2026-04-29T17:48:01+00:00",
+      "updated_at": "2026-04-29T17:48:01+00:00",
+      "primary_category": "cs.CV",
+      "heuristic_score": 17.89,
+      "summary": "World2VLM: Distilling World Model Imagination into VLMs for Dynamic Spatial Reasoning 是最近值得追踪的一篇 AI 论文。论文摘要显示：Vision-language models (VLMs) have shown strong performance on static visual understanding, yet they still struggle with dynamic spatial reasoning that requires imagining how scenes evolve under egocentric motion. Recent efforts address thi...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CV",
+        "作者数: 9"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "model",
+        "benchmark",
+        "inference"
+      ],
+      "themes": [
+        "ai",
+        "model",
+        "benchmark"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：World2VLM: Distilling World Model Imagination into VLMs for Dynamic Spatial Reasoning 是最近值得追踪的一篇 AI 论文。论文摘要显示：Vision-language models (VLMs) have shown strong performance on static visual understanding, yet they still struggle with dynamic spatial reasoning that requires imagining how scenes evolve under egocentric motion. Recent efforts address thi...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV\n- 作者数: 9",
+      "focus_hits": [
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "inference",
+          "weight": 1.8
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "reasoning",
+      "personalized_score": 166.0,
+      "detail_path": "items/arxiv-world2vlm-distilling-world-model-imagination-into-vlms-for-dynamic-spatial-reasoning.html",
+      "first_seen_at": "2026-04-30T04:01:00.436418+00:00",
+      "last_seen_at": "2026-04-30T04:01:00.436418+00:00",
+      "last_curated_at": "2026-04-30T04:01:00.436418+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2604.26904v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "ClawGym: A Scalable Framework for Building Effective Claw Agents",
+      "html_url": "http://arxiv.org/abs/2604.26904v1",
+      "pdf_url": "https://arxiv.org/pdf/2604.26904v1",
+      "description": "Claw-style environments support multi-step workflows over local files, tools, and persistent workspace states. However, scalable development around these environments remains constrained by the absence of a systematic framework, especially one for synthesizing verifiable training data and integrating it with agent training and diagnostic evaluation. To address this challenge, we present ClawGym, a scalable framework that supports the full lifecycle of Claw-style personal agent development. Concretely, we construct ClawGym-SynData, a diverse dataset of 13.5K filtered tasks synthesized from persona-driven intents and skill-grounded operations, paired with realistic mock workspaces and hybrid verification mechanisms. We then train a family of capable Claw-style models, termed ClawGym-Agents, through supervised fine-tuning on black-box rollout trajectories, and further explore reinforcement learning via a lightweight pipeline that parallelizes rollouts across per-task sandboxes.To support reliable evaluation, we further construct ClawGym-Bench, a benchmark of 200 instances calibrated through automated filtering and human-LLM review. Relevant resources will be soon released at https://github.com/ClawGym.",
+      "authors": [
+        "Fei Bai",
+        "Huatong Song",
+        "Shuang Sun",
+        "Daixuan Cheng",
+        "Yike Yang",
+        "Chuan Hao",
+        "Renyuan Li",
+        "Feng Chang",
+        "Yuan Wei",
+        "Ran Tao",
+        "Bryan Dai",
+        "Jian Yang",
+        "Wayne Xin Zhao"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "published_at": "2026-04-29T17:12:22+00:00",
+      "updated_at": "2026-04-29T17:12:22+00:00",
+      "primary_category": "cs.CL",
+      "heuristic_score": 17.422,
+      "summary": "ClawGym: A Scalable Framework for Building Effective Claw Agents 是最近值得追踪的一篇 AI 论文。论文摘要显示：Claw-style environments support multi-step workflows over local files, tools, and persistent workspace states. However, scalable development around these environments remains constrained by the absence of a systematic framework, especially ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CL, cs.AI",
+        "作者数: 13"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "llm",
+        "agent",
+        "model"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "agent"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：ClawGym: A Scalable Framework for Building Effective Claw Agents 是最近值得追踪的一篇 AI 论文。论文摘要显示：Claw-style environments support multi-step workflows over local files, tools, and persistent workspace states. However, scalable development around these environments remains constrained by the absence of a systematic framework, especially ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL, cs.AI\n- 作者数: 13",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 154.0,
+      "detail_path": "items/arxiv-clawgym-a-scalable-framework-for-building-effective-claw-agents.html",
+      "first_seen_at": "2026-04-30T04:01:00.436418+00:00",
+      "last_seen_at": "2026-04-30T04:01:00.436418+00:00",
+      "last_curated_at": "2026-04-30T04:01:00.436418+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2604.26866v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "MoRFI: Monotonic Sparse Autoencoder Feature Identification",
+      "html_url": "http://arxiv.org/abs/2604.26866v1",
+      "pdf_url": "https://arxiv.org/pdf/2604.26866v1",
+      "description": "Large language models (LLMs) acquire most of their factual knowledge during the pre-training stage, through next token prediction. Subsequent stages of post-training often introduce new facts outwith the parametric knowledge, giving rise to hallucinations. While it has been demonstrated that supervised fine-tuning (SFT) on new knowledge may exacerbate the problem, the underlying mechanisms are still poorly understood. We conduct a controlled fine-tuning experiment, focusing on closed-book QA, and find latent directions that causally contribute to hallucinations. Specifically, we fine-tune Llama 3.1 8B, Gemma 2 9B and Mistral 7B v03 on seven distinct single QA datasets, controlling for the percentage of new knowledge and number of training epochs. By measuring performance on the test set, we validate that incrementally introducing new knowledge increases hallucinations, with the effect being more pronounced with prolonged training. We leverage pre-trained sparse autoencoders (SAEs) to analyze residual stream activations across various checkpoints for each model and propose Monotonic Relationship Feature Identification (MoRFI) for capturing causally relevant latents. MoRFI filters SAE features that respond monotonically to controlled fine-tuning data mixtures of a target property. Our findings show that exposure to unknown facts disrupts the model's ability to retrieve stored knowledge along a set of directions in the residual stream. Our pipeline reliably discovers them across distinct models, recovering knowledge through single-latent interventions.",
+      "authors": [
+        "Dimitris Dimakopoulos",
+        "Shay B. Cohen",
+        "Ioannis Konstas"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.LG"
+      ],
+      "published_at": "2026-04-29T16:32:57+00:00",
+      "updated_at": "2026-04-29T16:32:57+00:00",
+      "primary_category": "cs.CL",
+      "heuristic_score": 15.469,
+      "summary": "MoRFI: Monotonic Sparse Autoencoder Feature Identification 是最近值得追踪的一篇 AI 论文。论文摘要显示：Large language models (LLMs) acquire most of their factual knowledge during the pre-training stage, through next token prediction. Subsequent stages of post-training often introduce new facts outwith the parametric knowledge, giving rise to...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CL, cs.LG",
+        "作者数: 3"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 9,
+      "tags": [
+        "ai",
+        "llm",
+        "rag",
+        "model"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "rag"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：MoRFI: Monotonic Sparse Autoencoder Feature Identification 是最近值得追踪的一篇 AI 论文。论文摘要显示：Large language models (LLMs) acquire most of their factual knowledge during the pre-training stage, through next token prediction. Subsequent stages of post-training often introduce new facts outwith the parametric knowledge, giving rise to...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：9/10\n\n**亮点**：\n- 分类: cs.CL, cs.LG\n- 作者数: 3",
+      "focus_hits": [
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        }
+      ],
+      "primary_match": "rag",
+      "personalized_score": 120.0,
+      "detail_path": "items/arxiv-morfi-monotonic-sparse-autoencoder-feature-identification.html",
+      "first_seen_at": "2026-04-30T04:01:00.436418+00:00",
+      "last_seen_at": "2026-04-30T04:01:00.436418+00:00",
+      "last_curated_at": "2026-04-30T04:01:00.436418+00:00",
+      "last_notified_at": null
+    },
     {
       "id": "github::warpdotdev/warp",
       "kind": "repo",
@@ -13,7 +387,7 @@
       "full_name": "warpdotdev/warp",
       "html_url": "https://github.com/warpdotdev/warp",
       "description": "Warp is an agentic development environment, born out of the terminal.",
-      "stars": 44109,
+      "stars": 45102,
       "stars_today": 0,
       "language": "Rust",
       "topics": [],
@@ -27,7 +401,7 @@
       "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
       "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
       "highlights": [
-        "Stars: 44109",
+        "Stars: 45102",
         "语言: Rust"
       ],
       "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
@@ -41,7 +415,7 @@
         "agentic"
       ],
       "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：warpdotdev/warp 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Warp is an agentic development environment, born out of the terminal.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 44109\n- 语言: Rust",
+      "summary_markdown": "**摘要**：warpdotdev/warp 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Warp is an agentic development environment, born out of the terminal.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 45102\n- 语言: Rust",
       "focus_hits": [
         {
           "keyword": "agent",
@@ -49,11 +423,11 @@
         }
       ],
       "primary_match": "agent",
-      "personalized_score": 127.64,
+      "personalized_score": 128.04,
       "detail_path": "items/github-warpdotdev-warp.html",
       "first_seen_at": "2026-04-30T01:25:47.446142+00:00",
-      "last_seen_at": "2026-04-30T01:25:47.446142+00:00",
-      "last_curated_at": "2026-04-30T01:25:47.446142+00:00",
+      "last_seen_at": "2026-04-30T04:01:00.436418+00:00",
+      "last_curated_at": "2026-04-30T04:01:00.436418+00:00",
       "last_notified_at": null
     },
     {
@@ -68,7 +442,7 @@
       "full_name": "ZhuLinsen/daily_stock_analysis",
       "html_url": "https://github.com/ZhuLinsen/daily_stock_analysis",
       "description": "LLM驱动的 A/H/美股智能分析器：多数据源行情 + 实时新闻 + LLM决策仪表盘 + 多渠道推送，零成本定时运行，纯白嫖. LLM-powered stock analysis system for A/H/US markets.",
-      "stars": 32776,
+      "stars": 32981,
       "stars_today": 0,
       "language": "Python",
       "topics": [],
@@ -82,7 +456,7 @@
       "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
       "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
       "highlights": [
-        "Stars: 32776",
+        "Stars: 32981",
         "语言: Python"
       ],
       "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
@@ -94,14 +468,85 @@
         "llm"
       ],
       "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：ZhuLinsen/daily_stock_analysis 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：LLM驱动的 A/H/美股智能分析器：多数据源行情 + 实时新闻 + LLM决策仪表盘 + 多渠道推送，零成本定时运行，纯白嫖. LLM-powered stock analysis system for A/H/US markets.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 32776\n- 语言: Python",
+      "summary_markdown": "**摘要**：ZhuLinsen/daily_stock_analysis 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：LLM驱动的 A/H/美股智能分析器：多数据源行情 + 实时新闻 + LLM决策仪表盘 + 多渠道推送，零成本定时运行，纯白嫖. LLM-powered stock analysis system for A/H/US markets.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 32981\n- 语言: Python",
       "focus_hits": [],
       "primary_match": "",
-      "personalized_score": 93.11,
+      "personalized_score": 93.19,
       "detail_path": "items/github-zhulinsen-daily_stock_analysis.html",
       "first_seen_at": "2026-04-30T01:25:47.446142+00:00",
-      "last_seen_at": "2026-04-30T01:25:47.446142+00:00",
-      "last_curated_at": "2026-04-30T01:25:47.446142+00:00",
+      "last_seen_at": "2026-04-30T04:01:00.436418+00:00",
+      "last_curated_at": "2026-04-30T04:01:00.436418+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2604.26923v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "ClassEval-Pro: A Cross-Domain Benchmark for Class-Level Code Generation",
+      "html_url": "http://arxiv.org/abs/2604.26923v1",
+      "pdf_url": "https://arxiv.org/pdf/2604.26923v1",
+      "description": "LLMs have achieved strong results on both function-level code synthesis and repository-level code modification, yet a capability that falls between these two extremes -- compositional code creation, i.e., building a complete, internally structured class from a specification -- remains underserved. Current evaluations are either confined to isolated functions or rely on manually curated class-level tasks that are expensive to scale and increasingly susceptible to data contamination. We introduce ClassEval-Pro, a benchmark of 300 class-level tasks spanning 11 domains, constructed through an automated three-stage pipeline that combines complexity enhancement, cross-domain class composition, and integration of real-world GitHub code contributed after January 2025. Every task is validated by an LLM Judge Ensemble and must pass test suites with over 90% line coverage. We evaluate five frontier LLMs under five generation strategies. The best model achieves only 45.6% class-level Pass@1, with a 17.7-point gap between the strongest and weakest models, confirming the benchmark's discriminative power. Strategy choice strongly interacts with model capability: structured approaches such as bottom-up improve weaker models by up to 9.4 percentage points, while compositional generation collapses to as low as 1.3%. Error analysis over 500 manually annotated failures reveals that logic errors (56.2%) and dependency errors (38.0%) dominate, identifying cross-method coordination as the core bottleneck.",
+      "authors": [
+        "Yeheng Chen",
+        "Chaoxiang Xie",
+        "Yuling Shi",
+        "Wenhao Zeng",
+        "Yongpan Wang",
+        "Hongyu Zhang",
+        "Xiaodong Gu"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.CL"
+      ],
+      "published_at": "2026-04-29T17:38:37+00:00",
+      "updated_at": "2026-04-29T17:38:37+00:00",
+      "primary_category": "cs.SE",
+      "heuristic_score": 13.884,
+      "summary": "ClassEval-Pro: A Cross-Domain Benchmark for Class-Level Code Generation 是最近值得追踪的一篇 AI 论文。论文摘要显示：LLMs have achieved strong results on both function-level code synthesis and repository-level code modification, yet a capability that falls between these two extremes -- compositional code creation, i.e., building a complete, internally str...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.SE, cs.CL",
+        "作者数: 7"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 8,
+      "tags": [
+        "ai",
+        "llm",
+        "rag",
+        "model"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "rag"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：ClassEval-Pro: A Cross-Domain Benchmark for Class-Level Code Generation 是最近值得追踪的一篇 AI 论文。论文摘要显示：LLMs have achieved strong results on both function-level code synthesis and repository-level code modification, yet a capability that falls between these two extremes -- compositional code creation, i.e., building a complete, internally str...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：8/10\n\n**亮点**：\n- 分类: cs.SE, cs.CL\n- 作者数: 7",
+      "focus_hits": [
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "rag",
+      "personalized_score": 118.0,
+      "detail_path": "items/arxiv-classeval-pro-a-cross-domain-benchmark-for-class-level-code-generation.html",
+      "first_seen_at": "2026-04-30T04:01:00.436418+00:00",
+      "last_seen_at": "2026-04-30T04:01:00.436418+00:00",
+      "last_curated_at": "2026-04-30T04:01:00.436418+00:00",
       "last_notified_at": null
     },
     {
@@ -116,7 +561,7 @@
       "full_name": "mattpocock/skills",
       "html_url": "https://github.com/mattpocock/skills",
       "description": "Skills for Real Engineers. Straight from my .claude directory.",
-      "stars": 44775,
+      "stars": 45536,
       "stars_today": 0,
       "language": "Shell",
       "topics": [],
@@ -130,7 +575,7 @@
       "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
       "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
       "highlights": [
-        "Stars: 44775",
+        "Stars: 45536",
         "语言: Shell"
       ],
       "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
@@ -142,14 +587,14 @@
         "ai"
       ],
       "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：mattpocock/skills 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Skills for Real Engineers. Straight from my .claude directory.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 44775\n- 语言: Shell",
+      "summary_markdown": "**摘要**：mattpocock/skills 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Skills for Real Engineers. Straight from my .claude directory.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 45536\n- 语言: Shell",
       "focus_hits": [],
       "primary_match": "",
-      "personalized_score": 87.91,
+      "personalized_score": 88.21,
       "detail_path": "items/github-mattpocock-skills.html",
       "first_seen_at": "2026-04-26T01:17:12.638291+00:00",
-      "last_seen_at": "2026-04-30T01:25:47.446142+00:00",
-      "last_curated_at": "2026-04-30T01:25:47.446142+00:00",
+      "last_seen_at": "2026-04-30T04:01:00.436418+00:00",
+      "last_curated_at": "2026-04-30T04:01:00.436418+00:00",
       "last_notified_at": null
     },
     {
@@ -164,7 +609,7 @@
       "full_name": "microsoft/VibeVoice",
       "html_url": "https://github.com/microsoft/VibeVoice",
       "description": "Open-Source Frontier Voice AI",
-      "stars": 45702,
+      "stars": 45770,
       "stars_today": 0,
       "language": "Python",
       "topics": [],
@@ -178,7 +623,7 @@
       "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
       "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
       "highlights": [
-        "Stars: 45702",
+        "Stars: 45770",
         "语言: Python"
       ],
       "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
@@ -192,7 +637,7 @@
         "voice ai"
       ],
       "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：microsoft/VibeVoice 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Open-Source Frontier Voice AI结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 45702\n- 语言: Python",
+      "summary_markdown": "**摘要**：microsoft/VibeVoice 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Open-Source Frontier Voice AI结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 45770\n- 语言: Python",
       "focus_hits": [
         {
           "keyword": "voice",
@@ -200,11 +645,11 @@
         }
       ],
       "primary_match": "voice",
-      "personalized_score": 102.28,
+      "personalized_score": 102.31,
       "detail_path": "items/github-microsoft-vibevoice.html",
       "first_seen_at": "2026-04-28T01:24:49.502089+00:00",
-      "last_seen_at": "2026-04-30T01:25:47.446142+00:00",
-      "last_curated_at": "2026-04-30T01:25:47.446142+00:00",
+      "last_seen_at": "2026-04-30T04:01:00.436418+00:00",
+      "last_curated_at": "2026-04-30T04:01:00.436418+00:00",
       "last_notified_at": null
     },
     {
@@ -219,7 +664,7 @@
       "full_name": "EbookFoundation/free-programming-books",
       "html_url": "https://github.com/EbookFoundation/free-programming-books",
       "description": "📚 Freely available programming books",
-      "stars": 387198,
+      "stars": 387257,
       "stars_today": 0,
       "language": "Python",
       "topics": [],
@@ -233,7 +678,7 @@
       "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
       "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
       "highlights": [
-        "Stars: 387198",
+        "Stars: 387257",
         "语言: Python"
       ],
       "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
@@ -245,14 +690,14 @@
         "ai"
       ],
       "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：EbookFoundation/free-programming-books 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：📚 Freely available programming books结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 387198\n- 语言: Python",
+      "summary_markdown": "**摘要**：EbookFoundation/free-programming-books 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：📚 Freely available programming books结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 387257\n- 语言: Python",
       "focus_hits": [],
       "primary_match": "",
       "personalized_score": 90.0,
       "detail_path": "items/github-ebookfoundation-free-programming-books.html",
       "first_seen_at": "2026-04-29T01:28:02.029898+00:00",
-      "last_seen_at": "2026-04-30T01:25:47.446142+00:00",
-      "last_curated_at": "2026-04-30T01:25:47.446142+00:00",
+      "last_seen_at": "2026-04-30T04:01:00.436418+00:00",
+      "last_curated_at": "2026-04-30T04:01:00.436418+00:00",
       "last_notified_at": null
     },
     {
@@ -267,7 +712,7 @@
       "full_name": "lukilabs/craft-agents-oss",
       "html_url": "https://github.com/lukilabs/craft-agents-oss",
       "description": "",
-      "stars": 5352,
+      "stars": 5392,
       "stars_today": 0,
       "language": "TypeScript",
       "topics": [],
@@ -281,7 +726,7 @@
       "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
       "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
       "highlights": [
-        "Stars: 5352",
+        "Stars: 5392",
         "语言: TypeScript"
       ],
       "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
@@ -293,7 +738,7 @@
         "开源工具"
       ],
       "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：lukilabs/craft-agents-oss 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：暂无详细介绍。结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 5352\n- 语言: TypeScript",
+      "summary_markdown": "**摘要**：lukilabs/craft-agents-oss 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：暂无详细介绍。结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 5392\n- 语言: TypeScript",
       "focus_hits": [
         {
           "keyword": "agent",
@@ -301,11 +746,11 @@
         }
       ],
       "primary_match": "agent",
-      "personalized_score": 102.14,
+      "personalized_score": 102.16,
       "detail_path": "items/github-lukilabs-craft-agents-oss.html",
       "first_seen_at": "2026-04-30T01:25:47.446142+00:00",
-      "last_seen_at": "2026-04-30T01:25:47.446142+00:00",
-      "last_curated_at": "2026-04-30T01:25:47.446142+00:00",
+      "last_seen_at": "2026-04-30T04:01:00.436418+00:00",
+      "last_curated_at": "2026-04-30T04:01:00.436418+00:00",
       "last_notified_at": null
     },
     {
@@ -8618,7 +9063,7 @@
       "full_name": "obra/superpowers",
       "html_url": "https://github.com/obra/superpowers",
       "description": "An agentic skills framework & software development methodology that works.",
-      "stars": 173154,
+      "stars": 173408,
       "stars_today": 0,
       "language": "Shell",
       "topics": [],
@@ -8628,7 +9073,7 @@
       "summary": "obra/superpowers 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：An agentic skills framework & software development methodology that works.结合关键词命中和热度信号，它适合加入今日重点观察列表。",
       "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
       "highlights": [
-        "Stars: 173154",
+        "Stars: 173408",
         "语言: Shell"
       ],
       "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
@@ -8637,11 +9082,11 @@
         "agent",
         "agentic"
       ],
-      "summary_markdown": "**摘要**：obra/superpowers 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：An agentic skills framework & software development methodology that works.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 173154\n- 语言: Shell",
+      "summary_markdown": "**摘要**：obra/superpowers 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：An agentic skills framework & software development methodology that works.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 173408\n- 语言: Shell",
       "detail_path": "items/github-obra-superpowers.html",
       "first_seen_at": "2026-04-09T09:24:46.894274+00:00",
-      "last_seen_at": "2026-04-30T01:25:47.446142+00:00",
-      "last_curated_at": "2026-04-30T01:25:47.446142+00:00",
+      "last_seen_at": "2026-04-30T04:01:00.436418+00:00",
+      "last_curated_at": "2026-04-30T04:01:00.436418+00:00",
       "last_notified_at": "2026-04-09T11:52:43.203830+00:00",
       "focus_hits": [
         {
@@ -8673,7 +9118,7 @@
       "full_name": "abhigyanpatwari/GitNexus",
       "html_url": "https://github.com/abhigyanpatwari/GitNexus",
       "description": "GitNexus: The Zero-Server Code Intelligence Engine - GitNexus is a client-side knowledge graph creator that runs entirely in your browser. Drop in a GitHub repo or ZIP file, and get an interactive knowledge graph wit a built in Graph RAG Agent. Perfect for code exploration",
-      "stars": 33352,
+      "stars": 33434,
       "stars_today": 0,
       "language": "TypeScript",
       "topics": [],
@@ -8683,7 +9128,7 @@
       "summary": "abhigyanpatwari/GitNexus 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：GitNexus: The Zero-Server Code Intelligence Engine - GitNexus is a client-side knowledge graph creator that runs entirely in your browser. Drop in a GitHub repo or ZIP file, and get an interactive knowledge graph wit a built in Graph RAG Ag...结合关键词命中和热度信号，它适合加入今日重点观察列表。",
       "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
       "highlights": [
-        "Stars: 33352",
+        "Stars: 33434",
         "语言: TypeScript"
       ],
       "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
@@ -8692,11 +9137,11 @@
         "agent",
         "rag"
       ],
-      "summary_markdown": "**摘要**：abhigyanpatwari/GitNexus 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：GitNexus: The Zero-Server Code Intelligence Engine - GitNexus is a client-side knowledge graph creator that runs entirely in your browser. Drop in a GitHub repo or ZIP file, and get an interactive knowledge graph wit a built in Graph RAG Ag...结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 33352\n- 语言: TypeScript",
+      "summary_markdown": "**摘要**：abhigyanpatwari/GitNexus 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：GitNexus: The Zero-Server Code Intelligence Engine - GitNexus is a client-side knowledge graph creator that runs entirely in your browser. Drop in a GitHub repo or ZIP file, and get an interactive knowledge graph wit a built in Graph RAG Ag...结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 33434\n- 语言: TypeScript",
       "detail_path": "items/github-abhigyanpatwari-gitnexus.html",
       "first_seen_at": "2026-04-09T09:24:46.894274+00:00",
-      "last_seen_at": "2026-04-30T01:25:47.446142+00:00",
-      "last_curated_at": "2026-04-30T01:25:47.446142+00:00",
+      "last_seen_at": "2026-04-30T04:01:00.436418+00:00",
+      "last_curated_at": "2026-04-30T04:01:00.436418+00:00",
       "last_notified_at": "2026-04-09T11:52:43.203830+00:00",
       "focus_hits": [
         {
@@ -8709,7 +9154,7 @@
         }
       ],
       "primary_match": "agent",
-      "personalized_score": 145.34,
+      "personalized_score": 145.37,
       "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
       "themes": [
         "agent",
@@ -9323,7 +9768,7 @@
     {
       "date": "2026-04-30",
       "title": "AI Daily Digest · 2026-04-30",
-      "generated_at": "2026-04-30T09:25:35.496506+08:00",
+      "generated_at": "2026-04-30T12:00:51.665872+08:00",
       "notified_at": null,
       "repo_ids": [
         "github::abhigyanpatwari/GitNexus",
@@ -9335,7 +9780,14 @@
         "github::EbookFoundation/free-programming-books",
         "github::mattpocock/skills"
       ],
-      "paper_ids": [],
+      "paper_ids": [
+        "arxiv::http://arxiv.org/abs/2604.26940v1",
+        "arxiv::http://arxiv.org/abs/2604.26951v1",
+        "arxiv::http://arxiv.org/abs/2604.26934v1",
+        "arxiv::http://arxiv.org/abs/2604.26904v1",
+        "arxiv::http://arxiv.org/abs/2604.26866v1",
+        "arxiv::http://arxiv.org/abs/2604.26923v1"
+      ],
       "digest_json": "data/digests/2026-04-30.json",
       "digest_markdown": "data/digests/2026-04-30.md"
     },
@@ -9789,91 +10241,10 @@
     "weekly": {
       "label": "周报",
       "window_days": 7,
-      "generated_at": "2026-04-30T09:25:35.496506+08:00",
-      "count": 55,
+      "generated_at": "2026-04-30T12:00:51.665872+08:00",
+      "count": 49,
       "summary": "近 7 天里，最集中的主题是 ai、llm、agent。",
       "top_items": [
-        {
-          "id": "arxiv::http://arxiv.org/abs/2604.20795v1",
-          "kind": "paper",
-          "source": "arxiv",
-          "source_tags": [
-            "latest"
-          ],
-          "title": "Automatic Ontology Construction Using LLMs as an External Layer of Memory, Verification, and Planning for Hybrid Intelligent Systems",
-          "html_url": "http://arxiv.org/abs/2604.20795v1",
-          "pdf_url": "https://arxiv.org/pdf/2604.20795v1",
-          "description": "This paper presents a hybrid architecture for intelligent systems in which large language models (LLMs) are extended with an external ontological memory layer. Instead of relying solely on parametric knowledge and vector-based retrieval (RAG), the proposed approach constructs and maintains a structured knowledge graph using RDF/OWL representations, enabling persistent, verifiable, and semantically grounded reasoning. The core contribution is an automated pipeline for ontology construction from heterogeneous data sources, including documents, APIs, and dialogue logs. The system performs entity recognition, relation extraction, normalization, and triple generation, followed by validation using SHACL and OWL constraints, and continuous graph updates. During inference, LLMs operate over a combined context that integrates vector-based retrieval with graph-based reasoning and external tool interaction. Experimental observations on planning tasks, including the Tower of Hanoi benchmark, indicate that ontology augmentation improves performance in multi-step reasoning scenarios compared to baseline LLM systems. In addition, the ontology layer enables formal validation of generated outputs, transforming the system into a generation-verification-correction pipeline. The proposed architecture addresses key limitations of current LLM-based systems, including lack of long-term memory, weak structural understanding, and limited reasoning capabilities. It provides a foundation for building agent-based systems, robotics applications, and enterprise AI solutions that require persistent knowledge, explainability, and reliable decision-making.",
-          "authors": [
-            "Pavel Salovskii",
-            "Iuliia Gorshkova"
-          ],
-          "categories": [
-            "cs.AI"
-          ],
-          "published_at": "2026-04-22T17:19:43+00:00",
-          "updated_at": "2026-04-22T17:19:43+00:00",
-          "primary_category": "cs.AI",
-          "heuristic_score": 25.1,
-          "summary": "Automatic Ontology Construction Using LLMs as an External Layer of Memory, Verification, and Planning for Hybrid Intelligent Systems 是最近值得追踪的一篇 AI 论文。论文摘要显示：This paper presents a hybrid architecture for intelligent systems in which large language models (LLMs) are extended with an external ontological memory layer. Instead of relying solely on parametric knowledge and vector-based retrieval (RA...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-          "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-          "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-          "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-          "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-          "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-          "highlights": [
-            "分类: cs.AI",
-            "作者数: 2"
-          ],
-          "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-          "relevance_score": 10,
-          "tags": [
-            "ai",
-            "llm",
-            "agent",
-            "rag"
-          ],
-          "themes": [
-            "ai",
-            "llm",
-            "agent"
-          ],
-          "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-          "summary_markdown": "**摘要**：Automatic Ontology Construction Using LLMs as an External Layer of Memory, Verification, and Planning for Hybrid Intelligent Systems 是最近值得追踪的一篇 AI 论文。论文摘要显示：This paper presents a hybrid architecture for intelligent systems in which large language models (LLMs) are extended with an external ontological memory layer. Instead of relying solely on parametric knowledge and vector-based retrieval (RA...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI\n- 作者数: 2",
-          "focus_hits": [
-            {
-              "keyword": "agent",
-              "weight": 3.0
-            },
-            {
-              "keyword": "reasoning",
-              "weight": 2.4
-            },
-            {
-              "keyword": "rag",
-              "weight": 2.2
-            },
-            {
-              "keyword": "inference",
-              "weight": 1.8
-            },
-            {
-              "keyword": "benchmark",
-              "weight": 1.6
-            },
-            {
-              "keyword": "robotics",
-              "weight": 1.6
-            }
-          ],
-          "primary_match": "agent",
-          "personalized_score": 234.0,
-          "detail_path": "items/arxiv-automatic-ontology-construction-using-llms-as-an-external-layer-of-memory-verification-and.html",
-          "first_seen_at": "2026-04-23T03:43:39.024812+00:00",
-          "last_seen_at": "2026-04-23T03:43:39.024812+00:00",
-          "last_curated_at": "2026-04-23T03:43:39.024812+00:00",
-          "last_notified_at": null
-        },
         {
           "id": "arxiv::http://arxiv.org/abs/2604.25917v1",
           "kind": "paper",
@@ -9964,147 +10335,55 @@
           "last_notified_at": null
         },
         {
-          "id": "arxiv::http://arxiv.org/abs/2604.20779v1",
+          "id": "arxiv::http://arxiv.org/abs/2604.26940v1",
           "kind": "paper",
           "source": "arxiv",
           "source_tags": [
             "latest"
           ],
-          "title": "SWE-chat: Coding Agent Interactions From Real Users in the Wild",
-          "html_url": "http://arxiv.org/abs/2604.20779v1",
-          "pdf_url": "https://arxiv.org/pdf/2604.20779v1",
-          "description": "AI coding agents are being adopted at scale, yet we lack empirical evidence on how people actually use them and how much of their output is useful in practice. We present SWE-chat, the first large-scale dataset of real coding agent sessions collected from open-source developers in the wild. The dataset currently contains 6,000 sessions, comprising more than 63,000 user prompts and 355,000 agent tool calls. SWE-chat is a living dataset; our collection pipeline automatically and continually discovers and processes sessions from public repositories. Leveraging SWE-chat, we provide an initial empirical characterization of real-world coding agent usage and failure modes. We find that coding patterns are bimodal: in 41% of sessions, agents author virtually all committed code (\"vibe coding\"), while in 23%, humans write all code themselves. Despite rapidly improving capabilities, coding agents remain inefficient in natural settings. Just 44% of all agent-produced code survives into user commits, and agent-written code introduces more security vulnerabilities than code authored by humans. Furthermore, users push back against agent outputs -- through corrections, failure reports, and interruptions -- in 44% of all turns. By capturing complete interaction traces with human vs. agent code authorship attribution, SWE-chat provides an empirical foundation for moving beyond curated benchmarks towards an evidence-based understanding of how AI agents perform in real developer workflows.",
+          "title": "Select to Think: Unlocking SLM Potential with Local Sufficiency",
+          "html_url": "http://arxiv.org/abs/2604.26940v1",
+          "pdf_url": "https://arxiv.org/pdf/2604.26940v1",
+          "description": "Small language models (SLMs) offer computational efficiency for scalable deployment, yet they often fall short of the reasoning power exhibited by their larger counterparts (LLMs). To mitigate this gap, current approaches invoke an LLM to generate tokens at points of reasoning divergence, but these external calls introduce substantial latency and costs. Alternatively, standard distillation is often hindered by the capacity limitation, as SLMs struggle to accurately mimic the LLM's complex generative distribution. We address this dilemma by identifying local sufficiency: at divergence points, the LLM's preferred token consistently resides within the SLM's top-K next-token predictions, even when failing to emerge as the SLM top-1 choice. We therefore propose SELECT TO THINK (S2T), which reframes the LLM's role from open-ended generation to selection among the SLM's proposals, simplifying the supervision signal to discrete candidate rankings. Leveraging this, we introduce S2T-LOCAL, which distills the selection logic into the SLM, empowering it to perform autonomous re-ranking without inference-time LLM dependency. Empirically, we demonstrate that a 1.5B SLM's top-8 candidates capture the 32B LLM's choice with 95% hit rate. Translating this potential into performance, S2T-LOCAL improves greedy decoding by 24.1% on average across benchmarks, effectively matching the efficacy of 8-path self-consistency while operating with single-trajectory efficiency.",
           "authors": [
-            "Joachim Baumann",
-            "Vishakh Padmakumar",
-            "Xiang Li",
-            "John Yang",
-            "Diyi Yang",
-            "Sanmi Koyejo"
+            "Wenxuan Ye",
+            "Yangyang Zhang",
+            "Xueli An",
+            "Georg Carle",
+            "Yunpu Ma"
           ],
           "categories": [
-            "cs.AI",
-            "cs.CY",
-            "cs.SE"
+            "cs.CL"
           ],
-          "published_at": "2026-04-22T17:08:19+00:00",
-          "updated_at": "2026-04-22T17:08:19+00:00",
-          "primary_category": "cs.AI",
-          "heuristic_score": 17.767,
-          "summary": "SWE-chat: Coding Agent Interactions From Real Users in the Wild 是最近值得追踪的一篇 AI 论文。论文摘要显示：AI coding agents are being adopted at scale, yet we lack empirical evidence on how people actually use them and how much of their output is useful in practice. We present SWE-chat, the first large-scale dataset of real coding agent sessions...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+          "published_at": "2026-04-29T17:51:39+00:00",
+          "updated_at": "2026-04-29T17:51:39+00:00",
+          "primary_category": "cs.CL",
+          "heuristic_score": 20.139,
+          "summary": "Select to Think: Unlocking SLM Potential with Local Sufficiency 是最近值得追踪的一篇 AI 论文。论文摘要显示：Small language models (SLMs) offer computational efficiency for scalable deployment, yet they often fall short of the reasoning power exhibited by their larger counterparts (LLMs). To mitigate this gap, current approaches invoke an LLM to g...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
           "brief": "这是一篇值得加入今日论文雷达的最新工作。",
           "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
           "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
           "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
           "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
           "highlights": [
-            "分类: cs.AI, cs.CY",
-            "作者数: 6"
+            "分类: cs.CL",
+            "作者数: 5"
           ],
           "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
           "relevance_score": 10,
           "tags": [
             "ai",
-            "agent",
+            "llm",
             "rag",
-            "benchmark"
+            "model"
           ],
           "themes": [
             "ai",
-            "agent",
+            "llm",
             "rag"
           ],
           "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-          "summary_markdown": "**摘要**：SWE-chat: Coding Agent Interactions From Real Users in the Wild 是最近值得追踪的一篇 AI 论文。论文摘要显示：AI coding agents are being adopted at scale, yet we lack empirical evidence on how people actually use them and how much of their output is useful in practice. We present SWE-chat, the first large-scale dataset of real coding agent sessions...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI, cs.CY\n- 作者数: 6",
-          "focus_hits": [
-            {
-              "keyword": "agent",
-              "weight": 3.0
-            },
-            {
-              "keyword": "coding",
-              "weight": 2.6
-            },
-            {
-              "keyword": "rag",
-              "weight": 2.2
-            },
-            {
-              "keyword": "benchmark",
-              "weight": 1.6
-            }
-          ],
-          "primary_match": "agent",
-          "personalized_score": 202.0,
-          "detail_path": "items/arxiv-swe-chat-coding-agent-interactions-from-real-users-in-the-wild.html",
-          "first_seen_at": "2026-04-23T03:43:39.024812+00:00",
-          "last_seen_at": "2026-04-23T03:43:39.024812+00:00",
-          "last_curated_at": "2026-04-23T03:43:39.024812+00:00",
-          "last_notified_at": null
-        },
-        {
-          "id": "arxiv::http://arxiv.org/abs/2604.20796v1",
-          "kind": "paper",
-          "source": "arxiv",
-          "source_tags": [
-            "latest"
-          ],
-          "title": "LLaDA2.0-Uni: Unifying Multimodal Understanding and Generation with Diffusion Large Language Model",
-          "html_url": "http://arxiv.org/abs/2604.20796v1",
-          "pdf_url": "https://arxiv.org/pdf/2604.20796v1",
-          "description": "We present LLaDA2.0-Uni, a unified discrete diffusion large language model (dLLM) that supports multimodal understanding and generation within a natively integrated framework. Its architecture combines a fully semantic discrete tokenizer, a MoE-based dLLM backbone, and a diffusion decoder. By discretizing continuous visual inputs via SigLIP-VQ, the model enables block-level masked diffusion for both text and vision inputs within the backbone, while the decoder reconstructs visual tokens into high-fidelity images. Inference efficiency is enhanced beyond parallel decoding through prefix-aware optimizations in the backbone and few-step distillation in the decoder. Supported by carefully curated large-scale data and a tailored multi-stage training pipeline, LLaDA2.0-Uni matches specialized VLMs in multimodal understanding while delivering strong performance in image generation and editing. Its native support for interleaved generation and reasoning establishes a promising and scalable paradigm for next-generation unified foundation models. Codes and models are available at https://github.com/inclusionAI/LLaDA2.0-Uni.",
-          "authors": [
-            "Inclusion AI",
-            "Tiwei Bie",
-            "Haoxing Chen",
-            "Tieyuan Chen",
-            "Zhenglin Cheng",
-            "Long Cui",
-            "Kai Gan",
-            "Zhicheng Huang",
-            "Zhenzhong Lan",
-            "Haoquan Li",
-            "Jianguo Li",
-            "Tao Lin",
-            "Qi Qin",
-            "Hongjun Wang",
-            "Xiaomei Wang",
-            "Haoyuan Wu",
-            "Yi Xin",
-            "Junbo Zhao"
-          ],
-          "categories": [
-            "cs.CV"
-          ],
-          "published_at": "2026-04-22T17:20:42+00:00",
-          "updated_at": "2026-04-22T17:20:42+00:00",
-          "primary_category": "cs.CV",
-          "heuristic_score": 22.113,
-          "summary": "LLaDA2.0-Uni: Unifying Multimodal Understanding and Generation with Diffusion Large Language Model 是最近值得追踪的一篇 AI 论文。论文摘要显示：We present LLaDA2.0-Uni, a unified discrete diffusion large language model (dLLM) that supports multimodal understanding and generation within a natively integrated framework. Its architecture combines a fully semantic discrete tokenizer, a...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-          "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-          "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-          "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-          "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-          "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-          "highlights": [
-            "分类: cs.CV",
-            "作者数: 18"
-          ],
-          "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-          "relevance_score": 10,
-          "tags": [
-            "ai",
-            "llm",
-            "multimodal",
-            "diffusion"
-          ],
-          "themes": [
-            "ai",
-            "llm",
-            "multimodal"
-          ],
-          "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-          "summary_markdown": "**摘要**：LLaDA2.0-Uni: Unifying Multimodal Understanding and Generation with Diffusion Large Language Model 是最近值得追踪的一篇 AI 论文。论文摘要显示：We present LLaDA2.0-Uni, a unified discrete diffusion large language model (dLLM) that supports multimodal understanding and generation within a natively integrated framework. Its architecture combines a fully semantic discrete tokenizer, a...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV\n- 作者数: 18",
+          "summary_markdown": "**摘要**：Select to Think: Unlocking SLM Potential with Local Sufficiency 是最近值得追踪的一篇 AI 论文。论文摘要显示：Small language models (SLMs) offer computational efficiency for scalable deployment, yet they often fall short of the reasoning power exhibited by their larger counterparts (LLMs). To mitigate this gap, current approaches invoke an LLM to g...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL\n- 作者数: 5",
           "focus_hits": [
             {
               "keyword": "coding",
@@ -10115,20 +10394,101 @@
               "weight": 2.4
             },
             {
-              "keyword": "multimodal",
-              "weight": 2.0
+              "keyword": "rag",
+              "weight": 2.2
             },
             {
               "keyword": "inference",
               "weight": 1.8
+            },
+            {
+              "keyword": "benchmark",
+              "weight": 1.6
             }
           ],
           "primary_match": "coding",
-          "personalized_score": 196.0,
-          "detail_path": "items/arxiv-llada2-0-uni-unifying-multimodal-understanding-and-generation-with-diffusion-large-languag.html",
-          "first_seen_at": "2026-04-23T03:43:39.024812+00:00",
-          "last_seen_at": "2026-04-23T03:43:39.024812+00:00",
-          "last_curated_at": "2026-04-23T03:43:39.024812+00:00",
+          "personalized_score": 214.0,
+          "detail_path": "items/arxiv-select-to-think-unlocking-slm-potential-with-local-sufficiency.html",
+          "first_seen_at": "2026-04-30T04:01:00.436418+00:00",
+          "last_seen_at": "2026-04-30T04:01:00.436418+00:00",
+          "last_curated_at": "2026-04-30T04:01:00.436418+00:00",
+          "last_notified_at": null
+        },
+        {
+          "id": "arxiv::http://arxiv.org/abs/2604.26951v1",
+          "kind": "paper",
+          "source": "arxiv",
+          "source_tags": [
+            "latest"
+          ],
+          "title": "Turning the TIDE: Cross-Architecture Distillation for Diffusion Large Language Models",
+          "html_url": "http://arxiv.org/abs/2604.26951v1",
+          "pdf_url": "https://arxiv.org/pdf/2604.26951v1",
+          "description": "Diffusion large language models (dLLMs) offer parallel decoding and bidirectional context, but state-of-the-art dLLMs require billions of parameters for competitive performance. While existing distillation methods for dLLMs reduce inference steps within a single architecture, none address cross-architecture knowledge transfer, in which the teacher and student differ in architecture, attention mechanism, and tokenizer. We present TIDE, the first framework for cross-architecture dLLM distillation, comprising three modular components: (1) TIDAL, which jointly modulates distillation strength across training progress and diffusion timestep to account for the teacher's noise-dependent reliability; (2) CompDemo, which enriches the teacher's context via complementary mask splitting to improve predictions under heavy masking; and (3) Reverse CALM, a cross-tokenizer objective that inverts chunk-level likelihood matching, yielding bounded gradients and dual-end noise filtering. Distilling 8B dense and 16B MoE teachers into a 0.6B student via two heterogeneous pipelines outperforms the baseline by an average of 1.53 points across eight benchmarks, yielding notable gains in code generation, where HumanEval scores reach 48.78 compared to 32.3 for the AR baseline.",
+          "authors": [
+            "Gongbo Zhang",
+            "Wen Wang",
+            "Ye Tian",
+            "Li Yuan"
+          ],
+          "categories": [
+            "cs.CL",
+            "cs.AI",
+            "cs.LG"
+          ],
+          "published_at": "2026-04-29T17:59:01+00:00",
+          "updated_at": "2026-04-29T17:59:01+00:00",
+          "primary_category": "cs.CL",
+          "heuristic_score": 22.286,
+          "summary": "Turning the TIDE: Cross-Architecture Distillation for Diffusion Large Language Models 是最近值得追踪的一篇 AI 论文。论文摘要显示：Diffusion large language models (dLLMs) offer parallel decoding and bidirectional context, but state-of-the-art dLLMs require billions of parameters for competitive performance. While existing distillation methods for dLLMs reduce inference...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+          "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+          "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+          "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+          "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+          "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+          "highlights": [
+            "分类: cs.CL, cs.AI",
+            "作者数: 4"
+          ],
+          "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+          "relevance_score": 10,
+          "tags": [
+            "ai",
+            "llm",
+            "rag",
+            "diffusion"
+          ],
+          "themes": [
+            "ai",
+            "llm",
+            "rag"
+          ],
+          "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+          "summary_markdown": "**摘要**：Turning the TIDE: Cross-Architecture Distillation for Diffusion Large Language Models 是最近值得追踪的一篇 AI 论文。论文摘要显示：Diffusion large language models (dLLMs) offer parallel decoding and bidirectional context, but state-of-the-art dLLMs require billions of parameters for competitive performance. While existing distillation methods for dLLMs reduce inference...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL, cs.AI\n- 作者数: 4",
+          "focus_hits": [
+            {
+              "keyword": "coding",
+              "weight": 2.6
+            },
+            {
+              "keyword": "rag",
+              "weight": 2.2
+            },
+            {
+              "keyword": "inference",
+              "weight": 1.8
+            },
+            {
+              "keyword": "benchmark",
+              "weight": 1.6
+            }
+          ],
+          "primary_match": "coding",
+          "personalized_score": 190.0,
+          "detail_path": "items/arxiv-turning-the-tide-cross-architecture-distillation-for-diffusion-large-language-models.html",
+          "first_seen_at": "2026-04-30T04:01:00.436418+00:00",
+          "last_seen_at": "2026-04-30T04:01:00.436418+00:00",
+          "last_curated_at": "2026-04-30T04:01:00.436418+00:00",
           "last_notified_at": null
         },
         {
@@ -10430,6 +10790,81 @@
           "last_seen_at": "2026-04-28T04:02:41.711670+00:00",
           "last_curated_at": "2026-04-28T04:02:41.711670+00:00",
           "last_notified_at": null
+        },
+        {
+          "id": "arxiv::http://arxiv.org/abs/2604.24696v1",
+          "kind": "paper",
+          "source": "arxiv",
+          "source_tags": [
+            "latest"
+          ],
+          "title": "NeuroClaw Technical Report",
+          "html_url": "http://arxiv.org/abs/2604.24696v1",
+          "pdf_url": "https://arxiv.org/pdf/2604.24696v1",
+          "description": "Agentic artificial intelligence systems promise to accelerate scientific workflows, but neuroimaging poses unique challenges: heterogeneous modalities (sMRI, fMRI, dMRI, EEG), long multi-stage pipelines, and persistent reproducibility risks. To address this gap, we present NeuroClaw, a domain-specialized multi-agent research assistant for executable and reproducible neuroimaging research. NeuroClaw operates directly on raw neuroimaging data across formats and modalities, grounding decisions in dataset semantics and BIDS metadata so users need not prepare curated inputs or bespoke model code. The platform combines harness engineering with end-to-end environment management, including pinned Python environments, Docker support, automated installers for common neuroimaging tools, and GPU configuration. In practice, this layer emphasizes checkpointing, post-execution verification, structured audit traces, and controlled runtime setup, making toolchains more transparent while improving reproducibility and auditability. A three-tier skill/agent hierarchy separates user-facing interaction, high-level orchestration, and low-level tool skills to decompose complex workflows into safe, reusable units. Alongside the NeuroClaw framework, we introduce NeuroBench, a system-level benchmark for executability, artifact validity, and reproducibility readiness. Across multiple multimodal LLMs, NeuroClaw-enabled runs yield consistent and substantial score improvements compared with direct agent invocation. Project homepage: https://cuhk-aim-group.github.io/NeuroClaw/index.html",
+          "authors": [
+            "Cheng Wang",
+            "Zhibin He",
+            "Zhihao Peng",
+            "Shengyuan Liu",
+            "Yufan Hu",
+            "Lichao Sun",
+            "Xiang Li",
+            "Yixuan Yuan"
+          ],
+          "categories": [
+            "cs.CV"
+          ],
+          "published_at": "2026-04-27T16:57:14+00:00",
+          "updated_at": "2026-04-27T16:57:14+00:00",
+          "primary_category": "cs.CV",
+          "heuristic_score": 20.276,
+          "summary": "NeuroClaw Technical Report 是最近值得追踪的一篇 AI 论文。论文摘要显示：Agentic artificial intelligence systems promise to accelerate scientific workflows, but neuroimaging poses unique challenges: heterogeneous modalities (sMRI, fMRI, dMRI, EEG), long multi-stage pipelines, and persistent reproducibility risks...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+          "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+          "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+          "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+          "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+          "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+          "highlights": [
+            "分类: cs.CV",
+            "作者数: 8"
+          ],
+          "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+          "relevance_score": 10,
+          "tags": [
+            "ai",
+            "llm",
+            "agent",
+            "agentic"
+          ],
+          "themes": [
+            "ai",
+            "llm",
+            "agent"
+          ],
+          "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+          "summary_markdown": "**摘要**：NeuroClaw Technical Report 是最近值得追踪的一篇 AI 论文。论文摘要显示：Agentic artificial intelligence systems promise to accelerate scientific workflows, but neuroimaging poses unique challenges: heterogeneous modalities (sMRI, fMRI, dMRI, EEG), long multi-stage pipelines, and persistent reproducibility risks...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV\n- 作者数: 8",
+          "focus_hits": [
+            {
+              "keyword": "agent",
+              "weight": 3.0
+            },
+            {
+              "keyword": "multimodal",
+              "weight": 2.0
+            },
+            {
+              "keyword": "benchmark",
+              "weight": 1.6
+            }
+          ],
+          "primary_match": "agent",
+          "personalized_score": 174.0,
+          "detail_path": "items/arxiv-neuroclaw-technical-report.html",
+          "first_seen_at": "2026-04-28T04:02:41.711670+00:00",
+          "last_seen_at": "2026-04-28T04:02:41.711670+00:00",
+          "last_curated_at": "2026-04-28T04:02:41.711670+00:00",
+          "last_notified_at": null
         }
       ],
       "top_themes": [
@@ -10439,26 +10874,26 @@
         },
         {
           "theme": "llm",
-          "count": 6
+          "count": 7
         },
         {
           "theme": "agent",
-          "count": 2
+          "count": 1
         }
       ],
       "highlights": [
-        {
-          "title": "Automatic Ontology Construction Using LLMs as an External Layer of Memory, Verification, and Planning for Hybrid Intelligent Systems",
-          "source": "arxiv",
-          "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
-        },
         {
           "title": "Recursive Multi-Agent Systems",
           "source": "arxiv",
           "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
         },
         {
-          "title": "SWE-chat: Coding Agent Interactions From Real Users in the Wild",
+          "title": "Select to Think: Unlocking SLM Potential with Local Sufficiency",
+          "source": "arxiv",
+          "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
+        },
+        {
+          "title": "Turning the TIDE: Cross-Architecture Distillation for Diffusion Large Language Models",
           "source": "arxiv",
           "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
         }
@@ -10467,8 +10902,8 @@
     "monthly": {
       "label": "月报",
       "window_days": 30,
-      "generated_at": "2026-04-30T09:25:35.496506+08:00",
-      "count": 146,
+      "generated_at": "2026-04-30T12:00:51.665872+08:00",
+      "count": 152,
       "summary": "近 30 天里，最集中的主题是 ai、agent、llm。",
       "top_items": [
         {
@@ -10718,6 +11153,86 @@
           "last_seen_at": "2026-04-10T01:27:54.160983+00:00",
           "last_curated_at": "2026-04-10T01:27:54.160983+00:00",
           "last_notified_at": "2026-04-10T01:25:05.410194+00:00"
+        },
+        {
+          "id": "arxiv::http://arxiv.org/abs/2604.26940v1",
+          "kind": "paper",
+          "source": "arxiv",
+          "source_tags": [
+            "latest"
+          ],
+          "title": "Select to Think: Unlocking SLM Potential with Local Sufficiency",
+          "html_url": "http://arxiv.org/abs/2604.26940v1",
+          "pdf_url": "https://arxiv.org/pdf/2604.26940v1",
+          "description": "Small language models (SLMs) offer computational efficiency for scalable deployment, yet they often fall short of the reasoning power exhibited by their larger counterparts (LLMs). To mitigate this gap, current approaches invoke an LLM to generate tokens at points of reasoning divergence, but these external calls introduce substantial latency and costs. Alternatively, standard distillation is often hindered by the capacity limitation, as SLMs struggle to accurately mimic the LLM's complex generative distribution. We address this dilemma by identifying local sufficiency: at divergence points, the LLM's preferred token consistently resides within the SLM's top-K next-token predictions, even when failing to emerge as the SLM top-1 choice. We therefore propose SELECT TO THINK (S2T), which reframes the LLM's role from open-ended generation to selection among the SLM's proposals, simplifying the supervision signal to discrete candidate rankings. Leveraging this, we introduce S2T-LOCAL, which distills the selection logic into the SLM, empowering it to perform autonomous re-ranking without inference-time LLM dependency. Empirically, we demonstrate that a 1.5B SLM's top-8 candidates capture the 32B LLM's choice with 95% hit rate. Translating this potential into performance, S2T-LOCAL improves greedy decoding by 24.1% on average across benchmarks, effectively matching the efficacy of 8-path self-consistency while operating with single-trajectory efficiency.",
+          "authors": [
+            "Wenxuan Ye",
+            "Yangyang Zhang",
+            "Xueli An",
+            "Georg Carle",
+            "Yunpu Ma"
+          ],
+          "categories": [
+            "cs.CL"
+          ],
+          "published_at": "2026-04-29T17:51:39+00:00",
+          "updated_at": "2026-04-29T17:51:39+00:00",
+          "primary_category": "cs.CL",
+          "heuristic_score": 20.139,
+          "summary": "Select to Think: Unlocking SLM Potential with Local Sufficiency 是最近值得追踪的一篇 AI 论文。论文摘要显示：Small language models (SLMs) offer computational efficiency for scalable deployment, yet they often fall short of the reasoning power exhibited by their larger counterparts (LLMs). To mitigate this gap, current approaches invoke an LLM to g...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+          "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+          "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+          "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+          "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+          "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+          "highlights": [
+            "分类: cs.CL",
+            "作者数: 5"
+          ],
+          "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+          "relevance_score": 10,
+          "tags": [
+            "ai",
+            "llm",
+            "rag",
+            "model"
+          ],
+          "themes": [
+            "ai",
+            "llm",
+            "rag"
+          ],
+          "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+          "summary_markdown": "**摘要**：Select to Think: Unlocking SLM Potential with Local Sufficiency 是最近值得追踪的一篇 AI 论文。论文摘要显示：Small language models (SLMs) offer computational efficiency for scalable deployment, yet they often fall short of the reasoning power exhibited by their larger counterparts (LLMs). To mitigate this gap, current approaches invoke an LLM to g...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL\n- 作者数: 5",
+          "focus_hits": [
+            {
+              "keyword": "coding",
+              "weight": 2.6
+            },
+            {
+              "keyword": "reasoning",
+              "weight": 2.4
+            },
+            {
+              "keyword": "rag",
+              "weight": 2.2
+            },
+            {
+              "keyword": "inference",
+              "weight": 1.8
+            },
+            {
+              "keyword": "benchmark",
+              "weight": 1.6
+            }
+          ],
+          "primary_match": "coding",
+          "personalized_score": 214.0,
+          "detail_path": "items/arxiv-select-to-think-unlocking-slm-potential-with-local-sufficiency.html",
+          "first_seen_at": "2026-04-30T04:01:00.436418+00:00",
+          "last_seen_at": "2026-04-30T04:01:00.436418+00:00",
+          "last_curated_at": "2026-04-30T04:01:00.436418+00:00",
+          "last_notified_at": null
         },
         {
           "id": "arxiv::http://arxiv.org/abs/2604.13019v1",
@@ -11032,95 +11547,6 @@
           "first_seen_at": "2026-04-22T06:23:01.716108+00:00",
           "last_seen_at": "2026-04-22T06:25:50.559257+00:00",
           "last_curated_at": "2026-04-22T06:25:50.559257+00:00",
-          "last_notified_at": null
-        },
-        {
-          "id": "arxiv::http://arxiv.org/abs/2604.20796v1",
-          "kind": "paper",
-          "source": "arxiv",
-          "source_tags": [
-            "latest"
-          ],
-          "title": "LLaDA2.0-Uni: Unifying Multimodal Understanding and Generation with Diffusion Large Language Model",
-          "html_url": "http://arxiv.org/abs/2604.20796v1",
-          "pdf_url": "https://arxiv.org/pdf/2604.20796v1",
-          "description": "We present LLaDA2.0-Uni, a unified discrete diffusion large language model (dLLM) that supports multimodal understanding and generation within a natively integrated framework. Its architecture combines a fully semantic discrete tokenizer, a MoE-based dLLM backbone, and a diffusion decoder. By discretizing continuous visual inputs via SigLIP-VQ, the model enables block-level masked diffusion for both text and vision inputs within the backbone, while the decoder reconstructs visual tokens into high-fidelity images. Inference efficiency is enhanced beyond parallel decoding through prefix-aware optimizations in the backbone and few-step distillation in the decoder. Supported by carefully curated large-scale data and a tailored multi-stage training pipeline, LLaDA2.0-Uni matches specialized VLMs in multimodal understanding while delivering strong performance in image generation and editing. Its native support for interleaved generation and reasoning establishes a promising and scalable paradigm for next-generation unified foundation models. Codes and models are available at https://github.com/inclusionAI/LLaDA2.0-Uni.",
-          "authors": [
-            "Inclusion AI",
-            "Tiwei Bie",
-            "Haoxing Chen",
-            "Tieyuan Chen",
-            "Zhenglin Cheng",
-            "Long Cui",
-            "Kai Gan",
-            "Zhicheng Huang",
-            "Zhenzhong Lan",
-            "Haoquan Li",
-            "Jianguo Li",
-            "Tao Lin",
-            "Qi Qin",
-            "Hongjun Wang",
-            "Xiaomei Wang",
-            "Haoyuan Wu",
-            "Yi Xin",
-            "Junbo Zhao"
-          ],
-          "categories": [
-            "cs.CV"
-          ],
-          "published_at": "2026-04-22T17:20:42+00:00",
-          "updated_at": "2026-04-22T17:20:42+00:00",
-          "primary_category": "cs.CV",
-          "heuristic_score": 22.113,
-          "summary": "LLaDA2.0-Uni: Unifying Multimodal Understanding and Generation with Diffusion Large Language Model 是最近值得追踪的一篇 AI 论文。论文摘要显示：We present LLaDA2.0-Uni, a unified discrete diffusion large language model (dLLM) that supports multimodal understanding and generation within a natively integrated framework. Its architecture combines a fully semantic discrete tokenizer, a...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-          "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-          "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-          "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-          "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-          "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-          "highlights": [
-            "分类: cs.CV",
-            "作者数: 18"
-          ],
-          "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-          "relevance_score": 10,
-          "tags": [
-            "ai",
-            "llm",
-            "multimodal",
-            "diffusion"
-          ],
-          "themes": [
-            "ai",
-            "llm",
-            "multimodal"
-          ],
-          "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-          "summary_markdown": "**摘要**：LLaDA2.0-Uni: Unifying Multimodal Understanding and Generation with Diffusion Large Language Model 是最近值得追踪的一篇 AI 论文。论文摘要显示：We present LLaDA2.0-Uni, a unified discrete diffusion large language model (dLLM) that supports multimodal understanding and generation within a natively integrated framework. Its architecture combines a fully semantic discrete tokenizer, a...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV\n- 作者数: 18",
-          "focus_hits": [
-            {
-              "keyword": "coding",
-              "weight": 2.6
-            },
-            {
-              "keyword": "reasoning",
-              "weight": 2.4
-            },
-            {
-              "keyword": "multimodal",
-              "weight": 2.0
-            },
-            {
-              "keyword": "inference",
-              "weight": 1.8
-            }
-          ],
-          "primary_match": "coding",
-          "personalized_score": 196.0,
-          "detail_path": "items/arxiv-llada2-0-uni-unifying-multimodal-understanding-and-generation-with-diffusion-large-languag.html",
-          "first_seen_at": "2026-04-23T03:43:39.024812+00:00",
-          "last_seen_at": "2026-04-23T03:43:39.024812+00:00",
-          "last_curated_at": "2026-04-23T03:43:39.024812+00:00",
           "last_notified_at": null
         }
       ],

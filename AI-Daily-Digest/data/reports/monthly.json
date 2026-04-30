@@ -1,8 +1,8 @@
 {
   "label": "月报",
   "window_days": 30,
-  "generated_at": "2026-04-30T09:25:35.496506+08:00",
-  "count": 146,
+  "generated_at": "2026-04-30T12:00:51.665872+08:00",
+  "count": 152,
   "summary": "近 30 天里，最集中的主题是 ai、agent、llm。",
   "top_items": [
     {
@@ -252,6 +252,86 @@
       "last_seen_at": "2026-04-10T01:27:54.160983+00:00",
       "last_curated_at": "2026-04-10T01:27:54.160983+00:00",
       "last_notified_at": "2026-04-10T01:25:05.410194+00:00"
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2604.26940v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Select to Think: Unlocking SLM Potential with Local Sufficiency",
+      "html_url": "http://arxiv.org/abs/2604.26940v1",
+      "pdf_url": "https://arxiv.org/pdf/2604.26940v1",
+      "description": "Small language models (SLMs) offer computational efficiency for scalable deployment, yet they often fall short of the reasoning power exhibited by their larger counterparts (LLMs). To mitigate this gap, current approaches invoke an LLM to generate tokens at points of reasoning divergence, but these external calls introduce substantial latency and costs. Alternatively, standard distillation is often hindered by the capacity limitation, as SLMs struggle to accurately mimic the LLM's complex generative distribution. We address this dilemma by identifying local sufficiency: at divergence points, the LLM's preferred token consistently resides within the SLM's top-K next-token predictions, even when failing to emerge as the SLM top-1 choice. We therefore propose SELECT TO THINK (S2T), which reframes the LLM's role from open-ended generation to selection among the SLM's proposals, simplifying the supervision signal to discrete candidate rankings. Leveraging this, we introduce S2T-LOCAL, which distills the selection logic into the SLM, empowering it to perform autonomous re-ranking without inference-time LLM dependency. Empirically, we demonstrate that a 1.5B SLM's top-8 candidates capture the 32B LLM's choice with 95% hit rate. Translating this potential into performance, S2T-LOCAL improves greedy decoding by 24.1% on average across benchmarks, effectively matching the efficacy of 8-path self-consistency while operating with single-trajectory efficiency.",
+      "authors": [
+        "Wenxuan Ye",
+        "Yangyang Zhang",
+        "Xueli An",
+        "Georg Carle",
+        "Yunpu Ma"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "published_at": "2026-04-29T17:51:39+00:00",
+      "updated_at": "2026-04-29T17:51:39+00:00",
+      "primary_category": "cs.CL",
+      "heuristic_score": 20.139,
+      "summary": "Select to Think: Unlocking SLM Potential with Local Sufficiency 是最近值得追踪的一篇 AI 论文。论文摘要显示：Small language models (SLMs) offer computational efficiency for scalable deployment, yet they often fall short of the reasoning power exhibited by their larger counterparts (LLMs). To mitigate this gap, current approaches invoke an LLM to g...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CL",
+        "作者数: 5"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "llm",
+        "rag",
+        "model"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "rag"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：Select to Think: Unlocking SLM Potential with Local Sufficiency 是最近值得追踪的一篇 AI 论文。论文摘要显示：Small language models (SLMs) offer computational efficiency for scalable deployment, yet they often fall short of the reasoning power exhibited by their larger counterparts (LLMs). To mitigate this gap, current approaches invoke an LLM to g...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL\n- 作者数: 5",
+      "focus_hits": [
+        {
+          "keyword": "coding",
+          "weight": 2.6
+        },
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        },
+        {
+          "keyword": "inference",
+          "weight": 1.8
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "coding",
+      "personalized_score": 214.0,
+      "detail_path": "items/arxiv-select-to-think-unlocking-slm-potential-with-local-sufficiency.html",
+      "first_seen_at": "2026-04-30T04:01:00.436418+00:00",
+      "last_seen_at": "2026-04-30T04:01:00.436418+00:00",
+      "last_curated_at": "2026-04-30T04:01:00.436418+00:00",
+      "last_notified_at": null
     },
     {
       "id": "arxiv::http://arxiv.org/abs/2604.13019v1",
@@ -566,95 +646,6 @@
       "first_seen_at": "2026-04-22T06:23:01.716108+00:00",
       "last_seen_at": "2026-04-22T06:25:50.559257+00:00",
       "last_curated_at": "2026-04-22T06:25:50.559257+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2604.20796v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "LLaDA2.0-Uni: Unifying Multimodal Understanding and Generation with Diffusion Large Language Model",
-      "html_url": "http://arxiv.org/abs/2604.20796v1",
-      "pdf_url": "https://arxiv.org/pdf/2604.20796v1",
-      "description": "We present LLaDA2.0-Uni, a unified discrete diffusion large language model (dLLM) that supports multimodal understanding and generation within a natively integrated framework. Its architecture combines a fully semantic discrete tokenizer, a MoE-based dLLM backbone, and a diffusion decoder. By discretizing continuous visual inputs via SigLIP-VQ, the model enables block-level masked diffusion for both text and vision inputs within the backbone, while the decoder reconstructs visual tokens into high-fidelity images. Inference efficiency is enhanced beyond parallel decoding through prefix-aware optimizations in the backbone and few-step distillation in the decoder. Supported by carefully curated large-scale data and a tailored multi-stage training pipeline, LLaDA2.0-Uni matches specialized VLMs in multimodal understanding while delivering strong performance in image generation and editing. Its native support for interleaved generation and reasoning establishes a promising and scalable paradigm for next-generation unified foundation models. Codes and models are available at https://github.com/inclusionAI/LLaDA2.0-Uni.",
-      "authors": [
-        "Inclusion AI",
-        "Tiwei Bie",
-        "Haoxing Chen",
-        "Tieyuan Chen",
-        "Zhenglin Cheng",
-        "Long Cui",
-        "Kai Gan",
-        "Zhicheng Huang",
-        "Zhenzhong Lan",
-        "Haoquan Li",
-        "Jianguo Li",
-        "Tao Lin",
-        "Qi Qin",
-        "Hongjun Wang",
-        "Xiaomei Wang",
-        "Haoyuan Wu",
-        "Yi Xin",
-        "Junbo Zhao"
-      ],
-      "categories": [
-        "cs.CV"
-      ],
-      "published_at": "2026-04-22T17:20:42+00:00",
-      "updated_at": "2026-04-22T17:20:42+00:00",
-      "primary_category": "cs.CV",
-      "heuristic_score": 22.113,
-      "summary": "LLaDA2.0-Uni: Unifying Multimodal Understanding and Generation with Diffusion Large Language Model 是最近值得追踪的一篇 AI 论文。论文摘要显示：We present LLaDA2.0-Uni, a unified discrete diffusion large language model (dLLM) that supports multimodal understanding and generation within a natively integrated framework. Its architecture combines a fully semantic discrete tokenizer, a...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CV",
-        "作者数: 18"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "llm",
-        "multimodal",
-        "diffusion"
-      ],
-      "themes": [
-        "ai",
-        "llm",
-        "multimodal"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：LLaDA2.0-Uni: Unifying Multimodal Understanding and Generation with Diffusion Large Language Model 是最近值得追踪的一篇 AI 论文。论文摘要显示：We present LLaDA2.0-Uni, a unified discrete diffusion large language model (dLLM) that supports multimodal understanding and generation within a natively integrated framework. Its architecture combines a fully semantic discrete tokenizer, a...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV\n- 作者数: 18",
-      "focus_hits": [
-        {
-          "keyword": "coding",
-          "weight": 2.6
-        },
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "multimodal",
-          "weight": 2.0
-        },
-        {
-          "keyword": "inference",
-          "weight": 1.8
-        }
-      ],
-      "primary_match": "coding",
-      "personalized_score": 196.0,
-      "detail_path": "items/arxiv-llada2-0-uni-unifying-multimodal-understanding-and-generation-with-diffusion-large-languag.html",
-      "first_seen_at": "2026-04-23T03:43:39.024812+00:00",
-      "last_seen_at": "2026-04-23T03:43:39.024812+00:00",
-      "last_curated_at": "2026-04-23T03:43:39.024812+00:00",
       "last_notified_at": null
     }
   ],
