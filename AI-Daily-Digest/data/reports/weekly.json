@@ -1,8 +1,8 @@
 {
   "label": "周报",
   "window_days": 7,
-  "generated_at": "2026-05-05T09:22:22.646712+08:00",
-  "count": 45,
+  "generated_at": "2026-05-05T11:46:58.270073+08:00",
+  "count": 51,
   "summary": "近 7 天里，最集中的主题是 ai、llm、agent。",
   "top_items": [
     {
@@ -345,6 +345,81 @@
       "last_notified_at": null
     },
     {
+      "id": "arxiv::http://arxiv.org/abs/2605.02815v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "FlexSQL: Flexible Exploration and Execution Make Better Text-to-SQL Agents",
+      "html_url": "http://arxiv.org/abs/2605.02815v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.02815v1",
+      "description": "Text-to-SQL over large analytical databases requires navigating complex schemas, resolving ambiguous queries, and grounding decisions in actual data. Most current systems follow a fixed pipeline where schema elements are retrieved once upfront and the database is only revisited for post-hoc repair, limiting recovery from early mistakes. We present FlexSQL, a text-to-SQL agent whose core design principle is flexible database interaction: the agent can explore schema structure, inspect data values, and run verification queries at any point during reasoning. FlexSQL generates diverse execution plans to cover multiple query interpretations, implements each plan in either SQL or Python depending on the task, and uses a two-tiered repair mechanism that can backtrack from code-level errors to plan-level revisions. On Spider2-Snow, using gpt-oss-120b, FlexSQL achieves a 65.4\\% score, outperforming strong open-source baselines that use stronger, larger models such as gpt-o3 and DeepSeek-R1. When integrated into a general-purpose coding agent (as skills in Claude Code), our approach yields over 10\\% relative improvement on Spider2-Snow. Further analysis shows that flexible exploration and flexible execution jointly contribute to the effectiveness of our approach, highlighting flexibility as a key design principle. Our code is available at: https://github.com/StringNLPLAB/FlexSQL",
+      "authors": [
+        "Quang Hieu Pham",
+        "Yang He",
+        "Ping Nie",
+        "Canwen Xu",
+        "Davood Rafiei",
+        "Yuepeng Wang",
+        "Xi Ye",
+        "Jocelyn Qiaochu Chen"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "published_at": "2026-05-04T16:51:31+00:00",
+      "updated_at": "2026-05-04T16:51:31+00:00",
+      "primary_category": "cs.CL",
+      "heuristic_score": 17.639,
+      "summary": "FlexSQL: Flexible Exploration and Execution Make Better Text-to-SQL Agents 是最近值得追踪的一篇 AI 论文。论文摘要显示：Text-to-SQL over large analytical databases requires navigating complex schemas, resolving ambiguous queries, and grounding decisions in actual data. Most current systems follow a fixed pipeline where schema elements are retrieved once upfr...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CL",
+        "作者数: 8"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "agent",
+        "gpt",
+        "model"
+      ],
+      "themes": [
+        "ai",
+        "agent",
+        "gpt"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：FlexSQL: Flexible Exploration and Execution Make Better Text-to-SQL Agents 是最近值得追踪的一篇 AI 论文。论文摘要显示：Text-to-SQL over large analytical databases requires navigating complex schemas, resolving ambiguous queries, and grounding decisions in actual data. Most current systems follow a fixed pipeline where schema elements are retrieved once upfr...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL\n- 作者数: 8",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "coding",
+          "weight": 2.6
+        },
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 188.0,
+      "detail_path": "items/arxiv-flexsql-flexible-exploration-and-execution-make-better-text-to-sql-agents.html",
+      "first_seen_at": "2026-05-05T03:47:05.274273+00:00",
+      "last_seen_at": "2026-05-05T03:47:05.274273+00:00",
+      "last_curated_at": "2026-05-05T03:47:05.274273+00:00",
+      "last_notified_at": null
+    },
+    {
       "id": "arxiv::http://arxiv.org/abs/2604.24698v1",
       "kind": "paper",
       "source": "arxiv",
@@ -589,84 +664,6 @@
       "last_seen_at": "2026-04-28T04:02:41.711670+00:00",
       "last_curated_at": "2026-04-28T04:02:41.711670+00:00",
       "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2604.24715v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "Long-Context Aware Upcycling: A New Frontier for Hybrid LLM Scaling",
-      "html_url": "http://arxiv.org/abs/2604.24715v1",
-      "pdf_url": "https://arxiv.org/pdf/2604.24715v1",
-      "description": "Hybrid sequence models that combine efficient Transformer components with linear sequence modeling blocks are a promising alternative to pure Transformers, but most are still pretrained from scratch and therefore fail to reuse existing Transformer checkpoints. We study upcycling as a practical path to convert pretrained Transformer LLMs into hybrid architectures while preserving short-context quality and improving long-context capability. We call our solution \\emph{HyLo} (HYbrid LOng-context): a long-context upcycling recipe that combines architectural adaptation with efficient Transformer blocks, Multi-Head Latent Attention (MLA), and linear blocks (Mamba2 or Gated DeltaNet), together with staged long-context training and teacher-guided distillation for stable optimization. HyLo extends usable context length by up to $32\\times$ through efficient post-training and reduces KV-cache memory by more than $90\\%$, enabling up to 2M-token prefill and decoding in our \\texttt{vLLM} inference stack, while comparable Llama baselines run out of memory beyond 64K context. Across 1B- and 3B-scale settings (Llama- and Qwen-based variants), HyLo delivers consistently strong short- and long-context performance and significantly outperforms state-of-the-art upcycled hybrid baselines on long-context evaluations such as RULER. Notably, at similar scale, HyLo-Qwen-1.7B trained on only 10B tokens significantly outperforms JetNemotron (trained on 400B tokens) on GSM8K, Lm-Harness common sense reasoning and RULER-64K.",
-      "authors": [
-        "Parsa Ashrafi Fashi",
-        "Utkarsh Saxena",
-        "Mehdi Rezagholizadeh",
-        "Aref Jafari",
-        "Akash Haridas",
-        "Mingyu Yang",
-        "Vansh Bhatia",
-        "Guihong Li",
-        "Vikram Appia",
-        "Emad Barsoum"
-      ],
-      "categories": [
-        "cs.CL",
-        "cs.LG"
-      ],
-      "published_at": "2026-04-27T17:23:37+00:00",
-      "updated_at": "2026-04-27T17:23:37+00:00",
-      "primary_category": "cs.CL",
-      "heuristic_score": 17.799,
-      "summary": "Long-Context Aware Upcycling: A New Frontier for Hybrid LLM Scaling 是最近值得追踪的一篇 AI 论文。论文摘要显示：Hybrid sequence models that combine efficient Transformer components with linear sequence modeling blocks are a promising alternative to pure Transformers, but most are still pretrained from scratch and therefore fail to reuse existing Tran...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CL, cs.LG",
-        "作者数: 10"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "llm",
-        "model",
-        "inference"
-      ],
-      "themes": [
-        "ai",
-        "llm",
-        "model"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：Long-Context Aware Upcycling: A New Frontier for Hybrid LLM Scaling 是最近值得追踪的一篇 AI 论文。论文摘要显示：Hybrid sequence models that combine efficient Transformer components with linear sequence modeling blocks are a promising alternative to pure Transformers, but most are still pretrained from scratch and therefore fail to reuse existing Tran...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL, cs.LG\n- 作者数: 10",
-      "focus_hits": [
-        {
-          "keyword": "coding",
-          "weight": 2.6
-        },
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "inference",
-          "weight": 1.8
-        }
-      ],
-      "primary_match": "coding",
-      "personalized_score": 176.0,
-      "detail_path": "items/arxiv-long-context-aware-upcycling-a-new-frontier-for-hybrid-llm-scaling.html",
-      "first_seen_at": "2026-04-28T04:02:41.711670+00:00",
-      "last_seen_at": "2026-04-28T04:02:41.711670+00:00",
-      "last_curated_at": "2026-04-28T04:02:41.711670+00:00",
-      "last_notified_at": null
     }
   ],
   "top_themes": [
@@ -676,11 +673,11 @@
     },
     {
       "theme": "llm",
-      "count": 6
+      "count": 5
     },
     {
       "theme": "agent",
-      "count": 2
+      "count": 3
     }
   ],
   "highlights": [
