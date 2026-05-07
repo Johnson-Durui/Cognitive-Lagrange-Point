@@ -1,90 +1,10 @@
 {
   "label": "周报",
   "window_days": 7,
-  "generated_at": "2026-05-07T09:25:19.339441+08:00",
-  "count": 44,
+  "generated_at": "2026-05-07T12:00:44.268210+08:00",
+  "count": 35,
   "summary": "近 7 天里，最集中的主题是 ai、agent、llm。",
   "top_items": [
-    {
-      "id": "arxiv::http://arxiv.org/abs/2604.26940v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "Select to Think: Unlocking SLM Potential with Local Sufficiency",
-      "html_url": "http://arxiv.org/abs/2604.26940v1",
-      "pdf_url": "https://arxiv.org/pdf/2604.26940v1",
-      "description": "Small language models (SLMs) offer computational efficiency for scalable deployment, yet they often fall short of the reasoning power exhibited by their larger counterparts (LLMs). To mitigate this gap, current approaches invoke an LLM to generate tokens at points of reasoning divergence, but these external calls introduce substantial latency and costs. Alternatively, standard distillation is often hindered by the capacity limitation, as SLMs struggle to accurately mimic the LLM's complex generative distribution. We address this dilemma by identifying local sufficiency: at divergence points, the LLM's preferred token consistently resides within the SLM's top-K next-token predictions, even when failing to emerge as the SLM top-1 choice. We therefore propose SELECT TO THINK (S2T), which reframes the LLM's role from open-ended generation to selection among the SLM's proposals, simplifying the supervision signal to discrete candidate rankings. Leveraging this, we introduce S2T-LOCAL, which distills the selection logic into the SLM, empowering it to perform autonomous re-ranking without inference-time LLM dependency. Empirically, we demonstrate that a 1.5B SLM's top-8 candidates capture the 32B LLM's choice with 95% hit rate. Translating this potential into performance, S2T-LOCAL improves greedy decoding by 24.1% on average across benchmarks, effectively matching the efficacy of 8-path self-consistency while operating with single-trajectory efficiency.",
-      "authors": [
-        "Wenxuan Ye",
-        "Yangyang Zhang",
-        "Xueli An",
-        "Georg Carle",
-        "Yunpu Ma"
-      ],
-      "categories": [
-        "cs.CL"
-      ],
-      "published_at": "2026-04-29T17:51:39+00:00",
-      "updated_at": "2026-04-29T17:51:39+00:00",
-      "primary_category": "cs.CL",
-      "heuristic_score": 20.139,
-      "summary": "Select to Think: Unlocking SLM Potential with Local Sufficiency 是最近值得追踪的一篇 AI 论文。论文摘要显示：Small language models (SLMs) offer computational efficiency for scalable deployment, yet they often fall short of the reasoning power exhibited by their larger counterparts (LLMs). To mitigate this gap, current approaches invoke an LLM to g...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CL",
-        "作者数: 5"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "llm",
-        "rag",
-        "model"
-      ],
-      "themes": [
-        "ai",
-        "llm",
-        "rag"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：Select to Think: Unlocking SLM Potential with Local Sufficiency 是最近值得追踪的一篇 AI 论文。论文摘要显示：Small language models (SLMs) offer computational efficiency for scalable deployment, yet they often fall short of the reasoning power exhibited by their larger counterparts (LLMs). To mitigate this gap, current approaches invoke an LLM to g...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL\n- 作者数: 5",
-      "focus_hits": [
-        {
-          "keyword": "coding",
-          "weight": 2.6
-        },
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "inference",
-          "weight": 1.8
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "coding",
-      "personalized_score": 214.0,
-      "detail_path": "items/arxiv-select-to-think-unlocking-slm-potential-with-local-sufficiency.html",
-      "first_seen_at": "2026-04-30T04:01:00.436418+00:00",
-      "last_seen_at": "2026-04-30T04:01:00.436418+00:00",
-      "last_curated_at": "2026-04-30T04:01:00.436418+00:00",
-      "last_notified_at": null
-    },
     {
       "id": "arxiv::http://arxiv.org/abs/2604.28177v1",
       "kind": "paper",
@@ -179,83 +99,6 @@
       "last_notified_at": null
     },
     {
-      "id": "arxiv::http://arxiv.org/abs/2604.26951v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "Turning the TIDE: Cross-Architecture Distillation for Diffusion Large Language Models",
-      "html_url": "http://arxiv.org/abs/2604.26951v1",
-      "pdf_url": "https://arxiv.org/pdf/2604.26951v1",
-      "description": "Diffusion large language models (dLLMs) offer parallel decoding and bidirectional context, but state-of-the-art dLLMs require billions of parameters for competitive performance. While existing distillation methods for dLLMs reduce inference steps within a single architecture, none address cross-architecture knowledge transfer, in which the teacher and student differ in architecture, attention mechanism, and tokenizer. We present TIDE, the first framework for cross-architecture dLLM distillation, comprising three modular components: (1) TIDAL, which jointly modulates distillation strength across training progress and diffusion timestep to account for the teacher's noise-dependent reliability; (2) CompDemo, which enriches the teacher's context via complementary mask splitting to improve predictions under heavy masking; and (3) Reverse CALM, a cross-tokenizer objective that inverts chunk-level likelihood matching, yielding bounded gradients and dual-end noise filtering. Distilling 8B dense and 16B MoE teachers into a 0.6B student via two heterogeneous pipelines outperforms the baseline by an average of 1.53 points across eight benchmarks, yielding notable gains in code generation, where HumanEval scores reach 48.78 compared to 32.3 for the AR baseline.",
-      "authors": [
-        "Gongbo Zhang",
-        "Wen Wang",
-        "Ye Tian",
-        "Li Yuan"
-      ],
-      "categories": [
-        "cs.CL",
-        "cs.AI",
-        "cs.LG"
-      ],
-      "published_at": "2026-04-29T17:59:01+00:00",
-      "updated_at": "2026-04-29T17:59:01+00:00",
-      "primary_category": "cs.CL",
-      "heuristic_score": 22.286,
-      "summary": "Turning the TIDE: Cross-Architecture Distillation for Diffusion Large Language Models 是最近值得追踪的一篇 AI 论文。论文摘要显示：Diffusion large language models (dLLMs) offer parallel decoding and bidirectional context, but state-of-the-art dLLMs require billions of parameters for competitive performance. While existing distillation methods for dLLMs reduce inference...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CL, cs.AI",
-        "作者数: 4"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "llm",
-        "rag",
-        "diffusion"
-      ],
-      "themes": [
-        "ai",
-        "llm",
-        "rag"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：Turning the TIDE: Cross-Architecture Distillation for Diffusion Large Language Models 是最近值得追踪的一篇 AI 论文。论文摘要显示：Diffusion large language models (dLLMs) offer parallel decoding and bidirectional context, but state-of-the-art dLLMs require billions of parameters for competitive performance. While existing distillation methods for dLLMs reduce inference...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL, cs.AI\n- 作者数: 4",
-      "focus_hits": [
-        {
-          "keyword": "coding",
-          "weight": 2.6
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "inference",
-          "weight": 1.8
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "coding",
-      "personalized_score": 190.0,
-      "detail_path": "items/arxiv-turning-the-tide-cross-architecture-distillation-for-diffusion-large-language-models.html",
-      "first_seen_at": "2026-04-30T04:01:00.436418+00:00",
-      "last_seen_at": "2026-04-30T04:01:00.436418+00:00",
-      "last_curated_at": "2026-04-30T04:01:00.436418+00:00",
-      "last_notified_at": null
-    },
-    {
       "id": "arxiv::http://arxiv.org/abs/2605.02815v1",
       "kind": "paper",
       "source": "arxiv",
@@ -342,7 +185,7 @@
       "full_name": "InsForge/InsForge",
       "html_url": "https://github.com/InsForge/InsForge",
       "description": "InsForge is a Postgres-based backend with auth, storage, compute, hosting, and AI gateway. Built for coding agents.",
-      "stars": 8463,
+      "stars": 8532,
       "stars_today": 0,
       "language": "TypeScript",
       "topics": [],
@@ -356,7 +199,7 @@
       "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
       "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
       "highlights": [
-        "Stars: 8463",
+        "Stars: 8532",
         "语言: TypeScript"
       ],
       "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
@@ -373,7 +216,7 @@
         "rag"
       ],
       "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：InsForge/InsForge 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：InsForge is a Postgres-based backend with auth, storage, compute, hosting, and AI gateway. Built for coding agents.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：10/10\n\n**亮点**：\n- Stars: 8463\n- 语言: TypeScript",
+      "summary_markdown": "**摘要**：InsForge/InsForge 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：InsForge is a Postgres-based backend with auth, storage, compute, hosting, and AI gateway. Built for coding agents.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：10/10\n\n**亮点**：\n- Stars: 8532\n- 语言: TypeScript",
       "focus_hits": [
         {
           "keyword": "agent",
@@ -389,11 +232,11 @@
         }
       ],
       "primary_match": "agent",
-      "personalized_score": 181.39,
+      "personalized_score": 181.41,
       "detail_path": "items/github-insforge-insforge.html",
       "first_seen_at": "2026-05-07T01:25:31.666453+00:00",
-      "last_seen_at": "2026-05-07T01:25:31.666453+00:00",
-      "last_curated_at": "2026-05-07T01:25:31.666453+00:00",
+      "last_seen_at": "2026-05-07T04:01:06.373588+00:00",
+      "last_curated_at": "2026-05-07T04:01:06.373588+00:00",
       "last_notified_at": null
     },
     {
@@ -502,7 +345,7 @@
       "full_name": "ruvnet/ruflo",
       "html_url": "https://github.com/ruvnet/ruflo",
       "description": "🌊 The leading agent orchestration platform for Claude. Deploy intelligent multi-agent swarms, coordinate autonomous workflows, and build conversational AI systems. Features enterprise-grade architecture, self-learning swarm intelligence, RAG integration, and native Claude Code / Codex Integration",
-      "stars": 45289,
+      "stars": 45417,
       "stars_today": 0,
       "language": "TypeScript",
       "topics": [],
@@ -516,7 +359,7 @@
       "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
       "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
       "highlights": [
-        "Stars: 45289",
+        "Stars: 45417",
         "语言: TypeScript"
       ],
       "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
@@ -532,7 +375,7 @@
         "rag"
       ],
       "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：ruvnet/ruflo 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：🌊 The leading agent orchestration platform for Claude. Deploy intelligent multi-agent swarms, coordinate autonomous workflows, and build conversational AI systems. Features enterprise-grade architecture, self-learning swarm intelligence, RA...结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：10/10\n\n**亮点**：\n- Stars: 45289\n- 语言: TypeScript",
+      "summary_markdown": "**摘要**：ruvnet/ruflo 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：🌊 The leading agent orchestration platform for Claude. Deploy intelligent multi-agent swarms, coordinate autonomous workflows, and build conversational AI systems. Features enterprise-grade architecture, self-learning swarm intelligence, RA...结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：10/10\n\n**亮点**：\n- Stars: 45417\n- 语言: TypeScript",
       "focus_hits": [
         {
           "keyword": "agent",
@@ -544,87 +387,241 @@
         }
       ],
       "primary_match": "agent",
-      "personalized_score": 170.12,
+      "personalized_score": 170.17,
       "detail_path": "items/github-ruvnet-ruflo.html",
       "first_seen_at": "2026-05-03T01:23:16.672494+00:00",
-      "last_seen_at": "2026-05-07T01:25:31.666453+00:00",
-      "last_curated_at": "2026-05-07T01:25:31.666453+00:00",
+      "last_seen_at": "2026-05-07T04:01:06.373588+00:00",
+      "last_curated_at": "2026-05-07T04:01:06.373588+00:00",
       "last_notified_at": null
     },
     {
-      "id": "arxiv::http://arxiv.org/abs/2604.26934v1",
+      "id": "arxiv::http://arxiv.org/abs/2604.28182v1",
       "kind": "paper",
       "source": "arxiv",
       "source_tags": [
         "latest"
       ],
-      "title": "World2VLM: Distilling World Model Imagination into VLMs for Dynamic Spatial Reasoning",
-      "html_url": "http://arxiv.org/abs/2604.26934v1",
-      "pdf_url": "https://arxiv.org/pdf/2604.26934v1",
-      "description": "Vision-language models (VLMs) have shown strong performance on static visual understanding, yet they still struggle with dynamic spatial reasoning that requires imagining how scenes evolve under egocentric motion. Recent efforts address this limitation either by scaling spatial supervision with synthetic data or by coupling VLMs with world models at inference time. However, the former often lacks explicit modeling of motion-conditioned state transitions, while the latter incurs substantial computational overhead. In this work, we propose World2VLM, a training framework that distills spatial imagination from a generative world model into a vision-language model. Given an initial observation and a parameterized camera trajectory, we use a view-consistent world model to synthesize geometrically aligned future views and derive structured supervision for both forward (action-to-outcome) and inverse (outcome-to-action) spatial reasoning. We post-train the VLM with a two-stage recipe on a compact dataset generated by this pipeline and evaluate it on multiple spatial reasoning benchmarks. World2VLM delivers consistent improvements over the base model across diverse benchmarks, including SAT-Real, SAT-Synthesized, VSI-Bench, and MindCube. It also outperforms the test-time world-model-coupled methods while eliminating the need for expensive inference-time generation. Our results suggest that world models can serve not only as inference-time tools, but also as effective training-time teachers, enabling VLMs to internalize spatial imagination in a scalable and efficient manner.",
+      "title": "Exploration Hacking: Can LLMs Learn to Resist RL Training?",
+      "html_url": "http://arxiv.org/abs/2604.28182v1",
+      "pdf_url": "https://arxiv.org/pdf/2604.28182v1",
+      "description": "Reinforcement learning (RL) has become essential to the post-training of large language models (LLMs) for reasoning, agentic capabilities and alignment. Successful RL relies on sufficient exploration of diverse actions by the model during training, which creates a potential failure mode: a model could strategically alter its exploration during training to influence the subsequent training outcome. In this paper we study this behavior, called exploration hacking. First, we create model organisms of selective RL resistance by fine-tuning LLMs to follow specific underperformance strategies; these models can successfully resist our RL-based capability elicitation in agentic biosecurity and AI R&D environments while maintaining performance on related tasks. We then use our model organisms to evaluate detection and mitigation strategies, including monitoring, weight noising, and SFT-based elicitation. Finally, we show that current frontier models can exhibit explicit reasoning about suppressing their exploration when provided with sufficient information about their training context, with higher rates when this information is acquired indirectly through the environment. Together, our results suggest exploration hacking is a possible failure mode of RL on sufficiently capable LLMs.",
       "authors": [
-        "Wanyue Zhang",
-        "Wenxiang Wu",
-        "Wang Xu",
-        "Jiaxin Luo",
-        "Helu Zhi",
-        "Yibin Huang",
-        "Shuo Ren",
-        "Zitao Liu",
-        "Jiajun Zhang"
+        "Eyon Jang",
+        "Damon Falck",
+        "Joschka Braun",
+        "Nathalie Kirch",
+        "Achu Menon",
+        "Perusha Moodley",
+        "Scott Emmons",
+        "Roland S. Zimmermann",
+        "David Lindner"
       ],
       "categories": [
-        "cs.CV"
+        "cs.LG",
+        "cs.CL"
       ],
-      "published_at": "2026-04-29T17:48:01+00:00",
-      "updated_at": "2026-04-29T17:48:01+00:00",
-      "primary_category": "cs.CV",
-      "heuristic_score": 17.89,
-      "summary": "World2VLM: Distilling World Model Imagination into VLMs for Dynamic Spatial Reasoning 是最近值得追踪的一篇 AI 论文。论文摘要显示：Vision-language models (VLMs) have shown strong performance on static visual understanding, yet they still struggle with dynamic spatial reasoning that requires imagining how scenes evolve under egocentric motion. Recent efforts address thi...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "published_at": "2026-04-30T17:58:39+00:00",
+      "updated_at": "2026-04-30T17:58:39+00:00",
+      "primary_category": "cs.LG",
+      "heuristic_score": 19.918,
+      "summary": "Exploration Hacking: Can LLMs Learn to Resist RL Training? 是最近值得追踪的一篇 AI 论文。论文摘要显示：Reinforcement learning (RL) has become essential to the post-training of large language models (LLMs) for reasoning, agentic capabilities and alignment. Successful RL relies on sufficient exploration of diverse actions by the model during t...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
       "brief": "这是一篇值得加入今日论文雷达的最新工作。",
       "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
       "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
       "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
       "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
       "highlights": [
-        "分类: cs.CV",
+        "分类: cs.LG, cs.CL",
         "作者数: 9"
       ],
       "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
       "relevance_score": 10,
       "tags": [
         "ai",
-        "model",
-        "benchmark",
-        "inference"
+        "llm",
+        "agent",
+        "agentic"
       ],
       "themes": [
         "ai",
+        "llm",
+        "agent"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：Exploration Hacking: Can LLMs Learn to Resist RL Training? 是最近值得追踪的一篇 AI 论文。论文摘要显示：Reinforcement learning (RL) has become essential to the post-training of large language models (LLMs) for reasoning, agentic capabilities and alignment. Successful RL relies on sufficient exploration of diverse actions by the model during t...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.LG, cs.CL\n- 作者数: 9",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 162.0,
+      "detail_path": "items/arxiv-exploration-hacking-can-llms-learn-to-resist-rl-training.html",
+      "first_seen_at": "2026-05-01T04:13:13.453842+00:00",
+      "last_seen_at": "2026-05-02T03:47:52.674360+00:00",
+      "last_curated_at": "2026-05-02T03:47:52.674360+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "github::Arindam200/awesome-ai-apps",
+      "kind": "repo",
+      "source": "github",
+      "source_tags": [
+        "trending"
+      ],
+      "name": "awesome-ai-apps",
+      "title": "Arindam200/awesome-ai-apps",
+      "full_name": "Arindam200/awesome-ai-apps",
+      "html_url": "https://github.com/Arindam200/awesome-ai-apps",
+      "description": "A collection of projects showcasing RAG, agents, workflows, and other AI use cases",
+      "stars": 11473,
+      "stars_today": 0,
+      "language": "Python",
+      "topics": [],
+      "created_at": "",
+      "updated_at": "",
+      "heuristic_score": 17.8,
+      "summary": "Arindam200/awesome-ai-apps 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：A collection of projects showcasing RAG, agents, workflows, and other AI use cases结合关键词命中和热度信号，它适合加入今日重点观察列表。",
+      "brief": "这是一个值得快速关注的开源 AI 项目。",
+      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
+      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
+      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
+      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
+      "highlights": [
+        "Stars: 11473",
+        "语言: Python"
+      ],
+      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "agent",
+        "rag"
+      ],
+      "themes": [
+        "ai",
+        "agent",
+        "rag"
+      ],
+      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
+      "summary_markdown": "**摘要**：Arindam200/awesome-ai-apps 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：A collection of projects showcasing RAG, agents, workflows, and other AI use cases结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：10/10\n\n**亮点**：\n- Stars: 11473\n- 语言: Python",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 156.59,
+      "detail_path": "items/github-arindam200-awesome-ai-apps.html",
+      "first_seen_at": "2026-05-06T01:19:57.745877+00:00",
+      "last_seen_at": "2026-05-06T04:02:14.277260+00:00",
+      "last_curated_at": "2026-05-06T04:02:14.277260+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2605.02881v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "MolmoAct2: Action Reasoning Models for Real-world Deployment",
+      "html_url": "http://arxiv.org/abs/2605.02881v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.02881v1",
+      "description": "Vision-Language-Action (VLA) models aim to provide a single generalist controller for robots, but today's systems fall short on the criteria that matter for real-world deployment. Frontier models are closed, open-weight alternatives are tied to expensive hardware, reasoning-augmented policies pay prohibitive latency for their grounding, and fine-tuned success rates remain below the threshold for dependable use. We present MolmoAct2, a fully open action reasoning model built for practical deployment, advancing its predecessor along five axes. We introduce MolmoER, a VLM backbone specialized for spatial and embodied reasoning, trained on a 3.3M-sample corpus with a specialize-then-rehearse recipe. We release three new datasets spanning low-to-medium cost platforms, including MolmoAct2-BimanualYAM, 720 hours of teleoperated bimanual trajectories that constitute the largest open bimanual dataset to date, together with quality-filtered Franka (DROID) and SO100/101 subsets. We provide OpenFAST, an open-weight, open-data action tokenizer trained on millions of trajectories across five embodiments. We redesign the architecture to graft a flow-matching continuous-action expert onto a discrete-token VLM via per-layer KV-cache conditioning. Finally, we propose MolmoThink, an adaptive-depth reasoning variant that re-predicts depth tokens only for scene regions that change between timesteps, retaining geometric grounding at a fraction of prior latency. In the most extensive empirical study of any open VLA to date, spanning 7 simulation and real-world benchmarks, MolmoAct2 outperforms strong baselines including Pi-05, while MolmoER surpasses GPT-5 and Gemini Robotics ER-1.5 across 13 embodied-reasoning benchmarks. We release model weights, training code, and complete training data. Project page: https://allenai.org/blog/molmoact2",
+      "authors": [
+        "Haoquan Fang",
+        "Jiafei Duan",
+        "Donovan Clay",
+        "Sam Wang",
+        "Shuo Liu",
+        "Weikai Huang",
+        "Xiang Fan",
+        "Wei-Chuan Tsai",
+        "Shirui Chen",
+        "Yi Ru Wang",
+        "Shanli Xing",
+        "Jaemin Cho",
+        "Jae Sung Park",
+        "Ainaz Eftekhar",
+        "Peter Sushko",
+        "Karen Farley",
+        "Angad Wadhwa",
+        "Cole Harrison",
+        "Winson Han",
+        "Ying-Chun Lee",
+        "Eli VanderBilt",
+        "Rose Hendrix",
+        "Suveen Ellawela",
+        "Lucas Ngoo",
+        "Joyce Chai",
+        "Zhongzheng Ren",
+        "Ali Farhadi",
+        "Dieter Fox",
+        "Ranjay Krishna"
+      ],
+      "categories": [
+        "cs.RO"
+      ],
+      "published_at": "2026-05-04T17:51:21+00:00",
+      "updated_at": "2026-05-04T17:51:21+00:00",
+      "primary_category": "cs.RO",
+      "heuristic_score": 18.8,
+      "summary": "MolmoAct2: Action Reasoning Models for Real-world Deployment 是最近值得追踪的一篇 AI 论文。论文摘要显示：Vision-Language-Action (VLA) models aim to provide a single generalist controller for robots, but today's systems fall short on the criteria that matter for real-world deployment. Frontier models are closed, open-weight alternatives are tie...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.RO",
+        "作者数: 29"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "gpt",
         "model",
         "benchmark"
       ],
+      "themes": [
+        "ai",
+        "gpt",
+        "model"
+      ],
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：World2VLM: Distilling World Model Imagination into VLMs for Dynamic Spatial Reasoning 是最近值得追踪的一篇 AI 论文。论文摘要显示：Vision-language models (VLMs) have shown strong performance on static visual understanding, yet they still struggle with dynamic spatial reasoning that requires imagining how scenes evolve under egocentric motion. Recent efforts address thi...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV\n- 作者数: 9",
+      "summary_markdown": "**摘要**：MolmoAct2: Action Reasoning Models for Real-world Deployment 是最近值得追踪的一篇 AI 论文。论文摘要显示：Vision-Language-Action (VLA) models aim to provide a single generalist controller for robots, but today's systems fall short on the criteria that matter for real-world deployment. Frontier models are closed, open-weight alternatives are tie...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.RO\n- 作者数: 29",
       "focus_hits": [
         {
           "keyword": "reasoning",
           "weight": 2.4
         },
         {
-          "keyword": "inference",
-          "weight": 1.8
+          "keyword": "benchmark",
+          "weight": 1.6
         },
         {
-          "keyword": "benchmark",
+          "keyword": "robotics",
           "weight": 1.6
         }
       ],
       "primary_match": "reasoning",
-      "personalized_score": 166.0,
-      "detail_path": "items/arxiv-world2vlm-distilling-world-model-imagination-into-vlms-for-dynamic-spatial-reasoning.html",
-      "first_seen_at": "2026-04-30T04:01:00.436418+00:00",
-      "last_seen_at": "2026-04-30T04:01:00.436418+00:00",
-      "last_curated_at": "2026-04-30T04:01:00.436418+00:00",
+      "personalized_score": 156.0,
+      "detail_path": "items/arxiv-molmoact2-action-reasoning-models-for-real-world-deployment.html",
+      "first_seen_at": "2026-05-05T03:47:05.274273+00:00",
+      "last_seen_at": "2026-05-05T03:47:05.274273+00:00",
+      "last_curated_at": "2026-05-05T03:47:05.274273+00:00",
       "last_notified_at": null
     }
   ],
@@ -635,32 +632,32 @@
     },
     {
       "theme": "agent",
-      "count": 4
+      "count": 5
     },
     {
       "theme": "llm",
-      "count": 3
+      "count": 2
     },
     {
-      "theme": "model",
+      "theme": "gpt",
       "count": 1
     }
   ],
   "highlights": [
-    {
-      "title": "Select to Think: Unlocking SLM Potential with Local Sufficiency",
-      "source": "arxiv",
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
-    },
     {
       "title": "AEGIS: A Holistic Benchmark for Evaluating Forensic Analysis of AI-Generated Academic Images",
       "source": "arxiv",
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     },
     {
-      "title": "Turning the TIDE: Cross-Architecture Distillation for Diffusion Large Language Models",
+      "title": "FlexSQL: Flexible Exploration and Execution Make Better Text-to-SQL Agents",
       "source": "arxiv",
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
+    },
+    {
+      "title": "InsForge/InsForge",
+      "source": "github",
+      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。"
     }
   ]
 }
