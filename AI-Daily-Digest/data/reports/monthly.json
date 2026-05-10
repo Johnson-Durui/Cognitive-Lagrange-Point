@@ -1,9 +1,9 @@
 {
   "label": "月报",
   "window_days": 30,
-  "generated_at": "2026-05-09T11:52:45.645556+08:00",
-  "count": 194,
-  "summary": "近 30 天里，最集中的主题是 ai、agent、llm。",
+  "generated_at": "2026-05-10T09:27:09.107903+08:00",
+  "count": 163,
+  "summary": "近 30 天里，最集中的主题是 ai、llm、agent。",
   "top_items": [
     {
       "id": "arxiv::http://arxiv.org/abs/2604.20795v1",
@@ -174,84 +174,6 @@
       "last_seen_at": "2026-04-29T04:00:06.563158+00:00",
       "last_curated_at": "2026-04-29T04:00:06.563158+00:00",
       "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2604.08299v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "SeLaR: Selective Latent Reasoning in Large Language Models",
-      "html_url": "http://arxiv.org/abs/2604.08299v1",
-      "pdf_url": "https://arxiv.org/pdf/2604.08299v1",
-      "description": "Chain-of-Thought (CoT) has become a cornerstone of reasoning in large language models, yet its effectiveness is constrained by the limited expressiveness of discrete token sampling. Recent latent reasoning approaches attempt to alleviate this limitation by replacing discrete tokens with soft embeddings (probability-weighted mixtures of token embeddings) or hidden states, but they commonly suffer from two issues: (1) global activation injects perturbations into high-confidence steps, impairing reasoning stability; and (2) soft embeddings quickly collapse toward the highest-probability token, limiting exploration of alternative trajectories. To address these challenges, we propose SeLaR (Selective Latent Reasoning), a lightweight and training-free framework. SeLaR introduces an entropy-gated mechanism that activates soft embeddings only at low-confidence steps, while preserving discrete decoding at high-confidence steps. Additionally, we propose an entropy-aware contrastive regularization that pushes soft embeddings away from the dominant (highest-probability) token's direction, encouraging sustained exploration of multiple latent reasoning paths. Experiments on five reasoning benchmarks demonstrate that SeLaR consistently outperforms standard CoT and state-of-the-art training-free methods.",
-      "authors": [
-        "Renyu Fu",
-        "Guibo Luo"
-      ],
-      "categories": [
-        "cs.CL",
-        "cs.AI"
-      ],
-      "published_at": "2026-04-09T14:32:07+00:00",
-      "updated_at": "2026-04-09T14:32:07+00:00",
-      "primary_category": "cs.CL",
-      "heuristic_score": 17.536,
-      "summary": "SeLaR提出了一种无训练的轻量级框架，通过熵门控机制仅在低置信度步骤激活软嵌入，避免全局扰动和高置信步骤的稳定性问题。同时引入熵感知对比正则化，推动软嵌入远离主导token，促进多路径潜在推理探索。在五个推理基准上，SeLaR超越标准CoT和现有无训练方法。",
-      "brief": "SeLaR优化潜在推理，仅低置信步骤用软嵌入，提升LLM推理稳定性与探索性，无需训练即优于CoT。",
-      "problem": "现有潜在推理方法在高置信步骤引入扰动导致不稳定，且软嵌入易坍缩至最高概率token，限制推理路径探索。",
-      "why_it_matters": "提供无训练即用的推理增强方案，能立即提升LLM在复杂任务上的表现，推动agentic和reasoning应用落地。",
-      "target_reader": "关注LLM推理优化、agent开发者和研究者的AI从业者。",
-      "core_innovation": "熵门控选择性激活软嵌入+对比正则化防止坍缩，实现稳定多路径潜在推理。",
-      "highlights": [
-        "仅低置信步骤激活软嵌入，保高置信离散解码稳定性",
-        "熵感知正则化鼓励探索多条潜在推理路径",
-        "五个基准实验优于CoT和SOTA无训练方法"
-      ],
-      "practicality": "训练免费、即插即用，落地潜力高，适用于现有LLM推理pipeline。",
-      "relevance_score": 9,
-      "tags": [
-        "推理",
-        "LLM",
-        "潜在推理"
-      ],
-      "themes": [
-        "推理",
-        "LLM",
-        "agentic"
-      ],
-      "selection_reason": "核心创新针对潜在推理痛点，无训练高实用性，高度匹配用户关注reasoning、llm和agent关键词，值得每日重点关注。",
-      "summary_markdown": "**摘要**：SeLaR提出了一种无训练的轻量级框架，通过熵门控机制仅在低置信度步骤激活软嵌入，避免全局扰动和高置信步骤的稳定性问题。同时引入熵感知对比正则化，推动软嵌入远离主导token，促进多路径潜在推理探索。在五个推理基准上，SeLaR超越标准CoT和现有无训练方法。\n\n**核心创新**：熵门控选择性激活软嵌入+对比正则化防止坍缩，实现稳定多路径潜在推理。\n\n**实用性**：训练免费、即插即用，落地潜力高，适用于现有LLM推理pipeline。\n\n**相关性评分**：9/10\n\n**亮点**：\n- 仅低置信步骤激活软嵌入，保高置信离散解码稳定性\n- 熵感知正则化鼓励探索多条潜在推理路径\n- 五个基准实验优于CoT和SOTA无训练方法",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "coding",
-          "weight": 2.6
-        },
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 216.0,
-      "detail_path": "items/arxiv-selar-selective-latent-reasoning-in-large-language-models.html",
-      "first_seen_at": "2026-04-10T01:21:36.797692+00:00",
-      "last_seen_at": "2026-04-10T01:27:54.160983+00:00",
-      "last_curated_at": "2026-04-10T01:27:54.160983+00:00",
-      "last_notified_at": "2026-04-10T01:25:05.410194+00:00"
     },
     {
       "id": "arxiv::http://arxiv.org/abs/2604.26940v1",
@@ -647,28 +569,109 @@
       "last_seen_at": "2026-04-22T06:25:50.559257+00:00",
       "last_curated_at": "2026-04-22T06:25:50.559257+00:00",
       "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2604.20796v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "LLaDA2.0-Uni: Unifying Multimodal Understanding and Generation with Diffusion Large Language Model",
+      "html_url": "http://arxiv.org/abs/2604.20796v1",
+      "pdf_url": "https://arxiv.org/pdf/2604.20796v1",
+      "description": "We present LLaDA2.0-Uni, a unified discrete diffusion large language model (dLLM) that supports multimodal understanding and generation within a natively integrated framework. Its architecture combines a fully semantic discrete tokenizer, a MoE-based dLLM backbone, and a diffusion decoder. By discretizing continuous visual inputs via SigLIP-VQ, the model enables block-level masked diffusion for both text and vision inputs within the backbone, while the decoder reconstructs visual tokens into high-fidelity images. Inference efficiency is enhanced beyond parallel decoding through prefix-aware optimizations in the backbone and few-step distillation in the decoder. Supported by carefully curated large-scale data and a tailored multi-stage training pipeline, LLaDA2.0-Uni matches specialized VLMs in multimodal understanding while delivering strong performance in image generation and editing. Its native support for interleaved generation and reasoning establishes a promising and scalable paradigm for next-generation unified foundation models. Codes and models are available at https://github.com/inclusionAI/LLaDA2.0-Uni.",
+      "authors": [
+        "Inclusion AI",
+        "Tiwei Bie",
+        "Haoxing Chen",
+        "Tieyuan Chen",
+        "Zhenglin Cheng",
+        "Long Cui",
+        "Kai Gan",
+        "Zhicheng Huang",
+        "Zhenzhong Lan",
+        "Haoquan Li",
+        "Jianguo Li",
+        "Tao Lin",
+        "Qi Qin",
+        "Hongjun Wang",
+        "Xiaomei Wang",
+        "Haoyuan Wu",
+        "Yi Xin",
+        "Junbo Zhao"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "published_at": "2026-04-22T17:20:42+00:00",
+      "updated_at": "2026-04-22T17:20:42+00:00",
+      "primary_category": "cs.CV",
+      "heuristic_score": 22.113,
+      "summary": "LLaDA2.0-Uni: Unifying Multimodal Understanding and Generation with Diffusion Large Language Model 是最近值得追踪的一篇 AI 论文。论文摘要显示：We present LLaDA2.0-Uni, a unified discrete diffusion large language model (dLLM) that supports multimodal understanding and generation within a natively integrated framework. Its architecture combines a fully semantic discrete tokenizer, a...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CV",
+        "作者数: 18"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "llm",
+        "multimodal",
+        "diffusion"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "multimodal"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：LLaDA2.0-Uni: Unifying Multimodal Understanding and Generation with Diffusion Large Language Model 是最近值得追踪的一篇 AI 论文。论文摘要显示：We present LLaDA2.0-Uni, a unified discrete diffusion large language model (dLLM) that supports multimodal understanding and generation within a natively integrated framework. Its architecture combines a fully semantic discrete tokenizer, a...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV\n- 作者数: 18",
+      "focus_hits": [
+        {
+          "keyword": "coding",
+          "weight": 2.6
+        },
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "multimodal",
+          "weight": 2.0
+        },
+        {
+          "keyword": "inference",
+          "weight": 1.8
+        }
+      ],
+      "primary_match": "coding",
+      "personalized_score": 196.0,
+      "detail_path": "items/arxiv-llada2-0-uni-unifying-multimodal-understanding-and-generation-with-diffusion-large-languag.html",
+      "first_seen_at": "2026-04-23T03:43:39.024812+00:00",
+      "last_seen_at": "2026-04-23T03:43:39.024812+00:00",
+      "last_curated_at": "2026-04-23T03:43:39.024812+00:00",
+      "last_notified_at": null
     }
   ],
   "top_themes": [
     {
       "theme": "ai",
-      "count": 7
+      "count": 8
+    },
+    {
+      "theme": "llm",
+      "count": 4
     },
     {
       "theme": "agent",
       "count": 4
-    },
-    {
-      "theme": "llm",
-      "count": 3
-    },
-    {
-      "theme": "推理",
-      "count": 1
-    },
-    {
-      "theme": "LLM",
-      "count": 1
     }
   ],
   "highlights": [
@@ -683,9 +686,9 @@
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     },
     {
-      "title": "SeLaR: Selective Latent Reasoning in Large Language Models",
+      "title": "Select to Think: Unlocking SLM Potential with Local Sufficiency",
       "source": "arxiv",
-      "selection_reason": "核心创新针对潜在推理痛点，无训练高实用性，高度匹配用户关注reasoning、llm和agent关键词，值得每日重点关注。"
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     }
   ]
 }

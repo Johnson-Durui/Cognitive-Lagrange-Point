@@ -1,8 +1,8 @@
 {
   "label": "周报",
   "window_days": 7,
-  "generated_at": "2026-05-09T11:52:45.645556+08:00",
-  "count": 39,
+  "generated_at": "2026-05-10T09:27:09.107903+08:00",
+  "count": 44,
   "summary": "近 7 天里，最集中的主题是 ai、agent、llm。",
   "top_items": [
     {
@@ -447,6 +447,68 @@
       "last_notified_at": null
     },
     {
+      "id": "github::bytedance/UI-TARS-desktop",
+      "kind": "repo",
+      "source": "github",
+      "source_tags": [
+        "trending"
+      ],
+      "name": "UI-TARS-desktop",
+      "title": "bytedance/UI-TARS-desktop",
+      "full_name": "bytedance/UI-TARS-desktop",
+      "html_url": "https://github.com/bytedance/UI-TARS-desktop",
+      "description": "The Open-Source Multimodal AI Agent Stack: Connecting Cutting-Edge AI Models and Agent Infra",
+      "stars": 31411,
+      "stars_today": 0,
+      "language": "TypeScript",
+      "topics": [],
+      "created_at": "",
+      "updated_at": "",
+      "heuristic_score": 20.4,
+      "summary": "bytedance/UI-TARS-desktop 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：The Open-Source Multimodal AI Agent Stack: Connecting Cutting-Edge AI Models and Agent Infra结合关键词命中和热度信号，它适合加入今日重点观察列表。",
+      "brief": "这是一个值得快速关注的开源 AI 项目。",
+      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
+      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
+      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
+      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
+      "highlights": [
+        "Stars: 31411",
+        "语言: TypeScript"
+      ],
+      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "agent",
+        "multimodal",
+        "model"
+      ],
+      "themes": [
+        "ai",
+        "agent",
+        "multimodal"
+      ],
+      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
+      "summary_markdown": "**摘要**：bytedance/UI-TARS-desktop 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：The Open-Source Multimodal AI Agent Stack: Connecting Cutting-Edge AI Models and Agent Infra结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：10/10\n\n**亮点**：\n- Stars: 31411\n- 语言: TypeScript",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "multimodal",
+          "weight": 2.0
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 162.56,
+      "detail_path": "items/github-bytedance-ui-tars-desktop.html",
+      "first_seen_at": "2026-05-10T01:27:20.701480+00:00",
+      "last_seen_at": "2026-05-10T01:27:20.701480+00:00",
+      "last_curated_at": "2026-05-10T01:27:20.701480+00:00",
+      "last_notified_at": null
+    },
+    {
       "id": "github::Arindam200/awesome-ai-apps",
       "kind": "repo",
       "source": "github",
@@ -506,102 +568,6 @@
       "last_seen_at": "2026-05-06T04:02:14.277260+00:00",
       "last_curated_at": "2026-05-06T04:02:14.277260+00:00",
       "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2605.02881v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "MolmoAct2: Action Reasoning Models for Real-world Deployment",
-      "html_url": "http://arxiv.org/abs/2605.02881v1",
-      "pdf_url": "https://arxiv.org/pdf/2605.02881v1",
-      "description": "Vision-Language-Action (VLA) models aim to provide a single generalist controller for robots, but today's systems fall short on the criteria that matter for real-world deployment. Frontier models are closed, open-weight alternatives are tied to expensive hardware, reasoning-augmented policies pay prohibitive latency for their grounding, and fine-tuned success rates remain below the threshold for dependable use. We present MolmoAct2, a fully open action reasoning model built for practical deployment, advancing its predecessor along five axes. We introduce MolmoER, a VLM backbone specialized for spatial and embodied reasoning, trained on a 3.3M-sample corpus with a specialize-then-rehearse recipe. We release three new datasets spanning low-to-medium cost platforms, including MolmoAct2-BimanualYAM, 720 hours of teleoperated bimanual trajectories that constitute the largest open bimanual dataset to date, together with quality-filtered Franka (DROID) and SO100/101 subsets. We provide OpenFAST, an open-weight, open-data action tokenizer trained on millions of trajectories across five embodiments. We redesign the architecture to graft a flow-matching continuous-action expert onto a discrete-token VLM via per-layer KV-cache conditioning. Finally, we propose MolmoThink, an adaptive-depth reasoning variant that re-predicts depth tokens only for scene regions that change between timesteps, retaining geometric grounding at a fraction of prior latency. In the most extensive empirical study of any open VLA to date, spanning 7 simulation and real-world benchmarks, MolmoAct2 outperforms strong baselines including Pi-05, while MolmoER surpasses GPT-5 and Gemini Robotics ER-1.5 across 13 embodied-reasoning benchmarks. We release model weights, training code, and complete training data. Project page: https://allenai.org/blog/molmoact2",
-      "authors": [
-        "Haoquan Fang",
-        "Jiafei Duan",
-        "Donovan Clay",
-        "Sam Wang",
-        "Shuo Liu",
-        "Weikai Huang",
-        "Xiang Fan",
-        "Wei-Chuan Tsai",
-        "Shirui Chen",
-        "Yi Ru Wang",
-        "Shanli Xing",
-        "Jaemin Cho",
-        "Jae Sung Park",
-        "Ainaz Eftekhar",
-        "Peter Sushko",
-        "Karen Farley",
-        "Angad Wadhwa",
-        "Cole Harrison",
-        "Winson Han",
-        "Ying-Chun Lee",
-        "Eli VanderBilt",
-        "Rose Hendrix",
-        "Suveen Ellawela",
-        "Lucas Ngoo",
-        "Joyce Chai",
-        "Zhongzheng Ren",
-        "Ali Farhadi",
-        "Dieter Fox",
-        "Ranjay Krishna"
-      ],
-      "categories": [
-        "cs.RO"
-      ],
-      "published_at": "2026-05-04T17:51:21+00:00",
-      "updated_at": "2026-05-04T17:51:21+00:00",
-      "primary_category": "cs.RO",
-      "heuristic_score": 18.8,
-      "summary": "MolmoAct2: Action Reasoning Models for Real-world Deployment 是最近值得追踪的一篇 AI 论文。论文摘要显示：Vision-Language-Action (VLA) models aim to provide a single generalist controller for robots, but today's systems fall short on the criteria that matter for real-world deployment. Frontier models are closed, open-weight alternatives are tie...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.RO",
-        "作者数: 29"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "gpt",
-        "model",
-        "benchmark"
-      ],
-      "themes": [
-        "ai",
-        "gpt",
-        "model"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：MolmoAct2: Action Reasoning Models for Real-world Deployment 是最近值得追踪的一篇 AI 论文。论文摘要显示：Vision-Language-Action (VLA) models aim to provide a single generalist controller for robots, but today's systems fall short on the criteria that matter for real-world deployment. Frontier models are closed, open-weight alternatives are tie...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.RO\n- 作者数: 29",
-      "focus_hits": [
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        },
-        {
-          "keyword": "robotics",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "reasoning",
-      "personalized_score": 156.0,
-      "detail_path": "items/arxiv-molmoact2-action-reasoning-models-for-real-world-deployment.html",
-      "first_seen_at": "2026-05-05T03:47:05.274273+00:00",
-      "last_seen_at": "2026-05-05T03:47:05.274273+00:00",
-      "last_curated_at": "2026-05-05T03:47:05.274273+00:00",
-      "last_notified_at": null
     }
   ],
   "top_themes": [
@@ -611,14 +577,10 @@
     },
     {
       "theme": "agent",
-      "count": 6
+      "count": 7
     },
     {
       "theme": "llm",
-      "count": 1
-    },
-    {
-      "theme": "gpt",
       "count": 1
     }
   ],
