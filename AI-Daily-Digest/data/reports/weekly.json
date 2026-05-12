@@ -1,8 +1,8 @@
 {
   "label": "周报",
   "window_days": 7,
-  "generated_at": "2026-05-12T09:26:54.157163+08:00",
-  "count": 49,
+  "generated_at": "2026-05-12T12:02:20.510659+08:00",
+  "count": 40,
   "summary": "近 7 天里，最集中的主题是 ai、agent、llm。",
   "top_items": [
     {
@@ -84,81 +84,6 @@
       "first_seen_at": "2026-05-08T03:51:08.082380+00:00",
       "last_seen_at": "2026-05-09T03:52:52.242937+00:00",
       "last_curated_at": "2026-05-09T03:52:52.242937+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2605.02815v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "FlexSQL: Flexible Exploration and Execution Make Better Text-to-SQL Agents",
-      "html_url": "http://arxiv.org/abs/2605.02815v1",
-      "pdf_url": "https://arxiv.org/pdf/2605.02815v1",
-      "description": "Text-to-SQL over large analytical databases requires navigating complex schemas, resolving ambiguous queries, and grounding decisions in actual data. Most current systems follow a fixed pipeline where schema elements are retrieved once upfront and the database is only revisited for post-hoc repair, limiting recovery from early mistakes. We present FlexSQL, a text-to-SQL agent whose core design principle is flexible database interaction: the agent can explore schema structure, inspect data values, and run verification queries at any point during reasoning. FlexSQL generates diverse execution plans to cover multiple query interpretations, implements each plan in either SQL or Python depending on the task, and uses a two-tiered repair mechanism that can backtrack from code-level errors to plan-level revisions. On Spider2-Snow, using gpt-oss-120b, FlexSQL achieves a 65.4\\% score, outperforming strong open-source baselines that use stronger, larger models such as gpt-o3 and DeepSeek-R1. When integrated into a general-purpose coding agent (as skills in Claude Code), our approach yields over 10\\% relative improvement on Spider2-Snow. Further analysis shows that flexible exploration and flexible execution jointly contribute to the effectiveness of our approach, highlighting flexibility as a key design principle. Our code is available at: https://github.com/StringNLPLAB/FlexSQL",
-      "authors": [
-        "Quang Hieu Pham",
-        "Yang He",
-        "Ping Nie",
-        "Canwen Xu",
-        "Davood Rafiei",
-        "Yuepeng Wang",
-        "Xi Ye",
-        "Jocelyn Qiaochu Chen"
-      ],
-      "categories": [
-        "cs.CL"
-      ],
-      "published_at": "2026-05-04T16:51:31+00:00",
-      "updated_at": "2026-05-04T16:51:31+00:00",
-      "primary_category": "cs.CL",
-      "heuristic_score": 17.639,
-      "summary": "FlexSQL: Flexible Exploration and Execution Make Better Text-to-SQL Agents 是最近值得追踪的一篇 AI 论文。论文摘要显示：Text-to-SQL over large analytical databases requires navigating complex schemas, resolving ambiguous queries, and grounding decisions in actual data. Most current systems follow a fixed pipeline where schema elements are retrieved once upfr...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CL",
-        "作者数: 8"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "agent",
-        "gpt",
-        "model"
-      ],
-      "themes": [
-        "ai",
-        "agent",
-        "gpt"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：FlexSQL: Flexible Exploration and Execution Make Better Text-to-SQL Agents 是最近值得追踪的一篇 AI 论文。论文摘要显示：Text-to-SQL over large analytical databases requires navigating complex schemas, resolving ambiguous queries, and grounding decisions in actual data. Most current systems follow a fixed pipeline where schema elements are retrieved once upfr...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL\n- 作者数: 8",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "coding",
-          "weight": 2.6
-        },
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 188.0,
-      "detail_path": "items/arxiv-flexsql-flexible-exploration-and-execution-make-better-text-to-sql-agents.html",
-      "first_seen_at": "2026-05-05T03:47:05.274273+00:00",
-      "last_seen_at": "2026-05-05T03:47:05.274273+00:00",
-      "last_curated_at": "2026-05-05T03:47:05.274273+00:00",
       "last_notified_at": null
     },
     {
@@ -397,13 +322,13 @@
       "full_name": "rohitg00/agentmemory",
       "html_url": "https://github.com/rohitg00/agentmemory",
       "description": "#1 Persistent memory for AI coding agents based on real-world benchmarks",
-      "stars": 4773,
+      "stars": 4905,
       "stars_today": 0,
       "language": "TypeScript",
       "topics": [],
       "created_at": "",
       "updated_at": "",
-      "heuristic_score": 17.346,
+      "heuristic_score": 17.61,
       "summary": "rohitg00/agentmemory 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：#1 Persistent memory for AI coding agents based on real-world benchmarks结合关键词命中和热度信号，它适合加入今日重点观察列表。",
       "brief": "这是一个值得快速关注的开源 AI 项目。",
       "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
@@ -411,7 +336,7 @@
       "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
       "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
       "highlights": [
-        "Stars: 4773",
+        "Stars: 4905",
         "语言: TypeScript"
       ],
       "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
@@ -428,7 +353,7 @@
         "benchmark"
       ],
       "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：rohitg00/agentmemory 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：#1 Persistent memory for AI coding agents based on real-world benchmarks结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：10/10\n\n**亮点**：\n- Stars: 4773\n- 语言: TypeScript",
+      "summary_markdown": "**摘要**：rohitg00/agentmemory 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：#1 Persistent memory for AI coding agents based on real-world benchmarks结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：10/10\n\n**亮点**：\n- Stars: 4905\n- 语言: TypeScript",
       "focus_hits": [
         {
           "keyword": "agent",
@@ -444,11 +369,11 @@
         }
       ],
       "primary_match": "agent",
-      "personalized_score": 173.91,
+      "personalized_score": 173.96,
       "detail_path": "items/github-rohitg00-agentmemory.html",
       "first_seen_at": "2026-05-10T01:27:20.701480+00:00",
-      "last_seen_at": "2026-05-12T01:28:09.029908+00:00",
-      "last_curated_at": "2026-05-12T01:28:09.029908+00:00",
+      "last_seen_at": "2026-05-12T04:02:47.775837+00:00",
+      "last_curated_at": "2026-05-12T04:02:47.775837+00:00",
       "last_notified_at": null
     },
     {
@@ -524,7 +449,7 @@
       "full_name": "bytedance/UI-TARS-desktop",
       "html_url": "https://github.com/bytedance/UI-TARS-desktop",
       "description": "The Open-Source Multimodal AI Agent Stack: Connecting Cutting-Edge AI Models and Agent Infra",
-      "stars": 33023,
+      "stars": 33140,
       "stars_today": 0,
       "language": "TypeScript",
       "topics": [],
@@ -538,7 +463,7 @@
       "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
       "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
       "highlights": [
-        "Stars: 33023",
+        "Stars: 33140",
         "语言: TypeScript"
       ],
       "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
@@ -555,7 +480,7 @@
         "multimodal"
       ],
       "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：bytedance/UI-TARS-desktop 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：The Open-Source Multimodal AI Agent Stack: Connecting Cutting-Edge AI Models and Agent Infra结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：10/10\n\n**亮点**：\n- Stars: 33023\n- 语言: TypeScript",
+      "summary_markdown": "**摘要**：bytedance/UI-TARS-desktop 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：The Open-Source Multimodal AI Agent Stack: Connecting Cutting-Edge AI Models and Agent Infra结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：10/10\n\n**亮点**：\n- Stars: 33140\n- 语言: TypeScript",
       "focus_hits": [
         {
           "keyword": "agent",
@@ -567,11 +492,72 @@
         }
       ],
       "primary_match": "agent",
-      "personalized_score": 163.21,
+      "personalized_score": 163.26,
       "detail_path": "items/github-bytedance-ui-tars-desktop.html",
       "first_seen_at": "2026-05-10T01:27:20.701480+00:00",
-      "last_seen_at": "2026-05-12T01:28:09.029908+00:00",
-      "last_curated_at": "2026-05-12T01:28:09.029908+00:00",
+      "last_seen_at": "2026-05-12T04:02:47.775837+00:00",
+      "last_curated_at": "2026-05-12T04:02:47.775837+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "github::Arindam200/awesome-ai-apps",
+      "kind": "repo",
+      "source": "github",
+      "source_tags": [
+        "trending"
+      ],
+      "name": "awesome-ai-apps",
+      "title": "Arindam200/awesome-ai-apps",
+      "full_name": "Arindam200/awesome-ai-apps",
+      "html_url": "https://github.com/Arindam200/awesome-ai-apps",
+      "description": "A collection of projects showcasing RAG, agents, workflows, and other AI use cases",
+      "stars": 11473,
+      "stars_today": 0,
+      "language": "Python",
+      "topics": [],
+      "created_at": "",
+      "updated_at": "",
+      "heuristic_score": 17.8,
+      "summary": "Arindam200/awesome-ai-apps 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：A collection of projects showcasing RAG, agents, workflows, and other AI use cases结合关键词命中和热度信号，它适合加入今日重点观察列表。",
+      "brief": "这是一个值得快速关注的开源 AI 项目。",
+      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
+      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
+      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
+      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
+      "highlights": [
+        "Stars: 11473",
+        "语言: Python"
+      ],
+      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "agent",
+        "rag"
+      ],
+      "themes": [
+        "ai",
+        "agent",
+        "rag"
+      ],
+      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
+      "summary_markdown": "**摘要**：Arindam200/awesome-ai-apps 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：A collection of projects showcasing RAG, agents, workflows, and other AI use cases结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：10/10\n\n**亮点**：\n- Stars: 11473\n- 语言: Python",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 156.59,
+      "detail_path": "items/github-arindam200-awesome-ai-apps.html",
+      "first_seen_at": "2026-05-06T01:19:57.745877+00:00",
+      "last_seen_at": "2026-05-06T04:02:14.277260+00:00",
+      "last_curated_at": "2026-05-06T04:02:14.277260+00:00",
       "last_notified_at": null
     }
   ],
@@ -596,14 +582,14 @@
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     },
     {
-      "title": "FlexSQL: Flexible Exploration and Execution Make Better Text-to-SQL Agents",
-      "source": "arxiv",
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
-    },
-    {
       "title": "InsForge/InsForge",
       "source": "github",
       "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。"
+    },
+    {
+      "title": "Cited but Not Verified: Parsing and Evaluating Source Attribution in LLM Deep Research Agents",
+      "source": "arxiv",
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     }
   ]
 }
