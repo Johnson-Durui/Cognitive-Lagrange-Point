@@ -1,8 +1,8 @@
 {
   "label": "周报",
   "window_days": 7,
-  "generated_at": "2026-05-14T09:48:30.559741+08:00",
-  "count": 45,
+  "generated_at": "2026-05-14T12:09:47.217353+08:00",
+  "count": 47,
   "summary": "近 7 天里，最集中的主题是 ai、agent、llm。",
   "top_items": [
     {
@@ -84,6 +84,85 @@
       "first_seen_at": "2026-05-08T03:51:08.082380+00:00",
       "last_seen_at": "2026-05-09T03:52:52.242937+00:00",
       "last_curated_at": "2026-05-09T03:52:52.242937+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2605.13831v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Training Long-Context Vision-Language Models Effectively with Generalization Beyond 128K Context",
+      "html_url": "http://arxiv.org/abs/2605.13831v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.13831v1",
+      "description": "Long-context modeling is becoming a core capability of modern large vision-language models (LVLMs), enabling sustained context management across long-document understanding, video analysis, and multi-turn tool use in agentic workflows. Yet practical training recipes remain insufficiently explored, particularly for designing and balancing long-context data mixtures. In this work, we present a systematic study of long-context continued pre-training for LVLMs, extending a 7B model from 32K to 128K context with extensive ablations on long-document data. We first show that long-document VQA is substantially more effective than OCR transcription. Building on this observation, our ablations further yield three key findings: i) for sequence-length distribution, balanced data outperforms target-length-focused data (e.g., 128K), suggesting that long-context ability requires generalizable key-information retrieval across various lengths and positions; ii) retrieval remains the primary bottleneck, favoring retrieval-heavy mixtures with modest reasoning data for task diversity; and iii) pure long-document VQA largely preserves short-context capabilities, suggesting that instruction-formatted long data reduces the need for short-data mixing. Based on these findings, we introduce MMProLong, obtained by long-context continued pre-training from Qwen2.5-VL-7B with only a 5B-token budget. MMProLong improves long-document VQA scores by 7.1% and maintains strong performance at 256K and 512K contexts beyond its 128K training window, without additional training. It further generalizes to webpage-based multimodal needle retrieval, long-context vision-text compression, and long-video understanding without task-specific supervision. Overall, our study establishes a practical LongPT recipe and an empirical foundation for advancing long-context vision-language models.",
+      "authors": [
+        "Zhaowei Wang",
+        "Lishu Luo",
+        "Haodong Duan",
+        "Weiwei Liu",
+        "Sijin Wu",
+        "Ji Luo",
+        "Shen Yan",
+        "Shuai Peng",
+        "Sihang Yuan",
+        "Chaoyi Huang",
+        "Yi Lin",
+        "Yangqiu Song"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "published_at": "2026-05-13T17:52:53+00:00",
+      "updated_at": "2026-05-13T17:52:53+00:00",
+      "primary_category": "cs.CV",
+      "heuristic_score": 22.7,
+      "summary": "Training Long-Context Vision-Language Models Effectively with Generalization Beyond 128K Context 是最近值得追踪的一篇 AI 论文。论文摘要显示：Long-context modeling is becoming a core capability of modern large vision-language models (LVLMs), enabling sustained context management across long-document understanding, video analysis, and multi-turn tool use in agentic workflows. Yet ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CV",
+        "作者数: 12"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "agent",
+        "agentic",
+        "gpt"
+      ],
+      "themes": [
+        "ai",
+        "agent",
+        "agentic"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：Training Long-Context Vision-Language Models Effectively with Generalization Beyond 128K Context 是最近值得追踪的一篇 AI 论文。论文摘要显示：Long-context modeling is becoming a core capability of modern large vision-language models (LVLMs), enabling sustained context management across long-document understanding, video analysis, and multi-turn tool use in agentic workflows. Yet ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV\n- 作者数: 12",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "multimodal",
+          "weight": 2.0
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 182.0,
+      "detail_path": "items/arxiv-training-long-context-vision-language-models-effectively-with-generalization-beyond-128k-c.html",
+      "first_seen_at": "2026-05-14T04:09:54.168737+00:00",
+      "last_seen_at": "2026-05-14T04:09:54.168737+00:00",
+      "last_curated_at": "2026-05-14T04:09:54.168737+00:00",
       "last_notified_at": null
     },
     {
@@ -394,7 +473,7 @@
       "full_name": "rohitg00/agentmemory",
       "html_url": "https://github.com/rohitg00/agentmemory",
       "description": "#1 Persistent memory for AI coding agents based on real-world benchmarks",
-      "stars": 7724,
+      "stars": 7939,
       "stars_today": 0,
       "language": "TypeScript",
       "topics": [],
@@ -408,7 +487,7 @@
       "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
       "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
       "highlights": [
-        "Stars: 7724",
+        "Stars: 7939",
         "语言: TypeScript"
       ],
       "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
@@ -425,7 +504,7 @@
         "benchmark"
       ],
       "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：rohitg00/agentmemory 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：#1 Persistent memory for AI coding agents based on real-world benchmarks结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：10/10\n\n**亮点**：\n- Stars: 7724\n- 语言: TypeScript",
+      "summary_markdown": "**摘要**：rohitg00/agentmemory 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：#1 Persistent memory for AI coding agents based on real-world benchmarks结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：10/10\n\n**亮点**：\n- Stars: 7939\n- 语言: TypeScript",
       "focus_hits": [
         {
           "keyword": "agent",
@@ -441,11 +520,11 @@
         }
       ],
       "primary_match": "agent",
-      "personalized_score": 175.09,
+      "personalized_score": 175.18,
       "detail_path": "items/github-rohitg00-agentmemory.html",
       "first_seen_at": "2026-05-10T01:27:20.701480+00:00",
-      "last_seen_at": "2026-05-14T01:49:31.866719+00:00",
-      "last_curated_at": "2026-05-14T01:49:31.866719+00:00",
+      "last_seen_at": "2026-05-14T04:09:54.168737+00:00",
+      "last_curated_at": "2026-05-14T04:09:54.168737+00:00",
       "last_notified_at": null
     },
     {
@@ -520,80 +599,6 @@
       "last_seen_at": "2026-05-13T04:10:44.061719+00:00",
       "last_curated_at": "2026-05-13T04:10:44.061719+00:00",
       "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2605.11974v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "Towards Order Fairness: Mitigating LLMs Order Sensitivity through Dual Group Advantage Optimization",
-      "html_url": "http://arxiv.org/abs/2605.11974v1",
-      "pdf_url": "https://arxiv.org/pdf/2605.11974v1",
-      "description": "Large Language Models (LLMs) suffer from order bias, where their performance is affected by the arrangement order of input elements. This unfairness limits the model's applications in scenarios such as in-context learning and Retrieval-Augmented Generation (RAG). Recent studies attempt to obtain optimal or suboptimal arrangements based on statistical results or using dataset-based search, but these methods increase inference overhead while leaving the model's inherent order bias unresolved. Other studies mitigate order sensitivity through supervised fine-tuning using augmented training sets with multiple order variants, but often at the cost of accuracy, trapping the model in consistent yet incorrect hallucinations. In this paper, we propose \\textbf{D}ual \\textbf{G}roup \\textbf{A}dvantage \\textbf{O}ptimization (\\textbf{DGAO}), which aims to improve model accuracy and order stability simultaneously. DGAO calculates and balances intra-group relative accuracy advantage and inter-group relative stability advantage, rewarding the policy model for generating order-stable and correct outputs while penalizing order-sensitive or incorrect responses. This marks the first time reinforcement learning has been used to mitigate LLMs' order sensitivity. We also propose two new metrics, Consistency Rate and Overconfidence Rate, to reveal the pseudo-stability of previous methods and guide more comprehensive evaluation. Extensive experiments demonstrate that DGAO achieves superior order fairness while improving performance on RAG, mathematical reasoning, and classification tasks. Our code is available at: https://github.com/Hyalinesky/DGAO.",
-      "authors": [
-        "Xu Chu",
-        "Guanyu Wang",
-        "Zhijie Tan",
-        "Xinrong Chen",
-        "Ziyu Li",
-        "Tong Mo",
-        "Weiping Li"
-      ],
-      "categories": [
-        "cs.LG"
-      ],
-      "published_at": "2026-05-12T11:31:18+00:00",
-      "updated_at": "2026-05-12T11:31:18+00:00",
-      "primary_category": "cs.LG",
-      "heuristic_score": 20.3,
-      "summary": "Towards Order Fairness: Mitigating LLMs Order Sensitivity through Dual Group Advantage Optimization 是最近值得追踪的一篇 AI 论文。论文摘要显示：Large Language Models (LLMs) suffer from order bias, where their performance is affected by the arrangement order of input elements. This unfairness limits the model's applications in scenarios such as in-context learning and Retrieval-Augm...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.LG",
-        "作者数: 7"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "llm",
-        "rag",
-        "model"
-      ],
-      "themes": [
-        "ai",
-        "llm",
-        "rag"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：Towards Order Fairness: Mitigating LLMs Order Sensitivity through Dual Group Advantage Optimization 是最近值得追踪的一篇 AI 论文。论文摘要显示：Large Language Models (LLMs) suffer from order bias, where their performance is affected by the arrangement order of input elements. This unfairness limits the model's applications in scenarios such as in-context learning and Retrieval-Augm...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.LG\n- 作者数: 7",
-      "focus_hits": [
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "inference",
-          "weight": 1.8
-        }
-      ],
-      "primary_match": "reasoning",
-      "personalized_score": 172.0,
-      "detail_path": "items/arxiv-towards-order-fairness-mitigating-llms-order-sensitivity-through-dual-group-advantage-opti.html",
-      "first_seen_at": "2026-05-13T01:46:01.516444+00:00",
-      "last_seen_at": "2026-05-13T04:10:44.061719+00:00",
-      "last_curated_at": "2026-05-13T04:10:44.061719+00:00",
-      "last_notified_at": null
     }
   ],
   "top_themes": [
@@ -603,11 +608,11 @@
     },
     {
       "theme": "agent",
-      "count": 5
+      "count": 6
     },
     {
       "theme": "llm",
-      "count": 3
+      "count": 2
     }
   ],
   "highlights": [
@@ -617,14 +622,14 @@
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     },
     {
+      "title": "Training Long-Context Vision-Language Models Effectively with Generalization Beyond 128K Context",
+      "source": "arxiv",
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
+    },
+    {
       "title": "InsForge/InsForge",
       "source": "github",
       "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。"
-    },
-    {
-      "title": "Counterfactual Trace Auditing of LLM Agent Skills",
-      "source": "arxiv",
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     }
   ]
 }
