@@ -1,10 +1,102 @@
 {
   "label": "周报",
   "window_days": 7,
-  "generated_at": "2026-05-14T12:09:47.217353+08:00",
-  "count": 47,
+  "generated_at": "2026-05-15T09:46:25.243867+08:00",
+  "count": 56,
   "summary": "近 7 天里，最集中的主题是 ai、agent、llm。",
   "top_items": [
+    {
+      "id": "arxiv::http://arxiv.org/abs/2605.14859v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Do Coding Agents Understand Least-Privilege Authorization?",
+      "html_url": "http://arxiv.org/abs/2605.14859v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.14859v1",
+      "description": "As coding agents gain access to shells, repositories, and user files, least-privilege authorization becomes a prerequisite for safe deployment: an agent should receive enough authority to complete the task, without unnecessary authority that exposes sensitive surfaces.To study whether current models can infer this boundary themselves, we first introduce permission-boundary inference, where a model maps a task instruction and terminal environment to a file-level read/write/execute policy, and AuthBench, a benchmark of 120 realistic terminal tasks with human-reviewed permission labels and executable validators for utility and attack outcomes.AuthBench shows that authorization is not a simple conservative-versus-permissive calibration problem: frontier models often omit permissions required by the execution chain while also granting unused or sensitive accesses.Increasing inference-time reasoning does not resolve this mismatch. Instead, each model moves toward a model-specific authorization attractor: more reasoning makes it more consistent in its own failure mode, whether broad-but-exposed or tight-but-brittle.This suggests that direct policy generation is the bottleneck, because a single generation must both discover all necessary accesses and reject all unnecessary ones.We therefore propose Sufficiency-Tightness Decomposition, which first generates a coverage-oriented policy by forward-simulating the task and then audits each granted entry for grounding and sensitivity.Across tested models, this decomposition improves sensitive-task success by up to 15.8% on tightness-biased models while reducing attack success across all evaluated models.",
+      "authors": [
+        "Zheng Yan",
+        "Jingxiang Weng",
+        "Charles Chen",
+        "Dengyun Peng",
+        "Ethan Qin",
+        "Jiannan Guan",
+        "Jinhao Liu",
+        "Qiming Yu",
+        "Yixin Yuan",
+        "Fanqing Meng",
+        "Carl Che",
+        "Mengkang Hu"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "published_at": "2026-05-14T14:05:58+00:00",
+      "updated_at": "2026-05-14T14:05:58+00:00",
+      "primary_category": "cs.CR",
+      "heuristic_score": 21.2,
+      "summary": "Do Coding Agents Understand Least-Privilege Authorization? 是最近值得追踪的一篇 AI 论文。论文摘要显示：As coding agents gain access to shells, repositories, and user files, least-privilege authorization becomes a prerequisite for safe deployment: an agent should receive enough authority to complete the task, without unnecessary authority tha...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CR, cs.AI",
+        "作者数: 12"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "agent",
+        "rag",
+        "model"
+      ],
+      "themes": [
+        "ai",
+        "agent",
+        "rag"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：Do Coding Agents Understand Least-Privilege Authorization? 是最近值得追踪的一篇 AI 论文。论文摘要显示：As coding agents gain access to shells, repositories, and user files, least-privilege authorization becomes a prerequisite for safe deployment: an agent should receive enough authority to complete the task, without unnecessary authority tha...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CR, cs.AI\n- 作者数: 12",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "coding",
+          "weight": 2.6
+        },
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        },
+        {
+          "keyword": "inference",
+          "weight": 1.8
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 236.0,
+      "detail_path": "items/arxiv-do-coding-agents-understand-least-privilege-authorization.html",
+      "first_seen_at": "2026-05-15T01:46:31.810418+00:00",
+      "last_seen_at": "2026-05-15T01:46:31.810418+00:00",
+      "last_curated_at": "2026-05-15T01:46:31.810418+00:00",
+      "last_notified_at": null
+    },
     {
       "id": "arxiv::http://arxiv.org/abs/2605.06664v1",
       "kind": "paper",
@@ -473,7 +565,7 @@
       "full_name": "rohitg00/agentmemory",
       "html_url": "https://github.com/rohitg00/agentmemory",
       "description": "#1 Persistent memory for AI coding agents based on real-world benchmarks",
-      "stars": 7939,
+      "stars": 9016,
       "stars_today": 0,
       "language": "TypeScript",
       "topics": [],
@@ -487,7 +579,7 @@
       "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
       "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
       "highlights": [
-        "Stars: 7939",
+        "Stars: 9016",
         "语言: TypeScript"
       ],
       "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
@@ -504,7 +596,7 @@
         "benchmark"
       ],
       "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：rohitg00/agentmemory 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：#1 Persistent memory for AI coding agents based on real-world benchmarks结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：10/10\n\n**亮点**：\n- Stars: 7939\n- 语言: TypeScript",
+      "summary_markdown": "**摘要**：rohitg00/agentmemory 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：#1 Persistent memory for AI coding agents based on real-world benchmarks结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：10/10\n\n**亮点**：\n- Stars: 9016\n- 语言: TypeScript",
       "focus_hits": [
         {
           "keyword": "agent",
@@ -520,84 +612,11 @@
         }
       ],
       "primary_match": "agent",
-      "personalized_score": 175.18,
+      "personalized_score": 175.61,
       "detail_path": "items/github-rohitg00-agentmemory.html",
       "first_seen_at": "2026-05-10T01:27:20.701480+00:00",
-      "last_seen_at": "2026-05-14T04:09:54.168737+00:00",
-      "last_curated_at": "2026-05-14T04:09:54.168737+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2605.11931v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "Learn to Think: Improving Multimodal Reasoning through Vision-Aware Self-Improvement Training",
-      "html_url": "http://arxiv.org/abs/2605.11931v1",
-      "pdf_url": "https://arxiv.org/pdf/2605.11931v1",
-      "description": "Post-training with explicit reasoning traces is common to improve the reasoning capabilities of Multimodal Large Language Models (MLLMs). However, acquiring high-quality reasoning traces is often costly and time-consuming. Hence, the self-improvement paradigm has emerged, enabling MLLMs to self-generate reasoning traces for training without external supervision. Despite its effectiveness, we reveal two shortcomings in the self-improvement training of MLLMs: 1) data imbalance, where simple samples are over-trained, but the challenging yet crucial samples are under-trained; 2) language prior bias, where MLLMs overly rely on linguistic priors while neglecting the visual cues. To this end, we propose VISTA, a vision-aware self-improvement training framework for enhancing the multimodal reasoning of MLLMs. Specifically, VISTA first introduces a prefix resampling strategy to reuse the partial correct reasoning traces for efficient data collection, and then designs a vision-aware attention score to quantify the model's focus on visual information. Extensive experiments show that VISTA can be applied to various post-training scenarios, i.e., supervised fine-tuning and preference learning, and effectively enhances the multimodal reasoning performance across various MLLMs and tasks, e.g., bringing up to +13.66% average performance gains for Qwen2.5-VL-3B-Instruct.",
-      "authors": [
-        "Qihuang Zhong",
-        "Liang Ding",
-        "Wenjie Xuan",
-        "Juhua Liu",
-        "Bo Du",
-        "Dacheng Tao"
-      ],
-      "categories": [
-        "cs.CV"
-      ],
-      "published_at": "2026-05-12T10:44:35+00:00",
-      "updated_at": "2026-05-12T10:44:35+00:00",
-      "primary_category": "cs.CV",
-      "heuristic_score": 20.02,
-      "summary": "Learn to Think: Improving Multimodal Reasoning through Vision-Aware Self-Improvement Training 是最近值得追踪的一篇 AI 论文。论文摘要显示：Post-training with explicit reasoning traces is common to improve the reasoning capabilities of Multimodal Large Language Models (MLLMs). However, acquiring high-quality reasoning traces is often costly and time-consuming. Hence, the self-i...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CV",
-        "作者数: 6"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "llm",
-        "rag",
-        "multimodal"
-      ],
-      "themes": [
-        "ai",
-        "llm",
-        "rag"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：Learn to Think: Improving Multimodal Reasoning through Vision-Aware Self-Improvement Training 是最近值得追踪的一篇 AI 论文。论文摘要显示：Post-training with explicit reasoning traces is common to improve the reasoning capabilities of Multimodal Large Language Models (MLLMs). However, acquiring high-quality reasoning traces is often costly and time-consuming. Hence, the self-i...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV\n- 作者数: 6",
-      "focus_hits": [
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "multimodal",
-          "weight": 2.0
-        }
-      ],
-      "primary_match": "reasoning",
-      "personalized_score": 174.0,
-      "detail_path": "items/arxiv-learn-to-think-improving-multimodal-reasoning-through-vision-aware-self-improvement-traini.html",
-      "first_seen_at": "2026-05-13T01:46:01.516444+00:00",
-      "last_seen_at": "2026-05-13T04:10:44.061719+00:00",
-      "last_curated_at": "2026-05-13T04:10:44.061719+00:00",
+      "last_seen_at": "2026-05-15T01:46:31.810418+00:00",
+      "last_curated_at": "2026-05-15T01:46:31.810418+00:00",
       "last_notified_at": null
     }
   ],
@@ -608,14 +627,19 @@
     },
     {
       "theme": "agent",
-      "count": 6
+      "count": 7
     },
     {
       "theme": "llm",
-      "count": 2
+      "count": 1
     }
   ],
   "highlights": [
+    {
+      "title": "Do Coding Agents Understand Least-Privilege Authorization?",
+      "source": "arxiv",
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
+    },
     {
       "title": "BAMI: Training-Free Bias Mitigation in GUI Grounding",
       "source": "arxiv",
@@ -625,11 +649,6 @@
       "title": "Training Long-Context Vision-Language Models Effectively with Generalization Beyond 128K Context",
       "source": "arxiv",
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
-    },
-    {
-      "title": "InsForge/InsForge",
-      "source": "github",
-      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。"
     }
   ]
 }
