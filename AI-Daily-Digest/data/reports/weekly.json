@@ -1,8 +1,8 @@
 {
   "label": "周报",
   "window_days": 7,
-  "generated_at": "2026-05-16T09:26:37.170051+08:00",
-  "count": 53,
+  "generated_at": "2026-05-16T11:57:39.740770+08:00",
+  "count": 49,
   "summary": "近 7 天里，最集中的主题是 ai、agent、llm。",
   "top_items": [
     {
@@ -98,84 +98,85 @@
       "last_notified_at": null
     },
     {
-      "id": "arxiv::http://arxiv.org/abs/2605.06664v1",
+      "id": "arxiv::http://arxiv.org/abs/2605.15187v1",
       "kind": "paper",
       "source": "arxiv",
       "source_tags": [
         "latest"
       ],
-      "title": "BAMI: Training-Free Bias Mitigation in GUI Grounding",
-      "html_url": "http://arxiv.org/abs/2605.06664v1",
-      "pdf_url": "https://arxiv.org/pdf/2605.06664v1",
-      "description": "GUI grounding is a critical capability for enabling GUI agents to execute tasks such as clicking and dragging. However, in complex scenarios like the ScreenSpot-Pro benchmark, existing models often suffer from suboptimal performance. Utilizing the proposed \\textbf{Masked Prediction Distribution (MPD)} attribution method, we identify that the primary sources of errors are twofold: high image resolution (leading to precision bias) and intricate interface elements (resulting in ambiguity bias). To address these challenges, we introduce \\textbf{Bias-Aware Manipulation Inference (BAMI)}, which incorporates two key manipulations, coarse-to-fine focus and candidate selection, to effectively mitigate these biases. Our extensive experimental results demonstrate that BAMI significantly enhances the accuracy of various GUI grounding models in a training-free setting. For instance, applying our method to the TianXi-Action-7B model boosts its accuracy on the ScreenSpot-Pro benchmark from 51.9\\% to 57.8\\%. Furthermore, ablation studies confirm the robustness of the BAMI approach across diverse parameter configurations, highlighting its stability and effectiveness. Code is available at https://github.com/Neur-IO/BAMI.",
+      "title": "Articraft: An Agentic System for Scalable Articulated 3D Asset Generation",
+      "html_url": "http://arxiv.org/abs/2605.15187v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.15187v1",
+      "description": "A bottleneck in learning to understand articulated 3D objects is the lack of large and diverse datasets. In this paper, we propose to leverage large language models (LLMs) to close this gap and generate articulated assets at scale. We reduce the problem of generating an articulated 3D asset to that of writing a program that builds it. We then introduce a new agentic system, Articraft, that writes such programs automatically. We design a programmatic interface and harness to help the LLM do so effectively. The LLM writes code against a domain-specific SDK for defining parts, composing geometry, specifying joints, and writing tests to validate the resulting assets. The harness exposes a restricted workspace and interface to the LLM, validates the resulting assets, and returns structured feedback. In this way, the LLM is not distracted by details such as authoring a URDF file or managing a complex software environment. We show that this produces higher-quality assets than both state-of-the-art articulated-asset generators and general-purpose coding agents. Using Articraft, we build Articraft-10K, a curated dataset of over 10K articulated assets spanning 245 categories, and show its utility both for training models of articulated assets and in downstream applications such as robotics simulation and virtual reality.",
       "authors": [
-        "Borui Zhang",
-        "Bo Zhang",
-        "Bo Wang",
-        "Wenzhao Zheng",
-        "Yuhao Cheng",
-        "Liang Tang",
-        "Yiqiang Yan",
-        "Jie Zhou",
-        "Jiwen Lu"
+        "Matt Zhou",
+        "Ruining Li",
+        "Xiaoyang Lyu",
+        "Zhaomou Song",
+        "Zhening Huang",
+        "Chuanxia Zheng",
+        "Christian Rupprecht",
+        "Andrea Vedaldi",
+        "Shangzhe Wu"
       ],
       "categories": [
         "cs.CV",
-        "cs.AI"
+        "cs.GR",
+        "cs.RO"
       ],
-      "published_at": "2026-05-07T17:59:31+00:00",
-      "updated_at": "2026-05-07T17:59:31+00:00",
+      "published_at": "2026-05-14T17:59:18+00:00",
+      "updated_at": "2026-05-14T17:59:18+00:00",
       "primary_category": "cs.CV",
-      "heuristic_score": 19.828,
-      "summary": "BAMI: Training-Free Bias Mitigation in GUI Grounding 是最近值得追踪的一篇 AI 论文。论文摘要显示：GUI grounding is a critical capability for enabling GUI agents to execute tasks such as clicking and dragging. However, in complex scenarios like the ScreenSpot-Pro benchmark, existing models often suffer from suboptimal performance. Utiliz...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "heuristic_score": 24.765,
+      "summary": "Articraft: An Agentic System for Scalable Articulated 3D Asset Generation 是最近值得追踪的一篇 AI 论文。论文摘要显示：A bottleneck in learning to understand articulated 3D objects is the lack of large and diverse datasets. In this paper, we propose to leverage large language models (LLMs) to close this gap and generate articulated assets at scale. We reduc...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
       "brief": "这是一篇值得加入今日论文雷达的最新工作。",
       "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
       "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
       "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
       "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
       "highlights": [
-        "分类: cs.CV, cs.AI",
+        "分类: cs.CV, cs.GR",
         "作者数: 9"
       ],
       "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
       "relevance_score": 10,
       "tags": [
         "ai",
+        "llm",
         "agent",
-        "rag",
-        "model"
+        "agentic"
       ],
       "themes": [
         "ai",
-        "agent",
-        "rag"
+        "llm",
+        "agent"
       ],
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：BAMI: Training-Free Bias Mitigation in GUI Grounding 是最近值得追踪的一篇 AI 论文。论文摘要显示：GUI grounding is a critical capability for enabling GUI agents to execute tasks such as clicking and dragging. However, in complex scenarios like the ScreenSpot-Pro benchmark, existing models often suffer from suboptimal performance. Utiliz...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV, cs.AI\n- 作者数: 9",
+      "summary_markdown": "**摘要**：Articraft: An Agentic System for Scalable Articulated 3D Asset Generation 是最近值得追踪的一篇 AI 论文。论文摘要显示：A bottleneck in learning to understand articulated 3D objects is the lack of large and diverse datasets. In this paper, we propose to leverage large language models (LLMs) to close this gap and generate articulated assets at scale. We reduc...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV, cs.GR\n- 作者数: 9",
       "focus_hits": [
         {
           "keyword": "agent",
           "weight": 3.0
         },
         {
+          "keyword": "coding",
+          "weight": 2.6
+        },
+        {
           "keyword": "rag",
           "weight": 2.2
         },
         {
-          "keyword": "inference",
-          "weight": 1.8
-        },
-        {
-          "keyword": "benchmark",
+          "keyword": "robotics",
           "weight": 1.6
         }
       ],
       "primary_match": "agent",
-      "personalized_score": 194.0,
-      "detail_path": "items/arxiv-bami-training-free-bias-mitigation-in-gui-grounding.html",
-      "first_seen_at": "2026-05-08T03:51:08.082380+00:00",
-      "last_seen_at": "2026-05-09T03:52:52.242937+00:00",
-      "last_curated_at": "2026-05-09T03:52:52.242937+00:00",
+      "personalized_score": 202.0,
+      "detail_path": "items/arxiv-articraft-an-agentic-system-for-scalable-articulated-3d-asset-generation.html",
+      "first_seen_at": "2026-05-16T03:57:47.182085+00:00",
+      "last_seen_at": "2026-05-16T03:57:47.182085+00:00",
+      "last_curated_at": "2026-05-16T03:57:47.182085+00:00",
       "last_notified_at": null
     },
     {
@@ -258,6 +259,79 @@
       "last_notified_at": null
     },
     {
+      "id": "arxiv::http://arxiv.org/abs/2605.15198v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "ATLAS: Agentic or Latent Visual Reasoning? One Word is Enough for Both",
+      "html_url": "http://arxiv.org/abs/2605.15198v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.15198v1",
+      "description": "Visual reasoning, often interleaved with intermediate visual states, has emerged as a promising direction in the field. A straightforward approach is to directly generate images via unified models during reasoning, but this is computationally expensive and architecturally non-trivial. Recent alternatives include agentic reasoning through code or tool calls, and latent reasoning with learnable hidden embeddings. However, agentic methods incur context-switching latency from external execution, while latent methods lack task generalization and are difficult to train with autoregressive parallelization. To combine their strengths while mitigating their limitations, we propose ATLAS, a framework in which a single discrete 'word', termed as a functional token, serves both as an agentic operation and a latent visual reasoning unit. Each functional token is associated with an internalized visual operation, yet requires no visual supervision and remains a standard token in the tokenizer vocabulary, which can be generated via next-token prediction. This design avoids verbose intermediate visual content generation, while preserving compatibility with the vanilla scalable SFT and RL training, without architectural or methodological modifications. To further address the sparsity of functional tokens during RL, we introduce Latent-Anchored GRPO (LA-GRPO), which stabilizes the training by anchoring functional tokens with a statically weighted auxiliary objective, providing stronger gradient updates. Extensive experiments and analyses demonstrate that ATLAS achieves superior performance on challenging benchmarks while maintaining clear interpretability. We hope ATLAS offers a new paradigm inspiring future visual reasoning research.",
+      "authors": [
+        "Ziyu Guo",
+        "Rain Liu",
+        "Xinyan Chen",
+        "Pheng-Ann Heng"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "published_at": "2026-05-14T17:59:55+00:00",
+      "updated_at": "2026-05-14T17:59:55+00:00",
+      "primary_category": "cs.CV",
+      "heuristic_score": 20.3,
+      "summary": "ATLAS: Agentic or Latent Visual Reasoning? One Word is Enough for Both 是最近值得追踪的一篇 AI 论文。论文摘要显示：Visual reasoning, often interleaved with intermediate visual states, has emerged as a promising direction in the field. A straightforward approach is to directly generate images via unified models during reasoning, but this is computational...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CV, cs.AI",
+        "作者数: 4"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "agent",
+        "agentic",
+        "model"
+      ],
+      "themes": [
+        "ai",
+        "agent",
+        "agentic"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：ATLAS: Agentic or Latent Visual Reasoning? One Word is Enough for Both 是最近值得追踪的一篇 AI 论文。论文摘要显示：Visual reasoning, often interleaved with intermediate visual states, has emerged as a promising direction in the field. A straightforward approach is to directly generate images via unified models during reasoning, but this is computational...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV, cs.AI\n- 作者数: 4",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 178.0,
+      "detail_path": "items/arxiv-atlas-agentic-or-latent-visual-reasoning-one-word-is-enough-for-both.html",
+      "first_seen_at": "2026-05-16T03:57:47.182085+00:00",
+      "last_seen_at": "2026-05-16T03:57:47.182085+00:00",
+      "last_curated_at": "2026-05-16T03:57:47.182085+00:00",
+      "last_notified_at": null
+    },
+    {
       "id": "arxiv::http://arxiv.org/abs/2605.11946v1",
       "kind": "paper",
       "source": "arxiv",
@@ -327,164 +401,6 @@
       "first_seen_at": "2026-05-13T01:46:01.516444+00:00",
       "last_seen_at": "2026-05-13T04:10:44.061719+00:00",
       "last_curated_at": "2026-05-13T04:10:44.061719+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2605.06635v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "Cited but Not Verified: Parsing and Evaluating Source Attribution in LLM Deep Research Agents",
-      "html_url": "http://arxiv.org/abs/2605.06635v1",
-      "pdf_url": "https://arxiv.org/pdf/2605.06635v1",
-      "description": "Large language models (LLMs) power deep research agents that synthesize information from hundreds of web sources into cited reports, yet these citations cannot be reliably verified. Current approaches either trust models to self-cite accurately, risking bias, or employ retrieval-augmented generation (RAG) that does not validate source accessibility, relevance, or factual consistency. We introduce the first source attribution evaluation framework that uses a reproducible AST parser to extract and evaluate inline citations from LLM-generated Markdown reports at scale. Unlike methods that verify claims in isolation, our framework closes the loop by retrieving the actual cited content, enabling human or model evaluators to judge each citation against its source. Citations are evaluated along three dimensions. (1) Link Works verifies URL accessibility, (2) Relevant Content measures topical alignment, and (3) Fact Check validates factual accuracy against source content. We benchmark 14 closed-source and open-source LLMs across three evaluation dimensions using rubric-based LLM-as-a-judge evaluators calibrated through human review. Our results reveal that even the strongest frontier models maintain link validity above 94% and relevance above 80%, yet achieve only 39-77% factual accuracy, while fewer than half of open-source models successfully generate cited reports in a one-shot setting. Ablation studies on research depth show that Fact Check accuracy drops by approximately 42% on average across two frontier models as tool calls scale from 2 to 150, demonstrating that more retrieval does not produce more accurate citations. These findings reveal a critical disconnect between surface-level citation quality and factual reliability, and our framework provides the evaluation infrastructure to assess the disconnect.",
-      "authors": [
-        "Hailey Onweller",
-        "Elias Lumer",
-        "Austin Huber",
-        "Pia Ramchandani",
-        "Vamse Kumar Subbiah",
-        "Corey Feld"
-      ],
-      "categories": [
-        "cs.CL"
-      ],
-      "published_at": "2026-05-07T17:46:45+00:00",
-      "updated_at": "2026-05-07T17:46:45+00:00",
-      "primary_category": "cs.CL",
-      "heuristic_score": 20.3,
-      "summary": "Cited but Not Verified: Parsing and Evaluating Source Attribution in LLM Deep Research Agents 是最近值得追踪的一篇 AI 论文。论文摘要显示：Large language models (LLMs) power deep research agents that synthesize information from hundreds of web sources into cited reports, yet these citations cannot be reliably verified. Current approaches either trust models to self-cite accura...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CL",
-        "作者数: 6"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "llm",
-        "agent",
-        "rag"
-      ],
-      "themes": [
-        "ai",
-        "llm",
-        "agent"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：Cited but Not Verified: Parsing and Evaluating Source Attribution in LLM Deep Research Agents 是最近值得追踪的一篇 AI 论文。论文摘要显示：Large language models (LLMs) power deep research agents that synthesize information from hundreds of web sources into cited reports, yet these citations cannot be reliably verified. Current approaches either trust models to self-cite accura...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL\n- 作者数: 6",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 176.0,
-      "detail_path": "items/arxiv-cited-but-not-verified-parsing-and-evaluating-source-attribution-in-llm-deep-research-agen.html",
-      "first_seen_at": "2026-05-08T03:51:08.082380+00:00",
-      "last_seen_at": "2026-05-09T03:52:52.242937+00:00",
-      "last_curated_at": "2026-05-09T03:52:52.242937+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2605.06651v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "AI Co-Mathematician: Accelerating Mathematicians with Agentic AI",
-      "html_url": "http://arxiv.org/abs/2605.06651v1",
-      "pdf_url": "https://arxiv.org/pdf/2605.06651v1",
-      "description": "We introduce the AI co-mathematician, a workbench for mathematicians to interactively leverage AI agents to pursue open-ended research. The AI co-mathematician is optimized to provide holistic support for the exploratory and iterative reality of mathematical workflows, including ideation, literature search, computational exploration, theorem proving and theory building. By providing an asynchronous, stateful workspace that manages uncertainty, refines user intent, tracks failed hypotheses, and outputs native mathematical artifacts, the system mirrors human collaborative workflows. In early tests, the AI co-mathematician helped researchers solve open problems, identify new research directions, and uncover overlooked literature references. Besides demonstrating a highly interactive paradigm for AI-assisted mathematical discovery, the AI co-mathematician also achieves state of the art results on hard problem-solving benchmarks, including scoring 48% on FrontierMath Tier 4, a new high score among all AI systems evaluated.",
-      "authors": [
-        "Daniel Zheng",
-        "Ingrid von Glehn",
-        "Yori Zwols",
-        "Iuliya Beloshapka",
-        "Lars Buesing",
-        "Daniel M. Roy",
-        "Martin Wattenberg",
-        "Bogdan Georgiev",
-        "Tatiana Schmidt",
-        "Andrew Cowie",
-        "Fernanda Viegas",
-        "Dimitri Kanevsky",
-        "Vineet Kahlon",
-        "Hartmut Maennel",
-        "Sophia Alj",
-        "George Holland",
-        "Alex Davies",
-        "Pushmeet Kohli"
-      ],
-      "categories": [
-        "cs.AI"
-      ],
-      "published_at": "2026-05-07T17:56:32+00:00",
-      "updated_at": "2026-05-07T17:56:32+00:00",
-      "primary_category": "cs.AI",
-      "heuristic_score": 17.191,
-      "summary": "AI Co-Mathematician: Accelerating Mathematicians with Agentic AI 是最近值得追踪的一篇 AI 论文。论文摘要显示：We introduce the AI co-mathematician, a workbench for mathematicians to interactively leverage AI agents to pursue open-ended research. The AI co-mathematician is optimized to provide holistic support for the exploratory and iterative reali...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.AI",
-        "作者数: 18"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "agent",
-        "rag",
-        "benchmark"
-      ],
-      "themes": [
-        "ai",
-        "agent",
-        "rag"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：AI Co-Mathematician: Accelerating Mathematicians with Agentic AI 是最近值得追踪的一篇 AI 论文。论文摘要显示：We introduce the AI co-mathematician, a workbench for mathematicians to interactively leverage AI agents to pursue open-ended research. The AI co-mathematician is optimized to provide holistic support for the exploratory and iterative reali...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI\n- 作者数: 18",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 176.0,
-      "detail_path": "items/arxiv-ai-co-mathematician-accelerating-mathematicians-with-agentic-ai.html",
-      "first_seen_at": "2026-05-08T03:51:08.082380+00:00",
-      "last_seen_at": "2026-05-09T03:52:52.242937+00:00",
-      "last_curated_at": "2026-05-09T03:52:52.242937+00:00",
       "last_notified_at": null
     },
     {
@@ -625,6 +541,79 @@
       "last_seen_at": "2026-05-13T04:10:44.061719+00:00",
       "last_curated_at": "2026-05-13T04:10:44.061719+00:00",
       "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2605.13839v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Good Agentic Friends Do Not Just Give Verbal Advice: They Can Update Your Weights",
+      "html_url": "http://arxiv.org/abs/2605.13839v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.13839v1",
+      "description": "Multi-agent LLM systems usually collaborate by exchanging natural-language messages. This interface is simple and interpretable, but it forces each sender's intermediate computation to be serialized into tokens and then reprocessed by the receiver, thereby increasing the generated-token cost, prefill overhead, and KV-cache memory. We study an alternative communication interface: instead of appending a sender's message to the receiver's context, compile the sender's hidden states into a transient, receiver-specific weight perturbation. We introduce TFlow (Thought Flow), a weight-space communication framework for a known and fixed receiver architecture. For each query, frozen role-prompted sender agents process the input, and a learned parameter generator maps their internal activations into low-rank LoRA perturbations targeting the receiver's modules. These perturbations are fused and applied only during the receiver's generation, enabling instance-level adaptation without permanently changing the model or enlarging the receiver's text context. With three Qwen3-4B agents, TFlow improves over a standalone receiver by up to 8.5 accuracy points across five benchmarks while reducing processed tokens by up to 32.69%. Compared with a text-based three-agent baseline, it reduces total processed tokens by up to 83.27% and the wall-clock inference time by up to 4.6$\\times$, while maintaining competitive accuracy on four of five benchmarks. These results suggest that transient low-rank weight perturbations can serve as an executable communication medium for efficient multi-agent LLM collaboration.",
+      "authors": [
+        "Wenrui Bao",
+        "Huan Wang",
+        "Jian Wang",
+        "Zhangyang Wang",
+        "Kai Wang",
+        "Yuzhang Shang"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "published_at": "2026-05-13T17:58:32+00:00",
+      "updated_at": "2026-05-13T17:58:32+00:00",
+      "primary_category": "cs.CL",
+      "heuristic_score": 20.3,
+      "summary": "Good Agentic Friends Do Not Just Give Verbal Advice: They Can Update Your Weights 是最近值得追踪的一篇 AI 论文。论文摘要显示：Multi-agent LLM systems usually collaborate by exchanging natural-language messages. This interface is simple and interpretable, but it forces each sender's intermediate computation to be serialized into tokens and then reprocessed by the r...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CL",
+        "作者数: 6"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "llm",
+        "agent",
+        "model"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "agent"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：Good Agentic Friends Do Not Just Give Verbal Advice: They Can Update Your Weights 是最近值得追踪的一篇 AI 论文。论文摘要显示：Multi-agent LLM systems usually collaborate by exchanging natural-language messages. This interface is simple and interpretable, but it forces each sender's intermediate computation to be serialized into tokens and then reprocessed by the r...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL\n- 作者数: 6",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "inference",
+          "weight": 1.8
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 172.0,
+      "detail_path": "items/arxiv-good-agentic-friends-do-not-just-give-verbal-advice-they-can-update-your-weights.html",
+      "first_seen_at": "2026-05-14T04:09:54.168737+00:00",
+      "last_seen_at": "2026-05-14T04:09:54.168737+00:00",
+      "last_curated_at": "2026-05-14T04:09:54.168737+00:00",
+      "last_notified_at": null
     }
   ],
   "top_themes": [
@@ -634,11 +623,11 @@
     },
     {
       "theme": "agent",
-      "count": 6
+      "count": 5
     },
     {
       "theme": "llm",
-      "count": 2
+      "count": 3
     }
   ],
   "highlights": [
@@ -648,7 +637,7 @@
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     },
     {
-      "title": "BAMI: Training-Free Bias Mitigation in GUI Grounding",
+      "title": "Articraft: An Agentic System for Scalable Articulated 3D Asset Generation",
       "source": "arxiv",
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     },
