@@ -1,8 +1,8 @@
 {
   "label": "周报",
   "window_days": 7,
-  "generated_at": "2026-05-18T12:38:38.360108+08:00",
-  "count": 49,
+  "generated_at": "2026-05-19T09:52:01.219329+08:00",
+  "count": 58,
   "summary": "近 7 天里，最集中的主题是 ai、agent、llm。",
   "top_items": [
     {
@@ -98,6 +98,88 @@
       "last_notified_at": null
     },
     {
+      "id": "arxiv::http://arxiv.org/abs/2605.17249v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "SEDualVLN: A Spatially-Enhanced Dual-System for Vision-Language Navigation",
+      "html_url": "http://arxiv.org/abs/2605.17249v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.17249v1",
+      "description": "Vision-Language Navigation (VLN) approaches have currently followed two primary paradigms: the end-to-end Vision-Language Model (VLM) policy fine-tuned on navigation trajectories to directly predict actions, and the zero-shot modular pipeline integrating pre-trained Multimodal Large Language Model (MLLM) for training-free generalization to unseen environments. However, end-to-end methods struggle with long-horizon navigation and lack dynamic reasoning, whereas zero-shot methods are constrained by limited spatial grounding for reliable planning and also require substantial reasoning time. To bridge this gap, we introduce SEDualVLN, a spatially-enhanced dual-system VLN framework. System 1 is a VLM model enhanced with both global and local spatial awareness, used for action generation. System 2 integrates a general MLLM with a mapping module, wherein the MLLM plans waypoints by leveraging top-down views of the real-time 3D map alongside streams of rendered path images. Both systems leverage different forms of spatial enhancement to cultivate the agent's sense of direction in VLN tasks. Ultimately, they cooperate to complete the navigation task through a fast-slow coordinated approach. SEDualVLN achieves state-of-the-art performance on VLN-CE benchmarks, and further ablation studies demonstrate the effectiveness of each system and module.",
+      "authors": [
+        "Jingzhi Huang",
+        "Junkai Huang",
+        "Wenxuan Song",
+        "Haoyang Yang",
+        "Hailong Huang",
+        "Haoang Li",
+        "Yi Wang"
+      ],
+      "categories": [
+        "cs.RO"
+      ],
+      "published_at": "2026-05-17T04:12:56+00:00",
+      "updated_at": "2026-05-17T04:12:56+00:00",
+      "primary_category": "cs.RO",
+      "heuristic_score": 23.295,
+      "summary": "SEDualVLN: A Spatially-Enhanced Dual-System for Vision-Language Navigation 是最近值得追踪的一篇 AI 论文。论文摘要显示：Vision-Language Navigation (VLN) approaches have currently followed two primary paradigms: the end-to-end Vision-Language Model (VLM) policy fine-tuned on navigation trajectories to directly predict actions, and the zero-shot modular pipeli...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.RO",
+        "作者数: 7"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "llm",
+        "agent",
+        "rag"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "agent"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：SEDualVLN: A Spatially-Enhanced Dual-System for Vision-Language Navigation 是最近值得追踪的一篇 AI 论文。论文摘要显示：Vision-Language Navigation (VLN) approaches have currently followed two primary paradigms: the end-to-end Vision-Language Model (VLM) policy fine-tuned on navigation trajectories to directly predict actions, and the zero-shot modular pipeli...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.RO\n- 作者数: 7",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        },
+        {
+          "keyword": "multimodal",
+          "weight": 2.0
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 212.0,
+      "detail_path": "items/arxiv-sedualvln-a-spatially-enhanced-dual-system-for-vision-language-navigation.html",
+      "first_seen_at": "2026-05-19T01:52:44.713452+00:00",
+      "last_seen_at": "2026-05-19T01:52:44.713452+00:00",
+      "last_curated_at": "2026-05-19T01:52:44.713452+00:00",
+      "last_notified_at": null
+    },
+    {
       "id": "arxiv::http://arxiv.org/abs/2605.15187v1",
       "kind": "paper",
       "source": "arxiv",
@@ -177,6 +259,180 @@
       "first_seen_at": "2026-05-16T03:57:47.182085+00:00",
       "last_seen_at": "2026-05-16T03:57:47.182085+00:00",
       "last_curated_at": "2026-05-16T03:57:47.182085+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2605.17255v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "CAM-Bench: A Benchmark for Computational and Applied Mathematics in Lean",
+      "html_url": "http://arxiv.org/abs/2605.17255v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.17255v1",
+      "description": "Formal theorem-proving benchmarks enable mechanically verifiable evaluation of mathematical reasoning in large language models. However, existing benchmarks mainly focus on Olympiad-style problems and algebraic domains, leaving computational and applied mathematics underrepresented. We introduce CAM-Bench, a Lean 4 theorem-proving benchmark of 1,000 Lean proof targets in computational and applied mathematics, with coverage spanning optimization, numerical linear algebra, and numerical analysis. These problems are adapted from textbook exercises and often depend on locally introduced definitions, notation, algorithms, and elementary results. To construct CAM-Bench, we develop a dependency-recovery pipeline that reconstructs the local textbook context needed to state each problem faithfully. It then normalizes each problem into a standalone informal theorem and translates it into a Lean target. We validate the resulting formal problems through Lean compilation and semantic review, checking both formal correctness and semantic alignment with the original exercises. For each problem, we release the raw exercise, recovered context, normalized informal theorem, and final Lean target. CAM-Bench complements existing formal mathematics benchmarks by targeting applied mathematics problems that rely on textbook concepts and elementary theorems, many of which are not directly available as standard Mathlib4 lemmas. We evaluate widely used large language models and formalization agents on CAM-Bench, and analyze common failure modes in tracking local assumptions, applying elementary results, decomposing proofs, and maintaining long-horizon control in Lean.",
+      "authors": [
+        "Wentao Long",
+        "Yunfei Zhang",
+        "Chenyi Li",
+        "Li Zhou",
+        "Chumin Sun",
+        "Zaiwen Wen"
+      ],
+      "categories": [
+        "cs.AI",
+        "math.OC"
+      ],
+      "published_at": "2026-05-17T04:53:47+00:00",
+      "updated_at": "2026-05-17T04:53:47+00:00",
+      "primary_category": "cs.AI",
+      "heuristic_score": 17.9,
+      "summary": "CAM-Bench: A Benchmark for Computational and Applied Mathematics in Lean 是最近值得追踪的一篇 AI 论文。论文摘要显示：Formal theorem-proving benchmarks enable mechanically verifiable evaluation of mathematical reasoning in large language models. However, existing benchmarks mainly focus on Olympiad-style problems and algebraic domains, leaving computationa...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.AI, math.OC",
+        "作者数: 6"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "agent",
+        "rag",
+        "model"
+      ],
+      "themes": [
+        "ai",
+        "agent",
+        "rag"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：CAM-Bench: A Benchmark for Computational and Applied Mathematics in Lean 是最近值得追踪的一篇 AI 论文。论文摘要显示：Formal theorem-proving benchmarks enable mechanically verifiable evaluation of mathematical reasoning in large language models. However, existing benchmarks mainly focus on Olympiad-style problems and algebraic domains, leaving computationa...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI, math.OC\n- 作者数: 6",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 200.0,
+      "detail_path": "items/arxiv-cam-bench-a-benchmark-for-computational-and-applied-mathematics-in-lean.html",
+      "first_seen_at": "2026-05-19T01:52:44.713452+00:00",
+      "last_seen_at": "2026-05-19T01:52:44.713452+00:00",
+      "last_curated_at": "2026-05-19T01:52:44.713452+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2605.17262v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "EgoIntrospect: An Egocentric Dataset and Benchmark for User-Centric Internal State Reasoning",
+      "html_url": "http://arxiv.org/abs/2605.17262v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.17262v1",
+      "description": "Despite extensive efforts on egocentric video datasets and benchmarks, understanding users' internal states, which is crucial for enabling seamless AI assistant experiences, remains largely overlooked. In this work, we introduce EgoIntrospect, the first egocentric dataset captured in user-driven scenarios with self-annotations that explicitly reveal users' interactive intentions with AI assistants. EgoIntrospect was collected using a cross-device setup, providing synchronized video, audio, gaze, motion, and physiological signals. It consists of 180 hours of recordings from 60 subjects, with an average recording duration of 3 hours per subject. Leveraging EgoIntrospect, we formalize a suite of tasks centered on user internal states, including affective experience, interactive intent, and cognitive memory. We further process the annotations to construct benchmarks that evaluate the ability of modern multimodal large language models to reason about users' internal states from egocentric observations. Experiments on our benchmark suggest that existing multimodal large language models struggle to effectively leverage multimodal signals to infer users' subjective internal states. The dataset and annotations will be made publicly available to advance research in egocentric vision and wearable AI assistants. Project page: https://ego-introspect.github.io/",
+      "authors": [
+        "Zeyu Wang",
+        "Chang Liu",
+        "Eduardus Tjitrahardja",
+        "Yuntao Wang",
+        "Borislav Pavlov",
+        "Fangfei Gou",
+        "Jose Manuel Davila",
+        "Dai Shi",
+        "Ran Xu",
+        "Yue Pan",
+        "Jiayi Tan",
+        "Shuting Chang",
+        "Qi Wang",
+        "Jinzhao Li",
+        "Jiacheng Hua",
+        "Yifei Huang",
+        "Jingwei Sun",
+        "Yu Zhang",
+        "Liuxin Zhang",
+        "Guocai Yao",
+        "Jia Jia",
+        "Yin Li",
+        "Qianying Wang",
+        "Yuanchun Shi",
+        "Miao Liu"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "published_at": "2026-05-17T05:05:29+00:00",
+      "updated_at": "2026-05-17T05:05:29+00:00",
+      "primary_category": "cs.CV",
+      "heuristic_score": 17.611,
+      "summary": "EgoIntrospect: An Egocentric Dataset and Benchmark for User-Centric Internal State Reasoning 是最近值得追踪的一篇 AI 论文。论文摘要显示：Despite extensive efforts on egocentric video datasets and benchmarks, understanding users' internal states, which is crucial for enabling seamless AI assistant experiences, remains largely overlooked. In this work, we introduce EgoIntrospe...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CV",
+        "作者数: 25"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "rag",
+        "multimodal",
+        "model"
+      ],
+      "themes": [
+        "ai",
+        "rag",
+        "multimodal"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：EgoIntrospect: An Egocentric Dataset and Benchmark for User-Centric Internal State Reasoning 是最近值得追踪的一篇 AI 论文。论文摘要显示：Despite extensive efforts on egocentric video datasets and benchmarks, understanding users' internal states, which is crucial for enabling seamless AI assistant experiences, remains largely overlooked. In this work, we introduce EgoIntrospe...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV\n- 作者数: 25",
+      "focus_hits": [
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        },
+        {
+          "keyword": "multimodal",
+          "weight": 2.0
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "reasoning",
+      "personalized_score": 190.0,
+      "detail_path": "items/arxiv-egointrospect-an-egocentric-dataset-and-benchmark-for-user-centric-internal-state-reasonin.html",
+      "first_seen_at": "2026-05-19T01:52:44.713452+00:00",
+      "last_seen_at": "2026-05-19T01:52:44.713452+00:00",
+      "last_curated_at": "2026-05-19T01:52:44.713452+00:00",
       "last_notified_at": null
     },
     {
@@ -402,215 +658,6 @@
       "last_seen_at": "2026-05-13T04:10:44.061719+00:00",
       "last_curated_at": "2026-05-13T04:10:44.061719+00:00",
       "last_notified_at": null
-    },
-    {
-      "id": "github::rohitg00/agentmemory",
-      "kind": "repo",
-      "source": "github",
-      "source_tags": [
-        "trending"
-      ],
-      "name": "agentmemory",
-      "title": "rohitg00/agentmemory",
-      "full_name": "rohitg00/agentmemory",
-      "html_url": "https://github.com/rohitg00/agentmemory",
-      "description": "#1 Persistent memory for AI coding agents based on real-world benchmarks",
-      "stars": 9119,
-      "stars_today": 0,
-      "language": "TypeScript",
-      "topics": [],
-      "created_at": "",
-      "updated_at": "",
-      "heuristic_score": 17.8,
-      "summary": "rohitg00/agentmemory 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：#1 Persistent memory for AI coding agents based on real-world benchmarks结合关键词命中和热度信号，它适合加入今日重点观察列表。",
-      "brief": "这是一个值得快速关注的开源 AI 项目。",
-      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
-      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
-      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
-      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
-      "highlights": [
-        "Stars: 9119",
-        "语言: TypeScript"
-      ],
-      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "agent",
-        "benchmark",
-        "coding agent"
-      ],
-      "themes": [
-        "ai",
-        "agent",
-        "benchmark"
-      ],
-      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：rohitg00/agentmemory 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：#1 Persistent memory for AI coding agents based on real-world benchmarks结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：10/10\n\n**亮点**：\n- Stars: 9119\n- 语言: TypeScript",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "coding",
-          "weight": 2.6
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 175.65,
-      "detail_path": "items/github-rohitg00-agentmemory.html",
-      "first_seen_at": "2026-05-10T01:27:20.701480+00:00",
-      "last_seen_at": "2026-05-15T04:14:42.266649+00:00",
-      "last_curated_at": "2026-05-15T04:14:42.266649+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "github::Light-Heart-Labs/DreamServer",
-      "kind": "repo",
-      "source": "github",
-      "source_tags": [
-        "trending"
-      ],
-      "name": "DreamServer",
-      "title": "Light-Heart-Labs/DreamServer",
-      "full_name": "Light-Heart-Labs/DreamServer",
-      "html_url": "https://github.com/Light-Heart-Labs/DreamServer",
-      "description": "Local AI anywhere, for everyone — LLM inference, chat UI, voice, agents, workflows, RAG, and image generation. No cloud, no subscriptions.",
-      "stars": 1282,
-      "stars_today": 0,
-      "language": "Python",
-      "topics": [],
-      "created_at": "",
-      "updated_at": "",
-      "heuristic_score": 15.564,
-      "summary": "Light-Heart-Labs/DreamServer 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Local AI anywhere, for everyone — LLM inference, chat UI, voice, agents, workflows, RAG, and image generation. No cloud, no subscriptions.结合关键词命中和热度信号，它适合加入今日重点观察列表。",
-      "brief": "这是一个值得快速关注的开源 AI 项目。",
-      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
-      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
-      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
-      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
-      "highlights": [
-        "Stars: 1282",
-        "语言: Python"
-      ],
-      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
-      "relevance_score": 9,
-      "tags": [
-        "ai",
-        "llm",
-        "agent",
-        "rag"
-      ],
-      "themes": [
-        "ai",
-        "llm",
-        "agent"
-      ],
-      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：Light-Heart-Labs/DreamServer 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Local AI anywhere, for everyone — LLM inference, chat UI, voice, agents, workflows, RAG, and image generation. No cloud, no subscriptions.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：9/10\n\n**亮点**：\n- Stars: 1282\n- 语言: Python",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "inference",
-          "weight": 1.8
-        },
-        {
-          "keyword": "voice",
-          "weight": 1.4
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 174.51,
-      "detail_path": "items/github-light-heart-labs-dreamserver.html",
-      "first_seen_at": "2026-05-18T01:52:59.959255+00:00",
-      "last_seen_at": "2026-05-18T04:39:05.539349+00:00",
-      "last_curated_at": "2026-05-18T04:39:05.539349+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2605.11931v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "Learn to Think: Improving Multimodal Reasoning through Vision-Aware Self-Improvement Training",
-      "html_url": "http://arxiv.org/abs/2605.11931v1",
-      "pdf_url": "https://arxiv.org/pdf/2605.11931v1",
-      "description": "Post-training with explicit reasoning traces is common to improve the reasoning capabilities of Multimodal Large Language Models (MLLMs). However, acquiring high-quality reasoning traces is often costly and time-consuming. Hence, the self-improvement paradigm has emerged, enabling MLLMs to self-generate reasoning traces for training without external supervision. Despite its effectiveness, we reveal two shortcomings in the self-improvement training of MLLMs: 1) data imbalance, where simple samples are over-trained, but the challenging yet crucial samples are under-trained; 2) language prior bias, where MLLMs overly rely on linguistic priors while neglecting the visual cues. To this end, we propose VISTA, a vision-aware self-improvement training framework for enhancing the multimodal reasoning of MLLMs. Specifically, VISTA first introduces a prefix resampling strategy to reuse the partial correct reasoning traces for efficient data collection, and then designs a vision-aware attention score to quantify the model's focus on visual information. Extensive experiments show that VISTA can be applied to various post-training scenarios, i.e., supervised fine-tuning and preference learning, and effectively enhances the multimodal reasoning performance across various MLLMs and tasks, e.g., bringing up to +13.66% average performance gains for Qwen2.5-VL-3B-Instruct.",
-      "authors": [
-        "Qihuang Zhong",
-        "Liang Ding",
-        "Wenjie Xuan",
-        "Juhua Liu",
-        "Bo Du",
-        "Dacheng Tao"
-      ],
-      "categories": [
-        "cs.CV"
-      ],
-      "published_at": "2026-05-12T10:44:35+00:00",
-      "updated_at": "2026-05-12T10:44:35+00:00",
-      "primary_category": "cs.CV",
-      "heuristic_score": 20.02,
-      "summary": "Learn to Think: Improving Multimodal Reasoning through Vision-Aware Self-Improvement Training 是最近值得追踪的一篇 AI 论文。论文摘要显示：Post-training with explicit reasoning traces is common to improve the reasoning capabilities of Multimodal Large Language Models (MLLMs). However, acquiring high-quality reasoning traces is often costly and time-consuming. Hence, the self-i...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CV",
-        "作者数: 6"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "llm",
-        "rag",
-        "multimodal"
-      ],
-      "themes": [
-        "ai",
-        "llm",
-        "rag"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：Learn to Think: Improving Multimodal Reasoning through Vision-Aware Self-Improvement Training 是最近值得追踪的一篇 AI 论文。论文摘要显示：Post-training with explicit reasoning traces is common to improve the reasoning capabilities of Multimodal Large Language Models (MLLMs). However, acquiring high-quality reasoning traces is often costly and time-consuming. Hence, the self-i...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV\n- 作者数: 6",
-      "focus_hits": [
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "multimodal",
-          "weight": 2.0
-        }
-      ],
-      "primary_match": "reasoning",
-      "personalized_score": 174.0,
-      "detail_path": "items/arxiv-learn-to-think-improving-multimodal-reasoning-through-vision-aware-self-improvement-traini.html",
-      "first_seen_at": "2026-05-13T01:46:01.516444+00:00",
-      "last_seen_at": "2026-05-13T04:10:44.061719+00:00",
-      "last_curated_at": "2026-05-13T04:10:44.061719+00:00",
-      "last_notified_at": null
     }
   ],
   "top_themes": [
@@ -624,7 +671,11 @@
     },
     {
       "theme": "llm",
-      "count": 3
+      "count": 2
+    },
+    {
+      "theme": "rag",
+      "count": 1
     }
   ],
   "highlights": [
@@ -634,12 +685,12 @@
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     },
     {
-      "title": "Articraft: An Agentic System for Scalable Articulated 3D Asset Generation",
+      "title": "SEDualVLN: A Spatially-Enhanced Dual-System for Vision-Language Navigation",
       "source": "arxiv",
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     },
     {
-      "title": "Training Long-Context Vision-Language Models Effectively with Generalization Beyond 128K Context",
+      "title": "Articraft: An Agentic System for Scalable Articulated 3D Asset Generation",
       "source": "arxiv",
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     }

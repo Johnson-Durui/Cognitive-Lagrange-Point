@@ -1,9 +1,9 @@
 {
   "label": "月报",
   "window_days": 30,
-  "generated_at": "2026-05-18T12:38:38.360108+08:00",
-  "count": 178,
-  "summary": "近 30 天里，最集中的主题是 ai、llm、agent。",
+  "generated_at": "2026-05-19T09:52:01.219329+08:00",
+  "count": 179,
+  "summary": "近 30 天里，最集中的主题是 ai、agent、llm。",
   "top_items": [
     {
       "id": "arxiv::http://arxiv.org/abs/2605.14859v1",
@@ -348,6 +348,88 @@
       "last_notified_at": null
     },
     {
+      "id": "arxiv::http://arxiv.org/abs/2605.17249v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "SEDualVLN: A Spatially-Enhanced Dual-System for Vision-Language Navigation",
+      "html_url": "http://arxiv.org/abs/2605.17249v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.17249v1",
+      "description": "Vision-Language Navigation (VLN) approaches have currently followed two primary paradigms: the end-to-end Vision-Language Model (VLM) policy fine-tuned on navigation trajectories to directly predict actions, and the zero-shot modular pipeline integrating pre-trained Multimodal Large Language Model (MLLM) for training-free generalization to unseen environments. However, end-to-end methods struggle with long-horizon navigation and lack dynamic reasoning, whereas zero-shot methods are constrained by limited spatial grounding for reliable planning and also require substantial reasoning time. To bridge this gap, we introduce SEDualVLN, a spatially-enhanced dual-system VLN framework. System 1 is a VLM model enhanced with both global and local spatial awareness, used for action generation. System 2 integrates a general MLLM with a mapping module, wherein the MLLM plans waypoints by leveraging top-down views of the real-time 3D map alongside streams of rendered path images. Both systems leverage different forms of spatial enhancement to cultivate the agent's sense of direction in VLN tasks. Ultimately, they cooperate to complete the navigation task through a fast-slow coordinated approach. SEDualVLN achieves state-of-the-art performance on VLN-CE benchmarks, and further ablation studies demonstrate the effectiveness of each system and module.",
+      "authors": [
+        "Jingzhi Huang",
+        "Junkai Huang",
+        "Wenxuan Song",
+        "Haoyang Yang",
+        "Hailong Huang",
+        "Haoang Li",
+        "Yi Wang"
+      ],
+      "categories": [
+        "cs.RO"
+      ],
+      "published_at": "2026-05-17T04:12:56+00:00",
+      "updated_at": "2026-05-17T04:12:56+00:00",
+      "primary_category": "cs.RO",
+      "heuristic_score": 23.295,
+      "summary": "SEDualVLN: A Spatially-Enhanced Dual-System for Vision-Language Navigation 是最近值得追踪的一篇 AI 论文。论文摘要显示：Vision-Language Navigation (VLN) approaches have currently followed two primary paradigms: the end-to-end Vision-Language Model (VLM) policy fine-tuned on navigation trajectories to directly predict actions, and the zero-shot modular pipeli...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.RO",
+        "作者数: 7"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "llm",
+        "agent",
+        "rag"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "agent"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：SEDualVLN: A Spatially-Enhanced Dual-System for Vision-Language Navigation 是最近值得追踪的一篇 AI 论文。论文摘要显示：Vision-Language Navigation (VLN) approaches have currently followed two primary paradigms: the end-to-end Vision-Language Model (VLM) policy fine-tuned on navigation trajectories to directly predict actions, and the zero-shot modular pipeli...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.RO\n- 作者数: 7",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        },
+        {
+          "keyword": "multimodal",
+          "weight": 2.0
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 212.0,
+      "detail_path": "items/arxiv-sedualvln-a-spatially-enhanced-dual-system-for-vision-language-navigation.html",
+      "first_seen_at": "2026-05-19T01:52:44.713452+00:00",
+      "last_seen_at": "2026-05-19T01:52:44.713452+00:00",
+      "last_curated_at": "2026-05-19T01:52:44.713452+00:00",
+      "last_notified_at": null
+    },
+    {
       "id": "arxiv::http://arxiv.org/abs/2605.15187v1",
       "kind": "paper",
       "source": "arxiv",
@@ -509,59 +591,57 @@
       "last_notified_at": null
     },
     {
-      "id": "arxiv::http://arxiv.org/abs/2604.19689v1",
+      "id": "arxiv::http://arxiv.org/abs/2605.17255v1",
       "kind": "paper",
       "source": "arxiv",
       "source_tags": [
         "latest"
       ],
-      "title": "A-MAR: Agent-based Multimodal Art Retrieval for Fine-Grained Artwork Understanding",
-      "html_url": "http://arxiv.org/abs/2604.19689v1",
-      "pdf_url": "https://arxiv.org/pdf/2604.19689v1",
-      "description": "Understanding artworks requires multi-step reasoning over visual content and cultural, historical, and stylistic context. While recent multimodal large language models show promise in artwork explanation, they rely on implicit reasoning and internalized knowl- edge, limiting interpretability and explicit evidence grounding. We propose A-MAR, an Agent-based Multimodal Art Retrieval framework that explicitly conditions retrieval on structured reasoning plans. Given an artwork and a user query, A-MAR first decomposes the task into a structured reasoning plan that specifies the goals and evidence requirements for each step. Retrieval is then conditionedon this plan, enabling targeted evidence selection and supporting step-wise, grounded explanations. To evaluate agent-based multi- modal reasoning within the art domain, we introduce ArtCoT-QA. This diagnostic benchmark features multi-step reasoning chains for diverse art-related queries, enabling a granular analysis that extends beyond simple final answer accuracy. Experiments on SemArt and Artpedia show that A-MAR consistently outperforms static, non planned retrieval and strong MLLM baselines in final explanation quality, while evaluations on ArtCoT-QA further demonstrate its advantages in evidence grounding and multi-step reasoning ability. These results highlight the importance of reasoning-conditioned retrieval for knowledge-intensive multimodal understanding and position A-MAR as a step toward interpretable, goal-driven AI systems, with particular relevance to cultural industries. The code and data are available at: https://github.com/ShuaiWang97/A-MAR.",
+      "title": "CAM-Bench: A Benchmark for Computational and Applied Mathematics in Lean",
+      "html_url": "http://arxiv.org/abs/2605.17255v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.17255v1",
+      "description": "Formal theorem-proving benchmarks enable mechanically verifiable evaluation of mathematical reasoning in large language models. However, existing benchmarks mainly focus on Olympiad-style problems and algebraic domains, leaving computational and applied mathematics underrepresented. We introduce CAM-Bench, a Lean 4 theorem-proving benchmark of 1,000 Lean proof targets in computational and applied mathematics, with coverage spanning optimization, numerical linear algebra, and numerical analysis. These problems are adapted from textbook exercises and often depend on locally introduced definitions, notation, algorithms, and elementary results. To construct CAM-Bench, we develop a dependency-recovery pipeline that reconstructs the local textbook context needed to state each problem faithfully. It then normalizes each problem into a standalone informal theorem and translates it into a Lean target. We validate the resulting formal problems through Lean compilation and semantic review, checking both formal correctness and semantic alignment with the original exercises. For each problem, we release the raw exercise, recovered context, normalized informal theorem, and final Lean target. CAM-Bench complements existing formal mathematics benchmarks by targeting applied mathematics problems that rely on textbook concepts and elementary theorems, many of which are not directly available as standard Mathlib4 lemmas. We evaluate widely used large language models and formalization agents on CAM-Bench, and analyze common failure modes in tracking local assumptions, applying elementary results, decomposing proofs, and maintaining long-horizon control in Lean.",
       "authors": [
-        "Shuai Wang",
-        "Hongyi Zhu",
-        "Jia-Hong Huang",
-        "Yixian Shen",
-        "Chengxi Zeng",
-        "Stevan Rudinac",
-        "Monika Kackovic",
-        "Nachoem Wijnberg",
-        "Marcel Worring"
+        "Wentao Long",
+        "Yunfei Zhang",
+        "Chenyi Li",
+        "Li Zhou",
+        "Chumin Sun",
+        "Zaiwen Wen"
       ],
       "categories": [
-        "cs.AI"
+        "cs.AI",
+        "math.OC"
       ],
-      "published_at": "2026-04-21T17:11:48+00:00",
-      "updated_at": "2026-04-21T17:11:48+00:00",
+      "published_at": "2026-05-17T04:53:47+00:00",
+      "updated_at": "2026-05-17T04:53:47+00:00",
       "primary_category": "cs.AI",
-      "heuristic_score": 20.3,
-      "summary": "A-MAR: Agent-based Multimodal Art Retrieval for Fine-Grained Artwork Understanding 是最近值得追踪的一篇 AI 论文。论文摘要显示：Understanding artworks requires multi-step reasoning over visual content and cultural, historical, and stylistic context. While recent multimodal large language models show promise in artwork explanation, they rely on implicit reasoning and...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "heuristic_score": 17.9,
+      "summary": "CAM-Bench: A Benchmark for Computational and Applied Mathematics in Lean 是最近值得追踪的一篇 AI 论文。论文摘要显示：Formal theorem-proving benchmarks enable mechanically verifiable evaluation of mathematical reasoning in large language models. However, existing benchmarks mainly focus on Olympiad-style problems and algebraic domains, leaving computationa...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
       "brief": "这是一篇值得加入今日论文雷达的最新工作。",
       "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
       "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
       "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
       "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
       "highlights": [
-        "分类: cs.AI",
-        "作者数: 9"
+        "分类: cs.AI, math.OC",
+        "作者数: 6"
       ],
       "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
       "relevance_score": 10,
       "tags": [
         "ai",
-        "llm",
         "agent",
-        "multimodal"
+        "rag",
+        "model"
       ],
       "themes": [
         "ai",
-        "llm",
-        "agent"
+        "agent",
+        "rag"
       ],
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：A-MAR: Agent-based Multimodal Art Retrieval for Fine-Grained Artwork Understanding 是最近值得追踪的一篇 AI 论文。论文摘要显示：Understanding artworks requires multi-step reasoning over visual content and cultural, historical, and stylistic context. While recent multimodal large language models show promise in artwork explanation, they rely on implicit reasoning and...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI\n- 作者数: 9",
+      "summary_markdown": "**摘要**：CAM-Bench: A Benchmark for Computational and Applied Mathematics in Lean 是最近值得追踪的一篇 AI 论文。论文摘要显示：Formal theorem-proving benchmarks enable mechanically verifiable evaluation of mathematical reasoning in large language models. However, existing benchmarks mainly focus on Olympiad-style problems and algebraic domains, leaving computationa...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI, math.OC\n- 作者数: 6",
       "focus_hits": [
         {
           "keyword": "agent",
@@ -572,8 +652,8 @@
           "weight": 2.4
         },
         {
-          "keyword": "multimodal",
-          "weight": 2.0
+          "keyword": "rag",
+          "weight": 2.2
         },
         {
           "keyword": "benchmark",
@@ -581,100 +661,11 @@
         }
       ],
       "primary_match": "agent",
-      "personalized_score": 198.0,
-      "detail_path": "items/arxiv-a-mar-agent-based-multimodal-art-retrieval-for-fine-grained-artwork-understanding.html",
-      "first_seen_at": "2026-04-22T06:23:01.716108+00:00",
-      "last_seen_at": "2026-04-22T06:25:50.559257+00:00",
-      "last_curated_at": "2026-04-22T06:25:50.559257+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2604.20796v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "LLaDA2.0-Uni: Unifying Multimodal Understanding and Generation with Diffusion Large Language Model",
-      "html_url": "http://arxiv.org/abs/2604.20796v1",
-      "pdf_url": "https://arxiv.org/pdf/2604.20796v1",
-      "description": "We present LLaDA2.0-Uni, a unified discrete diffusion large language model (dLLM) that supports multimodal understanding and generation within a natively integrated framework. Its architecture combines a fully semantic discrete tokenizer, a MoE-based dLLM backbone, and a diffusion decoder. By discretizing continuous visual inputs via SigLIP-VQ, the model enables block-level masked diffusion for both text and vision inputs within the backbone, while the decoder reconstructs visual tokens into high-fidelity images. Inference efficiency is enhanced beyond parallel decoding through prefix-aware optimizations in the backbone and few-step distillation in the decoder. Supported by carefully curated large-scale data and a tailored multi-stage training pipeline, LLaDA2.0-Uni matches specialized VLMs in multimodal understanding while delivering strong performance in image generation and editing. Its native support for interleaved generation and reasoning establishes a promising and scalable paradigm for next-generation unified foundation models. Codes and models are available at https://github.com/inclusionAI/LLaDA2.0-Uni.",
-      "authors": [
-        "Inclusion AI",
-        "Tiwei Bie",
-        "Haoxing Chen",
-        "Tieyuan Chen",
-        "Zhenglin Cheng",
-        "Long Cui",
-        "Kai Gan",
-        "Zhicheng Huang",
-        "Zhenzhong Lan",
-        "Haoquan Li",
-        "Jianguo Li",
-        "Tao Lin",
-        "Qi Qin",
-        "Hongjun Wang",
-        "Xiaomei Wang",
-        "Haoyuan Wu",
-        "Yi Xin",
-        "Junbo Zhao"
-      ],
-      "categories": [
-        "cs.CV"
-      ],
-      "published_at": "2026-04-22T17:20:42+00:00",
-      "updated_at": "2026-04-22T17:20:42+00:00",
-      "primary_category": "cs.CV",
-      "heuristic_score": 22.113,
-      "summary": "LLaDA2.0-Uni: Unifying Multimodal Understanding and Generation with Diffusion Large Language Model 是最近值得追踪的一篇 AI 论文。论文摘要显示：We present LLaDA2.0-Uni, a unified discrete diffusion large language model (dLLM) that supports multimodal understanding and generation within a natively integrated framework. Its architecture combines a fully semantic discrete tokenizer, a...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CV",
-        "作者数: 18"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "llm",
-        "multimodal",
-        "diffusion"
-      ],
-      "themes": [
-        "ai",
-        "llm",
-        "multimodal"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：LLaDA2.0-Uni: Unifying Multimodal Understanding and Generation with Diffusion Large Language Model 是最近值得追踪的一篇 AI 论文。论文摘要显示：We present LLaDA2.0-Uni, a unified discrete diffusion large language model (dLLM) that supports multimodal understanding and generation within a natively integrated framework. Its architecture combines a fully semantic discrete tokenizer, a...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV\n- 作者数: 18",
-      "focus_hits": [
-        {
-          "keyword": "coding",
-          "weight": 2.6
-        },
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "multimodal",
-          "weight": 2.0
-        },
-        {
-          "keyword": "inference",
-          "weight": 1.8
-        }
-      ],
-      "primary_match": "coding",
-      "personalized_score": 196.0,
-      "detail_path": "items/arxiv-llada2-0-uni-unifying-multimodal-understanding-and-generation-with-diffusion-large-languag.html",
-      "first_seen_at": "2026-04-23T03:43:39.024812+00:00",
-      "last_seen_at": "2026-04-23T03:43:39.024812+00:00",
-      "last_curated_at": "2026-04-23T03:43:39.024812+00:00",
+      "personalized_score": 200.0,
+      "detail_path": "items/arxiv-cam-bench-a-benchmark-for-computational-and-applied-mathematics-in-lean.html",
+      "first_seen_at": "2026-05-19T01:52:44.713452+00:00",
+      "last_seen_at": "2026-05-19T01:52:44.713452+00:00",
+      "last_curated_at": "2026-05-19T01:52:44.713452+00:00",
       "last_notified_at": null
     }
   ],
@@ -684,12 +675,12 @@
       "count": 8
     },
     {
-      "theme": "llm",
-      "count": 5
+      "theme": "agent",
+      "count": 4
     },
     {
-      "theme": "agent",
-      "count": 3
+      "theme": "llm",
+      "count": 4
     }
   ],
   "highlights": [
