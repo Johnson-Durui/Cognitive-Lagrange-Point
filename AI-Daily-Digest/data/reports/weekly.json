@@ -1,8 +1,8 @@
 {
   "label": "周报",
   "window_days": 7,
-  "generated_at": "2026-05-19T12:21:51.384883+08:00",
-  "count": 54,
+  "generated_at": "2026-05-20T09:51:16.214624+08:00",
+  "count": 58,
   "summary": "近 7 天里，最集中的主题是 ai、agent、llm。",
   "top_items": [
     {
@@ -588,63 +588,57 @@
       "last_notified_at": null
     },
     {
-      "id": "arxiv::http://arxiv.org/abs/2605.11946v1",
-      "kind": "paper",
-      "source": "arxiv",
+      "id": "github::rohitg00/agentmemory",
+      "kind": "repo",
+      "source": "github",
       "source_tags": [
-        "latest"
+        "trending"
       ],
-      "title": "Counterfactual Trace Auditing of LLM Agent Skills",
-      "html_url": "http://arxiv.org/abs/2605.11946v1",
-      "pdf_url": "https://arxiv.org/pdf/2605.11946v1",
-      "description": "Large Language Model agents are increasingly augmented with agent skills. Current evaluation methods for skills remain limited. Most deployed benchmarks report only pass rate before and after a skill is attached, treating the skill as a black box change to agent behavior. We introduce Counterfactual Trace Auditing (CTA), a framework for measuring how a skill changes agent behavior. CTA pairs each with skill agent trace with a without skill counterpart on the same task, segments both traces into goal directed phases, aligns the phases, and emits structured Skill Influence Pattern (SIP) annotations. These annotations describe the behavioral effect of a skill rather than only its task outcome. We instantiate CTA on SWE-Skills-Bench with Claude across 49 software engineering tasks. The resulting audit reveals a clear evaluation gap. Pass rate changes by only +0.3 percentage points on average, suggesting little aggregate effect. Yet CTA identifies 522 SIP instances across the same paired traces, showing that the skills substantially reshape agent behavior even when pass rate is nearly unchanged. The audit also separates several recurring effects that pass rate cannot detect, including literal template copying, off task artifact creation, excess planning, and task recovery. Three findings emerge. First, high baseline tasks contain most of the observed skill effects, although their pass rate is already saturated and therefore cannot reflect those effects. Second, tasks with moderate baseline performance show the most recoverable gain, but often at substantially higher token cost. Third, the dominant SIP type can be identified by baseline bucket: surface anchoring is most common on ceiling tasks and edge-case prompting is most common on mid-range and floor tasks. These regularities turn informal failure mode observations into reproducible behavioral measurements.",
-      "authors": [
-        "Xiaolin Zhou",
-        "Jinbo Liu",
-        "Li Li",
-        "Ryan A. Rossi",
-        "Xiyang Hu"
-      ],
-      "categories": [
-        "cs.AI"
-      ],
-      "published_at": "2026-05-12T10:56:18+00:00",
-      "updated_at": "2026-05-12T10:56:18+00:00",
-      "primary_category": "cs.AI",
-      "heuristic_score": 17.9,
-      "summary": "Counterfactual Trace Auditing of LLM Agent Skills 是最近值得追踪的一篇 AI 论文。论文摘要显示：Large Language Model agents are increasingly augmented with agent skills. Current evaluation methods for skills remain limited. Most deployed benchmarks report only pass rate before and after a skill is attached, treating the skill as a bla...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "name": "agentmemory",
+      "title": "rohitg00/agentmemory",
+      "full_name": "rohitg00/agentmemory",
+      "html_url": "https://github.com/rohitg00/agentmemory",
+      "description": "#1 Persistent memory for AI coding agents based on real-world benchmarks",
+      "stars": 14205,
+      "stars_today": 0,
+      "language": "TypeScript",
+      "topics": [],
+      "created_at": "",
+      "updated_at": "",
+      "heuristic_score": 17.8,
+      "summary": "rohitg00/agentmemory 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：#1 Persistent memory for AI coding agents based on real-world benchmarks结合关键词命中和热度信号，它适合加入今日重点观察列表。",
+      "brief": "这是一个值得快速关注的开源 AI 项目。",
+      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
+      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
+      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
+      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
       "highlights": [
-        "分类: cs.AI",
-        "作者数: 5"
+        "Stars: 14205",
+        "语言: TypeScript"
       ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
       "relevance_score": 10,
       "tags": [
         "ai",
         "agent",
-        "rag",
-        "model"
+        "benchmark",
+        "coding agent"
       ],
       "themes": [
         "ai",
         "agent",
-        "rag"
+        "benchmark"
       ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：Counterfactual Trace Auditing of LLM Agent Skills 是最近值得追踪的一篇 AI 论文。论文摘要显示：Large Language Model agents are increasingly augmented with agent skills. Current evaluation methods for skills remain limited. Most deployed benchmarks report only pass rate before and after a skill is attached, treating the skill as a bla...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI\n- 作者数: 5",
+      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
+      "summary_markdown": "**摘要**：rohitg00/agentmemory 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：#1 Persistent memory for AI coding agents based on real-world benchmarks结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：10/10\n\n**亮点**：\n- Stars: 14205\n- 语言: TypeScript",
       "focus_hits": [
         {
           "keyword": "agent",
           "weight": 3.0
         },
         {
-          "keyword": "rag",
-          "weight": 2.2
+          "keyword": "coding",
+          "weight": 2.6
         },
         {
           "keyword": "benchmark",
@@ -652,11 +646,11 @@
         }
       ],
       "primary_match": "agent",
-      "personalized_score": 176.0,
-      "detail_path": "items/arxiv-counterfactual-trace-auditing-of-llm-agent-skills.html",
-      "first_seen_at": "2026-05-13T01:46:01.516444+00:00",
-      "last_seen_at": "2026-05-13T04:10:44.061719+00:00",
-      "last_curated_at": "2026-05-13T04:10:44.061719+00:00",
+      "personalized_score": 177.68,
+      "detail_path": "items/github-rohitg00-agentmemory.html",
+      "first_seen_at": "2026-05-10T01:27:20.701480+00:00",
+      "last_seen_at": "2026-05-20T01:51:28.620038+00:00",
+      "last_curated_at": "2026-05-20T01:51:28.620038+00:00",
       "last_notified_at": null
     }
   ],
