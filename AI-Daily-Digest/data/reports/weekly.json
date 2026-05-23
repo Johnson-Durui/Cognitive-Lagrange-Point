@@ -1,9 +1,9 @@
 {
   "label": "周报",
   "window_days": 7,
-  "generated_at": "2026-05-23T09:31:10.558812+08:00",
-  "count": 57,
-  "summary": "近 7 天里，最集中的主题是 ai、llm、agent。",
+  "generated_at": "2026-05-23T12:05:31.968075+08:00",
+  "count": 47,
+  "summary": "近 7 天里，最集中的主题是 ai、llm、rag。",
   "top_items": [
     {
       "id": "arxiv::http://arxiv.org/abs/2605.17249v1",
@@ -85,88 +85,6 @@
       "first_seen_at": "2026-05-19T01:52:44.713452+00:00",
       "last_seen_at": "2026-05-19T04:23:07.034991+00:00",
       "last_curated_at": "2026-05-19T04:23:07.034991+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2605.15187v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "Articraft: An Agentic System for Scalable Articulated 3D Asset Generation",
-      "html_url": "http://arxiv.org/abs/2605.15187v1",
-      "pdf_url": "https://arxiv.org/pdf/2605.15187v1",
-      "description": "A bottleneck in learning to understand articulated 3D objects is the lack of large and diverse datasets. In this paper, we propose to leverage large language models (LLMs) to close this gap and generate articulated assets at scale. We reduce the problem of generating an articulated 3D asset to that of writing a program that builds it. We then introduce a new agentic system, Articraft, that writes such programs automatically. We design a programmatic interface and harness to help the LLM do so effectively. The LLM writes code against a domain-specific SDK for defining parts, composing geometry, specifying joints, and writing tests to validate the resulting assets. The harness exposes a restricted workspace and interface to the LLM, validates the resulting assets, and returns structured feedback. In this way, the LLM is not distracted by details such as authoring a URDF file or managing a complex software environment. We show that this produces higher-quality assets than both state-of-the-art articulated-asset generators and general-purpose coding agents. Using Articraft, we build Articraft-10K, a curated dataset of over 10K articulated assets spanning 245 categories, and show its utility both for training models of articulated assets and in downstream applications such as robotics simulation and virtual reality.",
-      "authors": [
-        "Matt Zhou",
-        "Ruining Li",
-        "Xiaoyang Lyu",
-        "Zhaomou Song",
-        "Zhening Huang",
-        "Chuanxia Zheng",
-        "Christian Rupprecht",
-        "Andrea Vedaldi",
-        "Shangzhe Wu"
-      ],
-      "categories": [
-        "cs.CV",
-        "cs.GR",
-        "cs.RO"
-      ],
-      "published_at": "2026-05-14T17:59:18+00:00",
-      "updated_at": "2026-05-14T17:59:18+00:00",
-      "primary_category": "cs.CV",
-      "heuristic_score": 24.765,
-      "summary": "Articraft: An Agentic System for Scalable Articulated 3D Asset Generation 是最近值得追踪的一篇 AI 论文。论文摘要显示：A bottleneck in learning to understand articulated 3D objects is the lack of large and diverse datasets. In this paper, we propose to leverage large language models (LLMs) to close this gap and generate articulated assets at scale. We reduc...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CV, cs.GR",
-        "作者数: 9"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "llm",
-        "agent",
-        "agentic"
-      ],
-      "themes": [
-        "ai",
-        "llm",
-        "agent"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：Articraft: An Agentic System for Scalable Articulated 3D Asset Generation 是最近值得追踪的一篇 AI 论文。论文摘要显示：A bottleneck in learning to understand articulated 3D objects is the lack of large and diverse datasets. In this paper, we propose to leverage large language models (LLMs) to close this gap and generate articulated assets at scale. We reduc...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV, cs.GR\n- 作者数: 9",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "coding",
-          "weight": 2.6
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "robotics",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 202.0,
-      "detail_path": "items/arxiv-articraft-an-agentic-system-for-scalable-articulated-3d-asset-generation.html",
-      "first_seen_at": "2026-05-16T03:57:47.182085+00:00",
-      "last_seen_at": "2026-05-16T03:57:47.182085+00:00",
-      "last_curated_at": "2026-05-16T03:57:47.182085+00:00",
       "last_notified_at": null
     },
     {
@@ -480,81 +398,8 @@
       "personalized_score": 178.0,
       "detail_path": "items/arxiv-lcguard-latent-communication-guard-for-safe-kv-sharing-in-multi-agent-systems.html",
       "first_seen_at": "2026-05-22T04:34:17.430103+00:00",
-      "last_seen_at": "2026-05-22T04:34:17.430103+00:00",
-      "last_curated_at": "2026-05-22T04:34:17.430103+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2605.15198v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "ATLAS: Agentic or Latent Visual Reasoning? One Word is Enough for Both",
-      "html_url": "http://arxiv.org/abs/2605.15198v1",
-      "pdf_url": "https://arxiv.org/pdf/2605.15198v1",
-      "description": "Visual reasoning, often interleaved with intermediate visual states, has emerged as a promising direction in the field. A straightforward approach is to directly generate images via unified models during reasoning, but this is computationally expensive and architecturally non-trivial. Recent alternatives include agentic reasoning through code or tool calls, and latent reasoning with learnable hidden embeddings. However, agentic methods incur context-switching latency from external execution, while latent methods lack task generalization and are difficult to train with autoregressive parallelization. To combine their strengths while mitigating their limitations, we propose ATLAS, a framework in which a single discrete 'word', termed as a functional token, serves both as an agentic operation and a latent visual reasoning unit. Each functional token is associated with an internalized visual operation, yet requires no visual supervision and remains a standard token in the tokenizer vocabulary, which can be generated via next-token prediction. This design avoids verbose intermediate visual content generation, while preserving compatibility with the vanilla scalable SFT and RL training, without architectural or methodological modifications. To further address the sparsity of functional tokens during RL, we introduce Latent-Anchored GRPO (LA-GRPO), which stabilizes the training by anchoring functional tokens with a statically weighted auxiliary objective, providing stronger gradient updates. Extensive experiments and analyses demonstrate that ATLAS achieves superior performance on challenging benchmarks while maintaining clear interpretability. We hope ATLAS offers a new paradigm inspiring future visual reasoning research.",
-      "authors": [
-        "Ziyu Guo",
-        "Rain Liu",
-        "Xinyan Chen",
-        "Pheng-Ann Heng"
-      ],
-      "categories": [
-        "cs.CV",
-        "cs.AI",
-        "cs.CL"
-      ],
-      "published_at": "2026-05-14T17:59:55+00:00",
-      "updated_at": "2026-05-14T17:59:55+00:00",
-      "primary_category": "cs.CV",
-      "heuristic_score": 20.3,
-      "summary": "ATLAS: Agentic or Latent Visual Reasoning? One Word is Enough for Both 是最近值得追踪的一篇 AI 论文。论文摘要显示：Visual reasoning, often interleaved with intermediate visual states, has emerged as a promising direction in the field. A straightforward approach is to directly generate images via unified models during reasoning, but this is computational...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CV, cs.AI",
-        "作者数: 4"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "agent",
-        "agentic",
-        "model"
-      ],
-      "themes": [
-        "ai",
-        "agent",
-        "agentic"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：ATLAS: Agentic or Latent Visual Reasoning? One Word is Enough for Both 是最近值得追踪的一篇 AI 论文。论文摘要显示：Visual reasoning, often interleaved with intermediate visual states, has emerged as a promising direction in the field. A straightforward approach is to directly generate images via unified models during reasoning, but this is computational...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV, cs.AI\n- 作者数: 4",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 178.0,
-      "detail_path": "items/arxiv-atlas-agentic-or-latent-visual-reasoning-one-word-is-enough-for-both.html",
-      "first_seen_at": "2026-05-16T03:57:47.182085+00:00",
-      "last_seen_at": "2026-05-16T03:57:47.182085+00:00",
-      "last_curated_at": "2026-05-16T03:57:47.182085+00:00",
+      "last_seen_at": "2026-05-23T04:05:53.443660+00:00",
+      "last_curated_at": "2026-05-23T04:05:53.443660+00:00",
       "last_notified_at": null
     },
     {
@@ -626,6 +471,148 @@
       "last_seen_at": "2026-05-18T04:39:05.539349+00:00",
       "last_curated_at": "2026-05-18T04:39:05.539349+00:00",
       "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2605.21484v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "One-Step Distillation of Discrete Diffusion Image Generators via Fixed-Point Iteration",
+      "html_url": "http://arxiv.org/abs/2605.21484v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.21484v1",
+      "description": "Discrete diffusion models excel at visual synthesis but rely on slow, iterative decoding. Existing single-step distillation methods attempt to bypass this bottleneck, either by training auxiliary score networks that effectively double compute, or by introducing specialized parameterizations and multi-stage pipelines that fragment optimization. In this paper, we introduce Fixed-Point Distillation (FPD), an end-to-end framework that constructs local correction targets by partially corrupting the student's one-step draft and refining it with a single teacher step. To compute the training objective in a semantically meaningful space, we lift discrete tokens into continuous features and apply a multi-bandwidth drift loss that iteratively accumulates these corrections. To backpropagate through the discrete bottleneck, we employ a straight-through estimator that feeds exact hard-sampled tokens to the teacher and decoder during the forward pass, ensuring that training and inference operate on the same codebook manifold, while routing continuous gradients back to the student logits. This fully differentiable pathway additionally accommodates an optional unconditional adversarial objective to enhance perceptual realism. Evaluations on both class- and text-conditional generation validate the effectiveness of our framework. FPD achieves competitive visual fidelity and structural alignment within a single inference step, narrowing the gap to multi-step teachers while outperforming existing discrete distillation baselines.",
+      "authors": [
+        "Chaoyang Wang",
+        "Yunhai Tong"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "published_at": "2026-05-20T17:59:10+00:00",
+      "updated_at": "2026-05-20T17:59:10+00:00",
+      "primary_category": "cs.CV",
+      "heuristic_score": 17.817,
+      "summary": "One-Step Distillation of Discrete Diffusion Image Generators via Fixed-Point Iteration 是最近值得追踪的一篇 AI 论文。论文摘要显示：Discrete diffusion models excel at visual synthesis but rely on slow, iterative decoding. Existing single-step distillation methods attempt to bypass this bottleneck, either by training auxiliary score networks that effectively double compu...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CV",
+        "作者数: 2"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "rag",
+        "diffusion",
+        "model"
+      ],
+      "themes": [
+        "ai",
+        "rag",
+        "diffusion"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：One-Step Distillation of Discrete Diffusion Image Generators via Fixed-Point Iteration 是最近值得追踪的一篇 AI 论文。论文摘要显示：Discrete diffusion models excel at visual synthesis but rely on slow, iterative decoding. Existing single-step distillation methods attempt to bypass this bottleneck, either by training auxiliary score networks that effectively double compu...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV\n- 作者数: 2",
+      "focus_hits": [
+        {
+          "keyword": "coding",
+          "weight": 2.6
+        },
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        },
+        {
+          "keyword": "inference",
+          "weight": 1.8
+        }
+      ],
+      "primary_match": "coding",
+      "personalized_score": 174.0,
+      "detail_path": "items/arxiv-one-step-distillation-of-discrete-diffusion-image-generators-via-fixed-point-iteration.html",
+      "first_seen_at": "2026-05-21T04:41:10.596744+00:00",
+      "last_seen_at": "2026-05-21T04:41:10.596744+00:00",
+      "last_curated_at": "2026-05-21T04:41:10.596744+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2605.22818v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "MotiMotion: Motion-Controlled Video Generation with Visual Reasoning",
+      "html_url": "http://arxiv.org/abs/2605.22818v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.22818v1",
+      "description": "Current motion-controlled image-to-video generation models rigidly follow user-provided trajectories that are often sparse, imprecise, and causally incomplete. Such reliance often yields unnatural or implausible outcomes, especially by missing secondary causal consequences. To address this, we introduce MotiMotion, a novel framework that reformulates motion control as a reasoning-then-generation problem. To encourage causally grounded and commonsense-consistent interactions, we leverage a training-free vision-language reasoner to refine image-space coordinates of primary trajectories and to hallucinate plausible secondary motions. To further improve motion naturalness, we propose a confidence-aware control scheme that modulates guidance strength, enabling the model to closely follow high-confidence plans while correcting artifacts under low-confidence inputs with its internal generative priors. To support systematic evaluation, we curate a new image-to-video benchmark, MotiBench, consisting of interaction-centric scenes where new events are triggered by motion. Both VLM-based evaluation and a human study on MotiBench demonstrate that MotiMotion produces videos with more plausible object behaviors and interaction, and is preferred over existing approaches.",
+      "authors": [
+        "Lee Hsin-Ying",
+        "Hanwen Jiang",
+        "Yiqun Mei",
+        "Jing Shi",
+        "Ming-Hsuan Yang",
+        "Zhixin Shu"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "published_at": "2026-05-21T17:59:36+00:00",
+      "updated_at": "2026-05-21T17:59:36+00:00",
+      "primary_category": "cs.CV",
+      "heuristic_score": 17.494,
+      "summary": "MotiMotion: Motion-Controlled Video Generation with Visual Reasoning 是最近值得追踪的一篇 AI 论文。论文摘要显示：Current motion-controlled image-to-video generation models rigidly follow user-provided trajectories that are often sparse, imprecise, and causally incomplete. Such reliance often yields unnatural or implausible outcomes, especially by miss...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CV",
+        "作者数: 6"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "rag",
+        "model",
+        "benchmark"
+      ],
+      "themes": [
+        "ai",
+        "rag",
+        "model"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：MotiMotion: Motion-Controlled Video Generation with Visual Reasoning 是最近值得追踪的一篇 AI 论文。论文摘要显示：Current motion-controlled image-to-video generation models rigidly follow user-provided trajectories that are often sparse, imprecise, and causally incomplete. Such reliance often yields unnatural or implausible outcomes, especially by miss...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV\n- 作者数: 6",
+      "focus_hits": [
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "reasoning",
+      "personalized_score": 170.0,
+      "detail_path": "items/arxiv-motimotion-motion-controlled-video-generation-with-visual-reasoning.html",
+      "first_seen_at": "2026-05-22T04:34:17.430103+00:00",
+      "last_seen_at": "2026-05-23T04:05:53.443660+00:00",
+      "last_curated_at": "2026-05-23T04:05:53.443660+00:00",
+      "last_notified_at": null
     }
   ],
   "top_themes": [
@@ -635,15 +622,15 @@
     },
     {
       "theme": "llm",
-      "count": 4
-    },
-    {
-      "theme": "agent",
       "count": 3
     },
     {
       "theme": "rag",
-      "count": 1
+      "count": 3
+    },
+    {
+      "theme": "agent",
+      "count": 2
     }
   ],
   "highlights": [
@@ -653,12 +640,12 @@
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     },
     {
-      "title": "Articraft: An Agentic System for Scalable Articulated 3D Asset Generation",
+      "title": "CAM-Bench: A Benchmark for Computational and Applied Mathematics in Lean",
       "source": "arxiv",
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     },
     {
-      "title": "CAM-Bench: A Benchmark for Computational and Applied Mathematics in Lean",
+      "title": "EgoIntrospect: An Egocentric Dataset and Benchmark for User-Centric Internal State Reasoning",
       "source": "arxiv",
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     }
