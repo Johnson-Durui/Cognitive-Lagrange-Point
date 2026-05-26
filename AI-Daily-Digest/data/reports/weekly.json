@@ -1,9 +1,9 @@
 {
   "label": "周报",
   "window_days": 7,
-  "generated_at": "2026-05-26T09:47:51.214452+08:00",
-  "count": 51,
-  "summary": "近 7 天里，最集中的主题是 ai、llm、rag。",
+  "generated_at": "2026-05-26T12:22:30.057734+08:00",
+  "count": 57,
+  "summary": "近 7 天里，最集中的主题是 ai、llm、agent。",
   "top_items": [
     {
       "id": "arxiv::http://arxiv.org/abs/2605.17249v1",
@@ -328,6 +328,160 @@
       "last_notified_at": null
     },
     {
+      "id": "arxiv::http://arxiv.org/abs/2605.26102v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "InstructSAM: Segment Any Instance with Any Instructions",
+      "html_url": "http://arxiv.org/abs/2605.26102v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.26102v1",
+      "description": "In this paper, we introduce InstructSAM, a unified and streamlined framework designed for multi-instance segmentation under arbitrary instructions. We formulates instruction-driven instance segmentation as a set-structured query prediction problem and propose an explicit reasoning-to-instance query interface that elegantly bridges a vision-language model (VLM) and SAM3. Specifically, a bank of learnable instance queries is injected into the VLM and contextualized with instruction and visual information, enabling each query to serve as an instance-aware slot. A hybrid-attention mechanism further promotes interaction among these queries, visual tokens, and instruction tokens, improving instance enumeration and reducing duplicate predictions. The resulting LLM-conditioned queries are projected into SAM3's detector query space to drive accurate multi-instance segmentation in a single forward pass. This design equips SAM3 with high-level instruction understanding, compositional reasoning, and instance-level set prediction without modifying its core architecture. To support training and evaluation, we further construct Inst2Seg, a high-quality and large-scale instruction-based instance segmentation dataset and benchmark that couples free-form instructions with instance-level masks. Extensive experiments show that only 2B-scale InstructSAM achieves strong results across complex instruction-driven and phrase-level referring segmentation benchmarks, outperforming prior end-to-end methods and SAM3's agentic pipeline while enabling efficient single-pass multi-instance prediction.",
+      "authors": [
+        "Yuqian Yuan",
+        "Wentong Li",
+        "Zhaocheng Li",
+        "Yutong Lin",
+        "Juncheng Li",
+        "Siliang Tang",
+        "Jun Xiao",
+        "Yueting Zhuang",
+        "Wenqiao Zhang"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "published_at": "2026-05-25T17:58:03+00:00",
+      "updated_at": "2026-05-25T17:58:03+00:00",
+      "primary_category": "cs.CV",
+      "heuristic_score": 22.694,
+      "summary": "InstructSAM: Segment Any Instance with Any Instructions 是最近值得追踪的一篇 AI 论文。论文摘要显示：In this paper, we introduce InstructSAM, a unified and streamlined framework designed for multi-instance segmentation under arbitrary instructions. We formulates instruction-driven instance segmentation as a set-structured query prediction ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CV",
+        "作者数: 9"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "llm",
+        "agent",
+        "agentic"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "agent"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：InstructSAM: Segment Any Instance with Any Instructions 是最近值得追踪的一篇 AI 论文。论文摘要显示：In this paper, we introduce InstructSAM, a unified and streamlined framework designed for multi-instance segmentation under arbitrary instructions. We formulates instruction-driven instance segmentation as a set-structured query prediction ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV\n- 作者数: 9",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 178.0,
+      "detail_path": "items/arxiv-instructsam-segment-any-instance-with-any-instructions.html",
+      "first_seen_at": "2026-05-26T04:22:41.220266+00:00",
+      "last_seen_at": "2026-05-26T04:22:41.220266+00:00",
+      "last_curated_at": "2026-05-26T04:22:41.220266+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2605.26086v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Claw-Anything: Benchmarking Always-On Personal Assistants with Broader Access to User's Digital World",
+      "html_url": "http://arxiv.org/abs/2605.26086v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.26086v1",
+      "description": "Large language model agents are increasingly envisioned as always-on personal assistants with access to anything relevant in the user's digital world. Yet current systems operate over only narrow slices of that world, limiting context-sensitive reasoning and effective assistance. Existing benchmarks similarly provide only partial user state and therefore fail to capture performance in such a broad, always-on setting. To address this gap, we introduce Claw-Anything, a benchmark that expands agent context along three dimensions: long-horizon activity histories, interdependent backend services, and integrated GUI and CLI interaction across multiple devices. To instantiate this setting, we simulate months of user activity through multi-round event injection, producing complex world states and realistic noise, including irrelevant events and conflicting signals. Agents must reason over rich contextual environments while remaining robust to such noise. This expanded scope also enables the evaluation of proactive assistance, requiring agents to anticipate user needs and deliver timely recommendations. Experiments show that GPT-5.5 achieves only 34.5% pass@1, substantially below prior benchmarks, underscoring a gap between current agent capabilities and the demands of always-on personal assistance. Alongside the benchmark, we release an automated data-generation pipeline that yields 2,000 training environments and improves the base model by 23.7%, demonstrating its utility of scalable data infrastructure.",
+      "authors": [
+        "Yusong Lin",
+        "Xinyuan Liang",
+        "Haiyang Wang",
+        "Qipeng Gu",
+        "Siqi Cheng",
+        "Jiangui Chen",
+        "Shuzhe Wu",
+        "Feiyang Pan",
+        "Lue Fan",
+        "Sanyuan Zhao",
+        "Dandan Tu"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "published_at": "2026-05-25T17:50:04+00:00",
+      "updated_at": "2026-05-25T17:50:04+00:00",
+      "primary_category": "cs.AI",
+      "heuristic_score": 20.203,
+      "summary": "Claw-Anything: Benchmarking Always-On Personal Assistants with Broader Access to User's Digital World 是最近值得追踪的一篇 AI 论文。论文摘要显示：Large language model agents are increasingly envisioned as always-on personal assistants with access to anything relevant in the user's digital world. Yet current systems operate over only narrow slices of that world, limiting context-sensi...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.AI",
+        "作者数: 11"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "agent",
+        "gpt",
+        "model"
+      ],
+      "themes": [
+        "ai",
+        "agent",
+        "gpt"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：Claw-Anything: Benchmarking Always-On Personal Assistants with Broader Access to User's Digital World 是最近值得追踪的一篇 AI 论文。论文摘要显示：Large language model agents are increasingly envisioned as always-on personal assistants with access to anything relevant in the user's digital world. Yet current systems operate over only narrow slices of that world, limiting context-sensi...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI\n- 作者数: 11",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 178.0,
+      "detail_path": "items/arxiv-claw-anything-benchmarking-always-on-personal-assistants-with-broader-access-to-user-s-dig.html",
+      "first_seen_at": "2026-05-26T04:22:41.220266+00:00",
+      "last_seen_at": "2026-05-26T04:22:41.220266+00:00",
+      "last_curated_at": "2026-05-26T04:22:41.220266+00:00",
+      "last_notified_at": null
+    },
+    {
       "id": "arxiv::http://arxiv.org/abs/2605.22786v1",
       "kind": "paper",
       "source": "arxiv",
@@ -403,191 +557,61 @@
       "last_notified_at": null
     },
     {
-      "id": "github::earendil-works/pi",
-      "kind": "repo",
-      "source": "github",
+      "id": "arxiv::http://arxiv.org/abs/2605.26079v1",
+      "kind": "paper",
+      "source": "arxiv",
       "source_tags": [
-        "trending"
+        "latest"
       ],
-      "name": "pi",
-      "title": "earendil-works/pi",
-      "full_name": "earendil-works/pi",
-      "html_url": "https://github.com/earendil-works/pi",
-      "description": "AI agent toolkit: coding agent CLI, unified LLM API, TUI & web UI libraries, Slack bot, vLLM pods",
-      "stars": 54080,
-      "stars_today": 0,
-      "language": "TypeScript",
-      "topics": [],
-      "created_at": "",
-      "updated_at": "",
-      "heuristic_score": 17.8,
-      "summary": "earendil-works/pi 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：AI agent toolkit: coding agent CLI, unified LLM API, TUI & web UI libraries, Slack bot, vLLM pods结合关键词命中和热度信号，它适合加入今日重点观察列表。",
-      "brief": "这是一个值得快速关注的开源 AI 项目。",
-      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
-      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
-      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
-      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
+      "title": "Automated Benchmark Auditing for AI Agents and Large Language Models",
+      "html_url": "http://arxiv.org/abs/2605.26079v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.26079v1",
+      "description": "Modern AI benchmarks operate at a complexity that outpaces traditional verification methods. Tasks authored by domain experts often contain implicit assumptions, incomplete environment specifications, and brittle evaluation logic that human annotation cannot reliably catch. We introduce Auto Benchmark Audit (ABA), an agentic framework that systematically audits individual benchmark tasks, uncovering issues such as hidden environment dependencies, specification gaps, and limited grading logic. We run ABA on a collection of frontier LLM benchmarks and previous NeurIPS publications, totaling 168 benchmarks across nine domains. Across this corpus, ABA identifies critical issues including ambiguous task design, execution environment conflicts, and incorrect ground truths in over 25.7% of the evaluated tasks. The precision of these automated audits is validated by expert review and independent third-party reports such as upstream PRs. Crucially, we demonstrate that these problematic tasks severely distorts capability assessments for agents and LLMs: filtering out these tasks with issues shifts model rankings and increases average performance on SWE-bench Verified and Terminal-Bench 2 by 9.9% and 9.6%, respectively. We release the agentic tool and all task annotations to support the future development of frontier benchmarks.",
+      "authors": [
+        "Junlin Wang",
+        "Federico Bianchi",
+        "Shang Zhu",
+        "Fan Nie",
+        "Yongchan Kwon",
+        "Bhuwan Dhingra",
+        "James Zou"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "published_at": "2026-05-25T17:44:21+00:00",
+      "updated_at": "2026-05-25T17:44:21+00:00",
+      "primary_category": "cs.CL",
+      "heuristic_score": 22.374,
+      "summary": "Automated Benchmark Auditing for AI Agents and Large Language Models 是最近值得追踪的一篇 AI 论文。论文摘要显示：Modern AI benchmarks operate at a complexity that outpaces traditional verification methods. Tasks authored by domain experts often contain implicit assumptions, incomplete environment specifications, and brittle evaluation logic that human...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
       "highlights": [
-        "Stars: 54080",
-        "语言: TypeScript"
+        "分类: cs.CL",
+        "作者数: 7"
       ],
-      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
       "relevance_score": 10,
       "tags": [
         "ai",
         "llm",
         "agent",
-        "ai agent"
+        "agentic"
       ],
       "themes": [
         "ai",
         "llm",
         "agent"
       ],
-      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：earendil-works/pi 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：AI agent toolkit: coding agent CLI, unified LLM API, TUI & web UI libraries, Slack bot, vLLM pods结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：10/10\n\n**亮点**：\n- Stars: 54080\n- 语言: TypeScript",
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：Automated Benchmark Auditing for AI Agents and Large Language Models 是最近值得追踪的一篇 AI 论文。论文摘要显示：Modern AI benchmarks operate at a complexity that outpaces traditional verification methods. Tasks authored by domain experts often contain implicit assumptions, incomplete environment specifications, and brittle evaluation logic that human...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL\n- 作者数: 7",
       "focus_hits": [
         {
           "keyword": "agent",
           "weight": 3.0
-        },
-        {
-          "keyword": "coding",
-          "weight": 2.6
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 176.0,
-      "detail_path": "items/github-earendil-works-pi.html",
-      "first_seen_at": "2026-05-25T01:55:41.086939+00:00",
-      "last_seen_at": "2026-05-25T04:47:54.708214+00:00",
-      "last_curated_at": "2026-05-25T04:47:54.708214+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2605.21484v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "One-Step Distillation of Discrete Diffusion Image Generators via Fixed-Point Iteration",
-      "html_url": "http://arxiv.org/abs/2605.21484v1",
-      "pdf_url": "https://arxiv.org/pdf/2605.21484v1",
-      "description": "Discrete diffusion models excel at visual synthesis but rely on slow, iterative decoding. Existing single-step distillation methods attempt to bypass this bottleneck, either by training auxiliary score networks that effectively double compute, or by introducing specialized parameterizations and multi-stage pipelines that fragment optimization. In this paper, we introduce Fixed-Point Distillation (FPD), an end-to-end framework that constructs local correction targets by partially corrupting the student's one-step draft and refining it with a single teacher step. To compute the training objective in a semantically meaningful space, we lift discrete tokens into continuous features and apply a multi-bandwidth drift loss that iteratively accumulates these corrections. To backpropagate through the discrete bottleneck, we employ a straight-through estimator that feeds exact hard-sampled tokens to the teacher and decoder during the forward pass, ensuring that training and inference operate on the same codebook manifold, while routing continuous gradients back to the student logits. This fully differentiable pathway additionally accommodates an optional unconditional adversarial objective to enhance perceptual realism. Evaluations on both class- and text-conditional generation validate the effectiveness of our framework. FPD achieves competitive visual fidelity and structural alignment within a single inference step, narrowing the gap to multi-step teachers while outperforming existing discrete distillation baselines.",
-      "authors": [
-        "Chaoyang Wang",
-        "Yunhai Tong"
-      ],
-      "categories": [
-        "cs.CV"
-      ],
-      "published_at": "2026-05-20T17:59:10+00:00",
-      "updated_at": "2026-05-20T17:59:10+00:00",
-      "primary_category": "cs.CV",
-      "heuristic_score": 17.817,
-      "summary": "One-Step Distillation of Discrete Diffusion Image Generators via Fixed-Point Iteration 是最近值得追踪的一篇 AI 论文。论文摘要显示：Discrete diffusion models excel at visual synthesis but rely on slow, iterative decoding. Existing single-step distillation methods attempt to bypass this bottleneck, either by training auxiliary score networks that effectively double compu...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CV",
-        "作者数: 2"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "rag",
-        "diffusion",
-        "model"
-      ],
-      "themes": [
-        "ai",
-        "rag",
-        "diffusion"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：One-Step Distillation of Discrete Diffusion Image Generators via Fixed-Point Iteration 是最近值得追踪的一篇 AI 论文。论文摘要显示：Discrete diffusion models excel at visual synthesis but rely on slow, iterative decoding. Existing single-step distillation methods attempt to bypass this bottleneck, either by training auxiliary score networks that effectively double compu...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV\n- 作者数: 2",
-      "focus_hits": [
-        {
-          "keyword": "coding",
-          "weight": 2.6
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "inference",
-          "weight": 1.8
-        }
-      ],
-      "primary_match": "coding",
-      "personalized_score": 174.0,
-      "detail_path": "items/arxiv-one-step-distillation-of-discrete-diffusion-image-generators-via-fixed-point-iteration.html",
-      "first_seen_at": "2026-05-21T04:41:10.596744+00:00",
-      "last_seen_at": "2026-05-21T04:41:10.596744+00:00",
-      "last_curated_at": "2026-05-21T04:41:10.596744+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2605.22818v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "MotiMotion: Motion-Controlled Video Generation with Visual Reasoning",
-      "html_url": "http://arxiv.org/abs/2605.22818v1",
-      "pdf_url": "https://arxiv.org/pdf/2605.22818v1",
-      "description": "Current motion-controlled image-to-video generation models rigidly follow user-provided trajectories that are often sparse, imprecise, and causally incomplete. Such reliance often yields unnatural or implausible outcomes, especially by missing secondary causal consequences. To address this, we introduce MotiMotion, a novel framework that reformulates motion control as a reasoning-then-generation problem. To encourage causally grounded and commonsense-consistent interactions, we leverage a training-free vision-language reasoner to refine image-space coordinates of primary trajectories and to hallucinate plausible secondary motions. To further improve motion naturalness, we propose a confidence-aware control scheme that modulates guidance strength, enabling the model to closely follow high-confidence plans while correcting artifacts under low-confidence inputs with its internal generative priors. To support systematic evaluation, we curate a new image-to-video benchmark, MotiBench, consisting of interaction-centric scenes where new events are triggered by motion. Both VLM-based evaluation and a human study on MotiBench demonstrate that MotiMotion produces videos with more plausible object behaviors and interaction, and is preferred over existing approaches.",
-      "authors": [
-        "Lee Hsin-Ying",
-        "Hanwen Jiang",
-        "Yiqun Mei",
-        "Jing Shi",
-        "Ming-Hsuan Yang",
-        "Zhixin Shu"
-      ],
-      "categories": [
-        "cs.CV"
-      ],
-      "published_at": "2026-05-21T17:59:36+00:00",
-      "updated_at": "2026-05-21T17:59:36+00:00",
-      "primary_category": "cs.CV",
-      "heuristic_score": 17.494,
-      "summary": "MotiMotion: Motion-Controlled Video Generation with Visual Reasoning 是最近值得追踪的一篇 AI 论文。论文摘要显示：Current motion-controlled image-to-video generation models rigidly follow user-provided trajectories that are often sparse, imprecise, and causally incomplete. Such reliance often yields unnatural or implausible outcomes, especially by miss...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CV",
-        "作者数: 6"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "rag",
-        "model",
-        "benchmark"
-      ],
-      "themes": [
-        "ai",
-        "rag",
-        "model"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：MotiMotion: Motion-Controlled Video Generation with Visual Reasoning 是最近值得追踪的一篇 AI 论文。论文摘要显示：Current motion-controlled image-to-video generation models rigidly follow user-provided trajectories that are often sparse, imprecise, and causally incomplete. Such reliance often yields unnatural or implausible outcomes, especially by miss...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV\n- 作者数: 6",
-      "focus_hits": [
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
         },
         {
           "keyword": "rag",
@@ -598,12 +622,12 @@
           "weight": 1.6
         }
       ],
-      "primary_match": "reasoning",
-      "personalized_score": 170.0,
-      "detail_path": "items/arxiv-motimotion-motion-controlled-video-generation-with-visual-reasoning.html",
-      "first_seen_at": "2026-05-22T04:34:17.430103+00:00",
-      "last_seen_at": "2026-05-23T04:05:53.443660+00:00",
-      "last_curated_at": "2026-05-23T04:05:53.443660+00:00",
+      "primary_match": "agent",
+      "personalized_score": 176.0,
+      "detail_path": "items/arxiv-automated-benchmark-auditing-for-ai-agents-and-large-language-models.html",
+      "first_seen_at": "2026-05-26T04:22:41.220266+00:00",
+      "last_seen_at": "2026-05-26T04:22:41.220266+00:00",
+      "last_curated_at": "2026-05-26T04:22:41.220266+00:00",
       "last_notified_at": null
     }
   ],
@@ -614,15 +638,15 @@
     },
     {
       "theme": "llm",
+      "count": 4
+    },
+    {
+      "theme": "agent",
       "count": 3
     },
     {
       "theme": "rag",
-      "count": 3
-    },
-    {
-      "theme": "agent",
-      "count": 2
+      "count": 1
     }
   ],
   "highlights": [
