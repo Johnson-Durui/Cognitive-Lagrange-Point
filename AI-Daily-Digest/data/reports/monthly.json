@@ -1,8 +1,8 @@
 {
   "label": "月报",
   "window_days": 30,
-  "generated_at": "2026-05-27T09:55:51.138295+08:00",
-  "count": 176,
+  "generated_at": "2026-05-27T12:45:30.152675+08:00",
+  "count": 180,
   "summary": "近 30 天里，最集中的主题是 ai、agent、llm。",
   "top_items": [
     {
@@ -590,51 +590,33 @@
       "last_notified_at": null
     },
     {
-      "id": "arxiv::http://arxiv.org/abs/2605.17262v1",
+      "id": "arxiv::http://arxiv.org/abs/2605.27310v1",
       "kind": "paper",
       "source": "arxiv",
       "source_tags": [
         "latest"
       ],
-      "title": "EgoIntrospect: An Egocentric Dataset and Benchmark for User-Centric Internal State Reasoning",
-      "html_url": "http://arxiv.org/abs/2605.17262v1",
-      "pdf_url": "https://arxiv.org/pdf/2605.17262v1",
-      "description": "Despite extensive efforts on egocentric video datasets and benchmarks, understanding users' internal states, which is crucial for enabling seamless AI assistant experiences, remains largely overlooked. In this work, we introduce EgoIntrospect, the first egocentric dataset captured in user-driven scenarios with self-annotations that explicitly reveal users' interactive intentions with AI assistants. EgoIntrospect was collected using a cross-device setup, providing synchronized video, audio, gaze, motion, and physiological signals. It consists of 180 hours of recordings from 60 subjects, with an average recording duration of 3 hours per subject. Leveraging EgoIntrospect, we formalize a suite of tasks centered on user internal states, including affective experience, interactive intent, and cognitive memory. We further process the annotations to construct benchmarks that evaluate the ability of modern multimodal large language models to reason about users' internal states from egocentric observations. Experiments on our benchmark suggest that existing multimodal large language models struggle to effectively leverage multimodal signals to infer users' subjective internal states. The dataset and annotations will be made publicly available to advance research in egocentric vision and wearable AI assistants. Project page: https://ego-introspect.github.io/",
+      "title": "How and What to Imagine? Visual Thinking in Unified Multimodal Models for Cross-View Spatial Reasoning",
+      "html_url": "http://arxiv.org/abs/2605.27310v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.27310v1",
+      "description": "Cross-view spatial reasoning remains a weak spot for vision-language models (VLMs): they often reason in language and lose the fine-grained geometry needed for the task. Thinking with images aims to address this by generating an intermediate thinking image, but recent work shows that models often ignore the visual evidence in these traces. We therefore ask how to make visual thinking matter, and what kind of visual thinking works best. We study these questions in unified multimodal models (UMMs), which natively support interleaved image-text generation. For the first question, we propose View Dropout (VDrop), a training-time intervention that hides parts of one input view from the answer span while keeping them visible to the thinking-image tokens. This encourages the model to use the thinking image when answering, instead of relying only on the input views. Once the thinking image is used for answer prediction, we study which type of visual thinking is most effective. We frame this as a learnability-informativeness tradeoff and compare three thinking-image variants: top-down, panoramic, and point-matching renderings. Trained on synthetic scenes and evaluated on five real-world out-of-domain benchmarks, panoramic visual thinking with VDrop is the only configuration that is both informative and learnable, and it achieves the best out-of-domain generalization.",
       "authors": [
-        "Zeyu Wang",
-        "Chang Liu",
-        "Eduardus Tjitrahardja",
-        "Yuntao Wang",
-        "Borislav Pavlov",
-        "Fangfei Gou",
-        "Jose Manuel Davila",
-        "Dai Shi",
-        "Ran Xu",
-        "Yue Pan",
-        "Jiayi Tan",
-        "Shuting Chang",
-        "Qi Wang",
-        "Jinzhao Li",
-        "Jiacheng Hua",
-        "Yifei Huang",
-        "Jingwei Sun",
-        "Yu Zhang",
-        "Liuxin Zhang",
-        "Guocai Yao",
-        "Jia Jia",
-        "Yin Li",
-        "Qianying Wang",
-        "Yuanchun Shi",
-        "Miao Liu"
+        "Qian Yang",
+        "Ankur Sikarwar",
+        "Huy Le",
+        "Le Zhang",
+        "Zhuan Shi",
+        "Perouz Taslakian",
+        "Aishwarya Agrawal"
       ],
       "categories": [
         "cs.CV"
       ],
-      "published_at": "2026-05-17T05:05:29+00:00",
-      "updated_at": "2026-05-17T05:05:29+00:00",
+      "published_at": "2026-05-26T17:20:05+00:00",
+      "updated_at": "2026-05-26T17:20:05+00:00",
       "primary_category": "cs.CV",
-      "heuristic_score": 17.611,
-      "summary": "EgoIntrospect: An Egocentric Dataset and Benchmark for User-Centric Internal State Reasoning 是最近值得追踪的一篇 AI 论文。论文摘要显示：Despite extensive efforts on egocentric video datasets and benchmarks, understanding users' internal states, which is crucial for enabling seamless AI assistant experiences, remains largely overlooked. In this work, we introduce EgoIntrospe...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "heuristic_score": 20.025,
+      "summary": "How and What to Imagine? Visual Thinking in Unified Multimodal Models for Cross-View Spatial Reasoning 是最近值得追踪的一篇 AI 论文。论文摘要显示：Cross-view spatial reasoning remains a weak spot for vision-language models (VLMs): they often reason in language and lose the fine-grained geometry needed for the task. Thinking with images aims to address this by generating an intermediat...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
       "brief": "这是一篇值得加入今日论文雷达的最新工作。",
       "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
       "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
@@ -642,7 +624,7 @@
       "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
       "highlights": [
         "分类: cs.CV",
-        "作者数: 25"
+        "作者数: 7"
       ],
       "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
       "relevance_score": 10,
@@ -658,7 +640,7 @@
         "multimodal"
       ],
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：EgoIntrospect: An Egocentric Dataset and Benchmark for User-Centric Internal State Reasoning 是最近值得追踪的一篇 AI 论文。论文摘要显示：Despite extensive efforts on egocentric video datasets and benchmarks, understanding users' internal states, which is crucial for enabling seamless AI assistant experiences, remains largely overlooked. In this work, we introduce EgoIntrospe...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV\n- 作者数: 25",
+      "summary_markdown": "**摘要**：How and What to Imagine? Visual Thinking in Unified Multimodal Models for Cross-View Spatial Reasoning 是最近值得追踪的一篇 AI 论文。论文摘要显示：Cross-view spatial reasoning remains a weak spot for vision-language models (VLMs): they often reason in language and lose the fine-grained geometry needed for the task. Thinking with images aims to address this by generating an intermediat...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV\n- 作者数: 7",
       "focus_hits": [
         {
           "keyword": "reasoning",
@@ -679,10 +661,10 @@
       ],
       "primary_match": "reasoning",
       "personalized_score": 190.0,
-      "detail_path": "items/arxiv-egointrospect-an-egocentric-dataset-and-benchmark-for-user-centric-internal-state-reasonin.html",
-      "first_seen_at": "2026-05-19T01:52:44.713452+00:00",
-      "last_seen_at": "2026-05-19T04:23:07.034991+00:00",
-      "last_curated_at": "2026-05-19T04:23:07.034991+00:00",
+      "detail_path": "items/arxiv-how-and-what-to-imagine-visual-thinking-in-unified-multimodal-models-for-cross-view-spatia.html",
+      "first_seen_at": "2026-05-27T04:45:37.551239+00:00",
+      "last_seen_at": "2026-05-27T04:45:37.551239+00:00",
+      "last_curated_at": "2026-05-27T04:45:37.551239+00:00",
       "last_notified_at": null
     }
   ],
