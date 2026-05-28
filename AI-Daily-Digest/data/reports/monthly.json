@@ -1,8 +1,8 @@
 {
   "label": "月报",
   "window_days": 30,
-  "generated_at": "2026-05-28T09:27:44.821427+08:00",
-  "count": 182,
+  "generated_at": "2026-05-28T12:35:57.487590+08:00",
+  "count": 180,
   "summary": "近 30 天里，最集中的主题是 ai、agent、llm。",
   "top_items": [
     {
@@ -95,6 +95,88 @@
       "first_seen_at": "2026-05-15T01:46:31.810418+00:00",
       "last_seen_at": "2026-05-15T04:14:42.266649+00:00",
       "last_curated_at": "2026-05-15T04:14:42.266649+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2605.28774v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Agent Explorative Policy Optimization for Multimodal Agentic Reasoning",
+      "html_url": "http://arxiv.org/abs/2605.28774v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.28774v1",
+      "description": "Vision-language models with extended reasoning succeed on complex problems, but many real-world problems require external tools that internal reasoning alone often cannot resolve. Agentic reasoning therefore interleaves two behaviors with a structural asymmetry: thinking (the self-contained default) and tool use (a high-variance auxiliary acting). We refer to this asymmetry as the Thinking-Acting Gap. Under standard RL recipes like GRPO, the gap manifests as two diagnostic symptoms during training: tool use is attempted on only ~30% of rollouts, and when attempted, the tool-using rollouts within a group are all-wrong on ~40% of questions, suppressing the learning signal at the tool calls that needed it. We propose AXPO (Agent eXplorative Policy Optimization): for each all-wrong tool-using subgroup, AXPO fixes the thinking prefix and resamples the tool call and its continuation, paired with uncertainty-based prefix selection. Across nine multimodal benchmarks and three scales of Qwen3-VL-Thinking, SFT+AXPO outperforms SFT+GRPO at average (+1.8pp Pass@1 and +1.8pp Pass@4 at 8B on average) and 8B with SFT+AXPO surpasses the 32B Base on Pass@4 with 4 times fewer parameters.",
+      "authors": [
+        "Minki Kang",
+        "Shizhe Diao",
+        "Ryo Hachiuma",
+        "Sung Ju Hwang",
+        "Pavlo Molchanov",
+        "Yu-Chiang Frank Wang",
+        "Byung-Kwan Lee"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "published_at": "2026-05-27T17:36:39+00:00",
+      "updated_at": "2026-05-27T17:36:39+00:00",
+      "primary_category": "cs.CL",
+      "heuristic_score": 24.585,
+      "summary": "Agent Explorative Policy Optimization for Multimodal Agentic Reasoning 是最近值得追踪的一篇 AI 论文。论文摘要显示：Vision-language models with extended reasoning succeed on complex problems, but many real-world problems require external tools that internal reasoning alone often cannot resolve. Agentic reasoning therefore interleaves two behaviors with a...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CL",
+        "作者数: 7"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "agent",
+        "agentic",
+        "rag"
+      ],
+      "themes": [
+        "ai",
+        "agent",
+        "agentic"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：Agent Explorative Policy Optimization for Multimodal Agentic Reasoning 是最近值得追踪的一篇 AI 论文。论文摘要显示：Vision-language models with extended reasoning succeed on complex problems, but many real-world problems require external tools that internal reasoning alone often cannot resolve. Agentic reasoning therefore interleaves two behaviors with a...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL\n- 作者数: 7",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        },
+        {
+          "keyword": "multimodal",
+          "weight": 2.0
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 220.0,
+      "detail_path": "items/arxiv-agent-explorative-policy-optimization-for-multimodal-agentic-reasoning.html",
+      "first_seen_at": "2026-05-28T04:36:05.094729+00:00",
+      "last_seen_at": "2026-05-28T04:36:05.094729+00:00",
+      "last_curated_at": "2026-05-28T04:36:05.094729+00:00",
       "last_notified_at": null
     },
     {
@@ -509,60 +591,57 @@
       "last_notified_at": null
     },
     {
-      "id": "arxiv::http://arxiv.org/abs/2605.06664v1",
+      "id": "arxiv::http://arxiv.org/abs/2605.28814v1",
       "kind": "paper",
       "source": "arxiv",
       "source_tags": [
         "latest"
       ],
-      "title": "BAMI: Training-Free Bias Mitigation in GUI Grounding",
-      "html_url": "http://arxiv.org/abs/2605.06664v1",
-      "pdf_url": "https://arxiv.org/pdf/2605.06664v1",
-      "description": "GUI grounding is a critical capability for enabling GUI agents to execute tasks such as clicking and dragging. However, in complex scenarios like the ScreenSpot-Pro benchmark, existing models often suffer from suboptimal performance. Utilizing the proposed \\textbf{Masked Prediction Distribution (MPD)} attribution method, we identify that the primary sources of errors are twofold: high image resolution (leading to precision bias) and intricate interface elements (resulting in ambiguity bias). To address these challenges, we introduce \\textbf{Bias-Aware Manipulation Inference (BAMI)}, which incorporates two key manipulations, coarse-to-fine focus and candidate selection, to effectively mitigate these biases. Our extensive experimental results demonstrate that BAMI significantly enhances the accuracy of various GUI grounding models in a training-free setting. For instance, applying our method to the TianXi-Action-7B model boosts its accuracy on the ScreenSpot-Pro benchmark from 51.9\\% to 57.8\\%. Furthermore, ablation studies confirm the robustness of the BAMI approach across diverse parameter configurations, highlighting its stability and effectiveness. Code is available at https://github.com/Neur-IO/BAMI.",
+      "title": "Self-Improving Language Models with Bidirectional Evolutionary Search",
+      "html_url": "http://arxiv.org/abs/2605.28814v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.28814v1",
+      "description": "Search has been proposed as an effective method for self-improving language models and agentic systems, both for post-training sample generation and for inference. However, widely used methods such as best-of-N sampling and tree search face two fundamental limitations: they are guided by sparse verification signals, and they construct candidates primarily through autoregressive expansion, restricting exploration to regions with substantial model probability mass. To address these, we propose Bidirectional Evolutionary Search (BES), a search framework that couples forward candidate evolution with backward goal decomposition. In the forward search, BES augments standard expansion with evolution operators that recombine partial trajectories to generate candidates that are difficult to obtain from a single model rollout. In the backward search, BES recursively decomposes the original task into checkable subgoals, producing dense intermediate feedback that guides forward search. We provide theoretical motivation showing that candidates generated by expansion-only search are confined to a narrow entropy shell while evolutionary operators can escape it, and that backward search can exponentially reduce the number of required samples to find a correct answer. Experiments show that on challenging post-training tasks where mainstream post-training algorithms fail to improve, BES enables consistent gains, and on three open problem solving benchmarks at inference time, BES outperforms existing open-source frameworks in both average and best-case performance. Code and trained models are available at https://github.com/Embodied-Minds-Lab/BES.",
       "authors": [
-        "Borui Zhang",
-        "Bo Zhang",
-        "Bo Wang",
-        "Wenzhao Zheng",
-        "Yuhao Cheng",
-        "Liang Tang",
-        "Yiqiang Yan",
-        "Jie Zhou",
-        "Jiwen Lu"
+        "Guowei Xu",
+        "Zhenting Qi",
+        "Huangyuan Su",
+        "Weirui Ye",
+        "Himabindu Lakkaraju",
+        "Sham M. Kakade",
+        "Yilun Du"
       ],
       "categories": [
-        "cs.CV",
-        "cs.AI"
+        "cs.CL"
       ],
-      "published_at": "2026-05-07T17:59:31+00:00",
-      "updated_at": "2026-05-07T17:59:31+00:00",
-      "primary_category": "cs.CV",
-      "heuristic_score": 19.828,
-      "summary": "BAMI: Training-Free Bias Mitigation in GUI Grounding 是最近值得追踪的一篇 AI 论文。论文摘要显示：GUI grounding is a critical capability for enabling GUI agents to execute tasks such as clicking and dragging. However, in complex scenarios like the ScreenSpot-Pro benchmark, existing models often suffer from suboptimal performance. Utiliz...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "published_at": "2026-05-27T17:59:15+00:00",
+      "updated_at": "2026-05-27T17:59:15+00:00",
+      "primary_category": "cs.CL",
+      "heuristic_score": 22.7,
+      "summary": "Self-Improving Language Models with Bidirectional Evolutionary Search 是最近值得追踪的一篇 AI 论文。论文摘要显示：Search has been proposed as an effective method for self-improving language models and agentic systems, both for post-training sample generation and for inference. However, widely used methods such as best-of-N sampling and tree search face...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
       "brief": "这是一篇值得加入今日论文雷达的最新工作。",
       "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
       "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
       "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
       "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
       "highlights": [
-        "分类: cs.CV, cs.AI",
-        "作者数: 9"
+        "分类: cs.CL",
+        "作者数: 7"
       ],
       "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
       "relevance_score": 10,
       "tags": [
         "ai",
         "agent",
-        "rag",
-        "model"
+        "agentic",
+        "rag"
       ],
       "themes": [
         "ai",
         "agent",
-        "rag"
+        "agentic"
       ],
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：BAMI: Training-Free Bias Mitigation in GUI Grounding 是最近值得追踪的一篇 AI 论文。论文摘要显示：GUI grounding is a critical capability for enabling GUI agents to execute tasks such as clicking and dragging. However, in complex scenarios like the ScreenSpot-Pro benchmark, existing models often suffer from suboptimal performance. Utiliz...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV, cs.AI\n- 作者数: 9",
+      "summary_markdown": "**摘要**：Self-Improving Language Models with Bidirectional Evolutionary Search 是最近值得追踪的一篇 AI 论文。论文摘要显示：Search has been proposed as an effective method for self-improving language models and agentic systems, both for post-training sample generation and for inference. However, widely used methods such as best-of-N sampling and tree search face...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL\n- 作者数: 7",
       "focus_hits": [
         {
           "keyword": "agent",
@@ -583,88 +662,10 @@
       ],
       "primary_match": "agent",
       "personalized_score": 194.0,
-      "detail_path": "items/arxiv-bami-training-free-bias-mitigation-in-gui-grounding.html",
-      "first_seen_at": "2026-05-08T03:51:08.082380+00:00",
-      "last_seen_at": "2026-05-09T03:52:52.242937+00:00",
-      "last_curated_at": "2026-05-09T03:52:52.242937+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2605.27310v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "How and What to Imagine? Visual Thinking in Unified Multimodal Models for Cross-View Spatial Reasoning",
-      "html_url": "http://arxiv.org/abs/2605.27310v1",
-      "pdf_url": "https://arxiv.org/pdf/2605.27310v1",
-      "description": "Cross-view spatial reasoning remains a weak spot for vision-language models (VLMs): they often reason in language and lose the fine-grained geometry needed for the task. Thinking with images aims to address this by generating an intermediate thinking image, but recent work shows that models often ignore the visual evidence in these traces. We therefore ask how to make visual thinking matter, and what kind of visual thinking works best. We study these questions in unified multimodal models (UMMs), which natively support interleaved image-text generation. For the first question, we propose View Dropout (VDrop), a training-time intervention that hides parts of one input view from the answer span while keeping them visible to the thinking-image tokens. This encourages the model to use the thinking image when answering, instead of relying only on the input views. Once the thinking image is used for answer prediction, we study which type of visual thinking is most effective. We frame this as a learnability-informativeness tradeoff and compare three thinking-image variants: top-down, panoramic, and point-matching renderings. Trained on synthetic scenes and evaluated on five real-world out-of-domain benchmarks, panoramic visual thinking with VDrop is the only configuration that is both informative and learnable, and it achieves the best out-of-domain generalization.",
-      "authors": [
-        "Qian Yang",
-        "Ankur Sikarwar",
-        "Huy Le",
-        "Le Zhang",
-        "Zhuan Shi",
-        "Perouz Taslakian",
-        "Aishwarya Agrawal"
-      ],
-      "categories": [
-        "cs.CV"
-      ],
-      "published_at": "2026-05-26T17:20:05+00:00",
-      "updated_at": "2026-05-26T17:20:05+00:00",
-      "primary_category": "cs.CV",
-      "heuristic_score": 20.025,
-      "summary": "How and What to Imagine? Visual Thinking in Unified Multimodal Models for Cross-View Spatial Reasoning 是最近值得追踪的一篇 AI 论文。论文摘要显示：Cross-view spatial reasoning remains a weak spot for vision-language models (VLMs): they often reason in language and lose the fine-grained geometry needed for the task. Thinking with images aims to address this by generating an intermediat...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CV",
-        "作者数: 7"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "rag",
-        "multimodal",
-        "model"
-      ],
-      "themes": [
-        "ai",
-        "rag",
-        "multimodal"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：How and What to Imagine? Visual Thinking in Unified Multimodal Models for Cross-View Spatial Reasoning 是最近值得追踪的一篇 AI 论文。论文摘要显示：Cross-view spatial reasoning remains a weak spot for vision-language models (VLMs): they often reason in language and lose the fine-grained geometry needed for the task. Thinking with images aims to address this by generating an intermediat...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV\n- 作者数: 7",
-      "focus_hits": [
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "multimodal",
-          "weight": 2.0
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "reasoning",
-      "personalized_score": 190.0,
-      "detail_path": "items/arxiv-how-and-what-to-imagine-visual-thinking-in-unified-multimodal-models-for-cross-view-spatia.html",
-      "first_seen_at": "2026-05-27T04:45:37.551239+00:00",
-      "last_seen_at": "2026-05-27T04:45:37.551239+00:00",
-      "last_curated_at": "2026-05-27T04:45:37.551239+00:00",
+      "detail_path": "items/arxiv-self-improving-language-models-with-bidirectional-evolutionary-search.html",
+      "first_seen_at": "2026-05-28T04:36:05.094729+00:00",
+      "last_seen_at": "2026-05-28T04:36:05.094729+00:00",
+      "last_curated_at": "2026-05-28T04:36:05.094729+00:00",
       "last_notified_at": null
     }
   ],
@@ -675,15 +676,11 @@
     },
     {
       "theme": "agent",
-      "count": 4
+      "count": 5
     },
     {
       "theme": "llm",
       "count": 3
-    },
-    {
-      "theme": "rag",
-      "count": 1
     }
   ],
   "highlights": [
@@ -693,12 +690,12 @@
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     },
     {
-      "title": "Recursive Multi-Agent Systems",
+      "title": "Agent Explorative Policy Optimization for Multimodal Agentic Reasoning",
       "source": "arxiv",
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     },
     {
-      "title": "Select to Think: Unlocking SLM Potential with Local Sufficiency",
+      "title": "Recursive Multi-Agent Systems",
       "source": "arxiv",
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     }
