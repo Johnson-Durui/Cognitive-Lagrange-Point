@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-30T01:45:07.586394+00:00",
+  "generated_at": "2026-05-30T04:14:22.620840+00:00",
   "items": [
     {
       "id": "github::anthropics/claude-code",
@@ -13,7 +13,7 @@
       "full_name": "anthropics/claude-code",
       "html_url": "https://github.com/anthropics/claude-code",
       "description": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.",
-      "stars": 127893,
+      "stars": 127955,
       "stars_today": 0,
       "language": "Python",
       "topics": [],
@@ -27,7 +27,7 @@
       "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
       "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
       "highlights": [
-        "Stars: 127893",
+        "Stars: 127955",
         "语言: Python"
       ],
       "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
@@ -43,7 +43,7 @@
         "agentic"
       ],
       "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：anthropics/claude-code 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：10/10\n\n**亮点**：\n- Stars: 127893\n- 语言: Python",
+      "summary_markdown": "**摘要**：anthropics/claude-code 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：10/10\n\n**亮点**：\n- Stars: 127955\n- 语言: Python",
       "focus_hits": [
         {
           "keyword": "agent",
@@ -58,8 +58,346 @@
       "personalized_score": 176.0,
       "detail_path": "items/github-anthropics-claude-code.html",
       "first_seen_at": "2026-05-30T01:45:07.586394+00:00",
-      "last_seen_at": "2026-05-30T01:45:07.586394+00:00",
-      "last_curated_at": "2026-05-30T01:45:07.586394+00:00",
+      "last_seen_at": "2026-05-30T04:14:22.620840+00:00",
+      "last_curated_at": "2026-05-30T04:14:22.620840+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2605.30332v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Colored Noise Diffusion Sampling",
+      "html_url": "http://arxiv.org/abs/2605.30332v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.30332v1",
+      "description": "Diffusion models achieve state-of-the-art image synthesis, with their generative trajectories fundamentally exhibiting a spectral bias, resolving low-frequency global structures early and high-frequency fine details later. Conventional stochastic differential equation (SDE) solvers fail to account for this dynamic, naively injecting uniform white noise throughout the entire process and misusing the finite energy budget. In this work, we establish a mathematical framework that reconsiders SDE inference as a targeted, frequency-decoupled energy transfer. Leveraging this framework, we introduce Colored Noise Sampling (CNS), a novel, training-free stochastic solver. Rather than injecting uniform white noise, CNS utilizes a dynamic, timestep- and frequency-dependent schedule that more efficiently allocates injected energy toward structurally unresolved frequency bands. By actively exploiting the model's inherent spectral bias, CNS systematically steers the generated distribution toward the true data manifold. Extensive experiments demonstrate that CNS significantly outperforms standard ODE and SDE baselines as a strictly plug-and-play, inference-time sampler substitution across diverse architectures (SiT, JiT, FLUX). Compared to standard sampling on ImageNet-256, CNS achieves substantial unguided FID reductions, improving from 8.26 to 6.27 on SiT-XL/2, 32.39 to 26.69 on JiT-B/16, and 11.88 to 8.31 on JiT-H/16, while yielding consistent relative FID improvements with Classifier-Free Guidance. Project page is available at https://hadardavidson.github.io/CNS/.",
+      "authors": [
+        "Hadar Davidson",
+        "Noam Issachar",
+        "Sagie Benaim"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "published_at": "2026-05-28T17:58:13+00:00",
+      "updated_at": "2026-05-28T17:58:13+00:00",
+      "primary_category": "cs.CV",
+      "heuristic_score": 17.872,
+      "summary": "Colored Noise Diffusion Sampling 是最近值得追踪的一篇 AI 论文。论文摘要显示：Diffusion models achieve state-of-the-art image synthesis, with their generative trajectories fundamentally exhibiting a spectral bias, resolving low-frequency global structures early and high-frequency fine details later. Conventional stoc...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CV",
+        "作者数: 3"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "rag",
+        "diffusion",
+        "model"
+      ],
+      "themes": [
+        "ai",
+        "rag",
+        "diffusion"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：Colored Noise Diffusion Sampling 是最近值得追踪的一篇 AI 论文。论文摘要显示：Diffusion models achieve state-of-the-art image synthesis, with their generative trajectories fundamentally exhibiting a spectral bias, resolving low-frequency global structures early and high-frequency fine details later. Conventional stoc...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV\n- 作者数: 3",
+      "focus_hits": [
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        },
+        {
+          "keyword": "inference",
+          "weight": 1.8
+        }
+      ],
+      "primary_match": "rag",
+      "personalized_score": 148.0,
+      "detail_path": "items/arxiv-colored-noise-diffusion-sampling.html",
+      "first_seen_at": "2026-05-30T04:14:22.620840+00:00",
+      "last_seen_at": "2026-05-30T04:14:22.620840+00:00",
+      "last_curated_at": "2026-05-30T04:14:22.620840+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2605.30330v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "When, why, and how do diffusion posterior samplers fail? A finite-sample lens",
+      "html_url": "http://arxiv.org/abs/2605.30330v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.30330v1",
+      "description": "Diffusion models have excellent capacity to model complex distributions of natural data, which has made them a popular and effective choice for posterior sampling in imaging inverse problems. Existing methods can incorporate any measurement model at inference time but must use an inexact approximation for the likelihood at intermediate timesteps for computational tractability. Although these approximations can often work well empirically, their downstream effect on the sampled posterior is poorly understood and can result in unexplained failures. To understand when, why, and how these likelihood approximations propagate to erroneous posterior distributions, we introduce a finite-sample perspective on posterior sampling that approximates the posterior to arbitrary precision as training set size tends towards infinity, for any forward model and prior distribution. Using this finite-sample lens, we observe that popular posterior sampling approximations tend to under- or over-estimate the spread of the posterior at intermediate timesteps, causing downstream consequences including sensitivity to early stopping time, inaccurate relative weighting of posterior modes, and hallucination, both of prior modes that are not in the posterior and likelihood modes that are not supported by the prior. Moreover, we find that the cause of these posterior errors requires neither a nonlinear measurement model nor a multimodal posterior, but can arise solely due to a multimodal prior and inaccurate posterior spread at intermediate sampling times. Our finite-sample posterior sampling approach is agnostic to the type of likelihood approximation and the type of (linear or nonlinear) forward model, and can thus serve as a drop-in diagnostic to evaluate the accuracy and failure modes of existing and future posterior samplers.",
+      "authors": [
+        "Benjamin A. Burns",
+        "Sara Fridovich-Keil"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "published_at": "2026-05-28T17:57:46+00:00",
+      "updated_at": "2026-05-28T17:57:46+00:00",
+      "primary_category": "cs.LG",
+      "heuristic_score": 17.9,
+      "summary": "When, why, and how do diffusion posterior samplers fail? A finite-sample lens 是最近值得追踪的一篇 AI 论文。论文摘要显示：Diffusion models have excellent capacity to model complex distributions of natural data, which has made them a popular and effective choice for posterior sampling in imaging inverse problems. Existing methods can incorporate any measurement...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.LG",
+        "作者数: 2"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "multimodal",
+        "diffusion",
+        "model"
+      ],
+      "themes": [
+        "ai",
+        "multimodal",
+        "diffusion"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：When, why, and how do diffusion posterior samplers fail? A finite-sample lens 是最近值得追踪的一篇 AI 论文。论文摘要显示：Diffusion models have excellent capacity to model complex distributions of natural data, which has made them a popular and effective choice for posterior sampling in imaging inverse problems. Existing methods can incorporate any measurement...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.LG\n- 作者数: 2",
+      "focus_hits": [
+        {
+          "keyword": "multimodal",
+          "weight": 2.0
+        },
+        {
+          "keyword": "inference",
+          "weight": 1.8
+        }
+      ],
+      "primary_match": "multimodal",
+      "personalized_score": 146.0,
+      "detail_path": "items/arxiv-when-why-and-how-do-diffusion-posterior-samplers-fail-a-finite-sample-lens.html",
+      "first_seen_at": "2026-05-30T04:14:22.620840+00:00",
+      "last_seen_at": "2026-05-30T04:14:22.620840+00:00",
+      "last_curated_at": "2026-05-30T04:14:22.620840+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2605.30328v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Supercharging Thermal Gaussian Splatting with Depth Estimation",
+      "html_url": "http://arxiv.org/abs/2605.30328v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.30328v1",
+      "description": "Efficient and robust 3D scene representation is crucial in autonomous driving, robotics, and related fields. While RGB images provide valuable content for 3D reconstruction, other modalities like thermal or depth can enable additional information on the environment. Lately, novel view synthesis methods like 3D Gaussian Splatting have started using multiple modalities to further boost their performance. But fusing or combining multimodal data can make the process slower and can bring in additional challenges. Therefore, our project aims to use single modality based on thermal infrared domain, by removing the reliance on visible light as much as possible. This single modality can be expected to be faster as it does not rely on multimodal data. We propose a method, Thermal-to-Depth Gaussian Splatting (TDg), that uses only thermal images and depth estimation in its architecture to derive the radiance fields. Our TDg method outperforms the MSMG (Multiple Single-Modal Gaussians) baseline in most cases on our test datasets, RGBT-Scenes and ThermalMix. On average, the rendering quality metrics such as learned perceptual image patch similarity (LPIPS), structural similarity index measure (SSIM), and peak signal-to-noise ratio (PSNR) of TDg are 1.12%, 0.034%, and 0.01% better than the baseline MSMG values. It also reduces the training time significantly, by 12 mins 47 secs (55% improvement). Overall, our method is successful in deriving these thermal radiance fields, which can ultimately have several applications, such as identifying heat sources critical in surveillance, search or rescue operations, and industrial inspections where temperature is widely used to monitor machines.",
+      "authors": [
+        "Manoj Biswanath",
+        "Chenxin Cai",
+        "Hannah Schieber",
+        "Daniel Roth",
+        "Benjamin Busam"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "published_at": "2026-05-28T17:57:35+00:00",
+      "updated_at": "2026-05-28T17:57:35+00:00",
+      "primary_category": "cs.CV",
+      "heuristic_score": 15.5,
+      "summary": "Supercharging Thermal Gaussian Splatting with Depth Estimation 是最近值得追踪的一篇 AI 论文。论文摘要显示：Efficient and robust 3D scene representation is crucial in autonomous driving, robotics, and related fields. While RGB images provide valuable content for 3D reconstruction, other modalities like thermal or depth can enable additional infor...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CV",
+        "作者数: 5"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 9,
+      "tags": [
+        "ai",
+        "rag",
+        "multimodal",
+        "training"
+      ],
+      "themes": [
+        "ai",
+        "rag",
+        "multimodal"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：Supercharging Thermal Gaussian Splatting with Depth Estimation 是最近值得追踪的一篇 AI 论文。论文摘要显示：Efficient and robust 3D scene representation is crucial in autonomous driving, robotics, and related fields. While RGB images provide valuable content for 3D reconstruction, other modalities like thermal or depth can enable additional infor...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：9/10\n\n**亮点**：\n- 分类: cs.CV\n- 作者数: 5",
+      "focus_hits": [
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        },
+        {
+          "keyword": "multimodal",
+          "weight": 2.0
+        },
+        {
+          "keyword": "robotics",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "rag",
+      "personalized_score": 156.0,
+      "detail_path": "items/arxiv-supercharging-thermal-gaussian-splatting-with-depth-estimation.html",
+      "first_seen_at": "2026-05-30T04:14:22.620840+00:00",
+      "last_seen_at": "2026-05-30T04:14:22.620840+00:00",
+      "last_curated_at": "2026-05-30T04:14:22.620840+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2605.30353v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Physics Is All You Need? A Case Study in Physicist-Supervised AI Development of Scientific Software",
+      "html_url": "http://arxiv.org/abs/2605.30353v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.30353v1",
+      "description": "Are AI agents tools, co-authors, or researchers? We present a quantified case study ($N=1$): a physicist supervising an AI coding agent (Claude Code, Sonnet and Opus models) over 12 work days and 57 sessions to build CLAX-PT, a differentiable one-loop perturbation theory module in JAX. We documented and classified 15 supervision events by intervention level. The agent resolved ten autonomously by iterating against oracle tests. Two more by the physicist's domain knowledge. The three it could not -- all evaded oracle detection -- share a common property: the agent treated symptom reduction as root-cause resolution. It spent 33 of the 57 sessions adjusting coefficients within a code architecture that could not represent the target physics, and could not re-evaluate its CLASS-PT branch choice even when prompted to reconsider; only an injected physics concept (anisotropic BAO damping) triggered the redesign. Separately, the agent committed a calibrated correction that passed all oracle tests but corresponded to no quantity in the theory, predicting wrong values at any other cosmology. The fudge factor was caught and replaced within the same session. Three supervision practices proved critical for catching what oracle tests missed: testing at diverse parameter points beyond the fiducial calibration; shared changelogs that surfaced stalled exploration across sessions; and an explicit rule against unphysical numerical patches. In this case, supervision design, not model capability, determined whether the agent's output was trustworthy. Closing the gap would require agents that propose architectural alternatives rather than optimize within a given structure, and distinguish predictive adequacy from explanatory correctness -- capabilities not exhibited here, not obviously addressed by scaling alone. [Abridged.]",
+      "authors": [
+        "Nhat-Minh Nguyen"
+      ],
+      "categories": [
+        "cs.AI",
+        "astro-ph.CO",
+        "cs.HC",
+        "cs.SE"
+      ],
+      "published_at": "2026-05-28T17:59:59+00:00",
+      "updated_at": "2026-05-28T17:59:59+00:00",
+      "primary_category": "cs.AI",
+      "heuristic_score": 15.5,
+      "summary": "Physics Is All You Need? A Case Study in Physicist-Supervised AI Development of Scientific Software 是最近值得追踪的一篇 AI 论文。论文摘要显示：Are AI agents tools, co-authors, or researchers? We present a quantified case study ($N=1$): a physicist supervising an AI coding agent (Claude Code, Sonnet and Opus models) over 12 work days and 57 sessions to build CLAX-PT, a differentiab...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.AI, astro-ph.CO",
+        "作者数: 1"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 9,
+      "tags": [
+        "ai",
+        "agent",
+        "model",
+        "ai agent"
+      ],
+      "themes": [
+        "ai",
+        "agent",
+        "model"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：Physics Is All You Need? A Case Study in Physicist-Supervised AI Development of Scientific Software 是最近值得追踪的一篇 AI 论文。论文摘要显示：Are AI agents tools, co-authors, or researchers? We present a quantified case study ($N=1$): a physicist supervising an AI coding agent (Claude Code, Sonnet and Opus models) over 12 work days and 57 sessions to build CLAX-PT, a differentiab...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：9/10\n\n**亮点**：\n- 分类: cs.AI, astro-ph.CO\n- 作者数: 1",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "coding",
+          "weight": 2.6
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 154.0,
+      "detail_path": "items/arxiv-physics-is-all-you-need-a-case-study-in-physicist-supervised-ai-development-of-scientific-.html",
+      "first_seen_at": "2026-05-30T04:14:22.620840+00:00",
+      "last_seen_at": "2026-05-30T04:14:22.620840+00:00",
+      "last_curated_at": "2026-05-30T04:14:22.620840+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2605.30338v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "REST3D: Reconstructing Physically Stable 3D Scenes from a Single Image",
+      "html_url": "http://arxiv.org/abs/2605.30338v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.30338v1",
+      "description": "Reconstructing physically stable 3D scenes from a single RGB image enables casual images to be converted into simulation-ready digital assets for applications such as immersive interaction and content creation. However, existing single-image reconstruction methods fall short in capturing the physical structure of a scene. As a result, they often produce geometrically plausible but physically inconsistent results, including object floating and penetration, which lead to unstable behavior in physics simulations. Image-conditioned scene generation methods improve physical plausibility but often rely on strong scene priors, yielding plausible yet inaccurate object arrangements that fail to match the input image. We propose REST3D, a single-image reconstruction framework that can reconstruct physically stable 3D scenes by integrating physical scene understanding with physics-constrained refinement. We first introduce an agentic physical scene understanding technique that constructs a scene-tree representation capturing object physical states and inter-object relationships from a gravity-support perspective, providing a structural prior for reconstruction. Leveraging this structure, we initialize the scene using image-to-3D models, followed by scene-tree-guided alignment and physics-constrained optimization to resolve physical violations while preserving visual consistency with the input image. Experiments show that our method significantly reduces physical errors and improves simulation stability on both synthetic and real-world datasets while maintaining strong reconstruction quality. We further demonstrate the reconstructed scenes in VR-based human-object interaction, showing their potential for immersive applications.",
+      "authors": [
+        "Xiaoxuan Ma",
+        "Jiashun Wang",
+        "Nicolas Ugrinovic",
+        "Yehonathan Litman",
+        "Kris Kitani"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "published_at": "2026-05-28T17:59:01+00:00",
+      "updated_at": "2026-05-28T17:59:01+00:00",
+      "primary_category": "cs.CV",
+      "heuristic_score": 15.5,
+      "summary": "REST3D: Reconstructing Physically Stable 3D Scenes from a Single Image 是最近值得追踪的一篇 AI 论文。论文摘要显示：Reconstructing physically stable 3D scenes from a single RGB image enables casual images to be converted into simulation-ready digital assets for applications such as immersive interaction and content creation. However, existing single-imag...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CV",
+        "作者数: 5"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 9,
+      "tags": [
+        "ai",
+        "agent",
+        "agentic",
+        "rag"
+      ],
+      "themes": [
+        "ai",
+        "agent",
+        "agentic"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：REST3D: Reconstructing Physically Stable 3D Scenes from a Single Image 是最近值得追踪的一篇 AI 论文。论文摘要显示：Reconstructing physically stable 3D scenes from a single RGB image enables casual images to be converted into simulation-ready digital assets for applications such as immersive interaction and content creation. However, existing single-imag...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：9/10\n\n**亮点**：\n- 分类: cs.CV\n- 作者数: 5",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 150.0,
+      "detail_path": "items/arxiv-rest3d-reconstructing-physically-stable-3d-scenes-from-a-single-image.html",
+      "first_seen_at": "2026-05-30T04:14:22.620840+00:00",
+      "last_seen_at": "2026-05-30T04:14:22.620840+00:00",
+      "last_curated_at": "2026-05-30T04:14:22.620840+00:00",
       "last_notified_at": null
     },
     {
@@ -74,7 +412,7 @@
       "full_name": "harry0703/MoneyPrinterTurbo",
       "html_url": "https://github.com/harry0703/MoneyPrinterTurbo",
       "description": "利用AI大模型，一键生成高清短视频 Generate short videos with one click using AI LLM.",
-      "stars": 69737,
+      "stars": 70080,
       "stars_today": 0,
       "language": "Python",
       "topics": [],
@@ -88,7 +426,7 @@
       "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
       "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
       "highlights": [
-        "Stars: 69737",
+        "Stars: 70080",
         "语言: Python"
       ],
       "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
@@ -102,14 +440,86 @@
         "llm"
       ],
       "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：harry0703/MoneyPrinterTurbo 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：利用AI大模型，一键生成高清短视频 Generate short videos with one click using AI LLM.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 69737\n- 语言: Python",
+      "summary_markdown": "**摘要**：harry0703/MoneyPrinterTurbo 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：利用AI大模型，一键生成高清短视频 Generate short videos with one click using AI LLM.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 70080\n- 语言: Python",
       "focus_hits": [],
       "primary_match": "",
       "personalized_score": 100.0,
       "detail_path": "items/github-harry0703-moneyprinterturbo.html",
       "first_seen_at": "2026-05-28T01:29:29.844915+00:00",
-      "last_seen_at": "2026-05-30T01:45:07.586394+00:00",
-      "last_curated_at": "2026-05-30T01:45:07.586394+00:00",
+      "last_seen_at": "2026-05-30T04:14:22.620840+00:00",
+      "last_curated_at": "2026-05-30T04:14:22.620840+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2605.30344v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Tiny but Trusted: Efficient Vision-Language Reasoning for Time-Series Anomaly Detection",
+      "html_url": "http://arxiv.org/abs/2605.30344v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.30344v1",
+      "description": "Recent advances in Vision-Language Models (VLMs) have achieved impressive performance across many tasks, yet prior studies report unsatisfactory performance when applying large language or multimodal models to finding abnormal patterns in sequential data. Public anomaly detection benchmarks typically provide interval annotations but not natural-language rationales, making it difficult to fine-tune VLMs to produce grounded, interpretable decisions. To address this gap, we construct VisAnomBench, a curated benchmark built from public time-series datasets and augmented with high-quality anomaly explanations selected from multiple large VLMs using fine-grained, task-specific rewards. Through fine-tuning on this benchmark, we develop VisAnomReasoner, a parameter-efficient VLM for time-series anomaly detection. Experimental results on VisAnomBench show that VisAnomReasoner achieves more accurate anomaly localization and consistently outperforms all baselines, with improvements of at least 21.23 and 23.87 percentage points in precision and F1, respectively. Additional experiments on the TSB-AD-U benchmark demonstrate strong cross-benchmark generalization, with VisAnomReasoner improving precision and F1 by 9.57 and 13.39 percentage points, respectively.",
+      "authors": [
+        "Xiaona Zhou",
+        "Muntasir Wahed",
+        "Tianjiao Yu",
+        "Constantin Brif",
+        "Ismini Lourentzou"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "published_at": "2026-05-28T17:59:50+00:00",
+      "updated_at": "2026-05-28T17:59:50+00:00",
+      "primary_category": "cs.AI",
+      "heuristic_score": 15.081,
+      "summary": "Tiny but Trusted: Efficient Vision-Language Reasoning for Time-Series Anomaly Detection 是最近值得追踪的一篇 AI 论文。论文摘要显示：Recent advances in Vision-Language Models (VLMs) have achieved impressive performance across many tasks, yet prior studies report unsatisfactory performance when applying large language or multimodal models to finding abnormal patterns in s...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.AI",
+        "作者数: 5"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 8,
+      "tags": [
+        "ai",
+        "multimodal",
+        "model",
+        "benchmark"
+      ],
+      "themes": [
+        "ai",
+        "multimodal",
+        "model"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：Tiny but Trusted: Efficient Vision-Language Reasoning for Time-Series Anomaly Detection 是最近值得追踪的一篇 AI 论文。论文摘要显示：Recent advances in Vision-Language Models (VLMs) have achieved impressive performance across many tasks, yet prior studies report unsatisfactory performance when applying large language or multimodal models to finding abnormal patterns in s...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：8/10\n\n**亮点**：\n- 分类: cs.AI\n- 作者数: 5",
+      "focus_hits": [
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "multimodal",
+          "weight": 2.0
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "reasoning",
+      "personalized_score": 148.0,
+      "detail_path": "items/arxiv-tiny-but-trusted-efficient-vision-language-reasoning-for-time-series-anomaly-detection.html",
+      "first_seen_at": "2026-05-30T04:14:22.620840+00:00",
+      "last_seen_at": "2026-05-30T04:14:22.620840+00:00",
+      "last_curated_at": "2026-05-30T04:14:22.620840+00:00",
       "last_notified_at": null
     },
     {
@@ -124,7 +534,7 @@
       "full_name": "affaan-m/ECC",
       "html_url": "https://github.com/affaan-m/ECC",
       "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
-      "stars": 198593,
+      "stars": 198666,
       "stars_today": 0,
       "language": "JavaScript",
       "topics": [],
@@ -138,7 +548,7 @@
       "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
       "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
       "highlights": [
-        "Stars: 198593",
+        "Stars: 198666",
         "语言: JavaScript"
       ],
       "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
@@ -150,7 +560,7 @@
         "agent"
       ],
       "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：affaan-m/ECC 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 198593\n- 语言: JavaScript",
+      "summary_markdown": "**摘要**：affaan-m/ECC 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 198666\n- 语言: JavaScript",
       "focus_hits": [
         {
           "keyword": "agent",
@@ -161,8 +571,8 @@
       "personalized_score": 120.0,
       "detail_path": "items/github-affaan-m-ecc.html",
       "first_seen_at": "2026-05-26T01:48:59.427019+00:00",
-      "last_seen_at": "2026-05-30T01:45:07.586394+00:00",
-      "last_curated_at": "2026-05-30T01:45:07.586394+00:00",
+      "last_seen_at": "2026-05-30T04:14:22.620840+00:00",
+      "last_curated_at": "2026-05-30T04:14:22.620840+00:00",
       "last_notified_at": null
     },
     {
@@ -177,7 +587,7 @@
       "full_name": "Leonxlnx/taste-skill",
       "html_url": "https://github.com/Leonxlnx/taste-skill",
       "description": "Taste-Skill - gives your AI good taste. stops the AI from generating boring, generic slop",
-      "stars": 28165,
+      "stars": 28325,
       "stars_today": 0,
       "language": "Shell",
       "topics": [],
@@ -191,7 +601,7 @@
       "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
       "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
       "highlights": [
-        "Stars: 28165",
+        "Stars: 28325",
         "语言: Shell"
       ],
       "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
@@ -203,14 +613,14 @@
         "ai"
       ],
       "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：Leonxlnx/taste-skill 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Taste-Skill - gives your AI good taste. stops the AI from generating boring, generic slop结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 28165\n- 语言: Shell",
+      "summary_markdown": "**摘要**：Leonxlnx/taste-skill 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Taste-Skill - gives your AI good taste. stops the AI from generating boring, generic slop结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 28325\n- 语言: Shell",
       "focus_hits": [],
       "primary_match": "",
-      "personalized_score": 81.27,
+      "personalized_score": 81.33,
       "detail_path": "items/github-leonxlnx-taste-skill.html",
       "first_seen_at": "2026-05-26T01:48:59.427019+00:00",
-      "last_seen_at": "2026-05-30T01:45:07.586394+00:00",
-      "last_curated_at": "2026-05-30T01:45:07.586394+00:00",
+      "last_seen_at": "2026-05-30T04:14:22.620840+00:00",
+      "last_curated_at": "2026-05-30T04:14:22.620840+00:00",
       "last_notified_at": null
     },
     {
@@ -225,7 +635,7 @@
       "full_name": "DigitalPlatDev/FreeDomain",
       "html_url": "https://github.com/DigitalPlatDev/FreeDomain",
       "description": "DigitalPlat FreeDomain: Free Domain For Everyone",
-      "stars": 171827,
+      "stars": 171929,
       "stars_today": 0,
       "language": "HTML",
       "topics": [],
@@ -239,7 +649,7 @@
       "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
       "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
       "highlights": [
-        "Stars: 171827",
+        "Stars: 171929",
         "语言: HTML"
       ],
       "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
@@ -251,14 +661,14 @@
         "ai"
       ],
       "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：DigitalPlatDev/FreeDomain 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：DigitalPlat FreeDomain: Free Domain For Everyone结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 171827\n- 语言: HTML",
+      "summary_markdown": "**摘要**：DigitalPlatDev/FreeDomain 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：DigitalPlat FreeDomain: Free Domain For Everyone结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 171929\n- 语言: HTML",
       "focus_hits": [],
       "primary_match": "",
       "personalized_score": 90.0,
       "detail_path": "items/github-digitalplatdev-freedomain.html",
       "first_seen_at": "2026-05-27T01:56:18.539595+00:00",
-      "last_seen_at": "2026-05-30T01:45:07.586394+00:00",
-      "last_curated_at": "2026-05-30T01:45:07.586394+00:00",
+      "last_seen_at": "2026-05-30T04:14:22.620840+00:00",
+      "last_curated_at": "2026-05-30T04:14:22.620840+00:00",
       "last_notified_at": null
     },
     {
@@ -273,7 +683,7 @@
       "full_name": "hardikpandya/stop-slop",
       "html_url": "https://github.com/hardikpandya/stop-slop",
       "description": "A skill file for removing AI tells from prose",
-      "stars": 7018,
+      "stars": 7072,
       "stars_today": 0,
       "language": "Unknown",
       "topics": [],
@@ -287,7 +697,7 @@
       "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
       "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
       "highlights": [
-        "Stars: 7018",
+        "Stars: 7072",
         "语言: Unknown"
       ],
       "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
@@ -299,14 +709,14 @@
         "ai"
       ],
       "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：hardikpandya/stop-slop 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：A skill file for removing AI tells from prose结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 7018\n- 语言: Unknown",
+      "summary_markdown": "**摘要**：hardikpandya/stop-slop 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：A skill file for removing AI tells from prose结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 7072\n- 语言: Unknown",
       "focus_hits": [],
       "primary_match": "",
-      "personalized_score": 72.81,
+      "personalized_score": 72.83,
       "detail_path": "items/github-hardikpandya-stop-slop.html",
       "first_seen_at": "2026-05-27T01:56:18.539595+00:00",
-      "last_seen_at": "2026-05-30T01:45:07.586394+00:00",
-      "last_curated_at": "2026-05-30T01:45:07.586394+00:00",
+      "last_seen_at": "2026-05-30T04:14:22.620840+00:00",
+      "last_curated_at": "2026-05-30T04:14:22.620840+00:00",
       "last_notified_at": null
     },
     {
@@ -321,7 +731,7 @@
       "full_name": "twentyhq/twenty",
       "html_url": "https://github.com/twentyhq/twenty",
       "description": "The open alternative to Salesforce, designed for AI.",
-      "stars": 48422,
+      "stars": 48462,
       "stars_today": 0,
       "language": "TypeScript",
       "topics": [],
@@ -335,7 +745,7 @@
       "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
       "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
       "highlights": [
-        "Stars: 48422",
+        "Stars: 48462",
         "语言: TypeScript"
       ],
       "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
@@ -347,14 +757,14 @@
         "ai"
       ],
       "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：twentyhq/twenty 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：The open alternative to Salesforce, designed for AI.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 48422\n- 语言: TypeScript",
+      "summary_markdown": "**摘要**：twentyhq/twenty 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：The open alternative to Salesforce, designed for AI.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 48462\n- 语言: TypeScript",
       "focus_hits": [],
       "primary_match": "",
-      "personalized_score": 89.37,
+      "personalized_score": 89.38,
       "detail_path": "items/github-twentyhq-twenty.html",
       "first_seen_at": "2026-05-29T01:50:52.969235+00:00",
-      "last_seen_at": "2026-05-30T01:45:07.586394+00:00",
-      "last_curated_at": "2026-05-30T01:45:07.586394+00:00",
+      "last_seen_at": "2026-05-30T04:14:22.620840+00:00",
+      "last_curated_at": "2026-05-30T04:14:22.620840+00:00",
       "last_notified_at": null
     },
     {
@@ -369,7 +779,7 @@
       "full_name": "Crosstalk-Solutions/project-nomad",
       "html_url": "https://github.com/Crosstalk-Solutions/project-nomad",
       "description": "Project N.O.M.A.D, is a self-contained, offline survival computer packed with critical tools, knowledge, and AI to keep you informed and empowered—anytime, anywhere.",
-      "stars": 26970,
+      "stars": 27018,
       "stars_today": 0,
       "language": "TypeScript",
       "topics": [],
@@ -383,7 +793,7 @@
       "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
       "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
       "highlights": [
-        "Stars: 26970",
+        "Stars: 27018",
         "语言: TypeScript"
       ],
       "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
@@ -395,14 +805,14 @@
         "ai"
       ],
       "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：Crosstalk-Solutions/project-nomad 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Project N.O.M.A.D, is a self-contained, offline survival computer packed with critical tools, knowledge, and AI to keep you informed and empowered—anytime, anywhere.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 26970\n- 语言: TypeScript",
+      "summary_markdown": "**摘要**：Crosstalk-Solutions/project-nomad 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Project N.O.M.A.D, is a self-contained, offline survival computer packed with critical tools, knowledge, and AI to keep you informed and empowered—anytime, anywhere.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 27018\n- 语言: TypeScript",
       "focus_hits": [],
       "primary_match": "",
-      "personalized_score": 80.79,
+      "personalized_score": 80.81,
       "detail_path": "items/github-crosstalk-solutions-project-nomad.html",
       "first_seen_at": "2026-05-30T01:45:07.586394+00:00",
-      "last_seen_at": "2026-05-30T01:45:07.586394+00:00",
-      "last_curated_at": "2026-05-30T01:45:07.586394+00:00",
+      "last_seen_at": "2026-05-30T04:14:22.620840+00:00",
+      "last_curated_at": "2026-05-30T04:14:22.620840+00:00",
       "last_notified_at": null
     },
     {
@@ -10791,554 +11201,6 @@
       "last_notified_at": null
     },
     {
-      "id": "arxiv::http://arxiv.org/abs/2604.26940v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "Select to Think: Unlocking SLM Potential with Local Sufficiency",
-      "html_url": "http://arxiv.org/abs/2604.26940v1",
-      "pdf_url": "https://arxiv.org/pdf/2604.26940v1",
-      "description": "Small language models (SLMs) offer computational efficiency for scalable deployment, yet they often fall short of the reasoning power exhibited by their larger counterparts (LLMs). To mitigate this gap, current approaches invoke an LLM to generate tokens at points of reasoning divergence, but these external calls introduce substantial latency and costs. Alternatively, standard distillation is often hindered by the capacity limitation, as SLMs struggle to accurately mimic the LLM's complex generative distribution. We address this dilemma by identifying local sufficiency: at divergence points, the LLM's preferred token consistently resides within the SLM's top-K next-token predictions, even when failing to emerge as the SLM top-1 choice. We therefore propose SELECT TO THINK (S2T), which reframes the LLM's role from open-ended generation to selection among the SLM's proposals, simplifying the supervision signal to discrete candidate rankings. Leveraging this, we introduce S2T-LOCAL, which distills the selection logic into the SLM, empowering it to perform autonomous re-ranking without inference-time LLM dependency. Empirically, we demonstrate that a 1.5B SLM's top-8 candidates capture the 32B LLM's choice with 95% hit rate. Translating this potential into performance, S2T-LOCAL improves greedy decoding by 24.1% on average across benchmarks, effectively matching the efficacy of 8-path self-consistency while operating with single-trajectory efficiency.",
-      "authors": [
-        "Wenxuan Ye",
-        "Yangyang Zhang",
-        "Xueli An",
-        "Georg Carle",
-        "Yunpu Ma"
-      ],
-      "categories": [
-        "cs.CL"
-      ],
-      "published_at": "2026-04-29T17:51:39+00:00",
-      "updated_at": "2026-04-29T17:51:39+00:00",
-      "primary_category": "cs.CL",
-      "heuristic_score": 20.139,
-      "summary": "Select to Think: Unlocking SLM Potential with Local Sufficiency 是最近值得追踪的一篇 AI 论文。论文摘要显示：Small language models (SLMs) offer computational efficiency for scalable deployment, yet they often fall short of the reasoning power exhibited by their larger counterparts (LLMs). To mitigate this gap, current approaches invoke an LLM to g...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CL",
-        "作者数: 5"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "llm",
-        "rag",
-        "model"
-      ],
-      "themes": [
-        "ai",
-        "llm",
-        "rag"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：Select to Think: Unlocking SLM Potential with Local Sufficiency 是最近值得追踪的一篇 AI 论文。论文摘要显示：Small language models (SLMs) offer computational efficiency for scalable deployment, yet they often fall short of the reasoning power exhibited by their larger counterparts (LLMs). To mitigate this gap, current approaches invoke an LLM to g...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL\n- 作者数: 5",
-      "focus_hits": [
-        {
-          "keyword": "coding",
-          "weight": 2.6
-        },
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "inference",
-          "weight": 1.8
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "coding",
-      "personalized_score": 214.0,
-      "detail_path": "items/arxiv-select-to-think-unlocking-slm-potential-with-local-sufficiency.html",
-      "first_seen_at": "2026-04-30T04:01:00.436418+00:00",
-      "last_seen_at": "2026-04-30T04:01:00.436418+00:00",
-      "last_curated_at": "2026-04-30T04:01:00.436418+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2604.26951v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "Turning the TIDE: Cross-Architecture Distillation for Diffusion Large Language Models",
-      "html_url": "http://arxiv.org/abs/2604.26951v1",
-      "pdf_url": "https://arxiv.org/pdf/2604.26951v1",
-      "description": "Diffusion large language models (dLLMs) offer parallel decoding and bidirectional context, but state-of-the-art dLLMs require billions of parameters for competitive performance. While existing distillation methods for dLLMs reduce inference steps within a single architecture, none address cross-architecture knowledge transfer, in which the teacher and student differ in architecture, attention mechanism, and tokenizer. We present TIDE, the first framework for cross-architecture dLLM distillation, comprising three modular components: (1) TIDAL, which jointly modulates distillation strength across training progress and diffusion timestep to account for the teacher's noise-dependent reliability; (2) CompDemo, which enriches the teacher's context via complementary mask splitting to improve predictions under heavy masking; and (3) Reverse CALM, a cross-tokenizer objective that inverts chunk-level likelihood matching, yielding bounded gradients and dual-end noise filtering. Distilling 8B dense and 16B MoE teachers into a 0.6B student via two heterogeneous pipelines outperforms the baseline by an average of 1.53 points across eight benchmarks, yielding notable gains in code generation, where HumanEval scores reach 48.78 compared to 32.3 for the AR baseline.",
-      "authors": [
-        "Gongbo Zhang",
-        "Wen Wang",
-        "Ye Tian",
-        "Li Yuan"
-      ],
-      "categories": [
-        "cs.CL",
-        "cs.AI",
-        "cs.LG"
-      ],
-      "published_at": "2026-04-29T17:59:01+00:00",
-      "updated_at": "2026-04-29T17:59:01+00:00",
-      "primary_category": "cs.CL",
-      "heuristic_score": 22.286,
-      "summary": "Turning the TIDE: Cross-Architecture Distillation for Diffusion Large Language Models 是最近值得追踪的一篇 AI 论文。论文摘要显示：Diffusion large language models (dLLMs) offer parallel decoding and bidirectional context, but state-of-the-art dLLMs require billions of parameters for competitive performance. While existing distillation methods for dLLMs reduce inference...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CL, cs.AI",
-        "作者数: 4"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "llm",
-        "rag",
-        "diffusion"
-      ],
-      "themes": [
-        "ai",
-        "llm",
-        "rag"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：Turning the TIDE: Cross-Architecture Distillation for Diffusion Large Language Models 是最近值得追踪的一篇 AI 论文。论文摘要显示：Diffusion large language models (dLLMs) offer parallel decoding and bidirectional context, but state-of-the-art dLLMs require billions of parameters for competitive performance. While existing distillation methods for dLLMs reduce inference...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL, cs.AI\n- 作者数: 4",
-      "focus_hits": [
-        {
-          "keyword": "coding",
-          "weight": 2.6
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "inference",
-          "weight": 1.8
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "coding",
-      "personalized_score": 190.0,
-      "detail_path": "items/arxiv-turning-the-tide-cross-architecture-distillation-for-diffusion-large-language-models.html",
-      "first_seen_at": "2026-04-30T04:01:00.436418+00:00",
-      "last_seen_at": "2026-04-30T04:01:00.436418+00:00",
-      "last_curated_at": "2026-04-30T04:01:00.436418+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2604.26934v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "World2VLM: Distilling World Model Imagination into VLMs for Dynamic Spatial Reasoning",
-      "html_url": "http://arxiv.org/abs/2604.26934v1",
-      "pdf_url": "https://arxiv.org/pdf/2604.26934v1",
-      "description": "Vision-language models (VLMs) have shown strong performance on static visual understanding, yet they still struggle with dynamic spatial reasoning that requires imagining how scenes evolve under egocentric motion. Recent efforts address this limitation either by scaling spatial supervision with synthetic data or by coupling VLMs with world models at inference time. However, the former often lacks explicit modeling of motion-conditioned state transitions, while the latter incurs substantial computational overhead. In this work, we propose World2VLM, a training framework that distills spatial imagination from a generative world model into a vision-language model. Given an initial observation and a parameterized camera trajectory, we use a view-consistent world model to synthesize geometrically aligned future views and derive structured supervision for both forward (action-to-outcome) and inverse (outcome-to-action) spatial reasoning. We post-train the VLM with a two-stage recipe on a compact dataset generated by this pipeline and evaluate it on multiple spatial reasoning benchmarks. World2VLM delivers consistent improvements over the base model across diverse benchmarks, including SAT-Real, SAT-Synthesized, VSI-Bench, and MindCube. It also outperforms the test-time world-model-coupled methods while eliminating the need for expensive inference-time generation. Our results suggest that world models can serve not only as inference-time tools, but also as effective training-time teachers, enabling VLMs to internalize spatial imagination in a scalable and efficient manner.",
-      "authors": [
-        "Wanyue Zhang",
-        "Wenxiang Wu",
-        "Wang Xu",
-        "Jiaxin Luo",
-        "Helu Zhi",
-        "Yibin Huang",
-        "Shuo Ren",
-        "Zitao Liu",
-        "Jiajun Zhang"
-      ],
-      "categories": [
-        "cs.CV"
-      ],
-      "published_at": "2026-04-29T17:48:01+00:00",
-      "updated_at": "2026-04-29T17:48:01+00:00",
-      "primary_category": "cs.CV",
-      "heuristic_score": 17.89,
-      "summary": "World2VLM: Distilling World Model Imagination into VLMs for Dynamic Spatial Reasoning 是最近值得追踪的一篇 AI 论文。论文摘要显示：Vision-language models (VLMs) have shown strong performance on static visual understanding, yet they still struggle with dynamic spatial reasoning that requires imagining how scenes evolve under egocentric motion. Recent efforts address thi...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CV",
-        "作者数: 9"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "model",
-        "benchmark",
-        "inference"
-      ],
-      "themes": [
-        "ai",
-        "model",
-        "benchmark"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：World2VLM: Distilling World Model Imagination into VLMs for Dynamic Spatial Reasoning 是最近值得追踪的一篇 AI 论文。论文摘要显示：Vision-language models (VLMs) have shown strong performance on static visual understanding, yet they still struggle with dynamic spatial reasoning that requires imagining how scenes evolve under egocentric motion. Recent efforts address thi...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV\n- 作者数: 9",
-      "focus_hits": [
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "inference",
-          "weight": 1.8
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "reasoning",
-      "personalized_score": 166.0,
-      "detail_path": "items/arxiv-world2vlm-distilling-world-model-imagination-into-vlms-for-dynamic-spatial-reasoning.html",
-      "first_seen_at": "2026-04-30T04:01:00.436418+00:00",
-      "last_seen_at": "2026-04-30T04:01:00.436418+00:00",
-      "last_curated_at": "2026-04-30T04:01:00.436418+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2604.26904v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "ClawGym: A Scalable Framework for Building Effective Claw Agents",
-      "html_url": "http://arxiv.org/abs/2604.26904v1",
-      "pdf_url": "https://arxiv.org/pdf/2604.26904v1",
-      "description": "Claw-style environments support multi-step workflows over local files, tools, and persistent workspace states. However, scalable development around these environments remains constrained by the absence of a systematic framework, especially one for synthesizing verifiable training data and integrating it with agent training and diagnostic evaluation. To address this challenge, we present ClawGym, a scalable framework that supports the full lifecycle of Claw-style personal agent development. Concretely, we construct ClawGym-SynData, a diverse dataset of 13.5K filtered tasks synthesized from persona-driven intents and skill-grounded operations, paired with realistic mock workspaces and hybrid verification mechanisms. We then train a family of capable Claw-style models, termed ClawGym-Agents, through supervised fine-tuning on black-box rollout trajectories, and further explore reinforcement learning via a lightweight pipeline that parallelizes rollouts across per-task sandboxes.To support reliable evaluation, we further construct ClawGym-Bench, a benchmark of 200 instances calibrated through automated filtering and human-LLM review. Relevant resources will be soon released at https://github.com/ClawGym.",
-      "authors": [
-        "Fei Bai",
-        "Huatong Song",
-        "Shuang Sun",
-        "Daixuan Cheng",
-        "Yike Yang",
-        "Chuan Hao",
-        "Renyuan Li",
-        "Feng Chang",
-        "Yuan Wei",
-        "Ran Tao",
-        "Bryan Dai",
-        "Jian Yang",
-        "Wayne Xin Zhao"
-      ],
-      "categories": [
-        "cs.CL",
-        "cs.AI",
-        "cs.LG"
-      ],
-      "published_at": "2026-04-29T17:12:22+00:00",
-      "updated_at": "2026-04-29T17:12:22+00:00",
-      "primary_category": "cs.CL",
-      "heuristic_score": 17.422,
-      "summary": "ClawGym: A Scalable Framework for Building Effective Claw Agents 是最近值得追踪的一篇 AI 论文。论文摘要显示：Claw-style environments support multi-step workflows over local files, tools, and persistent workspace states. However, scalable development around these environments remains constrained by the absence of a systematic framework, especially ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CL, cs.AI",
-        "作者数: 13"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "llm",
-        "agent",
-        "model"
-      ],
-      "themes": [
-        "ai",
-        "llm",
-        "agent"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：ClawGym: A Scalable Framework for Building Effective Claw Agents 是最近值得追踪的一篇 AI 论文。论文摘要显示：Claw-style environments support multi-step workflows over local files, tools, and persistent workspace states. However, scalable development around these environments remains constrained by the absence of a systematic framework, especially ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL, cs.AI\n- 作者数: 13",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 154.0,
-      "detail_path": "items/arxiv-clawgym-a-scalable-framework-for-building-effective-claw-agents.html",
-      "first_seen_at": "2026-04-30T04:01:00.436418+00:00",
-      "last_seen_at": "2026-04-30T04:01:00.436418+00:00",
-      "last_curated_at": "2026-04-30T04:01:00.436418+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2604.26866v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "MoRFI: Monotonic Sparse Autoencoder Feature Identification",
-      "html_url": "http://arxiv.org/abs/2604.26866v1",
-      "pdf_url": "https://arxiv.org/pdf/2604.26866v1",
-      "description": "Large language models (LLMs) acquire most of their factual knowledge during the pre-training stage, through next token prediction. Subsequent stages of post-training often introduce new facts outwith the parametric knowledge, giving rise to hallucinations. While it has been demonstrated that supervised fine-tuning (SFT) on new knowledge may exacerbate the problem, the underlying mechanisms are still poorly understood. We conduct a controlled fine-tuning experiment, focusing on closed-book QA, and find latent directions that causally contribute to hallucinations. Specifically, we fine-tune Llama 3.1 8B, Gemma 2 9B and Mistral 7B v03 on seven distinct single QA datasets, controlling for the percentage of new knowledge and number of training epochs. By measuring performance on the test set, we validate that incrementally introducing new knowledge increases hallucinations, with the effect being more pronounced with prolonged training. We leverage pre-trained sparse autoencoders (SAEs) to analyze residual stream activations across various checkpoints for each model and propose Monotonic Relationship Feature Identification (MoRFI) for capturing causally relevant latents. MoRFI filters SAE features that respond monotonically to controlled fine-tuning data mixtures of a target property. Our findings show that exposure to unknown facts disrupts the model's ability to retrieve stored knowledge along a set of directions in the residual stream. Our pipeline reliably discovers them across distinct models, recovering knowledge through single-latent interventions.",
-      "authors": [
-        "Dimitris Dimakopoulos",
-        "Shay B. Cohen",
-        "Ioannis Konstas"
-      ],
-      "categories": [
-        "cs.CL",
-        "cs.LG"
-      ],
-      "published_at": "2026-04-29T16:32:57+00:00",
-      "updated_at": "2026-04-29T16:32:57+00:00",
-      "primary_category": "cs.CL",
-      "heuristic_score": 15.469,
-      "summary": "MoRFI: Monotonic Sparse Autoencoder Feature Identification 是最近值得追踪的一篇 AI 论文。论文摘要显示：Large language models (LLMs) acquire most of their factual knowledge during the pre-training stage, through next token prediction. Subsequent stages of post-training often introduce new facts outwith the parametric knowledge, giving rise to...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CL, cs.LG",
-        "作者数: 3"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 9,
-      "tags": [
-        "ai",
-        "llm",
-        "rag",
-        "model"
-      ],
-      "themes": [
-        "ai",
-        "llm",
-        "rag"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：MoRFI: Monotonic Sparse Autoencoder Feature Identification 是最近值得追踪的一篇 AI 论文。论文摘要显示：Large language models (LLMs) acquire most of their factual knowledge during the pre-training stage, through next token prediction. Subsequent stages of post-training often introduce new facts outwith the parametric knowledge, giving rise to...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：9/10\n\n**亮点**：\n- 分类: cs.CL, cs.LG\n- 作者数: 3",
-      "focus_hits": [
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        }
-      ],
-      "primary_match": "rag",
-      "personalized_score": 120.0,
-      "detail_path": "items/arxiv-morfi-monotonic-sparse-autoencoder-feature-identification.html",
-      "first_seen_at": "2026-04-30T04:01:00.436418+00:00",
-      "last_seen_at": "2026-04-30T04:01:00.436418+00:00",
-      "last_curated_at": "2026-04-30T04:01:00.436418+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2604.26923v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "ClassEval-Pro: A Cross-Domain Benchmark for Class-Level Code Generation",
-      "html_url": "http://arxiv.org/abs/2604.26923v1",
-      "pdf_url": "https://arxiv.org/pdf/2604.26923v1",
-      "description": "LLMs have achieved strong results on both function-level code synthesis and repository-level code modification, yet a capability that falls between these two extremes -- compositional code creation, i.e., building a complete, internally structured class from a specification -- remains underserved. Current evaluations are either confined to isolated functions or rely on manually curated class-level tasks that are expensive to scale and increasingly susceptible to data contamination. We introduce ClassEval-Pro, a benchmark of 300 class-level tasks spanning 11 domains, constructed through an automated three-stage pipeline that combines complexity enhancement, cross-domain class composition, and integration of real-world GitHub code contributed after January 2025. Every task is validated by an LLM Judge Ensemble and must pass test suites with over 90% line coverage. We evaluate five frontier LLMs under five generation strategies. The best model achieves only 45.6% class-level Pass@1, with a 17.7-point gap between the strongest and weakest models, confirming the benchmark's discriminative power. Strategy choice strongly interacts with model capability: structured approaches such as bottom-up improve weaker models by up to 9.4 percentage points, while compositional generation collapses to as low as 1.3%. Error analysis over 500 manually annotated failures reveals that logic errors (56.2%) and dependency errors (38.0%) dominate, identifying cross-method coordination as the core bottleneck.",
-      "authors": [
-        "Yeheng Chen",
-        "Chaoxiang Xie",
-        "Yuling Shi",
-        "Wenhao Zeng",
-        "Yongpan Wang",
-        "Hongyu Zhang",
-        "Xiaodong Gu"
-      ],
-      "categories": [
-        "cs.SE",
-        "cs.CL"
-      ],
-      "published_at": "2026-04-29T17:38:37+00:00",
-      "updated_at": "2026-04-29T17:38:37+00:00",
-      "primary_category": "cs.SE",
-      "heuristic_score": 13.884,
-      "summary": "ClassEval-Pro: A Cross-Domain Benchmark for Class-Level Code Generation 是最近值得追踪的一篇 AI 论文。论文摘要显示：LLMs have achieved strong results on both function-level code synthesis and repository-level code modification, yet a capability that falls between these two extremes -- compositional code creation, i.e., building a complete, internally str...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.SE, cs.CL",
-        "作者数: 7"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 8,
-      "tags": [
-        "ai",
-        "llm",
-        "rag",
-        "model"
-      ],
-      "themes": [
-        "ai",
-        "llm",
-        "rag"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：ClassEval-Pro: A Cross-Domain Benchmark for Class-Level Code Generation 是最近值得追踪的一篇 AI 论文。论文摘要显示：LLMs have achieved strong results on both function-level code synthesis and repository-level code modification, yet a capability that falls between these two extremes -- compositional code creation, i.e., building a complete, internally str...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：8/10\n\n**亮点**：\n- 分类: cs.SE, cs.CL\n- 作者数: 7",
-      "focus_hits": [
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "rag",
-      "personalized_score": 118.0,
-      "detail_path": "items/arxiv-classeval-pro-a-cross-domain-benchmark-for-class-level-code-generation.html",
-      "first_seen_at": "2026-04-30T04:01:00.436418+00:00",
-      "last_seen_at": "2026-04-30T04:01:00.436418+00:00",
-      "last_curated_at": "2026-04-30T04:01:00.436418+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "github::microsoft/VibeVoice",
-      "kind": "repo",
-      "source": "github",
-      "source_tags": [
-        "trending"
-      ],
-      "name": "VibeVoice",
-      "title": "microsoft/VibeVoice",
-      "full_name": "microsoft/VibeVoice",
-      "html_url": "https://github.com/microsoft/VibeVoice",
-      "description": "Open-Source Frontier Voice AI",
-      "stars": 45770,
-      "stars_today": 0,
-      "language": "Python",
-      "topics": [],
-      "created_at": "",
-      "updated_at": "",
-      "heuristic_score": 12.6,
-      "summary": "microsoft/VibeVoice 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Open-Source Frontier Voice AI结合关键词命中和热度信号，它适合加入今日重点观察列表。",
-      "brief": "这是一个值得快速关注的开源 AI 项目。",
-      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
-      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
-      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
-      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
-      "highlights": [
-        "Stars: 45770",
-        "语言: Python"
-      ],
-      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
-      "relevance_score": 7,
-      "tags": [
-        "ai",
-        "voice ai"
-      ],
-      "themes": [
-        "ai",
-        "voice ai"
-      ],
-      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：microsoft/VibeVoice 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Open-Source Frontier Voice AI结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 45770\n- 语言: Python",
-      "focus_hits": [
-        {
-          "keyword": "voice",
-          "weight": 1.4
-        }
-      ],
-      "primary_match": "voice",
-      "personalized_score": 102.31,
-      "detail_path": "items/github-microsoft-vibevoice.html",
-      "first_seen_at": "2026-04-28T01:24:49.502089+00:00",
-      "last_seen_at": "2026-04-30T04:01:00.436418+00:00",
-      "last_curated_at": "2026-04-30T04:01:00.436418+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "github::EbookFoundation/free-programming-books",
-      "kind": "repo",
-      "source": "github",
-      "source_tags": [
-        "trending"
-      ],
-      "name": "free-programming-books",
-      "title": "EbookFoundation/free-programming-books",
-      "full_name": "EbookFoundation/free-programming-books",
-      "html_url": "https://github.com/EbookFoundation/free-programming-books",
-      "description": "📚 Freely available programming books",
-      "stars": 387257,
-      "stars_today": 0,
-      "language": "Python",
-      "topics": [],
-      "created_at": "",
-      "updated_at": "",
-      "heuristic_score": 12.6,
-      "summary": "EbookFoundation/free-programming-books 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：📚 Freely available programming books结合关键词命中和热度信号，它适合加入今日重点观察列表。",
-      "brief": "这是一个值得快速关注的开源 AI 项目。",
-      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
-      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
-      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
-      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
-      "highlights": [
-        "Stars: 387257",
-        "语言: Python"
-      ],
-      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
-      "relevance_score": 7,
-      "tags": [
-        "ai"
-      ],
-      "themes": [
-        "ai"
-      ],
-      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：EbookFoundation/free-programming-books 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：📚 Freely available programming books结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 387257\n- 语言: Python",
-      "focus_hits": [],
-      "primary_match": "",
-      "personalized_score": 90.0,
-      "detail_path": "items/github-ebookfoundation-free-programming-books.html",
-      "first_seen_at": "2026-04-29T01:28:02.029898+00:00",
-      "last_seen_at": "2026-04-30T04:01:00.436418+00:00",
-      "last_curated_at": "2026-04-30T04:01:00.436418+00:00",
-      "last_notified_at": null
-    },
-    {
       "id": "github::obra/superpowers",
       "kind": "repo",
       "source": "github",
@@ -11392,72 +11254,13 @@
       "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
       "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
       "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。"
-    },
-    {
-      "id": "github::abhigyanpatwari/GitNexus",
-      "kind": "repo",
-      "source": "github",
-      "source_tags": [
-        "trending"
-      ],
-      "name": "GitNexus",
-      "title": "abhigyanpatwari/GitNexus",
-      "full_name": "abhigyanpatwari/GitNexus",
-      "html_url": "https://github.com/abhigyanpatwari/GitNexus",
-      "description": "GitNexus: The Zero-Server Code Intelligence Engine - GitNexus is a client-side knowledge graph creator that runs entirely in your browser. Drop in a GitHub repo or ZIP file, and get an interactive knowledge graph wit a built in Graph RAG Agent. Perfect for code exploration",
-      "stars": 33434,
-      "stars_today": 0,
-      "language": "TypeScript",
-      "topics": [],
-      "created_at": "",
-      "updated_at": "",
-      "heuristic_score": 15.2,
-      "summary": "abhigyanpatwari/GitNexus 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：GitNexus: The Zero-Server Code Intelligence Engine - GitNexus is a client-side knowledge graph creator that runs entirely in your browser. Drop in a GitHub repo or ZIP file, and get an interactive knowledge graph wit a built in Graph RAG Ag...结合关键词命中和热度信号，它适合加入今日重点观察列表。",
-      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
-      "highlights": [
-        "Stars: 33434",
-        "语言: TypeScript"
-      ],
-      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
-      "relevance_score": 8,
-      "tags": [
-        "agent",
-        "rag"
-      ],
-      "summary_markdown": "**摘要**：abhigyanpatwari/GitNexus 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：GitNexus: The Zero-Server Code Intelligence Engine - GitNexus is a client-side knowledge graph creator that runs entirely in your browser. Drop in a GitHub repo or ZIP file, and get an interactive knowledge graph wit a built in Graph RAG Ag...结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 33434\n- 语言: TypeScript",
-      "detail_path": "items/github-abhigyanpatwari-gitnexus.html",
-      "first_seen_at": "2026-04-09T09:24:46.894274+00:00",
-      "last_seen_at": "2026-04-30T04:01:00.436418+00:00",
-      "last_curated_at": "2026-04-30T04:01:00.436418+00:00",
-      "last_notified_at": "2026-04-09T11:52:43.203830+00:00",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 145.37,
-      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "themes": [
-        "agent",
-        "rag"
-      ],
-      "brief": "这是一个值得快速关注的开源 AI 项目。",
-      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
-      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
-      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。"
     }
   ],
   "digests": [
     {
       "date": "2026-05-30",
       "title": "AI Daily Digest · 2026-05-30",
-      "generated_at": "2026-05-30T09:44:51.573830+08:00",
+      "generated_at": "2026-05-30T12:14:14.456439+08:00",
       "notified_at": null,
       "repo_ids": [
         "github::anthropics/claude-code",
@@ -11469,7 +11272,14 @@
         "github::Crosstalk-Solutions/project-nomad",
         "github::hardikpandya/stop-slop"
       ],
-      "paper_ids": [],
+      "paper_ids": [
+        "arxiv::http://arxiv.org/abs/2605.30328v1",
+        "arxiv::http://arxiv.org/abs/2605.30353v1",
+        "arxiv::http://arxiv.org/abs/2605.30338v1",
+        "arxiv::http://arxiv.org/abs/2605.30332v1",
+        "arxiv::http://arxiv.org/abs/2605.30344v1",
+        "arxiv::http://arxiv.org/abs/2605.30330v1"
+      ],
       "digest_json": "data/digests/2026-05-30.json",
       "digest_markdown": "data/digests/2026-05-30.md"
     },
@@ -12601,9 +12411,9 @@
     "weekly": {
       "label": "周报",
       "window_days": 7,
-      "generated_at": "2026-05-30T09:44:51.573830+08:00",
-      "count": 48,
-      "summary": "近 7 天里，最集中的主题是 ai、agent、llm。",
+      "generated_at": "2026-05-30T12:14:14.456439+08:00",
+      "count": 46,
+      "summary": "近 7 天里，最集中的主题是 ai、agent、rag。",
       "top_items": [
         {
           "id": "arxiv::http://arxiv.org/abs/2605.28774v1",
@@ -13155,78 +12965,64 @@
           "last_notified_at": null
         },
         {
-          "id": "arxiv::http://arxiv.org/abs/2605.22786v1",
-          "kind": "paper",
-          "source": "arxiv",
+          "id": "github::anthropics/claude-code",
+          "kind": "repo",
+          "source": "github",
           "source_tags": [
-            "latest"
+            "trending"
           ],
-          "title": "LCGuard: Latent Communication Guard for Safe KV Sharing in Multi-Agent Systems",
-          "html_url": "http://arxiv.org/abs/2605.22786v1",
-          "pdf_url": "https://arxiv.org/pdf/2605.22786v1",
-          "description": "Large language model (LLM)-based multi-agent systems increasingly rely on intermediate communication to coordinate complex tasks. While most existing systems communicate through natural language, recent work shows that latent communication, particularly through transformer key-value (KV) caches, can improve efficiency and preserve richer task-relevant information. However, KV caches also encode contextual inputs, intermediate reasoning states, and agent-specific information, creating an opaque channel through which sensitive content may propagate across agents without explicit textual disclosure. To address this, we introduce \\textbf{LCGuard} (Latent Communication Guard), a framework for safe KV-based latent communication in multi-agent LLM systems. LCGuard treats shared KV caches as latent working memory and learns representation-level transformations before cache artifacts are transmitted across agents. We formalize representation-level sensitive information leakage operationally through reconstruction: a shared cache artifact is unsafe if an adversarial decoder can recover agent-specific sensitive inputs from it. This leads to an adversarial training formulation in which the adversary learns to reconstruct sensitive inputs, while LCGuard learns transformations that preserve task-relevant semantics and reduce reconstructable information. Empirical evaluations across multiple model families and multi-agent benchmarks show that LCGuard consistently reduces reconstruction-based leakage and attack success rates while maintaining competitive task performance compared to standard KV-sharing baselines.",
-          "authors": [
-            "Sadia Asif",
-            "Mohammad Mohammadi Amiri",
-            "Momin Abbas",
-            "Prasanna Sattigeri",
-            "Karthikeyan Natesan Ramamurthy"
-          ],
-          "categories": [
-            "cs.AI",
-            "cs.ET",
-            "cs.LG",
-            "cs.MA"
-          ],
-          "published_at": "2026-05-21T17:42:12+00:00",
-          "updated_at": "2026-05-21T17:42:12+00:00",
-          "primary_category": "cs.AI",
-          "heuristic_score": 20.3,
-          "summary": "LCGuard: Latent Communication Guard for Safe KV Sharing in Multi-Agent Systems 是最近值得追踪的一篇 AI 论文。论文摘要显示：Large language model (LLM)-based multi-agent systems increasingly rely on intermediate communication to coordinate complex tasks. While most existing systems communicate through natural language, recent work shows that latent communication,...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-          "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-          "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-          "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-          "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-          "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+          "name": "claude-code",
+          "title": "anthropics/claude-code",
+          "full_name": "anthropics/claude-code",
+          "html_url": "https://github.com/anthropics/claude-code",
+          "description": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.",
+          "stars": 127955,
+          "stars_today": 0,
+          "language": "Python",
+          "topics": [],
+          "created_at": "",
+          "updated_at": "",
+          "heuristic_score": 17.8,
+          "summary": "anthropics/claude-code 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.结合关键词命中和热度信号，它适合加入今日重点观察列表。",
+          "brief": "这是一个值得快速关注的开源 AI 项目。",
+          "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
+          "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
+          "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
+          "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
           "highlights": [
-            "分类: cs.AI, cs.ET",
-            "作者数: 5"
+            "Stars: 127955",
+            "语言: Python"
           ],
-          "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+          "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
           "relevance_score": 10,
           "tags": [
             "ai",
-            "llm",
             "agent",
-            "model"
+            "agentic"
           ],
           "themes": [
             "ai",
-            "llm",
-            "agent"
+            "agent",
+            "agentic"
           ],
-          "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-          "summary_markdown": "**摘要**：LCGuard: Latent Communication Guard for Safe KV Sharing in Multi-Agent Systems 是最近值得追踪的一篇 AI 论文。论文摘要显示：Large language model (LLM)-based multi-agent systems increasingly rely on intermediate communication to coordinate complex tasks. While most existing systems communicate through natural language, recent work shows that latent communication,...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI, cs.ET\n- 作者数: 5",
+          "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
+          "summary_markdown": "**摘要**：anthropics/claude-code 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：10/10\n\n**亮点**：\n- Stars: 127955\n- 语言: Python",
           "focus_hits": [
             {
               "keyword": "agent",
               "weight": 3.0
             },
             {
-              "keyword": "reasoning",
-              "weight": 2.4
-            },
-            {
-              "keyword": "benchmark",
-              "weight": 1.6
+              "keyword": "coding",
+              "weight": 2.6
             }
           ],
           "primary_match": "agent",
-          "personalized_score": 178.0,
-          "detail_path": "items/arxiv-lcguard-latent-communication-guard-for-safe-kv-sharing-in-multi-agent-systems.html",
-          "first_seen_at": "2026-05-22T04:34:17.430103+00:00",
-          "last_seen_at": "2026-05-23T04:05:53.443660+00:00",
-          "last_curated_at": "2026-05-23T04:05:53.443660+00:00",
+          "personalized_score": 176.0,
+          "detail_path": "items/github-anthropics-claude-code.html",
+          "first_seen_at": "2026-05-30T01:45:07.586394+00:00",
+          "last_seen_at": "2026-05-30T04:14:22.620840+00:00",
+          "last_curated_at": "2026-05-30T04:14:22.620840+00:00",
           "last_notified_at": null
         }
       ],
@@ -13237,14 +13033,14 @@
         },
         {
           "theme": "agent",
-          "count": 5
-        },
-        {
-          "theme": "llm",
-          "count": 2
+          "count": 6
         },
         {
           "theme": "rag",
+          "count": 1
+        },
+        {
+          "theme": "llm",
           "count": 1
         }
       ],
@@ -13269,8 +13065,8 @@
     "monthly": {
       "label": "月报",
       "window_days": 30,
-      "generated_at": "2026-05-30T09:44:51.573830+08:00",
-      "count": 177,
+      "generated_at": "2026-05-30T12:14:14.456439+08:00",
+      "count": 175,
       "summary": "近 30 天里，最集中的主题是 ai、agent、llm。",
       "top_items": [
         {
@@ -13445,86 +13241,6 @@
           "first_seen_at": "2026-05-28T04:36:05.094729+00:00",
           "last_seen_at": "2026-05-28T04:36:05.094729+00:00",
           "last_curated_at": "2026-05-28T04:36:05.094729+00:00",
-          "last_notified_at": null
-        },
-        {
-          "id": "arxiv::http://arxiv.org/abs/2604.26940v1",
-          "kind": "paper",
-          "source": "arxiv",
-          "source_tags": [
-            "latest"
-          ],
-          "title": "Select to Think: Unlocking SLM Potential with Local Sufficiency",
-          "html_url": "http://arxiv.org/abs/2604.26940v1",
-          "pdf_url": "https://arxiv.org/pdf/2604.26940v1",
-          "description": "Small language models (SLMs) offer computational efficiency for scalable deployment, yet they often fall short of the reasoning power exhibited by their larger counterparts (LLMs). To mitigate this gap, current approaches invoke an LLM to generate tokens at points of reasoning divergence, but these external calls introduce substantial latency and costs. Alternatively, standard distillation is often hindered by the capacity limitation, as SLMs struggle to accurately mimic the LLM's complex generative distribution. We address this dilemma by identifying local sufficiency: at divergence points, the LLM's preferred token consistently resides within the SLM's top-K next-token predictions, even when failing to emerge as the SLM top-1 choice. We therefore propose SELECT TO THINK (S2T), which reframes the LLM's role from open-ended generation to selection among the SLM's proposals, simplifying the supervision signal to discrete candidate rankings. Leveraging this, we introduce S2T-LOCAL, which distills the selection logic into the SLM, empowering it to perform autonomous re-ranking without inference-time LLM dependency. Empirically, we demonstrate that a 1.5B SLM's top-8 candidates capture the 32B LLM's choice with 95% hit rate. Translating this potential into performance, S2T-LOCAL improves greedy decoding by 24.1% on average across benchmarks, effectively matching the efficacy of 8-path self-consistency while operating with single-trajectory efficiency.",
-          "authors": [
-            "Wenxuan Ye",
-            "Yangyang Zhang",
-            "Xueli An",
-            "Georg Carle",
-            "Yunpu Ma"
-          ],
-          "categories": [
-            "cs.CL"
-          ],
-          "published_at": "2026-04-29T17:51:39+00:00",
-          "updated_at": "2026-04-29T17:51:39+00:00",
-          "primary_category": "cs.CL",
-          "heuristic_score": 20.139,
-          "summary": "Select to Think: Unlocking SLM Potential with Local Sufficiency 是最近值得追踪的一篇 AI 论文。论文摘要显示：Small language models (SLMs) offer computational efficiency for scalable deployment, yet they often fall short of the reasoning power exhibited by their larger counterparts (LLMs). To mitigate this gap, current approaches invoke an LLM to g...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-          "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-          "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-          "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-          "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-          "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-          "highlights": [
-            "分类: cs.CL",
-            "作者数: 5"
-          ],
-          "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-          "relevance_score": 10,
-          "tags": [
-            "ai",
-            "llm",
-            "rag",
-            "model"
-          ],
-          "themes": [
-            "ai",
-            "llm",
-            "rag"
-          ],
-          "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-          "summary_markdown": "**摘要**：Select to Think: Unlocking SLM Potential with Local Sufficiency 是最近值得追踪的一篇 AI 论文。论文摘要显示：Small language models (SLMs) offer computational efficiency for scalable deployment, yet they often fall short of the reasoning power exhibited by their larger counterparts (LLMs). To mitigate this gap, current approaches invoke an LLM to g...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL\n- 作者数: 5",
-          "focus_hits": [
-            {
-              "keyword": "coding",
-              "weight": 2.6
-            },
-            {
-              "keyword": "reasoning",
-              "weight": 2.4
-            },
-            {
-              "keyword": "rag",
-              "weight": 2.2
-            },
-            {
-              "keyword": "inference",
-              "weight": 1.8
-            },
-            {
-              "keyword": "benchmark",
-              "weight": 1.6
-            }
-          ],
-          "primary_match": "coding",
-          "personalized_score": 214.0,
-          "detail_path": "items/arxiv-select-to-think-unlocking-slm-potential-with-local-sufficiency.html",
-          "first_seen_at": "2026-04-30T04:01:00.436418+00:00",
-          "last_seen_at": "2026-04-30T04:01:00.436418+00:00",
-          "last_curated_at": "2026-04-30T04:01:00.436418+00:00",
           "last_notified_at": null
         },
         {
@@ -13927,6 +13643,84 @@
           "last_seen_at": "2026-05-09T03:52:52.242937+00:00",
           "last_curated_at": "2026-05-09T03:52:52.242937+00:00",
           "last_notified_at": null
+        },
+        {
+          "id": "arxiv::http://arxiv.org/abs/2605.27310v1",
+          "kind": "paper",
+          "source": "arxiv",
+          "source_tags": [
+            "latest"
+          ],
+          "title": "How and What to Imagine? Visual Thinking in Unified Multimodal Models for Cross-View Spatial Reasoning",
+          "html_url": "http://arxiv.org/abs/2605.27310v1",
+          "pdf_url": "https://arxiv.org/pdf/2605.27310v1",
+          "description": "Cross-view spatial reasoning remains a weak spot for vision-language models (VLMs): they often reason in language and lose the fine-grained geometry needed for the task. Thinking with images aims to address this by generating an intermediate thinking image, but recent work shows that models often ignore the visual evidence in these traces. We therefore ask how to make visual thinking matter, and what kind of visual thinking works best. We study these questions in unified multimodal models (UMMs), which natively support interleaved image-text generation. For the first question, we propose View Dropout (VDrop), a training-time intervention that hides parts of one input view from the answer span while keeping them visible to the thinking-image tokens. This encourages the model to use the thinking image when answering, instead of relying only on the input views. Once the thinking image is used for answer prediction, we study which type of visual thinking is most effective. We frame this as a learnability-informativeness tradeoff and compare three thinking-image variants: top-down, panoramic, and point-matching renderings. Trained on synthetic scenes and evaluated on five real-world out-of-domain benchmarks, panoramic visual thinking with VDrop is the only configuration that is both informative and learnable, and it achieves the best out-of-domain generalization.",
+          "authors": [
+            "Qian Yang",
+            "Ankur Sikarwar",
+            "Huy Le",
+            "Le Zhang",
+            "Zhuan Shi",
+            "Perouz Taslakian",
+            "Aishwarya Agrawal"
+          ],
+          "categories": [
+            "cs.CV"
+          ],
+          "published_at": "2026-05-26T17:20:05+00:00",
+          "updated_at": "2026-05-26T17:20:05+00:00",
+          "primary_category": "cs.CV",
+          "heuristic_score": 20.025,
+          "summary": "How and What to Imagine? Visual Thinking in Unified Multimodal Models for Cross-View Spatial Reasoning 是最近值得追踪的一篇 AI 论文。论文摘要显示：Cross-view spatial reasoning remains a weak spot for vision-language models (VLMs): they often reason in language and lose the fine-grained geometry needed for the task. Thinking with images aims to address this by generating an intermediat...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+          "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+          "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+          "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+          "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+          "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+          "highlights": [
+            "分类: cs.CV",
+            "作者数: 7"
+          ],
+          "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+          "relevance_score": 10,
+          "tags": [
+            "ai",
+            "rag",
+            "multimodal",
+            "model"
+          ],
+          "themes": [
+            "ai",
+            "rag",
+            "multimodal"
+          ],
+          "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+          "summary_markdown": "**摘要**：How and What to Imagine? Visual Thinking in Unified Multimodal Models for Cross-View Spatial Reasoning 是最近值得追踪的一篇 AI 论文。论文摘要显示：Cross-view spatial reasoning remains a weak spot for vision-language models (VLMs): they often reason in language and lose the fine-grained geometry needed for the task. Thinking with images aims to address this by generating an intermediat...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV\n- 作者数: 7",
+          "focus_hits": [
+            {
+              "keyword": "reasoning",
+              "weight": 2.4
+            },
+            {
+              "keyword": "rag",
+              "weight": 2.2
+            },
+            {
+              "keyword": "multimodal",
+              "weight": 2.0
+            },
+            {
+              "keyword": "benchmark",
+              "weight": 1.6
+            }
+          ],
+          "primary_match": "reasoning",
+          "personalized_score": 190.0,
+          "detail_path": "items/arxiv-how-and-what-to-imagine-visual-thinking-in-unified-multimodal-models-for-cross-view-spatia.html",
+          "first_seen_at": "2026-05-27T04:45:37.551239+00:00",
+          "last_seen_at": "2026-05-27T04:45:37.551239+00:00",
+          "last_curated_at": "2026-05-27T04:45:37.551239+00:00",
+          "last_notified_at": null
         }
       ],
       "top_themes": [
@@ -13940,7 +13734,11 @@
         },
         {
           "theme": "llm",
-          "count": 3
+          "count": 2
+        },
+        {
+          "theme": "rag",
+          "count": 1
         }
       ],
       "highlights": [
@@ -13955,7 +13753,7 @@
           "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
         },
         {
-          "title": "Select to Think: Unlocking SLM Potential with Local Sufficiency",
+          "title": "SEDualVLN: A Spatially-Enhanced Dual-System for Vision-Language Navigation",
           "source": "arxiv",
           "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
         }

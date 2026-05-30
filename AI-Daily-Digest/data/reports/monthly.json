@@ -1,8 +1,8 @@
 {
   "label": "月报",
   "window_days": 30,
-  "generated_at": "2026-05-30T09:44:51.573830+08:00",
-  "count": 177,
+  "generated_at": "2026-05-30T12:14:14.456439+08:00",
+  "count": 175,
   "summary": "近 30 天里，最集中的主题是 ai、agent、llm。",
   "top_items": [
     {
@@ -177,86 +177,6 @@
       "first_seen_at": "2026-05-28T04:36:05.094729+00:00",
       "last_seen_at": "2026-05-28T04:36:05.094729+00:00",
       "last_curated_at": "2026-05-28T04:36:05.094729+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2604.26940v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "Select to Think: Unlocking SLM Potential with Local Sufficiency",
-      "html_url": "http://arxiv.org/abs/2604.26940v1",
-      "pdf_url": "https://arxiv.org/pdf/2604.26940v1",
-      "description": "Small language models (SLMs) offer computational efficiency for scalable deployment, yet they often fall short of the reasoning power exhibited by their larger counterparts (LLMs). To mitigate this gap, current approaches invoke an LLM to generate tokens at points of reasoning divergence, but these external calls introduce substantial latency and costs. Alternatively, standard distillation is often hindered by the capacity limitation, as SLMs struggle to accurately mimic the LLM's complex generative distribution. We address this dilemma by identifying local sufficiency: at divergence points, the LLM's preferred token consistently resides within the SLM's top-K next-token predictions, even when failing to emerge as the SLM top-1 choice. We therefore propose SELECT TO THINK (S2T), which reframes the LLM's role from open-ended generation to selection among the SLM's proposals, simplifying the supervision signal to discrete candidate rankings. Leveraging this, we introduce S2T-LOCAL, which distills the selection logic into the SLM, empowering it to perform autonomous re-ranking without inference-time LLM dependency. Empirically, we demonstrate that a 1.5B SLM's top-8 candidates capture the 32B LLM's choice with 95% hit rate. Translating this potential into performance, S2T-LOCAL improves greedy decoding by 24.1% on average across benchmarks, effectively matching the efficacy of 8-path self-consistency while operating with single-trajectory efficiency.",
-      "authors": [
-        "Wenxuan Ye",
-        "Yangyang Zhang",
-        "Xueli An",
-        "Georg Carle",
-        "Yunpu Ma"
-      ],
-      "categories": [
-        "cs.CL"
-      ],
-      "published_at": "2026-04-29T17:51:39+00:00",
-      "updated_at": "2026-04-29T17:51:39+00:00",
-      "primary_category": "cs.CL",
-      "heuristic_score": 20.139,
-      "summary": "Select to Think: Unlocking SLM Potential with Local Sufficiency 是最近值得追踪的一篇 AI 论文。论文摘要显示：Small language models (SLMs) offer computational efficiency for scalable deployment, yet they often fall short of the reasoning power exhibited by their larger counterparts (LLMs). To mitigate this gap, current approaches invoke an LLM to g...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CL",
-        "作者数: 5"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "llm",
-        "rag",
-        "model"
-      ],
-      "themes": [
-        "ai",
-        "llm",
-        "rag"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：Select to Think: Unlocking SLM Potential with Local Sufficiency 是最近值得追踪的一篇 AI 论文。论文摘要显示：Small language models (SLMs) offer computational efficiency for scalable deployment, yet they often fall short of the reasoning power exhibited by their larger counterparts (LLMs). To mitigate this gap, current approaches invoke an LLM to g...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL\n- 作者数: 5",
-      "focus_hits": [
-        {
-          "keyword": "coding",
-          "weight": 2.6
-        },
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "inference",
-          "weight": 1.8
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "coding",
-      "personalized_score": 214.0,
-      "detail_path": "items/arxiv-select-to-think-unlocking-slm-potential-with-local-sufficiency.html",
-      "first_seen_at": "2026-04-30T04:01:00.436418+00:00",
-      "last_seen_at": "2026-04-30T04:01:00.436418+00:00",
-      "last_curated_at": "2026-04-30T04:01:00.436418+00:00",
       "last_notified_at": null
     },
     {
@@ -659,6 +579,84 @@
       "last_seen_at": "2026-05-09T03:52:52.242937+00:00",
       "last_curated_at": "2026-05-09T03:52:52.242937+00:00",
       "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2605.27310v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "How and What to Imagine? Visual Thinking in Unified Multimodal Models for Cross-View Spatial Reasoning",
+      "html_url": "http://arxiv.org/abs/2605.27310v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.27310v1",
+      "description": "Cross-view spatial reasoning remains a weak spot for vision-language models (VLMs): they often reason in language and lose the fine-grained geometry needed for the task. Thinking with images aims to address this by generating an intermediate thinking image, but recent work shows that models often ignore the visual evidence in these traces. We therefore ask how to make visual thinking matter, and what kind of visual thinking works best. We study these questions in unified multimodal models (UMMs), which natively support interleaved image-text generation. For the first question, we propose View Dropout (VDrop), a training-time intervention that hides parts of one input view from the answer span while keeping them visible to the thinking-image tokens. This encourages the model to use the thinking image when answering, instead of relying only on the input views. Once the thinking image is used for answer prediction, we study which type of visual thinking is most effective. We frame this as a learnability-informativeness tradeoff and compare three thinking-image variants: top-down, panoramic, and point-matching renderings. Trained on synthetic scenes and evaluated on five real-world out-of-domain benchmarks, panoramic visual thinking with VDrop is the only configuration that is both informative and learnable, and it achieves the best out-of-domain generalization.",
+      "authors": [
+        "Qian Yang",
+        "Ankur Sikarwar",
+        "Huy Le",
+        "Le Zhang",
+        "Zhuan Shi",
+        "Perouz Taslakian",
+        "Aishwarya Agrawal"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "published_at": "2026-05-26T17:20:05+00:00",
+      "updated_at": "2026-05-26T17:20:05+00:00",
+      "primary_category": "cs.CV",
+      "heuristic_score": 20.025,
+      "summary": "How and What to Imagine? Visual Thinking in Unified Multimodal Models for Cross-View Spatial Reasoning 是最近值得追踪的一篇 AI 论文。论文摘要显示：Cross-view spatial reasoning remains a weak spot for vision-language models (VLMs): they often reason in language and lose the fine-grained geometry needed for the task. Thinking with images aims to address this by generating an intermediat...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CV",
+        "作者数: 7"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "rag",
+        "multimodal",
+        "model"
+      ],
+      "themes": [
+        "ai",
+        "rag",
+        "multimodal"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：How and What to Imagine? Visual Thinking in Unified Multimodal Models for Cross-View Spatial Reasoning 是最近值得追踪的一篇 AI 论文。论文摘要显示：Cross-view spatial reasoning remains a weak spot for vision-language models (VLMs): they often reason in language and lose the fine-grained geometry needed for the task. Thinking with images aims to address this by generating an intermediat...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV\n- 作者数: 7",
+      "focus_hits": [
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        },
+        {
+          "keyword": "multimodal",
+          "weight": 2.0
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "reasoning",
+      "personalized_score": 190.0,
+      "detail_path": "items/arxiv-how-and-what-to-imagine-visual-thinking-in-unified-multimodal-models-for-cross-view-spatia.html",
+      "first_seen_at": "2026-05-27T04:45:37.551239+00:00",
+      "last_seen_at": "2026-05-27T04:45:37.551239+00:00",
+      "last_curated_at": "2026-05-27T04:45:37.551239+00:00",
+      "last_notified_at": null
     }
   ],
   "top_themes": [
@@ -672,7 +670,11 @@
     },
     {
       "theme": "llm",
-      "count": 3
+      "count": 2
+    },
+    {
+      "theme": "rag",
+      "count": 1
     }
   ],
   "highlights": [
@@ -687,7 +689,7 @@
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     },
     {
-      "title": "Select to Think: Unlocking SLM Potential with Local Sufficiency",
+      "title": "SEDualVLN: A Spatially-Enhanced Dual-System for Vision-Language Navigation",
       "source": "arxiv",
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     }
