@@ -1,8 +1,8 @@
 {
   "label": "月报",
   "window_days": 30,
-  "generated_at": "2026-06-02T10:05:42.176499+08:00",
-  "count": 172,
+  "generated_at": "2026-06-02T12:58:05.656656+08:00",
+  "count": 178,
   "summary": "近 30 天里，最集中的主题是 ai、agent、llm。",
   "top_items": [
     {
@@ -581,81 +581,87 @@
       "last_notified_at": null
     },
     {
-      "id": "arxiv::http://arxiv.org/abs/2605.27310v1",
+      "id": "arxiv::http://arxiv.org/abs/2606.02544v1",
       "kind": "paper",
       "source": "arxiv",
       "source_tags": [
         "latest"
       ],
-      "title": "How and What to Imagine? Visual Thinking in Unified Multimodal Models for Cross-View Spatial Reasoning",
-      "html_url": "http://arxiv.org/abs/2605.27310v1",
-      "pdf_url": "https://arxiv.org/pdf/2605.27310v1",
-      "description": "Cross-view spatial reasoning remains a weak spot for vision-language models (VLMs): they often reason in language and lose the fine-grained geometry needed for the task. Thinking with images aims to address this by generating an intermediate thinking image, but recent work shows that models often ignore the visual evidence in these traces. We therefore ask how to make visual thinking matter, and what kind of visual thinking works best. We study these questions in unified multimodal models (UMMs), which natively support interleaved image-text generation. For the first question, we propose View Dropout (VDrop), a training-time intervention that hides parts of one input view from the answer span while keeping them visible to the thinking-image tokens. This encourages the model to use the thinking image when answering, instead of relying only on the input views. Once the thinking image is used for answer prediction, we study which type of visual thinking is most effective. We frame this as a learnability-informativeness tradeoff and compare three thinking-image variants: top-down, panoramic, and point-matching renderings. Trained on synthetic scenes and evaluated on five real-world out-of-domain benchmarks, panoramic visual thinking with VDrop is the only configuration that is both informative and learnable, and it achieves the best out-of-domain generalization.",
+      "title": "SimSD: Simple Speculative Decoding in Diffusion Language Models",
+      "html_url": "http://arxiv.org/abs/2606.02544v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.02544v1",
+      "description": "Diffusion large language models (dLLMs) have recently emerged as a promising alternative to autoregressive (AR) LLMs, offering faster inference through parallel or blockwise decoding. However, their masked language modeling formulation remains incompatible with standard token-level speculative decoding, one of the most effective acceleration techniques for AR models. In AR decoding, the causal mask preserves temporally valid token-level contexts, enabling a target model to verify multiple drafted tokens in a single forward pass. In contrast, dLLMs rely on mask tokens and bidirectional attention, causing the effective context to change across denoising steps and preventing direct token-level speculative verification. To bridge this gap, we propose a simple but effective speculative decoding algorithm for diffusion language models, named SimSD, which mainly adopts a plug-and-play masking strategy that equips dLLMs with temporally valid token-level contexts for speculative decoding. Our method explicitly introduces reference tokens from draft-model predictions and designs an attention mask that regulates their interaction with current-step tokens, allowing dLLMs to compute valid logits for drafted tokens in a single forward pass. This restores the key verification ability provided by causal masking in AR models while preserving the parallel decoding advantages of dLLMs. The proposed method is training-free and can be flexibly integrated with other acceleration techniques such as KV cache and blockwise decoding. Experiments on SDAR-family dLLMs across four benchmarks show that our method achieves up to 7.46x higher decoding throughput while maintaining and even improving average generation quality.",
       "authors": [
-        "Qian Yang",
-        "Ankur Sikarwar",
-        "Huy Le",
-        "Le Zhang",
-        "Zhuan Shi",
-        "Perouz Taslakian",
-        "Aishwarya Agrawal"
+        "Junxia Cui",
+        "Haotian Ye",
+        "Runchu Tian",
+        "Hongcan Guo",
+        "Jinya Jiang",
+        "Haoru Li",
+        "Chaojie Ren",
+        "Yiming Huang",
+        "Kaijie Zhu",
+        "Zhongkai Yu",
+        "Kun Zhou",
+        "Jingbo Shang"
       ],
       "categories": [
-        "cs.CV"
+        "cs.CL",
+        "cs.AI"
       ],
-      "published_at": "2026-05-26T17:20:05+00:00",
-      "updated_at": "2026-05-26T17:20:05+00:00",
-      "primary_category": "cs.CV",
-      "heuristic_score": 20.025,
-      "summary": "How and What to Imagine? Visual Thinking in Unified Multimodal Models for Cross-View Spatial Reasoning 是最近值得追踪的一篇 AI 论文。论文摘要显示：Cross-view spatial reasoning remains a weak spot for vision-language models (VLMs): they often reason in language and lose the fine-grained geometry needed for the task. Thinking with images aims to address this by generating an intermediat...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "published_at": "2026-06-01T17:46:46+00:00",
+      "updated_at": "2026-06-01T17:46:46+00:00",
+      "primary_category": "cs.CL",
+      "heuristic_score": 22.7,
+      "summary": "SimSD: Simple Speculative Decoding in Diffusion Language Models 是最近值得追踪的一篇 AI 论文。论文摘要显示：Diffusion large language models (dLLMs) have recently emerged as a promising alternative to autoregressive (AR) LLMs, offering faster inference through parallel or blockwise decoding. However, their masked language modeling formulation rema...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
       "brief": "这是一篇值得加入今日论文雷达的最新工作。",
       "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
       "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
       "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
       "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
       "highlights": [
-        "分类: cs.CV",
-        "作者数: 7"
+        "分类: cs.CL, cs.AI",
+        "作者数: 12"
       ],
       "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
       "relevance_score": 10,
       "tags": [
         "ai",
+        "llm",
         "rag",
-        "multimodal",
-        "model"
+        "diffusion"
       ],
       "themes": [
         "ai",
-        "rag",
-        "multimodal"
+        "llm",
+        "rag"
       ],
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：How and What to Imagine? Visual Thinking in Unified Multimodal Models for Cross-View Spatial Reasoning 是最近值得追踪的一篇 AI 论文。论文摘要显示：Cross-view spatial reasoning remains a weak spot for vision-language models (VLMs): they often reason in language and lose the fine-grained geometry needed for the task. Thinking with images aims to address this by generating an intermediat...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV\n- 作者数: 7",
+      "summary_markdown": "**摘要**：SimSD: Simple Speculative Decoding in Diffusion Language Models 是最近值得追踪的一篇 AI 论文。论文摘要显示：Diffusion large language models (dLLMs) have recently emerged as a promising alternative to autoregressive (AR) LLMs, offering faster inference through parallel or blockwise decoding. However, their masked language modeling formulation rema...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL, cs.AI\n- 作者数: 12",
       "focus_hits": [
         {
-          "keyword": "reasoning",
-          "weight": 2.4
+          "keyword": "coding",
+          "weight": 2.6
         },
         {
           "keyword": "rag",
           "weight": 2.2
         },
         {
-          "keyword": "multimodal",
-          "weight": 2.0
+          "keyword": "inference",
+          "weight": 1.8
         },
         {
           "keyword": "benchmark",
           "weight": 1.6
         }
       ],
-      "primary_match": "reasoning",
+      "primary_match": "coding",
       "personalized_score": 190.0,
-      "detail_path": "items/arxiv-how-and-what-to-imagine-visual-thinking-in-unified-multimodal-models-for-cross-view-spatia.html",
-      "first_seen_at": "2026-05-27T04:45:37.551239+00:00",
-      "last_seen_at": "2026-05-27T04:45:37.551239+00:00",
-      "last_curated_at": "2026-05-27T04:45:37.551239+00:00",
+      "detail_path": "items/arxiv-simsd-simple-speculative-decoding-in-diffusion-language-models.html",
+      "first_seen_at": "2026-06-02T04:58:14.271123+00:00",
+      "last_seen_at": "2026-06-02T04:58:14.271123+00:00",
+      "last_curated_at": "2026-06-02T04:58:14.271123+00:00",
       "last_notified_at": null
     }
   ],
@@ -670,11 +676,7 @@
     },
     {
       "theme": "llm",
-      "count": 2
-    },
-    {
-      "theme": "rag",
-      "count": 1
+      "count": 3
     }
   ],
   "highlights": [
