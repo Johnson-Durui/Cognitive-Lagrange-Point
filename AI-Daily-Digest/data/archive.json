@@ -1,6 +1,438 @@
 {
-  "generated_at": "2026-06-03T05:08:22.176426+00:00",
+  "generated_at": "2026-06-04T02:13:40.013150+00:00",
   "items": [
+    {
+      "id": "github::lyogavin/airllm",
+      "kind": "repo",
+      "source": "github",
+      "source_tags": [
+        "trending"
+      ],
+      "name": "airllm",
+      "title": "lyogavin/airllm",
+      "full_name": "lyogavin/airllm",
+      "html_url": "https://github.com/lyogavin/airllm",
+      "description": "AirLLM 70B inference with single 4GB GPU",
+      "stars": 18944,
+      "stars_today": 0,
+      "language": "Jupyter Notebook",
+      "topics": [],
+      "created_at": "",
+      "updated_at": "",
+      "heuristic_score": 17.8,
+      "summary": "lyogavin/airllm 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：AirLLM 70B inference with single 4GB GPU结合关键词命中和热度信号，它适合加入今日重点观察列表。",
+      "brief": "这是一个值得快速关注的开源 AI 项目。",
+      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
+      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
+      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
+      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
+      "highlights": [
+        "Stars: 18944",
+        "语言: Jupyter Notebook"
+      ],
+      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "llm",
+        "inference"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "inference"
+      ],
+      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
+      "summary_markdown": "**摘要**：lyogavin/airllm 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：AirLLM 70B inference with single 4GB GPU结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：10/10\n\n**亮点**：\n- Stars: 18944\n- 语言: Jupyter Notebook",
+      "focus_hits": [
+        {
+          "keyword": "inference",
+          "weight": 1.8
+        }
+      ],
+      "primary_match": "inference",
+      "personalized_score": 125.58,
+      "detail_path": "items/github-lyogavin-airllm.html",
+      "first_seen_at": "2026-06-04T02:13:40.013150+00:00",
+      "last_seen_at": "2026-06-04T02:13:40.013150+00:00",
+      "last_curated_at": "2026-06-04T02:13:40.013150+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2606.05158v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Streaming Communication in Multi-Agent Reasoning",
+      "html_url": "http://arxiv.org/abs/2606.05158v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.05158v1",
+      "description": "Multi-agent reasoning systems adopt a \"generate-then-transfer\" paradigm that forces end-to-end latency to scale linearly with pipeline depth. We introduce StreamMA, a multi-agent reasoning system that streams each reasoning step to downstream agents as soon as it is generated, pipelining adjacent agents and thus reducing latency. Surprisingly, this pipelining also improves effectiveness: because multi-step reasoning quality is non-uniform and early steps are more reliable than later ones, working with these reliable early steps instead of the full chain prevents error-prone late steps from misleading downstream agents. We formalize both advantages with the first closed-form joint analysis of stream, serial, and single protocols, deriving the effectiveness ordering, speedup upper bound, and cost ratio. Across eight reasoning benchmarks spanning mathematics, science, and code, two frontier LLMs (Claude Opus 4.6 and GPT-5.4), and three topologies (Chain, Tree, Graph), StreamMA outperforms both baselines (avg. +7.3 pp, max +22.4 pp on HMMT 2026; Claude Opus 4.6-high). Beyond these contributions, we discover a \"step-level scaling law\": increasing per-agent steps consistently improves both effectiveness and efficiency, a new scaling dimension orthogonal to and composable with agent-count scaling.",
+      "authors": [
+        "Zhen Yang",
+        "Xiaogang Xu",
+        "Wen Wang",
+        "Cong Chen",
+        "Xander Xu",
+        "Ying-Cong Chen"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.MA"
+      ],
+      "published_at": "2026-06-03T17:57:04+00:00",
+      "updated_at": "2026-06-03T17:57:04+00:00",
+      "primary_category": "cs.CL",
+      "heuristic_score": 17.539,
+      "summary": "Streaming Communication in Multi-Agent Reasoning 是最近值得追踪的一篇 AI 论文。论文摘要显示：Multi-agent reasoning systems adopt a \"generate-then-transfer\" paradigm that forces end-to-end latency to scale linearly with pipeline depth. We introduce StreamMA, a multi-agent reasoning system that streams each reasoning step to downstre...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CL, cs.AI",
+        "作者数: 6"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "llm",
+        "agent",
+        "gpt"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "agent"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：Streaming Communication in Multi-Agent Reasoning 是最近值得追踪的一篇 AI 论文。论文摘要显示：Multi-agent reasoning systems adopt a \"generate-then-transfer\" paradigm that forces end-to-end latency to scale linearly with pipeline depth. We introduce StreamMA, a multi-agent reasoning system that streams each reasoning step to downstre...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL, cs.AI\n- 作者数: 6",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 178.0,
+      "detail_path": "items/arxiv-streaming-communication-in-multi-agent-reasoning.html",
+      "first_seen_at": "2026-06-04T02:13:40.013150+00:00",
+      "last_seen_at": "2026-06-04T02:13:40.013150+00:00",
+      "last_curated_at": "2026-06-04T02:13:40.013150+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2606.05130v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Towards Efficient and Evidence-grounded Mobility Prediction with LLM-Driven Agent",
+      "html_url": "http://arxiv.org/abs/2606.05130v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.05130v1",
+      "description": "Individual-level mobility prediction is central to urban simulation, transportation planning, and policy analysis. Supervised sequence models achieve strong accuracy but require task-specific training and offer limited decision-level transparency. Recent LLM-based methods improve interpretability, yet mostly rely on static prompts and single-pass inference, limiting their ability to seek additional evidence when mobility signals are weak or conflicting. We propose \\method{}, a training-free LLM-driven agent framework that formulates next-location prediction as adaptive evidence-controlled decision making. \\method{} resolves routine cases through a fast path based on historical regularity, while ambiguous cases trigger iterative tool use over recent trajectories, historical behavior, stay-move likelihood, and geographical evidence. Across three mobility datasets, AgentMob achieves the strongest overall performance among training-free LLM-based methods, with GPT-5.4 reaching 71.42\\% Acc@1 on BW, 33.14\\% on YJMob100K, and 33.50\\% on Shanghai ISP. On BW non-fast-path cases, the LLM controller improves Acc@1 from 30.65\\% to 48.62\\% over a same-tool statistical baseline, showing that its main benefit lies in resolving ambiguous predictions through adaptive evidence gathering. Our code is available at https://github.com/Unknown-zoo/AgentMob.",
+      "authors": [
+        "Linyao Chen",
+        "Qinlao Zhao",
+        "Zechen Li",
+        "Mingming Li",
+        "Likun Ni",
+        "Jinyu Chen",
+        "Yuhao Yao",
+        "Xuan Song",
+        "Noboru Koshizuka",
+        "Hiroki Kobayashi"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "published_at": "2026-06-03T17:34:01+00:00",
+      "updated_at": "2026-06-03T17:34:01+00:00",
+      "primary_category": "cs.LG",
+      "heuristic_score": 19.995,
+      "summary": "Towards Efficient and Evidence-grounded Mobility Prediction with LLM-Driven Agent 是最近值得追踪的一篇 AI 论文。论文摘要显示：Individual-level mobility prediction is central to urban simulation, transportation planning, and policy analysis. Supervised sequence models achieve strong accuracy but require task-specific training and offer limited decision-level transp...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.LG, cs.AI",
+        "作者数: 10"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "llm",
+        "agent",
+        "gpt"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "agent"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：Towards Efficient and Evidence-grounded Mobility Prediction with LLM-Driven Agent 是最近值得追踪的一篇 AI 论文。论文摘要显示：Individual-level mobility prediction is central to urban simulation, transportation planning, and policy analysis. Supervised sequence models achieve strong accuracy but require task-specific training and offer limited decision-level transp...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.LG, cs.AI\n- 作者数: 10",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "inference",
+          "weight": 1.8
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 156.0,
+      "detail_path": "items/arxiv-towards-efficient-and-evidence-grounded-mobility-prediction-with-llm-driven-agent.html",
+      "first_seen_at": "2026-06-04T02:13:40.013150+00:00",
+      "last_seen_at": "2026-06-04T02:13:40.013150+00:00",
+      "last_curated_at": "2026-06-04T02:13:40.013150+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2606.05112v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Evaluating Large Language Models in Dynamic Clinical Decision-Making with Standardized Patient Cases",
+      "html_url": "http://arxiv.org/abs/2606.05112v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.05112v1",
+      "description": "Large language models (LLMs) are increasingly proposed as clinical agents, yet static, single-turn benchmarks cannot capture how a model dynamically delivers care across an encounter: gathering information, planning treatment, and adapting longitudinal management across successive patient states. Medical education has long addressed an analogous challenge through standardized patients (SPs): trained actors who consistently portray clinical cases, enabling realistic practice and objective, scripted assessment. Here we introduce MedSP1000, an SP-derived interactive benchmark for clinical-agent evaluation, including 1,638 SP cases with 24,602 trajectory-level peer-reviewed rubrics. MedSP1000 converts peer-reviewed SP teaching cases into executable scenarios with defined SP case scripts, clinical environment contexts, and human-validated structured rubric. In each simulation evaluation run, a clinical agent interacts in closed loop with a patient agent and an environment controller, and its behaviour is scored throughout the encounter against expert criteria specified in the original materials. Applying MedSP1000 to a range of general-purpose and medically specialized LLMs, we find that performance on static benchmarks does not reliably translate to such educational scenarios. The best-performing model, GPT-5.5, completes only 60.4% of expert-defined rubric items, whereas the strongest medically specialized model reaches 40.0%; increasing test-time compute produces no measurable gain. These results suggest that current LLMs, including agentic systems tuned for medicine, are not yet reliable enough to be safely integrated into actual clinical practice. More broadly, MedSP1000 shows how process-level, SP-style evaluation can reveal clinically relevant failure modes that single-turn benchmarks miss.",
+      "authors": [
+        "Cheng Liang",
+        "Pengcheng Qiu",
+        "Ya Zhang",
+        "Yanfeng Wang",
+        "Chaoyi Wu",
+        "Weidi Xie"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "published_at": "2026-06-03T17:17:16+00:00",
+      "updated_at": "2026-06-03T17:17:16+00:00",
+      "primary_category": "cs.CL",
+      "heuristic_score": 20.3,
+      "summary": "Evaluating Large Language Models in Dynamic Clinical Decision-Making with Standardized Patient Cases 是最近值得追踪的一篇 AI 论文。论文摘要显示：Large language models (LLMs) are increasingly proposed as clinical agents, yet static, single-turn benchmarks cannot capture how a model dynamically delivers care across an encounter: gathering information, planning treatment, and adapting ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CL",
+        "作者数: 6"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "llm",
+        "agent",
+        "agentic"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "agent"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：Evaluating Large Language Models in Dynamic Clinical Decision-Making with Standardized Patient Cases 是最近值得追踪的一篇 AI 论文。论文摘要显示：Large language models (LLMs) are increasingly proposed as clinical agents, yet static, single-turn benchmarks cannot capture how a model dynamically delivers care across an encounter: gathering information, planning treatment, and adapting ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL\n- 作者数: 6",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 154.0,
+      "detail_path": "items/arxiv-evaluating-large-language-models-in-dynamic-clinical-decision-making-with-standardized-pat.html",
+      "first_seen_at": "2026-06-04T02:13:40.013150+00:00",
+      "last_seen_at": "2026-06-04T02:13:40.013150+00:00",
+      "last_curated_at": "2026-06-04T02:13:40.013150+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2606.05104v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Knowledge Index of Noah's Ark",
+      "html_url": "http://arxiv.org/abs/2606.05104v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.05104v1",
+      "description": "Knowledge benchmarks for LLMs face three issues: scaling-driven designs that do not operationalize disciplinary representativeness; flat-payment annotation that permits lazy consensus; and unaudited ranking instability under bounded test budgets. We introduce KINA, an 899-item benchmark across 261 fine-grained disciplines, with two formal results. First, we cast representativeness as a coverage-style objective over expert-elicited anchors and operationalize disciplinary representativeness through a proxy, yielding a (1-1/e) greedy approximation (Proposition 1); the guarantee applies to the proxy, not to population representativeness. Second, we prove a bonus-on-bar tournament weakly FOSD-dominates flat payment in released-review quality, with incentive-compatibility threshold B > Delta C / Delta p_min (Theorem 1). Evaluating 42 models from 13 labs, the top model, Gemini-3.1-Pro-Preview, reaches 53.17%, followed by Claude-Opus-4.6 at 49.92% and GPT-5.4 at 48.55%, leaving substantial headroom below saturation. The full leaderboard shows a tiered structure rather than a smooth total order: a small frontier tier lies above 48%, a dense strong-model tier spans roughly 38-45%, and low-performing models remain only modestly above the 10% chance baseline. Tool augmentation adds up to 5.17 points across the five tool-use evaluations, with gains varying substantially across models. We report bootstrap ranking-stability statistics to make bounded-budget variance explicit and to discourage over-interpretation of adjacent ranks.",
+      "authors": [
+        "Sheng Jin",
+        "Minghao Liu",
+        "Yunze Xiao",
+        "Zeqi Zhou",
+        "Heli Qi",
+        "Yifan Yao",
+        "Meishu Song",
+        "Kaijing Ma",
+        "Xuan Zhang",
+        "Sicong Jiang",
+        "Yizhe Li",
+        "Ningshan Ma",
+        "Jie Wei",
+        "Ziniu Li",
+        "Minglai Yang",
+        "Bangya Liu",
+        "Yiming Liang",
+        "Xiao Fang",
+        "Qingcheng Zeng",
+        "Jiarui Liu",
+        "Rui Yang",
+        "Shen Yan",
+        "Wenhao Huang",
+        "Jiaheng Liu",
+        "Zihan Wang",
+        "Weihao Xuan",
+        "Ge Zhang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "published_at": "2026-06-03T17:06:49+00:00",
+      "updated_at": "2026-06-03T17:06:49+00:00",
+      "primary_category": "cs.AI",
+      "heuristic_score": 17.826,
+      "summary": "Knowledge Index of Noah's Ark 是最近值得追踪的一篇 AI 论文。论文摘要显示：Knowledge benchmarks for LLMs face three issues: scaling-driven designs that do not operationalize disciplinary representativeness; flat-payment annotation that permits lazy consensus; and unaudited ranking instability under bounded test bu...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.AI",
+        "作者数: 27"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "llm",
+        "gpt",
+        "rag"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "gpt"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：Knowledge Index of Noah's Ark 是最近值得追踪的一篇 AI 论文。论文摘要显示：Knowledge benchmarks for LLMs face three issues: scaling-driven designs that do not operationalize disciplinary representativeness; flat-payment annotation that permits lazy consensus; and unaudited ranking instability under bounded test bu...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI\n- 作者数: 27",
+      "focus_hits": [
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "rag",
+      "personalized_score": 146.0,
+      "detail_path": "items/arxiv-knowledge-index-of-noah-s-ark.html",
+      "first_seen_at": "2026-06-04T02:13:40.013150+00:00",
+      "last_seen_at": "2026-06-04T02:13:40.013150+00:00",
+      "last_curated_at": "2026-06-04T02:13:40.013150+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2606.05149v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "An Open-Source Two-Stage Computer Vision Pipeline for Fine-Grained Vehicle Classification using Vision Transformers",
+      "html_url": "http://arxiv.org/abs/2606.05149v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.05149v1",
+      "description": "Vehicle body type is a significant determinant of cyclist injury severity in overtaking crashes, yet automated tools for classifying vehicles into injury-risk-relevant categories from naturalistic roadway video do not exist in the open literature. Standard object detection benchmarks provide only coarse vehicle labels (car, truck, bus, motorcycle), while existing fine-grained recognition systems are trained on controlled imagery and lack evaluation for deployment robustness across recording sites. This paper presents an open-source two-stage computer vision pipeline combining a pre-trained RT-DETR detector for coarse vehicle localization with a fine-tuned Vision Transformer (ViT-Base/16) for six-category body-type classification: passenger car, SUV, pickup truck, minivan, large van, and commercial truck. A confidence-based abstention mechanism withholds Stage 2 predictions when softmax output falls below 0.60, producing unknown labels rather than silent misclassifications. Evaluated on 3,805 annotated overtaking events from a bicycle-lane corridor in Ann Arbor, Michigan (in-distribution), the pipeline achieved 0.94 accuracy with per-class F1 scores from 0.91 (minivan) to 0.97 (SUV). On an independent out-of-distribution evaluation of 311 events from an open cycling dataset without retraining, accuracy was 0.89. Three of four well-represented categories maintained F1 at or above 0.90 under domain shift. The largest degradation was observed for minivan (F1 = 0.72), driven by abstention rate rising from 2.4% to 25.0% rather than active misclassification, consistent with the mechanism propagating genuine model uncertainty. The full pipeline, including inference scripts, training code, evaluation utilities, and model weights, is released as open-source software to support reproducibility and reuse across roadside video archives and cycling safety research.",
+      "authors": [
+        "Gandhimathi Padmanaban",
+        "Fred Feng"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.LG",
+        "eess.IV"
+      ],
+      "published_at": "2026-06-03T17:53:33+00:00",
+      "updated_at": "2026-06-03T17:53:33+00:00",
+      "primary_category": "cs.CV",
+      "heuristic_score": 15.5,
+      "summary": "An Open-Source Two-Stage Computer Vision Pipeline for Fine-Grained Vehicle Classification using Vision Transformers 是最近值得追踪的一篇 AI 论文。论文摘要显示：Vehicle body type is a significant determinant of cyclist injury severity in overtaking crashes, yet automated tools for classifying vehicles into injury-risk-relevant categories from naturalistic roadway video do not exist in the open lite...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CV, cs.LG",
+        "作者数: 2"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 9,
+      "tags": [
+        "ai",
+        "model",
+        "benchmark",
+        "inference"
+      ],
+      "themes": [
+        "ai",
+        "model",
+        "benchmark"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：An Open-Source Two-Stage Computer Vision Pipeline for Fine-Grained Vehicle Classification using Vision Transformers 是最近值得追踪的一篇 AI 论文。论文摘要显示：Vehicle body type is a significant determinant of cyclist injury severity in overtaking crashes, yet automated tools for classifying vehicles into injury-risk-relevant categories from naturalistic roadway video do not exist in the open lite...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：9/10\n\n**亮点**：\n- 分类: cs.CV, cs.LG\n- 作者数: 2",
+      "focus_hits": [
+        {
+          "keyword": "inference",
+          "weight": 1.8
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "inference",
+      "personalized_score": 132.0,
+      "detail_path": "items/arxiv-an-open-source-two-stage-computer-vision-pipeline-for-fine-grained-vehicle-classification-.html",
+      "first_seen_at": "2026-06-04T02:13:40.013150+00:00",
+      "last_seen_at": "2026-06-04T02:13:40.013150+00:00",
+      "last_curated_at": "2026-06-04T02:13:40.013150+00:00",
+      "last_notified_at": null
+    },
     {
       "id": "github::chopratejas/headroom",
       "kind": "repo",
@@ -13,7 +445,7 @@
       "full_name": "chopratejas/headroom",
       "html_url": "https://github.com/chopratejas/headroom",
       "description": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60-95% fewer tokens, same answers. Library, proxy, MCP server.",
-      "stars": 7078,
+      "stars": 9925,
       "stars_today": 0,
       "language": "Python",
       "topics": [],
@@ -27,7 +459,7 @@
       "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
       "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
       "highlights": [
-        "Stars: 7078",
+        "Stars: 9925",
         "语言: Python"
       ],
       "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
@@ -41,7 +473,7 @@
         "rag"
       ],
       "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：chopratejas/headroom 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60-95% fewer tokens, same answers. Library, proxy, MCP server.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 7078\n- 语言: Python",
+      "summary_markdown": "**摘要**：chopratejas/headroom 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60-95% fewer tokens, same answers. Library, proxy, MCP server.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 9925\n- 语言: Python",
       "focus_hits": [
         {
           "keyword": "rag",
@@ -49,11 +481,77 @@
         }
       ],
       "primary_match": "rag",
-      "personalized_score": 104.83,
+      "personalized_score": 105.97,
       "detail_path": "items/github-chopratejas-headroom.html",
       "first_seen_at": "2026-06-03T02:15:19.484157+00:00",
-      "last_seen_at": "2026-06-03T05:08:22.176426+00:00",
-      "last_curated_at": "2026-06-03T05:08:22.176426+00:00",
+      "last_seen_at": "2026-06-04T02:13:40.013150+00:00",
+      "last_curated_at": "2026-06-04T02:13:40.013150+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2606.05109v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "RePercENT: Scaling Disentangled Representation Learning Beyond Two Modalities",
+      "html_url": "http://arxiv.org/abs/2606.05109v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.05109v1",
+      "description": "To leverage the full potential of multimodal data, we need representations that go beyond the state-of-the-art alignment and fusion approaches and exploit all cross-modal interactions without sacrificing modality-specific information. Learning disentangled representations is a principled way to identify these underlying shared and unique factors that are hidden in observational data. However, while multimodal disentanglement is a compelling paradigm, existing methods are largely confined to the two-modality regime due to its inherent scalability bottleneck. To address this, we propose RePercENT, a self-supervised framework designed to surpass these limitations and unlocks scalable pairwise disentanglement beyond two modalities. Through a multimodal `plug-and-play' architecture, our approach operates directly on pre-extracted embeddings, eliminating the need for extensive joint pre-training while making no assumptions regarding the underlying modalities or foundation model backbones. Moreover, we introduce a joint optimization objective for simultaneously deriving the shared and unique components, and provide formal theoretical guarantees that characterize the optimality of our solution. Across diverse modalities and tasks, RePercENT successfully recovers disentangled components while maintaining competitive performance and significantly reducing computational complexity.",
+      "authors": [
+        "Vasiliki Rizou",
+        "Pascal Frossard",
+        "Dorina Thanou"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "published_at": "2026-06-03T17:10:39+00:00",
+      "updated_at": "2026-06-03T17:10:39+00:00",
+      "primary_category": "cs.LG",
+      "heuristic_score": 15.241,
+      "summary": "RePercENT: Scaling Disentangled Representation Learning Beyond Two Modalities 是最近值得追踪的一篇 AI 论文。论文摘要显示：To leverage the full potential of multimodal data, we need representations that go beyond the state-of-the-art alignment and fusion approaches and exploit all cross-modal interactions without sacrificing modality-specific information. Learn...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.LG",
+        "作者数: 3"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 8,
+      "tags": [
+        "ai",
+        "rag",
+        "multimodal",
+        "model"
+      ],
+      "themes": [
+        "ai",
+        "rag",
+        "multimodal"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：RePercENT: Scaling Disentangled Representation Learning Beyond Two Modalities 是最近值得追踪的一篇 AI 论文。论文摘要显示：To leverage the full potential of multimodal data, we need representations that go beyond the state-of-the-art alignment and fusion approaches and exploit all cross-modal interactions without sacrificing modality-specific information. Learn...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：8/10\n\n**亮点**：\n- 分类: cs.LG\n- 作者数: 3",
+      "focus_hits": [
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        },
+        {
+          "keyword": "multimodal",
+          "weight": 2.0
+        }
+      ],
+      "primary_match": "rag",
+      "personalized_score": 130.0,
+      "detail_path": "items/arxiv-repercent-scaling-disentangled-representation-learning-beyond-two-modalities.html",
+      "first_seen_at": "2026-06-04T02:13:40.013150+00:00",
+      "last_seen_at": "2026-06-04T02:13:40.013150+00:00",
+      "last_curated_at": "2026-06-04T02:13:40.013150+00:00",
       "last_notified_at": null
     },
     {
@@ -68,7 +566,7 @@
       "full_name": "affaan-m/ECC",
       "html_url": "https://github.com/affaan-m/ECC",
       "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
-      "stars": 204326,
+      "stars": 205837,
       "stars_today": 0,
       "language": "JavaScript",
       "topics": [],
@@ -82,7 +580,7 @@
       "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
       "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
       "highlights": [
-        "Stars: 204326",
+        "Stars: 205837",
         "语言: JavaScript"
       ],
       "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
@@ -94,7 +592,7 @@
         "agent"
       ],
       "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：affaan-m/ECC 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 204326\n- 语言: JavaScript",
+      "summary_markdown": "**摘要**：affaan-m/ECC 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 205837\n- 语言: JavaScript",
       "focus_hits": [
         {
           "keyword": "agent",
@@ -105,8 +603,8 @@
       "personalized_score": 120.0,
       "detail_path": "items/github-affaan-m-ecc.html",
       "first_seen_at": "2026-05-26T01:48:59.427019+00:00",
-      "last_seen_at": "2026-06-03T05:08:22.176426+00:00",
-      "last_curated_at": "2026-06-03T05:08:22.176426+00:00",
+      "last_seen_at": "2026-06-04T02:13:40.013150+00:00",
+      "last_curated_at": "2026-06-04T02:13:40.013150+00:00",
       "last_notified_at": null
     },
     {
@@ -121,7 +619,7 @@
       "full_name": "nesquena/hermes-webui",
       "html_url": "https://github.com/nesquena/hermes-webui",
       "description": "Hermes WebUI: The best way to use Hermes Agent from the web or from your phone!",
-      "stars": 12686,
+      "stars": 13127,
       "stars_today": 0,
       "language": "Python",
       "topics": [],
@@ -135,7 +633,7 @@
       "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
       "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
       "highlights": [
-        "Stars: 12686",
+        "Stars: 13127",
         "语言: Python"
       ],
       "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
@@ -147,7 +645,7 @@
         "agent"
       ],
       "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：nesquena/hermes-webui 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Hermes WebUI: The best way to use Hermes Agent from the web or from your phone!结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 12686\n- 语言: Python",
+      "summary_markdown": "**摘要**：nesquena/hermes-webui 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Hermes WebUI: The best way to use Hermes Agent from the web or from your phone!结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 13127\n- 语言: Python",
       "focus_hits": [
         {
           "keyword": "agent",
@@ -155,11 +653,213 @@
         }
       ],
       "primary_match": "agent",
-      "personalized_score": 105.07,
+      "personalized_score": 105.25,
       "detail_path": "items/github-nesquena-hermes-webui.html",
       "first_seen_at": "2026-06-01T02:05:29.292894+00:00",
-      "last_seen_at": "2026-06-03T05:08:22.176426+00:00",
-      "last_curated_at": "2026-06-03T05:08:22.176426+00:00",
+      "last_seen_at": "2026-06-04T02:13:40.013150+00:00",
+      "last_curated_at": "2026-06-04T02:13:40.013150+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "github::Open-LLM-VTuber/Open-LLM-VTuber",
+      "kind": "repo",
+      "source": "github",
+      "source_tags": [
+        "trending"
+      ],
+      "name": "Open-LLM-VTuber",
+      "title": "Open-LLM-VTuber/Open-LLM-VTuber",
+      "full_name": "Open-LLM-VTuber/Open-LLM-VTuber",
+      "html_url": "https://github.com/Open-LLM-VTuber/Open-LLM-VTuber",
+      "description": "Talk to any LLM with hands-free voice interaction, voice interruption, and Live2D taking face running locally across platforms",
+      "stars": 8999,
+      "stars_today": 0,
+      "language": "Python",
+      "topics": [],
+      "created_at": "",
+      "updated_at": "",
+      "heuristic_score": 12.6,
+      "summary": "Open-LLM-VTuber/Open-LLM-VTuber 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Talk to any LLM with hands-free voice interaction, voice interruption, and Live2D taking face running locally across platforms结合关键词命中和热度信号，它适合加入今日重点观察列表。",
+      "brief": "这是一个值得快速关注的开源 AI 项目。",
+      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
+      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
+      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
+      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
+      "highlights": [
+        "Stars: 8999",
+        "语言: Python"
+      ],
+      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
+      "relevance_score": 7,
+      "tags": [
+        "llm"
+      ],
+      "themes": [
+        "llm"
+      ],
+      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
+      "summary_markdown": "**摘要**：Open-LLM-VTuber/Open-LLM-VTuber 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Talk to any LLM with hands-free voice interaction, voice interruption, and Live2D taking face running locally across platforms结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 8999\n- 语言: Python",
+      "focus_hits": [
+        {
+          "keyword": "voice",
+          "weight": 1.4
+        }
+      ],
+      "primary_match": "voice",
+      "personalized_score": 87.6,
+      "detail_path": "items/github-open-llm-vtuber-open-llm-vtuber.html",
+      "first_seen_at": "2026-06-03T02:15:19.484157+00:00",
+      "last_seen_at": "2026-06-04T02:13:40.013150+00:00",
+      "last_curated_at": "2026-06-04T02:13:40.013150+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "github::NousResearch/hermes-agent",
+      "kind": "repo",
+      "source": "github",
+      "source_tags": [
+        "trending"
+      ],
+      "name": "hermes-agent",
+      "title": "NousResearch/hermes-agent",
+      "full_name": "NousResearch/hermes-agent",
+      "html_url": "https://github.com/NousResearch/hermes-agent",
+      "description": "The agent that grows with you",
+      "stars": 179245,
+      "stars_today": 0,
+      "language": "Python",
+      "topics": [],
+      "created_at": "",
+      "updated_at": "",
+      "heuristic_score": 12.6,
+      "summary": "NousResearch/hermes-agent 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：The agent that grows with you结合关键词命中和热度信号，它适合加入今日重点观察列表。",
+      "brief": "这是一个值得快速关注的开源 AI 项目。",
+      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
+      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
+      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
+      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
+      "highlights": [
+        "Stars: 179245",
+        "语言: Python"
+      ],
+      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
+      "relevance_score": 7,
+      "tags": [
+        "agent"
+      ],
+      "themes": [
+        "agent"
+      ],
+      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
+      "summary_markdown": "**摘要**：NousResearch/hermes-agent 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：The agent that grows with you结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 179245\n- 语言: Python",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 120.0,
+      "detail_path": "items/github-nousresearch-hermes-agent.html",
+      "first_seen_at": "2026-06-04T02:13:40.013150+00:00",
+      "last_seen_at": "2026-06-04T02:13:40.013150+00:00",
+      "last_curated_at": "2026-06-04T02:13:40.013150+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "github::aquasecurity/trivy",
+      "kind": "repo",
+      "source": "github",
+      "source_tags": [
+        "trending"
+      ],
+      "name": "trivy",
+      "title": "aquasecurity/trivy",
+      "full_name": "aquasecurity/trivy",
+      "html_url": "https://github.com/aquasecurity/trivy",
+      "description": "Find vulnerabilities, misconfigurations, secrets, SBOM in containers, Kubernetes, code repositories, clouds and more",
+      "stars": 35427,
+      "stars_today": 0,
+      "language": "Go",
+      "topics": [],
+      "created_at": "",
+      "updated_at": "",
+      "heuristic_score": 12.6,
+      "summary": "aquasecurity/trivy 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Find vulnerabilities, misconfigurations, secrets, SBOM in containers, Kubernetes, code repositories, clouds and more结合关键词命中和热度信号，它适合加入今日重点观察列表。",
+      "brief": "这是一个值得快速关注的开源 AI 项目。",
+      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
+      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
+      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
+      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
+      "highlights": [
+        "Stars: 35427",
+        "语言: Go"
+      ],
+      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
+      "relevance_score": 7,
+      "tags": [
+        "ai"
+      ],
+      "themes": [
+        "ai"
+      ],
+      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
+      "summary_markdown": "**摘要**：aquasecurity/trivy 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Find vulnerabilities, misconfigurations, secrets, SBOM in containers, Kubernetes, code repositories, clouds and more结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 35427\n- 语言: Go",
+      "focus_hits": [],
+      "primary_match": "",
+      "personalized_score": 84.17,
+      "detail_path": "items/github-aquasecurity-trivy.html",
+      "first_seen_at": "2026-06-04T02:13:40.013150+00:00",
+      "last_seen_at": "2026-06-04T02:13:40.013150+00:00",
+      "last_curated_at": "2026-06-04T02:13:40.013150+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "github::opendataloader-project/opendataloader-pdf",
+      "kind": "repo",
+      "source": "github",
+      "source_tags": [
+        "trending"
+      ],
+      "name": "opendataloader-pdf",
+      "title": "opendataloader-project/opendataloader-pdf",
+      "full_name": "opendataloader-project/opendataloader-pdf",
+      "html_url": "https://github.com/opendataloader-project/opendataloader-pdf",
+      "description": "PDF Parser for AI-ready data. Automate PDF accessibility. Open-source.",
+      "stars": 23334,
+      "stars_today": 0,
+      "language": "Java",
+      "topics": [],
+      "created_at": "",
+      "updated_at": "",
+      "heuristic_score": 12.6,
+      "summary": "opendataloader-project/opendataloader-pdf 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：PDF Parser for AI-ready data. Automate PDF accessibility. Open-source.结合关键词命中和热度信号，它适合加入今日重点观察列表。",
+      "brief": "这是一个值得快速关注的开源 AI 项目。",
+      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
+      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
+      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
+      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
+      "highlights": [
+        "Stars: 23334",
+        "语言: Java"
+      ],
+      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
+      "relevance_score": 7,
+      "tags": [
+        "ai"
+      ],
+      "themes": [
+        "ai"
+      ],
+      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
+      "summary_markdown": "**摘要**：opendataloader-project/opendataloader-pdf 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：PDF Parser for AI-ready data. Automate PDF accessibility. Open-source.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 23334\n- 语言: Java",
+      "focus_hits": [],
+      "primary_match": "",
+      "personalized_score": 79.33,
+      "detail_path": "items/github-opendataloader-project-opendataloader-pdf.html",
+      "first_seen_at": "2026-06-04T02:13:40.013150+00:00",
+      "last_seen_at": "2026-06-04T02:13:40.013150+00:00",
+      "last_curated_at": "2026-06-04T02:13:40.013150+00:00",
       "last_notified_at": null
     },
     {
@@ -206,59 +906,6 @@
       "personalized_score": 79.91,
       "detail_path": "items/github-supermemoryai-supermemory.html",
       "first_seen_at": "2026-06-01T02:05:29.292894+00:00",
-      "last_seen_at": "2026-06-03T05:08:22.176426+00:00",
-      "last_curated_at": "2026-06-03T05:08:22.176426+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "github::Open-LLM-VTuber/Open-LLM-VTuber",
-      "kind": "repo",
-      "source": "github",
-      "source_tags": [
-        "trending"
-      ],
-      "name": "Open-LLM-VTuber",
-      "title": "Open-LLM-VTuber/Open-LLM-VTuber",
-      "full_name": "Open-LLM-VTuber/Open-LLM-VTuber",
-      "html_url": "https://github.com/Open-LLM-VTuber/Open-LLM-VTuber",
-      "description": "Talk to any LLM with hands-free voice interaction, voice interruption, and Live2D taking face running locally across platforms",
-      "stars": 8502,
-      "stars_today": 0,
-      "language": "Python",
-      "topics": [],
-      "created_at": "",
-      "updated_at": "",
-      "heuristic_score": 12.6,
-      "summary": "Open-LLM-VTuber/Open-LLM-VTuber 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Talk to any LLM with hands-free voice interaction, voice interruption, and Live2D taking face running locally across platforms结合关键词命中和热度信号，它适合加入今日重点观察列表。",
-      "brief": "这是一个值得快速关注的开源 AI 项目。",
-      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
-      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
-      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
-      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
-      "highlights": [
-        "Stars: 8502",
-        "语言: Python"
-      ],
-      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
-      "relevance_score": 7,
-      "tags": [
-        "llm"
-      ],
-      "themes": [
-        "llm"
-      ],
-      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：Open-LLM-VTuber/Open-LLM-VTuber 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Talk to any LLM with hands-free voice interaction, voice interruption, and Live2D taking face running locally across platforms结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 8502\n- 语言: Python",
-      "focus_hits": [
-        {
-          "keyword": "voice",
-          "weight": 1.4
-        }
-      ],
-      "primary_match": "voice",
-      "personalized_score": 87.4,
-      "detail_path": "items/github-open-llm-vtuber-open-llm-vtuber.html",
-      "first_seen_at": "2026-06-03T02:15:19.484157+00:00",
       "last_seen_at": "2026-06-03T05:08:22.176426+00:00",
       "last_curated_at": "2026-06-03T05:08:22.176426+00:00",
       "last_notified_at": null
@@ -11405,6 +12052,32 @@
   ],
   "digests": [
     {
+      "date": "2026-06-04",
+      "title": "AI Daily Digest · 2026-06-04",
+      "generated_at": "2026-06-04T10:12:15.541406+08:00",
+      "notified_at": null,
+      "repo_ids": [
+        "github::lyogavin/airllm",
+        "github::affaan-m/ECC",
+        "github::NousResearch/hermes-agent",
+        "github::chopratejas/headroom",
+        "github::nesquena/hermes-webui",
+        "github::Open-LLM-VTuber/Open-LLM-VTuber",
+        "github::aquasecurity/trivy",
+        "github::opendataloader-project/opendataloader-pdf"
+      ],
+      "paper_ids": [
+        "arxiv::http://arxiv.org/abs/2606.05158v1",
+        "arxiv::http://arxiv.org/abs/2606.05130v1",
+        "arxiv::http://arxiv.org/abs/2606.05112v1",
+        "arxiv::http://arxiv.org/abs/2606.05104v1",
+        "arxiv::http://arxiv.org/abs/2606.05149v1",
+        "arxiv::http://arxiv.org/abs/2606.05109v1"
+      ],
+      "digest_json": "data/digests/2026-06-04.json",
+      "digest_markdown": "data/digests/2026-06-04.md"
+    },
+    {
       "date": "2026-06-03",
       "title": "AI Daily Digest · 2026-06-03",
       "generated_at": "2026-06-03T13:07:53.248533+08:00",
@@ -12638,8 +13311,8 @@
     "weekly": {
       "label": "周报",
       "window_days": 7,
-      "generated_at": "2026-06-03T13:07:53.248533+08:00",
-      "count": 42,
+      "generated_at": "2026-06-04T10:12:15.541406+08:00",
+      "count": 52,
       "summary": "近 7 天里，最集中的主题是 ai、agent、llm。",
       "top_items": [
         {
@@ -13044,6 +13717,81 @@
           "last_notified_at": null
         },
         {
+          "id": "arxiv::http://arxiv.org/abs/2606.05158v1",
+          "kind": "paper",
+          "source": "arxiv",
+          "source_tags": [
+            "latest"
+          ],
+          "title": "Streaming Communication in Multi-Agent Reasoning",
+          "html_url": "http://arxiv.org/abs/2606.05158v1",
+          "pdf_url": "https://arxiv.org/pdf/2606.05158v1",
+          "description": "Multi-agent reasoning systems adopt a \"generate-then-transfer\" paradigm that forces end-to-end latency to scale linearly with pipeline depth. We introduce StreamMA, a multi-agent reasoning system that streams each reasoning step to downstream agents as soon as it is generated, pipelining adjacent agents and thus reducing latency. Surprisingly, this pipelining also improves effectiveness: because multi-step reasoning quality is non-uniform and early steps are more reliable than later ones, working with these reliable early steps instead of the full chain prevents error-prone late steps from misleading downstream agents. We formalize both advantages with the first closed-form joint analysis of stream, serial, and single protocols, deriving the effectiveness ordering, speedup upper bound, and cost ratio. Across eight reasoning benchmarks spanning mathematics, science, and code, two frontier LLMs (Claude Opus 4.6 and GPT-5.4), and three topologies (Chain, Tree, Graph), StreamMA outperforms both baselines (avg. +7.3 pp, max +22.4 pp on HMMT 2026; Claude Opus 4.6-high). Beyond these contributions, we discover a \"step-level scaling law\": increasing per-agent steps consistently improves both effectiveness and efficiency, a new scaling dimension orthogonal to and composable with agent-count scaling.",
+          "authors": [
+            "Zhen Yang",
+            "Xiaogang Xu",
+            "Wen Wang",
+            "Cong Chen",
+            "Xander Xu",
+            "Ying-Cong Chen"
+          ],
+          "categories": [
+            "cs.CL",
+            "cs.AI",
+            "cs.MA"
+          ],
+          "published_at": "2026-06-03T17:57:04+00:00",
+          "updated_at": "2026-06-03T17:57:04+00:00",
+          "primary_category": "cs.CL",
+          "heuristic_score": 17.539,
+          "summary": "Streaming Communication in Multi-Agent Reasoning 是最近值得追踪的一篇 AI 论文。论文摘要显示：Multi-agent reasoning systems adopt a \"generate-then-transfer\" paradigm that forces end-to-end latency to scale linearly with pipeline depth. We introduce StreamMA, a multi-agent reasoning system that streams each reasoning step to downstre...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+          "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+          "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+          "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+          "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+          "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+          "highlights": [
+            "分类: cs.CL, cs.AI",
+            "作者数: 6"
+          ],
+          "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+          "relevance_score": 10,
+          "tags": [
+            "ai",
+            "llm",
+            "agent",
+            "gpt"
+          ],
+          "themes": [
+            "ai",
+            "llm",
+            "agent"
+          ],
+          "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+          "summary_markdown": "**摘要**：Streaming Communication in Multi-Agent Reasoning 是最近值得追踪的一篇 AI 论文。论文摘要显示：Multi-agent reasoning systems adopt a \"generate-then-transfer\" paradigm that forces end-to-end latency to scale linearly with pipeline depth. We introduce StreamMA, a multi-agent reasoning system that streams each reasoning step to downstre...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL, cs.AI\n- 作者数: 6",
+          "focus_hits": [
+            {
+              "keyword": "agent",
+              "weight": 3.0
+            },
+            {
+              "keyword": "reasoning",
+              "weight": 2.4
+            },
+            {
+              "keyword": "benchmark",
+              "weight": 1.6
+            }
+          ],
+          "primary_match": "agent",
+          "personalized_score": 178.0,
+          "detail_path": "items/arxiv-streaming-communication-in-multi-agent-reasoning.html",
+          "first_seen_at": "2026-06-04T02:13:40.013150+00:00",
+          "last_seen_at": "2026-06-04T02:13:40.013150+00:00",
+          "last_curated_at": "2026-06-04T02:13:40.013150+00:00",
+          "last_notified_at": null
+        },
+        {
           "id": "github::anthropics/claude-code",
           "kind": "repo",
           "source": "github",
@@ -13183,80 +13931,6 @@
           "last_seen_at": "2026-06-02T04:58:14.271123+00:00",
           "last_curated_at": "2026-06-02T04:58:14.271123+00:00",
           "last_notified_at": null
-        },
-        {
-          "id": "arxiv::http://arxiv.org/abs/2606.02578v1",
-          "kind": "paper",
-          "source": "arxiv",
-          "source_tags": [
-            "latest"
-          ],
-          "title": "Mitigating Perceptual Judgment Bias in Multimodal LLM-as-a-Judge via Perceptual Perturbation and Reward Modeling",
-          "html_url": "http://arxiv.org/abs/2606.02578v1",
-          "pdf_url": "https://arxiv.org/pdf/2606.02578v1",
-          "description": "Recent multimodal large language models have demonstrated strong reasoning ability, yet their reliability as automated evaluators remains limited by a critical weakness: when visual evidence conflicts with textual cues, MLLM judges tend to reward plausible narratives over perceptually correct answers. We identify and systematically analyze this phenomenon, which we term Perceptual Judgment Bias. Through controlled visual perturbations, existing multimodal judges frequently anchor on the response text instead of their own visual perception, leading to inconsistent and non-verifiable evaluations. To address this issue, we introduce the Perceptually Perturbed Judgment Dataset, which constructs minimally edited counterfactual responses that isolate perceptual errors and enable verifiable supervision. Building on this dataset, we develop a unified training framework that combines a structured GRPO-based reward with a batch-ranking objective, achieving coherent global ordering without explicit pairwise labels. Experiments across diverse MLLM-as-a-Judge benchmarks show that our approach substantially improves perceptual fidelity, ranking coherence, and alignment with human evaluation. Our results establish a scalable and generalizable pathway for training multimodal judges that are perceptually grounded, interpretable, and robust to visual-reasoning conflicts.",
-          "authors": [
-            "Seojeong Park",
-            "Jiho Choi",
-            "Junyong Kang",
-            "Seonho Lee",
-            "Jaeyo Shin",
-            "Hyunjung Shim"
-          ],
-          "categories": [
-            "cs.CV",
-            "cs.AI"
-          ],
-          "published_at": "2026-06-01T17:59:46+00:00",
-          "updated_at": "2026-06-01T17:59:46+00:00",
-          "primary_category": "cs.CV",
-          "heuristic_score": 20.019,
-          "summary": "Mitigating Perceptual Judgment Bias in Multimodal LLM-as-a-Judge via Perceptual Perturbation and Reward Modeling 是最近值得追踪的一篇 AI 论文。论文摘要显示：Recent multimodal large language models have demonstrated strong reasoning ability, yet their reliability as automated evaluators remains limited by a critical weakness: when visual evidence conflicts with textual cues, MLLM judges tend to ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-          "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-          "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-          "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-          "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-          "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-          "highlights": [
-            "分类: cs.CV, cs.AI",
-            "作者数: 6"
-          ],
-          "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-          "relevance_score": 10,
-          "tags": [
-            "ai",
-            "llm",
-            "multimodal",
-            "model"
-          ],
-          "themes": [
-            "ai",
-            "llm",
-            "multimodal"
-          ],
-          "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-          "summary_markdown": "**摘要**：Mitigating Perceptual Judgment Bias in Multimodal LLM-as-a-Judge via Perceptual Perturbation and Reward Modeling 是最近值得追踪的一篇 AI 论文。论文摘要显示：Recent multimodal large language models have demonstrated strong reasoning ability, yet their reliability as automated evaluators remains limited by a critical weakness: when visual evidence conflicts with textual cues, MLLM judges tend to ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV, cs.AI\n- 作者数: 6",
-          "focus_hits": [
-            {
-              "keyword": "reasoning",
-              "weight": 2.4
-            },
-            {
-              "keyword": "multimodal",
-              "weight": 2.0
-            },
-            {
-              "keyword": "benchmark",
-              "weight": 1.6
-            }
-          ],
-          "primary_match": "reasoning",
-          "personalized_score": 168.0,
-          "detail_path": "items/arxiv-mitigating-perceptual-judgment-bias-in-multimodal-llm-as-a-judge-via-perceptual-perturbati.html",
-          "first_seen_at": "2026-06-02T04:58:14.271123+00:00",
-          "last_seen_at": "2026-06-02T04:58:14.271123+00:00",
-          "last_curated_at": "2026-06-02T04:58:14.271123+00:00",
-          "last_notified_at": null
         }
       ],
       "top_themes": [
@@ -13294,8 +13968,8 @@
     "monthly": {
       "label": "月报",
       "window_days": 30,
-      "generated_at": "2026-06-03T13:07:53.248533+08:00",
-      "count": 178,
+      "generated_at": "2026-06-04T10:12:15.541406+08:00",
+      "count": 188,
       "summary": "近 30 天里，最集中的主题是 ai、agent、llm。",
       "top_items": [
         {
