@@ -1,9 +1,9 @@
 {
   "label": "月报",
   "window_days": 30,
-  "generated_at": "2026-06-08T12:58:48.037087+08:00",
-  "count": 172,
-  "summary": "近 30 天里，最集中的主题是 ai、agent、llm。",
+  "generated_at": "2026-06-09T09:44:43.582478+08:00",
+  "count": 179,
+  "summary": "近 30 天里，最集中的主题是 ai、llm、agent。",
   "top_items": [
     {
       "id": "arxiv::http://arxiv.org/abs/2605.14859v1",
@@ -344,6 +344,83 @@
       "last_notified_at": null
     },
     {
+      "id": "arxiv::http://arxiv.org/abs/2606.08596v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Distilling LLM Reasoning into an Interpretable Policy Tree for Human-AI Collaboration",
+      "html_url": "http://arxiv.org/abs/2606.08596v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.08596v1",
+      "description": "Constructing efficient and reliable policies to assist humans is indispensable for human-AI collaboration. Existing methods mainly follow two lines of work. Most prior work relies on multi-agent reinforcement learning (MARL) to learn black-box policies, which limits interpretability and raises safety concerns. Recent methods query large language models (LLMs) at each decision step, causing slow responses and high inference costs. We propose Collaboration Policy Tree (Co-pi-tree), a closed-loop method that learns an executable policy tree consisting of a partner-behavior prediction tree and an agent-action selection tree. Co-pi-tree constructs a policy by distilling LLM reasoning into policy tree code. It then evaluates the policy through partner interaction, obtains feedback, and uses natural language to summarize the interaction feedback to improve problematic branches. Experiments in Overcooked-AI show that Co-pi-tree improves average reward by 35.4% over the baseline average, while reducing the number of LLM queries by 77.7% and test-time latency by 97.1%. Project page: https://beiwenzhang.github.io/Co-pi-tree/",
+      "authors": [
+        "Beiwen Zhang",
+        "Yongheng Liang",
+        "Guowei Zou",
+        "Haitao Wang",
+        "Hejun Wu"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.HC"
+      ],
+      "published_at": "2026-06-07T12:20:32+00:00",
+      "updated_at": "2026-06-07T12:20:32+00:00",
+      "primary_category": "cs.AI",
+      "heuristic_score": 19.714,
+      "summary": "Distilling LLM Reasoning into an Interpretable Policy Tree for Human-AI Collaboration 是最近值得追踪的一篇 AI 论文。论文摘要显示：Constructing efficient and reliable policies to assist humans is indispensable for human-AI collaboration. Existing methods mainly follow two lines of work. Most prior work relies on multi-agent reinforcement learning (MARL) to learn black-...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.AI, cs.HC",
+        "作者数: 5"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "llm",
+        "agent",
+        "rag"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "agent"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：Distilling LLM Reasoning into an Interpretable Policy Tree for Human-AI Collaboration 是最近值得追踪的一篇 AI 论文。论文摘要显示：Constructing efficient and reliable policies to assist humans is indispensable for human-AI collaboration. Existing methods mainly follow two lines of work. Most prior work relies on multi-agent reinforcement learning (MARL) to learn black-...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI, cs.HC\n- 作者数: 5",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        },
+        {
+          "keyword": "inference",
+          "weight": 1.8
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 202.0,
+      "detail_path": "items/arxiv-distilling-llm-reasoning-into-an-interpretable-policy-tree-for-human-ai-collaboration.html",
+      "first_seen_at": "2026-06-09T01:44:49.812790+00:00",
+      "last_seen_at": "2026-06-09T01:44:49.812790+00:00",
+      "last_curated_at": "2026-06-09T01:44:49.812790+00:00",
+      "last_notified_at": null
+    },
+    {
       "id": "arxiv::http://arxiv.org/abs/2605.15187v1",
       "kind": "paper",
       "source": "arxiv",
@@ -581,84 +658,6 @@
       "last_seen_at": "2026-06-06T04:18:02.749951+00:00",
       "last_curated_at": "2026-06-06T04:18:02.749951+00:00",
       "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2605.28814v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "Self-Improving Language Models with Bidirectional Evolutionary Search",
-      "html_url": "http://arxiv.org/abs/2605.28814v1",
-      "pdf_url": "https://arxiv.org/pdf/2605.28814v1",
-      "description": "Search has been proposed as an effective method for self-improving language models and agentic systems, both for post-training sample generation and for inference. However, widely used methods such as best-of-N sampling and tree search face two fundamental limitations: they are guided by sparse verification signals, and they construct candidates primarily through autoregressive expansion, restricting exploration to regions with substantial model probability mass. To address these, we propose Bidirectional Evolutionary Search (BES), a search framework that couples forward candidate evolution with backward goal decomposition. In the forward search, BES augments standard expansion with evolution operators that recombine partial trajectories to generate candidates that are difficult to obtain from a single model rollout. In the backward search, BES recursively decomposes the original task into checkable subgoals, producing dense intermediate feedback that guides forward search. We provide theoretical motivation showing that candidates generated by expansion-only search are confined to a narrow entropy shell while evolutionary operators can escape it, and that backward search can exponentially reduce the number of required samples to find a correct answer. Experiments show that on challenging post-training tasks where mainstream post-training algorithms fail to improve, BES enables consistent gains, and on three open problem solving benchmarks at inference time, BES outperforms existing open-source frameworks in both average and best-case performance. Code and trained models are available at https://github.com/Embodied-Minds-Lab/BES.",
-      "authors": [
-        "Guowei Xu",
-        "Zhenting Qi",
-        "Huangyuan Su",
-        "Weirui Ye",
-        "Himabindu Lakkaraju",
-        "Sham M. Kakade",
-        "Yilun Du"
-      ],
-      "categories": [
-        "cs.CL"
-      ],
-      "published_at": "2026-05-27T17:59:15+00:00",
-      "updated_at": "2026-05-27T17:59:15+00:00",
-      "primary_category": "cs.CL",
-      "heuristic_score": 22.7,
-      "summary": "Self-Improving Language Models with Bidirectional Evolutionary Search 是最近值得追踪的一篇 AI 论文。论文摘要显示：Search has been proposed as an effective method for self-improving language models and agentic systems, both for post-training sample generation and for inference. However, widely used methods such as best-of-N sampling and tree search face...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CL",
-        "作者数: 7"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "agent",
-        "agentic",
-        "rag"
-      ],
-      "themes": [
-        "ai",
-        "agent",
-        "agentic"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：Self-Improving Language Models with Bidirectional Evolutionary Search 是最近值得追踪的一篇 AI 论文。论文摘要显示：Search has been proposed as an effective method for self-improving language models and agentic systems, both for post-training sample generation and for inference. However, widely used methods such as best-of-N sampling and tree search face...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL\n- 作者数: 7",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "inference",
-          "weight": 1.8
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 194.0,
-      "detail_path": "items/arxiv-self-improving-language-models-with-bidirectional-evolutionary-search.html",
-      "first_seen_at": "2026-05-28T04:36:05.094729+00:00",
-      "last_seen_at": "2026-05-28T04:36:05.094729+00:00",
-      "last_curated_at": "2026-05-28T04:36:05.094729+00:00",
-      "last_notified_at": null
     }
   ],
   "top_themes": [
@@ -667,12 +666,12 @@
       "count": 8
     },
     {
-      "theme": "agent",
-      "count": 4
+      "theme": "llm",
+      "count": 5
     },
     {
-      "theme": "llm",
-      "count": 4
+      "theme": "agent",
+      "count": 3
     }
   ],
   "highlights": [
