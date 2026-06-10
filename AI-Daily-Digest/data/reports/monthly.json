@@ -1,8 +1,8 @@
 {
   "label": "月报",
   "window_days": 30,
-  "generated_at": "2026-06-10T09:55:00.942796+08:00",
-  "count": 186,
+  "generated_at": "2026-06-10T12:42:59.597046+08:00",
+  "count": 187,
   "summary": "近 30 天里，最集中的主题是 ai、llm、agent。",
   "top_items": [
     {
@@ -576,62 +576,62 @@
       "personalized_score": 200.0,
       "detail_path": "items/arxiv-role-agent-bootstrapping-llm-agents-via-dual-role-evolution.html",
       "first_seen_at": "2026-06-10T01:55:07.498376+00:00",
-      "last_seen_at": "2026-06-10T01:55:07.498376+00:00",
-      "last_curated_at": "2026-06-10T01:55:07.498376+00:00",
+      "last_seen_at": "2026-06-10T04:43:07.072779+00:00",
+      "last_curated_at": "2026-06-10T04:43:07.072779+00:00",
       "last_notified_at": null
     },
     {
-      "id": "arxiv::http://arxiv.org/abs/2605.17255v1",
+      "id": "arxiv::http://arxiv.org/abs/2606.11150v1",
       "kind": "paper",
       "source": "arxiv",
       "source_tags": [
         "latest"
       ],
-      "title": "CAM-Bench: A Benchmark for Computational and Applied Mathematics in Lean",
-      "html_url": "http://arxiv.org/abs/2605.17255v1",
-      "pdf_url": "https://arxiv.org/pdf/2605.17255v1",
-      "description": "Formal theorem-proving benchmarks enable mechanically verifiable evaluation of mathematical reasoning in large language models. However, existing benchmarks mainly focus on Olympiad-style problems and algebraic domains, leaving computational and applied mathematics underrepresented. We introduce CAM-Bench, a Lean 4 theorem-proving benchmark of 1,000 Lean proof targets in computational and applied mathematics, with coverage spanning optimization, numerical linear algebra, and numerical analysis. These problems are adapted from textbook exercises and often depend on locally introduced definitions, notation, algorithms, and elementary results. To construct CAM-Bench, we develop a dependency-recovery pipeline that reconstructs the local textbook context needed to state each problem faithfully. It then normalizes each problem into a standalone informal theorem and translates it into a Lean target. We validate the resulting formal problems through Lean compilation and semantic review, checking both formal correctness and semantic alignment with the original exercises. For each problem, we release the raw exercise, recovered context, normalized informal theorem, and final Lean target. CAM-Bench complements existing formal mathematics benchmarks by targeting applied mathematics problems that rely on textbook concepts and elementary theorems, many of which are not directly available as standard Mathlib4 lemmas. We evaluate widely used large language models and formalization agents on CAM-Bench, and analyze common failure modes in tracking local assumptions, applying elementary results, decomposing proofs, and maintaining long-horizon control in Lean.",
+      "title": "ABC-Bench: An Agentic Bio-Capabilities Benchmark for Biosecurity",
+      "html_url": "http://arxiv.org/abs/2606.11150v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.11150v1",
+      "description": "Large language models (LLMs) are rapidly acquiring capabilities relevant to biological research, from literature synthesis to interpretation of experimental data. Increasingly, LLM agents can also perform in silico biology tasks that previously required experienced human biologists. These emerging AI capabilities offer new opportunities for scientific discovery and biomedical advances, but they also shift the landscape of biosecurity risks. To address this, we introduce the Agentic Bio-Capabilities Benchmark (ABC-Bench), a suite of tasks to measure agentic biosecurity-relevant capabilities. ABC-Bench evaluates LLM agents on both benign and dual-use biology tasks: writing code to operate liquid handling robots, designing DNA fragments for in vitro assembly, and evading DNA synthesis screening. These tasks require a combination of biology and software expertise. All tested LLM agents outperformed the median expert human baseliner on all three tasks. Agents performed highly on tasks drawing on published knowledge and well-documented protocols, and more weakly on a task requiring novel bioinformatics reasoning. In three wet-lab validation experiments, we found that OpenAI's o4-mini-high produced scripts that, when run on an OpenTrons liquid handling robot, successfully assembled DNA with expected sequences.",
       "authors": [
-        "Wentao Long",
-        "Yunfei Zhang",
-        "Chenyi Li",
-        "Li Zhou",
-        "Chumin Sun",
-        "Zaiwen Wen"
+        "Andrew Bo Liu",
+        "Samira Nedungadi",
+        "Bryce Cai",
+        "Alex Kleinman",
+        "Harmon Bhasin",
+        "Seth Donoughe"
       ],
       "categories": [
         "cs.AI",
-        "math.OC"
+        "cs.CY"
       ],
-      "published_at": "2026-05-17T04:53:47+00:00",
-      "updated_at": "2026-05-17T04:53:47+00:00",
+      "published_at": "2026-06-09T17:35:37+00:00",
+      "updated_at": "2026-06-09T17:35:37+00:00",
       "primary_category": "cs.AI",
-      "heuristic_score": 17.9,
-      "summary": "CAM-Bench: A Benchmark for Computational and Applied Mathematics in Lean 是最近值得追踪的一篇 AI 论文。论文摘要显示：Formal theorem-proving benchmarks enable mechanically verifiable evaluation of mathematical reasoning in large language models. However, existing benchmarks mainly focus on Olympiad-style problems and algebraic domains, leaving computationa...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "heuristic_score": 22.355,
+      "summary": "ABC-Bench: An Agentic Bio-Capabilities Benchmark for Biosecurity 是最近值得追踪的一篇 AI 论文。论文摘要显示：Large language models (LLMs) are rapidly acquiring capabilities relevant to biological research, from literature synthesis to interpretation of experimental data. Increasingly, LLM agents can also perform in silico biology tasks that previo...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
       "brief": "这是一篇值得加入今日论文雷达的最新工作。",
       "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
       "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
       "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
       "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
       "highlights": [
-        "分类: cs.AI, math.OC",
+        "分类: cs.AI, cs.CY",
         "作者数: 6"
       ],
       "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
       "relevance_score": 10,
       "tags": [
         "ai",
+        "llm",
         "agent",
-        "rag",
-        "model"
+        "agentic"
       ],
       "themes": [
         "ai",
-        "agent",
-        "rag"
+        "llm",
+        "agent"
       ],
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：CAM-Bench: A Benchmark for Computational and Applied Mathematics in Lean 是最近值得追踪的一篇 AI 论文。论文摘要显示：Formal theorem-proving benchmarks enable mechanically verifiable evaluation of mathematical reasoning in large language models. However, existing benchmarks mainly focus on Olympiad-style problems and algebraic domains, leaving computationa...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI, math.OC\n- 作者数: 6",
+      "summary_markdown": "**摘要**：ABC-Bench: An Agentic Bio-Capabilities Benchmark for Biosecurity 是最近值得追踪的一篇 AI 论文。论文摘要显示：Large language models (LLMs) are rapidly acquiring capabilities relevant to biological research, from literature synthesis to interpretation of experimental data. Increasingly, LLM agents can also perform in silico biology tasks that previo...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI, cs.CY\n- 作者数: 6",
       "focus_hits": [
         {
           "keyword": "agent",
@@ -652,10 +652,10 @@
       ],
       "primary_match": "agent",
       "personalized_score": 200.0,
-      "detail_path": "items/arxiv-cam-bench-a-benchmark-for-computational-and-applied-mathematics-in-lean.html",
-      "first_seen_at": "2026-05-19T01:52:44.713452+00:00",
-      "last_seen_at": "2026-05-19T04:23:07.034991+00:00",
-      "last_curated_at": "2026-05-19T04:23:07.034991+00:00",
+      "detail_path": "items/arxiv-abc-bench-an-agentic-bio-capabilities-benchmark-for-biosecurity.html",
+      "first_seen_at": "2026-06-10T04:43:07.072779+00:00",
+      "last_seen_at": "2026-06-10T04:43:07.072779+00:00",
+      "last_curated_at": "2026-06-10T04:43:07.072779+00:00",
       "last_notified_at": null
     }
   ],
@@ -666,11 +666,11 @@
     },
     {
       "theme": "llm",
-      "count": 5
+      "count": 6
     },
     {
       "theme": "agent",
-      "count": 3
+      "count": 2
     }
   ],
   "highlights": [
