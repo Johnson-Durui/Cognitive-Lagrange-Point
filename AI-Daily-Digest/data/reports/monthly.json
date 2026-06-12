@@ -1,8 +1,8 @@
 {
   "label": "月报",
   "window_days": 30,
-  "generated_at": "2026-06-11T12:56:33.032026+08:00",
-  "count": 190,
+  "generated_at": "2026-06-12T10:02:07.205233+08:00",
+  "count": 198,
   "summary": "近 30 天里，最集中的主题是 ai、llm、agent。",
   "top_items": [
     {
@@ -592,57 +592,62 @@
       "last_notified_at": null
     },
     {
-      "id": "arxiv::http://arxiv.org/abs/2606.10917v1",
+      "id": "arxiv::http://arxiv.org/abs/2606.13673v1",
       "kind": "paper",
       "source": "arxiv",
       "source_tags": [
         "latest"
       ],
-      "title": "Role-Agent: Bootstrapping LLM Agents via Dual-Role Evolution",
-      "html_url": "http://arxiv.org/abs/2606.10917v1",
-      "pdf_url": "https://arxiv.org/pdf/2606.10917v1",
-      "description": "Although Large Language Model (LLM) agents have demonstrated strong performance on complex tasks, their learning is often limited by inefficient interaction feedback and static training environments, which hinder broader generalization. To address these limitations, this paper introduces Role-Agent, \\textcolor{black}{a framework} that harnesses a single LLM to function concurrently as both the agent and the environment, enabling a bootstrapped co-evolution. Role-Agent comprises two synergistic components: World-In-Agent (WIA) and Agent-In-World (AIW). In WIA, the LLM acts as the agent and predicts future states after each action; the alignment between predicted and actual states is then used as a process reward, encouraging environment-aware reasoning. In AIW, the LLM analyzes failure modes from failed trajectories and retrieves tasks with similar failure patterns, thereby reshaping the training data distribution for targeted practice. Experiments on multiple benchmarks show that Role-Agent consistently improves performance, yielding an average gain of over 4\\% over strong baselines.",
+      "title": "SpatialClaw: Rethinking Action Interface for Agentic Spatial Reasoning",
+      "html_url": "http://arxiv.org/abs/2606.13673v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.13673v1",
+      "description": "Spatial reasoning, the ability to determine where objects are, how they relate, and how they move in 3D, remains a fundamental challenge for vision-language models (VLMs). Tool-augmented agents attempt to address this by augmenting VLMs with specialist perception modules, yet their effectiveness is bounded by the action interface through which those tools are invoked. In this work, we study how the design of this interface shapes the agent's capacity for open-ended spatial reasoning. Existing spatial agents either employ single-pass code execution, which commits to a full analysis strategy before any intermediate result is observed, or rely on a structured tool-call interface that often offers less flexibility for freely composing operations or tailoring the analysis to each task. Both designs offer limited flexibility for open-ended, complex 3D/4D spatial reasoning. We therefore propose SpatialClaw, a training-free framework for spatial reasoning that adopts code as the action interface. SpatialClaw maintains a stateful Python kernel pre-loaded with input frames and a suite of perception and geometry primitives, letting a VLM-backed agent write one executable cell per step conditioned on all prior outputs, enabling the agent to flexibly compose and manipulate perception results and adapt its analysis to both intermediate text and visual observations and the demands of each problem. Evaluated across 20 spatial reasoning benchmarks spanning a broad range of static and dynamic 3D/4D spatial reasoning tasks, SpatialClaw achieves 59.9% average accuracy, outperforming the recent spatial agent by +11.2 points, with consistent gains across six VLM backbones from two model families without any benchmark- or model-specific adaptation.",
       "authors": [
-        "Xucong Wang",
-        "Ziyu Ma",
-        "Shidong Yang",
-        "Tongwen Huang",
-        "Pengkun Wang",
-        "Yong Wang",
-        "Xiangxiang Chu"
+        "Seokju Cho",
+        "Ryo Hachiuma",
+        "Abhishek Badki",
+        "Hang Su",
+        "Byung-Kwan Lee",
+        "Chan Hee Song",
+        "Sifei Liu",
+        "Subhashree Radhakrishnan",
+        "Seungryong Kim",
+        "Yu-Chiang Frank Wang",
+        "Min-Hung Chen"
       ],
       "categories": [
+        "cs.CV",
         "cs.AI"
       ],
-      "published_at": "2026-06-09T14:28:07+00:00",
-      "updated_at": "2026-06-09T14:28:07+00:00",
-      "primary_category": "cs.AI",
-      "heuristic_score": 22.075,
-      "summary": "Role-Agent: Bootstrapping LLM Agents via Dual-Role Evolution 是最近值得追踪的一篇 AI 论文。论文摘要显示：Although Large Language Model (LLM) agents have demonstrated strong performance on complex tasks, their learning is often limited by inefficient interaction feedback and static training environments, which hinder broader generalization. To ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "published_at": "2026-06-11T17:59:36+00:00",
+      "updated_at": "2026-06-11T17:59:36+00:00",
+      "primary_category": "cs.CV",
+      "heuristic_score": 22.7,
+      "summary": "SpatialClaw: Rethinking Action Interface for Agentic Spatial Reasoning 是最近值得追踪的一篇 AI 论文。论文摘要显示：Spatial reasoning, the ability to determine where objects are, how they relate, and how they move in 3D, remains a fundamental challenge for vision-language models (VLMs). Tool-augmented agents attempt to address this by augmenting VLMs wit...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
       "brief": "这是一篇值得加入今日论文雷达的最新工作。",
       "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
       "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
       "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
       "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
       "highlights": [
-        "分类: cs.AI",
-        "作者数: 7"
+        "分类: cs.CV, cs.AI",
+        "作者数: 11"
       ],
       "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
       "relevance_score": 10,
       "tags": [
         "ai",
-        "llm",
         "agent",
-        "rag"
+        "rag",
+        "model"
       ],
       "themes": [
         "ai",
-        "llm",
-        "agent"
+        "agent",
+        "rag"
       ],
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：Role-Agent: Bootstrapping LLM Agents via Dual-Role Evolution 是最近值得追踪的一篇 AI 论文。论文摘要显示：Although Large Language Model (LLM) agents have demonstrated strong performance on complex tasks, their learning is often limited by inefficient interaction feedback and static training environments, which hinder broader generalization. To ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI\n- 作者数: 7",
+      "summary_markdown": "**摘要**：SpatialClaw: Rethinking Action Interface for Agentic Spatial Reasoning 是最近值得追踪的一篇 AI 论文。论文摘要显示：Spatial reasoning, the ability to determine where objects are, how they relate, and how they move in 3D, remains a fundamental challenge for vision-language models (VLMs). Tool-augmented agents attempt to address this by augmenting VLMs wit...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV, cs.AI\n- 作者数: 11",
       "focus_hits": [
         {
           "keyword": "agent",
@@ -663,10 +668,10 @@
       ],
       "primary_match": "agent",
       "personalized_score": 200.0,
-      "detail_path": "items/arxiv-role-agent-bootstrapping-llm-agents-via-dual-role-evolution.html",
-      "first_seen_at": "2026-06-10T01:55:07.498376+00:00",
-      "last_seen_at": "2026-06-10T04:43:07.072779+00:00",
-      "last_curated_at": "2026-06-10T04:43:07.072779+00:00",
+      "detail_path": "items/arxiv-spatialclaw-rethinking-action-interface-for-agentic-spatial-reasoning.html",
+      "first_seen_at": "2026-06-12T02:02:20.601211+00:00",
+      "last_seen_at": "2026-06-12T02:02:20.601211+00:00",
+      "last_curated_at": "2026-06-12T02:02:20.601211+00:00",
       "last_notified_at": null
     }
   ],
@@ -677,11 +682,11 @@
     },
     {
       "theme": "llm",
-      "count": 6
+      "count": 5
     },
     {
       "theme": "agent",
-      "count": 2
+      "count": 3
     }
   ],
   "highlights": [
