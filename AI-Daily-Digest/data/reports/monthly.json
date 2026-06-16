@@ -1,8 +1,8 @@
 {
   "label": "月报",
   "window_days": 30,
-  "generated_at": "2026-06-15T23:33:18.334216+08:00",
-  "count": 174,
+  "generated_at": "2026-06-16T10:13:31.482928+08:00",
+  "count": 182,
   "summary": "近 30 天里，最集中的主题是 ai、llm、agent。",
   "top_items": [
     {
@@ -249,6 +249,88 @@
       "first_seen_at": "2026-05-19T01:52:44.713452+00:00",
       "last_seen_at": "2026-05-19T04:23:07.034991+00:00",
       "last_curated_at": "2026-05-19T04:23:07.034991+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2606.16902v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Binary Tracking for Spatial QA and Navigation with Open Vision-Language Models",
+      "html_url": "http://arxiv.org/abs/2606.16902v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.16902v1",
+      "description": "This work addresses spatial question answering for service robots traversing long egocentric routes. Given a query such as \"where can I find a dry cleaner on the way back home?\", the system returns a metric coordinate that downstream navigation components can act on. Prior Spatial Question Answering approaches leverage retrieval-augmented agents built on closed-source models such as GPT-4o for path exploration. However, robots operating in the real world often cannot reliably depend on online closed-source models due to network instability, communication latency, and deployment cost. It creates a need for open-source based Spatial Question Answering approaches that can run onboard the robot, yet prior research in this direction remains limited. This work proposes BinTrack, a simple yet effective, fully open-source spatial-localization agent that leverages the temporal ordering of a robot's trajectory. BinTrack performs a binary search over the trajectory segments between two anchor landmarks identified from a query. It improves overall accuracy by up to 22.8% over other open-source implementations and even matches the reported closed-source model result on the global category of the SpaceLocQA benchmark, the most challenging setting that has so far required strong reasoning agents such as GPT-4o. Furthermore, its optimized inference strategy consistently yields more than a 1.5x inference speedup over previous approaches. Finally, this work releases GangnamLoop, a novel and practical multi-trip outdoor benchmark collected by deploying a real quadruped robot on public streets with the anonymization policy. It revisits the same locations under different outdoor conditions and pairs the robot's low viewpoint with the human owner's. The source codes and datasets are publicly available at https://github.com/ndb796/BinaryTracking",
+      "authors": [
+        "Dongbin Na",
+        "Chanwoo Kim",
+        "Soonbin Rho",
+        "Giyun Choi",
+        "Gangbok Lee",
+        "Dooyoung Hong"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "published_at": "2026-06-15T16:10:03+00:00",
+      "updated_at": "2026-06-15T16:10:03+00:00",
+      "primary_category": "cs.RO",
+      "heuristic_score": 21.2,
+      "summary": "Binary Tracking for Spatial QA and Navigation with Open Vision-Language Models 是最近值得追踪的一篇 AI 论文。论文摘要显示：This work addresses spatial question answering for service robots traversing long egocentric routes. Given a query such as \"where can I find a dry cleaner on the way back home?\", the system returns a metric coordinate that downstream naviga...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.RO, cs.AI",
+        "作者数: 6"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "agent",
+        "gpt",
+        "rag"
+      ],
+      "themes": [
+        "ai",
+        "agent",
+        "gpt"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：Binary Tracking for Spatial QA and Navigation with Open Vision-Language Models 是最近值得追踪的一篇 AI 论文。论文摘要显示：This work addresses spatial question answering for service robots traversing long egocentric routes. Given a query such as \"where can I find a dry cleaner on the way back home?\", the system returns a metric coordinate that downstream naviga...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.RO, cs.AI\n- 作者数: 6",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        },
+        {
+          "keyword": "inference",
+          "weight": 1.8
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 210.0,
+      "detail_path": "items/arxiv-binary-tracking-for-spatial-qa-and-navigation-with-open-vision-language-models.html",
+      "first_seen_at": "2026-06-16T02:13:38.138778+00:00",
+      "last_seen_at": "2026-06-16T02:13:38.138778+00:00",
+      "last_curated_at": "2026-06-16T02:13:38.138778+00:00",
       "last_notified_at": null
     },
     {
@@ -577,84 +659,6 @@
       "last_seen_at": "2026-06-10T04:43:07.072779+00:00",
       "last_curated_at": "2026-06-10T04:43:07.072779+00:00",
       "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2606.11150v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "ABC-Bench: An Agentic Bio-Capabilities Benchmark for Biosecurity",
-      "html_url": "http://arxiv.org/abs/2606.11150v1",
-      "pdf_url": "https://arxiv.org/pdf/2606.11150v1",
-      "description": "Large language models (LLMs) are rapidly acquiring capabilities relevant to biological research, from literature synthesis to interpretation of experimental data. Increasingly, LLM agents can also perform in silico biology tasks that previously required experienced human biologists. These emerging AI capabilities offer new opportunities for scientific discovery and biomedical advances, but they also shift the landscape of biosecurity risks. To address this, we introduce the Agentic Bio-Capabilities Benchmark (ABC-Bench), a suite of tasks to measure agentic biosecurity-relevant capabilities. ABC-Bench evaluates LLM agents on both benign and dual-use biology tasks: writing code to operate liquid handling robots, designing DNA fragments for in vitro assembly, and evading DNA synthesis screening. These tasks require a combination of biology and software expertise. All tested LLM agents outperformed the median expert human baseliner on all three tasks. Agents performed highly on tasks drawing on published knowledge and well-documented protocols, and more weakly on a task requiring novel bioinformatics reasoning. In three wet-lab validation experiments, we found that OpenAI's o4-mini-high produced scripts that, when run on an OpenTrons liquid handling robot, successfully assembled DNA with expected sequences.",
-      "authors": [
-        "Andrew Bo Liu",
-        "Samira Nedungadi",
-        "Bryce Cai",
-        "Alex Kleinman",
-        "Harmon Bhasin",
-        "Seth Donoughe"
-      ],
-      "categories": [
-        "cs.AI",
-        "cs.CY"
-      ],
-      "published_at": "2026-06-09T17:35:37+00:00",
-      "updated_at": "2026-06-09T17:35:37+00:00",
-      "primary_category": "cs.AI",
-      "heuristic_score": 22.355,
-      "summary": "ABC-Bench: An Agentic Bio-Capabilities Benchmark for Biosecurity 是最近值得追踪的一篇 AI 论文。论文摘要显示：Large language models (LLMs) are rapidly acquiring capabilities relevant to biological research, from literature synthesis to interpretation of experimental data. Increasingly, LLM agents can also perform in silico biology tasks that previo...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.AI, cs.CY",
-        "作者数: 6"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "llm",
-        "agent",
-        "agentic"
-      ],
-      "themes": [
-        "ai",
-        "llm",
-        "agent"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：ABC-Bench: An Agentic Bio-Capabilities Benchmark for Biosecurity 是最近值得追踪的一篇 AI 论文。论文摘要显示：Large language models (LLMs) are rapidly acquiring capabilities relevant to biological research, from literature synthesis to interpretation of experimental data. Increasingly, LLM agents can also perform in silico biology tasks that previo...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI, cs.CY\n- 作者数: 6",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 200.0,
-      "detail_path": "items/arxiv-abc-bench-an-agentic-bio-capabilities-benchmark-for-biosecurity.html",
-      "first_seen_at": "2026-06-10T04:43:07.072779+00:00",
-      "last_seen_at": "2026-06-10T04:43:07.072779+00:00",
-      "last_curated_at": "2026-06-10T04:43:07.072779+00:00",
-      "last_notified_at": null
     }
   ],
   "top_themes": [
@@ -664,11 +668,11 @@
     },
     {
       "theme": "llm",
-      "count": 6
+      "count": 5
     },
     {
       "theme": "agent",
-      "count": 2
+      "count": 3
     }
   ],
   "highlights": [

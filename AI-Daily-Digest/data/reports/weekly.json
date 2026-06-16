@@ -1,10 +1,92 @@
 {
   "label": "周报",
   "window_days": 7,
-  "generated_at": "2026-06-15T23:33:18.334216+08:00",
-  "count": 56,
+  "generated_at": "2026-06-16T10:13:31.482928+08:00",
+  "count": 64,
   "summary": "近 7 天里，最集中的主题是 ai、llm、agent。",
   "top_items": [
+    {
+      "id": "arxiv::http://arxiv.org/abs/2606.16902v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Binary Tracking for Spatial QA and Navigation with Open Vision-Language Models",
+      "html_url": "http://arxiv.org/abs/2606.16902v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.16902v1",
+      "description": "This work addresses spatial question answering for service robots traversing long egocentric routes. Given a query such as \"where can I find a dry cleaner on the way back home?\", the system returns a metric coordinate that downstream navigation components can act on. Prior Spatial Question Answering approaches leverage retrieval-augmented agents built on closed-source models such as GPT-4o for path exploration. However, robots operating in the real world often cannot reliably depend on online closed-source models due to network instability, communication latency, and deployment cost. It creates a need for open-source based Spatial Question Answering approaches that can run onboard the robot, yet prior research in this direction remains limited. This work proposes BinTrack, a simple yet effective, fully open-source spatial-localization agent that leverages the temporal ordering of a robot's trajectory. BinTrack performs a binary search over the trajectory segments between two anchor landmarks identified from a query. It improves overall accuracy by up to 22.8% over other open-source implementations and even matches the reported closed-source model result on the global category of the SpaceLocQA benchmark, the most challenging setting that has so far required strong reasoning agents such as GPT-4o. Furthermore, its optimized inference strategy consistently yields more than a 1.5x inference speedup over previous approaches. Finally, this work releases GangnamLoop, a novel and practical multi-trip outdoor benchmark collected by deploying a real quadruped robot on public streets with the anonymization policy. It revisits the same locations under different outdoor conditions and pairs the robot's low viewpoint with the human owner's. The source codes and datasets are publicly available at https://github.com/ndb796/BinaryTracking",
+      "authors": [
+        "Dongbin Na",
+        "Chanwoo Kim",
+        "Soonbin Rho",
+        "Giyun Choi",
+        "Gangbok Lee",
+        "Dooyoung Hong"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "published_at": "2026-06-15T16:10:03+00:00",
+      "updated_at": "2026-06-15T16:10:03+00:00",
+      "primary_category": "cs.RO",
+      "heuristic_score": 21.2,
+      "summary": "Binary Tracking for Spatial QA and Navigation with Open Vision-Language Models 是最近值得追踪的一篇 AI 论文。论文摘要显示：This work addresses spatial question answering for service robots traversing long egocentric routes. Given a query such as \"where can I find a dry cleaner on the way back home?\", the system returns a metric coordinate that downstream naviga...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.RO, cs.AI",
+        "作者数: 6"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "agent",
+        "gpt",
+        "rag"
+      ],
+      "themes": [
+        "ai",
+        "agent",
+        "gpt"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：Binary Tracking for Spatial QA and Navigation with Open Vision-Language Models 是最近值得追踪的一篇 AI 论文。论文摘要显示：This work addresses spatial question answering for service robots traversing long egocentric routes. Given a query such as \"where can I find a dry cleaner on the way back home?\", the system returns a metric coordinate that downstream naviga...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.RO, cs.AI\n- 作者数: 6",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        },
+        {
+          "keyword": "inference",
+          "weight": 1.8
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 210.0,
+      "detail_path": "items/arxiv-binary-tracking-for-spatial-qa-and-navigation-with-open-vision-language-models.html",
+      "first_seen_at": "2026-06-16T02:13:38.138778+00:00",
+      "last_seen_at": "2026-06-16T02:13:38.138778+00:00",
+      "last_curated_at": "2026-06-16T02:13:38.138778+00:00",
+      "last_notified_at": null
+    },
     {
       "id": "arxiv::http://arxiv.org/abs/2606.12370v1",
       "kind": "paper",
@@ -568,87 +650,6 @@
       "last_seen_at": "2026-06-09T04:21:17.010822+00:00",
       "last_curated_at": "2026-06-09T04:21:17.010822+00:00",
       "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2606.11164v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "ReasonAlloc: Hierarchical Decoding-Time KV Cache Budget Allocation for Reasoning Models",
-      "html_url": "http://arxiv.org/abs/2606.11164v1",
-      "pdf_url": "https://arxiv.org/pdf/2606.11164v1",
-      "description": "Long chain-of-thought (CoT) trajectories in large language model (LLM) reasoning cause severe inference bottlenecks due to rapid key-value (KV) cache growth. Current decoding-time compression methods mitigate this issue via token eviction, but typically assume a uniform budget distribution across all layers and heads. In contrast, existing non-uniform budget allocation methods are predominantly designed for the static prompt prefill phase, and they do not capture the stepwise context demands of autoregressive reasoning. To bridge this gap, we propose ReasonAlloc, a training-free framework that recasts decoding-time KV compression as a hierarchical budget allocation problem. ReasonAlloc operates at two complementary levels: an offline layer-wise preallocation strategy captures an architecture-driven demand pattern which we call ``\\textit{Reasoning Wave}'', while an online head-wise strategy reallocates resources during decoding to information-rich heads based on real-time utility. Evaluations on mathematical reasoning benchmarks (MATH-500, AIME~2024) using DeepSeek-R1-Distill-Llama-8B, DeepSeek-R1-Distill-Qwen-14B, and AceReason-14B show that ReasonAlloc outperforms uniform-budget R-KV, SnapKV, and Pyramid-RKV (a baseline enforcing a static, monotonically decreasing layer budget), with the largest gains at small budgets (128-512 tokens). ReasonAlloc is plug-and-play with existing token-eviction policies and introduces negligible inference-time overhead.",
-      "authors": [
-        "Wenhao Liu",
-        "Hao Shi",
-        "Yunhe Li",
-        "Weizhi Fei",
-        "Xiangyuan Wang",
-        "Mengzhe Ruan",
-        "Hanxu Hou",
-        "Peisong Wang",
-        "Linqi Song",
-        "Shuang Qiu"
-      ],
-      "categories": [
-        "cs.AI"
-      ],
-      "published_at": "2026-06-09T17:44:23+00:00",
-      "updated_at": "2026-06-09T17:44:23+00:00",
-      "primary_category": "cs.AI",
-      "heuristic_score": 20.145,
-      "summary": "ReasonAlloc: Hierarchical Decoding-Time KV Cache Budget Allocation for Reasoning Models 是最近值得追踪的一篇 AI 论文。论文摘要显示：Long chain-of-thought (CoT) trajectories in large language model (LLM) reasoning cause severe inference bottlenecks due to rapid key-value (KV) cache growth. Current decoding-time compression methods mitigate this issue via token eviction, ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.AI",
-        "作者数: 10"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "llm",
-        "model",
-        "benchmark"
-      ],
-      "themes": [
-        "ai",
-        "llm",
-        "model"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：ReasonAlloc: Hierarchical Decoding-Time KV Cache Budget Allocation for Reasoning Models 是最近值得追踪的一篇 AI 论文。论文摘要显示：Long chain-of-thought (CoT) trajectories in large language model (LLM) reasoning cause severe inference bottlenecks due to rapid key-value (KV) cache growth. Current decoding-time compression methods mitigate this issue via token eviction, ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI\n- 作者数: 10",
-      "focus_hits": [
-        {
-          "keyword": "coding",
-          "weight": 2.6
-        },
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "inference",
-          "weight": 1.8
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "coding",
-      "personalized_score": 192.0,
-      "detail_path": "items/arxiv-reasonalloc-hierarchical-decoding-time-kv-cache-budget-allocation-for-reasoning-models.html",
-      "first_seen_at": "2026-06-10T04:43:07.072779+00:00",
-      "last_seen_at": "2026-06-10T04:43:07.072779+00:00",
-      "last_curated_at": "2026-06-10T04:43:07.072779+00:00",
-      "last_notified_at": null
     }
   ],
   "top_themes": [
@@ -658,14 +659,19 @@
     },
     {
       "theme": "llm",
-      "count": 6
+      "count": 5
     },
     {
       "theme": "agent",
-      "count": 2
+      "count": 3
     }
   ],
   "highlights": [
+    {
+      "title": "Binary Tracking for Spatial QA and Navigation with Open Vision-Language Models",
+      "source": "arxiv",
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
+    },
     {
       "title": "Breaking Entropy Bounds: Accelerating RL Training via MTP with Rejection Sampling",
       "source": "arxiv",
@@ -673,11 +679,6 @@
     },
     {
       "title": "Distilling LLM Reasoning into an Interpretable Policy Tree for Human-AI Collaboration",
-      "source": "arxiv",
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
-    },
-    {
-      "title": "SpatialClaw: Rethinking Action Interface for Agentic Spatial Reasoning",
       "source": "arxiv",
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     }
