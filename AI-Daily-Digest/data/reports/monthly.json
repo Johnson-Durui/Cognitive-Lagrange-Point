@@ -1,8 +1,8 @@
 {
   "label": "月报",
   "window_days": 30,
-  "generated_at": "2026-06-23T12:17:33.472640+08:00",
-  "count": 184,
+  "generated_at": "2026-06-24T09:49:02.222180+08:00",
+  "count": 189,
   "summary": "近 30 天里，最集中的主题是 ai、llm、agent。",
   "top_items": [
     {
@@ -505,6 +505,110 @@
       "last_notified_at": null
     },
     {
+      "id": "arxiv::http://arxiv.org/abs/2606.24597v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Qwen-AgentWorld: Language World Models for General Agents",
+      "html_url": "http://arxiv.org/abs/2606.24597v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.24597v1",
+      "description": "A world model predicts environment dynamics based on current observations and actions, serving as a core cognitive mechanism for reasoning and planning. In this work, we investigate how world modeling based on language models can further push the boundaries of general agents. (i) We first focus on building foundation models for agentic environment simulation. We introduce Qwen-AgentWorld-35B-A3B and Qwen-AgentWorld-397B-A17B, the first language world models capable of simulating agentic environments covering 7 domains via long chain-of-thought reasoning. Leveraging more than 10M environment interaction trajectories of 7 domains in real-world environments, we develop Qwen-AgentWorld through a three-stage training pipeline: CPT injects general-purpose world modeling capabilities from the state transition dynamics and augmented professional corpora, SFT activates next-state-prediction reasoning, and RL sharpens simulation fidelity through a tailored framework with hybrid rubric-and-rule rewards. To evaluate language world models, we present AgentWorldBench, a comprehensive benchmark constructed from real-world interactions of 5 frontier models on 9 established benchmarks. Empirical results demonstrate that Qwen-AgentWorld significantly outperforms existing frontier models. (ii) Beyond foundation models, we further investigate two complementary paradigms through which world modeling enhances general agents. First, as a decoupled environment simulator, Qwen-AgentWorld supports scalable and controllable simulation of thousands of real-world environments for agentic RL, yielding gains that surpass real-environment training alone. Second, as a unified agent foundation model, world-model training acts as a highly effective warm-up that improves downstream performance across 7 agentic benchmarks. Code: https://github.com/QwenLM/Qwen-AgentWorld",
+      "authors": [
+        "Yuxin Zuo",
+        "Zikai Xiao",
+        "Li Sheng",
+        "Fei Huang",
+        "Jianhong Tu",
+        "Yuxuan Liu",
+        "Tianyi Tang",
+        "Xiaomeng Hu",
+        "Yang Su",
+        "Qingfeng Lan",
+        "Yantao Liu",
+        "Qin Zhu",
+        "Yinger Zhang",
+        "Bowen Yu",
+        "Haiquan Zhao",
+        "Haiyang Xu",
+        "Jianxin Yang",
+        "Jiayang Cheng",
+        "Junyang Wang",
+        "Lianghao Deng",
+        "Mingfeng Xue",
+        "Tianyi Bai",
+        "Yang Fan",
+        "Yubo Ma",
+        "Yucheng Li",
+        "Zeyu Cui",
+        "Zhihai Wang",
+        "Zhihui Xie",
+        "Zhuorui Ye",
+        "An Yang",
+        "Dayiheng Liu",
+        "Jingren Zhou",
+        "Ning Ding"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "published_at": "2026-06-23T13:53:55+00:00",
+      "updated_at": "2026-06-23T13:53:55+00:00",
+      "primary_category": "cs.CL",
+      "heuristic_score": 22.7,
+      "summary": "Qwen-AgentWorld: Language World Models for General Agents 是最近值得追踪的一篇 AI 论文。论文摘要显示：A world model predicts environment dynamics based on current observations and actions, serving as a core cognitive mechanism for reasoning and planning. In this work, we investigate how world modeling based on language models can further pu...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CL",
+        "作者数: 33"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "agent",
+        "agentic",
+        "rag"
+      ],
+      "themes": [
+        "ai",
+        "agent",
+        "agentic"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：Qwen-AgentWorld: Language World Models for General Agents 是最近值得追踪的一篇 AI 论文。论文摘要显示：A world model predicts environment dynamics based on current observations and actions, serving as a core cognitive mechanism for reasoning and planning. In this work, we investigate how world modeling based on language models can further pu...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL\n- 作者数: 33",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 200.0,
+      "detail_path": "items/arxiv-qwen-agentworld-language-world-models-for-general-agents.html",
+      "first_seen_at": "2026-06-24T01:49:16.934549+00:00",
+      "last_seen_at": "2026-06-24T01:49:16.934549+00:00",
+      "last_curated_at": "2026-06-24T01:49:16.934549+00:00",
+      "last_notified_at": null
+    },
+    {
       "id": "arxiv::http://arxiv.org/abs/2606.19341v1",
       "kind": "paper",
       "source": "arxiv",
@@ -586,89 +690,6 @@
       "first_seen_at": "2026-06-18T02:06:26.542323+00:00",
       "last_seen_at": "2026-06-18T04:58:44.312132+00:00",
       "last_curated_at": "2026-06-18T04:58:44.312132+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2606.13673v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "SpatialClaw: Rethinking Action Interface for Agentic Spatial Reasoning",
-      "html_url": "http://arxiv.org/abs/2606.13673v1",
-      "pdf_url": "https://arxiv.org/pdf/2606.13673v1",
-      "description": "Spatial reasoning, the ability to determine where objects are, how they relate, and how they move in 3D, remains a fundamental challenge for vision-language models (VLMs). Tool-augmented agents attempt to address this by augmenting VLMs with specialist perception modules, yet their effectiveness is bounded by the action interface through which those tools are invoked. In this work, we study how the design of this interface shapes the agent's capacity for open-ended spatial reasoning. Existing spatial agents either employ single-pass code execution, which commits to a full analysis strategy before any intermediate result is observed, or rely on a structured tool-call interface that often offers less flexibility for freely composing operations or tailoring the analysis to each task. Both designs offer limited flexibility for open-ended, complex 3D/4D spatial reasoning. We therefore propose SpatialClaw, a training-free framework for spatial reasoning that adopts code as the action interface. SpatialClaw maintains a stateful Python kernel pre-loaded with input frames and a suite of perception and geometry primitives, letting a VLM-backed agent write one executable cell per step conditioned on all prior outputs, enabling the agent to flexibly compose and manipulate perception results and adapt its analysis to both intermediate text and visual observations and the demands of each problem. Evaluated across 20 spatial reasoning benchmarks spanning a broad range of static and dynamic 3D/4D spatial reasoning tasks, SpatialClaw achieves 59.9% average accuracy, outperforming the recent spatial agent by +11.2 points, with consistent gains across six VLM backbones from two model families without any benchmark- or model-specific adaptation.",
-      "authors": [
-        "Seokju Cho",
-        "Ryo Hachiuma",
-        "Abhishek Badki",
-        "Hang Su",
-        "Byung-Kwan Lee",
-        "Chan Hee Song",
-        "Sifei Liu",
-        "Subhashree Radhakrishnan",
-        "Seungryong Kim",
-        "Yu-Chiang Frank Wang",
-        "Min-Hung Chen"
-      ],
-      "categories": [
-        "cs.CV",
-        "cs.AI"
-      ],
-      "published_at": "2026-06-11T17:59:36+00:00",
-      "updated_at": "2026-06-11T17:59:36+00:00",
-      "primary_category": "cs.CV",
-      "heuristic_score": 22.7,
-      "summary": "SpatialClaw: Rethinking Action Interface for Agentic Spatial Reasoning 是最近值得追踪的一篇 AI 论文。论文摘要显示：Spatial reasoning, the ability to determine where objects are, how they relate, and how they move in 3D, remains a fundamental challenge for vision-language models (VLMs). Tool-augmented agents attempt to address this by augmenting VLMs wit...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CV, cs.AI",
-        "作者数: 11"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "agent",
-        "rag",
-        "model"
-      ],
-      "themes": [
-        "ai",
-        "agent",
-        "rag"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：SpatialClaw: Rethinking Action Interface for Agentic Spatial Reasoning 是最近值得追踪的一篇 AI 论文。论文摘要显示：Spatial reasoning, the ability to determine where objects are, how they relate, and how they move in 3D, remains a fundamental challenge for vision-language models (VLMs). Tool-augmented agents attempt to address this by augmenting VLMs wit...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV, cs.AI\n- 作者数: 11",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 200.0,
-      "detail_path": "items/arxiv-spatialclaw-rethinking-action-interface-for-agentic-spatial-reasoning.html",
-      "first_seen_at": "2026-06-12T02:02:20.601211+00:00",
-      "last_seen_at": "2026-06-13T04:46:30.385561+00:00",
-      "last_curated_at": "2026-06-13T04:46:30.385561+00:00",
       "last_notified_at": null
     }
   ],
