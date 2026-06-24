@@ -1,8 +1,8 @@
 {
   "label": "月报",
   "window_days": 30,
-  "generated_at": "2026-06-24T09:49:02.222180+08:00",
-  "count": 189,
+  "generated_at": "2026-06-24T12:21:46.629936+08:00",
+  "count": 193,
   "summary": "近 30 天里，最集中的主题是 ai、llm、agent。",
   "top_items": [
     {
@@ -254,6 +254,82 @@
       "first_seen_at": "2026-06-06T04:18:02.749951+00:00",
       "last_seen_at": "2026-06-06T04:18:02.749951+00:00",
       "last_curated_at": "2026-06-06T04:18:02.749951+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2606.24820v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "SHERLOC: Structured Diagnostic Localization for Code Repair Agents",
+      "html_url": "http://arxiv.org/abs/2606.24820v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.24820v1",
+      "description": "LLM agents solve repository-level coding tasks through multi-turn tool use, but utilize half their budget on locating faults before editing. Dedicated localization frameworks have emerged, yet are still evaluated as file retrieval rather than actionable diagnosis, producing locations without the diagnostic context a repair agent needs. We introduce SHERLOC (Structured Hypothesis-driven Exploration and Reasoning for Localization), a training-free framework pairing a reasoning LLM with compact repository tools and self-recovery, without fine-tuning or multi-agent orchestration. SHERLOC reaches state-of-the-art localization across model scales: 84.33% accuracy@1 on SWE-Bench Lite and 81.27% recall@1 on SWE-Bench Verified; at ~30B parameters, it matches or outperforms other agentic methods. Injecting our locations and diagnostic findings into repair agents yields, on average, +5.95 pp resolve rate on SWE-Bench Verified while cutting localization and total tokens by 36.7% and 23.1%.",
+      "authors": [
+        "Hovhannes Tamoyan",
+        "Sean Narenthiran",
+        "Erik Arakelyan",
+        "Mira Mezini",
+        "Boris Ginsburg"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "published_at": "2026-06-23T17:05:50+00:00",
+      "updated_at": "2026-06-23T17:05:50+00:00",
+      "primary_category": "cs.CL",
+      "heuristic_score": 21.94,
+      "summary": "SHERLOC: Structured Diagnostic Localization for Code Repair Agents 是最近值得追踪的一篇 AI 论文。论文摘要显示：LLM agents solve repository-level coding tasks through multi-turn tool use, but utilize half their budget on locating faults before editing. Dedicated localization frameworks have emerged, yet are still evaluated as file retrieval rather th...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CL",
+        "作者数: 5"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "llm",
+        "agent",
+        "agentic"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "agent"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：SHERLOC: Structured Diagnostic Localization for Code Repair Agents 是最近值得追踪的一篇 AI 论文。论文摘要显示：LLM agents solve repository-level coding tasks through multi-turn tool use, but utilize half their budget on locating faults before editing. Dedicated localization frameworks have emerged, yet are still evaluated as file retrieval rather th...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL\n- 作者数: 5",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "coding",
+          "weight": 2.6
+        },
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 210.0,
+      "detail_path": "items/arxiv-sherloc-structured-diagnostic-localization-for-code-repair-agents.html",
+      "first_seen_at": "2026-06-24T04:22:09.634888+00:00",
+      "last_seen_at": "2026-06-24T04:22:09.634888+00:00",
+      "last_curated_at": "2026-06-24T04:22:09.634888+00:00",
       "last_notified_at": null
     },
     {
@@ -604,92 +680,8 @@
       "personalized_score": 200.0,
       "detail_path": "items/arxiv-qwen-agentworld-language-world-models-for-general-agents.html",
       "first_seen_at": "2026-06-24T01:49:16.934549+00:00",
-      "last_seen_at": "2026-06-24T01:49:16.934549+00:00",
-      "last_curated_at": "2026-06-24T01:49:16.934549+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2606.19341v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "Native Active Perception as Reasoning for Omni-Modal Understanding",
-      "html_url": "http://arxiv.org/abs/2606.19341v1",
-      "pdf_url": "https://arxiv.org/pdf/2606.19341v1",
-      "description": "Passive models for long video understanding typically rely on a \"watch-it-all\" paradigm, processing frames uniformly regardless of query difficulty, causing computational cost to grow with video duration. Although interactive frameworks have emerged, they often rely on global pre-scanning, and their context cost still scales with video length. We propose OmniAgent, the first native omni-modal agent that formulates video understanding as a POMDP-based iterative Observation-Thought-Action cycle. OmniAgent executes on-demand actions to selectively distill audio-visual cues into a persistent textual memory, effectively decoupling reasoning complexity from raw video duration. To operationalize this, we introduce (1) Agentic Supervised Fine-Tuning to bootstrap native active perception via best-of-N trajectory synthesis with dual-stage quality control, and (2) Agentic Reinforcement Learning with TAURA (Turn-aware Adaptive Uncertainty Rescaled Advantage), which leverages turn-level entropy to steer credit assignment toward pivotal discovery turns. Crucially, OmniAgent exhibits positive test-time scaling, where performance improves as the number of reasoning turns increases, validating the efficacy of active perception. Empirical results across ten benchmarks (e.g., VideoMME, LVBench) demonstrate that OmniAgent achieves state-of-the-art performance among open-source models. Notably, on LVBench, our 7B agent outperforms the 10$\\times$ larger Qwen2.5-VL-72B (50.5% vs. 47.3%).",
-      "authors": [
-        "Zhenghao Xing",
-        "Ruiyang Xu",
-        "Yuxuan Wang",
-        "Jinzheng He",
-        "Ziyang Ma",
-        "Qize Yang",
-        "Yunfei Chu",
-        "Jin Xu",
-        "Junyang Lin",
-        "Chi-Wing Fu",
-        "Pheng-Ann Heng"
-      ],
-      "categories": [
-        "cs.CV",
-        "cs.CL",
-        "cs.SD"
-      ],
-      "published_at": "2026-06-17T17:59:56+00:00",
-      "updated_at": "2026-06-17T17:59:56+00:00",
-      "primary_category": "cs.CV",
-      "heuristic_score": 22.561,
-      "summary": "Native Active Perception as Reasoning for Omni-Modal Understanding 是最近值得追踪的一篇 AI 论文。论文摘要显示：Passive models for long video understanding typically rely on a \"watch-it-all\" paradigm, processing frames uniformly regardless of query difficulty, causing computational cost to grow with video duration. Although interactive frameworks hav...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CV, cs.CL",
-        "作者数: 11"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "agent",
-        "agentic",
-        "rag"
-      ],
-      "themes": [
-        "ai",
-        "agent",
-        "agentic"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：Native Active Perception as Reasoning for Omni-Modal Understanding 是最近值得追踪的一篇 AI 论文。论文摘要显示：Passive models for long video understanding typically rely on a \"watch-it-all\" paradigm, processing frames uniformly regardless of query difficulty, causing computational cost to grow with video duration. Although interactive frameworks hav...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV, cs.CL\n- 作者数: 11",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 200.0,
-      "detail_path": "items/arxiv-native-active-perception-as-reasoning-for-omni-modal-understanding.html",
-      "first_seen_at": "2026-06-18T02:06:26.542323+00:00",
-      "last_seen_at": "2026-06-18T04:58:44.312132+00:00",
-      "last_curated_at": "2026-06-18T04:58:44.312132+00:00",
+      "last_seen_at": "2026-06-24T04:22:09.634888+00:00",
+      "last_curated_at": "2026-06-24T04:22:09.634888+00:00",
       "last_notified_at": null
     }
   ],
@@ -700,11 +692,11 @@
     },
     {
       "theme": "llm",
-      "count": 4
+      "count": 5
     },
     {
       "theme": "agent",
-      "count": 4
+      "count": 3
     }
   ],
   "highlights": [
