@@ -1,7 +1,7 @@
 {
   "label": "月报",
   "window_days": 30,
-  "generated_at": "2026-06-25T12:20:58.750251+08:00",
+  "generated_at": "2026-06-26T09:55:03.491782+08:00",
   "count": 200,
   "summary": "近 30 天里，最集中的主题是 ai、llm、agent。",
   "top_items": [
@@ -415,6 +415,95 @@
       "last_notified_at": null
     },
     {
+      "id": "arxiv::http://arxiv.org/abs/2606.27161v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "TOPS: First-Principles Visual Token Pruning via Constructing Token Optimal Preservation Sets for Efficient MLLM Inference",
+      "html_url": "http://arxiv.org/abs/2606.27161v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.27161v1",
+      "description": "Multimodal large language models (MLLMs) have achieved strong multimodal reasoning capabilities, but their efficiency is limited by the large number of visual tokens, which introduces substantial computational overhead. Visual token pruning offers a natural solution, yet existing methods are imperfect: attention-based criteria tend to retain redundant tokens, while diversity-based criteria are often agnostic to user instructions. Even methods that combine multiple criteria still lack a principled formulation of the intrinsic objective of token pruning. In this paper, we revisit visual token pruning from a first-principles perspective and formulate it as constructing Token Optimal Preservation Sets. Through a top-down information-theoretic analysis, we identify three fundamental principles for effective token selection: Task Relevance, Information Coverage, and Semantic Diversity. Based on these principles, we propose TOPS, a training-free and model-agnostic pruning module that can be applied to various MLLMs. Extensive experiments on 7 MLLM backbones and 14 benchmarks demonstrate that TOPS outperforms prior methods under diverse pruning settings. Notably, on LLaVA-NeXT, TOPS removes 77.8% of visual tokens while preserving 100.0% and 100.6% performance on its 7B and 13B models, respectively, suggesting that pruning redundant visual tokens can sometimes mitigate hallucination and inspire future lightweight MLLM design.",
+      "authors": [
+        "Tinghao Wang",
+        "Yichen Guo",
+        "Rui Huang",
+        "Zheng Lu",
+        "Qizhe Zhang",
+        "Chenxi Li",
+        "Yuan Zhang",
+        "Jiajun Cao",
+        "Zhirong Shen",
+        "Yaosong Du",
+        "Guangyan Gan",
+        "Wenya Wang",
+        "Lin William Cong",
+        "Shanghang Zhang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "published_at": "2026-06-25T15:29:37+00:00",
+      "updated_at": "2026-06-25T15:29:37+00:00",
+      "primary_category": "cs.AI",
+      "heuristic_score": 24.9,
+      "summary": "TOPS: First-Principles Visual Token Pruning via Constructing Token Optimal Preservation Sets for Efficient MLLM Inference 是最近值得追踪的一篇 AI 论文。论文摘要显示：Multimodal large language models (MLLMs) have achieved strong multimodal reasoning capabilities, but their efficiency is limited by the large number of visual tokens, which introduces substantial computational overhead. Visual token pruning...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.AI",
+        "作者数: 14"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "llm",
+        "rag",
+        "multimodal"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "rag"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：TOPS: First-Principles Visual Token Pruning via Constructing Token Optimal Preservation Sets for Efficient MLLM Inference 是最近值得追踪的一篇 AI 论文。论文摘要显示：Multimodal large language models (MLLMs) have achieved strong multimodal reasoning capabilities, but their efficiency is limited by the large number of visual tokens, which introduces substantial computational overhead. Visual token pruning...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI\n- 作者数: 14",
+      "focus_hits": [
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        },
+        {
+          "keyword": "multimodal",
+          "weight": 2.0
+        },
+        {
+          "keyword": "inference",
+          "weight": 1.8
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "reasoning",
+      "personalized_score": 208.0,
+      "detail_path": "items/arxiv-tops-first-principles-visual-token-pruning-via-constructing-token-optimal-preservation-set.html",
+      "first_seen_at": "2026-06-26T01:55:10.900745+00:00",
+      "last_seen_at": "2026-06-26T01:55:10.900745+00:00",
+      "last_curated_at": "2026-06-26T01:55:10.900745+00:00",
+      "last_notified_at": null
+    },
+    {
       "id": "arxiv::http://arxiv.org/abs/2606.12370v1",
       "kind": "paper",
       "source": "arxiv",
@@ -579,110 +668,6 @@
       "last_seen_at": "2026-06-09T04:21:17.010822+00:00",
       "last_curated_at": "2026-06-09T04:21:17.010822+00:00",
       "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2606.24597v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "Qwen-AgentWorld: Language World Models for General Agents",
-      "html_url": "http://arxiv.org/abs/2606.24597v1",
-      "pdf_url": "https://arxiv.org/pdf/2606.24597v1",
-      "description": "A world model predicts environment dynamics based on current observations and actions, serving as a core cognitive mechanism for reasoning and planning. In this work, we investigate how world modeling based on language models can further push the boundaries of general agents. (i) We first focus on building foundation models for agentic environment simulation. We introduce Qwen-AgentWorld-35B-A3B and Qwen-AgentWorld-397B-A17B, the first language world models capable of simulating agentic environments covering 7 domains via long chain-of-thought reasoning. Leveraging more than 10M environment interaction trajectories of 7 domains in real-world environments, we develop Qwen-AgentWorld through a three-stage training pipeline: CPT injects general-purpose world modeling capabilities from the state transition dynamics and augmented professional corpora, SFT activates next-state-prediction reasoning, and RL sharpens simulation fidelity through a tailored framework with hybrid rubric-and-rule rewards. To evaluate language world models, we present AgentWorldBench, a comprehensive benchmark constructed from real-world interactions of 5 frontier models on 9 established benchmarks. Empirical results demonstrate that Qwen-AgentWorld significantly outperforms existing frontier models. (ii) Beyond foundation models, we further investigate two complementary paradigms through which world modeling enhances general agents. First, as a decoupled environment simulator, Qwen-AgentWorld supports scalable and controllable simulation of thousands of real-world environments for agentic RL, yielding gains that surpass real-environment training alone. Second, as a unified agent foundation model, world-model training acts as a highly effective warm-up that improves downstream performance across 7 agentic benchmarks. Code: https://github.com/QwenLM/Qwen-AgentWorld",
-      "authors": [
-        "Yuxin Zuo",
-        "Zikai Xiao",
-        "Li Sheng",
-        "Fei Huang",
-        "Jianhong Tu",
-        "Yuxuan Liu",
-        "Tianyi Tang",
-        "Xiaomeng Hu",
-        "Yang Su",
-        "Qingfeng Lan",
-        "Yantao Liu",
-        "Qin Zhu",
-        "Yinger Zhang",
-        "Bowen Yu",
-        "Haiquan Zhao",
-        "Haiyang Xu",
-        "Jianxin Yang",
-        "Jiayang Cheng",
-        "Junyang Wang",
-        "Lianghao Deng",
-        "Mingfeng Xue",
-        "Tianyi Bai",
-        "Yang Fan",
-        "Yubo Ma",
-        "Yucheng Li",
-        "Zeyu Cui",
-        "Zhihai Wang",
-        "Zhihui Xie",
-        "Zhuorui Ye",
-        "An Yang",
-        "Dayiheng Liu",
-        "Jingren Zhou",
-        "Ning Ding"
-      ],
-      "categories": [
-        "cs.CL"
-      ],
-      "published_at": "2026-06-23T13:53:55+00:00",
-      "updated_at": "2026-06-23T13:53:55+00:00",
-      "primary_category": "cs.CL",
-      "heuristic_score": 22.7,
-      "summary": "Qwen-AgentWorld: Language World Models for General Agents 是最近值得追踪的一篇 AI 论文。论文摘要显示：A world model predicts environment dynamics based on current observations and actions, serving as a core cognitive mechanism for reasoning and planning. In this work, we investigate how world modeling based on language models can further pu...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CL",
-        "作者数: 33"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "agent",
-        "agentic",
-        "rag"
-      ],
-      "themes": [
-        "ai",
-        "agent",
-        "agentic"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：Qwen-AgentWorld: Language World Models for General Agents 是最近值得追踪的一篇 AI 论文。论文摘要显示：A world model predicts environment dynamics based on current observations and actions, serving as a core cognitive mechanism for reasoning and planning. In this work, we investigate how world modeling based on language models can further pu...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL\n- 作者数: 33",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 200.0,
-      "detail_path": "items/arxiv-qwen-agentworld-language-world-models-for-general-agents.html",
-      "first_seen_at": "2026-06-24T01:49:16.934549+00:00",
-      "last_seen_at": "2026-06-24T04:22:09.634888+00:00",
-      "last_curated_at": "2026-06-24T04:22:09.634888+00:00",
-      "last_notified_at": null
     }
   ],
   "top_themes": [
@@ -692,11 +677,11 @@
     },
     {
       "theme": "llm",
-      "count": 5
+      "count": 6
     },
     {
       "theme": "agent",
-      "count": 3
+      "count": 2
     }
   ],
   "highlights": [
