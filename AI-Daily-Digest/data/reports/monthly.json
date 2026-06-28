@@ -1,8 +1,8 @@
 {
   "label": "月报",
   "window_days": 30,
-  "generated_at": "2026-06-27T12:13:12.752212+08:00",
-  "count": 200,
+  "generated_at": "2026-06-28T09:57:51.411460+08:00",
+  "count": 198,
   "summary": "近 30 天里，最集中的主题是 ai、llm、agent。",
   "top_items": [
     {
@@ -90,88 +90,6 @@
       "first_seen_at": "2026-06-16T05:27:38.234336+00:00",
       "last_seen_at": "2026-06-16T05:27:38.234336+00:00",
       "last_curated_at": "2026-06-16T05:27:38.234336+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2605.28774v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "Agent Explorative Policy Optimization for Multimodal Agentic Reasoning",
-      "html_url": "http://arxiv.org/abs/2605.28774v1",
-      "pdf_url": "https://arxiv.org/pdf/2605.28774v1",
-      "description": "Vision-language models with extended reasoning succeed on complex problems, but many real-world problems require external tools that internal reasoning alone often cannot resolve. Agentic reasoning therefore interleaves two behaviors with a structural asymmetry: thinking (the self-contained default) and tool use (a high-variance auxiliary acting). We refer to this asymmetry as the Thinking-Acting Gap. Under standard RL recipes like GRPO, the gap manifests as two diagnostic symptoms during training: tool use is attempted on only ~30% of rollouts, and when attempted, the tool-using rollouts within a group are all-wrong on ~40% of questions, suppressing the learning signal at the tool calls that needed it. We propose AXPO (Agent eXplorative Policy Optimization): for each all-wrong tool-using subgroup, AXPO fixes the thinking prefix and resamples the tool call and its continuation, paired with uncertainty-based prefix selection. Across nine multimodal benchmarks and three scales of Qwen3-VL-Thinking, SFT+AXPO outperforms SFT+GRPO at average (+1.8pp Pass@1 and +1.8pp Pass@4 at 8B on average) and 8B with SFT+AXPO surpasses the 32B Base on Pass@4 with 4 times fewer parameters.",
-      "authors": [
-        "Minki Kang",
-        "Shizhe Diao",
-        "Ryo Hachiuma",
-        "Sung Ju Hwang",
-        "Pavlo Molchanov",
-        "Yu-Chiang Frank Wang",
-        "Byung-Kwan Lee"
-      ],
-      "categories": [
-        "cs.CL"
-      ],
-      "published_at": "2026-05-27T17:36:39+00:00",
-      "updated_at": "2026-05-27T17:36:39+00:00",
-      "primary_category": "cs.CL",
-      "heuristic_score": 24.585,
-      "summary": "Agent Explorative Policy Optimization for Multimodal Agentic Reasoning 是最近值得追踪的一篇 AI 论文。论文摘要显示：Vision-language models with extended reasoning succeed on complex problems, but many real-world problems require external tools that internal reasoning alone often cannot resolve. Agentic reasoning therefore interleaves two behaviors with a...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CL",
-        "作者数: 7"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "agent",
-        "agentic",
-        "rag"
-      ],
-      "themes": [
-        "ai",
-        "agent",
-        "agentic"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：Agent Explorative Policy Optimization for Multimodal Agentic Reasoning 是最近值得追踪的一篇 AI 论文。论文摘要显示：Vision-language models with extended reasoning succeed on complex problems, but many real-world problems require external tools that internal reasoning alone often cannot resolve. Agentic reasoning therefore interleaves two behaviors with a...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL\n- 作者数: 7",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "multimodal",
-          "weight": 2.0
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 220.0,
-      "detail_path": "items/arxiv-agent-explorative-policy-optimization-for-multimodal-agentic-reasoning.html",
-      "first_seen_at": "2026-05-28T04:36:05.094729+00:00",
-      "last_seen_at": "2026-05-28T04:36:05.094729+00:00",
-      "last_curated_at": "2026-05-28T04:36:05.094729+00:00",
       "last_notified_at": null
     },
     {
@@ -668,6 +586,87 @@
       "last_seen_at": "2026-06-09T04:21:17.010822+00:00",
       "last_curated_at": "2026-06-09T04:21:17.010822+00:00",
       "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2606.27154v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "OpenRCA 2.0: From Outcome Labels to Causal Process Supervision",
+      "html_url": "http://arxiv.org/abs/2606.27154v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.27154v1",
+      "description": "Root cause analysis (RCA) poses a holistic test of LLM agentic capabilities, such as long-context understanding, multi-step reasoning, and tool use. However, existing datasets suffer from a fundamental gap: they label only the root cause, not the propagation path connecting it to the observed symptom, which largely simplifies the task to naive pattern matching. To support rigorous evaluation, we introduce PAVE, a step-wise labeling protocol that leverages known interventions from fault injection to reconstruct causal propagation paths. The mechanism is forward verification: reasoning from cause to effect rather than inferring backward from symptoms. Applying PAVE yields OpenRCA 2.0 (500 instances), the first cross-system RCA benchmark with step-wise causal annotations for LLM agents. Across 11 frontier LLMs, recovering the exact root-cause set succeeds in only 20.7% of cases on average. To locate where this difficulty lies, we relax the criterion and find what we call the ungrounded diagnosis: agents identify at least one correct root-cause service in 76.0% of cases, but ground that service in a verified causal propagation path to the observed symptom in only 61.5%. Outcome-only evaluation hides this failure mode; step-wise causal ground truth is the missing piece for trustworthy LLM-based RCA agents.",
+      "authors": [
+        "Aoyang Fang",
+        "Yifan Yang",
+        "Jin'ao Shang",
+        "Qisheng Lu",
+        "Junjielung Xu",
+        "Rui Wang",
+        "Songhan Zhang",
+        "Yuzhong Zhang",
+        "Boxi Yu",
+        "Pinjia He"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "published_at": "2026-06-25T15:24:23+00:00",
+      "updated_at": "2026-06-25T15:24:23+00:00",
+      "primary_category": "cs.AI",
+      "heuristic_score": 19.953,
+      "summary": "OpenRCA 2.0: From Outcome Labels to Causal Process Supervision 是最近值得追踪的一篇 AI 论文。论文摘要显示：Root cause analysis (RCA) poses a holistic test of LLM agentic capabilities, such as long-context understanding, multi-step reasoning, and tool use. However, existing datasets suffer from a fundamental gap: they label only the root cause, n...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.AI",
+        "作者数: 10"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "llm",
+        "agent",
+        "agentic"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "agent"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：OpenRCA 2.0: From Outcome Labels to Causal Process Supervision 是最近值得追踪的一篇 AI 论文。论文摘要显示：Root cause analysis (RCA) poses a holistic test of LLM agentic capabilities, such as long-context understanding, multi-step reasoning, and tool use. However, existing datasets suffer from a fundamental gap: they label only the root cause, n...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI\n- 作者数: 10",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 200.0,
+      "detail_path": "items/arxiv-openrca-2-0-from-outcome-labels-to-causal-process-supervision.html",
+      "first_seen_at": "2026-06-26T01:55:10.900745+00:00",
+      "last_seen_at": "2026-06-26T04:37:08.951672+00:00",
+      "last_curated_at": "2026-06-26T04:37:08.951672+00:00",
+      "last_notified_at": null
     }
   ],
   "top_themes": [
@@ -677,11 +676,11 @@
     },
     {
       "theme": "llm",
-      "count": 6
+      "count": 7
     },
     {
       "theme": "agent",
-      "count": 2
+      "count": 1
     }
   ],
   "highlights": [
@@ -691,12 +690,12 @@
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     },
     {
-      "title": "Agent Explorative Policy Optimization for Multimodal Agentic Reasoning",
+      "title": "You Only Index Once: Cross-Layer Sparse Attention with Shared Routing",
       "source": "arxiv",
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     },
     {
-      "title": "You Only Index Once: Cross-Layer Sparse Attention with Shared Routing",
+      "title": "SHERLOC: Structured Diagnostic Localization for Code Repair Agents",
       "source": "arxiv",
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     }

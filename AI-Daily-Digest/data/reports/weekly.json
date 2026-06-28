@@ -1,9 +1,9 @@
 {
   "label": "周报",
   "window_days": 7,
-  "generated_at": "2026-06-27T12:13:12.752212+08:00",
-  "count": 68,
-  "summary": "近 7 天里，最集中的主题是 ai、llm、agent。",
+  "generated_at": "2026-06-28T09:57:51.411460+08:00",
+  "count": 63,
+  "summary": "近 7 天里，最集中的主题是 ai、llm、rag。",
   "top_items": [
     {
       "id": "arxiv::http://arxiv.org/abs/2606.24820v1",
@@ -521,90 +521,6 @@
       "last_notified_at": null
     },
     {
-      "id": "arxiv::http://arxiv.org/abs/2606.20515v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "S-Agent: Spatial Tool-Use Elicits Reasoning for Spatial Intelligence",
-      "html_url": "http://arxiv.org/abs/2606.20515v1",
-      "pdf_url": "https://arxiv.org/pdf/2606.20515v1",
-      "description": "Real-world spatial intelligence requires reasoning over a continuous and evolving 3D world, yet existing VLMs and tool-augmented agents largely remain tied to static, stateless inference from isolated visual observations. We introduce \\textbf{\\textsc{S-Agent}}, a spatial tool-use agentic paradigm for understanding and reasoning over continuous multi-view images and videos. By formulating spatial reasoning as spatio-temporal evidence accumulation rather than isolated frame-level prediction, \\textsc{S-Agent} reshapes spatial perception into scene-centric understanding beyond frame-centric recognition. Specifically, \\textsc{S-Agent} casts the VLM as a semantic planner that decides what evidence is needed, while a hierarchy of spatial tools and experts grounds objects in 2D, lifts them into 3D geometric evidence, and aggregates this evidence into high-level spatial knowledge (\\textit{e.g.}, counting, measurement, orientation, and relative position). Additionally, a temporal memory mechanism, including Scene Memory for maintaining the evolving scene state and Agent Memory for accumulating reasoning context, enables evidence integration across frames and reasoning steps. Comprehensive experiments on multi-view and video spatial reasoning benchmarks show that \\textsc{S-Agent} consistently improves both open-source and closed-source VLMs in a training-free manner. Beyond inference-time augmentation, supervised fine-tuning (SFT) on \\textsc{S-Agent}-generated spatial trajectories \\textsc{S-300K} yields \\textsc{S-Agent-8B}, a compact spatial agent that significantly surpasses similar-scale baselines (e.g., Qwen3-VL-8B) and performs comparably to advanced closed-source models (e.g., GPT-5.4 and Gemini 3).",
-      "authors": [
-        "Yalun Dai",
-        "Hao Li",
-        "Shulin Tian",
-        "Runmao Yao",
-        "Yuhao Dong",
-        "Fangzhou Hong",
-        "Zhaoxi Chen",
-        "Fangfu Liu",
-        "Baoliang Tian",
-        "Dingwen Zhang",
-        "Tao Wang",
-        "Kim-Hui Yap",
-        "Ziwei Liu"
-      ],
-      "categories": [
-        "cs.CV"
-      ],
-      "published_at": "2026-06-18T17:34:55+00:00",
-      "updated_at": "2026-06-18T17:34:55+00:00",
-      "primary_category": "cs.CV",
-      "heuristic_score": 25.1,
-      "summary": "S-Agent: Spatial Tool-Use Elicits Reasoning for Spatial Intelligence 是最近值得追踪的一篇 AI 论文。论文摘要显示：Real-world spatial intelligence requires reasoning over a continuous and evolving 3D world, yet existing VLMs and tool-augmented agents largely remain tied to static, stateless inference from isolated visual observations. We introduce \\text...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CV",
-        "作者数: 13"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "agent",
-        "agentic",
-        "gpt"
-      ],
-      "themes": [
-        "ai",
-        "agent",
-        "agentic"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：S-Agent: Spatial Tool-Use Elicits Reasoning for Spatial Intelligence 是最近值得追踪的一篇 AI 论文。论文摘要显示：Real-world spatial intelligence requires reasoning over a continuous and evolving 3D world, yet existing VLMs and tool-augmented agents largely remain tied to static, stateless inference from isolated visual observations. We introduce \\text...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV\n- 作者数: 13",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "inference",
-          "weight": 1.8
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 196.0,
-      "detail_path": "items/arxiv-s-agent-spatial-tool-use-elicits-reasoning-for-spatial-intelligence.html",
-      "first_seen_at": "2026-06-19T02:34:17.444927+00:00",
-      "last_seen_at": "2026-06-20T04:37:52.094536+00:00",
-      "last_curated_at": "2026-06-20T04:37:52.094536+00:00",
-      "last_notified_at": null
-    },
-    {
       "id": "arxiv::http://arxiv.org/abs/2606.27187v1",
       "kind": "paper",
       "source": "arxiv",
@@ -691,6 +607,86 @@
       "last_seen_at": "2026-06-26T04:37:08.951672+00:00",
       "last_curated_at": "2026-06-26T04:37:08.951672+00:00",
       "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2606.24636v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "CineCap: Structured Reasoning with Spatio-Temporal Anchors for Cinematographic Video Captioning",
+      "html_url": "http://arxiv.org/abs/2606.24636v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.24636v1",
+      "description": "Cinematographic captioning aims to describe how a video is filmed using professional film-language concepts such as camera movement, shot size, depth of field, composition, and shooting angle. This capability is important for fine-grained video understanding and controllable movie-quality video generation, yet remains underexplored in existing multimodal large language models. Unlike question-answering-based evaluation of cinematic understanding, cinematographic captioning requires a unified open-form description over multiple cinematographic dimensions. This task is challenging for two main reasons: the model must infer professional cinematographic concepts from subtle visual evidence, and it must generate captions that are both comprehensive and accurate. Accordingly, we propose CineCap, a framework that combines structured reasoning with spatio-temporal anchors and reinforcement learning with comprehensiveness, accuracy, and gated coverage rewards. The former grounds professional cinematographic descriptions in explicit visual evidence and organizes them into compact atomic reasoning for supervised fine-tuning, while the latter improves the balance between descriptive completeness and factual correctness. In addition, we construct CineCap Bench, a benchmark of 472 manually annotated video-caption pairs for systematic evaluation. Extensive experiments show that CineCap consistently outperforms strong proprietary and open-source baselines, establishing a new state of the art for cinematographic captioning. The code, model checkpoint, and benchmark are publicly available in https://github.com/Hectormxy/CineCap.git.",
+      "authors": [
+        "Xinyu Mao",
+        "Yuhui Zeng",
+        "Xiaokun Liu",
+        "Wenyu Qin",
+        "Meng Wang",
+        "Xin Tao",
+        "Pengfei Wan",
+        "Xiaohan Xing",
+        "Max Meng"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "published_at": "2026-06-23T14:29:40+00:00",
+      "updated_at": "2026-06-23T14:29:40+00:00",
+      "primary_category": "cs.AI",
+      "heuristic_score": 17.9,
+      "summary": "CineCap: Structured Reasoning with Spatio-Temporal Anchors for Cinematographic Video Captioning 是最近值得追踪的一篇 AI 论文。论文摘要显示：Cinematographic captioning aims to describe how a video is filmed using professional film-language concepts such as camera movement, shot size, depth of field, composition, and shooting angle. This capability is important for fine-grained v...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.AI",
+        "作者数: 9"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "rag",
+        "multimodal",
+        "model"
+      ],
+      "themes": [
+        "ai",
+        "rag",
+        "multimodal"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：CineCap: Structured Reasoning with Spatio-Temporal Anchors for Cinematographic Video Captioning 是最近值得追踪的一篇 AI 论文。论文摘要显示：Cinematographic captioning aims to describe how a video is filmed using professional film-language concepts such as camera movement, shot size, depth of field, composition, and shooting angle. This capability is important for fine-grained v...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI\n- 作者数: 9",
+      "focus_hits": [
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        },
+        {
+          "keyword": "multimodal",
+          "weight": 2.0
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "reasoning",
+      "personalized_score": 190.0,
+      "detail_path": "items/arxiv-cinecap-structured-reasoning-with-spatio-temporal-anchors-for-cinematographic-video-captio.html",
+      "first_seen_at": "2026-06-24T01:49:16.934549+00:00",
+      "last_seen_at": "2026-06-24T04:22:09.634888+00:00",
+      "last_curated_at": "2026-06-24T04:22:09.634888+00:00",
+      "last_notified_at": null
     }
   ],
   "top_themes": [
@@ -703,11 +699,11 @@
       "count": 5
     },
     {
-      "theme": "agent",
+      "theme": "rag",
       "count": 2
     },
     {
-      "theme": "rag",
+      "theme": "agent",
       "count": 1
     }
   ],
