@@ -1,6 +1,844 @@
 {
-  "generated_at": "2026-06-29T04:56:58.573543+00:00",
+  "generated_at": "2026-06-30T01:53:26.317470+00:00",
   "items": [
+    {
+      "id": "arxiv::http://arxiv.org/abs/2606.29278v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "The Complexity Ceiling Benchmark: A Multi-Domain Evaluation of Sequential Reasoning Under Depth Scaling",
+      "html_url": "http://arxiv.org/abs/2606.29278v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.29278v1",
+      "description": "We introduce the Complexity Ceiling Benchmark (CCB), a controlled evaluation of how language-model reasoning decays as the number of required sequential steps grows. CCB fixes the semantic content of a task and varies only its depth N in {5,...,50} across three structurally distinct regimes: grounded spatial state-tracking, abstract symbolic pointer manipulation, and transitive relational inference. Across 6,000 trials over five frontier and open-weight LLMs we find a consistent pattern of geometric per-step decay with widely separated domain ceilings: on the first two regimes the strongest models retain pd>0.92 across N=50; on the third every model collapses by N=5, with the best model's 50%-success horizon at H0.5~4.7 steps despite pd=0.863. A trace-level metric (TFBC) shows that 14.5% of correct answers across the benchmark are reached via incorrect intermediate reasoning. Forced verbose state-tracking does not move the ceiling (McNemar p=1.000), and the mean step at which reasoning first diverges, k*, predicts within-domain accuracy better than parameter count. CCB and the geometric decay model together reduce a model's long-horizon reasoning profile to one interpretable number per task family.",
+      "authors": [
+        "Shubh Chapra",
+        "Dhruv Kumar",
+        "Murari Mandal",
+        "Yash Sinha"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "published_at": "2026-06-28T08:56:34+00:00",
+      "updated_at": "2026-06-28T08:56:34+00:00",
+      "primary_category": "cs.AI",
+      "heuristic_score": 17.421,
+      "summary": "The Complexity Ceiling Benchmark: A Multi-Domain Evaluation of Sequential Reasoning Under Depth Scaling 是最近值得追踪的一篇 AI 论文。论文摘要显示：We introduce the Complexity Ceiling Benchmark (CCB), a controlled evaluation of how language-model reasoning decays as the number of required sequential steps grows. CCB fixes the semantic content of a task and varies only its depth N in {5...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.AI, cs.CL",
+        "作者数: 4"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "llm",
+        "model",
+        "benchmark"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "model"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：The Complexity Ceiling Benchmark: A Multi-Domain Evaluation of Sequential Reasoning Under Depth Scaling 是最近值得追踪的一篇 AI 论文。论文摘要显示：We introduce the Complexity Ceiling Benchmark (CCB), a controlled evaluation of how language-model reasoning decays as the number of required sequential steps grows. CCB fixes the semantic content of a task and varies only its depth N in {5...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI, cs.CL\n- 作者数: 4",
+      "focus_hits": [
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "inference",
+          "weight": 1.8
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "reasoning",
+      "personalized_score": 166.0,
+      "detail_path": "items/arxiv-the-complexity-ceiling-benchmark-a-multi-domain-evaluation-of-sequential-reasoning-under-d.html",
+      "first_seen_at": "2026-06-30T01:53:26.317470+00:00",
+      "last_seen_at": "2026-06-30T01:53:26.317470+00:00",
+      "last_curated_at": "2026-06-30T01:53:26.317470+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2606.29280v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Deterministic Decisions for High-Stakes AI. A Zero-Egress Pipeline with the Deployability of RAG and the Accuracy of Machine Learning",
+      "html_url": "http://arxiv.org/abs/2606.29280v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.29280v1",
+      "description": "We identify intervention bias as a previously unquantified failure mode of zero-shot large-language-model (LLM) educational advisory agents: without task-specific training, they recommend action when a hindsight-optimal oracle policy mandates inaction. In a six-arm ablation on the Open University Learning Analytics Dataset (N=800 students, four temporal cutoffs), at day 56 -- when the oracle designates 70.1% of students as needing no intervention -- zero-shot GPT-4o recommends action for 73%, a 43 percentage-point false-positive rate. Commercial RAG and SQL-augmented retrieval are comparably miscalibrated; at 10,000 students this implies about 4,300 unnecessary advisor contacts per cycle. Supervised policy learning eliminates this bias: a trajectory-conditioned ONNX Decision Transformer (DT) and a snapshot XGBoost classifier, trained on the same oracle-labelled trajectories under strict prefix-only features, both achieve near-zero calibration error. The DT reaches macro-F1 0.79 (macro-recall 0.85) across all five action classes, predicting even the rare load-reduction action without collapsing, at a 0% action flip rate and sub-5 ms CPU decision latency. The two supervised arms are on par; the DT's edge over XGBoost at the final cutoff is indicative only (unpaired across cohorts). Scope: we validate Stage-2 decision-making (EAV state vector to supervised policy) under controlled oracle input from structured OULAD data; high fidelity reflects feature-oracle alignment, not general high-stakes-AI capability. The most robust finding is the intervention-bias contrast, not the absolute accuracies. We also show an Evaluation Gap: LLM-as-judge scoring (DeepEval G-Eval) is blind to intervention bias, rewarding fluent over-prescription rather than decision quality.",
+      "authors": [
+        "Craig Atkinson"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "published_at": "2026-06-28T08:58:17+00:00",
+      "updated_at": "2026-06-28T08:58:17+00:00",
+      "primary_category": "cs.LG",
+      "heuristic_score": 20.3,
+      "summary": "Deterministic Decisions for High-Stakes AI. A Zero-Egress Pipeline with the Deployability of RAG and the Accuracy of Machine Learning 是最近值得追踪的一篇 AI 论文。论文摘要显示：We identify intervention bias as a previously unquantified failure mode of zero-shot large-language-model (LLM) educational advisory agents: without task-specific training, they recommend action when a hindsight-optimal oracle policy mandat...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.LG, cs.AI",
+        "作者数: 1"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "llm",
+        "agent",
+        "gpt"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "agent"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：Deterministic Decisions for High-Stakes AI. A Zero-Egress Pipeline with the Deployability of RAG and the Accuracy of Machine Learning 是最近值得追踪的一篇 AI 论文。论文摘要显示：We identify intervention bias as a previously unquantified failure mode of zero-shot large-language-model (LLM) educational advisory agents: without task-specific training, they recommend action when a hindsight-optimal oracle policy mandat...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.LG, cs.AI\n- 作者数: 1",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 160.0,
+      "detail_path": "items/arxiv-deterministic-decisions-for-high-stakes-ai-a-zero-egress-pipeline-with-the-deployability-o.html",
+      "first_seen_at": "2026-06-30T01:53:26.317470+00:00",
+      "last_seen_at": "2026-06-30T01:53:26.317470+00:00",
+      "last_curated_at": "2026-06-30T01:53:26.317470+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2606.29315v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Hierarchical Experimentalist Agents",
+      "html_url": "http://arxiv.org/abs/2606.29315v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.29315v1",
+      "description": "Large language models (LLMs) are increasingly used to take actions in the real world and support human decision-making, yet most agents rely on parametric knowledge, fixed post-training data, retrieval, or search. This paradigm breaks down in novel domains and for sophisticated queries that cannot be answered from prior knowledge alone. Knowing the laws of physics, for instance, does not by itself enable LLMs to answer queries or complete long-horizon tasks in a complex physical system. To address this, we introduce Hierarchical Experimentalist Agents (HExA), an in-context self-improvement framework to learn from active experimentation. HExA iteratively designs and refines query-relevant experiments, learns a reusable library of composable skills from experience, and integrates experimental evidence to answer queries or take actions. HExA is training-free, compatible with any black-box model, and does not require external supervision, oracles, or offline data. To evaluate active experimentation, we introduce Interphyre, a tool-calling benchmark built on the PHYRE 2D procedural physics environment, where agents propose interventions and test hypotheses through simulation APIs. Experiments show that current LLM agents struggle in these settings, especially on the hardest levels of Interphyre. Claude Sonnet 4.6 achieves only 2% success, while HExA improves the same model to up to 77% success. HExA also improves open-weight models and outperforms agentic baselines such as ReAct and Reflexion. Moreover, using only skills learned from easier levels and transferred without active experimentation, HExA achieves 44% success, demonstrating the reusability and generalization of its learned skills. Overall, HExA shows that learning through active experimentation can help agents discover useful knowledge, acquire reusable skills, and make efficient progress on novel long-horizon tasks.",
+      "authors": [
+        "Abhranil Chandra",
+        "Sankaran Vaidyanathan",
+        "Utsav Dhanuka",
+        "Varun Gandhi",
+        "Scott Niekum"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "published_at": "2026-06-28T10:21:55+00:00",
+      "updated_at": "2026-06-28T10:21:55+00:00",
+      "primary_category": "cs.AI",
+      "heuristic_score": 20.3,
+      "summary": "Hierarchical Experimentalist Agents 是最近值得追踪的一篇 AI 论文。论文摘要显示：Large language models (LLMs) are increasingly used to take actions in the real world and support human decision-making, yet most agents rely on parametric knowledge, fixed post-training data, retrieval, or search. This paradigm breaks down ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.AI, cs.LG",
+        "作者数: 5"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "llm",
+        "agent",
+        "agentic"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "agent"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：Hierarchical Experimentalist Agents 是最近值得追踪的一篇 AI 论文。论文摘要显示：Large language models (LLMs) are increasingly used to take actions in the real world and support human decision-making, yet most agents rely on parametric knowledge, fixed post-training data, retrieval, or search. This paradigm breaks down ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI, cs.LG\n- 作者数: 5",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 154.0,
+      "detail_path": "items/arxiv-hierarchical-experimentalist-agents.html",
+      "first_seen_at": "2026-06-30T01:53:26.317470+00:00",
+      "last_seen_at": "2026-06-30T01:53:26.317470+00:00",
+      "last_curated_at": "2026-06-30T01:53:26.317470+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2606.29286v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "ASTAD: Asymmetric Style Transfer for Synthetic-to-Real Adaptation in Autonomous Driving",
+      "html_url": "http://arxiv.org/abs/2606.29286v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.29286v1",
+      "description": "Synthetic data mitigates the data scarcity problem in autonomous driving perception. However, the synthetic-to-real gap leads to performance degradation, hindering real-world model generalization. Although current methods leverage diffusion models for photorealistic style transfer to bridge this gap, they critically ignore a practical asymmetry: while synthetic data possesses perfect pixel-level annotations, real-world style reference images generally lack corresponding labels. Consequently, existing methods relying on symmetric semantic guidance suffer from either prohibitive annotation costs or severe semantic misalignment. To address this dilemma, we formally propose a novel task: Asymmetric Style Transfer for Autonomous Driving (ASTAD), which requires semantically consistent transfer using only labeled synthetic content and unlabeled real-world references. We further introduce the ASTModel, a training-free two-stage framework designed to bridge this domain gap under asymmetric constraints. ASTModel first extracts a coarse semantic prior from the unlabeled target, followed by dynamic prior refinement and class-consistent style injection during the denoising process. Extensive experiments demonstrate that ASTModel significantly outperforms existing methods in downstream perception utility and structural fidelity, while offering a 3.2$\\times$ inference speedup. This work aligns synthetic-to-real adaptation with practical constraints, holding the potential to accelerate the scalable deployment of robust autonomous driving systems. Code: https://github.com/Dingyi-Yao/ASTAD.",
+      "authors": [
+        "Dingyi Yao",
+        "Xinqi Zhang",
+        "Lihui Peng",
+        "Jianming Hu",
+        "Danya Yao",
+        "Yi Zhang"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "published_at": "2026-06-28T09:15:15+00:00",
+      "updated_at": "2026-06-28T09:15:15+00:00",
+      "primary_category": "cs.CV",
+      "heuristic_score": 17.899,
+      "summary": "ASTAD: Asymmetric Style Transfer for Synthetic-to-Real Adaptation in Autonomous Driving 是最近值得追踪的一篇 AI 论文。论文摘要显示：Synthetic data mitigates the data scarcity problem in autonomous driving perception. However, the synthetic-to-real gap leads to performance degradation, hindering real-world model generalization. Although current methods leverage diffusion...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CV",
+        "作者数: 6"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "rag",
+        "diffusion",
+        "model"
+      ],
+      "themes": [
+        "ai",
+        "rag",
+        "diffusion"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：ASTAD: Asymmetric Style Transfer for Synthetic-to-Real Adaptation in Autonomous Driving 是最近值得追踪的一篇 AI 论文。论文摘要显示：Synthetic data mitigates the data scarcity problem in autonomous driving perception. However, the synthetic-to-real gap leads to performance degradation, hindering real-world model generalization. Although current methods leverage diffusion...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV\n- 作者数: 6",
+      "focus_hits": [
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        },
+        {
+          "keyword": "inference",
+          "weight": 1.8
+        }
+      ],
+      "primary_match": "rag",
+      "personalized_score": 148.0,
+      "detail_path": "items/arxiv-astad-asymmetric-style-transfer-for-synthetic-to-real-adaptation-in-autonomous-driving.html",
+      "first_seen_at": "2026-06-30T01:53:26.317470+00:00",
+      "last_seen_at": "2026-06-30T01:53:26.317470+00:00",
+      "last_curated_at": "2026-06-30T01:53:26.317470+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2606.29339v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Two kinds of robustness are not the same: disentangling fault tolerance and low-SNR robustness in multi-domain event detection on real data",
+      "html_url": "http://arxiv.org/abs/2606.29339v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.29339v1",
+      "description": "Reliable event detection underpins induced-seismicity monitoring for Carbon dioxide Capture and Storage (CCS) and geothermal operations, distributed acoustic sensing (DAS), and industrial condition monitoring. In each setting a detector must stay reliable both when sensors fail and when the signal is buried in noise. These two failure modes are routinely conflated, and architectural complexity is often credited with robustness it may not deserve. We assemble a unified binary event-detection benchmark from three physically distinct real sources -- Hi-net seismic waveforms, Utah FORGE 2024 borehole DAS, and MAFAULDA industrial vibration -- each mapped to a common 8-channel, 256-sample representation, and evaluate a fault-tolerant detector (CEPHALON) trained with per-sample sensor-dropout against standard detectors (a 1D convolutional network, a temporal convolutional network, and a compact Transformer) trained with an identical recipe. On clean data every model is near-perfect (AUC ~ 0.99). Under progressive sensor loss, simple models with sensor-dropout are already robust and CEPHALON holds no advantage. Under additive noise, however, CEPHALON degrades far more gracefully: at -2.5 dB its overall AUC is 0.939 versus 0.532-0.572 for the convolutional baselines. Same-architecture ablations isolate the cause: disabling internal redundancy at inference reduces the low-SNR advantage only modestly, whereas removing sensor-dropout training collapses it (0.899 to 0.603 at -5 dB). The training recipe is therefore the dominant cause and parallel redundancy only secondary. We release a complete, numbered, reproducible pipeline so that every figure can be regenerated.",
+      "authors": [
+        "Isao Kurosawa"
+      ],
+      "categories": [
+        "physics.geo-ph",
+        "cs.LG",
+        "eess.SP"
+      ],
+      "published_at": "2026-06-28T11:14:20+00:00",
+      "updated_at": "2026-06-28T11:14:20+00:00",
+      "primary_category": "physics.geo-ph",
+      "heuristic_score": 16.4,
+      "summary": "Two kinds of robustness are not the same: disentangling fault tolerance and low-SNR robustness in multi-domain event detection on real data 是最近值得追踪的一篇 AI 论文。论文摘要显示：Reliable event detection underpins induced-seismicity monitoring for Carbon dioxide Capture and Storage (CCS) and geothermal operations, distributed acoustic sensing (DAS), and industrial condition monitoring. In each setting a detector mus...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: physics.geo-ph, cs.LG",
+        "作者数: 1"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 9,
+      "tags": [
+        "ai",
+        "rag",
+        "model",
+        "benchmark"
+      ],
+      "themes": [
+        "ai",
+        "rag",
+        "model"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：Two kinds of robustness are not the same: disentangling fault tolerance and low-SNR robustness in multi-domain event detection on real data 是最近值得追踪的一篇 AI 论文。论文摘要显示：Reliable event detection underpins induced-seismicity monitoring for Carbon dioxide Capture and Storage (CCS) and geothermal operations, distributed acoustic sensing (DAS), and industrial condition monitoring. In each setting a detector mus...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：9/10\n\n**亮点**：\n- 分类: physics.geo-ph, cs.LG\n- 作者数: 1",
+      "focus_hits": [
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        },
+        {
+          "keyword": "inference",
+          "weight": 1.8
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "rag",
+      "personalized_score": 146.0,
+      "detail_path": "items/arxiv-two-kinds-of-robustness-are-not-the-same-disentangling-fault-tolerance-and-low-snr-robustn.html",
+      "first_seen_at": "2026-06-30T01:53:26.317470+00:00",
+      "last_seen_at": "2026-06-30T01:53:26.317470+00:00",
+      "last_curated_at": "2026-06-30T01:53:26.317470+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2606.29296v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Process Advantage Signal Shaping: A Paradigm-Agnostic Middleware for Process-Supervised RL in LLM Reasoners",
+      "html_url": "http://arxiv.org/abs/2606.29296v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.29296v1",
+      "description": "Group Relative Policy Optimization (GRPO) is a default recipe for process-supervised reinforcement learning of LLM reasoners, and dense process supervision -- via learned process reward models (PRMs) or on-policy-distillation KL signals -- is a common way to densify its otherwise weak outcome reward. Layering such a step-level signal on top of GRPO's group-standardized advantage, however, exposes three structural pathologies: \\emph{channel contamination} between the pooled process, outcome, and format streams at group standardization; \\emph{resolution mismatch} between the granularity of the process signal and the granularity of the logical decisions being credited; and a \\emph{cumulative trap} by which GRPO's return-to-go sum surfaces either length inflation or truncated exploration depending on the sign regime of the signal. We propose \\textbf{PASS} (\\emph{Process Advantage Signal Shaping}), a compact middleware that sits between any scalar step-level process signal and GRPO's clipped surrogate and addresses the three pathologies in turn: \\emph{Advantage Fusion} standardizes the three streams independently within each group, \\emph{Chunk-by-Value} derives value-homogeneous chunks from the signal itself and broadcasts credit within each chunk, and \\emph{Divide-Length} converts the cumulative objective into an average-value-density score. We validate PASS across two domains and two process-signal paradigms -- a learned PRM on mathematical reasoning and an on-policy-distillation KL signal (with a generalized variant) on multi-hop question answering -- and under two group-standardization operators. In every regime PASS delivers a consistent pass@1 gain over the corresponding GRPO baseline.",
+      "authors": [
+        "Chao Wang",
+        "Hongtao Tian",
+        "Tao Yang",
+        "Yunsheng Shi",
+        "Ting Yao",
+        "Wenbo Ding"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "published_at": "2026-06-28T09:36:43+00:00",
+      "updated_at": "2026-06-28T09:36:43+00:00",
+      "primary_category": "cs.AI",
+      "heuristic_score": 15.5,
+      "summary": "Process Advantage Signal Shaping: A Paradigm-Agnostic Middleware for Process-Supervised RL in LLM Reasoners 是最近值得追踪的一篇 AI 论文。论文摘要显示：Group Relative Policy Optimization (GRPO) is a default recipe for process-supervised reinforcement learning of LLM reasoners, and dense process supervision -- via learned process reward models (PRMs) or on-policy-distillation KL signals -- ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.AI",
+        "作者数: 6"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 9,
+      "tags": [
+        "ai",
+        "llm",
+        "rag",
+        "model"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "rag"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：Process Advantage Signal Shaping: A Paradigm-Agnostic Middleware for Process-Supervised RL in LLM Reasoners 是最近值得追踪的一篇 AI 论文。论文摘要显示：Group Relative Policy Optimization (GRPO) is a default recipe for process-supervised reinforcement learning of LLM reasoners, and dense process supervision -- via learned process reward models (PRMs) or on-policy-distillation KL signals -- ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：9/10\n\n**亮点**：\n- 分类: cs.AI\n- 作者数: 6",
+      "focus_hits": [
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        }
+      ],
+      "primary_match": "reasoning",
+      "personalized_score": 144.0,
+      "detail_path": "items/arxiv-process-advantage-signal-shaping-a-paradigm-agnostic-middleware-for-process-supervised-rl-.html",
+      "first_seen_at": "2026-06-30T01:53:26.317470+00:00",
+      "last_seen_at": "2026-06-30T01:53:26.317470+00:00",
+      "last_curated_at": "2026-06-30T01:53:26.317470+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "github::msitarzewski/agency-agents",
+      "kind": "repo",
+      "source": "github",
+      "source_tags": [
+        "trending"
+      ],
+      "name": "agency-agents",
+      "title": "msitarzewski/agency-agents",
+      "full_name": "msitarzewski/agency-agents",
+      "html_url": "https://github.com/msitarzewski/agency-agents",
+      "description": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.",
+      "stars": 118951,
+      "stars_today": 0,
+      "language": "Shell",
+      "topics": [],
+      "created_at": "",
+      "updated_at": "",
+      "heuristic_score": 15.2,
+      "summary": "msitarzewski/agency-agents 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.结合关键词命中和热度信号，它适合加入今日重点观察列表。",
+      "brief": "这是一个值得快速关注的开源 AI 项目。",
+      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
+      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
+      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
+      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
+      "highlights": [
+        "Stars: 118951",
+        "语言: Shell"
+      ],
+      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
+      "relevance_score": 8,
+      "tags": [
+        "ai",
+        "agent"
+      ],
+      "themes": [
+        "ai",
+        "agent"
+      ],
+      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
+      "summary_markdown": "**摘要**：msitarzewski/agency-agents 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 118951\n- 语言: Shell",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 130.0,
+      "detail_path": "items/github-msitarzewski-agency-agents.html",
+      "first_seen_at": "2026-05-05T01:23:51.349264+00:00",
+      "last_seen_at": "2026-06-30T01:53:26.317470+00:00",
+      "last_curated_at": "2026-06-30T01:53:26.317470+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "github::xbtlin/ai-berkshire",
+      "kind": "repo",
+      "source": "github",
+      "source_tags": [
+        "trending"
+      ],
+      "name": "ai-berkshire",
+      "title": "xbtlin/ai-berkshire",
+      "full_name": "xbtlin/ai-berkshire",
+      "html_url": "https://github.com/xbtlin/ai-berkshire",
+      "description": "AI 时代的伯克希尔：基于 Claude Code / Codex 的价值投资研究框架。巴菲特·芒格·段永平·李录四大师方法论 + 多Agent并行研究。| AI-era Berkshire: a value investing research framework built for Claude Code / Codex. 4 masters' methodologies + multi-agent adversarial analysis.",
+      "stars": 6673,
+      "stars_today": 0,
+      "language": "Python",
+      "topics": [],
+      "created_at": "",
+      "updated_at": "",
+      "heuristic_score": 15.2,
+      "summary": "xbtlin/ai-berkshire 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：AI 时代的伯克希尔：基于 Claude Code / Codex 的价值投资研究框架。巴菲特·芒格·段永平·李录四大师方法论 + 多Agent并行研究。| AI-era Berkshire: a value investing research framework built for Claude Code / Codex. 4 masters' methodologies + multi-agent adversarial analysis.结合关键词命中和热度信号，它适合加入今日重点观察列表。",
+      "brief": "这是一个值得快速关注的开源 AI 项目。",
+      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
+      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
+      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
+      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
+      "highlights": [
+        "Stars: 6673",
+        "语言: Python"
+      ],
+      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
+      "relevance_score": 8,
+      "tags": [
+        "ai",
+        "agent"
+      ],
+      "themes": [
+        "ai",
+        "agent"
+      ],
+      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
+      "summary_markdown": "**摘要**：xbtlin/ai-berkshire 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：AI 时代的伯克希尔：基于 Claude Code / Codex 的价值投资研究框架。巴菲特·芒格·段永平·李录四大师方法论 + 多Agent并行研究。| AI-era Berkshire: a value investing research framework built for Claude Code / Codex. 4 masters' methodologies + multi-agent adversarial analysis.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 6673\n- 语言: Python",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 112.67,
+      "detail_path": "items/github-xbtlin-ai-berkshire.html",
+      "first_seen_at": "2026-06-27T01:47:42.641715+00:00",
+      "last_seen_at": "2026-06-30T01:53:26.317470+00:00",
+      "last_curated_at": "2026-06-30T01:53:26.317470+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "github::soxoj/maigret",
+      "kind": "repo",
+      "source": "github",
+      "source_tags": [
+        "trending"
+      ],
+      "name": "maigret",
+      "title": "soxoj/maigret",
+      "full_name": "soxoj/maigret",
+      "html_url": "https://github.com/soxoj/maigret",
+      "description": "🕵️‍♂️ Collect a dossier on a person by username from 3000+ sites",
+      "stars": 34398,
+      "stars_today": 0,
+      "language": "Python",
+      "topics": [],
+      "created_at": "",
+      "updated_at": "",
+      "heuristic_score": 12.6,
+      "summary": "soxoj/maigret 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：🕵️‍♂️ Collect a dossier on a person by username from 3000+ sites结合关键词命中和热度信号，它适合加入今日重点观察列表。",
+      "brief": "这是一个值得快速关注的开源 AI 项目。",
+      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
+      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
+      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
+      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
+      "highlights": [
+        "Stars: 34398",
+        "语言: Python"
+      ],
+      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
+      "relevance_score": 7,
+      "tags": [
+        "daily-pick"
+      ],
+      "themes": [
+        "开源工具"
+      ],
+      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
+      "summary_markdown": "**摘要**：soxoj/maigret 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：🕵️‍♂️ Collect a dossier on a person by username from 3000+ sites结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 34398\n- 语言: Python",
+      "focus_hits": [],
+      "primary_match": "",
+      "personalized_score": 83.76,
+      "detail_path": "items/github-soxoj-maigret.html",
+      "first_seen_at": "2026-06-11T02:06:24.448588+00:00",
+      "last_seen_at": "2026-06-30T01:53:26.317470+00:00",
+      "last_curated_at": "2026-06-30T01:53:26.317470+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "github::commaai/openpilot",
+      "kind": "repo",
+      "source": "github",
+      "source_tags": [
+        "trending"
+      ],
+      "name": "openpilot",
+      "title": "commaai/openpilot",
+      "full_name": "commaai/openpilot",
+      "html_url": "https://github.com/commaai/openpilot",
+      "description": "openpilot is an operating system for robotics. Currently, it upgrades the driver assistance system on 300+ supported cars.",
+      "stars": 62783,
+      "stars_today": 0,
+      "language": "Python",
+      "topics": [],
+      "created_at": "",
+      "updated_at": "",
+      "heuristic_score": 12.6,
+      "summary": "commaai/openpilot 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：openpilot is an operating system for robotics. Currently, it upgrades the driver assistance system on 300+ supported cars.结合关键词命中和热度信号，它适合加入今日重点观察列表。",
+      "brief": "这是一个值得快速关注的开源 AI 项目。",
+      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
+      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
+      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
+      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
+      "highlights": [
+        "Stars: 62783",
+        "语言: Python"
+      ],
+      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
+      "relevance_score": 7,
+      "tags": [
+        "robotics"
+      ],
+      "themes": [
+        "robotics"
+      ],
+      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
+      "summary_markdown": "**摘要**：commaai/openpilot 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：openpilot is an operating system for robotics. Currently, it upgrades the driver assistance system on 300+ supported cars.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 62783\n- 语言: Python",
+      "focus_hits": [
+        {
+          "keyword": "robotics",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "robotics",
+      "personalized_score": 106.0,
+      "detail_path": "items/github-commaai-openpilot.html",
+      "first_seen_at": "2026-06-27T01:47:42.641715+00:00",
+      "last_seen_at": "2026-06-30T01:53:26.317470+00:00",
+      "last_curated_at": "2026-06-30T01:53:26.317470+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "github::browser-use/video-use",
+      "kind": "repo",
+      "source": "github",
+      "source_tags": [
+        "trending"
+      ],
+      "name": "video-use",
+      "title": "browser-use/video-use",
+      "full_name": "browser-use/video-use",
+      "html_url": "https://github.com/browser-use/video-use",
+      "description": "Edit videos with coding agents",
+      "stars": 11962,
+      "stars_today": 0,
+      "language": "Python",
+      "topics": [],
+      "created_at": "",
+      "updated_at": "",
+      "heuristic_score": 12.6,
+      "summary": "browser-use/video-use 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Edit videos with coding agents结合关键词命中和热度信号，它适合加入今日重点观察列表。",
+      "brief": "这是一个值得快速关注的开源 AI 项目。",
+      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
+      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
+      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
+      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
+      "highlights": [
+        "Stars: 11962",
+        "语言: Python"
+      ],
+      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
+      "relevance_score": 7,
+      "tags": [
+        "agent",
+        "coding agent"
+      ],
+      "themes": [
+        "agent",
+        "coding agent"
+      ],
+      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
+      "summary_markdown": "**摘要**：browser-use/video-use 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Edit videos with coding agents结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 11962\n- 语言: Python",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "coding",
+          "weight": 2.6
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 130.78,
+      "detail_path": "items/github-browser-use-video-use.html",
+      "first_seen_at": "2026-06-29T01:59:43.336717+00:00",
+      "last_seen_at": "2026-06-30T01:53:26.317470+00:00",
+      "last_curated_at": "2026-06-30T01:53:26.317470+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "github::HKUDS/Vibe-Trading",
+      "kind": "repo",
+      "source": "github",
+      "source_tags": [
+        "trending"
+      ],
+      "name": "Vibe-Trading",
+      "title": "HKUDS/Vibe-Trading",
+      "full_name": "HKUDS/Vibe-Trading",
+      "html_url": "https://github.com/HKUDS/Vibe-Trading",
+      "description": "\"Vibe-Trading: Your Personal Trading Agent\"",
+      "stars": 15123,
+      "stars_today": 0,
+      "language": "Python",
+      "topics": [],
+      "created_at": "",
+      "updated_at": "",
+      "heuristic_score": 12.6,
+      "summary": "HKUDS/Vibe-Trading 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：\"Vibe-Trading: Your Personal Trading Agent\"结合关键词命中和热度信号，它适合加入今日重点观察列表。",
+      "brief": "这是一个值得快速关注的开源 AI 项目。",
+      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
+      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
+      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
+      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
+      "highlights": [
+        "Stars: 15123",
+        "语言: Python"
+      ],
+      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
+      "relevance_score": 7,
+      "tags": [
+        "agent"
+      ],
+      "themes": [
+        "agent"
+      ],
+      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
+      "summary_markdown": "**摘要**：HKUDS/Vibe-Trading 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：\"Vibe-Trading: Your Personal Trading Agent\"结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 15123\n- 语言: Python",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 106.05,
+      "detail_path": "items/github-hkuds-vibe-trading.html",
+      "first_seen_at": "2026-06-29T01:59:43.336717+00:00",
+      "last_seen_at": "2026-06-30T01:53:26.317470+00:00",
+      "last_curated_at": "2026-06-30T01:53:26.317470+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "github::logto-io/logto",
+      "kind": "repo",
+      "source": "github",
+      "source_tags": [
+        "trending"
+      ],
+      "name": "logto",
+      "title": "logto-io/logto",
+      "full_name": "logto-io/logto",
+      "html_url": "https://github.com/logto-io/logto",
+      "description": "🧑‍🚀 Authentication and authorization infrastructure for SaaS and AI apps, built on OIDC and OAuth 2.1 with multi-tenancy, SSO, and RBAC.",
+      "stars": 12693,
+      "stars_today": 0,
+      "language": "TypeScript",
+      "topics": [],
+      "created_at": "",
+      "updated_at": "",
+      "heuristic_score": 12.6,
+      "summary": "logto-io/logto 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：🧑‍🚀 Authentication and authorization infrastructure for SaaS and AI apps, built on OIDC and OAuth 2.1 with multi-tenancy, SSO, and RBAC.结合关键词命中和热度信号，它适合加入今日重点观察列表。",
+      "brief": "这是一个值得快速关注的开源 AI 项目。",
+      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
+      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
+      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
+      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
+      "highlights": [
+        "Stars: 12693",
+        "语言: TypeScript"
+      ],
+      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
+      "relevance_score": 7,
+      "tags": [
+        "ai"
+      ],
+      "themes": [
+        "ai"
+      ],
+      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
+      "summary_markdown": "**摘要**：logto-io/logto 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：🧑‍🚀 Authentication and authorization infrastructure for SaaS and AI apps, built on OIDC and OAuth 2.1 with multi-tenancy, SSO, and RBAC.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 12693\n- 语言: TypeScript",
+      "focus_hits": [],
+      "primary_match": "",
+      "personalized_score": 75.08,
+      "detail_path": "items/github-logto-io-logto.html",
+      "first_seen_at": "2026-06-30T01:53:26.317470+00:00",
+      "last_seen_at": "2026-06-30T01:53:26.317470+00:00",
+      "last_curated_at": "2026-06-30T01:53:26.317470+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "github::0xNyk/council-of-high-intelligence",
+      "kind": "repo",
+      "source": "github",
+      "source_tags": [
+        "trending"
+      ],
+      "name": "council-of-high-intelligence",
+      "title": "0xNyk/council-of-high-intelligence",
+      "full_name": "0xNyk/council-of-high-intelligence",
+      "html_url": "https://github.com/0xNyk/council-of-high-intelligence",
+      "description": "18 AI personas deliberate your hardest decisions across multiple LLM providers. Aristotle, Feynman, Kahneman, Torvalds & more — structured multi-round deliberation with genuine model diversity. One command: /council",
+      "stars": 1926,
+      "stars_today": 0,
+      "language": "Shell",
+      "topics": [],
+      "created_at": "",
+      "updated_at": "",
+      "heuristic_score": 11.652,
+      "summary": "0xNyk/council-of-high-intelligence 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：18 AI personas deliberate your hardest decisions across multiple LLM providers. Aristotle, Feynman, Kahneman, Torvalds & more — structured multi-round deliberation with genuine model diversity. One command: /council结合关键词命中和热度信号，它适合加入今日重点观察列表。",
+      "brief": "这是一个值得快速关注的开源 AI 项目。",
+      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
+      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
+      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
+      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
+      "highlights": [
+        "Stars: 1926",
+        "语言: Shell"
+      ],
+      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
+      "relevance_score": 6,
+      "tags": [
+        "ai",
+        "llm",
+        "model"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "model"
+      ],
+      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
+      "summary_markdown": "**摘要**：0xNyk/council-of-high-intelligence 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：18 AI personas deliberate your hardest decisions across multiple LLM providers. Aristotle, Feynman, Kahneman, Torvalds & more — structured multi-round deliberation with genuine model diversity. One command: /council结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：6/10\n\n**亮点**：\n- Stars: 1926\n- 语言: Shell",
+      "focus_hits": [],
+      "primary_match": "",
+      "personalized_score": 60.77,
+      "detail_path": "items/github-0xnyk-council-of-high-intelligence.html",
+      "first_seen_at": "2026-06-30T01:53:26.317470+00:00",
+      "last_seen_at": "2026-06-30T01:53:26.317470+00:00",
+      "last_curated_at": "2026-06-30T01:53:26.317470+00:00",
+      "last_notified_at": null
+    },
     {
       "id": "github::opendatalab/MinerU",
       "kind": "repo",
@@ -59,61 +897,6 @@
       "last_notified_at": null
     },
     {
-      "id": "github::xbtlin/ai-berkshire",
-      "kind": "repo",
-      "source": "github",
-      "source_tags": [
-        "trending"
-      ],
-      "name": "ai-berkshire",
-      "title": "xbtlin/ai-berkshire",
-      "full_name": "xbtlin/ai-berkshire",
-      "html_url": "https://github.com/xbtlin/ai-berkshire",
-      "description": "AI 时代的伯克希尔：基于 Claude Code / Codex 的价值投资研究框架。巴菲特·芒格·段永平·李录四大师方法论 + 多Agent并行研究。| AI-era Berkshire: a value investing research framework built for Claude Code / Codex. 4 masters' methodologies + multi-agent adversarial analysis.",
-      "stars": 5675,
-      "stars_today": 0,
-      "language": "Python",
-      "topics": [],
-      "created_at": "",
-      "updated_at": "",
-      "heuristic_score": 15.2,
-      "summary": "xbtlin/ai-berkshire 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：AI 时代的伯克希尔：基于 Claude Code / Codex 的价值投资研究框架。巴菲特·芒格·段永平·李录四大师方法论 + 多Agent并行研究。| AI-era Berkshire: a value investing research framework built for Claude Code / Codex. 4 masters' methodologies + multi-agent adversarial analysis.结合关键词命中和热度信号，它适合加入今日重点观察列表。",
-      "brief": "这是一个值得快速关注的开源 AI 项目。",
-      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
-      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
-      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
-      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
-      "highlights": [
-        "Stars: 5675",
-        "语言: Python"
-      ],
-      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
-      "relevance_score": 8,
-      "tags": [
-        "ai",
-        "agent"
-      ],
-      "themes": [
-        "ai",
-        "agent"
-      ],
-      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：xbtlin/ai-berkshire 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：AI 时代的伯克希尔：基于 Claude Code / Codex 的价值投资研究框架。巴菲特·芒格·段永平·李录四大师方法论 + 多Agent并行研究。| AI-era Berkshire: a value investing research framework built for Claude Code / Codex. 4 masters' methodologies + multi-agent adversarial analysis.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 5675\n- 语言: Python",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 112.27,
-      "detail_path": "items/github-xbtlin-ai-berkshire.html",
-      "first_seen_at": "2026-06-27T01:47:42.641715+00:00",
-      "last_seen_at": "2026-06-29T04:56:58.573543+00:00",
-      "last_curated_at": "2026-06-29T04:56:58.573543+00:00",
-      "last_notified_at": null
-    },
-    {
       "id": "github::DeusData/codebase-memory-mcp",
       "kind": "repo",
       "source": "github",
@@ -162,171 +945,6 @@
       "personalized_score": 100.05,
       "detail_path": "items/github-deusdata-codebase-memory-mcp.html",
       "first_seen_at": "2026-06-18T02:06:26.542323+00:00",
-      "last_seen_at": "2026-06-29T04:56:58.573543+00:00",
-      "last_curated_at": "2026-06-29T04:56:58.573543+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "github::commaai/openpilot",
-      "kind": "repo",
-      "source": "github",
-      "source_tags": [
-        "trending"
-      ],
-      "name": "openpilot",
-      "title": "commaai/openpilot",
-      "full_name": "commaai/openpilot",
-      "html_url": "https://github.com/commaai/openpilot",
-      "description": "openpilot is an operating system for robotics. Currently, it upgrades the driver assistance system on 300+ supported cars.",
-      "stars": 62503,
-      "stars_today": 0,
-      "language": "Python",
-      "topics": [],
-      "created_at": "",
-      "updated_at": "",
-      "heuristic_score": 12.6,
-      "summary": "commaai/openpilot 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：openpilot is an operating system for robotics. Currently, it upgrades the driver assistance system on 300+ supported cars.结合关键词命中和热度信号，它适合加入今日重点观察列表。",
-      "brief": "这是一个值得快速关注的开源 AI 项目。",
-      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
-      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
-      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
-      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
-      "highlights": [
-        "Stars: 62503",
-        "语言: Python"
-      ],
-      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
-      "relevance_score": 7,
-      "tags": [
-        "robotics"
-      ],
-      "themes": [
-        "robotics"
-      ],
-      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：commaai/openpilot 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：openpilot is an operating system for robotics. Currently, it upgrades the driver assistance system on 300+ supported cars.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 62503\n- 语言: Python",
-      "focus_hits": [
-        {
-          "keyword": "robotics",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "robotics",
-      "personalized_score": 106.0,
-      "detail_path": "items/github-commaai-openpilot.html",
-      "first_seen_at": "2026-06-27T01:47:42.641715+00:00",
-      "last_seen_at": "2026-06-29T04:56:58.573543+00:00",
-      "last_curated_at": "2026-06-29T04:56:58.573543+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "github::browser-use/video-use",
-      "kind": "repo",
-      "source": "github",
-      "source_tags": [
-        "trending"
-      ],
-      "name": "video-use",
-      "title": "browser-use/video-use",
-      "full_name": "browser-use/video-use",
-      "html_url": "https://github.com/browser-use/video-use",
-      "description": "Edit videos with coding agents",
-      "stars": 11259,
-      "stars_today": 0,
-      "language": "Python",
-      "topics": [],
-      "created_at": "",
-      "updated_at": "",
-      "heuristic_score": 12.6,
-      "summary": "browser-use/video-use 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Edit videos with coding agents结合关键词命中和热度信号，它适合加入今日重点观察列表。",
-      "brief": "这是一个值得快速关注的开源 AI 项目。",
-      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
-      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
-      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
-      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
-      "highlights": [
-        "Stars: 11259",
-        "语言: Python"
-      ],
-      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
-      "relevance_score": 7,
-      "tags": [
-        "agent",
-        "coding agent"
-      ],
-      "themes": [
-        "agent",
-        "coding agent"
-      ],
-      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：browser-use/video-use 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Edit videos with coding agents结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 11259\n- 语言: Python",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "coding",
-          "weight": 2.6
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 130.5,
-      "detail_path": "items/github-browser-use-video-use.html",
-      "first_seen_at": "2026-06-29T01:59:43.336717+00:00",
-      "last_seen_at": "2026-06-29T04:56:58.573543+00:00",
-      "last_curated_at": "2026-06-29T04:56:58.573543+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "github::HKUDS/Vibe-Trading",
-      "kind": "repo",
-      "source": "github",
-      "source_tags": [
-        "trending"
-      ],
-      "name": "Vibe-Trading",
-      "title": "HKUDS/Vibe-Trading",
-      "full_name": "HKUDS/Vibe-Trading",
-      "html_url": "https://github.com/HKUDS/Vibe-Trading",
-      "description": "\"Vibe-Trading: Your Personal Trading Agent\"",
-      "stars": 14495,
-      "stars_today": 0,
-      "language": "Python",
-      "topics": [],
-      "created_at": "",
-      "updated_at": "",
-      "heuristic_score": 12.6,
-      "summary": "HKUDS/Vibe-Trading 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：\"Vibe-Trading: Your Personal Trading Agent\"结合关键词命中和热度信号，它适合加入今日重点观察列表。",
-      "brief": "这是一个值得快速关注的开源 AI 项目。",
-      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
-      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
-      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
-      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
-      "highlights": [
-        "Stars: 14495",
-        "语言: Python"
-      ],
-      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
-      "relevance_score": 7,
-      "tags": [
-        "agent"
-      ],
-      "themes": [
-        "agent"
-      ],
-      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：HKUDS/Vibe-Trading 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：\"Vibe-Trading: Your Personal Trading Agent\"结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 14495\n- 语言: Python",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 105.8,
-      "detail_path": "items/github-hkuds-vibe-trading.html",
-      "first_seen_at": "2026-06-29T01:59:43.336717+00:00",
       "last_seen_at": "2026-06-29T04:56:58.573543+00:00",
       "last_curated_at": "2026-06-29T04:56:58.573543+00:00",
       "last_notified_at": null
@@ -7827,61 +8445,6 @@
       "last_notified_at": null
     },
     {
-      "id": "github::msitarzewski/agency-agents",
-      "kind": "repo",
-      "source": "github",
-      "source_tags": [
-        "trending"
-      ],
-      "name": "agency-agents",
-      "title": "msitarzewski/agency-agents",
-      "full_name": "msitarzewski/agency-agents",
-      "html_url": "https://github.com/msitarzewski/agency-agents",
-      "description": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.",
-      "stars": 112517,
-      "stars_today": 0,
-      "language": "Shell",
-      "topics": [],
-      "created_at": "",
-      "updated_at": "",
-      "heuristic_score": 15.2,
-      "summary": "msitarzewski/agency-agents 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.结合关键词命中和热度信号，它适合加入今日重点观察列表。",
-      "brief": "这是一个值得快速关注的开源 AI 项目。",
-      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
-      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
-      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
-      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
-      "highlights": [
-        "Stars: 112517",
-        "语言: Shell"
-      ],
-      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
-      "relevance_score": 8,
-      "tags": [
-        "ai",
-        "agent"
-      ],
-      "themes": [
-        "ai",
-        "agent"
-      ],
-      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：msitarzewski/agency-agents 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 112517\n- 语言: Shell",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 130.0,
-      "detail_path": "items/github-msitarzewski-agency-agents.html",
-      "first_seen_at": "2026-05-05T01:23:51.349264+00:00",
-      "last_seen_at": "2026-06-13T04:46:30.385561+00:00",
-      "last_curated_at": "2026-06-13T04:46:30.385561+00:00",
-      "last_notified_at": null
-    },
-    {
       "id": "github::phuryn/pm-skills",
       "kind": "repo",
       "source": "github",
@@ -7982,54 +8545,6 @@
       "first_seen_at": "2026-06-13T01:55:51.729765+00:00",
       "last_seen_at": "2026-06-13T04:46:30.385561+00:00",
       "last_curated_at": "2026-06-13T04:46:30.385561+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "github::soxoj/maigret",
-      "kind": "repo",
-      "source": "github",
-      "source_tags": [
-        "trending"
-      ],
-      "name": "maigret",
-      "title": "soxoj/maigret",
-      "full_name": "soxoj/maigret",
-      "html_url": "https://github.com/soxoj/maigret",
-      "description": "🕵️‍♂️ Collect a dossier on a person by username from 3000+ sites",
-      "stars": 32724,
-      "stars_today": 0,
-      "language": "Python",
-      "topics": [],
-      "created_at": "",
-      "updated_at": "",
-      "heuristic_score": 12.6,
-      "summary": "soxoj/maigret 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：🕵️‍♂️ Collect a dossier on a person by username from 3000+ sites结合关键词命中和热度信号，它适合加入今日重点观察列表。",
-      "brief": "这是一个值得快速关注的开源 AI 项目。",
-      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
-      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
-      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
-      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
-      "highlights": [
-        "Stars: 32724",
-        "语言: Python"
-      ],
-      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
-      "relevance_score": 7,
-      "tags": [
-        "daily-pick"
-      ],
-      "themes": [
-        "开源工具"
-      ],
-      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：soxoj/maigret 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：🕵️‍♂️ Collect a dossier on a person by username from 3000+ sites结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 32724\n- 语言: Python",
-      "focus_hits": [],
-      "primary_match": "",
-      "personalized_score": 83.09,
-      "detail_path": "items/github-soxoj-maigret.html",
-      "first_seen_at": "2026-06-11T02:06:24.448588+00:00",
-      "last_seen_at": "2026-06-12T04:59:12.058729+00:00",
-      "last_curated_at": "2026-06-12T04:59:12.058729+00:00",
       "last_notified_at": null
     },
     {
@@ -12548,119 +13063,35 @@
       "last_seen_at": "2026-05-31T04:48:22.979701+00:00",
       "last_curated_at": "2026-05-31T04:48:22.979701+00:00",
       "last_notified_at": null
-    },
-    {
-      "id": "github::OpenMOSS/MOSS-TTS",
-      "kind": "repo",
-      "source": "github",
-      "source_tags": [
-        "trending"
-      ],
-      "name": "MOSS-TTS",
-      "title": "OpenMOSS/MOSS-TTS",
-      "full_name": "OpenMOSS/MOSS-TTS",
-      "html_url": "https://github.com/OpenMOSS/MOSS-TTS",
-      "description": "MOSS‑TTS Family is an open‑source speech and sound generation model family from MOSI.AI and the OpenMOSS team. It is designed for high‑fidelity, high‑expressiveness, and complex real‑world scenarios, covering stable long‑form speech, multi‑speaker dialogue, voice/character design, environmental sound effects, and real‑time streaming TTS.",
-      "stars": 2668,
-      "stars_today": 0,
-      "language": "Python",
-      "topics": [],
-      "created_at": "",
-      "updated_at": "",
-      "heuristic_score": 10.536,
-      "summary": "OpenMOSS/MOSS-TTS 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：MOSS‑TTS Family is an open‑source speech and sound generation model family from MOSI.AI and the OpenMOSS team. It is designed for high‑fidelity, high‑expressiveness, and complex real‑world scenarios, covering stable long‑form speech, multi‑...结合关键词命中和热度信号，它适合加入今日重点观察列表。",
-      "brief": "这是一个值得快速关注的开源 AI 项目。",
-      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
-      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
-      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
-      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
-      "highlights": [
-        "Stars: 2668",
-        "语言: Python"
-      ],
-      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
-      "relevance_score": 6,
-      "tags": [
-        "ai",
-        "model"
-      ],
-      "themes": [
-        "ai",
-        "model"
-      ],
-      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：OpenMOSS/MOSS-TTS 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：MOSS‑TTS Family is an open‑source speech and sound generation model family from MOSI.AI and the OpenMOSS team. It is designed for high‑fidelity, high‑expressiveness, and complex real‑world scenarios, covering stable long‑form speech, multi‑...结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：6/10\n\n**亮点**：\n- Stars: 2668\n- 语言: Python",
-      "focus_hits": [
-        {
-          "keyword": "voice",
-          "weight": 1.4
-        }
-      ],
-      "primary_match": "voice",
-      "personalized_score": 75.07,
-      "detail_path": "items/github-openmoss-moss-tts.html",
-      "first_seen_at": "2026-05-31T01:56:40.267378+00:00",
-      "last_seen_at": "2026-05-31T04:48:22.979701+00:00",
-      "last_curated_at": "2026-05-31T04:48:22.979701+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "github::obra/superpowers",
-      "kind": "repo",
-      "source": "github",
-      "source_tags": [
-        "trending"
-      ],
-      "name": "superpowers",
-      "title": "obra/superpowers",
-      "full_name": "obra/superpowers",
-      "html_url": "https://github.com/obra/superpowers",
-      "description": "An agentic skills framework & software development methodology that works.",
-      "stars": 233508,
-      "stars_today": 0,
-      "language": "Shell",
-      "topics": [],
-      "created_at": "",
-      "updated_at": "",
-      "heuristic_score": 15.2,
-      "summary": "obra/superpowers 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：An agentic skills framework & software development methodology that works.结合关键词命中和热度信号，它适合加入今日重点观察列表。",
-      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
-      "highlights": [
-        "Stars: 233508",
-        "语言: Shell"
-      ],
-      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
-      "relevance_score": 8,
-      "tags": [
-        "agent",
-        "agentic"
-      ],
-      "summary_markdown": "**摘要**：obra/superpowers 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：An agentic skills framework & software development methodology that works.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 233508\n- 语言: Shell",
-      "detail_path": "items/github-obra-superpowers.html",
-      "first_seen_at": "2026-04-09T09:24:46.894274+00:00",
-      "last_seen_at": "2026-06-20T04:37:52.094536+00:00",
-      "last_curated_at": "2026-06-20T04:37:52.094536+00:00",
-      "last_notified_at": "2026-04-09T11:52:43.203830+00:00",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 130.0,
-      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "themes": [
-        "agent",
-        "agentic"
-      ],
-      "brief": "这是一个值得快速关注的开源 AI 项目。",
-      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
-      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
-      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。"
     }
   ],
   "digests": [
+    {
+      "date": "2026-06-30",
+      "title": "AI Daily Digest · 2026-06-30",
+      "generated_at": "2026-06-30T09:53:20.367406+08:00",
+      "notified_at": null,
+      "repo_ids": [
+        "github::browser-use/video-use",
+        "github::msitarzewski/agency-agents",
+        "github::xbtlin/ai-berkshire",
+        "github::HKUDS/Vibe-Trading",
+        "github::commaai/openpilot",
+        "github::soxoj/maigret",
+        "github::logto-io/logto",
+        "github::0xNyk/council-of-high-intelligence"
+      ],
+      "paper_ids": [
+        "arxiv::http://arxiv.org/abs/2606.29278v1",
+        "arxiv::http://arxiv.org/abs/2606.29280v1",
+        "arxiv::http://arxiv.org/abs/2606.29315v1",
+        "arxiv::http://arxiv.org/abs/2606.29286v1",
+        "arxiv::http://arxiv.org/abs/2606.29339v1",
+        "arxiv::http://arxiv.org/abs/2606.29296v1"
+      ],
+      "digest_json": "data/digests/2026-06-30.json",
+      "digest_markdown": "data/digests/2026-06-30.md"
+    },
     {
       "date": "2026-06-29",
       "title": "AI Daily Digest · 2026-06-29",
@@ -14495,8 +14926,8 @@
     "weekly": {
       "label": "周报",
       "window_days": 7,
-      "generated_at": "2026-06-29T12:56:51.591103+08:00",
-      "count": 63,
+      "generated_at": "2026-06-30T09:53:20.367406+08:00",
+      "count": 71,
       "summary": "近 7 天里，最集中的主题是 ai、llm、rag。",
       "top_items": [
         {
@@ -15222,8 +15653,8 @@
     "monthly": {
       "label": "月报",
       "window_days": 30,
-      "generated_at": "2026-06-29T12:56:51.591103+08:00",
-      "count": 193,
+      "generated_at": "2026-06-30T09:53:20.367406+08:00",
+      "count": 200,
       "summary": "近 30 天里，最集中的主题是 ai、llm、agent。",
       "top_items": [
         {
