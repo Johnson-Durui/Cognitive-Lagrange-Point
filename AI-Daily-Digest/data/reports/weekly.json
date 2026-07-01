@@ -1,86 +1,10 @@
 {
   "label": "周报",
   "window_days": 7,
-  "generated_at": "2026-07-01T09:58:29.440477+08:00",
-  "count": 77,
+  "generated_at": "2026-07-01T12:50:34.801396+08:00",
+  "count": 72,
   "summary": "近 7 天里，最集中的主题是 ai、llm、rag。",
   "top_items": [
-    {
-      "id": "arxiv::http://arxiv.org/abs/2606.24820v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "SHERLOC: Structured Diagnostic Localization for Code Repair Agents",
-      "html_url": "http://arxiv.org/abs/2606.24820v1",
-      "pdf_url": "https://arxiv.org/pdf/2606.24820v1",
-      "description": "LLM agents solve repository-level coding tasks through multi-turn tool use, but utilize half their budget on locating faults before editing. Dedicated localization frameworks have emerged, yet are still evaluated as file retrieval rather than actionable diagnosis, producing locations without the diagnostic context a repair agent needs. We introduce SHERLOC (Structured Hypothesis-driven Exploration and Reasoning for Localization), a training-free framework pairing a reasoning LLM with compact repository tools and self-recovery, without fine-tuning or multi-agent orchestration. SHERLOC reaches state-of-the-art localization across model scales: 84.33% accuracy@1 on SWE-Bench Lite and 81.27% recall@1 on SWE-Bench Verified; at ~30B parameters, it matches or outperforms other agentic methods. Injecting our locations and diagnostic findings into repair agents yields, on average, +5.95 pp resolve rate on SWE-Bench Verified while cutting localization and total tokens by 36.7% and 23.1%.",
-      "authors": [
-        "Hovhannes Tamoyan",
-        "Sean Narenthiran",
-        "Erik Arakelyan",
-        "Mira Mezini",
-        "Boris Ginsburg"
-      ],
-      "categories": [
-        "cs.CL"
-      ],
-      "published_at": "2026-06-23T17:05:50+00:00",
-      "updated_at": "2026-06-23T17:05:50+00:00",
-      "primary_category": "cs.CL",
-      "heuristic_score": 21.94,
-      "summary": "SHERLOC: Structured Diagnostic Localization for Code Repair Agents 是最近值得追踪的一篇 AI 论文。论文摘要显示：LLM agents solve repository-level coding tasks through multi-turn tool use, but utilize half their budget on locating faults before editing. Dedicated localization frameworks have emerged, yet are still evaluated as file retrieval rather th...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CL",
-        "作者数: 5"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "llm",
-        "agent",
-        "agentic"
-      ],
-      "themes": [
-        "ai",
-        "llm",
-        "agent"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：SHERLOC: Structured Diagnostic Localization for Code Repair Agents 是最近值得追踪的一篇 AI 论文。论文摘要显示：LLM agents solve repository-level coding tasks through multi-turn tool use, but utilize half their budget on locating faults before editing. Dedicated localization frameworks have emerged, yet are still evaluated as file retrieval rather th...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL\n- 作者数: 5",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "coding",
-          "weight": 2.6
-        },
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 210.0,
-      "detail_path": "items/arxiv-sherloc-structured-diagnostic-localization-for-code-repair-agents.html",
-      "first_seen_at": "2026-06-24T04:22:09.634888+00:00",
-      "last_seen_at": "2026-06-24T04:22:09.634888+00:00",
-      "last_curated_at": "2026-06-24T04:22:09.634888+00:00",
-      "last_notified_at": null
-    },
     {
       "id": "arxiv::http://arxiv.org/abs/2606.27161v1",
       "kind": "paper",
@@ -252,195 +176,6 @@
       "last_notified_at": null
     },
     {
-      "id": "arxiv::http://arxiv.org/abs/2606.24597v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "Qwen-AgentWorld: Language World Models for General Agents",
-      "html_url": "http://arxiv.org/abs/2606.24597v1",
-      "pdf_url": "https://arxiv.org/pdf/2606.24597v1",
-      "description": "A world model predicts environment dynamics based on current observations and actions, serving as a core cognitive mechanism for reasoning and planning. In this work, we investigate how world modeling based on language models can further push the boundaries of general agents. (i) We first focus on building foundation models for agentic environment simulation. We introduce Qwen-AgentWorld-35B-A3B and Qwen-AgentWorld-397B-A17B, the first language world models capable of simulating agentic environments covering 7 domains via long chain-of-thought reasoning. Leveraging more than 10M environment interaction trajectories of 7 domains in real-world environments, we develop Qwen-AgentWorld through a three-stage training pipeline: CPT injects general-purpose world modeling capabilities from the state transition dynamics and augmented professional corpora, SFT activates next-state-prediction reasoning, and RL sharpens simulation fidelity through a tailored framework with hybrid rubric-and-rule rewards. To evaluate language world models, we present AgentWorldBench, a comprehensive benchmark constructed from real-world interactions of 5 frontier models on 9 established benchmarks. Empirical results demonstrate that Qwen-AgentWorld significantly outperforms existing frontier models. (ii) Beyond foundation models, we further investigate two complementary paradigms through which world modeling enhances general agents. First, as a decoupled environment simulator, Qwen-AgentWorld supports scalable and controllable simulation of thousands of real-world environments for agentic RL, yielding gains that surpass real-environment training alone. Second, as a unified agent foundation model, world-model training acts as a highly effective warm-up that improves downstream performance across 7 agentic benchmarks. Code: https://github.com/QwenLM/Qwen-AgentWorld",
-      "authors": [
-        "Yuxin Zuo",
-        "Zikai Xiao",
-        "Li Sheng",
-        "Fei Huang",
-        "Jianhong Tu",
-        "Yuxuan Liu",
-        "Tianyi Tang",
-        "Xiaomeng Hu",
-        "Yang Su",
-        "Qingfeng Lan",
-        "Yantao Liu",
-        "Qin Zhu",
-        "Yinger Zhang",
-        "Bowen Yu",
-        "Haiquan Zhao",
-        "Haiyang Xu",
-        "Jianxin Yang",
-        "Jiayang Cheng",
-        "Junyang Wang",
-        "Lianghao Deng",
-        "Mingfeng Xue",
-        "Tianyi Bai",
-        "Yang Fan",
-        "Yubo Ma",
-        "Yucheng Li",
-        "Zeyu Cui",
-        "Zhihai Wang",
-        "Zhihui Xie",
-        "Zhuorui Ye",
-        "An Yang",
-        "Dayiheng Liu",
-        "Jingren Zhou",
-        "Ning Ding"
-      ],
-      "categories": [
-        "cs.CL"
-      ],
-      "published_at": "2026-06-23T13:53:55+00:00",
-      "updated_at": "2026-06-23T13:53:55+00:00",
-      "primary_category": "cs.CL",
-      "heuristic_score": 22.7,
-      "summary": "Qwen-AgentWorld: Language World Models for General Agents 是最近值得追踪的一篇 AI 论文。论文摘要显示：A world model predicts environment dynamics based on current observations and actions, serving as a core cognitive mechanism for reasoning and planning. In this work, we investigate how world modeling based on language models can further pu...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CL",
-        "作者数: 33"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "agent",
-        "agentic",
-        "rag"
-      ],
-      "themes": [
-        "ai",
-        "agent",
-        "agentic"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：Qwen-AgentWorld: Language World Models for General Agents 是最近值得追踪的一篇 AI 论文。论文摘要显示：A world model predicts environment dynamics based on current observations and actions, serving as a core cognitive mechanism for reasoning and planning. In this work, we investigate how world modeling based on language models can further pu...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL\n- 作者数: 33",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 200.0,
-      "detail_path": "items/arxiv-qwen-agentworld-language-world-models-for-general-agents.html",
-      "first_seen_at": "2026-06-24T01:49:16.934549+00:00",
-      "last_seen_at": "2026-06-24T04:22:09.634888+00:00",
-      "last_curated_at": "2026-06-24T04:22:09.634888+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2606.24849v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "IV-CoT: Implicit Visual Chain-of-Thought for Structure-Aware Text-to-Image Generation",
-      "html_url": "http://arxiv.org/abs/2606.24849v1",
-      "pdf_url": "https://arxiv.org/pdf/2606.24849v1",
-      "description": "Unified multi-modal large language models (MLLMs) have achieved strong text-to-image generation quality, but still struggle with structure-aware prompt following, where object counts, spatial relations, attribute bindings, and coarse layouts must be preserved. We attribute this limitation in part to the entanglement of structural planning and appearance rendering within a single conditioning stream. To address this issue, we propose Implicit Visual Chain-of-Thought (IV-CoT), a latent visual reasoning framework for query-conditioned image generation. IV-CoT decomposes the visual conditioning queries into a structural-to-semantic cascade, where structural queries first form a latent visual plan and semantic queries then render appearance conditioned on this plan. To guide the structural queries, we introduce training-only sketch supervision, which encourages them to capture structure from sketches without requiring sketch extraction or intermediate decoding at inference time. IV-CoT performs implicit CoT reasoning in a single forward pass and achieves superior results on GenEval and T2I-CompBench. Visualizations and analyses demonstrate that the learned structural and semantic queries play complementary roles in structure-aware generation.",
-      "authors": [
-        "Zixuan Li",
-        "Haokun Lin",
-        "Yicheng Xiao",
-        "Zhiwei Li",
-        "Xinyang Song",
-        "Zelong Zheng",
-        "Yong He",
-        "Heng Yao",
-        "Ke Ding",
-        "Chao Yu",
-        "Chuan Yuan",
-        "Qi Li",
-        "Zhenan Sun"
-      ],
-      "categories": [
-        "cs.CV",
-        "cs.AI"
-      ],
-      "published_at": "2026-06-23T17:28:00+00:00",
-      "updated_at": "2026-06-23T17:28:00+00:00",
-      "primary_category": "cs.CV",
-      "heuristic_score": 19.871,
-      "summary": "IV-CoT: Implicit Visual Chain-of-Thought for Structure-Aware Text-to-Image Generation 是最近值得追踪的一篇 AI 论文。论文摘要显示：Unified multi-modal large language models (MLLMs) have achieved strong text-to-image generation quality, but still struggle with structure-aware prompt following, where object counts, spatial relations, attribute bindings, and coarse layout...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CV, cs.AI",
-        "作者数: 13"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "llm",
-        "rag",
-        "model"
-      ],
-      "themes": [
-        "ai",
-        "llm",
-        "rag"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：IV-CoT: Implicit Visual Chain-of-Thought for Structure-Aware Text-to-Image Generation 是最近值得追踪的一篇 AI 论文。论文摘要显示：Unified multi-modal large language models (MLLMs) have achieved strong text-to-image generation quality, but still struggle with structure-aware prompt following, where object counts, spatial relations, attribute bindings, and coarse layout...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV, cs.AI\n- 作者数: 13",
-      "focus_hits": [
-        {
-          "keyword": "coding",
-          "weight": 2.6
-        },
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "inference",
-          "weight": 1.8
-        }
-      ],
-      "primary_match": "coding",
-      "personalized_score": 198.0,
-      "detail_path": "items/arxiv-iv-cot-implicit-visual-chain-of-thought-for-structure-aware-text-to-image-generation.html",
-      "first_seen_at": "2026-06-24T04:22:09.634888+00:00",
-      "last_seen_at": "2026-06-24T04:22:09.634888+00:00",
-      "last_curated_at": "2026-06-24T04:22:09.634888+00:00",
-      "last_notified_at": null
-    },
-    {
       "id": "arxiv::http://arxiv.org/abs/2606.27330v1",
       "kind": "paper",
       "source": "arxiv",
@@ -609,59 +344,130 @@
       "last_notified_at": null
     },
     {
-      "id": "arxiv::http://arxiv.org/abs/2606.24636v1",
+      "id": "arxiv::http://arxiv.org/abs/2606.32025v1",
       "kind": "paper",
       "source": "arxiv",
       "source_tags": [
         "latest"
       ],
-      "title": "CineCap: Structured Reasoning with Spatio-Temporal Anchors for Cinematographic Video Captioning",
-      "html_url": "http://arxiv.org/abs/2606.24636v1",
-      "pdf_url": "https://arxiv.org/pdf/2606.24636v1",
-      "description": "Cinematographic captioning aims to describe how a video is filmed using professional film-language concepts such as camera movement, shot size, depth of field, composition, and shooting angle. This capability is important for fine-grained video understanding and controllable movie-quality video generation, yet remains underexplored in existing multimodal large language models. Unlike question-answering-based evaluation of cinematic understanding, cinematographic captioning requires a unified open-form description over multiple cinematographic dimensions. This task is challenging for two main reasons: the model must infer professional cinematographic concepts from subtle visual evidence, and it must generate captions that are both comprehensive and accurate. Accordingly, we propose CineCap, a framework that combines structured reasoning with spatio-temporal anchors and reinforcement learning with comprehensiveness, accuracy, and gated coverage rewards. The former grounds professional cinematographic descriptions in explicit visual evidence and organizes them into compact atomic reasoning for supervised fine-tuning, while the latter improves the balance between descriptive completeness and factual correctness. In addition, we construct CineCap Bench, a benchmark of 472 manually annotated video-caption pairs for systematic evaluation. Extensive experiments show that CineCap consistently outperforms strong proprietary and open-source baselines, establishing a new state of the art for cinematographic captioning. The code, model checkpoint, and benchmark are publicly available in https://github.com/Hectormxy/CineCap.git.",
+      "title": "Generative Skill Composition for LLM Agents",
+      "html_url": "http://arxiv.org/abs/2606.32025v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.32025v1",
+      "description": "Recent LLM agents benefit from skills for solving complex tasks. Skills encapsulate modular packages of procedural knowledge and instructions for performing specialized tasks, such as setting up a sandboxed environment, running a test suite, or refactoring a function across multiple files. As skill libraries grow and become reusable across tasks and domains, selecting an appropriate skill composition has emerged as a central bottleneck. Existing approaches fall into two categories. One exposes the agent's reasoning to the entire skill collection; the other performs skill retrieval via embeddings or LLM-based rerankers. Both provide useful insights; however, they miss the structural nature of skill composition, which is a joint decision over which skills, how many, and in what order -- three dimensions that cannot be decoupled. We formalize this as structured skill composition: given a task and a skill library, predict an executable skill plan that jointly specifies the activated subset, count, and execution order. We propose SkillComposer, which instantiates structured skill composition as task-conditioned skill sequence prediction. SkillComposer uses a constrained autoregressive decoder over skill identifiers, so subset, count, and order emerge jointly from a single decoding pass, and dependencies between successive skills are captured naturally. We build a training set of task-composition pairs from a real, human-curated skill library. We then evaluate SkillComposer along two axes: composition quality on a held-out test set, and downstream task success on SkillsBench across two production-grade coding agents. On GPT-5.2-Codex, Gemini-3-Pro-Preview, SkillComposer raises the pass rate by +23.1, +18.2pp over the no-skill baseline, surpassing top-3 retrieval and matching the gold-skill retrieval upper bound at lower prompt-token cost.",
       "authors": [
-        "Xinyu Mao",
-        "Yuhui Zeng",
-        "Xiaokun Liu",
-        "Wenyu Qin",
-        "Meng Wang",
-        "Xin Tao",
-        "Pengfei Wan",
-        "Xiaohan Xing",
-        "Max Meng"
+        "Xinyu Zhao",
+        "Zhen Tan",
+        "Vaishnav Tadiparthi",
+        "Nakul Agarwal",
+        "Kwonjoon Lee",
+        "Ehsan Moradi Pari",
+        "Hossein Nourkhiz Mahjoub",
+        "Tianlong Chen"
       ],
       "categories": [
-        "cs.AI"
+        "cs.CL"
       ],
-      "published_at": "2026-06-23T14:29:40+00:00",
-      "updated_at": "2026-06-23T14:29:40+00:00",
-      "primary_category": "cs.AI",
-      "heuristic_score": 17.9,
-      "summary": "CineCap: Structured Reasoning with Spatio-Temporal Anchors for Cinematographic Video Captioning 是最近值得追踪的一篇 AI 论文。论文摘要显示：Cinematographic captioning aims to describe how a video is filmed using professional film-language concepts such as camera movement, shot size, depth of field, composition, and shooting angle. This capability is important for fine-grained v...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "published_at": "2026-06-30T17:53:09+00:00",
+      "updated_at": "2026-06-30T17:53:09+00:00",
+      "primary_category": "cs.CL",
+      "heuristic_score": 20.3,
+      "summary": "Generative Skill Composition for LLM Agents 是最近值得追踪的一篇 AI 论文。论文摘要显示：Recent LLM agents benefit from skills for solving complex tasks. Skills encapsulate modular packages of procedural knowledge and instructions for performing specialized tasks, such as setting up a sandboxed environment, running a test suite...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
       "brief": "这是一篇值得加入今日论文雷达的最新工作。",
       "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
       "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
       "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
       "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
       "highlights": [
-        "分类: cs.AI",
-        "作者数: 9"
+        "分类: cs.CL",
+        "作者数: 8"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "llm",
+        "agent",
+        "gpt"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "agent"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：Generative Skill Composition for LLM Agents 是最近值得追踪的一篇 AI 论文。论文摘要显示：Recent LLM agents benefit from skills for solving complex tasks. Skills encapsulate modular packages of procedural knowledge and instructions for performing specialized tasks, such as setting up a sandboxed environment, running a test suite...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL\n- 作者数: 8",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "coding",
+          "weight": 2.6
+        },
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 188.0,
+      "detail_path": "items/arxiv-generative-skill-composition-for-llm-agents.html",
+      "first_seen_at": "2026-07-01T04:50:41.073144+00:00",
+      "last_seen_at": "2026-07-01T04:50:41.073144+00:00",
+      "last_curated_at": "2026-07-01T04:50:41.073144+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2606.27210v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Paved with True Intents: Intent-Aware Training Improves LLM Safety Classification Across Training Regimes",
+      "html_url": "http://arxiv.org/abs/2606.27210v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.27210v1",
+      "description": "We argue that safety classifiers should model user intent as an explicit signal between the prompt and the final label. To study this, we introduce AIMS, a human-annotated dataset of 1,724 difficult safety prompts, each paired with an intent description and harm label. We use AIMS to evaluate intent-aware training across supervised fine-tuning, preference learning, reasoning distillation, and reinforcement learning. Despite its size, AIMS enables competitive safety classifiers across training regimes: DPO from model-generated intent errors improves over SFT, and intent-conditioned distillation outperforms reasoning-only distillation in most teacher-student pairs. Most notably, directly rewarding intent faithfulness with GRPO yields the strongest average performance across five external safety benchmarks, while our intent-aware models form the inference latency-F1 Pareto frontier. These results show that faithful intent modeling is a compact, high-quality supervision signal for more robust safety classifiers.",
+      "authors": [
+        "Jeremias Ferrao",
+        "Niclas Müller-Hof",
+        "Iustin Sîrbu",
+        "Traian Rebedea",
+        "Yftah Ziser"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "published_at": "2026-06-25T16:03:57+00:00",
+      "updated_at": "2026-06-25T16:03:57+00:00",
+      "primary_category": "cs.CL",
+      "heuristic_score": 21.979,
+      "summary": "Paved with True Intents: Intent-Aware Training Improves LLM Safety Classification Across Training Regimes 是最近值得追踪的一篇 AI 论文。论文摘要显示：We argue that safety classifiers should model user intent as an explicit signal between the prompt and the final label. To study this, we introduce AIMS, a human-annotated dataset of 1,724 difficult safety prompts, each paired with an inten...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CL",
+        "作者数: 5"
       ],
       "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
       "relevance_score": 10,
       "tags": [
         "ai",
         "rag",
-        "multimodal",
-        "model"
+        "model",
+        "benchmark"
       ],
       "themes": [
         "ai",
         "rag",
-        "multimodal"
+        "model"
       ],
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：CineCap: Structured Reasoning with Spatio-Temporal Anchors for Cinematographic Video Captioning 是最近值得追踪的一篇 AI 论文。论文摘要显示：Cinematographic captioning aims to describe how a video is filmed using professional film-language concepts such as camera movement, shot size, depth of field, composition, and shooting angle. This capability is important for fine-grained v...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI\n- 作者数: 9",
+      "summary_markdown": "**摘要**：Paved with True Intents: Intent-Aware Training Improves LLM Safety Classification Across Training Regimes 是最近值得追踪的一篇 AI 论文。论文摘要显示：We argue that safety classifiers should model user intent as an explicit signal between the prompt and the final label. To study this, we introduce AIMS, a human-annotated dataset of 1,724 difficult safety prompts, each paired with an inten...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL\n- 作者数: 5",
       "focus_hits": [
         {
           "keyword": "reasoning",
@@ -672,8 +478,8 @@
           "weight": 2.2
         },
         {
-          "keyword": "multimodal",
-          "weight": 2.0
+          "keyword": "inference",
+          "weight": 1.8
         },
         {
           "keyword": "benchmark",
@@ -681,11 +487,163 @@
         }
       ],
       "primary_match": "reasoning",
-      "personalized_score": 190.0,
-      "detail_path": "items/arxiv-cinecap-structured-reasoning-with-spatio-temporal-anchors-for-cinematographic-video-captio.html",
-      "first_seen_at": "2026-06-24T01:49:16.934549+00:00",
-      "last_seen_at": "2026-06-24T04:22:09.634888+00:00",
-      "last_curated_at": "2026-06-24T04:22:09.634888+00:00",
+      "personalized_score": 188.0,
+      "detail_path": "items/arxiv-paved-with-true-intents-intent-aware-training-improves-llm-safety-classification-across-tr.html",
+      "first_seen_at": "2026-06-26T01:55:10.900745+00:00",
+      "last_seen_at": "2026-06-26T04:37:08.951672+00:00",
+      "last_curated_at": "2026-06-26T04:37:08.951672+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2606.31599v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Token-Sparse Medical Multimodal Reasoning via Dual-Stream Reinforcement Learning",
+      "html_url": "http://arxiv.org/abs/2606.31599v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.31599v1",
+      "description": "Vision-language models (VLMs) combining reinforcement learning (RL) ignite remarkable progress in multimodal reasoning, yet still struggle with medical images, which typically exhibit extremely sparse visual evidence to inform clinical decision-making. We recognize that pruning visual tokens outside the grounding region greatly enhances medical reasoning. However, a united RL framework for active visual token pruning (VTP) and medical multimodal reasoning remains unestablished. Here, we propose a dual-stream RL framework, ViToS, to fulfill token pruning and question answering. ViToS trains one policy model with two task branches, where one focuses on grounding while the other conducts token-sparse reasoning after VTP. Furthermore, we solve the coupled policy learning problem by introducing the cross-feedback sequential optimization, avoiding gradient conflict and facilitating convergence of the shared policy model. Evaluated on seven medical benchmarks, our method reduces visual tokens to 77% of the original sequence length while achieving a 108.27% relative performance on Lingshu-7B and 104.16% relative performance on HuatuoGPT-Vision-7B. Overall, ViToS delivers superior performance and inference speedup, establishing an efficient paradigm for medical multimodal reasoning.",
+      "authors": [
+        "Kaitao Chen",
+        "Weiqian Zhao",
+        "Jiamin Wu",
+        "Qihao Zheng",
+        "Shangquan Sun",
+        "Chunfeng Song",
+        "Xiaosong Wang",
+        "Mu Zhou",
+        "Mianxin Liu"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "published_at": "2026-06-30T12:47:30+00:00",
+      "updated_at": "2026-06-30T12:47:30+00:00",
+      "primary_category": "cs.CV",
+      "heuristic_score": 19.918,
+      "summary": "Token-Sparse Medical Multimodal Reasoning via Dual-Stream Reinforcement Learning 是最近值得追踪的一篇 AI 论文。论文摘要显示：Vision-language models (VLMs) combining reinforcement learning (RL) ignite remarkable progress in multimodal reasoning, yet still struggle with medical images, which typically exhibit extremely sparse visual evidence to inform clinical deci...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CV, cs.AI",
+        "作者数: 9"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "gpt",
+        "multimodal",
+        "model"
+      ],
+      "themes": [
+        "ai",
+        "gpt",
+        "multimodal"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：Token-Sparse Medical Multimodal Reasoning via Dual-Stream Reinforcement Learning 是最近值得追踪的一篇 AI 论文。论文摘要显示：Vision-language models (VLMs) combining reinforcement learning (RL) ignite remarkable progress in multimodal reasoning, yet still struggle with medical images, which typically exhibit extremely sparse visual evidence to inform clinical deci...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV, cs.AI\n- 作者数: 9",
+      "focus_hits": [
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "multimodal",
+          "weight": 2.0
+        },
+        {
+          "keyword": "inference",
+          "weight": 1.8
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "reasoning",
+      "personalized_score": 186.0,
+      "detail_path": "items/arxiv-token-sparse-medical-multimodal-reasoning-via-dual-stream-reinforcement-learning.html",
+      "first_seen_at": "2026-07-01T01:58:35.678590+00:00",
+      "last_seen_at": "2026-07-01T04:50:41.073144+00:00",
+      "last_curated_at": "2026-07-01T04:50:41.073144+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2606.30573v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "SWE-INTERACT: Reimagining SWE Benchmarks as User-Driven Long-Horizon Coding Sessions",
+      "html_url": "http://arxiv.org/abs/2606.30573v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.30573v1",
+      "description": "We introduce SWE-Interact, a new testbed for evaluating coding agents on multi-turn, interactive, user-driven software engineering tasks. Existing frontier SWE benchmarks typically provide complete requirements upfront and evaluate agents on autonomous implementation. In contrast, SWE-Interact places agents in a realistic developer workflow: a carefully designed user simulator starts with vague or incomplete instructions, progressively reveals requirements, inspects the agent's workspace, and provides targeted feedback, revisions, and new constraints until the full task goal has been handed off. Grounded in large-scale studies of real coding-agent interactions, this setup tests whether agents can discover user intent, adapt to evolving requirements, and build on their own prior work. Across a suite of frontier and open-weight models, we find that strong performance on single-turn SWE tasks does not reliably transfer to multi-turn, user-driven workflows: the best-performing models solve roughly 50% of single-turn baseline tasks but only 25% of the corresponding SWE-Interact tasks. The strongest models in our evaluation, including Opus 4.8 and GPT 5.5, start strong even in the face of vague initial instructions, persevere until all the requirements are surfaced by the user, integrate them better and write clean code. However, they still suffer from over-agentic coding, forgetting requirements and technical mistakes. Weaker models start poorly under ambiguity, give up early, forget or ignore instructions and rework their code more. Overall, SWE-Interact measures an orthogonal, real-world capability axis for frontier model development: interactive goal discovery and iterative refinement with a user in the loop.",
+      "authors": [
+        "Mohit Raghavendra",
+        "Anisha Gunjal",
+        "Aakash Sabharwal",
+        "Yunzhong He"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "published_at": "2026-06-29T17:17:45+00:00",
+      "updated_at": "2026-06-29T17:17:45+00:00",
+      "primary_category": "cs.LG",
+      "heuristic_score": 20.3,
+      "summary": "SWE-INTERACT: Reimagining SWE Benchmarks as User-Driven Long-Horizon Coding Sessions 是最近值得追踪的一篇 AI 论文。论文摘要显示：We introduce SWE-Interact, a new testbed for evaluating coding agents on multi-turn, interactive, user-driven software engineering tasks. Existing frontier SWE benchmarks typically provide complete requirements upfront and evaluate agents o...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.LG",
+        "作者数: 4"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "agent",
+        "agentic",
+        "gpt"
+      ],
+      "themes": [
+        "ai",
+        "agent",
+        "agentic"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：SWE-INTERACT: Reimagining SWE Benchmarks as User-Driven Long-Horizon Coding Sessions 是最近值得追踪的一篇 AI 论文。论文摘要显示：We introduce SWE-Interact, a new testbed for evaluating coding agents on multi-turn, interactive, user-driven software engineering tasks. Existing frontier SWE benchmarks typically provide complete requirements upfront and evaluate agents o...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.LG\n- 作者数: 4",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "coding",
+          "weight": 2.6
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 180.0,
+      "detail_path": "items/arxiv-swe-interact-reimagining-swe-benchmarks-as-user-driven-long-horizon-coding-sessions.html",
+      "first_seen_at": "2026-06-30T04:21:58.064008+00:00",
+      "last_seen_at": "2026-06-30T04:21:58.064008+00:00",
+      "last_curated_at": "2026-06-30T04:21:58.064008+00:00",
       "last_notified_at": null
     }
   ],
@@ -696,11 +654,15 @@
     },
     {
       "theme": "llm",
-      "count": 5
+      "count": 4
     },
     {
       "theme": "rag",
       "count": 2
+    },
+    {
+      "theme": "gpt",
+      "count": 1
     },
     {
       "theme": "agent",
@@ -709,17 +671,17 @@
   ],
   "highlights": [
     {
-      "title": "SHERLOC: Structured Diagnostic Localization for Code Repair Agents",
-      "source": "arxiv",
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
-    },
-    {
       "title": "TOPS: First-Principles Visual Token Pruning via Constructing Token Optimal Preservation Sets for Efficient MLLM Inference",
       "source": "arxiv",
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     },
     {
       "title": "OpenRCA 2.0: From Outcome Labels to Causal Process Supervision",
+      "source": "arxiv",
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
+    },
+    {
+      "title": "Empowering GUI Agents via Autonomous Experience Exploration and Hindsight Experience Utilization for Task Planning",
       "source": "arxiv",
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     }
