@@ -1,8 +1,8 @@
 {
   "label": "周报",
   "window_days": 7,
-  "generated_at": "2026-07-02T09:53:04.031897+08:00",
-  "count": 77,
+  "generated_at": "2026-07-02T12:18:09.547243+08:00",
+  "count": 81,
   "summary": "近 7 天里，最集中的主题是 ai、llm、rag。",
   "top_items": [
     {
@@ -166,8 +166,8 @@
       "personalized_score": 200.0,
       "detail_path": "items/arxiv-can-agents-generalize-to-the-open-world-unveiling-the-fragility-of-static-training-in-tool.html",
       "first_seen_at": "2026-07-02T01:53:14.064658+00:00",
-      "last_seen_at": "2026-07-02T01:53:14.064658+00:00",
-      "last_curated_at": "2026-07-02T01:53:14.064658+00:00",
+      "last_seen_at": "2026-07-02T04:18:16.450847+00:00",
+      "last_curated_at": "2026-07-02T04:18:16.450847+00:00",
       "last_notified_at": null
     },
     {
@@ -420,6 +420,83 @@
       "last_notified_at": null
     },
     {
+      "id": "arxiv::http://arxiv.org/abs/2607.01179v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "QuasiMoTTo: Quasi-Monte Carlo Test-Time Scaling",
+      "html_url": "http://arxiv.org/abs/2607.01179v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.01179v1",
+      "description": "Scaling inference compute, by generating many parallel attempts per problem, is a costly but reliable lever for improving language model capabilities. By default these attempts are generated independently, wasting inference compute on redundant solutions. This waste seems unavoidable. After all, independence is what makes parallel sampling trivial to scale. However, this tradeoff is not fundamental: there is a rich design space of samplers that generate correlated but exact samples entirely in parallel. We explore this design space as an avenue for improving sample efficiency in scaling inference compute and reinforcement learning (RL). Concretely, we introduce QuasiMoTTo, which uses correlated samples as a drop-in replacement for i.i.d. samples. To generate these samples, QuasiMoTTo uses a reparameterization of autoregressive sampling as inverse-CDF sampling and draws the underlying uniforms with quasi-Monte Carlo (QMC); because QMC spreads the uniforms out more evenly than i.i.d., the resulting samples cover the output space with far less redundancy. Even though the batch is correlated, each sample is marginally distributed according to the language model, so we can use the batch for policy-gradient training. Our empirical analysis focuses on understanding how efficiently QuasiMoTTo can turn compute into performance. To evaluate correlated samplers, whose dependence breaks standard pass@k estimators, we first develop an unbiased bootstrap estimator. Across four reasoning benchmarks, QuasiMoTTo matches i.i.d. pass@k accuracy with 25-47% fewer samples. Strikingly, QuasiMoTTo often saturates an upper bound on pass@k that holds for any marginal-preserving sampler. We also apply QuasiMoTTo to policy-gradient RL (GRPO) where it matches i.i.d. performance with 50% fewer training steps. These gains come from higher coverage, which yields a stronger learning signal per batch.",
+      "authors": [
+        "Michael Y. Li",
+        "Anthony Zhan",
+        "Kanishk Gandhi",
+        "Noah D. Goodman",
+        "Emily B. Fox"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CL"
+      ],
+      "published_at": "2026-07-01T17:10:08+00:00",
+      "updated_at": "2026-07-01T17:10:08+00:00",
+      "primary_category": "cs.LG",
+      "heuristic_score": 20.3,
+      "summary": "QuasiMoTTo: Quasi-Monte Carlo Test-Time Scaling 是最近值得追踪的一篇 AI 论文。论文摘要显示：Scaling inference compute, by generating many parallel attempts per problem, is a costly but reliable lever for improving language model capabilities. By default these attempts are generated independently, wasting inference compute on redun...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.LG, cs.CL",
+        "作者数: 5"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "rag",
+        "model",
+        "benchmark"
+      ],
+      "themes": [
+        "ai",
+        "rag",
+        "model"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：QuasiMoTTo: Quasi-Monte Carlo Test-Time Scaling 是最近值得追踪的一篇 AI 论文。论文摘要显示：Scaling inference compute, by generating many parallel attempts per problem, is a costly but reliable lever for improving language model capabilities. By default these attempts are generated independently, wasting inference compute on redun...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.LG, cs.CL\n- 作者数: 5",
+      "focus_hits": [
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        },
+        {
+          "keyword": "inference",
+          "weight": 1.8
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "reasoning",
+      "personalized_score": 188.0,
+      "detail_path": "items/arxiv-quasimotto-quasi-monte-carlo-test-time-scaling.html",
+      "first_seen_at": "2026-07-02T04:18:16.450847+00:00",
+      "last_seen_at": "2026-07-02T04:18:16.450847+00:00",
+      "last_curated_at": "2026-07-02T04:18:16.450847+00:00",
+      "last_notified_at": null
+    },
+    {
       "id": "arxiv::http://arxiv.org/abs/2606.32025v1",
       "kind": "paper",
       "source": "arxiv",
@@ -569,87 +646,6 @@
       "last_seen_at": "2026-06-26T04:37:08.951672+00:00",
       "last_curated_at": "2026-06-26T04:37:08.951672+00:00",
       "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2606.31599v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "Token-Sparse Medical Multimodal Reasoning via Dual-Stream Reinforcement Learning",
-      "html_url": "http://arxiv.org/abs/2606.31599v1",
-      "pdf_url": "https://arxiv.org/pdf/2606.31599v1",
-      "description": "Vision-language models (VLMs) combining reinforcement learning (RL) ignite remarkable progress in multimodal reasoning, yet still struggle with medical images, which typically exhibit extremely sparse visual evidence to inform clinical decision-making. We recognize that pruning visual tokens outside the grounding region greatly enhances medical reasoning. However, a united RL framework for active visual token pruning (VTP) and medical multimodal reasoning remains unestablished. Here, we propose a dual-stream RL framework, ViToS, to fulfill token pruning and question answering. ViToS trains one policy model with two task branches, where one focuses on grounding while the other conducts token-sparse reasoning after VTP. Furthermore, we solve the coupled policy learning problem by introducing the cross-feedback sequential optimization, avoiding gradient conflict and facilitating convergence of the shared policy model. Evaluated on seven medical benchmarks, our method reduces visual tokens to 77% of the original sequence length while achieving a 108.27% relative performance on Lingshu-7B and 104.16% relative performance on HuatuoGPT-Vision-7B. Overall, ViToS delivers superior performance and inference speedup, establishing an efficient paradigm for medical multimodal reasoning.",
-      "authors": [
-        "Kaitao Chen",
-        "Weiqian Zhao",
-        "Jiamin Wu",
-        "Qihao Zheng",
-        "Shangquan Sun",
-        "Chunfeng Song",
-        "Xiaosong Wang",
-        "Mu Zhou",
-        "Mianxin Liu"
-      ],
-      "categories": [
-        "cs.CV",
-        "cs.AI"
-      ],
-      "published_at": "2026-06-30T12:47:30+00:00",
-      "updated_at": "2026-06-30T12:47:30+00:00",
-      "primary_category": "cs.CV",
-      "heuristic_score": 19.918,
-      "summary": "Token-Sparse Medical Multimodal Reasoning via Dual-Stream Reinforcement Learning 是最近值得追踪的一篇 AI 论文。论文摘要显示：Vision-language models (VLMs) combining reinforcement learning (RL) ignite remarkable progress in multimodal reasoning, yet still struggle with medical images, which typically exhibit extremely sparse visual evidence to inform clinical deci...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CV, cs.AI",
-        "作者数: 9"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "gpt",
-        "multimodal",
-        "model"
-      ],
-      "themes": [
-        "ai",
-        "gpt",
-        "multimodal"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：Token-Sparse Medical Multimodal Reasoning via Dual-Stream Reinforcement Learning 是最近值得追踪的一篇 AI 论文。论文摘要显示：Vision-language models (VLMs) combining reinforcement learning (RL) ignite remarkable progress in multimodal reasoning, yet still struggle with medical images, which typically exhibit extremely sparse visual evidence to inform clinical deci...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV, cs.AI\n- 作者数: 9",
-      "focus_hits": [
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "multimodal",
-          "weight": 2.0
-        },
-        {
-          "keyword": "inference",
-          "weight": 1.8
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "reasoning",
-      "personalized_score": 186.0,
-      "detail_path": "items/arxiv-token-sparse-medical-multimodal-reasoning-via-dual-stream-reinforcement-learning.html",
-      "first_seen_at": "2026-07-01T01:58:35.678590+00:00",
-      "last_seen_at": "2026-07-01T04:50:41.073144+00:00",
-      "last_curated_at": "2026-07-01T04:50:41.073144+00:00",
-      "last_notified_at": null
     }
   ],
   "top_themes": [
@@ -663,11 +659,7 @@
     },
     {
       "theme": "rag",
-      "count": 2
-    },
-    {
-      "theme": "gpt",
-      "count": 1
+      "count": 3
     }
   ],
   "highlights": [
