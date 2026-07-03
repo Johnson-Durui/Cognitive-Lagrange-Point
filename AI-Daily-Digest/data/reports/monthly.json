@@ -1,7 +1,7 @@
 {
   "label": "月报",
   "window_days": 30,
-  "generated_at": "2026-07-02T12:18:09.547243+08:00",
+  "generated_at": "2026-07-03T09:22:30.895903+08:00",
   "count": 200,
   "summary": "近 30 天里，最集中的主题是 ai、llm、agent。",
   "top_items": [
@@ -90,88 +90,6 @@
       "first_seen_at": "2026-06-16T05:27:38.234336+00:00",
       "last_seen_at": "2026-06-16T05:27:38.234336+00:00",
       "last_curated_at": "2026-06-16T05:27:38.234336+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2606.06467v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "You Only Index Once: Cross-Layer Sparse Attention with Shared Routing",
-      "html_url": "http://arxiv.org/abs/2606.06467v1",
-      "pdf_url": "https://arxiv.org/pdf/2606.06467v1",
-      "description": "Long-context inference in modern LLMs is increasingly constrained by decoding efficiency, especially in reasoning-heavy settings where models generate long intermediate chains of thought. Existing sparse attention methods often face a practical efficiency-quality trade-off. Structured block sparse methods typically provide stronger acceleration but incur noticeable quality loss, while token sparse methods are usually more accurate yet deliver limited end-to-end speedup because top-k routing over the full cache remains expensive. In this work, we propose cross-layer sparse attention (CLSA), which is built on top of KV-sharing architectures such as YOCO. The core idea is to share not only the KV cache across cross-decoder layers, but also the routing index. A single indexer computes token-level top-k selection once and reuses the resulting index across layers, thereby preserving the fine-grained selectivity of token sparse attention while amortizing the routing overhead. The resulting architecture improves all major inference bottlenecks jointly, including pre-filling, KV-cache storage, and long-context decoding. Experiments across short-context and long-context benchmarks show that CLSA is both accurate and efficient, achieving up to 7.6x decoding speedup and 17.1x overall throughput improvement at 128K context. These results suggest a more complete architectural solution for long-context LLMs that jointly advances model quality and inference efficiency.",
-      "authors": [
-        "Yutao Sun",
-        "Yanqi Zhang",
-        "Li Dong",
-        "Jianyong Wang",
-        "Furu Wei"
-      ],
-      "categories": [
-        "cs.CL",
-        "cs.AI",
-        "cs.LG"
-      ],
-      "published_at": "2026-06-04T17:54:04+00:00",
-      "updated_at": "2026-06-04T17:54:04+00:00",
-      "primary_category": "cs.CL",
-      "heuristic_score": 20.146,
-      "summary": "You Only Index Once: Cross-Layer Sparse Attention with Shared Routing 是最近值得追踪的一篇 AI 论文。论文摘要显示：Long-context inference in modern LLMs is increasingly constrained by decoding efficiency, especially in reasoning-heavy settings where models generate long intermediate chains of thought. Existing sparse attention methods often face a pract...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CL, cs.AI",
-        "作者数: 5"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "llm",
-        "rag",
-        "model"
-      ],
-      "themes": [
-        "ai",
-        "llm",
-        "rag"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：You Only Index Once: Cross-Layer Sparse Attention with Shared Routing 是最近值得追踪的一篇 AI 论文。论文摘要显示：Long-context inference in modern LLMs is increasingly constrained by decoding efficiency, especially in reasoning-heavy settings where models generate long intermediate chains of thought. Existing sparse attention methods often face a pract...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL, cs.AI\n- 作者数: 5",
-      "focus_hits": [
-        {
-          "keyword": "coding",
-          "weight": 2.6
-        },
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "inference",
-          "weight": 1.8
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "coding",
-      "personalized_score": 214.0,
-      "detail_path": "items/arxiv-you-only-index-once-cross-layer-sparse-attention-with-shared-routing.html",
-      "first_seen_at": "2026-06-06T04:18:02.749951+00:00",
-      "last_seen_at": "2026-06-06T04:18:02.749951+00:00",
-      "last_curated_at": "2026-06-06T04:18:02.749951+00:00",
       "last_notified_at": null
     },
     {
@@ -662,6 +580,87 @@
       "last_seen_at": "2026-07-02T04:18:16.450847+00:00",
       "last_curated_at": "2026-07-02T04:18:16.450847+00:00",
       "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2606.27154v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "OpenRCA 2.0: From Outcome Labels to Causal Process Supervision",
+      "html_url": "http://arxiv.org/abs/2606.27154v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.27154v1",
+      "description": "Root cause analysis (RCA) poses a holistic test of LLM agentic capabilities, such as long-context understanding, multi-step reasoning, and tool use. However, existing datasets suffer from a fundamental gap: they label only the root cause, not the propagation path connecting it to the observed symptom, which largely simplifies the task to naive pattern matching. To support rigorous evaluation, we introduce PAVE, a step-wise labeling protocol that leverages known interventions from fault injection to reconstruct causal propagation paths. The mechanism is forward verification: reasoning from cause to effect rather than inferring backward from symptoms. Applying PAVE yields OpenRCA 2.0 (500 instances), the first cross-system RCA benchmark with step-wise causal annotations for LLM agents. Across 11 frontier LLMs, recovering the exact root-cause set succeeds in only 20.7% of cases on average. To locate where this difficulty lies, we relax the criterion and find what we call the ungrounded diagnosis: agents identify at least one correct root-cause service in 76.0% of cases, but ground that service in a verified causal propagation path to the observed symptom in only 61.5%. Outcome-only evaluation hides this failure mode; step-wise causal ground truth is the missing piece for trustworthy LLM-based RCA agents.",
+      "authors": [
+        "Aoyang Fang",
+        "Yifan Yang",
+        "Jin'ao Shang",
+        "Qisheng Lu",
+        "Junjielung Xu",
+        "Rui Wang",
+        "Songhan Zhang",
+        "Yuzhong Zhang",
+        "Boxi Yu",
+        "Pinjia He"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "published_at": "2026-06-25T15:24:23+00:00",
+      "updated_at": "2026-06-25T15:24:23+00:00",
+      "primary_category": "cs.AI",
+      "heuristic_score": 19.953,
+      "summary": "OpenRCA 2.0: From Outcome Labels to Causal Process Supervision 是最近值得追踪的一篇 AI 论文。论文摘要显示：Root cause analysis (RCA) poses a holistic test of LLM agentic capabilities, such as long-context understanding, multi-step reasoning, and tool use. However, existing datasets suffer from a fundamental gap: they label only the root cause, n...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.AI",
+        "作者数: 10"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "llm",
+        "agent",
+        "agentic"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "agent"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：OpenRCA 2.0: From Outcome Labels to Causal Process Supervision 是最近值得追踪的一篇 AI 论文。论文摘要显示：Root cause analysis (RCA) poses a holistic test of LLM agentic capabilities, such as long-context understanding, multi-step reasoning, and tool use. However, existing datasets suffer from a fundamental gap: they label only the root cause, n...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI\n- 作者数: 10",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 200.0,
+      "detail_path": "items/arxiv-openrca-2-0-from-outcome-labels-to-causal-process-supervision.html",
+      "first_seen_at": "2026-06-26T01:55:10.900745+00:00",
+      "last_seen_at": "2026-06-26T04:37:08.951672+00:00",
+      "last_curated_at": "2026-06-26T04:37:08.951672+00:00",
+      "last_notified_at": null
     }
   ],
   "top_themes": [
@@ -685,12 +684,12 @@
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     },
     {
-      "title": "You Only Index Once: Cross-Layer Sparse Attention with Shared Routing",
+      "title": "SHERLOC: Structured Diagnostic Localization for Code Repair Agents",
       "source": "arxiv",
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     },
     {
-      "title": "SHERLOC: Structured Diagnostic Localization for Code Repair Agents",
+      "title": "Binary Tracking for Spatial QA and Navigation with Open Vision-Language Models",
       "source": "arxiv",
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     }
