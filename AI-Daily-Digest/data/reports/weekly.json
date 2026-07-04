@@ -1,53 +1,44 @@
 {
   "label": "周报",
   "window_days": 7,
-  "generated_at": "2026-07-03T12:04:28.087282+08:00",
-  "count": 72,
+  "generated_at": "2026-07-04T09:22:01.718377+08:00",
+  "count": 73,
   "summary": "近 7 天里，最集中的主题是 ai、llm、rag。",
   "top_items": [
     {
-      "id": "arxiv::http://arxiv.org/abs/2606.27161v1",
+      "id": "arxiv::http://arxiv.org/abs/2607.02479v1",
       "kind": "paper",
       "source": "arxiv",
       "source_tags": [
         "latest"
       ],
-      "title": "TOPS: First-Principles Visual Token Pruning via Constructing Token Optimal Preservation Sets for Efficient MLLM Inference",
-      "html_url": "http://arxiv.org/abs/2606.27161v1",
-      "pdf_url": "https://arxiv.org/pdf/2606.27161v1",
-      "description": "Multimodal large language models (MLLMs) have achieved strong multimodal reasoning capabilities, but their efficiency is limited by the large number of visual tokens, which introduces substantial computational overhead. Visual token pruning offers a natural solution, yet existing methods are imperfect: attention-based criteria tend to retain redundant tokens, while diversity-based criteria are often agnostic to user instructions. Even methods that combine multiple criteria still lack a principled formulation of the intrinsic objective of token pruning. In this paper, we revisit visual token pruning from a first-principles perspective and formulate it as constructing Token Optimal Preservation Sets. Through a top-down information-theoretic analysis, we identify three fundamental principles for effective token selection: Task Relevance, Information Coverage, and Semantic Diversity. Based on these principles, we propose TOPS, a training-free and model-agnostic pruning module that can be applied to various MLLMs. Extensive experiments on 7 MLLM backbones and 14 benchmarks demonstrate that TOPS outperforms prior methods under diverse pruning settings. Notably, on LLaVA-NeXT, TOPS removes 77.8% of visual tokens while preserving 100.0% and 100.6% performance on its 7B and 13B models, respectively, suggesting that pruning redundant visual tokens can sometimes mitigate hallucination and inspire future lightweight MLLM design.",
+      "title": "EAGLE-360: Embodied Active Global-to-Local Exploration in 360$^\\circ$",
+      "html_url": "http://arxiv.org/abs/2607.02479v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.02479v1",
+      "description": "While Multimodal Large Language Models (MLLMs) have demonstrated exceptional capabilities in standard visual understanding, adapting them for active visual search in 360$^\\circ$ panoramic environments exposes fundamental limitations. Specifically, standard MLLMs struggle to effectively model inherent panoramic properties, such as severe polar distortion and continuous cylindrical topologies, which significantly degrades target detection accuracy. Consequently, existing panoramic search methods attempt to compensate by relying heavily on fragmented local viewpoints. Burdened by rigid initialization and a lack of global panoramic priors, these approaches suffer from myopic, inefficient exploration and struggle with robust error recovery when targets are out of view. To overcome these challenges, we propose EAGLE-360, a novel Embodied Active Global-to-Local Exploration framework. Rather than performing exhaustive local searches, EAGLE-360 leverages global priors to establish an initial holistic perspective, iteratively reasoning and progressively narrowing the search space. Architecturally, we adapt RoPE Rolling, a coordinate-shifting positional encoding mechanism, to seamlessly model the continuous topologies of panoramas. To facilitate this paradigm, we construct the large-scale EAGLE-360 dataset, comprising 14,000+ 4K panoramas and 70,000+ rounds of high-quality VQA dialogues. By employing a training pipeline that integrates Supervised Fine-Tuning (SFT) with Group Relative Policy Optimization (GRPO), we effectively elicit complex spatial reasoning and tool-calling capabilities. Extensive experiments demonstrate that EAGLE-360 establishes a new state-of-the-art for 360$^\\circ$ visual search, achieving nearly an 8-fold increase in accuracy over the base model while significantly enhancing exploration efficiency.",
       "authors": [
-        "Tinghao Wang",
-        "Yichen Guo",
-        "Rui Huang",
-        "Zheng Lu",
-        "Qizhe Zhang",
-        "Chenxi Li",
-        "Yuan Zhang",
-        "Jiajun Cao",
-        "Zhirong Shen",
-        "Yaosong Du",
-        "Guangyan Gan",
-        "Wenya Wang",
-        "Lin William Cong",
-        "Shanghang Zhang"
+        "Jingtao Xu",
+        "Zizhuo Lin",
+        "Jianwen Sun",
+        "Yi Yang",
+        "Yawei Luo"
       ],
       "categories": [
-        "cs.AI"
+        "cs.CV"
       ],
-      "published_at": "2026-06-25T15:29:37+00:00",
-      "updated_at": "2026-06-25T15:29:37+00:00",
-      "primary_category": "cs.AI",
-      "heuristic_score": 24.9,
-      "summary": "TOPS: First-Principles Visual Token Pruning via Constructing Token Optimal Preservation Sets for Efficient MLLM Inference 是最近值得追踪的一篇 AI 论文。论文摘要显示：Multimodal large language models (MLLMs) have achieved strong multimodal reasoning capabilities, but their efficiency is limited by the large number of visual tokens, which introduces substantial computational overhead. Visual token pruning...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "published_at": "2026-07-02T17:47:27+00:00",
+      "updated_at": "2026-07-02T17:47:27+00:00",
+      "primary_category": "cs.CV",
+      "heuristic_score": 20.3,
+      "summary": "EAGLE-360: Embodied Active Global-to-Local Exploration in 360$^\\circ$ 是最近值得追踪的一篇 AI 论文。论文摘要显示：While Multimodal Large Language Models (MLLMs) have demonstrated exceptional capabilities in standard visual understanding, adapting them for active visual search in 360$^\\circ$ panoramic environments exposes fundamental limitations. Specif...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
       "brief": "这是一篇值得加入今日论文雷达的最新工作。",
       "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
       "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
       "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
       "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
       "highlights": [
-        "分类: cs.AI",
-        "作者数: 14"
+        "分类: cs.CV",
+        "作者数: 5"
       ],
       "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
       "relevance_score": 10,
@@ -63,8 +54,12 @@
         "rag"
       ],
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：TOPS: First-Principles Visual Token Pruning via Constructing Token Optimal Preservation Sets for Efficient MLLM Inference 是最近值得追踪的一篇 AI 论文。论文摘要显示：Multimodal large language models (MLLMs) have achieved strong multimodal reasoning capabilities, but their efficiency is limited by the large number of visual tokens, which introduces substantial computational overhead. Visual token pruning...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI\n- 作者数: 14",
+      "summary_markdown": "**摘要**：EAGLE-360: Embodied Active Global-to-Local Exploration in 360$^\\circ$ 是最近值得追踪的一篇 AI 论文。论文摘要显示：While Multimodal Large Language Models (MLLMs) have demonstrated exceptional capabilities in standard visual understanding, adapting them for active visual search in 360$^\\circ$ panoramic environments exposes fundamental limitations. Specif...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV\n- 作者数: 5",
       "focus_hits": [
+        {
+          "keyword": "coding",
+          "weight": 2.6
+        },
         {
           "keyword": "reasoning",
           "weight": 2.4
@@ -76,22 +71,14 @@
         {
           "keyword": "multimodal",
           "weight": 2.0
-        },
-        {
-          "keyword": "inference",
-          "weight": 1.8
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
         }
       ],
-      "primary_match": "reasoning",
-      "personalized_score": 208.0,
-      "detail_path": "items/arxiv-tops-first-principles-visual-token-pruning-via-constructing-token-optimal-preservation-set.html",
-      "first_seen_at": "2026-06-26T01:55:10.900745+00:00",
-      "last_seen_at": "2026-06-26T04:37:08.951672+00:00",
-      "last_curated_at": "2026-06-26T04:37:08.951672+00:00",
+      "primary_match": "coding",
+      "personalized_score": 200.0,
+      "detail_path": "items/arxiv-eagle-360-embodied-active-global-to-local-exploration-in-360-circ.html",
+      "first_seen_at": "2026-07-04T01:22:08.469484+00:00",
+      "last_seen_at": "2026-07-04T01:22:08.469484+00:00",
+      "last_curated_at": "2026-07-04T01:22:08.469484+00:00",
       "last_notified_at": null
     },
     {
@@ -168,87 +155,6 @@
       "first_seen_at": "2026-07-02T01:53:14.064658+00:00",
       "last_seen_at": "2026-07-02T04:18:16.450847+00:00",
       "last_curated_at": "2026-07-02T04:18:16.450847+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2606.27154v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "OpenRCA 2.0: From Outcome Labels to Causal Process Supervision",
-      "html_url": "http://arxiv.org/abs/2606.27154v1",
-      "pdf_url": "https://arxiv.org/pdf/2606.27154v1",
-      "description": "Root cause analysis (RCA) poses a holistic test of LLM agentic capabilities, such as long-context understanding, multi-step reasoning, and tool use. However, existing datasets suffer from a fundamental gap: they label only the root cause, not the propagation path connecting it to the observed symptom, which largely simplifies the task to naive pattern matching. To support rigorous evaluation, we introduce PAVE, a step-wise labeling protocol that leverages known interventions from fault injection to reconstruct causal propagation paths. The mechanism is forward verification: reasoning from cause to effect rather than inferring backward from symptoms. Applying PAVE yields OpenRCA 2.0 (500 instances), the first cross-system RCA benchmark with step-wise causal annotations for LLM agents. Across 11 frontier LLMs, recovering the exact root-cause set succeeds in only 20.7% of cases on average. To locate where this difficulty lies, we relax the criterion and find what we call the ungrounded diagnosis: agents identify at least one correct root-cause service in 76.0% of cases, but ground that service in a verified causal propagation path to the observed symptom in only 61.5%. Outcome-only evaluation hides this failure mode; step-wise causal ground truth is the missing piece for trustworthy LLM-based RCA agents.",
-      "authors": [
-        "Aoyang Fang",
-        "Yifan Yang",
-        "Jin'ao Shang",
-        "Qisheng Lu",
-        "Junjielung Xu",
-        "Rui Wang",
-        "Songhan Zhang",
-        "Yuzhong Zhang",
-        "Boxi Yu",
-        "Pinjia He"
-      ],
-      "categories": [
-        "cs.AI"
-      ],
-      "published_at": "2026-06-25T15:24:23+00:00",
-      "updated_at": "2026-06-25T15:24:23+00:00",
-      "primary_category": "cs.AI",
-      "heuristic_score": 19.953,
-      "summary": "OpenRCA 2.0: From Outcome Labels to Causal Process Supervision 是最近值得追踪的一篇 AI 论文。论文摘要显示：Root cause analysis (RCA) poses a holistic test of LLM agentic capabilities, such as long-context understanding, multi-step reasoning, and tool use. However, existing datasets suffer from a fundamental gap: they label only the root cause, n...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.AI",
-        "作者数: 10"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "llm",
-        "agent",
-        "agentic"
-      ],
-      "themes": [
-        "ai",
-        "llm",
-        "agent"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：OpenRCA 2.0: From Outcome Labels to Causal Process Supervision 是最近值得追踪的一篇 AI 论文。论文摘要显示：Root cause analysis (RCA) poses a holistic test of LLM agentic capabilities, such as long-context understanding, multi-step reasoning, and tool use. However, existing datasets suffer from a fundamental gap: they label only the root cause, n...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI\n- 作者数: 10",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 200.0,
-      "detail_path": "items/arxiv-openrca-2-0-from-outcome-labels-to-causal-process-supervision.html",
-      "first_seen_at": "2026-06-26T01:55:10.900745+00:00",
-      "last_seen_at": "2026-06-26T04:37:08.951672+00:00",
-      "last_curated_at": "2026-06-26T04:37:08.951672+00:00",
       "last_notified_at": null
     },
     {
@@ -332,67 +238,54 @@
       "last_notified_at": null
     },
     {
-      "id": "arxiv::http://arxiv.org/abs/2606.27187v1",
+      "id": "arxiv::http://arxiv.org/abs/2607.02490v1",
       "kind": "paper",
       "source": "arxiv",
       "source_tags": [
         "latest"
       ],
-      "title": "HarmVideoBench: Benchmarking Harmful Video Understanding in Large Multimodal Models",
-      "html_url": "http://arxiv.org/abs/2606.27187v1",
-      "pdf_url": "https://arxiv.org/pdf/2606.27187v1",
-      "description": "Large vision-language models (LVLMs) have recently shown immense potential in automated content moderation, sparking growing interest in developing harmful-video benchmarks. However, we identify two primary limitations in existing works: 1) The multi-layered characteristics of harmful videos are overlooked. Existing benchmarks predominantly formulate evaluation as a binary classification task, failing to capture implicit or deep contextual harms. 2) Explanatory rationales are completely absent. Current frameworks measure exclusively whether a model flags a video correctly rather than explaining why, turning evaluation into a black box where models can succeed through superficial shortcuts. To address these problems, we present HarmVideoBench, a multi-layered diagnostic benchmark comprising 1,379 videos paired with 4,137 multiple-choice questions. HarmVideoBench benchmarks three hierarchical dimensions: Observable Evidence, Clip-Internal Meaning, and Beyond-Clip Reasoning, aiming to evaluate models' deep understanding beyond surface cues with carefully balanced and curated samples. We evaluate 19 leading models on HarmVideoBench to assess their multidimensional understanding of harmful videos. Moreover, we introduce BCR, a benchmark-aligned method that predicts reasoning boundaries and dynamically retrieves context only when needed. Experimental results show that BCR substantially improves the base model's performance in harmful video understanding, raising the macro average from 61.7 percent to a state-of-the-art 84.4 percent.",
+      "title": "Visually Grounded Self-Reflection for Vision-Language Models via Reinforcement Learning",
+      "html_url": "http://arxiv.org/abs/2607.02490v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.02490v1",
+      "description": "Large vision-language models can reason over multimodal inputs by generating textual chains of thought (CoT). A key capability exhibited in CoT reasoning is self-reflection: revisiting earlier decisions and correcting previous errors. However, existing LVLMs often fail to properly attend to visual inputs during reflection, limiting their ability to translate feedback into grounded corrections, especially for out-of-distribution images. To address this issue, we propose a novel reinforcement learning training framework VRRL, with two components explicitly designed to elicit visually grounded self-reflection. First, we randomly mask trajectory prefixes during training to emphasize recovery from incorrect intermediate predictions rather than making early mistakes. Second, we introduce buffered roll-ins from an experience replay buffer to expose the model to diverse failure states that it must learn to correct. We evaluate our approach on visual grounding tasks involving tables and charts, as well as spatial navigation benchmarks. While off-the-shelf and conventionally fine-tuned models degrade substantially under distribution shift, our method substantially improves average out-of-distribution accuracy over standard RL and reflection-oriented fine-tuning baselines by using self-reflection effectively.",
       "authors": [
-        "Jiajun Wu",
-        "Haoyu Kang",
-        "Yining Sun",
-        "Jiacheng Hou",
-        "Heng Zhang",
-        "Danyang Zhang",
-        "Zhenjun Zhao",
-        "Haochi Zhang",
-        "Leixin Sun",
-        "Eric Hanchen Jiang",
-        "Yushan Li",
-        "Ruiyu Li",
-        "Mengkai Huang",
-        "Yan Gao",
-        "Xu Zhang",
-        "Guancheng Wan"
+        "Liyan Tang",
+        "Fangcong Yin",
+        "Greg Durrett"
       ],
       "categories": [
-        "cs.CV",
-        "cs.CL"
+        "cs.CL",
+        "cs.CV"
       ],
-      "published_at": "2026-06-25T15:50:33+00:00",
-      "updated_at": "2026-06-25T15:50:33+00:00",
-      "primary_category": "cs.CV",
-      "heuristic_score": 17.84,
-      "summary": "HarmVideoBench: Benchmarking Harmful Video Understanding in Large Multimodal Models 是最近值得追踪的一篇 AI 论文。论文摘要显示：Large vision-language models (LVLMs) have recently shown immense potential in automated content moderation, sparking growing interest in developing harmful-video benchmarks. However, we identify two primary limitations in existing works: 1)...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "published_at": "2026-07-02T17:53:15+00:00",
+      "updated_at": "2026-07-02T17:53:15+00:00",
+      "primary_category": "cs.CL",
+      "heuristic_score": 19.949,
+      "summary": "Visually Grounded Self-Reflection for Vision-Language Models via Reinforcement Learning 是最近值得追踪的一篇 AI 论文。论文摘要显示：Large vision-language models can reason over multimodal inputs by generating textual chains of thought (CoT). A key capability exhibited in CoT reasoning is self-reflection: revisiting earlier decisions and correcting previous errors. Howev...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
       "brief": "这是一篇值得加入今日论文雷达的最新工作。",
       "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
       "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
       "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
       "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
       "highlights": [
-        "分类: cs.CV, cs.CL",
-        "作者数: 16"
+        "分类: cs.CL, cs.CV",
+        "作者数: 3"
       ],
       "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
       "relevance_score": 10,
       "tags": [
         "ai",
         "rag",
-        "model",
-        "benchmark"
+        "multimodal",
+        "model"
       ],
       "themes": [
         "ai",
         "rag",
-        "model"
+        "multimodal"
       ],
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：HarmVideoBench: Benchmarking Harmful Video Understanding in Large Multimodal Models 是最近值得追踪的一篇 AI 论文。论文摘要显示：Large vision-language models (LVLMs) have recently shown immense potential in automated content moderation, sparking growing interest in developing harmful-video benchmarks. However, we identify two primary limitations in existing works: 1)...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV, cs.CL\n- 作者数: 16",
+      "summary_markdown": "**摘要**：Visually Grounded Self-Reflection for Vision-Language Models via Reinforcement Learning 是最近值得追踪的一篇 AI 论文。论文摘要显示：Large vision-language models can reason over multimodal inputs by generating textual chains of thought (CoT). A key capability exhibited in CoT reasoning is self-reflection: revisiting earlier decisions and correcting previous errors. Howev...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL, cs.CV\n- 作者数: 3",
       "focus_hits": [
         {
           "keyword": "reasoning",
@@ -413,10 +306,10 @@
       ],
       "primary_match": "reasoning",
       "personalized_score": 190.0,
-      "detail_path": "items/arxiv-harmvideobench-benchmarking-harmful-video-understanding-in-large-multimodal-models.html",
-      "first_seen_at": "2026-06-26T01:55:10.900745+00:00",
-      "last_seen_at": "2026-06-26T04:37:08.951672+00:00",
-      "last_curated_at": "2026-06-26T04:37:08.951672+00:00",
+      "detail_path": "items/arxiv-visually-grounded-self-reflection-for-vision-language-models-via-reinforcement-learning.html",
+      "first_seen_at": "2026-07-04T01:22:08.469484+00:00",
+      "last_seen_at": "2026-07-04T01:22:08.469484+00:00",
+      "last_curated_at": "2026-07-04T01:22:08.469484+00:00",
       "last_notified_at": null
     },
     {
@@ -572,63 +465,68 @@
       "last_notified_at": null
     },
     {
-      "id": "arxiv::http://arxiv.org/abs/2606.27210v1",
+      "id": "arxiv::http://arxiv.org/abs/2606.31599v1",
       "kind": "paper",
       "source": "arxiv",
       "source_tags": [
         "latest"
       ],
-      "title": "Paved with True Intents: Intent-Aware Training Improves LLM Safety Classification Across Training Regimes",
-      "html_url": "http://arxiv.org/abs/2606.27210v1",
-      "pdf_url": "https://arxiv.org/pdf/2606.27210v1",
-      "description": "We argue that safety classifiers should model user intent as an explicit signal between the prompt and the final label. To study this, we introduce AIMS, a human-annotated dataset of 1,724 difficult safety prompts, each paired with an intent description and harm label. We use AIMS to evaluate intent-aware training across supervised fine-tuning, preference learning, reasoning distillation, and reinforcement learning. Despite its size, AIMS enables competitive safety classifiers across training regimes: DPO from model-generated intent errors improves over SFT, and intent-conditioned distillation outperforms reasoning-only distillation in most teacher-student pairs. Most notably, directly rewarding intent faithfulness with GRPO yields the strongest average performance across five external safety benchmarks, while our intent-aware models form the inference latency-F1 Pareto frontier. These results show that faithful intent modeling is a compact, high-quality supervision signal for more robust safety classifiers.",
+      "title": "Token-Sparse Medical Multimodal Reasoning via Dual-Stream Reinforcement Learning",
+      "html_url": "http://arxiv.org/abs/2606.31599v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.31599v1",
+      "description": "Vision-language models (VLMs) combining reinforcement learning (RL) ignite remarkable progress in multimodal reasoning, yet still struggle with medical images, which typically exhibit extremely sparse visual evidence to inform clinical decision-making. We recognize that pruning visual tokens outside the grounding region greatly enhances medical reasoning. However, a united RL framework for active visual token pruning (VTP) and medical multimodal reasoning remains unestablished. Here, we propose a dual-stream RL framework, ViToS, to fulfill token pruning and question answering. ViToS trains one policy model with two task branches, where one focuses on grounding while the other conducts token-sparse reasoning after VTP. Furthermore, we solve the coupled policy learning problem by introducing the cross-feedback sequential optimization, avoiding gradient conflict and facilitating convergence of the shared policy model. Evaluated on seven medical benchmarks, our method reduces visual tokens to 77% of the original sequence length while achieving a 108.27% relative performance on Lingshu-7B and 104.16% relative performance on HuatuoGPT-Vision-7B. Overall, ViToS delivers superior performance and inference speedup, establishing an efficient paradigm for medical multimodal reasoning.",
       "authors": [
-        "Jeremias Ferrao",
-        "Niclas Müller-Hof",
-        "Iustin Sîrbu",
-        "Traian Rebedea",
-        "Yftah Ziser"
+        "Kaitao Chen",
+        "Weiqian Zhao",
+        "Jiamin Wu",
+        "Qihao Zheng",
+        "Shangquan Sun",
+        "Chunfeng Song",
+        "Xiaosong Wang",
+        "Mu Zhou",
+        "Mianxin Liu"
       ],
       "categories": [
-        "cs.CL"
+        "cs.CV",
+        "cs.AI"
       ],
-      "published_at": "2026-06-25T16:03:57+00:00",
-      "updated_at": "2026-06-25T16:03:57+00:00",
-      "primary_category": "cs.CL",
-      "heuristic_score": 21.979,
-      "summary": "Paved with True Intents: Intent-Aware Training Improves LLM Safety Classification Across Training Regimes 是最近值得追踪的一篇 AI 论文。论文摘要显示：We argue that safety classifiers should model user intent as an explicit signal between the prompt and the final label. To study this, we introduce AIMS, a human-annotated dataset of 1,724 difficult safety prompts, each paired with an inten...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "published_at": "2026-06-30T12:47:30+00:00",
+      "updated_at": "2026-06-30T12:47:30+00:00",
+      "primary_category": "cs.CV",
+      "heuristic_score": 19.918,
+      "summary": "Token-Sparse Medical Multimodal Reasoning via Dual-Stream Reinforcement Learning 是最近值得追踪的一篇 AI 论文。论文摘要显示：Vision-language models (VLMs) combining reinforcement learning (RL) ignite remarkable progress in multimodal reasoning, yet still struggle with medical images, which typically exhibit extremely sparse visual evidence to inform clinical deci...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
       "brief": "这是一篇值得加入今日论文雷达的最新工作。",
       "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
       "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
       "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
       "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
       "highlights": [
-        "分类: cs.CL",
-        "作者数: 5"
+        "分类: cs.CV, cs.AI",
+        "作者数: 9"
       ],
       "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
       "relevance_score": 10,
       "tags": [
         "ai",
-        "rag",
-        "model",
-        "benchmark"
+        "gpt",
+        "multimodal",
+        "model"
       ],
       "themes": [
         "ai",
-        "rag",
-        "model"
+        "gpt",
+        "multimodal"
       ],
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：Paved with True Intents: Intent-Aware Training Improves LLM Safety Classification Across Training Regimes 是最近值得追踪的一篇 AI 论文。论文摘要显示：We argue that safety classifiers should model user intent as an explicit signal between the prompt and the final label. To study this, we introduce AIMS, a human-annotated dataset of 1,724 difficult safety prompts, each paired with an inten...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL\n- 作者数: 5",
+      "summary_markdown": "**摘要**：Token-Sparse Medical Multimodal Reasoning via Dual-Stream Reinforcement Learning 是最近值得追踪的一篇 AI 论文。论文摘要显示：Vision-language models (VLMs) combining reinforcement learning (RL) ignite remarkable progress in multimodal reasoning, yet still struggle with medical images, which typically exhibit extremely sparse visual evidence to inform clinical deci...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV, cs.AI\n- 作者数: 9",
       "focus_hits": [
         {
           "keyword": "reasoning",
           "weight": 2.4
         },
         {
-          "keyword": "rag",
-          "weight": 2.2
+          "keyword": "multimodal",
+          "weight": 2.0
         },
         {
           "keyword": "inference",
@@ -640,11 +538,81 @@
         }
       ],
       "primary_match": "reasoning",
-      "personalized_score": 188.0,
-      "detail_path": "items/arxiv-paved-with-true-intents-intent-aware-training-improves-llm-safety-classification-across-tr.html",
-      "first_seen_at": "2026-06-26T01:55:10.900745+00:00",
-      "last_seen_at": "2026-06-26T04:37:08.951672+00:00",
-      "last_curated_at": "2026-06-26T04:37:08.951672+00:00",
+      "personalized_score": 186.0,
+      "detail_path": "items/arxiv-token-sparse-medical-multimodal-reasoning-via-dual-stream-reinforcement-learning.html",
+      "first_seen_at": "2026-07-01T01:58:35.678590+00:00",
+      "last_seen_at": "2026-07-01T04:50:41.073144+00:00",
+      "last_curated_at": "2026-07-01T04:50:41.073144+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2607.02514v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Distributed Attacks in Persistent-State AI Control",
+      "html_url": "http://arxiv.org/abs/2607.02514v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.02514v1",
+      "description": "As AI coding agents become more autonomous, they increasingly ship code iteratively, with the codebase persisting across sessions. This persistence creates a new attack surface: a misaligned or prompt-injected agent can distribute attacks across pull requests (PRs) and time its payload for the PR with the best natural cover. To study the resulting dynamics, we introduce Iterative VibeCoding, a setting for AI control, the study of safely deploying capable but potentially untrusted AI. In Iterative VibeCoding, a coding agent builds software over a sequence of PRs in a persistent codebase while pursuing a covert side task. Our benchmark includes two task families: CLI tools and Flask web services, across 20 total task variations. We use Claude Sonnet 4.5 as the attack agent and GPT-4o as the monitor. We compare gradual attacks, which distribute the side task across PRs, against non-gradual attacks concentrated in a single PR. No single monitor is robust to both: which strategy evades best (success while evading the monitor) depends on the monitor type, so a defender cannot close off both gradual and non-gradual attacks with any one monitor. High evasion (>= 65%) generalizes across model attack agent backends (Sonnet 4.5, Gemini 3.1 Pro, Kimi K2.5), confirming this is a property of the persistent-state attack surface rather than a single model's capability. Evasion also remains high across state-of-the-art monitor models and the gap between gradual and non-gradual evasion widens for more capable models. We introduce a stateful link-tracker monitor that tracks suspicious buildup across PRs. On both task families, it detects gradual attacks substantially better than diff monitors that merely see more accumulated history. Combining this stronger monitor with trajectory monitors in a four-monitor ensemble reduces gradual-attack evasion from 93% under the weakest standard diff monitor to 47%.",
+      "authors": [
+        "Josh Hills",
+        "Ida Caspary",
+        "Asa Cooper Stickland"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "published_at": "2026-07-02T17:59:56+00:00",
+      "updated_at": "2026-07-02T17:59:56+00:00",
+      "primary_category": "cs.AI",
+      "heuristic_score": 17.9,
+      "summary": "Distributed Attacks in Persistent-State AI Control 是最近值得追踪的一篇 AI 论文。论文摘要显示：As AI coding agents become more autonomous, they increasingly ship code iteratively, with the codebase persisting across sessions. This persistence creates a new attack surface: a misaligned or prompt-injected agent can distribute attacks a...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.AI",
+        "作者数: 3"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "agent",
+        "gpt",
+        "model"
+      ],
+      "themes": [
+        "ai",
+        "agent",
+        "gpt"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：Distributed Attacks in Persistent-State AI Control 是最近值得追踪的一篇 AI 论文。论文摘要显示：As AI coding agents become more autonomous, they increasingly ship code iteratively, with the codebase persisting across sessions. This persistence creates a new attack surface: a misaligned or prompt-injected agent can distribute attacks a...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI\n- 作者数: 3",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "coding",
+          "weight": 2.6
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 180.0,
+      "detail_path": "items/arxiv-distributed-attacks-in-persistent-state-ai-control.html",
+      "first_seen_at": "2026-07-04T01:22:08.469484+00:00",
+      "last_seen_at": "2026-07-04T01:22:08.469484+00:00",
+      "last_curated_at": "2026-07-04T01:22:08.469484+00:00",
       "last_notified_at": null
     }
   ],
@@ -655,16 +623,24 @@
     },
     {
       "theme": "llm",
-      "count": 5
+      "count": 4
     },
     {
       "theme": "rag",
-      "count": 3
+      "count": 2
+    },
+    {
+      "theme": "gpt",
+      "count": 1
+    },
+    {
+      "theme": "agent",
+      "count": 1
     }
   ],
   "highlights": [
     {
-      "title": "TOPS: First-Principles Visual Token Pruning via Constructing Token Optimal Preservation Sets for Efficient MLLM Inference",
+      "title": "EAGLE-360: Embodied Active Global-to-Local Exploration in 360$^\\circ$",
       "source": "arxiv",
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     },
@@ -674,7 +650,7 @@
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     },
     {
-      "title": "OpenRCA 2.0: From Outcome Labels to Causal Process Supervision",
+      "title": "Empowering GUI Agents via Autonomous Experience Exploration and Hindsight Experience Utilization for Task Planning",
       "source": "arxiv",
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     }
