@@ -1,9 +1,9 @@
 {
   "label": "周报",
   "window_days": 7,
-  "generated_at": "2026-07-09T12:09:30.703915+08:00",
-  "count": 64,
-  "summary": "近 7 天里，最集中的主题是 ai、llm、agent。",
+  "generated_at": "2026-07-10T09:18:56.496606+08:00",
+  "count": 62,
+  "summary": "近 7 天里，最集中的主题是 ai、agent、llm。",
   "top_items": [
     {
       "id": "arxiv::http://arxiv.org/abs/2607.06374v1",
@@ -352,55 +352,55 @@
       "last_notified_at": null
     },
     {
-      "id": "arxiv::http://arxiv.org/abs/2607.01084v1",
+      "id": "arxiv::http://arxiv.org/abs/2607.08705v1",
       "kind": "paper",
       "source": "arxiv",
       "source_tags": [
         "latest"
       ],
-      "title": "Can Agents Generalize to the Open World? Unveiling the Fragility of Static Training in Tool Use",
-      "html_url": "http://arxiv.org/abs/2607.01084v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.01084v1",
-      "description": "While Large Language Model (LLM) agents demonstrate proficiency in static benchmarks, their deployment in real-world scenarios is hindered by the dynamic nature of user queries, tool sets, and interaction dynamics. To address this generalization gap, we formalize OpenAgent (Tool-Use Agent in Open-World), a problem setting characterized by distributional shifts across query, action, observation, and domain dimensions. To systematically diagnose its impact, we construct a controlled sandbox environment where we define fine-grained environmental shifts across a four-tier hierarchy, Perception, Interaction, Reasoning, and Internalization, and conduct a comprehensive series of experiments. Our analysis yields a series of key insights, demonstrating that agents trained via both Supervised Fine-Tuning(SFT) and Reinforcement Learning suffer from varying degrees of performance degradation when confronting open environmental shifts. Building on these insights, we propose Perturbation-Augmented Fine-Tuning, a disturbance-based intervention strategy for SFT that lays the foundation for enhancing agent robustness and utility in realistic environments. Our code will be released at: https://github. com/LAMDA-NeSy/OpenAgent.",
+      "title": "HumanForge: A Human-Centric Deepfake Video Benchmark with Multi-Agent Forgery Rationales",
+      "html_url": "http://arxiv.org/abs/2607.08705v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.08705v1",
+      "description": "Rapid advancements in video diffusion models and temporal editing tools have enabled the generation of highly realistic human-centric videos, posing unprecedented challenges to digital content forensics. Existing benchmarks primarily focus on either face-swapping or global text-to-video synthesis, overlooking the crucial dimensions of human-object or human-human interactions and multi-modal alignment. To address these limitations, we introduce HumanForge, a unified, large-scale, and multi-paradigm human-centric video forgery dataset. To construct and annotate this dataset without labor-intensive manual labeling or hallucinated monolithic prompts, we propose Gen2Anno, a modular active multi-agent pipeline built on LangGraph. Gen2Anno coordinates six specialized agents-ranging from source profiling to MoE-based reference analysis and closed-loop forensic verification-to generate over 18K high-fidelity video segments and produce structured, contrastive omni-annotations containing binary decisions, fine-grained artifact categories, and spatio-temporal localization. Extensive benchmarks using state-of-the-art traditional detectors and Large Multimodal Models (LMMs) demonstrate the significant challenges of zero-shot generalization and fine-grained reasoning on HumanForge. Code and dataset will be publicly released.",
       "authors": [
-        "Song-Lin Lv",
-        "Weiming Wu",
-        "Rui Zhu",
-        "Zi-Jian Cheng",
-        "Lan-Zhe Guo"
+        "Wenbo Xu",
+        "Zhimin Chen",
+        "Xiaojie Liang",
+        "Hengrui Liu",
+        "Wei Lu"
       ],
       "categories": [
-        "cs.AI"
+        "cs.CV"
       ],
-      "published_at": "2026-07-01T15:40:25+00:00",
-      "updated_at": "2026-07-01T15:40:25+00:00",
-      "primary_category": "cs.AI",
-      "heuristic_score": 22.235,
-      "summary": "Can Agents Generalize to the Open World? Unveiling the Fragility of Static Training in Tool Use 是最近值得追踪的一篇 AI 论文。论文摘要显示：While Large Language Model (LLM) agents demonstrate proficiency in static benchmarks, their deployment in real-world scenarios is hindered by the dynamic nature of user queries, tool sets, and interaction dynamics. To address this generaliz...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "published_at": "2026-07-09T17:12:41+00:00",
+      "updated_at": "2026-07-09T17:12:41+00:00",
+      "primary_category": "cs.CV",
+      "heuristic_score": 19.964,
+      "summary": "HumanForge: A Human-Centric Deepfake Video Benchmark with Multi-Agent Forgery Rationales 是最近值得追踪的一篇 AI 论文。论文摘要显示：Rapid advancements in video diffusion models and temporal editing tools have enabled the generation of highly realistic human-centric videos, posing unprecedented challenges to digital content forensics. Existing benchmarks primarily focus ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
       "brief": "这是一篇值得加入今日论文雷达的最新工作。",
       "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
       "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
       "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
       "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
       "highlights": [
-        "分类: cs.AI",
+        "分类: cs.CV",
         "作者数: 5"
       ],
       "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
       "relevance_score": 10,
       "tags": [
         "ai",
-        "llm",
         "agent",
-        "model"
+        "multimodal",
+        "diffusion"
       ],
       "themes": [
         "ai",
-        "llm",
-        "agent"
+        "agent",
+        "multimodal"
       ],
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：Can Agents Generalize to the Open World? Unveiling the Fragility of Static Training in Tool Use 是最近值得追踪的一篇 AI 论文。论文摘要显示：While Large Language Model (LLM) agents demonstrate proficiency in static benchmarks, their deployment in real-world scenarios is hindered by the dynamic nature of user queries, tool sets, and interaction dynamics. To address this generaliz...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI\n- 作者数: 5",
+      "summary_markdown": "**摘要**：HumanForge: A Human-Centric Deepfake Video Benchmark with Multi-Agent Forgery Rationales 是最近值得追踪的一篇 AI 论文。论文摘要显示：Rapid advancements in video diffusion models and temporal editing tools have enabled the generation of highly realistic human-centric videos, posing unprecedented challenges to digital content forensics. Existing benchmarks primarily focus ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV\n- 作者数: 5",
       "focus_hits": [
         {
           "keyword": "agent",
@@ -411,8 +411,8 @@
           "weight": 2.4
         },
         {
-          "keyword": "rag",
-          "weight": 2.2
+          "keyword": "multimodal",
+          "weight": 2.0
         },
         {
           "keyword": "benchmark",
@@ -420,11 +420,89 @@
         }
       ],
       "primary_match": "agent",
-      "personalized_score": 200.0,
-      "detail_path": "items/arxiv-can-agents-generalize-to-the-open-world-unveiling-the-fragility-of-static-training-in-tool.html",
-      "first_seen_at": "2026-07-02T01:53:14.064658+00:00",
-      "last_seen_at": "2026-07-02T04:18:16.450847+00:00",
-      "last_curated_at": "2026-07-02T04:18:16.450847+00:00",
+      "personalized_score": 198.0,
+      "detail_path": "items/arxiv-humanforge-a-human-centric-deepfake-video-benchmark-with-multi-agent-forgery-rationales.html",
+      "first_seen_at": "2026-07-10T01:19:05.539492+00:00",
+      "last_seen_at": "2026-07-10T01:19:05.539492+00:00",
+      "last_curated_at": "2026-07-10T01:19:05.539492+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2607.08768v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "UniClawBench: A Universal Benchmark for Proactive Agents on Real-World Tasks",
+      "html_url": "http://arxiv.org/abs/2607.08768v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.08768v1",
+      "description": "The rapid development of large language models and multimodal large language models has accelerated the emergence of proactive agents capable of operating everyday tools and assisting users in real-world environments. However, existing benchmarks struggle to evaluate such agents effectively, as they often rely on sandboxed environments and single-turn evaluation paradigms. Moreover, their scenario-based task taxonomies mix multiple model capabilities within the same task category, making it difficult to identify the root causes of agent failures. To address these limitations, we introduce UniClawBench, the first capability-driven benchmark designed to evaluate proactive agents in dynamic, real-world settings. UniClawBench is built around five foundational model capabilities: Skill Usage, Exploration, Long-Context Reasoning, Multimodal Understanding, and Cross-Platform Coordination. Based on these capabilities, we design 400 bilingual real-world tasks. Unlike previous benchmarks that rely on static, pre-recorded answers, our benchmark evaluates agents in live Docker containers using fine-grained, step-by-step completion checkpoints. Furthermore, we design a closed-loop evaluation strategy comprising an executor agent, a hidden supervisor agent, and a user agent to simulate realistic multi-turn human feedback without leaking grading criteria. To disentangle base model capabilities from framework-level design choices, we evaluate state-of-the-art models under multiple agent frameworks. Through comprehensive comparisons across both models and frameworks, we show how base model capabilities and agent framework designs jointly shape performance in real-world environments. To facilitate future research, we make our benchmark and code publicly available at https://github.com/HKU-MMLab/UniClawBench.",
+      "authors": [
+        "Zhekai Chen",
+        "Chengqi Duan",
+        "Kaiyue Sun",
+        "Bohao Li",
+        "Yuqing Wang",
+        "Manyuan Zhang",
+        "Xihui Liu"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "published_at": "2026-07-09T17:59:32+00:00",
+      "updated_at": "2026-07-09T17:59:32+00:00",
+      "primary_category": "cs.CL",
+      "heuristic_score": 17.9,
+      "summary": "UniClawBench: A Universal Benchmark for Proactive Agents on Real-World Tasks 是最近值得追踪的一篇 AI 论文。论文摘要显示：The rapid development of large language models and multimodal large language models has accelerated the emergence of proactive agents capable of operating everyday tools and assisting users in real-world environments. However, existing benc...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CL",
+        "作者数: 7"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "agent",
+        "multimodal",
+        "model"
+      ],
+      "themes": [
+        "ai",
+        "agent",
+        "multimodal"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：UniClawBench: A Universal Benchmark for Proactive Agents on Real-World Tasks 是最近值得追踪的一篇 AI 论文。论文摘要显示：The rapid development of large language models and multimodal large language models has accelerated the emergence of proactive agents capable of operating everyday tools and assisting users in real-world environments. However, existing benc...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL\n- 作者数: 7",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "multimodal",
+          "weight": 2.0
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 198.0,
+      "detail_path": "items/arxiv-uniclawbench-a-universal-benchmark-for-proactive-agents-on-real-world-tasks.html",
+      "first_seen_at": "2026-07-10T01:19:05.539492+00:00",
+      "last_seen_at": "2026-07-10T01:19:05.539492+00:00",
+      "last_curated_at": "2026-07-10T01:19:05.539492+00:00",
       "last_notified_at": null
     },
     {
@@ -574,90 +652,6 @@
       "last_seen_at": "2026-07-09T04:09:36.828729+00:00",
       "last_curated_at": "2026-07-09T04:09:36.828729+00:00",
       "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2607.05391v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "LLM-as-a-Verifier: A General-Purpose Verification Framework",
-      "html_url": "http://arxiv.org/abs/2607.05391v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.05391v1",
-      "description": "Scaling pre-training, post-training, and test-time compute have become the central paradigms for improving the capabilities of LLMs. In this work, we identify verification, the ability to determine the correctness of a solution, as a new scaling axis. To unlock this and demonstrate its effectiveness, we introduce LLM-as-a-Verifier, a general-purpose verification framework that provides fine-grained feedback for agentic tasks without requiring additional training. Unlike standard LM judges that prompt LLMs to produce discrete scores for candidate solutions, LLM-as-a-Verifier computes the expectation over the distribution of scoring token logits to generate continuous scores. This probabilistic formulation enables verification to scale along multiple dimensions: (1) score granularity, (2) repeated evaluation, and (3) criteria decomposition. In particular, we show that scaling the scoring granularity leads to better separation between positive and negative solutions, resulting in more calibrated comparisons. Moreover, scaling repeated evaluation and criteria decomposition consistently lead to additional gains in verification accuracy through variance and complexity reduction. We further introduce a cost-efficient ranking algorithm for selecting the best solution among candidates using the verifier's continuous scores. LLM-as-a-Verifier achieves state-of-the-art performance on Terminal-Bench V2 (86.5%), SWE-Bench Verified (78.2%), RoboRewardBench (87.4%), and MedAgentBench (73.3%). Beyond verification, the fine-grained signals from LLM-as-a-Verifier can also serve as a proxy for estimating task progress. We build an extension for Claude Code, enabling developers to monitor and improve their own agentic systems. Finally, we show that LLM-as-a-Verifier can provide dense feedback for RL, improving the sample efficiency of SAC and GRPO on robotics and mathematical reasoning benchmarks.",
-      "authors": [
-        "Jacky Kwok",
-        "Shulu Li",
-        "Pranav Atreya",
-        "Yuejiang Liu",
-        "Yixing Jiang",
-        "Chelsea Finn",
-        "Marco Pavone",
-        "Ion Stoica",
-        "Azalia Mirhoseini"
-      ],
-      "categories": [
-        "cs.AI",
-        "cs.CL",
-        "cs.LG",
-        "cs.MA",
-        "cs.RO"
-      ],
-      "published_at": "2026-07-06T17:59:35+00:00",
-      "updated_at": "2026-07-06T17:59:35+00:00",
-      "primary_category": "cs.AI",
-      "heuristic_score": 22.7,
-      "summary": "LLM-as-a-Verifier: A General-Purpose Verification Framework 是最近值得追踪的一篇 AI 论文。论文摘要显示：Scaling pre-training, post-training, and test-time compute have become the central paradigms for improving the capabilities of LLMs. In this work, we identify verification, the ability to determine the correctness of a solution, as a new sc...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.AI, cs.CL",
-        "作者数: 9"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "llm",
-        "agent",
-        "agentic"
-      ],
-      "themes": [
-        "ai",
-        "llm",
-        "agent"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：LLM-as-a-Verifier: A General-Purpose Verification Framework 是最近值得追踪的一篇 AI 论文。论文摘要显示：Scaling pre-training, post-training, and test-time compute have become the central paradigms for improving the capabilities of LLMs. In this work, we identify verification, the ability to determine the correctness of a solution, as a new sc...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI, cs.CL\n- 作者数: 9",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        },
-        {
-          "keyword": "robotics",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 194.0,
-      "detail_path": "items/arxiv-llm-as-a-verifier-a-general-purpose-verification-framework.html",
-      "first_seen_at": "2026-07-07T04:13:57.771064+00:00",
-      "last_seen_at": "2026-07-07T04:13:57.771064+00:00",
-      "last_curated_at": "2026-07-07T04:13:57.771064+00:00",
-      "last_notified_at": null
     }
   ],
   "top_themes": [
@@ -666,12 +660,12 @@
       "count": 8
     },
     {
-      "theme": "llm",
-      "count": 4
+      "theme": "agent",
+      "count": 5
     },
     {
-      "theme": "agent",
-      "count": 3
+      "theme": "llm",
+      "count": 2
     },
     {
       "theme": "rag",
