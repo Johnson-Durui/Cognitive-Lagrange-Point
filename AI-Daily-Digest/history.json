@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-13T03:53:40.519657+00:00",
+  "generated_at": "2026-07-14T01:08:35.132388+00:00",
   "items": {
     "github::obra/superpowers": {
       "id": "github::obra/superpowers",
@@ -708,61 +708,6 @@
       "last_curated_at": "2026-06-27T04:13:19.274306+00:00",
       "last_notified_at": null
     },
-    "github::phuryn/pm-skills": {
-      "id": "github::phuryn/pm-skills",
-      "kind": "repo",
-      "source": "github",
-      "source_tags": [
-        "trending"
-      ],
-      "name": "pm-skills",
-      "title": "phuryn/pm-skills",
-      "full_name": "phuryn/pm-skills",
-      "html_url": "https://github.com/phuryn/pm-skills",
-      "description": "PM Skills Marketplace: 100+ agentic skills, commands, and plugins — from discovery to strategy, execution, launch, and growth.",
-      "stars": 17112,
-      "stars_today": 0,
-      "language": "Unknown",
-      "topics": [],
-      "created_at": "",
-      "updated_at": "",
-      "heuristic_score": 15.2,
-      "summary": "phuryn/pm-skills 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：PM Skills Marketplace: 100+ agentic skills, commands, and plugins — from discovery to strategy, execution, launch, and growth.结合关键词命中和热度信号，它适合加入今日重点观察列表。",
-      "brief": "这是一个值得快速关注的开源 AI 项目。",
-      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
-      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
-      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
-      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
-      "highlights": [
-        "Stars: 17112",
-        "语言: Unknown"
-      ],
-      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
-      "relevance_score": 8,
-      "tags": [
-        "agent",
-        "agentic"
-      ],
-      "themes": [
-        "agent",
-        "agentic"
-      ],
-      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：phuryn/pm-skills 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：PM Skills Marketplace: 100+ agentic skills, commands, and plugins — from discovery to strategy, execution, launch, and growth.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 17112\n- 语言: Unknown",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 116.84,
-      "detail_path": "items/github-phuryn-pm-skills.html",
-      "first_seen_at": "2026-06-09T01:44:49.812790+00:00",
-      "last_seen_at": "2026-06-13T04:46:30.385561+00:00",
-      "last_curated_at": "2026-06-13T04:46:30.385561+00:00",
-      "last_notified_at": null
-    },
     "github::x1xhlol/system-prompts-and-models-of-ai-tools": {
       "id": "github::x1xhlol/system-prompts-and-models-of-ai-tools",
       "kind": "repo",
@@ -916,471 +861,6 @@
       "last_curated_at": "2026-06-26T04:37:08.951672+00:00",
       "last_notified_at": null
     },
-    "arxiv::http://arxiv.org/abs/2606.13673v1": {
-      "id": "arxiv::http://arxiv.org/abs/2606.13673v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "SpatialClaw: Rethinking Action Interface for Agentic Spatial Reasoning",
-      "html_url": "http://arxiv.org/abs/2606.13673v1",
-      "pdf_url": "https://arxiv.org/pdf/2606.13673v1",
-      "description": "Spatial reasoning, the ability to determine where objects are, how they relate, and how they move in 3D, remains a fundamental challenge for vision-language models (VLMs). Tool-augmented agents attempt to address this by augmenting VLMs with specialist perception modules, yet their effectiveness is bounded by the action interface through which those tools are invoked. In this work, we study how the design of this interface shapes the agent's capacity for open-ended spatial reasoning. Existing spatial agents either employ single-pass code execution, which commits to a full analysis strategy before any intermediate result is observed, or rely on a structured tool-call interface that often offers less flexibility for freely composing operations or tailoring the analysis to each task. Both designs offer limited flexibility for open-ended, complex 3D/4D spatial reasoning. We therefore propose SpatialClaw, a training-free framework for spatial reasoning that adopts code as the action interface. SpatialClaw maintains a stateful Python kernel pre-loaded with input frames and a suite of perception and geometry primitives, letting a VLM-backed agent write one executable cell per step conditioned on all prior outputs, enabling the agent to flexibly compose and manipulate perception results and adapt its analysis to both intermediate text and visual observations and the demands of each problem. Evaluated across 20 spatial reasoning benchmarks spanning a broad range of static and dynamic 3D/4D spatial reasoning tasks, SpatialClaw achieves 59.9% average accuracy, outperforming the recent spatial agent by +11.2 points, with consistent gains across six VLM backbones from two model families without any benchmark- or model-specific adaptation.",
-      "authors": [
-        "Seokju Cho",
-        "Ryo Hachiuma",
-        "Abhishek Badki",
-        "Hang Su",
-        "Byung-Kwan Lee",
-        "Chan Hee Song",
-        "Sifei Liu",
-        "Subhashree Radhakrishnan",
-        "Seungryong Kim",
-        "Yu-Chiang Frank Wang",
-        "Min-Hung Chen"
-      ],
-      "categories": [
-        "cs.CV",
-        "cs.AI"
-      ],
-      "published_at": "2026-06-11T17:59:36+00:00",
-      "updated_at": "2026-06-11T17:59:36+00:00",
-      "primary_category": "cs.CV",
-      "heuristic_score": 22.7,
-      "summary": "SpatialClaw: Rethinking Action Interface for Agentic Spatial Reasoning 是最近值得追踪的一篇 AI 论文。论文摘要显示：Spatial reasoning, the ability to determine where objects are, how they relate, and how they move in 3D, remains a fundamental challenge for vision-language models (VLMs). Tool-augmented agents attempt to address this by augmenting VLMs wit...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CV, cs.AI",
-        "作者数: 11"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "agent",
-        "rag",
-        "model"
-      ],
-      "themes": [
-        "ai",
-        "agent",
-        "rag"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：SpatialClaw: Rethinking Action Interface for Agentic Spatial Reasoning 是最近值得追踪的一篇 AI 论文。论文摘要显示：Spatial reasoning, the ability to determine where objects are, how they relate, and how they move in 3D, remains a fundamental challenge for vision-language models (VLMs). Tool-augmented agents attempt to address this by augmenting VLMs wit...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV, cs.AI\n- 作者数: 11",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 200.0,
-      "detail_path": "items/arxiv-spatialclaw-rethinking-action-interface-for-agentic-spatial-reasoning.html",
-      "first_seen_at": "2026-06-12T02:02:20.601211+00:00",
-      "last_seen_at": "2026-06-13T04:46:30.385561+00:00",
-      "last_curated_at": "2026-06-13T04:46:30.385561+00:00",
-      "last_notified_at": null
-    },
-    "arxiv::http://arxiv.org/abs/2606.13679v1": {
-      "id": "arxiv::http://arxiv.org/abs/2606.13679v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "InterleaveThinker: Reinforcing Agentic Interleaved Generation",
-      "html_url": "http://arxiv.org/abs/2606.13679v1",
-      "pdf_url": "https://arxiv.org/pdf/2606.13679v1",
-      "description": "Recent image generators have demonstrated impressive photorealism and instruction-following capabilities in single-image generation and editing. However, constrained by their architectures, they cannot achieve interleaved generation (text-image sequence), which has crucial applications in visual narratives, guidance, and embodied manipulation. Even the latest open-source Unified Multimodal Models (UMMs) exhibit limited performance in this regard. In this paper, we introduce InterleaveThinker, the first multi-agent pipeline designed to endow any existing image generator with interleaved generation capabilities. Specifically, we employ a planner agent to organize the image-text input sequence, instructing the image generator on the required execution at each step. Subsequently, we introduce a critic agent to evaluate the generator's outputs, identify samples that deviate from the planned instructions, and refine the instructions for regeneration. To implement this pipeline, we construct the Interleave-Planner-SFT-80k and Interleave-Critic-SFT-112k to perform a format cold-start. Then we develop Interleave-Critic-RL-13k to reinforce the step-wise instruction correction capability within a generation trajectory using GRPO. Since a single interleaved generation trajectory may involve over 25 generator calls, optimizing the entire trajectory is computationally impractical. Therefore, we propose accuracy reward and step-wise reward, allowing single-step RL to effectively guide the entire generation trajectory. The results show that InterleaveThinker improves performance across various image generators. On interleaved generation benchmarks, it achieves performance comparable to Nano Banana and GPT-5. Surprisingly, it also significantly enhances the base model on reasoning-based benchmarks; for example, on 4-step FLUX.2-klein, we observe substantial gains on WISE and RISE.",
-      "authors": [
-        "Dian Zheng",
-        "Harry Lee",
-        "Manyuan Zhang",
-        "Kaituo Feng",
-        "Zoey Guo",
-        "Ray Zhang",
-        "Hongsheng Li"
-      ],
-      "categories": [
-        "cs.CV"
-      ],
-      "published_at": "2026-06-11T17:59:50+00:00",
-      "updated_at": "2026-06-11T17:59:50+00:00",
-      "primary_category": "cs.CV",
-      "heuristic_score": 22.7,
-      "summary": "InterleaveThinker: Reinforcing Agentic Interleaved Generation 是最近值得追踪的一篇 AI 论文。论文摘要显示：Recent image generators have demonstrated impressive photorealism and instruction-following capabilities in single-image generation and editing. However, constrained by their architectures, they cannot achieve interleaved generation (text-i...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CV",
-        "作者数: 7"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "agent",
-        "gpt",
-        "multimodal"
-      ],
-      "themes": [
-        "ai",
-        "agent",
-        "gpt"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：InterleaveThinker: Reinforcing Agentic Interleaved Generation 是最近值得追踪的一篇 AI 论文。论文摘要显示：Recent image generators have demonstrated impressive photorealism and instruction-following capabilities in single-image generation and editing. However, constrained by their architectures, they cannot achieve interleaved generation (text-i...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV\n- 作者数: 7",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "multimodal",
-          "weight": 2.0
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 198.0,
-      "detail_path": "items/arxiv-interleavethinker-reinforcing-agentic-interleaved-generation.html",
-      "first_seen_at": "2026-06-12T02:02:20.601211+00:00",
-      "last_seen_at": "2026-06-13T04:46:30.385561+00:00",
-      "last_curated_at": "2026-06-13T04:46:30.385561+00:00",
-      "last_notified_at": null
-    },
-    "arxiv::http://arxiv.org/abs/2606.13663v1": {
-      "id": "arxiv::http://arxiv.org/abs/2606.13663v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "HyperTool: Beyond Step-Wise Tool Calls for Tool-Augmented Agents",
-      "html_url": "http://arxiv.org/abs/2606.13663v1",
-      "pdf_url": "https://arxiv.org/pdf/2606.13663v1",
-      "description": "Tool-augmented LLM agents commonly rely on step-wise atomic tool calls, where each invocation, observation, and value transfer is exposed in the main reasoning trace. This creates an \\emph{execution-granularity mismatch}: locally deterministic tool workflows are unfolded into repeated model-visible decisions, consuming context and forcing the model to manage low-level dataflow in the trace. We introduce \\textbf{HyperTool}, a unified executable MCP-style tool interface that changes the model-visible unit of tool execution. A model invokes HyperTool with a code block that can call existing tools through their original schemas, manipulate returned values, and pass intermediate results locally, folding deterministic tool subroutines into a single outer call. To train models to use this interface, we synthesize HyperTool-format trajectories from cross-tool compositional tasks and verify them in real MCP environments. On MCP-Universe, HyperTool improves average accuracy from 15.69\\% to 35.29\\% on Qwen3-32B and from 9.93\\% to 33.33\\% on Qwen3-8B, and surpass GPT-OSS and Kimi-k2.5 on average accuracy, showing that our HyperTool can substantially improve multi-step tool use.",
-      "authors": [
-        "Yaxin Du",
-        "Yifan Zhou",
-        "Yujie Ge",
-        "Jiajun Wang",
-        "Xianghe Pang",
-        "Shuo Tang",
-        "Tuney Zheng",
-        "Bryan Dai",
-        "Jian Yang",
-        "Siheng Chen"
-      ],
-      "categories": [
-        "cs.CL"
-      ],
-      "published_at": "2026-06-11T17:56:36+00:00",
-      "updated_at": "2026-06-11T17:56:36+00:00",
-      "primary_category": "cs.CL",
-      "heuristic_score": 19.78,
-      "summary": "HyperTool: Beyond Step-Wise Tool Calls for Tool-Augmented Agents 是最近值得追踪的一篇 AI 论文。论文摘要显示：Tool-augmented LLM agents commonly rely on step-wise atomic tool calls, where each invocation, observation, and value transfer is exposed in the main reasoning trace. This creates an \\emph{execution-granularity mismatch}: locally determinis...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CL",
-        "作者数: 10"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "llm",
-        "agent",
-        "gpt"
-      ],
-      "themes": [
-        "ai",
-        "llm",
-        "agent"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：HyperTool: Beyond Step-Wise Tool Calls for Tool-Augmented Agents 是最近值得追踪的一篇 AI 论文。论文摘要显示：Tool-augmented LLM agents commonly rely on step-wise atomic tool calls, where each invocation, observation, and value transfer is exposed in the main reasoning trace. This creates an \\emph{execution-granularity mismatch}: locally determinis...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL\n- 作者数: 10",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 184.0,
-      "detail_path": "items/arxiv-hypertool-beyond-step-wise-tool-calls-for-tool-augmented-agents.html",
-      "first_seen_at": "2026-06-12T02:02:20.601211+00:00",
-      "last_seen_at": "2026-06-13T04:46:30.385561+00:00",
-      "last_curated_at": "2026-06-13T04:46:30.385561+00:00",
-      "last_notified_at": null
-    },
-    "arxiv::http://arxiv.org/abs/2606.13681v1": {
-      "id": "arxiv::http://arxiv.org/abs/2606.13681v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "EvoArena: Tracking Memory Evolution for Robust LLM Agents in Dynamic Environments",
-      "html_url": "http://arxiv.org/abs/2606.13681v1",
-      "pdf_url": "https://arxiv.org/pdf/2606.13681v1",
-      "description": "Large language model (LLM) agents have achieved strong performance on a wide range of benchmarks, yet most evaluations assume static environments. In contrast, real-world deployment is inherently dynamic, requiring agents to continually align their knowledge, skills, and behavior with changing environments and updated task conditions. To address this gap, we introduce EvoArena, a benchmark suite that models environment changes as sequences of progressive updates across terminal, software, and social domains. We further propose EvoMem, a patch-based memory paradigm that records memory evolution as structured update histories, enabling agents to reason about environmental evolution through changes in their memory. Experiments show that current agents struggle on EvoArena, achieving an average accuracy of 39.6% across evolving terminal, software, and social-preference domains. EvoMem consistently improves performance, yielding an average gain of 1.5% on EvoArena and also improving standard benchmarks such as GAIA and LoCoMo by 6.1% and 4.8%. Beyond individual tasks, EvoMem further improves chain-level accuracy by 3.7% on EvoArena, where success requires completing a consecutive sequence of related evolutionary subtasks. Mechanistic analysis shows that EvoMem improves evidence capture in the memory, indicating better preservation of complete evolving environment states. Our results highlight the importance of modeling evolution in both evaluation and memory for reliable agent deployment.",
-      "authors": [
-        "Jundong Xu",
-        "Qingchuan Li",
-        "Jiaying Wu",
-        "Yihuai Lan",
-        "Shuyue Stella Li",
-        "Huichi Zhou",
-        "Bowen Jiang",
-        "Lei Wang",
-        "Jun Wang",
-        "Anh Tuan Luu",
-        "Caiming Xiong",
-        "Hae Won Park",
-        "Bryan Hooi",
-        "Zhiyuan Hu"
-      ],
-      "categories": [
-        "cs.CL"
-      ],
-      "published_at": "2026-06-11T17:59:59+00:00",
-      "updated_at": "2026-06-11T17:59:59+00:00",
-      "primary_category": "cs.CL",
-      "heuristic_score": 17.785,
-      "summary": "EvoArena: Tracking Memory Evolution for Robust LLM Agents in Dynamic Environments 是最近值得追踪的一篇 AI 论文。论文摘要显示：Large language model (LLM) agents have achieved strong performance on a wide range of benchmarks, yet most evaluations assume static environments. In contrast, real-world deployment is inherently dynamic, requiring agents to continually ali...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CL",
-        "作者数: 14"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "llm",
-        "agent",
-        "rag"
-      ],
-      "themes": [
-        "ai",
-        "llm",
-        "agent"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：EvoArena: Tracking Memory Evolution for Robust LLM Agents in Dynamic Environments 是最近值得追踪的一篇 AI 论文。论文摘要显示：Large language model (LLM) agents have achieved strong performance on a wide range of benchmarks, yet most evaluations assume static environments. In contrast, real-world deployment is inherently dynamic, requiring agents to continually ali...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL\n- 作者数: 14",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 176.0,
-      "detail_path": "items/arxiv-evoarena-tracking-memory-evolution-for-robust-llm-agents-in-dynamic-environments.html",
-      "first_seen_at": "2026-06-12T02:02:20.601211+00:00",
-      "last_seen_at": "2026-06-13T04:46:30.385561+00:00",
-      "last_curated_at": "2026-06-13T04:46:30.385561+00:00",
-      "last_notified_at": null
-    },
-    "arxiv::http://arxiv.org/abs/2606.13649v1": {
-      "id": "arxiv::http://arxiv.org/abs/2606.13649v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "Operadic consistency: a label-free signal for compositional reasoning failures in LLMs",
-      "html_url": "http://arxiv.org/abs/2606.13649v1",
-      "pdf_url": "https://arxiv.org/pdf/2606.13649v1",
-      "description": "Detecting LLM reasoning failures at inference time without ground-truth labels has motivated a wide range of confidence baselines, including self-consistency, semantic entropy, and P(True), built on within-question sampling and self-evaluation. Operad theory, the formalism for systems built by iterated substitution, suggests a complementary diagnostic: a model's direct answer to a compositional query should agree with the answer it produces by composing a stated decomposition of the same query. We instantiate this idea as operadic consistency (OC), a per-question signal. Across twelve instruction-tuned LLMs (4B to 671B parameters, open-weights and closed-source) on four multi-hop QA datasets, OC is strongly correlated with accuracy on every dataset (Pearson $r \\in [0.86, 0.94]$, all $p \\leq 0.0004$), and is the only signal we evaluate with $r \\geq 0.85$ uniformly across all four datasets. Chain-of-thought self-consistency (CoT-SC; Wang et al., 2023) matches OC on HotpotQA and DROP ($r = 0.93, 0.87$) but drops to $r \\approx 0.45$ on MuSiQue and StrategyQA. At the per-question level, OC contributes information beyond CoT-SC and semantic entropy on every dataset (cluster-robust $p \\leq 10^{-16}$ for the OC coefficient), and the conclusion is robust to additionally controlling for constructed decomposition-aware baselines ($p \\leq 10^{-13}$). The same signal yields selective-prediction improvements (accuracy at fixed coverage) over a tuned CoT-SC baseline at the equal-cost $K = 3$ budget (AUARC lifts of +0.086 to +0.096 and AUROC lifts of +0.092 to +0.164; 95% CIs exclude zero on every cell). On five frontier thinking models, where the decomposition is extracted from the model's own chain of thought, the same equal-cost comparison gives positive selective-prediction point-estimate lift on all 16 (dataset, budget, metric) cells tested, with 95% CIs excluding zero on 12 of the 16.",
-      "authors": [
-        "Nathaniel Bottman",
-        "Yinhong Liu",
-        "Kyle Richardson"
-      ],
-      "categories": [
-        "cs.CL",
-        "cs.LG"
-      ],
-      "published_at": "2026-06-11T17:50:40+00:00",
-      "updated_at": "2026-06-11T17:50:40+00:00",
-      "primary_category": "cs.CL",
-      "heuristic_score": 17.9,
-      "summary": "Operadic consistency: a label-free signal for compositional reasoning failures in LLMs 是最近值得追踪的一篇 AI 论文。论文摘要显示：Detecting LLM reasoning failures at inference time without ground-truth labels has motivated a wide range of confidence baselines, including self-consistency, semantic entropy, and P(True), built on within-question sampling and self-evaluat...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CL, cs.LG",
-        "作者数: 3"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "llm",
-        "rag",
-        "model"
-      ],
-      "themes": [
-        "ai",
-        "llm",
-        "rag"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：Operadic consistency: a label-free signal for compositional reasoning failures in LLMs 是最近值得追踪的一篇 AI 论文。论文摘要显示：Detecting LLM reasoning failures at inference time without ground-truth labels has motivated a wide range of confidence baselines, including self-consistency, semantic entropy, and P(True), built on within-question sampling and self-evaluat...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL, cs.LG\n- 作者数: 3",
-      "focus_hits": [
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "inference",
-          "weight": 1.8
-        }
-      ],
-      "primary_match": "reasoning",
-      "personalized_score": 172.0,
-      "detail_path": "items/arxiv-operadic-consistency-a-label-free-signal-for-compositional-reasoning-failures-in-llms.html",
-      "first_seen_at": "2026-06-12T02:02:20.601211+00:00",
-      "last_seen_at": "2026-06-13T04:46:30.385561+00:00",
-      "last_curated_at": "2026-06-13T04:46:30.385561+00:00",
-      "last_notified_at": null
-    },
-    "arxiv::http://arxiv.org/abs/2606.13680v1": {
-      "id": "arxiv::http://arxiv.org/abs/2606.13680v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "Learning to Reason by Analogy via Retrieval-Augmented Reinforcement Fine-Tuning",
-      "html_url": "http://arxiv.org/abs/2606.13680v1",
-      "pdf_url": "https://arxiv.org/pdf/2606.13680v1",
-      "description": "Retrieval-augmented generation (RAG) has become a standard mechanism for grounding language models in external knowledge, yet conventional retrieval based on lexical or semantic similarity is poorly suited for complex reasoning tasks: a semantically similar problem may demand an entirely different solution strategy, while a superficially different problem may share the same underlying reasoning pattern. We propose Retrieval-Augmented Reinforcement Fine-Tuning (RA-RFT), a post-training framework that teaches language models to reason by analogy. RA-RFT uses gold-relevance distillation to train a retriever that ranks contexts by expected reasoning benefit rather than semantic overlap, and then fine-tunes the policy model via reinforcement fine-tuning methods with retrieved analogous demonstrations, so the model learns to leverage reasoning traces under verifiable outcome rewards. We further analyze the diversity of retrieved contexts and find that reasoning-aware retrieval surfaces complementary solution strategies that provide distinct reasoning scaffolds for individual problems. Across challenging mathematical reasoning benchmarks, RA-RFT consistently outperforms standard reinforcement fine-tuning methods. For example, it improves AIME 2025 average@32 accuracy by 7.1 and 2.8 points over GRPO for Qwen3-1.7B and Qwen3-4B respectively -- suggesting that reasoning-aware retrieval is a complementary axis of improvement and orthogonal to advances in reward design or training curricula.",
-      "authors": [
-        "Zilin Xiao",
-        "Qi Ma",
-        "Chun-cheng Jason Chen",
-        "Xintao Chen",
-        "Avinash Atreya",
-        "Hanjie Chen",
-        "Vicente Ordonez"
-      ],
-      "categories": [
-        "cs.CL",
-        "cs.AI"
-      ],
-      "published_at": "2026-06-11T17:59:52+00:00",
-      "updated_at": "2026-06-11T17:59:52+00:00",
-      "primary_category": "cs.CL",
-      "heuristic_score": 17.78,
-      "summary": "Learning to Reason by Analogy via Retrieval-Augmented Reinforcement Fine-Tuning 是最近值得追踪的一篇 AI 论文。论文摘要显示：Retrieval-augmented generation (RAG) has become a standard mechanism for grounding language models in external knowledge, yet conventional retrieval based on lexical or semantic similarity is poorly suited for complex reasoning tasks: a sem...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CL, cs.AI",
-        "作者数: 7"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "rag",
-        "model",
-        "benchmark"
-      ],
-      "themes": [
-        "ai",
-        "rag",
-        "model"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：Learning to Reason by Analogy via Retrieval-Augmented Reinforcement Fine-Tuning 是最近值得追踪的一篇 AI 论文。论文摘要显示：Retrieval-augmented generation (RAG) has become a standard mechanism for grounding language models in external knowledge, yet conventional retrieval based on lexical or semantic similarity is poorly suited for complex reasoning tasks: a sem...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL, cs.AI\n- 作者数: 7",
-      "focus_hits": [
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "reasoning",
-      "personalized_score": 170.0,
-      "detail_path": "items/arxiv-learning-to-reason-by-analogy-via-retrieval-augmented-reinforcement-fine-tuning.html",
-      "first_seen_at": "2026-06-12T02:02:20.601211+00:00",
-      "last_seen_at": "2026-06-13T04:46:30.385561+00:00",
-      "last_curated_at": "2026-06-13T04:46:30.385561+00:00",
-      "last_notified_at": null
-    },
     "github::iptv-org/iptv": {
       "id": "github::iptv-org/iptv",
       "kind": "repo",
@@ -1475,54 +955,6 @@
       "first_seen_at": "2026-06-13T01:55:51.729765+00:00",
       "last_seen_at": "2026-06-14T05:03:27.568634+00:00",
       "last_curated_at": "2026-06-14T05:03:27.568634+00:00",
-      "last_notified_at": null
-    },
-    "github::maziyarpanahi/openmed": {
-      "id": "github::maziyarpanahi/openmed",
-      "kind": "repo",
-      "source": "github",
-      "source_tags": [
-        "trending"
-      ],
-      "name": "openmed",
-      "title": "maziyarpanahi/openmed",
-      "full_name": "maziyarpanahi/openmed",
-      "html_url": "https://github.com/maziyarpanahi/openmed",
-      "description": "open-source healthcare ai",
-      "stars": 3236,
-      "stars_today": 0,
-      "language": "Python",
-      "topics": [],
-      "created_at": "",
-      "updated_at": "",
-      "heuristic_score": 9.072,
-      "summary": "maziyarpanahi/openmed 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：open-source healthcare ai结合关键词命中和热度信号，它适合加入今日重点观察列表。",
-      "brief": "这是一个值得快速关注的开源 AI 项目。",
-      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
-      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
-      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
-      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
-      "highlights": [
-        "Stars: 3236",
-        "语言: Python"
-      ],
-      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
-      "relevance_score": 5,
-      "tags": [
-        "ai"
-      ],
-      "themes": [
-        "ai"
-      ],
-      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：maziyarpanahi/openmed 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：open-source healthcare ai结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：5/10\n\n**亮点**：\n- Stars: 3236\n- 语言: Python",
-      "focus_hits": [],
-      "primary_match": "",
-      "personalized_score": 51.29,
-      "detail_path": "items/github-maziyarpanahi-openmed.html",
-      "first_seen_at": "2026-06-13T01:55:51.729765+00:00",
-      "last_seen_at": "2026-06-13T04:46:30.385561+00:00",
-      "last_curated_at": "2026-06-13T04:46:30.385561+00:00",
       "last_notified_at": null
     },
     "github::NVIDIA/SkillSpector": {
@@ -8055,7 +7487,7 @@
       "full_name": "HKUDS/Vibe-Trading",
       "html_url": "https://github.com/HKUDS/Vibe-Trading",
       "description": "\"Vibe-Trading: Your Personal Trading Agent\"",
-      "stars": 20738,
+      "stars": 21751,
       "stars_today": 0,
       "language": "Python",
       "topics": [],
@@ -8069,7 +7501,7 @@
       "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
       "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
       "highlights": [
-        "Stars: 20738",
+        "Stars: 21751",
         "语言: Python"
       ],
       "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
@@ -8081,7 +7513,7 @@
         "agent"
       ],
       "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：HKUDS/Vibe-Trading 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：\"Vibe-Trading: Your Personal Trading Agent\"结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 20738\n- 语言: Python",
+      "summary_markdown": "**摘要**：HKUDS/Vibe-Trading 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：\"Vibe-Trading: Your Personal Trading Agent\"结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 21751\n- 语言: Python",
       "focus_hits": [
         {
           "keyword": "agent",
@@ -8089,11 +7521,11 @@
         }
       ],
       "primary_match": "agent",
-      "personalized_score": 108.3,
+      "personalized_score": 108.7,
       "detail_path": "items/github-hkuds-vibe-trading.html",
       "first_seen_at": "2026-06-29T01:59:43.336717+00:00",
-      "last_seen_at": "2026-07-13T03:53:40.519657+00:00",
-      "last_curated_at": "2026-07-13T03:53:40.519657+00:00",
+      "last_seen_at": "2026-07-14T01:08:35.132388+00:00",
+      "last_curated_at": "2026-07-14T01:08:35.132388+00:00",
       "last_notified_at": null
     },
     "github::usestrix/strix": {
@@ -9154,22 +8586,22 @@
       "title": "hasaneyldrm/exercises-dataset",
       "full_name": "hasaneyldrm/exercises-dataset",
       "html_url": "https://github.com/hasaneyldrm/exercises-dataset",
-      "description": "A comprehensive dataset of 433 fitness exercises. Each entry includes name, category, target muscle group, equipment, instructions, thumbnail image, and animation video.",
-      "stars": 9374,
+      "description": "1,324-exercise fitness dataset — animation GIFs, 180×180 thumbnails, muscle-group & equipment data, and step-by-step instructions in 6 languages. The exercise data layer behind the LogPress app.",
+      "stars": 12618,
       "stars_today": 0,
       "language": "HTML",
       "topics": [],
       "created_at": "",
       "updated_at": "",
       "heuristic_score": 12.6,
-      "summary": "hasaneyldrm/exercises-dataset 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：A comprehensive dataset of 433 fitness exercises. Each entry includes name, category, target muscle group, equipment, instructions, thumbnail image, and animation video.结合关键词命中和热度信号，它适合加入今日重点观察列表。",
+      "summary": "hasaneyldrm/exercises-dataset 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：1,324-exercise fitness dataset — animation GIFs, 180×180 thumbnails, muscle-group & equipment data, and step-by-step instructions in 6 languages. The exercise data layer behind the LogPress app.结合关键词命中和热度信号，它适合加入今日重点观察列表。",
       "brief": "这是一个值得快速关注的开源 AI 项目。",
       "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
       "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
       "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
       "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
       "highlights": [
-        "Stars: 9374",
+        "Stars: 12618",
         "语言: HTML"
       ],
       "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
@@ -9181,14 +8613,14 @@
         "ai"
       ],
       "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：hasaneyldrm/exercises-dataset 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：A comprehensive dataset of 433 fitness exercises. Each entry includes name, category, target muscle group, equipment, instructions, thumbnail image, and animation video.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 9374\n- 语言: HTML",
+      "summary_markdown": "**摘要**：hasaneyldrm/exercises-dataset 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：1,324-exercise fitness dataset — animation GIFs, 180×180 thumbnails, muscle-group & equipment data, and step-by-step instructions in 6 languages. The exercise data layer behind the LogPress app.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 12618\n- 语言: HTML",
       "focus_hits": [],
       "primary_match": "",
-      "personalized_score": 73.75,
+      "personalized_score": 75.05,
       "detail_path": "items/github-hasaneyldrm-exercises-dataset.html",
       "first_seen_at": "2026-07-01T01:58:35.678590+00:00",
-      "last_seen_at": "2026-07-03T04:06:44.113626+00:00",
-      "last_curated_at": "2026-07-03T04:06:44.113626+00:00",
+      "last_seen_at": "2026-07-14T01:08:35.132388+00:00",
+      "last_curated_at": "2026-07-14T01:08:35.132388+00:00",
       "last_notified_at": null
     },
     "arxiv::http://arxiv.org/abs/2606.31599v1": {
@@ -11682,7 +11114,7 @@
       "full_name": "coreyhaines31/marketingskills",
       "html_url": "https://github.com/coreyhaines31/marketingskills",
       "description": "Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering.",
-      "stars": 36546,
+      "stars": 38569,
       "stars_today": 0,
       "language": "JavaScript",
       "topics": [],
@@ -11696,7 +11128,7 @@
       "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
       "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
       "highlights": [
-        "Stars: 36546",
+        "Stars: 38569",
         "语言: JavaScript"
       ],
       "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
@@ -11712,7 +11144,7 @@
         "ai agent"
       ],
       "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：coreyhaines31/marketingskills 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 36546\n- 语言: JavaScript",
+      "summary_markdown": "**摘要**：coreyhaines31/marketingskills 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 38569\n- 语言: JavaScript",
       "focus_hits": [
         {
           "keyword": "agent",
@@ -11720,11 +11152,11 @@
         }
       ],
       "primary_match": "agent",
-      "personalized_score": 124.62,
+      "personalized_score": 125.43,
       "detail_path": "items/github-coreyhaines31-marketingskills.html",
       "first_seen_at": "2026-07-06T01:28:59.919542+00:00",
-      "last_seen_at": "2026-07-06T04:35:52.340777+00:00",
-      "last_curated_at": "2026-07-06T04:35:52.340777+00:00",
+      "last_seen_at": "2026-07-14T01:08:35.132388+00:00",
+      "last_curated_at": "2026-07-14T01:08:35.132388+00:00",
       "last_notified_at": null
     },
     "github::Zackriya-Solutions/meetily": {
@@ -14521,7 +13953,7 @@
       "full_name": "Shubhamsaboo/awesome-llm-apps",
       "html_url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
       "description": "100+ AI Agent & RAG apps you can actually run — clone, customize, ship.",
-      "stars": 118744,
+      "stars": 119607,
       "stars_today": 0,
       "language": "Python",
       "topics": [],
@@ -14535,7 +13967,7 @@
       "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
       "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
       "highlights": [
-        "Stars: 118744",
+        "Stars: 119607",
         "语言: Python"
       ],
       "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
@@ -14552,7 +13984,7 @@
         "rag"
       ],
       "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：Shubhamsaboo/awesome-llm-apps 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：100+ AI Agent & RAG apps you can actually run — clone, customize, ship.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：10/10\n\n**亮点**：\n- Stars: 118744\n- 语言: Python",
+      "summary_markdown": "**摘要**：Shubhamsaboo/awesome-llm-apps 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：100+ AI Agent & RAG apps you can actually run — clone, customize, ship.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：10/10\n\n**亮点**：\n- Stars: 119607\n- 语言: Python",
       "focus_hits": [
         {
           "keyword": "agent",
@@ -14567,8 +13999,8 @@
       "personalized_score": 172.0,
       "detail_path": "items/github-shubhamsaboo-awesome-llm-apps.html",
       "first_seen_at": "2026-07-13T01:15:31.284484+00:00",
-      "last_seen_at": "2026-07-13T03:53:40.519657+00:00",
-      "last_curated_at": "2026-07-13T03:53:40.519657+00:00",
+      "last_seen_at": "2026-07-14T01:08:35.132388+00:00",
+      "last_curated_at": "2026-07-14T01:08:35.132388+00:00",
       "last_notified_at": null
     },
     "github::ColeMurray/background-agents": {
@@ -14736,13 +14168,13 @@
       "full_name": "Nutlope/hallmark",
       "html_url": "https://github.com/Nutlope/hallmark",
       "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
-      "stars": 4405,
+      "stars": 5151,
       "stars_today": 0,
       "language": "CSS",
       "topics": [],
       "created_at": "",
       "updated_at": "",
-      "heuristic_score": 14.01,
+      "heuristic_score": 15.2,
       "summary": "Nutlope/hallmark 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Anti-AI-slop design skill for Claude Code, Cursor, and Codex.结合关键词命中和热度信号，它适合加入今日重点观察列表。",
       "brief": "这是一个值得快速关注的开源 AI 项目。",
       "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
@@ -14750,7 +14182,7 @@
       "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
       "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
       "highlights": [
-        "Stars: 4405",
+        "Stars: 5151",
         "语言: CSS"
       ],
       "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
@@ -14762,14 +14194,14 @@
         "ai"
       ],
       "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：Nutlope/hallmark 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Anti-AI-slop design skill for Claude Code, Cursor, and Codex.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 4405\n- 语言: CSS",
+      "summary_markdown": "**摘要**：Nutlope/hallmark 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Anti-AI-slop design skill for Claude Code, Cursor, and Codex.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 5151\n- 语言: CSS",
       "focus_hits": [],
       "primary_match": "",
-      "personalized_score": 81.76,
+      "personalized_score": 82.06,
       "detail_path": "items/github-nutlope-hallmark.html",
       "first_seen_at": "2026-07-13T01:15:31.284484+00:00",
-      "last_seen_at": "2026-07-13T03:53:40.519657+00:00",
-      "last_curated_at": "2026-07-13T03:53:40.519657+00:00",
+      "last_seen_at": "2026-07-14T01:08:35.132388+00:00",
+      "last_curated_at": "2026-07-14T01:08:35.132388+00:00",
       "last_notified_at": null
     },
     "github::Dicklesworthstone/destructive_command_guard": {
@@ -14892,9 +14324,133 @@
       "last_seen_at": "2026-07-13T03:53:40.519657+00:00",
       "last_curated_at": "2026-07-13T03:53:40.519657+00:00",
       "last_notified_at": null
+    },
+    "github::Graphify-Labs/graphify": {
+      "id": "github::Graphify-Labs/graphify",
+      "kind": "repo",
+      "source": "github",
+      "source_tags": [
+        "trending"
+      ],
+      "name": "graphify",
+      "title": "Graphify-Labs/graphify",
+      "full_name": "Graphify-Labs/graphify",
+      "html_url": "https://github.com/Graphify-Labs/graphify",
+      "description": "AI coding assistant skill (Claude Code, Codex, OpenCode, Cursor, Gemini CLI, and more). Turn any folder of code, SQL schemas, R scripts, shell scripts, docs, papers, images, or videos into a queryable knowledge graph. App code + database schema + infrastructure in one graph.",
+      "stars": 84724,
+      "stars_today": 0,
+      "language": "Python",
+      "topics": [],
+      "created_at": "",
+      "updated_at": "",
+      "heuristic_score": 12.6,
+      "summary": "Graphify-Labs/graphify 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：AI coding assistant skill (Claude Code, Codex, OpenCode, Cursor, Gemini CLI, and more). Turn any folder of code, SQL schemas, R scripts, shell scripts, docs, papers, images, or videos into a queryable knowledge graph. App code + database sc...结合关键词命中和热度信号，它适合加入今日重点观察列表。",
+      "brief": "这是一个值得快速关注的开源 AI 项目。",
+      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
+      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
+      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
+      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
+      "highlights": [
+        "Stars: 84724",
+        "语言: Python"
+      ],
+      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
+      "relevance_score": 7,
+      "tags": [
+        "ai"
+      ],
+      "themes": [
+        "ai"
+      ],
+      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
+      "summary_markdown": "**摘要**：Graphify-Labs/graphify 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：AI coding assistant skill (Claude Code, Codex, OpenCode, Cursor, Gemini CLI, and more). Turn any folder of code, SQL schemas, R scripts, shell scripts, docs, papers, images, or videos into a queryable knowledge graph. App code + database sc...结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 84724\n- 语言: Python",
+      "focus_hits": [
+        {
+          "keyword": "coding",
+          "weight": 2.6
+        }
+      ],
+      "primary_match": "coding",
+      "personalized_score": 116.0,
+      "detail_path": "items/github-graphify-labs-graphify.html",
+      "first_seen_at": "2026-07-14T01:08:35.132388+00:00",
+      "last_seen_at": "2026-07-14T01:08:35.132388+00:00",
+      "last_curated_at": "2026-07-14T01:08:35.132388+00:00",
+      "last_notified_at": null
+    },
+    "github::moeru-ai/airi": {
+      "id": "github::moeru-ai/airi",
+      "kind": "repo",
+      "source": "github",
+      "source_tags": [
+        "trending"
+      ],
+      "name": "airi",
+      "title": "moeru-ai/airi",
+      "full_name": "moeru-ai/airi",
+      "html_url": "https://github.com/moeru-ai/airi",
+      "description": "💖🧸 Self hosted, you-owned Grok Companion, a container of souls of waifu, cyber livings to bring them into our worlds, wishing to achieve Neuro-sama's altitude. Capable of realtime voice chat, Minecraft, Factorio playing. Web / macOS / Windows supported.",
+      "stars": 41875,
+      "stars_today": 0,
+      "language": "TypeScript",
+      "topics": [],
+      "created_at": "",
+      "updated_at": "",
+      "heuristic_score": 12.6,
+      "summary": "moeru-ai/airi 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：💖🧸 Self hosted, you-owned Grok Companion, a container of souls of waifu, cyber livings to bring them into our worlds, wishing to achieve Neuro-sama's altitude. Capable of realtime voice chat, Minecraft, Factorio playing. Web / macOS / Windo...结合关键词命中和热度信号，它适合加入今日重点观察列表。",
+      "brief": "这是一个值得快速关注的开源 AI 项目。",
+      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
+      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
+      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
+      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
+      "highlights": [
+        "Stars: 41875",
+        "语言: TypeScript"
+      ],
+      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
+      "relevance_score": 7,
+      "tags": [
+        "ai"
+      ],
+      "themes": [
+        "ai"
+      ],
+      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
+      "summary_markdown": "**摘要**：moeru-ai/airi 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：💖🧸 Self hosted, you-owned Grok Companion, a container of souls of waifu, cyber livings to bring them into our worlds, wishing to achieve Neuro-sama's altitude. Capable of realtime voice chat, Minecraft, Factorio playing. Web / macOS / Windo...结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 41875\n- 语言: TypeScript",
+      "focus_hits": [
+        {
+          "keyword": "voice",
+          "weight": 1.4
+        }
+      ],
+      "primary_match": "voice",
+      "personalized_score": 100.75,
+      "detail_path": "items/github-moeru-ai-airi.html",
+      "first_seen_at": "2026-07-14T01:08:35.132388+00:00",
+      "last_seen_at": "2026-07-14T01:08:35.132388+00:00",
+      "last_curated_at": "2026-07-14T01:08:35.132388+00:00",
+      "last_notified_at": null
     }
   },
   "digests": [
+    {
+      "date": "2026-07-14",
+      "title": "AI Daily Digest · 2026-07-14",
+      "generated_at": "2026-07-14T09:05:35.026140+08:00",
+      "notified_at": null,
+      "repo_ids": [
+        "github::Shubhamsaboo/awesome-llm-apps",
+        "github::coreyhaines31/marketingskills",
+        "github::Graphify-Labs/graphify",
+        "github::HKUDS/Vibe-Trading",
+        "github::moeru-ai/airi",
+        "github::Nutlope/hallmark",
+        "github::hasaneyldrm/exercises-dataset"
+      ],
+      "paper_ids": [],
+      "digest_json": "data/digests/2026-07-14.json",
+      "digest_markdown": "data/digests/2026-07-14.md"
+    },
     {
       "date": "2026-07-13",
       "title": "AI Daily Digest · 2026-07-13",
