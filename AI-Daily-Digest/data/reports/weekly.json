@@ -1,9 +1,9 @@
 {
   "label": "周报",
   "window_days": 7,
-  "generated_at": "2026-07-15T11:27:40.050310+08:00",
-  "count": 66,
-  "summary": "近 7 天里，最集中的主题是 ai、agent、rag。",
+  "generated_at": "2026-07-16T09:11:44.604526+08:00",
+  "count": 64,
+  "summary": "近 7 天里，最集中的主题是 ai、agent、llm。",
   "top_items": [
     {
       "id": "arxiv::http://arxiv.org/abs/2607.12894v1",
@@ -104,169 +104,6 @@
       "first_seen_at": "2026-07-15T01:02:44.659705+00:00",
       "last_seen_at": "2026-07-15T03:27:47.650125+00:00",
       "last_curated_at": "2026-07-15T03:27:47.650125+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2607.06374v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "VaseMuseum: Digital Intelligent Museum for Ancient Greek Pottery",
-      "html_url": "http://arxiv.org/abs/2607.06374v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.06374v1",
-      "description": "Vision-language models (VLMs) have made interactive digital museums increasingly feasible by connecting 3D digitization with natural-language artifact exploration. However, in cultural heritage domains such as ancient Greek pottery, reliable VLM assistance is limited by two challenges. First, open-ended interpretation requires grounding fine-grained 2D/3D visual evidence in specialized curatorial knowledge, yet the retrieval process may introduce weak sources and unverifiable references. Second, when the available evidence is incomplete, noisy, or ambiguous, VLMs often produce confident but unsupported answers instead of calibrated uncertainty. To address these challenges, we propose VaseMuseum, a lightweight and modular multimodal agent framework for intelligent digital museums of ancient Greek pottery. VaseMuseum combines an interactive virtual museum with VaseAgent, which supports both 2D images and 3D artifacts through multimodal perception, 3D-aware reasoning, external knowledge retrieval, and inference-time reliability control. Specifically, VaseAgent retrieves evidence from authoritative web and museum knowledge sources, and source-level control selects diverse and verifiable evidence before generation. Meanwhile, response-level control checks generated claims against the evidence pool and encourages neutral, evidence-bounded answers when support is insufficient or conflicting. Moreover, a training-free GRPO-style selection mechanism favors responses with valid references and calibrated confidence without updating the VLM backbone. Experiments in a realistic digital museum simulation show that VaseMuseum improves citation validity, reduces hallucinations on knowledge-intensive queries, and produces more neutral answers under ambiguity compared with search-enabled VLM baselines.",
-      "authors": [
-        "Jiazi Wang",
-        "Nonghai Zhang",
-        "Qiushi Xie",
-        "Zeyu Zhang",
-        "Yufeng Chen",
-        "Yang Zhao",
-        "Ling Shao",
-        "Hao Tang"
-      ],
-      "categories": [
-        "cs.CV"
-      ],
-      "published_at": "2026-07-07T15:11:56+00:00",
-      "updated_at": "2026-07-07T15:11:56+00:00",
-      "primary_category": "cs.CV",
-      "heuristic_score": 22.7,
-      "summary": "VaseMuseum: Digital Intelligent Museum for Ancient Greek Pottery 是最近值得追踪的一篇 AI 论文。论文摘要显示：Vision-language models (VLMs) have made interactive digital museums increasingly feasible by connecting 3D digitization with natural-language artifact exploration. However, in cultural heritage domains such as ancient Greek pottery, reliabl...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CV",
-        "作者数: 8"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "agent",
-        "rag",
-        "multimodal"
-      ],
-      "themes": [
-        "ai",
-        "agent",
-        "rag"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：VaseMuseum: Digital Intelligent Museum for Ancient Greek Pottery 是最近值得追踪的一篇 AI 论文。论文摘要显示：Vision-language models (VLMs) have made interactive digital museums increasingly feasible by connecting 3D digitization with natural-language artifact exploration. However, in cultural heritage domains such as ancient Greek pottery, reliabl...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV\n- 作者数: 8",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "multimodal",
-          "weight": 2.0
-        },
-        {
-          "keyword": "inference",
-          "weight": 1.8
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 222.0,
-      "detail_path": "items/arxiv-vasemuseum-digital-intelligent-museum-for-ancient-greek-pottery.html",
-      "first_seen_at": "2026-07-08T01:14:15.447255+00:00",
-      "last_seen_at": "2026-07-08T03:39:11.118464+00:00",
-      "last_curated_at": "2026-07-08T03:39:11.118464+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2607.06413v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "An Experimental Design Approach to Evaluating Agentic AI's Autonomous Model Discovery",
-      "html_url": "http://arxiv.org/abs/2607.06413v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.06413v1",
-      "description": "Large language model coding agents increasingly perform open-ended data modeling and analysis. These agents are stochastic and adaptive, and therefore their autonomous model discovery behavior cannot be adequately characterized by a single benchmark run. In this work, we propose an experimental design and analysis framework for systematically evaluating this discovery process, quantifying its variability, and identifying important factors. The proposed framework treats these agents as stochastic model-discovery operators, which map task-specific discovery data and an optimization target to a fitted model. Specifically, we investigate two such operators, Codex and Claude Code, under controlled experimental factors including agent's reasoning effort, task, optimization metric, and composition of training data. For each agent-task-metric combination, regression models and inference are conducted for multiple responses such as output quality, dollar cost, wall-clock time, and process complexity. Furthermore, we develop a utility-aligned canonical decomposition to characterize the dominant direction of the reasoning-effort effect and to assess whether that direction aligns with a performance-cost utility direction. The proposed framework is demonstrated on a testbed of networked word-forming games with insightful findings on reasoning effort with respect to cost and process complexity.",
-      "authors": [
-        "Hao He",
-        "Xueying Liu",
-        "Chris J. Kuhlman",
-        "Xinwei Deng"
-      ],
-      "categories": [
-        "stat.ME",
-        "cs.AI"
-      ],
-      "published_at": "2026-07-07T15:43:22+00:00",
-      "updated_at": "2026-07-07T15:43:22+00:00",
-      "primary_category": "stat.ME",
-      "heuristic_score": 23.354,
-      "summary": "An Experimental Design Approach to Evaluating Agentic AI's Autonomous Model Discovery 是最近值得追踪的一篇 AI 论文。论文摘要显示：Large language model coding agents increasingly perform open-ended data modeling and analysis. These agents are stochastic and adaptive, and therefore their autonomous model discovery behavior cannot be adequately characterized by a single ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: stat.ME, cs.AI",
-        "作者数: 4"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "agent",
-        "model",
-        "benchmark"
-      ],
-      "themes": [
-        "ai",
-        "agent",
-        "model"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：An Experimental Design Approach to Evaluating Agentic AI's Autonomous Model Discovery 是最近值得追踪的一篇 AI 论文。论文摘要显示：Large language model coding agents increasingly perform open-ended data modeling and analysis. These agents are stochastic and adaptive, and therefore their autonomous model discovery behavior cannot be adequately characterized by a single ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: stat.ME, cs.AI\n- 作者数: 4",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "coding",
-          "weight": 2.6
-        },
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "inference",
-          "weight": 1.8
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 214.0,
-      "detail_path": "items/arxiv-an-experimental-design-approach-to-evaluating-agentic-ai-s-autonomous-model-discovery.html",
-      "first_seen_at": "2026-07-08T01:14:15.447255+00:00",
-      "last_seen_at": "2026-07-08T03:39:11.118464+00:00",
-      "last_curated_at": "2026-07-08T03:39:11.118464+00:00",
       "last_notified_at": null
     },
     {
@@ -606,53 +443,53 @@
       "last_notified_at": null
     },
     {
-      "id": "arxiv::http://arxiv.org/abs/2607.06411v1",
+      "id": "arxiv::http://arxiv.org/abs/2607.07696v1",
       "kind": "paper",
       "source": "arxiv",
       "source_tags": [
         "latest"
       ],
-      "title": "RuBench: A Repository-Level Agentic Coding Benchmark with Natively Authored Russian Task Specifications",
-      "html_url": "http://arxiv.org/abs/2607.06411v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.06411v1",
-      "description": "Developers increasingly delegate real maintenance work to product-grade coding agents, and many state tasks in their native language, in the style of a customer request rather than a curated English issue. Existing repository-level agentic benchmarks do not measure this setting: their task statements are English by design. We introduce RuBench 1.0, a benchmark of 25 tasks mined from recent fix commits in five live open-source repositories (aiohttp, aiogram, Laravel, NestJS, Fastify; Python, PHP, TypeScript, JavaScript), where each task is specified natively in Russian -- written from scratch in the style of an actual customer request, not translated -- and judged by the upstream maintainer's regression tests, which we withhold from release. All 25 fix commits postdate the training-data cutoffs of every evaluated model, giving a contamination argument that holds task-by-task. We evaluate deployed product configurations (CLI agent + model + reasoning effort) -- Claude Code with Opus 4.8, Sonnet 5, and Haiku 4.5, and Codex CLI with GPT-5.5 -- with three independent runs each, reporting pass@1 with task-level confidence intervals, paired comparisons, dollar cost, and token usage. The best configuration resolves 78.7% of tasks; at N=25 only the gaps to the weakest model are statistically resolvable, which we state explicitly. Auditing full trajectories of a fifth, hors-concours configuration (Claude Code + Fable 5, July 2, 2026 release), we caught the product silently substituting the model: on 5 of 25 tasks (20%) an official safeguard fallback re-routed routine HTTP-protocol fixes to Opus 4.8 -- direct, reproducible evidence that the deployed product, not the model, is the unit actually measured. We release task statements, metadata, full agent trajectories, and diffs; grading oracles are withheld, with a SHA-256 manifest committed at publication time.",
+      "title": "Breaking Database Lock-in: Agentic Regeneration of High Performance Storage Readers for Database Bypass",
+      "html_url": "http://arxiv.org/abs/2607.07696v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.07696v1",
+      "description": "Analytical workloads operating on data stored in external database systems face a fundamental bottleneck: data access is guarded entirely by the database driver, like JDBC or ODBC, forcing all reads through query execution and other driver layers that are not designed for bulk columnar analytics. We present Jailbreak, an approach that bypasses the database engine entirely by reading storage files directly and materializing data as in-memory columnar buffers. Jailbreak's key insight is that database file formats, while complex, are fully specified by their source code and documentation, artifacts that Large Language Models (LLMs) can ingest to regenerate operator-specific table reading components without human-engineered parsing logic. Jailbreak leverages LLM-assisted code synthesis for database storage decoding, turning a traditionally opaque format into a directly queryable artifact. We evaluate Jailbreak on PostgreSQL and MySQL storage files, targeting analytical snapshot scenarios common in read replicas and offline processing pipelines. The generated reader produces Apache Arrow buffers consumable directly by most of the widely known query engines, including DuckDB, Apache Spark, and GPU-accelerated frameworks such as cuDF and Spark RAPIDS. We validate correctness against JDBC/ODBC-based baselines using the TPC-H benchmark across all query results, and demonstrate significant performance improvements in end-to-end analytical throughput, achieving up to 27x speedups. Our results showcase that LLM-assisted storage reader synthesis is a viable and generalizable methodology for breaking data lock-in across database systems, with applications beyond PostgreSQL and MySQL for any system whose file format is available to the LLM from documentation or source code.",
       "authors": [
-        "Evgeny Shilov"
+        "Victor Giannakouris",
+        "Immanuel Trummer"
       ],
       "categories": [
-        "cs.SE",
-        "cs.AI",
-        "cs.CL"
+        "cs.DB",
+        "cs.AI"
       ],
-      "published_at": "2026-07-07T15:41:22+00:00",
-      "updated_at": "2026-07-07T15:41:22+00:00",
-      "primary_category": "cs.SE",
-      "heuristic_score": 23.6,
-      "summary": "RuBench: A Repository-Level Agentic Coding Benchmark with Natively Authored Russian Task Specifications 是最近值得追踪的一篇 AI 论文。论文摘要显示：Developers increasingly delegate real maintenance work to product-grade coding agents, and many state tasks in their native language, in the style of a customer request rather than a curated English issue. Existing repository-level agentic ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "published_at": "2026-07-08T17:55:00+00:00",
+      "updated_at": "2026-07-08T17:55:00+00:00",
+      "primary_category": "cs.DB",
+      "heuristic_score": 18.8,
+      "summary": "Breaking Database Lock-in: Agentic Regeneration of High Performance Storage Readers for Database Bypass 是最近值得追踪的一篇 AI 论文。论文摘要显示：Analytical workloads operating on data stored in external database systems face a fundamental bottleneck: data access is guarded entirely by the database driver, like JDBC or ODBC, forcing all reads through query execution and other driver ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
       "brief": "这是一篇值得加入今日论文雷达的最新工作。",
       "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
       "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
       "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
       "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
       "highlights": [
-        "分类: cs.SE, cs.AI",
-        "作者数: 1"
+        "分类: cs.DB, cs.AI",
+        "作者数: 2"
       ],
       "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
       "relevance_score": 10,
       "tags": [
         "ai",
-        "agent",
-        "agentic",
-        "gpt"
+        "llm",
+        "rag",
+        "model"
       ],
       "themes": [
         "ai",
-        "agent",
-        "agentic"
+        "llm",
+        "rag"
       ],
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：RuBench: A Repository-Level Agentic Coding Benchmark with Natively Authored Russian Task Specifications 是最近值得追踪的一篇 AI 论文。论文摘要显示：Developers increasingly delegate real maintenance work to product-grade coding agents, and many state tasks in their native language, in the style of a customer request rather than a curated English issue. Existing repository-level agentic ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.SE, cs.AI\n- 作者数: 1",
+      "summary_markdown": "**摘要**：Breaking Database Lock-in: Agentic Regeneration of High Performance Storage Readers for Database Bypass 是最近值得追踪的一篇 AI 论文。论文摘要显示：Analytical workloads operating on data stored in external database systems face a fundamental bottleneck: data access is guarded entirely by the database driver, like JDBC or ODBC, forcing all reads through query execution and other driver ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.DB, cs.AI\n- 作者数: 2",
       "focus_hits": [
         {
           "keyword": "agent",
@@ -663,8 +500,8 @@
           "weight": 2.6
         },
         {
-          "keyword": "reasoning",
-          "weight": 2.4
+          "keyword": "rag",
+          "weight": 2.2
         },
         {
           "keyword": "benchmark",
@@ -672,11 +509,155 @@
         }
       ],
       "primary_match": "agent",
-      "personalized_score": 196.0,
-      "detail_path": "items/arxiv-rubench-a-repository-level-agentic-coding-benchmark-with-natively-authored-russian-task-sp.html",
-      "first_seen_at": "2026-07-08T01:14:15.447255+00:00",
-      "last_seen_at": "2026-07-08T03:39:11.118464+00:00",
-      "last_curated_at": "2026-07-08T03:39:11.118464+00:00",
+      "personalized_score": 194.0,
+      "detail_path": "items/arxiv-breaking-database-lock-in-agentic-regeneration-of-high-performance-storage-readers-for-dat.html",
+      "first_seen_at": "2026-07-09T01:22:09.165523+00:00",
+      "last_seen_at": "2026-07-09T04:09:36.828729+00:00",
+      "last_curated_at": "2026-07-09T04:09:36.828729+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2607.12856v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Verifier-Based Reinforcement Fine-Tuning of Reasoning Models for Thermal Energy Storage Control",
+      "html_url": "http://arxiv.org/abs/2607.12856v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.12856v1",
+      "description": "Buildings are expected to shift cooling loads in response to grid conditions. Thermal energy storage (TES) enables this shift, but scheduling it well requires planning hours ahead under storage constraints. Model predictive control (MPC) and reinforcement learning are difficult to scale across buildings. This study instead adapts an open-weight reasoning model through reinforcement learning with verifiable rewards (RLVR). We convert exact offline dynamic-programming (DP) action values into dense rewards for every candidate action. Using only 30 training prompts, reinforcement fine-tuning (RFT) trains the model as an upper-level scheduler that outputs hourly heat-pump setpoints from text-based states and forecasts. Evaluation uses a deliberately simple office-building TES benchmark where exact DP is tractable and the optimum is known. RFT reduces the open-weight model's emissions from 70.5 to 61.2 kg-CO2, close to the DP optimum of 60.8 kg-CO2. GPT-5 nearly matches DP and MPC without task-specific training, while GPT-4o, a non-reasoning LLM, produces higher emissions than the no-storage baseline, so inference-time reasoning appears important. Trace analysis shows that RFT mainly stabilizes observable planning patterns (candidate comparison, look-ahead, and feasibility checking) rather than creating a new strategy. Robustness and generalization tests clarify what transfers: the reinforced planning patterns persist under forecast errors and an unseen TES condition and carry over to a battery task, but its different structure limits the gains. DP-based verifiable rewards offer a practical way to adapt open-weight reasoning models to building storage scheduling. These results motivate higher-fidelity tests of whole-building control and scalable verifiers for city-scale energy management.",
+      "authors": [
+        "Takumi Shioda",
+        "Kohei Terashima",
+        "Tatsuo Nagai"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "published_at": "2026-07-14T15:08:39+00:00",
+      "updated_at": "2026-07-14T15:08:39+00:00",
+      "primary_category": "cs.LG",
+      "heuristic_score": 25.1,
+      "summary": "Verifier-Based Reinforcement Fine-Tuning of Reasoning Models for Thermal Energy Storage Control 是最近值得追踪的一篇 AI 论文。论文摘要显示：Buildings are expected to shift cooling loads in response to grid conditions. Thermal energy storage (TES) enables this shift, but scheduling it well requires planning hours ahead under storage constraints. Model predictive control (MPC) an...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.LG",
+        "作者数: 3"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "llm",
+        "gpt",
+        "rag"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "gpt"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：Verifier-Based Reinforcement Fine-Tuning of Reasoning Models for Thermal Energy Storage Control 是最近值得追踪的一篇 AI 论文。论文摘要显示：Buildings are expected to shift cooling loads in response to grid conditions. Thermal energy storage (TES) enables this shift, but scheduling it well requires planning hours ahead under storage constraints. Model predictive control (MPC) an...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.LG\n- 作者数: 3",
+      "focus_hits": [
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        },
+        {
+          "keyword": "inference",
+          "weight": 1.8
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "reasoning",
+      "personalized_score": 188.0,
+      "detail_path": "items/arxiv-verifier-based-reinforcement-fine-tuning-of-reasoning-models-for-thermal-energy-storage-co.html",
+      "first_seen_at": "2026-07-15T01:02:44.659705+00:00",
+      "last_seen_at": "2026-07-15T03:27:47.650125+00:00",
+      "last_curated_at": "2026-07-15T03:27:47.650125+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2607.07690v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Agon: Competitive Cross-Model RL with Implicit Rival Grading of Reasoning",
+      "html_url": "http://arxiv.org/abs/2607.07690v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.07690v1",
+      "description": "Reinforcement learning from verifiable rewards (e.g. GRPO) is the engine behind today's reasoning models, yet it grades only the final answer. On hard problems this trains models to write more rather than to think better, since the trace itself is never graded and no label for good thinking exists. We introduce Agon, which makes two competing models each other's graders. Both attempt the same problem; in alternating roles, one drafts a solution and the other reads it while solving, and each is rewarded for out-solving the other. To win, a model must out-reason a rival that has seen its work, so reasoning is judged implicitly during training, with no process labels and no reward model. Because both models are optimized, each faces a progressively stronger rival, which single-model RL cannot provide. The two need only be comparably strong and behaviorally different. At inference the pair deploys as it trains, a two-stage cascade in which one model drafts and the other answers after reading the draft. On the hard split of DeepMath with Qwen3, this doubles GRPO's pass@1, roughly eight times the gain of an untrained Mixture-of-Agents pass over the same base. The ordering replicates on competitive-programming code and across model families (Qwen3.5, Gemma 4). For now the models talk in text; the next step is to let them reason together in latent space.",
+      "authors": [
+        "Vladislav Beliaev"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "published_at": "2026-07-08T17:49:14+00:00",
+      "updated_at": "2026-07-08T17:49:14+00:00",
+      "primary_category": "cs.LG",
+      "heuristic_score": 17.61,
+      "summary": "Agon: Competitive Cross-Model RL with Implicit Rival Grading of Reasoning 是最近值得追踪的一篇 AI 论文。论文摘要显示：Reinforcement learning from verifiable rewards (e.g. GRPO) is the engine behind today's reasoning models, yet it grades only the final answer. On hard problems this trains models to write more rather than to think better, since the trace it...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.LG, cs.AI",
+        "作者数: 1"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "agent",
+        "model",
+        "inference"
+      ],
+      "themes": [
+        "ai",
+        "agent",
+        "model"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：Agon: Competitive Cross-Model RL with Implicit Rival Grading of Reasoning 是最近值得追踪的一篇 AI 论文。论文摘要显示：Reinforcement learning from verifiable rewards (e.g. GRPO) is the engine behind today's reasoning models, yet it grades only the final answer. On hard problems this trains models to write more rather than to think better, since the trace it...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.LG, cs.AI\n- 作者数: 1",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "inference",
+          "weight": 1.8
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 180.0,
+      "detail_path": "items/arxiv-agon-competitive-cross-model-rl-with-implicit-rival-grading-of-reasoning.html",
+      "first_seen_at": "2026-07-09T01:22:09.165523+00:00",
+      "last_seen_at": "2026-07-09T04:09:36.828729+00:00",
+      "last_curated_at": "2026-07-09T04:09:36.828729+00:00",
       "last_notified_at": null
     }
   ],
@@ -687,14 +668,14 @@
     },
     {
       "theme": "agent",
-      "count": 6
-    },
-    {
-      "theme": "rag",
-      "count": 1
+      "count": 4
     },
     {
       "theme": "llm",
+      "count": 3
+    },
+    {
+      "theme": "rag",
       "count": 1
     }
   ],
@@ -705,12 +686,12 @@
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     },
     {
-      "title": "VaseMuseum: Digital Intelligent Museum for Ancient Greek Pottery",
+      "title": "Accurate, Interdisciplinary and Transparent Structure-property Understanding with Deep Native Structural Reasoning",
       "source": "arxiv",
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     },
     {
-      "title": "An Experimental Design Approach to Evaluating Agentic AI's Autonomous Model Discovery",
+      "title": "Beyond the Single Camera: Agentic Multi-View Reasoning in Sports Video Understanding",
       "source": "arxiv",
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     }
