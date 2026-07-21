@@ -1,8 +1,8 @@
 {
   "label": "周报",
   "window_days": 7,
-  "generated_at": "2026-07-21T09:13:18.412912+08:00",
-  "count": 70,
+  "generated_at": "2026-07-21T11:38:46.554042+08:00",
+  "count": 66,
   "summary": "近 7 天里，最集中的主题是 ai、llm、agent。",
   "top_items": [
     {
@@ -107,6 +107,91 @@
       "last_notified_at": null
     },
     {
+      "id": "arxiv::http://arxiv.org/abs/2607.18171v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "FlashRT: Agent Harness for Guiding Agents to Deploy Real-Time Multimodal Applications",
+      "html_url": "http://arxiv.org/abs/2607.18171v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.18171v1",
+      "description": "Real-time multimodal applications, including voice agents and interactive video generation, compose heterogeneous models into pipelines whose efficient deployment requires application-specific decisions about placement, streaming, and intra-model parallelism. Existing serving systems and auto-parallelism compilers commit to limited transformations and fixed workload assumptions, so achieving high performance on a new application requires hand-crafting an efficient implementation. We present FlashRT, an agent harness that guides coding agents to lift simple developer-written reference implementations into optimized multi-GPU deployments that flexibly weigh target metrics like latency and throughput. Using a new chain-of-program paradigm, FlashRT directs a generic coding agent through a multi-pass transformation process where an agent transforms the reference into an intermediate representation (IR) to capture data dependencies and persistent-state scopes, validates this IR via a sequential interpreter, and performs static analyses to identify candidate transformations. Then, the agent iteratively implements, verifies, and benchmarks each candidate under a measurement-gated optimization loop to produce effective deployments that span different hardware budgets. Across various applications, including video world models and multimodal LLMs, FlashRT converts reference implementations into highly efficient deployments, delivering up to ~70x latency reduction and 2.8x throughput improvement on NVIDIA B200 GPUs. On AMD MI355X GPUs, FlashRT matches the peak latency reduction while increasing peak throughput improvement to 3.6x, demonstrating that agent-driven optimization can be more scalable on platforms with less mature expert optimization. In fact, for Qwen3-Omni text-to-audio inference, FlashRT reduces response latency by 65% compared to the expert vLLM-Omni implementation on AMD MI355X.",
+      "authors": [
+        "Krish Agarwal",
+        "Zhuoming Chen",
+        "Yanyuan Qin",
+        "Zhenyu Gu",
+        "Atri Rudra",
+        "Beidi Chen"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "published_at": "2026-07-20T17:12:28+00:00",
+      "updated_at": "2026-07-20T17:12:28+00:00",
+      "primary_category": "cs.LG",
+      "heuristic_score": 22.7,
+      "summary": "FlashRT: Agent Harness for Guiding Agents to Deploy Real-Time Multimodal Applications 是最近值得追踪的一篇 AI 论文。论文摘要显示：Real-time multimodal applications, including voice agents and interactive video generation, compose heterogeneous models into pipelines whose efficient deployment requires application-specific decisions about placement, streaming, and intra...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.LG",
+        "作者数: 6"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "llm",
+        "agent",
+        "multimodal"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "agent"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：FlashRT: Agent Harness for Guiding Agents to Deploy Real-Time Multimodal Applications 是最近值得追踪的一篇 AI 论文。论文摘要显示：Real-time multimodal applications, including voice agents and interactive video generation, compose heterogeneous models into pipelines whose efficient deployment requires application-specific decisions about placement, streaming, and intra...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.LG\n- 作者数: 6",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "coding",
+          "weight": 2.6
+        },
+        {
+          "keyword": "multimodal",
+          "weight": 2.0
+        },
+        {
+          "keyword": "inference",
+          "weight": 1.8
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        },
+        {
+          "keyword": "voice",
+          "weight": 1.4
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 232.0,
+      "detail_path": "items/arxiv-flashrt-agent-harness-for-guiding-agents-to-deploy-real-time-multimodal-applications.html",
+      "first_seen_at": "2026-07-21T03:38:52.341180+00:00",
+      "last_seen_at": "2026-07-21T03:38:52.341180+00:00",
+      "last_curated_at": "2026-07-21T03:38:52.341180+00:00",
+      "last_notified_at": null
+    },
+    {
       "id": "arxiv::http://arxiv.org/abs/2607.17269v1",
       "kind": "paper",
       "source": "arxiv",
@@ -182,8 +267,8 @@
       "personalized_score": 220.0,
       "detail_path": "items/arxiv-an-explicit-world-model-based-on-data-first-ontology-daoql-multimodal-storage-validation-a.html",
       "first_seen_at": "2026-07-21T01:13:27.692100+00:00",
-      "last_seen_at": "2026-07-21T01:13:27.692100+00:00",
-      "last_curated_at": "2026-07-21T01:13:27.692100+00:00",
+      "last_seen_at": "2026-07-21T03:38:52.341180+00:00",
+      "last_curated_at": "2026-07-21T03:38:52.341180+00:00",
       "last_notified_at": null
     },
     {
@@ -257,71 +342,77 @@
       "personalized_score": 200.0,
       "detail_path": "items/arxiv-debate-on-graph-reliable-and-adaptive-reasoning-of-large-language-model-on-uncertain-knowl.html",
       "first_seen_at": "2026-07-21T01:13:27.692100+00:00",
-      "last_seen_at": "2026-07-21T01:13:27.692100+00:00",
-      "last_curated_at": "2026-07-21T01:13:27.692100+00:00",
+      "last_seen_at": "2026-07-21T03:38:52.341180+00:00",
+      "last_curated_at": "2026-07-21T03:38:52.341180+00:00",
       "last_notified_at": null
     },
     {
-      "id": "arxiv::http://arxiv.org/abs/2607.11844v1",
+      "id": "arxiv::http://arxiv.org/abs/2607.18213v1",
       "kind": "paper",
       "source": "arxiv",
       "source_tags": [
         "latest"
       ],
-      "title": "Beyond the Single Camera: Agentic Multi-View Reasoning in Sports Video Understanding",
-      "html_url": "http://arxiv.org/abs/2607.11844v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.11844v1",
-      "description": "Recent Multimodal Large Language Models (MLLMs) achieve strong performance on single-view video understanding benchmarks. However, sports videos involve dense occlusion, rapid motion, and complex interactions that are difficult to resolve from a single viewpoint. In practice, sports events are recorded from multiple camera angles, providing complementary evidence used by referees. Yet, no existing benchmark evaluates MLLMs on multi-view sports video understanding. To address this gap, we introduce SportMV-Bench, a comprehensive benchmark built from official match recordings, through a dedicated pipeline combining LLM-based generation, MLLM-based verification, and human filtering to ensure quality and consistency. SportMV-Bench containing 787 multi-view video bundles and 2592 question-answer pairs across three categories: Perception-Aware Recognition (PAR), Rule-aware Event Interpretation (REI), and Adjudicative Decision Reasoning(ADR). Our analysis shows that current MLLMs fail to effectively exploit multi-view information, with the bottlenecks lying in fine-grained visual perception and view selection rather than logical reasoning or domain knowledge. We propose SportMV-Agent, an agentic framework that orchestrates an iterative loop of active view selection, perception tool execution, and evidence-grounded reasoning, achieving a significant 14.46% relative improvement over the strongest MLLM baseline.",
+      "title": "SWE-Pruner Pro: The Coder LLM Already Knows What to Prune",
+      "html_url": "http://arxiv.org/abs/2607.18213v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.18213v1",
+      "description": "Pruning long context for coding agents has been a vital technology for efficient context management. While existing context pruning methods such as SWE-Pruner realize this by attaching a separate code classifier, we find the agent itself encodes internal representations indicating the relevance of code context when reading tool output. Based on this finding, we propose SWE-Pruner Pro, which prunes tool outputs directly inside the agent. Concretely, a small head turns the agent's own internal representations into a keep-or-prune label for each line, with a length-aware embedding keyed to each tool output's line count. Across two open-weight backbones and four multi-turn benchmarks, SWE-Pruner Pro saves up to 39% of prompt and completion tokens while preserving task quality, with bounded inference overhead. Notably, on MiMo-V2-Flash SWE-Pruner Pro additionally raises the SWE-Bench Verified resolve rate by +3.8% and the long-context Oolong accuracy by +2.2 points.",
       "authors": [
-        "Kerui Chen",
-        "Jinglu Wang",
-        "Xiaoyi Zhang",
-        "Yan Lu"
+        "Yuhang Wang",
+        "Yuling Shi",
+        "Shaoqiu Zhang",
+        "Jialiang Liang",
+        "Shilin He",
+        "Siyu Ye",
+        "Yuting Chen",
+        "Kai Cai",
+        "Xiaodong Gu"
       ],
       "categories": [
-        "cs.CV"
+        "cs.CL",
+        "cs.SE"
       ],
-      "published_at": "2026-07-13T17:34:36+00:00",
-      "updated_at": "2026-07-13T17:34:36+00:00",
-      "primary_category": "cs.CV",
-      "heuristic_score": 22.481,
-      "summary": "Beyond the Single Camera: Agentic Multi-View Reasoning in Sports Video Understanding 是最近值得追踪的一篇 AI 论文。论文摘要显示：Recent Multimodal Large Language Models (MLLMs) achieve strong performance on single-view video understanding benchmarks. However, sports videos involve dense occlusion, rapid motion, and complex interactions that are difficult to resolve f...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "published_at": "2026-07-20T17:47:44+00:00",
+      "updated_at": "2026-07-20T17:47:44+00:00",
+      "primary_category": "cs.CL",
+      "heuristic_score": 19.519,
+      "summary": "SWE-Pruner Pro: The Coder LLM Already Knows What to Prune 是最近值得追踪的一篇 AI 论文。论文摘要显示：Pruning long context for coding agents has been a vital technology for efficient context management. While existing context pruning methods such as SWE-Pruner realize this by attaching a separate code classifier, we find the agent itself en...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
       "brief": "这是一篇值得加入今日论文雷达的最新工作。",
       "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
       "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
       "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
       "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
       "highlights": [
-        "分类: cs.CV",
-        "作者数: 4"
+        "分类: cs.CL, cs.SE",
+        "作者数: 9"
       ],
       "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
       "relevance_score": 10,
       "tags": [
         "ai",
-        "llm",
         "agent",
-        "agentic"
+        "benchmark",
+        "inference"
       ],
       "themes": [
         "ai",
-        "llm",
-        "agent"
+        "agent",
+        "benchmark"
       ],
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：Beyond the Single Camera: Agentic Multi-View Reasoning in Sports Video Understanding 是最近值得追踪的一篇 AI 论文。论文摘要显示：Recent Multimodal Large Language Models (MLLMs) achieve strong performance on single-view video understanding benchmarks. However, sports videos involve dense occlusion, rapid motion, and complex interactions that are difficult to resolve f...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV\n- 作者数: 4",
+      "summary_markdown": "**摘要**：SWE-Pruner Pro: The Coder LLM Already Knows What to Prune 是最近值得追踪的一篇 AI 论文。论文摘要显示：Pruning long context for coding agents has been a vital technology for efficient context management. While existing context pruning methods such as SWE-Pruner realize this by attaching a separate code classifier, we find the agent itself en...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL, cs.SE\n- 作者数: 9",
       "focus_hits": [
         {
           "keyword": "agent",
           "weight": 3.0
         },
         {
-          "keyword": "reasoning",
-          "weight": 2.4
+          "keyword": "coding",
+          "weight": 2.6
         },
         {
-          "keyword": "multimodal",
-          "weight": 2.0
+          "keyword": "inference",
+          "weight": 1.8
         },
         {
           "keyword": "benchmark",
@@ -330,10 +421,10 @@
       ],
       "primary_match": "agent",
       "personalized_score": 198.0,
-      "detail_path": "items/arxiv-beyond-the-single-camera-agentic-multi-view-reasoning-in-sports-video-understanding.html",
-      "first_seen_at": "2026-07-14T03:27:56.593259+00:00",
-      "last_seen_at": "2026-07-14T03:27:56.593259+00:00",
-      "last_curated_at": "2026-07-14T03:27:56.593259+00:00",
+      "detail_path": "items/arxiv-swe-pruner-pro-the-coder-llm-already-knows-what-to-prune.html",
+      "first_seen_at": "2026-07-21T03:38:52.341180+00:00",
+      "last_seen_at": "2026-07-21T03:38:52.341180+00:00",
+      "last_curated_at": "2026-07-21T03:38:52.341180+00:00",
       "last_notified_at": null
     },
     {
@@ -568,81 +659,6 @@
       "last_seen_at": "2026-07-17T03:32:33.079865+00:00",
       "last_curated_at": "2026-07-17T03:32:33.079865+00:00",
       "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2607.13988v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "TRACE: Turn-level Reward Assignment via Credit Estimation for Long-Horizon Agents",
-      "html_url": "http://arxiv.org/abs/2607.13988v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.13988v1",
-      "description": "Multi-turn agents solve complex tasks through extended sequences of tool interactions before producing a final answer, making credit assignment a fundamental challenge during post-training. Outcome rewards provide reliable supervision for short-horizon reasoning, but become sparse and high-variance as trajectories grow to tens or hundreds of tool calls. They can also be misleading: a failed rollout may contain many useful actions that move the agent closer to the goal, yet outcome-only training assigns them the same negative advantage as the eventual mistake. We propose TRACE (Turn-level Reward Assignment via Credit Estimation), a dense credit-assignment method for agentic reinforcement learning. TRACE represents rollouts as state transitions at tool-call boundaries, obtains gold-answer log-probabilities from a frozen reference model, transforms them into log-ratio state values, and derives per-action rewards as Temporal-Difference changes in those values. This requires no additional critic or process-label training, and its one-step log-ratio TD component telescopes across redundant tool calls. On long-horizon complex search, TRACE substantially improves base-model tool-use ability using pure RL, without a cold-start supervised fine-tuning stage, an agentic mid-training stage, or training on live-web data. On the closed-web BrowseComp-Plus benchmark, it raises Qwen3-4B from $7.2$ to $35.6$ and Qwen3-30B-A3B from $8.4$ to $42.6$. The learned search behavior also transfers to open-web benchmarks, and the learning curves show earlier improvement and faster convergence during RL training.",
-      "authors": [
-        "Leitian Tao",
-        "Baolin Peng",
-        "Wenlin Yao",
-        "Tao Ge",
-        "Hao Cheng",
-        "Mike Hang Wang",
-        "Jianfeng Gao",
-        "Sharon Li"
-      ],
-      "categories": [
-        "cs.LG"
-      ],
-      "published_at": "2026-07-15T16:16:42+00:00",
-      "updated_at": "2026-07-15T16:16:42+00:00",
-      "primary_category": "cs.LG",
-      "heuristic_score": 20.3,
-      "summary": "TRACE: Turn-level Reward Assignment via Credit Estimation for Long-Horizon Agents 是最近值得追踪的一篇 AI 论文。论文摘要显示：Multi-turn agents solve complex tasks through extended sequences of tool interactions before producing a final answer, making credit assignment a fundamental challenge during post-training. Outcome rewards provide reliable supervision for s...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.LG",
-        "作者数: 8"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "agent",
-        "agentic",
-        "model"
-      ],
-      "themes": [
-        "ai",
-        "agent",
-        "agentic"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：TRACE: Turn-level Reward Assignment via Credit Estimation for Long-Horizon Agents 是最近值得追踪的一篇 AI 论文。论文摘要显示：Multi-turn agents solve complex tasks through extended sequences of tool interactions before producing a final answer, making credit assignment a fundamental challenge during post-training. Outcome rewards provide reliable supervision for s...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.LG\n- 作者数: 8",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 178.0,
-      "detail_path": "items/arxiv-trace-turn-level-reward-assignment-via-credit-estimation-for-long-horizon-agents.html",
-      "first_seen_at": "2026-07-16T01:11:51.647007+00:00",
-      "last_seen_at": "2026-07-16T03:31:56.766277+00:00",
-      "last_curated_at": "2026-07-16T03:31:56.766277+00:00",
-      "last_notified_at": null
     }
   ],
   "top_themes": [
@@ -670,12 +686,12 @@
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     },
     {
-      "title": "An Explicit World Model Based on Data-First Ontology: DaoQL Multimodal Storage Validation and Counterfactual Reasoning Evaluation",
+      "title": "FlashRT: Agent Harness for Guiding Agents to Deploy Real-Time Multimodal Applications",
       "source": "arxiv",
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     },
     {
-      "title": "Debate-on-Graph: Reliable and Adaptive Reasoning of Large Language Model on Uncertain Knowledge Graph",
+      "title": "An Explicit World Model Based on Data-First Ontology: DaoQL Multimodal Storage Validation and Counterfactual Reasoning Evaluation",
       "source": "arxiv",
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     }
