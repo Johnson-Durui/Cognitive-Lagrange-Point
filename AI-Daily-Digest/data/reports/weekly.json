@@ -1,111 +1,10 @@
 {
   "label": "周报",
   "window_days": 7,
-  "generated_at": "2026-07-22T09:11:17.797989+08:00",
-  "count": 74,
+  "generated_at": "2026-07-22T11:38:59.670013+08:00",
+  "count": 70,
   "summary": "近 7 天里，最集中的主题是 ai、llm、agent。",
   "top_items": [
-    {
-      "id": "arxiv::http://arxiv.org/abs/2607.12894v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "Hy-Embodied-VLM-1.0: Efficient Physical-World Agents",
-      "html_url": "http://arxiv.org/abs/2607.12894v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.12894v1",
-      "description": "Building capable embodied agents requires not only multimodal perception and understanding, but also agentic capabilities for reasoning about actions, adapting to evolving situations, and interacting with the physical world. In this report, we introduce Hy-Embodied-VLM-1.0, an efficient and powerful embodied foundation model specifically designed for embodied agents operating in the physical world. To cultivate such capabilities from the pre-training stage onward, we define an action-centric capability taxonomy comprising three progressive dimensions: Action-Relevant State Understanding, Action-Transition Reasoning, and Sequential and Adaptive Reasoning. Guided by this taxonomy, we develop a systematic data pipeline and curate data mixtures spanning both pre-training and post-training. To deliver strong physical-world understanding and interaction capabilities while supporting latency-sensitive deployment, we build our model on the Hy3-A3B language backbone and the Hy-ViT2 vision encoder. Its efficient Mixture-of-Experts architecture combines strong model capacity with high inference efficiency. We evaluate Hy-Embodied-VLM-1.0 on a comprehensive suite of 38 benchmarks covering embodied perception, physical-world understanding, and embodied reasoning. The model achieves the best performance among similarly sized models on 19 of the 38 benchmarks and substantially outperforms strong competitors, including Qwen3.6-A3B and Cosmos 3. Compared with the previous-generation Hy-Embodied-0.5 MoT-2B, Hy-Embodied-VLM-1.0 improves average performance by 8.4%. Despite activating only 3B parameters, it achieves performance close to that of the previous-generation model with 32B activated parameters. Beyond static benchmark evaluation, Hy-Embodied-VLM-1.0 also demonstrates strong performance on embodied agentic tasks requiring multi-turn interaction and long-horizon reasoning.",
-      "authors": [
-        "Ziyi Wang",
-        "Xumin Yu",
-        "Yongming Rao",
-        "Yonggen Ling",
-        "Yunheng Li",
-        "Oran Wang",
-        "Mingqi Gao",
-        "Yuchen Zhou",
-        "Yves Liang",
-        "Zuyan Liu",
-        "Yani Zhang",
-        "Rui Huang",
-        "Xiaoran Xu",
-        "Bowen Yuan",
-        "Yifu Yuan",
-        "Xu Tan",
-        "He Zhang",
-        "Yufei Huang",
-        "Shenghao Zhang",
-        "Hongsheng Wu",
-        "Han Hu",
-        "Zhengyou Zhang"
-      ],
-      "categories": [
-        "cs.CV"
-      ],
-      "published_at": "2026-07-14T15:34:17+00:00",
-      "updated_at": "2026-07-14T15:34:17+00:00",
-      "primary_category": "cs.CV",
-      "heuristic_score": 27.5,
-      "summary": "Hy-Embodied-VLM-1.0: Efficient Physical-World Agents 是最近值得追踪的一篇 AI 论文。论文摘要显示：Building capable embodied agents requires not only multimodal perception and understanding, but also agentic capabilities for reasoning about actions, adapting to evolving situations, and interacting with the physical world. In this report,...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CV",
-        "作者数: 22"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "agent",
-        "agentic",
-        "rag"
-      ],
-      "themes": [
-        "ai",
-        "agent",
-        "agentic"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：Hy-Embodied-VLM-1.0: Efficient Physical-World Agents 是最近值得追踪的一篇 AI 论文。论文摘要显示：Building capable embodied agents requires not only multimodal perception and understanding, but also agentic capabilities for reasoning about actions, adapting to evolving situations, and interacting with the physical world. In this report,...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV\n- 作者数: 22",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "multimodal",
-          "weight": 2.0
-        },
-        {
-          "keyword": "inference",
-          "weight": 1.8
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 238.0,
-      "detail_path": "items/arxiv-hy-embodied-vlm-1-0-efficient-physical-world-agents.html",
-      "first_seen_at": "2026-07-15T01:02:44.659705+00:00",
-      "last_seen_at": "2026-07-15T03:27:47.650125+00:00",
-      "last_curated_at": "2026-07-15T03:27:47.650125+00:00",
-      "last_notified_at": null
-    },
     {
       "id": "arxiv::http://arxiv.org/abs/2607.18171v1",
       "kind": "paper",
@@ -501,8 +400,8 @@
       "personalized_score": 190.0,
       "detail_path": "items/arxiv-meetingtom-evaluating-multimodal-llms-on-theory-of-mind-reasoning-in-multi-party-meetings.html",
       "first_seen_at": "2026-07-22T01:11:24.111960+00:00",
-      "last_seen_at": "2026-07-22T01:11:24.111960+00:00",
-      "last_curated_at": "2026-07-22T01:11:24.111960+00:00",
+      "last_seen_at": "2026-07-22T03:39:06.642313+00:00",
+      "last_curated_at": "2026-07-22T03:39:06.642313+00:00",
       "last_notified_at": null
     },
     {
@@ -589,61 +488,63 @@
       "last_notified_at": null
     },
     {
-      "id": "arxiv::http://arxiv.org/abs/2607.12856v1",
+      "id": "arxiv::http://arxiv.org/abs/2607.15190v1",
       "kind": "paper",
       "source": "arxiv",
       "source_tags": [
         "latest"
       ],
-      "title": "Verifier-Based Reinforcement Fine-Tuning of Reasoning Models for Thermal Energy Storage Control",
-      "html_url": "http://arxiv.org/abs/2607.12856v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.12856v1",
-      "description": "Buildings are expected to shift cooling loads in response to grid conditions. Thermal energy storage (TES) enables this shift, but scheduling it well requires planning hours ahead under storage constraints. Model predictive control (MPC) and reinforcement learning are difficult to scale across buildings. This study instead adapts an open-weight reasoning model through reinforcement learning with verifiable rewards (RLVR). We convert exact offline dynamic-programming (DP) action values into dense rewards for every candidate action. Using only 30 training prompts, reinforcement fine-tuning (RFT) trains the model as an upper-level scheduler that outputs hourly heat-pump setpoints from text-based states and forecasts. Evaluation uses a deliberately simple office-building TES benchmark where exact DP is tractable and the optimum is known. RFT reduces the open-weight model's emissions from 70.5 to 61.2 kg-CO2, close to the DP optimum of 60.8 kg-CO2. GPT-5 nearly matches DP and MPC without task-specific training, while GPT-4o, a non-reasoning LLM, produces higher emissions than the no-storage baseline, so inference-time reasoning appears important. Trace analysis shows that RFT mainly stabilizes observable planning patterns (candidate comparison, look-ahead, and feasibility checking) rather than creating a new strategy. Robustness and generalization tests clarify what transfers: the reinforced planning patterns persist under forecast errors and an unseen TES condition and carry over to a battery task, but its different structure limits the gains. DP-based verifiable rewards offer a practical way to adapt open-weight reasoning models to building storage scheduling. These results motivate higher-fidelity tests of whole-building control and scalable verifiers for city-scale energy management.",
+      "title": "Can We Trust Item Response Theory for AI Evaluation?",
+      "html_url": "http://arxiv.org/abs/2607.15190v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.15190v1",
+      "description": "AI benchmarks increasingly leverage item-level statistical models, particularly item response theory (IRT), to estimate model capabilities, rank systems, select informative examples, and diagnose benchmark quality. However, AI benchmark data often departs from the data regime of human testing, for which standard IRT estimation tools were originally developed: benchmarks typically involve fewer evaluated models, far more items, and capability distributions that may be skewed, clustered, or multimodal. We examine how these regime mismatches challenge the reliability of IRT modeling for AI evaluation. Using item parameters and capability distributions derived from six widely used LLM benchmarks, we simulate response matrices under three common IRT models and compare four estimation tools used in recent benchmark studies: marginal maximum likelihood, Markov chain Monte Carlo, variational inference, and a neural pseudo-Siamese estimator. Across 18,000 simulation conditions, we systematically evaluate computational feasibility, scalability, and the reliability of IRT inferences about model rankings, predicted performance, and item characteristics. Results show that classical estimators can become infeasible in large benchmark settings, whereas scalable estimators can produce unreliable item-level and ranking inferences with small or nonnormally distributed model sets. This study identifies when latent trait models reliably support or risk distorting AI benchmarking claims, and what sample sizes and diagnostics are needed for trustworthy use.",
       "authors": [
-        "Takumi Shioda",
-        "Kohei Terashima",
-        "Tatsuo Nagai"
+        "Han Jiang",
+        "Sunbeom Kwon",
+        "Jinwen Luo",
+        "Ziang Xiao",
+        "Susu Zhang"
       ],
       "categories": [
-        "cs.LG"
+        "cs.AI"
       ],
-      "published_at": "2026-07-14T15:08:39+00:00",
-      "updated_at": "2026-07-14T15:08:39+00:00",
-      "primary_category": "cs.LG",
-      "heuristic_score": 25.1,
-      "summary": "Verifier-Based Reinforcement Fine-Tuning of Reasoning Models for Thermal Energy Storage Control 是最近值得追踪的一篇 AI 论文。论文摘要显示：Buildings are expected to shift cooling loads in response to grid conditions. Thermal energy storage (TES) enables this shift, but scheduling it well requires planning hours ahead under storage constraints. Model predictive control (MPC) an...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "published_at": "2026-07-16T16:44:40+00:00",
+      "updated_at": "2026-07-16T16:44:40+00:00",
+      "primary_category": "cs.AI",
+      "heuristic_score": 20.251,
+      "summary": "Can We Trust Item Response Theory for AI Evaluation? 是最近值得追踪的一篇 AI 论文。论文摘要显示：AI benchmarks increasingly leverage item-level statistical models, particularly item response theory (IRT), to estimate model capabilities, rank systems, select informative examples, and diagnose benchmark quality. However, AI benchmark dat...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
       "brief": "这是一篇值得加入今日论文雷达的最新工作。",
       "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
       "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
       "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
       "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
       "highlights": [
-        "分类: cs.LG",
-        "作者数: 3"
+        "分类: cs.AI",
+        "作者数: 5"
       ],
       "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
       "relevance_score": 10,
       "tags": [
         "ai",
         "llm",
-        "gpt",
-        "rag"
+        "rag",
+        "multimodal"
       ],
       "themes": [
         "ai",
         "llm",
-        "gpt"
+        "rag"
       ],
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：Verifier-Based Reinforcement Fine-Tuning of Reasoning Models for Thermal Energy Storage Control 是最近值得追踪的一篇 AI 论文。论文摘要显示：Buildings are expected to shift cooling loads in response to grid conditions. Thermal energy storage (TES) enables this shift, but scheduling it well requires planning hours ahead under storage constraints. Model predictive control (MPC) an...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.LG\n- 作者数: 3",
+      "summary_markdown": "**摘要**：Can We Trust Item Response Theory for AI Evaluation? 是最近值得追踪的一篇 AI 论文。论文摘要显示：AI benchmarks increasingly leverage item-level statistical models, particularly item response theory (IRT), to estimate model capabilities, rank systems, select informative examples, and diagnose benchmark quality. However, AI benchmark dat...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI\n- 作者数: 5",
       "focus_hits": [
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
         {
           "keyword": "rag",
           "weight": 2.2
+        },
+        {
+          "keyword": "multimodal",
+          "weight": 2.0
         },
         {
           "keyword": "inference",
@@ -654,12 +555,90 @@
           "weight": 1.6
         }
       ],
-      "primary_match": "reasoning",
-      "personalized_score": 188.0,
-      "detail_path": "items/arxiv-verifier-based-reinforcement-fine-tuning-of-reasoning-models-for-thermal-energy-storage-co.html",
-      "first_seen_at": "2026-07-15T01:02:44.659705+00:00",
-      "last_seen_at": "2026-07-15T03:27:47.650125+00:00",
-      "last_curated_at": "2026-07-15T03:27:47.650125+00:00",
+      "primary_match": "rag",
+      "personalized_score": 184.0,
+      "detail_path": "items/arxiv-can-we-trust-item-response-theory-for-ai-evaluation.html",
+      "first_seen_at": "2026-07-17T01:16:14.010392+00:00",
+      "last_seen_at": "2026-07-17T03:32:33.079865+00:00",
+      "last_curated_at": "2026-07-17T03:32:33.079865+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2607.19338v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "CodeRescue: Budget-Calibrated Recovery Routing for Coding Agents",
+      "html_url": "http://arxiv.org/abs/2607.19338v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.19338v1",
+      "description": "Coding agents increasingly operate in executable environments where a failed attempt produces actionable feedback rather than merely an incorrect answer. Existing cost-aware systems typically treat such failures as cascade decisions: try a cheap model first, then escalate hard cases to a stronger and more expensive model. In coding, however, execution feedback can also make further cheap-model recovery worthwhile, raising a budgeted deployment question: when should an agent spend more cheap compute, and when should it escalate? We formulate this post-failure decision as recovery routing over heterogeneous actions and train a supervised router from execution rollouts. To make the same router usable under changing budgets, we add a Conformal Risk Control (CRC) layer that selects a deployment-time cost penalty without retraining and provides marginal expected-cost control under exchangeability. Across held-out failures from five coding benchmarks, cheap recovery and escalation exhibit complementary success patterns. The calibrated frontier improves over fixed actions, prompt-only routers, and a binary cascade baseline; in the main GPT-5.4-nano/GPT-5.4 setting, one CRC-calibrated frontier point exceeds always-escalate solve rate while using 35% of its mean recovery cost. Code is available at https://github.com/Qijia-He/agent-budget-control.",
+      "authors": [
+        "Qijia He",
+        "Jiayi Cheng",
+        "Chenqian Le",
+        "Rui Wang",
+        "Xunmei Liu",
+        "Yixian Chen",
+        "Jie Mei",
+        "Zhihao Wang",
+        "Xupeng Chen",
+        "Yuhuan Chen",
+        "Tao Wang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "published_at": "2026-07-21T17:56:49+00:00",
+      "updated_at": "2026-07-21T17:56:49+00:00",
+      "primary_category": "cs.AI",
+      "heuristic_score": 19.998,
+      "summary": "CodeRescue: Budget-Calibrated Recovery Routing for Coding Agents 是最近值得追踪的一篇 AI 论文。论文摘要显示：Coding agents increasingly operate in executable environments where a failed attempt produces actionable feedback rather than merely an incorrect answer. Existing cost-aware systems typically treat such failures as cascade decisions: try a ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.AI",
+        "作者数: 11"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "agent",
+        "gpt",
+        "model"
+      ],
+      "themes": [
+        "ai",
+        "agent",
+        "gpt"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：CodeRescue: Budget-Calibrated Recovery Routing for Coding Agents 是最近值得追踪的一篇 AI 论文。论文摘要显示：Coding agents increasingly operate in executable environments where a failed attempt produces actionable feedback rather than merely an incorrect answer. Existing cost-aware systems typically treat such failures as cascade decisions: try a ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI\n- 作者数: 11",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "coding",
+          "weight": 2.6
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 180.0,
+      "detail_path": "items/arxiv-coderescue-budget-calibrated-recovery-routing-for-coding-agents.html",
+      "first_seen_at": "2026-07-22T03:39:06.642313+00:00",
+      "last_seen_at": "2026-07-22T03:39:06.642313+00:00",
+      "last_curated_at": "2026-07-22T03:39:06.642313+00:00",
       "last_notified_at": null
     }
   ],
@@ -683,17 +662,17 @@
   ],
   "highlights": [
     {
-      "title": "Hy-Embodied-VLM-1.0: Efficient Physical-World Agents",
-      "source": "arxiv",
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
-    },
-    {
       "title": "FlashRT: Agent Harness for Guiding Agents to Deploy Real-Time Multimodal Applications",
       "source": "arxiv",
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     },
     {
       "title": "An Explicit World Model Based on Data-First Ontology: DaoQL Multimodal Storage Validation and Counterfactual Reasoning Evaluation",
+      "source": "arxiv",
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
+    },
+    {
+      "title": "Debate-on-Graph: Reliable and Adaptive Reasoning of Large Language Model on Uncertain Knowledge Graph",
       "source": "arxiv",
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     }
