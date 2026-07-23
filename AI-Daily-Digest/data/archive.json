@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-23T01:19:45.147744+00:00",
+  "generated_at": "2026-07-23T03:40:55.113963+00:00",
   "items": [
     {
       "id": "github::diegosouzapw/OmniRoute",
@@ -13,7 +13,7 @@
       "full_name": "diegosouzapw/OmniRoute",
       "html_url": "https://github.com/diegosouzapw/OmniRoute",
       "description": "Never stop coding. Free MIT AI gateway: one endpoint, 268+ providers (50+ free), 500+ models — Kimi, Claude, GPT, OpenAI, Gemini, GLM, DeepSeek, MiniMax. Works with Claude Code, Codex, Cursor, OpenCode, Cline & Copilot. Quota-aware auto-fallback, RTK+Caveman compression saves 15-95% tokens, MCP/A2A, Desktop/PWA. Built by 500+ contributors",
-      "stars": 25312,
+      "stars": 25543,
       "stars_today": 0,
       "language": "TypeScript",
       "topics": [],
@@ -27,7 +27,7 @@
       "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
       "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
       "highlights": [
-        "Stars: 25312",
+        "Stars: 25543",
         "语言: TypeScript"
       ],
       "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
@@ -44,7 +44,7 @@
         "copilot"
       ],
       "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：diegosouzapw/OmniRoute 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Never stop coding. Free MIT AI gateway: one endpoint, 268+ providers (50+ free), 500+ models — Kimi, Claude, GPT, OpenAI, Gemini, GLM, DeepSeek, MiniMax. Works with Claude Code, Codex, Cursor, OpenCode, Cline & Copilot. Quota-aware auto-fal...结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：10/10\n\n**亮点**：\n- Stars: 25312\n- 语言: TypeScript",
+      "summary_markdown": "**摘要**：diegosouzapw/OmniRoute 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Never stop coding. Free MIT AI gateway: one endpoint, 268+ providers (50+ free), 500+ models — Kimi, Claude, GPT, OpenAI, Gemini, GLM, DeepSeek, MiniMax. Works with Claude Code, Codex, Cursor, OpenCode, Cline & Copilot. Quota-aware auto-fal...结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：10/10\n\n**亮点**：\n- Stars: 25543\n- 语言: TypeScript",
       "focus_hits": [
         {
           "keyword": "coding",
@@ -52,11 +52,319 @@
         }
       ],
       "primary_match": "coding",
-      "personalized_score": 136.12,
+      "personalized_score": 136.22,
       "detail_path": "items/github-diegosouzapw-omniroute.html",
       "first_seen_at": "2026-07-01T01:58:35.678590+00:00",
-      "last_seen_at": "2026-07-23T01:19:45.147744+00:00",
-      "last_curated_at": "2026-07-23T01:19:45.147744+00:00",
+      "last_seen_at": "2026-07-23T03:40:55.113963+00:00",
+      "last_curated_at": "2026-07-23T03:40:55.113963+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2607.20357v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Look Less, Think Faster: Joint Token-Compute Adaptation for Multimodal LLMs",
+      "html_url": "http://arxiv.org/abs/2607.20357v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.20357v1",
+      "description": "Multimodal Large Language Models (MLLMs) have recently demonstrated strong performance across vision-language tasks. However, their high inference cost, arising from both the large number of input visual tokens and the heavy computation of the large language model (LLM), remains a key barrier to practical deployment. Recent work attempts to reduce the cost by adaptively optimizing individual dimensions, e.g., pruning redundant visual tokens or skipping LLM layers and heads. Nonetheless, prior approaches typically treat these dimensions independently and overlook a fundamental coupling: the available compute resources must be dynamically allocated across all dimensions based on the input content. To bridge the gap, we propose SmartVL, a unified adaptive inference framework that jointly controls vision token number and model compute capability in response to varying input contents and compute budgets. SmartVL introduces a vision-side token controller that dynamically selects informative visual tokens and an LLM-side compute controller that adaptively adjusts LLM computation. Importantly, these controllers are trained to coordinate with each other so that the overall inference cost satisfies a target budget. To allow this joint scheduling, we connect the controllers using a shared budget encoding and leverage a differentiable latency estimator for end-to-end training. This design enables SmartVL to learn cross-stage allocation strategies that adapt to both input complexity and runtime compute constraints. Experiments across multiple MLLM benchmarks demonstrate that, with joint scheduling, SmartVL consistently outperforms prior adaptive methods and achieves superior accuracy-efficiency Pareto frontiers. Project page: https://www.schaterji.io/publications/2026/jointtokencompute.",
+      "authors": [
+        "Pengcheng Wang",
+        "Zhiquan Wang",
+        "Jayoung Lee",
+        "Zhuoyan Xu",
+        "Ran Xu",
+        "Saurabh Bagchi",
+        "Yin Li",
+        "Somali Chaterji"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "published_at": "2026-07-22T16:43:27+00:00",
+      "updated_at": "2026-07-22T16:43:27+00:00",
+      "primary_category": "cs.CV",
+      "heuristic_score": 22.7,
+      "summary": "Look Less, Think Faster: Joint Token-Compute Adaptation for Multimodal LLMs 是最近值得追踪的一篇 AI 论文。论文摘要显示：Multimodal Large Language Models (MLLMs) have recently demonstrated strong performance across vision-language tasks. However, their high inference cost, arising from both the large number of input visual tokens and the heavy computation of ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CV",
+        "作者数: 8"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "llm",
+        "rag",
+        "multimodal"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "rag"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：Look Less, Think Faster: Joint Token-Compute Adaptation for Multimodal LLMs 是最近值得追踪的一篇 AI 论文。论文摘要显示：Multimodal Large Language Models (MLLMs) have recently demonstrated strong performance across vision-language tasks. However, their high inference cost, arising from both the large number of input visual tokens and the heavy computation of ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV\n- 作者数: 8",
+      "focus_hits": [
+        {
+          "keyword": "coding",
+          "weight": 2.6
+        },
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        },
+        {
+          "keyword": "multimodal",
+          "weight": 2.0
+        },
+        {
+          "keyword": "inference",
+          "weight": 1.8
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "coding",
+      "personalized_score": 210.0,
+      "detail_path": "items/arxiv-look-less-think-faster-joint-token-compute-adaptation-for-multimodal-llms.html",
+      "first_seen_at": "2026-07-23T03:40:55.113963+00:00",
+      "last_seen_at": "2026-07-23T03:40:55.113963+00:00",
+      "last_curated_at": "2026-07-23T03:40:55.113963+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2607.20327v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "PyroDash: Cost-Efficient Token-Level Small-Large Language Model Collaborative Inference",
+      "html_url": "http://arxiv.org/abs/2607.20327v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.20327v1",
+      "description": "Large language models (LLMs) provide strong reasoning capabilities but are expensive to serve at scale, whereas small language models (SLMs) are cheaper but less reliable on difficult problems. We introduce PyroDash, a cost-aware framework for token-level SLM-LLM collaborative inference. During generation, the SLM decides whether to request assistance by emitting a control token. A Collaborate Engine then sends the query and partial reasoning trace to a frozen LLM for completion through a single handoff. The policy is internalized in the SLM, requiring neither a separate router, LLM retraining, nor access to LLM logits. PyroDash trains the SLM in three stages: control-token embedding learning, offloading-oriented supervised fine-tuning, and cost-aware alignment with Group Relative Policy Optimization. Its reward balances answer accuracy against inference cost normalized by LLM-only inference. Across five mathematical reasoning benchmarks, PyroDash supports different accuracy-cost operating points. With $λ=0.05$, it achieves 64.04 percent average accuracy, 6.36 percentage points above the LLM-only baseline, while reducing cost by 20.4 percent. With $λ=0.6$, it achieves 54.55 percent accuracy with a 1.90 percent LLM token ratio and 0.012 LLM calls per example, reducing total cost from USD 49.36 to USD 1.78. These results show that learned token-level handoffs can reduce LLM use while preserving strong reasoning performance.",
+      "authors": [
+        "Niqi Lyu",
+        "Pengtao Shi",
+        "Wei Qiu",
+        "Jianlin Zhong",
+        "Sicong Xia",
+        "Jianyao Ma",
+        "Yicheng Ding"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "published_at": "2026-07-22T16:14:26+00:00",
+      "updated_at": "2026-07-22T16:14:26+00:00",
+      "primary_category": "cs.CL",
+      "heuristic_score": 22.506,
+      "summary": "PyroDash: Cost-Efficient Token-Level Small-Large Language Model Collaborative Inference 是最近值得追踪的一篇 AI 论文。论文摘要显示：Large language models (LLMs) provide strong reasoning capabilities but are expensive to serve at scale, whereas small language models (SLMs) are cheaper but less reliable on difficult problems. We introduce PyroDash, a cost-aware framework ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CL",
+        "作者数: 7"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "llm",
+        "rag",
+        "model"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "rag"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：PyroDash: Cost-Efficient Token-Level Small-Large Language Model Collaborative Inference 是最近值得追踪的一篇 AI 论文。论文摘要显示：Large language models (LLMs) provide strong reasoning capabilities but are expensive to serve at scale, whereas small language models (SLMs) are cheaper but less reliable on difficult problems. We introduce PyroDash, a cost-aware framework ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL\n- 作者数: 7",
+      "focus_hits": [
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        },
+        {
+          "keyword": "inference",
+          "weight": 1.8
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "reasoning",
+      "personalized_score": 188.0,
+      "detail_path": "items/arxiv-pyrodash-cost-efficient-token-level-small-large-language-model-collaborative-inference.html",
+      "first_seen_at": "2026-07-23T03:40:55.113963+00:00",
+      "last_seen_at": "2026-07-23T03:40:55.113963+00:00",
+      "last_curated_at": "2026-07-23T03:40:55.113963+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2607.20372v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Notes to Self: Can LLMs Benefit from Experiential Abstractions?",
+      "html_url": "http://arxiv.org/abs/2607.20372v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.20372v1",
+      "description": "Humans distill experience into reusable abstractions, e.g., strategies and cautionary reminders, and apply them to gradually solve problems more effectively. We study whether Large Language Models (LLMs) can similarly benefit from such experiential abstractions. From LLMs' solution traces on the MATH training set, a stronger teacher or the LLMs themselves extract natural-language abstractions into a retrievable library. We explore two usage modes: (1) inference-time retrieval and (2) reinforcement learning (RL) with abstraction-augmented training prompts. Experiential abstractions improve LLM performance on mathematical and logical reasoning benchmarks. Self-extracted abstractions match teacher-extracted ones, and our abstraction usage framework can transfer to other datasets and models. These findings suggest LLMs can extract and apply experiential abstractions much as humans leverage distilled experience.",
+      "authors": [
+        "Chang Liu",
+        "Xinyu Li",
+        "Artur Dubrawski"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "published_at": "2026-07-22T17:02:34+00:00",
+      "updated_at": "2026-07-22T17:02:34+00:00",
+      "primary_category": "cs.CL",
+      "heuristic_score": 21.85,
+      "summary": "Notes to Self: Can LLMs Benefit from Experiential Abstractions? 是最近值得追踪的一篇 AI 论文。论文摘要显示：Humans distill experience into reusable abstractions, e.g., strategies and cautionary reminders, and apply them to gradually solve problems more effectively. We study whether Large Language Models (LLMs) can similarly benefit from such expe...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CL",
+        "作者数: 3"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "llm",
+        "rag",
+        "model"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "rag"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：Notes to Self: Can LLMs Benefit from Experiential Abstractions? 是最近值得追踪的一篇 AI 论文。论文摘要显示：Humans distill experience into reusable abstractions, e.g., strategies and cautionary reminders, and apply them to gradually solve problems more effectively. We study whether Large Language Models (LLMs) can similarly benefit from such expe...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL\n- 作者数: 3",
+      "focus_hits": [
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        },
+        {
+          "keyword": "inference",
+          "weight": 1.8
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "reasoning",
+      "personalized_score": 188.0,
+      "detail_path": "items/arxiv-notes-to-self-can-llms-benefit-from-experiential-abstractions.html",
+      "first_seen_at": "2026-07-23T03:40:55.113963+00:00",
+      "last_seen_at": "2026-07-23T03:40:55.113963+00:00",
+      "last_curated_at": "2026-07-23T03:40:55.113963+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2607.20368v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Self Gradient Forcing: Native Long Video Extrapolation",
+      "html_url": "http://arxiv.org/abs/2607.20368v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.20368v1",
+      "description": "Recent autoregressive video diffusion methods are increasingly built upon Self Forcing, where the student is trained on histories produced by its own rollout rather than ground-truth video contexts. This reduces exposure bias, but the historical key-value cache is still used by future frames only as frozen rollout state. As a result, future losses cannot supervise how earlier generated latents should be written into more useful keys and values for later video-latent generation. We call this the historical context-gradient gap. We propose Self Gradient Forcing (SGF), a two-pass training strategy that restores this missing supervision signal without backpropagating through the full serial rollout. Pass 1 performs a no-gradient autoregressive rollout matching inference and, at a sampled denoising exit step, records both the self-generated context and the noisy latents fed to the model. Pass 2 performs parallel context-gradient reconstruction for the recorded exit step. The generated context is used as stop-gradient clean-latent input, while the model recomputes the context KV representations and future-to-context causal attention. Thus, SGF provides the missing memory-writing supervision within the native autoregressive training objective, using losses on future video latents to train the model to encode context into more effective causal memory. Across extensive long-horizon frame-wise and chunk-wise experiments under different initializations, SGF achieves stronger native long-video extrapolation than Self Forcing, especially in subject identity, background/layout consistency, and temporal stability. Remarkably, using only a 5-second training window, SGF can extrapolate to videos lasting several minutes. Code and models will be released to advance research on autoregressive video generation.",
+      "authors": [
+        "Junhao Zhuang",
+        "Shiyi Zhang",
+        "Yuxuan Bian",
+        "Yaowei Li",
+        "Yawen Luo",
+        "Yijun Liu",
+        "Weiyang Jin",
+        "Songchun Zhang",
+        "Xianglong He",
+        "Xuying Zhang",
+        "Haoran Li",
+        "Haoyang Huang",
+        "Zeyue Xue",
+        "Nan Duan"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "published_at": "2026-07-22T16:59:23+00:00",
+      "updated_at": "2026-07-22T16:59:23+00:00",
+      "primary_category": "cs.CV",
+      "heuristic_score": 15.5,
+      "summary": "Self Gradient Forcing: Native Long Video Extrapolation 是最近值得追踪的一篇 AI 论文。论文摘要显示：Recent autoregressive video diffusion methods are increasingly built upon Self Forcing, where the student is trained on histories produced by its own rollout rather than ground-truth video contexts. This reduces exposure bias, but the histo...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CV",
+        "作者数: 14"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 9,
+      "tags": [
+        "ai",
+        "diffusion",
+        "model",
+        "inference"
+      ],
+      "themes": [
+        "ai",
+        "diffusion",
+        "model"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：Self Gradient Forcing: Native Long Video Extrapolation 是最近值得追踪的一篇 AI 论文。论文摘要显示：Recent autoregressive video diffusion methods are increasingly built upon Self Forcing, where the student is trained on histories produced by its own rollout rather than ground-truth video contexts. This reduces exposure bias, but the histo...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：9/10\n\n**亮点**：\n- 分类: cs.CV\n- 作者数: 14",
+      "focus_hits": [
+        {
+          "keyword": "inference",
+          "weight": 1.8
+        }
+      ],
+      "primary_match": "inference",
+      "personalized_score": 116.0,
+      "detail_path": "items/arxiv-self-gradient-forcing-native-long-video-extrapolation.html",
+      "first_seen_at": "2026-07-23T03:40:55.113963+00:00",
+      "last_seen_at": "2026-07-23T03:40:55.113963+00:00",
+      "last_curated_at": "2026-07-23T03:40:55.113963+00:00",
       "last_notified_at": null
     },
     {
@@ -71,7 +379,7 @@
       "full_name": "tirth8205/code-review-graph",
       "html_url": "https://github.com/tirth8205/code-review-graph",
       "description": "Local-first code intelligence graph for MCP and CLI. Builds a persistent map of your codebase so AI coding tools read only what matters, with benchmarked context reductions on reviews and large-repo workflows.",
-      "stars": 25324,
+      "stars": 25419,
       "stars_today": 0,
       "language": "Python",
       "topics": [],
@@ -85,7 +393,7 @@
       "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
       "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
       "highlights": [
-        "Stars: 25324",
+        "Stars: 25419",
         "语言: Python"
       ],
       "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
@@ -99,7 +407,7 @@
         "benchmark"
       ],
       "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：tirth8205/code-review-graph 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Local-first code intelligence graph for MCP and CLI. Builds a persistent map of your codebase so AI coding tools read only what matters, with benchmarked context reductions on reviews and large-repo workflows.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 25324\n- 语言: Python",
+      "summary_markdown": "**摘要**：tirth8205/code-review-graph 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Local-first code intelligence graph for MCP and CLI. Builds a persistent map of your codebase so AI coding tools read only what matters, with benchmarked context reductions on reviews and large-repo workflows.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 25419\n- 语言: Python",
       "focus_hits": [
         {
           "keyword": "coding",
@@ -111,11 +419,11 @@
         }
       ],
       "primary_match": "coding",
-      "personalized_score": 132.13,
+      "personalized_score": 132.17,
       "detail_path": "items/github-tirth8205-code-review-graph.html",
       "first_seen_at": "2026-07-18T01:07:54.442388+00:00",
-      "last_seen_at": "2026-07-23T01:19:45.147744+00:00",
-      "last_curated_at": "2026-07-23T01:19:45.147744+00:00",
+      "last_seen_at": "2026-07-23T03:40:55.113963+00:00",
+      "last_curated_at": "2026-07-23T03:40:55.113963+00:00",
       "last_notified_at": null
     },
     {
@@ -130,7 +438,7 @@
       "full_name": "koala73/worldmonitor",
       "html_url": "https://github.com/koala73/worldmonitor",
       "description": "Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface",
-      "stars": 69010,
+      "stars": 69355,
       "stars_today": 0,
       "language": "TypeScript",
       "topics": [],
@@ -144,7 +452,7 @@
       "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
       "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
       "highlights": [
-        "Stars: 69010",
+        "Stars: 69355",
         "语言: TypeScript"
       ],
       "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
@@ -156,14 +464,14 @@
         "ai"
       ],
       "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：koala73/worldmonitor 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 69010\n- 语言: TypeScript",
+      "summary_markdown": "**摘要**：koala73/worldmonitor 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 69355\n- 语言: TypeScript",
       "focus_hits": [],
       "primary_match": "",
       "personalized_score": 90.0,
       "detail_path": "items/github-koala73-worldmonitor.html",
       "first_seen_at": "2026-06-20T01:56:23.408549+00:00",
-      "last_seen_at": "2026-07-23T01:19:45.147744+00:00",
-      "last_curated_at": "2026-07-23T01:19:45.147744+00:00",
+      "last_seen_at": "2026-07-23T03:40:55.113963+00:00",
+      "last_curated_at": "2026-07-23T03:40:55.113963+00:00",
       "last_notified_at": null
     },
     {
@@ -178,7 +486,7 @@
       "full_name": "jamiepine/voicebox",
       "html_url": "https://github.com/jamiepine/voicebox",
       "description": "The open-source AI voice studio. Clone, dictate, create.",
-      "stars": 45782,
+      "stars": 45879,
       "stars_today": 0,
       "language": "TypeScript",
       "topics": [],
@@ -192,7 +500,7 @@
       "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
       "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
       "highlights": [
-        "Stars: 45782",
+        "Stars: 45879",
         "语言: TypeScript"
       ],
       "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
@@ -204,7 +512,7 @@
         "ai"
       ],
       "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：jamiepine/voicebox 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：The open-source AI voice studio. Clone, dictate, create.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 45782\n- 语言: TypeScript",
+      "summary_markdown": "**摘要**：jamiepine/voicebox 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：The open-source AI voice studio. Clone, dictate, create.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 45879\n- 语言: TypeScript",
       "focus_hits": [
         {
           "keyword": "voice",
@@ -212,11 +520,11 @@
         }
       ],
       "primary_match": "voice",
-      "personalized_score": 102.31,
+      "personalized_score": 102.35,
       "detail_path": "items/github-jamiepine-voicebox.html",
       "first_seen_at": "2026-06-21T02:07:38.309775+00:00",
-      "last_seen_at": "2026-07-23T01:19:45.147744+00:00",
-      "last_curated_at": "2026-07-23T01:19:45.147744+00:00",
+      "last_seen_at": "2026-07-23T03:40:55.113963+00:00",
+      "last_curated_at": "2026-07-23T03:40:55.113963+00:00",
       "last_notified_at": null
     },
     {
@@ -231,7 +539,7 @@
       "full_name": "rohitg00/ai-engineering-from-scratch",
       "html_url": "https://github.com/rohitg00/ai-engineering-from-scratch",
       "description": "Learn it. Build it. Ship it for others.",
-      "stars": 42265,
+      "stars": 42365,
       "stars_today": 0,
       "language": "Python",
       "topics": [],
@@ -245,7 +553,7 @@
       "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
       "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
       "highlights": [
-        "Stars: 42265",
+        "Stars: 42365",
         "语言: Python"
       ],
       "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
@@ -257,14 +565,14 @@
         "开源工具"
       ],
       "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：rohitg00/ai-engineering-from-scratch 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Learn it. Build it. Ship it for others.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 42265\n- 语言: Python",
+      "summary_markdown": "**摘要**：rohitg00/ai-engineering-from-scratch 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Learn it. Build it. Ship it for others.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 42365\n- 语言: Python",
       "focus_hits": [],
       "primary_match": "",
-      "personalized_score": 86.91,
+      "personalized_score": 86.95,
       "detail_path": "items/github-rohitg00-ai-engineering-from-scratch.html",
       "first_seen_at": "2026-07-19T01:12:05.740675+00:00",
-      "last_seen_at": "2026-07-23T01:19:45.147744+00:00",
-      "last_curated_at": "2026-07-23T01:19:45.147744+00:00",
+      "last_seen_at": "2026-07-23T03:40:55.113963+00:00",
+      "last_curated_at": "2026-07-23T03:40:55.113963+00:00",
       "last_notified_at": null
     },
     {
@@ -279,7 +587,7 @@
       "full_name": "ayghri/i-have-adhd",
       "html_url": "https://github.com/ayghri/i-have-adhd",
       "description": "A skill for your coding agent to stop it from burying the answer. ADHD-friendly output.",
-      "stars": 8298,
+      "stars": 8459,
       "stars_today": 0,
       "language": "Python",
       "topics": [],
@@ -293,7 +601,7 @@
       "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
       "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
       "highlights": [
-        "Stars: 8298",
+        "Stars: 8459",
         "语言: Python"
       ],
       "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
@@ -307,7 +615,7 @@
         "coding agent"
       ],
       "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：ayghri/i-have-adhd 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：A skill for your coding agent to stop it from burying the answer. ADHD-friendly output.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 8298\n- 语言: Python",
+      "summary_markdown": "**摘要**：ayghri/i-have-adhd 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：A skill for your coding agent to stop it from burying the answer. ADHD-friendly output.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 8459\n- 语言: Python",
       "focus_hits": [
         {
           "keyword": "agent",
@@ -319,11 +627,11 @@
         }
       ],
       "primary_match": "agent",
-      "personalized_score": 129.32,
+      "personalized_score": 129.38,
       "detail_path": "items/github-ayghri-i-have-adhd.html",
       "first_seen_at": "2026-07-22T01:11:24.111960+00:00",
-      "last_seen_at": "2026-07-23T01:19:45.147744+00:00",
-      "last_curated_at": "2026-07-23T01:19:45.147744+00:00",
+      "last_seen_at": "2026-07-23T03:40:55.113963+00:00",
+      "last_curated_at": "2026-07-23T03:40:55.113963+00:00",
       "last_notified_at": null
     },
     {
@@ -338,7 +646,7 @@
       "full_name": "ComposioHQ/awesome-claude-skills",
       "html_url": "https://github.com/ComposioHQ/awesome-claude-skills",
       "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
-      "stars": 68788,
+      "stars": 68872,
       "stars_today": 0,
       "language": "Python",
       "topics": [],
@@ -352,7 +660,7 @@
       "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
       "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
       "highlights": [
-        "Stars: 68788",
+        "Stars: 68872",
         "语言: Python"
       ],
       "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
@@ -364,14 +672,14 @@
         "ai"
       ],
       "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：ComposioHQ/awesome-claude-skills 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 68788\n- 语言: Python",
+      "summary_markdown": "**摘要**：ComposioHQ/awesome-claude-skills 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 68872\n- 语言: Python",
       "focus_hits": [],
       "primary_match": "",
       "personalized_score": 90.0,
       "detail_path": "items/github-composiohq-awesome-claude-skills.html",
       "first_seen_at": "2026-07-23T01:19:45.147744+00:00",
-      "last_seen_at": "2026-07-23T01:19:45.147744+00:00",
-      "last_curated_at": "2026-07-23T01:19:45.147744+00:00",
+      "last_seen_at": "2026-07-23T03:40:55.113963+00:00",
+      "last_curated_at": "2026-07-23T03:40:55.113963+00:00",
       "last_notified_at": null
     },
     {
@@ -386,7 +694,7 @@
       "full_name": "shiyu-coder/Kronos",
       "html_url": "https://github.com/shiyu-coder/Kronos",
       "description": "Kronos: A Foundation Model for the Language of Financial Markets",
-      "stars": 32611,
+      "stars": 32656,
       "stars_today": 0,
       "language": "Python",
       "topics": [],
@@ -400,7 +708,7 @@
       "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
       "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
       "highlights": [
-        "Stars: 32611",
+        "Stars: 32656",
         "语言: Python"
       ],
       "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
@@ -412,14 +720,147 @@
         "model"
       ],
       "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：shiyu-coder/Kronos 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Kronos: A Foundation Model for the Language of Financial Markets结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 32611\n- 语言: Python",
+      "summary_markdown": "**摘要**：shiyu-coder/Kronos 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Kronos: A Foundation Model for the Language of Financial Markets结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 32656\n- 语言: Python",
       "focus_hits": [],
       "primary_match": "",
-      "personalized_score": 83.04,
+      "personalized_score": 83.06,
       "detail_path": "items/github-shiyu-coder-kronos.html",
       "first_seen_at": "2026-07-23T01:19:45.147744+00:00",
-      "last_seen_at": "2026-07-23T01:19:45.147744+00:00",
-      "last_curated_at": "2026-07-23T01:19:45.147744+00:00",
+      "last_seen_at": "2026-07-23T03:40:55.113963+00:00",
+      "last_curated_at": "2026-07-23T03:40:55.113963+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2607.20321v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Label-Free Finite-Volume-Residual Training of Attention Graph Neural Networks for Coupled Thermo-Fluid Fields",
+      "html_url": "http://arxiv.org/abs/2607.20321v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.20321v1",
+      "description": "Neural surrogates are widely used in scientific machine learning for fast prediction of three-dimensional (3D) thermo-fluid fields. However, generating training data using conventional numerical solvers often incurs substantial computational and storage costs. We propose to train an attention graph neural network by minimizing the finite-volume method (FVM) residuals of the governing equations. These residuals are evaluated directly on the mesh, requiring no labeled data. We evaluate the trained surrogates against computational fluid dynamics (CFD) references and a data-supervised baseline across four scenarios. On the two steady-state benchmarks, the FVM-loss model achieves an all-field normalized root-mean-square error (nRMSE) of 2.3-2.8%. It demonstrates close agreement with the CFD references, including the buoyancy-energy coupling. On the two parametric transient cases, the FVM-loss model outperforms the supervised baseline in terms of accuracy, while avoiding the data-generation cost entirely. These results indicate that the FVM loss can provide a practical training signal for neural surrogates and reduce the model development cost.",
+      "authors": [
+        "Tianyu Li",
+        "Zhiwei Cao",
+        "Qingang Zhang",
+        "Ruihang Wang",
+        "Binyang Song",
+        "Yonggang Wen"
+      ],
+      "categories": [
+        "physics.flu-dyn",
+        "cs.LG"
+      ],
+      "published_at": "2026-07-22T16:07:09+00:00",
+      "updated_at": "2026-07-22T16:07:09+00:00",
+      "primary_category": "physics.flu-dyn",
+      "heuristic_score": 13.445,
+      "summary": "Label-Free Finite-Volume-Residual Training of Attention Graph Neural Networks for Coupled Thermo-Fluid Fields 是最近值得追踪的一篇 AI 论文。论文摘要显示：Neural surrogates are widely used in scientific machine learning for fast prediction of three-dimensional (3D) thermo-fluid fields. However, generating training data using conventional numerical solvers often incurs substantial computationa...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: physics.flu-dyn, cs.LG",
+        "作者数: 6"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 7,
+      "tags": [
+        "ai",
+        "rag",
+        "model",
+        "benchmark"
+      ],
+      "themes": [
+        "ai",
+        "rag",
+        "model"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：Label-Free Finite-Volume-Residual Training of Attention Graph Neural Networks for Coupled Thermo-Fluid Fields 是最近值得追踪的一篇 AI 论文。论文摘要显示：Neural surrogates are widely used in scientific machine learning for fast prediction of three-dimensional (3D) thermo-fluid fields. However, generating training data using conventional numerical solvers often incurs substantial computationa...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：7/10\n\n**亮点**：\n- 分类: physics.flu-dyn, cs.LG\n- 作者数: 6",
+      "focus_hits": [
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "rag",
+      "personalized_score": 108.0,
+      "detail_path": "items/arxiv-label-free-finite-volume-residual-training-of-attention-graph-neural-networks-for-coupled-.html",
+      "first_seen_at": "2026-07-23T03:40:55.113963+00:00",
+      "last_seen_at": "2026-07-23T03:40:55.113963+00:00",
+      "last_curated_at": "2026-07-23T03:40:55.113963+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2607.20389v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "PercepCap: Video Captioner with Structured Spatio-Temporal Perception",
+      "html_url": "http://arxiv.org/abs/2607.20389v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.20389v1",
+      "description": "Video captioning requires fine-grained spatio-temporal understanding of videos, including spatial perception of where objects are located and temporal perception of when events occur. Existing MLLMs usually generate captions directly from video inputs without exposing the perceptual evidence behind descriptions. As a result, mistakes in spatiotemporal perception are only observed in the final caption, making it difficult to identify the underlying perceptual errors directly. To address these issues, we present PercepCap, a perception-aware video captioning framework that makes perceptual evidence explicit before producing the final caption. Specifically, PercepCap follows a perceive-describe generation chain, where the model first produces a spatiotemporal perception trace comprising object trajectories and temporal events, and then generates the final caption conditioned on the perceived evidence. To support this, we design a two-stage training strategy. Perceive-then-Describe Supervised Fine-tuning adapts the model from caption-only generation to the proposed perceive-describe chain, while Perception-Grounded Reinforcement Learning optimizes perception trace and caption quality with joint rewards over perception chain and the final caption. To support our two-stage training, we introduce Caption-Anchored Perception Data Construction. This pipeline builds the SFT and RL training data by first generating a caption-only description, extracting the objects and events it mentions, and grounding them back in the video with boxes and timestamps. This yields caption-aligned perception data that provides solid training ground truth, ensuring that the explicit perception trace and final caption refer to the same objects and events. Across direct caption and caption-to-QA evaluation, PercepCap consistently improves upon the Qwen3-VL baseline and demonstrates leading caption quality.",
+      "authors": [
+        "Yifan Xu",
+        "Zihao Wang",
+        "Zhixiao Wang",
+        "Jiaming Zhang",
+        "Yichun Yang",
+        "Desen Meng",
+        "Yuanxing Zhang",
+        "Pengfei Wan",
+        "Limin Wang"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "published_at": "2026-07-22T17:17:33+00:00",
+      "updated_at": "2026-07-22T17:17:33+00:00",
+      "primary_category": "cs.CV",
+      "heuristic_score": 13.1,
+      "summary": "PercepCap: Video Captioner with Structured Spatio-Temporal Perception 是最近值得追踪的一篇 AI 论文。论文摘要显示：Video captioning requires fine-grained spatio-temporal understanding of videos, including spatial perception of where objects are located and temporal perception of when events occur. Existing MLLMs usually generate captions directly from v...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CV",
+        "作者数: 9"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 7,
+      "tags": [
+        "ai",
+        "llm",
+        "model",
+        "training"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "model"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：PercepCap: Video Captioner with Structured Spatio-Temporal Perception 是最近值得追踪的一篇 AI 论文。论文摘要显示：Video captioning requires fine-grained spatio-temporal understanding of videos, including spatial perception of where objects are located and temporal perception of when events occur. Existing MLLMs usually generate captions directly from v...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：7/10\n\n**亮点**：\n- 分类: cs.CV\n- 作者数: 9",
+      "focus_hits": [],
+      "primary_match": "",
+      "personalized_score": 78.0,
+      "detail_path": "items/arxiv-percepcap-video-captioner-with-structured-spatio-temporal-perception.html",
+      "first_seen_at": "2026-07-23T03:40:55.113963+00:00",
+      "last_seen_at": "2026-07-23T03:40:55.113963+00:00",
+      "last_curated_at": "2026-07-23T03:40:55.113963+00:00",
       "last_notified_at": null
     },
     {
@@ -12769,346 +13210,13 @@
       "last_seen_at": "2026-06-30T01:53:26.317470+00:00",
       "last_curated_at": "2026-06-30T01:53:26.317470+00:00",
       "last_notified_at": null
-    },
-    {
-      "id": "github::opendatalab/MinerU",
-      "kind": "repo",
-      "source": "github",
-      "source_tags": [
-        "trending"
-      ],
-      "name": "MinerU",
-      "title": "opendatalab/MinerU",
-      "full_name": "opendatalab/MinerU",
-      "html_url": "https://github.com/opendatalab/MinerU",
-      "description": "Transforms complex documents like PDFs and Office docs into LLM-ready markdown/JSON for your Agentic workflows.",
-      "stars": 71819,
-      "stars_today": 0,
-      "language": "Python",
-      "topics": [],
-      "created_at": "",
-      "updated_at": "",
-      "heuristic_score": 17.8,
-      "summary": "opendatalab/MinerU 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Transforms complex documents like PDFs and Office docs into LLM-ready markdown/JSON for your Agentic workflows.结合关键词命中和热度信号，它适合加入今日重点观察列表。",
-      "brief": "这是一个值得快速关注的开源 AI 项目。",
-      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
-      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
-      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
-      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
-      "highlights": [
-        "Stars: 71819",
-        "语言: Python"
-      ],
-      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
-      "relevance_score": 10,
-      "tags": [
-        "llm",
-        "agent",
-        "agentic"
-      ],
-      "themes": [
-        "llm",
-        "agent",
-        "agentic"
-      ],
-      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：opendatalab/MinerU 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Transforms complex documents like PDFs and Office docs into LLM-ready markdown/JSON for your Agentic workflows.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：10/10\n\n**亮点**：\n- Stars: 71819\n- 语言: Python",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 150.0,
-      "detail_path": "items/github-opendatalab-mineru.html",
-      "first_seen_at": "2026-06-26T01:55:10.900745+00:00",
-      "last_seen_at": "2026-06-29T04:56:58.573543+00:00",
-      "last_curated_at": "2026-06-29T04:56:58.573543+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "github::DeusData/codebase-memory-mcp",
-      "kind": "repo",
-      "source": "github",
-      "source_tags": [
-        "trending"
-      ],
-      "name": "codebase-memory-mcp",
-      "title": "DeusData/codebase-memory-mcp",
-      "full_name": "DeusData/codebase-memory-mcp",
-      "html_url": "https://github.com/DeusData/codebase-memory-mcp",
-      "description": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.",
-      "stars": 20113,
-      "stars_today": 0,
-      "language": "C",
-      "topics": [],
-      "created_at": "",
-      "updated_at": "",
-      "heuristic_score": 12.6,
-      "summary": "DeusData/codebase-memory-mcp 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.结合关键词命中和热度信号，它适合加入今日重点观察列表。",
-      "brief": "这是一个值得快速关注的开源 AI 项目。",
-      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
-      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
-      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
-      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
-      "highlights": [
-        "Stars: 20113",
-        "语言: C"
-      ],
-      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
-      "relevance_score": 7,
-      "tags": [
-        "rag"
-      ],
-      "themes": [
-        "rag"
-      ],
-      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：DeusData/codebase-memory-mcp 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 20113\n- 语言: C",
-      "focus_hits": [
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        }
-      ],
-      "primary_match": "rag",
-      "personalized_score": 100.05,
-      "detail_path": "items/github-deusdata-codebase-memory-mcp.html",
-      "first_seen_at": "2026-06-18T02:06:26.542323+00:00",
-      "last_seen_at": "2026-06-29T04:56:58.573543+00:00",
-      "last_curated_at": "2026-06-29T04:56:58.573543+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "github::JCodesMore/ai-website-cloner-template",
-      "kind": "repo",
-      "source": "github",
-      "source_tags": [
-        "trending"
-      ],
-      "name": "ai-website-cloner-template",
-      "title": "JCodesMore/ai-website-cloner-template",
-      "full_name": "JCodesMore/ai-website-cloner-template",
-      "html_url": "https://github.com/JCodesMore/ai-website-cloner-template",
-      "description": "Clone any website with one command using AI coding agents",
-      "stars": 22233,
-      "stars_today": 0,
-      "language": "TypeScript",
-      "topics": [],
-      "created_at": "",
-      "updated_at": "",
-      "heuristic_score": 15.2,
-      "summary": "JCodesMore/ai-website-cloner-template 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Clone any website with one command using AI coding agents结合关键词命中和热度信号，它适合加入今日重点观察列表。",
-      "brief": "这是一个值得快速关注的开源 AI 项目。",
-      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
-      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
-      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
-      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
-      "highlights": [
-        "Stars: 22233",
-        "语言: TypeScript"
-      ],
-      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
-      "relevance_score": 8,
-      "tags": [
-        "ai",
-        "agent",
-        "coding agent"
-      ],
-      "themes": [
-        "ai",
-        "agent",
-        "coding agent"
-      ],
-      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：JCodesMore/ai-website-cloner-template 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Clone any website with one command using AI coding agents结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 22233\n- 语言: TypeScript",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "coding",
-          "weight": 2.6
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 144.89,
-      "detail_path": "items/github-jcodesmore-ai-website-cloner-template.html",
-      "first_seen_at": "2026-06-23T01:51:16.824042+00:00",
-      "last_seen_at": "2026-06-28T04:46:45.814529+00:00",
-      "last_curated_at": "2026-06-28T04:46:45.814529+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "github::Anil-matcha/Open-Generative-AI",
-      "kind": "repo",
-      "source": "github",
-      "source_tags": [
-        "trending"
-      ],
-      "name": "Open-Generative-AI",
-      "title": "Anil-matcha/Open-Generative-AI",
-      "full_name": "Anil-matcha/Open-Generative-AI",
-      "html_url": "https://github.com/Anil-matcha/Open-Generative-AI",
-      "description": "Unrestricted Open-source alternative to AI video platforms — Free AI image & video generation studio with 200+ models (Flux, Midjourney, Kling, Sora, Veo). No content filters. Self-hosted, MIT licensed.",
-      "stars": 21454,
-      "stars_today": 0,
-      "language": "JavaScript",
-      "topics": [],
-      "created_at": "",
-      "updated_at": "",
-      "heuristic_score": 15.2,
-      "summary": "Anil-matcha/Open-Generative-AI 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Unrestricted Open-source alternative to AI video platforms — Free AI image & video generation studio with 200+ models (Flux, Midjourney, Kling, Sora, Veo). No content filters. Self-hosted, MIT licensed.结合关键词命中和热度信号，它适合加入今日重点观察列表。",
-      "brief": "这是一个值得快速关注的开源 AI 项目。",
-      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
-      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
-      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
-      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
-      "highlights": [
-        "Stars: 21454",
-        "语言: JavaScript"
-      ],
-      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
-      "relevance_score": 8,
-      "tags": [
-        "ai",
-        "model"
-      ],
-      "themes": [
-        "ai",
-        "model"
-      ],
-      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：Anil-matcha/Open-Generative-AI 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Unrestricted Open-source alternative to AI video platforms — Free AI image & video generation studio with 200+ models (Flux, Midjourney, Kling, Sora, Veo). No content filters. Self-hosted, MIT licensed.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 21454\n- 语言: JavaScript",
-      "focus_hits": [],
-      "primary_match": "",
-      "personalized_score": 88.58,
-      "detail_path": "items/github-anil-matcha-open-generative-ai.html",
-      "first_seen_at": "2026-06-28T01:57:59.098733+00:00",
-      "last_seen_at": "2026-06-28T04:46:45.814529+00:00",
-      "last_curated_at": "2026-06-28T04:46:45.814529+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "github::google-labs-code/design.md",
-      "kind": "repo",
-      "source": "github",
-      "source_tags": [
-        "trending"
-      ],
-      "name": "design.md",
-      "title": "google-labs-code/design.md",
-      "full_name": "google-labs-code/design.md",
-      "html_url": "https://github.com/google-labs-code/design.md",
-      "description": "A format specification for describing a visual identity to coding agents. DESIGN.md gives agents a persistent, structured understanding of a design system.",
-      "stars": 22440,
-      "stars_today": 0,
-      "language": "TypeScript",
-      "topics": [],
-      "created_at": "",
-      "updated_at": "",
-      "heuristic_score": 12.6,
-      "summary": "google-labs-code/design.md 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：A format specification for describing a visual identity to coding agents. DESIGN.md gives agents a persistent, structured understanding of a design system.结合关键词命中和热度信号，它适合加入今日重点观察列表。",
-      "brief": "这是一个值得快速关注的开源 AI 项目。",
-      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
-      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
-      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
-      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
-      "highlights": [
-        "Stars: 22440",
-        "语言: TypeScript"
-      ],
-      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
-      "relevance_score": 7,
-      "tags": [
-        "agent",
-        "coding agent"
-      ],
-      "themes": [
-        "agent",
-        "coding agent"
-      ],
-      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：google-labs-code/design.md 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：A format specification for describing a visual identity to coding agents. DESIGN.md gives agents a persistent, structured understanding of a design system.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 22440\n- 语言: TypeScript",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "coding",
-          "weight": 2.6
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 134.98,
-      "detail_path": "items/github-google-labs-code-design-md.html",
-      "first_seen_at": "2026-06-25T01:52:56.619968+00:00",
-      "last_seen_at": "2026-06-28T04:46:45.814529+00:00",
-      "last_curated_at": "2026-06-28T04:46:45.814529+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "github::luongnv89/claude-howto",
-      "kind": "repo",
-      "source": "github",
-      "source_tags": [
-        "trending"
-      ],
-      "name": "claude-howto",
-      "title": "luongnv89/claude-howto",
-      "full_name": "luongnv89/claude-howto",
-      "html_url": "https://github.com/luongnv89/claude-howto",
-      "description": "A visual, example-driven guide to Claude Code — from basic concepts to advanced agents, with copy-paste templates that bring immediate value.",
-      "stars": 38678,
-      "stars_today": 0,
-      "language": "Python",
-      "topics": [],
-      "created_at": "",
-      "updated_at": "",
-      "heuristic_score": 12.6,
-      "summary": "luongnv89/claude-howto 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：A visual, example-driven guide to Claude Code — from basic concepts to advanced agents, with copy-paste templates that bring immediate value.结合关键词命中和热度信号，它适合加入今日重点观察列表。",
-      "brief": "这是一个值得快速关注的开源 AI 项目。",
-      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
-      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
-      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
-      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
-      "highlights": [
-        "Stars: 38678",
-        "语言: Python"
-      ],
-      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
-      "relevance_score": 7,
-      "tags": [
-        "agent"
-      ],
-      "themes": [
-        "agent"
-      ],
-      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：luongnv89/claude-howto 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：A visual, example-driven guide to Claude Code — from basic concepts to advanced agents, with copy-paste templates that bring immediate value.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 38678\n- 语言: Python",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 115.47,
-      "detail_path": "items/github-luongnv89-claude-howto.html",
-      "first_seen_at": "2026-06-28T01:57:59.098733+00:00",
-      "last_seen_at": "2026-06-28T04:46:45.814529+00:00",
-      "last_curated_at": "2026-06-28T04:46:45.814529+00:00",
-      "last_notified_at": null
     }
   ],
   "digests": [
     {
       "date": "2026-07-23",
       "title": "AI Daily Digest · 2026-07-23",
-      "generated_at": "2026-07-23T09:18:31.378145+08:00",
+      "generated_at": "2026-07-23T11:38:57.179742+08:00",
       "notified_at": null,
       "repo_ids": [
         "github::diegosouzapw/OmniRoute",
@@ -13120,7 +13228,14 @@
         "github::rohitg00/ai-engineering-from-scratch",
         "github::shiyu-coder/Kronos"
       ],
-      "paper_ids": [],
+      "paper_ids": [
+        "arxiv::http://arxiv.org/abs/2607.20357v1",
+        "arxiv::http://arxiv.org/abs/2607.20327v1",
+        "arxiv::http://arxiv.org/abs/2607.20372v1",
+        "arxiv::http://arxiv.org/abs/2607.20368v1",
+        "arxiv::http://arxiv.org/abs/2607.20321v1",
+        "arxiv::http://arxiv.org/abs/2607.20389v1"
+      ],
       "digest_json": "data/digests/2026-07-23.json",
       "digest_markdown": "data/digests/2026-07-23.md"
     },
@@ -15502,8 +15617,8 @@
     "weekly": {
       "label": "周报",
       "window_days": 7,
-      "generated_at": "2026-07-23T09:18:31.378145+08:00",
-      "count": 72,
+      "generated_at": "2026-07-23T11:38:57.179742+08:00",
+      "count": 69,
       "summary": "近 7 天里，最集中的主题是 ai、llm、agent。",
       "top_items": [
         {
@@ -15669,6 +15784,89 @@
           "first_seen_at": "2026-07-21T01:13:27.692100+00:00",
           "last_seen_at": "2026-07-21T03:38:52.341180+00:00",
           "last_curated_at": "2026-07-21T03:38:52.341180+00:00",
+          "last_notified_at": null
+        },
+        {
+          "id": "arxiv::http://arxiv.org/abs/2607.20357v1",
+          "kind": "paper",
+          "source": "arxiv",
+          "source_tags": [
+            "latest"
+          ],
+          "title": "Look Less, Think Faster: Joint Token-Compute Adaptation for Multimodal LLMs",
+          "html_url": "http://arxiv.org/abs/2607.20357v1",
+          "pdf_url": "https://arxiv.org/pdf/2607.20357v1",
+          "description": "Multimodal Large Language Models (MLLMs) have recently demonstrated strong performance across vision-language tasks. However, their high inference cost, arising from both the large number of input visual tokens and the heavy computation of the large language model (LLM), remains a key barrier to practical deployment. Recent work attempts to reduce the cost by adaptively optimizing individual dimensions, e.g., pruning redundant visual tokens or skipping LLM layers and heads. Nonetheless, prior approaches typically treat these dimensions independently and overlook a fundamental coupling: the available compute resources must be dynamically allocated across all dimensions based on the input content. To bridge the gap, we propose SmartVL, a unified adaptive inference framework that jointly controls vision token number and model compute capability in response to varying input contents and compute budgets. SmartVL introduces a vision-side token controller that dynamically selects informative visual tokens and an LLM-side compute controller that adaptively adjusts LLM computation. Importantly, these controllers are trained to coordinate with each other so that the overall inference cost satisfies a target budget. To allow this joint scheduling, we connect the controllers using a shared budget encoding and leverage a differentiable latency estimator for end-to-end training. This design enables SmartVL to learn cross-stage allocation strategies that adapt to both input complexity and runtime compute constraints. Experiments across multiple MLLM benchmarks demonstrate that, with joint scheduling, SmartVL consistently outperforms prior adaptive methods and achieves superior accuracy-efficiency Pareto frontiers. Project page: https://www.schaterji.io/publications/2026/jointtokencompute.",
+          "authors": [
+            "Pengcheng Wang",
+            "Zhiquan Wang",
+            "Jayoung Lee",
+            "Zhuoyan Xu",
+            "Ran Xu",
+            "Saurabh Bagchi",
+            "Yin Li",
+            "Somali Chaterji"
+          ],
+          "categories": [
+            "cs.CV"
+          ],
+          "published_at": "2026-07-22T16:43:27+00:00",
+          "updated_at": "2026-07-22T16:43:27+00:00",
+          "primary_category": "cs.CV",
+          "heuristic_score": 22.7,
+          "summary": "Look Less, Think Faster: Joint Token-Compute Adaptation for Multimodal LLMs 是最近值得追踪的一篇 AI 论文。论文摘要显示：Multimodal Large Language Models (MLLMs) have recently demonstrated strong performance across vision-language tasks. However, their high inference cost, arising from both the large number of input visual tokens and the heavy computation of ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+          "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+          "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+          "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+          "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+          "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+          "highlights": [
+            "分类: cs.CV",
+            "作者数: 8"
+          ],
+          "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+          "relevance_score": 10,
+          "tags": [
+            "ai",
+            "llm",
+            "rag",
+            "multimodal"
+          ],
+          "themes": [
+            "ai",
+            "llm",
+            "rag"
+          ],
+          "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+          "summary_markdown": "**摘要**：Look Less, Think Faster: Joint Token-Compute Adaptation for Multimodal LLMs 是最近值得追踪的一篇 AI 论文。论文摘要显示：Multimodal Large Language Models (MLLMs) have recently demonstrated strong performance across vision-language tasks. However, their high inference cost, arising from both the large number of input visual tokens and the heavy computation of ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV\n- 作者数: 8",
+          "focus_hits": [
+            {
+              "keyword": "coding",
+              "weight": 2.6
+            },
+            {
+              "keyword": "rag",
+              "weight": 2.2
+            },
+            {
+              "keyword": "multimodal",
+              "weight": 2.0
+            },
+            {
+              "keyword": "inference",
+              "weight": 1.8
+            },
+            {
+              "keyword": "benchmark",
+              "weight": 1.6
+            }
+          ],
+          "primary_match": "coding",
+          "personalized_score": 210.0,
+          "detail_path": "items/arxiv-look-less-think-faster-joint-token-compute-adaptation-for-multimodal-llms.html",
+          "first_seen_at": "2026-07-23T03:40:55.113963+00:00",
+          "last_seen_at": "2026-07-23T03:40:55.113963+00:00",
+          "last_curated_at": "2026-07-23T03:40:55.113963+00:00",
           "last_notified_at": null
         },
         {
@@ -15906,62 +16104,57 @@
           "last_notified_at": null
         },
         {
-          "id": "arxiv::http://arxiv.org/abs/2607.15278v1",
+          "id": "arxiv::http://arxiv.org/abs/2607.20327v1",
           "kind": "paper",
           "source": "arxiv",
           "source_tags": [
             "latest"
           ],
-          "title": "Hierarchical Denoising For Multi-Step Visual Reasoning",
-          "html_url": "http://arxiv.org/abs/2607.15278v1",
-          "pdf_url": "https://arxiv.org/pdf/2607.15278v1",
-          "description": "Video models are evolving into vision foundation models, yet they still lack human-like multi-step reasoning. Streaming autoregressive diffusion models are efficient but limited in reasoning, while bidirectional diffusion enables global revision with high inference costs due to dense frame-level denoising. Both paradigms struggle to achieve logical consistency and low-latency streaming for complex reasoning tasks. We propose HDR (Hierarchical Denoising for Visual Reasoning), a unified framework that integrates hierarchical latents into causal video generation for multi-step reasoning. HDR organizes video latents into a tree-structured hierarchy, enabling coarse-to-fine reasoning before streaming output. Coarse denoising layers preserve uncertain hypotheses for global planning, while finer layers progressively refine them into concrete visual states. A sparse hierarchical attention pattern (SHAP) further reduces temporal attention costs. We introduce a level-stratified multi-step video reasoning benchmark with out-of-distribution cases, covering six tasks: maze navigation, Tower of Hanoi, one-line drawing, sliding puzzle, Sokoban, and water pouring. Compared with streaming autoregressive diffusion baselines, HDR improves success from 34.22 to 60.29 (76.2% relative gain) and increases average progress from 76.00 to 89.56, demonstrating more consistent reasoning trajectories. HDR maintains low-latency streaming at 0.70 seconds per latent, achieving 54.2 times faster inference than bidirectional diffusion. It also retains 82.9% of full-data performance with only 2% training data, compared with 52.0% for bidirectional diffusion. Real-world robot experiments further demonstrate HDR's potential for physical interaction and world modeling. Project demo: https://hierarchical-diffusion-reasoning.github.io/.",
+          "title": "PyroDash: Cost-Efficient Token-Level Small-Large Language Model Collaborative Inference",
+          "html_url": "http://arxiv.org/abs/2607.20327v1",
+          "pdf_url": "https://arxiv.org/pdf/2607.20327v1",
+          "description": "Large language models (LLMs) provide strong reasoning capabilities but are expensive to serve at scale, whereas small language models (SLMs) are cheaper but less reliable on difficult problems. We introduce PyroDash, a cost-aware framework for token-level SLM-LLM collaborative inference. During generation, the SLM decides whether to request assistance by emitting a control token. A Collaborate Engine then sends the query and partial reasoning trace to a frozen LLM for completion through a single handoff. The policy is internalized in the SLM, requiring neither a separate router, LLM retraining, nor access to LLM logits. PyroDash trains the SLM in three stages: control-token embedding learning, offloading-oriented supervised fine-tuning, and cost-aware alignment with Group Relative Policy Optimization. Its reward balances answer accuracy against inference cost normalized by LLM-only inference. Across five mathematical reasoning benchmarks, PyroDash supports different accuracy-cost operating points. With $λ=0.05$, it achieves 64.04 percent average accuracy, 6.36 percentage points above the LLM-only baseline, while reducing cost by 20.4 percent. With $λ=0.6$, it achieves 54.55 percent accuracy with a 1.90 percent LLM token ratio and 0.012 LLM calls per example, reducing total cost from USD 49.36 to USD 1.78. These results show that learned token-level handoffs can reduce LLM use while preserving strong reasoning performance.",
           "authors": [
-            "Zezhong Qian",
-            "Xiaowei Chi",
-            "Chak-Wing Mak",
-            "Tianze Zhou",
-            "Ruibin Yuan",
-            "Yuhan Rui",
-            "Hengzhe Sun",
-            "Zhuoqun Wu",
-            "Yuming Li",
-            "Siyuan Qian",
-            "Sirui Han",
-            "Shanghang Zhang"
+            "Niqi Lyu",
+            "Pengtao Shi",
+            "Wei Qiu",
+            "Jianlin Zhong",
+            "Sicong Xia",
+            "Jianyao Ma",
+            "Yicheng Ding"
           ],
           "categories": [
-            "cs.CV"
+            "cs.CL"
           ],
-          "published_at": "2026-07-16T17:59:57+00:00",
-          "updated_at": "2026-07-16T17:59:57+00:00",
-          "primary_category": "cs.CV",
-          "heuristic_score": 22.7,
-          "summary": "Hierarchical Denoising For Multi-Step Visual Reasoning 是最近值得追踪的一篇 AI 论文。论文摘要显示：Video models are evolving into vision foundation models, yet they still lack human-like multi-step reasoning. Streaming autoregressive diffusion models are efficient but limited in reasoning, while bidirectional diffusion enables global rev...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+          "published_at": "2026-07-22T16:14:26+00:00",
+          "updated_at": "2026-07-22T16:14:26+00:00",
+          "primary_category": "cs.CL",
+          "heuristic_score": 22.506,
+          "summary": "PyroDash: Cost-Efficient Token-Level Small-Large Language Model Collaborative Inference 是最近值得追踪的一篇 AI 论文。论文摘要显示：Large language models (LLMs) provide strong reasoning capabilities but are expensive to serve at scale, whereas small language models (SLMs) are cheaper but less reliable on difficult problems. We introduce PyroDash, a cost-aware framework ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
           "brief": "这是一篇值得加入今日论文雷达的最新工作。",
           "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
           "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
           "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
           "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
           "highlights": [
-            "分类: cs.CV",
-            "作者数: 12"
+            "分类: cs.CL",
+            "作者数: 7"
           ],
           "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
           "relevance_score": 10,
           "tags": [
             "ai",
+            "llm",
             "rag",
-            "diffusion",
             "model"
           ],
           "themes": [
             "ai",
-            "rag",
-            "diffusion"
+            "llm",
+            "rag"
           ],
           "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-          "summary_markdown": "**摘要**：Hierarchical Denoising For Multi-Step Visual Reasoning 是最近值得追踪的一篇 AI 论文。论文摘要显示：Video models are evolving into vision foundation models, yet they still lack human-like multi-step reasoning. Streaming autoregressive diffusion models are efficient but limited in reasoning, while bidirectional diffusion enables global rev...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV\n- 作者数: 12",
+          "summary_markdown": "**摘要**：PyroDash: Cost-Efficient Token-Level Small-Large Language Model Collaborative Inference 是最近值得追踪的一篇 AI 论文。论文摘要显示：Large language models (LLMs) provide strong reasoning capabilities but are expensive to serve at scale, whereas small language models (SLMs) are cheaper but less reliable on difficult problems. We introduce PyroDash, a cost-aware framework ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL\n- 作者数: 7",
           "focus_hits": [
             {
               "keyword": "reasoning",
@@ -15982,46 +16175,44 @@
           ],
           "primary_match": "reasoning",
           "personalized_score": 188.0,
-          "detail_path": "items/arxiv-hierarchical-denoising-for-multi-step-visual-reasoning.html",
-          "first_seen_at": "2026-07-17T03:32:33.079865+00:00",
-          "last_seen_at": "2026-07-18T03:25:42.432990+00:00",
-          "last_curated_at": "2026-07-18T03:25:42.432990+00:00",
+          "detail_path": "items/arxiv-pyrodash-cost-efficient-token-level-small-large-language-model-collaborative-inference.html",
+          "first_seen_at": "2026-07-23T03:40:55.113963+00:00",
+          "last_seen_at": "2026-07-23T03:40:55.113963+00:00",
+          "last_curated_at": "2026-07-23T03:40:55.113963+00:00",
           "last_notified_at": null
         },
         {
-          "id": "arxiv::http://arxiv.org/abs/2607.15190v1",
+          "id": "arxiv::http://arxiv.org/abs/2607.20372v1",
           "kind": "paper",
           "source": "arxiv",
           "source_tags": [
             "latest"
           ],
-          "title": "Can We Trust Item Response Theory for AI Evaluation?",
-          "html_url": "http://arxiv.org/abs/2607.15190v1",
-          "pdf_url": "https://arxiv.org/pdf/2607.15190v1",
-          "description": "AI benchmarks increasingly leverage item-level statistical models, particularly item response theory (IRT), to estimate model capabilities, rank systems, select informative examples, and diagnose benchmark quality. However, AI benchmark data often departs from the data regime of human testing, for which standard IRT estimation tools were originally developed: benchmarks typically involve fewer evaluated models, far more items, and capability distributions that may be skewed, clustered, or multimodal. We examine how these regime mismatches challenge the reliability of IRT modeling for AI evaluation. Using item parameters and capability distributions derived from six widely used LLM benchmarks, we simulate response matrices under three common IRT models and compare four estimation tools used in recent benchmark studies: marginal maximum likelihood, Markov chain Monte Carlo, variational inference, and a neural pseudo-Siamese estimator. Across 18,000 simulation conditions, we systematically evaluate computational feasibility, scalability, and the reliability of IRT inferences about model rankings, predicted performance, and item characteristics. Results show that classical estimators can become infeasible in large benchmark settings, whereas scalable estimators can produce unreliable item-level and ranking inferences with small or nonnormally distributed model sets. This study identifies when latent trait models reliably support or risk distorting AI benchmarking claims, and what sample sizes and diagnostics are needed for trustworthy use.",
+          "title": "Notes to Self: Can LLMs Benefit from Experiential Abstractions?",
+          "html_url": "http://arxiv.org/abs/2607.20372v1",
+          "pdf_url": "https://arxiv.org/pdf/2607.20372v1",
+          "description": "Humans distill experience into reusable abstractions, e.g., strategies and cautionary reminders, and apply them to gradually solve problems more effectively. We study whether Large Language Models (LLMs) can similarly benefit from such experiential abstractions. From LLMs' solution traces on the MATH training set, a stronger teacher or the LLMs themselves extract natural-language abstractions into a retrievable library. We explore two usage modes: (1) inference-time retrieval and (2) reinforcement learning (RL) with abstraction-augmented training prompts. Experiential abstractions improve LLM performance on mathematical and logical reasoning benchmarks. Self-extracted abstractions match teacher-extracted ones, and our abstraction usage framework can transfer to other datasets and models. These findings suggest LLMs can extract and apply experiential abstractions much as humans leverage distilled experience.",
           "authors": [
-            "Han Jiang",
-            "Sunbeom Kwon",
-            "Jinwen Luo",
-            "Ziang Xiao",
-            "Susu Zhang"
+            "Chang Liu",
+            "Xinyu Li",
+            "Artur Dubrawski"
           ],
           "categories": [
-            "cs.AI"
+            "cs.CL"
           ],
-          "published_at": "2026-07-16T16:44:40+00:00",
-          "updated_at": "2026-07-16T16:44:40+00:00",
-          "primary_category": "cs.AI",
-          "heuristic_score": 20.251,
-          "summary": "Can We Trust Item Response Theory for AI Evaluation? 是最近值得追踪的一篇 AI 论文。论文摘要显示：AI benchmarks increasingly leverage item-level statistical models, particularly item response theory (IRT), to estimate model capabilities, rank systems, select informative examples, and diagnose benchmark quality. However, AI benchmark dat...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+          "published_at": "2026-07-22T17:02:34+00:00",
+          "updated_at": "2026-07-22T17:02:34+00:00",
+          "primary_category": "cs.CL",
+          "heuristic_score": 21.85,
+          "summary": "Notes to Self: Can LLMs Benefit from Experiential Abstractions? 是最近值得追踪的一篇 AI 论文。论文摘要显示：Humans distill experience into reusable abstractions, e.g., strategies and cautionary reminders, and apply them to gradually solve problems more effectively. We study whether Large Language Models (LLMs) can similarly benefit from such expe...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
           "brief": "这是一篇值得加入今日论文雷达的最新工作。",
           "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
           "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
           "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
           "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
           "highlights": [
-            "分类: cs.AI",
-            "作者数: 5"
+            "分类: cs.CL",
+            "作者数: 3"
           ],
           "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
           "relevance_score": 10,
@@ -16029,7 +16220,7 @@
             "ai",
             "llm",
             "rag",
-            "multimodal"
+            "model"
           ],
           "themes": [
             "ai",
@@ -16037,15 +16228,15 @@
             "rag"
           ],
           "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-          "summary_markdown": "**摘要**：Can We Trust Item Response Theory for AI Evaluation? 是最近值得追踪的一篇 AI 论文。论文摘要显示：AI benchmarks increasingly leverage item-level statistical models, particularly item response theory (IRT), to estimate model capabilities, rank systems, select informative examples, and diagnose benchmark quality. However, AI benchmark dat...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI\n- 作者数: 5",
+          "summary_markdown": "**摘要**：Notes to Self: Can LLMs Benefit from Experiential Abstractions? 是最近值得追踪的一篇 AI 论文。论文摘要显示：Humans distill experience into reusable abstractions, e.g., strategies and cautionary reminders, and apply them to gradually solve problems more effectively. We study whether Large Language Models (LLMs) can similarly benefit from such expe...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL\n- 作者数: 3",
           "focus_hits": [
+            {
+              "keyword": "reasoning",
+              "weight": 2.4
+            },
             {
               "keyword": "rag",
               "weight": 2.2
-            },
-            {
-              "keyword": "multimodal",
-              "weight": 2.0
             },
             {
               "keyword": "inference",
@@ -16056,90 +16247,12 @@
               "weight": 1.6
             }
           ],
-          "primary_match": "rag",
-          "personalized_score": 184.0,
-          "detail_path": "items/arxiv-can-we-trust-item-response-theory-for-ai-evaluation.html",
-          "first_seen_at": "2026-07-17T01:16:14.010392+00:00",
-          "last_seen_at": "2026-07-17T03:32:33.079865+00:00",
-          "last_curated_at": "2026-07-17T03:32:33.079865+00:00",
-          "last_notified_at": null
-        },
-        {
-          "id": "arxiv::http://arxiv.org/abs/2607.19338v1",
-          "kind": "paper",
-          "source": "arxiv",
-          "source_tags": [
-            "latest"
-          ],
-          "title": "CodeRescue: Budget-Calibrated Recovery Routing for Coding Agents",
-          "html_url": "http://arxiv.org/abs/2607.19338v1",
-          "pdf_url": "https://arxiv.org/pdf/2607.19338v1",
-          "description": "Coding agents increasingly operate in executable environments where a failed attempt produces actionable feedback rather than merely an incorrect answer. Existing cost-aware systems typically treat such failures as cascade decisions: try a cheap model first, then escalate hard cases to a stronger and more expensive model. In coding, however, execution feedback can also make further cheap-model recovery worthwhile, raising a budgeted deployment question: when should an agent spend more cheap compute, and when should it escalate? We formulate this post-failure decision as recovery routing over heterogeneous actions and train a supervised router from execution rollouts. To make the same router usable under changing budgets, we add a Conformal Risk Control (CRC) layer that selects a deployment-time cost penalty without retraining and provides marginal expected-cost control under exchangeability. Across held-out failures from five coding benchmarks, cheap recovery and escalation exhibit complementary success patterns. The calibrated frontier improves over fixed actions, prompt-only routers, and a binary cascade baseline; in the main GPT-5.4-nano/GPT-5.4 setting, one CRC-calibrated frontier point exceeds always-escalate solve rate while using 35% of its mean recovery cost. Code is available at https://github.com/Qijia-He/agent-budget-control.",
-          "authors": [
-            "Qijia He",
-            "Jiayi Cheng",
-            "Chenqian Le",
-            "Rui Wang",
-            "Xunmei Liu",
-            "Yixian Chen",
-            "Jie Mei",
-            "Zhihao Wang",
-            "Xupeng Chen",
-            "Yuhuan Chen",
-            "Tao Wang"
-          ],
-          "categories": [
-            "cs.AI"
-          ],
-          "published_at": "2026-07-21T17:56:49+00:00",
-          "updated_at": "2026-07-21T17:56:49+00:00",
-          "primary_category": "cs.AI",
-          "heuristic_score": 19.998,
-          "summary": "CodeRescue: Budget-Calibrated Recovery Routing for Coding Agents 是最近值得追踪的一篇 AI 论文。论文摘要显示：Coding agents increasingly operate in executable environments where a failed attempt produces actionable feedback rather than merely an incorrect answer. Existing cost-aware systems typically treat such failures as cascade decisions: try a ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-          "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-          "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-          "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-          "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-          "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-          "highlights": [
-            "分类: cs.AI",
-            "作者数: 11"
-          ],
-          "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-          "relevance_score": 10,
-          "tags": [
-            "ai",
-            "agent",
-            "gpt",
-            "model"
-          ],
-          "themes": [
-            "ai",
-            "agent",
-            "gpt"
-          ],
-          "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-          "summary_markdown": "**摘要**：CodeRescue: Budget-Calibrated Recovery Routing for Coding Agents 是最近值得追踪的一篇 AI 论文。论文摘要显示：Coding agents increasingly operate in executable environments where a failed attempt produces actionable feedback rather than merely an incorrect answer. Existing cost-aware systems typically treat such failures as cascade decisions: try a ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI\n- 作者数: 11",
-          "focus_hits": [
-            {
-              "keyword": "agent",
-              "weight": 3.0
-            },
-            {
-              "keyword": "coding",
-              "weight": 2.6
-            },
-            {
-              "keyword": "benchmark",
-              "weight": 1.6
-            }
-          ],
-          "primary_match": "agent",
-          "personalized_score": 180.0,
-          "detail_path": "items/arxiv-coderescue-budget-calibrated-recovery-routing-for-coding-agents.html",
-          "first_seen_at": "2026-07-22T03:39:06.642313+00:00",
-          "last_seen_at": "2026-07-22T03:39:06.642313+00:00",
-          "last_curated_at": "2026-07-22T03:39:06.642313+00:00",
+          "primary_match": "reasoning",
+          "personalized_score": 188.0,
+          "detail_path": "items/arxiv-notes-to-self-can-llms-benefit-from-experiential-abstractions.html",
+          "first_seen_at": "2026-07-23T03:40:55.113963+00:00",
+          "last_seen_at": "2026-07-23T03:40:55.113963+00:00",
+          "last_curated_at": "2026-07-23T03:40:55.113963+00:00",
           "last_notified_at": null
         }
       ],
@@ -16150,14 +16263,10 @@
         },
         {
           "theme": "llm",
-          "count": 5
+          "count": 7
         },
         {
           "theme": "agent",
-          "count": 2
-        },
-        {
-          "theme": "rag",
           "count": 1
         }
       ],
@@ -16173,7 +16282,7 @@
           "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
         },
         {
-          "title": "Debate-on-Graph: Reliable and Adaptive Reasoning of Large Language Model on Uncertain Knowledge Graph",
+          "title": "Look Less, Think Faster: Joint Token-Compute Adaptation for Multimodal LLMs",
           "source": "arxiv",
           "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
         }
@@ -16182,7 +16291,7 @@
     "monthly": {
       "label": "月报",
       "window_days": 30,
-      "generated_at": "2026-07-23T09:18:31.378145+08:00",
+      "generated_at": "2026-07-23T11:38:57.179742+08:00",
       "count": 200,
       "summary": "近 30 天里，最集中的主题是 ai、llm、agent。",
       "top_items": [
@@ -16616,6 +16725,89 @@
           "last_notified_at": null
         },
         {
+          "id": "arxiv::http://arxiv.org/abs/2607.20357v1",
+          "kind": "paper",
+          "source": "arxiv",
+          "source_tags": [
+            "latest"
+          ],
+          "title": "Look Less, Think Faster: Joint Token-Compute Adaptation for Multimodal LLMs",
+          "html_url": "http://arxiv.org/abs/2607.20357v1",
+          "pdf_url": "https://arxiv.org/pdf/2607.20357v1",
+          "description": "Multimodal Large Language Models (MLLMs) have recently demonstrated strong performance across vision-language tasks. However, their high inference cost, arising from both the large number of input visual tokens and the heavy computation of the large language model (LLM), remains a key barrier to practical deployment. Recent work attempts to reduce the cost by adaptively optimizing individual dimensions, e.g., pruning redundant visual tokens or skipping LLM layers and heads. Nonetheless, prior approaches typically treat these dimensions independently and overlook a fundamental coupling: the available compute resources must be dynamically allocated across all dimensions based on the input content. To bridge the gap, we propose SmartVL, a unified adaptive inference framework that jointly controls vision token number and model compute capability in response to varying input contents and compute budgets. SmartVL introduces a vision-side token controller that dynamically selects informative visual tokens and an LLM-side compute controller that adaptively adjusts LLM computation. Importantly, these controllers are trained to coordinate with each other so that the overall inference cost satisfies a target budget. To allow this joint scheduling, we connect the controllers using a shared budget encoding and leverage a differentiable latency estimator for end-to-end training. This design enables SmartVL to learn cross-stage allocation strategies that adapt to both input complexity and runtime compute constraints. Experiments across multiple MLLM benchmarks demonstrate that, with joint scheduling, SmartVL consistently outperforms prior adaptive methods and achieves superior accuracy-efficiency Pareto frontiers. Project page: https://www.schaterji.io/publications/2026/jointtokencompute.",
+          "authors": [
+            "Pengcheng Wang",
+            "Zhiquan Wang",
+            "Jayoung Lee",
+            "Zhuoyan Xu",
+            "Ran Xu",
+            "Saurabh Bagchi",
+            "Yin Li",
+            "Somali Chaterji"
+          ],
+          "categories": [
+            "cs.CV"
+          ],
+          "published_at": "2026-07-22T16:43:27+00:00",
+          "updated_at": "2026-07-22T16:43:27+00:00",
+          "primary_category": "cs.CV",
+          "heuristic_score": 22.7,
+          "summary": "Look Less, Think Faster: Joint Token-Compute Adaptation for Multimodal LLMs 是最近值得追踪的一篇 AI 论文。论文摘要显示：Multimodal Large Language Models (MLLMs) have recently demonstrated strong performance across vision-language tasks. However, their high inference cost, arising from both the large number of input visual tokens and the heavy computation of ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+          "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+          "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+          "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+          "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+          "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+          "highlights": [
+            "分类: cs.CV",
+            "作者数: 8"
+          ],
+          "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+          "relevance_score": 10,
+          "tags": [
+            "ai",
+            "llm",
+            "rag",
+            "multimodal"
+          ],
+          "themes": [
+            "ai",
+            "llm",
+            "rag"
+          ],
+          "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+          "summary_markdown": "**摘要**：Look Less, Think Faster: Joint Token-Compute Adaptation for Multimodal LLMs 是最近值得追踪的一篇 AI 论文。论文摘要显示：Multimodal Large Language Models (MLLMs) have recently demonstrated strong performance across vision-language tasks. However, their high inference cost, arising from both the large number of input visual tokens and the heavy computation of ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV\n- 作者数: 8",
+          "focus_hits": [
+            {
+              "keyword": "coding",
+              "weight": 2.6
+            },
+            {
+              "keyword": "rag",
+              "weight": 2.2
+            },
+            {
+              "keyword": "multimodal",
+              "weight": 2.0
+            },
+            {
+              "keyword": "inference",
+              "weight": 1.8
+            },
+            {
+              "keyword": "benchmark",
+              "weight": 1.6
+            }
+          ],
+          "primary_match": "coding",
+          "personalized_score": 210.0,
+          "detail_path": "items/arxiv-look-less-think-faster-joint-token-compute-adaptation-for-multimodal-llms.html",
+          "first_seen_at": "2026-07-23T03:40:55.113963+00:00",
+          "last_seen_at": "2026-07-23T03:40:55.113963+00:00",
+          "last_curated_at": "2026-07-23T03:40:55.113963+00:00",
+          "last_notified_at": null
+        },
+        {
           "id": "arxiv::http://arxiv.org/abs/2607.07708v1",
           "kind": "paper",
           "source": "arxiv",
@@ -16795,82 +16987,6 @@
           "first_seen_at": "2026-07-21T01:13:27.692100+00:00",
           "last_seen_at": "2026-07-21T03:38:52.341180+00:00",
           "last_curated_at": "2026-07-21T03:38:52.341180+00:00",
-          "last_notified_at": null
-        },
-        {
-          "id": "arxiv::http://arxiv.org/abs/2607.02479v1",
-          "kind": "paper",
-          "source": "arxiv",
-          "source_tags": [
-            "latest"
-          ],
-          "title": "EAGLE-360: Embodied Active Global-to-Local Exploration in 360$^\\circ$",
-          "html_url": "http://arxiv.org/abs/2607.02479v1",
-          "pdf_url": "https://arxiv.org/pdf/2607.02479v1",
-          "description": "While Multimodal Large Language Models (MLLMs) have demonstrated exceptional capabilities in standard visual understanding, adapting them for active visual search in 360$^\\circ$ panoramic environments exposes fundamental limitations. Specifically, standard MLLMs struggle to effectively model inherent panoramic properties, such as severe polar distortion and continuous cylindrical topologies, which significantly degrades target detection accuracy. Consequently, existing panoramic search methods attempt to compensate by relying heavily on fragmented local viewpoints. Burdened by rigid initialization and a lack of global panoramic priors, these approaches suffer from myopic, inefficient exploration and struggle with robust error recovery when targets are out of view. To overcome these challenges, we propose EAGLE-360, a novel Embodied Active Global-to-Local Exploration framework. Rather than performing exhaustive local searches, EAGLE-360 leverages global priors to establish an initial holistic perspective, iteratively reasoning and progressively narrowing the search space. Architecturally, we adapt RoPE Rolling, a coordinate-shifting positional encoding mechanism, to seamlessly model the continuous topologies of panoramas. To facilitate this paradigm, we construct the large-scale EAGLE-360 dataset, comprising 14,000+ 4K panoramas and 70,000+ rounds of high-quality VQA dialogues. By employing a training pipeline that integrates Supervised Fine-Tuning (SFT) with Group Relative Policy Optimization (GRPO), we effectively elicit complex spatial reasoning and tool-calling capabilities. Extensive experiments demonstrate that EAGLE-360 establishes a new state-of-the-art for 360$^\\circ$ visual search, achieving nearly an 8-fold increase in accuracy over the base model while significantly enhancing exploration efficiency.",
-          "authors": [
-            "Jingtao Xu",
-            "Zizhuo Lin",
-            "Jianwen Sun",
-            "Yi Yang",
-            "Yawei Luo"
-          ],
-          "categories": [
-            "cs.CV"
-          ],
-          "published_at": "2026-07-02T17:47:27+00:00",
-          "updated_at": "2026-07-02T17:47:27+00:00",
-          "primary_category": "cs.CV",
-          "heuristic_score": 20.3,
-          "summary": "EAGLE-360: Embodied Active Global-to-Local Exploration in 360$^\\circ$ 是最近值得追踪的一篇 AI 论文。论文摘要显示：While Multimodal Large Language Models (MLLMs) have demonstrated exceptional capabilities in standard visual understanding, adapting them for active visual search in 360$^\\circ$ panoramic environments exposes fundamental limitations. Specif...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-          "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-          "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-          "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-          "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-          "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-          "highlights": [
-            "分类: cs.CV",
-            "作者数: 5"
-          ],
-          "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-          "relevance_score": 10,
-          "tags": [
-            "ai",
-            "llm",
-            "rag",
-            "multimodal"
-          ],
-          "themes": [
-            "ai",
-            "llm",
-            "rag"
-          ],
-          "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-          "summary_markdown": "**摘要**：EAGLE-360: Embodied Active Global-to-Local Exploration in 360$^\\circ$ 是最近值得追踪的一篇 AI 论文。论文摘要显示：While Multimodal Large Language Models (MLLMs) have demonstrated exceptional capabilities in standard visual understanding, adapting them for active visual search in 360$^\\circ$ panoramic environments exposes fundamental limitations. Specif...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV\n- 作者数: 5",
-          "focus_hits": [
-            {
-              "keyword": "coding",
-              "weight": 2.6
-            },
-            {
-              "keyword": "reasoning",
-              "weight": 2.4
-            },
-            {
-              "keyword": "rag",
-              "weight": 2.2
-            },
-            {
-              "keyword": "multimodal",
-              "weight": 2.0
-            }
-          ],
-          "primary_match": "coding",
-          "personalized_score": 200.0,
-          "detail_path": "items/arxiv-eagle-360-embodied-active-global-to-local-exploration-in-360-circ.html",
-          "first_seen_at": "2026-07-04T01:22:08.469484+00:00",
-          "last_seen_at": "2026-07-04T03:57:53.517145+00:00",
-          "last_curated_at": "2026-07-04T03:57:53.517145+00:00",
           "last_notified_at": null
         }
       ],
