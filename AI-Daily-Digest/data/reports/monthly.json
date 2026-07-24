@@ -1,7 +1,7 @@
 {
   "label": "月报",
   "window_days": 30,
-  "generated_at": "2026-07-23T11:38:57.179742+08:00",
+  "generated_at": "2026-07-24T09:14:39.735314+08:00",
   "count": 200,
   "summary": "近 30 天里，最集中的主题是 ai、llm、agent。",
   "top_items": [
@@ -625,38 +625,42 @@
       "last_notified_at": null
     },
     {
-      "id": "arxiv::http://arxiv.org/abs/2607.17266v1",
+      "id": "arxiv::http://arxiv.org/abs/2607.21482v1",
       "kind": "paper",
       "source": "arxiv",
       "source_tags": [
         "latest"
       ],
-      "title": "Debate-on-Graph: Reliable and Adaptive Reasoning of Large Language Model on Uncertain Knowledge Graph",
-      "html_url": "http://arxiv.org/abs/2607.17266v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.17266v1",
-      "description": "Large language models (LLMs) have demonstrated remarkable capabilities in natural language processing. However, LLMs often suffer from hallucinations and lack of relevant knowledge when dealing with question answering (QA) tasks. To mitigate these issues, knowledge graphs (KGs) have been utilized to enhance LLM reasoning. Nevertheless, KGs often contain noise and errors, while existing KG-enhanced LLM approaches are generally unable to identify and filter such noisy and erroneous content, which can instead amplify hallucinations and pose challenges for reliable reasoning. Uncertain knowledge graphs (UKGs), which associate each triple with a confidence score to quantify uncertainty, offer a promising direction to address this challenge. Compared with prior work, we investigate how to leverage UKGs to support LLMs for QA. We propose Debate-on-Graph (DoG), a new framework that enables LLMs and UKGs to collaborate adaptively for reliable reasoning. Specifically, we first design a heuristic search algorithm tailored for UKGs to extract reliable and question-relevant subgraphs, thereby reducing noise and errors in retrieved knowledge. We then introduce a Multi-Agent Debate mechanism, which yields reliable answers through adaptive adversarial debates, aiming to fully exploit the knowledge in UKGs while preserving the reliability of retrieved evidence. Extensive experiments on four benchmark QA datasets show that DoG achieves state-of-the-art performance over existing LLM reasoning methods and KG-based baselines, while enabling reliable and adaptive reasoning. Our code is available at https://github.com/seucoin/Debate-on-Graph.",
+      "title": "Agentic coding without the cloud: evaluating open-weight large language models on longitudinal data preparation tasks",
+      "html_url": "http://arxiv.org/abs/2607.21482v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.21482v1",
+      "description": "Large language models (LLMs) and agents are now widely used tools in code development, with data typically sent to third-party cloud-based models. Their adoption in research using personal data is constrained by governance requirements that typically prohibit data transmission to external services. Locally deployable open-weight models offer an alternative since sensitive data never leave the local environment. We introduce an open-source framework for evaluating the efficacy of AI agents powered by open-weight LLMs on one of the most persistent bottlenecks in research on longitudinal population studies: data preparation. The framework comprises: a curated ground-truth dataset (cleaning scripts preparing six sweeps of data from a British cohort study), task definitions encompassing tasks such as category harmonization and multi-wave merging, and automated routines for evaluating the LLM-produced R code and outputted data. We benchmark LLMs across the (consumer grade) deployment spectrum to assess their efficacy in 20 data preparation tasks (creation of 102 variables). Current state-of-the-art, 31-35B parameter models almost saturated our benchmark (\"average task completion\" up to 87.9%). The performance of open-weight LLMs running on consumer-grade hardware shows promise of a viable path toward AI-assisted data preparation in governance-restricted research settings. Our framework is publicly available at: https://github.com/UCL-ARC/RRBench.",
       "authors": [
-        "Peiji Yu",
-        "Xin Chen",
-        "Tianxing Wu"
+        "Mack Nixon",
+        "Liam Wright",
+        "Yevgeniya Kovalchuk",
+        "Alison Fang-Wei Wu",
+        "Martin Danka",
+        "Andy Boyd",
+        "David Bann"
       ],
       "categories": [
-        "cs.CL",
-        "cs.AI"
+        "cs.AI",
+        "cs.CL"
       ],
-      "published_at": "2026-07-19T14:17:37+00:00",
-      "updated_at": "2026-07-19T14:17:37+00:00",
-      "primary_category": "cs.CL",
-      "heuristic_score": 20.3,
-      "summary": "Debate-on-Graph: Reliable and Adaptive Reasoning of Large Language Model on Uncertain Knowledge Graph 是最近值得追踪的一篇 AI 论文。论文摘要显示：Large language models (LLMs) have demonstrated remarkable capabilities in natural language processing. However, LLMs often suffer from hallucinations and lack of relevant knowledge when dealing with question answering (QA) tasks. To mitigat...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "published_at": "2026-07-23T16:23:42+00:00",
+      "updated_at": "2026-07-23T16:23:42+00:00",
+      "primary_category": "cs.AI",
+      "heuristic_score": 22.53,
+      "summary": "Agentic coding without the cloud: evaluating open-weight large language models on longitudinal data preparation tasks 是最近值得追踪的一篇 AI 论文。论文摘要显示：Large language models (LLMs) and agents are now widely used tools in code development, with data typically sent to third-party cloud-based models. Their adoption in research using personal data is constrained by governance requirements that...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
       "brief": "这是一篇值得加入今日论文雷达的最新工作。",
       "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
       "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
       "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
       "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
       "highlights": [
-        "分类: cs.CL, cs.AI",
-        "作者数: 3"
+        "分类: cs.AI, cs.CL",
+        "作者数: 7"
       ],
       "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
       "relevance_score": 10,
@@ -672,15 +676,15 @@
         "agent"
       ],
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：Debate-on-Graph: Reliable and Adaptive Reasoning of Large Language Model on Uncertain Knowledge Graph 是最近值得追踪的一篇 AI 论文。论文摘要显示：Large language models (LLMs) have demonstrated remarkable capabilities in natural language processing. However, LLMs often suffer from hallucinations and lack of relevant knowledge when dealing with question answering (QA) tasks. To mitigat...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL, cs.AI\n- 作者数: 3",
+      "summary_markdown": "**摘要**：Agentic coding without the cloud: evaluating open-weight large language models on longitudinal data preparation tasks 是最近值得追踪的一篇 AI 论文。论文摘要显示：Large language models (LLMs) and agents are now widely used tools in code development, with data typically sent to third-party cloud-based models. Their adoption in research using personal data is constrained by governance requirements that...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI, cs.CL\n- 作者数: 7",
       "focus_hits": [
         {
           "keyword": "agent",
           "weight": 3.0
         },
         {
-          "keyword": "reasoning",
-          "weight": 2.4
+          "keyword": "coding",
+          "weight": 2.6
         },
         {
           "keyword": "rag",
@@ -692,11 +696,11 @@
         }
       ],
       "primary_match": "agent",
-      "personalized_score": 200.0,
-      "detail_path": "items/arxiv-debate-on-graph-reliable-and-adaptive-reasoning-of-large-language-model-on-uncertain-knowl.html",
-      "first_seen_at": "2026-07-21T01:13:27.692100+00:00",
-      "last_seen_at": "2026-07-21T03:38:52.341180+00:00",
-      "last_curated_at": "2026-07-21T03:38:52.341180+00:00",
+      "personalized_score": 202.0,
+      "detail_path": "items/arxiv-agentic-coding-without-the-cloud-evaluating-open-weight-large-language-models-on-longitudi.html",
+      "first_seen_at": "2026-07-24T01:14:45.234691+00:00",
+      "last_seen_at": "2026-07-24T01:14:45.234691+00:00",
+      "last_curated_at": "2026-07-24T01:14:45.234691+00:00",
       "last_notified_at": null
     }
   ],
