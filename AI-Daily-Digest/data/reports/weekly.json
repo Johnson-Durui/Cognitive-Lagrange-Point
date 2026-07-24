@@ -1,10 +1,100 @@
 {
   "label": "周报",
   "window_days": 7,
-  "generated_at": "2026-07-24T09:14:39.735314+08:00",
-  "count": 78,
+  "generated_at": "2026-07-24T11:37:47.027013+08:00",
+  "count": 70,
   "summary": "近 7 天里，最集中的主题是 ai、llm、agent。",
   "top_items": [
+    {
+      "id": "arxiv::http://arxiv.org/abs/2607.21557v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "OpenForgeRL: Train Harness-native Agents in Any Environment",
+      "html_url": "http://arxiv.org/abs/2607.21557v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.21557v1",
+      "description": "Modern AI agents rely on elaborate inference harnesses such as Claude Code, Codex, and OpenClaw to drive multi-turn reasoning, tool use, and access to external systems. While powerful, these complex harnesses also make agents hard to train end-to-end with open infrastructure, whose SFT/RL stacks cannot natively express stateful, multi-process harness inference. To address this, we present OpenForgeRL, an open-source framework for training harness-based agents end-to-end in diverse environments. OpenForgeRL achieves this with a lightweight proxy that serves the harness's model calls while recording them as training data for a standard RL codebase (e.g., veRL), and a Kubernetes orchestrator that runs each rollout in its own remote container, together enabling training on any harness in any environment at scale. By decoupling training and inference, OpenForgeRL allows researchers to easily train, study, and improve agents directly in the real harnesses and environments they are deployed with. We validate our framework across diverse, complex harnesses and environments, spanning tool/claw-based agents and multimodal GUI browser- and computer-use agents. Using only hundreds to a few thousand tasks, OpenForgeClaw reaches 31.7 pass^3 and 55.9 pass@3 on ClawEval and 33.7 on QwenClawBench. OpenForgeGUI reaches 37.7 on OSWorld-Verified, 63.0 on Online-Mind2Web, and 72.3 on WebVoyager. Both outperform open baselines of similar size on nearly all benchmarks, and in the GUI setting match or surpass models several times larger. Beyond benchmarks, we analyze how harness choice (e.g., ZeroClaw, OpenClaw, Codex) and RL shape agent behavior. We find that some harnesses are substantially harder to learn than others, and that RL improves agentic reliability, such as self-verification, tool coverage, and completing multi-step plans, though critical abilities such as error recovery remain weak.",
+      "authors": [
+        "Xiao Yu",
+        "Baolin Peng",
+        "Ruize Xu",
+        "Hao Zou",
+        "Qianhui Wu",
+        "Hao Cheng",
+        "Wenlin Yao",
+        "Nikhil Singh",
+        "Zhou Yu",
+        "Jianfeng Gao"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "published_at": "2026-07-23T17:38:30+00:00",
+      "updated_at": "2026-07-23T17:38:30+00:00",
+      "primary_category": "cs.AI",
+      "heuristic_score": 29.9,
+      "summary": "OpenForgeRL: Train Harness-native Agents in Any Environment 是最近值得追踪的一篇 AI 论文。论文摘要显示：Modern AI agents rely on elaborate inference harnesses such as Claude Code, Codex, and OpenClaw to drive multi-turn reasoning, tool use, and access to external systems. While powerful, these complex harnesses also make agents hard to train ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.AI, cs.CL",
+        "作者数: 10"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "agent",
+        "agentic",
+        "rag"
+      ],
+      "themes": [
+        "ai",
+        "agent",
+        "agentic"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：OpenForgeRL: Train Harness-native Agents in Any Environment 是最近值得追踪的一篇 AI 论文。论文摘要显示：Modern AI agents rely on elaborate inference harnesses such as Claude Code, Codex, and OpenClaw to drive multi-turn reasoning, tool use, and access to external systems. While powerful, these complex harnesses also make agents hard to train ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI, cs.CL\n- 作者数: 10",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        },
+        {
+          "keyword": "multimodal",
+          "weight": 2.0
+        },
+        {
+          "keyword": "inference",
+          "weight": 1.8
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 238.0,
+      "detail_path": "items/arxiv-openforgerl-train-harness-native-agents-in-any-environment.html",
+      "first_seen_at": "2026-07-24T03:37:54.658435+00:00",
+      "last_seen_at": "2026-07-24T03:37:54.658435+00:00",
+      "last_curated_at": "2026-07-24T03:37:54.658435+00:00",
+      "last_notified_at": null
+    },
     {
       "id": "arxiv::http://arxiv.org/abs/2607.18171v1",
       "kind": "paper",
@@ -328,8 +418,8 @@
       "personalized_score": 202.0,
       "detail_path": "items/arxiv-agentic-coding-without-the-cloud-evaluating-open-weight-large-language-models-on-longitudi.html",
       "first_seen_at": "2026-07-24T01:14:45.234691+00:00",
-      "last_seen_at": "2026-07-24T01:14:45.234691+00:00",
-      "last_curated_at": "2026-07-24T01:14:45.234691+00:00",
+      "last_seen_at": "2026-07-24T03:37:54.658435+00:00",
+      "last_curated_at": "2026-07-24T03:37:54.658435+00:00",
       "last_notified_at": null
     },
     {
@@ -401,8 +491,8 @@
       "personalized_score": 200.0,
       "detail_path": "items/arxiv-agentic-context-management-solving-agent-memory-and-cost-by-treating-them-as-lifecycle-and.html",
       "first_seen_at": "2026-07-24T01:14:45.234691+00:00",
-      "last_seen_at": "2026-07-24T01:14:45.234691+00:00",
-      "last_curated_at": "2026-07-24T01:14:45.234691+00:00",
+      "last_seen_at": "2026-07-24T03:37:54.658435+00:00",
+      "last_curated_at": "2026-07-24T03:37:54.658435+00:00",
       "last_notified_at": null
     },
     {
@@ -560,84 +650,6 @@
       "last_seen_at": "2026-07-21T03:38:52.341180+00:00",
       "last_curated_at": "2026-07-21T03:38:52.341180+00:00",
       "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2607.19235v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "MeetingToM: Evaluating Multimodal LLMs on Theory-of-Mind Reasoning in Multi-Party Meetings",
-      "html_url": "http://arxiv.org/abs/2607.19235v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.19235v1",
-      "description": "Theory of Mind (ToM), the ability to infer other's beliefs, intentions, and states of knowledge, is central to social interaction, yet remains challenging for current Multimodal Large Language Models (MLLMs), especially in multi-party meetings where cues are distributed across speech and behavior. Existing multimodal ToM benchmarks mainly focus on video-grounded question answering over overt, externally verifiable signals, and provide limited coverage of latent social states and group dynamics. We introduce MeetingToM, a benchmark for complex social behavior reasoning in naturalistic multi-party meetings. MeetingToM targets meeting-specific phenomena such as \\textbf{pseudo-consensus}, where apparent agreement masks private dissent under social pressure. The benchmark is hierarchically organized to evaluate ToM at increasing levels of social granularity, including (i) subject-level mental state prediction, (ii) dyadic-level addressee understanding, and (iii) group-level consensus reasoning. We provide a unified evaluation protocol and conduct systematic analyses of representative MLLMs, revealing persistent limitations in integrating non-verbal cues, inferring hidden attitudes, and distinguishing genuine consensus from pseudo-consensus. Our results highlight key challenges and establish MeetingToM as a testbed for advancing meeting-grounded ToM in multimodal models.",
-      "authors": [
-        "Ziyi Wang",
-        "Yuhang Wu",
-        "Dongxu Piao",
-        "Xingyu Liu",
-        "Tianhui Zhou",
-        "Miao Liu"
-      ],
-      "categories": [
-        "cs.CL",
-        "cs.CV"
-      ],
-      "published_at": "2026-07-21T16:05:49+00:00",
-      "updated_at": "2026-07-21T16:05:49+00:00",
-      "primary_category": "cs.CL",
-      "heuristic_score": 20.034,
-      "summary": "MeetingToM: Evaluating Multimodal LLMs on Theory-of-Mind Reasoning in Multi-Party Meetings 是最近值得追踪的一篇 AI 论文。论文摘要显示：Theory of Mind (ToM), the ability to infer other's beliefs, intentions, and states of knowledge, is central to social interaction, yet remains challenging for current Multimodal Large Language Models (MLLMs), especially in multi-party meeti...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CL, cs.CV",
-        "作者数: 6"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "llm",
-        "rag",
-        "multimodal"
-      ],
-      "themes": [
-        "ai",
-        "llm",
-        "rag"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：MeetingToM: Evaluating Multimodal LLMs on Theory-of-Mind Reasoning in Multi-Party Meetings 是最近值得追踪的一篇 AI 论文。论文摘要显示：Theory of Mind (ToM), the ability to infer other's beliefs, intentions, and states of knowledge, is central to social interaction, yet remains challenging for current Multimodal Large Language Models (MLLMs), especially in multi-party meeti...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL, cs.CV\n- 作者数: 6",
-      "focus_hits": [
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "multimodal",
-          "weight": 2.0
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "reasoning",
-      "personalized_score": 190.0,
-      "detail_path": "items/arxiv-meetingtom-evaluating-multimodal-llms-on-theory-of-mind-reasoning-in-multi-party-meetings.html",
-      "first_seen_at": "2026-07-22T01:11:24.111960+00:00",
-      "last_seen_at": "2026-07-22T03:39:06.642313+00:00",
-      "last_curated_at": "2026-07-22T03:39:06.642313+00:00",
-      "last_notified_at": null
     }
   ],
   "top_themes": [
@@ -647,14 +659,19 @@
     },
     {
       "theme": "llm",
-      "count": 6
+      "count": 5
     },
     {
       "theme": "agent",
-      "count": 2
+      "count": 3
     }
   ],
   "highlights": [
+    {
+      "title": "OpenForgeRL: Train Harness-native Agents in Any Environment",
+      "source": "arxiv",
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
+    },
     {
       "title": "FlashRT: Agent Harness for Guiding Agents to Deploy Real-Time Multimodal Applications",
       "source": "arxiv",
@@ -662,11 +679,6 @@
     },
     {
       "title": "An Explicit World Model Based on Data-First Ontology: DaoQL Multimodal Storage Validation and Counterfactual Reasoning Evaluation",
-      "source": "arxiv",
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
-    },
-    {
-      "title": "Look Less, Think Faster: Joint Token-Compute Adaptation for Multimodal LLMs",
       "source": "arxiv",
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     }
