@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-24T03:37:54.658435+00:00",
+  "generated_at": "2026-07-25T01:15:32.119033+00:00",
   "items": [
     {
       "id": "github::diegosouzapw/OmniRoute",
@@ -13,7 +13,7 @@
       "full_name": "diegosouzapw/OmniRoute",
       "html_url": "https://github.com/diegosouzapw/OmniRoute",
       "description": "Never stop coding. Free MIT AI gateway: one endpoint, 290+ providers (90+ free), 500+ models — Kimi, Claude, GPT, OpenAI, Gemini, GLM, DeepSeek, MiniMax. Works with Claude Code, Codex, Cursor, OpenCode, Cline & Copilot. Quota-aware auto-fallback, RTK+Caveman compression saves 15-95% tokens, MCP/A2A, Desktop/PWA. Built by 500+ contributors",
-      "stars": 27414,
+      "stars": 28851,
       "stars_today": 0,
       "language": "TypeScript",
       "topics": [],
@@ -27,7 +27,7 @@
       "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
       "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
       "highlights": [
-        "Stars: 27414",
+        "Stars: 28851",
         "语言: TypeScript"
       ],
       "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
@@ -44,7 +44,7 @@
         "copilot"
       ],
       "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：diegosouzapw/OmniRoute 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Never stop coding. Free MIT AI gateway: one endpoint, 290+ providers (90+ free), 500+ models — Kimi, Claude, GPT, OpenAI, Gemini, GLM, DeepSeek, MiniMax. Works with Claude Code, Codex, Cursor, OpenCode, Cline & Copilot. Quota-aware auto-fal...结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：10/10\n\n**亮点**：\n- Stars: 27414\n- 语言: TypeScript",
+      "summary_markdown": "**摘要**：diegosouzapw/OmniRoute 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Never stop coding. Free MIT AI gateway: one endpoint, 290+ providers (90+ free), 500+ models — Kimi, Claude, GPT, OpenAI, Gemini, GLM, DeepSeek, MiniMax. Works with Claude Code, Codex, Cursor, OpenCode, Cline & Copilot. Quota-aware auto-fal...结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：10/10\n\n**亮点**：\n- Stars: 28851\n- 语言: TypeScript",
       "focus_hits": [
         {
           "keyword": "coding",
@@ -52,11 +52,792 @@
         }
       ],
       "primary_match": "coding",
-      "personalized_score": 136.97,
+      "personalized_score": 137.54,
       "detail_path": "items/github-diegosouzapw-omniroute.html",
       "first_seen_at": "2026-07-01T01:58:35.678590+00:00",
-      "last_seen_at": "2026-07-24T03:37:54.658435+00:00",
-      "last_curated_at": "2026-07-24T03:37:54.658435+00:00",
+      "last_seen_at": "2026-07-25T01:15:32.119033+00:00",
+      "last_curated_at": "2026-07-25T01:15:32.119033+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2607.21557v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "OpenForgeRL: Train Harness-native Agents in Any Environment",
+      "html_url": "http://arxiv.org/abs/2607.21557v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.21557v1",
+      "description": "Modern AI agents rely on elaborate inference harnesses such as Claude Code, Codex, and OpenClaw to drive multi-turn reasoning, tool use, and access to external systems. While powerful, these complex harnesses also make agents hard to train end-to-end with open infrastructure, whose SFT/RL stacks cannot natively express stateful, multi-process harness inference. To address this, we present OpenForgeRL, an open-source framework for training harness-based agents end-to-end in diverse environments. OpenForgeRL achieves this with a lightweight proxy that serves the harness's model calls while recording them as training data for a standard RL codebase (e.g., veRL), and a Kubernetes orchestrator that runs each rollout in its own remote container, together enabling training on any harness in any environment at scale. By decoupling training and inference, OpenForgeRL allows researchers to easily train, study, and improve agents directly in the real harnesses and environments they are deployed with. We validate our framework across diverse, complex harnesses and environments, spanning tool/claw-based agents and multimodal GUI browser- and computer-use agents. Using only hundreds to a few thousand tasks, OpenForgeClaw reaches 31.7 pass^3 and 55.9 pass@3 on ClawEval and 33.7 on QwenClawBench. OpenForgeGUI reaches 37.7 on OSWorld-Verified, 63.0 on Online-Mind2Web, and 72.3 on WebVoyager. Both outperform open baselines of similar size on nearly all benchmarks, and in the GUI setting match or surpass models several times larger. Beyond benchmarks, we analyze how harness choice (e.g., ZeroClaw, OpenClaw, Codex) and RL shape agent behavior. We find that some harnesses are substantially harder to learn than others, and that RL improves agentic reliability, such as self-verification, tool coverage, and completing multi-step plans, though critical abilities such as error recovery remain weak.",
+      "authors": [
+        "Xiao Yu",
+        "Baolin Peng",
+        "Ruize Xu",
+        "Hao Zou",
+        "Qianhui Wu",
+        "Hao Cheng",
+        "Wenlin Yao",
+        "Nikhil Singh",
+        "Zhou Yu",
+        "Jianfeng Gao"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "published_at": "2026-07-23T17:38:30+00:00",
+      "updated_at": "2026-07-23T17:38:30+00:00",
+      "primary_category": "cs.AI",
+      "heuristic_score": 29.9,
+      "summary": "OpenForgeRL: Train Harness-native Agents in Any Environment 是最近值得追踪的一篇 AI 论文。论文摘要显示：Modern AI agents rely on elaborate inference harnesses such as Claude Code, Codex, and OpenClaw to drive multi-turn reasoning, tool use, and access to external systems. While powerful, these complex harnesses also make agents hard to train ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.AI, cs.CL",
+        "作者数: 10"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "agent",
+        "agentic",
+        "rag"
+      ],
+      "themes": [
+        "ai",
+        "agent",
+        "agentic"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：OpenForgeRL: Train Harness-native Agents in Any Environment 是最近值得追踪的一篇 AI 论文。论文摘要显示：Modern AI agents rely on elaborate inference harnesses such as Claude Code, Codex, and OpenClaw to drive multi-turn reasoning, tool use, and access to external systems. While powerful, these complex harnesses also make agents hard to train ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI, cs.CL\n- 作者数: 10",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        },
+        {
+          "keyword": "multimodal",
+          "weight": 2.0
+        },
+        {
+          "keyword": "inference",
+          "weight": 1.8
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 238.0,
+      "detail_path": "items/arxiv-openforgerl-train-harness-native-agents-in-any-environment.html",
+      "first_seen_at": "2026-07-24T03:37:54.658435+00:00",
+      "last_seen_at": "2026-07-25T01:15:32.119033+00:00",
+      "last_curated_at": "2026-07-25T01:15:32.119033+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2607.21552v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "MIRROR: Learning from the Other View for Multi-Modal Reasoning",
+      "html_url": "http://arxiv.org/abs/2607.21552v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.21552v1",
+      "description": "Unlike large language models (LLMs) that exhibit strong reasoning capabilities, vision-language models (VLMs) struggle with visual reasoning, even on geometry problems that admit equivalent text, diagram, and combined diagram+text views. We show that these views often elicit different behaviors: a model may solve a problem from text but fail on the corresponding diagram, or succeed visually while failing textually. This inconsistency suggests that different views expose complementary reasoning paths and failure modes that standard multimodal post-training does not fully exploit. To study and exploit this phenomenon, we construct ODA-Data, a high-quality paired multimodal geometry dataset with text-dominant, image-dominant, and combined image+text views of the same problems, together with splits for training and evaluating modality-dependent reasoning behaviors. We then develop Modality-Informed Reciprocal Reasoning Optimization (MIRROR), a reinforcement learning approach for improving multimodal reasoning via self supervision. For each problem, MIRROR evaluates the model under all views, selects the best-performing view as a teacher, and trains other views with a reverse-KL objective towards the teacher. Across reasoning benchmarks that evaluate on geometry problems, MIRROR improves over standard RL and yields more accurate and consistent behavior across modalities",
+      "authors": [
+        "Wen Ye",
+        "Yuxiao Qu",
+        "Aviral Kumar",
+        "Xuezhe Ma"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "published_at": "2026-07-23T17:35:56+00:00",
+      "updated_at": "2026-07-23T17:35:56+00:00",
+      "primary_category": "cs.AI",
+      "heuristic_score": 20.034,
+      "summary": "MIRROR: Learning from the Other View for Multi-Modal Reasoning 是最近值得追踪的一篇 AI 论文。论文摘要显示：Unlike large language models (LLMs) that exhibit strong reasoning capabilities, vision-language models (VLMs) struggle with visual reasoning, even on geometry problems that admit equivalent text, diagram, and combined diagram+text views. We...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.AI, cs.LG",
+        "作者数: 4"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "llm",
+        "multimodal",
+        "model"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "multimodal"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：MIRROR: Learning from the Other View for Multi-Modal Reasoning 是最近值得追踪的一篇 AI 论文。论文摘要显示：Unlike large language models (LLMs) that exhibit strong reasoning capabilities, vision-language models (VLMs) struggle with visual reasoning, even on geometry problems that admit equivalent text, diagram, and combined diagram+text views. We...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI, cs.LG\n- 作者数: 4",
+      "focus_hits": [
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "multimodal",
+          "weight": 2.0
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "reasoning",
+      "personalized_score": 168.0,
+      "detail_path": "items/arxiv-mirror-learning-from-the-other-view-for-multi-modal-reasoning.html",
+      "first_seen_at": "2026-07-24T03:37:54.658435+00:00",
+      "last_seen_at": "2026-07-25T01:15:32.119033+00:00",
+      "last_curated_at": "2026-07-25T01:15:32.119033+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2607.21556v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Visual Contrastive Self-Distillation",
+      "html_url": "http://arxiv.org/abs/2607.21556v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.21556v1",
+      "description": "On-policy self-distillation (OPSD) is promising as it removes the external teacher required by on-policy distillation (OPD), yet it still needs asymmetric information between teacher and student to ensure that the self-teacher provides a stronger learning signal than the student. Existing methods create this asymmetry either through privileged answers or visual evidence. We ask whether both can be removed, yielding a simpler form of OPSD driven purely by input conditioning. For this purpose, we propose Visual Contrastive Self-Distillation, namely VCSD, which converts image-content removal into an on-policy self-distillation signal. At each student-generated response prefix, the EMA teacher produces two next-token distributions under the same prompt and prefix -- one conditioned on the original image and the other on a content-erased control. Their token-wise log-probability difference highlights candidates whose likelihood is specifically increased by the instance-level visual content. We use this contrast to sharpen the teacher's original-image distribution within its plausible support, and distill the resulting full-distribution target into the student. Using ViRL39K dataset, VCSD consistently outperforms matched OPSD across Qwen3-VL and Qwen3.5 models. For example, on Qwen3-VL, it improves the seven-benchmark aggregate from $62.27\\% \\rightarrow 67.04\\%$ at 2B, $71.30\\% \\rightarrow 73.16\\%$ at 4B, and $72.51\\% \\rightarrow 76.26\\%$ at 8B. Furthermore, VCSD requires no external teacher, privileged answers, visual evidence signals, reasoning traces, or additional inference-time cost.",
+      "authors": [
+        "Yijun Liang",
+        "Yunjie Tian",
+        "Yijiang Li",
+        "Yuqi Jia",
+        "Furong Huang",
+        "Tianyi Zhou",
+        "Di Fu"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "published_at": "2026-07-23T17:37:37+00:00",
+      "updated_at": "2026-07-23T17:37:37+00:00",
+      "primary_category": "cs.CV",
+      "heuristic_score": 15.5,
+      "summary": "Visual Contrastive Self-Distillation 是最近值得追踪的一篇 AI 论文。论文摘要显示：On-policy self-distillation (OPSD) is promising as it removes the external teacher required by on-policy distillation (OPD), yet it still needs asymmetric information between teacher and student to ensure that the self-teacher provides a st...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CV, cs.AI",
+        "作者数: 7"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 9,
+      "tags": [
+        "model",
+        "benchmark",
+        "inference",
+        "reasoning"
+      ],
+      "themes": [
+        "model",
+        "benchmark",
+        "inference"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：Visual Contrastive Self-Distillation 是最近值得追踪的一篇 AI 论文。论文摘要显示：On-policy self-distillation (OPSD) is promising as it removes the external teacher required by on-policy distillation (OPD), yet it still needs asymmetric information between teacher and student to ensure that the self-teacher provides a st...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：9/10\n\n**亮点**：\n- 分类: cs.CV, cs.AI\n- 作者数: 7",
+      "focus_hits": [
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "inference",
+          "weight": 1.8
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "reasoning",
+      "personalized_score": 156.0,
+      "detail_path": "items/arxiv-visual-contrastive-self-distillation.html",
+      "first_seen_at": "2026-07-25T01:15:32.119033+00:00",
+      "last_seen_at": "2026-07-25T01:15:32.119033+00:00",
+      "last_curated_at": "2026-07-25T01:15:32.119033+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "github::mattpocock/skills",
+      "kind": "repo",
+      "source": "github",
+      "source_tags": [
+        "trending"
+      ],
+      "name": "skills",
+      "title": "mattpocock/skills",
+      "full_name": "mattpocock/skills",
+      "html_url": "https://github.com/mattpocock/skills",
+      "description": "Skills for Real Engineers. Straight from my .agents directory.",
+      "stars": 186763,
+      "stars_today": 0,
+      "language": "Shell",
+      "topics": [],
+      "created_at": "",
+      "updated_at": "",
+      "heuristic_score": 15.2,
+      "summary": "mattpocock/skills 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Skills for Real Engineers. Straight from my .agents directory.结合关键词命中和热度信号，它适合加入今日重点观察列表。",
+      "brief": "这是一个值得快速关注的开源 AI 项目。",
+      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
+      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
+      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
+      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
+      "highlights": [
+        "Stars: 186763",
+        "语言: Shell"
+      ],
+      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
+      "relevance_score": 8,
+      "tags": [
+        "ai",
+        "agent"
+      ],
+      "themes": [
+        "ai",
+        "agent"
+      ],
+      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
+      "summary_markdown": "**摘要**：mattpocock/skills 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Skills for Real Engineers. Straight from my .agents directory.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 186763\n- 语言: Shell",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 130.0,
+      "detail_path": "items/github-mattpocock-skills.html",
+      "first_seen_at": "2026-07-11T01:12:49.220475+00:00",
+      "last_seen_at": "2026-07-25T01:15:32.119033+00:00",
+      "last_curated_at": "2026-07-25T01:15:32.119033+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "github::CoreBunch/Instatic",
+      "kind": "repo",
+      "source": "github",
+      "source_tags": [
+        "trending"
+      ],
+      "name": "Instatic",
+      "title": "CoreBunch/Instatic",
+      "full_name": "CoreBunch/Instatic",
+      "html_url": "https://github.com/CoreBunch/Instatic",
+      "description": "The open-source alternative to Webflow, Framer and WordPress. Agentic self-hosted visual CMS outputting clean static pages. Users, roles, plugins, content, database, it's all there.",
+      "stars": 4293,
+      "stars_today": 0,
+      "language": "TypeScript",
+      "topics": [],
+      "created_at": "",
+      "updated_at": "",
+      "heuristic_score": 13.786,
+      "summary": "CoreBunch/Instatic 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：The open-source alternative to Webflow, Framer and WordPress. Agentic self-hosted visual CMS outputting clean static pages. Users, roles, plugins, content, database, it's all there.结合关键词命中和热度信号，它适合加入今日重点观察列表。",
+      "brief": "这是一个值得快速关注的开源 AI 项目。",
+      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
+      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
+      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
+      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
+      "highlights": [
+        "Stars: 4293",
+        "语言: TypeScript"
+      ],
+      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
+      "relevance_score": 8,
+      "tags": [
+        "agent",
+        "agentic"
+      ],
+      "themes": [
+        "agent",
+        "agentic"
+      ],
+      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
+      "summary_markdown": "**摘要**：CoreBunch/Instatic 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：The open-source alternative to Webflow, Framer and WordPress. Agentic self-hosted visual CMS outputting clean static pages. Users, roles, plugins, content, database, it's all there.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 4293\n- 语言: TypeScript",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 111.72,
+      "detail_path": "items/github-corebunch-instatic.html",
+      "first_seen_at": "2026-07-25T01:15:32.119033+00:00",
+      "last_seen_at": "2026-07-25T01:15:32.119033+00:00",
+      "last_curated_at": "2026-07-25T01:15:32.119033+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2607.21592v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Unified Video Dense Prediction from Disjoint Data",
+      "html_url": "http://arxiv.org/abs/2607.21592v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.21592v1",
+      "description": "Scene understanding requires simultaneous prediction about geometry, appearance, and semantics. However, existing task-specific annotations are fragmented across incompatible, domain-specific datasets. Current unified systems circumvent this by restricting training to fully co-annotated data, or by incurring the large computational cost of pseudo-labeling. To mitigate this, we introduce UniD, a unified video model that jointly predicts eight dense scene properties-depth, surface normals, semantic segmentation, boundaries, human parts, albedo, shading, and materials-all learned from disjoint, domain-specific datasets. We propose a simple yet effective distillation step in which per-task experts supervise a unified backbone through lightweight task projectors, eliminating the need for annotation overlap or pseudo-labeling. Our key insight is that the strong visual priors of a pretrained diffusion model are sufficient to bridge the domain gaps introduced by disjoint training sources, enabling robust generalization to scene-task combinations never seen during training. UniD achieves competitive performance against per-task specialists and multi-task baselines, with strong generalization to out-of-distribution scenarios and enhanced temporal and cross-task consistency. Code and video results are available at https://unid-video.github.io/.",
+      "authors": [
+        "Yihong Sun",
+        "Seoung Wug Oh",
+        "Jiahui Huang",
+        "Bharath Hariharan",
+        "Joon-Young Lee"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "published_at": "2026-07-23T17:59:50+00:00",
+      "updated_at": "2026-07-23T17:59:50+00:00",
+      "primary_category": "cs.CV",
+      "heuristic_score": 15.194,
+      "summary": "Unified Video Dense Prediction from Disjoint Data 是最近值得追踪的一篇 AI 论文。论文摘要显示：Scene understanding requires simultaneous prediction about geometry, appearance, and semantics. However, existing task-specific annotations are fragmented across incompatible, domain-specific datasets. Current unified systems circumvent thi...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CV",
+        "作者数: 5"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 8,
+      "tags": [
+        "ai",
+        "rag",
+        "diffusion",
+        "model"
+      ],
+      "themes": [
+        "ai",
+        "rag",
+        "diffusion"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：Unified Video Dense Prediction from Disjoint Data 是最近值得追踪的一篇 AI 论文。论文摘要显示：Scene understanding requires simultaneous prediction about geometry, appearance, and semantics. However, existing task-specific annotations are fragmented across incompatible, domain-specific datasets. Current unified systems circumvent thi...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：8/10\n\n**亮点**：\n- 分类: cs.CV\n- 作者数: 5",
+      "focus_hits": [
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        }
+      ],
+      "primary_match": "rag",
+      "personalized_score": 110.0,
+      "detail_path": "items/arxiv-unified-video-dense-prediction-from-disjoint-data.html",
+      "first_seen_at": "2026-07-25T01:15:32.119033+00:00",
+      "last_seen_at": "2026-07-25T01:15:32.119033+00:00",
+      "last_curated_at": "2026-07-25T01:15:32.119033+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "github::koala73/worldmonitor",
+      "kind": "repo",
+      "source": "github",
+      "source_tags": [
+        "trending"
+      ],
+      "name": "worldmonitor",
+      "title": "koala73/worldmonitor",
+      "full_name": "koala73/worldmonitor",
+      "html_url": "https://github.com/koala73/worldmonitor",
+      "description": "Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface",
+      "stars": 73286,
+      "stars_today": 0,
+      "language": "TypeScript",
+      "topics": [],
+      "created_at": "",
+      "updated_at": "",
+      "heuristic_score": 12.6,
+      "summary": "koala73/worldmonitor 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface结合关键词命中和热度信号，它适合加入今日重点观察列表。",
+      "brief": "这是一个值得快速关注的开源 AI 项目。",
+      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
+      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
+      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
+      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
+      "highlights": [
+        "Stars: 73286",
+        "语言: TypeScript"
+      ],
+      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
+      "relevance_score": 7,
+      "tags": [
+        "ai"
+      ],
+      "themes": [
+        "ai"
+      ],
+      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
+      "summary_markdown": "**摘要**：koala73/worldmonitor 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 73286\n- 语言: TypeScript",
+      "focus_hits": [],
+      "primary_match": "",
+      "personalized_score": 90.0,
+      "detail_path": "items/github-koala73-worldmonitor.html",
+      "first_seen_at": "2026-06-20T01:56:23.408549+00:00",
+      "last_seen_at": "2026-07-25T01:15:32.119033+00:00",
+      "last_curated_at": "2026-07-25T01:15:32.119033+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "github::ComposioHQ/awesome-claude-skills",
+      "kind": "repo",
+      "source": "github",
+      "source_tags": [
+        "trending"
+      ],
+      "name": "awesome-claude-skills",
+      "title": "ComposioHQ/awesome-claude-skills",
+      "full_name": "ComposioHQ/awesome-claude-skills",
+      "html_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+      "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
+      "stars": 70068,
+      "stars_today": 0,
+      "language": "Python",
+      "topics": [],
+      "created_at": "",
+      "updated_at": "",
+      "heuristic_score": 12.6,
+      "summary": "ComposioHQ/awesome-claude-skills 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows结合关键词命中和热度信号，它适合加入今日重点观察列表。",
+      "brief": "这是一个值得快速关注的开源 AI 项目。",
+      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
+      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
+      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
+      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
+      "highlights": [
+        "Stars: 70068",
+        "语言: Python"
+      ],
+      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
+      "relevance_score": 7,
+      "tags": [
+        "ai"
+      ],
+      "themes": [
+        "ai"
+      ],
+      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
+      "summary_markdown": "**摘要**：ComposioHQ/awesome-claude-skills 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 70068\n- 语言: Python",
+      "focus_hits": [],
+      "primary_match": "",
+      "personalized_score": 90.0,
+      "detail_path": "items/github-composiohq-awesome-claude-skills.html",
+      "first_seen_at": "2026-07-23T01:19:45.147744+00:00",
+      "last_seen_at": "2026-07-25T01:15:32.119033+00:00",
+      "last_curated_at": "2026-07-25T01:15:32.119033+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "github::shiyu-coder/Kronos",
+      "kind": "repo",
+      "source": "github",
+      "source_tags": [
+        "trending"
+      ],
+      "name": "Kronos",
+      "title": "shiyu-coder/Kronos",
+      "full_name": "shiyu-coder/Kronos",
+      "html_url": "https://github.com/shiyu-coder/Kronos",
+      "description": "Kronos: A Foundation Model for the Language of Financial Markets",
+      "stars": 33496,
+      "stars_today": 0,
+      "language": "Python",
+      "topics": [],
+      "created_at": "",
+      "updated_at": "",
+      "heuristic_score": 12.6,
+      "summary": "shiyu-coder/Kronos 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Kronos: A Foundation Model for the Language of Financial Markets结合关键词命中和热度信号，它适合加入今日重点观察列表。",
+      "brief": "这是一个值得快速关注的开源 AI 项目。",
+      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
+      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
+      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
+      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
+      "highlights": [
+        "Stars: 33496",
+        "语言: Python"
+      ],
+      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
+      "relevance_score": 7,
+      "tags": [
+        "model"
+      ],
+      "themes": [
+        "model"
+      ],
+      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
+      "summary_markdown": "**摘要**：shiyu-coder/Kronos 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Kronos: A Foundation Model for the Language of Financial Markets结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 33496\n- 语言: Python",
+      "focus_hits": [],
+      "primary_match": "",
+      "personalized_score": 83.4,
+      "detail_path": "items/github-shiyu-coder-kronos.html",
+      "first_seen_at": "2026-07-23T01:19:45.147744+00:00",
+      "last_seen_at": "2026-07-25T01:15:32.119033+00:00",
+      "last_curated_at": "2026-07-25T01:15:32.119033+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "github::Lordog/dive-into-llms",
+      "kind": "repo",
+      "source": "github",
+      "source_tags": [
+        "trending"
+      ],
+      "name": "dive-into-llms",
+      "title": "Lordog/dive-into-llms",
+      "full_name": "Lordog/dive-into-llms",
+      "html_url": "https://github.com/Lordog/dive-into-llms",
+      "description": "《动手学大模型Dive into LLMs》系列编程实践教程",
+      "stars": 45001,
+      "stars_today": 0,
+      "language": "Jupyter Notebook",
+      "topics": [],
+      "created_at": "",
+      "updated_at": "",
+      "heuristic_score": 12.6,
+      "summary": "Lordog/dive-into-llms 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：《动手学大模型Dive into LLMs》系列编程实践教程结合关键词命中和热度信号，它适合加入今日重点观察列表。",
+      "brief": "这是一个值得快速关注的开源 AI 项目。",
+      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
+      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
+      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
+      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
+      "highlights": [
+        "Stars: 45001",
+        "语言: Jupyter Notebook"
+      ],
+      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
+      "relevance_score": 7,
+      "tags": [
+        "llm"
+      ],
+      "themes": [
+        "llm"
+      ],
+      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
+      "summary_markdown": "**摘要**：Lordog/dive-into-llms 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：《动手学大模型Dive into LLMs》系列编程实践教程结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 45001\n- 语言: Jupyter Notebook",
+      "focus_hits": [],
+      "primary_match": "",
+      "personalized_score": 88.0,
+      "detail_path": "items/github-lordog-dive-into-llms.html",
+      "first_seen_at": "2026-07-25T01:15:32.119033+00:00",
+      "last_seen_at": "2026-07-25T01:15:32.119033+00:00",
+      "last_curated_at": "2026-07-25T01:15:32.119033+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "github::OtterMind/Chat2DB",
+      "kind": "repo",
+      "source": "github",
+      "source_tags": [
+        "trending"
+      ],
+      "name": "Chat2DB",
+      "title": "OtterMind/Chat2DB",
+      "full_name": "OtterMind/Chat2DB",
+      "html_url": "https://github.com/OtterMind/Chat2DB",
+      "description": "🔥🔥🔥 AI-driven database tool and SQL client, The hottest GUI client, supporting MySQL, Oracle, PostgreSQL, DB2, SQL Server, DB2, SQLite, H2, ClickHouse, and more.",
+      "stars": 26331,
+      "stars_today": 0,
+      "language": "Java",
+      "topics": [],
+      "created_at": "",
+      "updated_at": "",
+      "heuristic_score": 12.6,
+      "summary": "OtterMind/Chat2DB 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：🔥🔥🔥 AI-driven database tool and SQL client, The hottest GUI client, supporting MySQL, Oracle, PostgreSQL, DB2, SQL Server, DB2, SQLite, H2, ClickHouse, and more.结合关键词命中和热度信号，它适合加入今日重点观察列表。",
+      "brief": "这是一个值得快速关注的开源 AI 项目。",
+      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
+      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
+      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
+      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
+      "highlights": [
+        "Stars: 26331",
+        "语言: Java"
+      ],
+      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
+      "relevance_score": 7,
+      "tags": [
+        "ai"
+      ],
+      "themes": [
+        "ai"
+      ],
+      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
+      "summary_markdown": "**摘要**：OtterMind/Chat2DB 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：🔥🔥🔥 AI-driven database tool and SQL client, The hottest GUI client, supporting MySQL, Oracle, PostgreSQL, DB2, SQL Server, DB2, SQLite, H2, ClickHouse, and more.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 26331\n- 语言: Java",
+      "focus_hits": [],
+      "primary_match": "",
+      "personalized_score": 80.53,
+      "detail_path": "items/github-ottermind-chat2db.html",
+      "first_seen_at": "2026-07-25T01:15:32.119033+00:00",
+      "last_seen_at": "2026-07-25T01:15:32.119033+00:00",
+      "last_curated_at": "2026-07-25T01:15:32.119033+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2607.21576v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Self-Supervised Learning of Structured Dynamics from Videos",
+      "html_url": "http://arxiv.org/abs/2607.21576v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.21576v1",
+      "description": "Understanding motion in video is a fundamental challenge for visual learning, as frame-to-frame change entangles two sources of dynamics: camera motion and object motion. This decomposition has remained underexplored in representation learning, partly because these factors are tightly coupled in natural videos and difficult to supervise separately. Yet recovering it is important for learning robust motion representations that separate meaningful object dynamics from camera-induced variation. We study whether such structured motion representations can be recovered from frozen features of a pretrained image vision transformer. We propose the Structured Dynamics Model (SDM), which explicitly separates the dominant source of temporal change from residual dynamics through future-feature prediction, rather than representing video change with a single entangled latent or with unstructured, spatially dense transition tokens. Training combines self-supervised learning on real video with weak supervision of scene dynamics on synthetic Kubric data. We evaluate SDM on ProbeMotion, a new evaluation suite spanning synthetic and real videos with camera motion, object motion, and combined dynamics. SDM outperforms backbone baselines using global CLS or average-pooled features, and compares favorably to strongly supervised representations such as VGGT on several probes, despite using substantially weaker supervision. These results suggest that pretrained image models can be readily repurposed into structured video-dynamics representations, providing a useful inductive bias for learning and analyzing latent video dynamics.",
+      "authors": [
+        "Lukas Knobel",
+        "Andrew Zisserman",
+        "Yuki M. Asano"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "published_at": "2026-07-23T17:55:07+00:00",
+      "updated_at": "2026-07-23T17:55:07+00:00",
+      "primary_category": "cs.CV",
+      "heuristic_score": 13.1,
+      "summary": "Self-Supervised Learning of Structured Dynamics from Videos 是最近值得追踪的一篇 AI 论文。论文摘要显示：Understanding motion in video is a fundamental challenge for visual learning, as frame-to-frame change entangles two sources of dynamics: camera motion and object motion. This decomposition has remained underexplored in representation learn...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CV",
+        "作者数: 3"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 7,
+      "tags": [
+        "ai",
+        "rag",
+        "model",
+        "training"
+      ],
+      "themes": [
+        "ai",
+        "rag",
+        "model"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：Self-Supervised Learning of Structured Dynamics from Videos 是最近值得追踪的一篇 AI 论文。论文摘要显示：Understanding motion in video is a fundamental challenge for visual learning, as frame-to-frame change entangles two sources of dynamics: camera motion and object motion. This decomposition has remained underexplored in representation learn...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：7/10\n\n**亮点**：\n- 分类: cs.CV\n- 作者数: 3",
+      "focus_hits": [
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        }
+      ],
+      "primary_match": "rag",
+      "personalized_score": 100.0,
+      "detail_path": "items/arxiv-self-supervised-learning-of-structured-dynamics-from-videos.html",
+      "first_seen_at": "2026-07-25T01:15:32.119033+00:00",
+      "last_seen_at": "2026-07-25T01:15:32.119033+00:00",
+      "last_curated_at": "2026-07-25T01:15:32.119033+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2607.21553v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "SANA-Video 2.0: Hybrid Linear Attention with Attention Residuals for Efficient Video Generation",
+      "html_url": "http://arxiv.org/abs/2607.21553v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.21553v1",
+      "description": "We introduce SANA-Video 2.0, a hybrid video diffusion transformer instantiated at 5B and 14B scales under a unified architecture. Designed to generate high-quality video up to 720p on a single GPU, SANA-Video 2.0 matches full-softmax video DiTs in quality while retaining the favorable long-sequence scaling of linear attention. To avoid quadratic attention throughout, Hybrid Linear-Softmax Attention combines gated linear attention for O(N)-dominated mixing with periodic gated-softmax anchors at a 3:1 ratio, restoring the full-rank token interactions that pure linear attention lacks. To propagate these refreshed representations across depth, Block Attention Residuals (AttnRes) route completed block summaries into later linear layers, enabling anchor-feature reuse and boosting deep-layer effective rank by ~12%. Through from-scratch training, SANA-Video 2.0 learns the complete hybrid directly rather than linearizing pretrained models, with reduced-resolution proxy studies establishing 25% softmax as the optimal quality-efficiency trade-off. With 40-step sampling, SANA-Video 2.0 achieves a VBench score of 84.30 in 13.2s at 480p on a single H100, remaining competitive with far larger softmax video DiTs at a fraction of the latency. Its compiled DiT forward pass is 3.2x faster than a matched full-softmax baseline at 720p/60s, a gap that expands with video duration. Furthermore, full-stack Sol-Engine optimization (kernel fusion, caching, and sparse attention) accelerates this hardware-friendly backbone by a further 3.58x, bringing the 5B pipeline to 13.06s at 720p/5s and making it 120x faster than Wan 2.2-A14B on one H100. Overall, our hybrid design recovers softmax-level expressiveness at substantially reduced cost, unlocking scalable long, high resolution video generation.",
+      "authors": [
+        "Junsong Chen",
+        "Jincheng Yu",
+        "Yitong Li",
+        "Shuchen Xue",
+        "Haozhe Liu",
+        "Jingyu Xin",
+        "Yuyang Zhao",
+        "Tian Ye",
+        "Zhangjie Wu",
+        "Zian Wang",
+        "Daquan Zhou",
+        "Ping Luo",
+        "Song Han",
+        "Enze Xie"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "published_at": "2026-07-23T17:36:05+00:00",
+      "updated_at": "2026-07-23T17:36:05+00:00",
+      "primary_category": "cs.CV",
+      "heuristic_score": 13.1,
+      "summary": "SANA-Video 2.0: Hybrid Linear Attention with Attention Residuals for Efficient Video Generation 是最近值得追踪的一篇 AI 论文。论文摘要显示：We introduce SANA-Video 2.0, a hybrid video diffusion transformer instantiated at 5B and 14B scales under a unified architecture. Designed to generate high-quality video up to 720p on a single GPU, SANA-Video 2.0 matches full-softmax video ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CV",
+        "作者数: 14"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 7,
+      "tags": [
+        "ai",
+        "diffusion",
+        "model",
+        "training"
+      ],
+      "themes": [
+        "ai",
+        "diffusion",
+        "model"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：SANA-Video 2.0: Hybrid Linear Attention with Attention Residuals for Efficient Video Generation 是最近值得追踪的一篇 AI 论文。论文摘要显示：We introduce SANA-Video 2.0, a hybrid video diffusion transformer instantiated at 5B and 14B scales under a unified architecture. Designed to generate high-quality video up to 720p on a single GPU, SANA-Video 2.0 matches full-softmax video ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：7/10\n\n**亮点**：\n- 分类: cs.CV\n- 作者数: 14",
+      "focus_hits": [],
+      "primary_match": "",
+      "personalized_score": 78.0,
+      "detail_path": "items/arxiv-sana-video-2-0-hybrid-linear-attention-with-attention-residuals-for-efficient-video-genera.html",
+      "first_seen_at": "2026-07-25T01:15:32.119033+00:00",
+      "last_seen_at": "2026-07-25T01:15:32.119033+00:00",
+      "last_curated_at": "2026-07-25T01:15:32.119033+00:00",
       "last_notified_at": null
     },
     {
@@ -360,168 +1141,6 @@
       "last_notified_at": null
     },
     {
-      "id": "arxiv::http://arxiv.org/abs/2607.21557v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "OpenForgeRL: Train Harness-native Agents in Any Environment",
-      "html_url": "http://arxiv.org/abs/2607.21557v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.21557v1",
-      "description": "Modern AI agents rely on elaborate inference harnesses such as Claude Code, Codex, and OpenClaw to drive multi-turn reasoning, tool use, and access to external systems. While powerful, these complex harnesses also make agents hard to train end-to-end with open infrastructure, whose SFT/RL stacks cannot natively express stateful, multi-process harness inference. To address this, we present OpenForgeRL, an open-source framework for training harness-based agents end-to-end in diverse environments. OpenForgeRL achieves this with a lightweight proxy that serves the harness's model calls while recording them as training data for a standard RL codebase (e.g., veRL), and a Kubernetes orchestrator that runs each rollout in its own remote container, together enabling training on any harness in any environment at scale. By decoupling training and inference, OpenForgeRL allows researchers to easily train, study, and improve agents directly in the real harnesses and environments they are deployed with. We validate our framework across diverse, complex harnesses and environments, spanning tool/claw-based agents and multimodal GUI browser- and computer-use agents. Using only hundreds to a few thousand tasks, OpenForgeClaw reaches 31.7 pass^3 and 55.9 pass@3 on ClawEval and 33.7 on QwenClawBench. OpenForgeGUI reaches 37.7 on OSWorld-Verified, 63.0 on Online-Mind2Web, and 72.3 on WebVoyager. Both outperform open baselines of similar size on nearly all benchmarks, and in the GUI setting match or surpass models several times larger. Beyond benchmarks, we analyze how harness choice (e.g., ZeroClaw, OpenClaw, Codex) and RL shape agent behavior. We find that some harnesses are substantially harder to learn than others, and that RL improves agentic reliability, such as self-verification, tool coverage, and completing multi-step plans, though critical abilities such as error recovery remain weak.",
-      "authors": [
-        "Xiao Yu",
-        "Baolin Peng",
-        "Ruize Xu",
-        "Hao Zou",
-        "Qianhui Wu",
-        "Hao Cheng",
-        "Wenlin Yao",
-        "Nikhil Singh",
-        "Zhou Yu",
-        "Jianfeng Gao"
-      ],
-      "categories": [
-        "cs.AI",
-        "cs.CL"
-      ],
-      "published_at": "2026-07-23T17:38:30+00:00",
-      "updated_at": "2026-07-23T17:38:30+00:00",
-      "primary_category": "cs.AI",
-      "heuristic_score": 29.9,
-      "summary": "OpenForgeRL: Train Harness-native Agents in Any Environment 是最近值得追踪的一篇 AI 论文。论文摘要显示：Modern AI agents rely on elaborate inference harnesses such as Claude Code, Codex, and OpenClaw to drive multi-turn reasoning, tool use, and access to external systems. While powerful, these complex harnesses also make agents hard to train ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.AI, cs.CL",
-        "作者数: 10"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "agent",
-        "agentic",
-        "rag"
-      ],
-      "themes": [
-        "ai",
-        "agent",
-        "agentic"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：OpenForgeRL: Train Harness-native Agents in Any Environment 是最近值得追踪的一篇 AI 论文。论文摘要显示：Modern AI agents rely on elaborate inference harnesses such as Claude Code, Codex, and OpenClaw to drive multi-turn reasoning, tool use, and access to external systems. While powerful, these complex harnesses also make agents hard to train ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI, cs.CL\n- 作者数: 10",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "multimodal",
-          "weight": 2.0
-        },
-        {
-          "keyword": "inference",
-          "weight": 1.8
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 238.0,
-      "detail_path": "items/arxiv-openforgerl-train-harness-native-agents-in-any-environment.html",
-      "first_seen_at": "2026-07-24T03:37:54.658435+00:00",
-      "last_seen_at": "2026-07-24T03:37:54.658435+00:00",
-      "last_curated_at": "2026-07-24T03:37:54.658435+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2607.21552v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "MIRROR: Learning from the Other View for Multi-Modal Reasoning",
-      "html_url": "http://arxiv.org/abs/2607.21552v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.21552v1",
-      "description": "Unlike large language models (LLMs) that exhibit strong reasoning capabilities, vision-language models (VLMs) struggle with visual reasoning, even on geometry problems that admit equivalent text, diagram, and combined diagram+text views. We show that these views often elicit different behaviors: a model may solve a problem from text but fail on the corresponding diagram, or succeed visually while failing textually. This inconsistency suggests that different views expose complementary reasoning paths and failure modes that standard multimodal post-training does not fully exploit. To study and exploit this phenomenon, we construct ODA-Data, a high-quality paired multimodal geometry dataset with text-dominant, image-dominant, and combined image+text views of the same problems, together with splits for training and evaluating modality-dependent reasoning behaviors. We then develop Modality-Informed Reciprocal Reasoning Optimization (MIRROR), a reinforcement learning approach for improving multimodal reasoning via self supervision. For each problem, MIRROR evaluates the model under all views, selects the best-performing view as a teacher, and trains other views with a reverse-KL objective towards the teacher. Across reasoning benchmarks that evaluate on geometry problems, MIRROR improves over standard RL and yields more accurate and consistent behavior across modalities",
-      "authors": [
-        "Wen Ye",
-        "Yuxiao Qu",
-        "Aviral Kumar",
-        "Xuezhe Ma"
-      ],
-      "categories": [
-        "cs.AI",
-        "cs.LG"
-      ],
-      "published_at": "2026-07-23T17:35:56+00:00",
-      "updated_at": "2026-07-23T17:35:56+00:00",
-      "primary_category": "cs.AI",
-      "heuristic_score": 20.034,
-      "summary": "MIRROR: Learning from the Other View for Multi-Modal Reasoning 是最近值得追踪的一篇 AI 论文。论文摘要显示：Unlike large language models (LLMs) that exhibit strong reasoning capabilities, vision-language models (VLMs) struggle with visual reasoning, even on geometry problems that admit equivalent text, diagram, and combined diagram+text views. We...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.AI, cs.LG",
-        "作者数: 4"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "llm",
-        "multimodal",
-        "model"
-      ],
-      "themes": [
-        "ai",
-        "llm",
-        "multimodal"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：MIRROR: Learning from the Other View for Multi-Modal Reasoning 是最近值得追踪的一篇 AI 论文。论文摘要显示：Unlike large language models (LLMs) that exhibit strong reasoning capabilities, vision-language models (VLMs) struggle with visual reasoning, even on geometry problems that admit equivalent text, diagram, and combined diagram+text views. We...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI, cs.LG\n- 作者数: 4",
-      "focus_hits": [
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "multimodal",
-          "weight": 2.0
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "reasoning",
-      "personalized_score": 168.0,
-      "detail_path": "items/arxiv-mirror-learning-from-the-other-view-for-multi-modal-reasoning.html",
-      "first_seen_at": "2026-07-24T03:37:54.658435+00:00",
-      "last_seen_at": "2026-07-24T03:37:54.658435+00:00",
-      "last_curated_at": "2026-07-24T03:37:54.658435+00:00",
-      "last_notified_at": null
-    },
-    {
       "id": "arxiv::http://arxiv.org/abs/2607.21522v1",
       "kind": "paper",
       "source": "arxiv",
@@ -598,54 +1217,6 @@
       "last_notified_at": null
     },
     {
-      "id": "github::koala73/worldmonitor",
-      "kind": "repo",
-      "source": "github",
-      "source_tags": [
-        "trending"
-      ],
-      "name": "worldmonitor",
-      "title": "koala73/worldmonitor",
-      "full_name": "koala73/worldmonitor",
-      "html_url": "https://github.com/koala73/worldmonitor",
-      "description": "Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface",
-      "stars": 71871,
-      "stars_today": 0,
-      "language": "TypeScript",
-      "topics": [],
-      "created_at": "",
-      "updated_at": "",
-      "heuristic_score": 12.6,
-      "summary": "koala73/worldmonitor 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface结合关键词命中和热度信号，它适合加入今日重点观察列表。",
-      "brief": "这是一个值得快速关注的开源 AI 项目。",
-      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
-      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
-      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
-      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
-      "highlights": [
-        "Stars: 71871",
-        "语言: TypeScript"
-      ],
-      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
-      "relevance_score": 7,
-      "tags": [
-        "ai"
-      ],
-      "themes": [
-        "ai"
-      ],
-      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：koala73/worldmonitor 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 71871\n- 语言: TypeScript",
-      "focus_hits": [],
-      "primary_match": "",
-      "personalized_score": 90.0,
-      "detail_path": "items/github-koala73-worldmonitor.html",
-      "first_seen_at": "2026-06-20T01:56:23.408549+00:00",
-      "last_seen_at": "2026-07-24T03:37:54.658435+00:00",
-      "last_curated_at": "2026-07-24T03:37:54.658435+00:00",
-      "last_notified_at": null
-    },
-    {
       "id": "github::earthtojake/text-to-cad",
       "kind": "repo",
       "source": "github",
@@ -700,102 +1271,6 @@
       "personalized_score": 120.03,
       "detail_path": "items/github-earthtojake-text-to-cad.html",
       "first_seen_at": "2026-07-22T01:11:24.111960+00:00",
-      "last_seen_at": "2026-07-24T03:37:54.658435+00:00",
-      "last_curated_at": "2026-07-24T03:37:54.658435+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "github::ComposioHQ/awesome-claude-skills",
-      "kind": "repo",
-      "source": "github",
-      "source_tags": [
-        "trending"
-      ],
-      "name": "awesome-claude-skills",
-      "title": "ComposioHQ/awesome-claude-skills",
-      "full_name": "ComposioHQ/awesome-claude-skills",
-      "html_url": "https://github.com/ComposioHQ/awesome-claude-skills",
-      "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
-      "stars": 69528,
-      "stars_today": 0,
-      "language": "Python",
-      "topics": [],
-      "created_at": "",
-      "updated_at": "",
-      "heuristic_score": 12.6,
-      "summary": "ComposioHQ/awesome-claude-skills 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows结合关键词命中和热度信号，它适合加入今日重点观察列表。",
-      "brief": "这是一个值得快速关注的开源 AI 项目。",
-      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
-      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
-      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
-      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
-      "highlights": [
-        "Stars: 69528",
-        "语言: Python"
-      ],
-      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
-      "relevance_score": 7,
-      "tags": [
-        "ai"
-      ],
-      "themes": [
-        "ai"
-      ],
-      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：ComposioHQ/awesome-claude-skills 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 69528\n- 语言: Python",
-      "focus_hits": [],
-      "primary_match": "",
-      "personalized_score": 90.0,
-      "detail_path": "items/github-composiohq-awesome-claude-skills.html",
-      "first_seen_at": "2026-07-23T01:19:45.147744+00:00",
-      "last_seen_at": "2026-07-24T03:37:54.658435+00:00",
-      "last_curated_at": "2026-07-24T03:37:54.658435+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "github::shiyu-coder/Kronos",
-      "kind": "repo",
-      "source": "github",
-      "source_tags": [
-        "trending"
-      ],
-      "name": "Kronos",
-      "title": "shiyu-coder/Kronos",
-      "full_name": "shiyu-coder/Kronos",
-      "html_url": "https://github.com/shiyu-coder/Kronos",
-      "description": "Kronos: A Foundation Model for the Language of Financial Markets",
-      "stars": 33139,
-      "stars_today": 0,
-      "language": "Python",
-      "topics": [],
-      "created_at": "",
-      "updated_at": "",
-      "heuristic_score": 12.6,
-      "summary": "shiyu-coder/Kronos 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Kronos: A Foundation Model for the Language of Financial Markets结合关键词命中和热度信号，它适合加入今日重点观察列表。",
-      "brief": "这是一个值得快速关注的开源 AI 项目。",
-      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
-      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
-      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
-      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
-      "highlights": [
-        "Stars: 33139",
-        "语言: Python"
-      ],
-      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
-      "relevance_score": 7,
-      "tags": [
-        "model"
-      ],
-      "themes": [
-        "model"
-      ],
-      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：shiyu-coder/Kronos 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Kronos: A Foundation Model for the Language of Financial Markets结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 33139\n- 语言: Python",
-      "focus_hits": [],
-      "primary_match": "",
-      "personalized_score": 83.26,
-      "detail_path": "items/github-shiyu-coder-kronos.html",
-      "first_seen_at": "2026-07-23T01:19:45.147744+00:00",
       "last_seen_at": "2026-07-24T03:37:54.658435+00:00",
       "last_curated_at": "2026-07-24T03:37:54.658435+00:00",
       "last_notified_at": null
@@ -4902,54 +5377,6 @@
       "personalized_score": 76.05,
       "detail_path": "items/github-hasaneyldrm-exercises-dataset.html",
       "first_seen_at": "2026-07-01T01:58:35.678590+00:00",
-      "last_seen_at": "2026-07-17T03:32:33.079865+00:00",
-      "last_curated_at": "2026-07-17T03:32:33.079865+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "github::mattpocock/skills",
-      "kind": "repo",
-      "source": "github",
-      "source_tags": [
-        "trending"
-      ],
-      "name": "skills",
-      "title": "mattpocock/skills",
-      "full_name": "mattpocock/skills",
-      "html_url": "https://github.com/mattpocock/skills",
-      "description": "Skills for Real Engineers. Straight from my .claude directory.",
-      "stars": 174445,
-      "stars_today": 0,
-      "language": "Shell",
-      "topics": [],
-      "created_at": "",
-      "updated_at": "",
-      "heuristic_score": 12.6,
-      "summary": "mattpocock/skills 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Skills for Real Engineers. Straight from my .claude directory.结合关键词命中和热度信号，它适合加入今日重点观察列表。",
-      "brief": "这是一个值得快速关注的开源 AI 项目。",
-      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
-      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
-      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
-      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
-      "highlights": [
-        "Stars: 174445",
-        "语言: Shell"
-      ],
-      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
-      "relevance_score": 7,
-      "tags": [
-        "ai"
-      ],
-      "themes": [
-        "ai"
-      ],
-      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：mattpocock/skills 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Skills for Real Engineers. Straight from my .claude directory.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 174445\n- 语言: Shell",
-      "focus_hits": [],
-      "primary_match": "",
-      "personalized_score": 90.0,
-      "detail_path": "items/github-mattpocock-skills.html",
-      "first_seen_at": "2026-07-11T01:12:49.220475+00:00",
       "last_seen_at": "2026-07-17T03:32:33.079865+00:00",
       "last_curated_at": "2026-07-17T03:32:33.079865+00:00",
       "last_notified_at": null
@@ -12798,469 +13225,35 @@
       "last_seen_at": "2026-07-01T04:50:41.073144+00:00",
       "last_curated_at": "2026-07-01T04:50:41.073144+00:00",
       "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2606.31639v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "A Lifecycle and Application-Stack Survey of Large Language Model Vulnerabilities: Attacks, Risks, Defenses, and Open Problems",
-      "html_url": "http://arxiv.org/abs/2606.31639v1",
-      "pdf_url": "https://arxiv.org/pdf/2606.31639v1",
-      "description": "Large language models are no longer only text generators. They are increasingly embedded in retrieval pipelines, enterprise assistants, coding environments, robotic systems, security-operation workflows, and autonomous agents that can read private data, call tools, write files, execute code, and act across organizational boundaries. This shift changes the security problem: risks do not arise from the model weights alone, but from the full lifecycle and application stack through which data, prompts, model outputs, tools, memories, and user authority interact. This paper systematizes the literature on vulnerabilities in large language model systems through a lifecycle and application-stack lens. We organize attacks across eight stages: data collection, pretraining, post-training alignment, model packaging and supply chain, retrieval and memory, prompting and inference, tool/agent execution, and deployment/maintenance. For each stage, we analyze attacker capabilities, affected security objectives, representative attacks, practical risks, evaluation practices, and defenses. We further map LLM-specific vulnerabilities to confidentiality, integrity, availability, safety, privacy, fairness, accountability, and agency-control objectives. Unlike taxonomies that list isolated attack names, the proposed systematization emphasizes where trust boundaries fail, how untrusted data becomes executable instruction, how delegated authority amplifies model errors, and why point defenses rarely compose. We close with a research agenda for secure LLM systems, including compositional security, provenance-aware retrieval, tool-call containment, long-horizon agent evaluation, privacy-preserving adaptation, realistic red teaming, and deployment-grade incident response.",
-      "authors": [
-        "Seyed Bagher Hashemi Natanzi",
-        "Bo Tang"
-      ],
-      "categories": [
-        "cs.CR",
-        "cs.AI",
-        "cs.GT",
-        "cs.LO"
-      ],
-      "published_at": "2026-06-30T13:21:43+00:00",
-      "updated_at": "2026-06-30T13:21:43+00:00",
-      "primary_category": "cs.CR",
-      "heuristic_score": 16.4,
-      "summary": "A Lifecycle and Application-Stack Survey of Large Language Model Vulnerabilities: Attacks, Risks, Defenses, and Open Problems 是最近值得追踪的一篇 AI 论文。论文摘要显示：Large language models are no longer only text generators. They are increasingly embedded in retrieval pipelines, enterprise assistants, coding environments, robotic systems, security-operation workflows, and autonomous agents that can read ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CR, cs.AI",
-        "作者数: 2"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 9,
-      "tags": [
-        "ai",
-        "llm",
-        "agent",
-        "model"
-      ],
-      "themes": [
-        "ai",
-        "llm",
-        "agent"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：A Lifecycle and Application-Stack Survey of Large Language Model Vulnerabilities: Attacks, Risks, Defenses, and Open Problems 是最近值得追踪的一篇 AI 论文。论文摘要显示：Large language models are no longer only text generators. They are increasingly embedded in retrieval pipelines, enterprise assistants, coding environments, robotic systems, security-operation workflows, and autonomous agents that can read ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：9/10\n\n**亮点**：\n- 分类: cs.CR, cs.AI\n- 作者数: 2",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "coding",
-          "weight": 2.6
-        },
-        {
-          "keyword": "inference",
-          "weight": 1.8
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 164.0,
-      "detail_path": "items/arxiv-a-lifecycle-and-application-stack-survey-of-large-language-model-vulnerabilities-attacks-r.html",
-      "first_seen_at": "2026-07-01T01:58:35.678590+00:00",
-      "last_seen_at": "2026-07-01T04:50:41.073144+00:00",
-      "last_curated_at": "2026-07-01T04:50:41.073144+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "github::xbtlin/ai-berkshire",
-      "kind": "repo",
-      "source": "github",
-      "source_tags": [
-        "trending"
-      ],
-      "name": "ai-berkshire",
-      "title": "xbtlin/ai-berkshire",
-      "full_name": "xbtlin/ai-berkshire",
-      "html_url": "https://github.com/xbtlin/ai-berkshire",
-      "description": "AI 时代的伯克希尔：基于 Claude Code / Codex 的价值投资研究框架。巴菲特·芒格·段永平·李录四大师方法论 + 多Agent并行研究。| AI-era Berkshire: a value investing research framework built for Claude Code / Codex. 4 masters' methodologies + multi-agent adversarial analysis.",
-      "stars": 7670,
-      "stars_today": 0,
-      "language": "Python",
-      "topics": [],
-      "created_at": "",
-      "updated_at": "",
-      "heuristic_score": 15.2,
-      "summary": "xbtlin/ai-berkshire 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：AI 时代的伯克希尔：基于 Claude Code / Codex 的价值投资研究框架。巴菲特·芒格·段永平·李录四大师方法论 + 多Agent并行研究。| AI-era Berkshire: a value investing research framework built for Claude Code / Codex. 4 masters' methodologies + multi-agent adversarial analysis.结合关键词命中和热度信号，它适合加入今日重点观察列表。",
-      "brief": "这是一个值得快速关注的开源 AI 项目。",
-      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
-      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
-      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
-      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
-      "highlights": [
-        "Stars: 7670",
-        "语言: Python"
-      ],
-      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
-      "relevance_score": 8,
-      "tags": [
-        "ai",
-        "agent"
-      ],
-      "themes": [
-        "ai",
-        "agent"
-      ],
-      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：xbtlin/ai-berkshire 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：AI 时代的伯克希尔：基于 Claude Code / Codex 的价值投资研究框架。巴菲特·芒格·段永平·李录四大师方法论 + 多Agent并行研究。| AI-era Berkshire: a value investing research framework built for Claude Code / Codex. 4 masters' methodologies + multi-agent adversarial analysis.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 7670\n- 语言: Python",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 113.07,
-      "detail_path": "items/github-xbtlin-ai-berkshire.html",
-      "first_seen_at": "2026-06-27T01:47:42.641715+00:00",
-      "last_seen_at": "2026-07-01T04:50:41.073144+00:00",
-      "last_curated_at": "2026-07-01T04:50:41.073144+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "github::google/agents-cli",
-      "kind": "repo",
-      "source": "github",
-      "source_tags": [
-        "trending"
-      ],
-      "name": "agents-cli",
-      "title": "google/agents-cli",
-      "full_name": "google/agents-cli",
-      "html_url": "https://github.com/google/agents-cli",
-      "description": "The CLI and skills that turn any coding assistant into an expert at creating, evaluating, and deploying AI agents on Google Cloud.",
-      "stars": 4323,
-      "stars_today": 0,
-      "language": "Python",
-      "topics": [],
-      "created_at": "",
-      "updated_at": "",
-      "heuristic_score": 13.846,
-      "summary": "google/agents-cli 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：The CLI and skills that turn any coding assistant into an expert at creating, evaluating, and deploying AI agents on Google Cloud.结合关键词命中和热度信号，它适合加入今日重点观察列表。",
-      "brief": "这是一个值得快速关注的开源 AI 项目。",
-      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
-      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
-      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
-      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
-      "highlights": [
-        "Stars: 4323",
-        "语言: Python"
-      ],
-      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
-      "relevance_score": 8,
-      "tags": [
-        "ai",
-        "agent",
-        "ai agent"
-      ],
-      "themes": [
-        "ai",
-        "agent",
-        "ai agent"
-      ],
-      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：google/agents-cli 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：The CLI and skills that turn any coding assistant into an expert at creating, evaluating, and deploying AI agents on Google Cloud.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 4323\n- 语言: Python",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "coding",
-          "weight": 2.6
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 137.73,
-      "detail_path": "items/github-google-agents-cli.html",
-      "first_seen_at": "2026-07-01T01:58:35.678590+00:00",
-      "last_seen_at": "2026-07-01T04:50:41.073144+00:00",
-      "last_curated_at": "2026-07-01T04:50:41.073144+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2606.31608v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "CLExEval: A Human-in-the-Loop Framework for Qualitative Evaluation of LLM Clinical Reasoning",
-      "html_url": "http://arxiv.org/abs/2606.31608v1",
-      "pdf_url": "https://arxiv.org/pdf/2606.31608v1",
-      "description": "Large Language Models (LLMs) achieve strong results on many medical benchmarks, but their clinical reasoning remains difficult to evaluate reliably. A central risk is an evaluation illusion: fluent and well-structured explanations can appear clinically convincing even when the final diagnosis is incorrect. We introduce CLExEval, a human-in-the-loop framework for evaluating LLM clinical reasoning under progressive information masking. CLExEval combines 5,600 expert-physician annotations with 200 clinical reasoning traces derived from 40 rare diagnostic cases. Our analysis identifies three recurring failure patterns: (i) verbosity bias, where GPT-4o-mini's diagnostic accuracy drops from 95.0% to 32.5% under information scarcity; (ii) a hidden knowledge paradox, where a specialist model reaches 92.5% maximum diagnostic potential but fails to retrieve that knowledge reliably in verbose contexts; and (iii) a 68.6% reasoning-to-output mismatch, where correct diagnoses appear in reasoning traces but are not reflected in final answers. We further evaluate the LLM-as-a-Judge paradigm on a human-verified failure set (n = 142). GPT-4o-mini approved 47.9% of clinically incorrect outputs, while HuatuoGPT-o1 approved all validly scored failures and showed a positive self-preference bias. These results suggest that standalone automated clinical evaluations can substantially overestimate clinical reliability without expert-grounded validation.",
-      "authors": [
-        "Ajmal M.",
-        "Abin Roy",
-        "Afthab Salam Kanniyan",
-        "Jawadh Abdul Kabeer",
-        "Jerin James",
-        "Preslav Nakov",
-        "Zhuohan Xie"
-      ],
-      "categories": [
-        "cs.CL"
-      ],
-      "published_at": "2026-06-30T12:56:42+00:00",
-      "updated_at": "2026-06-30T12:56:42+00:00",
-      "primary_category": "cs.CL",
-      "heuristic_score": 17.714,
-      "summary": "CLExEval: A Human-in-the-Loop Framework for Qualitative Evaluation of LLM Clinical Reasoning 是最近值得追踪的一篇 AI 论文。论文摘要显示：Large Language Models (LLMs) achieve strong results on many medical benchmarks, but their clinical reasoning remains difficult to evaluate reliably. A central risk is an evaluation illusion: fluent and well-structured explanations can appea...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CL",
-        "作者数: 7"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "llm",
-        "gpt",
-        "model"
-      ],
-      "themes": [
-        "ai",
-        "llm",
-        "gpt"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：CLExEval: A Human-in-the-Loop Framework for Qualitative Evaluation of LLM Clinical Reasoning 是最近值得追踪的一篇 AI 论文。论文摘要显示：Large Language Models (LLMs) achieve strong results on many medical benchmarks, but their clinical reasoning remains difficult to evaluate reliably. A central risk is an evaluation illusion: fluent and well-structured explanations can appea...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL\n- 作者数: 7",
-      "focus_hits": [
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "reasoning",
-      "personalized_score": 148.0,
-      "detail_path": "items/arxiv-clexeval-a-human-in-the-loop-framework-for-qualitative-evaluation-of-llm-clinical-reasonin.html",
-      "first_seen_at": "2026-07-01T01:58:35.678590+00:00",
-      "last_seen_at": "2026-07-01T01:58:35.678590+00:00",
-      "last_curated_at": "2026-07-01T01:58:35.678590+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2606.31630v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "Calibration, Not Compilation: Detecting and Repairing Misspecified Probabilistic Programs Written by Language Models",
-      "html_url": "http://arxiv.org/abs/2606.31630v1",
-      "pdf_url": "https://arxiv.org/pdf/2606.31630v1",
-      "description": "Language models increasingly write probabilistic programs (in NumPyro, Stan, or Pyro), but a program that compiles, runs, and passes every unit test can still be \\emph{statistically} wrong -- a Gaussian likelihood for heavy-tailed data, a Poisson for over-dispersed counts, an invalid prior support, or a pathological parameterization. The right verifier is therefore not a test suite but the Bayesian workflow itself: posterior predictive checks, simulation-based calibration, sampler diagnostics ($\\hat R$, divergences, ESS), and held-out predictive density. We study this calibration oracle along three axes. \\textbf{Detection:} on a benchmark of $14$ misspecification types across $10$ model families ($200$ instances), it flags the bug with AUC $0.97$ ($88\\%$ at $2\\%$ FPR \\emph{when handed the correct reference program, an upper bound}) -- and a fully \\emph{reference-free} version that uses no correct program reaches $62$--$78\\%$ (the upper figure from a small automated model search), versus $0\\%$ for a unit-test oracle. \\textbf{Repair:} used as feedback in an LLM repair loop across fifteen models, calibration significantly outperforms unit-test feedback -- which is itself \\emph{significantly worse than no feedback at all}, a passing test inducing false confidence that suppresses repair -- and improves over no feedback on strong-but-unsaturated models (GPT-5.1 $33{\\to}92\\%$, Claude $75{\\to}100\\%$; paired McNemar, $n{=}228$). \\textbf{Reality:} on programs LLMs write from scratch for neutral briefs, $15$--$47\\%$ of runnable ones are statistically misspecified (unit tests catch none), and calibration-guided repair significantly beats LLM-as-judge review, a Bayesian-workflow checklist, and data-summary self-debug. Across all three, the lesson is the same: for probabilistic programs, correctness is calibration, not compilation.",
-      "authors": [
-        "Jian Xu",
-        "Delu Zeng",
-        "John Paisley",
-        "Qibin Zhao"
-      ],
-      "categories": [
-        "cs.LG"
-      ],
-      "published_at": "2026-06-30T13:16:39+00:00",
-      "updated_at": "2026-06-30T13:16:39+00:00",
-      "primary_category": "cs.LG",
-      "heuristic_score": 15.5,
-      "summary": "Calibration, Not Compilation: Detecting and Repairing Misspecified Probabilistic Programs Written by Language Models 是最近值得追踪的一篇 AI 论文。论文摘要显示：Language models increasingly write probabilistic programs (in NumPyro, Stan, or Pyro), but a program that compiles, runs, and passes every unit test can still be \\emph{statistically} wrong -- a Gaussian likelihood for heavy-tailed data, a P...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.LG",
-        "作者数: 4"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 9,
-      "tags": [
-        "ai",
-        "llm",
-        "gpt",
-        "model"
-      ],
-      "themes": [
-        "ai",
-        "llm",
-        "gpt"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：Calibration, Not Compilation: Detecting and Repairing Misspecified Probabilistic Programs Written by Language Models 是最近值得追踪的一篇 AI 论文。论文摘要显示：Language models increasingly write probabilistic programs (in NumPyro, Stan, or Pyro), but a program that compiles, runs, and passes every unit test can still be \\emph{statistically} wrong -- a Gaussian likelihood for heavy-tailed data, a P...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：9/10\n\n**亮点**：\n- 分类: cs.LG\n- 作者数: 4",
-      "focus_hits": [
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "benchmark",
-      "personalized_score": 114.0,
-      "detail_path": "items/arxiv-calibration-not-compilation-detecting-and-repairing-misspecified-probabilistic-programs-wr.html",
-      "first_seen_at": "2026-07-01T01:58:35.678590+00:00",
-      "last_seen_at": "2026-07-01T01:58:35.678590+00:00",
-      "last_curated_at": "2026-07-01T01:58:35.678590+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2606.31602v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "Robust Text Watermarking for Large Language Models via Dual Semantic Embeddings",
-      "html_url": "http://arxiv.org/abs/2606.31602v1",
-      "pdf_url": "https://arxiv.org/pdf/2606.31602v1",
-      "description": "This work presents Dual-Embedding Watermarking (DEW), a semantic watermarking scheme for large language models (LLMs) that leverages contextual and token-level embeddings to enhance robustness against paraphrasing and translation. DEW utilizes a signal-processing methodology, applying algebraic vector-space operations to \\mbox{token and context embeddings to derive a watermark signal that degrades gracefully under semantic shifts. The method obfuscates the watermark by projecting embedding vectors through pseudo-random matrices seeded with a secret key. Relevant distributions derived from the underlying algebra are evaluated and employed for statistical testing and benchmarking of DEW. Experimental results across multiple LLMs indicate that DEW improves post-paraphrase detection while maintaining competitive text quality, and remains detectable after translation, even when prior semantic watermarks degrade significantly. These findings position DEW as a practical and robust solution for safeguarding LLM-generated text and addressing critical issues in responsible AI deployment.",
-      "authors": [
-        "Jonas Schäfer",
-        "Cezary Pilaszewicz",
-        "Gerhard Wunder"
-      ],
-      "categories": [
-        "cs.CL",
-        "cs.CR"
-      ],
-      "published_at": "2026-06-30T12:51:30+00:00",
-      "updated_at": "2026-06-30T12:51:30+00:00",
-      "primary_category": "cs.CL",
-      "heuristic_score": 14.867,
-      "summary": "Robust Text Watermarking for Large Language Models via Dual Semantic Embeddings 是最近值得追踪的一篇 AI 论文。论文摘要显示：This work presents Dual-Embedding Watermarking (DEW), a semantic watermarking scheme for large language models (LLMs) that leverages contextual and token-level embeddings to enhance robustness against paraphrasing and translation. DEW utili...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CL, cs.CR",
-        "作者数: 3"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 8,
-      "tags": [
-        "ai",
-        "llm",
-        "rag",
-        "model"
-      ],
-      "themes": [
-        "ai",
-        "llm",
-        "rag"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：Robust Text Watermarking for Large Language Models via Dual Semantic Embeddings 是最近值得追踪的一篇 AI 论文。论文摘要显示：This work presents Dual-Embedding Watermarking (DEW), a semantic watermarking scheme for large language models (LLMs) that leverages contextual and token-level embeddings to enhance robustness against paraphrasing and translation. DEW utili...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：8/10\n\n**亮点**：\n- 分类: cs.CL, cs.CR\n- 作者数: 3",
-      "focus_hits": [
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "rag",
-      "personalized_score": 126.0,
-      "detail_path": "items/arxiv-robust-text-watermarking-for-large-language-models-via-dual-semantic-embeddings.html",
-      "first_seen_at": "2026-07-01T01:58:35.678590+00:00",
-      "last_seen_at": "2026-07-01T01:58:35.678590+00:00",
-      "last_curated_at": "2026-07-01T01:58:35.678590+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2606.29278v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "The Complexity Ceiling Benchmark: A Multi-Domain Evaluation of Sequential Reasoning Under Depth Scaling",
-      "html_url": "http://arxiv.org/abs/2606.29278v1",
-      "pdf_url": "https://arxiv.org/pdf/2606.29278v1",
-      "description": "We introduce the Complexity Ceiling Benchmark (CCB), a controlled evaluation of how language-model reasoning decays as the number of required sequential steps grows. CCB fixes the semantic content of a task and varies only its depth N in {5,...,50} across three structurally distinct regimes: grounded spatial state-tracking, abstract symbolic pointer manipulation, and transitive relational inference. Across 6,000 trials over five frontier and open-weight LLMs we find a consistent pattern of geometric per-step decay with widely separated domain ceilings: on the first two regimes the strongest models retain pd>0.92 across N=50; on the third every model collapses by N=5, with the best model's 50%-success horizon at H0.5~4.7 steps despite pd=0.863. A trace-level metric (TFBC) shows that 14.5% of correct answers across the benchmark are reached via incorrect intermediate reasoning. Forced verbose state-tracking does not move the ceiling (McNemar p=1.000), and the mean step at which reasoning first diverges, k*, predicts within-domain accuracy better than parameter count. CCB and the geometric decay model together reduce a model's long-horizon reasoning profile to one interpretable number per task family.",
-      "authors": [
-        "Shubh Chapra",
-        "Dhruv Kumar",
-        "Murari Mandal",
-        "Yash Sinha"
-      ],
-      "categories": [
-        "cs.AI",
-        "cs.CL"
-      ],
-      "published_at": "2026-06-28T08:56:34+00:00",
-      "updated_at": "2026-06-28T08:56:34+00:00",
-      "primary_category": "cs.AI",
-      "heuristic_score": 17.421,
-      "summary": "The Complexity Ceiling Benchmark: A Multi-Domain Evaluation of Sequential Reasoning Under Depth Scaling 是最近值得追踪的一篇 AI 论文。论文摘要显示：We introduce the Complexity Ceiling Benchmark (CCB), a controlled evaluation of how language-model reasoning decays as the number of required sequential steps grows. CCB fixes the semantic content of a task and varies only its depth N in {5...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.AI, cs.CL",
-        "作者数: 4"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "llm",
-        "model",
-        "benchmark"
-      ],
-      "themes": [
-        "ai",
-        "llm",
-        "model"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：The Complexity Ceiling Benchmark: A Multi-Domain Evaluation of Sequential Reasoning Under Depth Scaling 是最近值得追踪的一篇 AI 论文。论文摘要显示：We introduce the Complexity Ceiling Benchmark (CCB), a controlled evaluation of how language-model reasoning decays as the number of required sequential steps grows. CCB fixes the semantic content of a task and varies only its depth N in {5...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI, cs.CL\n- 作者数: 4",
-      "focus_hits": [
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "inference",
-          "weight": 1.8
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "reasoning",
-      "personalized_score": 166.0,
-      "detail_path": "items/arxiv-the-complexity-ceiling-benchmark-a-multi-domain-evaluation-of-sequential-reasoning-under-d.html",
-      "first_seen_at": "2026-06-30T01:53:26.317470+00:00",
-      "last_seen_at": "2026-06-30T04:21:58.064008+00:00",
-      "last_curated_at": "2026-06-30T04:21:58.064008+00:00",
-      "last_notified_at": null
     }
   ],
   "digests": [
+    {
+      "date": "2026-07-25",
+      "title": "AI Daily Digest · 2026-07-25",
+      "generated_at": "2026-07-25T09:15:25.723466+08:00",
+      "notified_at": null,
+      "repo_ids": [
+        "github::diegosouzapw/OmniRoute",
+        "github::mattpocock/skills",
+        "github::CoreBunch/Instatic",
+        "github::koala73/worldmonitor",
+        "github::ComposioHQ/awesome-claude-skills",
+        "github::Lordog/dive-into-llms",
+        "github::shiyu-coder/Kronos",
+        "github::OtterMind/Chat2DB"
+      ],
+      "paper_ids": [
+        "arxiv::http://arxiv.org/abs/2607.21557v1",
+        "arxiv::http://arxiv.org/abs/2607.21552v1",
+        "arxiv::http://arxiv.org/abs/2607.21556v1",
+        "arxiv::http://arxiv.org/abs/2607.21592v1",
+        "arxiv::http://arxiv.org/abs/2607.21576v1",
+        "arxiv::http://arxiv.org/abs/2607.21553v1"
+      ],
+      "digest_json": "data/digests/2026-07-25.json",
+      "digest_markdown": "data/digests/2026-07-25.md"
+    },
     {
       "date": "2026-07-24",
       "title": "AI Daily Digest · 2026-07-24",
@@ -15691,8 +15684,8 @@
     "weekly": {
       "label": "周报",
       "window_days": 7,
-      "generated_at": "2026-07-24T11:37:47.027013+08:00",
-      "count": 70,
+      "generated_at": "2026-07-25T09:15:25.723466+08:00",
+      "count": 78,
       "summary": "近 7 天里，最集中的主题是 ai、llm、agent。",
       "top_items": [
         {
@@ -15781,8 +15774,8 @@
           "personalized_score": 238.0,
           "detail_path": "items/arxiv-openforgerl-train-harness-native-agents-in-any-environment.html",
           "first_seen_at": "2026-07-24T03:37:54.658435+00:00",
-          "last_seen_at": "2026-07-24T03:37:54.658435+00:00",
-          "last_curated_at": "2026-07-24T03:37:54.658435+00:00",
+          "last_seen_at": "2026-07-25T01:15:32.119033+00:00",
+          "last_curated_at": "2026-07-25T01:15:32.119033+00:00",
           "last_notified_at": null
         },
         {
@@ -16377,7 +16370,7 @@
     "monthly": {
       "label": "月报",
       "window_days": 30,
-      "generated_at": "2026-07-24T11:37:47.027013+08:00",
+      "generated_at": "2026-07-25T09:15:25.723466+08:00",
       "count": 200,
       "summary": "近 30 天里，最集中的主题是 ai、agent、llm。",
       "top_items": [
@@ -16467,8 +16460,8 @@
           "personalized_score": 238.0,
           "detail_path": "items/arxiv-openforgerl-train-harness-native-agents-in-any-environment.html",
           "first_seen_at": "2026-07-24T03:37:54.658435+00:00",
-          "last_seen_at": "2026-07-24T03:37:54.658435+00:00",
-          "last_curated_at": "2026-07-24T03:37:54.658435+00:00",
+          "last_seen_at": "2026-07-25T01:15:32.119033+00:00",
+          "last_curated_at": "2026-07-25T01:15:32.119033+00:00",
           "last_notified_at": null
         },
         {
