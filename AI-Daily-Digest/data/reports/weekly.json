@@ -1,100 +1,10 @@
 {
   "label": "周报",
   "window_days": 7,
-  "generated_at": "2026-08-01T09:20:01.205488+08:00",
-  "count": 69,
+  "generated_at": "2026-08-01T11:45:32.840521+08:00",
+  "count": 61,
   "summary": "近 7 天里，最集中的主题是 ai、agent、llm。",
   "top_items": [
-    {
-      "id": "arxiv::http://arxiv.org/abs/2607.21557v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "OpenForgeRL: Train Harness-native Agents in Any Environment",
-      "html_url": "http://arxiv.org/abs/2607.21557v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.21557v1",
-      "description": "Modern AI agents rely on elaborate inference harnesses such as Claude Code, Codex, and OpenClaw to drive multi-turn reasoning, tool use, and access to external systems. While powerful, these complex harnesses also make agents hard to train end-to-end with open infrastructure, whose SFT/RL stacks cannot natively express stateful, multi-process harness inference. To address this, we present OpenForgeRL, an open-source framework for training harness-based agents end-to-end in diverse environments. OpenForgeRL achieves this with a lightweight proxy that serves the harness's model calls while recording them as training data for a standard RL codebase (e.g., veRL), and a Kubernetes orchestrator that runs each rollout in its own remote container, together enabling training on any harness in any environment at scale. By decoupling training and inference, OpenForgeRL allows researchers to easily train, study, and improve agents directly in the real harnesses and environments they are deployed with. We validate our framework across diverse, complex harnesses and environments, spanning tool/claw-based agents and multimodal GUI browser- and computer-use agents. Using only hundreds to a few thousand tasks, OpenForgeClaw reaches 31.7 pass^3 and 55.9 pass@3 on ClawEval and 33.7 on QwenClawBench. OpenForgeGUI reaches 37.7 on OSWorld-Verified, 63.0 on Online-Mind2Web, and 72.3 on WebVoyager. Both outperform open baselines of similar size on nearly all benchmarks, and in the GUI setting match or surpass models several times larger. Beyond benchmarks, we analyze how harness choice (e.g., ZeroClaw, OpenClaw, Codex) and RL shape agent behavior. We find that some harnesses are substantially harder to learn than others, and that RL improves agentic reliability, such as self-verification, tool coverage, and completing multi-step plans, though critical abilities such as error recovery remain weak.",
-      "authors": [
-        "Xiao Yu",
-        "Baolin Peng",
-        "Ruize Xu",
-        "Hao Zou",
-        "Qianhui Wu",
-        "Hao Cheng",
-        "Wenlin Yao",
-        "Nikhil Singh",
-        "Zhou Yu",
-        "Jianfeng Gao"
-      ],
-      "categories": [
-        "cs.AI",
-        "cs.CL"
-      ],
-      "published_at": "2026-07-23T17:38:30+00:00",
-      "updated_at": "2026-07-23T17:38:30+00:00",
-      "primary_category": "cs.AI",
-      "heuristic_score": 29.9,
-      "summary": "OpenForgeRL: Train Harness-native Agents in Any Environment 是最近值得追踪的一篇 AI 论文。论文摘要显示：Modern AI agents rely on elaborate inference harnesses such as Claude Code, Codex, and OpenClaw to drive multi-turn reasoning, tool use, and access to external systems. While powerful, these complex harnesses also make agents hard to train ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.AI, cs.CL",
-        "作者数: 10"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "agent",
-        "agentic",
-        "rag"
-      ],
-      "themes": [
-        "ai",
-        "agent",
-        "agentic"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：OpenForgeRL: Train Harness-native Agents in Any Environment 是最近值得追踪的一篇 AI 论文。论文摘要显示：Modern AI agents rely on elaborate inference harnesses such as Claude Code, Codex, and OpenClaw to drive multi-turn reasoning, tool use, and access to external systems. While powerful, these complex harnesses also make agents hard to train ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI, cs.CL\n- 作者数: 10",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "multimodal",
-          "weight": 2.0
-        },
-        {
-          "keyword": "inference",
-          "weight": 1.8
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 238.0,
-      "detail_path": "items/arxiv-openforgerl-train-harness-native-agents-in-any-environment.html",
-      "first_seen_at": "2026-07-24T03:37:54.658435+00:00",
-      "last_seen_at": "2026-07-25T03:33:32.289114+00:00",
-      "last_curated_at": "2026-07-25T03:33:32.289114+00:00",
-      "last_notified_at": null
-    },
     {
       "id": "arxiv::http://arxiv.org/abs/2607.28595v1",
       "kind": "paper",
@@ -180,8 +90,8 @@
       "personalized_score": 220.0,
       "detail_path": "items/arxiv-beacon-knowing-when-and-how-to-perform-agentic-visual-reasoning.html",
       "first_seen_at": "2026-07-31T03:46:36.278176+00:00",
-      "last_seen_at": "2026-08-01T01:20:11.503604+00:00",
-      "last_curated_at": "2026-08-01T01:20:11.503604+00:00",
+      "last_seen_at": "2026-08-01T03:45:38.133094+00:00",
+      "last_curated_at": "2026-08-01T03:45:38.133094+00:00",
       "last_notified_at": null
     },
     {
@@ -261,8 +171,8 @@
       "personalized_score": 204.0,
       "detail_path": "items/arxiv-orca-bench-how-ready-are-language-model-agents-for-oncall.html",
       "first_seen_at": "2026-07-31T03:46:36.278176+00:00",
-      "last_seen_at": "2026-08-01T01:20:11.503604+00:00",
-      "last_curated_at": "2026-08-01T01:20:11.503604+00:00",
+      "last_seen_at": "2026-08-01T03:45:38.133094+00:00",
+      "last_curated_at": "2026-08-01T03:45:38.133094+00:00",
       "last_notified_at": null
     },
     {
@@ -457,8 +367,8 @@
       "personalized_score": 194.0,
       "detail_path": "items/arxiv-frontis-ma1-training-an-ai4ai-model-towards-recursive-self-improvement-in-machine-learning.html",
       "first_seen_at": "2026-07-31T03:46:36.278176+00:00",
-      "last_seen_at": "2026-08-01T01:20:11.503604+00:00",
-      "last_curated_at": "2026-08-01T01:20:11.503604+00:00",
+      "last_seen_at": "2026-08-01T03:45:38.133094+00:00",
+      "last_curated_at": "2026-08-01T03:45:38.133094+00:00",
       "last_notified_at": null
     },
     {
@@ -703,6 +613,79 @@
       "last_seen_at": "2026-07-29T03:33:02.325914+00:00",
       "last_curated_at": "2026-07-29T03:33:02.325914+00:00",
       "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2607.24672v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Explainable Reinforcement Learning via Physics-Aware Policy Distillation",
+      "html_url": "http://arxiv.org/abs/2607.24672v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.24672v1",
+      "description": "In safety-critical sectors such as robotics and automotive engineering, the deployment of Deep Reinforcement Learning (DRL) is often hindered by the black-box nature of deep neural networks. This lack of transparency poses significant challenges for regulatory compliance and human-agent trust. This paper presents an experimental study aimed at making high-performance continuous control DRL systems interpretable. A policy distillation framework is implemented using the classic Inverted Pendulum benchmark. A high-performance Twin Delayed DDPG (TD3) agent serves as an opaque, continuous teacher model, whose policy is distilled into an interpretable student surrogate based on a shallow Decision Tree. By leveraging a custom physics-aware feature and \"Noisy Oracle Rollouts\" for dataset generation, the distillation process achieves performance equivalent to the expert teacher. Furthermore, comparative control theory analysis reveals a fundamental trade-off: transitioning from continuous to discrete rule-based control induces high-frequency Bang-Bang actuation and a stable bimodal limit cycle. Simulation results indicate that Bounded-Input Bounded-Output (BIBO) stability is maintained while providing both global and local interpretability for safe autonomous systems.",
+      "authors": [
+        "Shaker Al-Tamari",
+        "Waled Kadour"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "published_at": "2026-07-27T17:14:42+00:00",
+      "updated_at": "2026-07-27T17:14:42+00:00",
+      "primary_category": "cs.LG",
+      "heuristic_score": 17.499,
+      "summary": "Explainable Reinforcement Learning via Physics-Aware Policy Distillation 是最近值得追踪的一篇 AI 论文。论文摘要显示：In safety-critical sectors such as robotics and automotive engineering, the deployment of Deep Reinforcement Learning (DRL) is often hindered by the black-box nature of deep neural networks. This lack of transparency poses significant chall...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.LG",
+        "作者数: 2"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "agent",
+        "rag",
+        "model"
+      ],
+      "themes": [
+        "ai",
+        "agent",
+        "rag"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：Explainable Reinforcement Learning via Physics-Aware Policy Distillation 是最近值得追踪的一篇 AI 论文。论文摘要显示：In safety-critical sectors such as robotics and automotive engineering, the deployment of Deep Reinforcement Learning (DRL) is often hindered by the black-box nature of deep neural networks. This lack of transparency poses significant chall...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.LG\n- 作者数: 2",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        },
+        {
+          "keyword": "robotics",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 192.0,
+      "detail_path": "items/arxiv-explainable-reinforcement-learning-via-physics-aware-policy-distillation.html",
+      "first_seen_at": "2026-07-28T03:30:11.850560+00:00",
+      "last_seen_at": "2026-07-28T03:30:11.850560+00:00",
+      "last_curated_at": "2026-07-28T03:30:11.850560+00:00",
+      "last_notified_at": null
     }
   ],
   "top_themes": [
@@ -721,17 +704,17 @@
   ],
   "highlights": [
     {
-      "title": "OpenForgeRL: Train Harness-native Agents in Any Environment",
-      "source": "arxiv",
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
-    },
-    {
       "title": "Beacon: Knowing When and How to Perform Agentic Visual Reasoning",
       "source": "arxiv",
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     },
     {
       "title": "ORCA-bench: How Ready Are Language Model Agents for Oncall?",
+      "source": "arxiv",
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
+    },
+    {
+      "title": "Data Pyramid for Embodied Manipulation",
       "source": "arxiv",
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     }
