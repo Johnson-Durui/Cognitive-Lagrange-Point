@@ -1,8 +1,8 @@
 {
   "label": "周报",
   "window_days": 7,
-  "generated_at": "2026-08-05T11:27:59.903158+08:00",
-  "count": 64,
+  "generated_at": "2026-08-06T09:08:34.605860+08:00",
+  "count": 66,
   "summary": "近 7 天里，最集中的主题是 ai、llm、agent。",
   "top_items": [
     {
@@ -604,78 +604,84 @@
       "last_notified_at": null
     },
     {
-      "id": "arxiv::http://arxiv.org/abs/2607.26041v1",
+      "id": "arxiv::http://arxiv.org/abs/2608.04939v1",
       "kind": "paper",
       "source": "arxiv",
       "source_tags": [
         "latest"
       ],
-      "title": "Desktop-Delta Bench: Do Computer-Use Models Understand Desktop GUI Transitions?",
-      "html_url": "http://arxiv.org/abs/2607.26041v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.26041v1",
-      "description": "Computer-use agents (CUAs) increasingly act through desktop GUIs to complete long-horizon tasks. Current benchmarks primarily measure end-task success or single-frame grounding. Neither isolates whether a model can reconstruct the causal, task-relevant transition produced by an action- crucial for rejecting stale observations, verifying progress, and recovering from failure. This is difficult because inference, remote input, app rendering, and screenshot capture are asynchronous: the next observation may be delayed, occluded, transient, or unrelated, then misread as progress and carried into subsequent planning. We introduce Desktop-Delta Bench (DDB), an offline step-level benchmark with 2,013 human-verified instances from novel, multi-app Linux trajectories across ~15 applications and 50 task domains. DDB trajectories targets 3 failure dimensions- state verification, source tracking, and context-aware control- through 2 complementary tasks: 463 3-frame temporal-ordering instances, including 105 with a cross-trajectory decoy, and 1,550 before-after pairs labeled from 5 actions + its payload. We evaluate 8 closed and open-source model families across 32 ordering and 16 single-action settings, observing consistent gaps. Ordering remains unsaturated: best non-decoy and decoy exact-match rates are 65.1% and 65.7%. Task context improves decoy identification by 6.9 percentage points but reduces non-decoy exact match by 2.2 points; error analysis reveals systematic copying of the presented A-B-C order. Single-action results show that inferring the action family is harder than locating it: click F1 is 0.96 vs, 0.76 for drag, while recognized drags are generally localized well. DDB, thus, complements end-to-end benchmarks by filling the missing diagnostic layer between GUI grounding and final task success, enabling targeted improvements to desktop CUA verification, reliability, and recovery.",
+      "title": "Reading Between the Frames: Interpreting Implicit and Non-literal Meaning in Social Media Videos",
+      "html_url": "http://arxiv.org/abs/2608.04939v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.04939v1",
+      "description": "Social media videos often communicate meanings that go beyond their visible actions, captions, or speech. A mundane clip may become humorous, ironic, or satire only through the interaction of multimodal cues and cultural context, making such content a difficult test case for video-language models. In this paper, we introduce \\textit{DrivelHub+}, a benchmark for evaluating whether models can infer the implicit, non-linear, and rhetorically layered meanings of social media videos that appear nonsensical on the surface but convey deliberate pragmatic meanings. DrivelHub+ consists of 1,000 videos collected from social media, each annotated with a human-written implicit narrative explanation. Unlike conventional video understanding tasks focused on recognition or description, we present a benchmark that targets contextual multimodal reasoning. We evaluate current video-language models from two perspectives: explanation, where models must explain the pragmatic comprehension of a video in natural language; and representation, where we adapt reasoning-as-retrieval to test whether model representations align videos with their corresponding implicit narratives in both video-to-text and text-to-video retrieval. Our benchmark provides a diagnostic setting for measuring the gap between multimodal perception and pragmatic comprehension, asking whether current models can move beyond describing what is shown to inferring what is meant.",
       "authors": [
-        "Abhishek Pillai",
-        "Samir Kumar Nayak",
-        "Yuan Chen"
+        "Yang Wang",
+        "Yanan Ma",
+        "Yiqi Liu",
+        "Zi Yan Chang",
+        "Chi-Li Chen",
+        "Chia-Yi Hsiao",
+        "Tyler Loakman",
+        "Aline Villavicencio",
+        "Chenghao Xiao",
+        "Chenghua Lin"
       ],
       "categories": [
-        "cs.AI",
-        "cs.CV"
+        "cs.CL"
       ],
-      "published_at": "2026-07-28T17:49:51+00:00",
-      "updated_at": "2026-07-28T17:49:51+00:00",
-      "primary_category": "cs.AI",
-      "heuristic_score": 20.3,
-      "summary": "Desktop-Delta Bench: Do Computer-Use Models Understand Desktop GUI Transitions? 是最近值得追踪的一篇 AI 论文。论文摘要显示：Computer-use agents (CUAs) increasingly act through desktop GUIs to complete long-horizon tasks. Current benchmarks primarily measure end-task success or single-frame grounding. Neither isolates whether a model can reconstruct the causal, t...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "published_at": "2026-08-05T15:06:03+00:00",
+      "updated_at": "2026-08-05T15:06:03+00:00",
+      "primary_category": "cs.CL",
+      "heuristic_score": 17.704,
+      "summary": "Reading Between the Frames: Interpreting Implicit and Non-literal Meaning in Social Media Videos 是最近值得追踪的一篇 AI 论文。论文摘要显示：Social media videos often communicate meanings that go beyond their visible actions, captions, or speech. A mundane clip may become humorous, ironic, or satire only through the interaction of multimodal cues and cultural context, making suc...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
       "brief": "这是一篇值得加入今日论文雷达的最新工作。",
       "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
       "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
       "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
       "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
       "highlights": [
-        "分类: cs.AI, cs.CV",
-        "作者数: 3"
+        "分类: cs.CL",
+        "作者数: 10"
       ],
       "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
       "relevance_score": 10,
       "tags": [
         "ai",
-        "agent",
         "rag",
+        "multimodal",
         "model"
       ],
       "themes": [
         "ai",
-        "agent",
-        "rag"
+        "rag",
+        "multimodal"
       ],
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：Desktop-Delta Bench: Do Computer-Use Models Understand Desktop GUI Transitions? 是最近值得追踪的一篇 AI 论文。论文摘要显示：Computer-use agents (CUAs) increasingly act through desktop GUIs to complete long-horizon tasks. Current benchmarks primarily measure end-task success or single-frame grounding. Neither isolates whether a model can reconstruct the causal, t...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI, cs.CV\n- 作者数: 3",
+      "summary_markdown": "**摘要**：Reading Between the Frames: Interpreting Implicit and Non-literal Meaning in Social Media Videos 是最近值得追踪的一篇 AI 论文。论文摘要显示：Social media videos often communicate meanings that go beyond their visible actions, captions, or speech. A mundane clip may become humorous, ironic, or satire only through the interaction of multimodal cues and cultural context, making suc...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL\n- 作者数: 10",
       "focus_hits": [
         {
-          "keyword": "agent",
-          "weight": 3.0
+          "keyword": "reasoning",
+          "weight": 2.4
         },
         {
           "keyword": "rag",
           "weight": 2.2
         },
         {
-          "keyword": "inference",
-          "weight": 1.8
+          "keyword": "multimodal",
+          "weight": 2.0
         },
         {
           "keyword": "benchmark",
           "weight": 1.6
         }
       ],
-      "primary_match": "agent",
-      "personalized_score": 194.0,
-      "detail_path": "items/arxiv-desktop-delta-bench-do-computer-use-models-understand-desktop-gui-transitions.html",
-      "first_seen_at": "2026-07-29T03:33:02.325914+00:00",
-      "last_seen_at": "2026-07-29T03:33:02.325914+00:00",
-      "last_curated_at": "2026-07-29T03:33:02.325914+00:00",
+      "primary_match": "reasoning",
+      "personalized_score": 190.0,
+      "detail_path": "items/arxiv-reading-between-the-frames-interpreting-implicit-and-non-literal-meaning-in-social-media-v.html",
+      "first_seen_at": "2026-08-06T01:08:41.741155+00:00",
+      "last_seen_at": "2026-08-06T01:08:41.741155+00:00",
+      "last_curated_at": "2026-08-06T01:08:41.741155+00:00",
       "last_notified_at": null
     }
   ],
@@ -690,7 +696,11 @@
     },
     {
       "theme": "agent",
-      "count": 4
+      "count": 3
+    },
+    {
+      "theme": "rag",
+      "count": 1
     }
   ],
   "highlights": [
