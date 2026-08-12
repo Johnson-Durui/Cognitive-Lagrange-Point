@@ -1,8 +1,8 @@
 {
   "label": "周报",
   "window_days": 7,
-  "generated_at": "2026-08-12T08:44:27.531978+08:00",
-  "count": 68,
+  "generated_at": "2026-08-12T10:39:43.304619+08:00",
+  "count": 69,
   "summary": "近 7 天里，最集中的主题是 ai、agent、rag。",
   "top_items": [
     {
@@ -82,8 +82,83 @@
       "personalized_score": 202.0,
       "detail_path": "items/arxiv-stealing-reasoning-traces-from-proprietary-llm-apis.html",
       "first_seen_at": "2026-08-12T00:44:39.124354+00:00",
-      "last_seen_at": "2026-08-12T00:44:39.124354+00:00",
-      "last_curated_at": "2026-08-12T00:44:39.124354+00:00",
+      "last_seen_at": "2026-08-12T02:39:49.190368+00:00",
+      "last_curated_at": "2026-08-12T02:39:49.190368+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2608.11191v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Test-Time Self-Evolving GUI Visual Grounding via Reflection-Guided On-Policy Self-Distillation",
+      "html_url": "http://arxiv.org/abs/2608.11191v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.11191v1",
+      "description": "GUI Visual Grounding is a fundamental capability for GUI agents. Existing models typically freeze their parameters after deployment, limiting their ability to adapt to unseen interfaces. Although recent methods attempt to adapt models via test-time reinforcement learning, they cannot reflect upon failed exploration. To overcome this, we propose a Test-Time Self-Evolving framework that enables models to improve after deployment without human-annotated ground truth. It constructs a closed-loop of Exploration, Evaluation, Reflection, and Internalization. Specifically, the agent first explores unseen interfaces by predicting grounding coordinates for given instructions. To evaluate these explorations, we introduce an MLLM-based Reflector to assess the generated results and provide the corresponding reasoning reflections. To internalize reflection knowledge into the model weights, we propose Reflection-Guided On-Policy Self-Distillation, which translates high-level reasoning into dense token-level supervision via a conditioned self-teacher. Furthermore, we design a Contrastive Calibration method to prevent incorrect auto-regressive prefixes from corrupting the supervisory signals during failed explorations. Extensive experiments across six benchmarks demonstrate our framework's effectiveness, achieving an average accuracy improvement of 7.4% over the base model. To the best of our knowledge, this is the first work to successfully exploit on-policy self-distillation for test-time adaptation in GUI visual grounding. By filling the gap in post-deployment adaptation, our framework completes the self-evolving capability of GUI agents. The code will be released.",
+      "authors": [
+        "Shiyu Xuan",
+        "Zechao Li"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "published_at": "2026-08-11T17:50:25+00:00",
+      "updated_at": "2026-08-11T17:50:25+00:00",
+      "primary_category": "cs.CV",
+      "heuristic_score": 20.3,
+      "summary": "Test-Time Self-Evolving GUI Visual Grounding via Reflection-Guided On-Policy Self-Distillation 是最近值得追踪的一篇 AI 论文。论文摘要显示：GUI Visual Grounding is a fundamental capability for GUI agents. Existing models typically freeze their parameters after deployment, limiting their ability to adapt to unseen interfaces. Although recent methods attempt to adapt models via t...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CV, cs.AI",
+        "作者数: 2"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "llm",
+        "agent",
+        "rag"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "agent"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：Test-Time Self-Evolving GUI Visual Grounding via Reflection-Guided On-Policy Self-Distillation 是最近值得追踪的一篇 AI 论文。论文摘要显示：GUI Visual Grounding is a fundamental capability for GUI agents. Existing models typically freeze their parameters after deployment, limiting their ability to adapt to unseen interfaces. Although recent methods attempt to adapt models via t...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV, cs.AI\n- 作者数: 2",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 200.0,
+      "detail_path": "items/arxiv-test-time-self-evolving-gui-visual-grounding-via-reflection-guided-on-policy-self-distilla.html",
+      "first_seen_at": "2026-08-12T02:39:49.190368+00:00",
+      "last_seen_at": "2026-08-12T02:39:49.190368+00:00",
+      "last_curated_at": "2026-08-12T02:39:49.190368+00:00",
       "last_notified_at": null
     },
     {
@@ -559,82 +634,6 @@
       "last_seen_at": "2026-08-06T03:31:24.817290+00:00",
       "last_curated_at": "2026-08-06T03:31:24.817290+00:00",
       "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2608.05137v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "SmartMage: Dynamic Modality Orchestration for 3D Scene Understanding",
-      "html_url": "http://arxiv.org/abs/2608.05137v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.05137v1",
-      "description": "Understanding 3D scenes is fundamental to embodied intelligence, requiring joint reasoning over heterogeneous information from multiple modalities, including visual and geometric cues. However, the relevance of these modalities often varies across queries. Existing Multimodal Large Language Models (MLLMs) typically rely on fixed modality combinations, overlooking query-dependent modality needs. Such a rigid design can introduce semantic noise from irrelevant modalities while underutilizing more informative ones, leading to wasted computation and diluted reasoning. To address these challenges, this paper proposes SmartMage, a unified MLLM that dynamically orchestrates heterogeneous modalities for semantic-aware 3D scene understanding. Specifically, SmartMage incorporates: (1) a Semantic-guided Modality Adaptive RouTng (SMART) module that selects task-relevant modalities using semantic priors, text-modality alignment, and modality quality; and (2) a Modality-Aware Gating Expert (MAGE) module that leverages modality priors to guide expert activation, fostering adaptive specialization in multimodal reasoning. Empirically, SmartMage achieves state-of-the-art performance across five 3D scene understanding benchmarks, and attains competitive results on RGB-only video understanding benchmarks. In our diagnostic benchmark ScanFacet, tasks are divided into fine-grained semantic categories, enabling analysis of modality combinations preferred by each semantic type. The observed modality-semantic patterns provide further evidence of SmartMage's effectiveness. Project page: https://yuecheong.github.io/SmartMage/.",
-      "authors": [
-        "Yue Zhang",
-        "Yingzhao Jian",
-        "Yunqiu Xu",
-        "Xiaoxiao Sun",
-        "Hehe Fan"
-      ],
-      "categories": [
-        "cs.CV"
-      ],
-      "published_at": "2026-08-05T17:56:35+00:00",
-      "updated_at": "2026-08-05T17:56:35+00:00",
-      "primary_category": "cs.CV",
-      "heuristic_score": 20.3,
-      "summary": "SmartMage: Dynamic Modality Orchestration for 3D Scene Understanding 是最近值得追踪的一篇 AI 论文。论文摘要显示：Understanding 3D scenes is fundamental to embodied intelligence, requiring joint reasoning over heterogeneous information from multiple modalities, including visual and geometric cues. However, the relevance of these modalities often varies...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CV",
-        "作者数: 5"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "llm",
-        "rag",
-        "multimodal"
-      ],
-      "themes": [
-        "ai",
-        "llm",
-        "rag"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：SmartMage: Dynamic Modality Orchestration for 3D Scene Understanding 是最近值得追踪的一篇 AI 论文。论文摘要显示：Understanding 3D scenes is fundamental to embodied intelligence, requiring joint reasoning over heterogeneous information from multiple modalities, including visual and geometric cues. However, the relevance of these modalities often varies...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV\n- 作者数: 5",
-      "focus_hits": [
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "multimodal",
-          "weight": 2.0
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "reasoning",
-      "personalized_score": 190.0,
-      "detail_path": "items/arxiv-smartmage-dynamic-modality-orchestration-for-3d-scene-understanding.html",
-      "first_seen_at": "2026-08-06T03:31:24.817290+00:00",
-      "last_seen_at": "2026-08-06T03:31:24.817290+00:00",
-      "last_curated_at": "2026-08-06T03:31:24.817290+00:00",
-      "last_notified_at": null
     }
   ],
   "top_themes": [
@@ -662,12 +661,12 @@
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     },
     {
-      "title": "Hierarchical Graph Memory for LLM Agents with Path-level Localization and Rewrite",
+      "title": "Test-Time Self-Evolving GUI Visual Grounding via Reflection-Guided On-Policy Self-Distillation",
       "source": "arxiv",
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     },
     {
-      "title": "Interpretable Adaptive Sampling for LLM Test-Time Scaling",
+      "title": "Hierarchical Graph Memory for LLM Agents with Path-level Localization and Rewrite",
       "source": "arxiv",
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     }
