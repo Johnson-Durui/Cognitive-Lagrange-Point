@@ -1,10 +1,91 @@
 {
   "label": "周报",
   "window_days": 7,
-  "generated_at": "2026-08-11T10:23:33.364292+08:00",
-  "count": 67,
+  "generated_at": "2026-08-12T08:44:27.531978+08:00",
+  "count": 68,
   "summary": "近 7 天里，最集中的主题是 ai、agent、rag。",
   "top_items": [
+    {
+      "id": "arxiv::http://arxiv.org/abs/2608.09867v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Stealing Reasoning Traces from Proprietary LLM APIs",
+      "html_url": "http://arxiv.org/abs/2608.09867v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.09867v1",
+      "description": "Leading large language model providers now conceal their models' step-by-step reasoning, or chain-of-thought, to protect intellectual property and limit information leakage. Rather than storing these traces server-side, providers return them to the client as blocks of encrypted text, which the client passes back with each subsequent request. Building on prior research, we identify an architectural vulnerability: these encrypted blocks are fully compatible and interchangeable across different sessions, users, and models within a provider's ecosystem. We exploit this compatibility to develop a scalable decryption jailbreak. By injecting an encrypted reasoning trace from a given model into a weaker, and less safeguarded model from the same provider, we force it to decode and output the trace verbatim in plaintext, without ever jailbreaking the more capable model directly. This vulnerability enables four distinct attack vectors. First, it circumvents anti-distillation mechanisms, allowing adversaries to extract a proprietary model's reasoning, as we demonstrate across Anthropic, OpenAI, and Google. Second, it allows for large-scale private data extraction. Developers frequently share session logs publicly, unaware of contents of the encrypted blocks. By decoding 315,320 reasoning blocks scraped from public repositories, we recovered 367 Personally Identifiable Information (PII) artifacts and 182 credentials. Third, it inadvertently reveals hazardous information hidden within the reasoning process, even in cases where the model's final, visible output safely rejects a malicious request. Fourth, attackers can leverage this flaw to execute invisible prompt injections, embedding malicious payloads entirely within encrypted blocks to poison public agentic rollouts. Following responsible disclosure, we propose concrete cryptographic and system-level mitigations to secure client-side reasoning.",
+      "authors": [
+        "Alexander Panfilov",
+        "David Schmotz",
+        "Ilia Shumailov",
+        "Luca Beurer-Kellner",
+        "Joachim Schaeffer",
+        "Ameya Prabhu",
+        "Jonas Geiping",
+        "Maksym Andriushchenko"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "published_at": "2026-08-10T17:24:50+00:00",
+      "updated_at": "2026-08-10T17:24:50+00:00",
+      "primary_category": "cs.CR",
+      "heuristic_score": 18.8,
+      "summary": "Stealing Reasoning Traces from Proprietary LLM APIs 是最近值得追踪的一篇 AI 论文。论文摘要显示：Leading large language model providers now conceal their models' step-by-step reasoning, or chain-of-thought, to protect intellectual property and limit information leakage. Rather than storing these traces server-side, providers return the...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CR, cs.AI",
+        "作者数: 8"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "agent",
+        "agentic",
+        "rag"
+      ],
+      "themes": [
+        "ai",
+        "agent",
+        "agentic"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：Stealing Reasoning Traces from Proprietary LLM APIs 是最近值得追踪的一篇 AI 论文。论文摘要显示：Leading large language model providers now conceal their models' step-by-step reasoning, or chain-of-thought, to protect intellectual property and limit information leakage. Rather than storing these traces server-side, providers return the...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CR, cs.AI\n- 作者数: 8",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "coding",
+          "weight": 2.6
+        },
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 202.0,
+      "detail_path": "items/arxiv-stealing-reasoning-traces-from-proprietary-llm-apis.html",
+      "first_seen_at": "2026-08-12T00:44:39.124354+00:00",
+      "last_seen_at": "2026-08-12T00:44:39.124354+00:00",
+      "last_curated_at": "2026-08-12T00:44:39.124354+00:00",
+      "last_notified_at": null
+    },
     {
       "id": "arxiv::http://arxiv.org/abs/2608.05095v1",
       "kind": "paper",
@@ -554,79 +635,6 @@
       "last_seen_at": "2026-08-06T03:31:24.817290+00:00",
       "last_curated_at": "2026-08-06T03:31:24.817290+00:00",
       "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2608.04968v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "EvolveNet: Collaborative Harness Evolution for Agent Self-Improvement",
-      "html_url": "http://arxiv.org/abs/2608.04968v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.04968v1",
-      "description": "The capabilities of an LLM agent depend not only on its model but on the harness: the executable program that constructs context, invokes tools, verifies results, and recovers from failure. Recent work shows that evolving the harness yields persistent improvements without updating model weights. Existing approaches, however, assume that all execution experience can be routed to a single optimizer, which evolves one harness along a sequential trajectory. Real agent ecosystems violate that assumption: users, organizations, and environments generate isolated streams of experience that cannot be pooled, so the experience most worth learning from is exactly the experience that cannot be directly centralized. We introduce EvolveNet, a paradigm of collaborative harness evolution that moves experience extraction to the data. A shared harness is broadcast to data-local agent deployments, each of which evolves it on its own workload. Only the resulting program adaptations are composed into an updated shared harness and redistributed, so that every participating agent inherits operational experience discovered by the others. By shifting the aggregation boundary from raw workloads to learned adaptations, EvolveNet keeps workloads local and allows multiple evolutionary searches to proceed concurrently with reduced serial depth. Because independently modified programs cannot be averaged like model parameters and may conflict when composed, EvolveNet introduces scope-typed, evidence-guided program aggregation. Across five settings spanning text-to-SQL, data-science coding, competitive programming, software engineering, and agentic workflows, EvolveNet improves the shared harness in all five, with the largest gains under heterogeneous workloads, and ablations attribute the improvement to composition of adaptations from different agents rather than to selecting among them.",
-      "authors": [
-        "Jun Nie",
-        "Yonggang Zhang",
-        "Qianshu Cai",
-        "Yiu-ming Cheung",
-        "Xinmei Tian",
-        "Bo Han"
-      ],
-      "categories": [
-        "cs.LG"
-      ],
-      "published_at": "2026-08-05T15:37:18+00:00",
-      "updated_at": "2026-08-05T15:37:18+00:00",
-      "primary_category": "cs.LG",
-      "heuristic_score": 17.9,
-      "summary": "EvolveNet: Collaborative Harness Evolution for Agent Self-Improvement 是最近值得追踪的一篇 AI 论文。论文摘要显示：The capabilities of an LLM agent depend not only on its model but on the harness: the executable program that constructs context, invokes tools, verifies results, and recovers from failure. Recent work shows that evolving the harness yields...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.LG",
-        "作者数: 6"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "llm",
-        "agent",
-        "agentic"
-      ],
-      "themes": [
-        "ai",
-        "llm",
-        "agent"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：EvolveNet: Collaborative Harness Evolution for Agent Self-Improvement 是最近值得追踪的一篇 AI 论文。论文摘要显示：The capabilities of an LLM agent depend not only on its model but on the harness: the executable program that constructs context, invokes tools, verifies results, and recovers from failure. Recent work shows that evolving the harness yields...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.LG\n- 作者数: 6",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "coding",
-          "weight": 2.6
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 186.0,
-      "detail_path": "items/arxiv-evolvenet-collaborative-harness-evolution-for-agent-self-improvement.html",
-      "first_seen_at": "2026-08-06T01:08:41.741155+00:00",
-      "last_seen_at": "2026-08-06T03:31:24.817290+00:00",
-      "last_curated_at": "2026-08-06T03:31:24.817290+00:00",
-      "last_notified_at": null
     }
   ],
   "top_themes": [
@@ -636,7 +644,7 @@
     },
     {
       "theme": "agent",
-      "count": 3
+      "count": 4
     },
     {
       "theme": "rag",
@@ -644,10 +652,15 @@
     },
     {
       "theme": "llm",
-      "count": 3
+      "count": 2
     }
   ],
   "highlights": [
+    {
+      "title": "Stealing Reasoning Traces from Proprietary LLM APIs",
+      "source": "arxiv",
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
+    },
     {
       "title": "Hierarchical Graph Memory for LLM Agents with Path-level Localization and Rewrite",
       "source": "arxiv",
@@ -655,11 +668,6 @@
     },
     {
       "title": "Interpretable Adaptive Sampling for LLM Test-Time Scaling",
-      "source": "arxiv",
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
-    },
-    {
-      "title": "Video-DeepResearch: Towards the Next-Generation Multimodal Deepresearch Agent",
       "source": "arxiv",
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     }

@@ -1,7 +1,7 @@
 {
   "label": "月报",
   "window_days": 30,
-  "generated_at": "2026-08-11T10:23:33.364292+08:00",
+  "generated_at": "2026-08-12T08:44:27.531978+08:00",
   "count": 200,
   "summary": "近 30 天里，最集中的主题是 ai、llm、agent。",
   "top_items": [
@@ -514,6 +514,87 @@
       "last_notified_at": null
     },
     {
+      "id": "arxiv::http://arxiv.org/abs/2608.09867v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Stealing Reasoning Traces from Proprietary LLM APIs",
+      "html_url": "http://arxiv.org/abs/2608.09867v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.09867v1",
+      "description": "Leading large language model providers now conceal their models' step-by-step reasoning, or chain-of-thought, to protect intellectual property and limit information leakage. Rather than storing these traces server-side, providers return them to the client as blocks of encrypted text, which the client passes back with each subsequent request. Building on prior research, we identify an architectural vulnerability: these encrypted blocks are fully compatible and interchangeable across different sessions, users, and models within a provider's ecosystem. We exploit this compatibility to develop a scalable decryption jailbreak. By injecting an encrypted reasoning trace from a given model into a weaker, and less safeguarded model from the same provider, we force it to decode and output the trace verbatim in plaintext, without ever jailbreaking the more capable model directly. This vulnerability enables four distinct attack vectors. First, it circumvents anti-distillation mechanisms, allowing adversaries to extract a proprietary model's reasoning, as we demonstrate across Anthropic, OpenAI, and Google. Second, it allows for large-scale private data extraction. Developers frequently share session logs publicly, unaware of contents of the encrypted blocks. By decoding 315,320 reasoning blocks scraped from public repositories, we recovered 367 Personally Identifiable Information (PII) artifacts and 182 credentials. Third, it inadvertently reveals hazardous information hidden within the reasoning process, even in cases where the model's final, visible output safely rejects a malicious request. Fourth, attackers can leverage this flaw to execute invisible prompt injections, embedding malicious payloads entirely within encrypted blocks to poison public agentic rollouts. Following responsible disclosure, we propose concrete cryptographic and system-level mitigations to secure client-side reasoning.",
+      "authors": [
+        "Alexander Panfilov",
+        "David Schmotz",
+        "Ilia Shumailov",
+        "Luca Beurer-Kellner",
+        "Joachim Schaeffer",
+        "Ameya Prabhu",
+        "Jonas Geiping",
+        "Maksym Andriushchenko"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "published_at": "2026-08-10T17:24:50+00:00",
+      "updated_at": "2026-08-10T17:24:50+00:00",
+      "primary_category": "cs.CR",
+      "heuristic_score": 18.8,
+      "summary": "Stealing Reasoning Traces from Proprietary LLM APIs 是最近值得追踪的一篇 AI 论文。论文摘要显示：Leading large language model providers now conceal their models' step-by-step reasoning, or chain-of-thought, to protect intellectual property and limit information leakage. Rather than storing these traces server-side, providers return the...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CR, cs.AI",
+        "作者数: 8"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "agent",
+        "agentic",
+        "rag"
+      ],
+      "themes": [
+        "ai",
+        "agent",
+        "agentic"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：Stealing Reasoning Traces from Proprietary LLM APIs 是最近值得追踪的一篇 AI 论文。论文摘要显示：Leading large language model providers now conceal their models' step-by-step reasoning, or chain-of-thought, to protect intellectual property and limit information leakage. Rather than storing these traces server-side, providers return the...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CR, cs.AI\n- 作者数: 8",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "coding",
+          "weight": 2.6
+        },
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 202.0,
+      "detail_path": "items/arxiv-stealing-reasoning-traces-from-proprietary-llm-apis.html",
+      "first_seen_at": "2026-08-12T00:44:39.124354+00:00",
+      "last_seen_at": "2026-08-12T00:44:39.124354+00:00",
+      "last_curated_at": "2026-08-12T00:44:39.124354+00:00",
+      "last_notified_at": null
+    },
+    {
       "id": "arxiv::http://arxiv.org/abs/2607.21482v1",
       "kind": "paper",
       "source": "arxiv",
@@ -591,88 +672,12 @@
       "last_seen_at": "2026-07-24T03:37:54.658435+00:00",
       "last_curated_at": "2026-07-24T03:37:54.658435+00:00",
       "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2608.05095v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "Hierarchical Graph Memory for LLM Agents with Path-level Localization and Rewrite",
-      "html_url": "http://arxiv.org/abs/2608.05095v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.05095v1",
-      "description": "Agents for long term reasoning require a memory that can be efficiently and effectively updated over time, as new facts and external feedback continue to arrive. Recently, graph memory has been adopted to offer structural organization for multi-hop retrieval and reasoning. However, existing methods store all memories in a flat graph, and accumulated historical memories can introduce irrelevant contexts and increase the cost of evidence selection during retrieval. Moreover, they typically update memory units independently, requiring repeated unit-wise rewrite to cover related changes. To address these issues, we propose HiGram, an evolving hierarchical graph memory framework with path-level localization and rewriting. Specifically, we first propose a hierarchical graph memory, which organizes the memory into coarse-to-fine architecture composed of upper-level nodes and MemoryUnits, thereby reducing the amount of irrelevant information during retrieval. We further propose MicroGraph-based path-level localization, which leverages query and update conditioned MicroGraphs to identify support subgraph and evidence path before rewrite. Finally, we propose a coordinated rewriting method that jointly revises intra-unit memory and inter-unit dependencies, enable valid dependency structures updating in the localized evidence path. Experiments on benchmarks for long-term conversational question answering and conflict-aware memory evaluation demonstrate that our method demonstrate substantial improvements over baselines in answer quality and token efficiency. Besides, our method improves answer accuracy and query-valid evidence selection under dynamic, static, and conditional conflicts.",
-      "authors": [
-        "Xiawei Yue",
-        "Boran Wang",
-        "Xiaoqing Zhang",
-        "Shuxin Zheng",
-        "Ziwei Zhang"
-      ],
-      "categories": [
-        "cs.AI"
-      ],
-      "published_at": "2026-08-05T17:32:43+00:00",
-      "updated_at": "2026-08-05T17:32:43+00:00",
-      "primary_category": "cs.AI",
-      "heuristic_score": 17.9,
-      "summary": "Hierarchical Graph Memory for LLM Agents with Path-level Localization and Rewrite 是最近值得追踪的一篇 AI 论文。论文摘要显示：Agents for long term reasoning require a memory that can be efficiently and effectively updated over time, as new facts and external feedback continue to arrive. Recently, graph memory has been adopted to offer structural organization for m...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.AI",
-        "作者数: 5"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "agent",
-        "rag",
-        "benchmark",
-        "reasoning"
-      ],
-      "themes": [
-        "agent",
-        "rag",
-        "benchmark"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：Hierarchical Graph Memory for LLM Agents with Path-level Localization and Rewrite 是最近值得追踪的一篇 AI 论文。论文摘要显示：Agents for long term reasoning require a memory that can be efficiently and effectively updated over time, as new facts and external feedback continue to arrive. Recently, graph memory has been adopted to offer structural organization for m...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI\n- 作者数: 5",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 200.0,
-      "detail_path": "items/arxiv-hierarchical-graph-memory-for-llm-agents-with-path-level-localization-and-rewrite.html",
-      "first_seen_at": "2026-08-06T03:31:24.817290+00:00",
-      "last_seen_at": "2026-08-06T03:31:24.817290+00:00",
-      "last_curated_at": "2026-08-06T03:31:24.817290+00:00",
-      "last_notified_at": null
     }
   ],
   "top_themes": [
     {
       "theme": "ai",
-      "count": 7
+      "count": 8
     },
     {
       "theme": "llm",
@@ -681,10 +686,6 @@
     {
       "theme": "agent",
       "count": 2
-    },
-    {
-      "theme": "rag",
-      "count": 1
     }
   ],
   "highlights": [
