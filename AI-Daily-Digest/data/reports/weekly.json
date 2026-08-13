@@ -1,10 +1,92 @@
 {
   "label": "周报",
   "window_days": 7,
-  "generated_at": "2026-08-13T08:45:56.042786+08:00",
-  "count": 69,
-  "summary": "近 7 天里，最集中的主题是 ai、rag、agent。",
+  "generated_at": "2026-08-13T10:41:57.639515+08:00",
+  "count": 71,
+  "summary": "近 7 天里，最集中的主题是 ai、agent、rag。",
   "top_items": [
+    {
+      "id": "arxiv::http://arxiv.org/abs/2608.12313v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "AVA-Encoder: Towards Agent-Native Video Representation Learning",
+      "html_url": "http://arxiv.org/abs/2608.12313v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.12313v1",
+      "description": "Creative agents still lack an effective way to learn from high-quality human films, limiting their ability to produce cinematic-grade videos. A key challenge is the absence of a structured video representation that is both faithful to film content and directly usable for agentic reasoning and manipulation. To address the challenge, we propose the Agentic Video Auto-Encoder (AVA-Encoder), a framework for learning agent-native video representations via agentic auto-encoding. AVA-Encoder transforms a video into a knowledge graph (KG) representation and then reconstructs it back into video. Its hierarchy and state nodes store structured text, while a linked asset layer holds generated images, audio, and video. Typed edges preserve the relations between these text descriptions and assets in a form that agents can easily understand, query, and edit. The video reconstruction differences drive a textual-gradient optimization framework, which expresses evaluation feedback as natural-language update directions for Data-Independent Encoding Policy Pseudo-Training in the outer loop and optional Data-Dependent KG Representation Refinement in the test-time inner loop. Extensive experiments show that AVA-Encoder improves by 20.7 percentage points over the strongest external baseline. In the controlled policy-only setting, its pseudo-trained shot-level Agentic Video Encoder policy also outperforms a carefully human-tuned policy while using 74.3% fewer system-prompt tokens. We release the complete AVA-Encoder framework, a reliable agentic video reconstruction benchmark, and the first dataset of high-quality film KG representations.",
+      "authors": [
+        "Chuyue Li",
+        "Jinpeng Yu",
+        "Haozhe Wang",
+        "Tian Xueyun",
+        "Zhijing Zhang",
+        "Bingnan Li",
+        "Shuqi Gu",
+        "Kan Ren",
+        "Jiaming Liu",
+        "Ruihua Hua"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.CL"
+      ],
+      "published_at": "2026-08-12T17:58:02+00:00",
+      "updated_at": "2026-08-12T17:58:02+00:00",
+      "primary_category": "cs.CV",
+      "heuristic_score": 17.9,
+      "summary": "AVA-Encoder: Towards Agent-Native Video Representation Learning 是最近值得追踪的一篇 AI 论文。论文摘要显示：Creative agents still lack an effective way to learn from high-quality human films, limiting their ability to produce cinematic-grade videos. A key challenge is the absence of a structured video representation that is both faithful to film ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CV, cs.CL",
+        "作者数: 10"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "agent",
+        "agentic",
+        "benchmark"
+      ],
+      "themes": [
+        "ai",
+        "agent",
+        "agentic"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：AVA-Encoder: Towards Agent-Native Video Representation Learning 是最近值得追踪的一篇 AI 论文。论文摘要显示：Creative agents still lack an effective way to learn from high-quality human films, limiting their ability to produce cinematic-grade videos. A key challenge is the absence of a structured video representation that is both faithful to film ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV, cs.CL\n- 作者数: 10",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "coding",
+          "weight": 2.6
+        },
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 204.0,
+      "detail_path": "items/arxiv-ava-encoder-towards-agent-native-video-representation-learning.html",
+      "first_seen_at": "2026-08-13T02:42:03.676060+00:00",
+      "last_seen_at": "2026-08-13T02:42:03.676060+00:00",
+      "last_curated_at": "2026-08-13T02:42:03.676060+00:00",
+      "last_notified_at": null
+    },
     {
       "id": "arxiv::http://arxiv.org/abs/2608.09867v1",
       "kind": "paper",
@@ -157,8 +239,8 @@
       "personalized_score": 200.0,
       "detail_path": "items/arxiv-test-time-self-evolving-gui-visual-grounding-via-reflection-guided-on-policy-self-distilla.html",
       "first_seen_at": "2026-08-12T02:39:49.190368+00:00",
-      "last_seen_at": "2026-08-13T00:46:03.444620+00:00",
-      "last_curated_at": "2026-08-13T00:46:03.444620+00:00",
+      "last_seen_at": "2026-08-13T02:42:03.676060+00:00",
+      "last_curated_at": "2026-08-13T02:42:03.676060+00:00",
       "last_notified_at": null
     },
     {
@@ -545,84 +627,6 @@
       "last_seen_at": "2026-08-06T03:31:24.817290+00:00",
       "last_curated_at": "2026-08-06T03:31:24.817290+00:00",
       "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2608.09908v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "Beyond Hazard Resemblance: Contrastive Event Adjudication for Training-Free Video Anomaly Detection",
-      "html_url": "http://arxiv.org/abs/2608.09908v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.09908v1",
-      "description": "Video anomaly detection (VAD) aims to identify and temporally localize abnormal events in videos. Supervised methods learn anomaly decision boundaries from target-domain annotations but require substantial in-domain data. Existing training-free methods leverage the rich semantic knowledge and reasoning capabilities of pretrained models to interpret visual content, yet these capabilities do not directly define an anomaly decision criterion: richer anomaly descriptions better capture hazard resemblance without resolving abnormality. To this end, we propose Contrastive Event Adjudication for training-free Video Anomaly Detection (CEAVAD), which shifts the unit of inference from isolated anomaly concepts to falsifiable event hypotheses and establishes an inference-time explanatory boundary through the interaction between competing explanations and video evidence. Specifically, CEAVAD first uses public-safety knowledge to construct hazard-benign event contrasts, pairing each hazard mechanism with a generic normal account and a mechanism-specific benign counterpart. It then determines whether the target interval better supports a hazard explanation or its benign competitor, yielding a revisable contrastive boundary proposal for the target. Finally, CEAVAD adjudicates between the competing explanations to determine whether the hazard hypothesis survives the video evidence, supporting both temporally localized anomaly detection and evidence-grounded explanations. Experiments on three widely used VAD benchmarks demonstrate that CEAVAD achieves state-of-the-art performance under the training-free paradigm.",
-      "authors": [
-        "Wenti Yin",
-        "Xiang Wang",
-        "Huaxin Zhang",
-        "Hanqing Wang",
-        "Hongbo Shao",
-        "Changxin Gao",
-        "Nong Sang"
-      ],
-      "categories": [
-        "cs.CV"
-      ],
-      "published_at": "2026-08-10T17:52:51+00:00",
-      "updated_at": "2026-08-10T17:52:51+00:00",
-      "primary_category": "cs.CV",
-      "heuristic_score": 20.3,
-      "summary": "Beyond Hazard Resemblance: Contrastive Event Adjudication for Training-Free Video Anomaly Detection 是最近值得追踪的一篇 AI 论文。论文摘要显示：Video anomaly detection (VAD) aims to identify and temporally localize abnormal events in videos. Supervised methods learn anomaly decision boundaries from target-domain annotations but require substantial in-domain data. Existing training-...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CV",
-        "作者数: 7"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "rag",
-        "model",
-        "benchmark"
-      ],
-      "themes": [
-        "ai",
-        "rag",
-        "model"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：Beyond Hazard Resemblance: Contrastive Event Adjudication for Training-Free Video Anomaly Detection 是最近值得追踪的一篇 AI 论文。论文摘要显示：Video anomaly detection (VAD) aims to identify and temporally localize abnormal events in videos. Supervised methods learn anomaly decision boundaries from target-domain annotations but require substantial in-domain data. Existing training-...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV\n- 作者数: 7",
-      "focus_hits": [
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "inference",
-          "weight": 1.8
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "reasoning",
-      "personalized_score": 188.0,
-      "detail_path": "items/arxiv-beyond-hazard-resemblance-contrastive-event-adjudication-for-training-free-video-anomaly-d.html",
-      "first_seen_at": "2026-08-12T00:44:39.124354+00:00",
-      "last_seen_at": "2026-08-12T02:39:49.190368+00:00",
-      "last_curated_at": "2026-08-12T02:39:49.190368+00:00",
-      "last_notified_at": null
     }
   ],
   "top_themes": [
@@ -631,11 +635,11 @@
       "count": 7
     },
     {
-      "theme": "rag",
+      "theme": "agent",
       "count": 4
     },
     {
-      "theme": "agent",
+      "theme": "rag",
       "count": 3
     },
     {
@@ -645,17 +649,17 @@
   ],
   "highlights": [
     {
+      "title": "AVA-Encoder: Towards Agent-Native Video Representation Learning",
+      "source": "arxiv",
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
+    },
+    {
       "title": "Stealing Reasoning Traces from Proprietary LLM APIs",
       "source": "arxiv",
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     },
     {
       "title": "Test-Time Self-Evolving GUI Visual Grounding via Reflection-Guided On-Policy Self-Distillation",
-      "source": "arxiv",
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
-    },
-    {
-      "title": "Hierarchical Graph Memory for LLM Agents with Path-level Localization and Rewrite",
       "source": "arxiv",
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     }
