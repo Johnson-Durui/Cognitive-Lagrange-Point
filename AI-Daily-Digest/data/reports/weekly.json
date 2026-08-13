@@ -1,9 +1,9 @@
 {
   "label": "周报",
   "window_days": 7,
-  "generated_at": "2026-08-12T10:39:43.304619+08:00",
+  "generated_at": "2026-08-13T08:45:56.042786+08:00",
   "count": 69,
-  "summary": "近 7 天里，最集中的主题是 ai、agent、rag。",
+  "summary": "近 7 天里，最集中的主题是 ai、rag、agent。",
   "top_items": [
     {
       "id": "arxiv::http://arxiv.org/abs/2608.09867v1",
@@ -157,8 +157,8 @@
       "personalized_score": 200.0,
       "detail_path": "items/arxiv-test-time-self-evolving-gui-visual-grounding-via-reflection-guided-on-policy-self-distilla.html",
       "first_seen_at": "2026-08-12T02:39:49.190368+00:00",
-      "last_seen_at": "2026-08-12T02:39:49.190368+00:00",
-      "last_curated_at": "2026-08-12T02:39:49.190368+00:00",
+      "last_seen_at": "2026-08-13T00:46:03.444620+00:00",
+      "last_curated_at": "2026-08-13T00:46:03.444620+00:00",
       "last_notified_at": null
     },
     {
@@ -235,171 +235,6 @@
       "first_seen_at": "2026-08-06T03:31:24.817290+00:00",
       "last_seen_at": "2026-08-06T03:31:24.817290+00:00",
       "last_curated_at": "2026-08-06T03:31:24.817290+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2608.03961v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "Interpretable Adaptive Sampling for LLM Test-Time Scaling",
-      "html_url": "http://arxiv.org/abs/2608.03961v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.03961v1",
-      "description": "Test-time scaling improves LLM reasoning by generating and aggregating multiple candidate answers, yet many pipelines use fixed per-query budgets that spend the same compute on easy and difficult prompts. These fixed budgets are also difficult to inspect because they do not explain why a given prompt receives a particular number of samples. We propose adaptive} test-time scaling with a lightweight fuzzy controller that maps interpretable signals, including estimated prompt complexity and model confidence, to a per-query sampling budget. The controller assigns fewer samples to easier or more confident prompts and more samples to harder or less certain prompts, making inference-time compute inspectable rather than fixed or opaque. We evaluate under a fair-alignment protocol with matched decoding settings and controlled answer selection, and compare against best-of-$N$, compute-aware scaling, and self-certainty-based baselines on question-answering and mathematical reasoning tasks. Across models and datasets, adaptive fuzzy control improves over several standard baselines and remains close to a selector-matched full-budget control while reducing the average number of samples. These findings suggest that interpretable adaptive sampling is a practical direction for more efficient test-time reasoning in large language models.",
-      "authors": [
-        "Mobina Kashaniyan",
-        "Ali Jannesari"
-      ],
-      "categories": [
-        "cs.AI"
-      ],
-      "published_at": "2026-08-04T17:27:21+00:00",
-      "updated_at": "2026-08-04T17:27:21+00:00",
-      "primary_category": "cs.AI",
-      "heuristic_score": 17.576,
-      "summary": "Interpretable Adaptive Sampling for LLM Test-Time Scaling 是最近值得追踪的一篇 AI 论文。论文摘要显示：Test-time scaling improves LLM reasoning by generating and aggregating multiple candidate answers, yet many pipelines use fixed per-query budgets that spend the same compute on easy and difficult prompts. These fixed budgets are also diffic...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.AI",
-        "作者数: 2"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "llm",
-        "rag",
-        "model"
-      ],
-      "themes": [
-        "ai",
-        "llm",
-        "rag"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：Interpretable Adaptive Sampling for LLM Test-Time Scaling 是最近值得追踪的一篇 AI 论文。论文摘要显示：Test-time scaling improves LLM reasoning by generating and aggregating multiple candidate answers, yet many pipelines use fixed per-query budgets that spend the same compute on easy and difficult prompts. These fixed budgets are also diffic...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI\n- 作者数: 2",
-      "focus_hits": [
-        {
-          "keyword": "coding",
-          "weight": 2.6
-        },
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "inference",
-          "weight": 1.8
-        }
-      ],
-      "primary_match": "coding",
-      "personalized_score": 198.0,
-      "detail_path": "items/arxiv-interpretable-adaptive-sampling-for-llm-test-time-scaling.html",
-      "first_seen_at": "2026-08-05T03:28:06.894815+00:00",
-      "last_seen_at": "2026-08-05T03:28:06.894815+00:00",
-      "last_curated_at": "2026-08-05T03:28:06.894815+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2608.03979v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "Video-DeepResearch: Towards the Next-Generation Multimodal Deepresearch Agent",
-      "html_url": "http://arxiv.org/abs/2608.03979v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.03979v1",
-      "description": "We introduce Video-DeepResearch (Video-DR), extending multimodal agents from static images to continuous video streams, a setting that demands dense spatiotemporal grounding coupled with open-web exploration. Preliminary evaluations reveal two critical bottlenecks in current models: (1) modality bias, where agents bypass visual tools in favor of textual search, and (2) parametric knowledge leakage, where models rely on internal memory rather than genuine tool-augmented execution. To address these challenges, we propose Video-DR, featuring a decoupled perception-exploration pipeline with stage-wise tool unlocking that compels exhaustive cross-frame visual grounding prior to web retrieval. Our framework adopts a two-stage training recipe: supervised fine-tuning followed by Group Relative Policy Optimization (GRPO), enabling autonomous exploration that breaks the imitation-learning ceiling. Furthermore, we curate Video-DR-Bench, a human-AI collaborative benchmark comprising 200 complex, multi-hop VQA instances. Empirical results demonstrate that our Video-DeepResearch-35B-A3B establishes a new state-of-the-art of 64.0% average accuracy, surpassing proprietary Claude-4.5-Sonnet (59.0%) by 5.0 points and significantly outperforming GPT-5 (52.5%) and Gemini 2.5 Pro (57.5%). The 30B-A3B variant achieves 59.3%, competitive with Claude-4.5-Sonnet and demonstrating the effectiveness of our training paradigm even at compact scale. Code: https://github.com/Osilly/Vision-DeepResearch.",
-      "authors": [
-        "Zhen Fang",
-        "Yu Zeng",
-        "Wenxuan Huang",
-        "Yiming Zhao",
-        "Shiting Huang",
-        "Tianfei Ren",
-        "Qi Lu",
-        "Qingnan Ren",
-        "Qisheng Su",
-        "Lionel Z. Wang",
-        "Qingyu Yin",
-        "Shuang Chen",
-        "Zehui Chen",
-        "Lin Chen",
-        "Zhenfei Yin",
-        "Yao Hu",
-        "Shaohui Lin",
-        "Wanli Ouyang",
-        "Shaosheng Cao",
-        "Feng Zhao"
-      ],
-      "categories": [
-        "cs.CV",
-        "cs.AI"
-      ],
-      "published_at": "2026-08-04T17:45:16+00:00",
-      "updated_at": "2026-08-04T17:45:16+00:00",
-      "primary_category": "cs.CV",
-      "heuristic_score": 22.57,
-      "summary": "Video-DeepResearch: Towards the Next-Generation Multimodal Deepresearch Agent 是最近值得追踪的一篇 AI 论文。论文摘要显示：We introduce Video-DeepResearch (Video-DR), extending multimodal agents from static images to continuous video streams, a setting that demands dense spatiotemporal grounding coupled with open-web exploration. Preliminary evaluations reveal ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CV, cs.AI",
-        "作者数: 20"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "agent",
-        "gpt",
-        "rag"
-      ],
-      "themes": [
-        "ai",
-        "agent",
-        "gpt"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：Video-DeepResearch: Towards the Next-Generation Multimodal Deepresearch Agent 是最近值得追踪的一篇 AI 论文。论文摘要显示：We introduce Video-DeepResearch (Video-DR), extending multimodal agents from static images to continuous video streams, a setting that demands dense spatiotemporal grounding coupled with open-web exploration. Preliminary evaluations reveal ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV, cs.AI\n- 作者数: 20",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "multimodal",
-          "weight": 2.0
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 196.0,
-      "detail_path": "items/arxiv-video-deepresearch-towards-the-next-generation-multimodal-deepresearch-agent.html",
-      "first_seen_at": "2026-08-05T03:28:06.894815+00:00",
-      "last_seen_at": "2026-08-05T03:28:06.894815+00:00",
-      "last_curated_at": "2026-08-05T03:28:06.894815+00:00",
       "last_notified_at": null
     },
     {
@@ -634,6 +469,160 @@
       "last_seen_at": "2026-08-06T03:31:24.817290+00:00",
       "last_curated_at": "2026-08-06T03:31:24.817290+00:00",
       "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2608.05137v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "SmartMage: Dynamic Modality Orchestration for 3D Scene Understanding",
+      "html_url": "http://arxiv.org/abs/2608.05137v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.05137v1",
+      "description": "Understanding 3D scenes is fundamental to embodied intelligence, requiring joint reasoning over heterogeneous information from multiple modalities, including visual and geometric cues. However, the relevance of these modalities often varies across queries. Existing Multimodal Large Language Models (MLLMs) typically rely on fixed modality combinations, overlooking query-dependent modality needs. Such a rigid design can introduce semantic noise from irrelevant modalities while underutilizing more informative ones, leading to wasted computation and diluted reasoning. To address these challenges, this paper proposes SmartMage, a unified MLLM that dynamically orchestrates heterogeneous modalities for semantic-aware 3D scene understanding. Specifically, SmartMage incorporates: (1) a Semantic-guided Modality Adaptive RouTng (SMART) module that selects task-relevant modalities using semantic priors, text-modality alignment, and modality quality; and (2) a Modality-Aware Gating Expert (MAGE) module that leverages modality priors to guide expert activation, fostering adaptive specialization in multimodal reasoning. Empirically, SmartMage achieves state-of-the-art performance across five 3D scene understanding benchmarks, and attains competitive results on RGB-only video understanding benchmarks. In our diagnostic benchmark ScanFacet, tasks are divided into fine-grained semantic categories, enabling analysis of modality combinations preferred by each semantic type. The observed modality-semantic patterns provide further evidence of SmartMage's effectiveness. Project page: https://yuecheong.github.io/SmartMage/.",
+      "authors": [
+        "Yue Zhang",
+        "Yingzhao Jian",
+        "Yunqiu Xu",
+        "Xiaoxiao Sun",
+        "Hehe Fan"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "published_at": "2026-08-05T17:56:35+00:00",
+      "updated_at": "2026-08-05T17:56:35+00:00",
+      "primary_category": "cs.CV",
+      "heuristic_score": 20.3,
+      "summary": "SmartMage: Dynamic Modality Orchestration for 3D Scene Understanding 是最近值得追踪的一篇 AI 论文。论文摘要显示：Understanding 3D scenes is fundamental to embodied intelligence, requiring joint reasoning over heterogeneous information from multiple modalities, including visual and geometric cues. However, the relevance of these modalities often varies...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CV",
+        "作者数: 5"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "llm",
+        "rag",
+        "multimodal"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "rag"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：SmartMage: Dynamic Modality Orchestration for 3D Scene Understanding 是最近值得追踪的一篇 AI 论文。论文摘要显示：Understanding 3D scenes is fundamental to embodied intelligence, requiring joint reasoning over heterogeneous information from multiple modalities, including visual and geometric cues. However, the relevance of these modalities often varies...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV\n- 作者数: 5",
+      "focus_hits": [
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        },
+        {
+          "keyword": "multimodal",
+          "weight": 2.0
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "reasoning",
+      "personalized_score": 190.0,
+      "detail_path": "items/arxiv-smartmage-dynamic-modality-orchestration-for-3d-scene-understanding.html",
+      "first_seen_at": "2026-08-06T03:31:24.817290+00:00",
+      "last_seen_at": "2026-08-06T03:31:24.817290+00:00",
+      "last_curated_at": "2026-08-06T03:31:24.817290+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2608.09908v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Beyond Hazard Resemblance: Contrastive Event Adjudication for Training-Free Video Anomaly Detection",
+      "html_url": "http://arxiv.org/abs/2608.09908v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.09908v1",
+      "description": "Video anomaly detection (VAD) aims to identify and temporally localize abnormal events in videos. Supervised methods learn anomaly decision boundaries from target-domain annotations but require substantial in-domain data. Existing training-free methods leverage the rich semantic knowledge and reasoning capabilities of pretrained models to interpret visual content, yet these capabilities do not directly define an anomaly decision criterion: richer anomaly descriptions better capture hazard resemblance without resolving abnormality. To this end, we propose Contrastive Event Adjudication for training-free Video Anomaly Detection (CEAVAD), which shifts the unit of inference from isolated anomaly concepts to falsifiable event hypotheses and establishes an inference-time explanatory boundary through the interaction between competing explanations and video evidence. Specifically, CEAVAD first uses public-safety knowledge to construct hazard-benign event contrasts, pairing each hazard mechanism with a generic normal account and a mechanism-specific benign counterpart. It then determines whether the target interval better supports a hazard explanation or its benign competitor, yielding a revisable contrastive boundary proposal for the target. Finally, CEAVAD adjudicates between the competing explanations to determine whether the hazard hypothesis survives the video evidence, supporting both temporally localized anomaly detection and evidence-grounded explanations. Experiments on three widely used VAD benchmarks demonstrate that CEAVAD achieves state-of-the-art performance under the training-free paradigm.",
+      "authors": [
+        "Wenti Yin",
+        "Xiang Wang",
+        "Huaxin Zhang",
+        "Hanqing Wang",
+        "Hongbo Shao",
+        "Changxin Gao",
+        "Nong Sang"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "published_at": "2026-08-10T17:52:51+00:00",
+      "updated_at": "2026-08-10T17:52:51+00:00",
+      "primary_category": "cs.CV",
+      "heuristic_score": 20.3,
+      "summary": "Beyond Hazard Resemblance: Contrastive Event Adjudication for Training-Free Video Anomaly Detection 是最近值得追踪的一篇 AI 论文。论文摘要显示：Video anomaly detection (VAD) aims to identify and temporally localize abnormal events in videos. Supervised methods learn anomaly decision boundaries from target-domain annotations but require substantial in-domain data. Existing training-...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CV",
+        "作者数: 7"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "rag",
+        "model",
+        "benchmark"
+      ],
+      "themes": [
+        "ai",
+        "rag",
+        "model"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：Beyond Hazard Resemblance: Contrastive Event Adjudication for Training-Free Video Anomaly Detection 是最近值得追踪的一篇 AI 论文。论文摘要显示：Video anomaly detection (VAD) aims to identify and temporally localize abnormal events in videos. Supervised methods learn anomaly decision boundaries from target-domain annotations but require substantial in-domain data. Existing training-...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV\n- 作者数: 7",
+      "focus_hits": [
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        },
+        {
+          "keyword": "inference",
+          "weight": 1.8
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "reasoning",
+      "personalized_score": 188.0,
+      "detail_path": "items/arxiv-beyond-hazard-resemblance-contrastive-event-adjudication-for-training-free-video-anomaly-d.html",
+      "first_seen_at": "2026-08-12T00:44:39.124354+00:00",
+      "last_seen_at": "2026-08-12T02:39:49.190368+00:00",
+      "last_curated_at": "2026-08-12T02:39:49.190368+00:00",
+      "last_notified_at": null
     }
   ],
   "top_themes": [
@@ -642,11 +631,11 @@
       "count": 7
     },
     {
-      "theme": "agent",
+      "theme": "rag",
       "count": 4
     },
     {
-      "theme": "rag",
+      "theme": "agent",
       "count": 3
     },
     {
