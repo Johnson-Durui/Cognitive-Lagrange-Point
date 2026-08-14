@@ -1,8 +1,8 @@
 {
   "label": "周报",
   "window_days": 7,
-  "generated_at": "2026-08-13T10:41:57.639515+08:00",
-  "count": 71,
+  "generated_at": "2026-08-14T08:45:19.053507+08:00",
+  "count": 67,
   "summary": "近 7 天里，最集中的主题是 ai、agent、rag。",
   "top_items": [
     {
@@ -83,8 +83,8 @@
       "personalized_score": 204.0,
       "detail_path": "items/arxiv-ava-encoder-towards-agent-native-video-representation-learning.html",
       "first_seen_at": "2026-08-13T02:42:03.676060+00:00",
-      "last_seen_at": "2026-08-13T02:42:03.676060+00:00",
-      "last_curated_at": "2026-08-13T02:42:03.676060+00:00",
+      "last_seen_at": "2026-08-14T00:45:44.645845+00:00",
+      "last_curated_at": "2026-08-14T00:45:44.645845+00:00",
       "last_notified_at": null
     },
     {
@@ -244,82 +244,6 @@
       "last_notified_at": null
     },
     {
-      "id": "arxiv::http://arxiv.org/abs/2608.05095v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "Hierarchical Graph Memory for LLM Agents with Path-level Localization and Rewrite",
-      "html_url": "http://arxiv.org/abs/2608.05095v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.05095v1",
-      "description": "Agents for long term reasoning require a memory that can be efficiently and effectively updated over time, as new facts and external feedback continue to arrive. Recently, graph memory has been adopted to offer structural organization for multi-hop retrieval and reasoning. However, existing methods store all memories in a flat graph, and accumulated historical memories can introduce irrelevant contexts and increase the cost of evidence selection during retrieval. Moreover, they typically update memory units independently, requiring repeated unit-wise rewrite to cover related changes. To address these issues, we propose HiGram, an evolving hierarchical graph memory framework with path-level localization and rewriting. Specifically, we first propose a hierarchical graph memory, which organizes the memory into coarse-to-fine architecture composed of upper-level nodes and MemoryUnits, thereby reducing the amount of irrelevant information during retrieval. We further propose MicroGraph-based path-level localization, which leverages query and update conditioned MicroGraphs to identify support subgraph and evidence path before rewrite. Finally, we propose a coordinated rewriting method that jointly revises intra-unit memory and inter-unit dependencies, enable valid dependency structures updating in the localized evidence path. Experiments on benchmarks for long-term conversational question answering and conflict-aware memory evaluation demonstrate that our method demonstrate substantial improvements over baselines in answer quality and token efficiency. Besides, our method improves answer accuracy and query-valid evidence selection under dynamic, static, and conditional conflicts.",
-      "authors": [
-        "Xiawei Yue",
-        "Boran Wang",
-        "Xiaoqing Zhang",
-        "Shuxin Zheng",
-        "Ziwei Zhang"
-      ],
-      "categories": [
-        "cs.AI"
-      ],
-      "published_at": "2026-08-05T17:32:43+00:00",
-      "updated_at": "2026-08-05T17:32:43+00:00",
-      "primary_category": "cs.AI",
-      "heuristic_score": 17.9,
-      "summary": "Hierarchical Graph Memory for LLM Agents with Path-level Localization and Rewrite 是最近值得追踪的一篇 AI 论文。论文摘要显示：Agents for long term reasoning require a memory that can be efficiently and effectively updated over time, as new facts and external feedback continue to arrive. Recently, graph memory has been adopted to offer structural organization for m...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.AI",
-        "作者数: 5"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "agent",
-        "rag",
-        "benchmark",
-        "reasoning"
-      ],
-      "themes": [
-        "agent",
-        "rag",
-        "benchmark"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：Hierarchical Graph Memory for LLM Agents with Path-level Localization and Rewrite 是最近值得追踪的一篇 AI 论文。论文摘要显示：Agents for long term reasoning require a memory that can be efficiently and effectively updated over time, as new facts and external feedback continue to arrive. Recently, graph memory has been adopted to offer structural organization for m...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI\n- 作者数: 5",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 200.0,
-      "detail_path": "items/arxiv-hierarchical-graph-memory-for-llm-agents-with-path-level-localization-and-rewrite.html",
-      "first_seen_at": "2026-08-06T03:31:24.817290+00:00",
-      "last_seen_at": "2026-08-06T03:31:24.817290+00:00",
-      "last_curated_at": "2026-08-06T03:31:24.817290+00:00",
-      "last_notified_at": null
-    },
-    {
       "id": "arxiv::http://arxiv.org/abs/2608.09748v1",
       "kind": "paper",
       "source": "arxiv",
@@ -472,60 +396,61 @@
       "last_notified_at": null
     },
     {
-      "id": "arxiv::http://arxiv.org/abs/2608.04939v1",
+      "id": "arxiv::http://arxiv.org/abs/2608.12307v1",
       "kind": "paper",
       "source": "arxiv",
       "source_tags": [
         "latest"
       ],
-      "title": "Reading Between the Frames: Interpreting Implicit and Non-literal Meaning in Social Media Videos",
-      "html_url": "http://arxiv.org/abs/2608.04939v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.04939v1",
-      "description": "Social media videos often communicate meanings that go beyond their visible actions, captions, or speech. A mundane clip may become humorous, ironic, or satire only through the interaction of multimodal cues and cultural context, making such content a difficult test case for video-language models. In this paper, we introduce \\textit{DrivelHub+}, a benchmark for evaluating whether models can infer the implicit, non-linear, and rhetorically layered meanings of social media videos that appear nonsensical on the surface but convey deliberate pragmatic meanings. DrivelHub+ consists of 1,000 videos collected from social media, each annotated with a human-written implicit narrative explanation. Unlike conventional video understanding tasks focused on recognition or description, we present a benchmark that targets contextual multimodal reasoning. We evaluate current video-language models from two perspectives: explanation, where models must explain the pragmatic comprehension of a video in natural language; and representation, where we adapt reasoning-as-retrieval to test whether model representations align videos with their corresponding implicit narratives in both video-to-text and text-to-video retrieval. Our benchmark provides a diagnostic setting for measuring the gap between multimodal perception and pragmatic comprehension, asking whether current models can move beyond describing what is shown to inferring what is meant.",
+      "title": "AI4AI at Test-Time: Strong-to-Weak Capability Transfer via Harnesses",
+      "html_url": "http://arxiv.org/abs/2608.12307v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.12307v1",
+      "description": "Recent work on distillation transfers the capabilities of large models to smaller ones often by updating the latter's parameters, through teacher forcing, on-policy distillation, and related training-time methods. In this paper, we ask whether such transfer can instead occur at test time. We study strong-to-weak scaffolding: whether a stronger builder model can construct inference-time harnesses that help a weaker target model solve tasks more reliably without any parameter updates. Using four representative Theory-of-Mind benchmarks, each builder model uses 5% of the data as a validation set to iteratively refine its harness over multiple rounds, after which the finalized harness is evaluated on the full test set. Empirically, this form of test-time capability transfer is highly effective, nearly doubling average target-model performance from 0.49 to 0.91. Our analysis shows that the gains come primarily from offloading unstable model reasoning into deterministic code, benchmark-specific routing, and strict answer-format enforcement, rather than from encouraging the target model to reason more extensively or sample more broadly. We further find that builder-model reasoning effort improves harness quality monotonically, platform effects are modest relative to the builder model's own capability, and weaker target models receive the largest gains. These results suggest that inference-time harness design is an important complement to conventional training-time distillation, enabling strong models to transfer cognitive structure to weaker models without retraining.",
       "authors": [
-        "Yang Wang",
-        "Yanan Ma",
-        "Yiqi Liu",
-        "Zi Yan Chang",
-        "Chi-Li Chen",
-        "Chia-Yi Hsiao",
-        "Tyler Loakman",
-        "Aline Villavicencio",
-        "Chenghao Xiao",
-        "Chenghua Lin"
+        "Cheng Qian",
+        "Wenting Zhao",
+        "Liangwei Yang",
+        "Heng Wang",
+        "Jielin Qiu",
+        "Heng Ji",
+        "Silvio Savarese",
+        "Huan Wang",
+        "Shelby Heinecke"
       ],
       "categories": [
+        "cs.LG",
+        "cs.AI",
         "cs.CL"
       ],
-      "published_at": "2026-08-05T15:06:03+00:00",
-      "updated_at": "2026-08-05T15:06:03+00:00",
-      "primary_category": "cs.CL",
-      "heuristic_score": 17.704,
-      "summary": "Reading Between the Frames: Interpreting Implicit and Non-literal Meaning in Social Media Videos 是最近值得追踪的一篇 AI 论文。论文摘要显示：Social media videos often communicate meanings that go beyond their visible actions, captions, or speech. A mundane clip may become humorous, ironic, or satire only through the interaction of multimodal cues and cultural context, making suc...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "published_at": "2026-08-12T17:53:18+00:00",
+      "updated_at": "2026-08-12T17:53:18+00:00",
+      "primary_category": "cs.LG",
+      "heuristic_score": 20.284,
+      "summary": "AI4AI at Test-Time: Strong-to-Weak Capability Transfer via Harnesses 是最近值得追踪的一篇 AI 论文。论文摘要显示：Recent work on distillation transfers the capabilities of large models to smaller ones often by updating the latter's parameters, through teacher forcing, on-policy distillation, and related training-time methods. In this paper, we ask whet...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
       "brief": "这是一篇值得加入今日论文雷达的最新工作。",
       "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
       "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
       "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
       "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
       "highlights": [
-        "分类: cs.CL",
-        "作者数: 10"
+        "分类: cs.LG, cs.AI",
+        "作者数: 9"
       ],
       "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
       "relevance_score": 10,
       "tags": [
         "ai",
         "rag",
-        "multimodal",
-        "model"
+        "model",
+        "benchmark"
       ],
       "themes": [
         "ai",
         "rag",
-        "multimodal"
+        "model"
       ],
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：Reading Between the Frames: Interpreting Implicit and Non-literal Meaning in Social Media Videos 是最近值得追踪的一篇 AI 论文。论文摘要显示：Social media videos often communicate meanings that go beyond their visible actions, captions, or speech. A mundane clip may become humorous, ironic, or satire only through the interaction of multimodal cues and cultural context, making suc...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL\n- 作者数: 10",
+      "summary_markdown": "**摘要**：AI4AI at Test-Time: Strong-to-Weak Capability Transfer via Harnesses 是最近值得追踪的一篇 AI 论文。论文摘要显示：Recent work on distillation transfers the capabilities of large models to smaller ones often by updating the latter's parameters, through teacher forcing, on-policy distillation, and related training-time methods. In this paper, we ask whet...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.LG, cs.AI\n- 作者数: 9",
       "focus_hits": [
         {
           "keyword": "reasoning",
@@ -536,8 +461,8 @@
           "weight": 2.2
         },
         {
-          "keyword": "multimodal",
-          "weight": 2.0
+          "keyword": "inference",
+          "weight": 1.8
         },
         {
           "keyword": "benchmark",
@@ -545,39 +470,41 @@
         }
       ],
       "primary_match": "reasoning",
-      "personalized_score": 190.0,
-      "detail_path": "items/arxiv-reading-between-the-frames-interpreting-implicit-and-non-literal-meaning-in-social-media-v.html",
-      "first_seen_at": "2026-08-06T01:08:41.741155+00:00",
-      "last_seen_at": "2026-08-06T03:31:24.817290+00:00",
-      "last_curated_at": "2026-08-06T03:31:24.817290+00:00",
+      "personalized_score": 188.0,
+      "detail_path": "items/arxiv-ai4ai-at-test-time-strong-to-weak-capability-transfer-via-harnesses.html",
+      "first_seen_at": "2026-08-13T02:42:03.676060+00:00",
+      "last_seen_at": "2026-08-14T00:45:44.645845+00:00",
+      "last_curated_at": "2026-08-14T00:45:44.645845+00:00",
       "last_notified_at": null
     },
     {
-      "id": "arxiv::http://arxiv.org/abs/2608.05137v1",
+      "id": "arxiv::http://arxiv.org/abs/2608.09908v1",
       "kind": "paper",
       "source": "arxiv",
       "source_tags": [
         "latest"
       ],
-      "title": "SmartMage: Dynamic Modality Orchestration for 3D Scene Understanding",
-      "html_url": "http://arxiv.org/abs/2608.05137v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.05137v1",
-      "description": "Understanding 3D scenes is fundamental to embodied intelligence, requiring joint reasoning over heterogeneous information from multiple modalities, including visual and geometric cues. However, the relevance of these modalities often varies across queries. Existing Multimodal Large Language Models (MLLMs) typically rely on fixed modality combinations, overlooking query-dependent modality needs. Such a rigid design can introduce semantic noise from irrelevant modalities while underutilizing more informative ones, leading to wasted computation and diluted reasoning. To address these challenges, this paper proposes SmartMage, a unified MLLM that dynamically orchestrates heterogeneous modalities for semantic-aware 3D scene understanding. Specifically, SmartMage incorporates: (1) a Semantic-guided Modality Adaptive RouTng (SMART) module that selects task-relevant modalities using semantic priors, text-modality alignment, and modality quality; and (2) a Modality-Aware Gating Expert (MAGE) module that leverages modality priors to guide expert activation, fostering adaptive specialization in multimodal reasoning. Empirically, SmartMage achieves state-of-the-art performance across five 3D scene understanding benchmarks, and attains competitive results on RGB-only video understanding benchmarks. In our diagnostic benchmark ScanFacet, tasks are divided into fine-grained semantic categories, enabling analysis of modality combinations preferred by each semantic type. The observed modality-semantic patterns provide further evidence of SmartMage's effectiveness. Project page: https://yuecheong.github.io/SmartMage/.",
+      "title": "Beyond Hazard Resemblance: Contrastive Event Adjudication for Training-Free Video Anomaly Detection",
+      "html_url": "http://arxiv.org/abs/2608.09908v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.09908v1",
+      "description": "Video anomaly detection (VAD) aims to identify and temporally localize abnormal events in videos. Supervised methods learn anomaly decision boundaries from target-domain annotations but require substantial in-domain data. Existing training-free methods leverage the rich semantic knowledge and reasoning capabilities of pretrained models to interpret visual content, yet these capabilities do not directly define an anomaly decision criterion: richer anomaly descriptions better capture hazard resemblance without resolving abnormality. To this end, we propose Contrastive Event Adjudication for training-free Video Anomaly Detection (CEAVAD), which shifts the unit of inference from isolated anomaly concepts to falsifiable event hypotheses and establishes an inference-time explanatory boundary through the interaction between competing explanations and video evidence. Specifically, CEAVAD first uses public-safety knowledge to construct hazard-benign event contrasts, pairing each hazard mechanism with a generic normal account and a mechanism-specific benign counterpart. It then determines whether the target interval better supports a hazard explanation or its benign competitor, yielding a revisable contrastive boundary proposal for the target. Finally, CEAVAD adjudicates between the competing explanations to determine whether the hazard hypothesis survives the video evidence, supporting both temporally localized anomaly detection and evidence-grounded explanations. Experiments on three widely used VAD benchmarks demonstrate that CEAVAD achieves state-of-the-art performance under the training-free paradigm.",
       "authors": [
-        "Yue Zhang",
-        "Yingzhao Jian",
-        "Yunqiu Xu",
-        "Xiaoxiao Sun",
-        "Hehe Fan"
+        "Wenti Yin",
+        "Xiang Wang",
+        "Huaxin Zhang",
+        "Hanqing Wang",
+        "Hongbo Shao",
+        "Changxin Gao",
+        "Nong Sang"
       ],
       "categories": [
         "cs.CV"
       ],
-      "published_at": "2026-08-05T17:56:35+00:00",
-      "updated_at": "2026-08-05T17:56:35+00:00",
+      "published_at": "2026-08-10T17:52:51+00:00",
+      "updated_at": "2026-08-10T17:52:51+00:00",
       "primary_category": "cs.CV",
       "heuristic_score": 20.3,
-      "summary": "SmartMage: Dynamic Modality Orchestration for 3D Scene Understanding 是最近值得追踪的一篇 AI 论文。论文摘要显示：Understanding 3D scenes is fundamental to embodied intelligence, requiring joint reasoning over heterogeneous information from multiple modalities, including visual and geometric cues. However, the relevance of these modalities often varies...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "summary": "Beyond Hazard Resemblance: Contrastive Event Adjudication for Training-Free Video Anomaly Detection 是最近值得追踪的一篇 AI 论文。论文摘要显示：Video anomaly detection (VAD) aims to identify and temporally localize abnormal events in videos. Supervised methods learn anomaly decision boundaries from target-domain annotations but require substantial in-domain data. Existing training-...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
       "brief": "这是一篇值得加入今日论文雷达的最新工作。",
       "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
       "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
@@ -585,23 +512,23 @@
       "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
       "highlights": [
         "分类: cs.CV",
-        "作者数: 5"
+        "作者数: 7"
       ],
       "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
       "relevance_score": 10,
       "tags": [
         "ai",
-        "llm",
         "rag",
-        "multimodal"
+        "model",
+        "benchmark"
       ],
       "themes": [
         "ai",
-        "llm",
-        "rag"
+        "rag",
+        "model"
       ],
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：SmartMage: Dynamic Modality Orchestration for 3D Scene Understanding 是最近值得追踪的一篇 AI 论文。论文摘要显示：Understanding 3D scenes is fundamental to embodied intelligence, requiring joint reasoning over heterogeneous information from multiple modalities, including visual and geometric cues. However, the relevance of these modalities often varies...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV\n- 作者数: 5",
+      "summary_markdown": "**摘要**：Beyond Hazard Resemblance: Contrastive Event Adjudication for Training-Free Video Anomaly Detection 是最近值得追踪的一篇 AI 论文。论文摘要显示：Video anomaly detection (VAD) aims to identify and temporally localize abnormal events in videos. Supervised methods learn anomaly decision boundaries from target-domain annotations but require substantial in-domain data. Existing training-...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV\n- 作者数: 7",
       "focus_hits": [
         {
           "keyword": "reasoning",
@@ -612,8 +539,8 @@
           "weight": 2.2
         },
         {
-          "keyword": "multimodal",
-          "weight": 2.0
+          "keyword": "inference",
+          "weight": 1.8
         },
         {
           "keyword": "benchmark",
@@ -621,22 +548,98 @@
         }
       ],
       "primary_match": "reasoning",
-      "personalized_score": 190.0,
-      "detail_path": "items/arxiv-smartmage-dynamic-modality-orchestration-for-3d-scene-understanding.html",
-      "first_seen_at": "2026-08-06T03:31:24.817290+00:00",
-      "last_seen_at": "2026-08-06T03:31:24.817290+00:00",
-      "last_curated_at": "2026-08-06T03:31:24.817290+00:00",
+      "personalized_score": 188.0,
+      "detail_path": "items/arxiv-beyond-hazard-resemblance-contrastive-event-adjudication-for-training-free-video-anomaly-d.html",
+      "first_seen_at": "2026-08-12T00:44:39.124354+00:00",
+      "last_seen_at": "2026-08-12T02:39:49.190368+00:00",
+      "last_curated_at": "2026-08-12T02:39:49.190368+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2608.06301v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "HarnessOpt-Bench: Evaluating LLMs at Harness Optimization",
+      "html_url": "http://arxiv.org/abs/2608.06301v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.06301v1",
+      "description": "As LLMs are increasingly deployed within agentic systems, their capabilities depend not only on the model weights but also on the harness: the prompts, tools, control flow, memory, and orchestration code surrounding them. This makes automated harness optimization -- the iterative and evaluation-guided improvement of a harness by an AI system -- both an important route to improving AI systems and a demanding capability for AI systems themselves. Yet the community lacks a common protocol for measuring how well frontier LLMs perform at this task. We introduce HarnessOpt-Bench, a benchmark for end-to-end harness optimization under expensive and stochastic evaluation. An optimizer, an LLM paired with a coding harness, receives a target agent's seed harness, graded evaluation feedback, and a fixed target-evaluation budget. It edits the harness and nominates a final candidate, which is scored by its normalized gain over the seed on a held-out test partition that remains inaccessible throughout search. A trusted execution environment enforces the evaluation boundary, meters target-agent resource use, and preserves candidate versions for audit. We evaluate 5 frontier LLMs as optimizers both under a shared coding harness and under their native harnesses across 4 downstream tasks, over 111 scored runs. Experiment results show that optimizer models separate more than the coding harnesses they act through, native harnesses are not consistently superior, and gains vary substantially across tasks and seed regimes. These results establish harness optimization as a measurable and discriminative capability with large space for improvement.",
+      "authors": [
+        "Varun Ursekar",
+        "Apaar Shanker",
+        "Yash Maurya",
+        "Shehab Yasser",
+        "Vijay S. Kalmath",
+        "Veronica Chatrath",
+        "Yuan Xue"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "published_at": "2026-08-06T17:21:05+00:00",
+      "updated_at": "2026-08-06T17:21:05+00:00",
+      "primary_category": "cs.AI",
+      "heuristic_score": 17.9,
+      "summary": "HarnessOpt-Bench: Evaluating LLMs at Harness Optimization 是最近值得追踪的一篇 AI 论文。论文摘要显示：As LLMs are increasingly deployed within agentic systems, their capabilities depend not only on the model weights but also on the harness: the prompts, tools, control flow, memory, and orchestration code surrounding them. This makes automat...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.AI, cs.CL",
+        "作者数: 7"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "llm",
+        "agent",
+        "agentic"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "agent"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：HarnessOpt-Bench: Evaluating LLMs at Harness Optimization 是最近值得追踪的一篇 AI 论文。论文摘要显示：As LLMs are increasingly deployed within agentic systems, their capabilities depend not only on the model weights but also on the harness: the prompts, tools, control flow, memory, and orchestration code surrounding them. This makes automat...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI, cs.CL\n- 作者数: 7",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "coding",
+          "weight": 2.6
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 180.0,
+      "detail_path": "items/arxiv-harnessopt-bench-evaluating-llms-at-harness-optimization.html",
+      "first_seen_at": "2026-08-08T00:35:06.707161+00:00",
+      "last_seen_at": "2026-08-08T02:18:38.432287+00:00",
+      "last_curated_at": "2026-08-08T02:18:38.432287+00:00",
       "last_notified_at": null
     }
   ],
   "top_themes": [
     {
       "theme": "ai",
-      "count": 7
+      "count": 8
     },
     {
       "theme": "agent",
-      "count": 4
+      "count": 3
     },
     {
       "theme": "rag",

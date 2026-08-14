@@ -1,81 +1,6 @@
 {
-  "generated_at": "2026-08-13T02:42:03.676060+00:00",
+  "generated_at": "2026-08-14T00:45:44.645845+00:00",
   "items": [
-    {
-      "id": "arxiv::http://arxiv.org/abs/2608.11191v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "Test-Time Self-Evolving GUI Visual Grounding via Reflection-Guided On-Policy Self-Distillation",
-      "html_url": "http://arxiv.org/abs/2608.11191v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.11191v1",
-      "description": "GUI Visual Grounding is a fundamental capability for GUI agents. Existing models typically freeze their parameters after deployment, limiting their ability to adapt to unseen interfaces. Although recent methods attempt to adapt models via test-time reinforcement learning, they cannot reflect upon failed exploration. To overcome this, we propose a Test-Time Self-Evolving framework that enables models to improve after deployment without human-annotated ground truth. It constructs a closed-loop of Exploration, Evaluation, Reflection, and Internalization. Specifically, the agent first explores unseen interfaces by predicting grounding coordinates for given instructions. To evaluate these explorations, we introduce an MLLM-based Reflector to assess the generated results and provide the corresponding reasoning reflections. To internalize reflection knowledge into the model weights, we propose Reflection-Guided On-Policy Self-Distillation, which translates high-level reasoning into dense token-level supervision via a conditioned self-teacher. Furthermore, we design a Contrastive Calibration method to prevent incorrect auto-regressive prefixes from corrupting the supervisory signals during failed explorations. Extensive experiments across six benchmarks demonstrate our framework's effectiveness, achieving an average accuracy improvement of 7.4% over the base model. To the best of our knowledge, this is the first work to successfully exploit on-policy self-distillation for test-time adaptation in GUI visual grounding. By filling the gap in post-deployment adaptation, our framework completes the self-evolving capability of GUI agents. The code will be released.",
-      "authors": [
-        "Shiyu Xuan",
-        "Zechao Li"
-      ],
-      "categories": [
-        "cs.CV",
-        "cs.AI",
-        "cs.CL"
-      ],
-      "published_at": "2026-08-11T17:50:25+00:00",
-      "updated_at": "2026-08-11T17:50:25+00:00",
-      "primary_category": "cs.CV",
-      "heuristic_score": 20.3,
-      "summary": "Test-Time Self-Evolving GUI Visual Grounding via Reflection-Guided On-Policy Self-Distillation 是最近值得追踪的一篇 AI 论文。论文摘要显示：GUI Visual Grounding is a fundamental capability for GUI agents. Existing models typically freeze their parameters after deployment, limiting their ability to adapt to unseen interfaces. Although recent methods attempt to adapt models via t...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CV, cs.AI",
-        "作者数: 2"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "llm",
-        "agent",
-        "rag"
-      ],
-      "themes": [
-        "ai",
-        "llm",
-        "agent"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：Test-Time Self-Evolving GUI Visual Grounding via Reflection-Guided On-Policy Self-Distillation 是最近值得追踪的一篇 AI 论文。论文摘要显示：GUI Visual Grounding is a fundamental capability for GUI agents. Existing models typically freeze their parameters after deployment, limiting their ability to adapt to unseen interfaces. Although recent methods attempt to adapt models via t...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV, cs.AI\n- 作者数: 2",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 200.0,
-      "detail_path": "items/arxiv-test-time-self-evolving-gui-visual-grounding-via-reflection-guided-on-policy-self-distilla.html",
-      "first_seen_at": "2026-08-12T02:39:49.190368+00:00",
-      "last_seen_at": "2026-08-13T02:42:03.676060+00:00",
-      "last_curated_at": "2026-08-13T02:42:03.676060+00:00",
-      "last_notified_at": null
-    },
     {
       "id": "github::infiniflow/ragflow",
       "kind": "repo",
@@ -88,7 +13,7 @@
       "full_name": "infiniflow/ragflow",
       "html_url": "https://github.com/infiniflow/ragflow",
       "description": "RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cutting-edge RAG with Agent capabilities to create a superior context layer for LLMs",
-      "stars": 87589,
+      "stars": 88012,
       "stars_today": 0,
       "language": "Go",
       "topics": [],
@@ -102,7 +27,7 @@
       "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
       "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
       "highlights": [
-        "Stars: 87589",
+        "Stars: 88012",
         "语言: Go"
       ],
       "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
@@ -118,7 +43,7 @@
         "rag"
       ],
       "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：infiniflow/ragflow 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cutting-edge RAG with Agent capabilities to create a superior context layer for LLMs结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：10/10\n\n**亮点**：\n- Stars: 87589\n- 语言: Go",
+      "summary_markdown": "**摘要**：infiniflow/ragflow 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cutting-edge RAG with Agent capabilities to create a superior context layer for LLMs结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：10/10\n\n**亮点**：\n- Stars: 88012\n- 语言: Go",
       "focus_hits": [
         {
           "keyword": "agent",
@@ -133,8 +58,8 @@
       "personalized_score": 172.0,
       "detail_path": "items/github-infiniflow-ragflow.html",
       "first_seen_at": "2026-08-13T00:46:03.444620+00:00",
-      "last_seen_at": "2026-08-13T02:42:03.676060+00:00",
-      "last_curated_at": "2026-08-13T02:42:03.676060+00:00",
+      "last_seen_at": "2026-08-14T00:45:44.645845+00:00",
+      "last_curated_at": "2026-08-14T00:45:44.645845+00:00",
       "last_notified_at": null
     },
     {
@@ -149,7 +74,7 @@
       "full_name": "Lightricks/LTX-2",
       "html_url": "https://github.com/Lightricks/LTX-2",
       "description": "Official Python inference and LoRA trainer package for the LTX-2 audio–video generative model.",
-      "stars": 8734,
+      "stars": 8911,
       "stars_today": 0,
       "language": "Python",
       "topics": [],
@@ -163,7 +88,7 @@
       "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
       "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
       "highlights": [
-        "Stars: 8734",
+        "Stars: 8911",
         "语言: Python"
       ],
       "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
@@ -179,7 +104,7 @@
         "inference"
       ],
       "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：Lightricks/LTX-2 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Official Python inference and LoRA trainer package for the LTX-2 audio–video generative model.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：10/10\n\n**亮点**：\n- Stars: 8734\n- 语言: Python",
+      "summary_markdown": "**摘要**：Lightricks/LTX-2 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Official Python inference and LoRA trainer package for the LTX-2 audio–video generative model.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：10/10\n\n**亮点**：\n- Stars: 8911\n- 语言: Python",
       "focus_hits": [
         {
           "keyword": "inference",
@@ -187,11 +112,11 @@
         }
       ],
       "primary_match": "inference",
-      "personalized_score": 121.49,
+      "personalized_score": 121.56,
       "detail_path": "items/github-lightricks-ltx-2.html",
       "first_seen_at": "2026-08-13T00:46:03.444620+00:00",
-      "last_seen_at": "2026-08-13T02:42:03.676060+00:00",
-      "last_curated_at": "2026-08-13T02:42:03.676060+00:00",
+      "last_seen_at": "2026-08-14T00:45:44.645845+00:00",
+      "last_curated_at": "2026-08-14T00:45:44.645845+00:00",
       "last_notified_at": null
     },
     {
@@ -272,8 +197,8 @@
       "personalized_score": 204.0,
       "detail_path": "items/arxiv-ava-encoder-towards-agent-native-video-representation-learning.html",
       "first_seen_at": "2026-08-13T02:42:03.676060+00:00",
-      "last_seen_at": "2026-08-13T02:42:03.676060+00:00",
-      "last_curated_at": "2026-08-13T02:42:03.676060+00:00",
+      "last_seen_at": "2026-08-14T00:45:44.645845+00:00",
+      "last_curated_at": "2026-08-14T00:45:44.645845+00:00",
       "last_notified_at": null
     },
     {
@@ -354,8 +279,8 @@
       "personalized_score": 188.0,
       "detail_path": "items/arxiv-ai4ai-at-test-time-strong-to-weak-capability-transfer-via-harnesses.html",
       "first_seen_at": "2026-08-13T02:42:03.676060+00:00",
-      "last_seen_at": "2026-08-13T02:42:03.676060+00:00",
-      "last_curated_at": "2026-08-13T02:42:03.676060+00:00",
+      "last_seen_at": "2026-08-14T00:45:44.645845+00:00",
+      "last_curated_at": "2026-08-14T00:45:44.645845+00:00",
       "last_notified_at": null
     },
     {
@@ -424,8 +349,8 @@
       "personalized_score": 178.0,
       "detail_path": "items/arxiv-dreamfly-causal-memory-and-receding-horizon-diffusion-planning-for-aerial-vision-language-.html",
       "first_seen_at": "2026-08-13T02:42:03.676060+00:00",
-      "last_seen_at": "2026-08-13T02:42:03.676060+00:00",
-      "last_curated_at": "2026-08-13T02:42:03.676060+00:00",
+      "last_seen_at": "2026-08-14T00:45:44.645845+00:00",
+      "last_curated_at": "2026-08-14T00:45:44.645845+00:00",
       "last_notified_at": null
     },
     {
@@ -502,8 +427,8 @@
       "personalized_score": 174.0,
       "detail_path": "items/arxiv-diagram-mmu-a-multi-modal-benchmark-for-scientific-diagrams.html",
       "first_seen_at": "2026-08-13T02:42:03.676060+00:00",
-      "last_seen_at": "2026-08-13T02:42:03.676060+00:00",
-      "last_curated_at": "2026-08-13T02:42:03.676060+00:00",
+      "last_seen_at": "2026-08-14T00:45:44.645845+00:00",
+      "last_curated_at": "2026-08-14T00:45:44.645845+00:00",
       "last_notified_at": null
     },
     {
@@ -581,8 +506,189 @@
       "personalized_score": 172.0,
       "detail_path": "items/arxiv-one-frozen-simulator-is-not-enough-simulator-collapse-in-multi-agent-rl.html",
       "first_seen_at": "2026-08-13T02:42:03.676060+00:00",
-      "last_seen_at": "2026-08-13T02:42:03.676060+00:00",
-      "last_curated_at": "2026-08-13T02:42:03.676060+00:00",
+      "last_seen_at": "2026-08-14T00:45:44.645845+00:00",
+      "last_curated_at": "2026-08-14T00:45:44.645845+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "github::holaboss-ai/holaOS",
+      "kind": "repo",
+      "source": "github",
+      "source_tags": [
+        "trending"
+      ],
+      "name": "holaOS",
+      "title": "holaboss-ai/holaOS",
+      "full_name": "holaboss-ai/holaOS",
+      "html_url": "https://github.com/holaboss-ai/holaOS",
+      "description": "Open-source All in One AI agent workspace. Run any agent — Claude Code, Codex — across your tools (100+ integrations + MCP), apps, browser, and files, with shared memory. Built-in models or BYOK.",
+      "stars": 6588,
+      "stars_today": 0,
+      "language": "TypeScript",
+      "topics": [],
+      "created_at": "",
+      "updated_at": "",
+      "heuristic_score": 17.8,
+      "summary": "holaboss-ai/holaOS 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Open-source All in One AI agent workspace. Run any agent — Claude Code, Codex — across your tools (100+ integrations + MCP), apps, browser, and files, with shared memory. Built-in models or BYOK.结合关键词命中和热度信号，它适合加入今日重点观察列表。",
+      "brief": "这是一个值得快速关注的开源 AI 项目。",
+      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
+      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
+      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
+      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
+      "highlights": [
+        "Stars: 6588",
+        "语言: TypeScript"
+      ],
+      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "agent",
+        "model",
+        "ai agent"
+      ],
+      "themes": [
+        "ai",
+        "agent",
+        "model"
+      ],
+      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
+      "summary_markdown": "**摘要**：holaboss-ai/holaOS 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Open-source All in One AI agent workspace. Run any agent — Claude Code, Codex — across your tools (100+ integrations + MCP), apps, browser, and files, with shared memory. Built-in models or BYOK.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：10/10\n\n**亮点**：\n- Stars: 6588\n- 语言: TypeScript",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 132.64,
+      "detail_path": "items/github-holaboss-ai-holaos.html",
+      "first_seen_at": "2026-08-14T00:45:44.645845+00:00",
+      "last_seen_at": "2026-08-14T00:45:44.645845+00:00",
+      "last_curated_at": "2026-08-14T00:45:44.645845+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "github::unslothai/unsloth",
+      "kind": "repo",
+      "source": "github",
+      "source_tags": [
+        "trending"
+      ],
+      "name": "unsloth",
+      "title": "unslothai/unsloth",
+      "full_name": "unslothai/unsloth",
+      "html_url": "https://github.com/unslothai/unsloth",
+      "description": "Local UI to run and train LLMs and diffusion models, including Qwen3.8, Kimi K3, MiniMax-H3, Gemma 4, DeepSeek-V4, FLUX and more.",
+      "stars": 71052,
+      "stars_today": 0,
+      "language": "Python",
+      "topics": [],
+      "created_at": "",
+      "updated_at": "",
+      "heuristic_score": 20.4,
+      "summary": "unslothai/unsloth 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Local UI to run and train LLMs and diffusion models, including Qwen3.8, Kimi K3, MiniMax-H3, Gemma 4, DeepSeek-V4, FLUX and more.结合关键词命中和热度信号，它适合加入今日重点观察列表。",
+      "brief": "这是一个值得快速关注的开源 AI 项目。",
+      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
+      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
+      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
+      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
+      "highlights": [
+        "Stars: 71052",
+        "语言: Python"
+      ],
+      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "llm",
+        "diffusion",
+        "model"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "diffusion"
+      ],
+      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
+      "summary_markdown": "**摘要**：unslothai/unsloth 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Local UI to run and train LLMs and diffusion models, including Qwen3.8, Kimi K3, MiniMax-H3, Gemma 4, DeepSeek-V4, FLUX and more.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：10/10\n\n**亮点**：\n- Stars: 71052\n- 语言: Python",
+      "focus_hits": [],
+      "primary_match": "",
+      "personalized_score": 120.0,
+      "detail_path": "items/github-unslothai-unsloth.html",
+      "first_seen_at": "2026-08-14T00:45:44.645845+00:00",
+      "last_seen_at": "2026-08-14T00:45:44.645845+00:00",
+      "last_curated_at": "2026-08-14T00:45:44.645845+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2608.12290v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Beyond Trial-and-Error: Agentic Optimization for Image-to-Video Adherence",
+      "html_url": "http://arxiv.org/abs/2608.12290v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.12290v1",
+      "description": "Modern black-box Image-to-Video (I2V) models offer powerful capabilities in automated content creation, yet their lack of fine-grained control and reliability presents significant challenges in professional workflows. Their inherent stochasticity causes minor variations in textual prompts or hyperparameters to yield drastically different outputs often necessitating inefficient, brute-force trial-and-error processes. To address these limitations, we introduce the ``Agentic Self-Improvement\" framework, which reframes video synthesis into a closed-loop, goal-directed optimization. Our framework systematically navigates the generation parameter space using a novel two-stage approach. In the first stage, an iterative prompt optimization loop uses a multimodal Large Language Model (mLLM) to refine the input prompt. This refinement implements two automated evaluations: Davidsonian Scene Graph (DSG) queries ensure semantic adherence, and Common Mistake Questions (CMQ) for artifact detection. At the second stage, we use Bayesian optimization to efficiently co-optimize stochastic seeds and CFG scales. This search is guided by a suite of quality metrics, including the novel Video-Text Adherence (VTA) score derived from the DSG and CMQ evaluations. Our framework significantly outperforms unguided search methods: in human preference studies, videos generated via our agentic approach were strongly preferred over baseline outputs, achieving win rates up to 69\\%. This work provides a practical and extensible methodology for enhancing the predictability and control of state-of-the-art video generation models, moving the field beyond speculative curiosities toward reliable, production-ready tools.",
+      "authors": [
+        "Aman Tyagi",
+        "Hemanth Boinpally",
+        "Jonathan Chen",
+        "Douglas Gebert",
+        "Steven Hickson"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.MM"
+      ],
+      "published_at": "2026-08-12T17:35:16+00:00",
+      "updated_at": "2026-08-12T17:35:16+00:00",
+      "primary_category": "cs.CV",
+      "heuristic_score": 17.9,
+      "summary": "Beyond Trial-and-Error: Agentic Optimization for Image-to-Video Adherence 是最近值得追踪的一篇 AI 论文。论文摘要显示：Modern black-box Image-to-Video (I2V) models offer powerful capabilities in automated content creation, yet their lack of fine-grained control and reliability presents significant challenges in professional workflows. Their inherent stochas...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CV, cs.AI",
+        "作者数: 5"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "llm",
+        "agent",
+        "agentic"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "agent"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：Beyond Trial-and-Error: Agentic Optimization for Image-to-Video Adherence 是最近值得追踪的一篇 AI 论文。论文摘要显示：Modern black-box Image-to-Video (I2V) models offer powerful capabilities in automated content creation, yet their lack of fine-grained control and reliability presents significant challenges in professional workflows. Their inherent stochas...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV, cs.AI\n- 作者数: 5",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "multimodal",
+          "weight": 2.0
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 158.0,
+      "detail_path": "items/arxiv-beyond-trial-and-error-agentic-optimization-for-image-to-video-adherence.html",
+      "first_seen_at": "2026-08-14T00:45:44.645845+00:00",
+      "last_seen_at": "2026-08-14T00:45:44.645845+00:00",
+      "last_curated_at": "2026-08-14T00:45:44.645845+00:00",
       "last_notified_at": null
     },
     {
@@ -597,7 +703,7 @@
       "full_name": "msitarzewski/agency-agents",
       "html_url": "https://github.com/msitarzewski/agency-agents",
       "description": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.",
-      "stars": 144636,
+      "stars": 145183,
       "stars_today": 0,
       "language": "Shell",
       "topics": [],
@@ -611,7 +717,7 @@
       "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
       "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
       "highlights": [
-        "Stars: 144636",
+        "Stars: 145183",
         "语言: Shell"
       ],
       "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
@@ -625,7 +731,7 @@
         "agent"
       ],
       "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：msitarzewski/agency-agents 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 144636\n- 语言: Shell",
+      "summary_markdown": "**摘要**：msitarzewski/agency-agents 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 145183\n- 语言: Shell",
       "focus_hits": [
         {
           "keyword": "agent",
@@ -636,6 +742,244 @@
       "personalized_score": 130.0,
       "detail_path": "items/github-msitarzewski-agency-agents.html",
       "first_seen_at": "2026-05-05T01:23:51.349264+00:00",
+      "last_seen_at": "2026-08-14T00:45:44.645845+00:00",
+      "last_curated_at": "2026-08-14T00:45:44.645845+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "github::altic-dev/FluidVoice",
+      "kind": "repo",
+      "source": "github",
+      "source_tags": [
+        "trending"
+      ],
+      "name": "FluidVoice",
+      "title": "altic-dev/FluidVoice",
+      "full_name": "altic-dev/FluidVoice",
+      "html_url": "https://github.com/altic-dev/FluidVoice",
+      "description": "Fastest and only macOS Dictation app with on-device STT and custom trained AI enhancement model. A local Wispr Flow alternative. ⭐ helps a ton :) Windows & iOS waitlist open. Linux soon.",
+      "stars": 9849,
+      "stars_today": 0,
+      "language": "Swift",
+      "topics": [],
+      "created_at": "",
+      "updated_at": "",
+      "heuristic_score": 15.2,
+      "summary": "altic-dev/FluidVoice 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Fastest and only macOS Dictation app with on-device STT and custom trained AI enhancement model. A local Wispr Flow alternative. ⭐ helps a ton :) Windows & iOS waitlist open. Linux soon.结合关键词命中和热度信号，它适合加入今日重点观察列表。",
+      "brief": "这是一个值得快速关注的开源 AI 项目。",
+      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
+      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
+      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
+      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
+      "highlights": [
+        "Stars: 9849",
+        "语言: Swift"
+      ],
+      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
+      "relevance_score": 8,
+      "tags": [
+        "ai",
+        "model"
+      ],
+      "themes": [
+        "ai",
+        "model"
+      ],
+      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
+      "summary_markdown": "**摘要**：altic-dev/FluidVoice 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Fastest and only macOS Dictation app with on-device STT and custom trained AI enhancement model. A local Wispr Flow alternative. ⭐ helps a ton :) Windows & iOS waitlist open. Linux soon.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 9849\n- 语言: Swift",
+      "focus_hits": [
+        {
+          "keyword": "voice",
+          "weight": 1.4
+        }
+      ],
+      "primary_match": "voice",
+      "personalized_score": 97.94,
+      "detail_path": "items/github-altic-dev-fluidvoice.html",
+      "first_seen_at": "2026-08-14T00:45:44.645845+00:00",
+      "last_seen_at": "2026-08-14T00:45:44.645845+00:00",
+      "last_curated_at": "2026-08-14T00:45:44.645845+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "github::lightningpixel/modly",
+      "kind": "repo",
+      "source": "github",
+      "source_tags": [
+        "trending"
+      ],
+      "name": "modly",
+      "title": "lightningpixel/modly",
+      "full_name": "lightningpixel/modly",
+      "html_url": "https://github.com/lightningpixel/modly",
+      "description": "Desktop app to generate 3D models from images using local AI — runs entirely on your GPU",
+      "stars": 5404,
+      "stars_today": 0,
+      "language": "TypeScript",
+      "topics": [],
+      "created_at": "",
+      "updated_at": "",
+      "heuristic_score": 15.2,
+      "summary": "lightningpixel/modly 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Desktop app to generate 3D models from images using local AI — runs entirely on your GPU结合关键词命中和热度信号，它适合加入今日重点观察列表。",
+      "brief": "这是一个值得快速关注的开源 AI 项目。",
+      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
+      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
+      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
+      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
+      "highlights": [
+        "Stars: 5404",
+        "语言: TypeScript"
+      ],
+      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
+      "relevance_score": 8,
+      "tags": [
+        "ai",
+        "model"
+      ],
+      "themes": [
+        "ai",
+        "model"
+      ],
+      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
+      "summary_markdown": "**摘要**：lightningpixel/modly 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Desktop app to generate 3D models from images using local AI — runs entirely on your GPU结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 5404\n- 语言: TypeScript",
+      "focus_hits": [],
+      "primary_match": "",
+      "personalized_score": 82.16,
+      "detail_path": "items/github-lightningpixel-modly.html",
+      "first_seen_at": "2026-08-14T00:45:44.645845+00:00",
+      "last_seen_at": "2026-08-14T00:45:44.645845+00:00",
+      "last_curated_at": "2026-08-14T00:45:44.645845+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "github::NVIDIA-NeMo/Switchyard",
+      "kind": "repo",
+      "source": "github",
+      "source_tags": [
+        "trending"
+      ],
+      "name": "Switchyard",
+      "title": "NVIDIA-NeMo/Switchyard",
+      "full_name": "NVIDIA-NeMo/Switchyard",
+      "html_url": "https://github.com/NVIDIA-NeMo/Switchyard",
+      "description": "Switchyard lets LLM applications route traffic across models and providers while preserving native OpenAI and Anthropic API compatibility - enabling flexible model selection, benchmarking, and cost/performance optimization.",
+      "stars": 1211,
+      "stars_today": 0,
+      "language": "Rust",
+      "topics": [],
+      "created_at": "",
+      "updated_at": "",
+      "heuristic_score": 12.822,
+      "summary": "NVIDIA-NeMo/Switchyard 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Switchyard lets LLM applications route traffic across models and providers while preserving native OpenAI and Anthropic API compatibility - enabling flexible model selection, benchmarking, and cost/performance optimization.结合关键词命中和热度信号，它适合加入今日重点观察列表。",
+      "brief": "这是一个值得快速关注的开源 AI 项目。",
+      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
+      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
+      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
+      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
+      "highlights": [
+        "Stars: 1211",
+        "语言: Rust"
+      ],
+      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
+      "relevance_score": 7,
+      "tags": [
+        "ai",
+        "llm",
+        "model",
+        "benchmark"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "model"
+      ],
+      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
+      "summary_markdown": "**摘要**：NVIDIA-NeMo/Switchyard 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Switchyard lets LLM applications route traffic across models and providers while preserving native OpenAI and Anthropic API compatibility - enabling flexible model selection, benchmarking, and cost/performance optimization.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 1211\n- 语言: Rust",
+      "focus_hits": [
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "benchmark",
+      "personalized_score": 86.48,
+      "detail_path": "items/github-nvidia-nemo-switchyard.html",
+      "first_seen_at": "2026-08-14T00:45:44.645845+00:00",
+      "last_seen_at": "2026-08-14T00:45:44.645845+00:00",
+      "last_curated_at": "2026-08-14T00:45:44.645845+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2608.11191v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Test-Time Self-Evolving GUI Visual Grounding via Reflection-Guided On-Policy Self-Distillation",
+      "html_url": "http://arxiv.org/abs/2608.11191v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.11191v1",
+      "description": "GUI Visual Grounding is a fundamental capability for GUI agents. Existing models typically freeze their parameters after deployment, limiting their ability to adapt to unseen interfaces. Although recent methods attempt to adapt models via test-time reinforcement learning, they cannot reflect upon failed exploration. To overcome this, we propose a Test-Time Self-Evolving framework that enables models to improve after deployment without human-annotated ground truth. It constructs a closed-loop of Exploration, Evaluation, Reflection, and Internalization. Specifically, the agent first explores unseen interfaces by predicting grounding coordinates for given instructions. To evaluate these explorations, we introduce an MLLM-based Reflector to assess the generated results and provide the corresponding reasoning reflections. To internalize reflection knowledge into the model weights, we propose Reflection-Guided On-Policy Self-Distillation, which translates high-level reasoning into dense token-level supervision via a conditioned self-teacher. Furthermore, we design a Contrastive Calibration method to prevent incorrect auto-regressive prefixes from corrupting the supervisory signals during failed explorations. Extensive experiments across six benchmarks demonstrate our framework's effectiveness, achieving an average accuracy improvement of 7.4% over the base model. To the best of our knowledge, this is the first work to successfully exploit on-policy self-distillation for test-time adaptation in GUI visual grounding. By filling the gap in post-deployment adaptation, our framework completes the self-evolving capability of GUI agents. The code will be released.",
+      "authors": [
+        "Shiyu Xuan",
+        "Zechao Li"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "published_at": "2026-08-11T17:50:25+00:00",
+      "updated_at": "2026-08-11T17:50:25+00:00",
+      "primary_category": "cs.CV",
+      "heuristic_score": 20.3,
+      "summary": "Test-Time Self-Evolving GUI Visual Grounding via Reflection-Guided On-Policy Self-Distillation 是最近值得追踪的一篇 AI 论文。论文摘要显示：GUI Visual Grounding is a fundamental capability for GUI agents. Existing models typically freeze their parameters after deployment, limiting their ability to adapt to unseen interfaces. Although recent methods attempt to adapt models via t...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CV, cs.AI",
+        "作者数: 2"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "llm",
+        "agent",
+        "rag"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "agent"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：Test-Time Self-Evolving GUI Visual Grounding via Reflection-Guided On-Policy Self-Distillation 是最近值得追踪的一篇 AI 论文。论文摘要显示：GUI Visual Grounding is a fundamental capability for GUI agents. Existing models typically freeze their parameters after deployment, limiting their ability to adapt to unseen interfaces. Although recent methods attempt to adapt models via t...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV, cs.AI\n- 作者数: 2",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 200.0,
+      "detail_path": "items/arxiv-test-time-self-evolving-gui-visual-grounding-via-reflection-guided-on-policy-self-distilla.html",
+      "first_seen_at": "2026-08-12T02:39:49.190368+00:00",
       "last_seen_at": "2026-08-13T02:42:03.676060+00:00",
       "last_curated_at": "2026-08-13T02:42:03.676060+00:00",
       "last_notified_at": null
@@ -13412,413 +13756,35 @@
       "last_seen_at": "2026-07-21T03:38:52.341180+00:00",
       "last_curated_at": "2026-07-21T03:38:52.341180+00:00",
       "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2607.18171v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "FlashRT: Agent Harness for Guiding Agents to Deploy Real-Time Multimodal Applications",
-      "html_url": "http://arxiv.org/abs/2607.18171v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.18171v1",
-      "description": "Real-time multimodal applications, including voice agents and interactive video generation, compose heterogeneous models into pipelines whose efficient deployment requires application-specific decisions about placement, streaming, and intra-model parallelism. Existing serving systems and auto-parallelism compilers commit to limited transformations and fixed workload assumptions, so achieving high performance on a new application requires hand-crafting an efficient implementation. We present FlashRT, an agent harness that guides coding agents to lift simple developer-written reference implementations into optimized multi-GPU deployments that flexibly weigh target metrics like latency and throughput. Using a new chain-of-program paradigm, FlashRT directs a generic coding agent through a multi-pass transformation process where an agent transforms the reference into an intermediate representation (IR) to capture data dependencies and persistent-state scopes, validates this IR via a sequential interpreter, and performs static analyses to identify candidate transformations. Then, the agent iteratively implements, verifies, and benchmarks each candidate under a measurement-gated optimization loop to produce effective deployments that span different hardware budgets. Across various applications, including video world models and multimodal LLMs, FlashRT converts reference implementations into highly efficient deployments, delivering up to ~70x latency reduction and 2.8x throughput improvement on NVIDIA B200 GPUs. On AMD MI355X GPUs, FlashRT matches the peak latency reduction while increasing peak throughput improvement to 3.6x, demonstrating that agent-driven optimization can be more scalable on platforms with less mature expert optimization. In fact, for Qwen3-Omni text-to-audio inference, FlashRT reduces response latency by 65% compared to the expert vLLM-Omni implementation on AMD MI355X.",
-      "authors": [
-        "Krish Agarwal",
-        "Zhuoming Chen",
-        "Yanyuan Qin",
-        "Zhenyu Gu",
-        "Atri Rudra",
-        "Beidi Chen"
-      ],
-      "categories": [
-        "cs.LG"
-      ],
-      "published_at": "2026-07-20T17:12:28+00:00",
-      "updated_at": "2026-07-20T17:12:28+00:00",
-      "primary_category": "cs.LG",
-      "heuristic_score": 22.7,
-      "summary": "FlashRT: Agent Harness for Guiding Agents to Deploy Real-Time Multimodal Applications 是最近值得追踪的一篇 AI 论文。论文摘要显示：Real-time multimodal applications, including voice agents and interactive video generation, compose heterogeneous models into pipelines whose efficient deployment requires application-specific decisions about placement, streaming, and intra...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.LG",
-        "作者数: 6"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "llm",
-        "agent",
-        "multimodal"
-      ],
-      "themes": [
-        "ai",
-        "llm",
-        "agent"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：FlashRT: Agent Harness for Guiding Agents to Deploy Real-Time Multimodal Applications 是最近值得追踪的一篇 AI 论文。论文摘要显示：Real-time multimodal applications, including voice agents and interactive video generation, compose heterogeneous models into pipelines whose efficient deployment requires application-specific decisions about placement, streaming, and intra...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.LG\n- 作者数: 6",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "coding",
-          "weight": 2.6
-        },
-        {
-          "keyword": "multimodal",
-          "weight": 2.0
-        },
-        {
-          "keyword": "inference",
-          "weight": 1.8
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        },
-        {
-          "keyword": "voice",
-          "weight": 1.4
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 232.0,
-      "detail_path": "items/arxiv-flashrt-agent-harness-for-guiding-agents-to-deploy-real-time-multimodal-applications.html",
-      "first_seen_at": "2026-07-21T03:38:52.341180+00:00",
-      "last_seen_at": "2026-07-21T03:38:52.341180+00:00",
-      "last_curated_at": "2026-07-21T03:38:52.341180+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2607.18213v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "SWE-Pruner Pro: The Coder LLM Already Knows What to Prune",
-      "html_url": "http://arxiv.org/abs/2607.18213v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.18213v1",
-      "description": "Pruning long context for coding agents has been a vital technology for efficient context management. While existing context pruning methods such as SWE-Pruner realize this by attaching a separate code classifier, we find the agent itself encodes internal representations indicating the relevance of code context when reading tool output. Based on this finding, we propose SWE-Pruner Pro, which prunes tool outputs directly inside the agent. Concretely, a small head turns the agent's own internal representations into a keep-or-prune label for each line, with a length-aware embedding keyed to each tool output's line count. Across two open-weight backbones and four multi-turn benchmarks, SWE-Pruner Pro saves up to 39% of prompt and completion tokens while preserving task quality, with bounded inference overhead. Notably, on MiMo-V2-Flash SWE-Pruner Pro additionally raises the SWE-Bench Verified resolve rate by +3.8% and the long-context Oolong accuracy by +2.2 points.",
-      "authors": [
-        "Yuhang Wang",
-        "Yuling Shi",
-        "Shaoqiu Zhang",
-        "Jialiang Liang",
-        "Shilin He",
-        "Siyu Ye",
-        "Yuting Chen",
-        "Kai Cai",
-        "Xiaodong Gu"
-      ],
-      "categories": [
-        "cs.CL",
-        "cs.SE"
-      ],
-      "published_at": "2026-07-20T17:47:44+00:00",
-      "updated_at": "2026-07-20T17:47:44+00:00",
-      "primary_category": "cs.CL",
-      "heuristic_score": 19.519,
-      "summary": "SWE-Pruner Pro: The Coder LLM Already Knows What to Prune 是最近值得追踪的一篇 AI 论文。论文摘要显示：Pruning long context for coding agents has been a vital technology for efficient context management. While existing context pruning methods such as SWE-Pruner realize this by attaching a separate code classifier, we find the agent itself en...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CL, cs.SE",
-        "作者数: 9"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "agent",
-        "benchmark",
-        "inference"
-      ],
-      "themes": [
-        "ai",
-        "agent",
-        "benchmark"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：SWE-Pruner Pro: The Coder LLM Already Knows What to Prune 是最近值得追踪的一篇 AI 论文。论文摘要显示：Pruning long context for coding agents has been a vital technology for efficient context management. While existing context pruning methods such as SWE-Pruner realize this by attaching a separate code classifier, we find the agent itself en...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL, cs.SE\n- 作者数: 9",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "coding",
-          "weight": 2.6
-        },
-        {
-          "keyword": "inference",
-          "weight": 1.8
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 198.0,
-      "detail_path": "items/arxiv-swe-pruner-pro-the-coder-llm-already-knows-what-to-prune.html",
-      "first_seen_at": "2026-07-21T03:38:52.341180+00:00",
-      "last_seen_at": "2026-07-21T03:38:52.341180+00:00",
-      "last_curated_at": "2026-07-21T03:38:52.341180+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "github::topoteretes/cognee",
-      "kind": "repo",
-      "source": "github",
-      "source_tags": [
-        "trending"
-      ],
-      "name": "cognee",
-      "title": "topoteretes/cognee",
-      "full_name": "topoteretes/cognee",
-      "html_url": "https://github.com/topoteretes/cognee",
-      "description": "Cognee is the open-source AI memory platform for agents. Give your AI agents persistent long-term memory across sessions with a self-hosted knowledge graph engine.",
-      "stars": 28848,
-      "stars_today": 0,
-      "language": "Python",
-      "topics": [],
-      "created_at": "",
-      "updated_at": "",
-      "heuristic_score": 15.2,
-      "summary": "topoteretes/cognee 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Cognee is the open-source AI memory platform for agents. Give your AI agents persistent long-term memory across sessions with a self-hosted knowledge graph engine.结合关键词命中和热度信号，它适合加入今日重点观察列表。",
-      "brief": "这是一个值得快速关注的开源 AI 项目。",
-      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
-      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
-      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
-      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
-      "highlights": [
-        "Stars: 28848",
-        "语言: Python"
-      ],
-      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
-      "relevance_score": 8,
-      "tags": [
-        "ai",
-        "agent",
-        "ai agent"
-      ],
-      "themes": [
-        "ai",
-        "agent",
-        "ai agent"
-      ],
-      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：topoteretes/cognee 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Cognee is the open-source AI memory platform for agents. Give your AI agents persistent long-term memory across sessions with a self-hosted knowledge graph engine.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 28848\n- 语言: Python",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 121.54,
-      "detail_path": "items/github-topoteretes-cognee.html",
-      "first_seen_at": "2026-06-22T02:11:47.366760+00:00",
-      "last_seen_at": "2026-07-21T03:38:52.341180+00:00",
-      "last_curated_at": "2026-07-21T03:38:52.341180+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "github::MoonshotAI/kimi-cli",
-      "kind": "repo",
-      "source": "github",
-      "source_tags": [
-        "trending"
-      ],
-      "name": "kimi-cli",
-      "title": "MoonshotAI/kimi-cli",
-      "full_name": "MoonshotAI/kimi-cli",
-      "html_url": "https://github.com/MoonshotAI/kimi-cli",
-      "description": "Kimi Code CLI is your next CLI agent.",
-      "stars": 10286,
-      "stars_today": 0,
-      "language": "Python",
-      "topics": [],
-      "created_at": "",
-      "updated_at": "",
-      "heuristic_score": 15.2,
-      "summary": "MoonshotAI/kimi-cli 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Kimi Code CLI is your next CLI agent.结合关键词命中和热度信号，它适合加入今日重点观察列表。",
-      "brief": "这是一个值得快速关注的开源 AI 项目。",
-      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
-      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
-      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
-      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
-      "highlights": [
-        "Stars: 10286",
-        "语言: Python"
-      ],
-      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
-      "relevance_score": 8,
-      "tags": [
-        "agent"
-      ],
-      "themes": [
-        "agent"
-      ],
-      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：MoonshotAI/kimi-cli 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Kimi Code CLI is your next CLI agent.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 10286\n- 语言: Python",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 114.11,
-      "detail_path": "items/github-moonshotai-kimi-cli.html",
-      "first_seen_at": "2026-07-19T01:12:05.740675+00:00",
-      "last_seen_at": "2026-07-21T03:38:52.341180+00:00",
-      "last_curated_at": "2026-07-21T03:38:52.341180+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "github::moonshine-ai/moonshine",
-      "kind": "repo",
-      "source": "github",
-      "source_tags": [
-        "trending"
-      ],
-      "name": "moonshine",
-      "title": "moonshine-ai/moonshine",
-      "full_name": "moonshine-ai/moonshine",
-      "html_url": "https://github.com/moonshine-ai/moonshine",
-      "description": "Very low latency speech to text, intent recognition, and text to speech, for building voice agents and interfaces",
-      "stars": 9942,
-      "stars_today": 0,
-      "language": "C++",
-      "topics": [],
-      "created_at": "",
-      "updated_at": "",
-      "heuristic_score": 15.2,
-      "summary": "moonshine-ai/moonshine 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Very low latency speech to text, intent recognition, and text to speech, for building voice agents and interfaces结合关键词命中和热度信号，它适合加入今日重点观察列表。",
-      "brief": "这是一个值得快速关注的开源 AI 项目。",
-      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
-      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
-      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
-      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
-      "highlights": [
-        "Stars: 9942",
-        "语言: C++"
-      ],
-      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
-      "relevance_score": 8,
-      "tags": [
-        "agent"
-      ],
-      "themes": [
-        "agent"
-      ],
-      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：moonshine-ai/moonshine 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Very low latency speech to text, intent recognition, and text to speech, for building voice agents and interfaces结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 9942\n- 语言: C++",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "voice",
-          "weight": 1.4
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 127.98,
-      "detail_path": "items/github-moonshine-ai-moonshine.html",
-      "first_seen_at": "2026-07-21T01:13:27.692100+00:00",
-      "last_seen_at": "2026-07-21T03:38:52.341180+00:00",
-      "last_curated_at": "2026-07-21T03:38:52.341180+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2607.17243v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "LenGuard-GPC: Length Guarding with Guided-Prompt Consistency for Spatial Reasoning Reinforce Learning",
-      "html_url": "http://arxiv.org/abs/2607.17243v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.17243v1",
-      "description": "Multi-view spatial reasoning requires vision-language models to compare visual evidence across images, align object correspondences, and infer spatial relations over long visual contexts, a setting where chain-of-thought reasoning tends to grow verbose without becoming more accurate. Reinforcement learning with verifiable rewards is a natural fit for this task, but standard GRPO reward relies on sparse outcome-level feedback and gives no signal about where a reasoning trajectory goes wrong, nor any control over its length. We propose LenGuard-GPC, a dense reward framework that addresses both problems together. For each sampled trajectory, it compares the token-wise predictive distributions under a standard prompt and a guided prompt, and uses the resulting token-sum KL divergence as a dense reward signal. Since this KL penalty accumulates over tokens and would otherwise reward shorter responses regardless of their quality, we introduce a staged length bonus that keeps reasoning length within a controlled range without simply encouraging brevity. On six multi-view spatial reasoning benchmarks, LenGuard-GPC improves accuracy over vanilla GRPO while reducing average response length.",
-      "authors": [
-        "Xingjian Tao",
-        "Yiwei Wang",
-        "Yujun Cai",
-        "Jing Tang"
-      ],
-      "categories": [
-        "cs.AI"
-      ],
-      "published_at": "2026-07-19T13:24:40+00:00",
-      "updated_at": "2026-07-19T13:24:40+00:00",
-      "primary_category": "cs.AI",
-      "heuristic_score": 14.998,
-      "summary": "LenGuard-GPC: Length Guarding with Guided-Prompt Consistency for Spatial Reasoning Reinforce Learning 是最近值得追踪的一篇 AI 论文。论文摘要显示：Multi-view spatial reasoning requires vision-language models to compare visual evidence across images, align object correspondences, and infer spatial relations over long visual contexts, a setting where chain-of-thought reasoning tends to ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.AI",
-        "作者数: 4"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 8,
-      "tags": [
-        "ai",
-        "rag",
-        "model",
-        "benchmark"
-      ],
-      "themes": [
-        "ai",
-        "rag",
-        "model"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：LenGuard-GPC: Length Guarding with Guided-Prompt Consistency for Spatial Reasoning Reinforce Learning 是最近值得追踪的一篇 AI 论文。论文摘要显示：Multi-view spatial reasoning requires vision-language models to compare visual evidence across images, align object correspondences, and infer spatial relations over long visual contexts, a setting where chain-of-thought reasoning tends to ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：8/10\n\n**亮点**：\n- 分类: cs.AI\n- 作者数: 4",
-      "focus_hits": [
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "reasoning",
-      "personalized_score": 150.0,
-      "detail_path": "items/arxiv-lenguard-gpc-length-guarding-with-guided-prompt-consistency-for-spatial-reasoning-reinforc.html",
-      "first_seen_at": "2026-07-21T01:13:27.692100+00:00",
-      "last_seen_at": "2026-07-21T03:38:52.341180+00:00",
-      "last_curated_at": "2026-07-21T03:38:52.341180+00:00",
-      "last_notified_at": null
     }
   ],
   "digests": [
+    {
+      "date": "2026-08-14",
+      "title": "AI Daily Digest · 2026-08-14",
+      "generated_at": "2026-08-14T08:45:19.053507+08:00",
+      "notified_at": null,
+      "repo_ids": [
+        "github::infiniflow/ragflow",
+        "github::holaboss-ai/holaOS",
+        "github::msitarzewski/agency-agents",
+        "github::Lightricks/LTX-2",
+        "github::unslothai/unsloth",
+        "github::altic-dev/FluidVoice",
+        "github::NVIDIA-NeMo/Switchyard",
+        "github::lightningpixel/modly"
+      ],
+      "paper_ids": [
+        "arxiv::http://arxiv.org/abs/2608.12313v1",
+        "arxiv::http://arxiv.org/abs/2608.12307v1",
+        "arxiv::http://arxiv.org/abs/2608.12308v1",
+        "arxiv::http://arxiv.org/abs/2608.12262v1",
+        "arxiv::http://arxiv.org/abs/2608.12253v1",
+        "arxiv::http://arxiv.org/abs/2608.12290v1"
+      ],
+      "digest_json": "data/digests/2026-08-14.json",
+      "digest_markdown": "data/digests/2026-08-14.md"
+    },
     {
       "date": "2026-08-13",
       "title": "AI Daily Digest · 2026-08-13",
@@ -16716,8 +16682,8 @@
     "weekly": {
       "label": "周报",
       "window_days": 7,
-      "generated_at": "2026-08-13T10:41:57.639515+08:00",
-      "count": 71,
+      "generated_at": "2026-08-14T08:45:19.053507+08:00",
+      "count": 67,
       "summary": "近 7 天里，最集中的主题是 ai、agent、rag。",
       "top_items": [
         {
@@ -16798,8 +16764,8 @@
           "personalized_score": 204.0,
           "detail_path": "items/arxiv-ava-encoder-towards-agent-native-video-representation-learning.html",
           "first_seen_at": "2026-08-13T02:42:03.676060+00:00",
-          "last_seen_at": "2026-08-13T02:42:03.676060+00:00",
-          "last_curated_at": "2026-08-13T02:42:03.676060+00:00",
+          "last_seen_at": "2026-08-14T00:45:44.645845+00:00",
+          "last_curated_at": "2026-08-14T00:45:44.645845+00:00",
           "last_notified_at": null
         },
         {
@@ -16959,82 +16925,6 @@
           "last_notified_at": null
         },
         {
-          "id": "arxiv::http://arxiv.org/abs/2608.05095v1",
-          "kind": "paper",
-          "source": "arxiv",
-          "source_tags": [
-            "latest"
-          ],
-          "title": "Hierarchical Graph Memory for LLM Agents with Path-level Localization and Rewrite",
-          "html_url": "http://arxiv.org/abs/2608.05095v1",
-          "pdf_url": "https://arxiv.org/pdf/2608.05095v1",
-          "description": "Agents for long term reasoning require a memory that can be efficiently and effectively updated over time, as new facts and external feedback continue to arrive. Recently, graph memory has been adopted to offer structural organization for multi-hop retrieval and reasoning. However, existing methods store all memories in a flat graph, and accumulated historical memories can introduce irrelevant contexts and increase the cost of evidence selection during retrieval. Moreover, they typically update memory units independently, requiring repeated unit-wise rewrite to cover related changes. To address these issues, we propose HiGram, an evolving hierarchical graph memory framework with path-level localization and rewriting. Specifically, we first propose a hierarchical graph memory, which organizes the memory into coarse-to-fine architecture composed of upper-level nodes and MemoryUnits, thereby reducing the amount of irrelevant information during retrieval. We further propose MicroGraph-based path-level localization, which leverages query and update conditioned MicroGraphs to identify support subgraph and evidence path before rewrite. Finally, we propose a coordinated rewriting method that jointly revises intra-unit memory and inter-unit dependencies, enable valid dependency structures updating in the localized evidence path. Experiments on benchmarks for long-term conversational question answering and conflict-aware memory evaluation demonstrate that our method demonstrate substantial improvements over baselines in answer quality and token efficiency. Besides, our method improves answer accuracy and query-valid evidence selection under dynamic, static, and conditional conflicts.",
-          "authors": [
-            "Xiawei Yue",
-            "Boran Wang",
-            "Xiaoqing Zhang",
-            "Shuxin Zheng",
-            "Ziwei Zhang"
-          ],
-          "categories": [
-            "cs.AI"
-          ],
-          "published_at": "2026-08-05T17:32:43+00:00",
-          "updated_at": "2026-08-05T17:32:43+00:00",
-          "primary_category": "cs.AI",
-          "heuristic_score": 17.9,
-          "summary": "Hierarchical Graph Memory for LLM Agents with Path-level Localization and Rewrite 是最近值得追踪的一篇 AI 论文。论文摘要显示：Agents for long term reasoning require a memory that can be efficiently and effectively updated over time, as new facts and external feedback continue to arrive. Recently, graph memory has been adopted to offer structural organization for m...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-          "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-          "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-          "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-          "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-          "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-          "highlights": [
-            "分类: cs.AI",
-            "作者数: 5"
-          ],
-          "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-          "relevance_score": 10,
-          "tags": [
-            "agent",
-            "rag",
-            "benchmark",
-            "reasoning"
-          ],
-          "themes": [
-            "agent",
-            "rag",
-            "benchmark"
-          ],
-          "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-          "summary_markdown": "**摘要**：Hierarchical Graph Memory for LLM Agents with Path-level Localization and Rewrite 是最近值得追踪的一篇 AI 论文。论文摘要显示：Agents for long term reasoning require a memory that can be efficiently and effectively updated over time, as new facts and external feedback continue to arrive. Recently, graph memory has been adopted to offer structural organization for m...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI\n- 作者数: 5",
-          "focus_hits": [
-            {
-              "keyword": "agent",
-              "weight": 3.0
-            },
-            {
-              "keyword": "reasoning",
-              "weight": 2.4
-            },
-            {
-              "keyword": "rag",
-              "weight": 2.2
-            },
-            {
-              "keyword": "benchmark",
-              "weight": 1.6
-            }
-          ],
-          "primary_match": "agent",
-          "personalized_score": 200.0,
-          "detail_path": "items/arxiv-hierarchical-graph-memory-for-llm-agents-with-path-level-localization-and-rewrite.html",
-          "first_seen_at": "2026-08-06T03:31:24.817290+00:00",
-          "last_seen_at": "2026-08-06T03:31:24.817290+00:00",
-          "last_curated_at": "2026-08-06T03:31:24.817290+00:00",
-          "last_notified_at": null
-        },
-        {
           "id": "arxiv::http://arxiv.org/abs/2608.09748v1",
           "kind": "paper",
           "source": "arxiv",
@@ -17187,60 +17077,61 @@
           "last_notified_at": null
         },
         {
-          "id": "arxiv::http://arxiv.org/abs/2608.04939v1",
+          "id": "arxiv::http://arxiv.org/abs/2608.12307v1",
           "kind": "paper",
           "source": "arxiv",
           "source_tags": [
             "latest"
           ],
-          "title": "Reading Between the Frames: Interpreting Implicit and Non-literal Meaning in Social Media Videos",
-          "html_url": "http://arxiv.org/abs/2608.04939v1",
-          "pdf_url": "https://arxiv.org/pdf/2608.04939v1",
-          "description": "Social media videos often communicate meanings that go beyond their visible actions, captions, or speech. A mundane clip may become humorous, ironic, or satire only through the interaction of multimodal cues and cultural context, making such content a difficult test case for video-language models. In this paper, we introduce \\textit{DrivelHub+}, a benchmark for evaluating whether models can infer the implicit, non-linear, and rhetorically layered meanings of social media videos that appear nonsensical on the surface but convey deliberate pragmatic meanings. DrivelHub+ consists of 1,000 videos collected from social media, each annotated with a human-written implicit narrative explanation. Unlike conventional video understanding tasks focused on recognition or description, we present a benchmark that targets contextual multimodal reasoning. We evaluate current video-language models from two perspectives: explanation, where models must explain the pragmatic comprehension of a video in natural language; and representation, where we adapt reasoning-as-retrieval to test whether model representations align videos with their corresponding implicit narratives in both video-to-text and text-to-video retrieval. Our benchmark provides a diagnostic setting for measuring the gap between multimodal perception and pragmatic comprehension, asking whether current models can move beyond describing what is shown to inferring what is meant.",
+          "title": "AI4AI at Test-Time: Strong-to-Weak Capability Transfer via Harnesses",
+          "html_url": "http://arxiv.org/abs/2608.12307v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.12307v1",
+          "description": "Recent work on distillation transfers the capabilities of large models to smaller ones often by updating the latter's parameters, through teacher forcing, on-policy distillation, and related training-time methods. In this paper, we ask whether such transfer can instead occur at test time. We study strong-to-weak scaffolding: whether a stronger builder model can construct inference-time harnesses that help a weaker target model solve tasks more reliably without any parameter updates. Using four representative Theory-of-Mind benchmarks, each builder model uses 5% of the data as a validation set to iteratively refine its harness over multiple rounds, after which the finalized harness is evaluated on the full test set. Empirically, this form of test-time capability transfer is highly effective, nearly doubling average target-model performance from 0.49 to 0.91. Our analysis shows that the gains come primarily from offloading unstable model reasoning into deterministic code, benchmark-specific routing, and strict answer-format enforcement, rather than from encouraging the target model to reason more extensively or sample more broadly. We further find that builder-model reasoning effort improves harness quality monotonically, platform effects are modest relative to the builder model's own capability, and weaker target models receive the largest gains. These results suggest that inference-time harness design is an important complement to conventional training-time distillation, enabling strong models to transfer cognitive structure to weaker models without retraining.",
           "authors": [
-            "Yang Wang",
-            "Yanan Ma",
-            "Yiqi Liu",
-            "Zi Yan Chang",
-            "Chi-Li Chen",
-            "Chia-Yi Hsiao",
-            "Tyler Loakman",
-            "Aline Villavicencio",
-            "Chenghao Xiao",
-            "Chenghua Lin"
+            "Cheng Qian",
+            "Wenting Zhao",
+            "Liangwei Yang",
+            "Heng Wang",
+            "Jielin Qiu",
+            "Heng Ji",
+            "Silvio Savarese",
+            "Huan Wang",
+            "Shelby Heinecke"
           ],
           "categories": [
+            "cs.LG",
+            "cs.AI",
             "cs.CL"
           ],
-          "published_at": "2026-08-05T15:06:03+00:00",
-          "updated_at": "2026-08-05T15:06:03+00:00",
-          "primary_category": "cs.CL",
-          "heuristic_score": 17.704,
-          "summary": "Reading Between the Frames: Interpreting Implicit and Non-literal Meaning in Social Media Videos 是最近值得追踪的一篇 AI 论文。论文摘要显示：Social media videos often communicate meanings that go beyond their visible actions, captions, or speech. A mundane clip may become humorous, ironic, or satire only through the interaction of multimodal cues and cultural context, making suc...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+          "published_at": "2026-08-12T17:53:18+00:00",
+          "updated_at": "2026-08-12T17:53:18+00:00",
+          "primary_category": "cs.LG",
+          "heuristic_score": 20.284,
+          "summary": "AI4AI at Test-Time: Strong-to-Weak Capability Transfer via Harnesses 是最近值得追踪的一篇 AI 论文。论文摘要显示：Recent work on distillation transfers the capabilities of large models to smaller ones often by updating the latter's parameters, through teacher forcing, on-policy distillation, and related training-time methods. In this paper, we ask whet...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
           "brief": "这是一篇值得加入今日论文雷达的最新工作。",
           "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
           "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
           "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
           "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
           "highlights": [
-            "分类: cs.CL",
-            "作者数: 10"
+            "分类: cs.LG, cs.AI",
+            "作者数: 9"
           ],
           "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
           "relevance_score": 10,
           "tags": [
             "ai",
             "rag",
-            "multimodal",
-            "model"
+            "model",
+            "benchmark"
           ],
           "themes": [
             "ai",
             "rag",
-            "multimodal"
+            "model"
           ],
           "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-          "summary_markdown": "**摘要**：Reading Between the Frames: Interpreting Implicit and Non-literal Meaning in Social Media Videos 是最近值得追踪的一篇 AI 论文。论文摘要显示：Social media videos often communicate meanings that go beyond their visible actions, captions, or speech. A mundane clip may become humorous, ironic, or satire only through the interaction of multimodal cues and cultural context, making suc...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL\n- 作者数: 10",
+          "summary_markdown": "**摘要**：AI4AI at Test-Time: Strong-to-Weak Capability Transfer via Harnesses 是最近值得追踪的一篇 AI 论文。论文摘要显示：Recent work on distillation transfers the capabilities of large models to smaller ones often by updating the latter's parameters, through teacher forcing, on-policy distillation, and related training-time methods. In this paper, we ask whet...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.LG, cs.AI\n- 作者数: 9",
           "focus_hits": [
             {
               "keyword": "reasoning",
@@ -17251,8 +17142,8 @@
               "weight": 2.2
             },
             {
-              "keyword": "multimodal",
-              "weight": 2.0
+              "keyword": "inference",
+              "weight": 1.8
             },
             {
               "keyword": "benchmark",
@@ -17260,39 +17151,41 @@
             }
           ],
           "primary_match": "reasoning",
-          "personalized_score": 190.0,
-          "detail_path": "items/arxiv-reading-between-the-frames-interpreting-implicit-and-non-literal-meaning-in-social-media-v.html",
-          "first_seen_at": "2026-08-06T01:08:41.741155+00:00",
-          "last_seen_at": "2026-08-06T03:31:24.817290+00:00",
-          "last_curated_at": "2026-08-06T03:31:24.817290+00:00",
+          "personalized_score": 188.0,
+          "detail_path": "items/arxiv-ai4ai-at-test-time-strong-to-weak-capability-transfer-via-harnesses.html",
+          "first_seen_at": "2026-08-13T02:42:03.676060+00:00",
+          "last_seen_at": "2026-08-14T00:45:44.645845+00:00",
+          "last_curated_at": "2026-08-14T00:45:44.645845+00:00",
           "last_notified_at": null
         },
         {
-          "id": "arxiv::http://arxiv.org/abs/2608.05137v1",
+          "id": "arxiv::http://arxiv.org/abs/2608.09908v1",
           "kind": "paper",
           "source": "arxiv",
           "source_tags": [
             "latest"
           ],
-          "title": "SmartMage: Dynamic Modality Orchestration for 3D Scene Understanding",
-          "html_url": "http://arxiv.org/abs/2608.05137v1",
-          "pdf_url": "https://arxiv.org/pdf/2608.05137v1",
-          "description": "Understanding 3D scenes is fundamental to embodied intelligence, requiring joint reasoning over heterogeneous information from multiple modalities, including visual and geometric cues. However, the relevance of these modalities often varies across queries. Existing Multimodal Large Language Models (MLLMs) typically rely on fixed modality combinations, overlooking query-dependent modality needs. Such a rigid design can introduce semantic noise from irrelevant modalities while underutilizing more informative ones, leading to wasted computation and diluted reasoning. To address these challenges, this paper proposes SmartMage, a unified MLLM that dynamically orchestrates heterogeneous modalities for semantic-aware 3D scene understanding. Specifically, SmartMage incorporates: (1) a Semantic-guided Modality Adaptive RouTng (SMART) module that selects task-relevant modalities using semantic priors, text-modality alignment, and modality quality; and (2) a Modality-Aware Gating Expert (MAGE) module that leverages modality priors to guide expert activation, fostering adaptive specialization in multimodal reasoning. Empirically, SmartMage achieves state-of-the-art performance across five 3D scene understanding benchmarks, and attains competitive results on RGB-only video understanding benchmarks. In our diagnostic benchmark ScanFacet, tasks are divided into fine-grained semantic categories, enabling analysis of modality combinations preferred by each semantic type. The observed modality-semantic patterns provide further evidence of SmartMage's effectiveness. Project page: https://yuecheong.github.io/SmartMage/.",
+          "title": "Beyond Hazard Resemblance: Contrastive Event Adjudication for Training-Free Video Anomaly Detection",
+          "html_url": "http://arxiv.org/abs/2608.09908v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.09908v1",
+          "description": "Video anomaly detection (VAD) aims to identify and temporally localize abnormal events in videos. Supervised methods learn anomaly decision boundaries from target-domain annotations but require substantial in-domain data. Existing training-free methods leverage the rich semantic knowledge and reasoning capabilities of pretrained models to interpret visual content, yet these capabilities do not directly define an anomaly decision criterion: richer anomaly descriptions better capture hazard resemblance without resolving abnormality. To this end, we propose Contrastive Event Adjudication for training-free Video Anomaly Detection (CEAVAD), which shifts the unit of inference from isolated anomaly concepts to falsifiable event hypotheses and establishes an inference-time explanatory boundary through the interaction between competing explanations and video evidence. Specifically, CEAVAD first uses public-safety knowledge to construct hazard-benign event contrasts, pairing each hazard mechanism with a generic normal account and a mechanism-specific benign counterpart. It then determines whether the target interval better supports a hazard explanation or its benign competitor, yielding a revisable contrastive boundary proposal for the target. Finally, CEAVAD adjudicates between the competing explanations to determine whether the hazard hypothesis survives the video evidence, supporting both temporally localized anomaly detection and evidence-grounded explanations. Experiments on three widely used VAD benchmarks demonstrate that CEAVAD achieves state-of-the-art performance under the training-free paradigm.",
           "authors": [
-            "Yue Zhang",
-            "Yingzhao Jian",
-            "Yunqiu Xu",
-            "Xiaoxiao Sun",
-            "Hehe Fan"
+            "Wenti Yin",
+            "Xiang Wang",
+            "Huaxin Zhang",
+            "Hanqing Wang",
+            "Hongbo Shao",
+            "Changxin Gao",
+            "Nong Sang"
           ],
           "categories": [
             "cs.CV"
           ],
-          "published_at": "2026-08-05T17:56:35+00:00",
-          "updated_at": "2026-08-05T17:56:35+00:00",
+          "published_at": "2026-08-10T17:52:51+00:00",
+          "updated_at": "2026-08-10T17:52:51+00:00",
           "primary_category": "cs.CV",
           "heuristic_score": 20.3,
-          "summary": "SmartMage: Dynamic Modality Orchestration for 3D Scene Understanding 是最近值得追踪的一篇 AI 论文。论文摘要显示：Understanding 3D scenes is fundamental to embodied intelligence, requiring joint reasoning over heterogeneous information from multiple modalities, including visual and geometric cues. However, the relevance of these modalities often varies...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+          "summary": "Beyond Hazard Resemblance: Contrastive Event Adjudication for Training-Free Video Anomaly Detection 是最近值得追踪的一篇 AI 论文。论文摘要显示：Video anomaly detection (VAD) aims to identify and temporally localize abnormal events in videos. Supervised methods learn anomaly decision boundaries from target-domain annotations but require substantial in-domain data. Existing training-...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
           "brief": "这是一篇值得加入今日论文雷达的最新工作。",
           "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
           "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
@@ -17300,23 +17193,23 @@
           "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
           "highlights": [
             "分类: cs.CV",
-            "作者数: 5"
+            "作者数: 7"
           ],
           "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
           "relevance_score": 10,
           "tags": [
             "ai",
-            "llm",
             "rag",
-            "multimodal"
+            "model",
+            "benchmark"
           ],
           "themes": [
             "ai",
-            "llm",
-            "rag"
+            "rag",
+            "model"
           ],
           "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-          "summary_markdown": "**摘要**：SmartMage: Dynamic Modality Orchestration for 3D Scene Understanding 是最近值得追踪的一篇 AI 论文。论文摘要显示：Understanding 3D scenes is fundamental to embodied intelligence, requiring joint reasoning over heterogeneous information from multiple modalities, including visual and geometric cues. However, the relevance of these modalities often varies...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV\n- 作者数: 5",
+          "summary_markdown": "**摘要**：Beyond Hazard Resemblance: Contrastive Event Adjudication for Training-Free Video Anomaly Detection 是最近值得追踪的一篇 AI 论文。论文摘要显示：Video anomaly detection (VAD) aims to identify and temporally localize abnormal events in videos. Supervised methods learn anomaly decision boundaries from target-domain annotations but require substantial in-domain data. Existing training-...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV\n- 作者数: 7",
           "focus_hits": [
             {
               "keyword": "reasoning",
@@ -17327,8 +17220,8 @@
               "weight": 2.2
             },
             {
-              "keyword": "multimodal",
-              "weight": 2.0
+              "keyword": "inference",
+              "weight": 1.8
             },
             {
               "keyword": "benchmark",
@@ -17336,22 +17229,98 @@
             }
           ],
           "primary_match": "reasoning",
-          "personalized_score": 190.0,
-          "detail_path": "items/arxiv-smartmage-dynamic-modality-orchestration-for-3d-scene-understanding.html",
-          "first_seen_at": "2026-08-06T03:31:24.817290+00:00",
-          "last_seen_at": "2026-08-06T03:31:24.817290+00:00",
-          "last_curated_at": "2026-08-06T03:31:24.817290+00:00",
+          "personalized_score": 188.0,
+          "detail_path": "items/arxiv-beyond-hazard-resemblance-contrastive-event-adjudication-for-training-free-video-anomaly-d.html",
+          "first_seen_at": "2026-08-12T00:44:39.124354+00:00",
+          "last_seen_at": "2026-08-12T02:39:49.190368+00:00",
+          "last_curated_at": "2026-08-12T02:39:49.190368+00:00",
+          "last_notified_at": null
+        },
+        {
+          "id": "arxiv::http://arxiv.org/abs/2608.06301v1",
+          "kind": "paper",
+          "source": "arxiv",
+          "source_tags": [
+            "latest"
+          ],
+          "title": "HarnessOpt-Bench: Evaluating LLMs at Harness Optimization",
+          "html_url": "http://arxiv.org/abs/2608.06301v1",
+          "pdf_url": "https://arxiv.org/pdf/2608.06301v1",
+          "description": "As LLMs are increasingly deployed within agentic systems, their capabilities depend not only on the model weights but also on the harness: the prompts, tools, control flow, memory, and orchestration code surrounding them. This makes automated harness optimization -- the iterative and evaluation-guided improvement of a harness by an AI system -- both an important route to improving AI systems and a demanding capability for AI systems themselves. Yet the community lacks a common protocol for measuring how well frontier LLMs perform at this task. We introduce HarnessOpt-Bench, a benchmark for end-to-end harness optimization under expensive and stochastic evaluation. An optimizer, an LLM paired with a coding harness, receives a target agent's seed harness, graded evaluation feedback, and a fixed target-evaluation budget. It edits the harness and nominates a final candidate, which is scored by its normalized gain over the seed on a held-out test partition that remains inaccessible throughout search. A trusted execution environment enforces the evaluation boundary, meters target-agent resource use, and preserves candidate versions for audit. We evaluate 5 frontier LLMs as optimizers both under a shared coding harness and under their native harnesses across 4 downstream tasks, over 111 scored runs. Experiment results show that optimizer models separate more than the coding harnesses they act through, native harnesses are not consistently superior, and gains vary substantially across tasks and seed regimes. These results establish harness optimization as a measurable and discriminative capability with large space for improvement.",
+          "authors": [
+            "Varun Ursekar",
+            "Apaar Shanker",
+            "Yash Maurya",
+            "Shehab Yasser",
+            "Vijay S. Kalmath",
+            "Veronica Chatrath",
+            "Yuan Xue"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CL",
+            "cs.LG"
+          ],
+          "published_at": "2026-08-06T17:21:05+00:00",
+          "updated_at": "2026-08-06T17:21:05+00:00",
+          "primary_category": "cs.AI",
+          "heuristic_score": 17.9,
+          "summary": "HarnessOpt-Bench: Evaluating LLMs at Harness Optimization 是最近值得追踪的一篇 AI 论文。论文摘要显示：As LLMs are increasingly deployed within agentic systems, their capabilities depend not only on the model weights but also on the harness: the prompts, tools, control flow, memory, and orchestration code surrounding them. This makes automat...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+          "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+          "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+          "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+          "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+          "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+          "highlights": [
+            "分类: cs.AI, cs.CL",
+            "作者数: 7"
+          ],
+          "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+          "relevance_score": 10,
+          "tags": [
+            "ai",
+            "llm",
+            "agent",
+            "agentic"
+          ],
+          "themes": [
+            "ai",
+            "llm",
+            "agent"
+          ],
+          "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+          "summary_markdown": "**摘要**：HarnessOpt-Bench: Evaluating LLMs at Harness Optimization 是最近值得追踪的一篇 AI 论文。论文摘要显示：As LLMs are increasingly deployed within agentic systems, their capabilities depend not only on the model weights but also on the harness: the prompts, tools, control flow, memory, and orchestration code surrounding them. This makes automat...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI, cs.CL\n- 作者数: 7",
+          "focus_hits": [
+            {
+              "keyword": "agent",
+              "weight": 3.0
+            },
+            {
+              "keyword": "coding",
+              "weight": 2.6
+            },
+            {
+              "keyword": "benchmark",
+              "weight": 1.6
+            }
+          ],
+          "primary_match": "agent",
+          "personalized_score": 180.0,
+          "detail_path": "items/arxiv-harnessopt-bench-evaluating-llms-at-harness-optimization.html",
+          "first_seen_at": "2026-08-08T00:35:06.707161+00:00",
+          "last_seen_at": "2026-08-08T02:18:38.432287+00:00",
+          "last_curated_at": "2026-08-08T02:18:38.432287+00:00",
           "last_notified_at": null
         }
       ],
       "top_themes": [
         {
           "theme": "ai",
-          "count": 7
+          "count": 8
         },
         {
           "theme": "agent",
-          "count": 4
+          "count": 3
         },
         {
           "theme": "rag",
@@ -17383,7 +17352,7 @@
     "monthly": {
       "label": "月报",
       "window_days": 30,
-      "generated_at": "2026-08-13T10:41:57.639515+08:00",
+      "generated_at": "2026-08-14T08:45:19.053507+08:00",
       "count": 200,
       "summary": "近 30 天里，最集中的主题是 ai、llm、agent。",
       "top_items": [
@@ -17475,91 +17444,6 @@
           "first_seen_at": "2026-07-24T03:37:54.658435+00:00",
           "last_seen_at": "2026-07-25T03:33:32.289114+00:00",
           "last_curated_at": "2026-07-25T03:33:32.289114+00:00",
-          "last_notified_at": null
-        },
-        {
-          "id": "arxiv::http://arxiv.org/abs/2607.18171v1",
-          "kind": "paper",
-          "source": "arxiv",
-          "source_tags": [
-            "latest"
-          ],
-          "title": "FlashRT: Agent Harness for Guiding Agents to Deploy Real-Time Multimodal Applications",
-          "html_url": "http://arxiv.org/abs/2607.18171v1",
-          "pdf_url": "https://arxiv.org/pdf/2607.18171v1",
-          "description": "Real-time multimodal applications, including voice agents and interactive video generation, compose heterogeneous models into pipelines whose efficient deployment requires application-specific decisions about placement, streaming, and intra-model parallelism. Existing serving systems and auto-parallelism compilers commit to limited transformations and fixed workload assumptions, so achieving high performance on a new application requires hand-crafting an efficient implementation. We present FlashRT, an agent harness that guides coding agents to lift simple developer-written reference implementations into optimized multi-GPU deployments that flexibly weigh target metrics like latency and throughput. Using a new chain-of-program paradigm, FlashRT directs a generic coding agent through a multi-pass transformation process where an agent transforms the reference into an intermediate representation (IR) to capture data dependencies and persistent-state scopes, validates this IR via a sequential interpreter, and performs static analyses to identify candidate transformations. Then, the agent iteratively implements, verifies, and benchmarks each candidate under a measurement-gated optimization loop to produce effective deployments that span different hardware budgets. Across various applications, including video world models and multimodal LLMs, FlashRT converts reference implementations into highly efficient deployments, delivering up to ~70x latency reduction and 2.8x throughput improvement on NVIDIA B200 GPUs. On AMD MI355X GPUs, FlashRT matches the peak latency reduction while increasing peak throughput improvement to 3.6x, demonstrating that agent-driven optimization can be more scalable on platforms with less mature expert optimization. In fact, for Qwen3-Omni text-to-audio inference, FlashRT reduces response latency by 65% compared to the expert vLLM-Omni implementation on AMD MI355X.",
-          "authors": [
-            "Krish Agarwal",
-            "Zhuoming Chen",
-            "Yanyuan Qin",
-            "Zhenyu Gu",
-            "Atri Rudra",
-            "Beidi Chen"
-          ],
-          "categories": [
-            "cs.LG"
-          ],
-          "published_at": "2026-07-20T17:12:28+00:00",
-          "updated_at": "2026-07-20T17:12:28+00:00",
-          "primary_category": "cs.LG",
-          "heuristic_score": 22.7,
-          "summary": "FlashRT: Agent Harness for Guiding Agents to Deploy Real-Time Multimodal Applications 是最近值得追踪的一篇 AI 论文。论文摘要显示：Real-time multimodal applications, including voice agents and interactive video generation, compose heterogeneous models into pipelines whose efficient deployment requires application-specific decisions about placement, streaming, and intra...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-          "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-          "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-          "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-          "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-          "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-          "highlights": [
-            "分类: cs.LG",
-            "作者数: 6"
-          ],
-          "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-          "relevance_score": 10,
-          "tags": [
-            "ai",
-            "llm",
-            "agent",
-            "multimodal"
-          ],
-          "themes": [
-            "ai",
-            "llm",
-            "agent"
-          ],
-          "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-          "summary_markdown": "**摘要**：FlashRT: Agent Harness for Guiding Agents to Deploy Real-Time Multimodal Applications 是最近值得追踪的一篇 AI 论文。论文摘要显示：Real-time multimodal applications, including voice agents and interactive video generation, compose heterogeneous models into pipelines whose efficient deployment requires application-specific decisions about placement, streaming, and intra...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.LG\n- 作者数: 6",
-          "focus_hits": [
-            {
-              "keyword": "agent",
-              "weight": 3.0
-            },
-            {
-              "keyword": "coding",
-              "weight": 2.6
-            },
-            {
-              "keyword": "multimodal",
-              "weight": 2.0
-            },
-            {
-              "keyword": "inference",
-              "weight": 1.8
-            },
-            {
-              "keyword": "benchmark",
-              "weight": 1.6
-            },
-            {
-              "keyword": "voice",
-              "weight": 1.4
-            }
-          ],
-          "primary_match": "agent",
-          "personalized_score": 232.0,
-          "detail_path": "items/arxiv-flashrt-agent-harness-for-guiding-agents-to-deploy-real-time-multimodal-applications.html",
-          "first_seen_at": "2026-07-21T03:38:52.341180+00:00",
-          "last_seen_at": "2026-07-21T03:38:52.341180+00:00",
-          "last_curated_at": "2026-07-21T03:38:52.341180+00:00",
           "last_notified_at": null
         },
         {
@@ -17892,8 +17776,8 @@
           "personalized_score": 204.0,
           "detail_path": "items/arxiv-ava-encoder-towards-agent-native-video-representation-learning.html",
           "first_seen_at": "2026-08-13T02:42:03.676060+00:00",
-          "last_seen_at": "2026-08-13T02:42:03.676060+00:00",
-          "last_curated_at": "2026-08-13T02:42:03.676060+00:00",
+          "last_seen_at": "2026-08-14T00:45:44.645845+00:00",
+          "last_curated_at": "2026-08-14T00:45:44.645845+00:00",
           "last_notified_at": null
         },
         {
@@ -18057,6 +17941,85 @@
           "last_seen_at": "2026-08-12T02:39:49.190368+00:00",
           "last_curated_at": "2026-08-12T02:39:49.190368+00:00",
           "last_notified_at": null
+        },
+        {
+          "id": "arxiv::http://arxiv.org/abs/2607.21482v1",
+          "kind": "paper",
+          "source": "arxiv",
+          "source_tags": [
+            "latest"
+          ],
+          "title": "Agentic coding without the cloud: evaluating open-weight large language models on longitudinal data preparation tasks",
+          "html_url": "http://arxiv.org/abs/2607.21482v1",
+          "pdf_url": "https://arxiv.org/pdf/2607.21482v1",
+          "description": "Large language models (LLMs) and agents are now widely used tools in code development, with data typically sent to third-party cloud-based models. Their adoption in research using personal data is constrained by governance requirements that typically prohibit data transmission to external services. Locally deployable open-weight models offer an alternative since sensitive data never leave the local environment. We introduce an open-source framework for evaluating the efficacy of AI agents powered by open-weight LLMs on one of the most persistent bottlenecks in research on longitudinal population studies: data preparation. The framework comprises: a curated ground-truth dataset (cleaning scripts preparing six sweeps of data from a British cohort study), task definitions encompassing tasks such as category harmonization and multi-wave merging, and automated routines for evaluating the LLM-produced R code and outputted data. We benchmark LLMs across the (consumer grade) deployment spectrum to assess their efficacy in 20 data preparation tasks (creation of 102 variables). Current state-of-the-art, 31-35B parameter models almost saturated our benchmark (\"average task completion\" up to 87.9%). The performance of open-weight LLMs running on consumer-grade hardware shows promise of a viable path toward AI-assisted data preparation in governance-restricted research settings. Our framework is publicly available at: https://github.com/UCL-ARC/RRBench.",
+          "authors": [
+            "Mack Nixon",
+            "Liam Wright",
+            "Yevgeniya Kovalchuk",
+            "Alison Fang-Wei Wu",
+            "Martin Danka",
+            "Andy Boyd",
+            "David Bann"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CL"
+          ],
+          "published_at": "2026-07-23T16:23:42+00:00",
+          "updated_at": "2026-07-23T16:23:42+00:00",
+          "primary_category": "cs.AI",
+          "heuristic_score": 22.53,
+          "summary": "Agentic coding without the cloud: evaluating open-weight large language models on longitudinal data preparation tasks 是最近值得追踪的一篇 AI 论文。论文摘要显示：Large language models (LLMs) and agents are now widely used tools in code development, with data typically sent to third-party cloud-based models. Their adoption in research using personal data is constrained by governance requirements that...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+          "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+          "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+          "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+          "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+          "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+          "highlights": [
+            "分类: cs.AI, cs.CL",
+            "作者数: 7"
+          ],
+          "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+          "relevance_score": 10,
+          "tags": [
+            "ai",
+            "llm",
+            "agent",
+            "rag"
+          ],
+          "themes": [
+            "ai",
+            "llm",
+            "agent"
+          ],
+          "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+          "summary_markdown": "**摘要**：Agentic coding without the cloud: evaluating open-weight large language models on longitudinal data preparation tasks 是最近值得追踪的一篇 AI 论文。论文摘要显示：Large language models (LLMs) and agents are now widely used tools in code development, with data typically sent to third-party cloud-based models. Their adoption in research using personal data is constrained by governance requirements that...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI, cs.CL\n- 作者数: 7",
+          "focus_hits": [
+            {
+              "keyword": "agent",
+              "weight": 3.0
+            },
+            {
+              "keyword": "coding",
+              "weight": 2.6
+            },
+            {
+              "keyword": "rag",
+              "weight": 2.2
+            },
+            {
+              "keyword": "benchmark",
+              "weight": 1.6
+            }
+          ],
+          "primary_match": "agent",
+          "personalized_score": 202.0,
+          "detail_path": "items/arxiv-agentic-coding-without-the-cloud-evaluating-open-weight-large-language-models-on-longitudi.html",
+          "first_seen_at": "2026-07-24T01:14:45.234691+00:00",
+          "last_seen_at": "2026-07-24T03:37:54.658435+00:00",
+          "last_curated_at": "2026-07-24T03:37:54.658435+00:00",
+          "last_notified_at": null
         }
       ],
       "top_themes": [
@@ -18080,12 +18043,12 @@
           "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
         },
         {
-          "title": "FlashRT: Agent Harness for Guiding Agents to Deploy Real-Time Multimodal Applications",
+          "title": "Beacon: Knowing When and How to Perform Agentic Visual Reasoning",
           "source": "arxiv",
           "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
         },
         {
-          "title": "Beacon: Knowing When and How to Perform Agentic Visual Reasoning",
+          "title": "An Explicit World Model Based on Data-First Ontology: DaoQL Multimodal Storage Validation and Counterfactual Reasoning Evaluation",
           "source": "arxiv",
           "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
         }
