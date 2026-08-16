@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-16T00:02:55.457547+00:00",
+  "generated_at": "2026-08-16T01:55:22.848588+00:00",
   "items": {
     "github::obra/superpowers": {
       "id": "github::obra/superpowers",
@@ -1408,290 +1408,6 @@
       "first_seen_at": "2026-07-17T01:16:14.010392+00:00",
       "last_seen_at": "2026-07-17T03:32:33.079865+00:00",
       "last_curated_at": "2026-07-17T03:32:33.079865+00:00",
-      "last_notified_at": null
-    },
-    "arxiv::http://arxiv.org/abs/2607.15200v1": {
-      "id": "arxiv::http://arxiv.org/abs/2607.15200v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "Mask-Aware Policy Gradients for Diffusion Language Models",
-      "html_url": "http://arxiv.org/abs/2607.15200v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.15200v1",
-      "description": "Reinforcement learning has proven effective for improving reasoning in large language models, but extending it to Masked Diffusion Language Models (MDLMs) remains challenging due to the intractability of the log-likelihood estimation. Existing approaches approximate this log-likelihood by modeling only the token predictions, ignoring the order in which positions are unmasked during generation. We observe that MDLM generation involves two decisions at each step: what tokens to place at each masked position and which positions to remask. We formalize this as a two-stage action MDP, showing that the policy gradient naturally decomposes into a token term and a masking term. Combining optimization of both terms leads to state-of-the-art outcomes on mathematical reasoning and coding benchmarks, with scores of 87.1% on GSM8K and 53.4% on MBPP.",
-      "authors": [
-        "Haran Raajesh",
-        "Kulin Shah",
-        "Adam Klivans",
-        "Philipp Krähenbühl"
-      ],
-      "categories": [
-        "cs.CL",
-        "cs.AI",
-        "cs.LG"
-      ],
-      "published_at": "2026-07-16T16:57:34+00:00",
-      "updated_at": "2026-07-16T16:57:34+00:00",
-      "primary_category": "cs.CL",
-      "heuristic_score": 14.56,
-      "summary": "Mask-Aware Policy Gradients for Diffusion Language Models 是最近值得追踪的一篇 AI 论文。论文摘要显示：Reinforcement learning has proven effective for improving reasoning in large language models, but extending it to Masked Diffusion Language Models (MDLMs) remains challenging due to the intractability of the log-likelihood estimation. Exist...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CL, cs.AI",
-        "作者数: 4"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 8,
-      "tags": [
-        "ai",
-        "diffusion",
-        "model",
-        "benchmark"
-      ],
-      "themes": [
-        "ai",
-        "diffusion",
-        "model"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：Mask-Aware Policy Gradients for Diffusion Language Models 是最近值得追踪的一篇 AI 论文。论文摘要显示：Reinforcement learning has proven effective for improving reasoning in large language models, but extending it to Masked Diffusion Language Models (MDLMs) remains challenging due to the intractability of the log-likelihood estimation. Exist...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：8/10\n\n**亮点**：\n- 分类: cs.CL, cs.AI\n- 作者数: 4",
-      "focus_hits": [
-        {
-          "keyword": "coding",
-          "weight": 2.6
-        },
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "coding",
-      "personalized_score": 154.0,
-      "detail_path": "items/arxiv-mask-aware-policy-gradients-for-diffusion-language-models.html",
-      "first_seen_at": "2026-07-17T01:16:14.010392+00:00",
-      "last_seen_at": "2026-07-17T01:16:14.010392+00:00",
-      "last_curated_at": "2026-07-17T01:16:14.010392+00:00",
-      "last_notified_at": null
-    },
-    "arxiv::http://arxiv.org/abs/2607.15161v1": {
-      "id": "arxiv::http://arxiv.org/abs/2607.15161v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "On-Policy Delta Distillation",
-      "html_url": "http://arxiv.org/abs/2607.15161v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.15161v1",
-      "description": "On-policy distillation is an alternative post-training method in reinforcement learning that alleviates the constraints imposed by reward models by providing token-level supervision from a teacher model. Although on-policy distillation has been studied and applied across various settings, its fundamental design remains underexplored. In this paper, we introduce a new distillation reward, termed the delta signal, instead of directly imitating the teacher's output distribution. The delta signal is defined as the difference between the teacher model and its base model prior to instruction tuning for reasoning capability. It therefore captures the changes induced by reasoning tuning and provides a more direct signal for transferring reasoning capabilities. Using extensive empirical evidence, we show that the delta signal substantially improves on-policy distillation and refer to the new distillation method as On-Policy Delta Distillation (OPD$^2$). Experiments across mathematics, science, and code-reasoning benchmarks demonstrate that OPD$^2$ consistently outperforms conventional on-policy distillation, enabling reasoning LLMs to achieve strong performance with only a short post-training period. Code will be available at https://github.com/naver-ai/opd2",
-      "authors": [
-        "Byeongho Heo",
-        "Jaehui Hwang",
-        "Sangdoo Yun",
-        "Dongyoon Han"
-      ],
-      "categories": [
-        "cs.LG",
-        "cs.CL"
-      ],
-      "published_at": "2026-07-16T16:07:19+00:00",
-      "updated_at": "2026-07-16T16:07:19+00:00",
-      "primary_category": "cs.LG",
-      "heuristic_score": 17.486,
-      "summary": "On-Policy Delta Distillation 是最近值得追踪的一篇 AI 论文。论文摘要显示：On-policy distillation is an alternative post-training method in reinforcement learning that alleviates the constraints imposed by reward models by providing token-level supervision from a teacher model. Although on-policy distillation has ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.LG, cs.CL",
-        "作者数: 4"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "llm",
-        "model",
-        "benchmark"
-      ],
-      "themes": [
-        "ai",
-        "llm",
-        "model"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：On-Policy Delta Distillation 是最近值得追踪的一篇 AI 论文。论文摘要显示：On-policy distillation is an alternative post-training method in reinforcement learning that alleviates the constraints imposed by reward models by providing token-level supervision from a teacher model. Although on-policy distillation has ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.LG, cs.CL\n- 作者数: 4",
-      "focus_hits": [
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "reasoning",
-      "personalized_score": 148.0,
-      "detail_path": "items/arxiv-on-policy-delta-distillation.html",
-      "first_seen_at": "2026-07-17T01:16:14.010392+00:00",
-      "last_seen_at": "2026-07-17T01:16:14.010392+00:00",
-      "last_curated_at": "2026-07-17T01:16:14.010392+00:00",
-      "last_notified_at": null
-    },
-    "arxiv::http://arxiv.org/abs/2607.15123v1": {
-      "id": "arxiv::http://arxiv.org/abs/2607.15123v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "NIFA: Nonlinear IMC enhanced FPGA for efficient ML inference",
-      "html_url": "http://arxiv.org/abs/2607.15123v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.15123v1",
-      "description": "Recent FPGAs have improved deep learning (DL) inference efficiency through dedicated tensor blocks and in-BRAM computation. ReRAM-based analog in-memory computing (IMC) pushes efficiency further, offering an order-of-magnitude improvement in compute density and energy efficiency over conventional digital logic by performing vector-matrix multiplication (VMM) directly within the ReRAM crossbar; prior work has integrated such IMC blocks into FPGAs for DL inference. However, conventional IMC designs support only static-weight VMM, leaving nonlinear operations and dynamic matrix-matrix multiplication (DIMM) to the FPGA fabric. As a result, the benefits of IMC are largely confined to static-weight models, whereas Transformer-based models, which rely on frequent nonlinear and DIMM operations, gain only limited improvement. Moreover, the ADCs within each IMC block consume more than 70% of its area and power, further limiting system efficiency and scalability. To address these limitations, we propose a novel FPGA architecture that integrates an ADC-free IMC block, replacing the conventional ADC with analog content-addressable memories (ACAMs) that natively perform nonlinear operations inside the block. To fully exploit this block, we conduct an FPGA-aware design-space exploration that determines optimal crossbar dimensions while balancing FPGA area, flexibility, and DL performance, and we develop an efficient mapping that leverages ACAMs to carry out DIMM operations, extending the applicability of IMC to attention computation. On CNN and Transformer-based benchmarks, the proposed architecture achieves up to 40x and 1.9x higher energy efficiency and 4.1x and 2.5x higher area efficiency, respectively. Overall, it significantly improves FPGA DL inference efficiency and sustains robust gains on Transformer-based workloads across long input sequences, advancing domain-specialized FPGA design.",
-      "authors": [
-        "Jiajun Hu",
-        "Ruthwik Reddy Sunketa",
-        "Lei Zhao",
-        "Archit Gajjar",
-        "Luca Buonanno",
-        "Aman Arora"
-      ],
-      "categories": [
-        "cs.AR",
-        "cs.AI"
-      ],
-      "published_at": "2026-07-16T15:32:44+00:00",
-      "updated_at": "2026-07-16T15:32:44+00:00",
-      "primary_category": "cs.AR",
-      "heuristic_score": 14.0,
-      "summary": "NIFA: Nonlinear IMC enhanced FPGA for efficient ML inference 是最近值得追踪的一篇 AI 论文。论文摘要显示：Recent FPGAs have improved deep learning (DL) inference efficiency through dedicated tensor blocks and in-BRAM computation. ReRAM-based analog in-memory computing (IMC) pushes efficiency further, offering an order-of-magnitude improvement i...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.AR, cs.AI",
-        "作者数: 6"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 8,
-      "tags": [
-        "ai",
-        "rag",
-        "model",
-        "benchmark"
-      ],
-      "themes": [
-        "ai",
-        "rag",
-        "model"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：NIFA: Nonlinear IMC enhanced FPGA for efficient ML inference 是最近值得追踪的一篇 AI 论文。论文摘要显示：Recent FPGAs have improved deep learning (DL) inference efficiency through dedicated tensor blocks and in-BRAM computation. ReRAM-based analog in-memory computing (IMC) pushes efficiency further, offering an order-of-magnitude improvement i...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：8/10\n\n**亮点**：\n- 分类: cs.AR, cs.AI\n- 作者数: 6",
-      "focus_hits": [
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "inference",
-          "weight": 1.8
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "rag",
-      "personalized_score": 136.0,
-      "detail_path": "items/arxiv-nifa-nonlinear-imc-enhanced-fpga-for-efficient-ml-inference.html",
-      "first_seen_at": "2026-07-17T01:16:14.010392+00:00",
-      "last_seen_at": "2026-07-17T01:16:14.010392+00:00",
-      "last_curated_at": "2026-07-17T01:16:14.010392+00:00",
-      "last_notified_at": null
-    },
-    "arxiv::http://arxiv.org/abs/2607.15202v1": {
-      "id": "arxiv::http://arxiv.org/abs/2607.15202v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "Self-Evolving Human-Centered Framework for Explainable Depression Symptom Annotation",
-      "html_url": "http://arxiv.org/abs/2607.15202v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.15202v1",
-      "description": "Annotation quality is a major bottleneck in building reliable and explainable artificial intelligence (XAI) systems for mental health research. In depression-related datasets, labels are often assigned without structured evidence, symptom-level justification, or traceable alignment with the criteria of the Diagnostic and Statistical Manual of Mental Disorders, Fifth Edition, Text Revision (DSM-5-TR), limiting both transparency and downstream model interpretability. We propose a self-evolving, expert-in-the-loop annotation framework for Major Depressive Disorder (MDD) that combines large language model (LLM)-assisted labeling with expert verification. The framework is intended to support the construction of explainable, DSM-5-TR-aligned datasets rather than to perform clinical diagnosis. It operates in three stages: candidate evidence selection from textual records, criterion-level DSM-5-TR analysis, and case-level synthesis that produces label-level diagnostic and severity annotations. A dual-memory architecture, composed of Example Memory and Reflection Memory, is designed to internalize expert feedback and iteratively improve future annotations without retraining. We describe this mechanism and leave its evaluation across multiple feedback cycles to future work. In addition to final labels, the framework exports clinical evidence, reasoning traces, and edit histories, enabling comprehensive auditability. In a pilot study using expert-reviewed samples, the proposed approach improves annotation consistency and explainability while reducing manual revision effort.",
-      "authors": [
-        "Hoang-Loc Cao",
-        "Van Pham",
-        "Truong Thanh Hung Nguyen",
-        "Phuc Truong Loc Nguyen",
-        "Phuc Ho",
-        "Veronica Whitford",
-        "Hung Cao"
-      ],
-      "categories": [
-        "cs.AI",
-        "cs.HC",
-        "cs.MA",
-        "cs.MM"
-      ],
-      "published_at": "2026-07-16T16:59:54+00:00",
-      "updated_at": "2026-07-16T16:59:54+00:00",
-      "primary_category": "cs.AI",
-      "heuristic_score": 15.486,
-      "summary": "Self-Evolving Human-Centered Framework for Explainable Depression Symptom Annotation 是最近值得追踪的一篇 AI 论文。论文摘要显示：Annotation quality is a major bottleneck in building reliable and explainable artificial intelligence (XAI) systems for mental health research. In depression-related datasets, labels are often assigned without structured evidence, symptom-l...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.AI, cs.HC",
-        "作者数: 7"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 9,
-      "tags": [
-        "ai",
-        "llm",
-        "model",
-        "training"
-      ],
-      "themes": [
-        "ai",
-        "llm",
-        "model"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：Self-Evolving Human-Centered Framework for Explainable Depression Symptom Annotation 是最近值得追踪的一篇 AI 论文。论文摘要显示：Annotation quality is a major bottleneck in building reliable and explainable artificial intelligence (XAI) systems for mental health research. In depression-related datasets, labels are often assigned without structured evidence, symptom-l...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：9/10\n\n**亮点**：\n- 分类: cs.AI, cs.HC\n- 作者数: 7",
-      "focus_hits": [
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        }
-      ],
-      "primary_match": "reasoning",
-      "personalized_score": 122.0,
-      "detail_path": "items/arxiv-self-evolving-human-centered-framework-for-explainable-depression-symptom-annotation.html",
-      "first_seen_at": "2026-07-17T01:16:14.010392+00:00",
-      "last_seen_at": "2026-07-17T01:16:14.010392+00:00",
-      "last_curated_at": "2026-07-17T01:16:14.010392+00:00",
       "last_notified_at": null
     },
     "arxiv::http://arxiv.org/abs/2607.15278v1": {
@@ -4973,7 +4689,7 @@
       "full_name": "citrolabs/ego-lite",
       "html_url": "https://github.com/citrolabs/ego-lite",
       "description": "The fastest browser for AI agents to run browser automation, built for sharing your logged-in browser state with your AI agents, like Codex or Claude Code, without disturbing you. Zero cost, zero config.",
-      "stars": 10952,
+      "stars": 10987,
       "stars_today": 0,
       "language": "JavaScript",
       "topics": [],
@@ -4987,7 +4703,7 @@
       "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
       "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
       "highlights": [
-        "Stars: 10952",
+        "Stars: 10987",
         "语言: JavaScript"
       ],
       "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
@@ -5003,7 +4719,7 @@
         "ai agent"
       ],
       "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：citrolabs/ego-lite 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：The fastest browser for AI agents to run browser automation, built for sharing your logged-in browser state with your AI agents, like Codex or Claude Code, without disturbing you. Zero cost, zero config.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 10952\n- 语言: JavaScript",
+      "summary_markdown": "**摘要**：citrolabs/ego-lite 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：The fastest browser for AI agents to run browser automation, built for sharing your logged-in browser state with your AI agents, like Codex or Claude Code, without disturbing you. Zero cost, zero config.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 10987\n- 语言: JavaScript",
       "focus_hits": [
         {
           "keyword": "agent",
@@ -5011,11 +4727,11 @@
         }
       ],
       "primary_match": "agent",
-      "personalized_score": 114.38,
+      "personalized_score": 114.39,
       "detail_path": "items/github-citrolabs-ego-lite.html",
       "first_seen_at": "2026-07-24T01:14:45.234691+00:00",
-      "last_seen_at": "2026-08-16T00:02:55.457547+00:00",
-      "last_curated_at": "2026-08-16T00:02:55.457547+00:00",
+      "last_seen_at": "2026-08-16T01:55:22.848588+00:00",
+      "last_curated_at": "2026-08-16T01:55:22.848588+00:00",
       "last_notified_at": null
     },
     "arxiv::http://arxiv.org/abs/2607.21482v1": {
@@ -14751,7 +14467,7 @@
       "full_name": "cathrynlavery/diagram-design",
       "html_url": "https://github.com/cathrynlavery/diagram-design",
       "description": "29 editorial diagram types for Claude Code. Self-contained HTML + SVG. No shadows, no Mermaid-slop.",
-      "stars": 18586,
+      "stars": 18660,
       "stars_today": 0,
       "language": "HTML",
       "topics": [],
@@ -14765,7 +14481,7 @@
       "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
       "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
       "highlights": [
-        "Stars: 18586",
+        "Stars: 18660",
         "语言: HTML"
       ],
       "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
@@ -14777,14 +14493,14 @@
         "ai"
       ],
       "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：cathrynlavery/diagram-design 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：29 editorial diagram types for Claude Code. Self-contained HTML + SVG. No shadows, no Mermaid-slop.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 18586\n- 语言: HTML",
+      "summary_markdown": "**摘要**：cathrynlavery/diagram-design 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：29 editorial diagram types for Claude Code. Self-contained HTML + SVG. No shadows, no Mermaid-slop.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 18660\n- 语言: HTML",
       "focus_hits": [],
       "primary_match": "",
-      "personalized_score": 77.43,
+      "personalized_score": 77.46,
       "detail_path": "items/github-cathrynlavery-diagram-design.html",
       "first_seen_at": "2026-08-13T00:46:03.444620+00:00",
-      "last_seen_at": "2026-08-16T00:02:55.457547+00:00",
-      "last_curated_at": "2026-08-16T00:02:55.457547+00:00",
+      "last_seen_at": "2026-08-16T01:55:22.848588+00:00",
+      "last_curated_at": "2026-08-16T01:55:22.848588+00:00",
       "last_notified_at": null
     },
     "github::semantica-agi/semantica": {
@@ -15640,7 +15356,7 @@
       "full_name": "unslothai/unsloth",
       "html_url": "https://github.com/unslothai/unsloth",
       "description": "Local UI to run and train LLMs and diffusion models, including Qwen3.8, Kimi K3, MiniMax-H3, Gemma 4, DeepSeek-V4, FLUX and more.",
-      "stars": 72038,
+      "stars": 72063,
       "stars_today": 0,
       "language": "Python",
       "topics": [],
@@ -15654,7 +15370,7 @@
       "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
       "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
       "highlights": [
-        "Stars: 72038",
+        "Stars: 72063",
         "语言: Python"
       ],
       "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
@@ -15671,14 +15387,14 @@
         "diffusion"
       ],
       "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：unslothai/unsloth 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Local UI to run and train LLMs and diffusion models, including Qwen3.8, Kimi K3, MiniMax-H3, Gemma 4, DeepSeek-V4, FLUX and more.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：10/10\n\n**亮点**：\n- Stars: 72038\n- 语言: Python",
+      "summary_markdown": "**摘要**：unslothai/unsloth 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Local UI to run and train LLMs and diffusion models, including Qwen3.8, Kimi K3, MiniMax-H3, Gemma 4, DeepSeek-V4, FLUX and more.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：10/10\n\n**亮点**：\n- Stars: 72063\n- 语言: Python",
       "focus_hits": [],
       "primary_match": "",
       "personalized_score": 120.0,
       "detail_path": "items/github-unslothai-unsloth.html",
       "first_seen_at": "2026-08-14T00:45:44.645845+00:00",
-      "last_seen_at": "2026-08-16T00:02:55.457547+00:00",
-      "last_curated_at": "2026-08-16T00:02:55.457547+00:00",
+      "last_seen_at": "2026-08-16T01:55:22.848588+00:00",
+      "last_curated_at": "2026-08-16T01:55:22.848588+00:00",
       "last_notified_at": null
     },
     "github::altic-dev/FluidVoice": {
@@ -15693,7 +15409,7 @@
       "full_name": "altic-dev/FluidVoice",
       "html_url": "https://github.com/altic-dev/FluidVoice",
       "description": "Fastest and only macOS Dictation app with on-device STT and custom trained AI enhancement model. A local Wispr Flow alternative. DM us on X for an easter egg 😉 - https://x.com/fluidvoiceapp",
-      "stars": 10316,
+      "stars": 10340,
       "stars_today": 0,
       "language": "Swift",
       "topics": [],
@@ -15707,7 +15423,7 @@
       "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
       "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
       "highlights": [
-        "Stars: 10316",
+        "Stars: 10340",
         "语言: Swift"
       ],
       "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
@@ -15721,7 +15437,7 @@
         "model"
       ],
       "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：altic-dev/FluidVoice 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Fastest and only macOS Dictation app with on-device STT and custom trained AI enhancement model. A local Wispr Flow alternative. DM us on X for an easter egg 😉 - https://x.com/fluidvoiceapp结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 10316\n- 语言: Swift",
+      "summary_markdown": "**摘要**：altic-dev/FluidVoice 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Fastest and only macOS Dictation app with on-device STT and custom trained AI enhancement model. A local Wispr Flow alternative. DM us on X for an easter egg 😉 - https://x.com/fluidvoiceapp结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 10340\n- 语言: Swift",
       "focus_hits": [
         {
           "keyword": "voice",
@@ -15729,11 +15445,11 @@
         }
       ],
       "primary_match": "voice",
-      "personalized_score": 98.13,
+      "personalized_score": 98.14,
       "detail_path": "items/github-altic-dev-fluidvoice.html",
       "first_seen_at": "2026-08-14T00:45:44.645845+00:00",
-      "last_seen_at": "2026-08-16T00:02:55.457547+00:00",
-      "last_curated_at": "2026-08-16T00:02:55.457547+00:00",
+      "last_seen_at": "2026-08-16T01:55:22.848588+00:00",
+      "last_curated_at": "2026-08-16T01:55:22.848588+00:00",
       "last_notified_at": null
     },
     "github::NVIDIA-NeMo/Switchyard": {
@@ -16290,7 +16006,7 @@
       "full_name": "ToolJet/ToolJet",
       "html_url": "https://github.com/ToolJet/ToolJet",
       "description": "ToolJet is the open-source foundation of ToolJet AI - the enterprise app generation platform for building internal tools, dashboard, business applications, workflows and AI agents 🚀",
-      "stars": 39530,
+      "stars": 39552,
       "stars_today": 0,
       "language": "JavaScript",
       "topics": [],
@@ -16304,7 +16020,7 @@
       "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
       "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
       "highlights": [
-        "Stars: 39530",
+        "Stars: 39552",
         "语言: JavaScript"
       ],
       "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
@@ -16320,7 +16036,7 @@
         "ai agent"
       ],
       "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：ToolJet/ToolJet 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：ToolJet is the open-source foundation of ToolJet AI - the enterprise app generation platform for building internal tools, dashboard, business applications, workflows and AI agents 🚀结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 39530\n- 语言: JavaScript",
+      "summary_markdown": "**摘要**：ToolJet/ToolJet 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：ToolJet is the open-source foundation of ToolJet AI - the enterprise app generation platform for building internal tools, dashboard, business applications, workflows and AI agents 🚀结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 39552\n- 语言: JavaScript",
       "focus_hits": [
         {
           "keyword": "agent",
@@ -16328,11 +16044,11 @@
         }
       ],
       "primary_match": "agent",
-      "personalized_score": 125.81,
+      "personalized_score": 125.82,
       "detail_path": "items/github-tooljet-tooljet.html",
       "first_seen_at": "2026-08-15T00:24:14.843760+00:00",
-      "last_seen_at": "2026-08-16T00:02:55.457547+00:00",
-      "last_curated_at": "2026-08-16T00:02:55.457547+00:00",
+      "last_seen_at": "2026-08-16T01:55:22.848588+00:00",
+      "last_curated_at": "2026-08-16T01:55:22.848588+00:00",
       "last_notified_at": null
     },
     "github::deepseek-ai/awesome-deepseek-agent": {
@@ -16618,7 +16334,7 @@
       "full_name": "HKUDS/CLI-Anything",
       "html_url": "https://github.com/HKUDS/CLI-Anything",
       "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
-      "stars": 47343,
+      "stars": 47368,
       "stars_today": 0,
       "language": "Python",
       "topics": [],
@@ -16632,7 +16348,7 @@
       "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
       "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
       "highlights": [
-        "Stars: 47343",
+        "Stars: 47368",
         "语言: Python"
       ],
       "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
@@ -16644,7 +16360,7 @@
         "agent"
       ],
       "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：HKUDS/CLI-Anything 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 47343\n- 语言: Python",
+      "summary_markdown": "**摘要**：HKUDS/CLI-Anything 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 47368\n- 语言: Python",
       "focus_hits": [
         {
           "keyword": "agent",
@@ -16652,11 +16368,11 @@
         }
       ],
       "primary_match": "agent",
-      "personalized_score": 118.94,
+      "personalized_score": 118.95,
       "detail_path": "items/github-hkuds-cli-anything.html",
       "first_seen_at": "2026-08-16T00:02:55.457547+00:00",
-      "last_seen_at": "2026-08-16T00:02:55.457547+00:00",
-      "last_curated_at": "2026-08-16T00:02:55.457547+00:00",
+      "last_seen_at": "2026-08-16T01:55:22.848588+00:00",
+      "last_curated_at": "2026-08-16T01:55:22.848588+00:00",
       "last_notified_at": null
     },
     "github::megadose/holehe": {
@@ -16671,7 +16387,7 @@
       "full_name": "megadose/holehe",
       "html_url": "https://github.com/megadose/holehe",
       "description": "holehe allows you to check if the mail is used on different sites like twitter, instagram and will retrieve information on sites with the forgotten password function.",
-      "stars": 13112,
+      "stars": 13124,
       "stars_today": 0,
       "language": "Python",
       "topics": [],
@@ -16685,7 +16401,7 @@
       "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
       "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
       "highlights": [
-        "Stars: 13112",
+        "Stars: 13124",
         "语言: Python"
       ],
       "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
@@ -16697,14 +16413,14 @@
         "ai"
       ],
       "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：megadose/holehe 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：holehe allows you to check if the mail is used on different sites like twitter, instagram and will retrieve information on sites with the forgotten password function.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 13112\n- 语言: Python",
+      "summary_markdown": "**摘要**：megadose/holehe 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：holehe allows you to check if the mail is used on different sites like twitter, instagram and will retrieve information on sites with the forgotten password function.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 13124\n- 语言: Python",
       "focus_hits": [],
       "primary_match": "",
-      "personalized_score": 75.24,
+      "personalized_score": 75.25,
       "detail_path": "items/github-megadose-holehe.html",
       "first_seen_at": "2026-08-16T00:02:55.457547+00:00",
-      "last_seen_at": "2026-08-16T00:02:55.457547+00:00",
-      "last_curated_at": "2026-08-16T00:02:55.457547+00:00",
+      "last_seen_at": "2026-08-16T01:55:22.848588+00:00",
+      "last_curated_at": "2026-08-16T01:55:22.848588+00:00",
       "last_notified_at": null
     },
     "github::cactus-compute/needle": {
@@ -16719,7 +16435,7 @@
       "full_name": "cactus-compute/needle",
       "html_url": "https://github.com/cactus-compute/needle",
       "description": "14MB foundation model for tiny devices; phones, wearables, smart home, and robots.",
-      "stars": 6057,
+      "stars": 6080,
       "stars_today": 0,
       "language": "Python",
       "topics": [],
@@ -16733,7 +16449,7 @@
       "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
       "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
       "highlights": [
-        "Stars: 6057",
+        "Stars: 6080",
         "语言: Python"
       ],
       "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
@@ -16745,14 +16461,14 @@
         "model"
       ],
       "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：cactus-compute/needle 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：14MB foundation model for tiny devices; phones, wearables, smart home, and robots.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 6057\n- 语言: Python",
+      "summary_markdown": "**摘要**：cactus-compute/needle 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：14MB foundation model for tiny devices; phones, wearables, smart home, and robots.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 6080\n- 语言: Python",
       "focus_hits": [],
       "primary_match": "",
-      "personalized_score": 72.42,
+      "personalized_score": 72.43,
       "detail_path": "items/github-cactus-compute-needle.html",
       "first_seen_at": "2026-08-16T00:02:55.457547+00:00",
-      "last_seen_at": "2026-08-16T00:02:55.457547+00:00",
-      "last_curated_at": "2026-08-16T00:02:55.457547+00:00",
+      "last_seen_at": "2026-08-16T01:55:22.848588+00:00",
+      "last_curated_at": "2026-08-16T01:55:22.848588+00:00",
       "last_notified_at": null
     }
   },
@@ -16760,7 +16476,7 @@
     {
       "date": "2026-08-16",
       "title": "AI Daily Digest · 2026-08-16",
-      "generated_at": "2026-08-16T08:01:05.908961+08:00",
+      "generated_at": "2026-08-16T09:54:39.885976+08:00",
       "notified_at": null,
       "repo_ids": [
         "github::ToolJet/ToolJet",
