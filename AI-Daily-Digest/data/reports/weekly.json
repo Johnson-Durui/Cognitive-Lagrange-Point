@@ -1,9 +1,9 @@
 {
   "label": "周报",
   "window_days": 7,
-  "generated_at": "2026-08-19T09:49:33.934718+08:00",
-  "count": 63,
-  "summary": "近 7 天里，最集中的主题是 ai、agent、rag。",
+  "generated_at": "2026-08-20T08:23:40.583732+08:00",
+  "count": 60,
+  "summary": "近 7 天里，最集中的主题是 ai、agent、llm。",
   "top_items": [
     {
       "id": "arxiv::http://arxiv.org/abs/2608.13505v1",
@@ -294,87 +294,6 @@
       "last_notified_at": null
     },
     {
-      "id": "arxiv::http://arxiv.org/abs/2608.09867v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "Stealing Reasoning Traces from Proprietary LLM APIs",
-      "html_url": "http://arxiv.org/abs/2608.09867v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.09867v1",
-      "description": "Leading large language model providers now conceal their models' step-by-step reasoning, or chain-of-thought, to protect intellectual property and limit information leakage. Rather than storing these traces server-side, providers return them to the client as blocks of encrypted text, which the client passes back with each subsequent request. Building on prior research, we identify an architectural vulnerability: these encrypted blocks are fully compatible and interchangeable across different sessions, users, and models within a provider's ecosystem. We exploit this compatibility to develop a scalable decryption jailbreak. By injecting an encrypted reasoning trace from a given model into a weaker, and less safeguarded model from the same provider, we force it to decode and output the trace verbatim in plaintext, without ever jailbreaking the more capable model directly. This vulnerability enables four distinct attack vectors. First, it circumvents anti-distillation mechanisms, allowing adversaries to extract a proprietary model's reasoning, as we demonstrate across Anthropic, OpenAI, and Google. Second, it allows for large-scale private data extraction. Developers frequently share session logs publicly, unaware of contents of the encrypted blocks. By decoding 315,320 reasoning blocks scraped from public repositories, we recovered 367 Personally Identifiable Information (PII) artifacts and 182 credentials. Third, it inadvertently reveals hazardous information hidden within the reasoning process, even in cases where the model's final, visible output safely rejects a malicious request. Fourth, attackers can leverage this flaw to execute invisible prompt injections, embedding malicious payloads entirely within encrypted blocks to poison public agentic rollouts. Following responsible disclosure, we propose concrete cryptographic and system-level mitigations to secure client-side reasoning.",
-      "authors": [
-        "Alexander Panfilov",
-        "David Schmotz",
-        "Ilia Shumailov",
-        "Luca Beurer-Kellner",
-        "Joachim Schaeffer",
-        "Ameya Prabhu",
-        "Jonas Geiping",
-        "Maksym Andriushchenko"
-      ],
-      "categories": [
-        "cs.CR",
-        "cs.AI",
-        "cs.LG"
-      ],
-      "published_at": "2026-08-10T17:24:50+00:00",
-      "updated_at": "2026-08-10T17:24:50+00:00",
-      "primary_category": "cs.CR",
-      "heuristic_score": 18.8,
-      "summary": "Stealing Reasoning Traces from Proprietary LLM APIs 是最近值得追踪的一篇 AI 论文。论文摘要显示：Leading large language model providers now conceal their models' step-by-step reasoning, or chain-of-thought, to protect intellectual property and limit information leakage. Rather than storing these traces server-side, providers return the...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CR, cs.AI",
-        "作者数: 8"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "agent",
-        "agentic",
-        "rag"
-      ],
-      "themes": [
-        "ai",
-        "agent",
-        "agentic"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：Stealing Reasoning Traces from Proprietary LLM APIs 是最近值得追踪的一篇 AI 论文。论文摘要显示：Leading large language model providers now conceal their models' step-by-step reasoning, or chain-of-thought, to protect intellectual property and limit information leakage. Rather than storing these traces server-side, providers return the...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CR, cs.AI\n- 作者数: 8",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "coding",
-          "weight": 2.6
-        },
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 202.0,
-      "detail_path": "items/arxiv-stealing-reasoning-traces-from-proprietary-llm-apis.html",
-      "first_seen_at": "2026-08-12T00:44:39.124354+00:00",
-      "last_seen_at": "2026-08-12T02:39:49.190368+00:00",
-      "last_curated_at": "2026-08-12T02:39:49.190368+00:00",
-      "last_notified_at": null
-    },
-    {
       "id": "arxiv::http://arxiv.org/abs/2608.11191v1",
       "kind": "paper",
       "source": "arxiv",
@@ -607,81 +526,76 @@
       "last_notified_at": null
     },
     {
-      "id": "arxiv::http://arxiv.org/abs/2608.09908v1",
+      "id": "arxiv::http://arxiv.org/abs/2608.18050v1",
       "kind": "paper",
       "source": "arxiv",
       "source_tags": [
         "latest"
       ],
-      "title": "Beyond Hazard Resemblance: Contrastive Event Adjudication for Training-Free Video Anomaly Detection",
-      "html_url": "http://arxiv.org/abs/2608.09908v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.09908v1",
-      "description": "Video anomaly detection (VAD) aims to identify and temporally localize abnormal events in videos. Supervised methods learn anomaly decision boundaries from target-domain annotations but require substantial in-domain data. Existing training-free methods leverage the rich semantic knowledge and reasoning capabilities of pretrained models to interpret visual content, yet these capabilities do not directly define an anomaly decision criterion: richer anomaly descriptions better capture hazard resemblance without resolving abnormality. To this end, we propose Contrastive Event Adjudication for training-free Video Anomaly Detection (CEAVAD), which shifts the unit of inference from isolated anomaly concepts to falsifiable event hypotheses and establishes an inference-time explanatory boundary through the interaction between competing explanations and video evidence. Specifically, CEAVAD first uses public-safety knowledge to construct hazard-benign event contrasts, pairing each hazard mechanism with a generic normal account and a mechanism-specific benign counterpart. It then determines whether the target interval better supports a hazard explanation or its benign competitor, yielding a revisable contrastive boundary proposal for the target. Finally, CEAVAD adjudicates between the competing explanations to determine whether the hazard hypothesis survives the video evidence, supporting both temporally localized anomaly detection and evidence-grounded explanations. Experiments on three widely used VAD benchmarks demonstrate that CEAVAD achieves state-of-the-art performance under the training-free paradigm.",
+      "title": "StagedWorkspace: A Versioned Workspace for Knowledge-Work Agents",
+      "html_url": "http://arxiv.org/abs/2608.18050v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.18050v1",
+      "description": "AI agents increasingly perform knowledge work (i.e., produce and modify persistent digital artifacts such as code repositories, documents, spreadsheets, slides, reports), yet the parsed views they search, the native files they edit, the changes they review, and the artifacts they submit can refer to different versions of the same work product. We formulate this as a workspace-state contract: every view should be explicitly tied to a version of the evolving workspace state. Coding agents partly address this need through repository contracts for search, diffs, and tests, whereas an analogous contract is less explicit for PDFs, spreadsheets, slides, notebooks, and mixed-format project folders. We propose StagedWorkspace, a versioned workspace for knowledge-work agents. The workspace binds parsed records and review diffs to content hashes of the native files as they change. In fixed-harness ablations on OfficeQA Pro and APEX-Agents, dual parsed/native access has the highest point estimate for every tested model; relative to the more limiting single view, it improves OfficeQA Pass@1 by 8.3-12.1 points and APEX mean rubric score by 4.7-9.2 points. SW-AGENT scores 63.9% with Gemini 3.1 Pro on OfficeQA and 42.1 with GPT-5.4 Nano on APEX, compared with published same-model scores of 29.3% and 25.5, respectively. A paired review-axis ablation on 57 file-editing tasks further finds higher observed scores when diffs are visible. These results identify workspace state as an experimental variable in knowledge-work agents and motivate benchmarks that score evidence, staged edits, and submitted artifacts as explicit state transitions.",
       "authors": [
-        "Wenti Yin",
-        "Xiang Wang",
-        "Huaxin Zhang",
-        "Hanqing Wang",
-        "Hongbo Shao",
-        "Changxin Gao",
-        "Nong Sang"
+        "Yining Hua",
+        "Hongbin Na",
+        "Yifan Zhou",
+        "Akshay Kalose",
+        "Cyrus Ayubcha",
+        "Levi Lian"
       ],
       "categories": [
-        "cs.CV"
+        "cs.AI"
       ],
-      "published_at": "2026-08-10T17:52:51+00:00",
-      "updated_at": "2026-08-10T17:52:51+00:00",
-      "primary_category": "cs.CV",
+      "published_at": "2026-08-18T17:44:18+00:00",
+      "updated_at": "2026-08-18T17:44:18+00:00",
+      "primary_category": "cs.AI",
       "heuristic_score": 20.3,
-      "summary": "Beyond Hazard Resemblance: Contrastive Event Adjudication for Training-Free Video Anomaly Detection 是最近值得追踪的一篇 AI 论文。论文摘要显示：Video anomaly detection (VAD) aims to identify and temporally localize abnormal events in videos. Supervised methods learn anomaly decision boundaries from target-domain annotations but require substantial in-domain data. Existing training-...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "summary": "StagedWorkspace: A Versioned Workspace for Knowledge-Work Agents 是最近值得追踪的一篇 AI 论文。论文摘要显示：AI agents increasingly perform knowledge work (i.e., produce and modify persistent digital artifacts such as code repositories, documents, spreadsheets, slides, reports), yet the parsed views they search, the native files they edit, the cha...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
       "brief": "这是一篇值得加入今日论文雷达的最新工作。",
       "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
       "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
       "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
       "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
       "highlights": [
-        "分类: cs.CV",
-        "作者数: 7"
+        "分类: cs.AI",
+        "作者数: 6"
       ],
       "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
       "relevance_score": 10,
       "tags": [
         "ai",
-        "rag",
-        "model",
-        "benchmark"
+        "agent",
+        "gpt",
+        "model"
       ],
       "themes": [
         "ai",
-        "rag",
-        "model"
+        "agent",
+        "gpt"
       ],
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：Beyond Hazard Resemblance: Contrastive Event Adjudication for Training-Free Video Anomaly Detection 是最近值得追踪的一篇 AI 论文。论文摘要显示：Video anomaly detection (VAD) aims to identify and temporally localize abnormal events in videos. Supervised methods learn anomaly decision boundaries from target-domain annotations but require substantial in-domain data. Existing training-...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV\n- 作者数: 7",
+      "summary_markdown": "**摘要**：StagedWorkspace: A Versioned Workspace for Knowledge-Work Agents 是最近值得追踪的一篇 AI 论文。论文摘要显示：AI agents increasingly perform knowledge work (i.e., produce and modify persistent digital artifacts such as code repositories, documents, spreadsheets, slides, reports), yet the parsed views they search, the native files they edit, the cha...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI\n- 作者数: 6",
       "focus_hits": [
         {
-          "keyword": "reasoning",
-          "weight": 2.4
+          "keyword": "agent",
+          "weight": 3.0
         },
         {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "inference",
-          "weight": 1.8
+          "keyword": "coding",
+          "weight": 2.6
         },
         {
           "keyword": "benchmark",
           "weight": 1.6
         }
       ],
-      "primary_match": "reasoning",
-      "personalized_score": 188.0,
-      "detail_path": "items/arxiv-beyond-hazard-resemblance-contrastive-event-adjudication-for-training-free-video-anomaly-d.html",
-      "first_seen_at": "2026-08-12T00:44:39.124354+00:00",
-      "last_seen_at": "2026-08-12T02:39:49.190368+00:00",
-      "last_curated_at": "2026-08-12T02:39:49.190368+00:00",
+      "primary_match": "agent",
+      "personalized_score": 180.0,
+      "detail_path": "items/arxiv-stagedworkspace-a-versioned-workspace-for-knowledge-work-agents.html",
+      "first_seen_at": "2026-08-20T00:23:49.288680+00:00",
+      "last_seen_at": "2026-08-20T00:23:49.288680+00:00",
+      "last_curated_at": "2026-08-20T00:23:49.288680+00:00",
       "last_notified_at": null
     },
     {
@@ -766,6 +680,116 @@
       "last_seen_at": "2026-08-15T01:47:36.186099+00:00",
       "last_curated_at": "2026-08-15T01:47:36.186099+00:00",
       "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2608.16859v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "HarnessEval-W: Agentifying the Evaluation of Visual Worlds",
+      "html_url": "http://arxiv.org/abs/2608.16859v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.16859v1",
+      "description": "A benchmark should deliver more than a scalar score: what makes an evaluation trustworthy is the reasoning that justifies the score. This is especially critical for world models, where judging a rollout requires understanding whether physics, causality, and world state evolve correctly. Humans spot such violations naturally, yet no existing benchmark automates this capability: metrics are computed brute-force, leaving no reasoning chain that can be examined or verified. We introduce HarnessEval-W, an agentified evaluation pipeline that brings the harness paradigm from the LLM ecosystem to world model benchmarking. Rather than applying a fixed rubric, HarnessEval-W interprets the context of each evaluation case, decomposes the evaluation question into measurable subproblems, and spawns specialized sub-agents, each equipped with tailored context and diagnostic tools to reason over its own subproblem. The parent agent then validates the gathered evidence and summarizes it into the final verdict. This hierarchical workflow turns every evaluation into a transparent evidence tree whose complete reasoning chain justifies the result. We apply HarnessEval-W to 18 representative world models over 330 evaluation cases. Its judgments closely align with human preferences while providing verifiable, fine-grained diagnoses of every generated rollout. We open-source the full pipeline as a live benchmark and invite the broad community to contribute to grow new skills and evaluation cases as world models evolve.",
+      "authors": [
+        "Weiliang Chen",
+        "Haowen Sun",
+        "Jun Gao",
+        "Jiawei Chi",
+        "Hanyang Wang",
+        "Qiyu Dai",
+        "Yihao Li",
+        "Hao Li",
+        "Jingnan Gao",
+        "Yi-Hsin Hung",
+        "Xingzhuo Guo",
+        "Shangchen Miao",
+        "Zhiyuan Shi",
+        "Xiang Li",
+        "Fengrui Tian",
+        "Weihua Du",
+        "Ziqi Huang",
+        "Shenyuan Gao",
+        "Siqiao Huang",
+        "Mingyu Liu",
+        "Yifei Li",
+        "Shizun Wang",
+        "Xi Wang",
+        "Tianqi Zhang",
+        "Xue Luo",
+        "Xiyin Ren",
+        "Jinshan Ren",
+        "Xiaoyang Shen",
+        "Xiaobo Hu",
+        "Zhiyang Dou",
+        "Mingyu Ding",
+        "Yichao Yan",
+        "Xinchao Wang",
+        "Yizhou Wang",
+        "Shilong Liu",
+        "Wenzhao Zheng",
+        "Yueqi Duan",
+        "Yuan Gong",
+        "Ziwei Liu",
+        "Ming-Yu Liu",
+        "Jialong Wu",
+        "Jiangran Lyu",
+        "Fangfu Liu"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "published_at": "2026-08-17T17:43:24+00:00",
+      "updated_at": "2026-08-17T17:43:24+00:00",
+      "primary_category": "cs.CV",
+      "heuristic_score": 17.799,
+      "summary": "HarnessEval-W: Agentifying the Evaluation of Visual Worlds 是最近值得追踪的一篇 AI 论文。论文摘要显示：A benchmark should deliver more than a scalar score: what makes an evaluation trustworthy is the reasoning that justifies the score. This is especially critical for world models, where judging a rollout requires understanding whether physic...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CV",
+        "作者数: 43"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "llm",
+        "agent",
+        "model"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "agent"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：HarnessEval-W: Agentifying the Evaluation of Visual Worlds 是最近值得追踪的一篇 AI 论文。论文摘要显示：A benchmark should deliver more than a scalar score: what makes an evaluation trustworthy is the reasoning that justifies the score. This is especially critical for world models, where judging a rollout requires understanding whether physic...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV\n- 作者数: 43",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 178.0,
+      "detail_path": "items/arxiv-harnesseval-w-agentifying-the-evaluation-of-visual-worlds.html",
+      "first_seen_at": "2026-08-19T00:23:04.359218+00:00",
+      "last_seen_at": "2026-08-19T01:50:31.639482+00:00",
+      "last_curated_at": "2026-08-19T01:50:31.639482+00:00",
+      "last_notified_at": null
     }
   ],
   "top_themes": [
@@ -778,12 +802,12 @@
       "count": 4
     },
     {
-      "theme": "rag",
-      "count": 3
+      "theme": "llm",
+      "count": 2
     },
     {
-      "theme": "llm",
-      "count": 1
+      "theme": "rag",
+      "count": 2
     }
   ],
   "highlights": [
@@ -798,7 +822,7 @@
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     },
     {
-      "title": "Stealing Reasoning Traces from Proprietary LLM APIs",
+      "title": "Test-Time Self-Evolving GUI Visual Grounding via Reflection-Guided On-Policy Self-Distillation",
       "source": "arxiv",
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     }
