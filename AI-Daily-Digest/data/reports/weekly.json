@@ -1,9 +1,9 @@
 {
   "label": "周报",
   "window_days": 7,
-  "generated_at": "2026-08-22T09:46:55.453797+08:00",
-  "count": 49,
-  "summary": "近 7 天里，最集中的主题是 ai、llm、agent。",
+  "generated_at": "2026-08-23T08:25:30.508650+08:00",
+  "count": 52,
+  "summary": "近 7 天里，最集中的主题是 ai、agent、llm。",
   "top_items": [
     {
       "id": "arxiv::http://arxiv.org/abs/2608.20318v1",
@@ -362,6 +362,67 @@
       "last_notified_at": null
     },
     {
+      "id": "github::anthropics/claude-code",
+      "kind": "repo",
+      "source": "github",
+      "source_tags": [
+        "trending"
+      ],
+      "name": "claude-code",
+      "title": "anthropics/claude-code",
+      "full_name": "anthropics/claude-code",
+      "html_url": "https://github.com/anthropics/claude-code",
+      "description": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.",
+      "stars": 142532,
+      "stars_today": 0,
+      "language": "Python",
+      "topics": [],
+      "created_at": "",
+      "updated_at": "",
+      "heuristic_score": 17.8,
+      "summary": "anthropics/claude-code 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.结合关键词命中和热度信号，它适合加入今日重点观察列表。",
+      "brief": "这是一个值得快速关注的开源 AI 项目。",
+      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
+      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
+      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
+      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
+      "highlights": [
+        "Stars: 142532",
+        "语言: Python"
+      ],
+      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "agent",
+        "agentic"
+      ],
+      "themes": [
+        "ai",
+        "agent",
+        "agentic"
+      ],
+      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
+      "summary_markdown": "**摘要**：anthropics/claude-code 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：10/10\n\n**亮点**：\n- Stars: 142532\n- 语言: Python",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "coding",
+          "weight": 2.6
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 176.0,
+      "detail_path": "items/github-anthropics-claude-code.html",
+      "first_seen_at": "2026-08-23T00:25:39.962236+00:00",
+      "last_seen_at": "2026-08-23T00:25:39.962236+00:00",
+      "last_curated_at": "2026-08-23T00:25:39.962236+00:00",
+      "last_notified_at": null
+    },
+    {
       "id": "arxiv::http://arxiv.org/abs/2608.20320v1",
       "kind": "paper",
       "source": "arxiv",
@@ -566,81 +627,6 @@
       "last_seen_at": "2026-08-22T01:47:38.136638+00:00",
       "last_curated_at": "2026-08-22T01:47:38.136638+00:00",
       "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2608.19147v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "Pre-Compiled Pipeline Shards for Distributed LLM Inference on Intel AI PC Fleets",
-      "html_url": "http://arxiv.org/abs/2608.19147v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.19147v1",
-      "description": "Modern Intel AI PCs ship capable integrated GPUs and NPUs with 16+ GB of unified memory, and they spend considerable time idle. That is not enough memory to fit a large model such as a 70B-parameter LLM. We show that a handful of AIPCs, working together over an ordinary network, can serve models beyond the capability of any single one. We use pipeline parallelism: a model is split by layer into per-stage shards, each pre-compiled into an OpenVINO graph, so that every machine runs one shard and passes activations to the next. Three techniques make this fast enough to be useful. First, we recover the speed of the unsplit model: a naive per-stage export runs well below monolithic inference because it misses an OpenVINO GPU optimization, and injecting a beam_idx Gather into each shard triggers that optimization (the IndirectKVCache fusion) and brings the shards to parity. Second, we leverage speculative decoding on stateful OpenVINO models. Third, the pipeline serves several users at once by interleaving their requests across the stages, each request carrying its own cache (micro-batching). Together, a two-node Llama 3.1 8B INT4 pipeline serves two concurrent users at 1.79x the single-user throughput of the unsplit model on the same hardware, and the gap widens under simulated wide-area latency. The same design scales to a 70B model that no single fleet member can hold: a four-node deployment of Lunar Lake AI PCs on Intel Tiber Cloud serves a single user at interactive speed, with output token-for-token identical to the same four-node pipeline decoding without speculation. Code, raw benchmark logs, and reproduction scripts ship as a self-contained package at https://github.com/labscommunity/pipeline-sharded-inference-paper (in the top-level reproduction/ directory).",
-      "authors": [
-        "Tate Berenbaum",
-        "Muthaiah Venkatachalam"
-      ],
-      "categories": [
-        "cs.DC",
-        "cs.AI",
-        "cs.SE"
-      ],
-      "published_at": "2026-08-19T17:33:28+00:00",
-      "updated_at": "2026-08-19T17:33:28+00:00",
-      "primary_category": "cs.DC",
-      "heuristic_score": 16.4,
-      "summary": "Pre-Compiled Pipeline Shards for Distributed LLM Inference on Intel AI PC Fleets 是最近值得追踪的一篇 AI 论文。论文摘要显示：Modern Intel AI PCs ship capable integrated GPUs and NPUs with 16+ GB of unified memory, and they spend considerable time idle. That is not enough memory to fit a large model such as a 70B-parameter LLM. We show that a handful of AIPCs, wor...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.DC, cs.AI",
-        "作者数: 2"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 9,
-      "tags": [
-        "ai",
-        "llm",
-        "rag",
-        "model"
-      ],
-      "themes": [
-        "ai",
-        "llm",
-        "rag"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：Pre-Compiled Pipeline Shards for Distributed LLM Inference on Intel AI PC Fleets 是最近值得追踪的一篇 AI 论文。论文摘要显示：Modern Intel AI PCs ship capable integrated GPUs and NPUs with 16+ GB of unified memory, and they spend considerable time idle. That is not enough memory to fit a large model such as a 70B-parameter LLM. We show that a handful of AIPCs, wor...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：9/10\n\n**亮点**：\n- 分类: cs.DC, cs.AI\n- 作者数: 2",
-      "focus_hits": [
-        {
-          "keyword": "coding",
-          "weight": 2.6
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "inference",
-          "weight": 1.8
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "coding",
-      "personalized_score": 172.0,
-      "detail_path": "items/arxiv-pre-compiled-pipeline-shards-for-distributed-llm-inference-on-intel-ai-pc-fleets.html",
-      "first_seen_at": "2026-08-21T00:26:44.468183+00:00",
-      "last_seen_at": "2026-08-21T01:55:36.644964+00:00",
-      "last_curated_at": "2026-08-21T01:55:36.644964+00:00",
-      "last_notified_at": null
     }
   ],
   "top_themes": [
@@ -649,12 +635,12 @@
       "count": 8
     },
     {
-      "theme": "llm",
-      "count": 5
+      "theme": "agent",
+      "count": 4
     },
     {
-      "theme": "agent",
-      "count": 3
+      "theme": "llm",
+      "count": 4
     }
   ],
   "highlights": [
