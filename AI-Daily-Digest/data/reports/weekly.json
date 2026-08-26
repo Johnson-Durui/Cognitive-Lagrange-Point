@@ -1,8 +1,8 @@
 {
   "label": "周报",
   "window_days": 7,
-  "generated_at": "2026-08-26T08:25:57.836494+08:00",
-  "count": 59,
+  "generated_at": "2026-08-26T09:55:05.622626+08:00",
+  "count": 51,
   "summary": "近 7 天里，最集中的主题是 ai、agent、llm。",
   "top_items": [
     {
@@ -253,8 +253,8 @@
       "personalized_score": 180.0,
       "detail_path": "items/arxiv-swe-refactor-bench-can-coding-agents-complete-a-long-horizon-whole-repository-stack-migrat.html",
       "first_seen_at": "2026-08-26T00:26:04.578914+00:00",
-      "last_seen_at": "2026-08-26T00:26:04.578914+00:00",
-      "last_curated_at": "2026-08-26T00:26:04.578914+00:00",
+      "last_seen_at": "2026-08-26T01:56:04.391159+00:00",
+      "last_curated_at": "2026-08-26T01:56:04.391159+00:00",
       "last_notified_at": null
     },
     {
@@ -398,118 +398,8 @@
       "personalized_score": 178.0,
       "detail_path": "items/arxiv-srpo-self-reflective-policy-optimization-for-long-horizon-reasoning.html",
       "first_seen_at": "2026-08-26T00:26:04.578914+00:00",
-      "last_seen_at": "2026-08-26T00:26:04.578914+00:00",
-      "last_curated_at": "2026-08-26T00:26:04.578914+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2608.16859v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "HarnessEval-W: Agentifying the Evaluation of Visual Worlds",
-      "html_url": "http://arxiv.org/abs/2608.16859v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.16859v1",
-      "description": "A benchmark should deliver more than a scalar score: what makes an evaluation trustworthy is the reasoning that justifies the score. This is especially critical for world models, where judging a rollout requires understanding whether physics, causality, and world state evolve correctly. Humans spot such violations naturally, yet no existing benchmark automates this capability: metrics are computed brute-force, leaving no reasoning chain that can be examined or verified. We introduce HarnessEval-W, an agentified evaluation pipeline that brings the harness paradigm from the LLM ecosystem to world model benchmarking. Rather than applying a fixed rubric, HarnessEval-W interprets the context of each evaluation case, decomposes the evaluation question into measurable subproblems, and spawns specialized sub-agents, each equipped with tailored context and diagnostic tools to reason over its own subproblem. The parent agent then validates the gathered evidence and summarizes it into the final verdict. This hierarchical workflow turns every evaluation into a transparent evidence tree whose complete reasoning chain justifies the result. We apply HarnessEval-W to 18 representative world models over 330 evaluation cases. Its judgments closely align with human preferences while providing verifiable, fine-grained diagnoses of every generated rollout. We open-source the full pipeline as a live benchmark and invite the broad community to contribute to grow new skills and evaluation cases as world models evolve.",
-      "authors": [
-        "Weiliang Chen",
-        "Haowen Sun",
-        "Jun Gao",
-        "Jiawei Chi",
-        "Hanyang Wang",
-        "Qiyu Dai",
-        "Yihao Li",
-        "Hao Li",
-        "Jingnan Gao",
-        "Yi-Hsin Hung",
-        "Xingzhuo Guo",
-        "Shangchen Miao",
-        "Zhiyuan Shi",
-        "Xiang Li",
-        "Fengrui Tian",
-        "Weihua Du",
-        "Ziqi Huang",
-        "Shenyuan Gao",
-        "Siqiao Huang",
-        "Mingyu Liu",
-        "Yifei Li",
-        "Shizun Wang",
-        "Xi Wang",
-        "Tianqi Zhang",
-        "Xue Luo",
-        "Xiyin Ren",
-        "Jinshan Ren",
-        "Xiaoyang Shen",
-        "Xiaobo Hu",
-        "Zhiyang Dou",
-        "Mingyu Ding",
-        "Yichao Yan",
-        "Xinchao Wang",
-        "Yizhou Wang",
-        "Shilong Liu",
-        "Wenzhao Zheng",
-        "Yueqi Duan",
-        "Yuan Gong",
-        "Ziwei Liu",
-        "Ming-Yu Liu",
-        "Jialong Wu",
-        "Jiangran Lyu",
-        "Fangfu Liu"
-      ],
-      "categories": [
-        "cs.CV"
-      ],
-      "published_at": "2026-08-17T17:43:24+00:00",
-      "updated_at": "2026-08-17T17:43:24+00:00",
-      "primary_category": "cs.CV",
-      "heuristic_score": 17.799,
-      "summary": "HarnessEval-W: Agentifying the Evaluation of Visual Worlds 是最近值得追踪的一篇 AI 论文。论文摘要显示：A benchmark should deliver more than a scalar score: what makes an evaluation trustworthy is the reasoning that justifies the score. This is especially critical for world models, where judging a rollout requires understanding whether physic...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CV",
-        "作者数: 43"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "llm",
-        "agent",
-        "model"
-      ],
-      "themes": [
-        "ai",
-        "llm",
-        "agent"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：HarnessEval-W: Agentifying the Evaluation of Visual Worlds 是最近值得追踪的一篇 AI 论文。论文摘要显示：A benchmark should deliver more than a scalar score: what makes an evaluation trustworthy is the reasoning that justifies the score. This is especially critical for world models, where judging a rollout requires understanding whether physic...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV\n- 作者数: 43",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 178.0,
-      "detail_path": "items/arxiv-harnesseval-w-agentifying-the-evaluation-of-visual-worlds.html",
-      "first_seen_at": "2026-08-19T00:23:04.359218+00:00",
-      "last_seen_at": "2026-08-19T01:50:31.639482+00:00",
-      "last_curated_at": "2026-08-19T01:50:31.639482+00:00",
+      "last_seen_at": "2026-08-26T01:56:04.391159+00:00",
+      "last_curated_at": "2026-08-26T01:56:04.391159+00:00",
       "last_notified_at": null
     },
     {
@@ -644,6 +534,78 @@
       "first_seen_at": "2026-08-22T00:24:16.394924+00:00",
       "last_seen_at": "2026-08-22T01:47:38.136638+00:00",
       "last_curated_at": "2026-08-22T01:47:38.136638+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2608.18027v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Chain-of-Experience for Continual LLM Improvement",
+      "html_url": "http://arxiv.org/abs/2608.18027v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.18027v1",
+      "description": "Humans continuously learn from experience, whereas conventional large language model (LLM) evaluations ignore the models' ability to improve through inference-time interaction. In this paper, we study how LLMs learn from iterative experience at test time, a setting we refer to as Chain-of-Experience (CoE), where models accumulate experiential traces through iterative interactions with self or environmental feedback to form a continual improvement loop beyond zero-shot inference. We instantiate CoE with diverse feedback mechanisms, including model self-feedback and environmental signals such as correctness or public coding test pass rates, and evaluate across math, coding, and knowledge domains using 8 LLMs, including GPT-5, Gemini-2.5 Pro, Claude-4.5 Sonnet. Our study shows that leveraging iterative experience consistently outperforms feedback-free baselines, achieving substantial gains with self feedback alone, alongside a 5.6% overall improvement and 19% lower API cost across tasks and models. We further show that combining complementary feedback channels (e.g., model and correctness signals) yields additional gains, and that CoE delivers higher accuracy per token than existing test-time strategies. We observe a positive correlation between LLM base ability and improvement capacity, and show that models remain robust under weak or spurious feedback, with different feedback contributing to distinct improvement aspects and most gains emerging early in the iterations.",
+      "authors": [
+        "Haoqin Tu",
+        "Yunhao Fang",
+        "Yizhong Wang",
+        "Cihang Xie",
+        "Shen Yan"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "published_at": "2026-08-18T17:22:54+00:00",
+      "updated_at": "2026-08-18T17:22:54+00:00",
+      "primary_category": "cs.CL",
+      "heuristic_score": 17.764,
+      "summary": "Chain-of-Experience for Continual LLM Improvement 是最近值得追踪的一篇 AI 论文。论文摘要显示：Humans continuously learn from experience, whereas conventional large language model (LLM) evaluations ignore the models' ability to improve through inference-time interaction. In this paper, we study how LLMs learn from iterative experienc...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CL",
+        "作者数: 5"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "llm",
+        "gpt",
+        "rag"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "gpt"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：Chain-of-Experience for Continual LLM Improvement 是最近值得追踪的一篇 AI 论文。论文摘要显示：Humans continuously learn from experience, whereas conventional large language model (LLM) evaluations ignore the models' ability to improve through inference-time interaction. In this paper, we study how LLMs learn from iterative experienc...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL\n- 作者数: 5",
+      "focus_hits": [
+        {
+          "keyword": "coding",
+          "weight": 2.6
+        },
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        },
+        {
+          "keyword": "inference",
+          "weight": 1.8
+        }
+      ],
+      "primary_match": "coding",
+      "personalized_score": 174.0,
+      "detail_path": "items/arxiv-chain-of-experience-for-continual-llm-improvement.html",
+      "first_seen_at": "2026-08-20T00:23:49.288680+00:00",
+      "last_seen_at": "2026-08-20T01:48:44.659376+00:00",
+      "last_curated_at": "2026-08-20T01:48:44.659376+00:00",
       "last_notified_at": null
     }
   ],
