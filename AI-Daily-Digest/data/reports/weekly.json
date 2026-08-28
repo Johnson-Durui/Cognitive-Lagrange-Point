@@ -1,7 +1,7 @@
 {
   "label": "周报",
   "window_days": 7,
-  "generated_at": "2026-08-27T17:36:13.089771+08:00",
+  "generated_at": "2026-08-28T15:07:38.899128+08:00",
   "count": 52,
   "summary": "近 7 天里，最集中的主题是 ai、agent、llm。",
   "top_items": [
@@ -174,52 +174,51 @@
       "last_notified_at": null
     },
     {
-      "id": "arxiv::http://arxiv.org/abs/2608.19197v1",
+      "id": "arxiv::http://arxiv.org/abs/2608.27456v1",
       "kind": "paper",
       "source": "arxiv",
       "source_tags": [
         "latest"
       ],
-      "title": "SPADE: Self-Play in Adaptive Synthetic Executable Environments",
-      "html_url": "http://arxiv.org/abs/2608.19197v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.19197v1",
-      "description": "Continuous self-improvement requires an ever-expanding pool of self-generated, diverse, adaptive goals. For language agents, existing training environment pools (hand-curated, statically synthesized, or frozen-verifier) keep the goal distribution fixed as the learner scales. We introduce SPADE (Self-Play in Adaptive Synthetic Executable Environments), a self-play RL framework in which a single LLM plays two roles: an Environment Designer that writes complete, long-horizon training environments as executable code with an OpenAI Gym-style reset()/step() interface, and a Reasoning Agent that learns to act in them. Each is a stateful, multi-turn environment (state transitions, reward functions, and verification code), so one interface spans reasoning problems and multi-step agentic tool use. The Reasoning Agent's regret is estimated using the gap between its reward with and without privileged hints; in optimizing this regret signal the Environment Designer learns to target environments at the edge of the agent's capabilities while keeping them feasible. Through extensive experimentation, we find several components critical to success: grounding the Environment Designer on documents sampled from a large pretraining corpus, and giving it an accumulated environment memory. Scaling to 30B-parameter models, SPADE improves over the strongest fixed-environment baseline by +5.3 on average across eight held-out math, science, code, and reasoning benchmarks, and lifts the tool-use setting by +5.7 on BFCL-v4 multi-turn and +13.9 on ACEBench-Agent; on the games setting, the margin over the strongest baseline grows with model scale. By making environment design itself a learnable component, SPADE takes a concrete step toward open-ended self-improvement.",
+      "title": "UrbanGround: From Local Perception to Spatial Agency in a Real-Scale City",
+      "html_url": "http://arxiv.org/abs/2608.27456v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.27456v1",
+      "description": "Multimodal large language models (MLLMs) can interpret a street view, but urban agency depends on whether such local evidence remains useful after the agent starts to move. In this paper, we investigate how far current MLLM agents can turn local urban perception into reliable action in a complicated real-scale city. We propose UrbanGround, the first sandbox to make this question testable in a physically constrained replica of Hong Kong built from territory-wide 3D geospatial data. UrbanGround supports closed-loop interaction from a first-person view and provides an interactive map for navigation. Agents can directly enter the 3D city and explore from a first-person view. Our analysis follows the growth of the spatial problem through three research questions. We first test whether an agent can ground a local scene well enough to answer spatial questions after active observation. Then we ask whether that grounding supports navigation as destinations become farther away and less explicit. Finally, we examine whether the resulting behavior survives changes in route availability and pedestrian motion. Contemporary MLLM agents usually show useful atomic abilities in visual recognition and short-range spatial reasoning, while orientation and pedestrian-aware movement remain unreliable. Their central failure emerges over extended exploration, where local abilities do not compose into sustained goal-directed behavior and errors accumulate without effective correction. We hope UrbanGround will support broader study of how far current MLLM agents can explore reliably in complex, open-ended urban environments.",
       "authors": [
-        "Bo Liu",
-        "Simon Yu",
-        "Yiding Jiang",
-        "Ao Qu",
-        "Andrew Zhao",
-        "Zichen Liu",
-        "Junsu Kim",
-        "Zijian Zhou",
-        "Seungone Kim",
-        "Tongzheng Ren",
-        "Mickel Liu",
-        "Hanfei Yu",
-        "Zhaorun Chen",
-        "Weiyan Shi",
-        "Paul Pu Liang",
-        "Luke Zettlemoyer",
-        "Yejin Choi",
-        "Natasha Jaques"
+        "Tianjie Ju",
+        "Zheng Wu",
+        "Yueqing Sun",
+        "Yuhan Cui",
+        "Bobo Li",
+        "Shengqiong Wu",
+        "Pengzhou Cheng",
+        "Haodong Zhao",
+        "Zongru Wu",
+        "Xinbei Ma",
+        "Doris Zhang",
+        "Kunling Li",
+        "Mong-Li Lee",
+        "Wynne Hsu",
+        "Hao Fei",
+        "Qi Gu",
+        "Gongshen Liu",
+        "Zhuosheng Zhang"
       ],
       "categories": [
-        "cs.CL",
-        "cs.AI"
+        "cs.CV"
       ],
-      "published_at": "2026-08-19T17:58:56+00:00",
-      "updated_at": "2026-08-19T17:58:56+00:00",
-      "primary_category": "cs.CL",
-      "heuristic_score": 25.1,
-      "summary": "SPADE: Self-Play in Adaptive Synthetic Executable Environments 是最近值得追踪的一篇 AI 论文。论文摘要显示：Continuous self-improvement requires an ever-expanding pool of self-generated, diverse, adaptive goals. For language agents, existing training environment pools (hand-curated, statically synthesized, or frozen-verifier) keep the goal distri...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "published_at": "2026-08-27T17:59:33+00:00",
+      "updated_at": "2026-08-27T17:59:33+00:00",
+      "primary_category": "cs.CV",
+      "heuristic_score": 17.9,
+      "summary": "UrbanGround: From Local Perception to Spatial Agency in a Real-Scale City 是最近值得追踪的一篇 AI 论文。论文摘要显示：Multimodal large language models (MLLMs) can interpret a street view, but urban agency depends on whether such local evidence remains useful after the agent starts to move. In this paper, we investigate how far current MLLM agents can turn ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
       "brief": "这是一篇值得加入今日论文雷达的最新工作。",
       "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
       "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
       "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
       "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
       "highlights": [
-        "分类: cs.CL, cs.AI",
+        "分类: cs.CV",
         "作者数: 18"
       ],
       "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
@@ -228,7 +227,7 @@
         "ai",
         "llm",
         "agent",
-        "agentic"
+        "multimodal"
       ],
       "themes": [
         "ai",
@@ -236,7 +235,7 @@
         "agent"
       ],
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：SPADE: Self-Play in Adaptive Synthetic Executable Environments 是最近值得追踪的一篇 AI 论文。论文摘要显示：Continuous self-improvement requires an ever-expanding pool of self-generated, diverse, adaptive goals. For language agents, existing training environment pools (hand-curated, statically synthesized, or frozen-verifier) keep the goal distri...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL, cs.AI\n- 作者数: 18",
+      "summary_markdown": "**摘要**：UrbanGround: From Local Perception to Spatial Agency in a Real-Scale City 是最近值得追踪的一篇 AI 论文。论文摘要显示：Multimodal large language models (MLLMs) can interpret a street view, but urban agency depends on whether such local evidence remains useful after the agent starts to move. In this paper, we investigate how far current MLLM agents can turn ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV\n- 作者数: 18",
       "focus_hits": [
         {
           "keyword": "agent",
@@ -247,20 +246,16 @@
           "weight": 2.4
         },
         {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
+          "keyword": "multimodal",
+          "weight": 2.0
         }
       ],
       "primary_match": "agent",
-      "personalized_score": 200.0,
-      "detail_path": "items/arxiv-spade-self-play-in-adaptive-synthetic-executable-environments.html",
-      "first_seen_at": "2026-08-21T00:26:44.468183+00:00",
-      "last_seen_at": "2026-08-21T01:55:36.644964+00:00",
-      "last_curated_at": "2026-08-21T01:55:36.644964+00:00",
+      "personalized_score": 182.0,
+      "detail_path": "items/arxiv-urbanground-from-local-perception-to-spatial-agency-in-a-real-scale-city.html",
+      "first_seen_at": "2026-08-28T07:07:46.950260+00:00",
+      "last_seen_at": "2026-08-28T07:07:46.950260+00:00",
+      "last_curated_at": "2026-08-28T07:07:46.950260+00:00",
       "last_notified_at": null
     },
     {
@@ -565,79 +560,64 @@
       "last_notified_at": null
     },
     {
-      "id": "arxiv::http://arxiv.org/abs/2608.26076v1",
-      "kind": "paper",
-      "source": "arxiv",
+      "id": "github::calesthio/OpenMontage",
+      "kind": "repo",
+      "source": "github",
       "source_tags": [
-        "latest"
+        "trending"
       ],
-      "title": "Fast Generative Grasping via Lie Group-Constrained MeanFlow",
-      "html_url": "http://arxiv.org/abs/2608.26076v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.26076v1",
-      "description": "Grasp synthesis is a core task in robotic manipulation, for which the solution typically forms a multimodal distribution rather than a point estimate. Generative robotic grasping aims to learn this distribution with deep generative models such as diffusion and flow-based approaches. The iterative nature of such generative models makes them flexible and generalizable; however, multi-step sampling impedes the time-critical operation required in robotics. We devise an approach to fast generative grasping based on MeanFlow on the product Lie group $\\mathcal{G} = \\mathrm{SO}(3) \\times \\mathbb{R}^3$. The training objective couples a purely algebraic semigroup consistency condition with Riemannian Conditional Flow Matching on $\\mathcal{G}$ that anchors the average velocity to the data distribution. The resulting Lie Group-constrained MeanFlow formulation samples reliable grasps in $\\leq 5$ network evaluations, matching the grasp generation performance of state-of-the-art diffusion and flow-based models on the ACRONYM dataset at millisecond-scale inference latency (up to $39\\times$ speed-up). We further demonstrate that the approach directly translates to real-world robotic grasping without additional training or domain adaptation, exhibiting robust grasp synthesis under observation noise.",
-      "authors": [
-        "S. Talha Bukhari",
-        "Yi Wei",
-        "Ruiqi Ni",
-        "Zachary Kingston",
-        "Aniket Bera"
-      ],
-      "categories": [
-        "cs.RO"
-      ],
-      "published_at": "2026-08-26T17:43:07+00:00",
-      "updated_at": "2026-08-26T17:43:07+00:00",
-      "primary_category": "cs.RO",
-      "heuristic_score": 20.828,
-      "summary": "Fast Generative Grasping via Lie Group-Constrained MeanFlow 是最近值得追踪的一篇 AI 论文。论文摘要显示：Grasp synthesis is a core task in robotic manipulation, for which the solution typically forms a multimodal distribution rather than a point estimate. Generative robotic grasping aims to learn this distribution with deep generative models s...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "name": "OpenMontage",
+      "title": "calesthio/OpenMontage",
+      "full_name": "calesthio/OpenMontage",
+      "html_url": "https://github.com/calesthio/OpenMontage",
+      "description": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video production studio.",
+      "stars": 52670,
+      "stars_today": 0,
+      "language": "Python",
+      "topics": [],
+      "created_at": "",
+      "updated_at": "",
+      "heuristic_score": 17.8,
+      "summary": "calesthio/OpenMontage 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video production studio.结合关键词命中和热度信号，它适合加入今日重点观察列表。",
+      "brief": "这是一个值得快速关注的开源 AI 项目。",
+      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
+      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
+      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
+      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
       "highlights": [
-        "分类: cs.RO",
-        "作者数: 5"
+        "Stars: 52670",
+        "语言: Python"
       ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
       "relevance_score": 10,
       "tags": [
         "ai",
-        "rag",
-        "multimodal",
-        "diffusion"
+        "agent",
+        "agentic"
       ],
       "themes": [
         "ai",
-        "rag",
-        "multimodal"
+        "agent",
+        "agentic"
       ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：Fast Generative Grasping via Lie Group-Constrained MeanFlow 是最近值得追踪的一篇 AI 论文。论文摘要显示：Grasp synthesis is a core task in robotic manipulation, for which the solution typically forms a multimodal distribution rather than a point estimate. Generative robotic grasping aims to learn this distribution with deep generative models s...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.RO\n- 作者数: 5",
+      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
+      "summary_markdown": "**摘要**：calesthio/OpenMontage 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video production studio.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：10/10\n\n**亮点**：\n- Stars: 52670\n- 语言: Python",
       "focus_hits": [
         {
-          "keyword": "rag",
-          "weight": 2.2
+          "keyword": "agent",
+          "weight": 3.0
         },
         {
-          "keyword": "multimodal",
-          "weight": 2.0
-        },
-        {
-          "keyword": "inference",
-          "weight": 1.8
-        },
-        {
-          "keyword": "robotics",
-          "weight": 1.6
+          "keyword": "coding",
+          "weight": 2.6
         }
       ],
-      "primary_match": "rag",
+      "primary_match": "agent",
       "personalized_score": 176.0,
-      "detail_path": "items/arxiv-fast-generative-grasping-via-lie-group-constrained-meanflow.html",
-      "first_seen_at": "2026-08-27T05:08:57.411314+00:00",
-      "last_seen_at": "2026-08-27T09:36:21.360226+00:00",
-      "last_curated_at": "2026-08-27T09:36:21.360226+00:00",
+      "detail_path": "items/github-calesthio-openmontage.html",
+      "first_seen_at": "2026-08-12T00:44:39.124354+00:00",
+      "last_seen_at": "2026-08-28T07:07:46.950260+00:00",
+      "last_curated_at": "2026-08-28T07:07:46.950260+00:00",
       "last_notified_at": null
     }
   ],
@@ -648,15 +628,11 @@
     },
     {
       "theme": "agent",
-      "count": 4
+      "count": 5
     },
     {
       "theme": "llm",
       "count": 3
-    },
-    {
-      "theme": "rag",
-      "count": 1
     }
   ],
   "highlights": [
@@ -671,7 +647,7 @@
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     },
     {
-      "title": "SPADE: Self-Play in Adaptive Synthetic Executable Environments",
+      "title": "UrbanGround: From Local Perception to Spatial Agency in a Real-Scale City",
       "source": "arxiv",
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     }
