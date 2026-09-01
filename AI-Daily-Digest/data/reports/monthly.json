@@ -1,7 +1,7 @@
 {
   "label": "月报",
   "window_days": 30,
-  "generated_at": "2026-09-01T10:05:33.231163+08:00",
+  "generated_at": "2026-09-01T13:00:08.211801+08:00",
   "count": 200,
   "summary": "近 30 天里，最集中的主题是 ai、agent、llm。",
   "top_items": [
@@ -460,6 +460,82 @@
       "last_notified_at": null
     },
     {
+      "id": "arxiv::http://arxiv.org/abs/2608.31082v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Token-Efficient Data Reasoning Agents via Adaptive Structuring of Unstructured Data",
+      "html_url": "http://arxiv.org/abs/2608.31082v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.31082v1",
+      "description": "Valuable data remains embedded in unstructured sources: web pages, reports, contracts, filings, earnings calls, and PDFs. The big bet in enterprise AI is deploying LLM agents that reason over this data to answer complex questions for every knowledge worker. Agents can do this today, but at prohibitive cost. Each question repeatedly opens large documents to recover scattered evidence, consuming up to a million tokens. However, if the data were already structured, the same question would reduce to a cheap database lookup. For example, on FanOutQA benchmark, reasoning over an ideal pre-structured store is 28X cheaper, and the gap grows to orders of magnitude as questions fan out over more documents. Yet structuring everything in advance is not viable: documents hold vastly more possible structure than any workload will use, and the useful structure and documents are unknown until queries arrive. We propose agentic data cracking, a method that structures unstructured data adaptively and speculatively as a byproduct of reasoning itself. Structuring is adaptive because observed queries decide when it happens and what matters, and speculative because it goes beyond the current question. Whenever the agent opens a document to answer, a cracking sub-agent forks from the already-loaded context at marginal cost and extracts grounded structure likely to serve related future queries. Over time, an increasing share of queries is fully covered by structured data and answered without opening a document, keeping agentic accuracy at close to RAG cost. On FanOutQA, extended with merely one related question per test question, cracking cuts cost by 53% while preserving accuracy. Agentic data cracking is a first step toward next-generation data infrastructure for agentic reasoning over unstructured data: a shared substrate beneath the model where knowledge that reasoning already paid to uncover accumulates.",
+      "authors": [
+        "Milad Rezaei Hajidehi",
+        "Qitong Wang",
+        "Stratos Idreos"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.DB"
+      ],
+      "published_at": "2026-08-31T16:53:45+00:00",
+      "updated_at": "2026-08-31T16:53:45+00:00",
+      "primary_category": "cs.AI",
+      "heuristic_score": 22.7,
+      "summary": "Token-Efficient Data Reasoning Agents via Adaptive Structuring of Unstructured Data 是最近值得追踪的一篇 AI 论文。论文摘要显示：Valuable data remains embedded in unstructured sources: web pages, reports, contracts, filings, earnings calls, and PDFs. The big bet in enterprise AI is deploying LLM agents that reason over this data to answer complex questions for every ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.AI, cs.CL",
+        "作者数: 3"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "llm",
+        "agent",
+        "agentic"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "agent"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：Token-Efficient Data Reasoning Agents via Adaptive Structuring of Unstructured Data 是最近值得追踪的一篇 AI 论文。论文摘要显示：Valuable data remains embedded in unstructured sources: web pages, reports, contracts, filings, earnings calls, and PDFs. The big bet in enterprise AI is deploying LLM agents that reason over this data to answer complex questions for every ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI, cs.CL\n- 作者数: 3",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 200.0,
+      "detail_path": "items/arxiv-token-efficient-data-reasoning-agents-via-adaptive-structuring-of-unstructured-data.html",
+      "first_seen_at": "2026-09-01T05:00:20.331101+00:00",
+      "last_seen_at": "2026-09-01T05:00:20.331101+00:00",
+      "last_curated_at": "2026-09-01T05:00:20.331101+00:00",
+      "last_notified_at": null
+    },
+    {
       "id": "arxiv::http://arxiv.org/abs/2608.20318v1",
       "kind": "paper",
       "source": "arxiv",
@@ -706,100 +782,20 @@
       "last_seen_at": "2026-08-13T02:42:03.676060+00:00",
       "last_curated_at": "2026-08-13T02:42:03.676060+00:00",
       "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2608.05095v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "Hierarchical Graph Memory for LLM Agents with Path-level Localization and Rewrite",
-      "html_url": "http://arxiv.org/abs/2608.05095v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.05095v1",
-      "description": "Agents for long term reasoning require a memory that can be efficiently and effectively updated over time, as new facts and external feedback continue to arrive. Recently, graph memory has been adopted to offer structural organization for multi-hop retrieval and reasoning. However, existing methods store all memories in a flat graph, and accumulated historical memories can introduce irrelevant contexts and increase the cost of evidence selection during retrieval. Moreover, they typically update memory units independently, requiring repeated unit-wise rewrite to cover related changes. To address these issues, we propose HiGram, an evolving hierarchical graph memory framework with path-level localization and rewriting. Specifically, we first propose a hierarchical graph memory, which organizes the memory into coarse-to-fine architecture composed of upper-level nodes and MemoryUnits, thereby reducing the amount of irrelevant information during retrieval. We further propose MicroGraph-based path-level localization, which leverages query and update conditioned MicroGraphs to identify support subgraph and evidence path before rewrite. Finally, we propose a coordinated rewriting method that jointly revises intra-unit memory and inter-unit dependencies, enable valid dependency structures updating in the localized evidence path. Experiments on benchmarks for long-term conversational question answering and conflict-aware memory evaluation demonstrate that our method demonstrate substantial improvements over baselines in answer quality and token efficiency. Besides, our method improves answer accuracy and query-valid evidence selection under dynamic, static, and conditional conflicts.",
-      "authors": [
-        "Xiawei Yue",
-        "Boran Wang",
-        "Xiaoqing Zhang",
-        "Shuxin Zheng",
-        "Ziwei Zhang"
-      ],
-      "categories": [
-        "cs.AI"
-      ],
-      "published_at": "2026-08-05T17:32:43+00:00",
-      "updated_at": "2026-08-05T17:32:43+00:00",
-      "primary_category": "cs.AI",
-      "heuristic_score": 17.9,
-      "summary": "Hierarchical Graph Memory for LLM Agents with Path-level Localization and Rewrite 是最近值得追踪的一篇 AI 论文。论文摘要显示：Agents for long term reasoning require a memory that can be efficiently and effectively updated over time, as new facts and external feedback continue to arrive. Recently, graph memory has been adopted to offer structural organization for m...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.AI",
-        "作者数: 5"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "agent",
-        "rag",
-        "benchmark",
-        "reasoning"
-      ],
-      "themes": [
-        "agent",
-        "rag",
-        "benchmark"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：Hierarchical Graph Memory for LLM Agents with Path-level Localization and Rewrite 是最近值得追踪的一篇 AI 论文。论文摘要显示：Agents for long term reasoning require a memory that can be efficiently and effectively updated over time, as new facts and external feedback continue to arrive. Recently, graph memory has been adopted to offer structural organization for m...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI\n- 作者数: 5",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 200.0,
-      "detail_path": "items/arxiv-hierarchical-graph-memory-for-llm-agents-with-path-level-localization-and-rewrite.html",
-      "first_seen_at": "2026-08-06T03:31:24.817290+00:00",
-      "last_seen_at": "2026-08-06T03:31:24.817290+00:00",
-      "last_curated_at": "2026-08-06T03:31:24.817290+00:00",
-      "last_notified_at": null
     }
   ],
   "top_themes": [
     {
       "theme": "ai",
-      "count": 7
+      "count": 8
     },
     {
       "theme": "agent",
-      "count": 5
+      "count": 4
     },
     {
       "theme": "llm",
-      "count": 3
-    },
-    {
-      "theme": "rag",
-      "count": 1
+      "count": 4
     }
   ],
   "highlights": [
