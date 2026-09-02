@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02T01:28:38.717462+00:00",
+  "generated_at": "2026-09-02T04:23:41.045304+00:00",
   "items": [
     {
       "id": "arxiv::http://arxiv.org/abs/2609.01117v1",
@@ -67,8 +67,8 @@
       "personalized_score": 176.0,
       "detail_path": "items/arxiv-latent-recurrent-thoughts-recurrent-refinement-of-proposed-latents-for-reasoning-with-froz.html",
       "first_seen_at": "2026-09-02T01:28:38.717462+00:00",
-      "last_seen_at": "2026-09-02T01:28:38.717462+00:00",
-      "last_curated_at": "2026-09-02T01:28:38.717462+00:00",
+      "last_seen_at": "2026-09-02T04:23:41.045304+00:00",
+      "last_curated_at": "2026-09-02T04:23:41.045304+00:00",
       "last_notified_at": null
     },
     {
@@ -133,8 +133,163 @@
       "personalized_score": 162.0,
       "detail_path": "items/arxiv-clintracebench-source-verifiable-longitudinal-clinical-reasoning-over-ehr-derived-dialogue.html",
       "first_seen_at": "2026-09-02T01:28:38.717462+00:00",
-      "last_seen_at": "2026-09-02T01:28:38.717462+00:00",
-      "last_curated_at": "2026-09-02T01:28:38.717462+00:00",
+      "last_seen_at": "2026-09-02T04:23:41.045304+00:00",
+      "last_curated_at": "2026-09-02T04:23:41.045304+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2609.01600v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "CordisBench: Can Language Models Reason About Component Lifecycles in Dynamic Agent Harnesses?",
+      "html_url": "http://arxiv.org/abs/2609.01600v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.01600v1",
+      "description": "Dynamic agent harnesses let language models change the software that shapes their own execution. This flexibility brings a new reasoning burden: a local plugin change can propagate through dependencies and cleanup. We introduce CordisBench, a 1,200-question benchmark of this lifecycle reasoning. It combines a controlled formal setting with programs executed against Cordis, a runtime that manages component dependencies and cleanup, and asks models to identify affected components, predict state after a specified teardown order, determine which conditions hold under all or some orders, and choose reconfigurations that succeed when executed. Across these tasks, we evaluate three efficiency-oriented models at low reasoning effort with 2, 4, 8, 16, 24, or 32 relevant interactions, using deterministic task-specific scoring. Models usually handle small systems well but grow less reliable as more interactions become relevant, especially when predicting final state and when reasoning across teardown orders. Additional inference effort recovers marked gains for some models. The cost is nontrivial: on our 16-interaction subset, GPT-5.6 Luna uses nearly 3,000 reasoning tokens per question at medium effort. For these controlled instances, that cost is avoidable: an independent finite reference semantics agrees with Cordis execution on every observation and action outcome used for scoring across all 528 executable questions.",
+      "authors": [
+        "Damien Sileo",
+        "Dimitri Kachler"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "published_at": "2026-09-01T17:59:13+00:00",
+      "updated_at": "2026-09-01T17:59:13+00:00",
+      "primary_category": "cs.CL",
+      "heuristic_score": 20.091,
+      "summary": "CordisBench: Can Language Models Reason About Component Lifecycles in Dynamic Agent Harnesses? 是最近值得追踪的一篇 AI 论文。论文摘要显示：Dynamic agent harnesses let language models change the software that shapes their own execution. This flexibility brings a new reasoning burden: a local plugin change can propagate through dependencies and cleanup. We introduce CordisBench,...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CL, cs.AI",
+        "作者数: 2"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "agent",
+        "gpt",
+        "model"
+      ],
+      "themes": [
+        "ai",
+        "agent",
+        "gpt"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：CordisBench: Can Language Models Reason About Component Lifecycles in Dynamic Agent Harnesses? 是最近值得追踪的一篇 AI 论文。论文摘要显示：Dynamic agent harnesses let language models change the software that shapes their own execution. This flexibility brings a new reasoning burden: a local plugin change can propagate through dependencies and cleanup. We introduce CordisBench,...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL, cs.AI\n- 作者数: 2",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "inference",
+          "weight": 1.8
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 196.0,
+      "detail_path": "items/arxiv-cordisbench-can-language-models-reason-about-component-lifecycles-in-dynamic-agent-harness.html",
+      "first_seen_at": "2026-09-02T04:23:41.045304+00:00",
+      "last_seen_at": "2026-09-02T04:23:41.045304+00:00",
+      "last_curated_at": "2026-09-02T04:23:41.045304+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2609.01572v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "From Production Traffic to Post-Training: Building a Self-Hosted LLM That Covers the Corporate Request Mix",
+      "html_url": "http://arxiv.org/abs/2609.01572v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.01572v1",
+      "description": "Data-residency constraints force enterprises to self-host LLMs, but continuous adoption of newer models without decommissioning their predecessors expands the serving fleet, fragmenting a finite GPU pool. We consolidate traffic from over 200 internal applications onto a single model by closing quality gaps identified through production error analysis along three axes: instruction following, function-calling, and internal task distribution. Quality is tracked by offline benchmarks stratified to production traffic and scored by deterministic verifiers or calibrated LLM judges. Rather than optimising all objectives jointly, which introduces cross-domain reward interference, we train a separate GRPO expert per axis and merge them via two-stage SLERP. Each expert's reward exposes a distinct failure mode, namely semantic collapse, over-calling, and verbosity hacking, each requiring a domain-specific fix. In non-reasoning mode the recipe surpasses a ${\\sim}7\\times$ larger by total parameters baseline on the in-house Arena with 69.6 to 65.8, instruction following with 0.85 to 0.83, and function-calling with 0.79 to 0.77, while lifting general dialogue benchmarks. The model absorbs 50% of platform traffic, 116M requests per month, at a fraction of the serving cost.",
+      "authors": [
+        "Olga Tsymboi",
+        "Dmitrii Stoianov",
+        "Ramil Latypov",
+        "Danil Taranets",
+        "Daniil Dryabin",
+        "Mikhail Gashkov",
+        "Viktor Zelenkovskiy",
+        "Aleksandr Fida",
+        "Gleb Alektorov",
+        "Nikita Gulyakov",
+        "Arthur Babkin",
+        "Aleksandr Medvedev",
+        "Pavel Gein",
+        "Anatolii Potapov"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "published_at": "2026-09-01T17:39:26+00:00",
+      "updated_at": "2026-09-01T17:39:26+00:00",
+      "primary_category": "cs.CL",
+      "heuristic_score": 19.895,
+      "summary": "From Production Traffic to Post-Training: Building a Self-Hosted LLM That Covers the Corporate Request Mix 是最近值得追踪的一篇 AI 论文。论文摘要显示：Data-residency constraints force enterprises to self-host LLMs, but continuous adoption of newer models without decommissioning their predecessors expands the serving fleet, fragmenting a finite GPU pool. We consolidate traffic from over 20...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CL",
+        "作者数: 14"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "llm",
+        "rag",
+        "model"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "rag"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：From Production Traffic to Post-Training: Building a Self-Hosted LLM That Covers the Corporate Request Mix 是最近值得追踪的一篇 AI 论文。论文摘要显示：Data-residency constraints force enterprises to self-host LLMs, but continuous adoption of newer models without decommissioning their predecessors expands the serving fleet, fragmenting a finite GPU pool. We consolidate traffic from over 20...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL\n- 作者数: 14",
+      "focus_hits": [
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "reasoning",
+      "personalized_score": 170.0,
+      "detail_path": "items/arxiv-from-production-traffic-to-post-training-building-a-self-hosted-llm-that-covers-the-corpor.html",
+      "first_seen_at": "2026-09-02T04:23:41.045304+00:00",
+      "last_seen_at": "2026-09-02T04:23:41.045304+00:00",
+      "last_curated_at": "2026-09-02T04:23:41.045304+00:00",
       "last_notified_at": null
     },
     {
@@ -204,8 +359,78 @@
       "personalized_score": 150.0,
       "detail_path": "items/arxiv-dotting-the-eye-an-intent-driven-image-retouching-agent-for-visual-focus-enhancement.html",
       "first_seen_at": "2026-09-02T01:28:38.717462+00:00",
-      "last_seen_at": "2026-09-02T01:28:38.717462+00:00",
-      "last_curated_at": "2026-09-02T01:28:38.717462+00:00",
+      "last_seen_at": "2026-09-02T04:23:41.045304+00:00",
+      "last_curated_at": "2026-09-02T04:23:41.045304+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2609.01567v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Selective Agent Guidance via Entropy: Learning Autonomous Policies from Imperfect VLM Teachers",
+      "html_url": "http://arxiv.org/abs/2609.01567v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.01567v1",
+      "description": "Vision-Language Models (VLMs) provide useful priors for interactive decision-making, but using them directly as policies is expensive and brittle: they must be queried at every step, do not improve from environment interaction, and can repeat systematic errors. We study how to learn a cheap autonomous policy from an online, expensive, and imperfect but informative VLM teacher. We propose SAGE (Selective Agent Guidance via Entropy), a framework that queries a VLM only when the learner is uncertain, executes the suggested action during training, and distills guidance into a lightweight Reinforcement Learning (RL) policy. Because VLM advice is not always reliable, SAGE can weight teacher-action distillation using environment-derived advantages rather than treating all suggestions as equally useful. Across sparse-reward visual reasoning and navigation tasks, SAGE learns policies that act without VLM guidance at evaluation time and improves over unguided RL in several environments, including settings where the learned policy exceeds its VLM teacher. The results show that selective guidance is most beneficial when the VLM can help the agent discover high-reward trajectories, and less useful when unguided exploration already succeeds or teacher actions do not lead to informative experience. SAGE also reduces VLM usage by prompting the teacher only on a fraction of training steps and requiring no VLM calls at deployment. Overall, our results suggest that VLMs don't need to be used as fixed policies to be useful; they can instead act as temporary, imperfect sources of guidance whose value is tested and internalized through interaction.",
+      "authors": [
+        "Matteo Merler",
+        "Giovanni Bonetta",
+        "Davide Zago",
+        "Rossella Cancelliere",
+        "Bernardo Magnini"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "published_at": "2026-09-01T17:33:41+00:00",
+      "updated_at": "2026-09-01T17:33:41+00:00",
+      "primary_category": "cs.AI",
+      "heuristic_score": 15.5,
+      "summary": "Selective Agent Guidance via Entropy: Learning Autonomous Policies from Imperfect VLM Teachers 是最近值得追踪的一篇 AI 论文。论文摘要显示：Vision-Language Models (VLMs) provide useful priors for interactive decision-making, but using them directly as policies is expensive and brittle: they must be queried at every step, do not improve from environment interaction, and can repe...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.AI, cs.CL",
+        "作者数: 5"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 9,
+      "tags": [
+        "ai",
+        "agent",
+        "model",
+        "training"
+      ],
+      "themes": [
+        "ai",
+        "agent",
+        "model"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：Selective Agent Guidance via Entropy: Learning Autonomous Policies from Imperfect VLM Teachers 是最近值得追踪的一篇 AI 论文。论文摘要显示：Vision-Language Models (VLMs) provide useful priors for interactive decision-making, but using them directly as policies is expensive and brittle: they must be queried at every step, do not improve from environment interaction, and can repe...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：9/10\n\n**亮点**：\n- 分类: cs.AI, cs.CL\n- 作者数: 5",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 152.0,
+      "detail_path": "items/arxiv-selective-agent-guidance-via-entropy-learning-autonomous-policies-from-imperfect-vlm-teach.html",
+      "first_seen_at": "2026-09-02T04:23:41.045304+00:00",
+      "last_seen_at": "2026-09-02T04:23:41.045304+00:00",
+      "last_curated_at": "2026-09-02T04:23:41.045304+00:00",
       "last_notified_at": null
     },
     {
@@ -220,7 +445,7 @@
       "full_name": "K-Dense-AI/scientific-agent-skills",
       "html_url": "https://github.com/K-Dense-AI/scientific-agent-skills",
       "description": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 190,000+ scientists worldwide. 165 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard.",
-      "stars": 41551,
+      "stars": 41670,
       "stars_today": 0,
       "language": "Python",
       "topics": [],
@@ -234,7 +459,7 @@
       "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
       "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
       "highlights": [
-        "Stars: 41551",
+        "Stars: 41670",
         "语言: Python"
       ],
       "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
@@ -250,7 +475,7 @@
         "ai agent"
       ],
       "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：K-Dense-AI/scientific-agent-skills 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 190,000+ scientists worldwide. 165 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discove...结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 41551\n- 语言: Python",
+      "summary_markdown": "**摘要**：K-Dense-AI/scientific-agent-skills 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 190,000+ scientists worldwide. 165 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discove...结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 41670\n- 语言: Python",
       "focus_hits": [
         {
           "keyword": "agent",
@@ -258,11 +483,11 @@
         }
       ],
       "primary_match": "agent",
-      "personalized_score": 126.62,
+      "personalized_score": 126.67,
       "detail_path": "items/github-k-dense-ai-scientific-agent-skills.html",
       "first_seen_at": "2026-08-27T05:08:57.411314+00:00",
-      "last_seen_at": "2026-09-02T01:28:38.717462+00:00",
-      "last_curated_at": "2026-09-02T01:28:38.717462+00:00",
+      "last_seen_at": "2026-09-02T04:23:41.045304+00:00",
+      "last_curated_at": "2026-09-02T04:23:41.045304+00:00",
       "last_notified_at": null
     },
     {
@@ -277,7 +502,7 @@
       "full_name": "THU-MAIC/OpenMAIC",
       "html_url": "https://github.com/THU-MAIC/OpenMAIC",
       "description": "Open Multi-Agent Interactive Classroom — Get an immersive, multi-agent learning experience in just one click",
-      "stars": 29520,
+      "stars": 29740,
       "stars_today": 0,
       "language": "TypeScript",
       "topics": [],
@@ -291,7 +516,7 @@
       "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
       "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
       "highlights": [
-        "Stars: 29520",
+        "Stars: 29740",
         "语言: TypeScript"
       ],
       "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
@@ -303,7 +528,7 @@
         "agent"
       ],
       "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：THU-MAIC/OpenMAIC 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Open Multi-Agent Interactive Classroom — Get an immersive, multi-agent learning experience in just one click结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 29520\n- 语言: TypeScript",
+      "summary_markdown": "**摘要**：THU-MAIC/OpenMAIC 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Open Multi-Agent Interactive Classroom — Get an immersive, multi-agent learning experience in just one click结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 29740\n- 语言: TypeScript",
       "focus_hits": [
         {
           "keyword": "agent",
@@ -311,11 +536,11 @@
         }
       ],
       "primary_match": "agent",
-      "personalized_score": 121.81,
+      "personalized_score": 121.9,
       "detail_path": "items/github-thu-maic-openmaic.html",
       "first_seen_at": "2026-08-30T01:47:22.791389+00:00",
-      "last_seen_at": "2026-09-02T01:28:38.717462+00:00",
-      "last_curated_at": "2026-09-02T01:28:38.717462+00:00",
+      "last_seen_at": "2026-09-02T04:23:41.045304+00:00",
+      "last_curated_at": "2026-09-02T04:23:41.045304+00:00",
       "last_notified_at": null
     },
     {
@@ -330,7 +555,7 @@
       "full_name": "unclecode/crawl4ai",
       "html_url": "https://github.com/unclecode/crawl4ai",
       "description": "🚀🤖 Crawl4AI: Open-source LLM Friendly Web Crawler & Scraper. Don't be shy, join here: https://discord.gg/jP8KfhDhyN",
-      "stars": 80858,
+      "stars": 80923,
       "stars_today": 0,
       "language": "Python",
       "topics": [],
@@ -344,7 +569,7 @@
       "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
       "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
       "highlights": [
-        "Stars: 80858",
+        "Stars: 80923",
         "语言: Python"
       ],
       "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
@@ -358,14 +583,14 @@
         "llm"
       ],
       "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：unclecode/crawl4ai 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：🚀🤖 Crawl4AI: Open-source LLM Friendly Web Crawler & Scraper. Don't be shy, join here: https://discord.gg/jP8KfhDhyN结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 80858\n- 语言: Python",
+      "summary_markdown": "**摘要**：unclecode/crawl4ai 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：🚀🤖 Crawl4AI: Open-source LLM Friendly Web Crawler & Scraper. Don't be shy, join here: https://discord.gg/jP8KfhDhyN结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 80923\n- 语言: Python",
       "focus_hits": [],
       "primary_match": "",
       "personalized_score": 100.0,
       "detail_path": "items/github-unclecode-crawl4ai.html",
       "first_seen_at": "2026-08-31T01:41:28.149612+00:00",
-      "last_seen_at": "2026-09-02T01:28:38.717462+00:00",
-      "last_curated_at": "2026-09-02T01:28:38.717462+00:00",
+      "last_seen_at": "2026-09-02T04:23:41.045304+00:00",
+      "last_curated_at": "2026-09-02T04:23:41.045304+00:00",
       "last_notified_at": null
     },
     {
@@ -380,7 +605,7 @@
       "full_name": "jingyaogong/minimind",
       "html_url": "https://github.com/jingyaogong/minimind",
       "description": "🧠 Train a 64M-parameter LLM from scratch in just 2h!",
-      "stars": 57091,
+      "stars": 57253,
       "stars_today": 0,
       "language": "Python",
       "topics": [],
@@ -394,7 +619,7 @@
       "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
       "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
       "highlights": [
-        "Stars: 57091",
+        "Stars: 57253",
         "语言: Python"
       ],
       "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
@@ -408,14 +633,14 @@
         "llm"
       ],
       "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：jingyaogong/minimind 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：🧠 Train a 64M-parameter LLM from scratch in just 2h!结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 57091\n- 语言: Python",
+      "summary_markdown": "**摘要**：jingyaogong/minimind 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：🧠 Train a 64M-parameter LLM from scratch in just 2h!结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 57253\n- 语言: Python",
       "focus_hits": [],
       "primary_match": "",
       "personalized_score": 100.0,
       "detail_path": "items/github-jingyaogong-minimind.html",
       "first_seen_at": "2026-09-01T02:05:40.483105+00:00",
-      "last_seen_at": "2026-09-02T01:28:38.717462+00:00",
-      "last_curated_at": "2026-09-02T01:28:38.717462+00:00",
+      "last_seen_at": "2026-09-02T04:23:41.045304+00:00",
+      "last_curated_at": "2026-09-02T04:23:41.045304+00:00",
       "last_notified_at": null
     },
     {
@@ -430,7 +655,7 @@
       "full_name": "affaan-m/ECC",
       "html_url": "https://github.com/affaan-m/ECC",
       "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
-      "stars": 245775,
+      "stars": 245823,
       "stars_today": 0,
       "language": "JavaScript",
       "topics": [],
@@ -444,7 +669,7 @@
       "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
       "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
       "highlights": [
-        "Stars: 245775",
+        "Stars: 245823",
         "语言: JavaScript"
       ],
       "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
@@ -456,7 +681,7 @@
         "agent"
       ],
       "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：affaan-m/ECC 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 245775\n- 语言: JavaScript",
+      "summary_markdown": "**摘要**：affaan-m/ECC 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 245823\n- 语言: JavaScript",
       "focus_hits": [
         {
           "keyword": "agent",
@@ -467,8 +692,8 @@
       "personalized_score": 120.0,
       "detail_path": "items/github-affaan-m-ecc.html",
       "first_seen_at": "2026-07-29T01:13:34.068516+00:00",
-      "last_seen_at": "2026-09-02T01:28:38.717462+00:00",
-      "last_curated_at": "2026-09-02T01:28:38.717462+00:00",
+      "last_seen_at": "2026-09-02T04:23:41.045304+00:00",
+      "last_curated_at": "2026-09-02T04:23:41.045304+00:00",
       "last_notified_at": null
     },
     {
@@ -483,7 +708,7 @@
       "full_name": "VoltAgent/awesome-design-md",
       "html_url": "https://github.com/VoltAgent/awesome-design-md",
       "description": "A collection of DESIGN.md files analysis by popular brand design systems. Drop one into your project and let coding agents generate a matching UI.",
-      "stars": 112791,
+      "stars": 112995,
       "stars_today": 0,
       "language": "Unknown",
       "topics": [],
@@ -497,7 +722,7 @@
       "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
       "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
       "highlights": [
-        "Stars: 112791",
+        "Stars: 112995",
         "语言: Unknown"
       ],
       "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
@@ -511,7 +736,7 @@
         "coding agent"
       ],
       "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：VoltAgent/awesome-design-md 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：A collection of DESIGN.md files analysis by popular brand design systems. Drop one into your project and let coding agents generate a matching UI.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 112791\n- 语言: Unknown",
+      "summary_markdown": "**摘要**：VoltAgent/awesome-design-md 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：A collection of DESIGN.md files analysis by popular brand design systems. Drop one into your project and let coding agents generate a matching UI.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 112995\n- 语言: Unknown",
       "focus_hits": [
         {
           "keyword": "agent",
@@ -526,8 +751,8 @@
       "personalized_score": 146.0,
       "detail_path": "items/github-voltagent-awesome-design-md.html",
       "first_seen_at": "2026-09-02T01:28:38.717462+00:00",
-      "last_seen_at": "2026-09-02T01:28:38.717462+00:00",
-      "last_curated_at": "2026-09-02T01:28:38.717462+00:00",
+      "last_seen_at": "2026-09-02T04:23:41.045304+00:00",
+      "last_curated_at": "2026-09-02T04:23:41.045304+00:00",
       "last_notified_at": null
     },
     {
@@ -542,7 +767,7 @@
       "full_name": "browser-use/video-use",
       "html_url": "https://github.com/browser-use/video-use",
       "description": "Edit videos with coding agents",
-      "stars": 22962,
+      "stars": 23089,
       "stars_today": 0,
       "language": "Python",
       "topics": [],
@@ -556,7 +781,7 @@
       "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
       "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
       "highlights": [
-        "Stars: 22962",
+        "Stars: 23089",
         "语言: Python"
       ],
       "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
@@ -570,7 +795,7 @@
         "coding agent"
       ],
       "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：browser-use/video-use 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Edit videos with coding agents结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 22962\n- 语言: Python",
+      "summary_markdown": "**摘要**：browser-use/video-use 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Edit videos with coding agents结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 23089\n- 语言: Python",
       "focus_hits": [
         {
           "keyword": "agent",
@@ -582,11 +807,73 @@
         }
       ],
       "primary_match": "agent",
-      "personalized_score": 135.18,
+      "personalized_score": 135.24,
       "detail_path": "items/github-browser-use-video-use.html",
       "first_seen_at": "2026-09-02T01:28:38.717462+00:00",
-      "last_seen_at": "2026-09-02T01:28:38.717462+00:00",
-      "last_curated_at": "2026-09-02T01:28:38.717462+00:00",
+      "last_seen_at": "2026-09-02T04:23:41.045304+00:00",
+      "last_curated_at": "2026-09-02T04:23:41.045304+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "github::zeroa234/ryza-ai-revive",
+      "kind": "repo",
+      "source": "github",
+      "source_tags": [
+        "new"
+      ],
+      "name": "ryza-ai-revive",
+      "title": "zeroa234/ryza-ai-revive",
+      "full_name": "zeroa234/ryza-ai-revive",
+      "html_url": "https://github.com/zeroa234/ryza-ai-revive",
+      "description": "Offline fan-made Ryza AI companion. Bring your own LLM/TTS. 离线同人莱莎 AI 陪伴，自填大模型与语音。",
+      "stars": 8,
+      "stars_today": 0,
+      "language": "JavaScript",
+      "topics": [
+        "android",
+        "chatbot",
+        "electron",
+        "html",
+        "javascript",
+        "llm",
+        "nsfw",
+        "offline",
+        "spine",
+        "tts",
+        "webgl"
+      ],
+      "created_at": "2026-09-02T00:52:18+00:00",
+      "updated_at": "2026-09-02T04:15:53+00:00",
+      "heuristic_score": 6.416,
+      "summary": "zeroa234/ryza-ai-revive 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Offline fan-made Ryza AI companion. Bring your own LLM/TTS. 离线同人莱莎 AI 陪伴，自填大模型与语音。结合关键词命中和热度信号，它适合加入今日重点观察列表。",
+      "brief": "这是一个值得快速关注的开源 AI 项目。",
+      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
+      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
+      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
+      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
+      "highlights": [
+        "Stars: 8",
+        "语言: JavaScript"
+      ],
+      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
+      "relevance_score": 5,
+      "tags": [
+        "ai",
+        "llm"
+      ],
+      "themes": [
+        "ai",
+        "llm"
+      ],
+      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
+      "summary_markdown": "**摘要**：zeroa234/ryza-ai-revive 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Offline fan-made Ryza AI companion. Bring your own LLM/TTS. 离线同人莱莎 AI 陪伴，自填大模型与语音。结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：5/10\n\n**亮点**：\n- Stars: 8\n- 语言: JavaScript",
+      "focus_hits": [],
+      "primary_match": "",
+      "personalized_score": 50.0,
+      "detail_path": "items/github-zeroa234-ryza-ai-revive.html",
+      "first_seen_at": "2026-09-02T04:23:41.045304+00:00",
+      "last_seen_at": "2026-09-02T04:23:41.045304+00:00",
+      "last_curated_at": "2026-09-02T04:23:41.045304+00:00",
       "last_notified_at": null
     },
     {
@@ -12932,330 +13219,13 @@
       "last_seen_at": "2026-08-05T03:28:06.894815+00:00",
       "last_curated_at": "2026-08-05T03:28:06.894815+00:00",
       "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2608.03979v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "Video-DeepResearch: Towards the Next-Generation Multimodal Deepresearch Agent",
-      "html_url": "http://arxiv.org/abs/2608.03979v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.03979v1",
-      "description": "We introduce Video-DeepResearch (Video-DR), extending multimodal agents from static images to continuous video streams, a setting that demands dense spatiotemporal grounding coupled with open-web exploration. Preliminary evaluations reveal two critical bottlenecks in current models: (1) modality bias, where agents bypass visual tools in favor of textual search, and (2) parametric knowledge leakage, where models rely on internal memory rather than genuine tool-augmented execution. To address these challenges, we propose Video-DR, featuring a decoupled perception-exploration pipeline with stage-wise tool unlocking that compels exhaustive cross-frame visual grounding prior to web retrieval. Our framework adopts a two-stage training recipe: supervised fine-tuning followed by Group Relative Policy Optimization (GRPO), enabling autonomous exploration that breaks the imitation-learning ceiling. Furthermore, we curate Video-DR-Bench, a human-AI collaborative benchmark comprising 200 complex, multi-hop VQA instances. Empirical results demonstrate that our Video-DeepResearch-35B-A3B establishes a new state-of-the-art of 64.0% average accuracy, surpassing proprietary Claude-4.5-Sonnet (59.0%) by 5.0 points and significantly outperforming GPT-5 (52.5%) and Gemini 2.5 Pro (57.5%). The 30B-A3B variant achieves 59.3%, competitive with Claude-4.5-Sonnet and demonstrating the effectiveness of our training paradigm even at compact scale. Code: https://github.com/Osilly/Vision-DeepResearch.",
-      "authors": [
-        "Zhen Fang",
-        "Yu Zeng",
-        "Wenxuan Huang",
-        "Yiming Zhao",
-        "Shiting Huang",
-        "Tianfei Ren",
-        "Qi Lu",
-        "Qingnan Ren",
-        "Qisheng Su",
-        "Lionel Z. Wang",
-        "Qingyu Yin",
-        "Shuang Chen",
-        "Zehui Chen",
-        "Lin Chen",
-        "Zhenfei Yin",
-        "Yao Hu",
-        "Shaohui Lin",
-        "Wanli Ouyang",
-        "Shaosheng Cao",
-        "Feng Zhao"
-      ],
-      "categories": [
-        "cs.CV",
-        "cs.AI"
-      ],
-      "published_at": "2026-08-04T17:45:16+00:00",
-      "updated_at": "2026-08-04T17:45:16+00:00",
-      "primary_category": "cs.CV",
-      "heuristic_score": 22.57,
-      "summary": "Video-DeepResearch: Towards the Next-Generation Multimodal Deepresearch Agent 是最近值得追踪的一篇 AI 论文。论文摘要显示：We introduce Video-DeepResearch (Video-DR), extending multimodal agents from static images to continuous video streams, a setting that demands dense spatiotemporal grounding coupled with open-web exploration. Preliminary evaluations reveal ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CV, cs.AI",
-        "作者数: 20"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "agent",
-        "gpt",
-        "rag"
-      ],
-      "themes": [
-        "ai",
-        "agent",
-        "gpt"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：Video-DeepResearch: Towards the Next-Generation Multimodal Deepresearch Agent 是最近值得追踪的一篇 AI 论文。论文摘要显示：We introduce Video-DeepResearch (Video-DR), extending multimodal agents from static images to continuous video streams, a setting that demands dense spatiotemporal grounding coupled with open-web exploration. Preliminary evaluations reveal ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV, cs.AI\n- 作者数: 20",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "multimodal",
-          "weight": 2.0
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 196.0,
-      "detail_path": "items/arxiv-video-deepresearch-towards-the-next-generation-multimodal-deepresearch-agent.html",
-      "first_seen_at": "2026-08-05T03:28:06.894815+00:00",
-      "last_seen_at": "2026-08-05T03:28:06.894815+00:00",
-      "last_curated_at": "2026-08-05T03:28:06.894815+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2608.04003v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "PAST-Bench: Benchmarking the Foundations of Recursive Self-Improvement in Personal Agents",
-      "html_url": "http://arxiv.org/abs/2608.04003v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.04003v1",
-      "description": "Recursive self-improvement requires agents to turn accumulated experience into better future behavior. Personal AI agents offer a concrete setting for studying this capability because they retain preferences, task histories, tool routines, and learned skills across sessions. Yet whether retained experience actually improves them over time has not been systematically tested. We introduce PAST-Bench, a benchmark designed to isolate this question. Each agent runs through ordered sequences of fresh-session tasks under matched conditions that turn retained experience on and off. It spans 26 scenarios and 204 episodes across memory, procedural reuse, information gathering, and update. We report both later-task gains and whether those gains follow the intended save, retrieve, and update pathway. Across seven base models and four agent frameworks, improvement is real but uneven across capabilities. Agents with the same headline gain can differ markedly in whether that gain is supported by evidence of the intended pathway. Guided by these findings, we develop Hermes+, which extends Hermes with five targeted interventions across stages of the agent loop. Hermes+ raises the average gain from retained experience and provides clearer pathway evidence, with its strongest improvement on tasks requiring outdated state to be replaced, although the effect remains capability- and model-dependent. Together, PAST-Bench and Hermes+ provide an evaluation and diagnostic foundation for studying how persistent agents can progress from retaining experience to systematically improving through it. Code: https://github.com/Gen-Verse/PAST-Bench",
-      "authors": [
-        "Shuhan Xue",
-        "Zixin Ding",
-        "Yichen Shen",
-        "Yinjie Wang",
-        "Zhenfei Yin",
-        "Yingcheng Wu",
-        "Yuxin Chen",
-        "Mengdi Wang",
-        "Ling Yang"
-      ],
-      "categories": [
-        "cs.CL"
-      ],
-      "published_at": "2026-08-04T17:58:05+00:00",
-      "updated_at": "2026-08-04T17:58:05+00:00",
-      "primary_category": "cs.CL",
-      "heuristic_score": 17.9,
-      "summary": "PAST-Bench: Benchmarking the Foundations of Recursive Self-Improvement in Personal Agents 是最近值得追踪的一篇 AI 论文。论文摘要显示：Recursive self-improvement requires agents to turn accumulated experience into better future behavior. Personal AI agents offer a concrete setting for studying this capability because they retain preferences, task histories, tool routines, ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CL",
-        "作者数: 9"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "agent",
-        "rag",
-        "model"
-      ],
-      "themes": [
-        "ai",
-        "agent",
-        "rag"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：PAST-Bench: Benchmarking the Foundations of Recursive Self-Improvement in Personal Agents 是最近值得追踪的一篇 AI 论文。论文摘要显示：Recursive self-improvement requires agents to turn accumulated experience into better future behavior. Personal AI agents offer a concrete setting for studying this capability because they retain preferences, task histories, tool routines, ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL\n- 作者数: 9",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 176.0,
-      "detail_path": "items/arxiv-past-bench-benchmarking-the-foundations-of-recursive-self-improvement-in-personal-agents.html",
-      "first_seen_at": "2026-08-05T03:28:06.894815+00:00",
-      "last_seen_at": "2026-08-05T03:28:06.894815+00:00",
-      "last_curated_at": "2026-08-05T03:28:06.894815+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2608.04001v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "Test-Time Scaling in Reasoning LLMs: Inference Regimes, Evaluation, and Reproducibility",
-      "html_url": "http://arxiv.org/abs/2608.04001v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.04001v1",
-      "description": "Large language models can solve substantially harder reasoning problems with more inference-time compute. The term \"test-time scaling,\" however, now covers diverse inference algorithms that extend deliberation along a single trajectory, sample completed candidates and aggregate them through voting or verification, or search over unfinished partial states. These algorithms differ in their statistical structure, compute accounting, and failure modes. Treating these procedures as interchangeable under a single scalar \"budget,\" or reporting accuracy without the inference protocol that produced it, makes results difficult to compare across studies. We develop a systematic account of test-time scaling along three axes. First, we formalize test-time scaling as budgeted inference over the implicit prefix tree of an autoregressive model and distinguish three structural regimes: single-trajectory sequential scaling, leaf-level scaling with terminal reduction, and prefix-level scaling. Second, we treat the evaluated object as the entire inference system and develop evaluation principles that separate end-to-end system performance from candidate-bank diagnostics. We introduce an evaluation profile whose coordinates and simple functionals recover or bound common repeated-sampling metrics, and prescribe protocol-matched reporting of compute and uncertainty. Third, we specify reproducibility requirements for inference protocols, distinguishing exact replay from distributional reproducibility and identifying the artifacts needed to support each. We also organize the open-weight reasoning ecosystem by model-side and interface mechanisms, apply these principles to broad-knowledge, symbolic-reasoning, and competition-mathematics benchmarks, and assemble over 2 billion full reasoning traces for release with progressively richer verifier and token-level signals.",
-      "authors": [
-        "Mohsen Hariri",
-        "Weicong Chen",
-        "Nahal Shahini",
-        "Vikash Singh",
-        "Kai Ye",
-        "Amirhossein Samandar",
-        "Debargha Ganguly",
-        "Sreehari Sankar",
-        "Yanyan Zhang",
-        "Shouren Wang",
-        "Jerry Peng",
-        "Biyao Zhang",
-        "Michael Hinczewski",
-        "Vipin Chaudhary"
-      ],
-      "categories": [
-        "cs.LG",
-        "cs.AI"
-      ],
-      "published_at": "2026-08-04T17:57:20+00:00",
-      "updated_at": "2026-08-04T17:57:20+00:00",
-      "primary_category": "cs.LG",
-      "heuristic_score": 17.9,
-      "summary": "Test-Time Scaling in Reasoning LLMs: Inference Regimes, Evaluation, and Reproducibility 是最近值得追踪的一篇 AI 论文。论文摘要显示：Large language models can solve substantially harder reasoning problems with more inference-time compute. The term \"test-time scaling,\" however, now covers diverse inference algorithms that extend deliberation along a single trajectory, sam...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.LG, cs.AI",
-        "作者数: 14"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "model",
-        "benchmark",
-        "inference"
-      ],
-      "themes": [
-        "ai",
-        "model",
-        "benchmark"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：Test-Time Scaling in Reasoning LLMs: Inference Regimes, Evaluation, and Reproducibility 是最近值得追踪的一篇 AI 论文。论文摘要显示：Large language models can solve substantially harder reasoning problems with more inference-time compute. The term \"test-time scaling,\" however, now covers diverse inference algorithms that extend deliberation along a single trajectory, sam...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.LG, cs.AI\n- 作者数: 14",
-      "focus_hits": [
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "inference",
-          "weight": 1.8
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "reasoning",
-      "personalized_score": 166.0,
-      "detail_path": "items/arxiv-test-time-scaling-in-reasoning-llms-inference-regimes-evaluation-and-reproducibility.html",
-      "first_seen_at": "2026-08-05T03:28:06.894815+00:00",
-      "last_seen_at": "2026-08-05T03:28:06.894815+00:00",
-      "last_curated_at": "2026-08-05T03:28:06.894815+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2608.04009v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "SocietyBench: Forecasting Counterfactual Social-World Evolution",
-      "html_url": "http://arxiv.org/abs/2608.04009v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.04009v1",
-      "description": "Large language models (LLMs), and the agents built on top of them, are now benchmarked heavily on whether they can finish a task -- fix a bug, drive a browser, operate a GUI. A complementary social ability, namely how well a model understands and forecasts the way real social events unfold, has barely been measured. We introduce SocietyBench, an end-to-end benchmark that takes a one-line event topic, collects Web news and social-media posts across five platforms, distills them into a date-indexed timeline that keeps factual events and a public-opinion layer separate, and then turns every cutoff date on that timeline into an audited bank of forecasting questions. Questions are scored on two orthogonal 100-point axes: probability calibration and temporal accuracy. Before any model sees a timeline, a three-phase procedure replaces every named entity and shifts every date by a per-event constant, turning a real arc into a counterfactual social world -- structurally identical to what happened, but stripped of the surface labels a model could match against pre-training memory. On five heterogeneous events and 125 prediction points in Chinese and English editions, the strongest of six frontier LLMs reaches only 75.0 out of 100, against a trivial anchor of 50. The two axes come apart: a model can be calibration-strong but time-weak, or the reverse. Three agent frameworks built on a shared base model fail to improve on that base, and two model-free heuristics trail every LLM. Per-event gaps reach 21.4 points on a single axis, which is our main argument for evaluating on several events rather than one. All anonymized timelines, question banks, ground truth, and scoring code are released.",
-      "authors": [
-        "Zhenran Wang",
-        "Zhonghan Bian",
-        "Jinsong Li",
-        "Zhangyang Qi"
-      ],
-      "categories": [
-        "cs.CL"
-      ],
-      "published_at": "2026-08-04T17:59:56+00:00",
-      "updated_at": "2026-08-04T17:59:56+00:00",
-      "primary_category": "cs.CL",
-      "heuristic_score": 17.9,
-      "summary": "SocietyBench: Forecasting Counterfactual Social-World Evolution 是最近值得追踪的一篇 AI 论文。论文摘要显示：Large language models (LLMs), and the agents built on top of them, are now benchmarked heavily on whether they can finish a task -- fix a bug, drive a browser, operate a GUI. A complementary social ability, namely how well a model understan...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CL",
-        "作者数: 4"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "llm",
-        "agent",
-        "model"
-      ],
-      "themes": [
-        "ai",
-        "llm",
-        "agent"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：SocietyBench: Forecasting Counterfactual Social-World Evolution 是最近值得追踪的一篇 AI 论文。论文摘要显示：Large language models (LLMs), and the agents built on top of them, are now benchmarked heavily on whether they can finish a task -- fix a bug, drive a browser, operate a GUI. A complementary social ability, namely how well a model understan...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL\n- 作者数: 4",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 154.0,
-      "detail_path": "items/arxiv-societybench-forecasting-counterfactual-social-world-evolution.html",
-      "first_seen_at": "2026-08-05T03:28:06.894815+00:00",
-      "last_seen_at": "2026-08-05T03:28:06.894815+00:00",
-      "last_curated_at": "2026-08-05T03:28:06.894815+00:00",
-      "last_notified_at": null
     }
   ],
   "digests": [
     {
       "date": "2026-09-02",
       "title": "AI Daily Digest · 2026-09-02",
-      "generated_at": "2026-09-02T09:28:31.980092+08:00",
+      "generated_at": "2026-09-02T12:23:23.112354+08:00",
       "notified_at": null,
       "repo_ids": [
         "github::VoltAgent/awesome-design-md",
@@ -13264,15 +13234,16 @@
         "github::THU-MAIC/OpenMAIC",
         "github::affaan-m/ECC",
         "github::jingyaogong/minimind",
-        "github::unclecode/crawl4ai"
+        "github::unclecode/crawl4ai",
+        "github::zeroa234/ryza-ai-revive"
       ],
       "paper_ids": [
+        "arxiv::http://arxiv.org/abs/2609.01600v1",
         "arxiv::http://arxiv.org/abs/2609.01117v1",
+        "arxiv::http://arxiv.org/abs/2609.01572v1",
         "arxiv::http://arxiv.org/abs/2609.01111v1",
-        "arxiv::http://arxiv.org/abs/2609.01148v1",
-        "arxiv::http://arxiv.org/abs/2609.01123v1",
-        "arxiv::http://arxiv.org/abs/2609.01073v1",
-        "arxiv::http://arxiv.org/abs/2609.01147v1"
+        "arxiv::http://arxiv.org/abs/2609.01567v1",
+        "arxiv::http://arxiv.org/abs/2609.01148v1"
       ],
       "digest_json": "data/digests/2026-09-02.json",
       "digest_markdown": "data/digests/2026-09-02.md"
@@ -16605,8 +16576,8 @@
     "weekly": {
       "label": "周报",
       "window_days": 7,
-      "generated_at": "2026-09-02T09:28:31.980092+08:00",
-      "count": 64,
+      "generated_at": "2026-09-02T12:23:23.112354+08:00",
+      "count": 58,
       "summary": "近 7 天里，最集中的主题是 ai、llm、agent。",
       "top_items": [
         {
@@ -16768,6 +16739,80 @@
           "first_seen_at": "2026-09-01T05:00:20.331101+00:00",
           "last_seen_at": "2026-09-01T05:00:20.331101+00:00",
           "last_curated_at": "2026-09-01T05:00:20.331101+00:00",
+          "last_notified_at": null
+        },
+        {
+          "id": "arxiv::http://arxiv.org/abs/2609.01600v1",
+          "kind": "paper",
+          "source": "arxiv",
+          "source_tags": [
+            "latest"
+          ],
+          "title": "CordisBench: Can Language Models Reason About Component Lifecycles in Dynamic Agent Harnesses?",
+          "html_url": "http://arxiv.org/abs/2609.01600v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.01600v1",
+          "description": "Dynamic agent harnesses let language models change the software that shapes their own execution. This flexibility brings a new reasoning burden: a local plugin change can propagate through dependencies and cleanup. We introduce CordisBench, a 1,200-question benchmark of this lifecycle reasoning. It combines a controlled formal setting with programs executed against Cordis, a runtime that manages component dependencies and cleanup, and asks models to identify affected components, predict state after a specified teardown order, determine which conditions hold under all or some orders, and choose reconfigurations that succeed when executed. Across these tasks, we evaluate three efficiency-oriented models at low reasoning effort with 2, 4, 8, 16, 24, or 32 relevant interactions, using deterministic task-specific scoring. Models usually handle small systems well but grow less reliable as more interactions become relevant, especially when predicting final state and when reasoning across teardown orders. Additional inference effort recovers marked gains for some models. The cost is nontrivial: on our 16-interaction subset, GPT-5.6 Luna uses nearly 3,000 reasoning tokens per question at medium effort. For these controlled instances, that cost is avoidable: an independent finite reference semantics agrees with Cordis execution on every observation and action outcome used for scoring across all 528 executable questions.",
+          "authors": [
+            "Damien Sileo",
+            "Dimitri Kachler"
+          ],
+          "categories": [
+            "cs.CL",
+            "cs.AI"
+          ],
+          "published_at": "2026-09-01T17:59:13+00:00",
+          "updated_at": "2026-09-01T17:59:13+00:00",
+          "primary_category": "cs.CL",
+          "heuristic_score": 20.091,
+          "summary": "CordisBench: Can Language Models Reason About Component Lifecycles in Dynamic Agent Harnesses? 是最近值得追踪的一篇 AI 论文。论文摘要显示：Dynamic agent harnesses let language models change the software that shapes their own execution. This flexibility brings a new reasoning burden: a local plugin change can propagate through dependencies and cleanup. We introduce CordisBench,...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+          "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+          "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+          "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+          "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+          "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+          "highlights": [
+            "分类: cs.CL, cs.AI",
+            "作者数: 2"
+          ],
+          "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+          "relevance_score": 10,
+          "tags": [
+            "ai",
+            "agent",
+            "gpt",
+            "model"
+          ],
+          "themes": [
+            "ai",
+            "agent",
+            "gpt"
+          ],
+          "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+          "summary_markdown": "**摘要**：CordisBench: Can Language Models Reason About Component Lifecycles in Dynamic Agent Harnesses? 是最近值得追踪的一篇 AI 论文。论文摘要显示：Dynamic agent harnesses let language models change the software that shapes their own execution. This flexibility brings a new reasoning burden: a local plugin change can propagate through dependencies and cleanup. We introduce CordisBench,...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL, cs.AI\n- 作者数: 2",
+          "focus_hits": [
+            {
+              "keyword": "agent",
+              "weight": 3.0
+            },
+            {
+              "keyword": "reasoning",
+              "weight": 2.4
+            },
+            {
+              "keyword": "inference",
+              "weight": 1.8
+            },
+            {
+              "keyword": "benchmark",
+              "weight": 1.6
+            }
+          ],
+          "primary_match": "agent",
+          "personalized_score": 196.0,
+          "detail_path": "items/arxiv-cordisbench-can-language-models-reason-about-component-lifecycles-in-dynamic-agent-harness.html",
+          "first_seen_at": "2026-09-02T04:23:41.045304+00:00",
+          "last_seen_at": "2026-09-02T04:23:41.045304+00:00",
+          "last_curated_at": "2026-09-02T04:23:41.045304+00:00",
           "last_notified_at": null
         },
         {
@@ -16999,157 +17044,6 @@
           "last_notified_at": null
         },
         {
-          "id": "arxiv::http://arxiv.org/abs/2608.23564v1",
-          "kind": "paper",
-          "source": "arxiv",
-          "source_tags": [
-            "latest"
-          ],
-          "title": "SWE Refactor Bench: Can Coding Agents Complete a Long-Horizon, Whole-Repository Stack Migration?",
-          "html_url": "http://arxiv.org/abs/2608.23564v1",
-          "pdf_url": "https://arxiv.org/pdf/2608.23564v1",
-          "description": "Modern software systems accumulate technical debt over decades of development, which makes migration expensive and largely manual. As coding agents become increasingly capable at bug fixing, can they autonomously perform such migrations? Existing benchmarks cannot answer this question because they evaluate only behavioural correctness, not whether the migration actually occurred. This leads an easy hack: agents copy the original implementation to make tests pass. We call this Blindness. To address this problem, we introduce SWE Refactor Bench, a benchmark comprising 20 whole-repository migrations, covering 4 kinds of technical debt. A three-stage evaluation protocol measures both migration completeness and behavioural correctness. (1) Migration Audit verifies that the migration occurred. (2) Behavioural Tests measure correctness with a fixed test suite. (3) Agentic Verification uses 6 independent coding agents to generate targeted tests for hidden behavioural differences. Across 520 runs from 8 frontier models and 26 model-effort configurations, only 28 of 520 runs ($5.4\\%$) pass all three stages, 13 of the 20 tasks receive no accepted solution, and the best model (claude-opus-5) scores $47.0/100$. Migration completeness and behavioural correctness are distinct abilities: a few runs preserve behaviour by skipping the migration and are stopped at Migration Audit; most attempt it and break behaviour, and are stopped at Behavioural Tests. Agents cannot deliver a perfect migration: among the 340 runs that pass Migration Audit, $58\\%$ reach $99\\%$ of the fixed checks, yet only $26\\%$ reach $100\\%$. Agent capability differs across migration categories: agents score $31.4$ on build toolchain rewrites but only $5.6$ on language rewrites. Together, these findings position SWE Refactor Bench as a rigorous testbed for developing coding agents for reliable whole-repository migrations.",
-          "authors": [
-            "Deyao Hong",
-            "Yizhe Chi",
-            "Wenyi Li",
-            "Xiaoqiu Wang",
-            "Mingju Gao",
-            "Kaisen Yang",
-            "Bingxiang He",
-            "Youjie Zheng",
-            "Calvin Xiao",
-            "Qinhuai Na"
-          ],
-          "categories": [
-            "cs.CL",
-            "cs.AI",
-            "cs.SE"
-          ],
-          "published_at": "2026-08-24T17:59:04+00:00",
-          "updated_at": "2026-08-24T17:59:04+00:00",
-          "primary_category": "cs.CL",
-          "heuristic_score": 17.9,
-          "summary": "SWE Refactor Bench: Can Coding Agents Complete a Long-Horizon, Whole-Repository Stack Migration? 是最近值得追踪的一篇 AI 论文。论文摘要显示：Modern software systems accumulate technical debt over decades of development, which makes migration expensive and largely manual. As coding agents become increasingly capable at bug fixing, can they autonomously perform such migrations? Ex...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-          "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-          "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-          "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-          "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-          "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-          "highlights": [
-            "分类: cs.CL, cs.AI",
-            "作者数: 10"
-          ],
-          "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-          "relevance_score": 10,
-          "tags": [
-            "ai",
-            "agent",
-            "agentic",
-            "model"
-          ],
-          "themes": [
-            "ai",
-            "agent",
-            "agentic"
-          ],
-          "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-          "summary_markdown": "**摘要**：SWE Refactor Bench: Can Coding Agents Complete a Long-Horizon, Whole-Repository Stack Migration? 是最近值得追踪的一篇 AI 论文。论文摘要显示：Modern software systems accumulate technical debt over decades of development, which makes migration expensive and largely manual. As coding agents become increasingly capable at bug fixing, can they autonomously perform such migrations? Ex...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL, cs.AI\n- 作者数: 10",
-          "focus_hits": [
-            {
-              "keyword": "agent",
-              "weight": 3.0
-            },
-            {
-              "keyword": "coding",
-              "weight": 2.6
-            },
-            {
-              "keyword": "benchmark",
-              "weight": 1.6
-            }
-          ],
-          "primary_match": "agent",
-          "personalized_score": 180.0,
-          "detail_path": "items/arxiv-swe-refactor-bench-can-coding-agents-complete-a-long-horizon-whole-repository-stack-migrat.html",
-          "first_seen_at": "2026-08-26T00:26:04.578914+00:00",
-          "last_seen_at": "2026-08-26T01:56:04.391159+00:00",
-          "last_curated_at": "2026-08-26T01:56:04.391159+00:00",
-          "last_notified_at": null
-        },
-        {
-          "id": "arxiv::http://arxiv.org/abs/2608.23493v1",
-          "kind": "paper",
-          "source": "arxiv",
-          "source_tags": [
-            "latest"
-          ],
-          "title": "SRPO: Self-Reflective Policy Optimization for Long-Horizon Reasoning",
-          "html_url": "http://arxiv.org/abs/2608.23493v1",
-          "pdf_url": "https://arxiv.org/pdf/2608.23493v1",
-          "description": "Self-reflection is a powerful mechanism for credit assignment in human learning, converting sparse outcome feedback into actionable guidance. However, its potential for post-training Large Language Models (LLMs) remains underexplored. We propose Self-Reflective Policy Optimization (SRPO), a framework that internalizes this capability. SRPO enables LLMs to analyze their own completed trajectories, synthesize errors into concise \"reflection patches,\" and use reflection-conditioned teacher scores on student on-policy rollouts as dense token-level training signals. This process effectively transforms sparse terminal supervision into dense, token-level learning signals without requiring external critics, separate reward models, or larger teacher models. We demonstrate that SRPO achieves state-of-the-art performance across mathematical reasoning and long-horizon agentic benchmarks with exceptional data efficiency. Using a Qwen3-8B base model, SRPO attains 73.3% on AIME'24 using only 8% (0.08x) of the training FLOPs required by scaled supervised fine-tuning, while significantly improving success rates on WebShop (64.7%), ALFWorld (76.8%), and SWE-Bench-Lite (31.2%). Code is available at https://github.com/Galleons2029/SRPO",
-          "authors": [
-            "Jialong Liu",
-            "Yuling Shi",
-            "Ning Yang",
-            "Xiaodong Gu",
-            "Zuchao Li"
-          ],
-          "categories": [
-            "cs.AI"
-          ],
-          "published_at": "2026-08-24T16:55:09+00:00",
-          "updated_at": "2026-08-24T16:55:09+00:00",
-          "primary_category": "cs.AI",
-          "heuristic_score": 22.244,
-          "summary": "SRPO: Self-Reflective Policy Optimization for Long-Horizon Reasoning 是最近值得追踪的一篇 AI 论文。论文摘要显示：Self-reflection is a powerful mechanism for credit assignment in human learning, converting sparse outcome feedback into actionable guidance. However, its potential for post-training Large Language Models (LLMs) remains underexplored. We pr...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-          "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-          "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-          "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-          "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-          "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-          "highlights": [
-            "分类: cs.AI",
-            "作者数: 5"
-          ],
-          "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-          "relevance_score": 10,
-          "tags": [
-            "ai",
-            "llm",
-            "agent",
-            "agentic"
-          ],
-          "themes": [
-            "ai",
-            "llm",
-            "agent"
-          ],
-          "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-          "summary_markdown": "**摘要**：SRPO: Self-Reflective Policy Optimization for Long-Horizon Reasoning 是最近值得追踪的一篇 AI 论文。论文摘要显示：Self-reflection is a powerful mechanism for credit assignment in human learning, converting sparse outcome feedback into actionable guidance. However, its potential for post-training Large Language Models (LLMs) remains underexplored. We pr...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI\n- 作者数: 5",
-          "focus_hits": [
-            {
-              "keyword": "agent",
-              "weight": 3.0
-            },
-            {
-              "keyword": "reasoning",
-              "weight": 2.4
-            },
-            {
-              "keyword": "benchmark",
-              "weight": 1.6
-            }
-          ],
-          "primary_match": "agent",
-          "personalized_score": 178.0,
-          "detail_path": "items/arxiv-srpo-self-reflective-policy-optimization-for-long-horizon-reasoning.html",
-          "first_seen_at": "2026-08-26T00:26:04.578914+00:00",
-          "last_seen_at": "2026-08-26T01:56:04.391159+00:00",
-          "last_curated_at": "2026-08-26T01:56:04.391159+00:00",
-          "last_notified_at": null
-        },
-        {
           "id": "arxiv::http://arxiv.org/abs/2608.26091v1",
           "kind": "paper",
           "source": "arxiv",
@@ -17225,6 +17119,76 @@
           "last_seen_at": "2026-08-27T09:36:21.360226+00:00",
           "last_curated_at": "2026-08-27T09:36:21.360226+00:00",
           "last_notified_at": null
+        },
+        {
+          "id": "arxiv::http://arxiv.org/abs/2609.01117v1",
+          "kind": "paper",
+          "source": "arxiv",
+          "source_tags": [
+            "latest"
+          ],
+          "title": "Latent Recurrent Thoughts: Recurrent Refinement of Proposed Latents for Reasoning with Frozen LLMs",
+          "html_url": "http://arxiv.org/abs/2609.01117v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.01117v1",
+          "description": "Chain-of-thought reasoning unfolds in discrete token space: each step is committed as text, errors propagate, and eliciting good traces presupposes traces to imitate. Reasoning instead in a model's continuous representation space - where intermediate states are vectors rather than words - sidesteps these constraints, but leaves open how those latent states should be computed. We approach this along two axes. First, we keep a large language model (LLM) frozen and use it for what it is already good at - modeling and decoding sequences - while a small auxiliary network supplies continuous latent thoughts as input. Second, we produce those latents by recurrence: a tiny recurrent reasoner refines them over many steps, decoupling the depth of computation from the size of the model, so that the latents are a product of iterative processing rather than a single forward pass. We instantiate this as Latent Recurrent Thoughts (LRT): a task-dedicated proposer supplies base latents, a recurrent reasoner refines them through bounded residual corrections, and the frozen LLM decodes the answer. On symbolic reasoning with answer supervision but no reasoning traces (Countdown-4, Sudoku) and on natural-language reasoning (HumanEval, MBPP, StrategyQA), LRT substantially outperforms prior frozen-decoder continuous-space reasoning methods under an identical decoder, prompt, data, and training budget, and outperforms non-thinking-mode chain-of-thought prompting on the same backbone at a small fraction of its inference compute.",
+          "authors": [
+            "Zhaoliang Chen",
+            "Jie Fu"
+          ],
+          "categories": [
+            "cs.AI",
+            "cs.CL"
+          ],
+          "published_at": "2026-09-01T11:56:17+00:00",
+          "updated_at": "2026-09-01T11:56:17+00:00",
+          "primary_category": "cs.AI",
+          "heuristic_score": 17.811,
+          "summary": "Latent Recurrent Thoughts: Recurrent Refinement of Proposed Latents for Reasoning with Frozen LLMs 是最近值得追踪的一篇 AI 论文。论文摘要显示：Chain-of-thought reasoning unfolds in discrete token space: each step is committed as text, errors propagate, and eliciting good traces presupposes traces to imitate. Reasoning instead in a model's continuous representation space - where in...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+          "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+          "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+          "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+          "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+          "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+          "highlights": [
+            "分类: cs.AI, cs.CL",
+            "作者数: 2"
+          ],
+          "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+          "relevance_score": 10,
+          "tags": [
+            "ai",
+            "llm",
+            "model",
+            "inference"
+          ],
+          "themes": [
+            "ai",
+            "llm",
+            "model"
+          ],
+          "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+          "summary_markdown": "**摘要**：Latent Recurrent Thoughts: Recurrent Refinement of Proposed Latents for Reasoning with Frozen LLMs 是最近值得追踪的一篇 AI 论文。论文摘要显示：Chain-of-thought reasoning unfolds in discrete token space: each step is committed as text, errors propagate, and eliciting good traces presupposes traces to imitate. Reasoning instead in a model's continuous representation space - where in...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI, cs.CL\n- 作者数: 2",
+          "focus_hits": [
+            {
+              "keyword": "coding",
+              "weight": 2.6
+            },
+            {
+              "keyword": "reasoning",
+              "weight": 2.4
+            },
+            {
+              "keyword": "inference",
+              "weight": 1.8
+            }
+          ],
+          "primary_match": "coding",
+          "personalized_score": 176.0,
+          "detail_path": "items/arxiv-latent-recurrent-thoughts-recurrent-refinement-of-proposed-latents-for-reasoning-with-froz.html",
+          "first_seen_at": "2026-09-02T01:28:38.717462+00:00",
+          "last_seen_at": "2026-09-02T04:23:41.045304+00:00",
+          "last_curated_at": "2026-09-02T04:23:41.045304+00:00",
+          "last_notified_at": null
         }
       ],
       "top_themes": [
@@ -17253,16 +17217,16 @@
           "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
         },
         {
-          "title": "Osmantic/ODS",
-          "source": "github",
-          "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。"
+          "title": "CordisBench: Can Language Models Reason About Component Lifecycles in Dynamic Agent Harnesses?",
+          "source": "arxiv",
+          "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
         }
       ]
     },
     "monthly": {
       "label": "月报",
       "window_days": 30,
-      "generated_at": "2026-09-02T09:28:31.980092+08:00",
+      "generated_at": "2026-09-02T12:23:23.112354+08:00",
       "count": 200,
       "summary": "近 30 天里，最集中的主题是 ai、agent、llm。",
       "top_items": [
