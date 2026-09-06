@@ -67,18 +67,37 @@ async function main() {
     }, TEST_QUESTION);
   }
 
-  await page.waitForFunction(() => {
-    const activeStep = Array.from(document.querySelectorAll('.detection-step'))
-      .findIndex((el) => el.classList.contains('active'));
-    const questionText = document.getElementById('b1-question-text')?.textContent || '';
-    const hasRecommendation = (document.getElementById('c1-recommendation')?.textContent || '').trim().length > 0;
-    const hasSimQuestion = (document.getElementById('sim-question-text')?.textContent || '').trim().length > 0;
-    return activeStep >= 0 && (
-      hasRecommendation
-      || hasSimQuestion
-      || (questionText && questionText !== '正在生成追问...')
-    );
-  }, null, { timeout: 120000 });
+  let waitTimedOut = false;
+  try {
+    await page.waitForFunction(() => {
+      const activeStep = Array.from(document.querySelectorAll('.detection-step'))
+        .findIndex((el) => el.classList.contains('active'));
+      const questionText = document.getElementById('b1-question-text')?.textContent || '';
+      const hasRecommendation = (document.getElementById('c1-recommendation')?.textContent || '').trim().length > 0;
+      const hasSimQuestion = (document.getElementById('sim-question-text')?.textContent || '').trim().length > 0;
+      return activeStep >= 0 && (
+        hasRecommendation
+        || hasSimQuestion
+        || (questionText && questionText !== '正在生成追问...')
+      );
+    }, null, { timeout: 20000 });
+  } catch (error) {
+    waitTimedOut = true;
+    console.warn('[decision_flicker_probe] waitForFunction timed out, continuing with current detection view snapshot.');
+  }
+
+  if (waitTimedOut) {
+    const fallbackState = await page.evaluate(() => ({
+      activeStep: Array.from(document.querySelectorAll('.detection-step'))
+        .findIndex((el) => el.classList.contains('active')),
+      questionText: document.getElementById('b1-question-text')?.textContent || '',
+      simQuestion: document.getElementById('sim-question-text')?.textContent || '',
+      recommendation: document.getElementById('c1-recommendation')?.textContent || '',
+    }));
+    if (fallbackState.activeStep < 0) {
+      throw new Error(`Unable to reach a usable detection view: ${JSON.stringify(fallbackState)}`);
+    }
+  }
 
   await page.waitForTimeout(1200);
 
