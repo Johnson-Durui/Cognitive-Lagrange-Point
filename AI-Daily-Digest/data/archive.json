@@ -1,6 +1,419 @@
 {
-  "generated_at": "2026-09-09T01:37:49.338178+00:00",
+  "generated_at": "2026-09-09T04:34:19.847507+00:00",
   "items": [
+    {
+      "id": "arxiv::http://arxiv.org/abs/2609.09133v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "ExecCritic: Learn to Test, Test to Improve for Coding Agents",
+      "html_url": "http://arxiv.org/abs/2609.09133v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.09133v1",
+      "description": "Execution feedback can guide coding agents toward correct repository repairs, but only when the tests capture the behavior requested by the issue. Agent-generated tests can encode incomplete or incorrect behavioral targets; when the same trajectory writes both the patch and the test, their errors can agree and create false confidence. We introduce ExecCritic, combining a test--verify--revise scaffold with a role-specific reinforcement learning recipe for training agents within it. The scaffold separates test construction from source-code repair: a Test agent independently generates repository-native tests, a fail-closed harness qualifies and freezes them, and a Repair agent revises source code from their execution feedback without changing the tests. Both roles use Qwen-3.5-35B-A3B as the backbone and are trained separately. In Learn to Test, the Test agent learns to produce behaviorally valid tests that distinguish correct from incorrect patches. In Test to Improve, the Repair agent learns both direct task resolution and feedback-guided revision. On SWE-bench Verified, test quality determines whether feedback helps: holding the base Repair agent fixed, tests from the base Test agent reduce resolved rate from a no-test baseline of 61.2% to 57.3%, whereas tests from GPT-5.6-sol raise it to 65.3%. Role-specific post-training raises the Qwen Test agent's Base-to-Gold success from 22.2% to 62.2%; composing the two post-trained Qwen agents reaches 72.6%, an 11.4-point gain over the original no-test baseline without stronger-model or Oracle feedback at evaluation time. Code is publicly available at https://github.com/MSR-Orchard/execcritic.",
+      "authors": [
+        "Leitian Tao",
+        "Baolin Peng",
+        "Haorui Wang",
+        "Hang Wang",
+        "Hao Cheng",
+        "Wenlin Yao",
+        "Qianhui Wu",
+        "Tao Ge",
+        "Sharon Li",
+        "Jianfeng Gao"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.SE"
+      ],
+      "published_at": "2026-09-08T17:53:37+00:00",
+      "updated_at": "2026-09-08T17:53:37+00:00",
+      "primary_category": "cs.AI",
+      "heuristic_score": 17.9,
+      "summary": "ExecCritic: Learn to Test, Test to Improve for Coding Agents 是最近值得追踪的一篇 AI 论文。论文摘要显示：Execution feedback can guide coding agents toward correct repository repairs, but only when the tests capture the behavior requested by the issue. Agent-generated tests can encode incomplete or incorrect behavioral targets; when the same tr...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.AI, cs.CL",
+        "作者数: 10"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "agent",
+        "gpt",
+        "model"
+      ],
+      "themes": [
+        "ai",
+        "agent",
+        "gpt"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：ExecCritic: Learn to Test, Test to Improve for Coding Agents 是最近值得追踪的一篇 AI 论文。论文摘要显示：Execution feedback can guide coding agents toward correct repository repairs, but only when the tests capture the behavior requested by the issue. Agent-generated tests can encode incomplete or incorrect behavioral targets; when the same tr...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI, cs.CL\n- 作者数: 10",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "coding",
+          "weight": 2.6
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 164.0,
+      "detail_path": "items/arxiv-execcritic-learn-to-test-test-to-improve-for-coding-agents.html",
+      "first_seen_at": "2026-09-09T04:34:19.847507+00:00",
+      "last_seen_at": "2026-09-09T04:34:19.847507+00:00",
+      "last_curated_at": "2026-09-09T04:34:19.847507+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2609.09153v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Procedural Graphs: Self-Evolving Execution Structures for LLM Agents",
+      "html_url": "http://arxiv.org/abs/2609.09153v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.09153v1",
+      "description": "Large language models are increasingly deployed as agents that plan over long horizons and act through external tools. Most agents select actions through unconstrained generation over an accumulating history, leaving implicit the procedural knowledge of what to do, in what order, and under which conditions. As trajectories lengthen, agents can lose track of their objectives, invoke tools out of order, and repeat unproductive actions. We introduce the Procedural Graph: just as a knowledge graph organizes factual knowledge into (entity, relation, entity) triplets for what-is questions, a Procedural Graph organizes procedural knowledge into (procedure, relation, procedure) triplets for what-to-do questions. At each decision step, the framework localizes the agent's active node, and a guidance model translates the surrounding subgraph into step-level situational guidance that biases the solver's next action without dictating it. The graph is self-evolving: an LLM refiner contrasts failed trajectories with successful ones and edits the graph's topology and attributes, committing edits that preserve or improve held-out validation performance while retaining rejected ones to discourage repetition. Starting from a minimal skeleton, the loop builds graphs that match or surpass hand-designed ones. It can also repair a flawed expert prior. Across multiple datasets, task types, and LLMs, the Procedural Graph delivers consistent gains over memory-based baselines, and self-evolution further improves performance without manual engineering.",
+      "authors": [
+        "Yuxing Lu",
+        "Yicheng Chen",
+        "Shanchan Wu",
+        "Sercan Ö. Arık"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.MA"
+      ],
+      "published_at": "2026-09-08T17:59:41+00:00",
+      "updated_at": "2026-09-08T17:59:41+00:00",
+      "primary_category": "cs.AI",
+      "heuristic_score": 15.438,
+      "summary": "Procedural Graphs: Self-Evolving Execution Structures for LLM Agents 是最近值得追踪的一篇 AI 论文。论文摘要显示：Large language models are increasingly deployed as agents that plan over long horizons and act through external tools. Most agents select actions through unconstrained generation over an accumulating history, leaving implicit the procedural...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.AI, cs.CL",
+        "作者数: 4"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 9,
+      "tags": [
+        "ai",
+        "llm",
+        "agent",
+        "rag"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "agent"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：Procedural Graphs: Self-Evolving Execution Structures for LLM Agents 是最近值得追踪的一篇 AI 论文。论文摘要显示：Large language models are increasingly deployed as agents that plan over long horizons and act through external tools. Most agents select actions through unconstrained generation over an accumulating history, leaving implicit the procedural...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：9/10\n\n**亮点**：\n- 分类: cs.AI, cs.CL\n- 作者数: 4",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 150.0,
+      "detail_path": "items/arxiv-procedural-graphs-self-evolving-execution-structures-for-llm-agents.html",
+      "first_seen_at": "2026-09-09T04:34:19.847507+00:00",
+      "last_seen_at": "2026-09-09T04:34:19.847507+00:00",
+      "last_curated_at": "2026-09-09T04:34:19.847507+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2609.09134v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Co-Evolving Harnesses and Models: On-Policy Correction Helps Weaker Models Catch Up Where Imitation Fails",
+      "html_url": "http://arxiv.org/abs/2609.09134v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.09134v1",
+      "description": "Agent harnesses (the system prompt, tool set, execution hooks, and context-management scaffolding around a model) are a critical determinant of agentic task success. Automated harness evolution can enable smaller models to perform well on domain-specific tasks at a fraction of frontier-model cost. Since both the harness and model weights shape behavior, we ask how harness evolution and lightweight fine-tuning should be combined. Across seven enterprise agent tasks, we first evolve a harness with the weaker model, then find that a stronger expert often uses it more effectively, suggesting expert supervision could close the remaining gap. However, training the weaker model on the expert's complete trajectories under the evolved harness backfires: performance regresses on all seven tasks by 4 to 30 points across Qwen3-Coder and Gemma 4, even though the same procedure helps under the unevolved harness. Our analysis shows that imitation transfers knowledge and increases scaffold usage, but disrupts model-harness fit: the weaker model adopts the expert's planning strategy without the competence to execute it and no longer matches the harness evolved around its native planning style. We therefore develop an on-policy expert-correction pipeline, automated by a meta-level MLE agent, that localizes the failing turn in the weaker model's own rollout and asks the expert to rewrite only that turn. This preserves the model's planning style and combines the gains of harness evolution and model adaptation. Our results identify and resolve a source of contention between harness and weight updates, yielding a compatibility-preserving recipe for economical co-evolution on domain-specific enterprise tasks.",
+      "authors": [
+        "Zhou Yu",
+        "Bin Bi",
+        "Shiva Kumar Pentyala",
+        "Shubham Mehrotra",
+        "Sougata Chaudhuri",
+        "Shilpa Bhagavath",
+        "Zeyuan Chen",
+        "Ran Xu",
+        "Phil Mui",
+        "James Zhu",
+        "Sitaram Asur"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "published_at": "2026-09-08T17:53:49+00:00",
+      "updated_at": "2026-09-08T17:53:49+00:00",
+      "primary_category": "cs.AI",
+      "heuristic_score": 15.5,
+      "summary": "Co-Evolving Harnesses and Models: On-Policy Correction Helps Weaker Models Catch Up Where Imitation Fails 是最近值得追踪的一篇 AI 论文。论文摘要显示：Agent harnesses (the system prompt, tool set, execution hooks, and context-management scaffolding around a model) are a critical determinant of agentic task success. Automated harness evolution can enable smaller models to perform well on d...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.AI",
+        "作者数: 11"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 9,
+      "tags": [
+        "ai",
+        "agent",
+        "agentic",
+        "model"
+      ],
+      "themes": [
+        "ai",
+        "agent",
+        "agentic"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：Co-Evolving Harnesses and Models: On-Policy Correction Helps Weaker Models Catch Up Where Imitation Fails 是最近值得追踪的一篇 AI 论文。论文摘要显示：Agent harnesses (the system prompt, tool set, execution hooks, and context-management scaffolding around a model) are a critical determinant of agentic task success. Automated harness evolution can enable smaller models to perform well on d...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：9/10\n\n**亮点**：\n- 分类: cs.AI\n- 作者数: 11",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 128.0,
+      "detail_path": "items/arxiv-co-evolving-harnesses-and-models-on-policy-correction-helps-weaker-models-catch-up-where-i.html",
+      "first_seen_at": "2026-09-09T04:34:19.847507+00:00",
+      "last_seen_at": "2026-09-09T04:34:19.847507+00:00",
+      "last_curated_at": "2026-09-09T04:34:19.847507+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2609.09113v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "SAEScientist-Bench: Can AI Agents Conduct Autonomous SAE Interpretability Research?",
+      "html_url": "http://arxiv.org/abs/2609.09113v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.09113v1",
+      "description": "While research on recursive self-improvement (RSI) has predominantly automated model training pipelines, reliable autonomous development demands a missing pillar: post-hoc monitoring and auditing to understand what models learn and ensure safe alignment. Mechanistic interpretability tools are essential to bridge this gap, among which Sparse Autoencoders (SAEs) serve as a cornerstone by isolating interpretable features for model inspection and steering. In this paper, we introduce SAEScientist-Bench to evaluate whether AI agents can act as scientists utilizing SAE tools for autonomous mechanistic discovery. Given a target concept, an agent designs contrastive probes and navigates a Gemma Scope dictionary of 131K+ features in Gemma-2-9B-IT to discover the optimal feature, evaluated against curated expert reference features anchored on Neuronpedia across activation rank, concept selectivity on contrastive texts, and causal steering. Across 10 agent configurations and 20 tasks, frontier agents demonstrate genuine discovery capabilities and lead different evaluation dimensions, but remain well behind the expert baseline, approaching expert levels on separating target concepts from contrastive controls while lagging substantially in causal generation steering. Further analysis reveals that although agents can design contrasts to rule out spurious candidates, they frequently misinterpret experimental measurements. These results establish experimental model understanding as a measurable capability for closed-loop autonomous AI R&D. Our code is available at https://github.com/Trae1ounG/SAEScientist.",
+      "authors": [
+        "Yuqiao Tan",
+        "Shizhu He",
+        "Jun Zhao",
+        "Kang Liu"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "published_at": "2026-09-08T17:45:09+00:00",
+      "updated_at": "2026-09-08T17:45:09+00:00",
+      "primary_category": "cs.AI",
+      "heuristic_score": 15.5,
+      "summary": "SAEScientist-Bench: Can AI Agents Conduct Autonomous SAE Interpretability Research? 是最近值得追踪的一篇 AI 论文。论文摘要显示：While research on recursive self-improvement (RSI) has predominantly automated model training pipelines, reliable autonomous development demands a missing pillar: post-hoc monitoring and auditing to understand what models learn and ensure s...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.AI, cs.CL",
+        "作者数: 4"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 9,
+      "tags": [
+        "ai",
+        "agent",
+        "model",
+        "training"
+      ],
+      "themes": [
+        "ai",
+        "agent",
+        "model"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：SAEScientist-Bench: Can AI Agents Conduct Autonomous SAE Interpretability Research? 是最近值得追踪的一篇 AI 论文。论文摘要显示：While research on recursive self-improvement (RSI) has predominantly automated model training pipelines, reliable autonomous development demands a missing pillar: post-hoc monitoring and auditing to understand what models learn and ensure s...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：9/10\n\n**亮点**：\n- 分类: cs.AI, cs.CL\n- 作者数: 4",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 128.0,
+      "detail_path": "items/arxiv-saescientist-bench-can-ai-agents-conduct-autonomous-sae-interpretability-research.html",
+      "first_seen_at": "2026-09-09T04:34:19.847507+00:00",
+      "last_seen_at": "2026-09-09T04:34:19.847507+00:00",
+      "last_curated_at": "2026-09-09T04:34:19.847507+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2609.09123v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Mask Forcing: Improving Autoregressive Video Diffusion Distillation via Dual-Noise Masking Rollout",
+      "html_url": "http://arxiv.org/abs/2609.09123v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.09123v1",
+      "description": "Autoregressive (AR) video diffusion models have shown great potential in real-time video generation. Recent methods distill pretrained bidirectional video diffusion models into causal AR students through Distribution Matching Distillation (DMD), but the generated videos often suffer from over-saturation and over-smoothing issues, resulting in limited visual quality and realism. The key contributing factor is the mode-seeking behavior of the reverse KL objective in DMD, which can cause the student distribution to collapse onto only a few modes of the teacher distribution. To address this, we propose Mask Forcing, a Dual-Noise Masking Rollout strategy that perturbs the AR student self-rollout to mitigate mode collapse induced by reverse-KL mode seeking. The core idea is to inject cleaner signals into noisy rollout inputs via random masks along spatial and temporal axes during the self-rollout process of AR diffusion distillation. Such perturbations encourage the student rollouts to explore more regions of the teacher distribution, allowing DMD to provide learning signals beyond the modes already covered by the student. Moreover, the cleaner tokens act as denoising guidance for other noisier tokens, improving the intermediate rollout predictions and reducing error accumulation. Extensive experiments demonstrate that our method improves multiple AR video diffusion distillation methods with higher visual quality efficiently, without incorporating real video data or additional post-training stages.",
+      "authors": [
+        "Zhuoran Zhao",
+        "Shengju Qian",
+        "Tongtong Liang",
+        "Xianghao Kong",
+        "Songchun Zhang",
+        "Junchao Huang",
+        "Guian Fang",
+        "Xin Wang",
+        "Pan Hui",
+        "Anyi Rao"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "published_at": "2026-09-08T17:50:05+00:00",
+      "updated_at": "2026-09-08T17:50:05+00:00",
+      "primary_category": "cs.CV",
+      "heuristic_score": 15.396,
+      "summary": "Mask Forcing: Improving Autoregressive Video Diffusion Distillation via Dual-Noise Masking Rollout 是最近值得追踪的一篇 AI 论文。论文摘要显示：Autoregressive (AR) video diffusion models have shown great potential in real-time video generation. Recent methods distill pretrained bidirectional video diffusion models into causal AR students through Distribution Matching Distillation (...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CV",
+        "作者数: 10"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 9,
+      "tags": [
+        "ai",
+        "rag",
+        "diffusion",
+        "model"
+      ],
+      "themes": [
+        "ai",
+        "rag",
+        "diffusion"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：Mask Forcing: Improving Autoregressive Video Diffusion Distillation via Dual-Noise Masking Rollout 是最近值得追踪的一篇 AI 论文。论文摘要显示：Autoregressive (AR) video diffusion models have shown great potential in real-time video generation. Recent methods distill pretrained bidirectional video diffusion models into causal AR students through Distribution Matching Distillation (...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：9/10\n\n**亮点**：\n- 分类: cs.CV\n- 作者数: 10",
+      "focus_hits": [
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        }
+      ],
+      "primary_match": "rag",
+      "personalized_score": 120.0,
+      "detail_path": "items/arxiv-mask-forcing-improving-autoregressive-video-diffusion-distillation-via-dual-noise-masking-.html",
+      "first_seen_at": "2026-09-09T04:34:19.847507+00:00",
+      "last_seen_at": "2026-09-09T04:34:19.847507+00:00",
+      "last_curated_at": "2026-09-09T04:34:19.847507+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2609.09076v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "ActReview: Rebuttal-Guided Training Data and Rubric Rewards for Actionable Peer Review Generation",
+      "html_url": "http://arxiv.org/abs/2609.09076v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.09076v1",
+      "description": "As LLMs are increasingly used for pre-submission self-review, there is growing demand for feedback that not only identifies weaknesses but also guides authors toward concrete revisions. We study this as Actionable Peer-review Generation and decompose it into two subtasks: diagnostic claim generation and revision suggestion generation. We introduce ActReview, a rebuttal-guided post-training framework that connects paper-specific diagnoses to concrete, grounded revision plans. Our central insight is that author rebuttals reveal plausible actions for addressing reviewer concerns and can therefore provide latent supervision for revision-oriented feedback. From real review-rebuttal threads on OpenReview, we construct ActReview-40K by aligning reviewer weaknesses with author responses and grounding the resulting feedback in localized paper evidence. We post-train Qwen3-8B-Base with multi-task supervised fine-tuning followed by GRPO using candidate-aware, weakness-specific rubric rewards. We also introduce ActReview-Bench, a human-curated benchmark of 1,000 instances for evaluating diagnostic quality and revision usefulness. Experiments show that ActReview outperforms prior specialized review-generation models on actionability and grounding while remaining competitive with strong prompt-based LLMs. Human evaluation confirms improved revision usefulness while revealing a remaining gap in technical accuracy, and additional analyses support generalization to held-out papers and robustness across independent judges.",
+      "authors": [
+        "Yiling Ma",
+        "Yilun Zhao",
+        "Sihong Wu",
+        "Ziyu Chen",
+        "Manasi Patwardhan",
+        "Arman Cohan"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "published_at": "2026-09-08T17:30:16+00:00",
+      "updated_at": "2026-09-08T17:30:16+00:00",
+      "primary_category": "cs.CL",
+      "heuristic_score": 15.412,
+      "summary": "ActReview: Rebuttal-Guided Training Data and Rubric Rewards for Actionable Peer Review Generation 是最近值得追踪的一篇 AI 论文。论文摘要显示：As LLMs are increasingly used for pre-submission self-review, there is growing demand for feedback that not only identifies weaknesses but also guides authors toward concrete revisions. We study this as Actionable Peer-review Generation and...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CL",
+        "作者数: 6"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 9,
+      "tags": [
+        "ai",
+        "llm",
+        "model",
+        "benchmark"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "model"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：ActReview: Rebuttal-Guided Training Data and Rubric Rewards for Actionable Peer Review Generation 是最近值得追踪的一篇 AI 论文。论文摘要显示：As LLMs are increasingly used for pre-submission self-review, there is growing demand for feedback that not only identifies weaknesses but also guides authors toward concrete revisions. We study this as Actionable Peer-review Generation and...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：9/10\n\n**亮点**：\n- 分类: cs.CL\n- 作者数: 6",
+      "focus_hits": [
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "benchmark",
+      "personalized_score": 114.0,
+      "detail_path": "items/arxiv-actreview-rebuttal-guided-training-data-and-rubric-rewards-for-actionable-peer-review-gene.html",
+      "first_seen_at": "2026-09-09T04:34:19.847507+00:00",
+      "last_seen_at": "2026-09-09T04:34:19.847507+00:00",
+      "last_curated_at": "2026-09-09T04:34:19.847507+00:00",
+      "last_notified_at": null
+    },
     {
       "id": "github::multica-ai/andrej-karpathy-skills",
       "kind": "repo",
@@ -13,7 +426,7 @@
       "full_name": "multica-ai/andrej-karpathy-skills",
       "html_url": "https://github.com/multica-ai/andrej-karpathy-skills",
       "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
-      "stars": 211475,
+      "stars": 211568,
       "stars_today": 0,
       "language": "Unknown",
       "topics": [],
@@ -27,7 +440,7 @@
       "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
       "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
       "highlights": [
-        "Stars: 211475",
+        "Stars: 211568",
         "语言: Unknown"
       ],
       "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
@@ -39,7 +452,7 @@
         "llm"
       ],
       "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：multica-ai/andrej-karpathy-skills 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 211475\n- 语言: Unknown",
+      "summary_markdown": "**摘要**：multica-ai/andrej-karpathy-skills 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 211568\n- 语言: Unknown",
       "focus_hits": [
         {
           "keyword": "coding",
@@ -50,8 +463,8 @@
       "personalized_score": 126.0,
       "detail_path": "items/github-multica-ai-andrej-karpathy-skills.html",
       "first_seen_at": "2026-08-23T00:25:39.962236+00:00",
-      "last_seen_at": "2026-09-09T01:37:49.338178+00:00",
-      "last_curated_at": "2026-09-09T01:37:49.338178+00:00",
+      "last_seen_at": "2026-09-09T04:34:19.847507+00:00",
+      "last_curated_at": "2026-09-09T04:34:19.847507+00:00",
       "last_notified_at": null
     },
     {
@@ -66,7 +479,7 @@
       "full_name": "coreyhaines31/marketingskills",
       "html_url": "https://github.com/coreyhaines31/marketingskills",
       "description": "Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering.",
-      "stars": 48838,
+      "stars": 48937,
       "stars_today": 0,
       "language": "JavaScript",
       "topics": [],
@@ -80,7 +493,7 @@
       "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
       "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
       "highlights": [
-        "Stars: 48838",
+        "Stars: 48937",
         "语言: JavaScript"
       ],
       "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
@@ -96,7 +509,7 @@
         "ai agent"
       ],
       "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：coreyhaines31/marketingskills 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 48838\n- 语言: JavaScript",
+      "summary_markdown": "**摘要**：coreyhaines31/marketingskills 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 48937\n- 语言: JavaScript",
       "focus_hits": [
         {
           "keyword": "agent",
@@ -104,11 +517,11 @@
         }
       ],
       "primary_match": "agent",
-      "personalized_score": 129.54,
+      "personalized_score": 129.57,
       "detail_path": "items/github-coreyhaines31-marketingskills.html",
       "first_seen_at": "2026-09-07T01:20:53.256532+00:00",
-      "last_seen_at": "2026-09-09T01:37:49.338178+00:00",
-      "last_curated_at": "2026-09-09T01:37:49.338178+00:00",
+      "last_seen_at": "2026-09-09T04:34:19.847507+00:00",
+      "last_curated_at": "2026-09-09T04:34:19.847507+00:00",
       "last_notified_at": null
     },
     {
@@ -123,7 +536,7 @@
       "full_name": "mksglu/context-mode",
       "html_url": "https://github.com/mksglu/context-mode",
       "description": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.",
-      "stars": 21410,
+      "stars": 21472,
       "stars_today": 0,
       "language": "TypeScript",
       "topics": [],
@@ -137,7 +550,7 @@
       "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
       "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
       "highlights": [
-        "Stars: 21410",
+        "Stars: 21472",
         "语言: TypeScript"
       ],
       "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
@@ -153,7 +566,7 @@
         "coding agent"
       ],
       "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：mksglu/context-mode 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 21410\n- 语言: TypeScript",
+      "summary_markdown": "**摘要**：mksglu/context-mode 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 21472\n- 语言: TypeScript",
       "focus_hits": [
         {
           "keyword": "agent",
@@ -165,11 +578,11 @@
         }
       ],
       "primary_match": "agent",
-      "personalized_score": 144.56,
+      "personalized_score": 144.59,
       "detail_path": "items/github-mksglu-context-mode.html",
       "first_seen_at": "2026-09-08T01:29:42.794727+00:00",
-      "last_seen_at": "2026-09-09T01:37:49.338178+00:00",
-      "last_curated_at": "2026-09-09T01:37:49.338178+00:00",
+      "last_seen_at": "2026-09-09T04:34:19.847507+00:00",
+      "last_curated_at": "2026-09-09T04:34:19.847507+00:00",
       "last_notified_at": null
     },
     {
@@ -184,7 +597,7 @@
       "full_name": "jo-inc/camofox-browser",
       "html_url": "https://github.com/jo-inc/camofox-browser",
       "description": "Stealth headless browser for AI agents — bypass Cloudflare, bot detection, and anti-scraping. Drop-in Puppeteer/Playwright replacement.",
-      "stars": 10516,
+      "stars": 10623,
       "stars_today": 0,
       "language": "JavaScript",
       "topics": [],
@@ -198,7 +611,7 @@
       "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
       "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
       "highlights": [
-        "Stars: 10516",
+        "Stars: 10623",
         "语言: JavaScript"
       ],
       "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
@@ -214,7 +627,7 @@
         "ai agent"
       ],
       "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：jo-inc/camofox-browser 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Stealth headless browser for AI agents — bypass Cloudflare, bot detection, and anti-scraping. Drop-in Puppeteer/Playwright replacement.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 10516\n- 语言: JavaScript",
+      "summary_markdown": "**摘要**：jo-inc/camofox-browser 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Stealth headless browser for AI agents — bypass Cloudflare, bot detection, and anti-scraping. Drop-in Puppeteer/Playwright replacement.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 10623\n- 语言: JavaScript",
       "focus_hits": [
         {
           "keyword": "agent",
@@ -222,11 +635,11 @@
         }
       ],
       "primary_match": "agent",
-      "personalized_score": 114.21,
+      "personalized_score": 114.25,
       "detail_path": "items/github-jo-inc-camofox-browser.html",
       "first_seen_at": "2026-09-08T01:29:42.794727+00:00",
-      "last_seen_at": "2026-09-09T01:37:49.338178+00:00",
-      "last_curated_at": "2026-09-09T01:37:49.338178+00:00",
+      "last_seen_at": "2026-09-09T04:34:19.847507+00:00",
+      "last_curated_at": "2026-09-09T04:34:19.847507+00:00",
       "last_notified_at": null
     },
     {
@@ -241,7 +654,7 @@
       "full_name": "The-Swarm-Corporation/AutoHedge",
       "html_url": "https://github.com/The-Swarm-Corporation/AutoHedge",
       "description": "Build your autonomous hedge fund in minutes. AutoHedge harnesses the power of swarm intelligence and AI agents to automate market analysis, risk management, and trade execution.",
-      "stars": 5719,
+      "stars": 5779,
       "stars_today": 0,
       "language": "Python",
       "topics": [],
@@ -255,7 +668,7 @@
       "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
       "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
       "highlights": [
-        "Stars: 5719",
+        "Stars: 5779",
         "语言: Python"
       ],
       "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
@@ -271,7 +684,7 @@
         "ai agent"
       ],
       "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：The-Swarm-Corporation/AutoHedge 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Build your autonomous hedge fund in minutes. AutoHedge harnesses the power of swarm intelligence and AI agents to automate market analysis, risk management, and trade execution.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 5719\n- 语言: Python",
+      "summary_markdown": "**摘要**：The-Swarm-Corporation/AutoHedge 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Build your autonomous hedge fund in minutes. AutoHedge harnesses the power of swarm intelligence and AI agents to automate market analysis, risk management, and trade execution.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 5779\n- 语言: Python",
       "focus_hits": [
         {
           "keyword": "agent",
@@ -279,11 +692,11 @@
         }
       ],
       "primary_match": "agent",
-      "personalized_score": 112.29,
+      "personalized_score": 112.31,
       "detail_path": "items/github-the-swarm-corporation-autohedge.html",
       "first_seen_at": "2026-09-08T01:29:42.794727+00:00",
-      "last_seen_at": "2026-09-09T01:37:49.338178+00:00",
-      "last_curated_at": "2026-09-09T01:37:49.338178+00:00",
+      "last_seen_at": "2026-09-09T04:34:19.847507+00:00",
+      "last_curated_at": "2026-09-09T04:34:19.847507+00:00",
       "last_notified_at": null
     },
     {
@@ -298,7 +711,7 @@
       "full_name": "cathrynlavery/diagram-design",
       "html_url": "https://github.com/cathrynlavery/diagram-design",
       "description": "38 editorial diagram types for Claude Code, Codex, and Pi. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
-      "stars": 34884,
+      "stars": 35209,
       "stars_today": 0,
       "language": "HTML",
       "topics": [],
@@ -312,7 +725,7 @@
       "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
       "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
       "highlights": [
-        "Stars: 34884",
+        "Stars: 35209",
         "语言: HTML"
       ],
       "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
@@ -324,14 +737,14 @@
         "ai"
       ],
       "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：cathrynlavery/diagram-design 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：38 editorial diagram types for Claude Code, Codex, and Pi. Self-contained HTML + SVG. No shadows. No Mermaid slop.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 34884\n- 语言: HTML",
+      "summary_markdown": "**摘要**：cathrynlavery/diagram-design 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：38 editorial diagram types for Claude Code, Codex, and Pi. Self-contained HTML + SVG. No shadows. No Mermaid slop.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 35209\n- 语言: HTML",
       "focus_hits": [],
       "primary_match": "",
-      "personalized_score": 83.95,
+      "personalized_score": 84.08,
       "detail_path": "items/github-cathrynlavery-diagram-design.html",
       "first_seen_at": "2026-08-13T00:46:03.444620+00:00",
-      "last_seen_at": "2026-09-09T01:37:49.338178+00:00",
-      "last_curated_at": "2026-09-09T01:37:49.338178+00:00",
+      "last_seen_at": "2026-09-09T04:34:19.847507+00:00",
+      "last_curated_at": "2026-09-09T04:34:19.847507+00:00",
       "last_notified_at": null
     },
     {
@@ -346,7 +759,7 @@
       "full_name": "ayghri/i-have-adhd",
       "html_url": "https://github.com/ayghri/i-have-adhd",
       "description": "A skill to stop your coding agent from burying the answer. ADHD-friendly output.",
-      "stars": 30578,
+      "stars": 31165,
       "stars_today": 0,
       "language": "Python",
       "topics": [],
@@ -360,7 +773,7 @@
       "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
       "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
       "highlights": [
-        "Stars: 30578",
+        "Stars: 31165",
         "语言: Python"
       ],
       "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
@@ -374,7 +787,7 @@
         "coding agent"
       ],
       "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：ayghri/i-have-adhd 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：A skill to stop your coding agent from burying the answer. ADHD-friendly output.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 30578\n- 语言: Python",
+      "summary_markdown": "**摘要**：ayghri/i-have-adhd 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：A skill to stop your coding agent from burying the answer. ADHD-friendly output.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 31165\n- 语言: Python",
       "focus_hits": [
         {
           "keyword": "agent",
@@ -386,11 +799,11 @@
         }
       ],
       "primary_match": "agent",
-      "personalized_score": 138.23,
+      "personalized_score": 138.47,
       "detail_path": "items/github-ayghri-i-have-adhd.html",
       "first_seen_at": "2026-09-09T01:37:49.338178+00:00",
-      "last_seen_at": "2026-09-09T01:37:49.338178+00:00",
-      "last_curated_at": "2026-09-09T01:37:49.338178+00:00",
+      "last_seen_at": "2026-09-09T04:34:19.847507+00:00",
+      "last_curated_at": "2026-09-09T04:34:19.847507+00:00",
       "last_notified_at": null
     },
     {
@@ -12706,425 +13119,13 @@
       "last_seen_at": "2026-08-11T02:24:01.757892+00:00",
       "last_curated_at": "2026-08-11T02:24:01.757892+00:00",
       "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2608.09772v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "PragMatch: Separating Pragmatic Incongruity from Cross-Modal Mismatch in Large Vision-Language Models",
-      "html_url": "http://arxiv.org/abs/2608.09772v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.09772v1",
-      "description": "Large Vision-Language Models (LVLMs) have demonstrated strong performance on multimodal benchmarks, yet it remains unclear whether they genuinely reason about relationships between images and text or rely on superficial correlations, known as shortcut learning. This question is particularly important for multimodal sarcasm detection, where successful prediction depends on recognizing pragmatic incongruity rather than treating sarcasm as simple image-text mismatch. We introduce PragMatch, a controlled benchmark of 3,000 image-text pairs derived from MMSD2.0, including original sarcastic examples and constructed literal and hard-negative pairs. We identify influential shortcut cues through systematic masking and evaluate their impact through targeted injection experiments. Our results show that LVLM predictions are sensitive to lexical, OCR-derived and stylistic cues, with injected surface signals causing substantial changes in model predictions despite unchanged underlying image-text relationships. Our findings reveal limitations in current LVLMs while PragMatch provides a systematic testbed for evaluating multimodal pragmatic reasoning beyond surface-level image-text alignment.",
-      "authors": [
-        "Zhanna Mukhametsharip",
-        "Vera Demberg",
-        "Varsha Suresh"
-      ],
-      "categories": [
-        "cs.CL"
-      ],
-      "published_at": "2026-08-10T16:00:04+00:00",
-      "updated_at": "2026-08-10T16:00:04+00:00",
-      "primary_category": "cs.CL",
-      "heuristic_score": 17.395,
-      "summary": "PragMatch: Separating Pragmatic Incongruity from Cross-Modal Mismatch in Large Vision-Language Models 是最近值得追踪的一篇 AI 论文。论文摘要显示：Large Vision-Language Models (LVLMs) have demonstrated strong performance on multimodal benchmarks, yet it remains unclear whether they genuinely reason about relationships between images and text or rely on superficial correlations, known ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CL",
-        "作者数: 3"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "rag",
-        "multimodal",
-        "model"
-      ],
-      "themes": [
-        "ai",
-        "rag",
-        "multimodal"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：PragMatch: Separating Pragmatic Incongruity from Cross-Modal Mismatch in Large Vision-Language Models 是最近值得追踪的一篇 AI 论文。论文摘要显示：Large Vision-Language Models (LVLMs) have demonstrated strong performance on multimodal benchmarks, yet it remains unclear whether they genuinely reason about relationships between images and text or rely on superficial correlations, known ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL\n- 作者数: 3",
-      "focus_hits": [
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "multimodal",
-          "weight": 2.0
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "reasoning",
-      "personalized_score": 190.0,
-      "detail_path": "items/arxiv-pragmatch-separating-pragmatic-incongruity-from-cross-modal-mismatch-in-large-vision-langu.html",
-      "first_seen_at": "2026-08-11T02:24:01.757892+00:00",
-      "last_seen_at": "2026-08-11T02:24:01.757892+00:00",
-      "last_curated_at": "2026-08-11T02:24:01.757892+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2608.09696v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "Model Discovery Agent: LLM-assisted Bayesian experiment design for data-efficient discovery of mechanistic world models",
-      "html_url": "http://arxiv.org/abs/2608.09696v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.09696v1",
-      "description": "Predicting the answer to interventional ``what if'' questions --- the outcome of an action never taken --- requires a \\emph{mechanistic}, causal model, not a curve fit; and learning such a model requires \\emph{experiments}, because passive data leaves its mechanisms unidentified. Experiments are expensive, so the central problem is \\emph{data efficiency}. We present the Model Discovery Agent (MDA), which couples a large language model (LLM), used as a \\emph{proposer} of candidate structures, with standard Bayesian machinery --- sequential Monte Carlo (SMC) for parameter and structure posteriors, simulation-based inference (SBI) for intractable likelihoods, and value-of-information (VoI) for experiment design --- to discover latent mechanistic world models from few interventions. MDA operates in the M-open setting: when the truth lies outside the current hypothesis class, a predictive check flags the inadequacy and the proposer expands the hypothesis space with a new model whose parameters are then identified by designed experiments. We show that \\emph{discovery and design reinforce}: the design step identifies the mechanism the discovery step proposes, and the identified mechanism improves predictions, enabling further discoveries from the remaining unexplained residuals. On three different benchmarks --- covering physics (\\DPbench, \\citep{wiemann2026discoverphysics}), chemistry (\\CHEMbench, \\citep{kabra2026autoscilab}) and biology (\\HHbench, a new partially observed single-neuron electrophysiology benchmark we create) --- we show that MDA sets a new SOTA in terms of data-efficient model learning and reliable interventional forecasting ability.",
-      "authors": [
-        "Kevin Murphy"
-      ],
-      "categories": [
-        "cs.AI"
-      ],
-      "published_at": "2026-08-10T14:59:22+00:00",
-      "updated_at": "2026-08-10T14:59:22+00:00",
-      "primary_category": "cs.AI",
-      "heuristic_score": 17.9,
-      "summary": "Model Discovery Agent: LLM-assisted Bayesian experiment design for data-efficient discovery of mechanistic world models 是最近值得追踪的一篇 AI 论文。论文摘要显示：Predicting the answer to interventional ``what if'' questions --- the outcome of an action never taken --- requires a \\emph{mechanistic}, causal model, not a curve fit; and learning such a model requires \\emph{experiments}, because passive ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.AI",
-        "作者数: 1"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "llm",
-        "agent",
-        "model"
-      ],
-      "themes": [
-        "ai",
-        "llm",
-        "agent"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：Model Discovery Agent: LLM-assisted Bayesian experiment design for data-efficient discovery of mechanistic world models 是最近值得追踪的一篇 AI 论文。论文摘要显示：Predicting the answer to interventional ``what if'' questions --- the outcome of an action never taken --- requires a \\emph{mechanistic}, causal model, not a curve fit; and learning such a model requires \\emph{experiments}, because passive ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI\n- 作者数: 1",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "inference",
-          "weight": 1.8
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 172.0,
-      "detail_path": "items/arxiv-model-discovery-agent-llm-assisted-bayesian-experiment-design-for-data-efficient-discovery.html",
-      "first_seen_at": "2026-08-11T02:24:01.757892+00:00",
-      "last_seen_at": "2026-08-11T02:24:01.757892+00:00",
-      "last_curated_at": "2026-08-11T02:24:01.757892+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2608.09765v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "REFRAMED: Towards Realistic Audio Description Generation for Movies",
-      "html_url": "http://arxiv.org/abs/2608.09765v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.09765v1",
-      "description": "Audio Description (AD) is a verbal narration of key visual content in videos, enabling access for visually impaired audiences. Unlike standard video captioning, AD is a structured editorial task: descriptions must be inserted into gaps in dialogue and must convey only what is needed to understand the narrative being told. However, existing approaches formulate AD generation in an artificial setting where both the content and timing of descriptions are pre-specified, reducing the task to clip-level captioning. They further rely on noisy transcription and alignment pipelines, and lack the rich parallel data required for modeling narrative context. We introduce a new formulation of AD generation in which models must jointly decide what to describe and when to do it. To support this, we present REFRAMED, a high-quality dataset of 2,023 videos that span 3,302 scenes from 206 movies, with professional AD transcripts (both American and British versions), professional subtitles and aligned screenplays. We also provide a manually curated challenge set that pairs full movies with multiple AD references, together with evaluation protocols that leverage dialogue gaps and multi-reference comparisons. Experiments with state-of-the-art AD systems and multimodal LLMs show that they outperform trivial baselines but fall far short of expert human performance. Our dataset and benchmark establish a new foundation for research on video understanding.",
-      "authors": [
-        "Igor Sterner",
-        "Mirella Lapata",
-        "Alex Lascarides",
-        "Frank Keller"
-      ],
-      "categories": [
-        "cs.CL",
-        "cs.CV"
-      ],
-      "published_at": "2026-08-10T15:55:56+00:00",
-      "updated_at": "2026-08-10T15:55:56+00:00",
-      "primary_category": "cs.CL",
-      "heuristic_score": 17.716,
-      "summary": "REFRAMED: Towards Realistic Audio Description Generation for Movies 是最近值得追踪的一篇 AI 论文。论文摘要显示：Audio Description (AD) is a verbal narration of key visual content in videos, enabling access for visually impaired audiences. Unlike standard video captioning, AD is a structured editorial task: descriptions must be inserted into gaps in d...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CL, cs.CV",
-        "作者数: 4"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "llm",
-        "rag",
-        "multimodal"
-      ],
-      "themes": [
-        "ai",
-        "llm",
-        "rag"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：REFRAMED: Towards Realistic Audio Description Generation for Movies 是最近值得追踪的一篇 AI 论文。论文摘要显示：Audio Description (AD) is a verbal narration of key visual content in videos, enabling access for visually impaired audiences. Unlike standard video captioning, AD is a structured editorial task: descriptions must be inserted into gaps in d...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL, cs.CV\n- 作者数: 4",
-      "focus_hits": [
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "multimodal",
-          "weight": 2.0
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "rag",
-      "personalized_score": 166.0,
-      "detail_path": "items/arxiv-reframed-towards-realistic-audio-description-generation-for-movies.html",
-      "first_seen_at": "2026-08-11T02:24:01.757892+00:00",
-      "last_seen_at": "2026-08-11T02:24:01.757892+00:00",
-      "last_curated_at": "2026-08-11T02:24:01.757892+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2608.09779v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "KGCaRe: Explainable Complex Conditional Question Answering using Automatic Knowledge Graph Construction and Context Retrieval with LLMs",
-      "html_url": "http://arxiv.org/abs/2608.09779v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.09779v1",
-      "description": "Answering complex conditional questions using Large Language Models (LLMs) and Retrieval-Augmented Generation (RAG) remains a challenge, particularly in domain-specific contexts where general-purpose LLMs and RAG tend to underperform. We hypothesize that augmenting RAG with unstructured and structured knowledge, extracted from both documents and knowledge graphs (KGs), can improve reasoning and answer accuracy for such tasks. To test this, we propose KGCaRe, a hybrid approach that combines neural retrieval with symbolic reasoning over LLM-generated KGs. KGCaRe constructs a KG from documents using a multi-prompt extraction strategy and stores it in a graph database. Simultaneously, the documents are embedded into a vector store to enable neural retrieval. KGCaRe performs innovative iterative graph traversal guided by the LLM to extract relevant triples, prune irrelevant information, and uses additional clue entities to traverse the graph again if the initial traversal does not provide satisfactory context to generate the answer. The relevant triples extracted from the KG in path form, along with semantically retrieved text passages, are then fed into custom KGCaRe prompts to generate answers to the complex conditional questions with explanations. We evaluate KGCaRe on two complex conditional QA datasets. Our results on these datasets show that KGCaRe consistently outperforms existing baselines, including Vanilla LLM, Code Prompt, Text Prompt, Think-on-Graph, Vanilla RAG, and HybridContextQA, across multiple LLMs such as Mistral, Mixtral, GPT-3.5, and GPT-4o. We publicly release the software pipeline that we developed to implement the proposed KGCaRe approach.",
-      "authors": [
-        "Ghanshyam Verma",
-        "Simanta Sarkar",
-        "Devishree Pillai",
-        "Hotaka Shiokawa",
-        "Yourong Xu",
-        "Fiona Veazey",
-        "Peter Hubbert",
-        "Hui Su",
-        "Paul Buitelaar"
-      ],
-      "categories": [
-        "cs.CL",
-        "cs.AI"
-      ],
-      "published_at": "2026-08-10T16:05:58+00:00",
-      "updated_at": "2026-08-10T16:05:58+00:00",
-      "primary_category": "cs.CL",
-      "heuristic_score": 17.9,
-      "summary": "KGCaRe: Explainable Complex Conditional Question Answering using Automatic Knowledge Graph Construction and Context Retrieval with LLMs 是最近值得追踪的一篇 AI 论文。论文摘要显示：Answering complex conditional questions using Large Language Models (LLMs) and Retrieval-Augmented Generation (RAG) remains a challenge, particularly in domain-specific contexts where general-purpose LLMs and RAG tend to underperform. We hy...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CL, cs.AI",
-        "作者数: 9"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "llm",
-        "gpt",
-        "rag"
-      ],
-      "themes": [
-        "ai",
-        "llm",
-        "gpt"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：KGCaRe: Explainable Complex Conditional Question Answering using Automatic Knowledge Graph Construction and Context Retrieval with LLMs 是最近值得追踪的一篇 AI 论文。论文摘要显示：Answering complex conditional questions using Large Language Models (LLMs) and Retrieval-Augmented Generation (RAG) remains a challenge, particularly in domain-specific contexts where general-purpose LLMs and RAG tend to underperform. We hy...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL, cs.AI\n- 作者数: 9",
-      "focus_hits": [
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        }
-      ],
-      "primary_match": "reasoning",
-      "personalized_score": 154.0,
-      "detail_path": "items/arxiv-kgcare-explainable-complex-conditional-question-answering-using-automatic-knowledge-graph-.html",
-      "first_seen_at": "2026-08-11T02:24:01.757892+00:00",
-      "last_seen_at": "2026-08-11T02:24:01.757892+00:00",
-      "last_curated_at": "2026-08-11T02:24:01.757892+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2608.09771v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "SLIM-0.5B: Learning Action-Grounded Predictive Latents for Robot Manipulation",
-      "html_url": "http://arxiv.org/abs/2608.09771v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.09771v1",
-      "description": "Vision-language-action policies rely on large multimodal backbones to jointly perform perception, language conditioning, and action generation at every control step. Much of this capacity supports open-domain semantics, whereas continuous robot manipulation primarily requires compact representations of observations, actions, and the transitions induced by actions. Pixel-level world models provide another route, but predicting visual details irrelevant to control can be unnecessarily expensive. We propose SLIM (Self-supervised Latent Interaction Model), a compact 0.5B-parameter latent interaction policy. SLIM learns action-grounded predictive latents that capture both action-conditioned future transitions and the actions that explain observed changes. SLIM learns these representations through self-supervised masked trajectory prediction, combining action reconstruction with future-latent prediction. A compact Mixture-of-Transformers (MoT) backbone models interactions between observation latents and action tokens. The resulting policy is trained with flow matching for language-conditioned action generation. Across simulation benchmarks and real-world evaluation, SLIM matches or exceeds representative large-scale VLA and world-action-model baselines with fewer parameters, no additional embodied pretraining, lower inference latency, and substantially lower GPU memory usage.",
-      "authors": [
-        "Jingkai Wang",
-        "Zihan Tang",
-        "Gu Zhang",
-        "Mingyu Cao",
-        "Jiapeng Chen",
-        "Jingjiao Zhao",
-        "Xiansheng Chen",
-        "Pengwei Wang",
-        "Lemao Liu",
-        "Dejing Dou"
-      ],
-      "categories": [
-        "cs.RO"
-      ],
-      "published_at": "2026-08-10T15:58:39+00:00",
-      "updated_at": "2026-08-10T15:58:39+00:00",
-      "primary_category": "cs.RO",
-      "heuristic_score": 16.14,
-      "summary": "SLIM-0.5B: Learning Action-Grounded Predictive Latents for Robot Manipulation 是最近值得追踪的一篇 AI 论文。论文摘要显示：Vision-language-action policies rely on large multimodal backbones to jointly perform perception, language conditioning, and action generation at every control step. Much of this capacity supports open-domain semantics, whereas continuous r...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.RO",
-        "作者数: 10"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 9,
-      "tags": [
-        "ai",
-        "multimodal",
-        "model",
-        "benchmark"
-      ],
-      "themes": [
-        "ai",
-        "multimodal",
-        "model"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：SLIM-0.5B: Learning Action-Grounded Predictive Latents for Robot Manipulation 是最近值得追踪的一篇 AI 论文。论文摘要显示：Vision-language-action policies rely on large multimodal backbones to jointly perform perception, language conditioning, and action generation at every control step. Much of this capacity supports open-domain semantics, whereas continuous r...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：9/10\n\n**亮点**：\n- 分类: cs.RO\n- 作者数: 10",
-      "focus_hits": [
-        {
-          "keyword": "multimodal",
-          "weight": 2.0
-        },
-        {
-          "keyword": "inference",
-          "weight": 1.8
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "multimodal",
-      "personalized_score": 144.0,
-      "detail_path": "items/arxiv-slim-0-5b-learning-action-grounded-predictive-latents-for-robot-manipulation.html",
-      "first_seen_at": "2026-08-11T02:24:01.757892+00:00",
-      "last_seen_at": "2026-08-11T02:24:01.757892+00:00",
-      "last_curated_at": "2026-08-11T02:24:01.757892+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "github::danielmiessler/LifeOS",
-      "kind": "repo",
-      "source": "github",
-      "source_tags": [
-        "trending"
-      ],
-      "name": "LifeOS",
-      "title": "danielmiessler/LifeOS",
-      "full_name": "danielmiessler/LifeOS",
-      "html_url": "https://github.com/danielmiessler/LifeOS",
-      "description": "⛰️A General Hill-climbing AI harness that helps you move from Current State to Ideal State in both Life and Work.",
-      "stars": 17959,
-      "stars_today": 0,
-      "language": "TypeScript",
-      "topics": [],
-      "created_at": "",
-      "updated_at": "",
-      "heuristic_score": 12.6,
-      "summary": "danielmiessler/LifeOS 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：⛰️A General Hill-climbing AI harness that helps you move from Current State to Ideal State in both Life and Work.结合关键词命中和热度信号，它适合加入今日重点观察列表。",
-      "brief": "这是一个值得快速关注的开源 AI 项目。",
-      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
-      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
-      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
-      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
-      "highlights": [
-        "Stars: 17959",
-        "语言: TypeScript"
-      ],
-      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
-      "relevance_score": 7,
-      "tags": [
-        "ai"
-      ],
-      "themes": [
-        "ai"
-      ],
-      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：danielmiessler/LifeOS 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：⛰️A General Hill-climbing AI harness that helps you move from Current State to Ideal State in both Life and Work.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 17959\n- 语言: TypeScript",
-      "focus_hits": [],
-      "primary_match": "",
-      "personalized_score": 77.18,
-      "detail_path": "items/github-danielmiessler-lifeos.html",
-      "first_seen_at": "2026-08-11T00:39:08.430970+00:00",
-      "last_seen_at": "2026-08-11T02:24:01.757892+00:00",
-      "last_curated_at": "2026-08-11T02:24:01.757892+00:00",
-      "last_notified_at": null
     }
   ],
   "digests": [
     {
       "date": "2026-09-09",
       "title": "AI Daily Digest · 2026-09-09",
-      "generated_at": "2026-09-09T09:37:42.079519+08:00",
+      "generated_at": "2026-09-09T12:34:11.346690+08:00",
       "notified_at": null,
       "repo_ids": [
         "github::mksglu/context-mode",
@@ -13136,7 +13137,14 @@
         "github::The-Swarm-Corporation/AutoHedge",
         "github::cathrynlavery/diagram-design"
       ],
-      "paper_ids": [],
+      "paper_ids": [
+        "arxiv::http://arxiv.org/abs/2609.09133v1",
+        "arxiv::http://arxiv.org/abs/2609.09153v1",
+        "arxiv::http://arxiv.org/abs/2609.09134v1",
+        "arxiv::http://arxiv.org/abs/2609.09113v1",
+        "arxiv::http://arxiv.org/abs/2609.09123v1",
+        "arxiv::http://arxiv.org/abs/2609.09076v1"
+      ],
       "digest_json": "data/digests/2026-09-09.json",
       "digest_markdown": "data/digests/2026-09-09.md"
     },
@@ -16629,9 +16637,9 @@
     "weekly": {
       "label": "周报",
       "window_days": 7,
-      "generated_at": "2026-09-09T09:37:42.079519+08:00",
-      "count": 56,
-      "summary": "近 7 天里，最集中的主题是 ai、agent、llm。",
+      "generated_at": "2026-09-09T12:34:11.346690+08:00",
+      "count": 49,
+      "summary": "近 7 天里，最集中的主题是 ai、agent、rag。",
       "top_items": [
         {
           "id": "arxiv::http://arxiv.org/abs/2609.03941v1",
@@ -16709,150 +16717,6 @@
           "last_notified_at": null
         },
         {
-          "id": "arxiv::http://arxiv.org/abs/2609.01600v1",
-          "kind": "paper",
-          "source": "arxiv",
-          "source_tags": [
-            "latest"
-          ],
-          "title": "CordisBench: Can Language Models Reason About Component Lifecycles in Dynamic Agent Harnesses?",
-          "html_url": "http://arxiv.org/abs/2609.01600v1",
-          "pdf_url": "https://arxiv.org/pdf/2609.01600v1",
-          "description": "Dynamic agent harnesses let language models change the software that shapes their own execution. This flexibility brings a new reasoning burden: a local plugin change can propagate through dependencies and cleanup. We introduce CordisBench, a 1,200-question benchmark of this lifecycle reasoning. It combines a controlled formal setting with programs executed against Cordis, a runtime that manages component dependencies and cleanup, and asks models to identify affected components, predict state after a specified teardown order, determine which conditions hold under all or some orders, and choose reconfigurations that succeed when executed. Across these tasks, we evaluate three efficiency-oriented models at low reasoning effort with 2, 4, 8, 16, 24, or 32 relevant interactions, using deterministic task-specific scoring. Models usually handle small systems well but grow less reliable as more interactions become relevant, especially when predicting final state and when reasoning across teardown orders. Additional inference effort recovers marked gains for some models. The cost is nontrivial: on our 16-interaction subset, GPT-5.6 Luna uses nearly 3,000 reasoning tokens per question at medium effort. For these controlled instances, that cost is avoidable: an independent finite reference semantics agrees with Cordis execution on every observation and action outcome used for scoring across all 528 executable questions.",
-          "authors": [
-            "Damien Sileo",
-            "Dimitri Kachler"
-          ],
-          "categories": [
-            "cs.CL",
-            "cs.AI"
-          ],
-          "published_at": "2026-09-01T17:59:13+00:00",
-          "updated_at": "2026-09-01T17:59:13+00:00",
-          "primary_category": "cs.CL",
-          "heuristic_score": 20.091,
-          "summary": "CordisBench: Can Language Models Reason About Component Lifecycles in Dynamic Agent Harnesses? 是最近值得追踪的一篇 AI 论文。论文摘要显示：Dynamic agent harnesses let language models change the software that shapes their own execution. This flexibility brings a new reasoning burden: a local plugin change can propagate through dependencies and cleanup. We introduce CordisBench,...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-          "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-          "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-          "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-          "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-          "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-          "highlights": [
-            "分类: cs.CL, cs.AI",
-            "作者数: 2"
-          ],
-          "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-          "relevance_score": 10,
-          "tags": [
-            "ai",
-            "agent",
-            "gpt",
-            "model"
-          ],
-          "themes": [
-            "ai",
-            "agent",
-            "gpt"
-          ],
-          "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-          "summary_markdown": "**摘要**：CordisBench: Can Language Models Reason About Component Lifecycles in Dynamic Agent Harnesses? 是最近值得追踪的一篇 AI 论文。论文摘要显示：Dynamic agent harnesses let language models change the software that shapes their own execution. This flexibility brings a new reasoning burden: a local plugin change can propagate through dependencies and cleanup. We introduce CordisBench,...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL, cs.AI\n- 作者数: 2",
-          "focus_hits": [
-            {
-              "keyword": "agent",
-              "weight": 3.0
-            },
-            {
-              "keyword": "reasoning",
-              "weight": 2.4
-            },
-            {
-              "keyword": "inference",
-              "weight": 1.8
-            },
-            {
-              "keyword": "benchmark",
-              "weight": 1.6
-            }
-          ],
-          "primary_match": "agent",
-          "personalized_score": 196.0,
-          "detail_path": "items/arxiv-cordisbench-can-language-models-reason-about-component-lifecycles-in-dynamic-agent-harness.html",
-          "first_seen_at": "2026-09-02T04:23:41.045304+00:00",
-          "last_seen_at": "2026-09-02T04:23:41.045304+00:00",
-          "last_curated_at": "2026-09-02T04:23:41.045304+00:00",
-          "last_notified_at": null
-        },
-        {
-          "id": "arxiv::http://arxiv.org/abs/2609.01117v1",
-          "kind": "paper",
-          "source": "arxiv",
-          "source_tags": [
-            "latest"
-          ],
-          "title": "Latent Recurrent Thoughts: Recurrent Refinement of Proposed Latents for Reasoning with Frozen LLMs",
-          "html_url": "http://arxiv.org/abs/2609.01117v1",
-          "pdf_url": "https://arxiv.org/pdf/2609.01117v1",
-          "description": "Chain-of-thought reasoning unfolds in discrete token space: each step is committed as text, errors propagate, and eliciting good traces presupposes traces to imitate. Reasoning instead in a model's continuous representation space - where intermediate states are vectors rather than words - sidesteps these constraints, but leaves open how those latent states should be computed. We approach this along two axes. First, we keep a large language model (LLM) frozen and use it for what it is already good at - modeling and decoding sequences - while a small auxiliary network supplies continuous latent thoughts as input. Second, we produce those latents by recurrence: a tiny recurrent reasoner refines them over many steps, decoupling the depth of computation from the size of the model, so that the latents are a product of iterative processing rather than a single forward pass. We instantiate this as Latent Recurrent Thoughts (LRT): a task-dedicated proposer supplies base latents, a recurrent reasoner refines them through bounded residual corrections, and the frozen LLM decodes the answer. On symbolic reasoning with answer supervision but no reasoning traces (Countdown-4, Sudoku) and on natural-language reasoning (HumanEval, MBPP, StrategyQA), LRT substantially outperforms prior frozen-decoder continuous-space reasoning methods under an identical decoder, prompt, data, and training budget, and outperforms non-thinking-mode chain-of-thought prompting on the same backbone at a small fraction of its inference compute.",
-          "authors": [
-            "Zhaoliang Chen",
-            "Jie Fu"
-          ],
-          "categories": [
-            "cs.AI",
-            "cs.CL"
-          ],
-          "published_at": "2026-09-01T11:56:17+00:00",
-          "updated_at": "2026-09-01T11:56:17+00:00",
-          "primary_category": "cs.AI",
-          "heuristic_score": 17.811,
-          "summary": "Latent Recurrent Thoughts: Recurrent Refinement of Proposed Latents for Reasoning with Frozen LLMs 是最近值得追踪的一篇 AI 论文。论文摘要显示：Chain-of-thought reasoning unfolds in discrete token space: each step is committed as text, errors propagate, and eliciting good traces presupposes traces to imitate. Reasoning instead in a model's continuous representation space - where in...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-          "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-          "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-          "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-          "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-          "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-          "highlights": [
-            "分类: cs.AI, cs.CL",
-            "作者数: 2"
-          ],
-          "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-          "relevance_score": 10,
-          "tags": [
-            "ai",
-            "llm",
-            "model",
-            "inference"
-          ],
-          "themes": [
-            "ai",
-            "llm",
-            "model"
-          ],
-          "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-          "summary_markdown": "**摘要**：Latent Recurrent Thoughts: Recurrent Refinement of Proposed Latents for Reasoning with Frozen LLMs 是最近值得追踪的一篇 AI 论文。论文摘要显示：Chain-of-thought reasoning unfolds in discrete token space: each step is committed as text, errors propagate, and eliciting good traces presupposes traces to imitate. Reasoning instead in a model's continuous representation space - where in...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI, cs.CL\n- 作者数: 2",
-          "focus_hits": [
-            {
-              "keyword": "coding",
-              "weight": 2.6
-            },
-            {
-              "keyword": "reasoning",
-              "weight": 2.4
-            },
-            {
-              "keyword": "inference",
-              "weight": 1.8
-            }
-          ],
-          "primary_match": "coding",
-          "personalized_score": 176.0,
-          "detail_path": "items/arxiv-latent-recurrent-thoughts-recurrent-refinement-of-proposed-latents-for-reasoning-with-froz.html",
-          "first_seen_at": "2026-09-02T01:28:38.717462+00:00",
-          "last_seen_at": "2026-09-02T04:23:41.045304+00:00",
-          "last_curated_at": "2026-09-02T04:23:41.045304+00:00",
-          "last_notified_at": null
-        },
-        {
           "id": "github::ruvnet/ruflo",
           "kind": "repo",
           "source": "github",
@@ -16914,84 +16778,78 @@
           "last_notified_at": null
         },
         {
-          "id": "arxiv::http://arxiv.org/abs/2609.01572v1",
+          "id": "arxiv::http://arxiv.org/abs/2609.09133v1",
           "kind": "paper",
           "source": "arxiv",
           "source_tags": [
             "latest"
           ],
-          "title": "From Production Traffic to Post-Training: Building a Self-Hosted LLM That Covers the Corporate Request Mix",
-          "html_url": "http://arxiv.org/abs/2609.01572v1",
-          "pdf_url": "https://arxiv.org/pdf/2609.01572v1",
-          "description": "Data-residency constraints force enterprises to self-host LLMs, but continuous adoption of newer models without decommissioning their predecessors expands the serving fleet, fragmenting a finite GPU pool. We consolidate traffic from over 200 internal applications onto a single model by closing quality gaps identified through production error analysis along three axes: instruction following, function-calling, and internal task distribution. Quality is tracked by offline benchmarks stratified to production traffic and scored by deterministic verifiers or calibrated LLM judges. Rather than optimising all objectives jointly, which introduces cross-domain reward interference, we train a separate GRPO expert per axis and merge them via two-stage SLERP. Each expert's reward exposes a distinct failure mode, namely semantic collapse, over-calling, and verbosity hacking, each requiring a domain-specific fix. In non-reasoning mode the recipe surpasses a ${\\sim}7\\times$ larger by total parameters baseline on the in-house Arena with 69.6 to 65.8, instruction following with 0.85 to 0.83, and function-calling with 0.79 to 0.77, while lifting general dialogue benchmarks. The model absorbs 50% of platform traffic, 116M requests per month, at a fraction of the serving cost.",
+          "title": "ExecCritic: Learn to Test, Test to Improve for Coding Agents",
+          "html_url": "http://arxiv.org/abs/2609.09133v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.09133v1",
+          "description": "Execution feedback can guide coding agents toward correct repository repairs, but only when the tests capture the behavior requested by the issue. Agent-generated tests can encode incomplete or incorrect behavioral targets; when the same trajectory writes both the patch and the test, their errors can agree and create false confidence. We introduce ExecCritic, combining a test--verify--revise scaffold with a role-specific reinforcement learning recipe for training agents within it. The scaffold separates test construction from source-code repair: a Test agent independently generates repository-native tests, a fail-closed harness qualifies and freezes them, and a Repair agent revises source code from their execution feedback without changing the tests. Both roles use Qwen-3.5-35B-A3B as the backbone and are trained separately. In Learn to Test, the Test agent learns to produce behaviorally valid tests that distinguish correct from incorrect patches. In Test to Improve, the Repair agent learns both direct task resolution and feedback-guided revision. On SWE-bench Verified, test quality determines whether feedback helps: holding the base Repair agent fixed, tests from the base Test agent reduce resolved rate from a no-test baseline of 61.2% to 57.3%, whereas tests from GPT-5.6-sol raise it to 65.3%. Role-specific post-training raises the Qwen Test agent's Base-to-Gold success from 22.2% to 62.2%; composing the two post-trained Qwen agents reaches 72.6%, an 11.4-point gain over the original no-test baseline without stronger-model or Oracle feedback at evaluation time. Code is publicly available at https://github.com/MSR-Orchard/execcritic.",
           "authors": [
-            "Olga Tsymboi",
-            "Dmitrii Stoianov",
-            "Ramil Latypov",
-            "Danil Taranets",
-            "Daniil Dryabin",
-            "Mikhail Gashkov",
-            "Viktor Zelenkovskiy",
-            "Aleksandr Fida",
-            "Gleb Alektorov",
-            "Nikita Gulyakov",
-            "Arthur Babkin",
-            "Aleksandr Medvedev",
-            "Pavel Gein",
-            "Anatolii Potapov"
+            "Leitian Tao",
+            "Baolin Peng",
+            "Haorui Wang",
+            "Hang Wang",
+            "Hao Cheng",
+            "Wenlin Yao",
+            "Qianhui Wu",
+            "Tao Ge",
+            "Sharon Li",
+            "Jianfeng Gao"
           ],
           "categories": [
-            "cs.CL"
+            "cs.AI",
+            "cs.CL",
+            "cs.SE"
           ],
-          "published_at": "2026-09-01T17:39:26+00:00",
-          "updated_at": "2026-09-01T17:39:26+00:00",
-          "primary_category": "cs.CL",
-          "heuristic_score": 19.895,
-          "summary": "From Production Traffic to Post-Training: Building a Self-Hosted LLM That Covers the Corporate Request Mix 是最近值得追踪的一篇 AI 论文。论文摘要显示：Data-residency constraints force enterprises to self-host LLMs, but continuous adoption of newer models without decommissioning their predecessors expands the serving fleet, fragmenting a finite GPU pool. We consolidate traffic from over 20...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+          "published_at": "2026-09-08T17:53:37+00:00",
+          "updated_at": "2026-09-08T17:53:37+00:00",
+          "primary_category": "cs.AI",
+          "heuristic_score": 17.9,
+          "summary": "ExecCritic: Learn to Test, Test to Improve for Coding Agents 是最近值得追踪的一篇 AI 论文。论文摘要显示：Execution feedback can guide coding agents toward correct repository repairs, but only when the tests capture the behavior requested by the issue. Agent-generated tests can encode incomplete or incorrect behavioral targets; when the same tr...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
           "brief": "这是一篇值得加入今日论文雷达的最新工作。",
           "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
           "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
           "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
           "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
           "highlights": [
-            "分类: cs.CL",
-            "作者数: 14"
+            "分类: cs.AI, cs.CL",
+            "作者数: 10"
           ],
           "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
           "relevance_score": 10,
           "tags": [
             "ai",
-            "llm",
-            "rag",
+            "agent",
+            "gpt",
             "model"
           ],
           "themes": [
             "ai",
-            "llm",
-            "rag"
+            "agent",
+            "gpt"
           ],
           "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-          "summary_markdown": "**摘要**：From Production Traffic to Post-Training: Building a Self-Hosted LLM That Covers the Corporate Request Mix 是最近值得追踪的一篇 AI 论文。论文摘要显示：Data-residency constraints force enterprises to self-host LLMs, but continuous adoption of newer models without decommissioning their predecessors expands the serving fleet, fragmenting a finite GPU pool. We consolidate traffic from over 20...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL\n- 作者数: 14",
+          "summary_markdown": "**摘要**：ExecCritic: Learn to Test, Test to Improve for Coding Agents 是最近值得追踪的一篇 AI 论文。论文摘要显示：Execution feedback can guide coding agents toward correct repository repairs, but only when the tests capture the behavior requested by the issue. Agent-generated tests can encode incomplete or incorrect behavioral targets; when the same tr...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI, cs.CL\n- 作者数: 10",
           "focus_hits": [
             {
-              "keyword": "reasoning",
-              "weight": 2.4
+              "keyword": "agent",
+              "weight": 3.0
             },
             {
-              "keyword": "rag",
-              "weight": 2.2
-            },
-            {
-              "keyword": "benchmark",
-              "weight": 1.6
+              "keyword": "coding",
+              "weight": 2.6
             }
           ],
-          "primary_match": "reasoning",
-          "personalized_score": 170.0,
-          "detail_path": "items/arxiv-from-production-traffic-to-post-training-building-a-self-hosted-llm-that-covers-the-corpor.html",
-          "first_seen_at": "2026-09-02T04:23:41.045304+00:00",
-          "last_seen_at": "2026-09-02T04:23:41.045304+00:00",
-          "last_curated_at": "2026-09-02T04:23:41.045304+00:00",
+          "primary_match": "agent",
+          "personalized_score": 164.0,
+          "detail_path": "items/arxiv-execcritic-learn-to-test-test-to-improve-for-coding-agents.html",
+          "first_seen_at": "2026-09-09T04:34:19.847507+00:00",
+          "last_seen_at": "2026-09-09T04:34:19.847507+00:00",
+          "last_curated_at": "2026-09-09T04:34:19.847507+00:00",
           "last_notified_at": null
         },
         {
@@ -17214,6 +17072,134 @@
           "last_seen_at": "2026-09-03T04:17:15.636391+00:00",
           "last_curated_at": "2026-09-03T04:17:15.636391+00:00",
           "last_notified_at": null
+        },
+        {
+          "id": "github::addyosmani/agent-skills",
+          "kind": "repo",
+          "source": "github",
+          "source_tags": [
+            "trending"
+          ],
+          "name": "agent-skills",
+          "title": "addyosmani/agent-skills",
+          "full_name": "addyosmani/agent-skills",
+          "html_url": "https://github.com/addyosmani/agent-skills",
+          "description": "Production-grade engineering skills for AI coding agents.",
+          "stars": 92080,
+          "stars_today": 0,
+          "language": "JavaScript",
+          "topics": [],
+          "created_at": "",
+          "updated_at": "",
+          "heuristic_score": 15.2,
+          "summary": "addyosmani/agent-skills 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Production-grade engineering skills for AI coding agents.结合关键词命中和热度信号，它适合加入今日重点观察列表。",
+          "brief": "这是一个值得快速关注的开源 AI 项目。",
+          "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
+          "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
+          "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
+          "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
+          "highlights": [
+            "Stars: 92080",
+            "语言: JavaScript"
+          ],
+          "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
+          "relevance_score": 8,
+          "tags": [
+            "ai",
+            "agent",
+            "coding agent"
+          ],
+          "themes": [
+            "ai",
+            "agent",
+            "coding agent"
+          ],
+          "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
+          "summary_markdown": "**摘要**：addyosmani/agent-skills 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Production-grade engineering skills for AI coding agents.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 92080\n- 语言: JavaScript",
+          "focus_hits": [
+            {
+              "keyword": "agent",
+              "weight": 3.0
+            },
+            {
+              "keyword": "coding",
+              "weight": 2.6
+            }
+          ],
+          "primary_match": "agent",
+          "personalized_score": 156.0,
+          "detail_path": "items/github-addyosmani-agent-skills.html",
+          "first_seen_at": "2026-05-07T01:25:31.666453+00:00",
+          "last_seen_at": "2026-09-04T04:23:57.506878+00:00",
+          "last_curated_at": "2026-09-04T04:23:57.506878+00:00",
+          "last_notified_at": null
+        },
+        {
+          "id": "arxiv::http://arxiv.org/abs/2609.04159v1",
+          "kind": "paper",
+          "source": "arxiv",
+          "source_tags": [
+            "latest"
+          ],
+          "title": "SENTINEL-RL: Offloading Topological Reasoning from LLM Agents in the Security Operations Center",
+          "html_url": "http://arxiv.org/abs/2609.04159v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.04159v1",
+          "description": "Large language model (LLM) agents are increasingly proposed as autonomous SOC analysts, but two limitations make them unreliable at enterprise scale: a finite context window cannot hold a multi-thousand-host authentication graph, and free-form generation offers no guarantee that a recommended containment action is consistent with the topology it operates on. We present Sentinel-RL, an agentic-SOC architecture that decouples topological reasoning from semantic reasoning: a heterogeneous graph attention encoder summarizes the live authentication subgraph into a fixed-dimensional state, a Proximal Policy Optimization (PPO) policy maps this state to a constrained set of investigative actions, and an LLM agent loop is restricted to consuming the policy's recommendations and producing analyst-readable narratives gated by a critic. We instantiate the system on the LANL Comprehensive, Multi-Source Cyber-Security Events dataset and the Indiana University Quartz HPC cluster, reporting four results: (i) a two-phase CREATE ingestion pattern loads a 24M-edge authentication subgraph into Neo4j in 14.2 minutes on a single 32-core node, roughly 24x faster than the canonical MERGE-based pipeline; (ii) a sliding-window alert engine reliably trips a 25-event/10-second threshold in <=2.5 s across 50 trials; (iii) PPO training over 200 iterations converges to a mean episodic return of 8.74+/-0.31, with held-out precision of 0.91 and recall of 0.87 on labeled red-team events; and (iv) the integrated containment loop completes a full detect-investigate-recommend-human-approve cycle in a median of 6.3 s. We contribute a reusable engineering pattern (the hot-node deadlock workaround), a portable HPC deployment pattern (anchor-node co-location), and an enterprise-readiness analysis covering false-positive economics, reversibility guarantees, audit compliance, and the human-approval boundary.",
+          "authors": [
+            "Uday Vallabhaneni",
+            "Cassie L. Cagwin",
+            "David J. Wild"
+          ],
+          "categories": [
+            "cs.CR",
+            "cs.AI"
+          ],
+          "published_at": "2026-09-03T17:49:12+00:00",
+          "updated_at": "2026-09-03T17:49:12+00:00",
+          "primary_category": "cs.CR",
+          "heuristic_score": 18.8,
+          "summary": "SENTINEL-RL: Offloading Topological Reasoning from LLM Agents in the Security Operations Center 是最近值得追踪的一篇 AI 论文。论文摘要显示：Large language model (LLM) agents are increasingly proposed as autonomous SOC analysts, but two limitations make them unreliable at enterprise scale: a finite context window cannot hold a multi-thousand-host authentication graph, and free-f...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+          "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+          "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+          "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+          "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+          "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+          "highlights": [
+            "分类: cs.CR, cs.AI",
+            "作者数: 3"
+          ],
+          "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+          "relevance_score": 10,
+          "tags": [
+            "ai",
+            "llm",
+            "agent",
+            "agentic"
+          ],
+          "themes": [
+            "ai",
+            "llm",
+            "agent"
+          ],
+          "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+          "summary_markdown": "**摘要**：SENTINEL-RL: Offloading Topological Reasoning from LLM Agents in the Security Operations Center 是最近值得追踪的一篇 AI 论文。论文摘要显示：Large language model (LLM) agents are increasingly proposed as autonomous SOC analysts, but two limitations make them unreliable at enterprise scale: a finite context window cannot hold a multi-thousand-host authentication graph, and free-f...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CR, cs.AI\n- 作者数: 3",
+          "focus_hits": [
+            {
+              "keyword": "agent",
+              "weight": 3.0
+            },
+            {
+              "keyword": "reasoning",
+              "weight": 2.4
+            }
+          ],
+          "primary_match": "agent",
+          "personalized_score": 154.0,
+          "detail_path": "items/arxiv-sentinel-rl-offloading-topological-reasoning-from-llm-agents-in-the-security-operations-ce.html",
+          "first_seen_at": "2026-09-04T04:23:57.506878+00:00",
+          "last_seen_at": "2026-09-05T04:19:25.280567+00:00",
+          "last_curated_at": "2026-09-05T04:19:25.280567+00:00",
+          "last_notified_at": null
         }
       ],
       "top_themes": [
@@ -17223,14 +17209,14 @@
         },
         {
           "theme": "agent",
-          "count": 3
-        },
-        {
-          "theme": "llm",
-          "count": 3
+          "count": 4
         },
         {
           "theme": "rag",
+          "count": 2
+        },
+        {
+          "theme": "llm",
           "count": 2
         }
       ],
@@ -17241,12 +17227,12 @@
           "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
         },
         {
-          "title": "CordisBench: Can Language Models Reason About Component Lifecycles in Dynamic Agent Harnesses?",
-          "source": "arxiv",
-          "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
+          "title": "ruvnet/ruflo",
+          "source": "github",
+          "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。"
         },
         {
-          "title": "Latent Recurrent Thoughts: Recurrent Refinement of Proposed Latents for Reasoning with Frozen LLMs",
+          "title": "ExecCritic: Learn to Test, Test to Improve for Coding Agents",
           "source": "arxiv",
           "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
         }
@@ -17255,7 +17241,7 @@
     "monthly": {
       "label": "月报",
       "window_days": 30,
-      "generated_at": "2026-09-09T09:37:42.079519+08:00",
+      "generated_at": "2026-09-09T12:34:11.346690+08:00",
       "count": 200,
       "summary": "近 30 天里，最集中的主题是 ai、agent、llm。",
       "top_items": [
