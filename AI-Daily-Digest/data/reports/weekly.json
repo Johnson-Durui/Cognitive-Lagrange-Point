@@ -1,8 +1,8 @@
 {
   "label": "周报",
   "window_days": 7,
-  "generated_at": "2026-09-10T09:32:04.540474+08:00",
-  "count": 60,
+  "generated_at": "2026-09-10T12:33:52.690709+08:00",
+  "count": 53,
   "summary": "近 7 天里，最集中的主题是 ai、agent、llm。",
   "top_items": [
     {
@@ -82,8 +82,8 @@
       "personalized_score": 220.0,
       "detail_path": "items/arxiv-trace-trajectory-robust-admission-with-evidence-ordering-for-efficient-gui-agents.html",
       "first_seen_at": "2026-09-10T01:32:11.661253+00:00",
-      "last_seen_at": "2026-09-10T01:32:11.661253+00:00",
-      "last_curated_at": "2026-09-10T01:32:11.661253+00:00",
+      "last_seen_at": "2026-09-10T04:33:59.875432+00:00",
+      "last_curated_at": "2026-09-10T04:33:59.875432+00:00",
       "last_notified_at": null
     },
     {
@@ -235,8 +235,8 @@
       "personalized_score": 184.0,
       "detail_path": "items/arxiv-beyond-one-size-fits-all-sample-adaptive-strategy-routing-for-vision-token-pruning-in-mllm.html",
       "first_seen_at": "2026-09-10T01:32:11.661253+00:00",
-      "last_seen_at": "2026-09-10T01:32:11.661253+00:00",
-      "last_curated_at": "2026-09-10T01:32:11.661253+00:00",
+      "last_seen_at": "2026-09-10T04:33:59.875432+00:00",
+      "last_curated_at": "2026-09-10T04:33:59.875432+00:00",
       "last_notified_at": null
     },
     {
@@ -315,8 +315,80 @@
       "personalized_score": 184.0,
       "detail_path": "items/arxiv-on-policy-distillation-for-vision-language-model-adaptation-an-effective-paradigm-on-low-q.html",
       "first_seen_at": "2026-09-10T01:32:11.661253+00:00",
-      "last_seen_at": "2026-09-10T01:32:11.661253+00:00",
-      "last_curated_at": "2026-09-10T01:32:11.661253+00:00",
+      "last_seen_at": "2026-09-10T04:33:59.875432+00:00",
+      "last_curated_at": "2026-09-10T04:33:59.875432+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2609.10539v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "IdeaAMBIG: Benchmarking Implementation-Critical Gaps in Research-Idea Specifications",
+      "html_url": "http://arxiv.org/abs/2609.10539v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.10539v1",
+      "description": "A research idea may be novel, coherent, and scientifically plausible, yet its proposed method may remain insufficiently specified for faithful implementation. We study the codification readiness of implementation-facing research-method specifications, defined by whether they provide sufficient methodological information for a competent implementer or coding agent to construct the intended method without unsupported assumptions. We construct evidence-grounded specifications and their supported resolutions from papers, codebases, issue threads, and reproduction artifacts. We introduce IdeaAMBIG, a benchmark of 660 evidence-grounded instances: 163 real-world gaps from reproducibility reports and GitHub issues, and 497 controlled synthetic gaps injected into codification-ready references. IdeaAMBIG evaluates three capabilities: codification-readiness assessment, defect localization, and clarification action generation. Defect localization receives only the specification, whereas clarification additionally receives the annotated defect. Across 13 LLMs, the best model achieves 9.6% Macro Defect Recovery Rate on real-world instances but 80.6% Macro Clarification Action Success Rate when given the defect. In an oracle study, supplying the gold resolution raises the downstream codification-ready rate from 14% to 98%. Across all evaluated models, defect localization is the main bottleneck, with stronger clarification given the defect.",
+      "authors": [
+        "Yiling Ma",
+        "Yilun Zhao",
+        "Sihong Wu",
+        "Manasi Patwardhan",
+        "Arman Cohan"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "published_at": "2026-09-09T17:59:04+00:00",
+      "updated_at": "2026-09-09T17:59:04+00:00",
+      "primary_category": "cs.CL",
+      "heuristic_score": 17.71,
+      "summary": "IdeaAMBIG: Benchmarking Implementation-Critical Gaps in Research-Idea Specifications 是最近值得追踪的一篇 AI 论文。论文摘要显示：A research idea may be novel, coherent, and scientifically plausible, yet its proposed method may remain insufficiently specified for faithful implementation. We study the codification readiness of implementation-facing research-method spec...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CL",
+        "作者数: 5"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "llm",
+        "agent",
+        "model"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "agent"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：IdeaAMBIG: Benchmarking Implementation-Critical Gaps in Research-Idea Specifications 是最近值得追踪的一篇 AI 论文。论文摘要显示：A research idea may be novel, coherent, and scientifically plausible, yet its proposed method may remain insufficiently specified for faithful implementation. We study the codification readiness of implementation-facing research-method spec...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL\n- 作者数: 5",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "coding",
+          "weight": 2.6
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 180.0,
+      "detail_path": "items/arxiv-ideaambig-benchmarking-implementation-critical-gaps-in-research-idea-specifications.html",
+      "first_seen_at": "2026-09-10T04:33:59.875432+00:00",
+      "last_seen_at": "2026-09-10T04:33:59.875432+00:00",
+      "last_curated_at": "2026-09-10T04:33:59.875432+00:00",
       "last_notified_at": null
     },
     {
@@ -451,8 +523,8 @@
       "personalized_score": 168.0,
       "detail_path": "items/arxiv-from-symbolic-perception-to-logical-deduction-a-framework-for-guiding-language-models-in-g.html",
       "first_seen_at": "2026-09-10T01:32:11.661253+00:00",
-      "last_seen_at": "2026-09-10T01:32:11.661253+00:00",
-      "last_curated_at": "2026-09-10T01:32:11.661253+00:00",
+      "last_seen_at": "2026-09-10T04:33:59.875432+00:00",
+      "last_curated_at": "2026-09-10T04:33:59.875432+00:00",
       "last_notified_at": null
     },
     {
@@ -529,78 +601,6 @@
       "last_seen_at": "2026-09-09T04:34:19.847507+00:00",
       "last_curated_at": "2026-09-09T04:34:19.847507+00:00",
       "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2609.04197v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "ESPO: Error-Structured Prompt Optimization via Diagnose, Diversify, and Stabilize",
-      "html_url": "http://arxiv.org/abs/2609.04197v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.04197v1",
-      "description": "Evolutionary prompt optimizers such as GEPA suffer from prompt bloat: each iteration appends rules and caveats, producing prompts up to 3$\\times$ longer yet no more accurate. We trace this to three deficiencies - incomplete error observation, limited search diversity, and unreliable selection - and propose ESPO (Error-Structured Prompt Optimization), which decomposes prompt optimization into three phases: Diagnose clusters all training errors into structural patterns in one round; Propose generates candidates via four complementary strategies with independent biases; Select applies bootstrap stability selection. On seven public NLP benchmarks - Tweet, MMLU, GSM8K, HotpotQA, ScoNe, HoVer, and PUPA - ESPO improves average accuracy by $+$3.76 pp over the state-of-the-art (74.67% vs 70.91% for GEPA), matching or exceeding GEPA on every dataset while producing prompts 47% shorter (1,004 vs 1,878 chars) and faster at inference. Cross-model experiments across four additional student models (Gemma 3 12B, Mistral 14B, Qwen3 32B, Claude Haiku 4.5) show ESPO yields the best average accuracy on every model tested, with the largest gap on Qwen3 GSM8K (15.00% $\\to$ 91.40%). A generalization bound (Appendix) grounds each phase in a corresponding term of the test-time gap, and the ablation confirms a key prediction: adding diversity without bootstrap selection actually hurts performance ($-$1.20%).",
-      "authors": [
-        "Lihao Liu",
-        "Peng Tang",
-        "Kunwar Yashraj Singh",
-        "Shabnam Ghadar"
-      ],
-      "categories": [
-        "cs.CL",
-        "cs.AI"
-      ],
-      "published_at": "2026-09-03T17:59:37+00:00",
-      "updated_at": "2026-09-03T17:59:37+00:00",
-      "primary_category": "cs.CL",
-      "heuristic_score": 17.656,
-      "summary": "ESPO: Error-Structured Prompt Optimization via Diagnose, Diversify, and Stabilize 是最近值得追踪的一篇 AI 论文。论文摘要显示：Evolutionary prompt optimizers such as GEPA suffer from prompt bloat: each iteration appends rules and caveats, producing prompts up to 3$\\times$ longer yet no more accurate. We trace this to three deficiencies - incomplete error observatio...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CL, cs.AI",
-        "作者数: 4"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "rag",
-        "model",
-        "benchmark"
-      ],
-      "themes": [
-        "ai",
-        "rag",
-        "model"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：ESPO: Error-Structured Prompt Optimization via Diagnose, Diversify, and Stabilize 是最近值得追踪的一篇 AI 论文。论文摘要显示：Evolutionary prompt optimizers such as GEPA suffer from prompt bloat: each iteration appends rules and caveats, producing prompts up to 3$\\times$ longer yet no more accurate. We trace this to three deficiencies - incomplete error observatio...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL, cs.AI\n- 作者数: 4",
-      "focus_hits": [
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "inference",
-          "weight": 1.8
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "rag",
-      "personalized_score": 164.0,
-      "detail_path": "items/arxiv-espo-error-structured-prompt-optimization-via-diagnose-diversify-and-stabilize.html",
-      "first_seen_at": "2026-09-04T04:23:57.506878+00:00",
-      "last_seen_at": "2026-09-05T04:19:25.280567+00:00",
-      "last_curated_at": "2026-09-05T04:19:25.280567+00:00",
-      "last_notified_at": null
     }
   ],
   "top_themes": [
@@ -614,11 +614,11 @@
     },
     {
       "theme": "llm",
-      "count": 2
+      "count": 3
     },
     {
       "theme": "rag",
-      "count": 2
+      "count": 1
     }
   ],
   "highlights": [
