@@ -1,9 +1,9 @@
 {
   "label": "周报",
   "window_days": 7,
-  "generated_at": "2026-09-11T09:31:12.639716+08:00",
-  "count": 61,
-  "summary": "近 7 天里，最集中的主题是 ai、agent、llm。",
+  "generated_at": "2026-09-11T12:31:30.209818+08:00",
+  "count": 60,
+  "summary": "近 7 天里，最集中的主题是 ai、llm、agent。",
   "top_items": [
     {
       "id": "arxiv::http://arxiv.org/abs/2609.10297v1",
@@ -84,81 +84,6 @@
       "first_seen_at": "2026-09-10T01:32:11.661253+00:00",
       "last_seen_at": "2026-09-10T04:33:59.875432+00:00",
       "last_curated_at": "2026-09-10T04:33:59.875432+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2609.03941v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "Headroom-Drift Replay: A Primitive for Principled Replay Control in GRPO",
-      "html_url": "http://arxiv.org/abs/2609.03941v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.03941v1",
-      "description": "RL-based post-training for reasoning models is increasingly bottlenecked by repeated fresh rollout generation, particularly in agentic settings where environment interaction dominates wall-clock cost. Replay can reduce this burden by reusing past trajectories, but existing methods typically embed it within larger training pipelines involving exploration, experience restructuring, or mixed-policy optimization. This makes replay's own contribution difficult to isolate. We ask a focused question: how far can principled replay selection alone go? We introduce Headroom-Drift Replay, a group-level replay control primitive for GRPO that separates reuse into two decisions. Headroom ranks stored groups by remaining learning value, while Drift gates them by compatibility with the current policy. The fresh on-policy stream remains unchanged, and the method adds no auxiliary generation or training machinery. Across mathematical reasoning, multimodal reasoning, and Agentic Search benchmarks, this single intervention outperforms naive replay and matches or exceeds broader replay methods on Avg Mean@32. In Agentic Search, where environment interaction dominates cost, it delivers comparable quality at materially lower wall-clock time.",
-      "authors": [
-        "Hyun Bin Park",
-        "Du-Seong Chang"
-      ],
-      "categories": [
-        "cs.LG",
-        "cs.AI",
-        "cs.CL"
-      ],
-      "published_at": "2026-09-03T14:45:47+00:00",
-      "updated_at": "2026-09-03T14:45:47+00:00",
-      "primary_category": "cs.LG",
-      "heuristic_score": 22.247,
-      "summary": "Headroom-Drift Replay: A Primitive for Principled Replay Control in GRPO 是最近值得追踪的一篇 AI 论文。论文摘要显示：RL-based post-training for reasoning models is increasingly bottlenecked by repeated fresh rollout generation, particularly in agentic settings where environment interaction dominates wall-clock cost. Replay can reduce this burden by reusin...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.LG, cs.AI",
-        "作者数: 2"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "agent",
-        "agentic",
-        "multimodal"
-      ],
-      "themes": [
-        "ai",
-        "agent",
-        "agentic"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：Headroom-Drift Replay: A Primitive for Principled Replay Control in GRPO 是最近值得追踪的一篇 AI 论文。论文摘要显示：RL-based post-training for reasoning models is increasingly bottlenecked by repeated fresh rollout generation, particularly in agentic settings where environment interaction dominates wall-clock cost. Replay can reduce this burden by reusin...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.LG, cs.AI\n- 作者数: 2",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "multimodal",
-          "weight": 2.0
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 198.0,
-      "detail_path": "items/arxiv-headroom-drift-replay-a-primitive-for-principled-replay-control-in-grpo.html",
-      "first_seen_at": "2026-09-04T01:25:48.281020+00:00",
-      "last_seen_at": "2026-09-04T04:23:57.506878+00:00",
-      "last_curated_at": "2026-09-04T04:23:57.506878+00:00",
       "last_notified_at": null
     },
     {
@@ -392,6 +317,87 @@
       "last_notified_at": null
     },
     {
+      "id": "arxiv::http://arxiv.org/abs/2609.11900v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "MindTopo: Can Foundation Models Reason in Topological Space?",
+      "html_url": "http://arxiv.org/abs/2609.11900v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.11900v1",
+      "description": "Spatial reasoning depends not only on metric properties such as distance, angle, and shape, but also on topological relations that remain invariant under continuous deformation. Cognitive science identifies these relations as foundational to spatial understanding, yet foundation-model evaluations largely focus on metric or viewpoint-dependent relations. We introduce MindTopo, a benchmark of topological intuition across five properties grounded in cognitive science and formal topology: continuity, separation, order, enclosure, and knots. MindTopo evaluates each property at two cognitive levels. Reasoning asks a model to identify topological relations or infer how they change. Planning instantiates a foundation model as a closed-loop agent whose policy selects environment actions. MindTopo contains 11,030 instances across 13 procedurally generated task types with controllable difficulty. We benchmark 14 MLLMs and study agent configurations augmented with image and video generation, including 3 video generative models in planning settings. Every MLLM performs better on reasoning than on planning, and the best-performing model remains far below observed human performance. On Qwen3-VL-2B-Instruct, supervised fine-tuning and reinforcement learning improve reasoning more than planning. Generated observations retain local cues and reach plausible endpoints, but audited rollouts do not reliably follow environment dynamics or preserve topology across transitions. Our website is at https://mind-topo.github.io/",
+      "authors": [
+        "Yunfei Ge",
+        "Anbang Liu",
+        "Qineng Wang",
+        "Johnalbert Garnica",
+        "Jianwen Lyu",
+        "Zihan Wang",
+        "Reuben Tan",
+        "Jianfeng Gao",
+        "Ruohan Zhang",
+        "Yining Hong",
+        "Jiajun Wu",
+        "Manling Li"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.CV"
+      ],
+      "published_at": "2026-09-10T17:54:32+00:00",
+      "updated_at": "2026-09-10T17:54:32+00:00",
+      "primary_category": "cs.AI",
+      "heuristic_score": 17.805,
+      "summary": "MindTopo: Can Foundation Models Reason in Topological Space? 是最近值得追踪的一篇 AI 论文。论文摘要显示：Spatial reasoning depends not only on metric properties such as distance, angle, and shape, but also on topological relations that remain invariant under continuous deformation. Cognitive science identifies these relations as foundational t...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.AI, cs.CL",
+        "作者数: 12"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "llm",
+        "agent",
+        "model"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "agent"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：MindTopo: Can Foundation Models Reason in Topological Space? 是最近值得追踪的一篇 AI 论文。论文摘要显示：Spatial reasoning depends not only on metric properties such as distance, angle, and shape, but also on topological relations that remain invariant under continuous deformation. Cognitive science identifies these relations as foundational t...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI, cs.CL\n- 作者数: 12",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 178.0,
+      "detail_path": "items/arxiv-mindtopo-can-foundation-models-reason-in-topological-space.html",
+      "first_seen_at": "2026-09-11T04:31:42.557067+00:00",
+      "last_seen_at": "2026-09-11T04:31:42.557067+00:00",
+      "last_curated_at": "2026-09-11T04:31:42.557067+00:00",
+      "last_notified_at": null
+    },
+    {
       "id": "github::ruvnet/ruflo",
       "kind": "repo",
       "source": "github",
@@ -528,78 +534,74 @@
       "last_notified_at": null
     },
     {
-      "id": "arxiv::http://arxiv.org/abs/2609.09133v1",
+      "id": "arxiv::http://arxiv.org/abs/2609.11878v1",
       "kind": "paper",
       "source": "arxiv",
       "source_tags": [
         "latest"
       ],
-      "title": "ExecCritic: Learn to Test, Test to Improve for Coding Agents",
-      "html_url": "http://arxiv.org/abs/2609.09133v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.09133v1",
-      "description": "Execution feedback can guide coding agents toward correct repository repairs, but only when the tests capture the behavior requested by the issue. Agent-generated tests can encode incomplete or incorrect behavioral targets; when the same trajectory writes both the patch and the test, their errors can agree and create false confidence. We introduce ExecCritic, combining a test--verify--revise scaffold with a role-specific reinforcement learning recipe for training agents within it. The scaffold separates test construction from source-code repair: a Test agent independently generates repository-native tests, a fail-closed harness qualifies and freezes them, and a Repair agent revises source code from their execution feedback without changing the tests. Both roles use Qwen-3.5-35B-A3B as the backbone and are trained separately. In Learn to Test, the Test agent learns to produce behaviorally valid tests that distinguish correct from incorrect patches. In Test to Improve, the Repair agent learns both direct task resolution and feedback-guided revision. On SWE-bench Verified, test quality determines whether feedback helps: holding the base Repair agent fixed, tests from the base Test agent reduce resolved rate from a no-test baseline of 61.2% to 57.3%, whereas tests from GPT-5.6-sol raise it to 65.3%. Role-specific post-training raises the Qwen Test agent's Base-to-Gold success from 22.2% to 62.2%; composing the two post-trained Qwen agents reaches 72.6%, an 11.4-point gain over the original no-test baseline without stronger-model or Oracle feedback at evaluation time. Code is publicly available at https://github.com/MSR-Orchard/execcritic.",
+      "title": "Domain-Specific Hallucination Detection in Large Language Models",
+      "html_url": "http://arxiv.org/abs/2609.11878v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.11878v1",
+      "description": "Large language models generate fluent text that can contain unfaithful claims -- a phenomenon known as hallucination. We present a multi-signal detection pipeline combining fine-tuned DeBERTa-v3 classification, Monte Carlo (MC) Dropout uncertainty quantification, and temperature-scaled calibration for response-level hallucination detection. Evaluated on the HaluEval benchmark, our pipeline achieves F1=0.915 and AUROC=0.977 on general-domain tasks, with per-task F1 scores of 0.97 (QA), 0.96 (Summarization), and 0.82 (Dialogue). MC Dropout inference further improves accuracy to 93.2%. A context ablation study confirms the model performs genuine entailment reasoning rather than exploiting surface patterns, with summarization F1 dropping 24% when knowledge context is removed. Learning curve analysis reveals that 25% of training data captures 77% of full-data performance. Beyond detection, we apply Direct Preference Optimization (DPO) to a Qwen2.5-0.5B generator, reducing its hallucination rate from 85.5% to 37.7% (55.9% relative reduction) as measured by our detector. Cross-domain evaluation on the SciFact biomedical benchmark shows that general-domain training transfers poorly (F1=0.52), motivating domain-specific fine-tuning. PubMedBERT fine-tuned on SciFact achieves F1=0.63 and AUROC=0.81, demonstrating that domain-matched pre-training is the strongest adaptation strategy. Code and models are available at https://github.com/varunteja99/hallucination-detection-nlp",
       "authors": [
-        "Leitian Tao",
-        "Baolin Peng",
-        "Haorui Wang",
-        "Hang Wang",
-        "Hao Cheng",
-        "Wenlin Yao",
-        "Qianhui Wu",
-        "Tao Ge",
-        "Sharon Li",
-        "Jianfeng Gao"
+        "Varun Teja Chundru",
+        "Debasmita Biswas"
       ],
       "categories": [
-        "cs.AI",
         "cs.CL",
-        "cs.SE"
+        "cs.AI",
+        "cs.LG"
       ],
-      "published_at": "2026-09-08T17:53:37+00:00",
-      "updated_at": "2026-09-08T17:53:37+00:00",
-      "primary_category": "cs.AI",
-      "heuristic_score": 17.9,
-      "summary": "ExecCritic: Learn to Test, Test to Improve for Coding Agents 是最近值得追踪的一篇 AI 论文。论文摘要显示：Execution feedback can guide coding agents toward correct repository repairs, but only when the tests capture the behavior requested by the issue. Agent-generated tests can encode incomplete or incorrect behavioral targets; when the same tr...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "published_at": "2026-09-10T17:45:36+00:00",
+      "updated_at": "2026-09-10T17:45:36+00:00",
+      "primary_category": "cs.CL",
+      "heuristic_score": 17.758,
+      "summary": "Domain-Specific Hallucination Detection in Large Language Models 是最近值得追踪的一篇 AI 论文。论文摘要显示：Large language models generate fluent text that can contain unfaithful claims -- a phenomenon known as hallucination. We present a multi-signal detection pipeline combining fine-tuned DeBERTa-v3 classification, Monte Carlo (MC) Dropout unce...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
       "brief": "这是一篇值得加入今日论文雷达的最新工作。",
       "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
       "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
       "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
       "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
       "highlights": [
-        "分类: cs.AI, cs.CL",
-        "作者数: 10"
+        "分类: cs.CL, cs.AI",
+        "作者数: 2"
       ],
       "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
       "relevance_score": 10,
       "tags": [
         "ai",
-        "agent",
-        "gpt",
-        "model"
+        "model",
+        "benchmark",
+        "inference"
       ],
       "themes": [
         "ai",
-        "agent",
-        "gpt"
+        "model",
+        "benchmark"
       ],
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：ExecCritic: Learn to Test, Test to Improve for Coding Agents 是最近值得追踪的一篇 AI 论文。论文摘要显示：Execution feedback can guide coding agents toward correct repository repairs, but only when the tests capture the behavior requested by the issue. Agent-generated tests can encode incomplete or incorrect behavioral targets; when the same tr...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI, cs.CL\n- 作者数: 10",
+      "summary_markdown": "**摘要**：Domain-Specific Hallucination Detection in Large Language Models 是最近值得追踪的一篇 AI 论文。论文摘要显示：Large language models generate fluent text that can contain unfaithful claims -- a phenomenon known as hallucination. We present a multi-signal detection pipeline combining fine-tuned DeBERTa-v3 classification, Monte Carlo (MC) Dropout unce...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL, cs.AI\n- 作者数: 2",
       "focus_hits": [
         {
-          "keyword": "agent",
-          "weight": 3.0
+          "keyword": "reasoning",
+          "weight": 2.4
         },
         {
-          "keyword": "coding",
-          "weight": 2.6
+          "keyword": "inference",
+          "weight": 1.8
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
         }
       ],
-      "primary_match": "agent",
-      "personalized_score": 164.0,
-      "detail_path": "items/arxiv-execcritic-learn-to-test-test-to-improve-for-coding-agents.html",
-      "first_seen_at": "2026-09-09T04:34:19.847507+00:00",
-      "last_seen_at": "2026-09-09T04:34:19.847507+00:00",
-      "last_curated_at": "2026-09-09T04:34:19.847507+00:00",
+      "primary_match": "reasoning",
+      "personalized_score": 166.0,
+      "detail_path": "items/arxiv-domain-specific-hallucination-detection-in-large-language-models.html",
+      "first_seen_at": "2026-09-11T04:31:42.557067+00:00",
+      "last_seen_at": "2026-09-11T04:31:42.557067+00:00",
+      "last_curated_at": "2026-09-11T04:31:42.557067+00:00",
       "last_notified_at": null
     }
   ],
@@ -609,15 +611,19 @@
       "count": 8
     },
     {
-      "theme": "agent",
+      "theme": "llm",
       "count": 4
     },
     {
-      "theme": "llm",
-      "count": 3
+      "theme": "agent",
+      "count": 2
     },
     {
       "theme": "rag",
+      "count": 1
+    },
+    {
+      "theme": "model",
       "count": 1
     }
   ],
@@ -628,12 +634,12 @@
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     },
     {
-      "title": "Headroom-Drift Replay: A Primitive for Principled Replay Control in GRPO",
+      "title": "Beyond One-Size-Fits-All: Sample-Adaptive Strategy Routing for Vision Token Pruning in MLLMs",
       "source": "arxiv",
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     },
     {
-      "title": "Beyond One-Size-Fits-All: Sample-Adaptive Strategy Routing for Vision Token Pruning in MLLMs",
+      "title": "On-Policy Distillation for Vision-Language Model Adaptation, an Effective Paradigm on Low-Quality Multimodal Data",
       "source": "arxiv",
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     }
