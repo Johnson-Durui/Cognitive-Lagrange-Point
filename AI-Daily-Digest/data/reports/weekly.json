@@ -1,45 +1,85 @@
 {
   "label": "周报",
   "window_days": 7,
-  "generated_at": "2026-09-17T09:49:40.648922+08:00",
-  "count": 69,
+  "generated_at": "2026-09-17T12:46:50.321852+08:00",
+  "count": 64,
   "summary": "近 7 天里，最集中的主题是 ai、llm、agent。",
   "top_items": [
     {
-      "id": "arxiv::http://arxiv.org/abs/2609.10297v1",
+      "id": "arxiv::http://arxiv.org/abs/2609.19134v1",
       "kind": "paper",
       "source": "arxiv",
       "source_tags": [
         "latest"
       ],
-      "title": "TRACE: Trajectory-robust Admission with Evidence Ordering for Efficient GUI Agents",
-      "html_url": "http://arxiv.org/abs/2609.10297v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.10297v1",
-      "description": "GUI agents accumulate high-resolution screenshots as the trajectory unfolds, increasing inference latency and memory usage. Training-free visual token pruning can reduce this cost, but cache reuse introduces a fundamental constraint. Once tokens are discarded, the corresponding visual evidence cannot be recovered without re-encoding. Pruning therefore becomes an \\textit{irreversible admission decision} that must remain useful for unknown future targets while preserving coverage of operable regions under tight budgets. To address these challenges, we propose \\textbf{\\method{}}, a training-free framework for \\emph{\\textbf{T}rajectory-\\textbf{r}obust \\textbf{A}dmission and \\textbf{C}overage-aware \\textbf{E}vidence ordering}. Specifically, we combine a query-independent layout-derived interaction prior with instruction relevance and feature novelty to rank visual evidence according to both potential future utility and diversity. Then, we reserve part of the budget for native visual tokens distributed across the screen, repairing missing spatial coverage without breaking the ordering. Together, these mechanisms produce a nested token order, allowing retained visual evidence to shrink monotonically across budgets while remaining reusable throughout the trajectory. Finally, our monotone KV contraction incrementally contracts retired frames into compact session state, avoiding repeated visual encoding or pruning. Extensive experiments across six GUI benchmarks and diverse models verify the effectiveness of our proposed \\method{} under tight budgets. The source code will be released.",
+      "title": "ScienceIDE: Turning World's Scientific Codebase into Agent Learnable Environments",
+      "html_url": "http://arxiv.org/abs/2609.19134v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.19134v1",
+      "description": "Scientific code repositories encode decades of human knowledge in executable models, methods, and tools. Yet fragmented toolchains, implicit domain conventions, and specialized correctness criteria make this knowledge difficult to convert into reliable learning experience-a challenge we call the scientific experience bottleneck. We introduce ScienceIDE, infrastructure for turning the world's scientific code into programmable environments for scientific agents. Guided by expert-defined scientific cases and acceptance criteria, agents transform repositories into executable environments that support task generation, execution, and scientific verification. These environments provide a shared foundation for supervised fine-tuning, reinforcement learning, and evaluation. Using verified interaction trajectories, we train PhAI-IDE-72B, PhAI-IDE-9B, and PhAI-IDE-4B. The model family shows gains in held-out scientific-code repair and across selected general-purpose benchmarks in code, reasoning, and knowledge, providing evidence of positive transfer from scientific experience to broader capabilities. ScienceIDE lays the foundation for an integrated workspace for agent learning and scientific practice, making humanity's scientific software a shared substrate for developing scientific intelligence. Code: https://github.com/aitofound/ScienceIDE",
       "authors": [
-        "Yuhao Wang",
-        "Mu Qiao",
-        "Xindong Zhang",
-        "Yunzhi Zhuge",
-        "Lei Zhang",
-        "Huchuan Lu"
+        "Hejia Geng",
+        "Zesen Huang",
+        "Haoyang Li",
+        "Wenbin Li",
+        "Koutian Wu",
+        "Zihan Zhou",
+        "Yuanbo Pang",
+        "Weihao Liu",
+        "Zigong Xu",
+        "Zhiping Li",
+        "Zongzheng Zhang",
+        "Chuanfei Dong",
+        "Jiankai Sun",
+        "Tianzhe Zheng",
+        "Fengyu Xie",
+        "Yue Ma",
+        "Yueheng Shi",
+        "Tong Xie",
+        "Zonglin Di",
+        "Xianrong Liu",
+        "Qucheng Gao",
+        "Yimin Liu",
+        "Jiaming Pan",
+        "Sheng Huang",
+        "Xiao-Han Ma",
+        "Lanqing Yuan",
+        "Zhenlin Zhu",
+        "Ziang Liu",
+        "Ziyang Xu",
+        "Junkai Wang",
+        "Kangkai Liang",
+        "Jiayi Xian",
+        "Zehong Zhao",
+        "Liuwei Xu",
+        "Jingxu Xie",
+        "Peijin Zhang",
+        "Qiang Gao",
+        "Chengyi Xing",
+        "Zhe Zhao",
+        "Xi Wang",
+        "Yaopeng Xing",
+        "Xing Meng",
+        "Zhenfei Yin",
+        "Yingcheng Wu",
+        "Ling Yang"
       ],
       "categories": [
-        "cs.CV"
+        "cs.CL",
+        "cs.CY"
       ],
-      "published_at": "2026-09-09T15:12:48+00:00",
-      "updated_at": "2026-09-09T15:12:48+00:00",
-      "primary_category": "cs.CV",
-      "heuristic_score": 20.3,
-      "summary": "TRACE: Trajectory-robust Admission with Evidence Ordering for Efficient GUI Agents 是最近值得追踪的一篇 AI 论文。论文摘要显示：GUI agents accumulate high-resolution screenshots as the trajectory unfolds, increasing inference latency and memory usage. Training-free visual token pruning can reduce this cost, but cache reuse introduces a fundamental constraint. Once t...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "published_at": "2026-09-16T17:55:47+00:00",
+      "updated_at": "2026-09-16T17:55:47+00:00",
+      "primary_category": "cs.CL",
+      "heuristic_score": 17.591,
+      "summary": "ScienceIDE: Turning World's Scientific Codebase into Agent Learnable Environments 是最近值得追踪的一篇 AI 论文。论文摘要显示：Scientific code repositories encode decades of human knowledge in executable models, methods, and tools. Yet fragmented toolchains, implicit domain conventions, and specialized correctness criteria make this knowledge difficult to convert i...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
       "brief": "这是一篇值得加入今日论文雷达的最新工作。",
       "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
       "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
       "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
       "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
       "highlights": [
-        "分类: cs.CV",
-        "作者数: 6"
+        "分类: cs.CL, cs.CY",
+        "作者数: 45"
       ],
       "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
       "relevance_score": 10,
@@ -55,23 +95,19 @@
         "rag"
       ],
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：TRACE: Trajectory-robust Admission with Evidence Ordering for Efficient GUI Agents 是最近值得追踪的一篇 AI 论文。论文摘要显示：GUI agents accumulate high-resolution screenshots as the trajectory unfolds, increasing inference latency and memory usage. Training-free visual token pruning can reduce this cost, but cache reuse introduces a fundamental constraint. Once t...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV\n- 作者数: 6",
+      "summary_markdown": "**摘要**：ScienceIDE: Turning World's Scientific Codebase into Agent Learnable Environments 是最近值得追踪的一篇 AI 论文。论文摘要显示：Scientific code repositories encode decades of human knowledge in executable models, methods, and tools. Yet fragmented toolchains, implicit domain conventions, and specialized correctness criteria make this knowledge difficult to convert i...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL, cs.CY\n- 作者数: 45",
       "focus_hits": [
         {
           "keyword": "agent",
           "weight": 3.0
         },
         {
-          "keyword": "coding",
-          "weight": 2.6
+          "keyword": "reasoning",
+          "weight": 2.4
         },
         {
           "keyword": "rag",
           "weight": 2.2
-        },
-        {
-          "keyword": "inference",
-          "weight": 1.8
         },
         {
           "keyword": "benchmark",
@@ -79,11 +115,11 @@
         }
       ],
       "primary_match": "agent",
-      "personalized_score": 220.0,
-      "detail_path": "items/arxiv-trace-trajectory-robust-admission-with-evidence-ordering-for-efficient-gui-agents.html",
-      "first_seen_at": "2026-09-10T01:32:11.661253+00:00",
-      "last_seen_at": "2026-09-10T04:33:59.875432+00:00",
-      "last_curated_at": "2026-09-10T04:33:59.875432+00:00",
+      "personalized_score": 200.0,
+      "detail_path": "items/arxiv-scienceide-turning-world-s-scientific-codebase-into-agent-learnable-environments.html",
+      "first_seen_at": "2026-09-17T04:46:57.686195+00:00",
+      "last_seen_at": "2026-09-17T04:46:57.686195+00:00",
+      "last_curated_at": "2026-09-17T04:46:57.686195+00:00",
       "last_notified_at": null
     },
     {
@@ -98,7 +134,7 @@
       "full_name": "Tencent/WeKnora",
       "html_url": "https://github.com/Tencent/WeKnora",
       "description": "Open-source LLM knowledge platform: turn raw documents into a queryable RAG, an autonomous reasoning agent, and a self-maintaining Wiki.",
-      "stars": 25367,
+      "stars": 25561,
       "stars_today": 0,
       "language": "Go",
       "topics": [],
@@ -112,7 +148,7 @@
       "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
       "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
       "highlights": [
-        "Stars: 25367",
+        "Stars: 25561",
         "语言: Go"
       ],
       "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
@@ -129,7 +165,7 @@
         "agent"
       ],
       "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：Tencent/WeKnora 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Open-source LLM knowledge platform: turn raw documents into a queryable RAG, an autonomous reasoning agent, and a self-maintaining Wiki.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：10/10\n\n**亮点**：\n- Stars: 25367\n- 语言: Go",
+      "summary_markdown": "**摘要**：Tencent/WeKnora 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Open-source LLM knowledge platform: turn raw documents into a queryable RAG, an autonomous reasoning agent, and a self-maintaining Wiki.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：10/10\n\n**亮点**：\n- Stars: 25561\n- 语言: Go",
       "focus_hits": [
         {
           "keyword": "agent",
@@ -145,241 +181,79 @@
         }
       ],
       "primary_match": "agent",
-      "personalized_score": 186.15,
+      "personalized_score": 186.22,
       "detail_path": "items/github-tencent-weknora.html",
       "first_seen_at": "2026-09-17T01:49:48.489213+00:00",
-      "last_seen_at": "2026-09-17T01:49:48.489213+00:00",
-      "last_curated_at": "2026-09-17T01:49:48.489213+00:00",
+      "last_seen_at": "2026-09-17T04:46:57.686195+00:00",
+      "last_curated_at": "2026-09-17T04:46:57.686195+00:00",
       "last_notified_at": null
     },
     {
-      "id": "arxiv::http://arxiv.org/abs/2609.10346v1",
+      "id": "arxiv::http://arxiv.org/abs/2609.19113v1",
       "kind": "paper",
       "source": "arxiv",
       "source_tags": [
         "latest"
       ],
-      "title": "Beyond One-Size-Fits-All: Sample-Adaptive Strategy Routing for Vision Token Pruning in MLLMs",
-      "html_url": "http://arxiv.org/abs/2609.10346v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.10346v1",
-      "description": "Multimodal large language models (MLLMs) process hundreds or thousands of visual tokens per image, incurring prohibitive inference costs. While existing vision token pruning methods mitigate this overhead, they implicitly assume that a single fixed pruning strategy can be applied uniformly across all inputs. Our analysis further reveals that ranking pruning methods by average benchmark accuracy conceals substantial sample-wise complementarity: although the average-best strategy excels overall, alternative strategies prove superior on a significant fraction of individual samples. To harness this diversity, we propose VIP-Router, a lightweight VIsion Pruning Router that adaptively selects the pruning strategy predicted to be best suited to each input at a specified pruning level. Conditioned on low-cost visual and textual features, VIP-Router identifies the most suitable candidate strategy while retaining full-token inference as an option when pruning is predicted to be unfavorable. Evaluated on a curated suite of pruning-sensitive visual perception benchmarks, VTC-Bench Group A, VIP-Router consistently outperforms the best fixed strategy baseline across all reduction ratios, achieving a 26.9% relative improvement in average accuracy, and a 22.0% relative increase in average utility after accounting for realized token cost. Crucially, VIP-Router operates in a plug-and-play manner without modifying underlying pruning algorithms or model weights, introducing trainable parameters equivalent to merely 0.017\\% of the backbone. Furthermore, VIP-Router proves effective across various MLLM backbones and yields consistent gains on unseen benchmarks, highlighting the potential of sample adaptive routing for visual token pruning.",
+      "title": "Playing log(N)-Questions over Wikipedia Abstracts: Communication Efficiency Between Paired Frontier Models",
+      "html_url": "http://arxiv.org/abs/2609.19113v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.19113v1",
+      "description": "We evaluate six frontier language models on the two-agent $\\log(N)$-Questions game. A questioner sees $N$ Wikipedia lead paragraphs and must identify a secretly chosen target using exactly $\\log_2 N$ yes/no questions. An answerer sees only the target and the question, and replies with one word. Both roles run on the same provider, so the game measures how well a model communicates with itself across an information asymmetry. We run 408 games over document sets of 4 to 1024 paragraphs at a total API cost of \\$363. One model finishes well behind the others: Claude Opus 5 wins 28 of 68 games, against 45 to 56 for GLM-5.3, GPT-5.6 Sol, Grok 4.6, Gemini 3.8 Flash and Kimi K3. The leading five are only marginally separable. Pooling those five, win rate declines with set size at $r=-0.973$ and is fit by a single per-round reliability parameter. The form is $\\text{win}=p^{\\log_2 N}$ with $p=0.928$. Losses divide into answer errors and discrimination failures in roughly equal measure, and models almost never name a document their own evidence excludes. Every unanimous answer error from the weakest model was inspected: 32 of 34 are ``No'' answers, on properties stated in the document's first sentence, under an instruction that explicitly warns against defaulting to ``No''. Information per question, estimated from answer balance, correlates with win rate at $r=+0.88$. The only two models to extract a full bit per question are the only two that partition on document titles, a strategy absent below $N{=}32$ and used in a quarter of questions above it. Reasoning-token expenditure varies $4.5\\times$ across models with little relation to success, and the trace grows as the candidate set shrinks without a matching gain in reliability.",
       "authors": [
-        "Haiji Liang",
-        "Pengfei Zhou",
-        "Zhenglin Wan",
-        "Wei Wang",
-        "Yang You",
-        "Wangbo Zhao"
+        "Peter Potash"
       ],
       "categories": [
-        "cs.CV",
-        "cs.AI"
+        "cs.CL"
       ],
-      "published_at": "2026-09-09T15:44:32+00:00",
-      "updated_at": "2026-09-09T15:44:32+00:00",
-      "primary_category": "cs.CV",
-      "heuristic_score": 20.3,
-      "summary": "Beyond One-Size-Fits-All: Sample-Adaptive Strategy Routing for Vision Token Pruning in MLLMs 是最近值得追踪的一篇 AI 论文。论文摘要显示：Multimodal large language models (MLLMs) process hundreds or thousands of visual tokens per image, incurring prohibitive inference costs. While existing vision token pruning methods mitigate this overhead, they implicitly assume that a sing...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "published_at": "2026-09-16T17:41:12+00:00",
+      "updated_at": "2026-09-16T17:41:12+00:00",
+      "primary_category": "cs.CL",
+      "heuristic_score": 17.9,
+      "summary": "Playing log(N)-Questions over Wikipedia Abstracts: Communication Efficiency Between Paired Frontier Models 是最近值得追踪的一篇 AI 论文。论文摘要显示：We evaluate six frontier language models on the two-agent $\\log(N)$-Questions game. A questioner sees $N$ Wikipedia lead paragraphs and must identify a secretly chosen target using exactly $\\log_2 N$ yes/no questions. An answerer sees only ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
       "brief": "这是一篇值得加入今日论文雷达的最新工作。",
       "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
       "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
       "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
       "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
       "highlights": [
-        "分类: cs.CV, cs.AI",
-        "作者数: 6"
+        "分类: cs.CL",
+        "作者数: 1"
       ],
       "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
       "relevance_score": 10,
       "tags": [
         "ai",
-        "llm",
-        "rag",
-        "multimodal"
-      ],
-      "themes": [
-        "ai",
-        "llm",
+        "agent",
+        "gpt",
         "rag"
       ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：Beyond One-Size-Fits-All: Sample-Adaptive Strategy Routing for Vision Token Pruning in MLLMs 是最近值得追踪的一篇 AI 论文。论文摘要显示：Multimodal large language models (MLLMs) process hundreds or thousands of visual tokens per image, incurring prohibitive inference costs. While existing vision token pruning methods mitigate this overhead, they implicitly assume that a sing...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV, cs.AI\n- 作者数: 6",
-      "focus_hits": [
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "multimodal",
-          "weight": 2.0
-        },
-        {
-          "keyword": "inference",
-          "weight": 1.8
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "rag",
-      "personalized_score": 184.0,
-      "detail_path": "items/arxiv-beyond-one-size-fits-all-sample-adaptive-strategy-routing-for-vision-token-pruning-in-mllm.html",
-      "first_seen_at": "2026-09-10T01:32:11.661253+00:00",
-      "last_seen_at": "2026-09-10T04:33:59.875432+00:00",
-      "last_curated_at": "2026-09-10T04:33:59.875432+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2609.10321v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "On-Policy Distillation for Vision-Language Model Adaptation, an Effective Paradigm on Low-Quality Multimodal Data",
-      "html_url": "http://arxiv.org/abs/2609.10321v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.10321v1",
-      "description": "Knowledge distillation offers an efficient route to transfer a task-adapted vision-language teacher to a compact student. The training target in current vision-language distillation methods is typically constructed from the teacher prediction and applied uniformly to all training samples, making it unreliable under class and domain shifts. In this paper, we argue that distillation target construction should be treated as a dynamic training decision rather than a fixed recipe. To this end, we propose OnPoKD, an on-policy distillation framework for vision-language model adaptation. To the best of our knowledge, OnPoKD is the first framework that applies on-policy distillation to vision-language model adaptation by learning target construction as a policy decision. OnPoKD learns a lightweight controller that constructs sample-wise adaptive targets using reliability and disagreement cues from the teacher model, student model, and zero-shot prior. Instead of relying on a fixed teacher prediction, the controller dynamically balances teacher supervision, zero-shot prior guidance, and hard-label anchoring through bounded policy actions, allowing the distillation target to adapt to varying sample reliability and training stages. The policy controller is updated with validation feedback, encouraging target construction to optimize transferability rather than merely fitting the training distribution. Since the controller is only used during training, OnPoKD can be seamlessly integrated into existing vision-language distillation pipelines while preserving the original inference architecture and test-time cost. Extensive experiments on Base-to-novel generalization and Cross-dataset transfer benchmarks show that OnPoKD consistently improves over strong vision-language distillation baselines.",
-      "authors": [
-        "Hongyuan Zhang",
-        "Xianda Guo",
-        "Yanlun Peng",
-        "Qianlong Yang",
-        "Yubin Guo",
-        "Pinhan Fu",
-        "Mulin Chen",
-        "Xiaozhen Qiao",
-        "Ping Luo"
-      ],
-      "categories": [
-        "cs.CL"
-      ],
-      "published_at": "2026-09-09T15:26:28+00:00",
-      "updated_at": "2026-09-09T15:26:28+00:00",
-      "primary_category": "cs.CL",
-      "heuristic_score": 20.3,
-      "summary": "On-Policy Distillation for Vision-Language Model Adaptation, an Effective Paradigm on Low-Quality Multimodal Data 是最近值得追踪的一篇 AI 论文。论文摘要显示：Knowledge distillation offers an efficient route to transfer a task-adapted vision-language teacher to a compact student. The training target in current vision-language distillation methods is typically constructed from the teacher predicti...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CL",
-        "作者数: 9"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "rag",
-        "model",
-        "benchmark"
-      ],
       "themes": [
         "ai",
-        "rag",
-        "model"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：On-Policy Distillation for Vision-Language Model Adaptation, an Effective Paradigm on Low-Quality Multimodal Data 是最近值得追踪的一篇 AI 论文。论文摘要显示：Knowledge distillation offers an efficient route to transfer a task-adapted vision-language teacher to a compact student. The training target in current vision-language distillation methods is typically constructed from the teacher predicti...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL\n- 作者数: 9",
-      "focus_hits": [
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "multimodal",
-          "weight": 2.0
-        },
-        {
-          "keyword": "inference",
-          "weight": 1.8
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "rag",
-      "personalized_score": 184.0,
-      "detail_path": "items/arxiv-on-policy-distillation-for-vision-language-model-adaptation-an-effective-paradigm-on-low-q.html",
-      "first_seen_at": "2026-09-10T01:32:11.661253+00:00",
-      "last_seen_at": "2026-09-10T04:33:59.875432+00:00",
-      "last_curated_at": "2026-09-10T04:33:59.875432+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2609.10539v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "IdeaAMBIG: Benchmarking Implementation-Critical Gaps in Research-Idea Specifications",
-      "html_url": "http://arxiv.org/abs/2609.10539v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.10539v1",
-      "description": "A research idea may be novel, coherent, and scientifically plausible, yet its proposed method may remain insufficiently specified for faithful implementation. We study the codification readiness of implementation-facing research-method specifications, defined by whether they provide sufficient methodological information for a competent implementer or coding agent to construct the intended method without unsupported assumptions. We construct evidence-grounded specifications and their supported resolutions from papers, codebases, issue threads, and reproduction artifacts. We introduce IdeaAMBIG, a benchmark of 660 evidence-grounded instances: 163 real-world gaps from reproducibility reports and GitHub issues, and 497 controlled synthetic gaps injected into codification-ready references. IdeaAMBIG evaluates three capabilities: codification-readiness assessment, defect localization, and clarification action generation. Defect localization receives only the specification, whereas clarification additionally receives the annotated defect. Across 13 LLMs, the best model achieves 9.6% Macro Defect Recovery Rate on real-world instances but 80.6% Macro Clarification Action Success Rate when given the defect. In an oracle study, supplying the gold resolution raises the downstream codification-ready rate from 14% to 98%. Across all evaluated models, defect localization is the main bottleneck, with stronger clarification given the defect.",
-      "authors": [
-        "Yiling Ma",
-        "Yilun Zhao",
-        "Sihong Wu",
-        "Manasi Patwardhan",
-        "Arman Cohan"
-      ],
-      "categories": [
-        "cs.CL"
-      ],
-      "published_at": "2026-09-09T17:59:04+00:00",
-      "updated_at": "2026-09-09T17:59:04+00:00",
-      "primary_category": "cs.CL",
-      "heuristic_score": 17.71,
-      "summary": "IdeaAMBIG: Benchmarking Implementation-Critical Gaps in Research-Idea Specifications 是最近值得追踪的一篇 AI 论文。论文摘要显示：A research idea may be novel, coherent, and scientifically plausible, yet its proposed method may remain insufficiently specified for faithful implementation. We study the codification readiness of implementation-facing research-method spec...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CL",
-        "作者数: 5"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "llm",
         "agent",
-        "model"
-      ],
-      "themes": [
-        "ai",
-        "llm",
-        "agent"
+        "gpt"
       ],
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：IdeaAMBIG: Benchmarking Implementation-Critical Gaps in Research-Idea Specifications 是最近值得追踪的一篇 AI 论文。论文摘要显示：A research idea may be novel, coherent, and scientifically plausible, yet its proposed method may remain insufficiently specified for faithful implementation. We study the codification readiness of implementation-facing research-method spec...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL\n- 作者数: 5",
+      "summary_markdown": "**摘要**：Playing log(N)-Questions over Wikipedia Abstracts: Communication Efficiency Between Paired Frontier Models 是最近值得追踪的一篇 AI 论文。论文摘要显示：We evaluate six frontier language models on the two-agent $\\log(N)$-Questions game. A questioner sees $N$ Wikipedia lead paragraphs and must identify a secretly chosen target using exactly $\\log_2 N$ yes/no questions. An answerer sees only ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL\n- 作者数: 1",
       "focus_hits": [
         {
           "keyword": "agent",
           "weight": 3.0
         },
         {
-          "keyword": "coding",
-          "weight": 2.6
+          "keyword": "reasoning",
+          "weight": 2.4
         },
         {
-          "keyword": "benchmark",
-          "weight": 1.6
+          "keyword": "rag",
+          "weight": 2.2
         }
       ],
       "primary_match": "agent",
-      "personalized_score": 180.0,
-      "detail_path": "items/arxiv-ideaambig-benchmarking-implementation-critical-gaps-in-research-idea-specifications.html",
-      "first_seen_at": "2026-09-10T04:33:59.875432+00:00",
-      "last_seen_at": "2026-09-10T04:33:59.875432+00:00",
-      "last_curated_at": "2026-09-10T04:33:59.875432+00:00",
+      "personalized_score": 184.0,
+      "detail_path": "items/arxiv-playing-log-n-questions-over-wikipedia-abstracts-communication-efficiency-between-paired-f.html",
+      "first_seen_at": "2026-09-17T04:46:57.686195+00:00",
+      "last_seen_at": "2026-09-17T04:46:57.686195+00:00",
+      "last_curated_at": "2026-09-17T04:46:57.686195+00:00",
       "last_notified_at": null
     },
     {
@@ -450,8 +324,8 @@
       "personalized_score": 178.0,
       "detail_path": "items/arxiv-recursive-reasoning-or-statistical-extrapolation-in-context-learning-in-multi-agent-interd.html",
       "first_seen_at": "2026-09-17T01:49:48.489213+00:00",
-      "last_seen_at": "2026-09-17T01:49:48.489213+00:00",
-      "last_curated_at": "2026-09-17T01:49:48.489213+00:00",
+      "last_seen_at": "2026-09-17T04:46:57.686195+00:00",
+      "last_curated_at": "2026-09-17T04:46:57.686195+00:00",
       "last_notified_at": null
     },
     {
@@ -547,7 +421,7 @@
       "full_name": "anthropics/claude-code",
       "html_url": "https://github.com/anthropics/claude-code",
       "description": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.",
-      "stars": 145531,
+      "stars": 145617,
       "stars_today": 0,
       "language": "TypeScript",
       "topics": [],
@@ -561,7 +435,7 @@
       "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
       "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
       "highlights": [
-        "Stars: 145531",
+        "Stars: 145617",
         "语言: TypeScript"
       ],
       "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
@@ -577,7 +451,7 @@
         "agentic"
       ],
       "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：anthropics/claude-code 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：10/10\n\n**亮点**：\n- Stars: 145531\n- 语言: TypeScript",
+      "summary_markdown": "**摘要**：anthropics/claude-code 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：10/10\n\n**亮点**：\n- Stars: 145617\n- 语言: TypeScript",
       "focus_hits": [
         {
           "keyword": "agent",
@@ -592,8 +466,142 @@
       "personalized_score": 176.0,
       "detail_path": "items/github-anthropics-claude-code.html",
       "first_seen_at": "2026-08-23T00:25:39.962236+00:00",
-      "last_seen_at": "2026-09-17T01:49:48.489213+00:00",
-      "last_curated_at": "2026-09-17T01:49:48.489213+00:00",
+      "last_seen_at": "2026-09-17T04:46:57.686195+00:00",
+      "last_curated_at": "2026-09-17T04:46:57.686195+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2609.18605v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "PACT: Can Enterprise AI Assistants Be Trusted Under Pressure?",
+      "html_url": "http://arxiv.org/abs/2609.18605v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.18605v1",
+      "description": "As corporate AI adoption continues to grow, enterprise-grade LLM agents are being deployed into sensitive contexts such as hiring, healthcare, and finance. In these contexts, compliance with rules specified in an agent's system context is a first-order legal concern. Currently, no evaluation framework systematically measures which LLM models tend to violate compliance rules, especially under pressure from a persistent user, a hurried manager, or circumstances where violation is convenient or attractive. We introduce PACT (Pressure-Applied Compliance Testing), a benchmark for rule-following under pressure in AI agents assisting employees in daily tasks across twelve regulated enterprise domains and forty-eight scenarios, each set in a realistic multi-turn conversation. Each benchmark item pairs a standing rule against a rule-violating shortcut, and applies a battery of pressures across different wordings and system-prompt modes. We construct PACT component by component under strict LLM-as-judge auditing to ensure samples are unambiguous, ungameable, and realistic enough to avoid eliciting evaluation-aware behavior. We use PACT to profile LLM compliance across six complementary metrics that create a holistic picture of an AI assistant's robustness under pressure and throughout multi-turn conversations, its transparency, and ability to correctly discern where a rule applies. We aggregate this profile into PACTScore, a reliability-weighted compliance rate over all items and modes. Our results across 22 common LLM models spanning multiple providers and sizes show substantial variability in compliance across models and metric dimensions. Even the strongest assistants mis-apply a rule on 6 to 10% of items, and ordinary user pressure raises the violation rate by 65% on average. PACT highlights compliance risks in LLM assistants, motivating guardrails and careful model selection.",
+      "authors": [
+        "Mika Okamoto",
+        "Ansel Kaplan Erol"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.CY",
+        "cs.LG"
+      ],
+      "published_at": "2026-09-16T12:57:15+00:00",
+      "updated_at": "2026-09-16T12:57:15+00:00",
+      "primary_category": "cs.CL",
+      "heuristic_score": 20.3,
+      "summary": "PACT: Can Enterprise AI Assistants Be Trusted Under Pressure? 是最近值得追踪的一篇 AI 论文。论文摘要显示：As corporate AI adoption continues to grow, enterprise-grade LLM agents are being deployed into sensitive contexts such as hiring, healthcare, and finance. In these contexts, compliance with rules specified in an agent's system context is a...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CL, cs.AI",
+        "作者数: 2"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "llm",
+        "agent",
+        "rag"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "agent"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：PACT: Can Enterprise AI Assistants Be Trusted Under Pressure? 是最近值得追踪的一篇 AI 论文。论文摘要显示：As corporate AI adoption continues to grow, enterprise-grade LLM agents are being deployed into sensitive contexts such as hiring, healthcare, and finance. In these contexts, compliance with rules specified in an agent's system context is a...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL, cs.AI\n- 作者数: 2",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 176.0,
+      "detail_path": "items/arxiv-pact-can-enterprise-ai-assistants-be-trusted-under-pressure.html",
+      "first_seen_at": "2026-09-17T01:49:48.489213+00:00",
+      "last_seen_at": "2026-09-17T04:46:57.686195+00:00",
+      "last_curated_at": "2026-09-17T04:46:57.686195+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "github::earendil-works/pi",
+      "kind": "repo",
+      "source": "github",
+      "source_tags": [
+        "trending"
+      ],
+      "name": "pi",
+      "title": "earendil-works/pi",
+      "full_name": "earendil-works/pi",
+      "html_url": "https://github.com/earendil-works/pi",
+      "description": "AI agent toolkit: unified LLM API, agent loop, TUI, coding agent CLI",
+      "stars": 105871,
+      "stars_today": 0,
+      "language": "TypeScript",
+      "topics": [],
+      "created_at": "",
+      "updated_at": "",
+      "heuristic_score": 17.8,
+      "summary": "earendil-works/pi 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：AI agent toolkit: unified LLM API, agent loop, TUI, coding agent CLI结合关键词命中和热度信号，它适合加入今日重点观察列表。",
+      "brief": "这是一个值得快速关注的开源 AI 项目。",
+      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
+      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
+      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
+      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
+      "highlights": [
+        "Stars: 105871",
+        "语言: TypeScript"
+      ],
+      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "llm",
+        "agent",
+        "ai agent"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "agent"
+      ],
+      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
+      "summary_markdown": "**摘要**：earendil-works/pi 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：AI agent toolkit: unified LLM API, agent loop, TUI, coding agent CLI结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：10/10\n\n**亮点**：\n- Stars: 105871\n- 语言: TypeScript",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "coding",
+          "weight": 2.6
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 176.0,
+      "detail_path": "items/github-earendil-works-pi.html",
+      "first_seen_at": "2026-09-16T01:46:37.715044+00:00",
+      "last_seen_at": "2026-09-16T04:43:46.081398+00:00",
+      "last_curated_at": "2026-09-16T04:43:46.081398+00:00",
       "last_notified_at": null
     }
   ],
@@ -608,16 +616,12 @@
     },
     {
       "theme": "agent",
-      "count": 2
-    },
-    {
-      "theme": "rag",
-      "count": 1
+      "count": 3
     }
   ],
   "highlights": [
     {
-      "title": "TRACE: Trajectory-robust Admission with Evidence Ordering for Efficient GUI Agents",
+      "title": "ScienceIDE: Turning World's Scientific Codebase into Agent Learnable Environments",
       "source": "arxiv",
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     },
@@ -627,7 +631,7 @@
       "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。"
     },
     {
-      "title": "Beyond One-Size-Fits-All: Sample-Adaptive Strategy Routing for Vision Token Pruning in MLLMs",
+      "title": "Playing log(N)-Questions over Wikipedia Abstracts: Communication Efficiency Between Paired Frontier Models",
       "source": "arxiv",
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     }
