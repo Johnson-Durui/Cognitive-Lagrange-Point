@@ -1,7 +1,7 @@
 {
   "label": "月报",
   "window_days": 30,
-  "generated_at": "2026-09-17T12:46:50.321852+08:00",
+  "generated_at": "2026-09-18T09:37:48.211070+08:00",
   "count": 200,
   "summary": "近 30 天里，最集中的主题是 ai、agent、llm。",
   "top_items": [
@@ -448,96 +448,6 @@
       "last_notified_at": null
     },
     {
-      "id": "arxiv::http://arxiv.org/abs/2608.19197v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "SPADE: Self-Play in Adaptive Synthetic Executable Environments",
-      "html_url": "http://arxiv.org/abs/2608.19197v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.19197v1",
-      "description": "Continuous self-improvement requires an ever-expanding pool of self-generated, diverse, adaptive goals. For language agents, existing training environment pools (hand-curated, statically synthesized, or frozen-verifier) keep the goal distribution fixed as the learner scales. We introduce SPADE (Self-Play in Adaptive Synthetic Executable Environments), a self-play RL framework in which a single LLM plays two roles: an Environment Designer that writes complete, long-horizon training environments as executable code with an OpenAI Gym-style reset()/step() interface, and a Reasoning Agent that learns to act in them. Each is a stateful, multi-turn environment (state transitions, reward functions, and verification code), so one interface spans reasoning problems and multi-step agentic tool use. The Reasoning Agent's regret is estimated using the gap between its reward with and without privileged hints; in optimizing this regret signal the Environment Designer learns to target environments at the edge of the agent's capabilities while keeping them feasible. Through extensive experimentation, we find several components critical to success: grounding the Environment Designer on documents sampled from a large pretraining corpus, and giving it an accumulated environment memory. Scaling to 30B-parameter models, SPADE improves over the strongest fixed-environment baseline by +5.3 on average across eight held-out math, science, code, and reasoning benchmarks, and lifts the tool-use setting by +5.7 on BFCL-v4 multi-turn and +13.9 on ACEBench-Agent; on the games setting, the margin over the strongest baseline grows with model scale. By making environment design itself a learnable component, SPADE takes a concrete step toward open-ended self-improvement.",
-      "authors": [
-        "Bo Liu",
-        "Simon Yu",
-        "Yiding Jiang",
-        "Ao Qu",
-        "Andrew Zhao",
-        "Zichen Liu",
-        "Junsu Kim",
-        "Zijian Zhou",
-        "Seungone Kim",
-        "Tongzheng Ren",
-        "Mickel Liu",
-        "Hanfei Yu",
-        "Zhaorun Chen",
-        "Weiyan Shi",
-        "Paul Pu Liang",
-        "Luke Zettlemoyer",
-        "Yejin Choi",
-        "Natasha Jaques"
-      ],
-      "categories": [
-        "cs.CL",
-        "cs.AI"
-      ],
-      "published_at": "2026-08-19T17:58:56+00:00",
-      "updated_at": "2026-08-19T17:58:56+00:00",
-      "primary_category": "cs.CL",
-      "heuristic_score": 25.1,
-      "summary": "SPADE: Self-Play in Adaptive Synthetic Executable Environments 是最近值得追踪的一篇 AI 论文。论文摘要显示：Continuous self-improvement requires an ever-expanding pool of self-generated, diverse, adaptive goals. For language agents, existing training environment pools (hand-curated, statically synthesized, or frozen-verifier) keep the goal distri...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CL, cs.AI",
-        "作者数: 18"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "llm",
-        "agent",
-        "agentic"
-      ],
-      "themes": [
-        "ai",
-        "llm",
-        "agent"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：SPADE: Self-Play in Adaptive Synthetic Executable Environments 是最近值得追踪的一篇 AI 论文。论文摘要显示：Continuous self-improvement requires an ever-expanding pool of self-generated, diverse, adaptive goals. For language agents, existing training environment pools (hand-curated, statically synthesized, or frozen-verifier) keep the goal distri...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL, cs.AI\n- 作者数: 18",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 200.0,
-      "detail_path": "items/arxiv-spade-self-play-in-adaptive-synthetic-executable-environments.html",
-      "first_seen_at": "2026-08-21T00:26:44.468183+00:00",
-      "last_seen_at": "2026-08-21T01:55:36.644964+00:00",
-      "last_curated_at": "2026-08-21T01:55:36.644964+00:00",
-      "last_notified_at": null
-    },
-    {
       "id": "arxiv::http://arxiv.org/abs/2609.03941v1",
       "kind": "paper",
       "source": "arxiv",
@@ -684,6 +594,72 @@
       "first_seen_at": "2026-09-02T04:23:41.045304+00:00",
       "last_seen_at": "2026-09-02T04:23:41.045304+00:00",
       "last_curated_at": "2026-09-02T04:23:41.045304+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "github::Tencent/WeKnora",
+      "kind": "repo",
+      "source": "github",
+      "source_tags": [
+        "trending"
+      ],
+      "name": "WeKnora",
+      "title": "Tencent/WeKnora",
+      "full_name": "Tencent/WeKnora",
+      "html_url": "https://github.com/Tencent/WeKnora",
+      "description": "Open-source LLM knowledge platform: turn raw documents into a queryable RAG, an autonomous reasoning agent, and a self-maintaining Wiki.",
+      "stars": 26275,
+      "stars_today": 0,
+      "language": "Go",
+      "topics": [],
+      "created_at": "",
+      "updated_at": "",
+      "heuristic_score": 20.4,
+      "summary": "Tencent/WeKnora 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Open-source LLM knowledge platform: turn raw documents into a queryable RAG, an autonomous reasoning agent, and a self-maintaining Wiki.结合关键词命中和热度信号，它适合加入今日重点观察列表。",
+      "brief": "这是一个值得快速关注的开源 AI 项目。",
+      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
+      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
+      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
+      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
+      "highlights": [
+        "Stars: 26275",
+        "语言: Go"
+      ],
+      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "llm",
+        "agent",
+        "rag"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "agent"
+      ],
+      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
+      "summary_markdown": "**摘要**：Tencent/WeKnora 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Open-source LLM knowledge platform: turn raw documents into a queryable RAG, an autonomous reasoning agent, and a self-maintaining Wiki.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：10/10\n\n**亮点**：\n- Stars: 26275\n- 语言: Go",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 186.51,
+      "detail_path": "items/github-tencent-weknora.html",
+      "first_seen_at": "2026-09-17T01:49:48.489213+00:00",
+      "last_seen_at": "2026-09-18T01:37:54.872241+00:00",
+      "last_curated_at": "2026-09-18T01:37:54.872241+00:00",
       "last_notified_at": null
     }
   ],
