@@ -1,7 +1,7 @@
 {
   "label": "月报",
   "window_days": 30,
-  "generated_at": "2026-09-22T09:55:54.074560+08:00",
+  "generated_at": "2026-09-22T12:47:31.108097+08:00",
   "count": 200,
   "summary": "近 30 天里，最集中的主题是 ai、agent、llm。",
   "top_items": [
@@ -244,8 +244,95 @@
       "personalized_score": 202.0,
       "detail_path": "items/arxiv-tictacbench-benchmarking-timing-closure-capabilities-of-coding-agents.html",
       "first_seen_at": "2026-09-22T01:56:03.468101+00:00",
-      "last_seen_at": "2026-09-22T01:56:03.468101+00:00",
-      "last_curated_at": "2026-09-22T01:56:03.468101+00:00",
+      "last_seen_at": "2026-09-22T04:47:41.410909+00:00",
+      "last_curated_at": "2026-09-22T04:47:41.410909+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2609.24972v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "RRSI: Regularized Recursive Self-Improvement of Agent Harnesses",
+      "html_url": "http://arxiv.org/abs/2609.24972v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.24972v1",
+      "description": "An LLM agent's capability is largely magnified by its harness, namely the prompts, control flow, tooling, memory, and context management surrounding the frozen backbone model. Recent methods increasingly automate this process by iteratively proposing and selecting component-wise edits of an agent harness, practically establishing a form of recursive self-improvement (RSI) at the agent-system level. However, such recursive evolution may overfit by memorizing the training tasks, showing large in-distribution gains that shrink or even vanish on out-of-distribution benchmarks. We introduce Regularized Recursive Self-Improvement of Agent Harnesses (RRSI), which incorporates the principles of regularizations into harness self-improvement by constraining the evolution candidate proposal and selection. The proposer operates with a temporally annealed budget, limiting how many edits a candidate can bundle, and it encourages unexplored trajectories based on evolution history. The selector is equipped with a critic and a pruner: the critic screens benchmark-specific proposals, while the pruner, removes changes that are too small, too expensive, or no longer useful. Together these constraints favor reusable agent mechanisms over benchmark-specific ones or even noises. Across eight benchmarks spanning coding, agentic workspace and engineering design tasks, RRSI gains up to 14.1 points on the split it evolves against and up to 4.7 points on the five out-of-distribution benchmarks, while producing a harness that runs on 30% fewer policy tokens than the unregularized evolution. Code is available at https://github.com/google-research/rrsi and project page is https://regularized-rsi.com/.",
+      "authors": [
+        "Peng Xia",
+        "Rujun Han",
+        "Zifeng Wang",
+        "Yanfei Chen",
+        "Yufan Zhang",
+        "Yoonho Lee",
+        "Chengsong Huang",
+        "Han Yu",
+        "Zhongying CuiZhu",
+        "Yifei Ming",
+        "Huaxiu Yao",
+        "Burak Gokturk",
+        "Tomas Pfister",
+        "Chen-Yu Lee"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "published_at": "2026-09-21T17:54:49+00:00",
+      "updated_at": "2026-09-21T17:54:49+00:00",
+      "primary_category": "cs.LG",
+      "heuristic_score": 22.7,
+      "summary": "RRSI: Regularized Recursive Self-Improvement of Agent Harnesses 是最近值得追踪的一篇 AI 论文。论文摘要显示：An LLM agent's capability is largely magnified by its harness, namely the prompts, control flow, tooling, memory, and context management surrounding the frozen backbone model. Recent methods increasingly automate this process by iteratively...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.LG, cs.AI",
+        "作者数: 14"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "llm",
+        "agent",
+        "agentic"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "agent"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：RRSI: Regularized Recursive Self-Improvement of Agent Harnesses 是最近值得追踪的一篇 AI 论文。论文摘要显示：An LLM agent's capability is largely magnified by its harness, namely the prompts, control flow, tooling, memory, and context management surrounding the frozen backbone model. Recent methods increasingly automate this process by iteratively...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.LG, cs.AI\n- 作者数: 14",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "coding",
+          "weight": 2.6
+        },
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 202.0,
+      "detail_path": "items/arxiv-rrsi-regularized-recursive-self-improvement-of-agent-harnesses.html",
+      "first_seen_at": "2026-09-22T04:47:41.410909+00:00",
+      "last_seen_at": "2026-09-22T04:47:41.410909+00:00",
+      "last_curated_at": "2026-09-22T04:47:41.410909+00:00",
       "last_notified_at": null
     },
     {
@@ -597,80 +684,6 @@
       "last_seen_at": "2026-09-19T04:31:57.598044+00:00",
       "last_curated_at": "2026-09-19T04:31:57.598044+00:00",
       "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2609.01600v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "CordisBench: Can Language Models Reason About Component Lifecycles in Dynamic Agent Harnesses?",
-      "html_url": "http://arxiv.org/abs/2609.01600v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.01600v1",
-      "description": "Dynamic agent harnesses let language models change the software that shapes their own execution. This flexibility brings a new reasoning burden: a local plugin change can propagate through dependencies and cleanup. We introduce CordisBench, a 1,200-question benchmark of this lifecycle reasoning. It combines a controlled formal setting with programs executed against Cordis, a runtime that manages component dependencies and cleanup, and asks models to identify affected components, predict state after a specified teardown order, determine which conditions hold under all or some orders, and choose reconfigurations that succeed when executed. Across these tasks, we evaluate three efficiency-oriented models at low reasoning effort with 2, 4, 8, 16, 24, or 32 relevant interactions, using deterministic task-specific scoring. Models usually handle small systems well but grow less reliable as more interactions become relevant, especially when predicting final state and when reasoning across teardown orders. Additional inference effort recovers marked gains for some models. The cost is nontrivial: on our 16-interaction subset, GPT-5.6 Luna uses nearly 3,000 reasoning tokens per question at medium effort. For these controlled instances, that cost is avoidable: an independent finite reference semantics agrees with Cordis execution on every observation and action outcome used for scoring across all 528 executable questions.",
-      "authors": [
-        "Damien Sileo",
-        "Dimitri Kachler"
-      ],
-      "categories": [
-        "cs.CL",
-        "cs.AI"
-      ],
-      "published_at": "2026-09-01T17:59:13+00:00",
-      "updated_at": "2026-09-01T17:59:13+00:00",
-      "primary_category": "cs.CL",
-      "heuristic_score": 20.091,
-      "summary": "CordisBench: Can Language Models Reason About Component Lifecycles in Dynamic Agent Harnesses? 是最近值得追踪的一篇 AI 论文。论文摘要显示：Dynamic agent harnesses let language models change the software that shapes their own execution. This flexibility brings a new reasoning burden: a local plugin change can propagate through dependencies and cleanup. We introduce CordisBench,...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CL, cs.AI",
-        "作者数: 2"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "agent",
-        "gpt",
-        "model"
-      ],
-      "themes": [
-        "ai",
-        "agent",
-        "gpt"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：CordisBench: Can Language Models Reason About Component Lifecycles in Dynamic Agent Harnesses? 是最近值得追踪的一篇 AI 论文。论文摘要显示：Dynamic agent harnesses let language models change the software that shapes their own execution. This flexibility brings a new reasoning burden: a local plugin change can propagate through dependencies and cleanup. We introduce CordisBench,...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL, cs.AI\n- 作者数: 2",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "inference",
-          "weight": 1.8
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 196.0,
-      "detail_path": "items/arxiv-cordisbench-can-language-models-reason-about-component-lifecycles-in-dynamic-agent-harness.html",
-      "first_seen_at": "2026-09-02T04:23:41.045304+00:00",
-      "last_seen_at": "2026-09-02T04:23:41.045304+00:00",
-      "last_curated_at": "2026-09-02T04:23:41.045304+00:00",
-      "last_notified_at": null
     }
   ],
   "top_themes": [
@@ -680,11 +693,11 @@
     },
     {
       "theme": "agent",
-      "count": 5
+      "count": 4
     },
     {
       "theme": "llm",
-      "count": 3
+      "count": 4
     }
   ],
   "highlights": [
