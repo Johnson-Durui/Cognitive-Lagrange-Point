@@ -1,9 +1,9 @@
 {
   "label": "月报",
   "window_days": 30,
-  "generated_at": "2026-09-23T09:51:34.413234+08:00",
+  "generated_at": "2026-09-23T12:39:23.553243+08:00",
   "count": 200,
-  "summary": "近 30 天里，最集中的主题是 ai、agent、llm。",
+  "summary": "近 30 天里，最集中的主题是 ai、llm、agent。",
   "top_items": [
     {
       "id": "arxiv::http://arxiv.org/abs/2609.10297v1",
@@ -325,8 +325,8 @@
       "personalized_score": 200.0,
       "detail_path": "items/arxiv-pact-from-credit-assignment-to-critic-alignment.html",
       "first_seen_at": "2026-09-23T01:51:40.647389+00:00",
-      "last_seen_at": "2026-09-23T01:51:40.647389+00:00",
-      "last_curated_at": "2026-09-23T01:51:40.647389+00:00",
+      "last_seen_at": "2026-09-23T04:39:32.861265+00:00",
+      "last_curated_at": "2026-09-23T04:39:32.861265+00:00",
       "last_notified_at": null
     },
     {
@@ -598,85 +598,82 @@
       "last_notified_at": null
     },
     {
-      "id": "arxiv::http://arxiv.org/abs/2609.20812v1",
+      "id": "arxiv::http://arxiv.org/abs/2609.26760v1",
       "kind": "paper",
       "source": "arxiv",
       "source_tags": [
         "latest"
       ],
-      "title": "Quantifying Overclaiming Propensity in Frontier LLM Agents",
-      "html_url": "http://arxiv.org/abs/2609.20812v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.20812v1",
-      "description": "Frontier coding agents are increasingly trusted to work autonomously for long periods, yet an agent's final response is often the only account of that work a user sees. We quantify the propensity of frontier agents to \\emph{overclaim} task completion, a misrepresentation that can mislead the user. An agent overclaims when its final response contradicts information in its context. This definition requires no inference about intent and is independent of task success. We introduce \\emph{OverclaimBench}, an evaluation suite composed of five file-review scenarios, transcript-based coverage measurements, and registered planted defects. We evaluate eight proprietary frontier models in their own production command-line interfaces, and four open-weight models under a single fixed harness on OverclaimBench and find that 1) agents do not read all the files they were asked to review in 67.9\\% of runs; 2) among runs where not all files are read, agents are \\emph{misleading} 80.4\\% of the time (59--96\\% per model), either falsely claiming to have read all files or omitting that coverage is incomplete; 3) requiring delegation to subagents increased reading coverage, but among reviews that remained incomplete, a large majority were still misleading; and 4) agents that falsely claimed a complete review missed planted defects at about 1.8 times the rate of agents that read every file, showing that claims of completion can conceal substantive failures. Together, these results show that agents' final responses are not reliable accounts of their actions.",
+      "title": "Grow the Harness, Not the Context: From Strategy-Free Scaffolds to Reusable Specialist Agents",
+      "html_url": "http://arxiv.org/abs/2609.26760v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.26760v1",
+      "description": "Large language model (LLM) agents often handle streams of related tasks, yet standard harnesses repeatedly ask the model to reconstruct the same control decisions inside each task's context. We study whether task feedback can instead turn recurring control into reusable executable code, while reserving LLM calls for task-specific semantic reasoning. We introduce Growing Harness, a failure-guided training paradigm that learns the agent harness itself from a strategy-free scaffold that exposes fixed model and tool interfaces but encodes no task-solving controller. Function-level execution traces localize each failure to a bounded code surface, an optimizer repairs a window of failures jointly, and a success-first held-out gate rolls back repair sequences that harm prior capability. Accepted edits accumulate in one shared harness, allowing its control structure to emerge from task feedback. Across BrowseComp-Plus and WebArena-Verified with three deployment models from 4B to 120B parameters, Growing Harness achieves the highest mean success in five of six benchmark-model settings and trails the best mean by 0.7 pp. in the sixth. Relative to a Tool-Calling agent, it reduces LLM calls by 76.0-91.8% and deployed-agent inference cost by 74.4-98.6%. On WebArena-Verified, its success remains 44.7-45.3% across model scales, whereas Tool-Calling falls to 6.7% with the 4B model. Ablations show that trace-local edits, joint repair, and gate-based rollback each improve final success. These results show that persistent program growth can move recurring control out of model context and into low-cost code, yielding reusable specialist agents that remain effective with smaller deployment models.",
       "authors": [
-        "Nolan Smyth",
-        "Yorguin-Jose Mantilla-Ramos",
-        "Pascal Jr Tikeng Notsawo",
-        "Saskia Helbling",
-        "Alberto Tosato",
-        "Mohamed Amine Merzouk",
-        "Nouha Dziri",
-        "Gauthier Gidel",
-        "Tommaso Tosato"
+        "Laizhen Li",
+        "Jiarui Li",
+        "Juanjuan Zhao",
+        "Kejiang Ye",
+        "Ye Li",
+        "Cheng-zhong Xu",
+        "Xitong Gao"
       ],
       "categories": [
-        "cs.SE",
         "cs.AI",
-        "cs.LG"
+        "cs.SE"
       ],
-      "published_at": "2026-09-17T17:59:04+00:00",
-      "updated_at": "2026-09-17T17:59:04+00:00",
-      "primary_category": "cs.SE",
-      "heuristic_score": 18.749,
-      "summary": "Quantifying Overclaiming Propensity in Frontier LLM Agents 是最近值得追踪的一篇 AI 论文。论文摘要显示：Frontier coding agents are increasingly trusted to work autonomously for long periods, yet an agent's final response is often the only account of that work a user sees. We quantify the propensity of frontier agents to \\emph{overclaim} task ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "published_at": "2026-09-22T17:40:45+00:00",
+      "updated_at": "2026-09-22T17:40:45+00:00",
+      "primary_category": "cs.AI",
+      "heuristic_score": 22.7,
+      "summary": "Grow the Harness, Not the Context: From Strategy-Free Scaffolds to Reusable Specialist Agents 是最近值得追踪的一篇 AI 论文。论文摘要显示：Large language model (LLM) agents often handle streams of related tasks, yet standard harnesses repeatedly ask the model to reconstruct the same control decisions inside each task's context. We study whether task feedback can instead turn r...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
       "brief": "这是一篇值得加入今日论文雷达的最新工作。",
       "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
       "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
       "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
       "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
       "highlights": [
-        "分类: cs.SE, cs.AI",
-        "作者数: 9"
+        "分类: cs.AI, cs.SE",
+        "作者数: 7"
       ],
       "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
       "relevance_score": 10,
       "tags": [
         "ai",
+        "llm",
         "agent",
-        "rag",
         "model"
       ],
       "themes": [
         "ai",
-        "agent",
-        "rag"
+        "llm",
+        "agent"
       ],
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：Quantifying Overclaiming Propensity in Frontier LLM Agents 是最近值得追踪的一篇 AI 论文。论文摘要显示：Frontier coding agents are increasingly trusted to work autonomously for long periods, yet an agent's final response is often the only account of that work a user sees. We quantify the propensity of frontier agents to \\emph{overclaim} task ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.SE, cs.AI\n- 作者数: 9",
+      "summary_markdown": "**摘要**：Grow the Harness, Not the Context: From Strategy-Free Scaffolds to Reusable Specialist Agents 是最近值得追踪的一篇 AI 论文。论文摘要显示：Large language model (LLM) agents often handle streams of related tasks, yet standard harnesses repeatedly ask the model to reconstruct the same control decisions inside each task's context. We study whether task feedback can instead turn r...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI, cs.SE\n- 作者数: 7",
       "focus_hits": [
         {
           "keyword": "agent",
           "weight": 3.0
         },
         {
-          "keyword": "coding",
-          "weight": 2.6
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
+          "keyword": "reasoning",
+          "weight": 2.4
         },
         {
           "keyword": "inference",
           "weight": 1.8
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
         }
       ],
       "primary_match": "agent",
       "personalized_score": 196.0,
-      "detail_path": "items/arxiv-quantifying-overclaiming-propensity-in-frontier-llm-agents.html",
-      "first_seen_at": "2026-09-18T04:36:21.057807+00:00",
-      "last_seen_at": "2026-09-19T04:31:57.598044+00:00",
-      "last_curated_at": "2026-09-19T04:31:57.598044+00:00",
+      "detail_path": "items/arxiv-grow-the-harness-not-the-context-from-strategy-free-scaffolds-to-reusable-specialist-agent.html",
+      "first_seen_at": "2026-09-23T04:39:32.861265+00:00",
+      "last_seen_at": "2026-09-23T04:39:32.861265+00:00",
+      "last_curated_at": "2026-09-23T04:39:32.861265+00:00",
       "last_notified_at": null
     }
   ],
@@ -686,12 +683,12 @@
       "count": 8
     },
     {
-      "theme": "agent",
-      "count": 4
+      "theme": "llm",
+      "count": 5
     },
     {
-      "theme": "llm",
-      "count": 4
+      "theme": "agent",
+      "count": 3
     }
   ],
   "highlights": [
