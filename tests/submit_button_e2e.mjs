@@ -111,7 +111,9 @@ async function main() {
   });
 
   if (await page.locator('#title-enter').isVisible()) {
-    await page.click('#title-enter');
+    await page.evaluate(() => {
+      document.getElementById('title-enter')?.click();
+    });
   }
 
   await page.waitForFunction(() => {
