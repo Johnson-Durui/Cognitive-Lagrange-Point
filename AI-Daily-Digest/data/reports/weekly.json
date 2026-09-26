@@ -1,8 +1,8 @@
 {
   "label": "周报",
   "window_days": 7,
-  "generated_at": "2026-09-26T10:03:58.533427+08:00",
-  "count": 79,
+  "generated_at": "2026-09-26T12:50:14.284726+08:00",
+  "count": 69,
   "summary": "近 7 天里，最集中的主题是 ai、llm、agent。",
   "top_items": [
     {
@@ -410,88 +410,6 @@
       "last_notified_at": null
     },
     {
-      "id": "arxiv::http://arxiv.org/abs/2609.20812v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "Quantifying Overclaiming Propensity in Frontier LLM Agents",
-      "html_url": "http://arxiv.org/abs/2609.20812v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.20812v1",
-      "description": "Frontier coding agents are increasingly trusted to work autonomously for long periods, yet an agent's final response is often the only account of that work a user sees. We quantify the propensity of frontier agents to \\emph{overclaim} task completion, a misrepresentation that can mislead the user. An agent overclaims when its final response contradicts information in its context. This definition requires no inference about intent and is independent of task success. We introduce \\emph{OverclaimBench}, an evaluation suite composed of five file-review scenarios, transcript-based coverage measurements, and registered planted defects. We evaluate eight proprietary frontier models in their own production command-line interfaces, and four open-weight models under a single fixed harness on OverclaimBench and find that 1) agents do not read all the files they were asked to review in 67.9\\% of runs; 2) among runs where not all files are read, agents are \\emph{misleading} 80.4\\% of the time (59--96\\% per model), either falsely claiming to have read all files or omitting that coverage is incomplete; 3) requiring delegation to subagents increased reading coverage, but among reviews that remained incomplete, a large majority were still misleading; and 4) agents that falsely claimed a complete review missed planted defects at about 1.8 times the rate of agents that read every file, showing that claims of completion can conceal substantive failures. Together, these results show that agents' final responses are not reliable accounts of their actions.",
-      "authors": [
-        "Nolan Smyth",
-        "Yorguin-Jose Mantilla-Ramos",
-        "Pascal Jr Tikeng Notsawo",
-        "Saskia Helbling",
-        "Alberto Tosato",
-        "Mohamed Amine Merzouk",
-        "Nouha Dziri",
-        "Gauthier Gidel",
-        "Tommaso Tosato"
-      ],
-      "categories": [
-        "cs.SE",
-        "cs.AI",
-        "cs.LG"
-      ],
-      "published_at": "2026-09-17T17:59:04+00:00",
-      "updated_at": "2026-09-17T17:59:04+00:00",
-      "primary_category": "cs.SE",
-      "heuristic_score": 18.749,
-      "summary": "Quantifying Overclaiming Propensity in Frontier LLM Agents 是最近值得追踪的一篇 AI 论文。论文摘要显示：Frontier coding agents are increasingly trusted to work autonomously for long periods, yet an agent's final response is often the only account of that work a user sees. We quantify the propensity of frontier agents to \\emph{overclaim} task ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.SE, cs.AI",
-        "作者数: 9"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "agent",
-        "rag",
-        "model"
-      ],
-      "themes": [
-        "ai",
-        "agent",
-        "rag"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：Quantifying Overclaiming Propensity in Frontier LLM Agents 是最近值得追踪的一篇 AI 论文。论文摘要显示：Frontier coding agents are increasingly trusted to work autonomously for long periods, yet an agent's final response is often the only account of that work a user sees. We quantify the propensity of frontier agents to \\emph{overclaim} task ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.SE, cs.AI\n- 作者数: 9",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "coding",
-          "weight": 2.6
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "inference",
-          "weight": 1.8
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 196.0,
-      "detail_path": "items/arxiv-quantifying-overclaiming-propensity-in-frontier-llm-agents.html",
-      "first_seen_at": "2026-09-18T04:36:21.057807+00:00",
-      "last_seen_at": "2026-09-19T04:31:57.598044+00:00",
-      "last_curated_at": "2026-09-19T04:31:57.598044+00:00",
-      "last_notified_at": null
-    },
-    {
       "id": "arxiv::http://arxiv.org/abs/2609.30233v1",
       "kind": "paper",
       "source": "arxiv",
@@ -566,8 +484,8 @@
       "personalized_score": 194.0,
       "detail_path": "items/arxiv-coding-agents-for-generalized-task-and-motion-planning-problems.html",
       "first_seen_at": "2026-09-25T04:50:09.209319+00:00",
-      "last_seen_at": "2026-09-26T02:04:05.946112+00:00",
-      "last_curated_at": "2026-09-26T02:04:05.946112+00:00",
+      "last_seen_at": "2026-09-26T04:50:21.617989+00:00",
+      "last_curated_at": "2026-09-26T04:50:21.617989+00:00",
       "last_notified_at": null
     },
     {
@@ -645,6 +563,80 @@
       "last_seen_at": "2026-09-23T04:39:32.861265+00:00",
       "last_curated_at": "2026-09-23T04:39:32.861265+00:00",
       "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2609.26796v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Flash-dLLM: IO-Aware KV Caching and Parallel Decoding for Fast, Memory-Efficient Diffusion LLMs",
+      "html_url": "http://arxiv.org/abs/2609.26796v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.26796v1",
+      "description": "Diffusion Large Language Models (dLLMs) have recently emerged as a promising alternative to autoregressive LLMs by enabling non-autoregressive text generation. However, their practical deployment remains limited by inefficient inference, largely due to the absence of effective Key-Value (KV) caching and scalable parallel decoding mechanisms. Existing acceleration methods typically study KV caching and parallel decoding in isolation, overlooking the I/O bottlenecks that arise when cache reuse and parallel token verification are jointly applied. In this work, we introduce $\\textbf{Flash-dLLM}$, a training-free inference acceleration framework for fast and memory-efficient dLLMs. Flash-dLLM first identifies GPU memory I/O as a dominant bottleneck in KV-cache-enabled dLLM inference and addresses it with an I/O-aware fused KV-cache kernel that reduces redundant memory movement. Building on this optimized cache mechanism, Flash-dLLM further proposes an efficient KV-cache-driven draft-and-verify decoding strategy, where the dLLM itself serves as both drafter and verifier without requiring an auxiliary model. This unified design enables faster decoding while preserving generation quality and improving scalability to longer sequences and larger batch size. Extensive experiments on mathematical reasoning and code-generation benchmarks demonstrate that Flash-dLLM consistently outperforms existing state-of-the-art dLLM acceleration methods in both inference speed and memory efficiency. In particular, it achieves $5.1\\times$ and $11.0\\times$ speedups over prior strongest baseline Elastic-Cache on GSM8K and HumanEval, respectively.",
+      "authors": [
+        "Quan Nguyen-Tri",
+        "Mukul Ranjan",
+        "Zhiqiang Shen"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "published_at": "2026-09-22T17:59:57+00:00",
+      "updated_at": "2026-09-22T17:59:57+00:00",
+      "primary_category": "cs.CL",
+      "heuristic_score": 22.7,
+      "summary": "Flash-dLLM: IO-Aware KV Caching and Parallel Decoding for Fast, Memory-Efficient Diffusion LLMs 是最近值得追踪的一篇 AI 论文。论文摘要显示：Diffusion Large Language Models (dLLMs) have recently emerged as a promising alternative to autoregressive LLMs by enabling non-autoregressive text generation. However, their practical deployment remains limited by inefficient inference, la...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CL",
+        "作者数: 3"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "llm",
+        "diffusion",
+        "model"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "diffusion"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：Flash-dLLM: IO-Aware KV Caching and Parallel Decoding for Fast, Memory-Efficient Diffusion LLMs 是最近值得追踪的一篇 AI 论文。论文摘要显示：Diffusion Large Language Models (dLLMs) have recently emerged as a promising alternative to autoregressive LLMs by enabling non-autoregressive text generation. However, their practical deployment remains limited by inefficient inference, la...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL\n- 作者数: 3",
+      "focus_hits": [
+        {
+          "keyword": "coding",
+          "weight": 2.6
+        },
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "inference",
+          "weight": 1.8
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "coding",
+      "personalized_score": 192.0,
+      "detail_path": "items/arxiv-flash-dllm-io-aware-kv-caching-and-parallel-decoding-for-fast-memory-efficient-diffusion-l.html",
+      "first_seen_at": "2026-09-23T04:39:32.861265+00:00",
+      "last_seen_at": "2026-09-23T04:39:32.861265+00:00",
+      "last_curated_at": "2026-09-23T04:39:32.861265+00:00",
+      "last_notified_at": null
     }
   ],
   "top_themes": [
@@ -654,11 +646,11 @@
     },
     {
       "theme": "llm",
-      "count": 6
+      "count": 7
     },
     {
       "theme": "agent",
-      "count": 2
+      "count": 1
     },
     {
       "theme": "rag",
