@@ -1,174 +1,10 @@
 {
   "label": "周报",
   "window_days": 7,
-  "generated_at": "2026-09-29T10:48:08.300192+08:00",
-  "count": 76,
+  "generated_at": "2026-09-29T13:37:45.390493+08:00",
+  "count": 68,
   "summary": "近 7 天里，最集中的主题是 ai、llm、agent。",
   "top_items": [
-    {
-      "id": "arxiv::http://arxiv.org/abs/2609.23363v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "TicTacBench: Benchmarking Timing Closure Capabilities of Coding Agents",
-      "html_url": "http://arxiv.org/abs/2609.23363v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.23363v1",
-      "description": "Recent advances in large language models (LLMs) have led to the emergence of coding agents capable of performing complex engineering tasks, including register-transfer level (RTL) design and optimization. Existing RTL benchmarks mainly evaluate functional correctness and performance, power, and area (PPA) of the generated RTL designs, leaving agents' ability for \\emph{timing closure} under-evaluated. We propose TicTacBench, a benchmark specifically designed to evaluate coding agents' capabilities for RTL-level timing closure under post-place-and-route (post-PnR) evaluation. TicTacBench contains 30 diverse tasks, each provided with a suboptimal RTL design, realistic timing constraints, functional equivalence verification, and timing reports. With over 300 runs of coding agents driven by 8 frontier LLMs, we find that even the best agent can only close 53.3\\% of tasks with 7.18\\% area-delay product (ADP) degradation and 8.83\\% energy-delay-squared product (EDDP) improvement on average. We identify common failure categories that explain why agents fail to close timing. Then we propose TicTacSkill, a new method that guides agents to follow standard timing-closure procedures and improves the Timing Closure Rate by 9\\%. These results suggest that while coding agents have made significant progress in RTL design, their timing-closure capability still has substantial room for improvement.",
-      "authors": [
-        "Bowei Wang",
-        "Zhigang Fang",
-        "Zhijie Yang",
-        "Renzhi Chen",
-        "Shanshan Li",
-        "Lei Wang"
-      ],
-      "categories": [
-        "cs.AI"
-      ],
-      "published_at": "2026-09-20T05:17:00+00:00",
-      "updated_at": "2026-09-20T05:17:00+00:00",
-      "primary_category": "cs.AI",
-      "heuristic_score": 20.051,
-      "summary": "TicTacBench: Benchmarking Timing Closure Capabilities of Coding Agents 是最近值得追踪的一篇 AI 论文。论文摘要显示：Recent advances in large language models (LLMs) have led to the emergence of coding agents capable of performing complex engineering tasks, including register-transfer level (RTL) design and optimization. Existing RTL benchmarks mainly eval...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.AI",
-        "作者数: 6"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "llm",
-        "agent",
-        "rag"
-      ],
-      "themes": [
-        "ai",
-        "llm",
-        "agent"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：TicTacBench: Benchmarking Timing Closure Capabilities of Coding Agents 是最近值得追踪的一篇 AI 论文。论文摘要显示：Recent advances in large language models (LLMs) have led to the emergence of coding agents capable of performing complex engineering tasks, including register-transfer level (RTL) design and optimization. Existing RTL benchmarks mainly eval...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI\n- 作者数: 6",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "coding",
-          "weight": 2.6
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 202.0,
-      "detail_path": "items/arxiv-tictacbench-benchmarking-timing-closure-capabilities-of-coding-agents.html",
-      "first_seen_at": "2026-09-22T01:56:03.468101+00:00",
-      "last_seen_at": "2026-09-22T04:47:41.410909+00:00",
-      "last_curated_at": "2026-09-22T04:47:41.410909+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2609.24972v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "RRSI: Regularized Recursive Self-Improvement of Agent Harnesses",
-      "html_url": "http://arxiv.org/abs/2609.24972v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.24972v1",
-      "description": "An LLM agent's capability is largely magnified by its harness, namely the prompts, control flow, tooling, memory, and context management surrounding the frozen backbone model. Recent methods increasingly automate this process by iteratively proposing and selecting component-wise edits of an agent harness, practically establishing a form of recursive self-improvement (RSI) at the agent-system level. However, such recursive evolution may overfit by memorizing the training tasks, showing large in-distribution gains that shrink or even vanish on out-of-distribution benchmarks. We introduce Regularized Recursive Self-Improvement of Agent Harnesses (RRSI), which incorporates the principles of regularizations into harness self-improvement by constraining the evolution candidate proposal and selection. The proposer operates with a temporally annealed budget, limiting how many edits a candidate can bundle, and it encourages unexplored trajectories based on evolution history. The selector is equipped with a critic and a pruner: the critic screens benchmark-specific proposals, while the pruner, removes changes that are too small, too expensive, or no longer useful. Together these constraints favor reusable agent mechanisms over benchmark-specific ones or even noises. Across eight benchmarks spanning coding, agentic workspace and engineering design tasks, RRSI gains up to 14.1 points on the split it evolves against and up to 4.7 points on the five out-of-distribution benchmarks, while producing a harness that runs on 30% fewer policy tokens than the unregularized evolution. Code is available at https://github.com/google-research/rrsi and project page is https://regularized-rsi.com/.",
-      "authors": [
-        "Peng Xia",
-        "Rujun Han",
-        "Zifeng Wang",
-        "Yanfei Chen",
-        "Yufan Zhang",
-        "Yoonho Lee",
-        "Chengsong Huang",
-        "Han Yu",
-        "Zhongying CuiZhu",
-        "Yifei Ming",
-        "Huaxiu Yao",
-        "Burak Gokturk",
-        "Tomas Pfister",
-        "Chen-Yu Lee"
-      ],
-      "categories": [
-        "cs.LG",
-        "cs.AI",
-        "cs.CL"
-      ],
-      "published_at": "2026-09-21T17:54:49+00:00",
-      "updated_at": "2026-09-21T17:54:49+00:00",
-      "primary_category": "cs.LG",
-      "heuristic_score": 22.7,
-      "summary": "RRSI: Regularized Recursive Self-Improvement of Agent Harnesses 是最近值得追踪的一篇 AI 论文。论文摘要显示：An LLM agent's capability is largely magnified by its harness, namely the prompts, control flow, tooling, memory, and context management surrounding the frozen backbone model. Recent methods increasingly automate this process by iteratively...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.LG, cs.AI",
-        "作者数: 14"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "llm",
-        "agent",
-        "agentic"
-      ],
-      "themes": [
-        "ai",
-        "llm",
-        "agent"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：RRSI: Regularized Recursive Self-Improvement of Agent Harnesses 是最近值得追踪的一篇 AI 论文。论文摘要显示：An LLM agent's capability is largely magnified by its harness, namely the prompts, control flow, tooling, memory, and context management surrounding the frozen backbone model. Recent methods increasingly automate this process by iteratively...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.LG, cs.AI\n- 作者数: 14",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "coding",
-          "weight": 2.6
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 202.0,
-      "detail_path": "items/arxiv-rrsi-regularized-recursive-self-improvement-of-agent-harnesses.html",
-      "first_seen_at": "2026-09-22T04:47:41.410909+00:00",
-      "last_seen_at": "2026-09-22T04:47:41.410909+00:00",
-      "last_curated_at": "2026-09-22T04:47:41.410909+00:00",
-      "last_notified_at": null
-    },
     {
       "id": "arxiv::http://arxiv.org/abs/2609.28416v1",
       "kind": "paper",
@@ -479,8 +315,8 @@
       "personalized_score": 194.0,
       "detail_path": "items/arxiv-precache-efficient-kv-cache-sharing-for-multi-lora-agents-via-low-rank-precomputation-and-.html",
       "first_seen_at": "2026-09-29T02:48:13.690791+00:00",
-      "last_seen_at": "2026-09-29T02:48:13.690791+00:00",
-      "last_curated_at": "2026-09-29T02:48:13.690791+00:00",
+      "last_seen_at": "2026-09-29T05:37:52.457877+00:00",
+      "last_curated_at": "2026-09-29T05:37:52.457877+00:00",
       "last_notified_at": null
     },
     {
@@ -637,6 +473,166 @@
       "last_seen_at": "2026-09-23T04:39:32.861265+00:00",
       "last_curated_at": "2026-09-23T04:39:32.861265+00:00",
       "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2609.34044v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "SCOPD: Sparse-Context On-Policy Self-Distillation for Efficient Vision-Language Models",
+      "html_url": "http://arxiv.org/abs/2609.34044v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.34044v1",
+      "description": "Reasoning vision-language models (VLMs) process images and videos as long sequences of visual tokens, making inference expensive. Training-free token pruning reduces this cost, but aggressive compression can sharply degrade performance, often attributed to irreversible loss of task-relevant visual information. We show that this explanation is incomplete. In a fixed-context Pass@K analysis, repeated sampling from the same pruned visual representation recovers many examples missed by greedy decoding, indicating that useful visual evidence can remain accessible but be used unreliably. We call this the representation-utilization gap. Motivated by this observation, we introduce SCOPD, a sparse-context on-policy self-distillation framework in which a student generates reasoning trajectories from pruned visual tokens while a privileged full-context teacher supervises the same on-policy prefixes. SCOPD requires no ground-truth responses, architectural changes, or additional inference-time computation. We further introduce SCOPD+, which uses a small visual-budget intervention to identify visually sensitive response positions and selectively distill them. At 10% visual-token retention, the Vanilla model retains 86.37% of its unpruned performance across 13 benchmarks. SCOPD raises this to 90.49%, while SCOPD+ further improves it to 92.43%. Across token budgets, benchmarks, and pruning operators, our results show that efficient reasoning depends not only on which visual information survives pruning, but also on how reliably the model learns to use it.",
+      "authors": [
+        "Ahmadreza Jeddi",
+        "Enming Zhang",
+        "Jasper Gerigk",
+        "Hakki Karaimer",
+        "Mozhgan Nasr Azadani",
+        "Jiayun Luo",
+        "Minh Ngoc Le",
+        "Gholamali Aminian",
+        "Hugo Buurmeijer",
+        "Yongchao Chen",
+        "Leonid Sigal",
+        "Igor Gilitschenski",
+        "Konstantinos G. Derpanis",
+        "Marco Pavone",
+        "Babak Taati"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "published_at": "2026-09-28T00:09:07+00:00",
+      "updated_at": "2026-09-28T00:09:07+00:00",
+      "primary_category": "cs.CV",
+      "heuristic_score": 17.856,
+      "summary": "SCOPD: Sparse-Context On-Policy Self-Distillation for Efficient Vision-Language Models 是最近值得追踪的一篇 AI 论文。论文摘要显示：Reasoning vision-language models (VLMs) process images and videos as long sequences of visual tokens, making inference expensive. Training-free token pruning reduces this cost, but aggressive compression can sharply degrade performance, oft...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CV",
+        "作者数: 15"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "model",
+        "benchmark",
+        "inference"
+      ],
+      "themes": [
+        "ai",
+        "model",
+        "benchmark"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：SCOPD: Sparse-Context On-Policy Self-Distillation for Efficient Vision-Language Models 是最近值得追踪的一篇 AI 论文。论文摘要显示：Reasoning vision-language models (VLMs) process images and videos as long sequences of visual tokens, making inference expensive. Training-free token pruning reduces this cost, but aggressive compression can sharply degrade performance, oft...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV\n- 作者数: 15",
+      "focus_hits": [
+        {
+          "keyword": "coding",
+          "weight": 2.6
+        },
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "inference",
+          "weight": 1.8
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "coding",
+      "personalized_score": 192.0,
+      "detail_path": "items/arxiv-scopd-sparse-context-on-policy-self-distillation-for-efficient-vision-language-models.html",
+      "first_seen_at": "2026-09-29T02:48:13.690791+00:00",
+      "last_seen_at": "2026-09-29T05:37:52.457877+00:00",
+      "last_curated_at": "2026-09-29T05:37:52.457877+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2609.26796v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Flash-dLLM: IO-Aware KV Caching and Parallel Decoding for Fast, Memory-Efficient Diffusion LLMs",
+      "html_url": "http://arxiv.org/abs/2609.26796v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.26796v1",
+      "description": "Diffusion Large Language Models (dLLMs) have recently emerged as a promising alternative to autoregressive LLMs by enabling non-autoregressive text generation. However, their practical deployment remains limited by inefficient inference, largely due to the absence of effective Key-Value (KV) caching and scalable parallel decoding mechanisms. Existing acceleration methods typically study KV caching and parallel decoding in isolation, overlooking the I/O bottlenecks that arise when cache reuse and parallel token verification are jointly applied. In this work, we introduce $\\textbf{Flash-dLLM}$, a training-free inference acceleration framework for fast and memory-efficient dLLMs. Flash-dLLM first identifies GPU memory I/O as a dominant bottleneck in KV-cache-enabled dLLM inference and addresses it with an I/O-aware fused KV-cache kernel that reduces redundant memory movement. Building on this optimized cache mechanism, Flash-dLLM further proposes an efficient KV-cache-driven draft-and-verify decoding strategy, where the dLLM itself serves as both drafter and verifier without requiring an auxiliary model. This unified design enables faster decoding while preserving generation quality and improving scalability to longer sequences and larger batch size. Extensive experiments on mathematical reasoning and code-generation benchmarks demonstrate that Flash-dLLM consistently outperforms existing state-of-the-art dLLM acceleration methods in both inference speed and memory efficiency. In particular, it achieves $5.1\\times$ and $11.0\\times$ speedups over prior strongest baseline Elastic-Cache on GSM8K and HumanEval, respectively.",
+      "authors": [
+        "Quan Nguyen-Tri",
+        "Mukul Ranjan",
+        "Zhiqiang Shen"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "published_at": "2026-09-22T17:59:57+00:00",
+      "updated_at": "2026-09-22T17:59:57+00:00",
+      "primary_category": "cs.CL",
+      "heuristic_score": 22.7,
+      "summary": "Flash-dLLM: IO-Aware KV Caching and Parallel Decoding for Fast, Memory-Efficient Diffusion LLMs 是最近值得追踪的一篇 AI 论文。论文摘要显示：Diffusion Large Language Models (dLLMs) have recently emerged as a promising alternative to autoregressive LLMs by enabling non-autoregressive text generation. However, their practical deployment remains limited by inefficient inference, la...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CL",
+        "作者数: 3"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "llm",
+        "diffusion",
+        "model"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "diffusion"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：Flash-dLLM: IO-Aware KV Caching and Parallel Decoding for Fast, Memory-Efficient Diffusion LLMs 是最近值得追踪的一篇 AI 论文。论文摘要显示：Diffusion Large Language Models (dLLMs) have recently emerged as a promising alternative to autoregressive LLMs by enabling non-autoregressive text generation. However, their practical deployment remains limited by inefficient inference, la...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL\n- 作者数: 3",
+      "focus_hits": [
+        {
+          "keyword": "coding",
+          "weight": 2.6
+        },
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "inference",
+          "weight": 1.8
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "coding",
+      "personalized_score": 192.0,
+      "detail_path": "items/arxiv-flash-dllm-io-aware-kv-caching-and-parallel-decoding-for-fast-memory-efficient-diffusion-l.html",
+      "first_seen_at": "2026-09-23T04:39:32.861265+00:00",
+      "last_seen_at": "2026-09-23T04:39:32.861265+00:00",
+      "last_curated_at": "2026-09-23T04:39:32.861265+00:00",
+      "last_notified_at": null
     }
   ],
   "top_themes": [
@@ -646,7 +642,7 @@
     },
     {
       "theme": "llm",
-      "count": 6
+      "count": 5
     },
     {
       "theme": "agent",
@@ -655,21 +651,25 @@
     {
       "theme": "rag",
       "count": 1
+    },
+    {
+      "theme": "model",
+      "count": 1
     }
   ],
   "highlights": [
     {
-      "title": "TicTacBench: Benchmarking Timing Closure Capabilities of Coding Agents",
-      "source": "arxiv",
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
-    },
-    {
-      "title": "RRSI: Regularized Recursive Self-Improvement of Agent Harnesses",
-      "source": "arxiv",
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
-    },
-    {
       "title": "Agent-Editing World Model: Rethinking World Modeling for LLM Agents",
+      "source": "arxiv",
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
+    },
+    {
+      "title": "PACT: From Credit Assignment to Critic Alignment",
+      "source": "arxiv",
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
+    },
+    {
+      "title": "Grow the Harness, Not the Context: From Strategy-Free Scaffolds to Reusable Specialist Agents",
       "source": "arxiv",
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     }

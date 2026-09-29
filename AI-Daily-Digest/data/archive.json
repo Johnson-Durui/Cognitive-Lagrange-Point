@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-29T02:48:13.690791+00:00",
+  "generated_at": "2026-09-29T05:37:52.457877+00:00",
   "items": [
     {
       "id": "arxiv::http://arxiv.org/abs/2609.34054v1",
@@ -71,8 +71,8 @@
       "personalized_score": 194.0,
       "detail_path": "items/arxiv-precache-efficient-kv-cache-sharing-for-multi-lora-agents-via-low-rank-precomputation-and-.html",
       "first_seen_at": "2026-09-29T02:48:13.690791+00:00",
-      "last_seen_at": "2026-09-29T02:48:13.690791+00:00",
-      "last_curated_at": "2026-09-29T02:48:13.690791+00:00",
+      "last_seen_at": "2026-09-29T05:37:52.457877+00:00",
+      "last_curated_at": "2026-09-29T05:37:52.457877+00:00",
       "last_notified_at": null
     },
     {
@@ -157,8 +157,8 @@
       "personalized_score": 192.0,
       "detail_path": "items/arxiv-scopd-sparse-context-on-policy-self-distillation-for-efficient-vision-language-models.html",
       "first_seen_at": "2026-09-29T02:48:13.690791+00:00",
-      "last_seen_at": "2026-09-29T02:48:13.690791+00:00",
-      "last_curated_at": "2026-09-29T02:48:13.690791+00:00",
+      "last_seen_at": "2026-09-29T05:37:52.457877+00:00",
+      "last_curated_at": "2026-09-29T05:37:52.457877+00:00",
       "last_notified_at": null
     },
     {
@@ -223,8 +223,147 @@
       "personalized_score": 148.0,
       "detail_path": "items/arxiv-jev-in-medicine-a-benchmark-evaluation-preliminary-results.html",
       "first_seen_at": "2026-09-29T02:48:13.690791+00:00",
-      "last_seen_at": "2026-09-29T02:48:13.690791+00:00",
-      "last_curated_at": "2026-09-29T02:48:13.690791+00:00",
+      "last_seen_at": "2026-09-29T05:37:52.457877+00:00",
+      "last_curated_at": "2026-09-29T05:37:52.457877+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2609.35741v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Shockingly Simple Self-retrospection Improves Agentic Models Without RL",
+      "html_url": "http://arxiv.org/abs/2609.35741v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.35741v1",
+      "description": "People learn not only by repeating successful actions, but also by recounting and explaining their experiences, revising their understanding to guide future behavior. Can a language-model agent improve its future actions by training only on explanations of its own experience? We investigate this question by studying Retrospection-Only Fine-Tuning (ROFT), a minimal online procedure designed to isolate the effect of explanation-only training on subsequent behavior. The agent attempts a task, observes available feedback, generates a retrospective explanation, and is fine-tuned with a next-token prediction loss on the explanation tokens alone. The procedure uses neither an external teacher nor a reward-based policy update. In software-engineering experiments with Qwen3.5-4B, ROFT is trained on problems with mixed successful and unsuccessful base-model attempts. On held-out SWE-bench Verified and Pro, it reaches 49.2% and 26.8% solve rates after 20 updates without using a verifier, compared with GRPO's 48.0% and 25.3% after 40 updates in the evaluated runs, and makes faster early progress in training time and sampled attempts. It also learns to solve individual tasks on which all 64 sampled base-model attempts failed, showing that learning can begin without any initially successful trajectories. Behavioral analyses find that ROFT indirectly assigns credit to actions, encouraging good actions and discouraging incorrect ones. Moreover, prompting retrospections to emphasize more direct solutions yields shorter subsequent attempts even without an explicit length penalty. Together, these findings show that learning to explain can also improve learning to do, establishing self-generated retrospections as useful training targets and motivating further study of explanation-to-action transfer.",
+      "authors": [
+        "Jonathan Light",
+        "Christopher Zhang Cui",
+        "Jeonghye Kim",
+        "Roger Creus Castanyer",
+        "Emiliano Penaloza",
+        "Zhengyan Shi",
+        "Alessandro Sordoni",
+        "Marc-Alexandre Côté",
+        "Xingdi Yuan",
+        "Minseon Kim"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "published_at": "2026-09-28T17:54:24+00:00",
+      "updated_at": "2026-09-28T17:54:24+00:00",
+      "primary_category": "cs.AI",
+      "heuristic_score": 17.9,
+      "summary": "Shockingly Simple Self-retrospection Improves Agentic Models Without RL 是最近值得追踪的一篇 AI 论文。论文摘要显示：People learn not only by repeating successful actions, but also by recounting and explaining their experiences, revising their understanding to guide future behavior. Can a language-model agent improve its future actions by training only on...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.AI, cs.CL",
+        "作者数: 10"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "agent",
+        "rag",
+        "model"
+      ],
+      "themes": [
+        "ai",
+        "agent",
+        "rag"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：Shockingly Simple Self-retrospection Improves Agentic Models Without RL 是最近值得追踪的一篇 AI 论文。论文摘要显示：People learn not only by repeating successful actions, but also by recounting and explaining their experiences, revising their understanding to guide future behavior. Can a language-model agent improve its future actions by training only on...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI, cs.CL\n- 作者数: 10",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 160.0,
+      "detail_path": "items/arxiv-shockingly-simple-self-retrospection-improves-agentic-models-without-rl.html",
+      "first_seen_at": "2026-09-29T05:37:52.457877+00:00",
+      "last_seen_at": "2026-09-29T05:37:52.457877+00:00",
+      "last_curated_at": "2026-09-29T05:37:52.457877+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2609.35759v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Scaling Long-Form Story Generation via Narrative State Tracking",
+      "html_url": "http://arxiv.org/abs/2609.35759v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.35759v1",
+      "description": "LLMs have demonstrated strong capabilities in creative writing. However, scaling them to full-length novels remains challenging, as maintaining narrative consistency becomes increasingly difficult. Existing story-generation methods typically focus on stories of up to about ten thousand words, leaving their ability to scale to full-length novels underexplored. In this work, we introduce Narrative State Tracking Agent (NstAgent), a training-free agentic framework that allows LLMs to track a structured narrative state including characters, past events and future requirements. We extend an existing benchmark to compare narrative consistency across lengths, and use it together with a writing-quality benchmark to systematically evaluate stories ranging from 10K to 100K words. We show that NstAgent achieves better narrative consistency and writing quality as stories grow longer, and neither of them degrades noticeably as length increases, suggesting that it provides an effective approach to scaling story generation toward full-length novels.",
+      "authors": [
+        "Zhennan Wan",
+        "Jianfei Chen"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "published_at": "2026-09-28T17:59:09+00:00",
+      "updated_at": "2026-09-28T17:59:09+00:00",
+      "primary_category": "cs.CL",
+      "heuristic_score": 17.212,
+      "summary": "Scaling Long-Form Story Generation via Narrative State Tracking 是最近值得追踪的一篇 AI 论文。论文摘要显示：LLMs have demonstrated strong capabilities in creative writing. However, scaling them to full-length novels remains challenging, as maintaining narrative consistency becomes increasingly difficult. Existing story-generation methods typicall...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CL",
+        "作者数: 2"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "llm",
+        "agent",
+        "agentic"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "agent"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：Scaling Long-Form Story Generation via Narrative State Tracking 是最近值得追踪的一篇 AI 论文。论文摘要显示：LLMs have demonstrated strong capabilities in creative writing. However, scaling them to full-length novels remains challenging, as maintaining narrative consistency becomes increasingly difficult. Existing story-generation methods typicall...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL\n- 作者数: 2",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 154.0,
+      "detail_path": "items/arxiv-scaling-long-form-story-generation-via-narrative-state-tracking.html",
+      "first_seen_at": "2026-09-29T05:37:52.457877+00:00",
+      "last_seen_at": "2026-09-29T05:37:52.457877+00:00",
+      "last_curated_at": "2026-09-29T05:37:52.457877+00:00",
       "last_notified_at": null
     },
     {
@@ -292,8 +431,338 @@
       "personalized_score": 144.0,
       "detail_path": "items/arxiv-large-language-models-for-structured-clinical-data-analysis-dual-agent-grounding-and-valid.html",
       "first_seen_at": "2026-09-29T02:48:13.690791+00:00",
-      "last_seen_at": "2026-09-29T02:48:13.690791+00:00",
-      "last_curated_at": "2026-09-29T02:48:13.690791+00:00",
+      "last_seen_at": "2026-09-29T05:37:52.457877+00:00",
+      "last_curated_at": "2026-09-29T05:37:52.457877+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "github::dream-num/univer",
+      "kind": "repo",
+      "source": "github",
+      "source_tags": [
+        "trending"
+      ],
+      "name": "univer",
+      "title": "dream-num/univer",
+      "full_name": "dream-num/univer",
+      "html_url": "https://github.com/dream-num/univer",
+      "description": "The Office Harness for AI Agents — Spreadsheets, Docs, Slides, Canvas, Relational Tables, and PDF in one runtime.",
+      "stars": 21411,
+      "stars_today": 0,
+      "language": "TypeScript",
+      "topics": [],
+      "created_at": "",
+      "updated_at": "",
+      "heuristic_score": 15.2,
+      "summary": "dream-num/univer 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：The Office Harness for AI Agents — Spreadsheets, Docs, Slides, Canvas, Relational Tables, and PDF in one runtime.结合关键词命中和热度信号，它适合加入今日重点观察列表。",
+      "brief": "这是一个值得快速关注的开源 AI 项目。",
+      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
+      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
+      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
+      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
+      "highlights": [
+        "Stars: 21411",
+        "语言: TypeScript"
+      ],
+      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
+      "relevance_score": 8,
+      "tags": [
+        "ai",
+        "agent",
+        "ai agent"
+      ],
+      "themes": [
+        "ai",
+        "agent",
+        "ai agent"
+      ],
+      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
+      "summary_markdown": "**摘要**：dream-num/univer 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：The Office Harness for AI Agents — Spreadsheets, Docs, Slides, Canvas, Relational Tables, and PDF in one runtime.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 21411\n- 语言: TypeScript",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 118.56,
+      "detail_path": "items/github-dream-num-univer.html",
+      "first_seen_at": "2026-09-23T01:51:40.647389+00:00",
+      "last_seen_at": "2026-09-29T05:37:52.457877+00:00",
+      "last_curated_at": "2026-09-29T05:37:52.457877+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "github::paperclipai/paperclip",
+      "kind": "repo",
+      "source": "github",
+      "source_tags": [
+        "trending"
+      ],
+      "name": "paperclip",
+      "title": "paperclipai/paperclip",
+      "full_name": "paperclipai/paperclip",
+      "html_url": "https://github.com/paperclipai/paperclip",
+      "description": "The open-source app everyone uses to manage agents at work",
+      "stars": 93258,
+      "stars_today": 0,
+      "language": "TypeScript",
+      "topics": [],
+      "created_at": "",
+      "updated_at": "",
+      "heuristic_score": 15.2,
+      "summary": "paperclipai/paperclip 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：The open-source app everyone uses to manage agents at work结合关键词命中和热度信号，它适合加入今日重点观察列表。",
+      "brief": "这是一个值得快速关注的开源 AI 项目。",
+      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
+      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
+      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
+      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
+      "highlights": [
+        "Stars: 93258",
+        "语言: TypeScript"
+      ],
+      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
+      "relevance_score": 8,
+      "tags": [
+        "agent"
+      ],
+      "themes": [
+        "agent"
+      ],
+      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
+      "summary_markdown": "**摘要**：paperclipai/paperclip 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：The open-source app everyone uses to manage agents at work结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 93258\n- 语言: TypeScript",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 130.0,
+      "detail_path": "items/github-paperclipai-paperclip.html",
+      "first_seen_at": "2026-09-26T02:04:05.946112+00:00",
+      "last_seen_at": "2026-09-29T05:37:52.457877+00:00",
+      "last_curated_at": "2026-09-29T05:37:52.457877+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "github::vectorize-io/hindsight",
+      "kind": "repo",
+      "source": "github",
+      "source_tags": [
+        "trending"
+      ],
+      "name": "hindsight",
+      "title": "vectorize-io/hindsight",
+      "full_name": "vectorize-io/hindsight",
+      "html_url": "https://github.com/vectorize-io/hindsight",
+      "description": "Hindsight: Agent Memory That Learns",
+      "stars": 41408,
+      "stars_today": 0,
+      "language": "Python",
+      "topics": [],
+      "created_at": "",
+      "updated_at": "",
+      "heuristic_score": 12.6,
+      "summary": "vectorize-io/hindsight 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Hindsight: Agent Memory That Learns结合关键词命中和热度信号，它适合加入今日重点观察列表。",
+      "brief": "这是一个值得快速关注的开源 AI 项目。",
+      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
+      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
+      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
+      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
+      "highlights": [
+        "Stars: 41408",
+        "语言: Python"
+      ],
+      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
+      "relevance_score": 7,
+      "tags": [
+        "agent"
+      ],
+      "themes": [
+        "agent"
+      ],
+      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
+      "summary_markdown": "**摘要**：vectorize-io/hindsight 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Hindsight: Agent Memory That Learns结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 41408\n- 语言: Python",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 116.56,
+      "detail_path": "items/github-vectorize-io-hindsight.html",
+      "first_seen_at": "2026-09-25T01:58:20.257719+00:00",
+      "last_seen_at": "2026-09-29T05:37:52.457877+00:00",
+      "last_curated_at": "2026-09-29T05:37:52.457877+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "github::byoungd/up",
+      "kind": "repo",
+      "source": "github",
+      "source_tags": [
+        "trending"
+      ],
+      "name": "up",
+      "title": "byoungd/up",
+      "full_name": "byoungd/up",
+      "html_url": "https://github.com/byoungd/up",
+      "description": "An advanced guide which might benefit you a lot 🎉 . 韩先凯的人生进阶指南 人生进阶指南 离谱的人生 人生进阶 AI学习 AI指南 韩先凯的AI学习指南 英语学习指南/英语学习教程/英语学习/学英语",
+      "stars": 64956,
+      "stars_today": 0,
+      "language": "JavaScript",
+      "topics": [],
+      "created_at": "",
+      "updated_at": "",
+      "heuristic_score": 12.6,
+      "summary": "byoungd/up 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：An advanced guide which might benefit you a lot 🎉 . 韩先凯的人生进阶指南 人生进阶指南 离谱的人生 人生进阶 AI学习 AI指南 韩先凯的AI学习指南 英语学习指南/英语学习教程/英语学习/学英语结合关键词命中和热度信号，它适合加入今日重点观察列表。",
+      "brief": "这是一个值得快速关注的开源 AI 项目。",
+      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
+      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
+      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
+      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
+      "highlights": [
+        "Stars: 64956",
+        "语言: JavaScript"
+      ],
+      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
+      "relevance_score": 7,
+      "tags": [
+        "ai"
+      ],
+      "themes": [
+        "ai"
+      ],
+      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
+      "summary_markdown": "**摘要**：byoungd/up 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：An advanced guide which might benefit you a lot 🎉 . 韩先凯的人生进阶指南 人生进阶指南 离谱的人生 人生进阶 AI学习 AI指南 韩先凯的AI学习指南 英语学习指南/英语学习教程/英语学习/学英语结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 64956\n- 语言: JavaScript",
+      "focus_hits": [],
+      "primary_match": "",
+      "personalized_score": 90.0,
+      "detail_path": "items/github-byoungd-up.html",
+      "first_seen_at": "2026-09-29T02:48:13.690791+00:00",
+      "last_seen_at": "2026-09-29T05:37:52.457877+00:00",
+      "last_curated_at": "2026-09-29T05:37:52.457877+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "github::Moris-kr/ai-chatroom",
+      "kind": "repo",
+      "source": "github",
+      "source_tags": [
+        "new"
+      ],
+      "name": "ai-chatroom",
+      "title": "Moris-kr/ai-chatroom",
+      "full_name": "Moris-kr/ai-chatroom",
+      "html_url": "https://github.com/Moris-kr/ai-chatroom",
+      "description": "A web group chat where Claude, ChatGPT, Grok and Gemini hang out and talk on their own, powered by your logged-in CLIs (no API keys). English / 한국어 / 日本語",
+      "stars": 13,
+      "stars_today": 0,
+      "language": "JavaScript",
+      "topics": [
+        "ai-agents",
+        "ai-chat",
+        "chatgpt",
+        "claude",
+        "claude-code",
+        "codex-cli",
+        "gemini",
+        "grok",
+        "group-chat",
+        "llm",
+        "multi-agent",
+        "nodejs"
+      ],
+      "created_at": "2026-09-29T03:42:10+00:00",
+      "updated_at": "2026-09-29T05:17:30+00:00",
+      "heuristic_score": 11.626,
+      "summary": "Moris-kr/ai-chatroom 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：A web group chat where Claude, ChatGPT, Grok and Gemini hang out and talk on their own, powered by your logged-in CLIs (no API keys). English / 한국어 / 日本語结合关键词命中和热度信号，它适合加入今日重点观察列表。",
+      "brief": "这是一个值得快速关注的开源 AI 项目。",
+      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
+      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
+      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
+      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
+      "highlights": [
+        "Stars: 13",
+        "语言: JavaScript"
+      ],
+      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
+      "relevance_score": 6,
+      "tags": [
+        "gpt"
+      ],
+      "themes": [
+        "gpt"
+      ],
+      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
+      "summary_markdown": "**摘要**：Moris-kr/ai-chatroom 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：A web group chat where Claude, ChatGPT, Grok and Gemini hang out and talk on their own, powered by your logged-in CLIs (no API keys). English / 한국어 / 日本語结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：6/10\n\n**亮点**：\n- Stars: 13\n- 语言: JavaScript",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 90.01,
+      "detail_path": "items/github-moris-kr-ai-chatroom.html",
+      "first_seen_at": "2026-09-29T05:37:52.457877+00:00",
+      "last_seen_at": "2026-09-29T05:37:52.457877+00:00",
+      "last_curated_at": "2026-09-29T05:37:52.457877+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "github::mvschwarz/openrig",
+      "kind": "repo",
+      "source": "github",
+      "source_tags": [
+        "trending"
+      ],
+      "name": "openrig",
+      "title": "mvschwarz/openrig",
+      "full_name": "mvschwarz/openrig",
+      "html_url": "https://github.com/mvschwarz/openrig",
+      "description": "Multi-agent harness that runs Claude Code and Codex together as one system",
+      "stars": 1873,
+      "stars_today": 0,
+      "language": "TypeScript",
+      "topics": [],
+      "created_at": "",
+      "updated_at": "",
+      "heuristic_score": 6.346,
+      "summary": "mvschwarz/openrig 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Multi-agent harness that runs Claude Code and Codex together as one system结合关键词命中和热度信号，它适合加入今日重点观察列表。",
+      "brief": "这是一个值得快速关注的开源 AI 项目。",
+      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
+      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
+      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
+      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
+      "highlights": [
+        "Stars: 1873",
+        "语言: TypeScript"
+      ],
+      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
+      "relevance_score": 5,
+      "tags": [
+        "agent"
+      ],
+      "themes": [
+        "agent"
+      ],
+      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
+      "summary_markdown": "**摘要**：mvschwarz/openrig 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Multi-agent harness that runs Claude Code and Codex together as one system结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：5/10\n\n**亮点**：\n- Stars: 1873\n- 语言: TypeScript",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 80.75,
+      "detail_path": "items/github-mvschwarz-openrig.html",
+      "first_seen_at": "2026-09-28T02:01:24.939434+00:00",
+      "last_seen_at": "2026-09-29T05:37:52.457877+00:00",
+      "last_curated_at": "2026-09-29T05:37:52.457877+00:00",
       "last_notified_at": null
     },
     {
@@ -354,116 +823,6 @@
       "personalized_score": 120.0,
       "detail_path": "items/arxiv-ehradapt-adapting-pretrained-language-models-to-electronic-health-records-with-semantic-pr.html",
       "first_seen_at": "2026-09-29T02:48:13.690791+00:00",
-      "last_seen_at": "2026-09-29T02:48:13.690791+00:00",
-      "last_curated_at": "2026-09-29T02:48:13.690791+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "github::dream-num/univer",
-      "kind": "repo",
-      "source": "github",
-      "source_tags": [
-        "trending"
-      ],
-      "name": "univer",
-      "title": "dream-num/univer",
-      "full_name": "dream-num/univer",
-      "html_url": "https://github.com/dream-num/univer",
-      "description": "The Office Harness for AI Agents — Spreadsheets, Docs, Slides, Canvas, Relational Tables, and PDF in one runtime.",
-      "stars": 21326,
-      "stars_today": 0,
-      "language": "TypeScript",
-      "topics": [],
-      "created_at": "",
-      "updated_at": "",
-      "heuristic_score": 15.2,
-      "summary": "dream-num/univer 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：The Office Harness for AI Agents — Spreadsheets, Docs, Slides, Canvas, Relational Tables, and PDF in one runtime.结合关键词命中和热度信号，它适合加入今日重点观察列表。",
-      "brief": "这是一个值得快速关注的开源 AI 项目。",
-      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
-      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
-      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
-      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
-      "highlights": [
-        "Stars: 21326",
-        "语言: TypeScript"
-      ],
-      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
-      "relevance_score": 8,
-      "tags": [
-        "ai",
-        "agent",
-        "ai agent"
-      ],
-      "themes": [
-        "ai",
-        "agent",
-        "ai agent"
-      ],
-      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：dream-num/univer 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：The Office Harness for AI Agents — Spreadsheets, Docs, Slides, Canvas, Relational Tables, and PDF in one runtime.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 21326\n- 语言: TypeScript",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 118.53,
-      "detail_path": "items/github-dream-num-univer.html",
-      "first_seen_at": "2026-09-23T01:51:40.647389+00:00",
-      "last_seen_at": "2026-09-29T02:48:13.690791+00:00",
-      "last_curated_at": "2026-09-29T02:48:13.690791+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "github::paperclipai/paperclip",
-      "kind": "repo",
-      "source": "github",
-      "source_tags": [
-        "trending"
-      ],
-      "name": "paperclip",
-      "title": "paperclipai/paperclip",
-      "full_name": "paperclipai/paperclip",
-      "html_url": "https://github.com/paperclipai/paperclip",
-      "description": "The open-source app everyone uses to manage agents at work",
-      "stars": 93015,
-      "stars_today": 0,
-      "language": "TypeScript",
-      "topics": [],
-      "created_at": "",
-      "updated_at": "",
-      "heuristic_score": 15.2,
-      "summary": "paperclipai/paperclip 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：The open-source app everyone uses to manage agents at work结合关键词命中和热度信号，它适合加入今日重点观察列表。",
-      "brief": "这是一个值得快速关注的开源 AI 项目。",
-      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
-      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
-      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
-      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
-      "highlights": [
-        "Stars: 93015",
-        "语言: TypeScript"
-      ],
-      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
-      "relevance_score": 8,
-      "tags": [
-        "agent"
-      ],
-      "themes": [
-        "agent"
-      ],
-      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：paperclipai/paperclip 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：The open-source app everyone uses to manage agents at work结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 93015\n- 语言: TypeScript",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 130.0,
-      "detail_path": "items/github-paperclipai-paperclip.html",
-      "first_seen_at": "2026-09-26T02:04:05.946112+00:00",
       "last_seen_at": "2026-09-29T02:48:13.690791+00:00",
       "last_curated_at": "2026-09-29T02:48:13.690791+00:00",
       "last_notified_at": null
@@ -530,160 +889,6 @@
       "personalized_score": 126.0,
       "detail_path": "items/arxiv-maat-independent-deterministic-contract-based-governance-for-multi-agent-llm-workflows.html",
       "first_seen_at": "2026-09-29T02:48:13.690791+00:00",
-      "last_seen_at": "2026-09-29T02:48:13.690791+00:00",
-      "last_curated_at": "2026-09-29T02:48:13.690791+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "github::vectorize-io/hindsight",
-      "kind": "repo",
-      "source": "github",
-      "source_tags": [
-        "trending"
-      ],
-      "name": "hindsight",
-      "title": "vectorize-io/hindsight",
-      "full_name": "vectorize-io/hindsight",
-      "html_url": "https://github.com/vectorize-io/hindsight",
-      "description": "Hindsight: Agent Memory That Learns",
-      "stars": 41153,
-      "stars_today": 0,
-      "language": "Python",
-      "topics": [],
-      "created_at": "",
-      "updated_at": "",
-      "heuristic_score": 12.6,
-      "summary": "vectorize-io/hindsight 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Hindsight: Agent Memory That Learns结合关键词命中和热度信号，它适合加入今日重点观察列表。",
-      "brief": "这是一个值得快速关注的开源 AI 项目。",
-      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
-      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
-      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
-      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
-      "highlights": [
-        "Stars: 41153",
-        "语言: Python"
-      ],
-      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
-      "relevance_score": 7,
-      "tags": [
-        "agent"
-      ],
-      "themes": [
-        "agent"
-      ],
-      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：vectorize-io/hindsight 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Hindsight: Agent Memory That Learns结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 41153\n- 语言: Python",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 116.46,
-      "detail_path": "items/github-vectorize-io-hindsight.html",
-      "first_seen_at": "2026-09-25T01:58:20.257719+00:00",
-      "last_seen_at": "2026-09-29T02:48:13.690791+00:00",
-      "last_curated_at": "2026-09-29T02:48:13.690791+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "github::byoungd/up",
-      "kind": "repo",
-      "source": "github",
-      "source_tags": [
-        "trending"
-      ],
-      "name": "up",
-      "title": "byoungd/up",
-      "full_name": "byoungd/up",
-      "html_url": "https://github.com/byoungd/up",
-      "description": "An advanced guide which might benefit you a lot 🎉 . 韩先凯的人生进阶指南 人生进阶指南 离谱的人生 人生进阶 AI学习 AI指南 韩先凯的AI学习指南 英语学习指南/英语学习教程/英语学习/学英语",
-      "stars": 64799,
-      "stars_today": 0,
-      "language": "JavaScript",
-      "topics": [],
-      "created_at": "",
-      "updated_at": "",
-      "heuristic_score": 12.6,
-      "summary": "byoungd/up 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：An advanced guide which might benefit you a lot 🎉 . 韩先凯的人生进阶指南 人生进阶指南 离谱的人生 人生进阶 AI学习 AI指南 韩先凯的AI学习指南 英语学习指南/英语学习教程/英语学习/学英语结合关键词命中和热度信号，它适合加入今日重点观察列表。",
-      "brief": "这是一个值得快速关注的开源 AI 项目。",
-      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
-      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
-      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
-      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
-      "highlights": [
-        "Stars: 64799",
-        "语言: JavaScript"
-      ],
-      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
-      "relevance_score": 7,
-      "tags": [
-        "ai"
-      ],
-      "themes": [
-        "ai"
-      ],
-      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：byoungd/up 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：An advanced guide which might benefit you a lot 🎉 . 韩先凯的人生进阶指南 人生进阶指南 离谱的人生 人生进阶 AI学习 AI指南 韩先凯的AI学习指南 英语学习指南/英语学习教程/英语学习/学英语结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 64799\n- 语言: JavaScript",
-      "focus_hits": [],
-      "primary_match": "",
-      "personalized_score": 90.0,
-      "detail_path": "items/github-byoungd-up.html",
-      "first_seen_at": "2026-09-29T02:48:13.690791+00:00",
-      "last_seen_at": "2026-09-29T02:48:13.690791+00:00",
-      "last_curated_at": "2026-09-29T02:48:13.690791+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "github::mvschwarz/openrig",
-      "kind": "repo",
-      "source": "github",
-      "source_tags": [
-        "trending"
-      ],
-      "name": "openrig",
-      "title": "mvschwarz/openrig",
-      "full_name": "mvschwarz/openrig",
-      "html_url": "https://github.com/mvschwarz/openrig",
-      "description": "Multi-agent harness that runs Claude Code and Codex together as one system",
-      "stars": 1790,
-      "stars_today": 0,
-      "language": "TypeScript",
-      "topics": [],
-      "created_at": "",
-      "updated_at": "",
-      "heuristic_score": 6.18,
-      "summary": "mvschwarz/openrig 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Multi-agent harness that runs Claude Code and Codex together as one system结合关键词命中和热度信号，它适合加入今日重点观察列表。",
-      "brief": "这是一个值得快速关注的开源 AI 项目。",
-      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
-      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
-      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
-      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
-      "highlights": [
-        "Stars: 1790",
-        "语言: TypeScript"
-      ],
-      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
-      "relevance_score": 5,
-      "tags": [
-        "agent"
-      ],
-      "themes": [
-        "agent"
-      ],
-      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：mvschwarz/openrig 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Multi-agent harness that runs Claude Code and Codex together as one system结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：5/10\n\n**亮点**：\n- Stars: 1790\n- 语言: TypeScript",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 80.72,
-      "detail_path": "items/github-mvschwarz-openrig.html",
-      "first_seen_at": "2026-09-28T02:01:24.939434+00:00",
       "last_seen_at": "2026-09-29T02:48:13.690791+00:00",
       "last_curated_at": "2026-09-29T02:48:13.690791+00:00",
       "last_notified_at": null
@@ -12803,211 +13008,29 @@
       "last_seen_at": "2026-09-05T04:19:25.280567+00:00",
       "last_curated_at": "2026-09-05T04:19:25.280567+00:00",
       "last_notified_at": null
-    },
-    {
-      "id": "github::radixark/miles",
-      "kind": "repo",
-      "source": "github",
-      "source_tags": [
-        "trending"
-      ],
-      "name": "miles",
-      "title": "radixark/miles",
-      "full_name": "radixark/miles",
-      "html_url": "https://github.com/radixark/miles",
-      "description": "Miles is an enterprise-facing reinforcement learning framework for LLM and VLM post-training, forked from and co-evolving with slime.",
-      "stars": 2582,
-      "stars_today": 0,
-      "language": "Python",
-      "topics": [],
-      "created_at": "",
-      "updated_at": "",
-      "heuristic_score": 12.964,
-      "summary": "radixark/miles 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Miles is an enterprise-facing reinforcement learning framework for LLM and VLM post-training, forked from and co-evolving with slime.结合关键词命中和热度信号，它适合加入今日重点观察列表。",
-      "brief": "这是一个值得快速关注的开源 AI 项目。",
-      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
-      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
-      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
-      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
-      "highlights": [
-        "Stars: 2582",
-        "语言: Python"
-      ],
-      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
-      "relevance_score": 7,
-      "tags": [
-        "ai",
-        "llm",
-        "training"
-      ],
-      "themes": [
-        "ai",
-        "llm",
-        "training"
-      ],
-      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：radixark/miles 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Miles is an enterprise-facing reinforcement learning framework for LLM and VLM post-training, forked from and co-evolving with slime.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 2582\n- 语言: Python",
-      "focus_hits": [],
-      "primary_match": "",
-      "personalized_score": 71.03,
-      "detail_path": "items/github-radixark-miles.html",
-      "first_seen_at": "2026-09-05T01:27:53.060306+00:00",
-      "last_seen_at": "2026-09-05T04:19:25.280567+00:00",
-      "last_curated_at": "2026-09-05T04:19:25.280567+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2609.04198v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "Clean Engineering, Unstable Measurement: A Preregistered Reliability Failure of Black-Box LLM Observers on Shared Endpoints",
-      "html_url": "http://arxiv.org/abs/2609.04198v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.04198v1",
-      "description": "Language-model judges now gate training data, score generations, and drive leaderboards. The judge is then a measurement instrument, resting on one rarely stated assumption: the same request, sent to the same model name, reads the same tomorrow. We audited that assumption in two preregistered campaigns with every threshold fixed in advance; neither got past validating its instrument. Across 52,988 audited request attempts, same-window repeat rankings agreed at Spearman 0.400 against a required 0.90, and byte-identical next-day replays agreed at 0.78 against a required 0.99, each time with the execution record at ceiling. Three mechanisms explain the gap: a label-to-meaning mapping that biased readouts as strongly as the signal; candidate gaps seven orders of magnitude below the instrument's own noise floor; and byte-identical inputs returning different rankings, a noise that exact-permutation readouts compound. Neither metric substitution nor sampling repaired it on the tested grid. Preregistered follow-ups bound the problem: waiting did not help on the days sampled (0.805 versus 0.800, replicated over five further days); switching providers did not help (four providers share the floor, medians 0.74 to 0.88, predicted by none of the metadata fields they expose); self-hosting on batch-invariant kernels helped only while the server was quiet; and on constructed errors with known gaps, the readout's separation tracks error type, not size. We distill the evidence into a three-level snapshot-identity ladder, eight design rules, and a reporting checklist; a pilot at roughly 2% of the study's call volume would have exposed both unreachable gates in advance. All results concern externally measured behaviour on shared serving infrastructure. On a shared endpoint, a model name is not a frozen instrument; a preregistered evaluation must measure its instrument before freezing any gate on it.",
-      "authors": [
-        "Haoyaun Zhu",
-        "Jie Zhang"
-      ],
-      "categories": [
-        "cs.AI",
-        "cs.LG"
-      ],
-      "published_at": "2026-09-03T17:59:43+00:00",
-      "updated_at": "2026-09-03T17:59:43+00:00",
-      "primary_category": "cs.AI",
-      "heuristic_score": 13.1,
-      "summary": "Clean Engineering, Unstable Measurement: A Preregistered Reliability Failure of Black-Box LLM Observers on Shared Endpoints 是最近值得追踪的一篇 AI 论文。论文摘要显示：Language-model judges now gate training data, score generations, and drive leaderboards. The judge is then a measurement instrument, resting on one rarely stated assumption: the same request, sent to the same model name, reads the same tomo...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.AI, cs.LG",
-        "作者数: 2"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 7,
-      "tags": [
-        "ai",
-        "model",
-        "training"
-      ],
-      "themes": [
-        "ai",
-        "model",
-        "training"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：Clean Engineering, Unstable Measurement: A Preregistered Reliability Failure of Black-Box LLM Observers on Shared Endpoints 是最近值得追踪的一篇 AI 论文。论文摘要显示：Language-model judges now gate training data, score generations, and drive leaderboards. The judge is then a measurement instrument, resting on one rarely stated assumption: the same request, sent to the same model name, reads the same tomo...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：7/10\n\n**亮点**：\n- 分类: cs.AI, cs.LG\n- 作者数: 2",
-      "focus_hits": [],
-      "primary_match": "",
-      "personalized_score": 78.0,
-      "detail_path": "items/arxiv-clean-engineering-unstable-measurement-a-preregistered-reliability-failure-of-black-box-ll.html",
-      "first_seen_at": "2026-09-05T01:27:53.060306+00:00",
-      "last_seen_at": "2026-09-05T04:19:25.280567+00:00",
-      "last_curated_at": "2026-09-05T04:19:25.280567+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2609.03941v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "Headroom-Drift Replay: A Primitive for Principled Replay Control in GRPO",
-      "html_url": "http://arxiv.org/abs/2609.03941v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.03941v1",
-      "description": "RL-based post-training for reasoning models is increasingly bottlenecked by repeated fresh rollout generation, particularly in agentic settings where environment interaction dominates wall-clock cost. Replay can reduce this burden by reusing past trajectories, but existing methods typically embed it within larger training pipelines involving exploration, experience restructuring, or mixed-policy optimization. This makes replay's own contribution difficult to isolate. We ask a focused question: how far can principled replay selection alone go? We introduce Headroom-Drift Replay, a group-level replay control primitive for GRPO that separates reuse into two decisions. Headroom ranks stored groups by remaining learning value, while Drift gates them by compatibility with the current policy. The fresh on-policy stream remains unchanged, and the method adds no auxiliary generation or training machinery. Across mathematical reasoning, multimodal reasoning, and Agentic Search benchmarks, this single intervention outperforms naive replay and matches or exceeds broader replay methods on Avg Mean@32. In Agentic Search, where environment interaction dominates cost, it delivers comparable quality at materially lower wall-clock time.",
-      "authors": [
-        "Hyun Bin Park",
-        "Du-Seong Chang"
-      ],
-      "categories": [
-        "cs.LG",
-        "cs.AI",
-        "cs.CL"
-      ],
-      "published_at": "2026-09-03T14:45:47+00:00",
-      "updated_at": "2026-09-03T14:45:47+00:00",
-      "primary_category": "cs.LG",
-      "heuristic_score": 22.247,
-      "summary": "Headroom-Drift Replay: A Primitive for Principled Replay Control in GRPO 是最近值得追踪的一篇 AI 论文。论文摘要显示：RL-based post-training for reasoning models is increasingly bottlenecked by repeated fresh rollout generation, particularly in agentic settings where environment interaction dominates wall-clock cost. Replay can reduce this burden by reusin...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.LG, cs.AI",
-        "作者数: 2"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "agent",
-        "agentic",
-        "multimodal"
-      ],
-      "themes": [
-        "ai",
-        "agent",
-        "agentic"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：Headroom-Drift Replay: A Primitive for Principled Replay Control in GRPO 是最近值得追踪的一篇 AI 论文。论文摘要显示：RL-based post-training for reasoning models is increasingly bottlenecked by repeated fresh rollout generation, particularly in agentic settings where environment interaction dominates wall-clock cost. Replay can reduce this burden by reusin...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.LG, cs.AI\n- 作者数: 2",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "multimodal",
-          "weight": 2.0
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 198.0,
-      "detail_path": "items/arxiv-headroom-drift-replay-a-primitive-for-principled-replay-control-in-grpo.html",
-      "first_seen_at": "2026-09-04T01:25:48.281020+00:00",
-      "last_seen_at": "2026-09-04T04:23:57.506878+00:00",
-      "last_curated_at": "2026-09-04T04:23:57.506878+00:00",
-      "last_notified_at": null
     }
   ],
   "digests": [
     {
       "date": "2026-09-29",
       "title": "AI Daily Digest · 2026-09-29",
-      "generated_at": "2026-09-29T10:48:08.300192+08:00",
+      "generated_at": "2026-09-29T13:37:45.390493+08:00",
       "notified_at": null,
       "repo_ids": [
         "github::paperclipai/paperclip",
         "github::dream-num/univer",
         "github::vectorize-io/hindsight",
+        "github::Moris-kr/ai-chatroom",
         "github::byoungd/up",
         "github::mvschwarz/openrig"
       ],
       "paper_ids": [
         "arxiv::http://arxiv.org/abs/2609.34054v1",
         "arxiv::http://arxiv.org/abs/2609.34044v1",
+        "arxiv::http://arxiv.org/abs/2609.35741v1",
+        "arxiv::http://arxiv.org/abs/2609.35759v1",
         "arxiv::http://arxiv.org/abs/2609.34024v1",
-        "arxiv::http://arxiv.org/abs/2609.34039v1",
-        "arxiv::http://arxiv.org/abs/2609.34017v1",
-        "arxiv::http://arxiv.org/abs/2609.34007v1"
+        "arxiv::http://arxiv.org/abs/2609.34039v1"
       ],
       "digest_json": "data/digests/2026-09-29.json",
       "digest_markdown": "data/digests/2026-09-29.md"
@@ -16969,174 +16992,10 @@
     "weekly": {
       "label": "周报",
       "window_days": 7,
-      "generated_at": "2026-09-29T10:48:08.300192+08:00",
-      "count": 76,
+      "generated_at": "2026-09-29T13:37:45.390493+08:00",
+      "count": 68,
       "summary": "近 7 天里，最集中的主题是 ai、llm、agent。",
       "top_items": [
-        {
-          "id": "arxiv::http://arxiv.org/abs/2609.23363v1",
-          "kind": "paper",
-          "source": "arxiv",
-          "source_tags": [
-            "latest"
-          ],
-          "title": "TicTacBench: Benchmarking Timing Closure Capabilities of Coding Agents",
-          "html_url": "http://arxiv.org/abs/2609.23363v1",
-          "pdf_url": "https://arxiv.org/pdf/2609.23363v1",
-          "description": "Recent advances in large language models (LLMs) have led to the emergence of coding agents capable of performing complex engineering tasks, including register-transfer level (RTL) design and optimization. Existing RTL benchmarks mainly evaluate functional correctness and performance, power, and area (PPA) of the generated RTL designs, leaving agents' ability for \\emph{timing closure} under-evaluated. We propose TicTacBench, a benchmark specifically designed to evaluate coding agents' capabilities for RTL-level timing closure under post-place-and-route (post-PnR) evaluation. TicTacBench contains 30 diverse tasks, each provided with a suboptimal RTL design, realistic timing constraints, functional equivalence verification, and timing reports. With over 300 runs of coding agents driven by 8 frontier LLMs, we find that even the best agent can only close 53.3\\% of tasks with 7.18\\% area-delay product (ADP) degradation and 8.83\\% energy-delay-squared product (EDDP) improvement on average. We identify common failure categories that explain why agents fail to close timing. Then we propose TicTacSkill, a new method that guides agents to follow standard timing-closure procedures and improves the Timing Closure Rate by 9\\%. These results suggest that while coding agents have made significant progress in RTL design, their timing-closure capability still has substantial room for improvement.",
-          "authors": [
-            "Bowei Wang",
-            "Zhigang Fang",
-            "Zhijie Yang",
-            "Renzhi Chen",
-            "Shanshan Li",
-            "Lei Wang"
-          ],
-          "categories": [
-            "cs.AI"
-          ],
-          "published_at": "2026-09-20T05:17:00+00:00",
-          "updated_at": "2026-09-20T05:17:00+00:00",
-          "primary_category": "cs.AI",
-          "heuristic_score": 20.051,
-          "summary": "TicTacBench: Benchmarking Timing Closure Capabilities of Coding Agents 是最近值得追踪的一篇 AI 论文。论文摘要显示：Recent advances in large language models (LLMs) have led to the emergence of coding agents capable of performing complex engineering tasks, including register-transfer level (RTL) design and optimization. Existing RTL benchmarks mainly eval...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-          "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-          "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-          "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-          "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-          "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-          "highlights": [
-            "分类: cs.AI",
-            "作者数: 6"
-          ],
-          "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-          "relevance_score": 10,
-          "tags": [
-            "ai",
-            "llm",
-            "agent",
-            "rag"
-          ],
-          "themes": [
-            "ai",
-            "llm",
-            "agent"
-          ],
-          "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-          "summary_markdown": "**摘要**：TicTacBench: Benchmarking Timing Closure Capabilities of Coding Agents 是最近值得追踪的一篇 AI 论文。论文摘要显示：Recent advances in large language models (LLMs) have led to the emergence of coding agents capable of performing complex engineering tasks, including register-transfer level (RTL) design and optimization. Existing RTL benchmarks mainly eval...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI\n- 作者数: 6",
-          "focus_hits": [
-            {
-              "keyword": "agent",
-              "weight": 3.0
-            },
-            {
-              "keyword": "coding",
-              "weight": 2.6
-            },
-            {
-              "keyword": "rag",
-              "weight": 2.2
-            },
-            {
-              "keyword": "benchmark",
-              "weight": 1.6
-            }
-          ],
-          "primary_match": "agent",
-          "personalized_score": 202.0,
-          "detail_path": "items/arxiv-tictacbench-benchmarking-timing-closure-capabilities-of-coding-agents.html",
-          "first_seen_at": "2026-09-22T01:56:03.468101+00:00",
-          "last_seen_at": "2026-09-22T04:47:41.410909+00:00",
-          "last_curated_at": "2026-09-22T04:47:41.410909+00:00",
-          "last_notified_at": null
-        },
-        {
-          "id": "arxiv::http://arxiv.org/abs/2609.24972v1",
-          "kind": "paper",
-          "source": "arxiv",
-          "source_tags": [
-            "latest"
-          ],
-          "title": "RRSI: Regularized Recursive Self-Improvement of Agent Harnesses",
-          "html_url": "http://arxiv.org/abs/2609.24972v1",
-          "pdf_url": "https://arxiv.org/pdf/2609.24972v1",
-          "description": "An LLM agent's capability is largely magnified by its harness, namely the prompts, control flow, tooling, memory, and context management surrounding the frozen backbone model. Recent methods increasingly automate this process by iteratively proposing and selecting component-wise edits of an agent harness, practically establishing a form of recursive self-improvement (RSI) at the agent-system level. However, such recursive evolution may overfit by memorizing the training tasks, showing large in-distribution gains that shrink or even vanish on out-of-distribution benchmarks. We introduce Regularized Recursive Self-Improvement of Agent Harnesses (RRSI), which incorporates the principles of regularizations into harness self-improvement by constraining the evolution candidate proposal and selection. The proposer operates with a temporally annealed budget, limiting how many edits a candidate can bundle, and it encourages unexplored trajectories based on evolution history. The selector is equipped with a critic and a pruner: the critic screens benchmark-specific proposals, while the pruner, removes changes that are too small, too expensive, or no longer useful. Together these constraints favor reusable agent mechanisms over benchmark-specific ones or even noises. Across eight benchmarks spanning coding, agentic workspace and engineering design tasks, RRSI gains up to 14.1 points on the split it evolves against and up to 4.7 points on the five out-of-distribution benchmarks, while producing a harness that runs on 30% fewer policy tokens than the unregularized evolution. Code is available at https://github.com/google-research/rrsi and project page is https://regularized-rsi.com/.",
-          "authors": [
-            "Peng Xia",
-            "Rujun Han",
-            "Zifeng Wang",
-            "Yanfei Chen",
-            "Yufan Zhang",
-            "Yoonho Lee",
-            "Chengsong Huang",
-            "Han Yu",
-            "Zhongying CuiZhu",
-            "Yifei Ming",
-            "Huaxiu Yao",
-            "Burak Gokturk",
-            "Tomas Pfister",
-            "Chen-Yu Lee"
-          ],
-          "categories": [
-            "cs.LG",
-            "cs.AI",
-            "cs.CL"
-          ],
-          "published_at": "2026-09-21T17:54:49+00:00",
-          "updated_at": "2026-09-21T17:54:49+00:00",
-          "primary_category": "cs.LG",
-          "heuristic_score": 22.7,
-          "summary": "RRSI: Regularized Recursive Self-Improvement of Agent Harnesses 是最近值得追踪的一篇 AI 论文。论文摘要显示：An LLM agent's capability is largely magnified by its harness, namely the prompts, control flow, tooling, memory, and context management surrounding the frozen backbone model. Recent methods increasingly automate this process by iteratively...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-          "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-          "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-          "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-          "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-          "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-          "highlights": [
-            "分类: cs.LG, cs.AI",
-            "作者数: 14"
-          ],
-          "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-          "relevance_score": 10,
-          "tags": [
-            "ai",
-            "llm",
-            "agent",
-            "agentic"
-          ],
-          "themes": [
-            "ai",
-            "llm",
-            "agent"
-          ],
-          "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-          "summary_markdown": "**摘要**：RRSI: Regularized Recursive Self-Improvement of Agent Harnesses 是最近值得追踪的一篇 AI 论文。论文摘要显示：An LLM agent's capability is largely magnified by its harness, namely the prompts, control flow, tooling, memory, and context management surrounding the frozen backbone model. Recent methods increasingly automate this process by iteratively...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.LG, cs.AI\n- 作者数: 14",
-          "focus_hits": [
-            {
-              "keyword": "agent",
-              "weight": 3.0
-            },
-            {
-              "keyword": "coding",
-              "weight": 2.6
-            },
-            {
-              "keyword": "rag",
-              "weight": 2.2
-            },
-            {
-              "keyword": "benchmark",
-              "weight": 1.6
-            }
-          ],
-          "primary_match": "agent",
-          "personalized_score": 202.0,
-          "detail_path": "items/arxiv-rrsi-regularized-recursive-self-improvement-of-agent-harnesses.html",
-          "first_seen_at": "2026-09-22T04:47:41.410909+00:00",
-          "last_seen_at": "2026-09-22T04:47:41.410909+00:00",
-          "last_curated_at": "2026-09-22T04:47:41.410909+00:00",
-          "last_notified_at": null
-        },
         {
           "id": "arxiv::http://arxiv.org/abs/2609.28416v1",
           "kind": "paper",
@@ -17447,8 +17306,8 @@
           "personalized_score": 194.0,
           "detail_path": "items/arxiv-precache-efficient-kv-cache-sharing-for-multi-lora-agents-via-low-rank-precomputation-and-.html",
           "first_seen_at": "2026-09-29T02:48:13.690791+00:00",
-          "last_seen_at": "2026-09-29T02:48:13.690791+00:00",
-          "last_curated_at": "2026-09-29T02:48:13.690791+00:00",
+          "last_seen_at": "2026-09-29T05:37:52.457877+00:00",
+          "last_curated_at": "2026-09-29T05:37:52.457877+00:00",
           "last_notified_at": null
         },
         {
@@ -17605,6 +17464,166 @@
           "last_seen_at": "2026-09-23T04:39:32.861265+00:00",
           "last_curated_at": "2026-09-23T04:39:32.861265+00:00",
           "last_notified_at": null
+        },
+        {
+          "id": "arxiv::http://arxiv.org/abs/2609.34044v1",
+          "kind": "paper",
+          "source": "arxiv",
+          "source_tags": [
+            "latest"
+          ],
+          "title": "SCOPD: Sparse-Context On-Policy Self-Distillation for Efficient Vision-Language Models",
+          "html_url": "http://arxiv.org/abs/2609.34044v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.34044v1",
+          "description": "Reasoning vision-language models (VLMs) process images and videos as long sequences of visual tokens, making inference expensive. Training-free token pruning reduces this cost, but aggressive compression can sharply degrade performance, often attributed to irreversible loss of task-relevant visual information. We show that this explanation is incomplete. In a fixed-context Pass@K analysis, repeated sampling from the same pruned visual representation recovers many examples missed by greedy decoding, indicating that useful visual evidence can remain accessible but be used unreliably. We call this the representation-utilization gap. Motivated by this observation, we introduce SCOPD, a sparse-context on-policy self-distillation framework in which a student generates reasoning trajectories from pruned visual tokens while a privileged full-context teacher supervises the same on-policy prefixes. SCOPD requires no ground-truth responses, architectural changes, or additional inference-time computation. We further introduce SCOPD+, which uses a small visual-budget intervention to identify visually sensitive response positions and selectively distill them. At 10% visual-token retention, the Vanilla model retains 86.37% of its unpruned performance across 13 benchmarks. SCOPD raises this to 90.49%, while SCOPD+ further improves it to 92.43%. Across token budgets, benchmarks, and pruning operators, our results show that efficient reasoning depends not only on which visual information survives pruning, but also on how reliably the model learns to use it.",
+          "authors": [
+            "Ahmadreza Jeddi",
+            "Enming Zhang",
+            "Jasper Gerigk",
+            "Hakki Karaimer",
+            "Mozhgan Nasr Azadani",
+            "Jiayun Luo",
+            "Minh Ngoc Le",
+            "Gholamali Aminian",
+            "Hugo Buurmeijer",
+            "Yongchao Chen",
+            "Leonid Sigal",
+            "Igor Gilitschenski",
+            "Konstantinos G. Derpanis",
+            "Marco Pavone",
+            "Babak Taati"
+          ],
+          "categories": [
+            "cs.CV"
+          ],
+          "published_at": "2026-09-28T00:09:07+00:00",
+          "updated_at": "2026-09-28T00:09:07+00:00",
+          "primary_category": "cs.CV",
+          "heuristic_score": 17.856,
+          "summary": "SCOPD: Sparse-Context On-Policy Self-Distillation for Efficient Vision-Language Models 是最近值得追踪的一篇 AI 论文。论文摘要显示：Reasoning vision-language models (VLMs) process images and videos as long sequences of visual tokens, making inference expensive. Training-free token pruning reduces this cost, but aggressive compression can sharply degrade performance, oft...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+          "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+          "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+          "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+          "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+          "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+          "highlights": [
+            "分类: cs.CV",
+            "作者数: 15"
+          ],
+          "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+          "relevance_score": 10,
+          "tags": [
+            "ai",
+            "model",
+            "benchmark",
+            "inference"
+          ],
+          "themes": [
+            "ai",
+            "model",
+            "benchmark"
+          ],
+          "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+          "summary_markdown": "**摘要**：SCOPD: Sparse-Context On-Policy Self-Distillation for Efficient Vision-Language Models 是最近值得追踪的一篇 AI 论文。论文摘要显示：Reasoning vision-language models (VLMs) process images and videos as long sequences of visual tokens, making inference expensive. Training-free token pruning reduces this cost, but aggressive compression can sharply degrade performance, oft...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV\n- 作者数: 15",
+          "focus_hits": [
+            {
+              "keyword": "coding",
+              "weight": 2.6
+            },
+            {
+              "keyword": "reasoning",
+              "weight": 2.4
+            },
+            {
+              "keyword": "inference",
+              "weight": 1.8
+            },
+            {
+              "keyword": "benchmark",
+              "weight": 1.6
+            }
+          ],
+          "primary_match": "coding",
+          "personalized_score": 192.0,
+          "detail_path": "items/arxiv-scopd-sparse-context-on-policy-self-distillation-for-efficient-vision-language-models.html",
+          "first_seen_at": "2026-09-29T02:48:13.690791+00:00",
+          "last_seen_at": "2026-09-29T05:37:52.457877+00:00",
+          "last_curated_at": "2026-09-29T05:37:52.457877+00:00",
+          "last_notified_at": null
+        },
+        {
+          "id": "arxiv::http://arxiv.org/abs/2609.26796v1",
+          "kind": "paper",
+          "source": "arxiv",
+          "source_tags": [
+            "latest"
+          ],
+          "title": "Flash-dLLM: IO-Aware KV Caching and Parallel Decoding for Fast, Memory-Efficient Diffusion LLMs",
+          "html_url": "http://arxiv.org/abs/2609.26796v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.26796v1",
+          "description": "Diffusion Large Language Models (dLLMs) have recently emerged as a promising alternative to autoregressive LLMs by enabling non-autoregressive text generation. However, their practical deployment remains limited by inefficient inference, largely due to the absence of effective Key-Value (KV) caching and scalable parallel decoding mechanisms. Existing acceleration methods typically study KV caching and parallel decoding in isolation, overlooking the I/O bottlenecks that arise when cache reuse and parallel token verification are jointly applied. In this work, we introduce $\\textbf{Flash-dLLM}$, a training-free inference acceleration framework for fast and memory-efficient dLLMs. Flash-dLLM first identifies GPU memory I/O as a dominant bottleneck in KV-cache-enabled dLLM inference and addresses it with an I/O-aware fused KV-cache kernel that reduces redundant memory movement. Building on this optimized cache mechanism, Flash-dLLM further proposes an efficient KV-cache-driven draft-and-verify decoding strategy, where the dLLM itself serves as both drafter and verifier without requiring an auxiliary model. This unified design enables faster decoding while preserving generation quality and improving scalability to longer sequences and larger batch size. Extensive experiments on mathematical reasoning and code-generation benchmarks demonstrate that Flash-dLLM consistently outperforms existing state-of-the-art dLLM acceleration methods in both inference speed and memory efficiency. In particular, it achieves $5.1\\times$ and $11.0\\times$ speedups over prior strongest baseline Elastic-Cache on GSM8K and HumanEval, respectively.",
+          "authors": [
+            "Quan Nguyen-Tri",
+            "Mukul Ranjan",
+            "Zhiqiang Shen"
+          ],
+          "categories": [
+            "cs.CL"
+          ],
+          "published_at": "2026-09-22T17:59:57+00:00",
+          "updated_at": "2026-09-22T17:59:57+00:00",
+          "primary_category": "cs.CL",
+          "heuristic_score": 22.7,
+          "summary": "Flash-dLLM: IO-Aware KV Caching and Parallel Decoding for Fast, Memory-Efficient Diffusion LLMs 是最近值得追踪的一篇 AI 论文。论文摘要显示：Diffusion Large Language Models (dLLMs) have recently emerged as a promising alternative to autoregressive LLMs by enabling non-autoregressive text generation. However, their practical deployment remains limited by inefficient inference, la...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+          "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+          "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+          "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+          "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+          "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+          "highlights": [
+            "分类: cs.CL",
+            "作者数: 3"
+          ],
+          "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+          "relevance_score": 10,
+          "tags": [
+            "ai",
+            "llm",
+            "diffusion",
+            "model"
+          ],
+          "themes": [
+            "ai",
+            "llm",
+            "diffusion"
+          ],
+          "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+          "summary_markdown": "**摘要**：Flash-dLLM: IO-Aware KV Caching and Parallel Decoding for Fast, Memory-Efficient Diffusion LLMs 是最近值得追踪的一篇 AI 论文。论文摘要显示：Diffusion Large Language Models (dLLMs) have recently emerged as a promising alternative to autoregressive LLMs by enabling non-autoregressive text generation. However, their practical deployment remains limited by inefficient inference, la...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL\n- 作者数: 3",
+          "focus_hits": [
+            {
+              "keyword": "coding",
+              "weight": 2.6
+            },
+            {
+              "keyword": "reasoning",
+              "weight": 2.4
+            },
+            {
+              "keyword": "inference",
+              "weight": 1.8
+            },
+            {
+              "keyword": "benchmark",
+              "weight": 1.6
+            }
+          ],
+          "primary_match": "coding",
+          "personalized_score": 192.0,
+          "detail_path": "items/arxiv-flash-dllm-io-aware-kv-caching-and-parallel-decoding-for-fast-memory-efficient-diffusion-l.html",
+          "first_seen_at": "2026-09-23T04:39:32.861265+00:00",
+          "last_seen_at": "2026-09-23T04:39:32.861265+00:00",
+          "last_curated_at": "2026-09-23T04:39:32.861265+00:00",
+          "last_notified_at": null
         }
       ],
       "top_themes": [
@@ -17614,7 +17633,7 @@
         },
         {
           "theme": "llm",
-          "count": 6
+          "count": 5
         },
         {
           "theme": "agent",
@@ -17623,21 +17642,25 @@
         {
           "theme": "rag",
           "count": 1
+        },
+        {
+          "theme": "model",
+          "count": 1
         }
       ],
       "highlights": [
         {
-          "title": "TicTacBench: Benchmarking Timing Closure Capabilities of Coding Agents",
-          "source": "arxiv",
-          "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
-        },
-        {
-          "title": "RRSI: Regularized Recursive Self-Improvement of Agent Harnesses",
-          "source": "arxiv",
-          "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
-        },
-        {
           "title": "Agent-Editing World Model: Rethinking World Modeling for LLM Agents",
+          "source": "arxiv",
+          "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
+        },
+        {
+          "title": "PACT: From Credit Assignment to Critic Alignment",
+          "source": "arxiv",
+          "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
+        },
+        {
+          "title": "Grow the Harness, Not the Context: From Strategy-Free Scaffolds to Reusable Specialist Agents",
           "source": "arxiv",
           "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
         }
@@ -17646,7 +17669,7 @@
     "monthly": {
       "label": "月报",
       "window_days": 30,
-      "generated_at": "2026-09-29T10:48:08.300192+08:00",
+      "generated_at": "2026-09-29T13:37:45.390493+08:00",
       "count": 200,
       "summary": "近 30 天里，最集中的主题是 ai、llm、agent。",
       "top_items": [
@@ -18174,81 +18197,6 @@
           "last_notified_at": null
         },
         {
-          "id": "arxiv::http://arxiv.org/abs/2609.03941v1",
-          "kind": "paper",
-          "source": "arxiv",
-          "source_tags": [
-            "latest"
-          ],
-          "title": "Headroom-Drift Replay: A Primitive for Principled Replay Control in GRPO",
-          "html_url": "http://arxiv.org/abs/2609.03941v1",
-          "pdf_url": "https://arxiv.org/pdf/2609.03941v1",
-          "description": "RL-based post-training for reasoning models is increasingly bottlenecked by repeated fresh rollout generation, particularly in agentic settings where environment interaction dominates wall-clock cost. Replay can reduce this burden by reusing past trajectories, but existing methods typically embed it within larger training pipelines involving exploration, experience restructuring, or mixed-policy optimization. This makes replay's own contribution difficult to isolate. We ask a focused question: how far can principled replay selection alone go? We introduce Headroom-Drift Replay, a group-level replay control primitive for GRPO that separates reuse into two decisions. Headroom ranks stored groups by remaining learning value, while Drift gates them by compatibility with the current policy. The fresh on-policy stream remains unchanged, and the method adds no auxiliary generation or training machinery. Across mathematical reasoning, multimodal reasoning, and Agentic Search benchmarks, this single intervention outperforms naive replay and matches or exceeds broader replay methods on Avg Mean@32. In Agentic Search, where environment interaction dominates cost, it delivers comparable quality at materially lower wall-clock time.",
-          "authors": [
-            "Hyun Bin Park",
-            "Du-Seong Chang"
-          ],
-          "categories": [
-            "cs.LG",
-            "cs.AI",
-            "cs.CL"
-          ],
-          "published_at": "2026-09-03T14:45:47+00:00",
-          "updated_at": "2026-09-03T14:45:47+00:00",
-          "primary_category": "cs.LG",
-          "heuristic_score": 22.247,
-          "summary": "Headroom-Drift Replay: A Primitive for Principled Replay Control in GRPO 是最近值得追踪的一篇 AI 论文。论文摘要显示：RL-based post-training for reasoning models is increasingly bottlenecked by repeated fresh rollout generation, particularly in agentic settings where environment interaction dominates wall-clock cost. Replay can reduce this burden by reusin...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-          "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-          "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-          "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-          "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-          "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-          "highlights": [
-            "分类: cs.LG, cs.AI",
-            "作者数: 2"
-          ],
-          "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-          "relevance_score": 10,
-          "tags": [
-            "ai",
-            "agent",
-            "agentic",
-            "multimodal"
-          ],
-          "themes": [
-            "ai",
-            "agent",
-            "agentic"
-          ],
-          "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-          "summary_markdown": "**摘要**：Headroom-Drift Replay: A Primitive for Principled Replay Control in GRPO 是最近值得追踪的一篇 AI 论文。论文摘要显示：RL-based post-training for reasoning models is increasingly bottlenecked by repeated fresh rollout generation, particularly in agentic settings where environment interaction dominates wall-clock cost. Replay can reduce this burden by reusin...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.LG, cs.AI\n- 作者数: 2",
-          "focus_hits": [
-            {
-              "keyword": "agent",
-              "weight": 3.0
-            },
-            {
-              "keyword": "reasoning",
-              "weight": 2.4
-            },
-            {
-              "keyword": "multimodal",
-              "weight": 2.0
-            },
-            {
-              "keyword": "benchmark",
-              "weight": 1.6
-            }
-          ],
-          "primary_match": "agent",
-          "personalized_score": 198.0,
-          "detail_path": "items/arxiv-headroom-drift-replay-a-primitive-for-principled-replay-control-in-grpo.html",
-          "first_seen_at": "2026-09-04T01:25:48.281020+00:00",
-          "last_seen_at": "2026-09-04T04:23:57.506878+00:00",
-          "last_curated_at": "2026-09-04T04:23:57.506878+00:00",
-          "last_notified_at": null
-        },
-        {
           "id": "arxiv::http://arxiv.org/abs/2609.26760v1",
           "kind": "paper",
           "source": "arxiv",
@@ -18325,6 +18273,88 @@
           "first_seen_at": "2026-09-23T04:39:32.861265+00:00",
           "last_seen_at": "2026-09-23T04:39:32.861265+00:00",
           "last_curated_at": "2026-09-23T04:39:32.861265+00:00",
+          "last_notified_at": null
+        },
+        {
+          "id": "arxiv::http://arxiv.org/abs/2609.20812v1",
+          "kind": "paper",
+          "source": "arxiv",
+          "source_tags": [
+            "latest"
+          ],
+          "title": "Quantifying Overclaiming Propensity in Frontier LLM Agents",
+          "html_url": "http://arxiv.org/abs/2609.20812v1",
+          "pdf_url": "https://arxiv.org/pdf/2609.20812v1",
+          "description": "Frontier coding agents are increasingly trusted to work autonomously for long periods, yet an agent's final response is often the only account of that work a user sees. We quantify the propensity of frontier agents to \\emph{overclaim} task completion, a misrepresentation that can mislead the user. An agent overclaims when its final response contradicts information in its context. This definition requires no inference about intent and is independent of task success. We introduce \\emph{OverclaimBench}, an evaluation suite composed of five file-review scenarios, transcript-based coverage measurements, and registered planted defects. We evaluate eight proprietary frontier models in their own production command-line interfaces, and four open-weight models under a single fixed harness on OverclaimBench and find that 1) agents do not read all the files they were asked to review in 67.9\\% of runs; 2) among runs where not all files are read, agents are \\emph{misleading} 80.4\\% of the time (59--96\\% per model), either falsely claiming to have read all files or omitting that coverage is incomplete; 3) requiring delegation to subagents increased reading coverage, but among reviews that remained incomplete, a large majority were still misleading; and 4) agents that falsely claimed a complete review missed planted defects at about 1.8 times the rate of agents that read every file, showing that claims of completion can conceal substantive failures. Together, these results show that agents' final responses are not reliable accounts of their actions.",
+          "authors": [
+            "Nolan Smyth",
+            "Yorguin-Jose Mantilla-Ramos",
+            "Pascal Jr Tikeng Notsawo",
+            "Saskia Helbling",
+            "Alberto Tosato",
+            "Mohamed Amine Merzouk",
+            "Nouha Dziri",
+            "Gauthier Gidel",
+            "Tommaso Tosato"
+          ],
+          "categories": [
+            "cs.SE",
+            "cs.AI",
+            "cs.LG"
+          ],
+          "published_at": "2026-09-17T17:59:04+00:00",
+          "updated_at": "2026-09-17T17:59:04+00:00",
+          "primary_category": "cs.SE",
+          "heuristic_score": 18.749,
+          "summary": "Quantifying Overclaiming Propensity in Frontier LLM Agents 是最近值得追踪的一篇 AI 论文。论文摘要显示：Frontier coding agents are increasingly trusted to work autonomously for long periods, yet an agent's final response is often the only account of that work a user sees. We quantify the propensity of frontier agents to \\emph{overclaim} task ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+          "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+          "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+          "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+          "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+          "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+          "highlights": [
+            "分类: cs.SE, cs.AI",
+            "作者数: 9"
+          ],
+          "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+          "relevance_score": 10,
+          "tags": [
+            "ai",
+            "agent",
+            "rag",
+            "model"
+          ],
+          "themes": [
+            "ai",
+            "agent",
+            "rag"
+          ],
+          "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+          "summary_markdown": "**摘要**：Quantifying Overclaiming Propensity in Frontier LLM Agents 是最近值得追踪的一篇 AI 论文。论文摘要显示：Frontier coding agents are increasingly trusted to work autonomously for long periods, yet an agent's final response is often the only account of that work a user sees. We quantify the propensity of frontier agents to \\emph{overclaim} task ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.SE, cs.AI\n- 作者数: 9",
+          "focus_hits": [
+            {
+              "keyword": "agent",
+              "weight": 3.0
+            },
+            {
+              "keyword": "coding",
+              "weight": 2.6
+            },
+            {
+              "keyword": "rag",
+              "weight": 2.2
+            },
+            {
+              "keyword": "inference",
+              "weight": 1.8
+            }
+          ],
+          "primary_match": "agent",
+          "personalized_score": 196.0,
+          "detail_path": "items/arxiv-quantifying-overclaiming-propensity-in-frontier-llm-agents.html",
+          "first_seen_at": "2026-09-18T04:36:21.057807+00:00",
+          "last_seen_at": "2026-09-19T04:31:57.598044+00:00",
+          "last_curated_at": "2026-09-19T04:31:57.598044+00:00",
           "last_notified_at": null
         }
       ],
