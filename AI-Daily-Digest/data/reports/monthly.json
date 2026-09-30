@@ -1,10 +1,101 @@
 {
   "label": "月报",
   "window_days": 30,
-  "generated_at": "2026-09-29T13:37:45.390493+08:00",
+  "generated_at": "2026-09-30T10:28:38.636962+08:00",
   "count": 200,
   "summary": "近 30 天里，最集中的主题是 ai、llm、agent。",
   "top_items": [
+    {
+      "id": "arxiv::http://arxiv.org/abs/2609.38147v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Thinking Before Thinking: Scaling Agentic Inference Through Meta-Reasoning",
+      "html_url": "http://arxiv.org/abs/2609.38147v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.38147v1",
+      "description": "As agents take on longer and more complex problems, controlling the execution becomes a task in its own right. Each step in the run brings new control choices, like which partial work to build on, whether to start fresh, or when to stop. We introduce agentic meta-reasoning, an inference-time harness that makes these choices an explicit and structured reasoning process. Workers carry out the task-level computation, while a controller consolidates what the run has established, explores next options, assesses what each option is worth under the remaining budget, and dispatches the chosen work with context drawn from persistent memory. Between decisions the controller carries only a compact account of the run rather than replaying its full history. Our baselines span production coding agents and research harnesses, together with a Direct Control Agent using the same workers and compute budget allowance. On ProgramBench, which tests long-horizon agentic capability through program reconstruction, meta-reasoning achieves 71.5% with GPT-5.5 against 58.0% for Codex; with Opus 4.8 it achieves 67.2% against 65.5% for Claude Code. On the other benchmarks, spanning abstract reasoning, multi-domain long-horizon reasoning, and proof generation, it gains between 3.6 and 4.2 points over direct control, averaged across three frontier models. It keeps improving over the tested budget ranges where direct control plateaus, though its overhead can hurt at small budgets. Artifact-graph analysis reveals more reuse of earlier work, higher coverage of correct solutions in most settings, and nonuniform gains in final selection. These results indicate that spending computation on structured control becomes more important as agents scale to longer runs.",
+      "authors": [
+        "Paras Dahal",
+        "Anton Bakhtin",
+        "Taco Cohen",
+        "Zhengxing Chen",
+        "Carole-Jean Wu",
+        "Rob Fergus",
+        "Scott Yih",
+        "Gabriel Synnaeve",
+        "Ruslan Salakhutdinov",
+        "Sanjeev Arora",
+        "Jason Weston",
+        "Anirudh Goyal"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "published_at": "2026-09-29T17:57:25+00:00",
+      "updated_at": "2026-09-29T17:57:25+00:00",
+      "primary_category": "cs.AI",
+      "heuristic_score": 27.5,
+      "summary": "Thinking Before Thinking: Scaling Agentic Inference Through Meta-Reasoning 是最近值得追踪的一篇 AI 论文。论文摘要显示：As agents take on longer and more complex problems, controlling the execution becomes a task in its own right. Each step in the run brings new control choices, like which partial work to build on, whether to start fresh, or when to stop. We...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.AI",
+        "作者数: 12"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "agent",
+        "agentic",
+        "gpt"
+      ],
+      "themes": [
+        "ai",
+        "agent",
+        "agentic"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：Thinking Before Thinking: Scaling Agentic Inference Through Meta-Reasoning 是最近值得追踪的一篇 AI 论文。论文摘要显示：As agents take on longer and more complex problems, controlling the execution becomes a task in its own right. Each step in the run brings new control choices, like which partial work to build on, whether to start fresh, or when to stop. We...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI\n- 作者数: 12",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "coding",
+          "weight": 2.6
+        },
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        },
+        {
+          "keyword": "inference",
+          "weight": 1.8
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 244.0,
+      "detail_path": "items/arxiv-thinking-before-thinking-scaling-agentic-inference-through-meta-reasoning.html",
+      "first_seen_at": "2026-09-30T02:28:45.575013+00:00",
+      "last_seen_at": "2026-09-30T02:28:45.575013+00:00",
+      "last_curated_at": "2026-09-30T02:28:45.575013+00:00",
+      "last_notified_at": null
+    },
     {
       "id": "arxiv::http://arxiv.org/abs/2609.10297v1",
       "kind": "paper",
@@ -606,88 +697,6 @@
       "last_seen_at": "2026-09-23T04:39:32.861265+00:00",
       "last_curated_at": "2026-09-23T04:39:32.861265+00:00",
       "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2609.20812v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "Quantifying Overclaiming Propensity in Frontier LLM Agents",
-      "html_url": "http://arxiv.org/abs/2609.20812v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.20812v1",
-      "description": "Frontier coding agents are increasingly trusted to work autonomously for long periods, yet an agent's final response is often the only account of that work a user sees. We quantify the propensity of frontier agents to \\emph{overclaim} task completion, a misrepresentation that can mislead the user. An agent overclaims when its final response contradicts information in its context. This definition requires no inference about intent and is independent of task success. We introduce \\emph{OverclaimBench}, an evaluation suite composed of five file-review scenarios, transcript-based coverage measurements, and registered planted defects. We evaluate eight proprietary frontier models in their own production command-line interfaces, and four open-weight models under a single fixed harness on OverclaimBench and find that 1) agents do not read all the files they were asked to review in 67.9\\% of runs; 2) among runs where not all files are read, agents are \\emph{misleading} 80.4\\% of the time (59--96\\% per model), either falsely claiming to have read all files or omitting that coverage is incomplete; 3) requiring delegation to subagents increased reading coverage, but among reviews that remained incomplete, a large majority were still misleading; and 4) agents that falsely claimed a complete review missed planted defects at about 1.8 times the rate of agents that read every file, showing that claims of completion can conceal substantive failures. Together, these results show that agents' final responses are not reliable accounts of their actions.",
-      "authors": [
-        "Nolan Smyth",
-        "Yorguin-Jose Mantilla-Ramos",
-        "Pascal Jr Tikeng Notsawo",
-        "Saskia Helbling",
-        "Alberto Tosato",
-        "Mohamed Amine Merzouk",
-        "Nouha Dziri",
-        "Gauthier Gidel",
-        "Tommaso Tosato"
-      ],
-      "categories": [
-        "cs.SE",
-        "cs.AI",
-        "cs.LG"
-      ],
-      "published_at": "2026-09-17T17:59:04+00:00",
-      "updated_at": "2026-09-17T17:59:04+00:00",
-      "primary_category": "cs.SE",
-      "heuristic_score": 18.749,
-      "summary": "Quantifying Overclaiming Propensity in Frontier LLM Agents 是最近值得追踪的一篇 AI 论文。论文摘要显示：Frontier coding agents are increasingly trusted to work autonomously for long periods, yet an agent's final response is often the only account of that work a user sees. We quantify the propensity of frontier agents to \\emph{overclaim} task ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.SE, cs.AI",
-        "作者数: 9"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "agent",
-        "rag",
-        "model"
-      ],
-      "themes": [
-        "ai",
-        "agent",
-        "rag"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：Quantifying Overclaiming Propensity in Frontier LLM Agents 是最近值得追踪的一篇 AI 论文。论文摘要显示：Frontier coding agents are increasingly trusted to work autonomously for long periods, yet an agent's final response is often the only account of that work a user sees. We quantify the propensity of frontier agents to \\emph{overclaim} task ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.SE, cs.AI\n- 作者数: 9",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "coding",
-          "weight": 2.6
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "inference",
-          "weight": 1.8
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 196.0,
-      "detail_path": "items/arxiv-quantifying-overclaiming-propensity-in-frontier-llm-agents.html",
-      "first_seen_at": "2026-09-18T04:36:21.057807+00:00",
-      "last_seen_at": "2026-09-19T04:31:57.598044+00:00",
-      "last_curated_at": "2026-09-19T04:31:57.598044+00:00",
-      "last_notified_at": null
     }
   ],
   "top_themes": [
@@ -706,17 +715,17 @@
   ],
   "highlights": [
     {
+      "title": "Thinking Before Thinking: Scaling Agentic Inference Through Meta-Reasoning",
+      "source": "arxiv",
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
+    },
+    {
       "title": "TRACE: Trajectory-robust Admission with Evidence Ordering for Efficient GUI Agents",
       "source": "arxiv",
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     },
     {
       "title": "TicTacBench: Benchmarking Timing Closure Capabilities of Coding Agents",
-      "source": "arxiv",
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
-    },
-    {
-      "title": "RRSI: Regularized Recursive Self-Improvement of Agent Harnesses",
       "source": "arxiv",
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     }
