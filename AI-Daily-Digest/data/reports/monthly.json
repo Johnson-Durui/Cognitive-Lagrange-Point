@@ -1,9 +1,9 @@
 {
   "label": "月报",
   "window_days": 30,
-  "generated_at": "2026-09-30T13:26:01.506454+08:00",
+  "generated_at": "2026-10-01T10:30:42.196647+08:00",
   "count": 200,
-  "summary": "近 30 天里，最集中的主题是 ai、llm、agent。",
+  "summary": "近 30 天里，最集中的主题是 ai、agent、llm。",
   "top_items": [
     {
       "id": "arxiv::http://arxiv.org/abs/2609.38147v1",
@@ -620,58 +620,58 @@
       "last_notified_at": null
     },
     {
-      "id": "arxiv::http://arxiv.org/abs/2609.26760v1",
+      "id": "arxiv::http://arxiv.org/abs/2609.40325v1",
       "kind": "paper",
       "source": "arxiv",
       "source_tags": [
         "latest"
       ],
-      "title": "Grow the Harness, Not the Context: From Strategy-Free Scaffolds to Reusable Specialist Agents",
-      "html_url": "http://arxiv.org/abs/2609.26760v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.26760v1",
-      "description": "Large language model (LLM) agents often handle streams of related tasks, yet standard harnesses repeatedly ask the model to reconstruct the same control decisions inside each task's context. We study whether task feedback can instead turn recurring control into reusable executable code, while reserving LLM calls for task-specific semantic reasoning. We introduce Growing Harness, a failure-guided training paradigm that learns the agent harness itself from a strategy-free scaffold that exposes fixed model and tool interfaces but encodes no task-solving controller. Function-level execution traces localize each failure to a bounded code surface, an optimizer repairs a window of failures jointly, and a success-first held-out gate rolls back repair sequences that harm prior capability. Accepted edits accumulate in one shared harness, allowing its control structure to emerge from task feedback. Across BrowseComp-Plus and WebArena-Verified with three deployment models from 4B to 120B parameters, Growing Harness achieves the highest mean success in five of six benchmark-model settings and trails the best mean by 0.7 pp. in the sixth. Relative to a Tool-Calling agent, it reduces LLM calls by 76.0-91.8% and deployed-agent inference cost by 74.4-98.6%. On WebArena-Verified, its success remains 44.7-45.3% across model scales, whereas Tool-Calling falls to 6.7% with the 4B model. Ablations show that trace-local edits, joint repair, and gate-based rollback each improve final success. These results show that persistent program growth can move recurring control out of model context and into low-cost code, yielding reusable specialist agents that remain effective with smaller deployment models.",
+      "title": "WorldAuditBench: Interactive 3D World Auditing with Multimodal Agents",
+      "html_url": "http://arxiv.org/abs/2609.40325v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.40325v1",
+      "description": "As interactive 3D worlds are increasingly used to study intelligent behavior, it becomes important to develop efficient pipelines for identifying anomalies in these simulated environments, such as floating objects, traversable walls, or objects inconsistent with the surrounding scene. Multimodal AI systems, including vision-language models (VLMs) and vision-language-action models (VLAs), have shown potential for automating this task. However, 3D world auditing is complex, requiring the close coupling of two distinct capabilities: action, to navigate the 3D world and search for anomalies systematically and efficiently; and visual reasoning, to understand the environment and identify anomalies from multimodal observations. It remains largely unexplored whether multimodal agents can effectively couple these two capabilities, using visual reasoning to identify potential anomalies while taking actions to validate them. In this paper, we introduce WorldAuditBench, a benchmark for 3D world auditing comprising 213 anomaly tasks across 13 environments built with Unreal Engine 5 and Three.js, spanning five anomaly families. We evaluate five frontier models under a fixed exploration budget using two auditing paradigms: VLA-based exploration followed by VLM-based anomaly identification, and an end-to-end VLM agent in which visual reasoning directly guides action selection. Across the evaluated models and two paradigms, success rates range from 6.6% to 42.3%, substantially below human performance (83.4%). Through the task of world auditing, WorldAuditBench provides a testbed for studying how multimodal agents couple action and visual reasoning in interactive 3D environments, while highlighting current limitations in their ability to gather and interpret evidence during exploration.",
       "authors": [
-        "Laizhen Li",
-        "Jiarui Li",
-        "Juanjuan Zhao",
-        "Kejiang Ye",
-        "Ye Li",
-        "Cheng-zhong Xu",
-        "Xitong Gao"
+        "Ziyan Jiang",
+        "Jingbo Yang",
+        "Jiabao Ji",
+        "Yujian Liu",
+        "Qiucheng Wu",
+        "Tommi Jaakkola",
+        "Yang Zhang",
+        "Shiyu Chang"
       ],
       "categories": [
-        "cs.AI",
-        "cs.SE"
+        "cs.AI"
       ],
-      "published_at": "2026-09-22T17:40:45+00:00",
-      "updated_at": "2026-09-22T17:40:45+00:00",
+      "published_at": "2026-09-30T17:55:29+00:00",
+      "updated_at": "2026-09-30T17:55:29+00:00",
       "primary_category": "cs.AI",
-      "heuristic_score": 22.7,
-      "summary": "Grow the Harness, Not the Context: From Strategy-Free Scaffolds to Reusable Specialist Agents 是最近值得追踪的一篇 AI 论文。论文摘要显示：Large language model (LLM) agents often handle streams of related tasks, yet standard harnesses repeatedly ask the model to reconstruct the same control decisions inside each task's context. We study whether task feedback can instead turn r...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "heuristic_score": 17.9,
+      "summary": "WorldAuditBench: Interactive 3D World Auditing with Multimodal Agents 是最近值得追踪的一篇 AI 论文。论文摘要显示：As interactive 3D worlds are increasingly used to study intelligent behavior, it becomes important to develop efficient pipelines for identifying anomalies in these simulated environments, such as floating objects, traversable walls, or obj...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
       "brief": "这是一篇值得加入今日论文雷达的最新工作。",
       "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
       "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
       "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
       "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
       "highlights": [
-        "分类: cs.AI, cs.SE",
-        "作者数: 7"
+        "分类: cs.AI",
+        "作者数: 8"
       ],
       "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
       "relevance_score": 10,
       "tags": [
         "ai",
-        "llm",
         "agent",
+        "multimodal",
         "model"
       ],
       "themes": [
         "ai",
-        "llm",
-        "agent"
+        "agent",
+        "multimodal"
       ],
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：Grow the Harness, Not the Context: From Strategy-Free Scaffolds to Reusable Specialist Agents 是最近值得追踪的一篇 AI 论文。论文摘要显示：Large language model (LLM) agents often handle streams of related tasks, yet standard harnesses repeatedly ask the model to reconstruct the same control decisions inside each task's context. We study whether task feedback can instead turn r...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI, cs.SE\n- 作者数: 7",
+      "summary_markdown": "**摘要**：WorldAuditBench: Interactive 3D World Auditing with Multimodal Agents 是最近值得追踪的一篇 AI 论文。论文摘要显示：As interactive 3D worlds are increasingly used to study intelligent behavior, it becomes important to develop efficient pipelines for identifying anomalies in these simulated environments, such as floating objects, traversable walls, or obj...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI\n- 作者数: 8",
       "focus_hits": [
         {
           "keyword": "agent",
@@ -682,8 +682,8 @@
           "weight": 2.4
         },
         {
-          "keyword": "inference",
-          "weight": 1.8
+          "keyword": "multimodal",
+          "weight": 2.0
         },
         {
           "keyword": "benchmark",
@@ -691,11 +691,11 @@
         }
       ],
       "primary_match": "agent",
-      "personalized_score": 196.0,
-      "detail_path": "items/arxiv-grow-the-harness-not-the-context-from-strategy-free-scaffolds-to-reusable-specialist-agent.html",
-      "first_seen_at": "2026-09-23T04:39:32.861265+00:00",
-      "last_seen_at": "2026-09-23T04:39:32.861265+00:00",
-      "last_curated_at": "2026-09-23T04:39:32.861265+00:00",
+      "personalized_score": 198.0,
+      "detail_path": "items/arxiv-worldauditbench-interactive-3d-world-auditing-with-multimodal-agents.html",
+      "first_seen_at": "2026-10-01T02:30:50.680886+00:00",
+      "last_seen_at": "2026-10-01T02:30:50.680886+00:00",
+      "last_curated_at": "2026-10-01T02:30:50.680886+00:00",
       "last_notified_at": null
     }
   ],
@@ -705,12 +705,12 @@
       "count": 8
     },
     {
-      "theme": "llm",
-      "count": 5
+      "theme": "agent",
+      "count": 4
     },
     {
-      "theme": "agent",
-      "count": 3
+      "theme": "llm",
+      "count": 4
     }
   ],
   "highlights": [

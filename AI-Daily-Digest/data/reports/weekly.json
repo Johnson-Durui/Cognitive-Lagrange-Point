@@ -1,8 +1,8 @@
 {
   "label": "周报",
   "window_days": 7,
-  "generated_at": "2026-09-30T13:26:01.506454+08:00",
-  "count": 63,
+  "generated_at": "2026-10-01T10:30:42.196647+08:00",
+  "count": 71,
   "summary": "近 7 天里，最集中的主题是 ai、agent、llm。",
   "top_items": [
     {
@@ -176,6 +176,85 @@
       "first_seen_at": "2026-09-24T04:40:09.662212+00:00",
       "last_seen_at": "2026-09-24T04:40:09.662212+00:00",
       "last_curated_at": "2026-09-24T04:40:09.662212+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2609.40325v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "WorldAuditBench: Interactive 3D World Auditing with Multimodal Agents",
+      "html_url": "http://arxiv.org/abs/2609.40325v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.40325v1",
+      "description": "As interactive 3D worlds are increasingly used to study intelligent behavior, it becomes important to develop efficient pipelines for identifying anomalies in these simulated environments, such as floating objects, traversable walls, or objects inconsistent with the surrounding scene. Multimodal AI systems, including vision-language models (VLMs) and vision-language-action models (VLAs), have shown potential for automating this task. However, 3D world auditing is complex, requiring the close coupling of two distinct capabilities: action, to navigate the 3D world and search for anomalies systematically and efficiently; and visual reasoning, to understand the environment and identify anomalies from multimodal observations. It remains largely unexplored whether multimodal agents can effectively couple these two capabilities, using visual reasoning to identify potential anomalies while taking actions to validate them. In this paper, we introduce WorldAuditBench, a benchmark for 3D world auditing comprising 213 anomaly tasks across 13 environments built with Unreal Engine 5 and Three.js, spanning five anomaly families. We evaluate five frontier models under a fixed exploration budget using two auditing paradigms: VLA-based exploration followed by VLM-based anomaly identification, and an end-to-end VLM agent in which visual reasoning directly guides action selection. Across the evaluated models and two paradigms, success rates range from 6.6% to 42.3%, substantially below human performance (83.4%). Through the task of world auditing, WorldAuditBench provides a testbed for studying how multimodal agents couple action and visual reasoning in interactive 3D environments, while highlighting current limitations in their ability to gather and interpret evidence during exploration.",
+      "authors": [
+        "Ziyan Jiang",
+        "Jingbo Yang",
+        "Jiabao Ji",
+        "Yujian Liu",
+        "Qiucheng Wu",
+        "Tommi Jaakkola",
+        "Yang Zhang",
+        "Shiyu Chang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "published_at": "2026-09-30T17:55:29+00:00",
+      "updated_at": "2026-09-30T17:55:29+00:00",
+      "primary_category": "cs.AI",
+      "heuristic_score": 17.9,
+      "summary": "WorldAuditBench: Interactive 3D World Auditing with Multimodal Agents 是最近值得追踪的一篇 AI 论文。论文摘要显示：As interactive 3D worlds are increasingly used to study intelligent behavior, it becomes important to develop efficient pipelines for identifying anomalies in these simulated environments, such as floating objects, traversable walls, or obj...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.AI",
+        "作者数: 8"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "agent",
+        "multimodal",
+        "model"
+      ],
+      "themes": [
+        "ai",
+        "agent",
+        "multimodal"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：WorldAuditBench: Interactive 3D World Auditing with Multimodal Agents 是最近值得追踪的一篇 AI 论文。论文摘要显示：As interactive 3D worlds are increasingly used to study intelligent behavior, it becomes important to develop efficient pipelines for identifying anomalies in these simulated environments, such as floating objects, traversable walls, or obj...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI\n- 作者数: 8",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "multimodal",
+          "weight": 2.0
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 198.0,
+      "detail_path": "items/arxiv-worldauditbench-interactive-3d-world-auditing-with-multimodal-agents.html",
+      "first_seen_at": "2026-10-01T02:30:50.680886+00:00",
+      "last_seen_at": "2026-10-01T02:30:50.680886+00:00",
+      "last_curated_at": "2026-10-01T02:30:50.680886+00:00",
       "last_notified_at": null
     },
     {
@@ -568,82 +647,6 @@
       "last_seen_at": "2026-09-26T04:50:21.617989+00:00",
       "last_curated_at": "2026-09-26T04:50:21.617989+00:00",
       "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2609.27717v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "SkillGym: Internalizing Human Skills into LLMs for Real-World Problem Solving",
-      "html_url": "http://arxiv.org/abs/2609.27717v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.27717v1",
-      "description": "Human-written agent skills encode rich workflows for real-world problem solving, but are typically used as external inference-time instructions rather than internalized as reusable model capabilities. We introduce \\texttt{SkillGym}, a framework that transforms these skills into executable, verifiable training environments for large language model agents. Its skill-to-task pipeline instantiates concrete tasks, verifies outcomes with code-based checkers, and assesses empirical skill dependence through contrastive executions. We construct and release 2,756 environments across 12 categories and collect 8,364 successful trajectories from multiple models and harnesses, averaging 49 tool calls and over 60k logged text tokens. These resources support supervised fine-tuning on verified workflows and reinforcement learning with outcome-based rewards. Under Claude Code, supervised fine-tuning improves Qwen3.5-35B-A3B by 199 Elo on GDPval-AA v2, 19.10 percentage points on Terminal-Bench 2.1, and 28.13 and 12.38 points on SkillsBench v1.1 with and without skills, respectively. Our 35B \\texttt{SkillGym-Agent} reaches 51.47\\% on skill-assisted SkillsBench, exceeding reported scores for Claude Sonnet 4.6, GPT-5.4 Mini, and DeepSeek V4 Pro. Without skills, it also surpasses skill-assisted bases under Codex and Claude Code, suggesting reusable procedural competence.",
-      "authors": [
-        "Zhilong Ge",
-        "Yuting Shao",
-        "Yutao Yang",
-        "Yuxuan Cai",
-        "Jie Zhou",
-        "Kai Chen",
-        "Bo Zhang",
-        "Qin Chen",
-        "Liang He"
-      ],
-      "categories": [
-        "cs.CL"
-      ],
-      "published_at": "2026-09-23T11:35:34+00:00",
-      "updated_at": "2026-09-23T11:35:34+00:00",
-      "primary_category": "cs.CL",
-      "heuristic_score": 22.412,
-      "summary": "SkillGym: Internalizing Human Skills into LLMs for Real-World Problem Solving 是最近值得追踪的一篇 AI 论文。论文摘要显示：Human-written agent skills encode rich workflows for real-world problem solving, but are typically used as external inference-time instructions rather than internalized as reusable model capabilities. We introduce \\texttt{SkillGym}, a frame...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CL",
-        "作者数: 9"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "agent",
-        "gpt",
-        "rag"
-      ],
-      "themes": [
-        "ai",
-        "agent",
-        "gpt"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：SkillGym: Internalizing Human Skills into LLMs for Real-World Problem Solving 是最近值得追踪的一篇 AI 论文。论文摘要显示：Human-written agent skills encode rich workflows for real-world problem solving, but are typically used as external inference-time instructions rather than internalized as reusable model capabilities. We introduce \\texttt{SkillGym}, a frame...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL\n- 作者数: 9",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "inference",
-          "weight": 1.8
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 178.0,
-      "detail_path": "items/arxiv-skillgym-internalizing-human-skills-into-llms-for-real-world-problem-solving.html",
-      "first_seen_at": "2026-09-24T01:41:18.178282+00:00",
-      "last_seen_at": "2026-09-24T04:40:09.662212+00:00",
-      "last_curated_at": "2026-09-24T04:40:09.662212+00:00",
-      "last_notified_at": null
     }
   ],
   "top_themes": [
@@ -676,7 +679,7 @@
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     },
     {
-      "title": "PReCache: Efficient KV Cache Sharing for Multi-LoRA Agents via Low-Rank Precomputation and Neutral Reconstruction",
+      "title": "WorldAuditBench: Interactive 3D World Auditing with Multimodal Agents",
       "source": "arxiv",
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     }
