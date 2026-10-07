@@ -1,101 +1,10 @@
 {
   "label": "周报",
   "window_days": 7,
-  "generated_at": "2026-10-07T10:44:36.289872+08:00",
-  "count": 62,
+  "generated_at": "2026-10-07T13:49:54.021126+08:00",
+  "count": 50,
   "summary": "近 7 天里，最集中的主题是 ai、agent、llm。",
   "top_items": [
-    {
-      "id": "arxiv::http://arxiv.org/abs/2609.38147v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "Thinking Before Thinking: Scaling Agentic Inference Through Meta-Reasoning",
-      "html_url": "http://arxiv.org/abs/2609.38147v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.38147v1",
-      "description": "As agents take on longer and more complex problems, controlling the execution becomes a task in its own right. Each step in the run brings new control choices, like which partial work to build on, whether to start fresh, or when to stop. We introduce agentic meta-reasoning, an inference-time harness that makes these choices an explicit and structured reasoning process. Workers carry out the task-level computation, while a controller consolidates what the run has established, explores next options, assesses what each option is worth under the remaining budget, and dispatches the chosen work with context drawn from persistent memory. Between decisions the controller carries only a compact account of the run rather than replaying its full history. Our baselines span production coding agents and research harnesses, together with a Direct Control Agent using the same workers and compute budget allowance. On ProgramBench, which tests long-horizon agentic capability through program reconstruction, meta-reasoning achieves 71.5% with GPT-5.5 against 58.0% for Codex; with Opus 4.8 it achieves 67.2% against 65.5% for Claude Code. On the other benchmarks, spanning abstract reasoning, multi-domain long-horizon reasoning, and proof generation, it gains between 3.6 and 4.2 points over direct control, averaged across three frontier models. It keeps improving over the tested budget ranges where direct control plateaus, though its overhead can hurt at small budgets. Artifact-graph analysis reveals more reuse of earlier work, higher coverage of correct solutions in most settings, and nonuniform gains in final selection. These results indicate that spending computation on structured control becomes more important as agents scale to longer runs.",
-      "authors": [
-        "Paras Dahal",
-        "Anton Bakhtin",
-        "Taco Cohen",
-        "Zhengxing Chen",
-        "Carole-Jean Wu",
-        "Rob Fergus",
-        "Scott Yih",
-        "Gabriel Synnaeve",
-        "Ruslan Salakhutdinov",
-        "Sanjeev Arora",
-        "Jason Weston",
-        "Anirudh Goyal"
-      ],
-      "categories": [
-        "cs.AI"
-      ],
-      "published_at": "2026-09-29T17:57:25+00:00",
-      "updated_at": "2026-09-29T17:57:25+00:00",
-      "primary_category": "cs.AI",
-      "heuristic_score": 27.5,
-      "summary": "Thinking Before Thinking: Scaling Agentic Inference Through Meta-Reasoning 是最近值得追踪的一篇 AI 论文。论文摘要显示：As agents take on longer and more complex problems, controlling the execution becomes a task in its own right. Each step in the run brings new control choices, like which partial work to build on, whether to start fresh, or when to stop. We...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.AI",
-        "作者数: 12"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "agent",
-        "agentic",
-        "gpt"
-      ],
-      "themes": [
-        "ai",
-        "agent",
-        "agentic"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：Thinking Before Thinking: Scaling Agentic Inference Through Meta-Reasoning 是最近值得追踪的一篇 AI 论文。论文摘要显示：As agents take on longer and more complex problems, controlling the execution becomes a task in its own right. Each step in the run brings new control choices, like which partial work to build on, whether to start fresh, or when to stop. We...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI\n- 作者数: 12",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "coding",
-          "weight": 2.6
-        },
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "inference",
-          "weight": 1.8
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 244.0,
-      "detail_path": "items/arxiv-thinking-before-thinking-scaling-agentic-inference-through-meta-reasoning.html",
-      "first_seen_at": "2026-09-30T02:28:45.575013+00:00",
-      "last_seen_at": "2026-09-30T05:26:08.033029+00:00",
-      "last_curated_at": "2026-09-30T05:26:08.033029+00:00",
-      "last_notified_at": null
-    },
     {
       "id": "arxiv::http://arxiv.org/abs/2610.06825v1",
       "kind": "paper",
@@ -414,80 +323,6 @@
       "last_notified_at": null
     },
     {
-      "id": "arxiv::http://arxiv.org/abs/2609.38143v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "Learning Meta-Skills for Agent Harness Design in Test-Time AI4AI",
-      "html_url": "http://arxiv.org/abs/2609.38143v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.38143v1",
-      "description": "Agent performance depends on both reasoning ability and the environment in which it acts. We study test-time AI-for-AI, asking how a Builder can learn to construct better execution environments for a Target while both models' weights remain fixed. To make the Builder's experience reusable, we introduce Meta-Skill: principles specifying when support is needed and what resources to provide. The Builder learns these principles from Target's execution feedback on the development set, then uses the frozen skill bank to construct harnesses for unseen tasks. Across Harness-Bench and NewtonBench, full-bank meta-skills improve macro-average performance by 8.95 percentage points over no-skill construction, and 12.02 points over direct delivery of the same bank to the Target. These results highlight the value of translating experience into executable support. Gains when the same model serves both roles further suggest a path to system level self-improvement through learning to build better environments.",
-      "authors": [
-        "Cheng Qian",
-        "Kunlun Zhu",
-        "Beibin Li",
-        "Zhenhailong Wang",
-        "Heng Ji"
-      ],
-      "categories": [
-        "cs.AI",
-        "cs.CL",
-        "cs.LG"
-      ],
-      "published_at": "2026-09-29T17:55:56+00:00",
-      "updated_at": "2026-09-29T17:55:56+00:00",
-      "primary_category": "cs.AI",
-      "heuristic_score": 17.159,
-      "summary": "Learning Meta-Skills for Agent Harness Design in Test-Time AI4AI 是最近值得追踪的一篇 AI 论文。论文摘要显示：Agent performance depends on both reasoning ability and the environment in which it acts. We study test-time AI-for-AI, asking how a Builder can learn to construct better execution environments for a Target while both models' weights remain...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.AI, cs.CL",
-        "作者数: 5"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "agent",
-        "rag",
-        "model"
-      ],
-      "themes": [
-        "ai",
-        "agent",
-        "rag"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：Learning Meta-Skills for Agent Harness Design in Test-Time AI4AI 是最近值得追踪的一篇 AI 论文。论文摘要显示：Agent performance depends on both reasoning ability and the environment in which it acts. We study test-time AI-for-AI, asking how a Builder can learn to construct better execution environments for a Target while both models' weights remain...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI, cs.CL\n- 作者数: 5",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 184.0,
-      "detail_path": "items/arxiv-learning-meta-skills-for-agent-harness-design-in-test-time-ai4ai.html",
-      "first_seen_at": "2026-09-30T02:28:45.575013+00:00",
-      "last_seen_at": "2026-09-30T05:26:08.033029+00:00",
-      "last_curated_at": "2026-09-30T05:26:08.033029+00:00",
-      "last_notified_at": null
-    },
-    {
       "id": "arxiv::http://arxiv.org/abs/2610.02163v1",
       "kind": "paper",
       "source": "arxiv",
@@ -619,6 +454,142 @@
       "last_seen_at": "2026-10-06T06:13:03.053699+00:00",
       "last_curated_at": "2026-10-06T06:13:03.053699+00:00",
       "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2610.06782v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "T-Search: An Open Agentic Retriever and Playground for Hard Multi-Step Search",
+      "html_url": "http://arxiv.org/abs/2610.06782v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.06782v1",
+      "description": "We present T-Search, an open-weight agentic retriever for hard multi-step search. Given a question and a search tool over a fixed corpus, it runs a bounded multi-round search and returns a ranked list of evidence chunks with short justifications, leaving answer generation to a downstream model, so backend and generator can be swapped without retraining. T-Search is built on Qwen3.6-35B-A3B and trained on adversarially filtered synthetic search tasks with round-sliced supervised fine-tuning followed by GSPO on a recall reward. Averaged over seven English and Russian benchmarks with gold evidence annotations, it reaches 56.0 Recall@10 with one rollout, 14.4 points above its base, and 61.3 with three fused rollouts, outperforming larger open models. We release the model, harness, live demo, and three benchmarks, including TRuST, the first native-Russian hard-search benchmark.",
+      "authors": [
+        "Olga Tsymboi",
+        "Ramil Latypov",
+        "Aleksandr Medvedev",
+        "Danil Taranets",
+        "Dmitrii Stoianov",
+        "Nikita Gulyakov",
+        "Gleb Alektorov",
+        "Anatolii Potapov"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "published_at": "2026-10-05T17:44:26+00:00",
+      "updated_at": "2026-10-05T17:44:26+00:00",
+      "primary_category": "cs.CL",
+      "heuristic_score": 19.406,
+      "summary": "T-Search: An Open Agentic Retriever and Playground for Hard Multi-Step Search 是最近值得追踪的一篇 AI 论文。论文摘要显示：We present T-Search, an open-weight agentic retriever for hard multi-step search. Given a question and a search tool over a fixed corpus, it runs a bounded multi-round search and returns a ranked list of evidence chunks with short justifica...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CL",
+        "作者数: 8"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "agent",
+        "agentic",
+        "rag"
+      ],
+      "themes": [
+        "ai",
+        "agent",
+        "agentic"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：T-Search: An Open Agentic Retriever and Playground for Hard Multi-Step Search 是最近值得追踪的一篇 AI 论文。论文摘要显示：We present T-Search, an open-weight agentic retriever for hard multi-step search. Given a question and a search tool over a fixed corpus, it runs a bounded multi-round search and returns a ranked list of evidence chunks with short justifica...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL\n- 作者数: 8",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 176.0,
+      "detail_path": "items/arxiv-t-search-an-open-agentic-retriever-and-playground-for-hard-multi-step-search.html",
+      "first_seen_at": "2026-10-06T03:22:00.792283+00:00",
+      "last_seen_at": "2026-10-06T06:13:03.053699+00:00",
+      "last_curated_at": "2026-10-06T06:13:03.053699+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "github::anthropics/claude-code",
+      "kind": "repo",
+      "source": "github",
+      "source_tags": [
+        "trending"
+      ],
+      "name": "claude-code",
+      "title": "anthropics/claude-code",
+      "full_name": "anthropics/claude-code",
+      "html_url": "https://github.com/anthropics/claude-code",
+      "description": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.",
+      "stars": 149275,
+      "stars_today": 0,
+      "language": "TypeScript",
+      "topics": [],
+      "created_at": "",
+      "updated_at": "",
+      "heuristic_score": 17.8,
+      "summary": "anthropics/claude-code 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.结合关键词命中和热度信号，它适合加入今日重点观察列表。",
+      "brief": "这是一个值得快速关注的开源 AI 项目。",
+      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
+      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
+      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
+      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
+      "highlights": [
+        "Stars: 149275",
+        "语言: TypeScript"
+      ],
+      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "agent",
+        "agentic"
+      ],
+      "themes": [
+        "ai",
+        "agent",
+        "agentic"
+      ],
+      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
+      "summary_markdown": "**摘要**：anthropics/claude-code 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：10/10\n\n**亮点**：\n- Stars: 149275\n- 语言: TypeScript",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "coding",
+          "weight": 2.6
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 176.0,
+      "detail_path": "items/github-anthropics-claude-code.html",
+      "first_seen_at": "2026-08-23T00:25:39.962236+00:00",
+      "last_seen_at": "2026-10-04T05:45:36.969408+00:00",
+      "last_curated_at": "2026-10-04T05:45:36.969408+00:00",
+      "last_notified_at": null
     }
   ],
   "top_themes": [
@@ -637,17 +608,17 @@
   ],
   "highlights": [
     {
-      "title": "Thinking Before Thinking: Scaling Agentic Inference Through Meta-Reasoning",
-      "source": "arxiv",
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
-    },
-    {
       "title": "PlotGround: Grounding Plot Digitization in Real Scientific Figures and Their Source Data",
       "source": "arxiv",
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     },
     {
       "title": "OmniSeek: Native Tool Integration for Multi-turn Audio-Visual Reasoning",
+      "source": "arxiv",
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
+    },
+    {
+      "title": "VISTA: A Visual Harness for Reasoning in an Interactive World",
       "source": "arxiv",
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     }
