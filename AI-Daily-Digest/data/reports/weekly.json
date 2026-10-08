@@ -1,10 +1,104 @@
 {
   "label": "周报",
   "window_days": 7,
-  "generated_at": "2026-10-07T13:49:54.021126+08:00",
-  "count": 50,
+  "generated_at": "2026-10-08T11:02:46.408191+08:00",
+  "count": 58,
   "summary": "近 7 天里，最集中的主题是 ai、agent、llm。",
   "top_items": [
+    {
+      "id": "arxiv::http://arxiv.org/abs/2610.10478v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Before They Can Solve: Predicting Post-Training Coding-Agent Performance from Base Models",
+      "html_url": "http://arxiv.org/abs/2610.10478v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.10478v1",
+      "description": "How can we predict which base checkpoint is worth an expensive round of agentic post-training? End-to-end pass@$K$ tests whether successful behavior already appears in a base model's distribution, but it is a poor fit for agentic coding: many base checkpoints cannot reliably produce the well-formed tool invocation required to complete a task end-to-end. Single-shot or short-horizon tasks avoid these tool-calling failures by collapsing a multi-step interaction into a fixed prompt and a single patch, but they sidestep the core capability we care about: maintaining coherent state over many tool-using steps as the repository evolves. To bridge this gap, we treat successful post-trained agent trajectories as a lookahead signal of base-model potential. Replaying each trajectory and rerunning tests after every code-changing step identifies the decisive step: the first step whose cumulative patch flips the repository from failing to passing, certifying that the recorded action solves the task given the prior context. Motivated by a coverage principle for agentic traces, we build three screens at this step that do not require a base checkpoint to drive the harness from a cold start: (i) Decisive-Action BPB (bits per byte) measures the probability mass on the certified action, (ii) Patch MCQ tests the checkpoint's choice between that action and alternatives rejected by the same verifier, and (iii) prefix-conditioned pass@$K$ evaluates support for functionally-correct generations and credits any continuation that the tests accept. Across ten pairs of public base and post-trained models, all three screens rank the cohort in close agreement with post-trained SWE-bench Verified pass@$1$. As our methods need only a benchmark's successful trajectories and its verifier, they can be applied to turn future agentic coding benchmarks into base-model evaluations.",
+      "authors": [
+        "Tan Yu",
+        "Alexander Bukharin",
+        "Khushi Bhardwaj",
+        "Jennifer Williams",
+        "Zirui Liu",
+        "Jonathan Lingjie Li",
+        "Soumye Singhal",
+        "Joseph Jennings",
+        "Sanjeev Satheesh",
+        "Yash Jain",
+        "Ashish Vaswani",
+        "Venkat Krishna Srinivasan",
+        "Matthew Papakipos",
+        "Hyunwoo Kim",
+        "Jian Zhang",
+        "Oleksii Kuchaiev",
+        "Markus Kliegl",
+        "Mostofa Patwary",
+        "Mohammad Shoeybi",
+        "Bryan Catanzaro",
+        "Jonathan Cohen",
+        "Jiantao Jiao"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.SE"
+      ],
+      "published_at": "2026-10-07T17:37:19+00:00",
+      "updated_at": "2026-10-07T17:37:19+00:00",
+      "primary_category": "cs.AI",
+      "heuristic_score": 20.3,
+      "summary": "Before They Can Solve: Predicting Post-Training Coding-Agent Performance from Base Models 是最近值得追踪的一篇 AI 论文。论文摘要显示：How can we predict which base checkpoint is worth an expensive round of agentic post-training? End-to-end pass@$K$ tests whether successful behavior already appears in a base model's distribution, but it is a poor fit for agentic coding: ma...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.AI, cs.SE",
+        "作者数: 22"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "agent",
+        "agentic",
+        "rag"
+      ],
+      "themes": [
+        "ai",
+        "agent",
+        "agentic"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：Before They Can Solve: Predicting Post-Training Coding-Agent Performance from Base Models 是最近值得追踪的一篇 AI 论文。论文摘要显示：How can we predict which base checkpoint is worth an expensive round of agentic post-training? End-to-end pass@$K$ tests whether successful behavior already appears in a base model's distribution, but it is a poor fit for agentic coding: ma...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI, cs.SE\n- 作者数: 22",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "coding",
+          "weight": 2.6
+        },
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 202.0,
+      "detail_path": "items/arxiv-before-they-can-solve-predicting-post-training-coding-agent-performance-from-base-models.html",
+      "first_seen_at": "2026-10-08T03:02:57.470503+00:00",
+      "last_seen_at": "2026-10-08T03:02:57.470503+00:00",
+      "last_curated_at": "2026-10-08T03:02:57.470503+00:00",
+      "last_notified_at": null
+    },
     {
       "id": "arxiv::http://arxiv.org/abs/2610.06825v1",
       "kind": "paper",
@@ -395,6 +489,80 @@
       "last_notified_at": null
     },
     {
+      "id": "arxiv::http://arxiv.org/abs/2610.10507v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "RECAST: Learning to Compute the Right Context through Adaptive Evidence Routing",
+      "html_url": "http://arxiv.org/abs/2610.10507v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.10507v1",
+      "description": "Large language models are increasingly applied to tasks grounded in long, heterogeneous information sources. Conventional Retrieval-Augmented Generation (RAG) relies on fixed similarity-based retrieval, while agentic variants adapt queries and tool use but remain largely retrieval-centric. However, in many tasks, the evidence required for a solution is not explicitly present in any single source item. Instead, it must be derived through filtering, aggregation, or computation across multiple source items. In this work, we introduce RECAST (Routing Evidence through Computation, Access, and Synthesized Tools), a learned framework that formulates evidence construction as a sequential decision process over heterogeneous retrieval and computation operations, allowing evidence to be actively derived rather than merely retrieved. A lightweight RouterLM iteratively selects and formulates primitive operations or specifies customized operations for a frozen CompilerLM to translate into executable code. Once it judges the evidence sufficient, RouterLM passes the accepted evidence to a frozen AnswerLM to produce the final solution. We train RouterLM with supervised fine-tuning (SFT) followed by group relative policy optimization (GRPO). Across six heterogeneous benchmark families, RECAST achieves a mean success rate of 75.6%, outperforming the strongest large-model baseline by 15.9%. Moreover, training enables the Qwen3.5-9B RouterLM to outperform a training-free Gemini 3.5 Flash RouterLM by 5.0%. On three held-out benchmarks, RECAST improves over the strongest baseline by 15.0% on average, demonstrating strong zero-shot generalization across tasks and heterogeneous source representations.",
+      "authors": [
+        "Yilun Hao",
+        "Krishna Sayana",
+        "Isabella Ye",
+        "James S Ren",
+        "Sukhdeep Sodhi",
+        "Craig Boutilier",
+        "Chuchu Fan"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "published_at": "2026-10-07T17:51:08+00:00",
+      "updated_at": "2026-10-07T17:51:08+00:00",
+      "primary_category": "cs.AI",
+      "heuristic_score": 20.3,
+      "summary": "RECAST: Learning to Compute the Right Context through Adaptive Evidence Routing 是最近值得追踪的一篇 AI 论文。论文摘要显示：Large language models are increasingly applied to tasks grounded in long, heterogeneous information sources. Conventional Retrieval-Augmented Generation (RAG) relies on fixed similarity-based retrieval, while agentic variants adapt queries ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.AI",
+        "作者数: 7"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "agent",
+        "agentic",
+        "rag"
+      ],
+      "themes": [
+        "ai",
+        "agent",
+        "agentic"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：RECAST: Learning to Compute the Right Context through Adaptive Evidence Routing 是最近值得追踪的一篇 AI 论文。论文摘要显示：Large language models are increasingly applied to tasks grounded in long, heterogeneous information sources. Conventional Retrieval-Augmented Generation (RAG) relies on fixed similarity-based retrieval, while agentic variants adapt queries ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI\n- 作者数: 7",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 176.0,
+      "detail_path": "items/arxiv-recast-learning-to-compute-the-right-context-through-adaptive-evidence-routing.html",
+      "first_seen_at": "2026-10-08T03:02:57.470503+00:00",
+      "last_seen_at": "2026-10-08T03:02:57.470503+00:00",
+      "last_curated_at": "2026-10-08T03:02:57.470503+00:00",
+      "last_notified_at": null
+    },
+    {
       "id": "github::calesthio/OpenMontage",
       "kind": "repo",
       "source": "github",
@@ -454,142 +622,6 @@
       "last_seen_at": "2026-10-06T06:13:03.053699+00:00",
       "last_curated_at": "2026-10-06T06:13:03.053699+00:00",
       "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2610.06782v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "T-Search: An Open Agentic Retriever and Playground for Hard Multi-Step Search",
-      "html_url": "http://arxiv.org/abs/2610.06782v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.06782v1",
-      "description": "We present T-Search, an open-weight agentic retriever for hard multi-step search. Given a question and a search tool over a fixed corpus, it runs a bounded multi-round search and returns a ranked list of evidence chunks with short justifications, leaving answer generation to a downstream model, so backend and generator can be swapped without retraining. T-Search is built on Qwen3.6-35B-A3B and trained on adversarially filtered synthetic search tasks with round-sliced supervised fine-tuning followed by GSPO on a recall reward. Averaged over seven English and Russian benchmarks with gold evidence annotations, it reaches 56.0 Recall@10 with one rollout, 14.4 points above its base, and 61.3 with three fused rollouts, outperforming larger open models. We release the model, harness, live demo, and three benchmarks, including TRuST, the first native-Russian hard-search benchmark.",
-      "authors": [
-        "Olga Tsymboi",
-        "Ramil Latypov",
-        "Aleksandr Medvedev",
-        "Danil Taranets",
-        "Dmitrii Stoianov",
-        "Nikita Gulyakov",
-        "Gleb Alektorov",
-        "Anatolii Potapov"
-      ],
-      "categories": [
-        "cs.CL"
-      ],
-      "published_at": "2026-10-05T17:44:26+00:00",
-      "updated_at": "2026-10-05T17:44:26+00:00",
-      "primary_category": "cs.CL",
-      "heuristic_score": 19.406,
-      "summary": "T-Search: An Open Agentic Retriever and Playground for Hard Multi-Step Search 是最近值得追踪的一篇 AI 论文。论文摘要显示：We present T-Search, an open-weight agentic retriever for hard multi-step search. Given a question and a search tool over a fixed corpus, it runs a bounded multi-round search and returns a ranked list of evidence chunks with short justifica...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CL",
-        "作者数: 8"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "agent",
-        "agentic",
-        "rag"
-      ],
-      "themes": [
-        "ai",
-        "agent",
-        "agentic"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：T-Search: An Open Agentic Retriever and Playground for Hard Multi-Step Search 是最近值得追踪的一篇 AI 论文。论文摘要显示：We present T-Search, an open-weight agentic retriever for hard multi-step search. Given a question and a search tool over a fixed corpus, it runs a bounded multi-round search and returns a ranked list of evidence chunks with short justifica...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL\n- 作者数: 8",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 176.0,
-      "detail_path": "items/arxiv-t-search-an-open-agentic-retriever-and-playground-for-hard-multi-step-search.html",
-      "first_seen_at": "2026-10-06T03:22:00.792283+00:00",
-      "last_seen_at": "2026-10-06T06:13:03.053699+00:00",
-      "last_curated_at": "2026-10-06T06:13:03.053699+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "github::anthropics/claude-code",
-      "kind": "repo",
-      "source": "github",
-      "source_tags": [
-        "trending"
-      ],
-      "name": "claude-code",
-      "title": "anthropics/claude-code",
-      "full_name": "anthropics/claude-code",
-      "html_url": "https://github.com/anthropics/claude-code",
-      "description": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.",
-      "stars": 149275,
-      "stars_today": 0,
-      "language": "TypeScript",
-      "topics": [],
-      "created_at": "",
-      "updated_at": "",
-      "heuristic_score": 17.8,
-      "summary": "anthropics/claude-code 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.结合关键词命中和热度信号，它适合加入今日重点观察列表。",
-      "brief": "这是一个值得快速关注的开源 AI 项目。",
-      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
-      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
-      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
-      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
-      "highlights": [
-        "Stars: 149275",
-        "语言: TypeScript"
-      ],
-      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "agent",
-        "agentic"
-      ],
-      "themes": [
-        "ai",
-        "agent",
-        "agentic"
-      ],
-      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：anthropics/claude-code 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：10/10\n\n**亮点**：\n- Stars: 149275\n- 语言: TypeScript",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "coding",
-          "weight": 2.6
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 176.0,
-      "detail_path": "items/github-anthropics-claude-code.html",
-      "first_seen_at": "2026-08-23T00:25:39.962236+00:00",
-      "last_seen_at": "2026-10-04T05:45:36.969408+00:00",
-      "last_curated_at": "2026-10-04T05:45:36.969408+00:00",
-      "last_notified_at": null
     }
   ],
   "top_themes": [
@@ -608,17 +640,17 @@
   ],
   "highlights": [
     {
+      "title": "Before They Can Solve: Predicting Post-Training Coding-Agent Performance from Base Models",
+      "source": "arxiv",
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
+    },
+    {
       "title": "PlotGround: Grounding Plot Digitization in Real Scientific Figures and Their Source Data",
       "source": "arxiv",
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     },
     {
       "title": "OmniSeek: Native Tool Integration for Multi-turn Audio-Visual Reasoning",
-      "source": "arxiv",
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
-    },
-    {
-      "title": "VISTA: A Visual Harness for Reasoning in an Interactive World",
       "source": "arxiv",
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     }
