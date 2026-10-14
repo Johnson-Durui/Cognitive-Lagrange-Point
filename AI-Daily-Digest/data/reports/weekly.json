@@ -1,8 +1,8 @@
 {
   "label": "周报",
   "window_days": 7,
-  "generated_at": "2026-10-14T10:12:58.360831+08:00",
-  "count": 50,
+  "generated_at": "2026-10-14T12:46:11.512128+08:00",
+  "count": 52,
   "summary": "近 7 天里，最集中的主题是 ai、llm、agent。",
   "top_items": [
     {
@@ -78,8 +78,8 @@
       "personalized_score": 222.0,
       "detail_path": "items/arxiv-think-before-you-speak-enabling-training-free-latent-communication-between-language-models.html",
       "first_seen_at": "2026-10-14T02:13:20.870846+00:00",
-      "last_seen_at": "2026-10-14T02:13:20.870846+00:00",
-      "last_curated_at": "2026-10-14T02:13:20.870846+00:00",
+      "last_seen_at": "2026-10-14T04:46:21.171457+00:00",
+      "last_curated_at": "2026-10-14T04:46:21.171457+00:00",
       "last_notified_at": null
     },
     {
@@ -257,6 +257,80 @@
       "first_seen_at": "2026-10-09T03:09:20.665425+00:00",
       "last_seen_at": "2026-10-10T05:44:10.656585+00:00",
       "last_curated_at": "2026-10-10T05:44:10.656585+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2610.18507v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "The Last Mile of Coding Agents for Long-Document Tasks: An Empirical Study on Clinical Trial Protocol Digitization",
+      "html_url": "http://arxiv.org/abs/2610.18507v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.18507v1",
+      "description": "Clinical trial protocols serve as the source of truth for study design, but are mostly written and used as unstructured PDF documents. Digitizing protocols turns static content into structured, machine-readable data that clinical software can analyze, validate, and execute. Coding agents, which select tools, execute code, and revise their approach as they work, are increasingly applied to such long-document tasks, yet it remains unclear how reliably they turn complete documents into accurate structured outputs. We study this question using protocol digitization as a testbed. We introduce TrialPD-Bench, an expert-annotated benchmark of 150 publicly available protocol PDFs spanning four task categories. Beyond final-answer performance, our evaluation measures evidence recall from agent traces, agent behavior, and cost. Across nine proprietary and open-weight models in five coding-agent harnesses, even the strongest agents do not fully solve protocol digitization. Our analysis further shows that agents usually locate the required evidence but fail in the last mile of transcribing and structuring it. We further develop TrialScribe, a domain-specific harness that equips coding agents with task skills and a verification loop. TrialScribe improves a locally served open-weight model by 6.2-59.4 points across eight metrics, enabling it to match or surpass proprietary models such as GPT-5.6-Sol.",
+      "authors": [
+        "Jiacheng Lin",
+        "Geoffrey Low",
+        "Nishit Agarwal",
+        "Rahul Jain",
+        "Afrah Shafquat",
+        "Mandis Beigi",
+        "Jimeng Sun"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "published_at": "2026-10-13T15:03:31+00:00",
+      "updated_at": "2026-10-13T15:03:31+00:00",
+      "primary_category": "cs.CL",
+      "heuristic_score": 17.66,
+      "summary": "The Last Mile of Coding Agents for Long-Document Tasks: An Empirical Study on Clinical Trial Protocol Digitization 是最近值得追踪的一篇 AI 论文。论文摘要显示：Clinical trial protocols serve as the source of truth for study design, but are mostly written and used as unstructured PDF documents. Digitizing protocols turns static content into structured, machine-readable data that clinical software c...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CL",
+        "作者数: 7"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "agent",
+        "gpt",
+        "model"
+      ],
+      "themes": [
+        "ai",
+        "agent",
+        "gpt"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：The Last Mile of Coding Agents for Long-Document Tasks: An Empirical Study on Clinical Trial Protocol Digitization 是最近值得追踪的一篇 AI 论文。论文摘要显示：Clinical trial protocols serve as the source of truth for study design, but are mostly written and used as unstructured PDF documents. Digitizing protocols turns static content into structured, machine-readable data that clinical software c...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL\n- 作者数: 7",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "coding",
+          "weight": 2.6
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 180.0,
+      "detail_path": "items/arxiv-the-last-mile-of-coding-agents-for-long-document-tasks-an-empirical-study-on-clinical-tria.html",
+      "first_seen_at": "2026-10-14T04:46:21.171457+00:00",
+      "last_seen_at": "2026-10-14T04:46:21.171457+00:00",
+      "last_curated_at": "2026-10-14T04:46:21.171457+00:00",
       "last_notified_at": null
     },
     {
@@ -479,8 +553,8 @@
       "personalized_score": 168.0,
       "detail_path": "items/arxiv-eventlens-event-structure-reinforcement-learning-for-video-understanding.html",
       "first_seen_at": "2026-10-14T02:13:20.870846+00:00",
-      "last_seen_at": "2026-10-14T02:13:20.870846+00:00",
-      "last_curated_at": "2026-10-14T02:13:20.870846+00:00",
+      "last_seen_at": "2026-10-14T04:46:21.171457+00:00",
+      "last_curated_at": "2026-10-14T04:46:21.171457+00:00",
       "last_notified_at": null
     },
     {
@@ -554,77 +628,8 @@
       "personalized_score": 166.0,
       "detail_path": "items/arxiv-label-centric-knowledge-retrieval-for-zero-shot-text-classification.html",
       "first_seen_at": "2026-10-14T02:13:20.870846+00:00",
-      "last_seen_at": "2026-10-14T02:13:20.870846+00:00",
-      "last_curated_at": "2026-10-14T02:13:20.870846+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2610.12445v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "Caught in the Act: Probes Effectively Detect Sabotage and Catch Unverbalized Deception",
-      "html_url": "http://arxiv.org/abs/2610.12445v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.12445v1",
-      "description": "Recent incidents have highlighted the challenge of monitoring LLM agents and the danger of models deceiving people. We show that white-box deception detection via probes can be scaled up to frontier monitoring settings by collecting the largest deception dataset to date for training probes and introducing a novel probe architecture which can aggregate information across many layers and tokens. Our probes achieve 98.8% AUC in SHADE-Arena, surpassing an Opus 5.5 text-monitoring baseline, and show improved efficacy as the underlying model is scaled up. To push our probes to their limit, we test them on several cases where deception cannot be determined from the context alone. In these cases, which we refer to as introspective deception, the ground truth can only be determined through careful elicitation or thorough knowledge of a model's training data. In one such evaluation, we show that probes can distinguish transcripts containing a model's true hidden goal from other goals with an AUC of up to 99.7%. Our probes also readily detect deception on prominent open-weight models which lie about politically sensitive topics, and about their beliefs when put under pressure. We release our training dataset, dubbed FIBS, to help drive frontier deployment of effective probes, and encourage the community to expand upon it with further examples of deception and sabotage.",
-      "authors": [
-        "Oskar J. Hollinsworth",
-        "Alex F. Spies",
-        "Tigist Diriba",
-        "Adam Gleave",
-        "Chris Cundy"
-      ],
-      "categories": [
-        "cs.LG",
-        "cs.AI"
-      ],
-      "published_at": "2026-10-08T17:58:13+00:00",
-      "updated_at": "2026-10-08T17:58:13+00:00",
-      "primary_category": "cs.LG",
-      "heuristic_score": 17.625,
-      "summary": "Caught in the Act: Probes Effectively Detect Sabotage and Catch Unverbalized Deception 是最近值得追踪的一篇 AI 论文。论文摘要显示：Recent incidents have highlighted the challenge of monitoring LLM agents and the danger of models deceiving people. We show that white-box deception detection via probes can be scaled up to frontier monitoring settings by collecting the lar...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.LG, cs.AI",
-        "作者数: 5"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "llm",
-        "agent",
-        "rag"
-      ],
-      "themes": [
-        "ai",
-        "llm",
-        "agent"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：Caught in the Act: Probes Effectively Detect Sabotage and Catch Unverbalized Deception 是最近值得追踪的一篇 AI 论文。论文摘要显示：Recent incidents have highlighted the challenge of monitoring LLM agents and the danger of models deceiving people. We show that white-box deception detection via probes can be scaled up to frontier monitoring settings by collecting the lar...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.LG, cs.AI\n- 作者数: 5",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 160.0,
-      "detail_path": "items/arxiv-caught-in-the-act-probes-effectively-detect-sabotage-and-catch-unverbalized-deception.html",
-      "first_seen_at": "2026-10-09T03:09:20.665425+00:00",
-      "last_seen_at": "2026-10-10T05:44:10.656585+00:00",
-      "last_curated_at": "2026-10-10T05:44:10.656585+00:00",
+      "last_seen_at": "2026-10-14T04:46:21.171457+00:00",
+      "last_curated_at": "2026-10-14T04:46:21.171457+00:00",
       "last_notified_at": null
     }
   ],
@@ -635,11 +640,11 @@
     },
     {
       "theme": "llm",
-      "count": 6
+      "count": 5
     },
     {
       "theme": "agent",
-      "count": 2
+      "count": 3
     }
   ],
   "highlights": [
