@@ -1,10 +1,87 @@
 {
   "label": "周报",
   "window_days": 7,
-  "generated_at": "2026-10-13T14:42:44.166420+08:00",
-  "count": 43,
-  "summary": "近 7 天里，最集中的主题是 ai、agent、llm。",
+  "generated_at": "2026-10-14T10:12:58.360831+08:00",
+  "count": 50,
+  "summary": "近 7 天里，最集中的主题是 ai、llm、agent。",
   "top_items": [
+    {
+      "id": "arxiv::http://arxiv.org/abs/2610.16165v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Think Before You Speak: Enabling Training-Free Latent Communication Between Language Models",
+      "html_url": "http://arxiv.org/abs/2610.16165v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.16165v1",
+      "description": "Large language models (LLMs) have demonstrated remarkable capabilities in solving complex tasks in coding, mathematical logic, and iterative reasoning, especially by coordinating effectively within multi-agent systems (MAS). However, language agents traditionally communicate via text exchange, which introduces a bottleneck in information transfer and adds prefill latency for downstream agents. Recent work proposes that directly sharing the key-value (KV) cache between language models can enable efficient latent collaboration, entirely bypassing standard text-based communication. To enable latent communication between heterogeneous models of different sizes, prior work introduces trained fusion adapters for each model pair, which limits practical deployment. We introduce CacheFuse, a training-free method which demonstrates that augmenting a downstream model with an upstream model's KV cache using linear interpolation consistently enables superior performance than the standalone downstream model can achieve. We systematically analyze CacheFuse across four reasoning and knowledge benchmarks and demonstrate up to 8.6 percentage points higher accuracy compared to single-model baselines and up to 12.2x TTFT speedup compared to text-based communication in multi-model inference.",
+      "authors": [
+        "Rishi Khare"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.LG"
+      ],
+      "published_at": "2026-10-12T04:40:48+00:00",
+      "updated_at": "2026-10-12T04:40:48+00:00",
+      "primary_category": "cs.CL",
+      "heuristic_score": 22.314,
+      "summary": "Think Before You Speak: Enabling Training-Free Latent Communication Between Language Models 是最近值得追踪的一篇 AI 论文。论文摘要显示：Large language models (LLMs) have demonstrated remarkable capabilities in solving complex tasks in coding, mathematical logic, and iterative reasoning, especially by coordinating effectively within multi-agent systems (MAS). However, langua...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CL, cs.LG",
+        "作者数: 1"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "llm",
+        "agent",
+        "model"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "agent"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：Think Before You Speak: Enabling Training-Free Latent Communication Between Language Models 是最近值得追踪的一篇 AI 论文。论文摘要显示：Large language models (LLMs) have demonstrated remarkable capabilities in solving complex tasks in coding, mathematical logic, and iterative reasoning, especially by coordinating effectively within multi-agent systems (MAS). However, langua...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL, cs.LG\n- 作者数: 1",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "coding",
+          "weight": 2.6
+        },
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "inference",
+          "weight": 1.8
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 222.0,
+      "detail_path": "items/arxiv-think-before-you-speak-enabling-training-free-latent-communication-between-language-models.html",
+      "first_seen_at": "2026-10-14T02:13:20.870846+00:00",
+      "last_seen_at": "2026-10-14T02:13:20.870846+00:00",
+      "last_curated_at": "2026-10-14T02:13:20.870846+00:00",
+      "last_notified_at": null
+    },
     {
       "id": "arxiv::http://arxiv.org/abs/2610.10478v1",
       "kind": "paper",
@@ -329,6 +406,159 @@
       "last_notified_at": null
     },
     {
+      "id": "arxiv::http://arxiv.org/abs/2610.16172v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "EventLens: Event-Structure Reinforcement Learning for Video Understanding",
+      "html_url": "http://arxiv.org/abs/2610.16172v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.16172v1",
+      "description": "Recent multimodal large language models (MLLMs) achieve strong results on video question answering, yet often fail to recover the temporal structure that makes a video coherent. They may merge neighboring events, miss single-event progression, or infer implausible relations across events. We study structured temporal understanding as the ability to recover event structure from visual evidence, including event boundaries, single-event progression, and multi-event relations. We argue that this gap arises from a mismatch between current post-training objectives and temporal reasoning, where caption-style supervision allows models to rely on language shortcuts rather than visual temporal grounding. To address this, we propose EventLens, a vision-centric reinforcement learning framework that learns video understanding through event-structure recovery. Instead of reconstructing captions, EventLens trains models to recover temporal structure under controlled perturbations, such as altered temporal granularity, reversed progression, and shuffled event order. We instantiate this framework with a three-level temporal ontology and derive three verifiable task families: event segmentation, progression discrimination, and multi-event relation reasoning. These tasks admit deterministic rewards, enabling task-specialized GRPO training without human preference labels or learned reward models. We further introduce multi-teacher on-policy distillation (MT-OPD) to consolidate specialized policies into a unified model. Experiments on Qwen3-VL backbones show consistent improvements on temporal grounding and event-sensitive reasoning benchmarks, while preserving general video-QA performance. Learning curves further demonstrate that EventLens achieves comparable downstream transfer with significantly reduced training cost compared to direct mixed RL optimization.",
+      "authors": [
+        "Guowen Zhang",
+        "Boshen Xu",
+        "Zihao Yue",
+        "Ziheng Wang",
+        "Xiaokun Liu",
+        "Xin Tao",
+        "Wenyu Qin",
+        "Pengfei Wan",
+        "Qin Jin"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.MM"
+      ],
+      "published_at": "2026-10-12T04:46:04+00:00",
+      "updated_at": "2026-10-12T04:46:04+00:00",
+      "primary_category": "cs.CV",
+      "heuristic_score": 20.3,
+      "summary": "EventLens: Event-Structure Reinforcement Learning for Video Understanding 是最近值得追踪的一篇 AI 论文。论文摘要显示：Recent multimodal large language models (MLLMs) achieve strong results on video question answering, yet often fail to recover the temporal structure that makes a video coherent. They may merge neighboring events, miss single-event progressi...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CV, cs.AI",
+        "作者数: 9"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "llm",
+        "multimodal",
+        "model"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "multimodal"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：EventLens: Event-Structure Reinforcement Learning for Video Understanding 是最近值得追踪的一篇 AI 论文。论文摘要显示：Recent multimodal large language models (MLLMs) achieve strong results on video question answering, yet often fail to recover the temporal structure that makes a video coherent. They may merge neighboring events, miss single-event progressi...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV, cs.AI\n- 作者数: 9",
+      "focus_hits": [
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "multimodal",
+          "weight": 2.0
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "reasoning",
+      "personalized_score": 168.0,
+      "detail_path": "items/arxiv-eventlens-event-structure-reinforcement-learning-for-video-understanding.html",
+      "first_seen_at": "2026-10-14T02:13:20.870846+00:00",
+      "last_seen_at": "2026-10-14T02:13:20.870846+00:00",
+      "last_curated_at": "2026-10-14T02:13:20.870846+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2610.16182v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Label-Centric Knowledge Retrieval for Zero-Shot Text Classification",
+      "html_url": "http://arxiv.org/abs/2610.16182v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.16182v1",
+      "description": "Flagship large language models (LLMs) offer rich general knowledge and strong reasoning capabilities, but their high inference cost and latency limit their use for large-scale data labeling. We study zero-shot text classification with semantically meaningful labels and task descriptions, without task-specific labeled examples or classifier feedback. We propose \\textbf{SLKR} (Semantic Label Knowledge Retrieval), a label-centric retrieval-augmented generation framework that separates offline knowledge construction from lightweight online inference. Offline, a flagship LLM independently generates label definitions, retrieval keywords, and boundary rules for potentially confusable label pairs, forming a reusable label-knowledge store. Because this construction operates over the label space rather than the input corpus, its one-time flagship cost can be amortized across large-scale inference. Online, hybrid semantic and lexical retrieval first identifies the top-$K$ candidate labels and then selects up to $M$ input-relevant boundary rules connecting candidate-label pairs. A lightweight LLM performs the final classification in a single call using the retrieved definitions and rules. Across three public benchmarks and a real-world multilingual book-classification dataset, SLKR achieves the best results on all four datasets with Qwen3.5-4B and on three of four with Ministral-3-3B, while using compact input contexts and no task-specific labeled examples. Boundary ablations further show that retrieving a small set of input-relevant rules preserves performance close to using all boundaries with substantially less context, supporting efficient reuse of flagship-generated label knowledge for lightweight classification.",
+      "authors": [
+        "Daoping Wu",
+        "Dong Wang",
+        "Siyu Liu",
+        "Chen Liang",
+        "Jian Geng",
+        "Ziqi Li",
+        "Shuguang Xiong",
+        "Ying Zhang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "published_at": "2026-10-12T05:00:56+00:00",
+      "updated_at": "2026-10-12T05:00:56+00:00",
+      "primary_category": "cs.AI",
+      "heuristic_score": 17.9,
+      "summary": "Label-Centric Knowledge Retrieval for Zero-Shot Text Classification 是最近值得追踪的一篇 AI 论文。论文摘要显示：Flagship large language models (LLMs) offer rich general knowledge and strong reasoning capabilities, but their high inference cost and latency limit their use for large-scale data labeling. We study zero-shot text classification with seman...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.AI",
+        "作者数: 8"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "llm",
+        "model",
+        "benchmark"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "model"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：Label-Centric Knowledge Retrieval for Zero-Shot Text Classification 是最近值得追踪的一篇 AI 论文。论文摘要显示：Flagship large language models (LLMs) offer rich general knowledge and strong reasoning capabilities, but their high inference cost and latency limit their use for large-scale data labeling. We study zero-shot text classification with seman...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI\n- 作者数: 8",
+      "focus_hits": [
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "inference",
+          "weight": 1.8
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "reasoning",
+      "personalized_score": 166.0,
+      "detail_path": "items/arxiv-label-centric-knowledge-retrieval-for-zero-shot-text-classification.html",
+      "first_seen_at": "2026-10-14T02:13:20.870846+00:00",
+      "last_seen_at": "2026-10-14T02:13:20.870846+00:00",
+      "last_curated_at": "2026-10-14T02:13:20.870846+00:00",
+      "last_notified_at": null
+    },
+    {
       "id": "arxiv::http://arxiv.org/abs/2610.12445v1",
       "kind": "paper",
       "source": "arxiv",
@@ -396,198 +626,6 @@
       "last_seen_at": "2026-10-10T05:44:10.656585+00:00",
       "last_curated_at": "2026-10-10T05:44:10.656585+00:00",
       "last_notified_at": null
-    },
-    {
-      "id": "github::huggingface/transformers",
-      "kind": "repo",
-      "source": "github",
-      "source_tags": [
-        "trending"
-      ],
-      "name": "transformers",
-      "title": "huggingface/transformers",
-      "full_name": "huggingface/transformers",
-      "html_url": "https://github.com/huggingface/transformers",
-      "description": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training.",
-      "stars": 167358,
-      "stars_today": 0,
-      "language": "Python",
-      "topics": [],
-      "created_at": "",
-      "updated_at": "",
-      "heuristic_score": 23.0,
-      "summary": "huggingface/transformers 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training.结合关键词命中和热度信号，它适合加入今日重点观察列表。",
-      "brief": "这是一个值得快速关注的开源 AI 项目。",
-      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
-      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
-      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
-      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
-      "highlights": [
-        "Stars: 167358",
-        "语言: Python"
-      ],
-      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "multimodal",
-        "model",
-        "inference"
-      ],
-      "themes": [
-        "ai",
-        "multimodal",
-        "model"
-      ],
-      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：huggingface/transformers 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：10/10\n\n**亮点**：\n- Stars: 167358\n- 语言: Python",
-      "focus_hits": [
-        {
-          "keyword": "multimodal",
-          "weight": 2.0
-        },
-        {
-          "keyword": "inference",
-          "weight": 1.8
-        }
-      ],
-      "primary_match": "multimodal",
-      "personalized_score": 158.0,
-      "detail_path": "items/github-huggingface-transformers.html",
-      "first_seen_at": "2026-09-14T01:46:45.497523+00:00",
-      "last_seen_at": "2026-10-11T05:39:08.147230+00:00",
-      "last_curated_at": "2026-10-11T05:39:08.147230+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "github::addyosmani/agent-skills",
-      "kind": "repo",
-      "source": "github",
-      "source_tags": [
-        "trending"
-      ],
-      "name": "agent-skills",
-      "title": "addyosmani/agent-skills",
-      "full_name": "addyosmani/agent-skills",
-      "html_url": "https://github.com/addyosmani/agent-skills",
-      "description": "Production-grade engineering skills for AI coding agents.",
-      "stars": 104143,
-      "stars_today": 0,
-      "language": "JavaScript",
-      "topics": [],
-      "created_at": "",
-      "updated_at": "",
-      "heuristic_score": 15.2,
-      "summary": "addyosmani/agent-skills 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Production-grade engineering skills for AI coding agents.结合关键词命中和热度信号，它适合加入今日重点观察列表。",
-      "brief": "这是一个值得快速关注的开源 AI 项目。",
-      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
-      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
-      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
-      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
-      "highlights": [
-        "Stars: 104143",
-        "语言: JavaScript"
-      ],
-      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
-      "relevance_score": 8,
-      "tags": [
-        "ai",
-        "agent",
-        "coding agent"
-      ],
-      "themes": [
-        "ai",
-        "agent",
-        "coding agent"
-      ],
-      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：addyosmani/agent-skills 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Production-grade engineering skills for AI coding agents.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 104143\n- 语言: JavaScript",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "coding",
-          "weight": 2.6
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 156.0,
-      "detail_path": "items/github-addyosmani-agent-skills.html",
-      "first_seen_at": "2026-05-07T01:25:31.666453+00:00",
-      "last_seen_at": "2026-10-10T05:44:10.656585+00:00",
-      "last_curated_at": "2026-10-10T05:44:10.656585+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2610.10498v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "EmbodiedRSI: Active Continual Robot Learning Through Hypothesis-Guided Co-Evolution",
-      "html_url": "http://arxiv.org/abs/2610.10498v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.10498v1",
-      "description": "Robot foundation models provide strong visuomotor control, yet their performance can degrade when object positions or task instructions change. Further improvements often require post-training on substantial robot data, which can be costly to collect through methods such as teleoperation. Agentic harnesses can adapt around the model, but current self-evolving harnesses use robot trials inefficiently when deciding which code and skill changes to pursue. We introduce EmbodiedRSI, a self-evolving agentic harness that autonomously decides where to explore next and turns the resulting physical interaction into improved code and skills. EmbodiedRSI realizes this through a Fast-Slow Dual-System Architecture, in which competing code and skill hypotheses are maintained in a Hypothesis Graph. Value-of-Information Experiment Selection chooses physical experiments that can distinguish these hypotheses. Their outcomes guide Code-Skill Co-Evolution. The Slow System builds Hierarchical Memory, and Reward-Grounded Memory Learning selects effective memory according to their value for later Fast-System improvement. On RoboCasa365, EmbodiedRSI reaches 77.0% overall success and 71.3% on Composite-Unseen, compared with 40.1% for the best baseline. EmbodiedRSI also reaches 86.8% overall success on LIBERO-Pro. Beyond benchmark performance, EmbodiedRSI transfers zero-shot to real-world robot, achieving 71.3% overall success across multiple challenging tasks.",
-      "authors": [
-        "Python Song",
-        "Zhixuan Liang",
-        "Kelsey Fu",
-        "Mengdi Wang",
-        "Junfeng Yang",
-        "Shilong Liu"
-      ],
-      "categories": [
-        "cs.AI"
-      ],
-      "published_at": "2026-10-07T17:48:02+00:00",
-      "updated_at": "2026-10-07T17:48:02+00:00",
-      "primary_category": "cs.AI",
-      "heuristic_score": 17.723,
-      "summary": "EmbodiedRSI: Active Continual Robot Learning Through Hypothesis-Guided Co-Evolution 是最近值得追踪的一篇 AI 论文。论文摘要显示：Robot foundation models provide strong visuomotor control, yet their performance can degrade when object positions or task instructions change. Further improvements often require post-training on substantial robot data, which can be costly ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.AI",
-        "作者数: 6"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "agent",
-        "agentic",
-        "model"
-      ],
-      "themes": [
-        "ai",
-        "agent",
-        "agentic"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：EmbodiedRSI: Active Continual Robot Learning Through Hypothesis-Guided Co-Evolution 是最近值得追踪的一篇 AI 论文。论文摘要显示：Robot foundation models provide strong visuomotor control, yet their performance can degrade when object positions or task instructions change. Further improvements often require post-training on substantial robot data, which can be costly ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI\n- 作者数: 6",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 154.0,
-      "detail_path": "items/arxiv-embodiedrsi-active-continual-robot-learning-through-hypothesis-guided-co-evolution.html",
-      "first_seen_at": "2026-10-08T03:02:57.470503+00:00",
-      "last_seen_at": "2026-10-08T05:55:04.237573+00:00",
-      "last_curated_at": "2026-10-08T05:55:04.237573+00:00",
-      "last_notified_at": null
     }
   ],
   "top_themes": [
@@ -596,19 +634,20 @@
       "count": 8
     },
     {
-      "theme": "agent",
-      "count": 4
-    },
-    {
       "theme": "llm",
-      "count": 3
+      "count": 6
     },
     {
-      "theme": "multimodal",
-      "count": 1
+      "theme": "agent",
+      "count": 2
     }
   ],
   "highlights": [
+    {
+      "title": "Think Before You Speak: Enabling Training-Free Latent Communication Between Language Models",
+      "source": "arxiv",
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
+    },
     {
       "title": "Before They Can Solve: Predicting Post-Training Coding-Agent Performance from Base Models",
       "source": "arxiv",
@@ -616,11 +655,6 @@
     },
     {
       "title": "OmniCapBench: A Deep-Structured Evaluation Framework for Fine-Grained Audio-Visual Captioning",
-      "source": "arxiv",
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
-    },
-    {
-      "title": "RECAST: Learning to Compute the Right Context through Adaptive Evidence Routing",
       "source": "arxiv",
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     }
