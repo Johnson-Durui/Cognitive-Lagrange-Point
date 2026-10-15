@@ -1,9 +1,9 @@
 {
   "label": "周报",
   "window_days": 7,
-  "generated_at": "2026-10-15T09:54:16.589006+08:00",
-  "count": 53,
-  "summary": "近 7 天里，最集中的主题是 ai、agent、llm。",
+  "generated_at": "2026-10-15T12:28:57.493507+08:00",
+  "count": 56,
+  "summary": "近 7 天里，最集中的主题是 ai、llm、agent。",
   "top_items": [
     {
       "id": "arxiv::http://arxiv.org/abs/2610.16165v1",
@@ -251,8 +251,8 @@
       "personalized_score": 200.0,
       "detail_path": "items/arxiv-actionopd-distilling-decisions-not-tokens.html",
       "first_seen_at": "2026-10-15T01:54:25.420777+00:00",
-      "last_seen_at": "2026-10-15T01:54:25.420777+00:00",
-      "last_curated_at": "2026-10-15T01:54:25.420777+00:00",
+      "last_seen_at": "2026-10-15T04:29:03.150552+00:00",
+      "last_curated_at": "2026-10-15T04:29:03.150552+00:00",
       "last_notified_at": null
     },
     {
@@ -324,8 +324,8 @@
       "personalized_score": 196.0,
       "detail_path": "items/arxiv-teaching-agents-in-their-own-style-blackbox-teacher-distillation-for-web-agents.html",
       "first_seen_at": "2026-10-15T01:54:25.420777+00:00",
-      "last_seen_at": "2026-10-15T01:54:25.420777+00:00",
-      "last_curated_at": "2026-10-15T01:54:25.420777+00:00",
+      "last_seen_at": "2026-10-15T04:29:03.150552+00:00",
+      "last_curated_at": "2026-10-15T04:29:03.150552+00:00",
       "last_notified_at": null
     },
     {
@@ -487,156 +487,166 @@
       "personalized_score": 186.0,
       "detail_path": "items/arxiv-reprobait-can-coding-agents-build-their-own-biological-ai-tools.html",
       "first_seen_at": "2026-10-15T01:54:25.420777+00:00",
-      "last_seen_at": "2026-10-15T01:54:25.420777+00:00",
-      "last_curated_at": "2026-10-15T01:54:25.420777+00:00",
+      "last_seen_at": "2026-10-15T04:29:03.150552+00:00",
+      "last_curated_at": "2026-10-15T04:29:03.150552+00:00",
       "last_notified_at": null
     },
     {
-      "id": "arxiv::http://arxiv.org/abs/2610.18507v1",
+      "id": "arxiv::http://arxiv.org/abs/2610.20592v1",
       "kind": "paper",
       "source": "arxiv",
       "source_tags": [
         "latest"
       ],
-      "title": "The Last Mile of Coding Agents for Long-Document Tasks: An Empirical Study on Clinical Trial Protocol Digitization",
-      "html_url": "http://arxiv.org/abs/2610.18507v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.18507v1",
-      "description": "Clinical trial protocols serve as the source of truth for study design, but are mostly written and used as unstructured PDF documents. Digitizing protocols turns static content into structured, machine-readable data that clinical software can analyze, validate, and execute. Coding agents, which select tools, execute code, and revise their approach as they work, are increasingly applied to such long-document tasks, yet it remains unclear how reliably they turn complete documents into accurate structured outputs. We study this question using protocol digitization as a testbed. We introduce TrialPD-Bench, an expert-annotated benchmark of 150 publicly available protocol PDFs spanning four task categories. Beyond final-answer performance, our evaluation measures evidence recall from agent traces, agent behavior, and cost. Across nine proprietary and open-weight models in five coding-agent harnesses, even the strongest agents do not fully solve protocol digitization. Our analysis further shows that agents usually locate the required evidence but fail in the last mile of transcribing and structuring it. We further develop TrialScribe, a domain-specific harness that equips coding agents with task skills and a verification loop. TrialScribe improves a locally served open-weight model by 6.2-59.4 points across eight metrics, enabling it to match or surpass proprietary models such as GPT-5.6-Sol.",
+      "title": "GeoThinker-$F$: Endogenous Predictive World Representations for Fast Spatial Intelligence",
+      "html_url": "http://arxiv.org/abs/2610.20592v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.20592v1",
+      "description": "Existing geometry-aware Multimodal Large Language Models (MLLMs) increasingly rely on external 3D encoders to provide structural priors, but executing these additional encoder paths at inference introduces substantial latency and computational overhead. We propose GeoThinker-$F$, an efficient framework that internalizes spatiotemporal perception by transforming causal MLLM hidden states into predictive latent world representations. Our key insight is that intermediate semantic representations contain sufficient information to predict useful representations of current geometry and future semantics, without requiring an exact reproduction of features from a dedicated 3D encoder. To realize this idea, GeoThinker-$F$ adopts a decoupled two-stage training strategy. In the first stage, the MLLM backbone is frozen while lightweight Latent Frame Prediction (LFP) heads learn from an offline 3D geometry expert and next-frame semantic targets. In the second stage, the external expert is removed, and the model is jointly optimized to generate and selectively integrate its self-predicted priors through a specialized Spatial-Grounded Temporal (SGT) Fusion module. Extensive evaluations show that GeoThinker-$F$ eliminates runtime dependence on external 3D geometry encoders while maintaining competitive performance across diverse spatial intelligence benchmarks. It achieves up to a $3.6\\times$ inference speedup, reducing latency from $1.45\\,\\mathrm{s}$ to $0.40\\,\\mathrm{s}$ while retaining strong spatial reasoning performance.",
       "authors": [
-        "Jiacheng Lin",
-        "Geoffrey Low",
-        "Nishit Agarwal",
-        "Rahul Jain",
-        "Afrah Shafquat",
-        "Mandis Beigi",
-        "Jimeng Sun"
+        "Haoyuan Li",
+        "Qihang Cao",
+        "Huanyuan Zhou",
+        "Xin Hu",
+        "Sijia Chen",
+        "Zihan Guo",
+        "Kun Xiang",
+        "Yunshuang Nie",
+        "Tao Tang",
+        "Xinlong Zheng",
+        "Jia-Wang Bian",
+        "Xianming Liu",
+        "Xiaodan Liang"
       ],
       "categories": [
-        "cs.CL"
+        "cs.CV"
       ],
-      "published_at": "2026-10-13T15:03:31+00:00",
-      "updated_at": "2026-10-13T15:03:31+00:00",
-      "primary_category": "cs.CL",
-      "heuristic_score": 17.66,
-      "summary": "The Last Mile of Coding Agents for Long-Document Tasks: An Empirical Study on Clinical Trial Protocol Digitization 是最近值得追踪的一篇 AI 论文。论文摘要显示：Clinical trial protocols serve as the source of truth for study design, but are mostly written and used as unstructured PDF documents. Digitizing protocols turns static content into structured, machine-readable data that clinical software c...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "published_at": "2026-10-14T17:59:03+00:00",
+      "updated_at": "2026-10-14T17:59:03+00:00",
+      "primary_category": "cs.CV",
+      "heuristic_score": 22.619,
+      "summary": "GeoThinker-$F$: Endogenous Predictive World Representations for Fast Spatial Intelligence 是最近值得追踪的一篇 AI 论文。论文摘要显示：Existing geometry-aware Multimodal Large Language Models (MLLMs) increasingly rely on external 3D encoders to provide structural priors, but executing these additional encoder paths at inference introduces substantial latency and computatio...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
       "brief": "这是一篇值得加入今日论文雷达的最新工作。",
       "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
       "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
       "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
       "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
       "highlights": [
-        "分类: cs.CL",
-        "作者数: 7"
+        "分类: cs.CV",
+        "作者数: 13"
       ],
       "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
       "relevance_score": 10,
       "tags": [
         "ai",
-        "agent",
-        "gpt",
+        "llm",
+        "multimodal",
         "model"
       ],
       "themes": [
         "ai",
-        "agent",
-        "gpt"
+        "llm",
+        "multimodal"
       ],
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：The Last Mile of Coding Agents for Long-Document Tasks: An Empirical Study on Clinical Trial Protocol Digitization 是最近值得追踪的一篇 AI 论文。论文摘要显示：Clinical trial protocols serve as the source of truth for study design, but are mostly written and used as unstructured PDF documents. Digitizing protocols turns static content into structured, machine-readable data that clinical software c...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL\n- 作者数: 7",
+      "summary_markdown": "**摘要**：GeoThinker-$F$: Endogenous Predictive World Representations for Fast Spatial Intelligence 是最近值得追踪的一篇 AI 论文。论文摘要显示：Existing geometry-aware Multimodal Large Language Models (MLLMs) increasingly rely on external 3D encoders to provide structural priors, but executing these additional encoder paths at inference introduces substantial latency and computatio...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV\n- 作者数: 13",
       "focus_hits": [
         {
-          "keyword": "agent",
-          "weight": 3.0
+          "keyword": "reasoning",
+          "weight": 2.4
         },
         {
-          "keyword": "coding",
-          "weight": 2.6
+          "keyword": "multimodal",
+          "weight": 2.0
+        },
+        {
+          "keyword": "inference",
+          "weight": 1.8
         },
         {
           "keyword": "benchmark",
           "weight": 1.6
         }
       ],
-      "primary_match": "agent",
-      "personalized_score": 180.0,
-      "detail_path": "items/arxiv-the-last-mile-of-coding-agents-for-long-document-tasks-an-empirical-study-on-clinical-tria.html",
-      "first_seen_at": "2026-10-14T04:46:21.171457+00:00",
-      "last_seen_at": "2026-10-14T04:46:21.171457+00:00",
-      "last_curated_at": "2026-10-14T04:46:21.171457+00:00",
+      "primary_match": "reasoning",
+      "personalized_score": 186.0,
+      "detail_path": "items/arxiv-geothinker-f-endogenous-predictive-world-representations-for-fast-spatial-intelligence.html",
+      "first_seen_at": "2026-10-15T04:29:03.150552+00:00",
+      "last_seen_at": "2026-10-15T04:29:03.150552+00:00",
+      "last_curated_at": "2026-10-15T04:29:03.150552+00:00",
       "last_notified_at": null
     },
     {
-      "id": "arxiv::http://arxiv.org/abs/2610.10507v1",
+      "id": "arxiv::http://arxiv.org/abs/2610.20560v1",
       "kind": "paper",
       "source": "arxiv",
       "source_tags": [
         "latest"
       ],
-      "title": "RECAST: Learning to Compute the Right Context through Adaptive Evidence Routing",
-      "html_url": "http://arxiv.org/abs/2610.10507v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.10507v1",
-      "description": "Large language models are increasingly applied to tasks grounded in long, heterogeneous information sources. Conventional Retrieval-Augmented Generation (RAG) relies on fixed similarity-based retrieval, while agentic variants adapt queries and tool use but remain largely retrieval-centric. However, in many tasks, the evidence required for a solution is not explicitly present in any single source item. Instead, it must be derived through filtering, aggregation, or computation across multiple source items. In this work, we introduce RECAST (Routing Evidence through Computation, Access, and Synthesized Tools), a learned framework that formulates evidence construction as a sequential decision process over heterogeneous retrieval and computation operations, allowing evidence to be actively derived rather than merely retrieved. A lightweight RouterLM iteratively selects and formulates primitive operations or specifies customized operations for a frozen CompilerLM to translate into executable code. Once it judges the evidence sufficient, RouterLM passes the accepted evidence to a frozen AnswerLM to produce the final solution. We train RouterLM with supervised fine-tuning (SFT) followed by group relative policy optimization (GRPO). Across six heterogeneous benchmark families, RECAST achieves a mean success rate of 75.6%, outperforming the strongest large-model baseline by 15.9%. Moreover, training enables the Qwen3.5-9B RouterLM to outperform a training-free Gemini 3.5 Flash RouterLM by 5.0%. On three held-out benchmarks, RECAST improves over the strongest baseline by 15.0% on average, demonstrating strong zero-shot generalization across tasks and heterogeneous source representations.",
+      "title": "PhySGA: A Physics-Space Grounded Agentic Framework for Generalizable and Interactive 3D Composition",
+      "html_url": "http://arxiv.org/abs/2610.20560v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.20560v1",
+      "description": "3D object composition is pivotal to digital content creation and robot simulation, while also serving as a critical testbed for physical intelligence in foundation models. Previous methods either leverage large language models to directly predict object coordinates, or utilize generative diffusion priors to synthesize composite images for visual alignment, both of which rely on static priors in digital spaces. However, these methods consistently struggle with complex compositions such as precise hanging, gravity-driven settling and hidden containment, as these tasks require interactive construction processes involving global planning, fine-grained alignment, and physical simulation. To address these challenges, we propose PhySGA, a Physics-Space Grounded Agentic Framework for 3D composition via agent exploration and physical simulation, enabling the universal interactive assembly of rigid, articulated, and deformable objects. Directly applying vanilla LLMs or VLMs to this task proves insufficient, as current models inherently lack grounded physical understanding and interactive construction experience. To overcome this limitation, we design a collaborative feedforward-feedback architecture: an Assembly Agent focuses on geometric and kinematic reasoning for global step planning and coarse adjustment, while a Critic Agent reasons over contact dynamics for simulator state diagnosis and fine-grained closed-loop correction. Furthermore, Action Routers map semantic planning and analysis onto executable physical primitives within the simulator, while a task-specific Self-Evolving Skill Library distills historical trial-and-error feedback into reusable experiences, boosting success rates and minimizing exploration attempts. Extensive experiments within Isaac Sim demonstrate that PhySGA significantly surpasses existing methods in relation fidelity, physical plausibility, and visual quality.",
       "authors": [
-        "Yilun Hao",
-        "Krishna Sayana",
-        "Isabella Ye",
-        "James S Ren",
-        "Sukhdeep Sodhi",
-        "Craig Boutilier",
-        "Chuchu Fan"
+        "Weichen Lyu",
+        "Chong Xia",
+        "Mingyu Dong",
+        "Long Xu",
+        "Shengjun Zhang",
+        "Yueqi Duan"
       ],
       "categories": [
-        "cs.AI"
+        "cs.AI",
+        "cs.CV"
       ],
-      "published_at": "2026-10-07T17:51:08+00:00",
-      "updated_at": "2026-10-07T17:51:08+00:00",
+      "published_at": "2026-10-14T17:47:24+00:00",
+      "updated_at": "2026-10-14T17:47:24+00:00",
       "primary_category": "cs.AI",
-      "heuristic_score": 20.3,
-      "summary": "RECAST: Learning to Compute the Right Context through Adaptive Evidence Routing 是最近值得追踪的一篇 AI 论文。论文摘要显示：Large language models are increasingly applied to tasks grounded in long, heterogeneous information sources. Conventional Retrieval-Augmented Generation (RAG) relies on fixed similarity-based retrieval, while agentic variants adapt queries ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "heuristic_score": 22.7,
+      "summary": "PhySGA: A Physics-Space Grounded Agentic Framework for Generalizable and Interactive 3D Composition 是最近值得追踪的一篇 AI 论文。论文摘要显示：3D object composition is pivotal to digital content creation and robot simulation, while also serving as a critical testbed for physical intelligence in foundation models. Previous methods either leverage large language models to directly p...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
       "brief": "这是一篇值得加入今日论文雷达的最新工作。",
       "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
       "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
       "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
       "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
       "highlights": [
-        "分类: cs.AI",
-        "作者数: 7"
+        "分类: cs.AI, cs.CV",
+        "作者数: 6"
       ],
       "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
       "relevance_score": 10,
       "tags": [
         "ai",
-        "agent",
-        "agentic",
-        "rag"
-      ],
-      "themes": [
-        "ai",
+        "llm",
         "agent",
         "agentic"
       ],
+      "themes": [
+        "ai",
+        "llm",
+        "agent"
+      ],
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：RECAST: Learning to Compute the Right Context through Adaptive Evidence Routing 是最近值得追踪的一篇 AI 论文。论文摘要显示：Large language models are increasingly applied to tasks grounded in long, heterogeneous information sources. Conventional Retrieval-Augmented Generation (RAG) relies on fixed similarity-based retrieval, while agentic variants adapt queries ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI\n- 作者数: 7",
+      "summary_markdown": "**摘要**：PhySGA: A Physics-Space Grounded Agentic Framework for Generalizable and Interactive 3D Composition 是最近值得追踪的一篇 AI 论文。论文摘要显示：3D object composition is pivotal to digital content creation and robot simulation, while also serving as a critical testbed for physical intelligence in foundation models. Previous methods either leverage large language models to directly p...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI, cs.CV\n- 作者数: 6",
       "focus_hits": [
         {
           "keyword": "agent",
           "weight": 3.0
         },
         {
-          "keyword": "rag",
-          "weight": 2.2
+          "keyword": "reasoning",
+          "weight": 2.4
         },
         {
-          "keyword": "benchmark",
-          "weight": 1.6
+          "keyword": "rag",
+          "weight": 2.2
         }
       ],
       "primary_match": "agent",
-      "personalized_score": 176.0,
-      "detail_path": "items/arxiv-recast-learning-to-compute-the-right-context-through-adaptive-evidence-routing.html",
-      "first_seen_at": "2026-10-08T03:02:57.470503+00:00",
-      "last_seen_at": "2026-10-08T05:55:04.237573+00:00",
-      "last_curated_at": "2026-10-08T05:55:04.237573+00:00",
+      "personalized_score": 184.0,
+      "detail_path": "items/arxiv-physga-a-physics-space-grounded-agentic-framework-for-generalizable-and-interactive-3d-com.html",
+      "first_seen_at": "2026-10-15T04:29:03.150552+00:00",
+      "last_seen_at": "2026-10-15T04:29:03.150552+00:00",
+      "last_curated_at": "2026-10-15T04:29:03.150552+00:00",
       "last_notified_at": null
     }
   ],
@@ -646,12 +656,12 @@
       "count": 8
     },
     {
-      "theme": "agent",
-      "count": 6
+      "theme": "llm",
+      "count": 4
     },
     {
-      "theme": "llm",
-      "count": 2
+      "theme": "agent",
+      "count": 4
     }
   ],
   "highlights": [
