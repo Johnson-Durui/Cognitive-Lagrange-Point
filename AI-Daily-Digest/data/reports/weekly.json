@@ -1,8 +1,8 @@
 {
   "label": "周报",
   "window_days": 7,
-  "generated_at": "2026-10-15T12:28:57.493507+08:00",
-  "count": 56,
+  "generated_at": "2026-10-16T09:44:08.572817+08:00",
+  "count": 57,
   "summary": "近 7 天里，最集中的主题是 ai、llm、agent。",
   "top_items": [
     {
@@ -80,100 +80,6 @@
       "first_seen_at": "2026-10-14T02:13:20.870846+00:00",
       "last_seen_at": "2026-10-14T04:46:21.171457+00:00",
       "last_curated_at": "2026-10-14T04:46:21.171457+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2610.10478v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "Before They Can Solve: Predicting Post-Training Coding-Agent Performance from Base Models",
-      "html_url": "http://arxiv.org/abs/2610.10478v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.10478v1",
-      "description": "How can we predict which base checkpoint is worth an expensive round of agentic post-training? End-to-end pass@$K$ tests whether successful behavior already appears in a base model's distribution, but it is a poor fit for agentic coding: many base checkpoints cannot reliably produce the well-formed tool invocation required to complete a task end-to-end. Single-shot or short-horizon tasks avoid these tool-calling failures by collapsing a multi-step interaction into a fixed prompt and a single patch, but they sidestep the core capability we care about: maintaining coherent state over many tool-using steps as the repository evolves. To bridge this gap, we treat successful post-trained agent trajectories as a lookahead signal of base-model potential. Replaying each trajectory and rerunning tests after every code-changing step identifies the decisive step: the first step whose cumulative patch flips the repository from failing to passing, certifying that the recorded action solves the task given the prior context. Motivated by a coverage principle for agentic traces, we build three screens at this step that do not require a base checkpoint to drive the harness from a cold start: (i) Decisive-Action BPB (bits per byte) measures the probability mass on the certified action, (ii) Patch MCQ tests the checkpoint's choice between that action and alternatives rejected by the same verifier, and (iii) prefix-conditioned pass@$K$ evaluates support for functionally-correct generations and credits any continuation that the tests accept. Across ten pairs of public base and post-trained models, all three screens rank the cohort in close agreement with post-trained SWE-bench Verified pass@$1$. As our methods need only a benchmark's successful trajectories and its verifier, they can be applied to turn future agentic coding benchmarks into base-model evaluations.",
-      "authors": [
-        "Tan Yu",
-        "Alexander Bukharin",
-        "Khushi Bhardwaj",
-        "Jennifer Williams",
-        "Zirui Liu",
-        "Jonathan Lingjie Li",
-        "Soumye Singhal",
-        "Joseph Jennings",
-        "Sanjeev Satheesh",
-        "Yash Jain",
-        "Ashish Vaswani",
-        "Venkat Krishna Srinivasan",
-        "Matthew Papakipos",
-        "Hyunwoo Kim",
-        "Jian Zhang",
-        "Oleksii Kuchaiev",
-        "Markus Kliegl",
-        "Mostofa Patwary",
-        "Mohammad Shoeybi",
-        "Bryan Catanzaro",
-        "Jonathan Cohen",
-        "Jiantao Jiao"
-      ],
-      "categories": [
-        "cs.AI",
-        "cs.SE"
-      ],
-      "published_at": "2026-10-07T17:37:19+00:00",
-      "updated_at": "2026-10-07T17:37:19+00:00",
-      "primary_category": "cs.AI",
-      "heuristic_score": 20.3,
-      "summary": "Before They Can Solve: Predicting Post-Training Coding-Agent Performance from Base Models 是最近值得追踪的一篇 AI 论文。论文摘要显示：How can we predict which base checkpoint is worth an expensive round of agentic post-training? End-to-end pass@$K$ tests whether successful behavior already appears in a base model's distribution, but it is a poor fit for agentic coding: ma...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.AI, cs.SE",
-        "作者数: 22"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "agent",
-        "agentic",
-        "rag"
-      ],
-      "themes": [
-        "ai",
-        "agent",
-        "agentic"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：Before They Can Solve: Predicting Post-Training Coding-Agent Performance from Base Models 是最近值得追踪的一篇 AI 论文。论文摘要显示：How can we predict which base checkpoint is worth an expensive round of agentic post-training? End-to-end pass@$K$ tests whether successful behavior already appears in a base model's distribution, but it is a poor fit for agentic coding: ma...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI, cs.SE\n- 作者数: 22",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "coding",
-          "weight": 2.6
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 202.0,
-      "detail_path": "items/arxiv-before-they-can-solve-predicting-post-training-coding-agent-performance-from-base-models.html",
-      "first_seen_at": "2026-10-08T03:02:57.470503+00:00",
-      "last_seen_at": "2026-10-08T05:55:04.237573+00:00",
-      "last_curated_at": "2026-10-08T05:55:04.237573+00:00",
       "last_notified_at": null
     },
     {
@@ -648,6 +554,80 @@
       "last_seen_at": "2026-10-15T04:29:03.150552+00:00",
       "last_curated_at": "2026-10-15T04:29:03.150552+00:00",
       "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2610.18507v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "The Last Mile of Coding Agents for Long-Document Tasks: An Empirical Study on Clinical Trial Protocol Digitization",
+      "html_url": "http://arxiv.org/abs/2610.18507v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.18507v1",
+      "description": "Clinical trial protocols serve as the source of truth for study design, but are mostly written and used as unstructured PDF documents. Digitizing protocols turns static content into structured, machine-readable data that clinical software can analyze, validate, and execute. Coding agents, which select tools, execute code, and revise their approach as they work, are increasingly applied to such long-document tasks, yet it remains unclear how reliably they turn complete documents into accurate structured outputs. We study this question using protocol digitization as a testbed. We introduce TrialPD-Bench, an expert-annotated benchmark of 150 publicly available protocol PDFs spanning four task categories. Beyond final-answer performance, our evaluation measures evidence recall from agent traces, agent behavior, and cost. Across nine proprietary and open-weight models in five coding-agent harnesses, even the strongest agents do not fully solve protocol digitization. Our analysis further shows that agents usually locate the required evidence but fail in the last mile of transcribing and structuring it. We further develop TrialScribe, a domain-specific harness that equips coding agents with task skills and a verification loop. TrialScribe improves a locally served open-weight model by 6.2-59.4 points across eight metrics, enabling it to match or surpass proprietary models such as GPT-5.6-Sol.",
+      "authors": [
+        "Jiacheng Lin",
+        "Geoffrey Low",
+        "Nishit Agarwal",
+        "Rahul Jain",
+        "Afrah Shafquat",
+        "Mandis Beigi",
+        "Jimeng Sun"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "published_at": "2026-10-13T15:03:31+00:00",
+      "updated_at": "2026-10-13T15:03:31+00:00",
+      "primary_category": "cs.CL",
+      "heuristic_score": 17.66,
+      "summary": "The Last Mile of Coding Agents for Long-Document Tasks: An Empirical Study on Clinical Trial Protocol Digitization 是最近值得追踪的一篇 AI 论文。论文摘要显示：Clinical trial protocols serve as the source of truth for study design, but are mostly written and used as unstructured PDF documents. Digitizing protocols turns static content into structured, machine-readable data that clinical software c...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CL",
+        "作者数: 7"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "agent",
+        "gpt",
+        "model"
+      ],
+      "themes": [
+        "ai",
+        "agent",
+        "gpt"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：The Last Mile of Coding Agents for Long-Document Tasks: An Empirical Study on Clinical Trial Protocol Digitization 是最近值得追踪的一篇 AI 论文。论文摘要显示：Clinical trial protocols serve as the source of truth for study design, but are mostly written and used as unstructured PDF documents. Digitizing protocols turns static content into structured, machine-readable data that clinical software c...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL\n- 作者数: 7",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "coding",
+          "weight": 2.6
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 180.0,
+      "detail_path": "items/arxiv-the-last-mile-of-coding-agents-for-long-document-tasks-an-empirical-study-on-clinical-tria.html",
+      "first_seen_at": "2026-10-14T04:46:21.171457+00:00",
+      "last_seen_at": "2026-10-14T04:46:21.171457+00:00",
+      "last_curated_at": "2026-10-14T04:46:21.171457+00:00",
+      "last_notified_at": null
     }
   ],
   "top_themes": [
@@ -671,12 +651,12 @@
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     },
     {
-      "title": "Before They Can Solve: Predicting Post-Training Coding-Agent Performance from Base Models",
+      "title": "ActionOPD: Distilling Decisions, Not Tokens",
       "source": "arxiv",
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     },
     {
-      "title": "ActionOPD: Distilling Decisions, Not Tokens",
+      "title": "Teaching Agents in their Own Style: Blackbox Teacher Distillation for Web Agents",
       "source": "arxiv",
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     }
