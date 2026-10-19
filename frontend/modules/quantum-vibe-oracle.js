@@ -10,6 +10,15 @@
 
 import { state } from '../core/state.js';
 import { escapeHtml, showToast } from './utils.js';
+import {
+  extractProbabilities as extractSharedProbabilities,
+  extractValidationMetrics as extractSharedValidationMetrics,
+  getCurrentDecisionData as getSharedDecisionData,
+  getDecisionId as getSharedDecisionId,
+} from './art-experience/decision-data.js';
+import { lockBodyScroll, unlockBodyScroll } from './art-experience/overlay-lock.js';
+import { loadThreeExperienceStack } from './art-experience/three-loader.js';
+import { getRecord, openIndexedDb, putRecord } from './art-experience/storage-base.js';
 
 const DB_NAME = 'clp_quantum_vibe_oracle';
 const DB_VERSION = 1;
@@ -94,64 +103,19 @@ function easeOutCubic(value) {
 }
 
 function getDecisionId(data) {
-  return compactText(
-    data?.decision_id
-    || data?.id
-    || data?.engineb_session?.session_id
-    || data?.session_id
-    || state.currentDecisionId
-    || state.currentDecision?.decision_id
-    || 'quantum-local'
-  );
+  return getSharedDecisionId(data, 'quantum-local');
 }
 
 function getCurrentDecisionData(explicitData) {
-  const decision = explicitData
-    || window.decisionData
-    || state.currentDecision
-    || (state.engineBSession ? { engineb_session: state.engineBSession } : null)
-    || {};
-  const session = decision.engineb_session || state.engineBSession || {};
-  const simulator = session.simulator_output || decision.simulator_output || {};
-  const monteCarlo = simulator.monte_carlo || decision.monte_carlo || {};
-  return {
-    ...decision,
-    question: decision.question || session.original_question || state.currentDecision?.question || '当前决策',
-    engineb_session: session,
-    simulator_output: simulator,
-    monte_carlo: monteCarlo,
-  };
+  return getSharedDecisionData(explicitData);
 }
 
 function extractProbabilities(data) {
-  const monte = data.monte_carlo || {};
-  const smooth = monte.smooth_prob || {};
-  const optimistic = safeNumber(data.simulator_output?.probability_optimistic || smooth.optimistic, 30);
-  const baseline = safeNumber(data.simulator_output?.probability_baseline || smooth.baseline, 50);
-  const pessimistic = safeNumber(data.simulator_output?.probability_pessimistic || smooth.pessimistic, 20);
-  const total = optimistic + baseline + pessimistic;
-  if (total <= 0) return { a: 30, b: 50, c: 20 };
-  return {
-    a: Math.round((optimistic / total) * 1000) / 10,
-    b: Math.round((baseline / total) * 1000) / 10,
-    c: Math.round((pessimistic / total) * 1000) / 10,
-  };
+  return extractSharedProbabilities(data);
 }
 
 function extractValidationMetrics(data) {
-  const simulator = data.simulator_output || {};
-  const session = data.engineb_session || {};
-  const raw = simulator.validation_metrics
-    || simulator.ninety_day_validation
-    || session.validation_metrics
-    || data.ninety_day_validation
-    || {};
-  return {
-    studyHours: safeNumber(raw.study_hours || raw.learning_hours || raw.studyHours, 0),
-    income: safeNumber(raw.income || raw.cashflow || raw.monthly_income, 0),
-    mockExam: safeNumber(raw.mock_exam || raw.mockExam || raw.score, 0),
-    checkins: safeNumber(raw.checkins || raw.days || raw.completed_days, 0),
-  };
+  return extractSharedValidationMetrics(data);
 }
 
 function collectTimelineHighlights(choice, limit = 3) {
@@ -279,42 +243,26 @@ function buildUniverseData(data, persistedState = {}) {
 }
 
 function openQuantumDb() {
-  return new Promise((resolve, reject) => {
-    if (!window.indexedDB) {
-      resolve(null);
-      return;
+  return openIndexedDb(DB_NAME, DB_VERSION, (db) => {
+    if (!db.objectStoreNames.contains(STORE_NAME)) {
+      db.createObjectStore(STORE_NAME, { keyPath: 'decisionId' });
     }
-    const request = window.indexedDB.open(DB_NAME, DB_VERSION);
-    request.onupgradeneeded = () => {
-      const db = request.result;
-      if (!db.objectStoreNames.contains(STORE_NAME)) {
-        db.createObjectStore(STORE_NAME, { keyPath: 'decisionId' });
-      }
-    };
-    request.onsuccess = () => resolve(request.result);
-    request.onerror = () => reject(request.error);
   });
 }
 
 async function loadPersistedQuantumState(decisionId) {
-  const db = await openQuantumDb();
-  if (!db) return null;
-  return new Promise((resolve) => {
-    const tx = db.transaction(STORE_NAME, 'readonly');
-    const request = tx.objectStore(STORE_NAME).get(decisionId);
-    request.onsuccess = () => resolve(request.result || null);
-    request.onerror = () => resolve(null);
+  return getRecord(DB_NAME, DB_VERSION, STORE_NAME, decisionId, (db) => {
+    if (!db.objectStoreNames.contains(STORE_NAME)) {
+      db.createObjectStore(STORE_NAME, { keyPath: 'decisionId' });
+    }
   });
 }
 
 async function savePersistedQuantumState(stateSnapshot) {
-  const db = await openQuantumDb();
-  if (!db) return;
-  await new Promise((resolve) => {
-    const tx = db.transaction(STORE_NAME, 'readwrite');
-    tx.objectStore(STORE_NAME).put(stateSnapshot);
-    tx.oncomplete = () => resolve();
-    tx.onerror = () => resolve();
+  await putRecord(DB_NAME, DB_VERSION, STORE_NAME, stateSnapshot, (db) => {
+    if (!db.objectStoreNames.contains(STORE_NAME)) {
+      db.createObjectStore(STORE_NAME, { keyPath: 'decisionId' });
+    }
   });
 }
 
@@ -534,23 +482,7 @@ function ensureStyles() {
 
 async function loadThreeStack() {
   if (threeStackPromise) return threeStackPromise;
-  threeStackPromise = (async () => {
-    let THREE = await import('three');
-    let rendererType = 'WebGL';
-    let WebGPURenderer = null;
-    if (navigator.gpu) {
-      try {
-        const webgpu = await import('three/webgpu');
-        THREE = { ...THREE, ...webgpu };
-        WebGPURenderer = webgpu.WebGPURenderer || null;
-        rendererType = WebGPURenderer ? 'WebGPU' : 'WebGL';
-      } catch (error) {
-        console.warn('WebGPU renderer unavailable, falling back to WebGL.', error);
-      }
-    }
-    const { OrbitControls } = await import('three/addons/controls/OrbitControls.js');
-    return { THREE, OrbitControls, WebGPURenderer, rendererType };
-  })();
+  threeStackPromise = loadThreeExperienceStack();
   return threeStackPromise;
 
 }
@@ -1176,7 +1108,7 @@ class QuantumVibeOracle {
     this.root.className = 'qvo-root';
     this.root.innerHTML = template;
     document.body.appendChild(this.root);
-    document.body.style.overflow = 'hidden';
+    lockBodyScroll();
     this.root.querySelector('[data-qvo-question]').textContent = this.data.question || '当前决策';
     this.installExportUi();
     this.renderUniverseButtons();
@@ -1192,6 +1124,11 @@ class QuantumVibeOracle {
   bindUi() {
     this.root.querySelector('[data-qvo-close]')?.addEventListener('click', () => this.close());
     this.root.querySelector('[data-qvo-poetic]')?.addEventListener('click', () => showToast('量子诗意模式已开启：继续在宇宙里观测你的选择。', 'info', 1800));
+    this.root.querySelector('[data-qvo-topology]')?.addEventListener('click', async () => {
+      const data = this.data;
+      await this.close();
+      await window.openDivineSoulTopology?.(data);
+    });
     this.root.querySelector('[data-qvo-audio-toggle]')?.addEventListener('click', (event) => this.toggleAudio(event.currentTarget));
     this.root.querySelector('[data-qvo-flight-toggle]')?.addEventListener('click', (event) => this.toggleFreeFlight(event.currentTarget));
     this.root.querySelector('[data-qvo-bio-enable]')?.addEventListener('click', () => this.enableBioFeedback());
@@ -1235,6 +1172,13 @@ class QuantumVibeOracle {
 
   installExportUi() {
     const tools = this.root.querySelector('.qvo-mode-switch');
+    if (tools && !tools.querySelector('[data-qvo-topology]')) {
+      const button = document.createElement('button');
+      button.type = 'button';
+      button.dataset.qvoTopology = 'true';
+      button.textContent = '神魂拓扑';
+      tools.appendChild(button);
+    }
     if (tools && !tools.querySelector('[data-qvo-export-trigger]')) {
       const button = document.createElement('button');
       button.type = 'button';
@@ -1918,7 +1862,7 @@ class QuantumVibeOracle {
     if (this.scene) this.disposeObject(this.scene);
     this.renderer?.dispose?.();
     this.root?.remove();
-    document.body.style.overflow = '';
+    unlockBodyScroll();
     activeOracle = null;
     showToast('已回到理性报告视图。', 'info', 1600);
   }
@@ -1932,27 +1876,35 @@ function syncWebglQueryHint() {
   window.history.replaceState({}, '', next);
 }
 
-export function registerQuantumVibeOracle() {
-  window.openQuantumVibeOracle = async (explicitData) => {
-    try {
-      if (activeOracle) {
-        showToast('量子宇宙已经开启。', 'info', 1600);
-        return activeOracle;
-      }
-      syncWebglQueryHint();
-      const decisionData = getCurrentDecisionData(explicitData);
-      window.decisionData = decisionData;
-      const decisionId = getDecisionId(decisionData);
-      const persisted = await loadPersistedQuantumState(decisionId);
-      activeOracle = new QuantumVibeOracle(decisionData, persisted);
-      await activeOracle.mount();
+export async function openQuantumVibeOracle(explicitData) {
+  const startedAt = performance.now();
+  try {
+    if (activeOracle) {
+      showToast('量子宇宙已经开启。', 'info', 1600);
       return activeOracle;
-    } catch (error) {
-      console.error('Quantum Vibe Oracle failed to open:', error);
-      activeOracle = null;
-      showToast(`量子宇宙启动失败：${error.message || error}`, 'error', 5200);
-      return null;
     }
-  };
-  window.closeQuantumVibeOracle = () => activeOracle?.close();
+    syncWebglQueryHint();
+    const decisionData = getCurrentDecisionData(explicitData);
+    window.decisionData = decisionData;
+    const decisionId = getDecisionId(decisionData);
+    const persisted = await loadPersistedQuantumState(decisionId);
+    activeOracle = new QuantumVibeOracle(decisionData, persisted);
+    await activeOracle.mount();
+    console.debug('[QVO] open:ms', Math.round(performance.now() - startedAt));
+    return activeOracle;
+  } catch (error) {
+    console.error('Quantum Vibe Oracle failed to open:', error);
+    activeOracle = null;
+    showToast(`量子宇宙启动失败：${error.message || error}`, 'error', 5200);
+    return null;
+  }
+}
+
+export function closeQuantumVibeOracle() {
+  return activeOracle?.close();
+}
+
+export function registerQuantumVibeOracle() {
+  window.openQuantumVibeOracle = openQuantumVibeOracle;
+  window.closeQuantumVibeOracle = closeQuantumVibeOracle;
 }
