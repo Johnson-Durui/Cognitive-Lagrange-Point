@@ -1,7 +1,7 @@
 {
   "label": "月报",
   "window_days": 30,
-  "generated_at": "2026-10-19T12:31:59.589419+08:00",
+  "generated_at": "2026-10-20T10:10:29.030105+08:00",
   "count": 200,
   "summary": "近 30 天里，最集中的主题是 ai、agent、llm。",
   "top_items": [
@@ -171,6 +171,89 @@
       "first_seen_at": "2026-10-14T02:13:20.870846+00:00",
       "last_seen_at": "2026-10-14T04:46:21.171457+00:00",
       "last_curated_at": "2026-10-14T04:46:21.171457+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2610.25932v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Keep the Lineages Alive: Diversity-Preserving SMC for Diffusion LLM Decoding",
+      "html_url": "http://arxiv.org/abs/2610.25932v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.25932v1",
+      "description": "Inference-time sequential Monte Carlo (SMC) decoding can improve the reasoning accuracy of masked diffusion language models (diffusion LLMs) without post-training by resampling a population of partial generations according to a reward. Its effectiveness therefore depends on the resampling step, which must concentrate computation on promising candidates while retaining enough diversity to explore alternative reasoning paths. The reward can be internal, the decoder's own confidence on the committed prefix, or external, a process reward model scoring that prefix. Under either reward, multinomial resampling can disrupt this balance by duplicating high-weight particles and discarding lineages that may still reach a correct solution. The effective sample size (ESS) does not register this loss: multinomial resampling resets it to its maximum even as distinct lineages disappear. To retain such lineages, we introduce lineage-preserving SMC (LP-SMC), which combines Chopthin resampling with an input weight floor. Instead of equalizing weights, Chopthin bounds the ratio between the largest and smallest weights it returns and carries the unequal weights forward. The floor limits how far below the maximum a weight may fall before resampling so that lineages with low early weight keep a chance to recover. Across mathematical-reasoning and code-generation benchmarks on two base models, LP-SMC raises oracle coverage, the fraction of problems with at least one correct particle, in every setting, by 1.8 to 25.6 points, and raises end-to-end accuracy under a common reward-model selector in eleven of twelve settings, by up to 7.9 points on LLaDA-1.5 and 18.3 on Dream-7B. The coverage gain persists under the external reward model, which suggests that diversity-preserving resampling and the guidance signal contribute separately to inference-time search.",
+      "authors": [
+        "Minoo Ahmadi",
+        "Seyedarmin Azizi",
+        "Mehdi Kamal",
+        "Massoud Pedram"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL",
+        "stat.AP",
+        "stat.ML"
+      ],
+      "published_at": "2026-10-19T07:30:07+00:00",
+      "updated_at": "2026-10-19T07:30:07+00:00",
+      "primary_category": "cs.LG",
+      "heuristic_score": 25.1,
+      "summary": "Keep the Lineages Alive: Diversity-Preserving SMC for Diffusion LLM Decoding 是最近值得追踪的一篇 AI 论文。论文摘要显示：Inference-time sequential Monte Carlo (SMC) decoding can improve the reasoning accuracy of masked diffusion language models (diffusion LLMs) without post-training by resampling a population of partial generations according to a reward. Its ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.LG, cs.AI",
+        "作者数: 4"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "llm",
+        "rag",
+        "diffusion"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "rag"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：Keep the Lineages Alive: Diversity-Preserving SMC for Diffusion LLM Decoding 是最近值得追踪的一篇 AI 论文。论文摘要显示：Inference-time sequential Monte Carlo (SMC) decoding can improve the reasoning accuracy of masked diffusion language models (diffusion LLMs) without post-training by resampling a population of partial generations according to a reward. Its ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.LG, cs.AI\n- 作者数: 4",
+      "focus_hits": [
+        {
+          "keyword": "coding",
+          "weight": 2.6
+        },
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        },
+        {
+          "keyword": "inference",
+          "weight": 1.8
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "coding",
+      "personalized_score": 214.0,
+      "detail_path": "items/arxiv-keep-the-lineages-alive-diversity-preserving-smc-for-diffusion-llm-decoding.html",
+      "first_seen_at": "2026-10-20T02:10:35.927546+00:00",
+      "last_seen_at": "2026-10-20T02:10:35.927546+00:00",
+      "last_curated_at": "2026-10-20T02:10:35.927546+00:00",
       "last_notified_at": null
     },
     {
@@ -352,151 +435,63 @@
       "last_notified_at": null
     },
     {
-      "id": "arxiv::http://arxiv.org/abs/2609.23363v1",
+      "id": "arxiv::http://arxiv.org/abs/2610.25970v1",
       "kind": "paper",
       "source": "arxiv",
       "source_tags": [
         "latest"
       ],
-      "title": "TicTacBench: Benchmarking Timing Closure Capabilities of Coding Agents",
-      "html_url": "http://arxiv.org/abs/2609.23363v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.23363v1",
-      "description": "Recent advances in large language models (LLMs) have led to the emergence of coding agents capable of performing complex engineering tasks, including register-transfer level (RTL) design and optimization. Existing RTL benchmarks mainly evaluate functional correctness and performance, power, and area (PPA) of the generated RTL designs, leaving agents' ability for \\emph{timing closure} under-evaluated. We propose TicTacBench, a benchmark specifically designed to evaluate coding agents' capabilities for RTL-level timing closure under post-place-and-route (post-PnR) evaluation. TicTacBench contains 30 diverse tasks, each provided with a suboptimal RTL design, realistic timing constraints, functional equivalence verification, and timing reports. With over 300 runs of coding agents driven by 8 frontier LLMs, we find that even the best agent can only close 53.3\\% of tasks with 7.18\\% area-delay product (ADP) degradation and 8.83\\% energy-delay-squared product (EDDP) improvement on average. We identify common failure categories that explain why agents fail to close timing. Then we propose TicTacSkill, a new method that guides agents to follow standard timing-closure procedures and improves the Timing Closure Rate by 9\\%. These results suggest that while coding agents have made significant progress in RTL design, their timing-closure capability still has substantial room for improvement.",
+      "title": "GLOBE: Geometry-Led Online Behavioral Early Exit via Unit-Sphere Trajectories",
+      "html_url": "http://arxiv.org/abs/2610.25970v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.25970v1",
+      "description": "Chain-of-thought (CoT) reasoning can improve problem solving, but models often keep generating after the correct answer is already reachable; the extra steps raise serving costs and may replace a correct intermediate result with an incorrect one. We propose GLOBE (Geometry-Led Online Behavioral Early Exit), an online, training-free algorithm that terminates the model's CoT process early. GLOBE embeds each completed reasoning segment as a point on a unit sphere and reads the shape of the resulting semantic trajectory. GLOBE first applies a trial phase that generates short trial answers in a separate branch, stopping the main stream on an accepted trial after checking confidence against a threshold. If generation continues, a trajectory phase stops the stream once this path repeatedly reverses direction with little net progress. On five benchmarks including mathematical reasoning, tool calling, and agent memory, GLOBE cuts output tokens by 49.7% and active end-to-end wall time (E2E) by 51.0% across two models, and achieves a five-task average of 80.58%, comparable to Full CoT.",
       "authors": [
-        "Bowei Wang",
-        "Zhigang Fang",
-        "Zhijie Yang",
-        "Renzhi Chen",
-        "Shanshan Li",
-        "Lei Wang"
+        "Xinyue Peng",
+        "Zhenlin Liang",
+        "Meng Cai",
+        "Hua Wang"
       ],
       "categories": [
-        "cs.AI"
-      ],
-      "published_at": "2026-09-20T05:17:00+00:00",
-      "updated_at": "2026-09-20T05:17:00+00:00",
-      "primary_category": "cs.AI",
-      "heuristic_score": 20.051,
-      "summary": "TicTacBench: Benchmarking Timing Closure Capabilities of Coding Agents 是最近值得追踪的一篇 AI 论文。论文摘要显示：Recent advances in large language models (LLMs) have led to the emergence of coding agents capable of performing complex engineering tasks, including register-transfer level (RTL) design and optimization. Existing RTL benchmarks mainly eval...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.AI",
-        "作者数: 6"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "llm",
-        "agent",
-        "rag"
-      ],
-      "themes": [
-        "ai",
-        "llm",
-        "agent"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：TicTacBench: Benchmarking Timing Closure Capabilities of Coding Agents 是最近值得追踪的一篇 AI 论文。论文摘要显示：Recent advances in large language models (LLMs) have led to the emergence of coding agents capable of performing complex engineering tasks, including register-transfer level (RTL) design and optimization. Existing RTL benchmarks mainly eval...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI\n- 作者数: 6",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "coding",
-          "weight": 2.6
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 202.0,
-      "detail_path": "items/arxiv-tictacbench-benchmarking-timing-closure-capabilities-of-coding-agents.html",
-      "first_seen_at": "2026-09-22T01:56:03.468101+00:00",
-      "last_seen_at": "2026-09-22T04:47:41.410909+00:00",
-      "last_curated_at": "2026-09-22T04:47:41.410909+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2609.24972v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "RRSI: Regularized Recursive Self-Improvement of Agent Harnesses",
-      "html_url": "http://arxiv.org/abs/2609.24972v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.24972v1",
-      "description": "An LLM agent's capability is largely magnified by its harness, namely the prompts, control flow, tooling, memory, and context management surrounding the frozen backbone model. Recent methods increasingly automate this process by iteratively proposing and selecting component-wise edits of an agent harness, practically establishing a form of recursive self-improvement (RSI) at the agent-system level. However, such recursive evolution may overfit by memorizing the training tasks, showing large in-distribution gains that shrink or even vanish on out-of-distribution benchmarks. We introduce Regularized Recursive Self-Improvement of Agent Harnesses (RRSI), which incorporates the principles of regularizations into harness self-improvement by constraining the evolution candidate proposal and selection. The proposer operates with a temporally annealed budget, limiting how many edits a candidate can bundle, and it encourages unexplored trajectories based on evolution history. The selector is equipped with a critic and a pruner: the critic screens benchmark-specific proposals, while the pruner, removes changes that are too small, too expensive, or no longer useful. Together these constraints favor reusable agent mechanisms over benchmark-specific ones or even noises. Across eight benchmarks spanning coding, agentic workspace and engineering design tasks, RRSI gains up to 14.1 points on the split it evolves against and up to 4.7 points on the five out-of-distribution benchmarks, while producing a harness that runs on 30% fewer policy tokens than the unregularized evolution. Code is available at https://github.com/google-research/rrsi and project page is https://regularized-rsi.com/.",
-      "authors": [
-        "Peng Xia",
-        "Rujun Han",
-        "Zifeng Wang",
-        "Yanfei Chen",
-        "Yufan Zhang",
-        "Yoonho Lee",
-        "Chengsong Huang",
-        "Han Yu",
-        "Zhongying CuiZhu",
-        "Yifei Ming",
-        "Huaxiu Yao",
-        "Burak Gokturk",
-        "Tomas Pfister",
-        "Chen-Yu Lee"
-      ],
-      "categories": [
-        "cs.LG",
         "cs.AI",
         "cs.CL"
       ],
-      "published_at": "2026-09-21T17:54:49+00:00",
-      "updated_at": "2026-09-21T17:54:49+00:00",
-      "primary_category": "cs.LG",
-      "heuristic_score": 22.7,
-      "summary": "RRSI: Regularized Recursive Self-Improvement of Agent Harnesses 是最近值得追踪的一篇 AI 论文。论文摘要显示：An LLM agent's capability is largely magnified by its harness, namely the prompts, control flow, tooling, memory, and context management surrounding the frozen backbone model. Recent methods increasingly automate this process by iteratively...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "published_at": "2026-10-19T08:01:32+00:00",
+      "updated_at": "2026-10-19T08:01:32+00:00",
+      "primary_category": "cs.AI",
+      "heuristic_score": 19.664,
+      "summary": "GLOBE: Geometry-Led Online Behavioral Early Exit via Unit-Sphere Trajectories 是最近值得追踪的一篇 AI 论文。论文摘要显示：Chain-of-thought (CoT) reasoning can improve problem solving, but models often keep generating after the correct answer is already reachable; the extra steps raise serving costs and may replace a correct intermediate result with an incorrec...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
       "brief": "这是一篇值得加入今日论文雷达的最新工作。",
       "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
       "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
       "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
       "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
       "highlights": [
-        "分类: cs.LG, cs.AI",
-        "作者数: 14"
+        "分类: cs.AI, cs.CL",
+        "作者数: 4"
       ],
       "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
       "relevance_score": 10,
       "tags": [
         "ai",
-        "llm",
         "agent",
-        "agentic"
+        "rag",
+        "model"
       ],
       "themes": [
         "ai",
-        "llm",
-        "agent"
+        "agent",
+        "rag"
       ],
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：RRSI: Regularized Recursive Self-Improvement of Agent Harnesses 是最近值得追踪的一篇 AI 论文。论文摘要显示：An LLM agent's capability is largely magnified by its harness, namely the prompts, control flow, tooling, memory, and context management surrounding the frozen backbone model. Recent methods increasingly automate this process by iteratively...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.LG, cs.AI\n- 作者数: 14",
+      "summary_markdown": "**摘要**：GLOBE: Geometry-Led Online Behavioral Early Exit via Unit-Sphere Trajectories 是最近值得追踪的一篇 AI 论文。论文摘要显示：Chain-of-thought (CoT) reasoning can improve problem solving, but models often keep generating after the correct answer is already reachable; the extra steps raise serving costs and may replace a correct intermediate result with an incorrec...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI, cs.CL\n- 作者数: 4",
       "focus_hits": [
         {
           "keyword": "agent",
           "weight": 3.0
         },
         {
-          "keyword": "coding",
-          "weight": 2.6
+          "keyword": "reasoning",
+          "weight": 2.4
         },
         {
           "keyword": "rag",
@@ -508,11 +503,11 @@
         }
       ],
       "primary_match": "agent",
-      "personalized_score": 202.0,
-      "detail_path": "items/arxiv-rrsi-regularized-recursive-self-improvement-of-agent-harnesses.html",
-      "first_seen_at": "2026-09-22T04:47:41.410909+00:00",
-      "last_seen_at": "2026-09-22T04:47:41.410909+00:00",
-      "last_curated_at": "2026-09-22T04:47:41.410909+00:00",
+      "personalized_score": 200.0,
+      "detail_path": "items/arxiv-globe-geometry-led-online-behavioral-early-exit-via-unit-sphere-trajectories.html",
+      "first_seen_at": "2026-10-20T02:10:35.927546+00:00",
+      "last_seen_at": "2026-10-20T02:10:35.927546+00:00",
+      "last_curated_at": "2026-10-20T02:10:35.927546+00:00",
       "last_notified_at": null
     },
     {
@@ -684,11 +679,11 @@
     },
     {
       "theme": "agent",
-      "count": 5
+      "count": 6
     },
     {
       "theme": "llm",
-      "count": 3
+      "count": 2
     }
   ],
   "highlights": [
@@ -703,7 +698,7 @@
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     },
     {
-      "title": "OmniVerifier-C1: Decomposed Graded Verifier for Rule-Governed Generative World Modeling",
+      "title": "Keep the Lineages Alive: Diversity-Preserving SMC for Diffusion LLM Decoding",
       "source": "arxiv",
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     }
