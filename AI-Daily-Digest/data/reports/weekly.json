@@ -1,9 +1,9 @@
 {
   "label": "周报",
   "window_days": 7,
-  "generated_at": "2026-10-21T12:36:35.213738+08:00",
-  "count": 67,
-  "summary": "近 7 天里，最集中的主题是 ai、llm、agent。",
+  "generated_at": "2026-10-22T09:58:44.971448+08:00",
+  "count": 64,
+  "summary": "近 7 天里，最集中的主题是 ai、agent、llm。",
   "top_items": [
     {
       "id": "arxiv::http://arxiv.org/abs/2610.26860v1",
@@ -101,83 +101,6 @@
       "first_seen_at": "2026-10-20T04:41:31.753232+00:00",
       "last_seen_at": "2026-10-20T04:41:31.753232+00:00",
       "last_curated_at": "2026-10-20T04:41:31.753232+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2610.16165v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "Think Before You Speak: Enabling Training-Free Latent Communication Between Language Models",
-      "html_url": "http://arxiv.org/abs/2610.16165v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.16165v1",
-      "description": "Large language models (LLMs) have demonstrated remarkable capabilities in solving complex tasks in coding, mathematical logic, and iterative reasoning, especially by coordinating effectively within multi-agent systems (MAS). However, language agents traditionally communicate via text exchange, which introduces a bottleneck in information transfer and adds prefill latency for downstream agents. Recent work proposes that directly sharing the key-value (KV) cache between language models can enable efficient latent collaboration, entirely bypassing standard text-based communication. To enable latent communication between heterogeneous models of different sizes, prior work introduces trained fusion adapters for each model pair, which limits practical deployment. We introduce CacheFuse, a training-free method which demonstrates that augmenting a downstream model with an upstream model's KV cache using linear interpolation consistently enables superior performance than the standalone downstream model can achieve. We systematically analyze CacheFuse across four reasoning and knowledge benchmarks and demonstrate up to 8.6 percentage points higher accuracy compared to single-model baselines and up to 12.2x TTFT speedup compared to text-based communication in multi-model inference.",
-      "authors": [
-        "Rishi Khare"
-      ],
-      "categories": [
-        "cs.CL",
-        "cs.LG"
-      ],
-      "published_at": "2026-10-12T04:40:48+00:00",
-      "updated_at": "2026-10-12T04:40:48+00:00",
-      "primary_category": "cs.CL",
-      "heuristic_score": 22.314,
-      "summary": "Think Before You Speak: Enabling Training-Free Latent Communication Between Language Models 是最近值得追踪的一篇 AI 论文。论文摘要显示：Large language models (LLMs) have demonstrated remarkable capabilities in solving complex tasks in coding, mathematical logic, and iterative reasoning, especially by coordinating effectively within multi-agent systems (MAS). However, langua...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CL, cs.LG",
-        "作者数: 1"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "llm",
-        "agent",
-        "model"
-      ],
-      "themes": [
-        "ai",
-        "llm",
-        "agent"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：Think Before You Speak: Enabling Training-Free Latent Communication Between Language Models 是最近值得追踪的一篇 AI 论文。论文摘要显示：Large language models (LLMs) have demonstrated remarkable capabilities in solving complex tasks in coding, mathematical logic, and iterative reasoning, especially by coordinating effectively within multi-agent systems (MAS). However, langua...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL, cs.LG\n- 作者数: 1",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "coding",
-          "weight": 2.6
-        },
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "inference",
-          "weight": 1.8
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 222.0,
-      "detail_path": "items/arxiv-think-before-you-speak-enabling-training-free-latent-communication-between-language-models.html",
-      "first_seen_at": "2026-10-14T02:13:20.870846+00:00",
-      "last_seen_at": "2026-10-14T04:46:21.171457+00:00",
-      "last_curated_at": "2026-10-14T04:46:21.171457+00:00",
       "last_notified_at": null
     },
     {
@@ -597,7 +520,7 @@
       "full_name": "headroomlabs-ai/headroom",
       "html_url": "https://github.com/headroomlabs-ai/headroom",
       "description": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
-      "stars": 76846,
+      "stars": 77288,
       "stars_today": 0,
       "language": "Python",
       "topics": [],
@@ -611,7 +534,7 @@
       "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
       "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
       "highlights": [
-        "Stars: 76846",
+        "Stars: 77288",
         "语言: Python"
       ],
       "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
@@ -628,7 +551,7 @@
         "rag"
       ],
       "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：headroomlabs-ai/headroom 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：10/10\n\n**亮点**：\n- Stars: 76846\n- 语言: Python",
+      "summary_markdown": "**摘要**：headroomlabs-ai/headroom 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：10/10\n\n**亮点**：\n- Stars: 77288\n- 语言: Python",
       "focus_hits": [
         {
           "keyword": "agent",
@@ -647,8 +570,89 @@
       "personalized_score": 198.0,
       "detail_path": "items/github-headroomlabs-ai-headroom.html",
       "first_seen_at": "2026-10-20T02:10:35.927546+00:00",
-      "last_seen_at": "2026-10-21T04:36:41.908262+00:00",
-      "last_curated_at": "2026-10-21T04:36:41.908262+00:00",
+      "last_seen_at": "2026-10-22T01:58:51.712905+00:00",
+      "last_curated_at": "2026-10-22T01:58:51.712905+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2610.25926v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "MIRA: A Multimodal Illustrated Deep Research Agent for Controllable Reports",
+      "html_url": "http://arxiv.org/abs/2610.25926v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.25926v1",
+      "description": "Deep research agents are increasingly capable of searching the open web and synthesizing evidence, yet they remain poorly suited to controllable report generation in multimodal deep research. This task requires agents to handle interleaved textual and visual inputs, gather multimodal evidence through multi-step web search, and deliver comprehensive illustrated reports under user-specified requirements. Existing systems face two limitations. During reasoning, they often underuse images discovered along the search trajectory; during generation, they tend to produce fixed-form answers with limited control over report granularity, multimodal composition, and evidence grounding. We introduce MIRA, a Multimodal Illustrated Deep Research Agent for controllable reports. MIRA integrates textual and visual evidence throughout research and writing. At its core, MIRA-Harness translates user requirements into generation contracts and connects four stages: evidence collection, report submission, feedback-driven revision, and final delivery. Building on this harness, MIRA-Data constructs high-quality multi-hop multimodal research trajectories, and we post-train foundation models to operate within the workflow. Using Qwen3.6-35B-A3B, MIRA achieves state-of-the-art performance among open agents on 7 representative, established multimodal-search and deep-research-agent benchmarks, while producing user-aligned illustrated reports with traceable textual and visual evidence.",
+      "authors": [
+        "Hongrui Wu",
+        "Kaiwen Tuo",
+        "Congcong Wang",
+        "Gen Li",
+        "Shuai Dong",
+        "Xinlei Yu",
+        "Yuqi Xu",
+        "Haowen Hou",
+        "Zelin Peng",
+        "Jiaqi Wang"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "published_at": "2026-10-19T07:24:44+00:00",
+      "updated_at": "2026-10-19T07:24:44+00:00",
+      "primary_category": "cs.CV",
+      "heuristic_score": 17.747,
+      "summary": "MIRA: A Multimodal Illustrated Deep Research Agent for Controllable Reports 是最近值得追踪的一篇 AI 论文。论文摘要显示：Deep research agents are increasingly capable of searching the open web and synthesizing evidence, yet they remain poorly suited to controllable report generation in multimodal deep research. This task requires agents to handle interleaved ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CV",
+        "作者数: 10"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "agent",
+        "multimodal",
+        "model"
+      ],
+      "themes": [
+        "ai",
+        "agent",
+        "multimodal"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：MIRA: A Multimodal Illustrated Deep Research Agent for Controllable Reports 是最近值得追踪的一篇 AI 论文。论文摘要显示：Deep research agents are increasingly capable of searching the open web and synthesizing evidence, yet they remain poorly suited to controllable report generation in multimodal deep research. This task requires agents to handle interleaved ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV\n- 作者数: 10",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "multimodal",
+          "weight": 2.0
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 198.0,
+      "detail_path": "items/arxiv-mira-a-multimodal-illustrated-deep-research-agent-for-controllable-reports.html",
+      "first_seen_at": "2026-10-20T02:10:35.927546+00:00",
+      "last_seen_at": "2026-10-20T04:41:31.753232+00:00",
+      "last_curated_at": "2026-10-20T04:41:31.753232+00:00",
       "last_notified_at": null
     }
   ],
@@ -658,11 +662,11 @@
       "count": 7
     },
     {
-      "theme": "llm",
+      "theme": "agent",
       "count": 5
     },
     {
-      "theme": "agent",
+      "theme": "llm",
       "count": 4
     }
   ],
@@ -673,12 +677,12 @@
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     },
     {
-      "title": "Think Before You Speak: Enabling Training-Free Latent Communication Between Language Models",
+      "title": "Keep the Lineages Alive: Diversity-Preserving SMC for Diffusion LLM Decoding",
       "source": "arxiv",
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     },
     {
-      "title": "Keep the Lineages Alive: Diversity-Preserving SMC for Diffusion LLM Decoding",
+      "title": "OmniVerifier-C1: Decomposed Graded Verifier for Rule-Governed Generative World Modeling",
       "source": "arxiv",
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     }
