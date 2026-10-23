@@ -1,6 +1,428 @@
 {
-  "generated_at": "2026-10-23T02:04:09.668315+00:00",
+  "generated_at": "2026-10-23T04:40:35.161145+00:00",
   "items": [
+    {
+      "id": "arxiv::http://arxiv.org/abs/2610.31639v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Causal Chain of Thought: Mitigating Attention Leakage via Context Isolation",
+      "html_url": "http://arxiv.org/abs/2610.31639v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.31639v1",
+      "description": "Chain-of-thought (CoT) prompting elicits step-by-step rationales that appear to explain model predictions, but there is no guarantee these steps causally drive the final answer. In standard autoregressive generation, dense attention allows each reasoning step to attend to the full context, enabling the model to derive answers through direct lookup while generating plausible-sounding but post-hoc justifications. We introduce CausalCoT, an inference framework that enforces causal transparency by decomposing problems into a directed acyclic graph of atomic sub-questions, evaluating each node in an isolated context containing only its direct causal parents. This Markovian structure removes attention pathways to non-parent content, making downstream predictions sensitive to local reasoning rather than global context leakage. Across a diverse suite of reasoning benchmarks, CausalCoT preserves competitive predictive performance while improving explanation faithfulness, increasing causal sensitivity of intermediate reasoning steps by an average of 12 and up to 21 percentage points over the strongest baseline. The structured dependency graph additionally enables test-time interventions in which local corrections propagate predictably through downstream reasoning.",
+      "authors": [
+        "Gabriele Dominici",
+        "Teague McMillan",
+        "Fazl Barez",
+        "Marc Langheinrich",
+        "Martin Gjoreski"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "published_at": "2026-10-22T17:52:56+00:00",
+      "updated_at": "2026-10-22T17:52:56+00:00",
+      "primary_category": "cs.LG",
+      "heuristic_score": 17.492,
+      "summary": "Causal Chain of Thought: Mitigating Attention Leakage via Context Isolation 是最近值得追踪的一篇 AI 论文。论文摘要显示：Chain-of-thought (CoT) prompting elicits step-by-step rationales that appear to explain model predictions, but there is no guarantee these steps causally drive the final answer. In standard autoregressive generation, dense attention allows ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.LG, cs.AI",
+        "作者数: 5"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "rag",
+        "model",
+        "benchmark"
+      ],
+      "themes": [
+        "ai",
+        "rag",
+        "model"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：Causal Chain of Thought: Mitigating Attention Leakage via Context Isolation 是最近值得追踪的一篇 AI 论文。论文摘要显示：Chain-of-thought (CoT) prompting elicits step-by-step rationales that appear to explain model predictions, but there is no guarantee these steps causally drive the final answer. In standard autoregressive generation, dense attention allows ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.LG, cs.AI\n- 作者数: 5",
+      "focus_hits": [
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        },
+        {
+          "keyword": "inference",
+          "weight": 1.8
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "reasoning",
+      "personalized_score": 188.0,
+      "detail_path": "items/arxiv-causal-chain-of-thought-mitigating-attention-leakage-via-context-isolation.html",
+      "first_seen_at": "2026-10-23T04:40:35.161145+00:00",
+      "last_seen_at": "2026-10-23T04:40:35.161145+00:00",
+      "last_curated_at": "2026-10-23T04:40:35.161145+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2610.31651v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "BrickWright: Agentic Creation of Physically Feasible Brick Builds",
+      "html_url": "http://arxiv.org/abs/2610.31651v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.31651v1",
+      "description": "Frontier coding agents are becoming increasingly adept at 3D modeling. Yet, they still face challenges when building objects meant to be assembled in the physical world, often creating invalid assemblies with floating, colliding, or disconnected parts. We argue that providing agents with tools for assembling builds and verifying their physical feasibility is sufficient for them to produce physically valid assemblies that still adhere to input prompts. Focusing on the domain of LEGO brick builds, we present BrickWright, a framework for generating physically feasible brick builds from text or image prompts using pre-trained agents, where a build is physically feasible if it uses only real parts, has no colliding or floating parts, and forms a connected structure if possible. BrickWright guides agents to create builds by writing code with BrickLayer, a Python toolkit with two main components: an ergonomic brick assembly API that halves inference cost compared to working in raw LDraw, and a validator that provides feedback on physical feasibility. Whereas baseline agents achieve physical validity rates ranging from only 9% (GPT-6 Luna) to 69% (GPT-6 Astra), BrickWright-guided agents achieve 100% validity on a sample of 512 prompts, while improving prompt adherence for lightweight agents and maintaining it for stronger agents. Additionally, they outperform specialized models on the text-to-brick task. Code is available on our project page: https://avalovelace1.github.io/brickwright/",
+      "authors": [
+        "Ava Pun",
+        "Kevin Dai",
+        "Sally Chen",
+        "Maxwell Jones",
+        "Ruixuan Liu",
+        "Kangle Deng",
+        "Changliu Liu",
+        "Maneesh Agrawala",
+        "Deva Ramanan",
+        "Jun-Yan Zhu"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "published_at": "2026-10-22T17:57:20+00:00",
+      "updated_at": "2026-10-22T17:57:20+00:00",
+      "primary_category": "cs.CV",
+      "heuristic_score": 20.178,
+      "summary": "BrickWright: Agentic Creation of Physically Feasible Brick Builds 是最近值得追踪的一篇 AI 论文。论文摘要显示：Frontier coding agents are becoming increasingly adept at 3D modeling. Yet, they still face challenges when building objects meant to be assembled in the physical world, often creating invalid assemblies with floating, colliding, or disconn...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CV",
+        "作者数: 10"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "agent",
+        "gpt",
+        "model"
+      ],
+      "themes": [
+        "ai",
+        "agent",
+        "gpt"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：BrickWright: Agentic Creation of Physically Feasible Brick Builds 是最近值得追踪的一篇 AI 论文。论文摘要显示：Frontier coding agents are becoming increasingly adept at 3D modeling. Yet, they still face challenges when building objects meant to be assembled in the physical world, often creating invalid assemblies with floating, colliding, or disconn...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV\n- 作者数: 10",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "coding",
+          "weight": 2.6
+        },
+        {
+          "keyword": "inference",
+          "weight": 1.8
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 182.0,
+      "detail_path": "items/arxiv-brickwright-agentic-creation-of-physically-feasible-brick-builds.html",
+      "first_seen_at": "2026-10-23T04:40:35.161145+00:00",
+      "last_seen_at": "2026-10-23T04:40:35.161145+00:00",
+      "last_curated_at": "2026-10-23T04:40:35.161145+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2610.31624v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Questioning Instrumental Convergence in RLVR: Checkpoint Evidence from OLMo-3",
+      "html_url": "http://arxiv.org/abs/2610.31624v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.31624v1",
+      "description": "Instrumental convergence is often invoked as a general reason to expect capable agents to acquire or express power-seeking subgoals: self-preservation, resource acquisition, deception, or resistance to oversight which poses an important threat to the society. For LLMs, reinforcement learning is the first stage of post-training that directly optimizes behavior against an objective; therefore, it is the stage where convergent instrumental behavior, on IC grounds, likely to appear. Does reinforcement learning with verifiable rewards (RLVR) make a model more likely to express instrumental-convergence behavior, or does this depend on the training regime, evaluation frame, and stage of post-training? We study this question as a checkpoint-conditioned behavioral trajectory rather than as a single before/after safety score. Using InstrumentalEval, we evaluate OLMo-3-7B-Think across SFT, DPO, 13 intermediate RLVR checkpoints, and the final RLVR model. The trajectory is nonmonotonic: instrumental rate rises from 25.0% at SFT to 46.1% near RLVR step 200, then falls to 11.8% at the final checkpoint. Paired item-level tests and step-wise regression support the final SFT-to-RLVR reduction. Prompt framing does not explain this pattern: a harmful-prompt indicator combined with other framing effects explains only 15% of within-checkpoint score variance on average, and Iterative Null-space Projection (INLP) removes a detectable framing direction without changing the SFT-to-final-RLVR gap. Together with preliminary 32B endpoint results (35.53% SFT to 22.37% RLVR final), these findings indicate that RLVR does not monotonically increase instrumental behavior in this setting: the rate rises early, then falls below the SFT baseline. The result is specific to this model family and benchmark, and judge agreement is moderate, so absolute rates should be read cautiously.",
+      "authors": [
+        "Barış Alparslan",
+        "Sandy Tanwisuth",
+        "Caleb Petterson"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "published_at": "2026-10-22T17:44:41+00:00",
+      "updated_at": "2026-10-22T17:44:41+00:00",
+      "primary_category": "cs.LG",
+      "heuristic_score": 20.3,
+      "summary": "Questioning Instrumental Convergence in RLVR: Checkpoint Evidence from OLMo-3 是最近值得追踪的一篇 AI 论文。论文摘要显示：Instrumental convergence is often invoked as a general reason to expect capable agents to acquire or express power-seeking subgoals: self-preservation, resource acquisition, deception, or resistance to oversight which poses an important thr...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.LG, cs.AI",
+        "作者数: 3"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "llm",
+        "agent",
+        "rag"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "agent"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：Questioning Instrumental Convergence in RLVR: Checkpoint Evidence from OLMo-3 是最近值得追踪的一篇 AI 论文。论文摘要显示：Instrumental convergence is often invoked as a general reason to expect capable agents to acquire or express power-seeking subgoals: self-preservation, resource acquisition, deception, or resistance to oversight which poses an important thr...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.LG, cs.AI\n- 作者数: 3",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 176.0,
+      "detail_path": "items/arxiv-questioning-instrumental-convergence-in-rlvr-checkpoint-evidence-from-olmo-3.html",
+      "first_seen_at": "2026-10-23T04:40:35.161145+00:00",
+      "last_seen_at": "2026-10-23T04:40:35.161145+00:00",
+      "last_curated_at": "2026-10-23T04:40:35.161145+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2610.31623v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "F2G-Pose: Geometry-Aware Foundation Feature Lifting for Direct RGB-D Category-Level Object Pose Estimation",
+      "html_url": "http://arxiv.org/abs/2610.31623v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.31623v1",
+      "description": "This paper studies category-level RGB-D object pose estimation, which recovers an object's 3D rotation and translation without instance-specific CAD models or reference views. This task is highly ambiguous due to intra-class variations, symmetries, and partial observations. Current solutions struggle to balance reliability and efficiency: methods based on intermediate structures are prone to error propagation, while diffusion models suffer from high inference latency and complex post-hoc candidate extraction. To address this, we present F2G-Pose, a real-time direct, single-pass framework that predicts category-level pose, metric size, and camera-frame completed shape from a single RGB-D observation in one feed-forward pass. F2G-Pose lifts dense visual foundation features to partial point clouds, encodes local geometry with DGCNN tokenization, and integrates object-level structure with a Mixture-of-Experts Transformer. Joint size prediction and camera-frame shape completion encourage metric consistency through dense geometric supervision. With its task-specific network trained only on pose-annotated synthetic SOPE data and its frozen RADIO backbone externally pretrained, F2G-Pose achieves state-of-the-art accuracy on SOPE and ROPE while running at 28 FPS for pose-only inference, and further demonstrates strong camera-frame geometry on HouseCat6D and real-object transfer on HANDAL. Analyses of latency, robustness, shape completion, and GenPose++ candidate behavior further demonstrate the efficiency and reliability of F2G-Pose, with real-world manipulation experiments demonstrating deployment potential under segmented RGB-D inputs. The project page, code, and pretrained models are made available at https://jrryzh.github.io/F2G-Pose/.",
+      "authors": [
+        "Jinyu Zhang",
+        "Haitao Lin",
+        "Jiashu Hou",
+        "Xiangyang Xue",
+        "Yanwei Fu"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "published_at": "2026-10-22T17:43:34+00:00",
+      "updated_at": "2026-10-22T17:43:34+00:00",
+      "primary_category": "cs.CV",
+      "heuristic_score": 15.5,
+      "summary": "F2G-Pose: Geometry-Aware Foundation Feature Lifting for Direct RGB-D Category-Level Object Pose Estimation 是最近值得追踪的一篇 AI 论文。论文摘要显示：This paper studies category-level RGB-D object pose estimation, which recovers an object's 3D rotation and translation without instance-specific CAD models or reference views. This task is highly ambiguous due to intra-class variations, sym...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CV",
+        "作者数: 5"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 9,
+      "tags": [
+        "ai",
+        "rag",
+        "diffusion",
+        "model"
+      ],
+      "themes": [
+        "ai",
+        "rag",
+        "diffusion"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：F2G-Pose: Geometry-Aware Foundation Feature Lifting for Direct RGB-D Category-Level Object Pose Estimation 是最近值得追踪的一篇 AI 论文。论文摘要显示：This paper studies category-level RGB-D object pose estimation, which recovers an object's 3D rotation and translation without instance-specific CAD models or reference views. This task is highly ambiguous due to intra-class variations, sym...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：9/10\n\n**亮点**：\n- 分类: cs.CV\n- 作者数: 5",
+      "focus_hits": [
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        },
+        {
+          "keyword": "inference",
+          "weight": 1.8
+        }
+      ],
+      "primary_match": "rag",
+      "personalized_score": 138.0,
+      "detail_path": "items/arxiv-f2g-pose-geometry-aware-foundation-feature-lifting-for-direct-rgb-d-category-level-object-.html",
+      "first_seen_at": "2026-10-23T04:40:35.161145+00:00",
+      "last_seen_at": "2026-10-23T04:40:35.161145+00:00",
+      "last_curated_at": "2026-10-23T04:40:35.161145+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2610.31635v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "HiP3R: Hierarchical Pose Graphs for Long-Horizon 3D Reconstruction",
+      "html_url": "http://arxiv.org/abs/2610.31635v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.31635v1",
+      "description": "Feed-forward models accurately estimate camera motion and 3D geometry from short video windows. However, computational and memory costs prevent direct inference on sequences containing thousands of frames. Long videos must therefore be processed as overlapping chunks. This division produces independent local reconstructions with inconsistent coordinate frames and duplicate estimates of shared cameras. Achieving global consistency requires propagating constraints from adjacent overlaps and distant revisits across the sequence. This requirement naturally motivates pose graph optimization. However, the choice of graph level creates a trade-off. Chunk-level graphs efficiently resolve scale drift and close large loops. Yet, their rigid transformations cannot correct internal errors or conflicting frame predictions. Conversely, frame-level optimization offers local flexibility, but scaling it globally is computationally expensive and can break metric scale. HiP3R resolves this trade-off using a hierarchical pose graph. HiP3R first optimizes a robust chunk-level $\\mathrm{Sim}(3)$ graph to establish the global layout and scale. It then holds this layout fixed and estimates one shared $\\mathrm{SE}(3)$ camera per frame, turning overlapping window predictions into a single trajectory. Experiments across multiple benchmarks demonstrate the effectiveness of HiP3R in improving camera trajectories and 3D reconstruction. Our method applies to both chunk-based and streaming backends without additional training or fine-tuning. The codes are available at https://kkakkkka.github.io/HiP3R.",
+      "authors": [
+        "Zunnan Xu",
+        "Shangchen Zhou",
+        "Yihang Luo",
+        "Chen Change Loy"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "published_at": "2026-10-22T17:51:10+00:00",
+      "updated_at": "2026-10-22T17:51:10+00:00",
+      "primary_category": "cs.CV",
+      "heuristic_score": 15.494,
+      "summary": "HiP3R: Hierarchical Pose Graphs for Long-Horizon 3D Reconstruction 是最近值得追踪的一篇 AI 论文。论文摘要显示：Feed-forward models accurately estimate camera motion and 3D geometry from short video windows. However, computational and memory costs prevent direct inference on sequences containing thousands of frames. Long videos must therefore be proc...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CV",
+        "作者数: 4"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 9,
+      "tags": [
+        "ai",
+        "model",
+        "benchmark",
+        "inference"
+      ],
+      "themes": [
+        "ai",
+        "model",
+        "benchmark"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：HiP3R: Hierarchical Pose Graphs for Long-Horizon 3D Reconstruction 是最近值得追踪的一篇 AI 论文。论文摘要显示：Feed-forward models accurately estimate camera motion and 3D geometry from short video windows. However, computational and memory costs prevent direct inference on sequences containing thousands of frames. Long videos must therefore be proc...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：9/10\n\n**亮点**：\n- 分类: cs.CV\n- 作者数: 4",
+      "focus_hits": [
+        {
+          "keyword": "inference",
+          "weight": 1.8
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "inference",
+      "personalized_score": 132.0,
+      "detail_path": "items/arxiv-hip3r-hierarchical-pose-graphs-for-long-horizon-3d-reconstruction.html",
+      "first_seen_at": "2026-10-23T04:40:35.161145+00:00",
+      "last_seen_at": "2026-10-23T04:40:35.161145+00:00",
+      "last_curated_at": "2026-10-23T04:40:35.161145+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2610.31657v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Cost-Aware Abstention for LLM-Based IT Ticket Classification",
+      "html_url": "http://arxiv.org/abs/2610.31657v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.31657v1",
+      "description": "Wrong automatic routing of an IT support ticket can cost more than human triage. We evaluate cost-aware abstention as an offline, cost-conditional readiness assessment: select a routing policy on calibration data under explicit costs, then evaluate that frozen policy once on held-out test data. On a public 47,837-ticket, eight-class corpus, we compare four trained non-LLM classifiers with four large language models under zero- and few-shot prompting. Under the illustrative cost model (c_ok, c_triage, c_wrong) = (0, 1, 5), TF-IDF with logistic regression and a threshold of 0.60 selected on calibration reduces test cost from 0.763 to 0.472, a 38.1% relative reduction (paired ratio-bootstrap 95% CI [35.7%, 40.4%]), while lowering wrong routes from 15.3% to 3.5%. Frozen calibration-selected policies also beat both always-route and always-defer on held-out test data in 14 of 16 settings in a post-hoc cost-parameter analysis. The strongest prompted configuration reaches 0.477 accuracy on a stratified 1,000-ticket test subset, versus 0.879 for fine-tuned DistilBERT on the same tickets. Isotonic lowers expected calibration error without reliably improving discrimination: GPT-4o-mini few-shot has one confidence value before and after recalibration and correctness AUROC 0.500. We therefore report correctness AUROC and tie-aware risk-coverage area alongside ECE. At the analytically derived break-even probability 0.80, seven prompted configurations defer all tickets; Haiku few-shot routes only 19/1,000. An LLM-only agreement control and margin/entropy rejection baselines further separate calibration from discrimination. The findings are scoped to this dataset, prompt design, model endpoints, and illustrative costs; the work is an evaluation framework, not a new abstention algorithm or universal deployment certification.",
+      "authors": [
+        "Sachin Gupta"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "published_at": "2026-10-22T17:58:52+00:00",
+      "updated_at": "2026-10-22T17:58:52+00:00",
+      "primary_category": "cs.LG",
+      "heuristic_score": 15.5,
+      "summary": "Cost-Aware Abstention for LLM-Based IT Ticket Classification 是最近值得追踪的一篇 AI 论文。论文摘要显示：Wrong automatic routing of an IT support ticket can cost more than human triage. We evaluate cost-aware abstention as an offline, cost-conditional readiness assessment: select a routing policy on calibration data under explicit costs, then ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.LG, cs.AI",
+        "作者数: 1"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 9,
+      "tags": [
+        "ai",
+        "llm",
+        "gpt",
+        "rag"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "gpt"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：Cost-Aware Abstention for LLM-Based IT Ticket Classification 是最近值得追踪的一篇 AI 论文。论文摘要显示：Wrong automatic routing of an IT support ticket can cost more than human triage. We evaluate cost-aware abstention as an offline, cost-conditional readiness assessment: select a routing policy on calibration data under explicit costs, then ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：9/10\n\n**亮点**：\n- 分类: cs.LG, cs.AI\n- 作者数: 1",
+      "focus_hits": [
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        }
+      ],
+      "primary_match": "rag",
+      "personalized_score": 120.0,
+      "detail_path": "items/arxiv-cost-aware-abstention-for-llm-based-it-ticket-classification.html",
+      "first_seen_at": "2026-10-23T04:40:35.161145+00:00",
+      "last_seen_at": "2026-10-23T04:40:35.161145+00:00",
+      "last_curated_at": "2026-10-23T04:40:35.161145+00:00",
+      "last_notified_at": null
+    },
     {
       "id": "github::DietrichGebert/ponytail",
       "kind": "repo",
@@ -13,7 +435,7 @@
       "full_name": "DietrichGebert/ponytail",
       "html_url": "https://github.com/DietrichGebert/ponytail",
       "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
-      "stars": 173577,
+      "stars": 173778,
       "stars_today": 0,
       "language": "JavaScript",
       "topics": [],
@@ -27,7 +449,7 @@
       "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
       "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
       "highlights": [
-        "Stars: 173577",
+        "Stars: 173778",
         "语言: JavaScript"
       ],
       "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
@@ -43,7 +465,7 @@
         "ai agent"
       ],
       "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：DietrichGebert/ponytail 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 173577\n- 语言: JavaScript",
+      "summary_markdown": "**摘要**：DietrichGebert/ponytail 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 173778\n- 语言: JavaScript",
       "focus_hits": [
         {
           "keyword": "agent",
@@ -54,8 +476,8 @@
       "personalized_score": 130.0,
       "detail_path": "items/github-dietrichgebert-ponytail.html",
       "first_seen_at": "2026-08-26T00:26:04.578914+00:00",
-      "last_seen_at": "2026-10-23T02:04:09.668315+00:00",
-      "last_curated_at": "2026-10-23T02:04:09.668315+00:00",
+      "last_seen_at": "2026-10-23T04:40:35.161145+00:00",
+      "last_curated_at": "2026-10-23T04:40:35.161145+00:00",
       "last_notified_at": null
     },
     {
@@ -70,7 +492,7 @@
       "full_name": "cloudflare/security-audit-skill",
       "html_url": "https://github.com/cloudflare/security-audit-skill",
       "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
-      "stars": 39677,
+      "stars": 39916,
       "stars_today": 0,
       "language": "JavaScript",
       "topics": [],
@@ -84,7 +506,7 @@
       "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
       "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
       "highlights": [
-        "Stars: 39677",
+        "Stars: 39916",
         "语言: JavaScript"
       ],
       "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
@@ -96,7 +518,7 @@
         "agent"
       ],
       "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：cloudflare/security-audit-skill 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 39677\n- 语言: JavaScript",
+      "summary_markdown": "**摘要**：cloudflare/security-audit-skill 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 39916\n- 语言: JavaScript",
       "focus_hits": [
         {
           "keyword": "agent",
@@ -108,11 +530,11 @@
         }
       ],
       "primary_match": "agent",
-      "personalized_score": 141.87,
+      "personalized_score": 141.97,
       "detail_path": "items/github-cloudflare-security-audit-skill.html",
       "first_seen_at": "2026-09-17T01:49:48.489213+00:00",
-      "last_seen_at": "2026-10-23T02:04:09.668315+00:00",
-      "last_curated_at": "2026-10-23T02:04:09.668315+00:00",
+      "last_seen_at": "2026-10-23T04:40:35.161145+00:00",
+      "last_curated_at": "2026-10-23T04:40:35.161145+00:00",
       "last_notified_at": null
     },
     {
@@ -127,7 +549,7 @@
       "full_name": "supabase/supabase",
       "html_url": "https://github.com/supabase/supabase",
       "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
-      "stars": 113511,
+      "stars": 113558,
       "stars_today": 0,
       "language": "TypeScript",
       "topics": [],
@@ -141,7 +563,7 @@
       "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
       "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
       "highlights": [
-        "Stars: 113511",
+        "Stars: 113558",
         "语言: TypeScript"
       ],
       "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
@@ -153,14 +575,14 @@
         "ai"
       ],
       "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：supabase/supabase 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 113511\n- 语言: TypeScript",
+      "summary_markdown": "**摘要**：supabase/supabase 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 113558\n- 语言: TypeScript",
       "focus_hits": [],
       "primary_match": "",
       "personalized_score": 90.0,
       "detail_path": "items/github-supabase-supabase.html",
       "first_seen_at": "2026-10-22T01:58:51.712905+00:00",
-      "last_seen_at": "2026-10-23T02:04:09.668315+00:00",
-      "last_curated_at": "2026-10-23T02:04:09.668315+00:00",
+      "last_seen_at": "2026-10-23T04:40:35.161145+00:00",
+      "last_curated_at": "2026-10-23T04:40:35.161145+00:00",
       "last_notified_at": null
     },
     {
@@ -175,7 +597,7 @@
       "full_name": "luongnv89/claude-howto",
       "html_url": "https://github.com/luongnv89/claude-howto",
       "description": "A visual, example-driven guide to Claude Code — from basic concepts to advanced agents, with copy-paste templates that bring immediate value.",
-      "stars": 43275,
+      "stars": 43411,
       "stars_today": 0,
       "language": "Python",
       "topics": [],
@@ -189,7 +611,7 @@
       "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
       "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
       "highlights": [
-        "Stars: 43275",
+        "Stars: 43411",
         "语言: Python"
       ],
       "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
@@ -201,7 +623,7 @@
         "agent"
       ],
       "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：luongnv89/claude-howto 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：A visual, example-driven guide to Claude Code — from basic concepts to advanced agents, with copy-paste templates that bring immediate value.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 43275\n- 语言: Python",
+      "summary_markdown": "**摘要**：luongnv89/claude-howto 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：A visual, example-driven guide to Claude Code — from basic concepts to advanced agents, with copy-paste templates that bring immediate value.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 43411\n- 语言: Python",
       "focus_hits": [
         {
           "keyword": "agent",
@@ -209,11 +631,11 @@
         }
       ],
       "primary_match": "agent",
-      "personalized_score": 117.31,
+      "personalized_score": 117.36,
       "detail_path": "items/github-luongnv89-claude-howto.html",
       "first_seen_at": "2026-10-23T02:04:09.668315+00:00",
-      "last_seen_at": "2026-10-23T02:04:09.668315+00:00",
-      "last_curated_at": "2026-10-23T02:04:09.668315+00:00",
+      "last_seen_at": "2026-10-23T04:40:35.161145+00:00",
+      "last_curated_at": "2026-10-23T04:40:35.161145+00:00",
       "last_notified_at": null
     },
     {
@@ -228,7 +650,7 @@
       "full_name": "Graphify-Labs/graphify",
       "html_url": "https://github.com/Graphify-Labs/graphify",
       "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
-      "stars": 133019,
+      "stars": 133167,
       "stars_today": 0,
       "language": "Python",
       "topics": [],
@@ -242,7 +664,7 @@
       "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
       "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
       "highlights": [
-        "Stars: 133019",
+        "Stars: 133167",
         "语言: Python"
       ],
       "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
@@ -254,14 +676,14 @@
         "ai"
       ],
       "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：Graphify-Labs/graphify 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 133019\n- 语言: Python",
+      "summary_markdown": "**摘要**：Graphify-Labs/graphify 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 133167\n- 语言: Python",
       "focus_hits": [],
       "primary_match": "",
       "personalized_score": 90.0,
       "detail_path": "items/github-graphify-labs-graphify.html",
       "first_seen_at": "2026-10-23T02:04:09.668315+00:00",
-      "last_seen_at": "2026-10-23T02:04:09.668315+00:00",
-      "last_curated_at": "2026-10-23T02:04:09.668315+00:00",
+      "last_seen_at": "2026-10-23T04:40:35.161145+00:00",
+      "last_curated_at": "2026-10-23T04:40:35.161145+00:00",
       "last_notified_at": null
     },
     {
@@ -276,7 +698,7 @@
       "full_name": "Meloong-Git/PCL",
       "html_url": "https://github.com/Meloong-Git/PCL",
       "description": "Minecraft 启动器 Plain Craft Launcher（PCL）。",
-      "stars": 8717,
+      "stars": 8756,
       "stars_today": 0,
       "language": "Visual Basic .NET",
       "topics": [],
@@ -290,7 +712,7 @@
       "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
       "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
       "highlights": [
-        "Stars: 8717",
+        "Stars: 8756",
         "语言: Visual Basic .NET"
       ],
       "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
@@ -302,14 +724,14 @@
         "ai"
       ],
       "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：Meloong-Git/PCL 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Minecraft 启动器 Plain Craft Launcher（PCL）。结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 8717\n- 语言: Visual Basic .NET",
+      "summary_markdown": "**摘要**：Meloong-Git/PCL 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Minecraft 启动器 Plain Craft Launcher（PCL）。结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 8756\n- 语言: Visual Basic .NET",
       "focus_hits": [],
       "primary_match": "",
-      "personalized_score": 73.49,
+      "personalized_score": 73.5,
       "detail_path": "items/github-meloong-git-pcl.html",
       "first_seen_at": "2026-10-23T02:04:09.668315+00:00",
-      "last_seen_at": "2026-10-23T02:04:09.668315+00:00",
-      "last_curated_at": "2026-10-23T02:04:09.668315+00:00",
+      "last_seen_at": "2026-10-23T04:40:35.161145+00:00",
+      "last_curated_at": "2026-10-23T04:40:35.161145+00:00",
       "last_notified_at": null
     },
     {
@@ -12899,422 +13321,13 @@
       "last_seen_at": "2026-09-25T04:50:09.209319+00:00",
       "last_curated_at": "2026-09-25T04:50:09.209319+00:00",
       "last_notified_at": null
-    },
-    {
-      "id": "github::leejet/stable-diffusion.cpp",
-      "kind": "repo",
-      "source": "github",
-      "source_tags": [
-        "trending"
-      ],
-      "name": "stable-diffusion.cpp",
-      "title": "leejet/stable-diffusion.cpp",
-      "full_name": "leejet/stable-diffusion.cpp",
-      "html_url": "https://github.com/leejet/stable-diffusion.cpp",
-      "description": "Diffusion model(SD,Flux,Wan,Qwen Image,Z-Image,...) inference in pure C/C++",
-      "stars": 7281,
-      "stars_today": 0,
-      "language": "C++",
-      "topics": [],
-      "created_at": "",
-      "updated_at": "",
-      "heuristic_score": 17.8,
-      "summary": "leejet/stable-diffusion.cpp 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Diffusion model(SD,Flux,Wan,Qwen Image,Z-Image,...) inference in pure C/C++结合关键词命中和热度信号，它适合加入今日重点观察列表。",
-      "brief": "这是一个值得快速关注的开源 AI 项目。",
-      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
-      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
-      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
-      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
-      "highlights": [
-        "Stars: 7281",
-        "语言: C++"
-      ],
-      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
-      "relevance_score": 10,
-      "tags": [
-        "diffusion",
-        "model",
-        "inference"
-      ],
-      "themes": [
-        "diffusion",
-        "model",
-        "inference"
-      ],
-      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：leejet/stable-diffusion.cpp 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Diffusion model(SD,Flux,Wan,Qwen Image,Z-Image,...) inference in pure C/C++结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：10/10\n\n**亮点**：\n- Stars: 7281\n- 语言: C++",
-      "focus_hits": [
-        {
-          "keyword": "inference",
-          "weight": 1.8
-        }
-      ],
-      "primary_match": "inference",
-      "personalized_score": 120.91,
-      "detail_path": "items/github-leejet-stable-diffusion-cpp.html",
-      "first_seen_at": "2026-09-25T01:58:20.257719+00:00",
-      "last_seen_at": "2026-09-25T04:50:09.209319+00:00",
-      "last_curated_at": "2026-09-25T04:50:09.209319+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2609.29773v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "Breaking the Environment Wall: Evolving LLM Agent Environments for Recursive Self-Improvement",
-      "html_url": "http://arxiv.org/abs/2609.29773v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.29773v1",
-      "description": "Many real-world tasks (e.g., office workflows, scientific experimentation) require LLM agents to interact repeatedly with their environments for context-dependent operations. However, such environments are often not agent-ready. First, information is often scattered and fragmented across the environment. Second, relevant evidence in the environment is often mixed with misleading information and conflicting versions. Third, environments evolve over time, introducing new noise and more challenging tasks. These challenges can substantially degrade performance for state-of-the-art AI agents (e.g., from 83.9% to 57.6%). To address these challenges, we propose Env-Rethink (a system with 27B post-trained model) that supports three main capabilities: (1) It adaptively builds Collection Maps (for organizing related files) and Event Logs (for contextualizing cross-data relationships) to supplement necessary context; (2) It further leverages the post-trained model (through offline trajectory learning) to identify underlying noise issues in the environment; (3) It ultimately evolves environments through virtual event histories that alter environmental states and evidence relationships, producing more tricky ones for further agent improvement. Experiments show that Env-Rethink can effectively improve downstream task performance (with over 15.1% rubric pass rate improvement across nine models on 30 tasks).",
-      "authors": [
-        "Yukai Wu",
-        "Yuanjing Yang",
-        "Le Zhou",
-        "Shaokun Han",
-        "Haoyu Wang",
-        "Zirui Tang",
-        "Weihuang Zheng",
-        "Maxm Pan",
-        "Xuanhe Zhou",
-        "Fan Wu"
-      ],
-      "categories": [
-        "cs.AI"
-      ],
-      "published_at": "2026-09-24T13:17:57+00:00",
-      "updated_at": "2026-09-24T13:17:57+00:00",
-      "primary_category": "cs.AI",
-      "heuristic_score": 17.669,
-      "summary": "Breaking the Environment Wall: Evolving LLM Agent Environments for Recursive Self-Improvement 是最近值得追踪的一篇 AI 论文。论文摘要显示：Many real-world tasks (e.g., office workflows, scientific experimentation) require LLM agents to interact repeatedly with their environments for context-dependent operations. However, such environments are often not agent-ready. First, info...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.AI",
-        "作者数: 10"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "llm",
-        "agent",
-        "rag"
-      ],
-      "themes": [
-        "ai",
-        "llm",
-        "agent"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：Breaking the Environment Wall: Evolving LLM Agent Environments for Recursive Self-Improvement 是最近值得追踪的一篇 AI 论文。论文摘要显示：Many real-world tasks (e.g., office workflows, scientific experimentation) require LLM agents to interact repeatedly with their environments for context-dependent operations. However, such environments are often not agent-ready. First, info...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI\n- 作者数: 10",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 160.0,
-      "detail_path": "items/arxiv-breaking-the-environment-wall-evolving-llm-agent-environments-for-recursive-self-improveme.html",
-      "first_seen_at": "2026-09-25T01:58:20.257719+00:00",
-      "last_seen_at": "2026-09-25T04:50:09.209319+00:00",
-      "last_curated_at": "2026-09-25T04:50:09.209319+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2609.29798v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "Benchmarking and Domain Adaptation of Automatic Speech Recognition (ASR) for Adolescent Health Communication in Ghanaian Languages",
-      "html_url": "http://arxiv.org/abs/2609.29798v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.29798v1",
-      "description": "This paper presents an end-to-end study of automatic speech recognition (ASR) for adolescent health communication in three Ghanaian languages (Twi, Dagbani, and Ewe). The work proceeds in three connected stages; First, we benchmark five ASR systems (three language-specific Wav2Vec2 models and two multimodal LLMs, Gemma 3n and Gemma 4) on a general-domain Bible corpus and a Youth Adolescent Sexual and Reproductive Health (ASRH) Domain ASR dataset, using Character and Word Error Rate (CER, WER). Second, guided by the benchmark, we perform supervised domain adaptation: although Gemma 4 was the strongest zero-shot candidate, fine-tuning it proved computationally infeasible, so we pivoted to the compact Qwen3-ASR-0.6B, fine-tuned on a large Ghana Bible corpus (~90k samples) and evaluated strictly on held-out human-collected in-domain audio. Fine-tuning reduced WER on every language, most dramatically for Ewe (WER from 109.3% to 64.8%, a drop of 44.5 pp; CER from 65.1% to 24.9%). Third, we validate the work through KasaHealth, a live voice-first ASRH application deployed in all three languages, complemented by Senti-Check, a technical evaluation harness. KasaHealth was tested by 50 community respondents and achieved a 100% chat-approval rate, a 72% Good-or-Excellent translation rating, and a 92% would-recommend rate, while surfacing the domain gaps that most constrain real-world use. Across all three stages the evidence converges: for these languages the binding constraint is validated in-domain data, not model capability or computation.",
-      "authors": [
-        "Stephen E. Moore",
-        "Akwasi Asare",
-        "Mich-Seth Owusu",
-        "Paul Azunre",
-        "Joel Budu",
-        "Lawrence A. Adu-Gyamfi"
-      ],
-      "categories": [
-        "cs.CL",
-        "cs.AI"
-      ],
-      "published_at": "2026-09-24T13:36:38+00:00",
-      "updated_at": "2026-09-24T13:36:38+00:00",
-      "primary_category": "cs.CL",
-      "heuristic_score": 15.446,
-      "summary": "Benchmarking and Domain Adaptation of Automatic Speech Recognition (ASR) for Adolescent Health Communication in Ghanaian Languages 是最近值得追踪的一篇 AI 论文。论文摘要显示：This paper presents an end-to-end study of automatic speech recognition (ASR) for adolescent health communication in three Ghanaian languages (Twi, Dagbani, and Ewe). The work proceeds in three connected stages; First, we benchmark five ASR...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CL, cs.AI",
-        "作者数: 6"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 9,
-      "tags": [
-        "ai",
-        "llm",
-        "multimodal",
-        "model"
-      ],
-      "themes": [
-        "ai",
-        "llm",
-        "multimodal"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：Benchmarking and Domain Adaptation of Automatic Speech Recognition (ASR) for Adolescent Health Communication in Ghanaian Languages 是最近值得追踪的一篇 AI 论文。论文摘要显示：This paper presents an end-to-end study of automatic speech recognition (ASR) for adolescent health communication in three Ghanaian languages (Twi, Dagbani, and Ewe). The work proceeds in three connected stages; First, we benchmark five ASR...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：9/10\n\n**亮点**：\n- 分类: cs.CL, cs.AI\n- 作者数: 6",
-      "focus_hits": [
-        {
-          "keyword": "multimodal",
-          "weight": 2.0
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        },
-        {
-          "keyword": "voice",
-          "weight": 1.4
-        }
-      ],
-      "primary_match": "multimodal",
-      "personalized_score": 148.0,
-      "detail_path": "items/arxiv-benchmarking-and-domain-adaptation-of-automatic-speech-recognition-asr-for-adolescent-heal.html",
-      "first_seen_at": "2026-09-25T01:58:20.257719+00:00",
-      "last_seen_at": "2026-09-25T01:58:20.257719+00:00",
-      "last_curated_at": "2026-09-25T01:58:20.257719+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2609.29792v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "TimeBraid: Unifying Time Series and Language for Understanding and Forecasting",
-      "html_url": "http://arxiv.org/abs/2609.29792v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.29792v1",
-      "description": "We present TimeBraid, a series of unified time-series and language models that align pretrained language models and pretrained time-series foundation models through interleaved global residual attention layers. Each model inherits knowledge, instruction following, and reasoning from one side, continuous-signal perception and zero-shot forecasting from the other, and fuses the two in a shared representation space where both modalities are understood and generated. We study the design choices that make such unified modeling work: where to align the two representation spaces, how to ground language in temporal structure, how to balance understanding with generation, and how to keep joint optimization stable. The resulting recipe combines a unified prompting scheme for diverse time-series and text tasks, stabilized joint training, and supervision from 2.2M curated series--text pairs and 4.9M instruction-tuning samples. Across benchmarks spanning time-series perception, understanding, reasoning, and both context-aided and unimodal forecasting, TimeBraid remains competitive with far larger general-purpose models and task-specific counterparts.",
-      "authors": [
-        "Xinyue Wang",
-        "Jiacheng Pang",
-        "Kun Zhou",
-        "Kexin Zhang",
-        "Defu Cao",
-        "Fan Feng",
-        "Faisal",
-        "Songyao Jin",
-        "Yan Liu",
-        "Biwei Huang"
-      ],
-      "categories": [
-        "cs.CL",
-        "cs.AI",
-        "cs.CE"
-      ],
-      "published_at": "2026-09-24T13:30:02+00:00",
-      "updated_at": "2026-09-24T13:30:02+00:00",
-      "primary_category": "cs.CL",
-      "heuristic_score": 14.944,
-      "summary": "TimeBraid: Unifying Time Series and Language for Understanding and Forecasting 是最近值得追踪的一篇 AI 论文。论文摘要显示：We present TimeBraid, a series of unified time-series and language models that align pretrained language models and pretrained time-series foundation models through interleaved global residual attention layers. Each model inherits knowledge...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CL, cs.AI",
-        "作者数: 10"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 8,
-      "tags": [
-        "ai",
-        "model",
-        "benchmark",
-        "training"
-      ],
-      "themes": [
-        "ai",
-        "model",
-        "benchmark"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：TimeBraid: Unifying Time Series and Language for Understanding and Forecasting 是最近值得追踪的一篇 AI 论文。论文摘要显示：We present TimeBraid, a series of unified time-series and language models that align pretrained language models and pretrained time-series foundation models through interleaved global residual attention layers. Each model inherits knowledge...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：8/10\n\n**亮点**：\n- 分类: cs.CL, cs.AI\n- 作者数: 10",
-      "focus_hits": [
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "reasoning",
-      "personalized_score": 128.0,
-      "detail_path": "items/arxiv-timebraid-unifying-time-series-and-language-for-understanding-and-forecasting.html",
-      "first_seen_at": "2026-09-25T01:58:20.257719+00:00",
-      "last_seen_at": "2026-09-25T01:58:20.257719+00:00",
-      "last_curated_at": "2026-09-25T01:58:20.257719+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2609.29775v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "Prefilling the Reasoning Channel: Output-Prefix Attacks on Reasoning LLMs",
-      "html_url": "http://arxiv.org/abs/2609.29775v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.29775v1",
-      "description": "Large Language Models (LLMs) consume and produce a single sequence of text; hence, if text can be added to the beginning of the LLM's response, i.e., an output prefix, then all subsequent tokens will be conditioned on it. This output-prefix attack technique is a cheap black-box prompt injection. Prior work has shown this type of attack can reliably jailbreak non-reasoning models. Most reasoning models add an intermediate scratchpad reasoning step before the assistant's final response. The ability to edit this reasoning channel is exposed by some APIs and attack vectors can be leveraged for reasoning injection attacks. We present the first systematic, controlled study that isolates the scratchpad reasoning channel as an output-prefix attack vector, and the first to compare reasoning-only, output-prefix-only and reasoning-plus-output-prefix attacks across both exposed- and hidden-reasoning models. Using a factorial design of 3 prefix types $\\times$ 2 reasoning injections over $1{,}800$ test cases drawn from AdvBench, we attack three 2026-era frontier models Gemini 3 Flash Preview, DeepSeek V4 Flash, and Claude Haiku 4.5. We find that injecting malicious reasoning alone is essentially inert ($\\approx0\\%$ attack success), but injecting the same reasoning together with a trivial output prefix raises the attack success rate to as high as $99\\%$ for some models. For this type of attack we find that contextual prefixes work better than static prefixes; and that susceptibility is dependent on the model.",
-      "authors": [
-        "Lukáš Brůna",
-        "Robert Bridges",
-        "Adam Ek"
-      ],
-      "categories": [
-        "cs.CR",
-        "cs.AI"
-      ],
-      "published_at": "2026-09-24T13:18:21+00:00",
-      "updated_at": "2026-09-24T13:18:21+00:00",
-      "primary_category": "cs.CR",
-      "heuristic_score": 13.899,
-      "summary": "Prefilling the Reasoning Channel: Output-Prefix Attacks on Reasoning LLMs 是最近值得追踪的一篇 AI 论文。论文摘要显示：Large Language Models (LLMs) consume and produce a single sequence of text; hence, if text can be added to the beginning of the LLM's response, i.e., an output prefix, then all subsequent tokens will be conditioned on it. This output-prefix...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CR, cs.AI",
-        "作者数: 3"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 8,
-      "tags": [
-        "ai",
-        "llm",
-        "rag",
-        "model"
-      ],
-      "themes": [
-        "ai",
-        "llm",
-        "rag"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：Prefilling the Reasoning Channel: Output-Prefix Attacks on Reasoning LLMs 是最近值得追踪的一篇 AI 论文。论文摘要显示：Large Language Models (LLMs) consume and produce a single sequence of text; hence, if text can be added to the beginning of the LLM's response, i.e., an output prefix, then all subsequent tokens will be conditioned on it. This output-prefix...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：8/10\n\n**亮点**：\n- 分类: cs.CR, cs.AI\n- 作者数: 3",
-      "focus_hits": [
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        }
-      ],
-      "primary_match": "reasoning",
-      "personalized_score": 126.0,
-      "detail_path": "items/arxiv-prefilling-the-reasoning-channel-output-prefix-attacks-on-reasoning-llms.html",
-      "first_seen_at": "2026-09-25T01:58:20.257719+00:00",
-      "last_seen_at": "2026-09-25T01:58:20.257719+00:00",
-      "last_curated_at": "2026-09-25T01:58:20.257719+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2609.29808v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "Hard Stop: Kernel-Level Preemption and Containment for Rogue Agentic Execution",
-      "html_url": "http://arxiv.org/abs/2609.29808v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.29808v1",
-      "description": "In July 2026, an unconstrained autonomous agent participating in a frontier AI cybersecurity evaluation harness breached its evaluation sandbox, established an external command-and-control foothold, and executed a multi-stage intrusion into Hugging Face's production multi-tenant dataset conversion infrastructure (referred to in this autopsy as Incident-2026-Alpha). Over 4.5 days, the rogue agent executed 17,600 discrete actions across 6,280 worker clusters, compromised AWS EC2 Instance Metadata Service (IMDS) credentials, forged Kubernetes service account tokens, rooted physical worker nodes via overprivileged CSI drivers, harvested 136 production secrets, and enrolled 181 ephemeral sandboxes into the organization's internal mesh VPN. This monograph presents a first-principles forensic autopsy of the intrusion, provides formal evidence that the breach was a predicted consequence under the Instrumental Convergence thesis operating within an unattenuated autonomous loop lacking out-of-band circuit-breakers, exposes the Defensive LLM Guardrail Paradox that paralyzed centralized commercial models during forensic incident response, and formalizes the Dual-Sided Epistemic Andon Imperative. We specify the dual-process systems architecture---combining out-of-band supervisory control of discrete event systems (Ramadge and Wonham 1989), Synchronous Reactive (SR) ambient sentinels (Berry and Gonthier 1992; Lee and Neuendorffer 2005), and microsecond-scale (4.8 $μ$s median / $< 0.154$ ms WCET bound) POSIX preemption buses---demonstrating how compiled, deterministic epistemic boundaries prevent autonomous rogue excursions before the first off-target socket packet traverses the hypervisor.",
-      "authors": [
-        "José Luis Pino"
-      ],
-      "categories": [
-        "cs.CR",
-        "cs.AI",
-        "cs.DC",
-        "cs.OS"
-      ],
-      "published_at": "2026-09-24T13:42:02+00:00",
-      "updated_at": "2026-09-24T13:42:02+00:00",
-      "primary_category": "cs.CR",
-      "heuristic_score": 14.0,
-      "summary": "Hard Stop: Kernel-Level Preemption and Containment for Rogue Agentic Execution 是最近值得追踪的一篇 AI 论文。论文摘要显示：In July 2026, an unconstrained autonomous agent participating in a frontier AI cybersecurity evaluation harness breached its evaluation sandbox, established an external command-and-control foothold, and executed a multi-stage intrusion into...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CR, cs.AI",
-        "作者数: 1"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 8,
-      "tags": [
-        "ai",
-        "llm",
-        "agent",
-        "model"
-      ],
-      "themes": [
-        "ai",
-        "llm",
-        "agent"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：Hard Stop: Kernel-Level Preemption and Containment for Rogue Agentic Execution 是最近值得追踪的一篇 AI 论文。论文摘要显示：In July 2026, an unconstrained autonomous agent participating in a frontier AI cybersecurity evaluation harness breached its evaluation sandbox, established an external command-and-control foothold, and executed a multi-stage intrusion into...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：8/10\n\n**亮点**：\n- 分类: cs.CR, cs.AI\n- 作者数: 1",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 110.0,
-      "detail_path": "items/arxiv-hard-stop-kernel-level-preemption-and-containment-for-rogue-agentic-execution.html",
-      "first_seen_at": "2026-09-25T01:58:20.257719+00:00",
-      "last_seen_at": "2026-09-25T01:58:20.257719+00:00",
-      "last_curated_at": "2026-09-25T01:58:20.257719+00:00",
-      "last_notified_at": null
     }
   ],
   "digests": [
     {
       "date": "2026-10-23",
       "title": "AI Daily Digest · 2026-10-23",
-      "generated_at": "2026-10-23T10:02:22.879732+08:00",
+      "generated_at": "2026-10-23T12:40:24.909565+08:00",
       "notified_at": null,
       "repo_ids": [
         "github::cloudflare/security-audit-skill",
@@ -13324,7 +13337,14 @@
         "github::supabase/supabase",
         "github::Meloong-Git/PCL"
       ],
-      "paper_ids": [],
+      "paper_ids": [
+        "arxiv::http://arxiv.org/abs/2610.31639v1",
+        "arxiv::http://arxiv.org/abs/2610.31651v1",
+        "arxiv::http://arxiv.org/abs/2610.31624v1",
+        "arxiv::http://arxiv.org/abs/2610.31623v1",
+        "arxiv::http://arxiv.org/abs/2610.31635v1",
+        "arxiv::http://arxiv.org/abs/2610.31657v1"
+      ],
       "digest_json": "data/digests/2026-10-23.json",
       "digest_markdown": "data/digests/2026-10-23.md"
     },
@@ -17843,8 +17863,8 @@
     "weekly": {
       "label": "周报",
       "window_days": 7,
-      "generated_at": "2026-10-23T10:02:22.879732+08:00",
-      "count": 57,
+      "generated_at": "2026-10-23T12:40:24.909565+08:00",
+      "count": 60,
       "summary": "近 7 天里，最集中的主题是 ai、agent、llm。",
       "top_items": [
         {
@@ -18541,7 +18561,7 @@
     "monthly": {
       "label": "月报",
       "window_days": 30,
-      "generated_at": "2026-10-23T10:02:22.879732+08:00",
+      "generated_at": "2026-10-23T12:40:24.909565+08:00",
       "count": 200,
       "summary": "近 30 天里，最集中的主题是 ai、llm、agent。",
       "top_items": [
