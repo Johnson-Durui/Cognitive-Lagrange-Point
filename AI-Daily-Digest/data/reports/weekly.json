@@ -1,9 +1,9 @@
 {
   "label": "周报",
   "window_days": 7,
-  "generated_at": "2026-10-24T10:01:32.196405+08:00",
-  "count": 63,
-  "summary": "近 7 天里，最集中的主题是 ai、agent、llm。",
+  "generated_at": "2026-10-24T12:28:50.218996+08:00",
+  "count": 55,
+  "summary": "近 7 天里，最集中的主题是 ai、llm、agent。",
   "top_items": [
     {
       "id": "arxiv::http://arxiv.org/abs/2610.26860v1",
@@ -184,90 +184,6 @@
       "first_seen_at": "2026-10-20T02:10:35.927546+00:00",
       "last_seen_at": "2026-10-20T04:41:31.753232+00:00",
       "last_curated_at": "2026-10-20T04:41:31.753232+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2610.22355v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "OmniVerifier-C1: Decomposed Graded Verifier for Rule-Governed Generative World Modeling",
-      "html_url": "http://arxiv.org/abs/2610.22355v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.22355v1",
-      "description": "Generative visual verifiers play a crucial role in advancing multimodal intelligence. To enhance the robustness of visual verifiers in complex multimodal scenarios involving compositional requirements, we move beyond conventional binary verifiers that produce only True/False discrete judgments and introduce a verifier that automatically decomposes complex prompts or environmental rules into fine-grained components and assigns pointwise scores to provide a continuous and more informative critique signal. Our experiments further demonstrate that these structured and interpretable outputs improve the verifier's generalization to out-of-domain multimodal critic tasks. To train this verifier, we introduce a Decoupled RL training strategy that jointly optimizes sub-question-level binary judgment and global alignment scoring, using precise local feedback to develop fine-grained verification capabilities that provide a foundation for reliable continuous scoring at the global level. Under a general reinforcement learning framework, we first empirically demonstrate that the proposed pointwise graded verifier significantly outperforms binary verifiers in traditional text-to-image scenarios. We then extend our investigation to rule-governed generative world modeling where generative models are leveraged for world simulation and world reasoning under explicit rules. From a theoretical standpoint, we further show that a pairwise verification paradigm yields more accurate critiques than the pointwise formulation when ground-truth images are available, with empirical results on diverse structured world-modeling tasks such as Maze and Sudoku further validating the effectiveness of our approach. Overall, our findings suggest a key insight: the transition from generative models to structured world-modeling agents critically hinges on the availability of accurate pairwise graded visual verifiers.",
-      "authors": [
-        "Bowei Liu",
-        "Xinchen Zhang",
-        "Xuhuan Li",
-        "Tianlin Zhang",
-        "Kaian Jiang",
-        "Jingwei Liu",
-        "Congyang Zhao",
-        "Yifei Qian",
-        "Junhong Liu",
-        "Zhiheng Li",
-        "Yujiu Yang",
-        "Yang Cai",
-        "Ling Yang"
-      ],
-      "categories": [
-        "cs.CL"
-      ],
-      "published_at": "2026-10-15T17:58:04+00:00",
-      "updated_at": "2026-10-15T17:58:04+00:00",
-      "primary_category": "cs.CL",
-      "heuristic_score": 20.3,
-      "summary": "OmniVerifier-C1: Decomposed Graded Verifier for Rule-Governed Generative World Modeling 是最近值得追踪的一篇 AI 论文。论文摘要显示：Generative visual verifiers play a crucial role in advancing multimodal intelligence. To enhance the robustness of visual verifiers in complex multimodal scenarios involving compositional requirements, we move beyond conventional binary ver...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CL",
-        "作者数: 13"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "agent",
-        "rag",
-        "multimodal"
-      ],
-      "themes": [
-        "ai",
-        "agent",
-        "rag"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：OmniVerifier-C1: Decomposed Graded Verifier for Rule-Governed Generative World Modeling 是最近值得追踪的一篇 AI 论文。论文摘要显示：Generative visual verifiers play a crucial role in advancing multimodal intelligence. To enhance the robustness of visual verifiers in complex multimodal scenarios involving compositional requirements, we move beyond conventional binary ver...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL\n- 作者数: 13",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "multimodal",
-          "weight": 2.0
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 204.0,
-      "detail_path": "items/arxiv-omniverifier-c1-decomposed-graded-verifier-for-rule-governed-generative-world-modeling.html",
-      "first_seen_at": "2026-10-16T04:24:07.717023+00:00",
-      "last_seen_at": "2026-10-17T04:18:08.266960+00:00",
-      "last_curated_at": "2026-10-17T04:18:08.266960+00:00",
       "last_notified_at": null
     },
     {
@@ -662,6 +578,84 @@
       "last_seen_at": "2026-10-20T04:41:31.753232+00:00",
       "last_curated_at": "2026-10-20T04:41:31.753232+00:00",
       "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2610.29527v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "RCSD: Reinforcement and Continual Learning for Domain-Specific Speculative Decoding",
+      "html_url": "http://arxiv.org/abs/2610.29527v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.29527v1",
+      "description": "Speculative decoding accelerates large language model inference by employing a compact draft model to propose candidate tokens that are verified in parallel by a target model. Conventional training relies on soft-label distillation, which forces the draft model to mimic the target's full output distribution, including high-entropy regions that degrade acceptance rates and increase early rejection risk. We propose RCSD (Reinforcement and Continual Learning for Speculative Decoding), a training framework that aligns draft model optimization with the system-level objective of maximizing acceptance length. RCSD leverages naturally occurring accepted and rejected sequences during speculative inference to construct implicit preference pairs, with masked loss to avoid penalizing target-aligned tokens. Evaluated across multiple benchmarks, RCSD improves average acceptance length by 35% over HASS and achieves 1.35x faster end-to-end inference than HASS on practical workloads, without compromising generation quality.",
+      "authors": [
+        "Mingkang Liu",
+        "Weiming Meng",
+        "Peipei Jiao",
+        "Jiawei Zhang",
+        "Tianyuan Liu",
+        "Junyan Li",
+        "Lichen Pang"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "published_at": "2026-10-21T10:16:23+00:00",
+      "updated_at": "2026-10-21T10:16:23+00:00",
+      "primary_category": "cs.CL",
+      "heuristic_score": 17.177,
+      "summary": "RCSD: Reinforcement and Continual Learning for Domain-Specific Speculative Decoding 是最近值得追踪的一篇 AI 论文。论文摘要显示：Speculative decoding accelerates large language model inference by employing a compact draft model to propose candidate tokens that are verified in parallel by a target model. Conventional training relies on soft-label distillation, which f...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CL",
+        "作者数: 7"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "rag",
+        "model",
+        "benchmark"
+      ],
+      "themes": [
+        "ai",
+        "rag",
+        "model"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：RCSD: Reinforcement and Continual Learning for Domain-Specific Speculative Decoding 是最近值得追踪的一篇 AI 论文。论文摘要显示：Speculative decoding accelerates large language model inference by employing a compact draft model to propose candidate tokens that are verified in parallel by a target model. Conventional training relies on soft-label distillation, which f...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL\n- 作者数: 7",
+      "focus_hits": [
+        {
+          "keyword": "coding",
+          "weight": 2.6
+        },
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        },
+        {
+          "keyword": "inference",
+          "weight": 1.8
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "coding",
+      "personalized_score": 190.0,
+      "detail_path": "items/arxiv-rcsd-reinforcement-and-continual-learning-for-domain-specific-speculative-decoding.html",
+      "first_seen_at": "2026-10-22T01:58:51.712905+00:00",
+      "last_seen_at": "2026-10-22T04:35:20.171835+00:00",
+      "last_curated_at": "2026-10-22T04:35:20.171835+00:00",
+      "last_notified_at": null
     }
   ],
   "top_themes": [
@@ -670,12 +664,16 @@
       "count": 7
     },
     {
-      "theme": "agent",
-      "count": 5
-    },
-    {
       "theme": "llm",
       "count": 4
+    },
+    {
+      "theme": "agent",
+      "count": 4
+    },
+    {
+      "theme": "rag",
+      "count": 1
     }
   ],
   "highlights": [
@@ -690,7 +688,7 @@
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     },
     {
-      "title": "OmniVerifier-C1: Decomposed Graded Verifier for Rule-Governed Generative World Modeling",
+      "title": "GLOBE: Geometry-Led Online Behavioral Early Exit via Unit-Sphere Trajectories",
       "source": "arxiv",
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     }
