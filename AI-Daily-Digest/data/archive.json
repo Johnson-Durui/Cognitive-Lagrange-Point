@@ -1,6 +1,859 @@
 {
-  "generated_at": "2026-10-26T04:38:10.666007+00:00",
+  "generated_at": "2026-10-27T02:28:38.661687+00:00",
   "items": [
+    {
+      "id": "arxiv::http://arxiv.org/abs/2610.35083v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Ask Before You Answer: A Question-Driven Evidence Reasoning Architecture (QERA) for In-Context Learning",
+      "html_url": "http://arxiv.org/abs/2610.35083v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.35083v1",
+      "description": "AI assistants are increasingly asked to reason over a user's own web traces: group chats, community threads, activity logs and revision histories. On CL-bench Life, a benchmark of such real-life context learning, frontier LLMs solve fewer than one task in five. We find that the request is not the specification: over 80% of the benchmark's rubrics share less than 60% of their content words with the final request, as for a rule set two turns earlier or every record that meets the user's criterion, and LLMs answering directly pass only 67% of these implicit rubrics against 81% of the others. We propose QERA, a Question-driven Evidence Reasoning Architecture that asks before it answers. QERA first turns the request into a requirement checklist and typed information needs, filtered by code for faithfulness to the user's words; it then answers from the whole conversation, asks the same questions again with quotes verified by code, and applies a guarded local repair. It needs no training or rubrics and makes about four LLM calls per task. On all 405 tasks with four frontier LLMs, QERA attains the highest solving rate on every LLM (21.0% on average, against 18.2% for the strongest of three inference-time baselines and 14.6% for direct answering) and leads every baseline significantly when pooled across LLMs, while using fewer tokens than PSCI and 4-5% of the tokens of Ctx2Skill. Ablations on GPT-6-Luna show that the gain is settled before the answer, by a fixed answer protocol (+3.8 rubric points) and the request-specific questions (+1.6), and that it is concentrated on implicit rubrics, with checking afterwards refining mainly numeric requirements.",
+      "authors": [
+        "Jinhu Qi",
+        "Minda Hu",
+        "Wentao Zhang",
+        "Zixing Song",
+        "Irwin King"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "published_at": "2026-10-26T09:26:23+00:00",
+      "updated_at": "2026-10-26T09:26:23+00:00",
+      "primary_category": "cs.CL",
+      "heuristic_score": 22.7,
+      "summary": "Ask Before You Answer: A Question-Driven Evidence Reasoning Architecture (QERA) for In-Context Learning 是最近值得追踪的一篇 AI 论文。论文摘要显示：AI assistants are increasingly asked to reason over a user's own web traces: group chats, community threads, activity logs and revision histories. On CL-bench Life, a benchmark of such real-life context learning, frontier LLMs solve fewer t...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CL",
+        "作者数: 5"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "llm",
+        "gpt",
+        "rag"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "gpt"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：Ask Before You Answer: A Question-Driven Evidence Reasoning Architecture (QERA) for In-Context Learning 是最近值得追踪的一篇 AI 论文。论文摘要显示：AI assistants are increasingly asked to reason over a user's own web traces: group chats, community threads, activity logs and revision histories. On CL-bench Life, a benchmark of such real-life context learning, frontier LLMs solve fewer t...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL\n- 作者数: 5",
+      "focus_hits": [
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        },
+        {
+          "keyword": "inference",
+          "weight": 1.8
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "reasoning",
+      "personalized_score": 188.0,
+      "detail_path": "items/arxiv-ask-before-you-answer-a-question-driven-evidence-reasoning-architecture-qera-for-in-contex.html",
+      "first_seen_at": "2026-10-27T02:28:38.661687+00:00",
+      "last_seen_at": "2026-10-27T02:28:38.661687+00:00",
+      "last_curated_at": "2026-10-27T02:28:38.661687+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2610.35077v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Improving VLMs on Scientific Chart Analysis via Autonomous Evolution",
+      "html_url": "http://arxiv.org/abs/2610.35077v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.35077v1",
+      "description": "Understanding and operating with scientific charts is a standard approach in data analysis, and while humans are good at interpreting such charts, open vision-language models (VLMs) are known to perform poorly when it comes to question answering based on such data types. Motivated by an initial observation that many of their errors are due to inexact answering, we raise the following natural question: how much accuracy can we recover without changing the model at all? In this paper, we study this question by searching over inference programs and the code around a \"frozen\" version of the model. Using ideas from autonomous evolution (famously used in AlphaEvolve), we first start from a baseline inference program, and in each round we show an LLM judge the code together with a few failures on training questions, and ask for an improving evolutionary move. As usual in autonomous evolution approaches, the candidate programs are kept in a small pool ranked by training accuracy, and the next edit is performed on top-scorers from this pool. We run this approach on three VLMs and four popular benchmarks on scientific charts, and we measure the fraction of descriptive questions whose answer exactly matches the ground truth. The accuracy improves in all experimental settings. On average, it rises from 16.6% with the starting program to 41.3% with the evolved one, and the largest single increase is 55.2 percentage points. As a side benefit, our evolved program is 3.8x faster than the starting program, because short answers are easier to grade and faster to generate. Our results demonstrate that a large part of the observed errors arise due to the inference pipeline, and that optimizing it can improve the \"frozen\" VLM without the need to retrain it.",
+      "authors": [
+        "Abhinav Sudhakar Dubey",
+        "Vidushi Goel",
+        "Kiran Rana",
+        "Shikhar Mathur",
+        "Vaggos Chatziafratis"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "published_at": "2026-10-26T09:22:52+00:00",
+      "updated_at": "2026-10-26T09:22:52+00:00",
+      "primary_category": "cs.CV",
+      "heuristic_score": 20.3,
+      "summary": "Improving VLMs on Scientific Chart Analysis via Autonomous Evolution 是最近值得追踪的一篇 AI 论文。论文摘要显示：Understanding and operating with scientific charts is a standard approach in data analysis, and while humans are good at interpreting such charts, open vision-language models (VLMs) are known to perform poorly when it comes to question answ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CV, cs.CL",
+        "作者数: 5"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "llm",
+        "rag",
+        "model"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "rag"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：Improving VLMs on Scientific Chart Analysis via Autonomous Evolution 是最近值得追踪的一篇 AI 论文。论文摘要显示：Understanding and operating with scientific charts is a standard approach in data analysis, and while humans are good at interpreting such charts, open vision-language models (VLMs) are known to perform poorly when it comes to question answ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV, cs.CL\n- 作者数: 5",
+      "focus_hits": [
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        },
+        {
+          "keyword": "inference",
+          "weight": 1.8
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "rag",
+      "personalized_score": 164.0,
+      "detail_path": "items/arxiv-improving-vlms-on-scientific-chart-analysis-via-autonomous-evolution.html",
+      "first_seen_at": "2026-10-27T02:28:38.661687+00:00",
+      "last_seen_at": "2026-10-27T02:28:38.661687+00:00",
+      "last_curated_at": "2026-10-27T02:28:38.661687+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2610.35093v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Improving Instruction Hierarchy by Learning from Goal-Goal Conflicts",
+      "html_url": "http://arxiv.org/abs/2610.35093v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.35093v1",
+      "description": "The recent incident in which OpenAI agents autonomously compromised Hugging Face's infrastructure illustrates the importance of instruction hierarchy (IH): an LLM should follow lower-priority instructions, such as user requests, only when they do not conflict with higher-priority instructions, such as system policies. IH can be effectively improved by fine-tuning LLMs on simulated examples of instruction conflicts, whose diversity is key to teaching LLMs to properly handle conflicts at test time. However, our decomposition of a task into goals and constraints reveals a conflict type -- goal-goal conflicts -- that is absent from existing IH training sets from OpenAI and NVIDIA. We show the importance of this conflict type: fine-tuning Qwen3.5-9B and Gemma4-12B-it on examples of this conflict type significantly improves IH on a wide range of real-world tasks unseen in training; adding these examples to existing IH training sets for fine-tuning also gives better IH adherence. The IH gains come with trivial mean utility changes on no-conflict tasks across eight benchmarks. Our work advocates including this new conflict type in IH training, even if these examples do not reflect typical LLM use.",
+      "authors": [
+        "Sizhe Chen",
+        "Sanjay Kariyappa",
+        "Liwei Jiang",
+        "Chong Xiang",
+        "Jihye Choi",
+        "Chaowei Xiao",
+        "G. Edward Suh"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "published_at": "2026-10-26T09:33:17+00:00",
+      "updated_at": "2026-10-26T09:33:17+00:00",
+      "primary_category": "cs.AI",
+      "heuristic_score": 17.41,
+      "summary": "Improving Instruction Hierarchy by Learning from Goal-Goal Conflicts 是最近值得追踪的一篇 AI 论文。论文摘要显示：The recent incident in which OpenAI agents autonomously compromised Hugging Face's infrastructure illustrates the importance of instruction hierarchy (IH): an LLM should follow lower-priority instructions, such as user requests, only when t...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.AI",
+        "作者数: 7"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "llm",
+        "agent",
+        "benchmark"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "agent"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：Improving Instruction Hierarchy by Learning from Goal-Goal Conflicts 是最近值得追踪的一篇 AI 论文。论文摘要显示：The recent incident in which OpenAI agents autonomously compromised Hugging Face's infrastructure illustrates the importance of instruction hierarchy (IH): an LLM should follow lower-priority instructions, such as user requests, only when t...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI\n- 作者数: 7",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 154.0,
+      "detail_path": "items/arxiv-improving-instruction-hierarchy-by-learning-from-goal-goal-conflicts.html",
+      "first_seen_at": "2026-10-27T02:28:38.661687+00:00",
+      "last_seen_at": "2026-10-27T02:28:38.661687+00:00",
+      "last_curated_at": "2026-10-27T02:28:38.661687+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2610.35059v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Reinforcement Learning Done Right for Explicit Confidence Targets",
+      "html_url": "http://arxiv.org/abs/2610.35059v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.35059v1",
+      "description": "Large language models (LLMs) can produce plausible but incorrect answers when they are uncertain, which can mislead users and undermine model reliability. Training models to abstain with reinforcement learning is a natural approach, but most existing methods use a fixed error penalty and therefore cannot adapt their behavior to different confidence requirements at inference time. We study \\emph{explicit confidence targets}, where a user specifies a target \\(p\\) in the prompt and the model directly chooses whether to answer or abstain, with the goal of achieving an accuracy of at least \\(p\\) among answered questions. However, learning to respond to different confidence targets with a single model has proven difficult, and prior attempts have failed to distinguish different targets. We show that this failure comes from two problems: the reward signal that distinguishes different values of $p$ is often lost during optimization, while the original error penalty grows without bound as $p$ approaches one. We propose RLEC (\\textbf{R}einforcement \\textbf{L}earning with \\textbf{E}xplicit \\textbf{C}onfidence Targets), which preserves the learning signal needed to distinguish confidence targets, introduces a stable reward family that keeps the desired answer condition unchanged, and uses reward scheduling to balance effective learning and training stability. Together, these designs enable the first successful training of a single LLM for explicit confidence target control. Extensive experiments across diverse benchmarks and model scales show that RLEC largely preserves general capabilities and achieves competitive calibration performance. RLEC also supports fine-grained target control without an external decision system or threshold calibration after training. By making explicit confidence targets part of the trained policy, RLEC opens a new and more direct path toward behavioral calibration.",
+      "authors": [
+        "Zefeng He",
+        "Yichen He",
+        "Yuan Lin",
+        "Yang Yang",
+        "Yu Cheng"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CL"
+      ],
+      "published_at": "2026-10-26T09:05:29+00:00",
+      "updated_at": "2026-10-26T09:05:29+00:00",
+      "primary_category": "cs.LG",
+      "heuristic_score": 17.9,
+      "summary": "Reinforcement Learning Done Right for Explicit Confidence Targets 是最近值得追踪的一篇 AI 论文。论文摘要显示：Large language models (LLMs) can produce plausible but incorrect answers when they are uncertain, which can mislead users and undermine model reliability. Training models to abstain with reinforcement learning is a natural approach, but mos...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.LG, cs.CL",
+        "作者数: 5"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "llm",
+        "model",
+        "benchmark"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "model"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：Reinforcement Learning Done Right for Explicit Confidence Targets 是最近值得追踪的一篇 AI 论文。论文摘要显示：Large language models (LLMs) can produce plausible but incorrect answers when they are uncertain, which can mislead users and undermine model reliability. Training models to abstain with reinforcement learning is a natural approach, but mos...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.LG, cs.CL\n- 作者数: 5",
+      "focus_hits": [
+        {
+          "keyword": "inference",
+          "weight": 1.8
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "inference",
+      "personalized_score": 142.0,
+      "detail_path": "items/arxiv-reinforcement-learning-done-right-for-explicit-confidence-targets.html",
+      "first_seen_at": "2026-10-27T02:28:38.661687+00:00",
+      "last_seen_at": "2026-10-27T02:28:38.661687+00:00",
+      "last_curated_at": "2026-10-27T02:28:38.661687+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2610.35101v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Spherical Brownian Diffusion for Language Modeling",
+      "html_url": "http://arxiv.org/abs/2610.35101v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.35101v1",
+      "description": "Continuous diffusion language models involve two coupled design choices: how to corrupt continuous token representations and how to invert that corruption at generation time. Recent work has explored language generation on the unit sphere through geodesic and von Mises--Fisher (vMF) paths, raising the question of which forward process to use on this geometry and how much that choice matters relative to inference. We introduce Spherical Brownian Diffusion, using Brownian motion as the canonical isotropic diffusion on the sphere. Its heat semigroup provides a principled forward process, an additive dimension-free noise clock, and an exact ancestral bridge, while a clean-token posterior learned with cross-entropy supports multiple samplers. To separate corruption from inference, we derive high-dimensional approximation rates between Brownian and moment-matched vMF corruption and use this relationship for controlled substitutions. On Sudoku, Brownian and moment-matched vMF give nearly identical results across four samplers and five budgets under otherwise identical settings. In contrast, with the corruption process fixed, sampler choice produces a 25.0-point spread at a sampler budget of 180 calls. Using the ancestral bridge, we split this gain into a memory effect from re-noising the state, present on Sudoku and GSM8K, and a token-selection effect on GSM8K and largest at small budgets. Across reasoning tasks, categorical refinement improves performance, whereas unconditional text generation benefits from stochastic updates that preserve diversity.",
+      "authors": [
+        "Andrea Miele",
+        "Ilija Bogunovic"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "published_at": "2026-10-26T09:40:42+00:00",
+      "updated_at": "2026-10-26T09:40:42+00:00",
+      "primary_category": "cs.LG",
+      "heuristic_score": 15.463,
+      "summary": "Spherical Brownian Diffusion for Language Modeling 是最近值得追踪的一篇 AI 论文。论文摘要显示：Continuous diffusion language models involve two coupled design choices: how to corrupt continuous token representations and how to invert that corruption at generation time. Recent work has explored language generation on the unit sphere t...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.LG",
+        "作者数: 2"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 9,
+      "tags": [
+        "ai",
+        "diffusion",
+        "model",
+        "inference"
+      ],
+      "themes": [
+        "ai",
+        "diffusion",
+        "model"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：Spherical Brownian Diffusion for Language Modeling 是最近值得追踪的一篇 AI 论文。论文摘要显示：Continuous diffusion language models involve two coupled design choices: how to corrupt continuous token representations and how to invert that corruption at generation time. Recent work has explored language generation on the unit sphere t...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：9/10\n\n**亮点**：\n- 分类: cs.LG\n- 作者数: 2",
+      "focus_hits": [
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "inference",
+          "weight": 1.8
+        }
+      ],
+      "primary_match": "reasoning",
+      "personalized_score": 140.0,
+      "detail_path": "items/arxiv-spherical-brownian-diffusion-for-language-modeling.html",
+      "first_seen_at": "2026-10-27T02:28:38.661687+00:00",
+      "last_seen_at": "2026-10-27T02:28:38.661687+00:00",
+      "last_curated_at": "2026-10-27T02:28:38.661687+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2610.35084v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "A JiT-Based Denoising Defense Method Against Adversarial Examples for Radio Signal Automatic Modulation Classification",
+      "html_url": "http://arxiv.org/abs/2610.35084v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.35084v1",
+      "description": "Automatic modulation classification (AMC) of radio signals is a core technology for spectrum monitoring and electromagnetic situational awareness. Deep neural networks (DNNs) play an important role in this field owing to their powerful feature extraction capabilities and end-to-end learning paradigm. However, their vulnerability to adversarial attacks poses serious security challenges to practical deployment. Adversarial training, a common defense, has limitations including poor generalization across attack types and high training costs. Inspired by Just image Transformers (JiT), a diffusion generative model that directly predicts clean images, this paper proposes a JiT-based denoising defense against adversarial examples for radio signal modulation classification. During training, a signal-specific 1D Transformer denoising network is optimized via flow matching to directly predict clean signal samples. It thereby learns a mapping that projects arbitrary examples back onto the low-dimensional manifold of clean signal examples. During inference, arbitrary examples are fed into the trained network and directly projected onto this manifold. This enables denoising defense without prior knowledge of attacks. Experiments on the RML2018.01A dataset were conducted without attack information, using a single empirically selected, fixed denoising start time. Compared with PGD-based adversarial training, the proposed method achieves a relative improvement of at least 20.58% in robust accuracy under PGD attacks. It also achieves a relative improvement of 10.20% in classification accuracy on clean examples. When evaluated against attack types unseen during adversarial training, the proposed method provides stronger defense than adversarial training. In particular, at higher attack strengths, it achieves a relative improvement of at least 39.72% in robust accuracy.",
+      "authors": [
+        "Shiwei Liu",
+        "Linyuan Wang",
+        "Nuolin Sun",
+        "Libin Hou",
+        "Bin Yan"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "published_at": "2026-10-26T09:26:37+00:00",
+      "updated_at": "2026-10-26T09:26:37+00:00",
+      "primary_category": "cs.LG",
+      "heuristic_score": 15.5,
+      "summary": "A JiT-Based Denoising Defense Method Against Adversarial Examples for Radio Signal Automatic Modulation Classification 是最近值得追踪的一篇 AI 论文。论文摘要显示：Automatic modulation classification (AMC) of radio signals is a core technology for spectrum monitoring and electromagnetic situational awareness. Deep neural networks (DNNs) play an important role in this field owing to their powerful feat...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.LG",
+        "作者数: 5"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 9,
+      "tags": [
+        "ai",
+        "diffusion",
+        "model",
+        "inference"
+      ],
+      "themes": [
+        "ai",
+        "diffusion",
+        "model"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：A JiT-Based Denoising Defense Method Against Adversarial Examples for Radio Signal Automatic Modulation Classification 是最近值得追踪的一篇 AI 论文。论文摘要显示：Automatic modulation classification (AMC) of radio signals is a core technology for spectrum monitoring and electromagnetic situational awareness. Deep neural networks (DNNs) play an important role in this field owing to their powerful feat...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：9/10\n\n**亮点**：\n- 分类: cs.LG\n- 作者数: 5",
+      "focus_hits": [
+        {
+          "keyword": "inference",
+          "weight": 1.8
+        }
+      ],
+      "primary_match": "inference",
+      "personalized_score": 116.0,
+      "detail_path": "items/arxiv-a-jit-based-denoising-defense-method-against-adversarial-examples-for-radio-signal-automat.html",
+      "first_seen_at": "2026-10-27T02:28:38.661687+00:00",
+      "last_seen_at": "2026-10-27T02:28:38.661687+00:00",
+      "last_curated_at": "2026-10-27T02:28:38.661687+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "github::Panniantong/Agent-Reach",
+      "kind": "repo",
+      "source": "github",
+      "source_tags": [
+        "trending"
+      ],
+      "name": "Agent-Reach",
+      "title": "Panniantong/Agent-Reach",
+      "full_name": "Panniantong/Agent-Reach",
+      "html_url": "https://github.com/Panniantong/Agent-Reach",
+      "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
+      "stars": 103737,
+      "stars_today": 0,
+      "language": "Python",
+      "topics": [],
+      "created_at": "",
+      "updated_at": "",
+      "heuristic_score": 15.2,
+      "summary": "Panniantong/Agent-Reach 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.结合关键词命中和热度信号，它适合加入今日重点观察列表。",
+      "brief": "这是一个值得快速关注的开源 AI 项目。",
+      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
+      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
+      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
+      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
+      "highlights": [
+        "Stars: 103737",
+        "语言: Python"
+      ],
+      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
+      "relevance_score": 8,
+      "tags": [
+        "ai",
+        "agent",
+        "ai agent"
+      ],
+      "themes": [
+        "ai",
+        "agent",
+        "ai agent"
+      ],
+      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
+      "summary_markdown": "**摘要**：Panniantong/Agent-Reach 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 103737\n- 语言: Python",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 130.0,
+      "detail_path": "items/github-panniantong-agent-reach.html",
+      "first_seen_at": "2026-09-15T01:57:58.146541+00:00",
+      "last_seen_at": "2026-10-27T02:28:38.661687+00:00",
+      "last_curated_at": "2026-10-27T02:28:38.661687+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "github::multica-ai/andrej-karpathy-skills",
+      "kind": "repo",
+      "source": "github",
+      "source_tags": [
+        "trending"
+      ],
+      "name": "andrej-karpathy-skills",
+      "title": "multica-ai/andrej-karpathy-skills",
+      "full_name": "multica-ai/andrej-karpathy-skills",
+      "html_url": "https://github.com/multica-ai/andrej-karpathy-skills",
+      "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
+      "stars": 224719,
+      "stars_today": 0,
+      "language": "Unknown",
+      "topics": [],
+      "created_at": "",
+      "updated_at": "",
+      "heuristic_score": 15.2,
+      "summary": "multica-ai/andrej-karpathy-skills 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.结合关键词命中和热度信号，它适合加入今日重点观察列表。",
+      "brief": "这是一个值得快速关注的开源 AI 项目。",
+      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
+      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
+      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
+      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
+      "highlights": [
+        "Stars: 224719",
+        "语言: Unknown"
+      ],
+      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
+      "relevance_score": 8,
+      "tags": [
+        "llm"
+      ],
+      "themes": [
+        "llm"
+      ],
+      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
+      "summary_markdown": "**摘要**：multica-ai/andrej-karpathy-skills 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 224719\n- 语言: Unknown",
+      "focus_hits": [
+        {
+          "keyword": "coding",
+          "weight": 2.6
+        }
+      ],
+      "primary_match": "coding",
+      "personalized_score": 126.0,
+      "detail_path": "items/github-multica-ai-andrej-karpathy-skills.html",
+      "first_seen_at": "2026-10-11T02:16:50.244376+00:00",
+      "last_seen_at": "2026-10-27T02:28:38.661687+00:00",
+      "last_curated_at": "2026-10-27T02:28:38.661687+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "github::makecindy/cindy",
+      "kind": "repo",
+      "source": "github",
+      "source_tags": [
+        "trending"
+      ],
+      "name": "cindy",
+      "title": "makecindy/cindy",
+      "full_name": "makecindy/cindy",
+      "html_url": "https://github.com/makecindy/cindy",
+      "description": "Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。",
+      "stars": 6588,
+      "stars_today": 0,
+      "language": "TypeScript",
+      "topics": [],
+      "created_at": "",
+      "updated_at": "",
+      "heuristic_score": 15.2,
+      "summary": "makecindy/cindy 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。结合关键词命中和热度信号，它适合加入今日重点观察列表。",
+      "brief": "这是一个值得快速关注的开源 AI 项目。",
+      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
+      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
+      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
+      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
+      "highlights": [
+        "Stars: 6588",
+        "语言: TypeScript"
+      ],
+      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
+      "relevance_score": 8,
+      "tags": [
+        "ai",
+        "agent",
+        "ai agent"
+      ],
+      "themes": [
+        "ai",
+        "agent",
+        "ai agent"
+      ],
+      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
+      "summary_markdown": "**摘要**：makecindy/cindy 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 6588\n- 语言: TypeScript",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 112.64,
+      "detail_path": "items/github-makecindy-cindy.html",
+      "first_seen_at": "2026-10-25T01:48:04.693302+00:00",
+      "last_seen_at": "2026-10-27T02:28:38.661687+00:00",
+      "last_curated_at": "2026-10-27T02:28:38.661687+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "github::Nutlope/hallmark",
+      "kind": "repo",
+      "source": "github",
+      "source_tags": [
+        "trending"
+      ],
+      "name": "hallmark",
+      "title": "Nutlope/hallmark",
+      "full_name": "Nutlope/hallmark",
+      "html_url": "https://github.com/Nutlope/hallmark",
+      "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
+      "stars": 36559,
+      "stars_today": 0,
+      "language": "CSS",
+      "topics": [],
+      "created_at": "",
+      "updated_at": "",
+      "heuristic_score": 15.2,
+      "summary": "Nutlope/hallmark 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Anti-AI-slop design skill for Claude Code, Cursor, and Codex.结合关键词命中和热度信号，它适合加入今日重点观察列表。",
+      "brief": "这是一个值得快速关注的开源 AI 项目。",
+      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
+      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
+      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
+      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
+      "highlights": [
+        "Stars: 36559",
+        "语言: CSS"
+      ],
+      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
+      "relevance_score": 8,
+      "tags": [
+        "ai"
+      ],
+      "themes": [
+        "ai"
+      ],
+      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
+      "summary_markdown": "**摘要**：Nutlope/hallmark 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Anti-AI-slop design skill for Claude Code, Cursor, and Codex.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 36559\n- 语言: CSS",
+      "focus_hits": [],
+      "primary_match": "",
+      "personalized_score": 94.62,
+      "detail_path": "items/github-nutlope-hallmark.html",
+      "first_seen_at": "2026-10-25T01:48:04.693302+00:00",
+      "last_seen_at": "2026-10-27T02:28:38.661687+00:00",
+      "last_curated_at": "2026-10-27T02:28:38.661687+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "github::TauricResearch/TradingAgents",
+      "kind": "repo",
+      "source": "github",
+      "source_tags": [
+        "trending"
+      ],
+      "name": "TradingAgents",
+      "title": "TauricResearch/TradingAgents",
+      "full_name": "TauricResearch/TradingAgents",
+      "html_url": "https://github.com/TauricResearch/TradingAgents",
+      "description": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
+      "stars": 116232,
+      "stars_today": 0,
+      "language": "Python",
+      "topics": [],
+      "created_at": "",
+      "updated_at": "",
+      "heuristic_score": 15.2,
+      "summary": "TauricResearch/TradingAgents 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：TradingAgents: Multi-Agents LLM Financial Trading Framework结合关键词命中和热度信号，它适合加入今日重点观察列表。",
+      "brief": "这是一个值得快速关注的开源 AI 项目。",
+      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
+      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
+      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
+      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
+      "highlights": [
+        "Stars: 116232",
+        "语言: Python"
+      ],
+      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
+      "relevance_score": 8,
+      "tags": [
+        "llm",
+        "agent"
+      ],
+      "themes": [
+        "llm",
+        "agent"
+      ],
+      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
+      "summary_markdown": "**摘要**：TauricResearch/TradingAgents 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：TradingAgents: Multi-Agents LLM Financial Trading Framework结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 116232\n- 语言: Python",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 130.0,
+      "detail_path": "items/github-tauricresearch-tradingagents.html",
+      "first_seen_at": "2026-10-26T01:50:25.458060+00:00",
+      "last_seen_at": "2026-10-27T02:28:38.661687+00:00",
+      "last_curated_at": "2026-10-27T02:28:38.661687+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "github::gitroomhq/postiz-app",
+      "kind": "repo",
+      "source": "github",
+      "source_tags": [
+        "trending"
+      ],
+      "name": "postiz-app",
+      "title": "gitroomhq/postiz-app",
+      "full_name": "gitroomhq/postiz-app",
+      "html_url": "https://github.com/gitroomhq/postiz-app",
+      "description": "📨 The ultimate agentic social media scheduling tool 🤖",
+      "stars": 38515,
+      "stars_today": 0,
+      "language": "TypeScript",
+      "topics": [],
+      "created_at": "",
+      "updated_at": "",
+      "heuristic_score": 15.2,
+      "summary": "gitroomhq/postiz-app 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：📨 The ultimate agentic social media scheduling tool 🤖结合关键词命中和热度信号，它适合加入今日重点观察列表。",
+      "brief": "这是一个值得快速关注的开源 AI 项目。",
+      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
+      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
+      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
+      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
+      "highlights": [
+        "Stars: 38515",
+        "语言: TypeScript"
+      ],
+      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
+      "relevance_score": 8,
+      "tags": [
+        "agent",
+        "agentic"
+      ],
+      "themes": [
+        "agent",
+        "agentic"
+      ],
+      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
+      "summary_markdown": "**摘要**：gitroomhq/postiz-app 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：📨 The ultimate agentic social media scheduling tool 🤖结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 38515\n- 语言: TypeScript",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 125.41,
+      "detail_path": "items/github-gitroomhq-postiz-app.html",
+      "first_seen_at": "2026-10-27T02:28:38.661687+00:00",
+      "last_seen_at": "2026-10-27T02:28:38.661687+00:00",
+      "last_curated_at": "2026-10-27T02:28:38.661687+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "github::alchaincyf/huashu-design",
+      "kind": "repo",
+      "source": "github",
+      "source_tags": [
+        "trending"
+      ],
+      "name": "huashu-design",
+      "title": "alchaincyf/huashu-design",
+      "full_name": "alchaincyf/huashu-design",
+      "html_url": "https://github.com/alchaincyf/huashu-design",
+      "description": "Huashu Design 3.0 · 在 agent 里打一句话，拿回能交付的设计：网页 / App 原型 / 可编辑 PPTX / 动画 / 信息图 · 六个候选挑三个方向 · 84 种带样张的风格库 · 越用越懂你的外观账本与设计体检 · HTML-native design skill for Claude Code, Codex, Cursor & any agent",
+      "stars": 26924,
+      "stars_today": 0,
+      "language": "HTML",
+      "topics": [],
+      "created_at": "",
+      "updated_at": "",
+      "heuristic_score": 15.2,
+      "summary": "alchaincyf/huashu-design 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Huashu Design 3.0 · 在 agent 里打一句话，拿回能交付的设计：网页 / App 原型 / 可编辑 PPTX / 动画 / 信息图 · 六个候选挑三个方向 · 84 种带样张的风格库 · 越用越懂你的外观账本与设计体检 · HTML-native design skill for Claude Code, Codex, Cursor & any agent结合关键词命中和热度信号，它适合加入今日重点观察列表。",
+      "brief": "这是一个值得快速关注的开源 AI 项目。",
+      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
+      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
+      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
+      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
+      "highlights": [
+        "Stars: 26924",
+        "语言: HTML"
+      ],
+      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
+      "relevance_score": 8,
+      "tags": [
+        "agent"
+      ],
+      "themes": [
+        "agent"
+      ],
+      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
+      "summary_markdown": "**摘要**：alchaincyf/huashu-design 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Huashu Design 3.0 · 在 agent 里打一句话，拿回能交付的设计：网页 / App 原型 / 可编辑 PPTX / 动画 / 信息图 · 六个候选挑三个方向 · 84 种带样张的风格库 · 越用越懂你的外观账本与设计体检 · HTML-native design skill for Claude Code, Codex, Cursor & any agent结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 26924\n- 语言: HTML",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 120.77,
+      "detail_path": "items/github-alchaincyf-huashu-design.html",
+      "first_seen_at": "2026-10-27T02:28:38.661687+00:00",
+      "last_seen_at": "2026-10-27T02:28:38.661687+00:00",
+      "last_curated_at": "2026-10-27T02:28:38.661687+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "github::NVIDIA/SkillSpector",
+      "kind": "repo",
+      "source": "github",
+      "source_tags": [
+        "trending"
+      ],
+      "name": "SkillSpector",
+      "title": "NVIDIA/SkillSpector",
+      "full_name": "NVIDIA/SkillSpector",
+      "html_url": "https://github.com/NVIDIA/SkillSpector",
+      "description": "Security scanner for AI agent skills. Detect vulnerabilities, malicious patterns, security risks, prompt injection, data exfiltration, and supply-chain risks in Claude Code, Codex, and MCP skills before you install them.",
+      "stars": 22279,
+      "stars_today": 0,
+      "language": "Python",
+      "topics": [],
+      "created_at": "",
+      "updated_at": "",
+      "heuristic_score": 15.2,
+      "summary": "NVIDIA/SkillSpector 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Security scanner for AI agent skills. Detect vulnerabilities, malicious patterns, security risks, prompt injection, data exfiltration, and supply-chain risks in Claude Code, Codex, and MCP skills before you install them.结合关键词命中和热度信号，它适合加入今日重点观察列表。",
+      "brief": "这是一个值得快速关注的开源 AI 项目。",
+      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
+      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
+      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
+      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
+      "highlights": [
+        "Stars: 22279",
+        "语言: Python"
+      ],
+      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
+      "relevance_score": 8,
+      "tags": [
+        "ai",
+        "agent",
+        "ai agent"
+      ],
+      "themes": [
+        "ai",
+        "agent",
+        "ai agent"
+      ],
+      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
+      "summary_markdown": "**摘要**：NVIDIA/SkillSpector 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Security scanner for AI agent skills. Detect vulnerabilities, malicious patterns, security risks, prompt injection, data exfiltration, and supply-chain risks in Claude Code, Codex, and MCP skills before you install them.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 22279\n- 语言: Python",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 118.91,
+      "detail_path": "items/github-nvidia-skillspector.html",
+      "first_seen_at": "2026-10-27T02:28:38.661687+00:00",
+      "last_seen_at": "2026-10-27T02:28:38.661687+00:00",
+      "last_curated_at": "2026-10-27T02:28:38.661687+00:00",
+      "last_notified_at": null
+    },
     {
       "id": "github::AgriciDaniel/claude-seo",
       "kind": "repo",
@@ -53,166 +906,6 @@
       "primary_match": "agent",
       "personalized_score": 138.46,
       "detail_path": "items/github-agricidaniel-claude-seo.html",
-      "first_seen_at": "2026-10-26T01:50:25.458060+00:00",
-      "last_seen_at": "2026-10-26T04:38:10.666007+00:00",
-      "last_curated_at": "2026-10-26T04:38:10.666007+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "github::makecindy/cindy",
-      "kind": "repo",
-      "source": "github",
-      "source_tags": [
-        "trending"
-      ],
-      "name": "cindy",
-      "title": "makecindy/cindy",
-      "full_name": "makecindy/cindy",
-      "html_url": "https://github.com/makecindy/cindy",
-      "description": "Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。",
-      "stars": 5145,
-      "stars_today": 0,
-      "language": "TypeScript",
-      "topics": [],
-      "created_at": "",
-      "updated_at": "",
-      "heuristic_score": 15.2,
-      "summary": "makecindy/cindy 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。结合关键词命中和热度信号，它适合加入今日重点观察列表。",
-      "brief": "这是一个值得快速关注的开源 AI 项目。",
-      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
-      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
-      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
-      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
-      "highlights": [
-        "Stars: 5145",
-        "语言: TypeScript"
-      ],
-      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
-      "relevance_score": 8,
-      "tags": [
-        "ai",
-        "agent",
-        "ai agent"
-      ],
-      "themes": [
-        "ai",
-        "agent",
-        "ai agent"
-      ],
-      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：makecindy/cindy 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 5145\n- 语言: TypeScript",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 112.06,
-      "detail_path": "items/github-makecindy-cindy.html",
-      "first_seen_at": "2026-10-25T01:48:04.693302+00:00",
-      "last_seen_at": "2026-10-26T04:38:10.666007+00:00",
-      "last_curated_at": "2026-10-26T04:38:10.666007+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "github::Nutlope/hallmark",
-      "kind": "repo",
-      "source": "github",
-      "source_tags": [
-        "trending"
-      ],
-      "name": "hallmark",
-      "title": "Nutlope/hallmark",
-      "full_name": "Nutlope/hallmark",
-      "html_url": "https://github.com/Nutlope/hallmark",
-      "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
-      "stars": 34235,
-      "stars_today": 0,
-      "language": "CSS",
-      "topics": [],
-      "created_at": "",
-      "updated_at": "",
-      "heuristic_score": 15.2,
-      "summary": "Nutlope/hallmark 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Anti-AI-slop design skill for Claude Code, Cursor, and Codex.结合关键词命中和热度信号，它适合加入今日重点观察列表。",
-      "brief": "这是一个值得快速关注的开源 AI 项目。",
-      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
-      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
-      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
-      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
-      "highlights": [
-        "Stars: 34235",
-        "语言: CSS"
-      ],
-      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
-      "relevance_score": 8,
-      "tags": [
-        "ai"
-      ],
-      "themes": [
-        "ai"
-      ],
-      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：Nutlope/hallmark 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Anti-AI-slop design skill for Claude Code, Cursor, and Codex.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 34235\n- 语言: CSS",
-      "focus_hits": [],
-      "primary_match": "",
-      "personalized_score": 93.69,
-      "detail_path": "items/github-nutlope-hallmark.html",
-      "first_seen_at": "2026-10-25T01:48:04.693302+00:00",
-      "last_seen_at": "2026-10-26T04:38:10.666007+00:00",
-      "last_curated_at": "2026-10-26T04:38:10.666007+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "github::TauricResearch/TradingAgents",
-      "kind": "repo",
-      "source": "github",
-      "source_tags": [
-        "trending"
-      ],
-      "name": "TradingAgents",
-      "title": "TauricResearch/TradingAgents",
-      "full_name": "TauricResearch/TradingAgents",
-      "html_url": "https://github.com/TauricResearch/TradingAgents",
-      "description": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
-      "stars": 114832,
-      "stars_today": 0,
-      "language": "Python",
-      "topics": [],
-      "created_at": "",
-      "updated_at": "",
-      "heuristic_score": 15.2,
-      "summary": "TauricResearch/TradingAgents 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：TradingAgents: Multi-Agents LLM Financial Trading Framework结合关键词命中和热度信号，它适合加入今日重点观察列表。",
-      "brief": "这是一个值得快速关注的开源 AI 项目。",
-      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
-      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
-      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
-      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
-      "highlights": [
-        "Stars: 114832",
-        "语言: Python"
-      ],
-      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
-      "relevance_score": 8,
-      "tags": [
-        "llm",
-        "agent"
-      ],
-      "themes": [
-        "llm",
-        "agent"
-      ],
-      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：TauricResearch/TradingAgents 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：TradingAgents: Multi-Agents LLM Financial Trading Framework结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 114832\n- 语言: Python",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 130.0,
-      "detail_path": "items/github-tauricresearch-tradingagents.html",
       "first_seen_at": "2026-10-26T01:50:25.458060+00:00",
       "last_seen_at": "2026-10-26T04:38:10.666007+00:00",
       "last_curated_at": "2026-10-26T04:38:10.666007+00:00",
@@ -7082,59 +7775,6 @@
       "last_notified_at": null
     },
     {
-      "id": "github::multica-ai/andrej-karpathy-skills",
-      "kind": "repo",
-      "source": "github",
-      "source_tags": [
-        "trending"
-      ],
-      "name": "andrej-karpathy-skills",
-      "title": "multica-ai/andrej-karpathy-skills",
-      "full_name": "multica-ai/andrej-karpathy-skills",
-      "html_url": "https://github.com/multica-ai/andrej-karpathy-skills",
-      "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
-      "stars": 218426,
-      "stars_today": 0,
-      "language": "Unknown",
-      "topics": [],
-      "created_at": "",
-      "updated_at": "",
-      "heuristic_score": 15.2,
-      "summary": "multica-ai/andrej-karpathy-skills 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.结合关键词命中和热度信号，它适合加入今日重点观察列表。",
-      "brief": "这是一个值得快速关注的开源 AI 项目。",
-      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
-      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
-      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
-      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
-      "highlights": [
-        "Stars: 218426",
-        "语言: Unknown"
-      ],
-      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
-      "relevance_score": 8,
-      "tags": [
-        "llm"
-      ],
-      "themes": [
-        "llm"
-      ],
-      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：multica-ai/andrej-karpathy-skills 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 218426\n- 语言: Unknown",
-      "focus_hits": [
-        {
-          "keyword": "coding",
-          "weight": 2.6
-        }
-      ],
-      "primary_match": "coding",
-      "personalized_score": 126.0,
-      "detail_path": "items/github-multica-ai-andrej-karpathy-skills.html",
-      "first_seen_at": "2026-10-11T02:16:50.244376+00:00",
-      "last_seen_at": "2026-10-11T05:39:08.147230+00:00",
-      "last_curated_at": "2026-10-11T05:39:08.147230+00:00",
-      "last_notified_at": null
-    },
-    {
       "id": "github::hugohe3/ppt-master",
       "kind": "repo",
       "source": "github",
@@ -9614,63 +10254,6 @@
       "personalized_score": 150.0,
       "detail_path": "items/arxiv-learning-to-read-the-contextual-tokens-in-diffusion-transformers.html",
       "first_seen_at": "2026-10-06T03:22:00.792283+00:00",
-      "last_seen_at": "2026-10-06T06:13:03.053699+00:00",
-      "last_curated_at": "2026-10-06T06:13:03.053699+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "github::Panniantong/Agent-Reach",
-      "kind": "repo",
-      "source": "github",
-      "source_tags": [
-        "trending"
-      ],
-      "name": "Agent-Reach",
-      "title": "Panniantong/Agent-Reach",
-      "full_name": "Panniantong/Agent-Reach",
-      "html_url": "https://github.com/Panniantong/Agent-Reach",
-      "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
-      "stars": 92101,
-      "stars_today": 0,
-      "language": "Python",
-      "topics": [],
-      "created_at": "",
-      "updated_at": "",
-      "heuristic_score": 15.2,
-      "summary": "Panniantong/Agent-Reach 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.结合关键词命中和热度信号，它适合加入今日重点观察列表。",
-      "brief": "这是一个值得快速关注的开源 AI 项目。",
-      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
-      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
-      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
-      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
-      "highlights": [
-        "Stars: 92101",
-        "语言: Python"
-      ],
-      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
-      "relevance_score": 8,
-      "tags": [
-        "ai",
-        "agent",
-        "ai agent"
-      ],
-      "themes": [
-        "ai",
-        "agent",
-        "ai agent"
-      ],
-      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：Panniantong/Agent-Reach 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 92101\n- 语言: Python",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 130.0,
-      "detail_path": "items/github-panniantong-agent-reach.html",
-      "first_seen_at": "2026-09-15T01:57:58.146541+00:00",
       "last_seen_at": "2026-10-06T06:13:03.053699+00:00",
       "last_curated_at": "2026-10-06T06:13:03.053699+00:00",
       "last_notified_at": null
@@ -12635,539 +13218,35 @@
       "last_seen_at": "2026-09-29T02:48:13.690791+00:00",
       "last_curated_at": "2026-09-29T02:48:13.690791+00:00",
       "last_notified_at": null
-    },
-    {
-      "id": "github::Alpha-Park/genpark-kv-cache-paged-attention-allocator-skill",
-      "kind": "repo",
-      "source": "github",
-      "source_tags": [
-        "new"
-      ],
-      "name": "genpark-kv-cache-paged-attention-allocator-skill",
-      "title": "Alpha-Park/genpark-kv-cache-paged-attention-allocator-skill",
-      "full_name": "Alpha-Park/genpark-kv-cache-paged-attention-allocator-skill",
-      "html_url": "https://github.com/Alpha-Park/genpark-kv-cache-paged-attention-allocator-skill",
-      "description": "Virtual paged attention KV-cache memory manager with logical block mapping, non-contiguous physical page allocation, and zero-copy fragmentation tracking.",
-      "stars": 7,
-      "stars_today": 0,
-      "language": "Python",
-      "topics": [
-        "agentic-ai",
-        "edge-ai",
-        "kv-cache",
-        "llm-inference",
-        "mcp",
-        "mcp-server",
-        "memory-management",
-        "model-context-protocol",
-        "paged-attention",
-        "vllm",
-        "zero-dependency"
-      ],
-      "created_at": "2026-09-28T03:26:07+00:00",
-      "updated_at": "2026-09-28T03:26:40+00:00",
-      "heuristic_score": 19.414,
-      "summary": "Alpha-Park/genpark-kv-cache-paged-attention-allocator-skill 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Virtual paged attention KV-cache memory manager with logical block mapping, non-contiguous physical page allocation, and zero-copy fragmentation tracking.结合关键词命中和热度信号，它适合加入今日重点观察列表。",
-      "brief": "这是一个值得快速关注的开源 AI 项目。",
-      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
-      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
-      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
-      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
-      "highlights": [
-        "Stars: 7",
-        "语言: Python"
-      ],
-      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
-      "relevance_score": 10,
-      "tags": [
-        "rag"
-      ],
-      "themes": [
-        "rag"
-      ],
-      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：Alpha-Park/genpark-kv-cache-paged-attention-allocator-skill 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Virtual paged attention KV-cache memory manager with logical block mapping, non-contiguous physical page allocation, and zero-copy fragmentation tracking.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：10/10\n\n**亮点**：\n- Stars: 7\n- 语言: Python",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "inference",
-          "weight": 1.8
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 170.0,
-      "detail_path": "items/github-alpha-park-genpark-kv-cache-paged-attention-allocator-skill.html",
-      "first_seen_at": "2026-09-28T05:16:22.404839+00:00",
-      "last_seen_at": "2026-09-28T05:16:22.404839+00:00",
-      "last_curated_at": "2026-09-28T05:16:22.404839+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "github::Alpha-Park/genpark-dynamic-prompt-prefix-cache-skill",
-      "kind": "repo",
-      "source": "github",
-      "source_tags": [
-        "new"
-      ],
-      "name": "genpark-dynamic-prompt-prefix-cache-skill",
-      "title": "Alpha-Park/genpark-dynamic-prompt-prefix-cache-skill",
-      "full_name": "Alpha-Park/genpark-dynamic-prompt-prefix-cache-skill",
-      "html_url": "https://github.com/Alpha-Park/genpark-dynamic-prompt-prefix-cache-skill",
-      "description": "Radix trie-based prompt prefix cache optimizer matching longest common prompt token prefixes to eliminate redundant prefill computation and reduce TTFT.",
-      "stars": 7,
-      "stars_today": 0,
-      "language": "Python",
-      "topics": [
-        "agentic-ai",
-        "context-window",
-        "llm-inference",
-        "mcp",
-        "mcp-server",
-        "model-context-protocol",
-        "prefix-cache",
-        "prompt-cache",
-        "radix-tree",
-        "ttft-optimization",
-        "zero-dependency"
-      ],
-      "created_at": "2026-09-28T03:28:27+00:00",
-      "updated_at": "2026-09-28T03:29:06+00:00",
-      "heuristic_score": 16.814,
-      "summary": "Alpha-Park/genpark-dynamic-prompt-prefix-cache-skill 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Radix trie-based prompt prefix cache optimizer matching longest common prompt token prefixes to eliminate redundant prefill computation and reduce TTFT.结合关键词命中和热度信号，它适合加入今日重点观察列表。",
-      "brief": "这是一个值得快速关注的开源 AI 项目。",
-      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
-      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
-      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
-      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
-      "highlights": [
-        "Stars: 7",
-        "语言: Python"
-      ],
-      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
-      "relevance_score": 9,
-      "tags": [
-        "daily-pick"
-      ],
-      "themes": [
-        "开源工具"
-      ],
-      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：Alpha-Park/genpark-dynamic-prompt-prefix-cache-skill 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Radix trie-based prompt prefix cache optimizer matching longest common prompt token prefixes to eliminate redundant prefill computation and reduce TTFT.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：9/10\n\n**亮点**：\n- Stars: 7\n- 语言: Python",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "inference",
-          "weight": 1.8
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 138.0,
-      "detail_path": "items/github-alpha-park-genpark-dynamic-prompt-prefix-cache-skill.html",
-      "first_seen_at": "2026-09-28T05:16:22.404839+00:00",
-      "last_seen_at": "2026-09-28T05:16:22.404839+00:00",
-      "last_curated_at": "2026-09-28T05:16:22.404839+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "github::alphaparkinc/genpark-int8-symmetric-per-tensor-quantizer-skill",
-      "kind": "repo",
-      "source": "github",
-      "source_tags": [
-        "new"
-      ],
-      "name": "genpark-int8-symmetric-per-tensor-quantizer-skill",
-      "title": "alphaparkinc/genpark-int8-symmetric-per-tensor-quantizer-skill",
-      "full_name": "alphaparkinc/genpark-int8-symmetric-per-tensor-quantizer-skill",
-      "html_url": "https://github.com/alphaparkinc/genpark-int8-symmetric-per-tensor-quantizer-skill",
-      "description": "Symmetric INT8 per-tensor and per-channel quantization engine for LLM weights and activations, with SNR and MSE reconstruction telemetry.",
-      "stars": 7,
-      "stars_today": 0,
-      "language": "Python",
-      "topics": [
-        "agentic-ai",
-        "deep-learning",
-        "edge-ai",
-        "int8-quantization",
-        "llm-acceleration",
-        "mcp",
-        "mcp-server",
-        "model-context-protocol",
-        "model-quantization",
-        "on-device-ai",
-        "zero-dependency"
-      ],
-      "created_at": "2026-09-28T03:22:23+00:00",
-      "updated_at": "2026-09-28T03:24:52+00:00",
-      "heuristic_score": 14.214,
-      "summary": "alphaparkinc/genpark-int8-symmetric-per-tensor-quantizer-skill 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Symmetric INT8 per-tensor and per-channel quantization engine for LLM weights and activations, with SNR and MSE reconstruction telemetry.结合关键词命中和热度信号，它适合加入今日重点观察列表。",
-      "brief": "这是一个值得快速关注的开源 AI 项目。",
-      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
-      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
-      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
-      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
-      "highlights": [
-        "Stars: 7",
-        "语言: Python"
-      ],
-      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
-      "relevance_score": 8,
-      "tags": [
-        "llm"
-      ],
-      "themes": [
-        "llm"
-      ],
-      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：alphaparkinc/genpark-int8-symmetric-per-tensor-quantizer-skill 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Symmetric INT8 per-tensor and per-channel quantization engine for LLM weights and activations, with SNR and MSE reconstruction telemetry.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 7\n- 语言: Python",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 110.0,
-      "detail_path": "items/github-alphaparkinc-genpark-int8-symmetric-per-tensor-quantizer-skill.html",
-      "first_seen_at": "2026-09-28T05:16:22.404839+00:00",
-      "last_seen_at": "2026-09-28T05:16:22.404839+00:00",
-      "last_curated_at": "2026-09-28T05:16:22.404839+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "github::Alpha-Park/genpark-jwt-hmac-sha256-token-attestation-skill",
-      "kind": "repo",
-      "source": "github",
-      "source_tags": [
-        "new"
-      ],
-      "name": "genpark-jwt-hmac-sha256-token-attestation-skill",
-      "title": "Alpha-Park/genpark-jwt-hmac-sha256-token-attestation-skill",
-      "full_name": "Alpha-Park/genpark-jwt-hmac-sha256-token-attestation-skill",
-      "html_url": "https://github.com/Alpha-Park/genpark-jwt-hmac-sha256-token-attestation-skill",
-      "description": "Cryptographic JSON Web Token (JWT) engine with RFC 7519 HMAC-SHA256 signature verification, claims validation, and expiration enforcement.",
-      "stars": 7,
-      "stars_today": 0,
-      "language": "Python",
-      "topics": [
-        "agent-auth",
-        "agentic-ai",
-        "cryptography",
-        "hmac-sha256",
-        "jwt",
-        "mcp",
-        "mcp-server",
-        "model-context-protocol",
-        "security",
-        "token-attestation",
-        "zero-dependency"
-      ],
-      "created_at": "2026-09-28T03:42:29+00:00",
-      "updated_at": "2026-09-28T03:43:02+00:00",
-      "heuristic_score": 11.614,
-      "summary": "Alpha-Park/genpark-jwt-hmac-sha256-token-attestation-skill 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Cryptographic JSON Web Token (JWT) engine with RFC 7519 HMAC-SHA256 signature verification, claims validation, and expiration enforcement.结合关键词命中和热度信号，它适合加入今日重点观察列表。",
-      "brief": "这是一个值得快速关注的开源 AI 项目。",
-      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
-      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
-      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
-      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
-      "highlights": [
-        "Stars: 7",
-        "语言: Python"
-      ],
-      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
-      "relevance_score": 6,
-      "tags": [
-        "ai"
-      ],
-      "themes": [
-        "ai"
-      ],
-      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：Alpha-Park/genpark-jwt-hmac-sha256-token-attestation-skill 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Cryptographic JSON Web Token (JWT) engine with RFC 7519 HMAC-SHA256 signature verification, claims validation, and expiration enforcement.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：6/10\n\n**亮点**：\n- Stars: 7\n- 语言: Python",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 90.0,
-      "detail_path": "items/github-alpha-park-genpark-jwt-hmac-sha256-token-attestation-skill.html",
-      "first_seen_at": "2026-09-28T05:16:22.404839+00:00",
-      "last_seen_at": "2026-09-28T05:16:22.404839+00:00",
-      "last_curated_at": "2026-09-28T05:16:22.404839+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "github::willfaust/Madeira",
-      "kind": "repo",
-      "source": "github",
-      "source_tags": [
-        "trending"
-      ],
-      "name": "Madeira",
-      "title": "willfaust/Madeira",
-      "full_name": "willfaust/Madeira",
-      "html_url": "https://github.com/willfaust/Madeira",
-      "description": "Run x86-64 Windows PC games on jailed iOS via FEX-Emu + Wine + DXMT",
-      "stars": 828,
-      "stars_today": 0,
-      "language": "C",
-      "topics": [],
-      "created_at": "",
-      "updated_at": "",
-      "heuristic_score": 4.256,
-      "summary": "willfaust/Madeira 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Run x86-64 Windows PC games on jailed iOS via FEX-Emu + Wine + DXMT结合关键词命中和热度信号，它适合加入今日重点观察列表。",
-      "brief": "这是一个值得快速关注的开源 AI 项目。",
-      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
-      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
-      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
-      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
-      "highlights": [
-        "Stars: 828",
-        "语言: C"
-      ],
-      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
-      "relevance_score": 5,
-      "tags": [
-        "ai"
-      ],
-      "themes": [
-        "ai"
-      ],
-      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：willfaust/Madeira 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Run x86-64 Windows PC games on jailed iOS via FEX-Emu + Wine + DXMT结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：5/10\n\n**亮点**：\n- Stars: 828\n- 语言: C",
-      "focus_hits": [],
-      "primary_match": "",
-      "personalized_score": 50.33,
-      "detail_path": "items/github-willfaust-madeira.html",
-      "first_seen_at": "2026-09-28T02:01:24.939434+00:00",
-      "last_seen_at": "2026-09-28T02:01:24.939434+00:00",
-      "last_curated_at": "2026-09-28T02:01:24.939434+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "github::NVIDIA/Model-Optimizer",
-      "kind": "repo",
-      "source": "github",
-      "source_tags": [
-        "trending"
-      ],
-      "name": "Model-Optimizer",
-      "title": "NVIDIA/Model-Optimizer",
-      "full_name": "NVIDIA/Model-Optimizer",
-      "html_url": "https://github.com/NVIDIA/Model-Optimizer",
-      "description": "A unified library of SOTA model optimization techniques like quantization, distillation, pruning, neural architecture search, speculative decoding, etc. It compresses deep learning models for downstream deployment frameworks like TensorRT-LLM, TensorRT, vLLM, etc. to optimize inference speed.",
-      "stars": 4803,
-      "stars_today": 0,
-      "language": "Python",
-      "topics": [],
-      "created_at": "",
-      "updated_at": "",
-      "heuristic_score": 17.406,
-      "summary": "NVIDIA/Model-Optimizer 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：A unified library of SOTA model optimization techniques like quantization, distillation, pruning, neural architecture search, speculative decoding, etc. It compresses deep learning models for downstream deployment frameworks like TensorRT-L...结合关键词命中和热度信号，它适合加入今日重点观察列表。",
-      "brief": "这是一个值得快速关注的开源 AI 项目。",
-      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
-      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
-      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
-      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
-      "highlights": [
-        "Stars: 4803",
-        "语言: Python"
-      ],
-      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
-      "relevance_score": 10,
-      "tags": [
-        "llm",
-        "model",
-        "inference"
-      ],
-      "themes": [
-        "llm",
-        "model",
-        "inference"
-      ],
-      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：NVIDIA/Model-Optimizer 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：A unified library of SOTA model optimization techniques like quantization, distillation, pruning, neural architecture search, speculative decoding, etc. It compresses deep learning models for downstream deployment frameworks like TensorRT-L...结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：10/10\n\n**亮点**：\n- Stars: 4803\n- 语言: Python",
-      "focus_hits": [
-        {
-          "keyword": "coding",
-          "weight": 2.6
-        },
-        {
-          "keyword": "inference",
-          "weight": 1.8
-        }
-      ],
-      "primary_match": "coding",
-      "personalized_score": 145.92,
-      "detail_path": "items/github-nvidia-model-optimizer.html",
-      "first_seen_at": "2026-09-25T01:58:20.257719+00:00",
-      "last_seen_at": "2026-09-27T05:12:37.897950+00:00",
-      "last_curated_at": "2026-09-27T05:12:37.897950+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "github::zhaoxuya520/reverse-skill",
-      "kind": "repo",
-      "source": "github",
-      "source_tags": [
-        "trending"
-      ],
-      "name": "reverse-skill",
-      "title": "zhaoxuya520/reverse-skill",
-      "full_name": "zhaoxuya520/reverse-skill",
-      "html_url": "https://github.com/zhaoxuya520/reverse-skill",
-      "description": "Reverse Engineering / Authorized Penetration Testing / Security Research Skill Router Pack AI-powered routing + On-demand toolchain bootstrapping + Self-evolving knowledge base Supports Claude Code, Kiro, Cursor, Cline, and other AI coding clients 逆向/渗透/安全技能路由包 - AI 自动路由 + 按需自举工具链 + 自动进化经验库 | 支持 Claude Code / Kiro / Cursor / Cline 等代码 AI 客户端",
-      "stars": 38099,
-      "stars_today": 0,
-      "language": "PowerShell",
-      "topics": [],
-      "created_at": "",
-      "updated_at": "",
-      "heuristic_score": 12.6,
-      "summary": "zhaoxuya520/reverse-skill 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Reverse Engineering / Authorized Penetration Testing / Security Research Skill Router Pack AI-powered routing + On-demand toolchain bootstrapping + Self-evolving knowledge base Supports Claude Code, Kiro, Cursor, Cline, and other AI coding ...结合关键词命中和热度信号，它适合加入今日重点观察列表。",
-      "brief": "这是一个值得快速关注的开源 AI 项目。",
-      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
-      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
-      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
-      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
-      "highlights": [
-        "Stars: 38099",
-        "语言: PowerShell"
-      ],
-      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
-      "relevance_score": 7,
-      "tags": [
-        "ai"
-      ],
-      "themes": [
-        "ai"
-      ],
-      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：zhaoxuya520/reverse-skill 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Reverse Engineering / Authorized Penetration Testing / Security Research Skill Router Pack AI-powered routing + On-demand toolchain bootstrapping + Self-evolving knowledge base Supports Claude Code, Kiro, Cursor, Cline, and other AI coding ...结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 38099\n- 语言: PowerShell",
-      "focus_hits": [
-        {
-          "keyword": "coding",
-          "weight": 2.6
-        }
-      ],
-      "primary_match": "coding",
-      "personalized_score": 111.24,
-      "detail_path": "items/github-zhaoxuya520-reverse-skill.html",
-      "first_seen_at": "2026-08-01T01:20:11.503604+00:00",
-      "last_seen_at": "2026-09-27T05:12:37.897950+00:00",
-      "last_curated_at": "2026-09-27T05:12:37.897950+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "github::llvm/llvm-project",
-      "kind": "repo",
-      "source": "github",
-      "source_tags": [
-        "trending"
-      ],
-      "name": "llvm-project",
-      "title": "llvm/llvm-project",
-      "full_name": "llvm/llvm-project",
-      "html_url": "https://github.com/llvm/llvm-project",
-      "description": "The LLVM Project is a collection of modular and reusable compiler and toolchain technologies.",
-      "stars": 40773,
-      "stars_today": 0,
-      "language": "LLVM",
-      "topics": [],
-      "created_at": "",
-      "updated_at": "",
-      "heuristic_score": 12.6,
-      "summary": "llvm/llvm-project 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：The LLVM Project is a collection of modular and reusable compiler and toolchain technologies.结合关键词命中和热度信号，它适合加入今日重点观察列表。",
-      "brief": "这是一个值得快速关注的开源 AI 项目。",
-      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
-      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
-      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
-      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
-      "highlights": [
-        "Stars: 40773",
-        "语言: LLVM"
-      ],
-      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
-      "relevance_score": 7,
-      "tags": [
-        "ai"
-      ],
-      "themes": [
-        "ai"
-      ],
-      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：llvm/llvm-project 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：The LLVM Project is a collection of modular and reusable compiler and toolchain technologies.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 40773\n- 语言: LLVM",
-      "focus_hits": [],
-      "primary_match": "",
-      "personalized_score": 86.31,
-      "detail_path": "items/github-llvm-llvm-project.html",
-      "first_seen_at": "2026-09-27T01:55:14.617447+00:00",
-      "last_seen_at": "2026-09-27T05:12:37.897950+00:00",
-      "last_curated_at": "2026-09-27T05:12:37.897950+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "github::mobile-next/mobile-mcp",
-      "kind": "repo",
-      "source": "github",
-      "source_tags": [
-        "trending"
-      ],
-      "name": "mobile-mcp",
-      "title": "mobile-next/mobile-mcp",
-      "full_name": "mobile-next/mobile-mcp",
-      "html_url": "https://github.com/mobile-next/mobile-mcp",
-      "description": "Model Context Protocol Server for Mobile Automation and Scraping (iOS, Android, Emulators, Simulators and Real Devices)",
-      "stars": 7455,
-      "stars_today": 0,
-      "language": "TypeScript",
-      "topics": [],
-      "created_at": "",
-      "updated_at": "",
-      "heuristic_score": 12.6,
-      "summary": "mobile-next/mobile-mcp 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Model Context Protocol Server for Mobile Automation and Scraping (iOS, Android, Emulators, Simulators and Real Devices)结合关键词命中和热度信号，它适合加入今日重点观察列表。",
-      "brief": "这是一个值得快速关注的开源 AI 项目。",
-      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
-      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
-      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
-      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
-      "highlights": [
-        "Stars: 7455",
-        "语言: TypeScript"
-      ],
-      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
-      "relevance_score": 7,
-      "tags": [
-        "model"
-      ],
-      "themes": [
-        "model"
-      ],
-      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：mobile-next/mobile-mcp 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Model Context Protocol Server for Mobile Automation and Scraping (iOS, Android, Emulators, Simulators and Real Devices)结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 7455\n- 语言: TypeScript",
-      "focus_hits": [],
-      "primary_match": "",
-      "personalized_score": 72.98,
-      "detail_path": "items/github-mobile-next-mobile-mcp.html",
-      "first_seen_at": "2026-09-27T01:55:14.617447+00:00",
-      "last_seen_at": "2026-09-27T05:12:37.897950+00:00",
-      "last_curated_at": "2026-09-27T05:12:37.897950+00:00",
-      "last_notified_at": null
     }
   ],
   "digests": [
+    {
+      "date": "2026-10-27",
+      "title": "AI Daily Digest · 2026-10-27",
+      "generated_at": "2026-10-27T10:28:32.849827+08:00",
+      "notified_at": null,
+      "repo_ids": [
+        "github::TauricResearch/TradingAgents",
+        "github::Panniantong/Agent-Reach",
+        "github::multica-ai/andrej-karpathy-skills",
+        "github::gitroomhq/postiz-app",
+        "github::alchaincyf/huashu-design",
+        "github::NVIDIA/SkillSpector",
+        "github::makecindy/cindy",
+        "github::Nutlope/hallmark"
+      ],
+      "paper_ids": [
+        "arxiv::http://arxiv.org/abs/2610.35083v1",
+        "arxiv::http://arxiv.org/abs/2610.35077v1",
+        "arxiv::http://arxiv.org/abs/2610.35093v1",
+        "arxiv::http://arxiv.org/abs/2610.35059v1",
+        "arxiv::http://arxiv.org/abs/2610.35101v1",
+        "arxiv::http://arxiv.org/abs/2610.35084v1"
+      ],
+      "digest_json": "data/digests/2026-10-27.json",
+      "digest_markdown": "data/digests/2026-10-27.md"
+    },
     {
       "date": "2026-10-26",
       "title": "AI Daily Digest · 2026-10-26",
@@ -17716,33 +17795,14 @@
       ],
       "digest_json": "data/digests/2026-04-11.json",
       "digest_markdown": "data/digests/2026-04-11.md"
-    },
-    {
-      "date": "2026-04-10",
-      "title": "AI Daily Digest · 2026-04-10",
-      "generated_at": "2026-04-10T09:27:47.859578+08:00",
-      "notified_at": null,
-      "repo_ids": [
-        "github::shiyu-coder/Kronos"
-      ],
-      "paper_ids": [
-        "arxiv::http://arxiv.org/abs/2604.08299v1",
-        "arxiv::http://arxiv.org/abs/2604.08322v1",
-        "arxiv::http://arxiv.org/abs/2604.08302v1",
-        "arxiv::http://arxiv.org/abs/2604.08256v1",
-        "arxiv::http://arxiv.org/abs/2604.08284v1",
-        "arxiv::http://arxiv.org/abs/2604.08266v1"
-      ],
-      "digest_json": "data/digests/2026-04-10.json",
-      "digest_markdown": "data/digests/2026-04-10.md"
     }
   ],
   "reports": {
     "weekly": {
       "label": "周报",
       "window_days": 7,
-      "generated_at": "2026-10-26T12:38:00.851438+08:00",
-      "count": 59,
+      "generated_at": "2026-10-27T10:28:32.849827+08:00",
+      "count": 67,
       "summary": "近 7 天里，最集中的主题是 ai、llm、agent。",
       "top_items": [
         {
@@ -18437,7 +18497,7 @@
     "monthly": {
       "label": "月报",
       "window_days": 30,
-      "generated_at": "2026-10-26T12:38:00.851438+08:00",
+      "generated_at": "2026-10-27T10:28:32.849827+08:00",
       "count": 200,
       "summary": "近 30 天里，最集中的主题是 ai、llm、agent。",
       "top_items": [
