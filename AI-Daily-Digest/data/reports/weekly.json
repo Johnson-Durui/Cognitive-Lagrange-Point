@@ -1,8 +1,8 @@
 {
   "label": "周报",
   "window_days": 7,
-  "generated_at": "2026-10-29T13:39:21.210294+08:00",
-  "count": 44,
+  "generated_at": "2026-10-30T11:00:29.577291+08:00",
+  "count": 54,
   "summary": "近 7 天里，最集中的主题是 ai、llm、agent。",
   "top_items": [
     {
@@ -543,42 +543,39 @@
       "last_notified_at": null
     },
     {
-      "id": "arxiv::http://arxiv.org/abs/2610.37613v1",
+      "id": "arxiv::http://arxiv.org/abs/2610.38755v1",
       "kind": "paper",
       "source": "arxiv",
       "source_tags": [
         "latest"
       ],
-      "title": "VideoLVR: Latent Visual Reasoning over Grounded Video Evidence",
-      "html_url": "http://arxiv.org/abs/2610.37613v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.37613v1",
-      "description": "Chain-of-thought reasoning has substantially advanced video understanding in multimodal large language models (MLLMs). However, language-based reasoning traces do not provide a reliable mechanism for models to revisit relevant visual evidence, leading to visual forgetting and impairing their ability to reason over video content. Existing approaches maintain visual grounding during reasoning in two main ways: they either refer to evidence using textual coordinates, which specify symbolic locations rather than the visual content itself, or reinsert cropped regions or frames into the multimodal context, preserving visual details at the cost of substantial context expansion. To address these limitations, we introduce VideoLVR, which constructs latent visual evidence from local regions at relevant video moments, thereby providing visual support for intermediate reasoning steps. To supervise latent visual evidence generation, we introduce a visual token prediction objective that formulates visual token reconstruction as prediction over a vocabulary derived from the input video, thereby unifying visual evidence reconstruction and text generation within the same token prediction framework. This shared prediction framework enables MLLMs to reason over interleaved text tokens and latent visual states while integrating evidence from different moments. We further extend VideoLVR to reinforcement learning by treating sampled visual tokens as actions alongside text tokens and jointly optimizing the policy using final-answer rewards. By efficiently revisiting task-relevant visual information during reasoning, VideoLVR improves video understanding without substantially expanding the multimodal context. Experiments on multiple video benchmarks demonstrate its effectiveness, especially on tasks requiring fine-grained visual evidence.",
+      "title": "Leaving, Staying, or Living There? Duration Commonsense Reasoning with Human-LLM Co-annotations",
+      "html_url": "http://arxiv.org/abs/2610.38755v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.38755v1",
+      "description": "Gardening in the backyard implies living there, while checking into an Airbnb more likely means staying for a few days. Such duration judgments are important for understanding human mobility, travel behavior, and social context. However, duration is rarely stated explicitly in social media posts and must instead be inferred from noisy textual, visual, and contextual cues. In this paper, we investigate whether vision-language models possess such duration commonsense. We create a new corpus of geotagged tweets co-annotated by humans and LLMs to serve as a testbed for this task. We find that state-of-the-art models struggle with duration inference, even when guided by multi-turn Chain-of-Thought prompting. Error analyses further reveal that models often fail to integrate critical contextual information, or they overly rely on prominent visual details while overlooking subtle hashtags and semantic nuances. These findings underscore the significant challenges remaining in context-aware multimodal understanding.",
       "authors": [
-        "Shilong Li",
-        "Xingyuan Bu",
-        "Hao Shi",
-        "Yun Xing",
-        "Weixin Feng",
-        "Qiangpeng Yang",
-        "Shilei Wen"
+        "Chenyang Yu",
+        "Zhaomin Xiao",
+        "Yan Huang",
+        "Eduardo Blanco"
       ],
       "categories": [
-        "cs.CV",
-        "cs.AI"
+        "cs.AI",
+        "cs.IR"
       ],
-      "published_at": "2026-10-27T17:41:56+00:00",
-      "updated_at": "2026-10-27T17:41:56+00:00",
-      "primary_category": "cs.CV",
-      "heuristic_score": 17.9,
-      "summary": "VideoLVR: Latent Visual Reasoning over Grounded Video Evidence 是最近值得追踪的一篇 AI 论文。论文摘要显示：Chain-of-thought reasoning has substantially advanced video understanding in multimodal large language models (MLLMs). However, language-based reasoning traces do not provide a reliable mechanism for models to revisit relevant visual eviden...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "published_at": "2026-10-28T19:35:59+00:00",
+      "updated_at": "2026-10-28T19:35:59+00:00",
+      "primary_category": "cs.AI",
+      "heuristic_score": 17.176,
+      "summary": "Leaving, Staying, or Living There? Duration Commonsense Reasoning with Human-LLM Co-annotations 是最近值得追踪的一篇 AI 论文。论文摘要显示：Gardening in the backyard implies living there, while checking into an Airbnb more likely means staying for a few days. Such duration judgments are important for understanding human mobility, travel behavior, and social context. However, du...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
       "brief": "这是一篇值得加入今日论文雷达的最新工作。",
       "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
       "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
       "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
       "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
       "highlights": [
-        "分类: cs.CV, cs.AI",
-        "作者数: 7"
+        "分类: cs.AI, cs.IR",
+        "作者数: 4"
       ],
       "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
       "relevance_score": 10,
@@ -594,7 +591,7 @@
         "multimodal"
       ],
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：VideoLVR: Latent Visual Reasoning over Grounded Video Evidence 是最近值得追踪的一篇 AI 论文。论文摘要显示：Chain-of-thought reasoning has substantially advanced video understanding in multimodal large language models (MLLMs). However, language-based reasoning traces do not provide a reliable mechanism for models to revisit relevant visual eviden...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV, cs.AI\n- 作者数: 7",
+      "summary_markdown": "**摘要**：Leaving, Staying, or Living There? Duration Commonsense Reasoning with Human-LLM Co-annotations 是最近值得追踪的一篇 AI 论文。论文摘要显示：Gardening in the backyard implies living there, while checking into an Airbnb more likely means staying for a few days. Such duration judgments are important for understanding human mobility, travel behavior, and social context. However, du...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI, cs.IR\n- 作者数: 4",
       "focus_hits": [
         {
           "keyword": "reasoning",
@@ -605,16 +602,16 @@
           "weight": 2.0
         },
         {
-          "keyword": "benchmark",
-          "weight": 1.6
+          "keyword": "inference",
+          "weight": 1.8
         }
       ],
       "primary_match": "reasoning",
-      "personalized_score": 168.0,
-      "detail_path": "items/arxiv-videolvr-latent-visual-reasoning-over-grounded-video-evidence.html",
-      "first_seen_at": "2026-10-28T02:37:31.788431+00:00",
-      "last_seen_at": "2026-10-29T05:39:28.107627+00:00",
-      "last_curated_at": "2026-10-29T05:39:28.107627+00:00",
+      "personalized_score": 170.0,
+      "detail_path": "items/arxiv-leaving-staying-or-living-there-duration-commonsense-reasoning-with-human-llm-co-annotatio.html",
+      "first_seen_at": "2026-10-30T03:00:38.528457+00:00",
+      "last_seen_at": "2026-10-30T03:00:38.528457+00:00",
+      "last_curated_at": "2026-10-30T03:00:38.528457+00:00",
       "last_notified_at": null
     }
   ],
