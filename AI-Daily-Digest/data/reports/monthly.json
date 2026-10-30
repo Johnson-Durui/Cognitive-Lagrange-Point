@@ -1,9 +1,9 @@
 {
   "label": "月报",
   "window_days": 30,
-  "generated_at": "2026-10-30T11:00:29.577291+08:00",
-  "count": 200,
-  "summary": "近 30 天里，最集中的主题是 ai、agent、llm。",
+  "generated_at": "2026-10-30T13:38:33.895917+08:00",
+  "count": 198,
+  "summary": "近 30 天里，最集中的主题是 ai、llm、agent。",
   "top_items": [
     {
       "id": "arxiv::http://arxiv.org/abs/2610.26860v1",
@@ -101,97 +101,6 @@
       "first_seen_at": "2026-10-20T04:41:31.753232+00:00",
       "last_seen_at": "2026-10-20T04:41:31.753232+00:00",
       "last_curated_at": "2026-10-20T04:41:31.753232+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2609.38147v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "Thinking Before Thinking: Scaling Agentic Inference Through Meta-Reasoning",
-      "html_url": "http://arxiv.org/abs/2609.38147v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.38147v1",
-      "description": "As agents take on longer and more complex problems, controlling the execution becomes a task in its own right. Each step in the run brings new control choices, like which partial work to build on, whether to start fresh, or when to stop. We introduce agentic meta-reasoning, an inference-time harness that makes these choices an explicit and structured reasoning process. Workers carry out the task-level computation, while a controller consolidates what the run has established, explores next options, assesses what each option is worth under the remaining budget, and dispatches the chosen work with context drawn from persistent memory. Between decisions the controller carries only a compact account of the run rather than replaying its full history. Our baselines span production coding agents and research harnesses, together with a Direct Control Agent using the same workers and compute budget allowance. On ProgramBench, which tests long-horizon agentic capability through program reconstruction, meta-reasoning achieves 71.5% with GPT-5.5 against 58.0% for Codex; with Opus 4.8 it achieves 67.2% against 65.5% for Claude Code. On the other benchmarks, spanning abstract reasoning, multi-domain long-horizon reasoning, and proof generation, it gains between 3.6 and 4.2 points over direct control, averaged across three frontier models. It keeps improving over the tested budget ranges where direct control plateaus, though its overhead can hurt at small budgets. Artifact-graph analysis reveals more reuse of earlier work, higher coverage of correct solutions in most settings, and nonuniform gains in final selection. These results indicate that spending computation on structured control becomes more important as agents scale to longer runs.",
-      "authors": [
-        "Paras Dahal",
-        "Anton Bakhtin",
-        "Taco Cohen",
-        "Zhengxing Chen",
-        "Carole-Jean Wu",
-        "Rob Fergus",
-        "Scott Yih",
-        "Gabriel Synnaeve",
-        "Ruslan Salakhutdinov",
-        "Sanjeev Arora",
-        "Jason Weston",
-        "Anirudh Goyal"
-      ],
-      "categories": [
-        "cs.AI"
-      ],
-      "published_at": "2026-09-29T17:57:25+00:00",
-      "updated_at": "2026-09-29T17:57:25+00:00",
-      "primary_category": "cs.AI",
-      "heuristic_score": 27.5,
-      "summary": "Thinking Before Thinking: Scaling Agentic Inference Through Meta-Reasoning 是最近值得追踪的一篇 AI 论文。论文摘要显示：As agents take on longer and more complex problems, controlling the execution becomes a task in its own right. Each step in the run brings new control choices, like which partial work to build on, whether to start fresh, or when to stop. We...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.AI",
-        "作者数: 12"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "agent",
-        "agentic",
-        "gpt"
-      ],
-      "themes": [
-        "ai",
-        "agent",
-        "agentic"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：Thinking Before Thinking: Scaling Agentic Inference Through Meta-Reasoning 是最近值得追踪的一篇 AI 论文。论文摘要显示：As agents take on longer and more complex problems, controlling the execution becomes a task in its own right. Each step in the run brings new control choices, like which partial work to build on, whether to start fresh, or when to stop. We...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI\n- 作者数: 12",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "coding",
-          "weight": 2.6
-        },
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "inference",
-          "weight": 1.8
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 244.0,
-      "detail_path": "items/arxiv-thinking-before-thinking-scaling-agentic-inference-through-meta-reasoning.html",
-      "first_seen_at": "2026-09-30T02:28:45.575013+00:00",
-      "last_seen_at": "2026-09-30T05:26:08.033029+00:00",
-      "last_curated_at": "2026-09-30T05:26:08.033029+00:00",
       "last_notified_at": null
     },
     {
@@ -690,6 +599,89 @@
       "last_seen_at": "2026-10-20T04:41:31.753232+00:00",
       "last_curated_at": "2026-10-20T04:41:31.753232+00:00",
       "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2610.26826v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "RefCraft: Benchmarking Visual-Reference-Conditioned Agentic Generation through Web Development",
+      "html_url": "http://arxiv.org/abs/2610.26826v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.26826v1",
+      "description": "Beyond basic tool use and coding skills, effectively incorporating visual references into agentic generation is equally essential for applying AI agents to real-world productivity tasks. We study this crucial capability through webpage development, a practical and readily evaluable setting in which existing benchmarks remain largely idealized: they typically focus on reconstructing visual targets or generating webpages from textual instructions alone, overlooking the more common workflow of developing from visual examples. Specifically, we introduce RefCraft, a benchmark comprising 300 realistic multimodal webpage-development tasks that combine natural-language instructions with screenshots from one to five reference webpages. Agents must selectively interpret and utilize these references while rendering, visually inspecting, and iteratively refining their outputs. We evaluate the resulting open-ended artifacts using independently verifiable keypoints and complementary programmatic and VLM judges. Across nine frontier (M)LLMs, the strongest system achieves an overall score of only 52.12 out of 100, revealing that visual-reference-conditioned agentic generation remains a substantial challenge for current models in practical webpage-development settings.",
+      "authors": [
+        "Yuchi Wang",
+        "Rongyao Fang",
+        "Weihao Yu",
+        "Xilin Wei",
+        "Tiancheng Gu",
+        "Dingkang Yang",
+        "Hang Zhang",
+        "Dayiheng Liu",
+        "Hongsheng Li",
+        "Shuai Bai"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.CV"
+      ],
+      "published_at": "2026-10-19T17:55:06+00:00",
+      "updated_at": "2026-10-19T17:55:06+00:00",
+      "primary_category": "cs.CL",
+      "heuristic_score": 22.29,
+      "summary": "RefCraft: Benchmarking Visual-Reference-Conditioned Agentic Generation through Web Development 是最近值得追踪的一篇 AI 论文。论文摘要显示：Beyond basic tool use and coding skills, effectively incorporating visual references into agentic generation is equally essential for applying AI agents to real-world productivity tasks. We study this crucial capability through webpage deve...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CL, cs.AI",
+        "作者数: 10"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "llm",
+        "agent",
+        "agentic"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "agent"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：RefCraft: Benchmarking Visual-Reference-Conditioned Agentic Generation through Web Development 是最近值得追踪的一篇 AI 论文。论文摘要显示：Beyond basic tool use and coding skills, effectively incorporating visual references into agentic generation is equally essential for applying AI agents to real-world productivity tasks. We study this crucial capability through webpage deve...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL, cs.AI\n- 作者数: 10",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "coding",
+          "weight": 2.6
+        },
+        {
+          "keyword": "multimodal",
+          "weight": 2.0
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 200.0,
+      "detail_path": "items/arxiv-refcraft-benchmarking-visual-reference-conditioned-agentic-generation-through-web-developm.html",
+      "first_seen_at": "2026-10-20T04:41:31.753232+00:00",
+      "last_seen_at": "2026-10-20T04:41:31.753232+00:00",
+      "last_curated_at": "2026-10-20T04:41:31.753232+00:00",
+      "last_notified_at": null
     }
   ],
   "top_themes": [
@@ -698,12 +690,12 @@
       "count": 8
     },
     {
-      "theme": "agent",
-      "count": 5
+      "theme": "llm",
+      "count": 4
     },
     {
-      "theme": "llm",
-      "count": 3
+      "theme": "agent",
+      "count": 4
     }
   ],
   "highlights": [
@@ -713,12 +705,12 @@
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     },
     {
-      "title": "Thinking Before Thinking: Scaling Agentic Inference Through Meta-Reasoning",
+      "title": "Think Before You Speak: Enabling Training-Free Latent Communication Between Language Models",
       "source": "arxiv",
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     },
     {
-      "title": "Think Before You Speak: Enabling Training-Free Latent Communication Between Language Models",
+      "title": "Metacognitive Decoding: Efficient Inference for Diffusion Language Agents",
       "source": "arxiv",
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     }
