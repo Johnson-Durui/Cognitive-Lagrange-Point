@@ -1,9 +1,9 @@
 {
   "label": "周报",
   "window_days": 7,
-  "generated_at": "2026-10-31T10:47:31.628475+08:00",
-  "count": 58,
-  "summary": "近 7 天里，最集中的主题是 ai、llm、agent。",
+  "generated_at": "2026-10-31T13:29:20.377441+08:00",
+  "count": 51,
+  "summary": "近 7 天里，最集中的主题是 ai、llm、rag。",
   "top_items": [
     {
       "id": "arxiv::http://arxiv.org/abs/2610.37642v1",
@@ -244,160 +244,6 @@
       "last_notified_at": null
     },
     {
-      "id": "arxiv::http://arxiv.org/abs/2610.31639v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "Causal Chain of Thought: Mitigating Attention Leakage via Context Isolation",
-      "html_url": "http://arxiv.org/abs/2610.31639v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.31639v1",
-      "description": "Chain-of-thought (CoT) prompting elicits step-by-step rationales that appear to explain model predictions, but there is no guarantee these steps causally drive the final answer. In standard autoregressive generation, dense attention allows each reasoning step to attend to the full context, enabling the model to derive answers through direct lookup while generating plausible-sounding but post-hoc justifications. We introduce CausalCoT, an inference framework that enforces causal transparency by decomposing problems into a directed acyclic graph of atomic sub-questions, evaluating each node in an isolated context containing only its direct causal parents. This Markovian structure removes attention pathways to non-parent content, making downstream predictions sensitive to local reasoning rather than global context leakage. Across a diverse suite of reasoning benchmarks, CausalCoT preserves competitive predictive performance while improving explanation faithfulness, increasing causal sensitivity of intermediate reasoning steps by an average of 12 and up to 21 percentage points over the strongest baseline. The structured dependency graph additionally enables test-time interventions in which local corrections propagate predictably through downstream reasoning.",
-      "authors": [
-        "Gabriele Dominici",
-        "Teague McMillan",
-        "Fazl Barez",
-        "Marc Langheinrich",
-        "Martin Gjoreski"
-      ],
-      "categories": [
-        "cs.LG",
-        "cs.AI"
-      ],
-      "published_at": "2026-10-22T17:52:56+00:00",
-      "updated_at": "2026-10-22T17:52:56+00:00",
-      "primary_category": "cs.LG",
-      "heuristic_score": 17.492,
-      "summary": "Causal Chain of Thought: Mitigating Attention Leakage via Context Isolation 是最近值得追踪的一篇 AI 论文。论文摘要显示：Chain-of-thought (CoT) prompting elicits step-by-step rationales that appear to explain model predictions, but there is no guarantee these steps causally drive the final answer. In standard autoregressive generation, dense attention allows ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.LG, cs.AI",
-        "作者数: 5"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "rag",
-        "model",
-        "benchmark"
-      ],
-      "themes": [
-        "ai",
-        "rag",
-        "model"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：Causal Chain of Thought: Mitigating Attention Leakage via Context Isolation 是最近值得追踪的一篇 AI 论文。论文摘要显示：Chain-of-thought (CoT) prompting elicits step-by-step rationales that appear to explain model predictions, but there is no guarantee these steps causally drive the final answer. In standard autoregressive generation, dense attention allows ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.LG, cs.AI\n- 作者数: 5",
-      "focus_hits": [
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "inference",
-          "weight": 1.8
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "reasoning",
-      "personalized_score": 188.0,
-      "detail_path": "items/arxiv-causal-chain-of-thought-mitigating-attention-leakage-via-context-isolation.html",
-      "first_seen_at": "2026-10-23T04:40:35.161145+00:00",
-      "last_seen_at": "2026-10-24T04:29:00.581236+00:00",
-      "last_curated_at": "2026-10-24T04:29:00.581236+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2610.31651v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "BrickWright: Agentic Creation of Physically Feasible Brick Builds",
-      "html_url": "http://arxiv.org/abs/2610.31651v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.31651v1",
-      "description": "Frontier coding agents are becoming increasingly adept at 3D modeling. Yet, they still face challenges when building objects meant to be assembled in the physical world, often creating invalid assemblies with floating, colliding, or disconnected parts. We argue that providing agents with tools for assembling builds and verifying their physical feasibility is sufficient for them to produce physically valid assemblies that still adhere to input prompts. Focusing on the domain of LEGO brick builds, we present BrickWright, a framework for generating physically feasible brick builds from text or image prompts using pre-trained agents, where a build is physically feasible if it uses only real parts, has no colliding or floating parts, and forms a connected structure if possible. BrickWright guides agents to create builds by writing code with BrickLayer, a Python toolkit with two main components: an ergonomic brick assembly API that halves inference cost compared to working in raw LDraw, and a validator that provides feedback on physical feasibility. Whereas baseline agents achieve physical validity rates ranging from only 9% (GPT-6 Luna) to 69% (GPT-6 Astra), BrickWright-guided agents achieve 100% validity on a sample of 512 prompts, while improving prompt adherence for lightweight agents and maintaining it for stronger agents. Additionally, they outperform specialized models on the text-to-brick task. Code is available on our project page: https://avalovelace1.github.io/brickwright/",
-      "authors": [
-        "Ava Pun",
-        "Kevin Dai",
-        "Sally Chen",
-        "Maxwell Jones",
-        "Ruixuan Liu",
-        "Kangle Deng",
-        "Changliu Liu",
-        "Maneesh Agrawala",
-        "Deva Ramanan",
-        "Jun-Yan Zhu"
-      ],
-      "categories": [
-        "cs.CV"
-      ],
-      "published_at": "2026-10-22T17:57:20+00:00",
-      "updated_at": "2026-10-22T17:57:20+00:00",
-      "primary_category": "cs.CV",
-      "heuristic_score": 20.178,
-      "summary": "BrickWright: Agentic Creation of Physically Feasible Brick Builds 是最近值得追踪的一篇 AI 论文。论文摘要显示：Frontier coding agents are becoming increasingly adept at 3D modeling. Yet, they still face challenges when building objects meant to be assembled in the physical world, often creating invalid assemblies with floating, colliding, or disconn...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CV",
-        "作者数: 10"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "agent",
-        "gpt",
-        "model"
-      ],
-      "themes": [
-        "ai",
-        "agent",
-        "gpt"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：BrickWright: Agentic Creation of Physically Feasible Brick Builds 是最近值得追踪的一篇 AI 论文。论文摘要显示：Frontier coding agents are becoming increasingly adept at 3D modeling. Yet, they still face challenges when building objects meant to be assembled in the physical world, often creating invalid assemblies with floating, colliding, or disconn...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV\n- 作者数: 10",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "coding",
-          "weight": 2.6
-        },
-        {
-          "keyword": "inference",
-          "weight": 1.8
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 182.0,
-      "detail_path": "items/arxiv-brickwright-agentic-creation-of-physically-feasible-brick-builds.html",
-      "first_seen_at": "2026-10-23T04:40:35.161145+00:00",
-      "last_seen_at": "2026-10-24T04:29:00.581236+00:00",
-      "last_curated_at": "2026-10-24T04:29:00.581236+00:00",
-      "last_notified_at": null
-    },
-    {
       "id": "arxiv::http://arxiv.org/abs/2610.37624v1",
       "kind": "paper",
       "source": "arxiv",
@@ -472,77 +318,6 @@
       "last_notified_at": null
     },
     {
-      "id": "arxiv::http://arxiv.org/abs/2610.31624v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "Questioning Instrumental Convergence in RLVR: Checkpoint Evidence from OLMo-3",
-      "html_url": "http://arxiv.org/abs/2610.31624v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.31624v1",
-      "description": "Instrumental convergence is often invoked as a general reason to expect capable agents to acquire or express power-seeking subgoals: self-preservation, resource acquisition, deception, or resistance to oversight which poses an important threat to the society. For LLMs, reinforcement learning is the first stage of post-training that directly optimizes behavior against an objective; therefore, it is the stage where convergent instrumental behavior, on IC grounds, likely to appear. Does reinforcement learning with verifiable rewards (RLVR) make a model more likely to express instrumental-convergence behavior, or does this depend on the training regime, evaluation frame, and stage of post-training? We study this question as a checkpoint-conditioned behavioral trajectory rather than as a single before/after safety score. Using InstrumentalEval, we evaluate OLMo-3-7B-Think across SFT, DPO, 13 intermediate RLVR checkpoints, and the final RLVR model. The trajectory is nonmonotonic: instrumental rate rises from 25.0% at SFT to 46.1% near RLVR step 200, then falls to 11.8% at the final checkpoint. Paired item-level tests and step-wise regression support the final SFT-to-RLVR reduction. Prompt framing does not explain this pattern: a harmful-prompt indicator combined with other framing effects explains only 15% of within-checkpoint score variance on average, and Iterative Null-space Projection (INLP) removes a detectable framing direction without changing the SFT-to-final-RLVR gap. Together with preliminary 32B endpoint results (35.53% SFT to 22.37% RLVR final), these findings indicate that RLVR does not monotonically increase instrumental behavior in this setting: the rate rises early, then falls below the SFT baseline. The result is specific to this model family and benchmark, and judge agreement is moderate, so absolute rates should be read cautiously.",
-      "authors": [
-        "Barış Alparslan",
-        "Sandy Tanwisuth",
-        "Caleb Petterson"
-      ],
-      "categories": [
-        "cs.LG",
-        "cs.AI"
-      ],
-      "published_at": "2026-10-22T17:44:41+00:00",
-      "updated_at": "2026-10-22T17:44:41+00:00",
-      "primary_category": "cs.LG",
-      "heuristic_score": 20.3,
-      "summary": "Questioning Instrumental Convergence in RLVR: Checkpoint Evidence from OLMo-3 是最近值得追踪的一篇 AI 论文。论文摘要显示：Instrumental convergence is often invoked as a general reason to expect capable agents to acquire or express power-seeking subgoals: self-preservation, resource acquisition, deception, or resistance to oversight which poses an important thr...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.LG, cs.AI",
-        "作者数: 3"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "llm",
-        "agent",
-        "rag"
-      ],
-      "themes": [
-        "ai",
-        "llm",
-        "agent"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：Questioning Instrumental Convergence in RLVR: Checkpoint Evidence from OLMo-3 是最近值得追踪的一篇 AI 论文。论文摘要显示：Instrumental convergence is often invoked as a general reason to expect capable agents to acquire or express power-seeking subgoals: self-preservation, resource acquisition, deception, or resistance to oversight which poses an important thr...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.LG, cs.AI\n- 作者数: 3",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 176.0,
-      "detail_path": "items/arxiv-questioning-instrumental-convergence-in-rlvr-checkpoint-evidence-from-olmo-3.html",
-      "first_seen_at": "2026-10-23T04:40:35.161145+00:00",
-      "last_seen_at": "2026-10-24T04:29:00.581236+00:00",
-      "last_curated_at": "2026-10-24T04:29:00.581236+00:00",
-      "last_notified_at": null
-    },
-    {
       "id": "arxiv::http://arxiv.org/abs/2610.38755v1",
       "kind": "paper",
       "source": "arxiv",
@@ -613,6 +388,220 @@
       "last_seen_at": "2026-10-30T05:38:40.305963+00:00",
       "last_curated_at": "2026-10-30T05:38:40.305963+00:00",
       "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2610.38774v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Auditable Hierarchical Inference with Multimodal Evidence and Bayesian Active Inquiry",
+      "html_url": "http://arxiv.org/abs/2610.38774v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.38774v1",
+      "description": "Most multimodal classifiers assume that all useful evidence is available upfront, whereas clinical inquiry is sequential. We present a synthetic evaluation framework separating objective multimodal inference from active inquiry. An objective model maps synthetic tongue, bilateral multipressure pulse, and acoustic observations to eight syndrome families. A provenance-bearing Knowledge Core and training-only answer model support Bayesian narrowing over 33 fine terms using 25 typed questions, while seven safety questions remain outside the diagnostic posterior. Weak shared symptom factors limit fine-term influence on objective phenotypes, and an objective-only probe tests leakage. In a preregistered 600-case synthetic evaluation, objective family accuracy was 87.0%. Cost-sensitive expected information gain (cost-EIG) raised family accuracy to 95.5% and exact fine-term accuracy to 42.5%, versus 92.7% and 33.0% for an unoptimized fixed-order baseline. Selective family accuracy reached 96.9% at 95.3% coverage. However, cost-EIG asked more questions on average than fixed order (9.795 versus 9.352). Missing-audio routing retained 94.0% family accuracy, and a workflow invariant enforced abstention when all objective modalities were absent. Permuting fine-term answer likelihoods reduced family accuracy to 78.7%. Five of six frozen checks passed, but the question-efficiency hypothesis failed. Comparisons are descriptive because only aggregate, not paired case-level, outputs were retained. These results establish a reproducible synthetic workflow, not clinical diagnostic or treatment validity.",
+      "authors": [
+        "Yucheng Liu",
+        "Everett X. Wang"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "published_at": "2026-10-28T19:48:34+00:00",
+      "updated_at": "2026-10-28T19:48:34+00:00",
+      "primary_category": "cs.LG",
+      "heuristic_score": 17.9,
+      "summary": "Auditable Hierarchical Inference with Multimodal Evidence and Bayesian Active Inquiry 是最近值得追踪的一篇 AI 论文。论文摘要显示：Most multimodal classifiers assume that all useful evidence is available upfront, whereas clinical inquiry is sequential. We present a synthetic evaluation framework separating objective multimodal inference from active inquiry. An objectiv...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.LG",
+        "作者数: 2"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "rag",
+        "multimodal",
+        "model"
+      ],
+      "themes": [
+        "ai",
+        "rag",
+        "multimodal"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：Auditable Hierarchical Inference with Multimodal Evidence and Bayesian Active Inquiry 是最近值得追踪的一篇 AI 论文。论文摘要显示：Most multimodal classifiers assume that all useful evidence is available upfront, whereas clinical inquiry is sequential. We present a synthetic evaluation framework separating objective multimodal inference from active inquiry. An objectiv...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.LG\n- 作者数: 2",
+      "focus_hits": [
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        },
+        {
+          "keyword": "multimodal",
+          "weight": 2.0
+        },
+        {
+          "keyword": "inference",
+          "weight": 1.8
+        }
+      ],
+      "primary_match": "rag",
+      "personalized_score": 168.0,
+      "detail_path": "items/arxiv-auditable-hierarchical-inference-with-multimodal-evidence-and-bayesian-active-inquiry.html",
+      "first_seen_at": "2026-10-30T03:00:38.528457+00:00",
+      "last_seen_at": "2026-10-30T05:38:40.305963+00:00",
+      "last_curated_at": "2026-10-30T05:38:40.305963+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2610.38737v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "RuleForge: Inferring and Instantiating Latent Visual Rules as Executable Programs",
+      "html_url": "http://arxiv.org/abs/2610.38737v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.38737v1",
+      "description": "Visual rule reasoning asks whether multimodal models can recover an abstract concept from a few examples. Existing studies either infer rules from visual examples but evaluate only classification or verbalization, or supervise executable generation with rules provided as input. Consequently, the relationship between visual rule understanding and reliable rule instantiation remains insufficiently explored. We present Bongard-Forge100k, a controlled benchmark, together with RuleForge, a backbone-agnostic framework that jointly learns visual rule understanding and rule-conditioned executable generation. The benchmark contains 108,797 problems: 86,000 for training, 19,297 for testing familiar rules, and 3,500 for testing held-out rule compositions. The framework progresses through rule-understanding training, joint understanding and scene-program supervision, and refinement via execution-grounded reinforcement learning with Understanding Replay. Executing generated programs under multiple random seeds provides verifiable feedback on executability, rule satisfaction, diversity, and robustness. With UniLIP as the primary backbone, RuleForge improves multiple-choice accuracy over the base model by 20.93 percentage points on familiar rules and 28.42 percentage points on held-out rule compositions, while increasing scene-level rule satisfaction on familiar rules from 2.91% to 70.99%. Additional experiments on InternVL3.5, Qwen3-VL, and Show-o2 demonstrate the effectiveness of the proposed training data and framework across diverse multimodal architectures.",
+      "authors": [
+        "Weifeng Xu",
+        "Yaxiong Wang",
+        "Zhedong Zheng"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "published_at": "2026-10-28T19:29:24+00:00",
+      "updated_at": "2026-10-28T19:29:24+00:00",
+      "primary_category": "cs.CV",
+      "heuristic_score": 17.866,
+      "summary": "RuleForge: Inferring and Instantiating Latent Visual Rules as Executable Programs 是最近值得追踪的一篇 AI 论文。论文摘要显示：Visual rule reasoning asks whether multimodal models can recover an abstract concept from a few examples. Existing studies either infer rules from visual examples but evaluate only classification or verbalization, or supervise executable ge...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CV",
+        "作者数: 3"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "multimodal",
+        "model",
+        "benchmark"
+      ],
+      "themes": [
+        "ai",
+        "multimodal",
+        "model"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：RuleForge: Inferring and Instantiating Latent Visual Rules as Executable Programs 是最近值得追踪的一篇 AI 论文。论文摘要显示：Visual rule reasoning asks whether multimodal models can recover an abstract concept from a few examples. Existing studies either infer rules from visual examples but evaluate only classification or verbalization, or supervise executable ge...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV\n- 作者数: 3",
+      "focus_hits": [
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "multimodal",
+          "weight": 2.0
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "reasoning",
+      "personalized_score": 168.0,
+      "detail_path": "items/arxiv-ruleforge-inferring-and-instantiating-latent-visual-rules-as-executable-programs.html",
+      "first_seen_at": "2026-10-30T03:00:38.528457+00:00",
+      "last_seen_at": "2026-10-30T05:38:40.305963+00:00",
+      "last_curated_at": "2026-10-30T05:38:40.305963+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2610.37613v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "VideoLVR: Latent Visual Reasoning over Grounded Video Evidence",
+      "html_url": "http://arxiv.org/abs/2610.37613v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37613v1",
+      "description": "Chain-of-thought reasoning has substantially advanced video understanding in multimodal large language models (MLLMs). However, language-based reasoning traces do not provide a reliable mechanism for models to revisit relevant visual evidence, leading to visual forgetting and impairing their ability to reason over video content. Existing approaches maintain visual grounding during reasoning in two main ways: they either refer to evidence using textual coordinates, which specify symbolic locations rather than the visual content itself, or reinsert cropped regions or frames into the multimodal context, preserving visual details at the cost of substantial context expansion. To address these limitations, we introduce VideoLVR, which constructs latent visual evidence from local regions at relevant video moments, thereby providing visual support for intermediate reasoning steps. To supervise latent visual evidence generation, we introduce a visual token prediction objective that formulates visual token reconstruction as prediction over a vocabulary derived from the input video, thereby unifying visual evidence reconstruction and text generation within the same token prediction framework. This shared prediction framework enables MLLMs to reason over interleaved text tokens and latent visual states while integrating evidence from different moments. We further extend VideoLVR to reinforcement learning by treating sampled visual tokens as actions alongside text tokens and jointly optimizing the policy using final-answer rewards. By efficiently revisiting task-relevant visual information during reasoning, VideoLVR improves video understanding without substantially expanding the multimodal context. Experiments on multiple video benchmarks demonstrate its effectiveness, especially on tasks requiring fine-grained visual evidence.",
+      "authors": [
+        "Shilong Li",
+        "Xingyuan Bu",
+        "Hao Shi",
+        "Yun Xing",
+        "Weixin Feng",
+        "Qiangpeng Yang",
+        "Shilei Wen"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "published_at": "2026-10-27T17:41:56+00:00",
+      "updated_at": "2026-10-27T17:41:56+00:00",
+      "primary_category": "cs.CV",
+      "heuristic_score": 17.9,
+      "summary": "VideoLVR: Latent Visual Reasoning over Grounded Video Evidence 是最近值得追踪的一篇 AI 论文。论文摘要显示：Chain-of-thought reasoning has substantially advanced video understanding in multimodal large language models (MLLMs). However, language-based reasoning traces do not provide a reliable mechanism for models to revisit relevant visual eviden...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CV, cs.AI",
+        "作者数: 7"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "llm",
+        "multimodal",
+        "model"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "multimodal"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：VideoLVR: Latent Visual Reasoning over Grounded Video Evidence 是最近值得追踪的一篇 AI 论文。论文摘要显示：Chain-of-thought reasoning has substantially advanced video understanding in multimodal large language models (MLLMs). However, language-based reasoning traces do not provide a reliable mechanism for models to revisit relevant visual eviden...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV, cs.AI\n- 作者数: 7",
+      "focus_hits": [
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "multimodal",
+          "weight": 2.0
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "reasoning",
+      "personalized_score": 168.0,
+      "detail_path": "items/arxiv-videolvr-latent-visual-reasoning-over-grounded-video-evidence.html",
+      "first_seen_at": "2026-10-28T02:37:31.788431+00:00",
+      "last_seen_at": "2026-10-29T05:39:28.107627+00:00",
+      "last_curated_at": "2026-10-29T05:39:28.107627+00:00",
+      "last_notified_at": null
     }
   ],
   "top_themes": [
@@ -625,12 +614,16 @@
       "count": 4
     },
     {
-      "theme": "agent",
+      "theme": "rag",
       "count": 2
     },
     {
-      "theme": "rag",
-      "count": 2
+      "theme": "agent",
+      "count": 1
+    },
+    {
+      "theme": "multimodal",
+      "count": 1
     }
   ],
   "highlights": [
