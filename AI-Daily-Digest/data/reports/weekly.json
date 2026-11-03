@@ -1,9 +1,9 @@
 {
   "label": "周报",
   "window_days": 7,
-  "generated_at": "2026-11-02T13:54:05.437261+08:00",
-  "count": 52,
-  "summary": "近 7 天里，最集中的主题是 ai、llm、rag。",
+  "generated_at": "2026-11-03T12:05:13.300918+08:00",
+  "count": 63,
+  "summary": "近 7 天里，最集中的主题是 ai、llm、agent。",
   "top_items": [
     {
       "id": "arxiv::http://arxiv.org/abs/2610.37642v1",
@@ -241,6 +241,86 @@
       "first_seen_at": "2026-10-27T02:28:38.661687+00:00",
       "last_seen_at": "2026-10-27T04:56:57.069781+00:00",
       "last_curated_at": "2026-10-27T04:56:57.069781+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2611.01966v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Launder-Bench: Can Repository-Level Agentic Code Laundering Be Detected?",
+      "html_url": "http://arxiv.org/abs/2611.01966v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.01966v1",
+      "description": "Coding agents can now rewrite repository-scale codebases while preserving tested behavior, creating a new challenge for plagiarism detection, license auditing, and software provenance. We ask whether such rewrites can still be traced to their source. Existing clone benchmarks emphasize fragments and bounded edits, while repository-transformation benchmarks evaluate functional correctness rather than provenance. Moreover, ranking the most similar source does not establish derivation when independent implementations can be similarly close. We define repository-level agentic code laundering and introduce Launder-Bench, to our knowledge the first repository-level benchmark for provenance under agentic rewriting, constructed from 282 real-world repositories. A source-hidden reconstruction protocol decomposes source behavior, reconstructs modules and repository structure, and retains rewrites only after execution-based verification. We evaluate the same provenance problem in two complementary settings: Launder-Bench-Pair contains 1,128 pairwise instances asking whether two repositories share provenance, while Launder-Bench-Attr contains 229 source-attribution instances asking which candidate is the source, with abstention when evidence is insufficient. Measured same-domain independent repositories establish how much similarity can arise without shared provenance and provide detector-specific reference bands. Existing methods remain far from saturating Launder-Bench: the strongest static method reaches only 0.66 AUROC on pairwise detection, while repository encoders rank the true source first on up to 22% of attribution queries but earn calibrated attribution credit on only 1-2%. These results reveal a systematic gap between relative code similarity and source-specific provenance evidence, providing a reproducible target for provenance detection under agentic rewriting.",
+      "authors": [
+        "Yuntong Hu",
+        "Hongji Pu",
+        "Zimo Li",
+        "Ruomeng Li",
+        "Xiaotong Liu",
+        "Ziyuan Qin",
+        "Qiyue Li",
+        "Liang Zhao"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "published_at": "2026-11-01T15:05:07+00:00",
+      "updated_at": "2026-11-01T15:05:07+00:00",
+      "primary_category": "cs.SE",
+      "heuristic_score": 16.4,
+      "summary": "Launder-Bench: Can Repository-Level Agentic Code Laundering Be Detected? 是最近值得追踪的一篇 AI 论文。论文摘要显示：Coding agents can now rewrite repository-scale codebases while preserving tested behavior, creating a new challenge for plagiarism detection, license auditing, and software provenance. We ask whether such rewrites can still be traced to the...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.SE, cs.AI",
+        "作者数: 8"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 9,
+      "tags": [
+        "ai",
+        "agent",
+        "agentic",
+        "rag"
+      ],
+      "themes": [
+        "ai",
+        "agent",
+        "agentic"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：Launder-Bench: Can Repository-Level Agentic Code Laundering Be Detected? 是最近值得追踪的一篇 AI 论文。论文摘要显示：Coding agents can now rewrite repository-scale codebases while preserving tested behavior, creating a new challenge for plagiarism detection, license auditing, and software provenance. We ask whether such rewrites can still be traced to the...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：9/10\n\n**亮点**：\n- 分类: cs.SE, cs.AI\n- 作者数: 8",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "coding",
+          "weight": 2.6
+        },
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 184.0,
+      "detail_path": "items/arxiv-launder-bench-can-repository-level-agentic-code-laundering-be-detected.html",
+      "first_seen_at": "2026-11-03T04:05:22.492398+00:00",
+      "last_seen_at": "2026-11-03T04:05:22.492398+00:00",
+      "last_curated_at": "2026-11-03T04:05:22.492398+00:00",
       "last_notified_at": null
     },
     {
@@ -527,81 +607,6 @@
       "last_seen_at": "2026-10-30T05:38:40.305963+00:00",
       "last_curated_at": "2026-10-30T05:38:40.305963+00:00",
       "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2610.37613v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "VideoLVR: Latent Visual Reasoning over Grounded Video Evidence",
-      "html_url": "http://arxiv.org/abs/2610.37613v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.37613v1",
-      "description": "Chain-of-thought reasoning has substantially advanced video understanding in multimodal large language models (MLLMs). However, language-based reasoning traces do not provide a reliable mechanism for models to revisit relevant visual evidence, leading to visual forgetting and impairing their ability to reason over video content. Existing approaches maintain visual grounding during reasoning in two main ways: they either refer to evidence using textual coordinates, which specify symbolic locations rather than the visual content itself, or reinsert cropped regions or frames into the multimodal context, preserving visual details at the cost of substantial context expansion. To address these limitations, we introduce VideoLVR, which constructs latent visual evidence from local regions at relevant video moments, thereby providing visual support for intermediate reasoning steps. To supervise latent visual evidence generation, we introduce a visual token prediction objective that formulates visual token reconstruction as prediction over a vocabulary derived from the input video, thereby unifying visual evidence reconstruction and text generation within the same token prediction framework. This shared prediction framework enables MLLMs to reason over interleaved text tokens and latent visual states while integrating evidence from different moments. We further extend VideoLVR to reinforcement learning by treating sampled visual tokens as actions alongside text tokens and jointly optimizing the policy using final-answer rewards. By efficiently revisiting task-relevant visual information during reasoning, VideoLVR improves video understanding without substantially expanding the multimodal context. Experiments on multiple video benchmarks demonstrate its effectiveness, especially on tasks requiring fine-grained visual evidence.",
-      "authors": [
-        "Shilong Li",
-        "Xingyuan Bu",
-        "Hao Shi",
-        "Yun Xing",
-        "Weixin Feng",
-        "Qiangpeng Yang",
-        "Shilei Wen"
-      ],
-      "categories": [
-        "cs.CV",
-        "cs.AI"
-      ],
-      "published_at": "2026-10-27T17:41:56+00:00",
-      "updated_at": "2026-10-27T17:41:56+00:00",
-      "primary_category": "cs.CV",
-      "heuristic_score": 17.9,
-      "summary": "VideoLVR: Latent Visual Reasoning over Grounded Video Evidence 是最近值得追踪的一篇 AI 论文。论文摘要显示：Chain-of-thought reasoning has substantially advanced video understanding in multimodal large language models (MLLMs). However, language-based reasoning traces do not provide a reliable mechanism for models to revisit relevant visual eviden...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CV, cs.AI",
-        "作者数: 7"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "llm",
-        "multimodal",
-        "model"
-      ],
-      "themes": [
-        "ai",
-        "llm",
-        "multimodal"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：VideoLVR: Latent Visual Reasoning over Grounded Video Evidence 是最近值得追踪的一篇 AI 论文。论文摘要显示：Chain-of-thought reasoning has substantially advanced video understanding in multimodal large language models (MLLMs). However, language-based reasoning traces do not provide a reliable mechanism for models to revisit relevant visual eviden...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV, cs.AI\n- 作者数: 7",
-      "focus_hits": [
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "multimodal",
-          "weight": 2.0
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "reasoning",
-      "personalized_score": 168.0,
-      "detail_path": "items/arxiv-videolvr-latent-visual-reasoning-over-grounded-video-evidence.html",
-      "first_seen_at": "2026-10-28T02:37:31.788431+00:00",
-      "last_seen_at": "2026-10-29T05:39:28.107627+00:00",
-      "last_curated_at": "2026-10-29T05:39:28.107627+00:00",
-      "last_notified_at": null
     }
   ],
   "top_themes": [
@@ -611,15 +616,15 @@
     },
     {
       "theme": "llm",
-      "count": 4
+      "count": 3
+    },
+    {
+      "theme": "agent",
+      "count": 2
     },
     {
       "theme": "rag",
       "count": 2
-    },
-    {
-      "theme": "agent",
-      "count": 1
     },
     {
       "theme": "multimodal",
