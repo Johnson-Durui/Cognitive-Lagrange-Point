@@ -1,9 +1,9 @@
 {
   "label": "周报",
   "window_days": 7,
-  "generated_at": "2026-11-03T12:05:13.300918+08:00",
-  "count": 63,
-  "summary": "近 7 天里，最集中的主题是 ai、llm、agent。",
+  "generated_at": "2026-11-03T14:39:11.750418+08:00",
+  "count": 56,
+  "summary": "近 7 天里，最集中的主题是 ai、agent、llm。",
   "top_items": [
     {
       "id": "arxiv::http://arxiv.org/abs/2610.37642v1",
@@ -89,6 +89,165 @@
       "last_notified_at": null
     },
     {
+      "id": "arxiv::http://arxiv.org/abs/2611.03097v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "DR Pixel: Page-Native Deep Research with Vision-Language Models",
+      "html_url": "http://arxiv.org/abs/2611.03097v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.03097v1",
+      "description": "Complex documents such as scientific papers contain rich information in tables, figures, and equations; however, existing deep research (DR) agents typically reduce papers to OCR-extracted text. We instead ask whether vision-language models (VLMs) can enable page-native deep research: directly retrieving and reasoning over rendered document page images. We introduce DR Pixel, the first open-source end-to-end multimodal DR agent that uses rendered page images as its sole retrieval and reasoning unit, operating over a corpus of 1.06M pages. To evaluate this setting, we construct DRPixelBench, a benchmark on scientific papers requiring reasoning over text, figures, tables, and equations. Surprisingly, page-native DR already works well without training, outperforming OCR-based baselines across state-of-the-art models like GPT-5.4, Gemini-3.5-Flash, and Qwen3.6-27B, while requiring fewer tool calls. We next turn to DR training. A key challenge is that teacher trajectories for agentic supervised finetuning are noisy, mixing critical reasoning and action steps with redundant or failed attempts. To address this, we introduce counterfactual credit reweighting, a fine-grained credit assignment method that weights individual reasoning and action steps by their counterfactual contribution to the final answer. Our training improves retrieval recall by about 15 points and final accuracy by over 10 points on DRPixelBench, and likewise outperforms the untrained baseline on four existing benchmarks. On out-of-distribution ViDoRe-V3, DR Pixel comes within 1.8 points of an oracle that is given the gold pages directly. Our results suggest that the conventional OCR-then-retrieve pipeline is not only unnecessary but suboptimal: directly retrieving and reasoning over visual document pages makes complex DR both more effective and more efficient.",
+      "authors": [
+        "Tiansheng Hu",
+        "Yichuan Wang",
+        "James V. Talwar",
+        "Nicholas Tomlin",
+        "Chen Zhao",
+        "Sewon Min"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.CL",
+        "cs.IR"
+      ],
+      "published_at": "2026-11-02T13:13:42+00:00",
+      "updated_at": "2026-11-02T13:13:42+00:00",
+      "primary_category": "cs.CV",
+      "heuristic_score": 25.1,
+      "summary": "DR Pixel: Page-Native Deep Research with Vision-Language Models 是最近值得追踪的一篇 AI 论文。论文摘要显示：Complex documents such as scientific papers contain rich information in tables, figures, and equations; however, existing deep research (DR) agents typically reduce papers to OCR-extracted text. We instead ask whether vision-language models...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CV, cs.CL",
+        "作者数: 6"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "agent",
+        "agentic",
+        "gpt"
+      ],
+      "themes": [
+        "ai",
+        "agent",
+        "agentic"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：DR Pixel: Page-Native Deep Research with Vision-Language Models 是最近值得追踪的一篇 AI 论文。论文摘要显示：Complex documents such as scientific papers contain rich information in tables, figures, and equations; however, existing deep research (DR) agents typically reduce papers to OCR-extracted text. We instead ask whether vision-language models...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV, cs.CL\n- 作者数: 6",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "multimodal",
+          "weight": 2.0
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 198.0,
+      "detail_path": "items/arxiv-dr-pixel-page-native-deep-research-with-vision-language-models.html",
+      "first_seen_at": "2026-11-03T06:39:18.609256+00:00",
+      "last_seen_at": "2026-11-03T06:39:18.609256+00:00",
+      "last_curated_at": "2026-11-03T06:39:18.609256+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2611.03087v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "MIRA: Reinforcing Multimodal Reasoning via Deceptive Contextual Augmentation",
+      "html_url": "http://arxiv.org/abs/2611.03087v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.03087v1",
+      "description": "While Reinforcement Learning with Verifiable Rewards (RLVR) has significantly advanced multimodal reasoning, existing frameworks suffer from a critical \"perception-reasoning gap.\" Due to an over-reliance on seemingly relevant visual tokens, even minor perceptual perturbations can propagate through the reasoning process, leading to compounding hallucinations. To address this issue, we propose MIRA, a training framework that improves robustness to erroneous visual contexts while enhancing logical reasoning ability. By injecting filtered, deceptive visual contexts during training, we construct challenging \"hard traps\" that stress-test the model's robustness to misleading information. Furthermore, we introduce a group-wise reflection-triggering mechanism that enables the model to autonomously detect and rectify inconsistencies between visual cues and logical constraints, which is ultimately internalized as an intrinsic policy behavior. Importantly, MIRA does not rely on human annotations. Experimental results across multiple reasoning and perception benchmarks show that MIRA yields an average 7% improvement on in-domain benchmarks, with consistent improvements on vision-centric benchmarks. These findings highlight that active error recovery is essential for robust multimodal reasoning. Comprehensive ablation studies and analyses further provide insights into why MIRA is effective.",
+      "authors": [
+        "Zhihan Yin",
+        "Jianxin Liang",
+        "Yifeng Yao",
+        "Nonghai Zhang",
+        "and Bingyue Peng",
+        "Chunguang Qie",
+        "Huishuai Zhang",
+        "Dongyan Zhao"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "published_at": "2026-11-02T13:09:45+00:00",
+      "updated_at": "2026-11-02T13:09:45+00:00",
+      "primary_category": "cs.CV",
+      "heuristic_score": 20.049,
+      "summary": "MIRA: Reinforcing Multimodal Reasoning via Deceptive Contextual Augmentation 是最近值得追踪的一篇 AI 论文。论文摘要显示：While Reinforcement Learning with Verifiable Rewards (RLVR) has significantly advanced multimodal reasoning, existing frameworks suffer from a critical \"perception-reasoning gap.\" Due to an over-reliance on seemingly relevant visual tokens,...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CV, cs.AI",
+        "作者数: 8"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "rag",
+        "multimodal",
+        "model"
+      ],
+      "themes": [
+        "ai",
+        "rag",
+        "multimodal"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：MIRA: Reinforcing Multimodal Reasoning via Deceptive Contextual Augmentation 是最近值得追踪的一篇 AI 论文。论文摘要显示：While Reinforcement Learning with Verifiable Rewards (RLVR) has significantly advanced multimodal reasoning, existing frameworks suffer from a critical \"perception-reasoning gap.\" Due to an over-reliance on seemingly relevant visual tokens,...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV, cs.AI\n- 作者数: 8",
+      "focus_hits": [
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        },
+        {
+          "keyword": "multimodal",
+          "weight": 2.0
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "reasoning",
+      "personalized_score": 190.0,
+      "detail_path": "items/arxiv-mira-reinforcing-multimodal-reasoning-via-deceptive-contextual-augmentation.html",
+      "first_seen_at": "2026-11-03T06:39:18.609256+00:00",
+      "last_seen_at": "2026-11-03T06:39:18.609256+00:00",
+      "last_curated_at": "2026-11-03T06:39:18.609256+00:00",
+      "last_notified_at": null
+    },
+    {
       "id": "arxiv::http://arxiv.org/abs/2610.37598v1",
       "kind": "paper",
       "source": "arxiv",
@@ -168,82 +327,6 @@
       "last_notified_at": null
     },
     {
-      "id": "arxiv::http://arxiv.org/abs/2610.35083v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "Ask Before You Answer: A Question-Driven Evidence Reasoning Architecture (QERA) for In-Context Learning",
-      "html_url": "http://arxiv.org/abs/2610.35083v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.35083v1",
-      "description": "AI assistants are increasingly asked to reason over a user's own web traces: group chats, community threads, activity logs and revision histories. On CL-bench Life, a benchmark of such real-life context learning, frontier LLMs solve fewer than one task in five. We find that the request is not the specification: over 80% of the benchmark's rubrics share less than 60% of their content words with the final request, as for a rule set two turns earlier or every record that meets the user's criterion, and LLMs answering directly pass only 67% of these implicit rubrics against 81% of the others. We propose QERA, a Question-driven Evidence Reasoning Architecture that asks before it answers. QERA first turns the request into a requirement checklist and typed information needs, filtered by code for faithfulness to the user's words; it then answers from the whole conversation, asks the same questions again with quotes verified by code, and applies a guarded local repair. It needs no training or rubrics and makes about four LLM calls per task. On all 405 tasks with four frontier LLMs, QERA attains the highest solving rate on every LLM (21.0% on average, against 18.2% for the strongest of three inference-time baselines and 14.6% for direct answering) and leads every baseline significantly when pooled across LLMs, while using fewer tokens than PSCI and 4-5% of the tokens of Ctx2Skill. Ablations on GPT-6-Luna show that the gain is settled before the answer, by a fixed answer protocol (+3.8 rubric points) and the request-specific questions (+1.6), and that it is concentrated on implicit rubrics, with checking afterwards refining mainly numeric requirements.",
-      "authors": [
-        "Jinhu Qi",
-        "Minda Hu",
-        "Wentao Zhang",
-        "Zixing Song",
-        "Irwin King"
-      ],
-      "categories": [
-        "cs.CL"
-      ],
-      "published_at": "2026-10-26T09:26:23+00:00",
-      "updated_at": "2026-10-26T09:26:23+00:00",
-      "primary_category": "cs.CL",
-      "heuristic_score": 22.7,
-      "summary": "Ask Before You Answer: A Question-Driven Evidence Reasoning Architecture (QERA) for In-Context Learning 是最近值得追踪的一篇 AI 论文。论文摘要显示：AI assistants are increasingly asked to reason over a user's own web traces: group chats, community threads, activity logs and revision histories. On CL-bench Life, a benchmark of such real-life context learning, frontier LLMs solve fewer t...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CL",
-        "作者数: 5"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "llm",
-        "gpt",
-        "rag"
-      ],
-      "themes": [
-        "ai",
-        "llm",
-        "gpt"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：Ask Before You Answer: A Question-Driven Evidence Reasoning Architecture (QERA) for In-Context Learning 是最近值得追踪的一篇 AI 论文。论文摘要显示：AI assistants are increasingly asked to reason over a user's own web traces: group chats, community threads, activity logs and revision histories. On CL-bench Life, a benchmark of such real-life context learning, frontier LLMs solve fewer t...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL\n- 作者数: 5",
-      "focus_hits": [
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "inference",
-          "weight": 1.8
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "reasoning",
-      "personalized_score": 188.0,
-      "detail_path": "items/arxiv-ask-before-you-answer-a-question-driven-evidence-reasoning-architecture-qera-for-in-contex.html",
-      "first_seen_at": "2026-10-27T02:28:38.661687+00:00",
-      "last_seen_at": "2026-10-27T04:56:57.069781+00:00",
-      "last_curated_at": "2026-10-27T04:56:57.069781+00:00",
-      "last_notified_at": null
-    },
-    {
       "id": "arxiv::http://arxiv.org/abs/2611.01966v1",
       "kind": "paper",
       "source": "arxiv",
@@ -319,8 +402,79 @@
       "personalized_score": 184.0,
       "detail_path": "items/arxiv-launder-bench-can-repository-level-agentic-code-laundering-be-detected.html",
       "first_seen_at": "2026-11-03T04:05:22.492398+00:00",
-      "last_seen_at": "2026-11-03T04:05:22.492398+00:00",
-      "last_curated_at": "2026-11-03T04:05:22.492398+00:00",
+      "last_seen_at": "2026-11-03T06:39:18.609256+00:00",
+      "last_curated_at": "2026-11-03T06:39:18.609256+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2611.03100v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "LUCA: A Synthetic World for Experimental Reasoning",
+      "html_url": "http://arxiv.org/abs/2611.03100v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.03100v1",
+      "description": "An experimental agent can succeed for the wrong reasons. Evaluations, however, often focus on the outcome, not the experiments, evidence, and inferences that produced it. We introduce LUCA, a configurable synthetic world for evaluating this process under fully known ground truth. Agents learn unknown regulatory systems through budgeted experimentation, then predict unseen interventions, diagnose hidden faults, and attempt rescues. This setup allows us to evaluate experiment selection, prediction, diagnosis, and intervention separately. Across seven frontier LLMs and three baselines, these capabilities dissociate sharply. Agents frequently rescue malfunctioning systems while diagnosing the wrong fault; diagnosis varies 7x across models while prediction varies only 1.4x. Models also adopt surprisingly different experimental strategies, and greater exploration does not reliably yield better performance. In one failure mode, agents often perform the experiment needed to distinguish competing causes, but still fail to use the resulting evidence. LUCA turns these hidden failures into measurable behaviours, providing a controlled environment to study where experimental agents succeed and fail. Code: https://github.com/RelationRx/luca.",
+      "authors": [
+        "Anna Gogleva",
+        "Thomas Charman",
+        "Martin Balla",
+        "Karl Gemayel"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "published_at": "2026-11-02T13:17:36+00:00",
+      "updated_at": "2026-11-02T13:17:36+00:00",
+      "primary_category": "cs.AI",
+      "heuristic_score": 17.459,
+      "summary": "LUCA: A Synthetic World for Experimental Reasoning 是最近值得追踪的一篇 AI 论文。论文摘要显示：An experimental agent can succeed for the wrong reasons. Evaluations, however, often focus on the outcome, not the experiments, evidence, and inferences that produced it. We introduce LUCA, a configurable synthetic world for evaluating this...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.AI",
+        "作者数: 4"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "llm",
+        "agent",
+        "model"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "agent"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：LUCA: A Synthetic World for Experimental Reasoning 是最近值得追踪的一篇 AI 论文。论文摘要显示：An experimental agent can succeed for the wrong reasons. Evaluations, however, often focus on the outcome, not the experiments, evidence, and inferences that produced it. We introduce LUCA, a configurable synthetic world for evaluating this...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI\n- 作者数: 4",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "inference",
+          "weight": 1.8
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 180.0,
+      "detail_path": "items/arxiv-luca-a-synthetic-world-for-experimental-reasoning.html",
+      "first_seen_at": "2026-11-03T06:39:18.609256+00:00",
+      "last_seen_at": "2026-11-03T06:39:18.609256+00:00",
+      "last_curated_at": "2026-11-03T06:39:18.609256+00:00",
       "last_notified_at": null
     },
     {
@@ -398,170 +552,36 @@
       "last_notified_at": null
     },
     {
-      "id": "arxiv::http://arxiv.org/abs/2610.38755v1",
+      "id": "arxiv::http://arxiv.org/abs/2611.03125v1",
       "kind": "paper",
       "source": "arxiv",
       "source_tags": [
         "latest"
       ],
-      "title": "Leaving, Staying, or Living There? Duration Commonsense Reasoning with Human-LLM Co-annotations",
-      "html_url": "http://arxiv.org/abs/2610.38755v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.38755v1",
-      "description": "Gardening in the backyard implies living there, while checking into an Airbnb more likely means staying for a few days. Such duration judgments are important for understanding human mobility, travel behavior, and social context. However, duration is rarely stated explicitly in social media posts and must instead be inferred from noisy textual, visual, and contextual cues. In this paper, we investigate whether vision-language models possess such duration commonsense. We create a new corpus of geotagged tweets co-annotated by humans and LLMs to serve as a testbed for this task. We find that state-of-the-art models struggle with duration inference, even when guided by multi-turn Chain-of-Thought prompting. Error analyses further reveal that models often fail to integrate critical contextual information, or they overly rely on prominent visual details while overlooking subtle hashtags and semantic nuances. These findings underscore the significant challenges remaining in context-aware multimodal understanding.",
+      "title": "SurgPace: Complexity-Aware Progressive Distillation for Surgical Multimodal Large Language Models",
+      "html_url": "http://arxiv.org/abs/2611.03125v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.03125v1",
+      "description": "Multimodal large language models (MLLMs) have shown strong potential in robotic surgery for question answering, scene understanding, and grounded assistance, but their high computational cost limits real clinical deployment. Knowledge distillation provides a practical way to build compact surgical MLLMs, yet direct distillation is not well suited to surgical data because surgical samples vary greatly in difficulty, visual ambiguity, and required clinical context, making uniform teacher-student transfer unstable. In addition, the role of supervision changes during training: early stages require stronger teacher guidance for multimodal alignment, while later stages rely more on task supervision for effective optimization. To address these challenges, we propose SurgPace, a complexity-aware continuous curriculum framework for progressive distillation of surgical vision-language models. SurgPace estimates sample complexity using predictive confidence and Lorentz geometric consistency, and uses the fused score to guide a continuous easy-to-hard training process. We further introduce hierarchical representation alignment, which aligns the student with the teacher at the feature, logit, and probability levels, while gradually shifting the training focus from teacher imitation to task supervision. This design separates sample-level curriculum from objective-level scheduling, leading to more stable and effective distillation. We evaluate SurgPace on Surg-396K, a benchmark built from four public surgical datasets and covering five dialogue paradigms. SurgPace consistently outperforms strong MLLM distillation baselines, demonstrating its effectiveness for building compact, memory-efficient surgical MLLMs with faster decoding under controlled benchmarks. Code is available at https://github.com/hezhicheng2002/SurgPace.",
       "authors": [
-        "Chenyang Yu",
-        "Zhaomin Xiao",
-        "Yan Huang",
-        "Eduardo Blanco"
-      ],
-      "categories": [
-        "cs.AI",
-        "cs.IR"
-      ],
-      "published_at": "2026-10-28T19:35:59+00:00",
-      "updated_at": "2026-10-28T19:35:59+00:00",
-      "primary_category": "cs.AI",
-      "heuristic_score": 17.176,
-      "summary": "Leaving, Staying, or Living There? Duration Commonsense Reasoning with Human-LLM Co-annotations 是最近值得追踪的一篇 AI 论文。论文摘要显示：Gardening in the backyard implies living there, while checking into an Airbnb more likely means staying for a few days. Such duration judgments are important for understanding human mobility, travel behavior, and social context. However, du...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.AI, cs.IR",
-        "作者数: 4"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "llm",
-        "multimodal",
-        "model"
-      ],
-      "themes": [
-        "ai",
-        "llm",
-        "multimodal"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：Leaving, Staying, or Living There? Duration Commonsense Reasoning with Human-LLM Co-annotations 是最近值得追踪的一篇 AI 论文。论文摘要显示：Gardening in the backyard implies living there, while checking into an Airbnb more likely means staying for a few days. Such duration judgments are important for understanding human mobility, travel behavior, and social context. However, du...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI, cs.IR\n- 作者数: 4",
-      "focus_hits": [
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "multimodal",
-          "weight": 2.0
-        },
-        {
-          "keyword": "inference",
-          "weight": 1.8
-        }
-      ],
-      "primary_match": "reasoning",
-      "personalized_score": 170.0,
-      "detail_path": "items/arxiv-leaving-staying-or-living-there-duration-commonsense-reasoning-with-human-llm-co-annotatio.html",
-      "first_seen_at": "2026-10-30T03:00:38.528457+00:00",
-      "last_seen_at": "2026-10-30T05:38:40.305963+00:00",
-      "last_curated_at": "2026-10-30T05:38:40.305963+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2610.38774v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "Auditable Hierarchical Inference with Multimodal Evidence and Bayesian Active Inquiry",
-      "html_url": "http://arxiv.org/abs/2610.38774v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.38774v1",
-      "description": "Most multimodal classifiers assume that all useful evidence is available upfront, whereas clinical inquiry is sequential. We present a synthetic evaluation framework separating objective multimodal inference from active inquiry. An objective model maps synthetic tongue, bilateral multipressure pulse, and acoustic observations to eight syndrome families. A provenance-bearing Knowledge Core and training-only answer model support Bayesian narrowing over 33 fine terms using 25 typed questions, while seven safety questions remain outside the diagnostic posterior. Weak shared symptom factors limit fine-term influence on objective phenotypes, and an objective-only probe tests leakage. In a preregistered 600-case synthetic evaluation, objective family accuracy was 87.0%. Cost-sensitive expected information gain (cost-EIG) raised family accuracy to 95.5% and exact fine-term accuracy to 42.5%, versus 92.7% and 33.0% for an unoptimized fixed-order baseline. Selective family accuracy reached 96.9% at 95.3% coverage. However, cost-EIG asked more questions on average than fixed order (9.795 versus 9.352). Missing-audio routing retained 94.0% family accuracy, and a workflow invariant enforced abstention when all objective modalities were absent. Permuting fine-term answer likelihoods reduced family accuracy to 78.7%. Five of six frozen checks passed, but the question-efficiency hypothesis failed. Comparisons are descriptive because only aggregate, not paired case-level, outputs were retained. These results establish a reproducible synthetic workflow, not clinical diagnostic or treatment validity.",
-      "authors": [
-        "Yucheng Liu",
-        "Everett X. Wang"
-      ],
-      "categories": [
-        "cs.LG"
-      ],
-      "published_at": "2026-10-28T19:48:34+00:00",
-      "updated_at": "2026-10-28T19:48:34+00:00",
-      "primary_category": "cs.LG",
-      "heuristic_score": 17.9,
-      "summary": "Auditable Hierarchical Inference with Multimodal Evidence and Bayesian Active Inquiry 是最近值得追踪的一篇 AI 论文。论文摘要显示：Most multimodal classifiers assume that all useful evidence is available upfront, whereas clinical inquiry is sequential. We present a synthetic evaluation framework separating objective multimodal inference from active inquiry. An objectiv...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.LG",
-        "作者数: 2"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "rag",
-        "multimodal",
-        "model"
-      ],
-      "themes": [
-        "ai",
-        "rag",
-        "multimodal"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：Auditable Hierarchical Inference with Multimodal Evidence and Bayesian Active Inquiry 是最近值得追踪的一篇 AI 论文。论文摘要显示：Most multimodal classifiers assume that all useful evidence is available upfront, whereas clinical inquiry is sequential. We present a synthetic evaluation framework separating objective multimodal inference from active inquiry. An objectiv...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.LG\n- 作者数: 2",
-      "focus_hits": [
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "multimodal",
-          "weight": 2.0
-        },
-        {
-          "keyword": "inference",
-          "weight": 1.8
-        }
-      ],
-      "primary_match": "rag",
-      "personalized_score": 168.0,
-      "detail_path": "items/arxiv-auditable-hierarchical-inference-with-multimodal-evidence-and-bayesian-active-inquiry.html",
-      "first_seen_at": "2026-10-30T03:00:38.528457+00:00",
-      "last_seen_at": "2026-10-30T05:38:40.305963+00:00",
-      "last_curated_at": "2026-10-30T05:38:40.305963+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2610.38737v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "RuleForge: Inferring and Instantiating Latent Visual Rules as Executable Programs",
-      "html_url": "http://arxiv.org/abs/2610.38737v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.38737v1",
-      "description": "Visual rule reasoning asks whether multimodal models can recover an abstract concept from a few examples. Existing studies either infer rules from visual examples but evaluate only classification or verbalization, or supervise executable generation with rules provided as input. Consequently, the relationship between visual rule understanding and reliable rule instantiation remains insufficiently explored. We present Bongard-Forge100k, a controlled benchmark, together with RuleForge, a backbone-agnostic framework that jointly learns visual rule understanding and rule-conditioned executable generation. The benchmark contains 108,797 problems: 86,000 for training, 19,297 for testing familiar rules, and 3,500 for testing held-out rule compositions. The framework progresses through rule-understanding training, joint understanding and scene-program supervision, and refinement via execution-grounded reinforcement learning with Understanding Replay. Executing generated programs under multiple random seeds provides verifiable feedback on executability, rule satisfaction, diversity, and robustness. With UniLIP as the primary backbone, RuleForge improves multiple-choice accuracy over the base model by 20.93 percentage points on familiar rules and 28.42 percentage points on held-out rule compositions, while increasing scene-level rule satisfaction on familiar rules from 2.91% to 70.99%. Additional experiments on InternVL3.5, Qwen3-VL, and Show-o2 demonstrate the effectiveness of the proposed training data and framework across diverse multimodal architectures.",
-      "authors": [
-        "Weifeng Xu",
-        "Yaxiong Wang",
-        "Zhedong Zheng"
+        "Zhicheng He",
+        "Xiaohan Xing",
+        "Hongqiu Wang",
+        "Kun Yuan",
+        "Guankun Wang",
+        "Yanheng Li",
+        "Haoxuan Che",
+        "Nassir Navab",
+        "Hongliang Ren",
+        "Long Bai"
       ],
       "categories": [
         "cs.CV"
       ],
-      "published_at": "2026-10-28T19:29:24+00:00",
-      "updated_at": "2026-10-28T19:29:24+00:00",
+      "published_at": "2026-11-02T13:39:14+00:00",
+      "updated_at": "2026-11-02T13:39:14+00:00",
       "primary_category": "cs.CV",
-      "heuristic_score": 17.866,
-      "summary": "RuleForge: Inferring and Instantiating Latent Visual Rules as Executable Programs 是最近值得追踪的一篇 AI 论文。论文摘要显示：Visual rule reasoning asks whether multimodal models can recover an abstract concept from a few examples. Existing studies either infer rules from visual examples but evaluate only classification or verbalization, or supervise executable ge...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "heuristic_score": 17.9,
+      "summary": "SurgPace: Complexity-Aware Progressive Distillation for Surgical Multimodal Large Language Models 是最近值得追踪的一篇 AI 论文。论文摘要显示：Multimodal large language models (MLLMs) have shown strong potential in robotic surgery for question answering, scene understanding, and grounded assistance, but their high computational cost limits real clinical deployment. Knowledge disti...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
       "brief": "这是一篇值得加入今日论文雷达的最新工作。",
       "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
       "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
@@ -569,27 +589,27 @@
       "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
       "highlights": [
         "分类: cs.CV",
-        "作者数: 3"
+        "作者数: 10"
       ],
       "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
       "relevance_score": 10,
       "tags": [
         "ai",
-        "multimodal",
-        "model",
-        "benchmark"
-      ],
-      "themes": [
-        "ai",
+        "llm",
         "multimodal",
         "model"
       ],
+      "themes": [
+        "ai",
+        "llm",
+        "multimodal"
+      ],
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：RuleForge: Inferring and Instantiating Latent Visual Rules as Executable Programs 是最近值得追踪的一篇 AI 论文。论文摘要显示：Visual rule reasoning asks whether multimodal models can recover an abstract concept from a few examples. Existing studies either infer rules from visual examples but evaluate only classification or verbalization, or supervise executable ge...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV\n- 作者数: 3",
+      "summary_markdown": "**摘要**：SurgPace: Complexity-Aware Progressive Distillation for Surgical Multimodal Large Language Models 是最近值得追踪的一篇 AI 论文。论文摘要显示：Multimodal large language models (MLLMs) have shown strong potential in robotic surgery for question answering, scene understanding, and grounded assistance, but their high computational cost limits real clinical deployment. Knowledge disti...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV\n- 作者数: 10",
       "focus_hits": [
         {
-          "keyword": "reasoning",
-          "weight": 2.4
+          "keyword": "coding",
+          "weight": 2.6
         },
         {
           "keyword": "multimodal",
@@ -600,12 +620,12 @@
           "weight": 1.6
         }
       ],
-      "primary_match": "reasoning",
-      "personalized_score": 168.0,
-      "detail_path": "items/arxiv-ruleforge-inferring-and-instantiating-latent-visual-rules-as-executable-programs.html",
-      "first_seen_at": "2026-10-30T03:00:38.528457+00:00",
-      "last_seen_at": "2026-10-30T05:38:40.305963+00:00",
-      "last_curated_at": "2026-10-30T05:38:40.305963+00:00",
+      "primary_match": "coding",
+      "personalized_score": 170.0,
+      "detail_path": "items/arxiv-surgpace-complexity-aware-progressive-distillation-for-surgical-multimodal-large-language-.html",
+      "first_seen_at": "2026-11-03T06:39:18.609256+00:00",
+      "last_seen_at": "2026-11-03T06:39:18.609256+00:00",
+      "last_curated_at": "2026-11-03T06:39:18.609256+00:00",
       "last_notified_at": null
     }
   ],
@@ -615,20 +635,16 @@
       "count": 8
     },
     {
+      "theme": "agent",
+      "count": 3
+    },
+    {
       "theme": "llm",
       "count": 3
     },
     {
-      "theme": "agent",
-      "count": 2
-    },
-    {
       "theme": "rag",
       "count": 2
-    },
-    {
-      "theme": "multimodal",
-      "count": 1
     }
   ],
   "highlights": [
@@ -638,12 +654,12 @@
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     },
     {
-      "title": "GAS-PFN: Graph-Aware Spatiotemporal Prior-Data Fitted Networks for Zero-Shot Traffic Forecasting",
+      "title": "DR Pixel: Page-Native Deep Research with Vision-Language Models",
       "source": "arxiv",
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     },
     {
-      "title": "Ask Before You Answer: A Question-Driven Evidence Reasoning Architecture (QERA) for In-Context Learning",
+      "title": "MIRA: Reinforcing Multimodal Reasoning via Deceptive Contextual Augmentation",
       "source": "arxiv",
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     }
