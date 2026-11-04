@@ -1,10 +1,93 @@
 {
   "label": "周报",
   "window_days": 7,
-  "generated_at": "2026-11-04T11:23:31.849618+08:00",
-  "count": 64,
-  "summary": "近 7 天里，最集中的主题是 ai、agent、llm。",
+  "generated_at": "2026-11-04T14:06:10.918444+08:00",
+  "count": 65,
+  "summary": "近 7 天里，最集中的主题是 ai、agent、rag。",
   "top_items": [
+    {
+      "id": "arxiv::http://arxiv.org/abs/2611.05345v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Adversarial Speculative Reasoning Improves Long Horizon Agents",
+      "html_url": "http://arxiv.org/abs/2611.05345v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.05345v1",
+      "description": "Speculative decoding has been treated purely as a systems optimization that speeds up large language model decoding without changing the model behavior. Under this view, the growing effort to train better draft models has been focused solely on acceptance rate. We argue that this view does not hold true for long-horizon agent reasoning. Measuring frontier open-weight models on complex agentic tasks with different speculative decoding approaches, we found that numerical noise grows within verification windows, and the draft acceptance results of the thinking process can change the output distribution of the model after 30 steps, thus noticeably influencing the reasoning accuracy of long-horizon agents in random directions. In this work, we improve the reasoning capability of target models by controlling such noise. While we cannot change the overall token distribution verified by the target model, we can encode critical reasoning with highest precision by training the draft model to be rejected. We identify these points in agent traces and train the draft model to favor adversarial preference. At inference the trained draft and the target part ways precisely at these decision points, verification restarts, so that critical thinking tokens are sampled from the target model and encoded under its least noisy conditions. This approach makes critical reasoning better indexed and more durable over a long horizon. On complex agentic coding benchmarks, our approach raises end-to-end success rate with no change to the target model or its output distribution. Our results recast the speculative decoding mechanism from a pure accelerator into an active allocator for context precision that improves the accuracy of long-horizon agents by training 0.06% to 0.28% of hosted parameters.",
+      "authors": [
+        "Hongyin Luo",
+        "Wei Fang",
+        "Lijie Yang",
+        "Owen Stepan",
+        "Daniel Suit",
+        "Jeff Krapf",
+        "Dana Wensberg",
+        "Jack O'Brien"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "published_at": "2026-11-03T18:45:23+00:00",
+      "updated_at": "2026-11-03T18:45:23+00:00",
+      "primary_category": "cs.AI",
+      "heuristic_score": 22.7,
+      "summary": "Adversarial Speculative Reasoning Improves Long Horizon Agents 是最近值得追踪的一篇 AI 论文。论文摘要显示：Speculative decoding has been treated purely as a systems optimization that speeds up large language model decoding without changing the model behavior. Under this view, the growing effort to train better draft models has been focused solel...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.AI",
+        "作者数: 8"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "agent",
+        "agentic",
+        "model"
+      ],
+      "themes": [
+        "ai",
+        "agent",
+        "agentic"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：Adversarial Speculative Reasoning Improves Long Horizon Agents 是最近值得追踪的一篇 AI 论文。论文摘要显示：Speculative decoding has been treated purely as a systems optimization that speeds up large language model decoding without changing the model behavior. Under this view, the growing effort to train better draft models has been focused solel...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI\n- 作者数: 8",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "coding",
+          "weight": 2.6
+        },
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "inference",
+          "weight": 1.8
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 222.0,
+      "detail_path": "items/arxiv-adversarial-speculative-reasoning-improves-long-horizon-agents.html",
+      "first_seen_at": "2026-11-04T06:06:24.271759+00:00",
+      "last_seen_at": "2026-11-04T06:06:24.271759+00:00",
+      "last_curated_at": "2026-11-04T06:06:24.271759+00:00",
+      "last_notified_at": null
+    },
     {
       "id": "arxiv::http://arxiv.org/abs/2610.37642v1",
       "kind": "paper",
@@ -478,65 +561,70 @@
       "last_notified_at": null
     },
     {
-      "id": "arxiv::http://arxiv.org/abs/2610.37624v1",
+      "id": "arxiv::http://arxiv.org/abs/2611.05313v1",
       "kind": "paper",
       "source": "arxiv",
       "source_tags": [
         "latest"
       ],
-      "title": "Rare, Relevant, and Still Wrong: How Memory Fails LLM Group Decisions",
-      "html_url": "http://arxiv.org/abs/2610.37624v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.37624v1",
-      "description": "When an LLM group's discussion is compressed into a short memory for a final decision maker, what should the memory keep? Two natural heuristics keep the rarest claims or the claims relevant to the decision criteria. On hidden-profile tasks both look attractive, because how widely a fact is held is confounded with whether it helps. We introduce CrossProfile, a diagnostic benchmark of 60 templates with automatically verified answer keys, in which the ownership of supporting, decoy, and irrelevant facts is crossed while their text is held fixed (480 tasks). Across Qwen2.5-7B, Llama-3.1-8B, and two DeepSeek models, both heuristics fail in predictable places. Selecting by relevance readmits decoys, because decoys are on topic: even a perfect relevance filter loses 23 to 31 points to rarest-first selection in the classic hidden-profile configuration. Rarest-first selection is no better than random selection on average and wins only where the rare facts happen to be the useful ones. In both cases accuracy follows the balance of evidence the memory keeps, not the policy that kept it. The decision model adds a third failure, a form of social proof: it gives extra weight to facts attributed to many agents. Removing the attribution tags, or reassigning them at random with line order fixed, raises accuracy in the classic configuration by 13 to 24 points. In natural discussions the evidence is lost before any memory acts: the complete transcript yields lower accuracy than no notes at all.",
+      "title": "MDSKILL: Learning to Internalize Skill Memory through Multi-View Distillation for Efficient Dynamic Agent Self-Evolution",
+      "html_url": "http://arxiv.org/abs/2611.05313v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.05313v1",
+      "description": "Skill memories encode past experiences as textual prompts to improve reinforcement learning (RL) for self-evolving agents. Complementing RL, On-Policy Self-Distillation (OPSD) provides dense, fine-grained supervision to internalize knowledge from skill-guided trajectories and accelerate policy learning. However, self-generated memories often contain noisy supervision and functionally entangled, redundant, or conflicting knowledge, making direct distillation difficult. Under limited training budgets, these issues can hinder knowledge internalization and even degrade performance. To address this problem, we propose MDSKILL, a multi-view distillation approach for skill memory internalization. MDSKILL organizes skill memories into three complementary functional views (state grounding, action planning, and execution control) and selects high-quality skills using dynamic metrics to construct view-specific and integrated reasoning branches. OPSD then transfers and consolidates complementary experiential knowledge across these branches into a shared policy, enabling efficient skill internalization and continuous agent self-evolution. We evaluate MDSKILL on three agent benchmarks against RL, skill-augmented, and self-distillation baselines that do not rely on stronger external teacher models. Without additional computational overhead, MDSKILL improves upon SOTA performance by up to 7.1% and 8.1% on ALFWorld and WebShop. Extensive ablations and evolution analyses further validate its effectiveness in knowledge internalization and policy improvement. The code is available at https://anonymous.4open.science/r/MDSKILL-CF53.",
       "authors": [
-        "Anouar Imel",
-        "Imad Charradi",
-        "Abderrahman Sghir",
-        "Khalil El Khammar"
+        "Dian Jin",
+        "Jinluan Yang",
+        "Kairong Han",
+        "Baohong Li",
+        "Zijing Hu",
+        "Yi He",
+        "Wenlin Zhong",
+        "Yunze Tong",
+        "Minqin Zhu",
+        "Linchuan Li",
+        "Yanan Niu",
+        "Kun Kuang"
       ],
       "categories": [
-        "cs.AI",
-        "cs.CL",
-        "cs.MA",
-        "cs.SI"
+        "cs.CL"
       ],
-      "published_at": "2026-10-27T17:49:39+00:00",
-      "updated_at": "2026-10-27T17:49:39+00:00",
-      "primary_category": "cs.AI",
-      "heuristic_score": 17.776,
-      "summary": "Rare, Relevant, and Still Wrong: How Memory Fails LLM Group Decisions 是最近值得追踪的一篇 AI 论文。论文摘要显示：When an LLM group's discussion is compressed into a short memory for a final decision maker, what should the memory keep? Two natural heuristics keep the rarest claims or the claims relevant to the decision criteria. On hidden-profile tasks...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "published_at": "2026-11-03T18:19:55+00:00",
+      "updated_at": "2026-11-03T18:19:55+00:00",
+      "primary_category": "cs.CL",
+      "heuristic_score": 17.9,
+      "summary": "MDSKILL: Learning to Internalize Skill Memory through Multi-View Distillation for Efficient Dynamic Agent Self-Evolution 是最近值得追踪的一篇 AI 论文。论文摘要显示：Skill memories encode past experiences as textual prompts to improve reinforcement learning (RL) for self-evolving agents. Complementing RL, On-Policy Self-Distillation (OPSD) provides dense, fine-grained supervision to internalize knowledg...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
       "brief": "这是一篇值得加入今日论文雷达的最新工作。",
       "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
       "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
       "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
       "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
       "highlights": [
-        "分类: cs.AI, cs.CL",
-        "作者数: 4"
+        "分类: cs.CL",
+        "作者数: 12"
       ],
       "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
       "relevance_score": 10,
       "tags": [
         "ai",
-        "llm",
         "agent",
-        "rag"
+        "model",
+        "benchmark"
       ],
       "themes": [
         "ai",
-        "llm",
-        "agent"
+        "agent",
+        "model"
       ],
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：Rare, Relevant, and Still Wrong: How Memory Fails LLM Group Decisions 是最近值得追踪的一篇 AI 论文。论文摘要显示：When an LLM group's discussion is compressed into a short memory for a final decision maker, what should the memory keep? Two natural heuristics keep the rarest claims or the claims relevant to the decision criteria. On hidden-profile tasks...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI, cs.CL\n- 作者数: 4",
+      "summary_markdown": "**摘要**：MDSKILL: Learning to Internalize Skill Memory through Multi-View Distillation for Efficient Dynamic Agent Self-Evolution 是最近值得追踪的一篇 AI 论文。论文摘要显示：Skill memories encode past experiences as textual prompts to improve reinforcement learning (RL) for self-evolving agents. Complementing RL, On-Policy Self-Distillation (OPSD) provides dense, fine-grained supervision to internalize knowledg...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL\n- 作者数: 12",
       "focus_hits": [
         {
           "keyword": "agent",
           "weight": 3.0
         },
         {
-          "keyword": "rag",
-          "weight": 2.2
+          "keyword": "reasoning",
+          "weight": 2.4
         },
         {
           "keyword": "benchmark",
@@ -544,88 +632,11 @@
         }
       ],
       "primary_match": "agent",
-      "personalized_score": 176.0,
-      "detail_path": "items/arxiv-rare-relevant-and-still-wrong-how-memory-fails-llm-group-decisions.html",
-      "first_seen_at": "2026-10-28T02:37:31.788431+00:00",
-      "last_seen_at": "2026-10-29T05:39:28.107627+00:00",
-      "last_curated_at": "2026-10-29T05:39:28.107627+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2611.03125v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "SurgPace: Complexity-Aware Progressive Distillation for Surgical Multimodal Large Language Models",
-      "html_url": "http://arxiv.org/abs/2611.03125v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.03125v1",
-      "description": "Multimodal large language models (MLLMs) have shown strong potential in robotic surgery for question answering, scene understanding, and grounded assistance, but their high computational cost limits real clinical deployment. Knowledge distillation provides a practical way to build compact surgical MLLMs, yet direct distillation is not well suited to surgical data because surgical samples vary greatly in difficulty, visual ambiguity, and required clinical context, making uniform teacher-student transfer unstable. In addition, the role of supervision changes during training: early stages require stronger teacher guidance for multimodal alignment, while later stages rely more on task supervision for effective optimization. To address these challenges, we propose SurgPace, a complexity-aware continuous curriculum framework for progressive distillation of surgical vision-language models. SurgPace estimates sample complexity using predictive confidence and Lorentz geometric consistency, and uses the fused score to guide a continuous easy-to-hard training process. We further introduce hierarchical representation alignment, which aligns the student with the teacher at the feature, logit, and probability levels, while gradually shifting the training focus from teacher imitation to task supervision. This design separates sample-level curriculum from objective-level scheduling, leading to more stable and effective distillation. We evaluate SurgPace on Surg-396K, a benchmark built from four public surgical datasets and covering five dialogue paradigms. SurgPace consistently outperforms strong MLLM distillation baselines, demonstrating its effectiveness for building compact, memory-efficient surgical MLLMs with faster decoding under controlled benchmarks. Code is available at https://github.com/hezhicheng2002/SurgPace.",
-      "authors": [
-        "Zhicheng He",
-        "Xiaohan Xing",
-        "Hongqiu Wang",
-        "Kun Yuan",
-        "Guankun Wang",
-        "Yanheng Li",
-        "Haoxuan Che",
-        "Nassir Navab",
-        "Hongliang Ren",
-        "Long Bai"
-      ],
-      "categories": [
-        "cs.CV"
-      ],
-      "published_at": "2026-11-02T13:39:14+00:00",
-      "updated_at": "2026-11-02T13:39:14+00:00",
-      "primary_category": "cs.CV",
-      "heuristic_score": 17.9,
-      "summary": "SurgPace: Complexity-Aware Progressive Distillation for Surgical Multimodal Large Language Models 是最近值得追踪的一篇 AI 论文。论文摘要显示：Multimodal large language models (MLLMs) have shown strong potential in robotic surgery for question answering, scene understanding, and grounded assistance, but their high computational cost limits real clinical deployment. Knowledge disti...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CV",
-        "作者数: 10"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "llm",
-        "multimodal",
-        "model"
-      ],
-      "themes": [
-        "ai",
-        "llm",
-        "multimodal"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：SurgPace: Complexity-Aware Progressive Distillation for Surgical Multimodal Large Language Models 是最近值得追踪的一篇 AI 论文。论文摘要显示：Multimodal large language models (MLLMs) have shown strong potential in robotic surgery for question answering, scene understanding, and grounded assistance, but their high computational cost limits real clinical deployment. Knowledge disti...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV\n- 作者数: 10",
-      "focus_hits": [
-        {
-          "keyword": "coding",
-          "weight": 2.6
-        },
-        {
-          "keyword": "multimodal",
-          "weight": 2.0
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "coding",
-      "personalized_score": 170.0,
-      "detail_path": "items/arxiv-surgpace-complexity-aware-progressive-distillation-for-surgical-multimodal-large-language-.html",
-      "first_seen_at": "2026-11-03T06:39:18.609256+00:00",
-      "last_seen_at": "2026-11-03T06:39:18.609256+00:00",
-      "last_curated_at": "2026-11-03T06:39:18.609256+00:00",
+      "personalized_score": 178.0,
+      "detail_path": "items/arxiv-mdskill-learning-to-internalize-skill-memory-through-multi-view-distillation-for-efficient.html",
+      "first_seen_at": "2026-11-04T06:06:24.271759+00:00",
+      "last_seen_at": "2026-11-04T06:06:24.271759+00:00",
+      "last_curated_at": "2026-11-04T06:06:24.271759+00:00",
       "last_notified_at": null
     }
   ],
@@ -636,18 +647,23 @@
     },
     {
       "theme": "agent",
-      "count": 3
-    },
-    {
-      "theme": "llm",
-      "count": 3
+      "count": 5
     },
     {
       "theme": "rag",
       "count": 2
+    },
+    {
+      "theme": "llm",
+      "count": 1
     }
   ],
   "highlights": [
+    {
+      "title": "Adversarial Speculative Reasoning Improves Long Horizon Agents",
+      "source": "arxiv",
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
+    },
     {
       "title": "Metacognitive Decoding: Efficient Inference for Diffusion Language Agents",
       "source": "arxiv",
@@ -655,11 +671,6 @@
     },
     {
       "title": "DR Pixel: Page-Native Deep Research with Vision-Language Models",
-      "source": "arxiv",
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
-    },
-    {
-      "title": "MIRA: Reinforcing Multimodal Reasoning via Deceptive Contextual Augmentation",
       "source": "arxiv",
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     }

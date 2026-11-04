@@ -1,9 +1,9 @@
 {
   "label": "月报",
   "window_days": 30,
-  "generated_at": "2026-11-04T11:23:31.849618+08:00",
+  "generated_at": "2026-11-04T14:06:10.918444+08:00",
   "count": 200,
-  "summary": "近 30 天里，最集中的主题是 ai、llm、agent。",
+  "summary": "近 30 天里，最集中的主题是 ai、agent、llm。",
   "top_items": [
     {
       "id": "arxiv::http://arxiv.org/abs/2610.26860v1",
@@ -101,6 +101,89 @@
       "first_seen_at": "2026-10-20T04:41:31.753232+00:00",
       "last_seen_at": "2026-10-20T04:41:31.753232+00:00",
       "last_curated_at": "2026-10-20T04:41:31.753232+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2611.05345v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Adversarial Speculative Reasoning Improves Long Horizon Agents",
+      "html_url": "http://arxiv.org/abs/2611.05345v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.05345v1",
+      "description": "Speculative decoding has been treated purely as a systems optimization that speeds up large language model decoding without changing the model behavior. Under this view, the growing effort to train better draft models has been focused solely on acceptance rate. We argue that this view does not hold true for long-horizon agent reasoning. Measuring frontier open-weight models on complex agentic tasks with different speculative decoding approaches, we found that numerical noise grows within verification windows, and the draft acceptance results of the thinking process can change the output distribution of the model after 30 steps, thus noticeably influencing the reasoning accuracy of long-horizon agents in random directions. In this work, we improve the reasoning capability of target models by controlling such noise. While we cannot change the overall token distribution verified by the target model, we can encode critical reasoning with highest precision by training the draft model to be rejected. We identify these points in agent traces and train the draft model to favor adversarial preference. At inference the trained draft and the target part ways precisely at these decision points, verification restarts, so that critical thinking tokens are sampled from the target model and encoded under its least noisy conditions. This approach makes critical reasoning better indexed and more durable over a long horizon. On complex agentic coding benchmarks, our approach raises end-to-end success rate with no change to the target model or its output distribution. Our results recast the speculative decoding mechanism from a pure accelerator into an active allocator for context precision that improves the accuracy of long-horizon agents by training 0.06% to 0.28% of hosted parameters.",
+      "authors": [
+        "Hongyin Luo",
+        "Wei Fang",
+        "Lijie Yang",
+        "Owen Stepan",
+        "Daniel Suit",
+        "Jeff Krapf",
+        "Dana Wensberg",
+        "Jack O'Brien"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "published_at": "2026-11-03T18:45:23+00:00",
+      "updated_at": "2026-11-03T18:45:23+00:00",
+      "primary_category": "cs.AI",
+      "heuristic_score": 22.7,
+      "summary": "Adversarial Speculative Reasoning Improves Long Horizon Agents 是最近值得追踪的一篇 AI 论文。论文摘要显示：Speculative decoding has been treated purely as a systems optimization that speeds up large language model decoding without changing the model behavior. Under this view, the growing effort to train better draft models has been focused solel...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.AI",
+        "作者数: 8"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "agent",
+        "agentic",
+        "model"
+      ],
+      "themes": [
+        "ai",
+        "agent",
+        "agentic"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：Adversarial Speculative Reasoning Improves Long Horizon Agents 是最近值得追踪的一篇 AI 论文。论文摘要显示：Speculative decoding has been treated purely as a systems optimization that speeds up large language model decoding without changing the model behavior. Under this view, the growing effort to train better draft models has been focused solel...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI\n- 作者数: 8",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "coding",
+          "weight": 2.6
+        },
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "inference",
+          "weight": 1.8
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 222.0,
+      "detail_path": "items/arxiv-adversarial-speculative-reasoning-improves-long-horizon-agents.html",
+      "first_seen_at": "2026-11-04T06:06:24.271759+00:00",
+      "last_seen_at": "2026-11-04T06:06:24.271759+00:00",
+      "last_curated_at": "2026-11-04T06:06:24.271759+00:00",
       "last_notified_at": null
     },
     {
@@ -599,89 +682,6 @@
       "last_seen_at": "2026-10-20T04:41:31.753232+00:00",
       "last_curated_at": "2026-10-20T04:41:31.753232+00:00",
       "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2610.26826v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "RefCraft: Benchmarking Visual-Reference-Conditioned Agentic Generation through Web Development",
-      "html_url": "http://arxiv.org/abs/2610.26826v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.26826v1",
-      "description": "Beyond basic tool use and coding skills, effectively incorporating visual references into agentic generation is equally essential for applying AI agents to real-world productivity tasks. We study this crucial capability through webpage development, a practical and readily evaluable setting in which existing benchmarks remain largely idealized: they typically focus on reconstructing visual targets or generating webpages from textual instructions alone, overlooking the more common workflow of developing from visual examples. Specifically, we introduce RefCraft, a benchmark comprising 300 realistic multimodal webpage-development tasks that combine natural-language instructions with screenshots from one to five reference webpages. Agents must selectively interpret and utilize these references while rendering, visually inspecting, and iteratively refining their outputs. We evaluate the resulting open-ended artifacts using independently verifiable keypoints and complementary programmatic and VLM judges. Across nine frontier (M)LLMs, the strongest system achieves an overall score of only 52.12 out of 100, revealing that visual-reference-conditioned agentic generation remains a substantial challenge for current models in practical webpage-development settings.",
-      "authors": [
-        "Yuchi Wang",
-        "Rongyao Fang",
-        "Weihao Yu",
-        "Xilin Wei",
-        "Tiancheng Gu",
-        "Dingkang Yang",
-        "Hang Zhang",
-        "Dayiheng Liu",
-        "Hongsheng Li",
-        "Shuai Bai"
-      ],
-      "categories": [
-        "cs.CL",
-        "cs.AI",
-        "cs.CV"
-      ],
-      "published_at": "2026-10-19T17:55:06+00:00",
-      "updated_at": "2026-10-19T17:55:06+00:00",
-      "primary_category": "cs.CL",
-      "heuristic_score": 22.29,
-      "summary": "RefCraft: Benchmarking Visual-Reference-Conditioned Agentic Generation through Web Development 是最近值得追踪的一篇 AI 论文。论文摘要显示：Beyond basic tool use and coding skills, effectively incorporating visual references into agentic generation is equally essential for applying AI agents to real-world productivity tasks. We study this crucial capability through webpage deve...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CL, cs.AI",
-        "作者数: 10"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "llm",
-        "agent",
-        "agentic"
-      ],
-      "themes": [
-        "ai",
-        "llm",
-        "agent"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：RefCraft: Benchmarking Visual-Reference-Conditioned Agentic Generation through Web Development 是最近值得追踪的一篇 AI 论文。论文摘要显示：Beyond basic tool use and coding skills, effectively incorporating visual references into agentic generation is equally essential for applying AI agents to real-world productivity tasks. We study this crucial capability through webpage deve...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL, cs.AI\n- 作者数: 10",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "coding",
-          "weight": 2.6
-        },
-        {
-          "keyword": "multimodal",
-          "weight": 2.0
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 200.0,
-      "detail_path": "items/arxiv-refcraft-benchmarking-visual-reference-conditioned-agentic-generation-through-web-developm.html",
-      "first_seen_at": "2026-10-20T04:41:31.753232+00:00",
-      "last_seen_at": "2026-10-20T04:41:31.753232+00:00",
-      "last_curated_at": "2026-10-20T04:41:31.753232+00:00",
-      "last_notified_at": null
     }
   ],
   "top_themes": [
@@ -690,12 +690,12 @@
       "count": 8
     },
     {
-      "theme": "llm",
-      "count": 4
+      "theme": "agent",
+      "count": 5
     },
     {
-      "theme": "agent",
-      "count": 4
+      "theme": "llm",
+      "count": 3
     }
   ],
   "highlights": [
@@ -705,12 +705,12 @@
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     },
     {
-      "title": "Think Before You Speak: Enabling Training-Free Latent Communication Between Language Models",
+      "title": "Adversarial Speculative Reasoning Improves Long Horizon Agents",
       "source": "arxiv",
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     },
     {
-      "title": "Metacognitive Decoding: Efficient Inference for Diffusion Language Agents",
+      "title": "Think Before You Speak: Enabling Training-Free Latent Communication Between Language Models",
       "source": "arxiv",
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     }
