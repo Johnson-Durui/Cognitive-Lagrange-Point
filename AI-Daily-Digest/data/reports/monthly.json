@@ -1,7 +1,7 @@
 {
   "label": "月报",
   "window_days": 30,
-  "generated_at": "2026-11-05T11:46:40.888904+08:00",
+  "generated_at": "2026-11-05T14:35:36.018724+08:00",
   "count": 200,
   "summary": "近 30 天里，最集中的主题是 ai、llm、agent。",
   "top_items": [
@@ -430,6 +430,86 @@
       "last_notified_at": null
     },
     {
+      "id": "arxiv::http://arxiv.org/abs/2611.06858v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "CompressionBench: How can your coding agents compress LLMs?",
+      "html_url": "http://arxiv.org/abs/2611.06858v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.06858v1",
+      "description": "Recursive self-improvement requires AI systems to improve the models and infrastructure used by subsequent systems. LLM compression offers a concrete efficiency objective: retain a pretrained model's behavior within a smaller model storage budget. We study whether coding agents can carry out this step autonomously. We formulate compression as a terminal task in which an agent receives a source checkpoint, storage limit, inference environment, and time budget, then constructs compressed weights and executable inference code. The agent controls its algorithm and experiments; perplexity feedback guides search, and independent verification checks the final model. Across six agents and six model--size settings, 29 of 36 submissions pass verification. Selecting the lowest-perplexity agent design per task yields an average 3.4% perplexity increase over BF16 and 77.33% downstream accuracy, compared with 79.56% for BF16. Recorded experiments reveal how agents achieve these outcomes and where improvement breaks down. Agents lower PPL in 21 of 24 revisions at nearly fixed storage; complete-model feedback reverses 17 of 79 prior local rankings; and generation and inference tests expose failures that likelihood alone misses. The results identify representation design, experimental judgment, and capability validation as central to agent-driven model compression, a measurable component of efficiency-oriented self-improvement.",
+      "authors": [
+        "Xinrui Zhong",
+        "Zhifeng Li",
+        "Zhiming Wang",
+        "Yongqi Liu",
+        "Shanglin Yang",
+        "Yang Zhou",
+        "Zikun Li",
+        "Zhuoming Chen",
+        "Beidi Chen"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "published_at": "2026-11-04T18:14:50+00:00",
+      "updated_at": "2026-11-04T18:14:50+00:00",
+      "primary_category": "cs.AI",
+      "heuristic_score": 20.093,
+      "summary": "CompressionBench: How can your coding agents compress LLMs? 是最近值得追踪的一篇 AI 论文。论文摘要显示：Recursive self-improvement requires AI systems to improve the models and infrastructure used by subsequent systems. LLM compression offers a concrete efficiency objective: retain a pretrained model's behavior within a smaller model storage ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.AI",
+        "作者数: 9"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "llm",
+        "agent",
+        "rag"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "agent"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：CompressionBench: How can your coding agents compress LLMs? 是最近值得追踪的一篇 AI 论文。论文摘要显示：Recursive self-improvement requires AI systems to improve the models and infrastructure used by subsequent systems. LLM compression offers a concrete efficiency objective: retain a pretrained model's behavior within a smaller model storage ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI\n- 作者数: 9",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "coding",
+          "weight": 2.6
+        },
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        },
+        {
+          "keyword": "inference",
+          "weight": 1.8
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 204.0,
+      "detail_path": "items/arxiv-compressionbench-how-can-your-coding-agents-compress-llms.html",
+      "first_seen_at": "2026-11-05T06:35:44.238909+00:00",
+      "last_seen_at": "2026-11-05T06:35:44.238909+00:00",
+      "last_curated_at": "2026-11-05T06:35:44.238909+00:00",
+      "last_notified_at": null
+    },
+    {
       "id": "arxiv::http://arxiv.org/abs/2610.22355v1",
       "kind": "paper",
       "source": "arxiv",
@@ -585,89 +665,6 @@
       "personalized_score": 200.0,
       "detail_path": "items/arxiv-globe-geometry-led-online-behavioral-early-exit-via-unit-sphere-trajectories.html",
       "first_seen_at": "2026-10-20T02:10:35.927546+00:00",
-      "last_seen_at": "2026-10-20T04:41:31.753232+00:00",
-      "last_curated_at": "2026-10-20T04:41:31.753232+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2610.26826v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "RefCraft: Benchmarking Visual-Reference-Conditioned Agentic Generation through Web Development",
-      "html_url": "http://arxiv.org/abs/2610.26826v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.26826v1",
-      "description": "Beyond basic tool use and coding skills, effectively incorporating visual references into agentic generation is equally essential for applying AI agents to real-world productivity tasks. We study this crucial capability through webpage development, a practical and readily evaluable setting in which existing benchmarks remain largely idealized: they typically focus on reconstructing visual targets or generating webpages from textual instructions alone, overlooking the more common workflow of developing from visual examples. Specifically, we introduce RefCraft, a benchmark comprising 300 realistic multimodal webpage-development tasks that combine natural-language instructions with screenshots from one to five reference webpages. Agents must selectively interpret and utilize these references while rendering, visually inspecting, and iteratively refining their outputs. We evaluate the resulting open-ended artifacts using independently verifiable keypoints and complementary programmatic and VLM judges. Across nine frontier (M)LLMs, the strongest system achieves an overall score of only 52.12 out of 100, revealing that visual-reference-conditioned agentic generation remains a substantial challenge for current models in practical webpage-development settings.",
-      "authors": [
-        "Yuchi Wang",
-        "Rongyao Fang",
-        "Weihao Yu",
-        "Xilin Wei",
-        "Tiancheng Gu",
-        "Dingkang Yang",
-        "Hang Zhang",
-        "Dayiheng Liu",
-        "Hongsheng Li",
-        "Shuai Bai"
-      ],
-      "categories": [
-        "cs.CL",
-        "cs.AI",
-        "cs.CV"
-      ],
-      "published_at": "2026-10-19T17:55:06+00:00",
-      "updated_at": "2026-10-19T17:55:06+00:00",
-      "primary_category": "cs.CL",
-      "heuristic_score": 22.29,
-      "summary": "RefCraft: Benchmarking Visual-Reference-Conditioned Agentic Generation through Web Development 是最近值得追踪的一篇 AI 论文。论文摘要显示：Beyond basic tool use and coding skills, effectively incorporating visual references into agentic generation is equally essential for applying AI agents to real-world productivity tasks. We study this crucial capability through webpage deve...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CL, cs.AI",
-        "作者数: 10"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "llm",
-        "agent",
-        "agentic"
-      ],
-      "themes": [
-        "ai",
-        "llm",
-        "agent"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：RefCraft: Benchmarking Visual-Reference-Conditioned Agentic Generation through Web Development 是最近值得追踪的一篇 AI 论文。论文摘要显示：Beyond basic tool use and coding skills, effectively incorporating visual references into agentic generation is equally essential for applying AI agents to real-world productivity tasks. We study this crucial capability through webpage deve...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL, cs.AI\n- 作者数: 10",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "coding",
-          "weight": 2.6
-        },
-        {
-          "keyword": "multimodal",
-          "weight": 2.0
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 200.0,
-      "detail_path": "items/arxiv-refcraft-benchmarking-visual-reference-conditioned-agentic-generation-through-web-developm.html",
-      "first_seen_at": "2026-10-20T04:41:31.753232+00:00",
       "last_seen_at": "2026-10-20T04:41:31.753232+00:00",
       "last_curated_at": "2026-10-20T04:41:31.753232+00:00",
       "last_notified_at": null

@@ -1,9 +1,9 @@
 {
   "label": "周报",
   "window_days": 7,
-  "generated_at": "2026-11-05T11:46:40.888904+08:00",
-  "count": 75,
-  "summary": "近 7 天里，最集中的主题是 ai、agent、rag。",
+  "generated_at": "2026-11-05T14:35:36.018724+08:00",
+  "count": 71,
+  "summary": "近 7 天里，最集中的主题是 ai、agent、llm。",
   "top_items": [
     {
       "id": "arxiv::http://arxiv.org/abs/2611.05345v1",
@@ -89,58 +89,59 @@
       "last_notified_at": null
     },
     {
-      "id": "arxiv::http://arxiv.org/abs/2610.37642v1",
+      "id": "arxiv::http://arxiv.org/abs/2611.06858v1",
       "kind": "paper",
       "source": "arxiv",
       "source_tags": [
         "latest"
       ],
-      "title": "Metacognitive Decoding: Efficient Inference for Diffusion Language Agents",
-      "html_url": "http://arxiv.org/abs/2610.37642v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.37642v1",
-      "description": "Diffusion language models offer a promising path to efficient agents through parallel token generation. However, efficient interaction requires adapting both where computation is spent and how much text is generated. We introduce a metacognitive controller that guides diffusion generation according to the needs of the current response and the agent's interaction with the environment. It learns when to finalize tokens and how far generation should extend, reducing overall computation within responses. Our controller, a lightweight plug-in for the diffusion backbone, is trained on agent trajectories to balance correctness and generation cost. This approach connects the agent's generation process to the interaction the agent serves. Experiments across five benchmarks demonstrate that our approach reduces inference FLOPs by 20.6% on average compared with the most efficient baseline, while maintaining competitive task accuracy. Ablation studies further validate the effectiveness of our approach.",
+      "title": "CompressionBench: How can your coding agents compress LLMs?",
+      "html_url": "http://arxiv.org/abs/2611.06858v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.06858v1",
+      "description": "Recursive self-improvement requires AI systems to improve the models and infrastructure used by subsequent systems. LLM compression offers a concrete efficiency objective: retain a pretrained model's behavior within a smaller model storage budget. We study whether coding agents can carry out this step autonomously. We formulate compression as a terminal task in which an agent receives a source checkpoint, storage limit, inference environment, and time budget, then constructs compressed weights and executable inference code. The agent controls its algorithm and experiments; perplexity feedback guides search, and independent verification checks the final model. Across six agents and six model--size settings, 29 of 36 submissions pass verification. Selecting the lowest-perplexity agent design per task yields an average 3.4% perplexity increase over BF16 and 77.33% downstream accuracy, compared with 79.56% for BF16. Recorded experiments reveal how agents achieve these outcomes and where improvement breaks down. Agents lower PPL in 21 of 24 revisions at nearly fixed storage; complete-model feedback reverses 17 of 79 prior local rankings; and generation and inference tests expose failures that likelihood alone misses. The results identify representation design, experimental judgment, and capability validation as central to agent-driven model compression, a measurable component of efficiency-oriented self-improvement.",
       "authors": [
-        "Mingyu Zhao",
-        "Shuhang Lin",
-        "Ligong Han",
-        "Xiaojing Yu",
-        "Zhenting Wang",
-        "Yifei Pang",
+        "Xinrui Zhong",
+        "Zhifeng Li",
+        "Zhiming Wang",
+        "Yongqi Liu",
+        "Shanglin Yang",
         "Yang Zhou",
-        "Dimitris N. Metaxas"
+        "Zikun Li",
+        "Zhuoming Chen",
+        "Beidi Chen"
       ],
       "categories": [
-        "cs.CL"
+        "cs.AI"
       ],
-      "published_at": "2026-10-27T17:55:24+00:00",
-      "updated_at": "2026-10-27T17:55:24+00:00",
-      "primary_category": "cs.CL",
-      "heuristic_score": 19.556,
-      "summary": "Metacognitive Decoding: Efficient Inference for Diffusion Language Agents 是最近值得追踪的一篇 AI 论文。论文摘要显示：Diffusion language models offer a promising path to efficient agents through parallel token generation. However, efficient interaction requires adapting both where computation is spent and how much text is generated. We introduce a metacogn...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "published_at": "2026-11-04T18:14:50+00:00",
+      "updated_at": "2026-11-04T18:14:50+00:00",
+      "primary_category": "cs.AI",
+      "heuristic_score": 20.093,
+      "summary": "CompressionBench: How can your coding agents compress LLMs? 是最近值得追踪的一篇 AI 论文。论文摘要显示：Recursive self-improvement requires AI systems to improve the models and infrastructure used by subsequent systems. LLM compression offers a concrete efficiency objective: retain a pretrained model's behavior within a smaller model storage ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
       "brief": "这是一篇值得加入今日论文雷达的最新工作。",
       "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
       "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
       "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
       "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
       "highlights": [
-        "分类: cs.CL",
-        "作者数: 8"
+        "分类: cs.AI",
+        "作者数: 9"
       ],
       "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
       "relevance_score": 10,
       "tags": [
         "ai",
-        "agent",
-        "rag",
-        "diffusion"
-      ],
-      "themes": [
-        "ai",
+        "llm",
         "agent",
         "rag"
       ],
+      "themes": [
+        "ai",
+        "llm",
+        "agent"
+      ],
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：Metacognitive Decoding: Efficient Inference for Diffusion Language Agents 是最近值得追踪的一篇 AI 论文。论文摘要显示：Diffusion language models offer a promising path to efficient agents through parallel token generation. However, efficient interaction requires adapting both where computation is spent and how much text is generated. We introduce a metacogn...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL\n- 作者数: 8",
+      "summary_markdown": "**摘要**：CompressionBench: How can your coding agents compress LLMs? 是最近值得追踪的一篇 AI 论文。论文摘要显示：Recursive self-improvement requires AI systems to improve the models and infrastructure used by subsequent systems. LLM compression offers a concrete efficiency objective: retain a pretrained model's behavior within a smaller model storage ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI\n- 作者数: 9",
       "focus_hits": [
         {
           "keyword": "agent",
@@ -157,18 +158,14 @@
         {
           "keyword": "inference",
           "weight": 1.8
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
         }
       ],
       "primary_match": "agent",
-      "personalized_score": 220.0,
-      "detail_path": "items/arxiv-metacognitive-decoding-efficient-inference-for-diffusion-language-agents.html",
-      "first_seen_at": "2026-10-28T02:37:31.788431+00:00",
-      "last_seen_at": "2026-10-29T05:39:28.107627+00:00",
-      "last_curated_at": "2026-10-29T05:39:28.107627+00:00",
+      "personalized_score": 204.0,
+      "detail_path": "items/arxiv-compressionbench-how-can-your-coding-agents-compress-llms.html",
+      "first_seen_at": "2026-11-05T06:35:44.238909+00:00",
+      "last_seen_at": "2026-11-05T06:35:44.238909+00:00",
+      "last_curated_at": "2026-11-05T06:35:44.238909+00:00",
       "last_notified_at": null
     },
     {
@@ -331,82 +328,93 @@
       "last_notified_at": null
     },
     {
-      "id": "arxiv::http://arxiv.org/abs/2610.37598v1",
+      "id": "arxiv::http://arxiv.org/abs/2611.06881v1",
       "kind": "paper",
       "source": "arxiv",
       "source_tags": [
         "latest"
       ],
-      "title": "GAS-PFN: Graph-Aware Spatiotemporal Prior-Data Fitted Networks for Zero-Shot Traffic Forecasting",
-      "html_url": "http://arxiv.org/abs/2610.37598v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.37598v1",
-      "description": "Traffic forecasting requires modeling complex temporal dynamics and the spatial dependencies imposed by road topology. Supervised graph-based models achieve strong performance, but are often trained for a particular dataset and sensor graph, making deployment to new or evolving networks costly. Prior-Data Fitted Networks (PFNs) offer a zero-shot alternative by learning in-context inference from synthetic task priors, which provide an explicit mechanism for encoding domain-specific assumptions. Existing forecasting PFNs, however, do not explicitly represent the graph-structured dependencies governing traffic dynamics. To combine graph-aware traffic modeling with zero-shot adaptation, we introduce the Graph-Aware Spatiotemporal Prior-Data Fitted Network (GAS-PFN). GAS-PFN incorporates sampled road topology into its synthetic task prior through random-walk diffusion, teaching the model to learn graph-coupled dynamics during pretraining. Its co-designed inference architecture uses two mask-conditioned passes through a shared Transformer backbone to separately model sensor-specific temporal dynamics and spatiotemporal interactions among neighboring sensors before integrating their representations for prediction. This design enables GAS-PFN to use target-network structure and context without parameter updates. Across six benchmarks at the 90-minute horizon, GAS-PFN reduces MSE by 34.0% on average relative to TimePFN, its closest PFN-based predecessor. It also reduces MSE by 27.7% on average relative to four recent industry-developed general-purpose zero-shot forecasters. In this comparison, all models receive 90 minutes of contiguous recent history, and any additional context is drawn from each dataset's chronological training split. These results indicate that aligning PFN priors and inference architectures with graph structure improves in-context learning for zero-shot traffic forecasting.",
+      "title": "VABAR: A Variational Automation Benchmark for Agentic Robotics",
+      "html_url": "http://arxiv.org/abs/2611.06881v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.06881v1",
+      "description": "For robots to operate reliably in commercial and industrial applications, they must persistently perform specific tasks with known variations in object shape and pose. We call this Variational Automation (VA) to differentiate these settings from fixed automation. Inspired by recent papers on Agentic Robotics, where pretrained LLM and VLM coding agents combine interpretable robot programming with the open-world adaptability of model free policies, we propose a general set of agentic robotics benchmark design criteria that includes accessibility, repeatability, diversity, relevance to agentic robotics and practical applications, physical realizability, resistance to benchmark saturation, and computational efficiency. We instantiate these principles in six manipulation task classes spanning industrial, medical, and infrastructure applications: tool sorting, tool hanging, gear meshing, syringe packing, cable insertion, and cable routing. We introduce the Variational Automation Benchmark for Agentic Robotics (VABAR), an open, easily replicable, simulation-based manipulation benchmark to systematically evaluating agentic robotics systems. Built fully on open-source tools, VABAR features detailed implementations using the Newton physics engine, standardized task variations, difficulty tiers, success metrics, and a library of 33 generalizable skills with human-authored programmatic reference solutions. We provide initial baseline evaluations using an open agentic manipulation harness, Graph-as-Policy (GaP), and Isaac Lab Arena.",
       "authors": [
-        "Joseph Natter",
-        "Long Vu",
-        "Yifan Zhang",
-        "Bobin Deng",
-        "Kun Suo",
-        "Rui Wu"
+        "Shuangyu Xie",
+        "Kaiyuan Chen",
+        "Uksang Yoo",
+        "Xinyue Zhu",
+        "Meadow Shen",
+        "Jaimyn Drake",
+        "Eugen Solowjow",
+        "Lionel Gulich",
+        "Alexander Millane",
+        "Rafael Cathomen",
+        "Tuur Stuyck",
+        "Sangeeta Subramanian",
+        "Yichao Pan",
+        "Bruce McGowan",
+        "Michael Benedict",
+        "Linxi Fan",
+        "Yuke Zhu",
+        "Spencer Huang",
+        "Ken Goldberg"
       ],
       "categories": [
-        "cs.LG",
-        "cs.AI",
-        "cs.NE"
+        "cs.RO"
       ],
-      "published_at": "2026-10-27T17:31:26+00:00",
-      "updated_at": "2026-10-27T17:31:26+00:00",
-      "primary_category": "cs.LG",
-      "heuristic_score": 20.3,
-      "summary": "GAS-PFN: Graph-Aware Spatiotemporal Prior-Data Fitted Networks for Zero-Shot Traffic Forecasting 是最近值得追踪的一篇 AI 论文。论文摘要显示：Traffic forecasting requires modeling complex temporal dynamics and the spatial dependencies imposed by road topology. Supervised graph-based models achieve strong performance, but are often trained for a particular dataset and sensor graph...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "published_at": "2026-11-04T18:38:01+00:00",
+      "updated_at": "2026-11-04T18:38:01+00:00",
+      "primary_category": "cs.RO",
+      "heuristic_score": 21.131,
+      "summary": "VABAR: A Variational Automation Benchmark for Agentic Robotics 是最近值得追踪的一篇 AI 论文。论文摘要显示：For robots to operate reliably in commercial and industrial applications, they must persistently perform specific tasks with known variations in object shape and pose. We call this Variational Automation (VA) to differentiate these settings...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
       "brief": "这是一篇值得加入今日论文雷达的最新工作。",
       "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
       "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
       "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
       "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
       "highlights": [
-        "分类: cs.LG, cs.AI",
-        "作者数: 6"
+        "分类: cs.RO",
+        "作者数: 19"
       ],
       "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
       "relevance_score": 10,
       "tags": [
         "ai",
-        "rag",
-        "diffusion",
-        "model"
+        "llm",
+        "agent",
+        "agentic"
       ],
       "themes": [
         "ai",
-        "rag",
-        "diffusion"
+        "llm",
+        "agent"
       ],
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：GAS-PFN: Graph-Aware Spatiotemporal Prior-Data Fitted Networks for Zero-Shot Traffic Forecasting 是最近值得追踪的一篇 AI 论文。论文摘要显示：Traffic forecasting requires modeling complex temporal dynamics and the spatial dependencies imposed by road topology. Supervised graph-based models achieve strong performance, but are often trained for a particular dataset and sensor graph...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.LG, cs.AI\n- 作者数: 6",
+      "summary_markdown": "**摘要**：VABAR: A Variational Automation Benchmark for Agentic Robotics 是最近值得追踪的一篇 AI 论文。论文摘要显示：For robots to operate reliably in commercial and industrial applications, they must persistently perform specific tasks with known variations in object shape and pose. We call this Variational Automation (VA) to differentiate these settings...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.RO\n- 作者数: 19",
       "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
         {
           "keyword": "coding",
           "weight": 2.6
         },
         {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "inference",
-          "weight": 1.8
-        },
-        {
           "keyword": "benchmark",
+          "weight": 1.6
+        },
+        {
+          "keyword": "robotics",
           "weight": 1.6
         }
       ],
-      "primary_match": "coding",
-      "personalized_score": 190.0,
-      "detail_path": "items/arxiv-gas-pfn-graph-aware-spatiotemporal-prior-data-fitted-networks-for-zero-shot-traffic-foreca.html",
-      "first_seen_at": "2026-10-28T02:37:31.788431+00:00",
-      "last_seen_at": "2026-10-29T05:39:28.107627+00:00",
-      "last_curated_at": "2026-10-29T05:39:28.107627+00:00",
+      "primary_match": "agent",
+      "personalized_score": 188.0,
+      "detail_path": "items/arxiv-vabar-a-variational-automation-benchmark-for-agentic-robotics.html",
+      "first_seen_at": "2026-11-05T06:35:44.238909+00:00",
+      "last_seen_at": "2026-11-05T06:35:44.238909+00:00",
+      "last_curated_at": "2026-11-05T06:35:44.238909+00:00",
       "last_notified_at": null
     },
     {
@@ -561,46 +569,106 @@
       "last_notified_at": null
     },
     {
-      "id": "arxiv::http://arxiv.org/abs/2611.05313v1",
+      "id": "arxiv::http://arxiv.org/abs/2611.06910v1",
       "kind": "paper",
       "source": "arxiv",
       "source_tags": [
         "latest"
       ],
-      "title": "MDSKILL: Learning to Internalize Skill Memory through Multi-View Distillation for Efficient Dynamic Agent Self-Evolution",
-      "html_url": "http://arxiv.org/abs/2611.05313v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.05313v1",
-      "description": "Skill memories encode past experiences as textual prompts to improve reinforcement learning (RL) for self-evolving agents. Complementing RL, On-Policy Self-Distillation (OPSD) provides dense, fine-grained supervision to internalize knowledge from skill-guided trajectories and accelerate policy learning. However, self-generated memories often contain noisy supervision and functionally entangled, redundant, or conflicting knowledge, making direct distillation difficult. Under limited training budgets, these issues can hinder knowledge internalization and even degrade performance. To address this problem, we propose MDSKILL, a multi-view distillation approach for skill memory internalization. MDSKILL organizes skill memories into three complementary functional views (state grounding, action planning, and execution control) and selects high-quality skills using dynamic metrics to construct view-specific and integrated reasoning branches. OPSD then transfers and consolidates complementary experiential knowledge across these branches into a shared policy, enabling efficient skill internalization and continuous agent self-evolution. We evaluate MDSKILL on three agent benchmarks against RL, skill-augmented, and self-distillation baselines that do not rely on stronger external teacher models. Without additional computational overhead, MDSKILL improves upon SOTA performance by up to 7.1% and 8.1% on ALFWorld and WebShop. Extensive ablations and evolution analyses further validate its effectiveness in knowledge internalization and policy improvement. The code is available at https://anonymous.4open.science/r/MDSKILL-CF53.",
+      "title": "FrontierPhysics: Evaluating Agents for End-to-End Physics Research",
+      "html_url": "http://arxiv.org/abs/2611.06910v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.06910v1",
+      "description": "AI agents are playing an increasingly important role in physics research. However, existing physics benchmarks only evaluate fixed questions, isolated sub-tasks, or paper reproduction with given solutions, and rarely check research quality alongside correctness. We introduce FrontierPhysics, an end-to-end benchmark with 56 tasks made by 42 physicists based on their own research, covering nine domains across theoretical, computational, and experimental physics. Each task requires agents to review the literature, develop a research plan, conduct research and experiments, and produce structured outputs and scientific manuscripts. Combining deterministic verifiers with expert-authored rubrics, FrontierPhysics evaluates whether agents' research is correct and publishable. Across 22 models in 26 configurations, no configuration passes more than 46 of its 168 rollouts. Manual review of agent trajectories shows that frontier agents' main weaknesses are insufficiently rigorous reasoning and limited expert intuition, rather than gaps in physics knowledge or execution errors.",
       "authors": [
-        "Dian Jin",
-        "Jinluan Yang",
-        "Kairong Han",
-        "Baohong Li",
-        "Zijing Hu",
-        "Yi He",
-        "Wenlin Zhong",
-        "Yunze Tong",
-        "Minqin Zhu",
-        "Linchuan Li",
-        "Yanan Niu",
-        "Kun Kuang"
+        "Bingran You",
+        "Wenjun Ke",
+        "Ria Rosenauer",
+        "Bo Liu",
+        "Wenbo Chen",
+        "Min Chen",
+        "Shuqi Xu",
+        "Yue Ma",
+        "Jiechao Feng",
+        "Bo Chen",
+        "Xiangkai Sun",
+        "Jiarui Liu",
+        "Jinen Guo",
+        "Zeyu Zhou",
+        "Xu Huang",
+        "Zhuohan Li",
+        "Haoyu Li",
+        "Heguang Lin",
+        "Lijie Ding",
+        "Yadong Zeng",
+        "Kangqi Zhang",
+        "Xinge Liu",
+        "Hanwen Liu",
+        "Zhenghong Li",
+        "Alexander von Recum",
+        "Yuchen Zhu",
+        "Felix Schwarzfischer",
+        "Yizhou Zhao",
+        "Jicheng Wang",
+        "Binxu Li",
+        "Qian Yu",
+        "Chan Li",
+        "Cheng Dai",
+        "Di Wang",
+        "Haoyu Zhang",
+        "Jiankai Sun",
+        "Kaituo Feng",
+        "Mian Qin",
+        "Ruihong Yin",
+        "Yiqun Luo",
+        "Weiwei Wu",
+        "Shihong Pan",
+        "Tsung Yeh Hsieh",
+        "Xiao Huang",
+        "Yan Zhang",
+        "Sihan Li",
+        "Zirui Ren",
+        "Zengji Tu",
+        "Kyoung Whan Choe",
+        "Ke Sun",
+        "Vincenzo Galia",
+        "Vaisakhi Mishra",
+        "Jiashu He",
+        "Hongyang Wang",
+        "Zhiheng Yang",
+        "Shubham Gaur",
+        "Yifan Gu",
+        "Shuyi Wang",
+        "Zihao Zuo",
+        "Steven Dillmann",
+        "Yiyou Sun",
+        "Xinyang Han",
+        "Hanchung Lee",
+        "Molei Tao",
+        "Yue Zhao",
+        "Shilong Liu",
+        "Yuchen Wu",
+        "Xuandong Zhao",
+        "Xiangyi Li",
+        "Florian Brand",
+        "Gerbrand Ceder",
+        "Hartmut Haeffner"
       ],
       "categories": [
-        "cs.CL"
+        "cs.AI"
       ],
-      "published_at": "2026-11-03T18:19:55+00:00",
-      "updated_at": "2026-11-03T18:19:55+00:00",
-      "primary_category": "cs.CL",
-      "heuristic_score": 17.9,
-      "summary": "MDSKILL: Learning to Internalize Skill Memory through Multi-View Distillation for Efficient Dynamic Agent Self-Evolution 是最近值得追踪的一篇 AI 论文。论文摘要显示：Skill memories encode past experiences as textual prompts to improve reinforcement learning (RL) for self-evolving agents. Complementing RL, On-Policy Self-Distillation (OPSD) provides dense, fine-grained supervision to internalize knowledg...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "published_at": "2026-11-04T18:56:22+00:00",
+      "updated_at": "2026-11-04T18:56:22+00:00",
+      "primary_category": "cs.AI",
+      "heuristic_score": 17.251,
+      "summary": "FrontierPhysics: Evaluating Agents for End-to-End Physics Research 是最近值得追踪的一篇 AI 论文。论文摘要显示：AI agents are playing an increasingly important role in physics research. However, existing physics benchmarks only evaluate fixed questions, isolated sub-tasks, or paper reproduction with given solutions, and rarely check research quality ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
       "brief": "这是一篇值得加入今日论文雷达的最新工作。",
       "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
       "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
       "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
       "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
       "highlights": [
-        "分类: cs.CL",
-        "作者数: 12"
+        "分类: cs.AI",
+        "作者数: 72"
       ],
       "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
       "relevance_score": 10,
@@ -616,7 +684,7 @@
         "model"
       ],
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：MDSKILL: Learning to Internalize Skill Memory through Multi-View Distillation for Efficient Dynamic Agent Self-Evolution 是最近值得追踪的一篇 AI 论文。论文摘要显示：Skill memories encode past experiences as textual prompts to improve reinforcement learning (RL) for self-evolving agents. Complementing RL, On-Policy Self-Distillation (OPSD) provides dense, fine-grained supervision to internalize knowledg...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL\n- 作者数: 12",
+      "summary_markdown": "**摘要**：FrontierPhysics: Evaluating Agents for End-to-End Physics Research 是最近值得追踪的一篇 AI 论文。论文摘要显示：AI agents are playing an increasingly important role in physics research. However, existing physics benchmarks only evaluate fixed questions, isolated sub-tasks, or paper reproduction with given solutions, and rarely check research quality ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI\n- 作者数: 72",
       "focus_hits": [
         {
           "keyword": "agent",
@@ -633,10 +701,10 @@
       ],
       "primary_match": "agent",
       "personalized_score": 178.0,
-      "detail_path": "items/arxiv-mdskill-learning-to-internalize-skill-memory-through-multi-view-distillation-for-efficient.html",
-      "first_seen_at": "2026-11-04T06:06:24.271759+00:00",
-      "last_seen_at": "2026-11-04T06:06:24.271759+00:00",
-      "last_curated_at": "2026-11-04T06:06:24.271759+00:00",
+      "detail_path": "items/arxiv-frontierphysics-evaluating-agents-for-end-to-end-physics-research.html",
+      "first_seen_at": "2026-11-05T06:35:44.238909+00:00",
+      "last_seen_at": "2026-11-05T06:35:44.238909+00:00",
+      "last_curated_at": "2026-11-05T06:35:44.238909+00:00",
       "last_notified_at": null
     }
   ],
@@ -647,14 +715,14 @@
     },
     {
       "theme": "agent",
-      "count": 5
-    },
-    {
-      "theme": "rag",
-      "count": 2
+      "count": 4
     },
     {
       "theme": "llm",
+      "count": 3
+    },
+    {
+      "theme": "rag",
       "count": 1
     }
   ],
@@ -665,7 +733,7 @@
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     },
     {
-      "title": "Metacognitive Decoding: Efficient Inference for Diffusion Language Agents",
+      "title": "CompressionBench: How can your coding agents compress LLMs?",
       "source": "arxiv",
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     },
