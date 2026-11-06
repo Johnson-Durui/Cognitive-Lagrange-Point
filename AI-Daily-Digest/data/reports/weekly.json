@@ -1,8 +1,8 @@
 {
   "label": "周报",
   "window_days": 7,
-  "generated_at": "2026-11-06T11:44:04.364899+08:00",
-  "count": 76,
+  "generated_at": "2026-11-06T14:31:02.736203+08:00",
+  "count": 72,
   "summary": "近 7 天里，最集中的主题是 ai、llm、agent。",
   "top_items": [
     {
@@ -241,8 +241,8 @@
       "personalized_score": 200.0,
       "detail_path": "items/arxiv-qrae-query-relevant-attention-entropy-for-context-compression-in-deepsearch-agents.html",
       "first_seen_at": "2026-11-06T03:44:11.198606+00:00",
-      "last_seen_at": "2026-11-06T03:44:11.198606+00:00",
-      "last_curated_at": "2026-11-06T03:44:11.198606+00:00",
+      "last_seen_at": "2026-11-06T06:32:01.430203+00:00",
+      "last_curated_at": "2026-11-06T06:32:01.430203+00:00",
       "last_notified_at": null
     },
     {
@@ -575,30 +575,30 @@
       "last_notified_at": null
     },
     {
-      "id": "arxiv::http://arxiv.org/abs/2611.03100v1",
+      "id": "arxiv::http://arxiv.org/abs/2611.08417v1",
       "kind": "paper",
       "source": "arxiv",
       "source_tags": [
         "latest"
       ],
-      "title": "LUCA: A Synthetic World for Experimental Reasoning",
-      "html_url": "http://arxiv.org/abs/2611.03100v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.03100v1",
-      "description": "An experimental agent can succeed for the wrong reasons. Evaluations, however, often focus on the outcome, not the experiments, evidence, and inferences that produced it. We introduce LUCA, a configurable synthetic world for evaluating this process under fully known ground truth. Agents learn unknown regulatory systems through budgeted experimentation, then predict unseen interventions, diagnose hidden faults, and attempt rescues. This setup allows us to evaluate experiment selection, prediction, diagnosis, and intervention separately. Across seven frontier LLMs and three baselines, these capabilities dissociate sharply. Agents frequently rescue malfunctioning systems while diagnosing the wrong fault; diagnosis varies 7x across models while prediction varies only 1.4x. Models also adopt surprisingly different experimental strategies, and greater exploration does not reliably yield better performance. In one failure mode, agents often perform the experiment needed to distinguish competing causes, but still fail to use the resulting evidence. LUCA turns these hidden failures into measurable behaviours, providing a controlled environment to study where experimental agents succeed and fail. Code: https://github.com/RelationRx/luca.",
+      "title": "Benchmarks as Software: Terminal-Bench and the Case for Continuous Benchmarks",
+      "html_url": "http://arxiv.org/abs/2611.08417v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.08417v1",
+      "description": "Coding agents are among the most economically consequential deployments of LLMs to date, making reliable evaluation increasingly important. Yet even benchmarks that are carefully validated at release can become stale. As models improve, they can discover valid solutions that existing verifiers reject, while changes to evaluation infrastructure can invalidate assumptions embedded in tasks and tests. We call the resulting accumulation of defects benchmark maintenance debt: a growing gap between benchmark scores and the capabilities they are intended to measure. We introduce a continuous-validation workflow for agentic benchmarks that combines community reports, task artifacts, agent traces, automated oracle checks, and human-gated repairs. We apply this workflow to Terminal-Bench 2.0, a benchmark that underwent extensive human and LM-assisted review and red-teaming before release. Our audit identifies issues in roughly 30% of the benchmark, and we release the resulting repairs as Terminal-Bench 2.1. These repairs change evaluation results: accuracy increased by over 10 percentage points and leaderboard positions move by up to three ranks, even as the overall ranking remains highly correlated (Spearman rho = 0.958). We evaluate how resource allocation shapes benchmark conclusions. We show that fixed wall-clock can materially change agent performance: For example, extending the time limit closes a 20pp harness gap on GPT 5.4 and shrinks a 30 pp gap on GPT 5.4 mini to 5 pp. Benchmark maintenance is therefore not only about repairing task artifacts: resource budgets are part of the measurement specification and must be validated alongside the tasks themselves. More broadly, benchmark maintenance debt is not just accumulated implementation bugs: our results show that as models improve, both evaluation assumptions and resource settings may need to be revalidated.",
       "authors": [
-        "Anna Gogleva",
-        "Thomas Charman",
-        "Martin Balla",
-        "Karl Gemayel"
+        "E. Kelly Buchanan",
+        "Crystal Zhou",
+        "Scott W. Linderman",
+        "Christopher Ré"
       ],
       "categories": [
         "cs.AI"
       ],
-      "published_at": "2026-11-02T13:17:36+00:00",
-      "updated_at": "2026-11-02T13:17:36+00:00",
+      "published_at": "2026-11-05T18:18:39+00:00",
+      "updated_at": "2026-11-05T18:18:39+00:00",
       "primary_category": "cs.AI",
-      "heuristic_score": 17.459,
-      "summary": "LUCA: A Synthetic World for Experimental Reasoning 是最近值得追踪的一篇 AI 论文。论文摘要显示：An experimental agent can succeed for the wrong reasons. Evaluations, however, often focus on the outcome, not the experiments, evidence, and inferences that produced it. We introduce LUCA, a configurable synthetic world for evaluating this...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "heuristic_score": 22.7,
+      "summary": "Benchmarks as Software: Terminal-Bench and the Case for Continuous Benchmarks 是最近值得追踪的一篇 AI 论文。论文摘要显示：Coding agents are among the most economically consequential deployments of LLMs to date, making reliable evaluation increasingly important. Yet even benchmarks that are carefully validated at release can become stale. As models improve, the...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
       "brief": "这是一篇值得加入今日论文雷达的最新工作。",
       "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
       "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
@@ -614,7 +614,7 @@
         "ai",
         "llm",
         "agent",
-        "model"
+        "agentic"
       ],
       "themes": [
         "ai",
@@ -622,27 +622,27 @@
         "agent"
       ],
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：LUCA: A Synthetic World for Experimental Reasoning 是最近值得追踪的一篇 AI 论文。论文摘要显示：An experimental agent can succeed for the wrong reasons. Evaluations, however, often focus on the outcome, not the experiments, evidence, and inferences that produced it. We introduce LUCA, a configurable synthetic world for evaluating this...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI\n- 作者数: 4",
+      "summary_markdown": "**摘要**：Benchmarks as Software: Terminal-Bench and the Case for Continuous Benchmarks 是最近值得追踪的一篇 AI 论文。论文摘要显示：Coding agents are among the most economically consequential deployments of LLMs to date, making reliable evaluation increasingly important. Yet even benchmarks that are carefully validated at release can become stale. As models improve, the...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI\n- 作者数: 4",
       "focus_hits": [
         {
           "keyword": "agent",
           "weight": 3.0
         },
         {
-          "keyword": "reasoning",
-          "weight": 2.4
+          "keyword": "coding",
+          "weight": 2.6
         },
         {
-          "keyword": "inference",
-          "weight": 1.8
+          "keyword": "benchmark",
+          "weight": 1.6
         }
       ],
       "primary_match": "agent",
       "personalized_score": 180.0,
-      "detail_path": "items/arxiv-luca-a-synthetic-world-for-experimental-reasoning.html",
-      "first_seen_at": "2026-11-03T06:39:18.609256+00:00",
-      "last_seen_at": "2026-11-03T06:39:18.609256+00:00",
-      "last_curated_at": "2026-11-03T06:39:18.609256+00:00",
+      "detail_path": "items/arxiv-benchmarks-as-software-terminal-bench-and-the-case-for-continuous-benchmarks.html",
+      "first_seen_at": "2026-11-06T06:32:01.430203+00:00",
+      "last_seen_at": "2026-11-06T06:32:01.430203+00:00",
+      "last_curated_at": "2026-11-06T06:32:01.430203+00:00",
       "last_notified_at": null
     }
   ],
