@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-06T06:32:01.430203+00:00",
+  "generated_at": "2026-11-07T03:16:48.495023+00:00",
   "items": [
     {
       "id": "github::NVIDIA/auto-ontology",
@@ -13,7 +13,7 @@
       "full_name": "NVIDIA/auto-ontology",
       "html_url": "https://github.com/NVIDIA/auto-ontology",
       "description": "Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better context retrieval, and more explainable AI for LLM and agent workflows.",
-      "stars": 7826,
+      "stars": 9168,
       "stars_today": 0,
       "language": "Python",
       "topics": [],
@@ -27,7 +27,7 @@
       "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
       "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
       "highlights": [
-        "Stars: 7826",
+        "Stars: 9168",
         "语言: Python"
       ],
       "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
@@ -44,7 +44,7 @@
         "agent"
       ],
       "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：NVIDIA/auto-ontology 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better context retrieval, and more explainable AI for LLM and agent workflows.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：10/10\n\n**亮点**：\n- Stars: 7826\n- 语言: Python",
+      "summary_markdown": "**摘要**：NVIDIA/auto-ontology 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better context retrieval, and more explainable AI for LLM and agent workflows.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：10/10\n\n**亮点**：\n- Stars: 9168\n- 语言: Python",
       "focus_hits": [
         {
           "keyword": "agent",
@@ -56,11 +56,637 @@
         }
       ],
       "primary_match": "agent",
-      "personalized_score": 157.13,
+      "personalized_score": 157.67,
       "detail_path": "items/github-nvidia-auto-ontology.html",
       "first_seen_at": "2026-11-05T03:46:48.271420+00:00",
-      "last_seen_at": "2026-11-06T06:32:01.430203+00:00",
-      "last_curated_at": "2026-11-06T06:32:01.430203+00:00",
+      "last_seen_at": "2026-11-07T03:16:48.495023+00:00",
+      "last_curated_at": "2026-11-07T03:16:48.495023+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2611.08417v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Benchmarks as Software: Terminal-Bench and the Case for Continuous Benchmarks",
+      "html_url": "http://arxiv.org/abs/2611.08417v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.08417v1",
+      "description": "Coding agents are among the most economically consequential deployments of LLMs to date, making reliable evaluation increasingly important. Yet even benchmarks that are carefully validated at release can become stale. As models improve, they can discover valid solutions that existing verifiers reject, while changes to evaluation infrastructure can invalidate assumptions embedded in tasks and tests. We call the resulting accumulation of defects benchmark maintenance debt: a growing gap between benchmark scores and the capabilities they are intended to measure. We introduce a continuous-validation workflow for agentic benchmarks that combines community reports, task artifacts, agent traces, automated oracle checks, and human-gated repairs. We apply this workflow to Terminal-Bench 2.0, a benchmark that underwent extensive human and LM-assisted review and red-teaming before release. Our audit identifies issues in roughly 30% of the benchmark, and we release the resulting repairs as Terminal-Bench 2.1. These repairs change evaluation results: accuracy increased by over 10 percentage points and leaderboard positions move by up to three ranks, even as the overall ranking remains highly correlated (Spearman rho = 0.958). We evaluate how resource allocation shapes benchmark conclusions. We show that fixed wall-clock can materially change agent performance: For example, extending the time limit closes a 20pp harness gap on GPT 5.4 and shrinks a 30 pp gap on GPT 5.4 mini to 5 pp. Benchmark maintenance is therefore not only about repairing task artifacts: resource budgets are part of the measurement specification and must be validated alongside the tasks themselves. More broadly, benchmark maintenance debt is not just accumulated implementation bugs: our results show that as models improve, both evaluation assumptions and resource settings may need to be revalidated.",
+      "authors": [
+        "E. Kelly Buchanan",
+        "Crystal Zhou",
+        "Scott W. Linderman",
+        "Christopher Ré"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "published_at": "2026-11-05T18:18:39+00:00",
+      "updated_at": "2026-11-05T18:18:39+00:00",
+      "primary_category": "cs.AI",
+      "heuristic_score": 22.7,
+      "summary": "Benchmarks as Software: Terminal-Bench and the Case for Continuous Benchmarks 是最近值得追踪的一篇 AI 论文。论文摘要显示：Coding agents are among the most economically consequential deployments of LLMs to date, making reliable evaluation increasingly important. Yet even benchmarks that are carefully validated at release can become stale. As models improve, the...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.AI",
+        "作者数: 4"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "llm",
+        "agent",
+        "agentic"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "agent"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：Benchmarks as Software: Terminal-Bench and the Case for Continuous Benchmarks 是最近值得追踪的一篇 AI 论文。论文摘要显示：Coding agents are among the most economically consequential deployments of LLMs to date, making reliable evaluation increasingly important. Yet even benchmarks that are carefully validated at release can become stale. As models improve, the...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI\n- 作者数: 4",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "coding",
+          "weight": 2.6
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 180.0,
+      "detail_path": "items/arxiv-benchmarks-as-software-terminal-bench-and-the-case-for-continuous-benchmarks.html",
+      "first_seen_at": "2026-11-06T06:32:01.430203+00:00",
+      "last_seen_at": "2026-11-07T03:16:48.495023+00:00",
+      "last_curated_at": "2026-11-07T03:16:48.495023+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2611.08452v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "ReproBridge: Building Reproducibility into ML Research Artifacts",
+      "html_url": "http://arxiv.org/abs/2611.08452v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.08452v1",
+      "description": "Reproducing machine learning experiments requires reconstructing procedures from information scattered across papers, released code, and supporting artifacts. For coding agents, reproduction success can therefore depend on their ability to fill in missing details, rather than on the released artifacts alone. We ask whether preserving recovered procedures and decisions improves subsequent independent reproduction. We define a standardized artifact design comprising a refined codebase, environment setup, experiment launchers, and a reproduction guide, and introduce ReproBridge, an agent workflow for constructing these refined reproducible artifacts. ReproBridge-Bench provides 1,029 tasks from 387 experiments across 36 papers, anchored by five human-verified reference scores per task. Agents attempt tasks in fresh sessions with raw code or refined artifacts; a separate Auditor checks execution evidence. Across four evaluated models, refined artifacts raise mean reproduction success from 76.4% to 92.6% and reduce downstream API spending by 19.7% on average. The cross-model success-rate spread narrows from 21.6 to 3.9 percentage points, with all four models achieving mean success rates above 90%. Removing any component reduces success in the ablation study, with the largest losses from code and environment removal. These results suggest that preserving execution knowledge helps even models with lower raw-code success reproduce experiments more reliably and at lower API cost.",
+      "authors": [
+        "Yubo Wang",
+        "Rui Meng",
+        "Jaehyun Nam",
+        "Tomas Pfister",
+        "Jinsung Yoon"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "published_at": "2026-11-05T18:45:36+00:00",
+      "updated_at": "2026-11-05T18:45:36+00:00",
+      "primary_category": "cs.AI",
+      "heuristic_score": 15.367,
+      "summary": "ReproBridge: Building Reproducibility into ML Research Artifacts 是最近值得追踪的一篇 AI 论文。论文摘要显示：Reproducing machine learning experiments requires reconstructing procedures from information scattered across papers, released code, and supporting artifacts. For coding agents, reproduction success can therefore depend on their ability to ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.AI",
+        "作者数: 5"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 9,
+      "tags": [
+        "ai",
+        "agent",
+        "rag",
+        "model"
+      ],
+      "themes": [
+        "ai",
+        "agent",
+        "rag"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：ReproBridge: Building Reproducibility into ML Research Artifacts 是最近值得追踪的一篇 AI 论文。论文摘要显示：Reproducing machine learning experiments requires reconstructing procedures from information scattered across papers, released code, and supporting artifacts. For coding agents, reproduction success can therefore depend on their ability to ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：9/10\n\n**亮点**：\n- 分类: cs.AI\n- 作者数: 5",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "coding",
+          "weight": 2.6
+        },
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 176.0,
+      "detail_path": "items/arxiv-reprobridge-building-reproducibility-into-ml-research-artifacts.html",
+      "first_seen_at": "2026-11-06T06:32:01.430203+00:00",
+      "last_seen_at": "2026-11-07T03:16:48.495023+00:00",
+      "last_curated_at": "2026-11-07T03:16:48.495023+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "github::mattpocock/skills",
+      "kind": "repo",
+      "source": "github",
+      "source_tags": [
+        "trending"
+      ],
+      "name": "skills",
+      "title": "mattpocock/skills",
+      "full_name": "mattpocock/skills",
+      "html_url": "https://github.com/mattpocock/skills",
+      "description": "Skills for Real Engineers. Straight from my .agents directory.",
+      "stars": 316817,
+      "stars_today": 0,
+      "language": "Shell",
+      "topics": [],
+      "created_at": "",
+      "updated_at": "",
+      "heuristic_score": 15.2,
+      "summary": "mattpocock/skills 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Skills for Real Engineers. Straight from my .agents directory.结合关键词命中和热度信号，它适合加入今日重点观察列表。",
+      "brief": "这是一个值得快速关注的开源 AI 项目。",
+      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
+      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
+      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
+      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
+      "highlights": [
+        "Stars: 316817",
+        "语言: Shell"
+      ],
+      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
+      "relevance_score": 8,
+      "tags": [
+        "ai",
+        "agent"
+      ],
+      "themes": [
+        "ai",
+        "agent"
+      ],
+      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
+      "summary_markdown": "**摘要**：mattpocock/skills 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Skills for Real Engineers. Straight from my .agents directory.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 316817\n- 语言: Shell",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 130.0,
+      "detail_path": "items/github-mattpocock-skills.html",
+      "first_seen_at": "2026-07-11T01:12:49.220475+00:00",
+      "last_seen_at": "2026-11-07T03:16:48.495023+00:00",
+      "last_curated_at": "2026-11-07T03:16:48.495023+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2611.08483v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "SwarmEvolve: Latent Agent Swarms for Evolutionary Discovery and Optimization",
+      "html_url": "http://arxiv.org/abs/2611.08483v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.08483v1",
+      "description": "LLM-guided evolutionary search uses AI agents to improve programs for mathematical and computational problems by iteratively refining solutions and combining high-scoring methods. However, the process is often slow because the LLM generates a long textual chain of thought for each round and must repeat this generation many times to maintain population diversity. We present SwarmEvolve, a framework in which hundreds of low-cost agents per round work in swarms, reason in latent space without decoding to text, and share information by passing KV caches. Each swarm studies the problem from a different angle. A novelty filter keeps the most distinct agent ideas by directly measuring the distances between the agents' hidden state vectors. Crossover of ideas happens naturally in latent space, as a summarizer agent receives the combined KV caches of all swarm members. On 21 problems in mathematical discovery and scientific computing, SwarmEvolve gets the highest average score and needs a median of only 3 to 8 minutes to reach the best scores that other state-of-the-art frameworks reach in 60 minutes. On several problems, SwarmEvolve with Qwen3 8B improves on the solutions that AlphaEvolve first found with frontier LLMs. Our work shows that agent swarms that communicate in latent space offer a fast, low-cost approach to program search for scientific problems.",
+      "authors": [
+        "Qile Jiang",
+        "George Em Karniadakis"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.NE"
+      ],
+      "published_at": "2026-11-05T18:59:29+00:00",
+      "updated_at": "2026-11-05T18:59:29+00:00",
+      "primary_category": "cs.AI",
+      "heuristic_score": 15.215,
+      "summary": "SwarmEvolve: Latent Agent Swarms for Evolutionary Discovery and Optimization 是最近值得追踪的一篇 AI 论文。论文摘要显示：LLM-guided evolutionary search uses AI agents to improve programs for mathematical and computational problems by iteratively refining solutions and combining high-scoring methods. However, the process is often slow because the LLM generates...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.AI, cs.NE",
+        "作者数: 2"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 8,
+      "tags": [
+        "ai",
+        "llm",
+        "agent",
+        "rag"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "agent"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：SwarmEvolve: Latent Agent Swarms for Evolutionary Discovery and Optimization 是最近值得追踪的一篇 AI 论文。论文摘要显示：LLM-guided evolutionary search uses AI agents to improve programs for mathematical and computational problems by iteratively refining solutions and combining high-scoring methods. However, the process is often slow because the LLM generates...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：8/10\n\n**亮点**：\n- 分类: cs.AI, cs.NE\n- 作者数: 2",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "coding",
+          "weight": 2.6
+        },
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 166.0,
+      "detail_path": "items/arxiv-swarmevolve-latent-agent-swarms-for-evolutionary-discovery-and-optimization.html",
+      "first_seen_at": "2026-11-06T06:32:01.430203+00:00",
+      "last_seen_at": "2026-11-07T03:16:48.495023+00:00",
+      "last_curated_at": "2026-11-07T03:16:48.495023+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2611.08485v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Where and Why is Grounded Reasoning Useful?",
+      "html_url": "http://arxiv.org/abs/2611.08485v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.08485v1",
+      "description": "Grounded reasoning, where a model outputs text coordinates of relevant locations in chain-of-thought reasoning, is a common strategy for solving complex visual reasoning problems. However, the benefits and limitations of grounded reasoning are understudied. We study where and why grounded reasoning is most useful. To do so, we introduce a chain-of-thought analysis method to measure how much a model uses its outputted grounding in its thinking trace and perform a detailed ablation study of a grounded reasoning training recipe. We find that grounded reasoning improves counting but shows no significant gain over baselines without coordinate grounding across a wide range of spatial reasoning and perception benchmarks. Using several synthetic tasks, we show that grounded reasoning is most useful when a task requires undescribable references, which are visual concepts that are difficult to describe in language. However, we observe that many existing visual reasoning benchmarks are solvable with only describable text references. To close this gap, we introduce BrickVision, a new benchmark that requires undescribable visual references to solve.",
+      "authors": [
+        "David Yan",
+        "Le Xue",
+        "Forrest Huang",
+        "Qiuyi Zhang",
+        "Dustin Tran",
+        "Andrew M. Dai",
+        "Yinfei Yang"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "published_at": "2026-11-05T18:59:32+00:00",
+      "updated_at": "2026-11-05T18:59:32+00:00",
+      "primary_category": "cs.CV",
+      "heuristic_score": 14.942,
+      "summary": "Where and Why is Grounded Reasoning Useful? 是最近值得追踪的一篇 AI 论文。论文摘要显示：Grounded reasoning, where a model outputs text coordinates of relevant locations in chain-of-thought reasoning, is a common strategy for solving complex visual reasoning problems. However, the benefits and limitations of grounded reasoning ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CV",
+        "作者数: 7"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 8,
+      "tags": [
+        "ai",
+        "model",
+        "benchmark",
+        "training"
+      ],
+      "themes": [
+        "ai",
+        "model",
+        "benchmark"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：Where and Why is Grounded Reasoning Useful? 是最近值得追踪的一篇 AI 论文。论文摘要显示：Grounded reasoning, where a model outputs text coordinates of relevant locations in chain-of-thought reasoning, is a common strategy for solving complex visual reasoning problems. However, the benefits and limitations of grounded reasoning ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：8/10\n\n**亮点**：\n- 分类: cs.CV\n- 作者数: 7",
+      "focus_hits": [
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "reasoning",
+      "personalized_score": 128.0,
+      "detail_path": "items/arxiv-where-and-why-is-grounded-reasoning-useful.html",
+      "first_seen_at": "2026-11-07T03:16:48.495023+00:00",
+      "last_seen_at": "2026-11-07T03:16:48.495023+00:00",
+      "last_curated_at": "2026-11-07T03:16:48.495023+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2611.08413v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "T3R: Training-Free Two-Stage Token Refinement Towards Efficient and Robust VLA Models",
+      "html_url": "http://arxiv.org/abs/2611.08413v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.08413v1",
+      "description": "Vision-Language-Action (VLA) models enable end-to-end robot control, but inference is increasingly expensive. Each decision processes hundreds of visual tokens, often across multiple cameras, leading to substantial computation while allowing irrelevant background content to distract action prediction under distribution shift. We argue that these issues stem from two complementary forms of redundancy: many visual tokens are spatially irrelevant, while attention over the remaining tokens is often misallocated. Based on this observation, we propose T3R, a Training-Free Two-Stage Token Refinement framework. In the first stage, segmentation-guided token pruning removes irrelevant visual patches to reduce computation and eliminate distracting context. In the second stage, saliency-guided attention biasing reallocates attention toward action-critical visual regions and language instructions within the retained tokens. Together, pruning produces a cleaner candidate set, while attention biasing further emphasizes the most decision-relevant evidence, yielding a better accuracy-efficiency frontier than either stage alone. On LIBERO-Spatial, T3R removes 85% of scene-camera visual tokens while essentially matching the unpruned success rate, and improves success by up to 7 percentage points under out-of-distribution object-placement perturbations. The timing comparison attributes 7.8 ms per inference call to pruning and attention-bias application. As input resolution increases, LLM-forward profiling shows up to a 3.3x speedup over the unpruned baseline. Evaluations across LIBERO, SIMPLER, and RoboTwin with three VLA backbones show the strongest accuracy-efficiency benefits in multi-camera settings. These results demonstrate that training-free token refinement is a practical approach to efficient and robust VLA inference.",
+      "authors": [
+        "Mohammed Hassan",
+        "Zhenyang Chen",
+        "Zheng Wang",
+        "Zhixin Zhu",
+        "Tianlong Chen",
+        "Yingyan",
+        "Lin",
+        "Chaojian Li"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.CV"
+      ],
+      "published_at": "2026-11-05T18:17:29+00:00",
+      "updated_at": "2026-11-05T18:17:29+00:00",
+      "primary_category": "cs.RO",
+      "heuristic_score": 14.0,
+      "summary": "T3R: Training-Free Two-Stage Token Refinement Towards Efficient and Robust VLA Models 是最近值得追踪的一篇 AI 论文。论文摘要显示：Vision-Language-Action (VLA) models enable end-to-end robot control, but inference is increasingly expensive. Each decision processes hundreds of visual tokens, often across multiple cameras, leading to substantial computation while allowin...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.RO, cs.CV",
+        "作者数: 8"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 8,
+      "tags": [
+        "ai",
+        "llm",
+        "model",
+        "inference"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "model"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：T3R: Training-Free Two-Stage Token Refinement Towards Efficient and Robust VLA Models 是最近值得追踪的一篇 AI 论文。论文摘要显示：Vision-Language-Action (VLA) models enable end-to-end robot control, but inference is increasingly expensive. Each decision processes hundreds of visual tokens, often across multiple cameras, leading to substantial computation while allowin...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：8/10\n\n**亮点**：\n- 分类: cs.RO, cs.CV\n- 作者数: 8",
+      "focus_hits": [
+        {
+          "keyword": "inference",
+          "weight": 1.8
+        }
+      ],
+      "primary_match": "inference",
+      "personalized_score": 98.0,
+      "detail_path": "items/arxiv-t3r-training-free-two-stage-token-refinement-towards-efficient-and-robust-vla-models.html",
+      "first_seen_at": "2026-11-07T03:16:48.495023+00:00",
+      "last_seen_at": "2026-11-07T03:16:48.495023+00:00",
+      "last_curated_at": "2026-11-07T03:16:48.495023+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "github::cloudflare/security-audit-skill",
+      "kind": "repo",
+      "source": "github",
+      "source_tags": [
+        "trending"
+      ],
+      "name": "security-audit-skill",
+      "title": "cloudflare/security-audit-skill",
+      "full_name": "cloudflare/security-audit-skill",
+      "html_url": "https://github.com/cloudflare/security-audit-skill",
+      "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
+      "stars": 64203,
+      "stars_today": 0,
+      "language": "JavaScript",
+      "topics": [],
+      "created_at": "",
+      "updated_at": "",
+      "heuristic_score": 12.6,
+      "summary": "cloudflare/security-audit-skill 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings结合关键词命中和热度信号，它适合加入今日重点观察列表。",
+      "brief": "这是一个值得快速关注的开源 AI 项目。",
+      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
+      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
+      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
+      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
+      "highlights": [
+        "Stars: 64203",
+        "语言: JavaScript"
+      ],
+      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
+      "relevance_score": 7,
+      "tags": [
+        "agent"
+      ],
+      "themes": [
+        "agent"
+      ],
+      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
+      "summary_markdown": "**摘要**：cloudflare/security-audit-skill 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 64203\n- 语言: JavaScript",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "coding",
+          "weight": 2.6
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 146.0,
+      "detail_path": "items/github-cloudflare-security-audit-skill.html",
+      "first_seen_at": "2026-09-17T01:49:48.489213+00:00",
+      "last_seen_at": "2026-11-07T03:16:48.495023+00:00",
+      "last_curated_at": "2026-11-07T03:16:48.495023+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "github::google/skills",
+      "kind": "repo",
+      "source": "github",
+      "source_tags": [
+        "trending"
+      ],
+      "name": "skills",
+      "title": "google/skills",
+      "full_name": "google/skills",
+      "html_url": "https://github.com/google/skills",
+      "description": "Agent Skills for Google products and technologies",
+      "stars": 22876,
+      "stars_today": 0,
+      "language": "Python",
+      "topics": [],
+      "created_at": "",
+      "updated_at": "",
+      "heuristic_score": 12.6,
+      "summary": "google/skills 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Agent Skills for Google products and technologies结合关键词命中和热度信号，它适合加入今日重点观察列表。",
+      "brief": "这是一个值得快速关注的开源 AI 项目。",
+      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
+      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
+      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
+      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
+      "highlights": [
+        "Stars: 22876",
+        "语言: Python"
+      ],
+      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
+      "relevance_score": 7,
+      "tags": [
+        "agent"
+      ],
+      "themes": [
+        "agent"
+      ],
+      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
+      "summary_markdown": "**摘要**：google/skills 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Agent Skills for Google products and technologies结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 22876\n- 语言: Python",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 109.15,
+      "detail_path": "items/github-google-skills.html",
+      "first_seen_at": "2026-11-07T03:16:48.495023+00:00",
+      "last_seen_at": "2026-11-07T03:16:48.495023+00:00",
+      "last_curated_at": "2026-11-07T03:16:48.495023+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "github::rails/rails",
+      "kind": "repo",
+      "source": "github",
+      "source_tags": [
+        "trending"
+      ],
+      "name": "rails",
+      "title": "rails/rails",
+      "full_name": "rails/rails",
+      "html_url": "https://github.com/rails/rails",
+      "description": "Ruby on Rails",
+      "stars": 59040,
+      "stars_today": 0,
+      "language": "Ruby",
+      "topics": [],
+      "created_at": "",
+      "updated_at": "",
+      "heuristic_score": 12.6,
+      "summary": "rails/rails 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Ruby on Rails结合关键词命中和热度信号，它适合加入今日重点观察列表。",
+      "brief": "这是一个值得快速关注的开源 AI 项目。",
+      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
+      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
+      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
+      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
+      "highlights": [
+        "Stars: 59040",
+        "语言: Ruby"
+      ],
+      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
+      "relevance_score": 7,
+      "tags": [
+        "ai"
+      ],
+      "themes": [
+        "ai"
+      ],
+      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
+      "summary_markdown": "**摘要**：rails/rails 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Ruby on Rails结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 59040\n- 语言: Ruby",
+      "focus_hits": [],
+      "primary_match": "",
+      "personalized_score": 90.0,
+      "detail_path": "items/github-rails-rails.html",
+      "first_seen_at": "2026-11-07T03:16:48.495023+00:00",
+      "last_seen_at": "2026-11-07T03:16:48.495023+00:00",
+      "last_curated_at": "2026-11-07T03:16:48.495023+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2611.08439v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Label-Wording Augmentation in a Typed-Decision Encoder: Gains on Unfamiliar Words, Not on Abbreviations or Codes",
+      "html_url": "http://arxiv.org/abs/2611.08439v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.08439v1",
+      "description": "Typed-decision models score options that the caller supplies at request time, so their accuracy depends on label wording that the model's developer does not control. We compare two releases of a 307M-parameter multilingual cross-encoder, Ru-Jev, trained on thirteen Russian-language tasks; the later release adds an augmentation that presents labels in several surface forms. Holding questions fixed and varying only how eighteen routing labels are worded, we evaluate ten label vocabularies, produced by three separate processes and checked for overlap with the training data, with five candidates per question and, for eight of them, also with eighteen. On held-out vocabularies made of ordinary or borrowed words (English-derived jargon, office slang, department names), the augmented release is more accurate in every setting, by up to 0.24. Eleven of these fourteen gains survive a Holm correction (slang with eighteen candidates and descriptive sentences with five do not), and for jargon on all labels the label-level interval excludes zero in both settings. On abbreviations and opaque codes it gives no usable gain: on abbreviations it is not better, and worse on the clean slice, and on opaque codes both releases stay at or below chance once labels related to training options are removed. In most cells where accuracy rises, the risk-coverage area falls, but with eighteen candidates confident errors rise on jargon and slang. On two datasets neither release saw, accuracy moves by -8.4 and +5.6 points. We also report four evaluation hazards from comparing the two releases.",
+      "authors": [
+        "Vladimir Beskorovainyi"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "published_at": "2026-11-05T18:31:24+00:00",
+      "updated_at": "2026-11-05T18:31:24+00:00",
+      "primary_category": "cs.CL",
+      "heuristic_score": 13.084,
+      "summary": "Label-Wording Augmentation in a Typed-Decision Encoder: Gains on Unfamiliar Words, Not on Abbreviations or Codes 是最近值得追踪的一篇 AI 论文。论文摘要显示：Typed-decision models score options that the caller supplies at request time, so their accuracy depends on label wording that the model's developer does not control. We compare two releases of a 307M-parameter multilingual cross-encoder, Ru...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CL, cs.AI",
+        "作者数: 1"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 7,
+      "tags": [
+        "ai",
+        "rag",
+        "model",
+        "training"
+      ],
+      "themes": [
+        "ai",
+        "rag",
+        "model"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：Label-Wording Augmentation in a Typed-Decision Encoder: Gains on Unfamiliar Words, Not on Abbreviations or Codes 是最近值得追踪的一篇 AI 论文。论文摘要显示：Typed-decision models score options that the caller supplies at request time, so their accuracy depends on label wording that the model's developer does not control. We compare two releases of a 307M-parameter multilingual cross-encoder, Ru...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：7/10\n\n**亮点**：\n- 分类: cs.CL, cs.AI\n- 作者数: 1",
+      "focus_hits": [
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        }
+      ],
+      "primary_match": "rag",
+      "personalized_score": 100.0,
+      "detail_path": "items/arxiv-label-wording-augmentation-in-a-typed-decision-encoder-gains-on-unfamiliar-words-not-on-ab.html",
+      "first_seen_at": "2026-11-07T03:16:48.495023+00:00",
+      "last_seen_at": "2026-11-07T03:16:48.495023+00:00",
+      "last_curated_at": "2026-11-07T03:16:48.495023+00:00",
       "last_notified_at": null
     },
     {
@@ -275,204 +901,6 @@
       "personalized_score": 144.0,
       "detail_path": "items/arxiv-circe-training-free-llm-self-evaluation-via-component-interaction-consistency.html",
       "first_seen_at": "2026-11-06T03:44:11.198606+00:00",
-      "last_seen_at": "2026-11-06T06:32:01.430203+00:00",
-      "last_curated_at": "2026-11-06T06:32:01.430203+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2611.08417v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "Benchmarks as Software: Terminal-Bench and the Case for Continuous Benchmarks",
-      "html_url": "http://arxiv.org/abs/2611.08417v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.08417v1",
-      "description": "Coding agents are among the most economically consequential deployments of LLMs to date, making reliable evaluation increasingly important. Yet even benchmarks that are carefully validated at release can become stale. As models improve, they can discover valid solutions that existing verifiers reject, while changes to evaluation infrastructure can invalidate assumptions embedded in tasks and tests. We call the resulting accumulation of defects benchmark maintenance debt: a growing gap between benchmark scores and the capabilities they are intended to measure. We introduce a continuous-validation workflow for agentic benchmarks that combines community reports, task artifacts, agent traces, automated oracle checks, and human-gated repairs. We apply this workflow to Terminal-Bench 2.0, a benchmark that underwent extensive human and LM-assisted review and red-teaming before release. Our audit identifies issues in roughly 30% of the benchmark, and we release the resulting repairs as Terminal-Bench 2.1. These repairs change evaluation results: accuracy increased by over 10 percentage points and leaderboard positions move by up to three ranks, even as the overall ranking remains highly correlated (Spearman rho = 0.958). We evaluate how resource allocation shapes benchmark conclusions. We show that fixed wall-clock can materially change agent performance: For example, extending the time limit closes a 20pp harness gap on GPT 5.4 and shrinks a 30 pp gap on GPT 5.4 mini to 5 pp. Benchmark maintenance is therefore not only about repairing task artifacts: resource budgets are part of the measurement specification and must be validated alongside the tasks themselves. More broadly, benchmark maintenance debt is not just accumulated implementation bugs: our results show that as models improve, both evaluation assumptions and resource settings may need to be revalidated.",
-      "authors": [
-        "E. Kelly Buchanan",
-        "Crystal Zhou",
-        "Scott W. Linderman",
-        "Christopher Ré"
-      ],
-      "categories": [
-        "cs.AI"
-      ],
-      "published_at": "2026-11-05T18:18:39+00:00",
-      "updated_at": "2026-11-05T18:18:39+00:00",
-      "primary_category": "cs.AI",
-      "heuristic_score": 22.7,
-      "summary": "Benchmarks as Software: Terminal-Bench and the Case for Continuous Benchmarks 是最近值得追踪的一篇 AI 论文。论文摘要显示：Coding agents are among the most economically consequential deployments of LLMs to date, making reliable evaluation increasingly important. Yet even benchmarks that are carefully validated at release can become stale. As models improve, the...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.AI",
-        "作者数: 4"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "llm",
-        "agent",
-        "agentic"
-      ],
-      "themes": [
-        "ai",
-        "llm",
-        "agent"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：Benchmarks as Software: Terminal-Bench and the Case for Continuous Benchmarks 是最近值得追踪的一篇 AI 论文。论文摘要显示：Coding agents are among the most economically consequential deployments of LLMs to date, making reliable evaluation increasingly important. Yet even benchmarks that are carefully validated at release can become stale. As models improve, the...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI\n- 作者数: 4",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "coding",
-          "weight": 2.6
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 180.0,
-      "detail_path": "items/arxiv-benchmarks-as-software-terminal-bench-and-the-case-for-continuous-benchmarks.html",
-      "first_seen_at": "2026-11-06T06:32:01.430203+00:00",
-      "last_seen_at": "2026-11-06T06:32:01.430203+00:00",
-      "last_curated_at": "2026-11-06T06:32:01.430203+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2611.08452v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "ReproBridge: Building Reproducibility into ML Research Artifacts",
-      "html_url": "http://arxiv.org/abs/2611.08452v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.08452v1",
-      "description": "Reproducing machine learning experiments requires reconstructing procedures from information scattered across papers, released code, and supporting artifacts. For coding agents, reproduction success can therefore depend on their ability to fill in missing details, rather than on the released artifacts alone. We ask whether preserving recovered procedures and decisions improves subsequent independent reproduction. We define a standardized artifact design comprising a refined codebase, environment setup, experiment launchers, and a reproduction guide, and introduce ReproBridge, an agent workflow for constructing these refined reproducible artifacts. ReproBridge-Bench provides 1,029 tasks from 387 experiments across 36 papers, anchored by five human-verified reference scores per task. Agents attempt tasks in fresh sessions with raw code or refined artifacts; a separate Auditor checks execution evidence. Across four evaluated models, refined artifacts raise mean reproduction success from 76.4% to 92.6% and reduce downstream API spending by 19.7% on average. The cross-model success-rate spread narrows from 21.6 to 3.9 percentage points, with all four models achieving mean success rates above 90%. Removing any component reduces success in the ablation study, with the largest losses from code and environment removal. These results suggest that preserving execution knowledge helps even models with lower raw-code success reproduce experiments more reliably and at lower API cost.",
-      "authors": [
-        "Yubo Wang",
-        "Rui Meng",
-        "Jaehyun Nam",
-        "Tomas Pfister",
-        "Jinsung Yoon"
-      ],
-      "categories": [
-        "cs.AI"
-      ],
-      "published_at": "2026-11-05T18:45:36+00:00",
-      "updated_at": "2026-11-05T18:45:36+00:00",
-      "primary_category": "cs.AI",
-      "heuristic_score": 15.367,
-      "summary": "ReproBridge: Building Reproducibility into ML Research Artifacts 是最近值得追踪的一篇 AI 论文。论文摘要显示：Reproducing machine learning experiments requires reconstructing procedures from information scattered across papers, released code, and supporting artifacts. For coding agents, reproduction success can therefore depend on their ability to ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.AI",
-        "作者数: 5"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 9,
-      "tags": [
-        "ai",
-        "agent",
-        "rag",
-        "model"
-      ],
-      "themes": [
-        "ai",
-        "agent",
-        "rag"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：ReproBridge: Building Reproducibility into ML Research Artifacts 是最近值得追踪的一篇 AI 论文。论文摘要显示：Reproducing machine learning experiments requires reconstructing procedures from information scattered across papers, released code, and supporting artifacts. For coding agents, reproduction success can therefore depend on their ability to ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：9/10\n\n**亮点**：\n- 分类: cs.AI\n- 作者数: 5",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "coding",
-          "weight": 2.6
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 176.0,
-      "detail_path": "items/arxiv-reprobridge-building-reproducibility-into-ml-research-artifacts.html",
-      "first_seen_at": "2026-11-06T06:32:01.430203+00:00",
-      "last_seen_at": "2026-11-06T06:32:01.430203+00:00",
-      "last_curated_at": "2026-11-06T06:32:01.430203+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "github::mattpocock/skills",
-      "kind": "repo",
-      "source": "github",
-      "source_tags": [
-        "trending"
-      ],
-      "name": "skills",
-      "title": "mattpocock/skills",
-      "full_name": "mattpocock/skills",
-      "html_url": "https://github.com/mattpocock/skills",
-      "description": "Skills for Real Engineers. Straight from my .agents directory.",
-      "stars": 315668,
-      "stars_today": 0,
-      "language": "Shell",
-      "topics": [],
-      "created_at": "",
-      "updated_at": "",
-      "heuristic_score": 15.2,
-      "summary": "mattpocock/skills 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Skills for Real Engineers. Straight from my .agents directory.结合关键词命中和热度信号，它适合加入今日重点观察列表。",
-      "brief": "这是一个值得快速关注的开源 AI 项目。",
-      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
-      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
-      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
-      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
-      "highlights": [
-        "Stars: 315668",
-        "语言: Shell"
-      ],
-      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
-      "relevance_score": 8,
-      "tags": [
-        "ai",
-        "agent"
-      ],
-      "themes": [
-        "ai",
-        "agent"
-      ],
-      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：mattpocock/skills 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Skills for Real Engineers. Straight from my .agents directory.结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 315668\n- 语言: Shell",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 130.0,
-      "detail_path": "items/github-mattpocock-skills.html",
-      "first_seen_at": "2026-07-11T01:12:49.220475+00:00",
       "last_seen_at": "2026-11-06T06:32:01.430203+00:00",
       "last_curated_at": "2026-11-06T06:32:01.430203+00:00",
       "last_notified_at": null
@@ -702,76 +1130,6 @@
       "personalized_score": 128.43,
       "detail_path": "items/github-vercel-labs-agent-browser.html",
       "first_seen_at": "2026-11-06T03:44:11.198606+00:00",
-      "last_seen_at": "2026-11-06T06:32:01.430203+00:00",
-      "last_curated_at": "2026-11-06T06:32:01.430203+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2611.08483v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "SwarmEvolve: Latent Agent Swarms for Evolutionary Discovery and Optimization",
-      "html_url": "http://arxiv.org/abs/2611.08483v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.08483v1",
-      "description": "LLM-guided evolutionary search uses AI agents to improve programs for mathematical and computational problems by iteratively refining solutions and combining high-scoring methods. However, the process is often slow because the LLM generates a long textual chain of thought for each round and must repeat this generation many times to maintain population diversity. We present SwarmEvolve, a framework in which hundreds of low-cost agents per round work in swarms, reason in latent space without decoding to text, and share information by passing KV caches. Each swarm studies the problem from a different angle. A novelty filter keeps the most distinct agent ideas by directly measuring the distances between the agents' hidden state vectors. Crossover of ideas happens naturally in latent space, as a summarizer agent receives the combined KV caches of all swarm members. On 21 problems in mathematical discovery and scientific computing, SwarmEvolve gets the highest average score and needs a median of only 3 to 8 minutes to reach the best scores that other state-of-the-art frameworks reach in 60 minutes. On several problems, SwarmEvolve with Qwen3 8B improves on the solutions that AlphaEvolve first found with frontier LLMs. Our work shows that agent swarms that communicate in latent space offer a fast, low-cost approach to program search for scientific problems.",
-      "authors": [
-        "Qile Jiang",
-        "George Em Karniadakis"
-      ],
-      "categories": [
-        "cs.AI",
-        "cs.NE"
-      ],
-      "published_at": "2026-11-05T18:59:29+00:00",
-      "updated_at": "2026-11-05T18:59:29+00:00",
-      "primary_category": "cs.AI",
-      "heuristic_score": 15.215,
-      "summary": "SwarmEvolve: Latent Agent Swarms for Evolutionary Discovery and Optimization 是最近值得追踪的一篇 AI 论文。论文摘要显示：LLM-guided evolutionary search uses AI agents to improve programs for mathematical and computational problems by iteratively refining solutions and combining high-scoring methods. However, the process is often slow because the LLM generates...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.AI, cs.NE",
-        "作者数: 2"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 8,
-      "tags": [
-        "ai",
-        "llm",
-        "agent",
-        "rag"
-      ],
-      "themes": [
-        "ai",
-        "llm",
-        "agent"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：SwarmEvolve: Latent Agent Swarms for Evolutionary Discovery and Optimization 是最近值得追踪的一篇 AI 论文。论文摘要显示：LLM-guided evolutionary search uses AI agents to improve programs for mathematical and computational problems by iteratively refining solutions and combining high-scoring methods. However, the process is often slow because the LLM generates...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：8/10\n\n**亮点**：\n- 分类: cs.AI, cs.NE\n- 作者数: 2",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "coding",
-          "weight": 2.6
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 166.0,
-      "detail_path": "items/arxiv-swarmevolve-latent-agent-swarms-for-evolutionary-discovery-and-optimization.html",
-      "first_seen_at": "2026-11-06T06:32:01.430203+00:00",
       "last_seen_at": "2026-11-06T06:32:01.430203+00:00",
       "last_curated_at": "2026-11-06T06:32:01.430203+00:00",
       "last_notified_at": null
@@ -6791,63 +7149,6 @@
       "personalized_score": 138.46,
       "detail_path": "items/github-agricidaniel-claude-seo.html",
       "first_seen_at": "2026-10-26T01:50:25.458060+00:00",
-      "last_seen_at": "2026-10-26T04:38:10.666007+00:00",
-      "last_curated_at": "2026-10-26T04:38:10.666007+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "github::cloudflare/security-audit-skill",
-      "kind": "repo",
-      "source": "github",
-      "source_tags": [
-        "trending"
-      ],
-      "name": "security-audit-skill",
-      "title": "cloudflare/security-audit-skill",
-      "full_name": "cloudflare/security-audit-skill",
-      "html_url": "https://github.com/cloudflare/security-audit-skill",
-      "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
-      "stars": 47218,
-      "stars_today": 0,
-      "language": "JavaScript",
-      "topics": [],
-      "created_at": "",
-      "updated_at": "",
-      "heuristic_score": 12.6,
-      "summary": "cloudflare/security-audit-skill 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings结合关键词命中和热度信号，它适合加入今日重点观察列表。",
-      "brief": "这是一个值得快速关注的开源 AI 项目。",
-      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
-      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
-      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
-      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
-      "highlights": [
-        "Stars: 47218",
-        "语言: JavaScript"
-      ],
-      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
-      "relevance_score": 7,
-      "tags": [
-        "agent"
-      ],
-      "themes": [
-        "agent"
-      ],
-      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：cloudflare/security-audit-skill 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 47218\n- 语言: JavaScript",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "coding",
-          "weight": 2.6
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 144.89,
-      "detail_path": "items/github-cloudflare-security-audit-skill.html",
-      "first_seen_at": "2026-09-17T01:49:48.489213+00:00",
       "last_seen_at": "2026-10-26T04:38:10.666007+00:00",
       "last_curated_at": "2026-10-26T04:38:10.666007+00:00",
       "last_notified_at": null
@@ -12963,317 +13264,32 @@
       "last_seen_at": "2026-10-14T04:46:21.171457+00:00",
       "last_curated_at": "2026-10-14T04:46:21.171457+00:00",
       "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2610.16175v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "ProCARE: Real-World Study Automation via Profile-Grounded Evidence Contracts",
-      "html_url": "http://arxiv.org/abs/2610.16175v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.16175v1",
-      "description": "Real-world studies (RWS) analyze routinely collected healthcare data, such as electronic health records and insurance claims, to estimate treatment effects, monitor safety, and identify risk factors outside randomized trials. Automating RWS with large language model agents is appealing but brittle: valid analyses depend on dataset-specific clinical semantics, including index dates, follow-up windows, patient/event-level units, and outcome boundaries that are often implicit in observational data. This leads to schema mismatches, temporal errors, inconsistent analytical granularity, and unsupported clinical claims. We present ProCARE, a profile-grounded framework that reformulates RWS automation as constrained compilation. ProCARE converts heterogeneous data profiles into Evidence Contracts specifying available variables, temporal attributes, distributions, and evidentiary limits, and compiles study objectives into RWS-IR, a strongly typed intermediate representation for variables, time relations, analysis units, and statistical tasks. Deterministic validation and localized repair then check and revise generated workflows across schema mapping, cohort construction, variable derivation, analysis, and interpretation. On 36 EHR-based benchmark tasks, ProCARE outperforms strong LLM-agent baselines in code executability, semantic consistency, and conclusion traceability, with automated violation diagnoses showing moderate-to-substantial agreement with blinded expert review.",
-      "authors": [
-        "Zhaoyu Fan",
-        "Bowen Han",
-        "Jincheng Ou",
-        "Yanwei Ren",
-        "Zehua He",
-        "Kaiyu Huang",
-        "Pengcheng He",
-        "Shanshan Ni",
-        "Chengchen Gong",
-        "Shuai Xue",
-        "Qingjiang Shi"
-      ],
-      "categories": [
-        "cs.AI"
-      ],
-      "published_at": "2026-10-12T04:50:24+00:00",
-      "updated_at": "2026-10-12T04:50:24+00:00",
-      "primary_category": "cs.AI",
-      "heuristic_score": 15.364,
-      "summary": "ProCARE: Real-World Study Automation via Profile-Grounded Evidence Contracts 是最近值得追踪的一篇 AI 论文。论文摘要显示：Real-world studies (RWS) analyze routinely collected healthcare data, such as electronic health records and insurance claims, to estimate treatment effects, monitor safety, and identify risk factors outside randomized trials. Automating RWS...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.AI",
-        "作者数: 11"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 9,
-      "tags": [
-        "ai",
-        "llm",
-        "agent",
-        "model"
-      ],
-      "themes": [
-        "ai",
-        "llm",
-        "agent"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：ProCARE: Real-World Study Automation via Profile-Grounded Evidence Contracts 是最近值得追踪的一篇 AI 论文。论文摘要显示：Real-world studies (RWS) analyze routinely collected healthcare data, such as electronic health records and insurance claims, to estimate treatment effects, monitor safety, and identify risk factors outside randomized trials. Automating RWS...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：9/10\n\n**亮点**：\n- 分类: cs.AI\n- 作者数: 11",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 144.0,
-      "detail_path": "items/arxiv-procare-real-world-study-automation-via-profile-grounded-evidence-contracts.html",
-      "first_seen_at": "2026-10-14T02:13:20.870846+00:00",
-      "last_seen_at": "2026-10-14T02:13:20.870846+00:00",
-      "last_curated_at": "2026-10-14T02:13:20.870846+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2610.16170v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "Geometric Parrots: Rule Absence vs. Rule Fragility in Spatial and Physical Reasoning for Vision-Language Models",
-      "html_url": "http://arxiv.org/abs/2610.16170v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.16170v1",
-      "description": "Vision-language models (VLMs) can answer many geometric and physical reasoning questions correctly, yet still behave inconsistently in interaction, for example, abandoning a correct answer when confronted with a confident but incorrect user assertion. Standard single-turn accuracy cannot distinguish such capitulations from beneficial corrections because it scores each response in isolation. We introduce GRIP, a controlled benchmark with 34 procedurally generated reasoning domains, 100,000 images, and 600,000 questions spanning geometric, spatial, visual, and physical reasoning. Each scene is generated by deterministic code, and every answer is derived directly from the underlying scene state, providing exact ground truth without human annotation. On GRIP, we propose Dual-Loop Evaluation. A closed loop probes each image with a five-step compositional question ladder to localize where reasoning fails. An open loop then re-elicits the model's answer under controlled challenges, including peer-model responses and unsupported user assertions. Because ground truth is known exactly, answer changes can be signed as corrections (wrong-to-right) or capitulations (right-to-wrong), separating two failure modes: rule absence and rule fragility. The dataset is available at https://huggingface.co/datasets/bilaljawaid980/GRIP-Benchmark, with further details at https://bilaljawaid980.github.io/grip-benchmark/.",
-      "authors": [
-        "Bilal Jawaid",
-        "Hamza Hanif",
-        "Muhammad Maaz Uddin",
-        "Anas Zafar",
-        "Inad Alqurashi",
-        "Aizan Zafar",
-        "Osama Farooqui",
-        "Sheheryar Khan",
-        "Ferhat Sadak",
-        "Shaina Raza",
-        "Rizwan Qureshi"
-      ],
-      "categories": [
-        "cs.CV"
-      ],
-      "published_at": "2026-10-12T04:45:23+00:00",
-      "updated_at": "2026-10-12T04:45:23+00:00",
-      "primary_category": "cs.CV",
-      "heuristic_score": 15.27,
-      "summary": "Geometric Parrots: Rule Absence vs. Rule Fragility in Spatial and Physical Reasoning for Vision-Language Models 是最近值得追踪的一篇 AI 论文。论文摘要显示：Vision-language models (VLMs) can answer many geometric and physical reasoning questions correctly, yet still behave inconsistently in interaction, for example, abandoning a correct answer when confronted with a confident but incorrect user...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CV",
-        "作者数: 11"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 8,
-      "tags": [
-        "ai",
-        "rag",
-        "model",
-        "benchmark"
-      ],
-      "themes": [
-        "ai",
-        "rag",
-        "model"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：Geometric Parrots: Rule Absence vs. Rule Fragility in Spatial and Physical Reasoning for Vision-Language Models 是最近值得追踪的一篇 AI 论文。论文摘要显示：Vision-language models (VLMs) can answer many geometric and physical reasoning questions correctly, yet still behave inconsistently in interaction, for example, abandoning a correct answer when confronted with a confident but incorrect user...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：8/10\n\n**亮点**：\n- 分类: cs.CV\n- 作者数: 11",
-      "focus_hits": [
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "reasoning",
-      "personalized_score": 150.0,
-      "detail_path": "items/arxiv-geometric-parrots-rule-absence-vs-rule-fragility-in-spatial-and-physical-reasoning-for-vis.html",
-      "first_seen_at": "2026-10-14T02:13:20.870846+00:00",
-      "last_seen_at": "2026-10-14T02:13:20.870846+00:00",
-      "last_curated_at": "2026-10-14T02:13:20.870846+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "github::microsoft/BitNet",
-      "kind": "repo",
-      "source": "github",
-      "source_tags": [
-        "trending"
-      ],
-      "name": "BitNet",
-      "title": "microsoft/BitNet",
-      "full_name": "microsoft/BitNet",
-      "html_url": "https://github.com/microsoft/BitNet",
-      "description": "Official inference framework for 1-bit LLMs",
-      "stars": 41018,
-      "stars_today": 0,
-      "language": "C++",
-      "topics": [],
-      "created_at": "",
-      "updated_at": "",
-      "heuristic_score": 15.2,
-      "summary": "microsoft/BitNet 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Official inference framework for 1-bit LLMs结合关键词命中和热度信号，它适合加入今日重点观察列表。",
-      "brief": "这是一个值得快速关注的开源 AI 项目。",
-      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
-      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
-      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
-      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
-      "highlights": [
-        "Stars: 41018",
-        "语言: C++"
-      ],
-      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
-      "relevance_score": 8,
-      "tags": [
-        "llm",
-        "inference"
-      ],
-      "themes": [
-        "llm",
-        "inference"
-      ],
-      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：microsoft/BitNet 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Official inference framework for 1-bit LLMs结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：8/10\n\n**亮点**：\n- Stars: 41018\n- 语言: C++",
-      "focus_hits": [
-        {
-          "keyword": "inference",
-          "weight": 1.8
-        }
-      ],
-      "primary_match": "inference",
-      "personalized_score": 114.41,
-      "detail_path": "items/github-microsoft-bitnet.html",
-      "first_seen_at": "2026-10-13T03:58:20.748174+00:00",
-      "last_seen_at": "2026-10-13T06:42:51.655646+00:00",
-      "last_curated_at": "2026-10-13T06:42:51.655646+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "github::Alishahryar1/free-claude-code",
-      "kind": "repo",
-      "source": "github",
-      "source_tags": [
-        "trending"
-      ],
-      "name": "free-claude-code",
-      "title": "Alishahryar1/free-claude-code",
-      "full_name": "Alishahryar1/free-claude-code",
-      "html_url": "https://github.com/Alishahryar1/free-claude-code",
-      "description": "Use Claude Code, Codex, VSCode, Pi, and OpenCode (and 6 other harnesses) for free (1.3B+ free tokens) from your terminal, app, IDE, or phone, and now from the browser with native browser sessions (multi-harness + multi-model) like OpenClaw (voice supported + ToS friendly)",
-      "stars": 59497,
-      "stars_today": 0,
-      "language": "Python",
-      "topics": [],
-      "created_at": "",
-      "updated_at": "",
-      "heuristic_score": 12.6,
-      "summary": "Alishahryar1/free-claude-code 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Use Claude Code, Codex, VSCode, Pi, and OpenCode (and 6 other harnesses) for free (1.3B+ free tokens) from your terminal, app, IDE, or phone, and now from the browser with native browser sessions (multi-harness + multi-model) like OpenClaw ...结合关键词命中和热度信号，它适合加入今日重点观察列表。",
-      "brief": "这是一个值得快速关注的开源 AI 项目。",
-      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
-      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
-      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
-      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
-      "highlights": [
-        "Stars: 59497",
-        "语言: Python"
-      ],
-      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
-      "relevance_score": 7,
-      "tags": [
-        "model"
-      ],
-      "themes": [
-        "model"
-      ],
-      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：Alishahryar1/free-claude-code 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：Use Claude Code, Codex, VSCode, Pi, and OpenCode (and 6 other harnesses) for free (1.3B+ free tokens) from your terminal, app, IDE, or phone, and now from the browser with native browser sessions (multi-harness + multi-model) like OpenClaw ...结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 59497\n- 语言: Python",
-      "focus_hits": [
-        {
-          "keyword": "voice",
-          "weight": 1.4
-        }
-      ],
-      "primary_match": "voice",
-      "personalized_score": 104.0,
-      "detail_path": "items/github-alishahryar1-free-claude-code.html",
-      "first_seen_at": "2026-10-13T03:58:20.748174+00:00",
-      "last_seen_at": "2026-10-13T06:42:51.655646+00:00",
-      "last_curated_at": "2026-10-13T06:42:51.655646+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "github::open-webui/open-webui",
-      "kind": "repo",
-      "source": "github",
-      "source_tags": [
-        "trending"
-      ],
-      "name": "open-webui",
-      "title": "open-webui/open-webui",
-      "full_name": "open-webui/open-webui",
-      "html_url": "https://github.com/open-webui/open-webui",
-      "description": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
-      "stars": 155306,
-      "stars_today": 0,
-      "language": "Python",
-      "topics": [],
-      "created_at": "",
-      "updated_at": "",
-      "heuristic_score": 12.6,
-      "summary": "open-webui/open-webui 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：User-friendly AI Interface (Supports Ollama, OpenAI API, ...)结合关键词命中和热度信号，它适合加入今日重点观察列表。",
-      "brief": "这是一个值得快速关注的开源 AI 项目。",
-      "problem": "它试图把某类 AI 能力做成可直接使用的工具、框架或工作流。",
-      "why_it_matters": "如果你关注 AI 工程落地，这类项目通常能最快转化成实际产出。",
-      "target_reader": "适合正在看 agent、工具链或模型应用的人优先阅读。",
-      "core_innovation": "项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。",
-      "highlights": [
-        "Stars: 155306",
-        "语言: Python"
-      ],
-      "practicality": "如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。",
-      "relevance_score": 7,
-      "tags": [
-        "ai"
-      ],
-      "themes": [
-        "ai"
-      ],
-      "selection_reason": "它兼具热度和相关性，适合进入今天的开源观察清单。",
-      "summary_markdown": "**摘要**：open-webui/open-webui 是今天值得关注的 GitHub AI 项目。它当前的公开描述是：User-friendly AI Interface (Supports Ollama, OpenAI API, ...)结合关键词命中和热度信号，它适合加入今日重点观察列表。\n\n**核心创新**：项目亮点主要体现在当前描述、主题标签和热度信号上，建议进一步查看 README 与近期提交。\n\n**实用性**：如果你关注开源 AI 工具链、模型应用或代理工作流，这个项目有较高的跟进价值。\n\n**相关性评分**：7/10\n\n**亮点**：\n- Stars: 155306\n- 语言: Python",
-      "focus_hits": [],
-      "primary_match": "",
-      "personalized_score": 90.0,
-      "detail_path": "items/github-open-webui-open-webui.html",
-      "first_seen_at": "2026-10-13T03:58:20.748174+00:00",
-      "last_seen_at": "2026-10-13T06:42:51.655646+00:00",
-      "last_curated_at": "2026-10-13T06:42:51.655646+00:00",
-      "last_notified_at": null
     }
   ],
   "digests": [
+    {
+      "date": "2026-11-07",
+      "title": "AI Daily Digest · 2026-11-07",
+      "generated_at": "2026-11-07T11:16:39.073810+08:00",
+      "notified_at": null,
+      "repo_ids": [
+        "github::NVIDIA/auto-ontology",
+        "github::cloudflare/security-audit-skill",
+        "github::mattpocock/skills",
+        "github::google/skills",
+        "github::rails/rails"
+      ],
+      "paper_ids": [
+        "arxiv::http://arxiv.org/abs/2611.08417v1",
+        "arxiv::http://arxiv.org/abs/2611.08452v1",
+        "arxiv::http://arxiv.org/abs/2611.08483v1",
+        "arxiv::http://arxiv.org/abs/2611.08485v1",
+        "arxiv::http://arxiv.org/abs/2611.08439v1",
+        "arxiv::http://arxiv.org/abs/2611.08413v1"
+      ],
+      "digest_json": "data/digests/2026-11-07.json",
+      "digest_markdown": "data/digests/2026-11-07.md"
+    },
     {
       "date": "2026-11-06",
       "title": "AI Daily Digest · 2026-11-06",
@@ -17876,36 +17892,14 @@
       ],
       "digest_json": "data/digests/2026-04-22.json",
       "digest_markdown": "data/digests/2026-04-22.md"
-    },
-    {
-      "date": "2026-04-21",
-      "title": "AI Daily Digest · 2026-04-21",
-      "generated_at": "2026-04-21T14:25:13.903235+08:00",
-      "notified_at": null,
-      "repo_ids": [
-        "github::openai/openai-agents-python",
-        "github::koala73/worldmonitor",
-        "github::deepseek-ai/DeepGEMM",
-        "github::thunderbird/thunderbolt"
-      ],
-      "paper_ids": [
-        "arxiv::http://arxiv.org/abs/2604.18584v1",
-        "arxiv::http://arxiv.org/abs/2604.18530v1",
-        "arxiv::http://arxiv.org/abs/2604.18576v1",
-        "arxiv::http://arxiv.org/abs/2604.18566v1",
-        "arxiv::http://arxiv.org/abs/2604.18575v1",
-        "arxiv::http://arxiv.org/abs/2604.18556v1"
-      ],
-      "digest_json": "data/digests/2026-04-21.json",
-      "digest_markdown": "data/digests/2026-04-21.md"
     }
   ],
   "reports": {
     "weekly": {
       "label": "周报",
       "window_days": 7,
-      "generated_at": "2026-11-06T14:31:02.736203+08:00",
-      "count": 72,
+      "generated_at": "2026-11-07T11:16:39.073810+08:00",
+      "count": 78,
       "summary": "近 7 天里，最集中的主题是 ai、llm、agent。",
       "top_items": [
         {
@@ -18544,8 +18538,8 @@
           "personalized_score": 180.0,
           "detail_path": "items/arxiv-benchmarks-as-software-terminal-bench-and-the-case-for-continuous-benchmarks.html",
           "first_seen_at": "2026-11-06T06:32:01.430203+00:00",
-          "last_seen_at": "2026-11-06T06:32:01.430203+00:00",
-          "last_curated_at": "2026-11-06T06:32:01.430203+00:00",
+          "last_seen_at": "2026-11-07T03:16:48.495023+00:00",
+          "last_curated_at": "2026-11-07T03:16:48.495023+00:00",
           "last_notified_at": null
         }
       ],
@@ -18588,7 +18582,7 @@
     "monthly": {
       "label": "月报",
       "window_days": 30,
-      "generated_at": "2026-11-06T14:31:02.736203+08:00",
+      "generated_at": "2026-11-07T11:16:39.073810+08:00",
       "count": 200,
       "summary": "近 30 天里，最集中的主题是 ai、llm、agent。",
       "top_items": [
