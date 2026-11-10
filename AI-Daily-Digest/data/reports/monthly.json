@@ -1,7 +1,7 @@
 {
   "label": "月报",
   "window_days": 30,
-  "generated_at": "2026-11-10T12:48:42.748471+08:00",
+  "generated_at": "2026-11-10T15:08:58.233955+08:00",
   "count": 200,
   "summary": "近 30 天里，最集中的主题是 ai、llm、agent。",
   "top_items": [
@@ -351,8 +351,8 @@
       "personalized_score": 214.0,
       "detail_path": "items/arxiv-how-to-train-a-surgeon-benchmarking-generalist-agents-in-surgical-scene-understanding.html",
       "first_seen_at": "2026-11-10T04:48:51.116406+00:00",
-      "last_seen_at": "2026-11-10T04:48:51.116406+00:00",
-      "last_curated_at": "2026-11-10T04:48:51.116406+00:00",
+      "last_seen_at": "2026-11-10T07:09:08.260669+00:00",
+      "last_curated_at": "2026-11-10T07:09:08.260669+00:00",
       "last_notified_at": null
     },
     {
@@ -603,56 +603,54 @@
       "last_notified_at": null
     },
     {
-      "id": "arxiv::http://arxiv.org/abs/2611.07976v1",
+      "id": "arxiv::http://arxiv.org/abs/2611.12886v1",
       "kind": "paper",
       "source": "arxiv",
       "source_tags": [
         "latest"
       ],
-      "title": "QRAE: Query-Relevant Attention Entropy for Context Compression in DeepSearch Agents",
-      "html_url": "http://arxiv.org/abs/2611.07976v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.07976v1",
-      "description": "DeepSearch LLM agents repeatedly search and carry retrieved sources into subsequent reasoning steps. This expanding context increases token consumption and latency, although many results do not contribute to later reasoning. We propose Query-Relevant Attention Entropy (QRAE), an online context compression method that uses sparse evidence-assessment heads to decide which intact retrieved chunks should persist across reasoning steps. It scores bounded candidate batches through paired prefills: a query-free control suppresses shared attention responses, while normalized entropy measures the breadth of the positive response within each chunk. High-scoring chunks enter a persistent evidence whitelist and are included in the reasoning context. Uncertain chunks remain outside the reasoning context but are retained in a candidate cache, where they can be retrieved for later reevaluation. QRAE requires neither an additional generative compression pass nor modification of the attention operator. Across multiple DeepSearch benchmarks and reasoning models, QRAE improves task success by an average of 2.35 percentage points and reduces end-to-end latency and reported token usage by an average of 30% and 45%, respectively. These benefits generalize to a model with nearly 100B parameters.",
+      "title": "Reframe: Observation-Aligned Multi-Teacher On-Policy Distillation for Agentic Visual Reasoning",
+      "html_url": "http://arxiv.org/abs/2611.12886v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.12886v1",
+      "description": "Agentic reinforcement learning (RL) and multi-teacher on-policy distillation (MOPD) offer complementary routes to post-training. For visual agents, however, tool use presents two related challenges. Models may overlook useful tool-returned observations, while poorly grounded actions can limit the evidence available for subsequent distillation. We introduce Reframe, a post-training framework that treats the observation state, rather than only the output distribution, as an object of alignment. First, Ground-Drop-GRPO (GD-GRPO) trains spatial and temporal specialists with evidence-aware rewards and stochastic removal of the original visual input, encouraging them to acquire grounded evidence and use the returned observations. Second, Observation-Gated-MOPD (OG-MOPD) replaces deficient tool actions with canonical ones mid-rollout and resumes distillation from the repaired observation. The two stages complement each other, as learning to rely on tool-returned observations can help the policy benefit from observation repair. Neither stage requires a task-specific SFT cold start. Extensive experiments over 14 image and video benchmarks demonstrate that Reframe outperforms both Mix-RL and vanilla MOPD. Ablation results show that GD-GRPO increases observation dependence and tool gain compared with outcome-based GRPO.",
       "authors": [
-        "Yingjie Tan",
-        "Haiquan Qiu",
-        "Quanming Yao",
-        "Manyi Zhong",
-        "Xianzhi Yu",
-        "Yaqing Wang"
+        "Haozhi Yuan",
+        "Handong Li",
+        "Yifan Zhang",
+        "Qianshan Wei"
       ],
       "categories": [
-        "cs.LG"
+        "cs.CV"
       ],
-      "published_at": "2026-11-05T13:08:43+00:00",
-      "updated_at": "2026-11-05T13:08:43+00:00",
-      "primary_category": "cs.LG",
-      "heuristic_score": 19.916,
-      "summary": "QRAE: Query-Relevant Attention Entropy for Context Compression in DeepSearch Agents 是最近值得追踪的一篇 AI 论文。论文摘要显示：DeepSearch LLM agents repeatedly search and carry retrieved sources into subsequent reasoning steps. This expanding context increases token consumption and latency, although many results do not contribute to later reasoning. We propose Quer...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "published_at": "2026-11-09T18:59:54+00:00",
+      "updated_at": "2026-11-09T18:59:54+00:00",
+      "primary_category": "cs.CV",
+      "heuristic_score": 22.363,
+      "summary": "Reframe: Observation-Aligned Multi-Teacher On-Policy Distillation for Agentic Visual Reasoning 是最近值得追踪的一篇 AI 论文。论文摘要显示：Agentic reinforcement learning (RL) and multi-teacher on-policy distillation (MOPD) offer complementary routes to post-training. For visual agents, however, tool use presents two related challenges. Models may overlook useful tool-returned ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
       "brief": "这是一篇值得加入今日论文雷达的最新工作。",
       "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
       "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
       "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
       "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
       "highlights": [
-        "分类: cs.LG",
-        "作者数: 6"
+        "分类: cs.CV",
+        "作者数: 4"
       ],
       "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
       "relevance_score": 10,
       "tags": [
         "ai",
-        "llm",
         "agent",
+        "agentic",
         "rag"
       ],
       "themes": [
         "ai",
-        "llm",
-        "agent"
+        "agent",
+        "agentic"
       ],
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：QRAE: Query-Relevant Attention Entropy for Context Compression in DeepSearch Agents 是最近值得追踪的一篇 AI 论文。论文摘要显示：DeepSearch LLM agents repeatedly search and carry retrieved sources into subsequent reasoning steps. This expanding context increases token consumption and latency, although many results do not contribute to later reasoning. We propose Quer...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.LG\n- 作者数: 6",
+      "summary_markdown": "**摘要**：Reframe: Observation-Aligned Multi-Teacher On-Policy Distillation for Agentic Visual Reasoning 是最近值得追踪的一篇 AI 论文。论文摘要显示：Agentic reinforcement learning (RL) and multi-teacher on-policy distillation (MOPD) offer complementary routes to post-training. For visual agents, however, tool use presents two related challenges. Models may overlook useful tool-returned ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV\n- 作者数: 4",
       "focus_hits": [
         {
           "keyword": "agent",
@@ -673,10 +671,10 @@
       ],
       "primary_match": "agent",
       "personalized_score": 200.0,
-      "detail_path": "items/arxiv-qrae-query-relevant-attention-entropy-for-context-compression-in-deepsearch-agents.html",
-      "first_seen_at": "2026-11-06T03:44:11.198606+00:00",
-      "last_seen_at": "2026-11-06T06:32:01.430203+00:00",
-      "last_curated_at": "2026-11-06T06:32:01.430203+00:00",
+      "detail_path": "items/arxiv-reframe-observation-aligned-multi-teacher-on-policy-distillation-for-agentic-visual-reason.html",
+      "first_seen_at": "2026-11-10T07:09:08.260669+00:00",
+      "last_seen_at": "2026-11-10T07:09:08.260669+00:00",
+      "last_curated_at": "2026-11-10T07:09:08.260669+00:00",
       "last_notified_at": null
     }
   ],
@@ -687,11 +685,11 @@
     },
     {
       "theme": "llm",
-      "count": 5
+      "count": 4
     },
     {
       "theme": "agent",
-      "count": 3
+      "count": 4
     }
   ],
   "highlights": [
