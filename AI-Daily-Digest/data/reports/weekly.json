@@ -1,145 +1,60 @@
 {
   "label": "周报",
   "window_days": 7,
-  "generated_at": "2026-11-17T13:16:31.669087+08:00",
-  "count": 66,
-  "summary": "近 7 天里，最集中的主题是 ai、agent、llm。",
+  "generated_at": "2026-11-17T15:47:43.511113+08:00",
+  "count": 62,
+  "summary": "近 7 天里，最集中的主题是 ai、agent、rag。",
   "top_items": [
     {
-      "id": "arxiv::http://arxiv.org/abs/2611.11437v1",
+      "id": "arxiv::http://arxiv.org/abs/2611.21541v1",
       "kind": "paper",
       "source": "arxiv",
       "source_tags": [
         "latest"
       ],
-      "title": "How to \"train\" a surgeon? Benchmarking generalist agents in surgical scene understanding",
-      "html_url": "http://arxiv.org/abs/2611.11437v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.11437v1",
-      "description": "Evaluating general-purpose multimodal large language models (MLLMs) for surgical scene understanding remains limited due to scarce surgical data and fragmented evaluation protocols. We address these challenges through a two-stage evaluation framework for surgical scene understanding. In Stage I, we introduce SurgKnowBench, a diagnostic benchmark that harmonizes public surgical datasets across procedures and tasks and evaluates proprietary and open-source MLLMs to map the boundary of pretrained surgical competence. SurgKnowBench reveals that current models retain partial visual priors but remain weak on relational and procedural understanding and workflow assessment. Building on this failure frontier and motivated by the scaffolded nature of surgical training, we introduce SurgAgentGym, an agentic environment where general-purpose MLLM agents can use bounded knowledge search over SurgWiki and general-purpose visual grounding for surgical tasks. SurgAgentGym evaluates whether generalist agents can improve surgical understanding at inference time through tool-mediated evidence use, without additional surgical training. Our results show that agentic inference narrows the gap mainly for perception-heavy tasks, while fine-grained localization and expert-style assessment remain persistent bottlenecks. This opens a path toward future studies of agentic surgical understanding.",
+      "title": "SciResearch-Eval: Evaluating Scientific Judgment in Autonomous Experimental Agents",
+      "html_url": "http://arxiv.org/abs/2611.21541v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.21541v1",
+      "description": "We introduce SciResearch-Eval, an interactive benchmark of scientific judgment built on a standard laboratory problem: measuring a material's thermal properties by heating it and fitting a heat-conduction simulator. An agent designs its own experiments, uses a supplied simulator that may be under-resolved or physically wrong, and reports each property with a 95% interval. To our knowledge it is the first benchmark to combine agent-designed experiments, a deliberately flawed simulator, and proper scoring of calibrated intervals against exact ground truth. On a held-out split (93 tasks, 9 models, 2,511 episodes), models handle procedural traps. When the simulator is missing physics, most report wrong values while stating they are 95% sure: their ranges contain the truth in 20-62% of cases, against 94% for GPT-6 Astra and 99% for Claude Fable 5.2. At default effort the failing Claude 5.5 models rarely diagnose the missing physics (Opus in 35% of episodes, against 66% for Astra), and even when they do, their ranges often miss; Astra and Fable design experiments in which the flawed simulator is accurate, such as gentle heating, which keeps Astra calibrated even when it does not name the cause. Asking for wider intervals does not help; stating the strategy improves interval scores 1.6-2.5-fold, replicated on a pre-registered fresh split, but coverage barely moves. A pre-registered effort ablation shows that the correction is latent in the Claude 5.5 models: at maximum effort Opus improves more than tenfold and is no longer detectably behind Astra at default, but only with 13-31 times more reasoning; older and open-weight models gain nothing. Fable 5.2 is the most accurate model at default effort (interval score 1.9 times better than Astra's) but writes 6 times as many tokens, and at Astra's token count it falls short. We release the environment, graders and harness.",
       "authors": [
-        "Gengyuan Zhang",
-        "Xiao Han",
-        "Shijie Zhou",
-        "Abdullah Koukash",
-        "Jingpei Wu",
-        "Jindong Gu",
-        "Yuqicheng Zhu",
-        "Nassir Navab",
-        "Volker Tresp",
-        "Ghazal Ghazaei"
+        "Brian T. Weston",
+        "Alondra Torres Contreras",
+        "Aldair E. Gongora"
       ],
       "categories": [
-        "cs.CV",
-        "cs.AI"
+        "cs.AI",
+        "cs.LG",
+        "physics.comp-ph"
       ],
-      "published_at": "2026-11-08T15:00:44+00:00",
-      "updated_at": "2026-11-08T15:00:44+00:00",
-      "primary_category": "cs.CV",
-      "heuristic_score": 27.238,
-      "summary": "How to \"train\" a surgeon? Benchmarking generalist agents in surgical scene understanding 是最近值得追踪的一篇 AI 论文。论文摘要显示：Evaluating general-purpose multimodal large language models (MLLMs) for surgical scene understanding remains limited due to scarce surgical data and fragmented evaluation protocols. We address these challenges through a two-stage evaluation...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "published_at": "2026-11-16T18:27:09+00:00",
+      "updated_at": "2026-11-16T18:27:09+00:00",
+      "primary_category": "cs.AI",
+      "heuristic_score": 20.3,
+      "summary": "SciResearch-Eval: Evaluating Scientific Judgment in Autonomous Experimental Agents 是最近值得追踪的一篇 AI 论文。论文摘要显示：We introduce SciResearch-Eval, an interactive benchmark of scientific judgment built on a standard laboratory problem: measuring a material's thermal properties by heating it and fitting a heat-conduction simulator. An agent designs its own...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
       "brief": "这是一篇值得加入今日论文雷达的最新工作。",
       "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
       "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
       "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
       "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
       "highlights": [
-        "分类: cs.CV, cs.AI",
-        "作者数: 10"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "llm",
-        "agent",
-        "agentic"
-      ],
-      "themes": [
-        "ai",
-        "llm",
-        "agent"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：How to \"train\" a surgeon? Benchmarking generalist agents in surgical scene understanding 是最近值得追踪的一篇 AI 论文。论文摘要显示：Evaluating general-purpose multimodal large language models (MLLMs) for surgical scene understanding remains limited due to scarce surgical data and fragmented evaluation protocols. We address these challenges through a two-stage evaluation...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV, cs.AI\n- 作者数: 10",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "multimodal",
-          "weight": 2.0
-        },
-        {
-          "keyword": "inference",
-          "weight": 1.8
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 214.0,
-      "detail_path": "items/arxiv-how-to-train-a-surgeon-benchmarking-generalist-agents-in-surgical-scene-understanding.html",
-      "first_seen_at": "2026-11-10T04:48:51.116406+00:00",
-      "last_seen_at": "2026-11-10T07:09:08.260669+00:00",
-      "last_curated_at": "2026-11-10T07:09:08.260669+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2611.12886v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "Reframe: Observation-Aligned Multi-Teacher On-Policy Distillation for Agentic Visual Reasoning",
-      "html_url": "http://arxiv.org/abs/2611.12886v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.12886v1",
-      "description": "Agentic reinforcement learning (RL) and multi-teacher on-policy distillation (MOPD) offer complementary routes to post-training. For visual agents, however, tool use presents two related challenges. Models may overlook useful tool-returned observations, while poorly grounded actions can limit the evidence available for subsequent distillation. We introduce Reframe, a post-training framework that treats the observation state, rather than only the output distribution, as an object of alignment. First, Ground-Drop-GRPO (GD-GRPO) trains spatial and temporal specialists with evidence-aware rewards and stochastic removal of the original visual input, encouraging them to acquire grounded evidence and use the returned observations. Second, Observation-Gated-MOPD (OG-MOPD) replaces deficient tool actions with canonical ones mid-rollout and resumes distillation from the repaired observation. The two stages complement each other, as learning to rely on tool-returned observations can help the policy benefit from observation repair. Neither stage requires a task-specific SFT cold start. Extensive experiments over 14 image and video benchmarks demonstrate that Reframe outperforms both Mix-RL and vanilla MOPD. Ablation results show that GD-GRPO increases observation dependence and tool gain compared with outcome-based GRPO.",
-      "authors": [
-        "Haozhi Yuan",
-        "Handong Li",
-        "Yifan Zhang",
-        "Qianshan Wei"
-      ],
-      "categories": [
-        "cs.CV"
-      ],
-      "published_at": "2026-11-09T18:59:54+00:00",
-      "updated_at": "2026-11-09T18:59:54+00:00",
-      "primary_category": "cs.CV",
-      "heuristic_score": 22.363,
-      "summary": "Reframe: Observation-Aligned Multi-Teacher On-Policy Distillation for Agentic Visual Reasoning 是最近值得追踪的一篇 AI 论文。论文摘要显示：Agentic reinforcement learning (RL) and multi-teacher on-policy distillation (MOPD) offer complementary routes to post-training. For visual agents, however, tool use presents two related challenges. Models may overlook useful tool-returned ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CV",
-        "作者数: 4"
+        "分类: cs.AI, cs.LG",
+        "作者数: 3"
       ],
       "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
       "relevance_score": 10,
       "tags": [
         "ai",
         "agent",
-        "agentic",
+        "gpt",
         "rag"
       ],
       "themes": [
         "ai",
         "agent",
-        "agentic"
+        "gpt"
       ],
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：Reframe: Observation-Aligned Multi-Teacher On-Policy Distillation for Agentic Visual Reasoning 是最近值得追踪的一篇 AI 论文。论文摘要显示：Agentic reinforcement learning (RL) and multi-teacher on-policy distillation (MOPD) offer complementary routes to post-training. For visual agents, however, tool use presents two related challenges. Models may overlook useful tool-returned ...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV\n- 作者数: 4",
+      "summary_markdown": "**摘要**：SciResearch-Eval: Evaluating Scientific Judgment in Autonomous Experimental Agents 是最近值得追踪的一篇 AI 论文。论文摘要显示：We introduce SciResearch-Eval, an interactive benchmark of scientific judgment built on a standard laboratory problem: measuring a material's thermal properties by heating it and fitting a heat-conduction simulator. An agent designs its own...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.AI, cs.LG\n- 作者数: 3",
       "focus_hits": [
         {
           "keyword": "agent",
@@ -160,10 +75,10 @@
       ],
       "primary_match": "agent",
       "personalized_score": 200.0,
-      "detail_path": "items/arxiv-reframe-observation-aligned-multi-teacher-on-policy-distillation-for-agentic-visual-reason.html",
-      "first_seen_at": "2026-11-10T07:09:08.260669+00:00",
-      "last_seen_at": "2026-11-10T07:09:08.260669+00:00",
-      "last_curated_at": "2026-11-10T07:09:08.260669+00:00",
+      "detail_path": "items/arxiv-sciresearch-eval-evaluating-scientific-judgment-in-autonomous-experimental-agents.html",
+      "first_seen_at": "2026-11-17T07:47:52.518992+00:00",
+      "last_seen_at": "2026-11-17T07:47:52.518992+00:00",
+      "last_curated_at": "2026-11-17T07:47:52.518992+00:00",
       "last_notified_at": null
     },
     {
@@ -242,87 +157,6 @@
       "first_seen_at": "2026-11-13T06:31:50.056588+00:00",
       "last_seen_at": "2026-11-14T06:09:59.346706+00:00",
       "last_curated_at": "2026-11-14T06:09:59.346706+00:00",
-      "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2611.12872v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "HiVe-Mem: Interleaving Horizontal Memory Expansion and Vertical Evidence Composition for Multimodal Agents",
-      "html_url": "http://arxiv.org/abs/2611.12872v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.12872v1",
-      "description": "As multimodal agents accumulate increasingly long interaction histories, effectively retrieving and utilizing past information becomes critical for long-term interaction. Existing memory systems typically rely on semantic retrieval over compressed memories and expose predefined representations, which may miss relevant memories and overlook heterogeneous evidence needs across queries. We introduce \\textbf{\\hivemem}, a multimodal memory framework that interleaves \\textbf{\\textsc{H}}or\\textbf{\\textsc{i}}zontal Memory Expansion with \\textbf{\\textsc{Ve}}rtical Evidence Composition. For horizontal memory expansion, \\hivemem organizes memory episodes into a relational graph using textual and visual anchors, expanding semantically retrieved seeds with related neighbors to recover complementary information. For vertical evidence composition, each retrieved memory retains multiple evidence forms, including compact summaries, captions, grounded visual views, raw images, and interaction history. A lightweight trainable selector independently composes an evidence subset for each retrieved memory, enabling query-adaptive utilization of heterogeneous multimodal information. This two-dimensional design jointly broadens memory coverage and adapts the evidence contributed by individual memories. Experiments across three multimodal memory benchmarks show that \\hivemem consistently improves task performance across base models while reducing token consumption by about 90\\% compared with the most efficient competing multimodal baselines.",
-      "authors": [
-        "Haozhen Zhang",
-        "Bohan Liu",
-        "Jianzhu Bao",
-        "Qingyuan Liu",
-        "Haodong Yue",
-        "Xiao Li",
-        "Zi Pong Lim",
-        "Wenya Wang"
-      ],
-      "categories": [
-        "cs.CL",
-        "cs.AI",
-        "cs.LG"
-      ],
-      "published_at": "2026-11-09T18:57:00+00:00",
-      "updated_at": "2026-11-09T18:57:00+00:00",
-      "primary_category": "cs.CL",
-      "heuristic_score": 17.826,
-      "summary": "HiVe-Mem: Interleaving Horizontal Memory Expansion and Vertical Evidence Composition for Multimodal Agents 是最近值得追踪的一篇 AI 论文。论文摘要显示：As multimodal agents accumulate increasingly long interaction histories, effectively retrieving and utilizing past information becomes critical for long-term interaction. Existing memory systems typically rely on semantic retrieval over com...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CL, cs.AI",
-        "作者数: 8"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "agent",
-        "rag",
-        "multimodal"
-      ],
-      "themes": [
-        "ai",
-        "agent",
-        "rag"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：HiVe-Mem: Interleaving Horizontal Memory Expansion and Vertical Evidence Composition for Multimodal Agents 是最近值得追踪的一篇 AI 论文。论文摘要显示：As multimodal agents accumulate increasingly long interaction histories, effectively retrieving and utilizing past information becomes critical for long-term interaction. Existing memory systems typically rely on semantic retrieval over com...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL, cs.AI\n- 作者数: 8",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "rag",
-          "weight": 2.2
-        },
-        {
-          "keyword": "multimodal",
-          "weight": 2.0
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 196.0,
-      "detail_path": "items/arxiv-hive-mem-interleaving-horizontal-memory-expansion-and-vertical-evidence-composition-for-mu.html",
-      "first_seen_at": "2026-11-10T07:09:08.260669+00:00",
-      "last_seen_at": "2026-11-10T07:09:08.260669+00:00",
-      "last_curated_at": "2026-11-10T07:09:08.260669+00:00",
       "last_notified_at": null
     },
     {
@@ -477,8 +311,8 @@
       "personalized_score": 184.0,
       "detail_path": "items/arxiv-gprm-global-perspective-process-reward-model.html",
       "first_seen_at": "2026-11-17T05:16:39.964123+00:00",
-      "last_seen_at": "2026-11-17T05:16:39.964123+00:00",
-      "last_curated_at": "2026-11-17T05:16:39.964123+00:00",
+      "last_seen_at": "2026-11-17T07:47:52.518992+00:00",
+      "last_curated_at": "2026-11-17T07:47:52.518992+00:00",
       "last_notified_at": null
     },
     {
@@ -639,6 +473,155 @@
       "last_seen_at": "2026-11-11T06:01:58.234237+00:00",
       "last_curated_at": "2026-11-11T06:01:58.234237+00:00",
       "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2611.20759v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Instant Weight-Space Consolidation for Long-Term Memory in LLMs",
+      "html_url": "http://arxiv.org/abs/2611.20759v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.20759v1",
+      "description": "Agentic memory systems give LLMs persistent memory by extracting experience into text and retrieving it at query time, but the model itself does not evolve: however many interactions it has had, it starts each query the same. Extraction errors compound, implicit cross-session patterns that no single fragment states cannot be surfaced, and the construction cost grows with every conversation. Fine-tuning on past interactions does change the weights, but requires backpropagation at serving time and degrades on long histories. We introduce CLAM (Carried Latent Adapter Memory), which combines the strengths of both: a recurrent hypernetwork performs parametric consolidation, compiling a stream of session activations into a low-rank adapter in a single forward pass with no gradient steps and no language-model generation calls, while a complementary episodic buffer supplies verbatim detail at inference. A gated latent state carries knowledge across sessions in fixed size, so the parametric memory accumulates without growing. On LoCoMo and LongMemEval-S across three open models (2-7B parameters), CLAM leads all agentic baselines by 1-45 points and all gradient-based parametric methods by 10-45 points, while requiring zero generative LLM calls, zero gradient steps, and 3-151x less wall-clock time than extraction systems to build its memory. The two channels are complementary: the consolidated adapter adds 12-15 accuracy points when the episodic buffer misses the gold evidence, and still adds 4-5 points even with an oracle buffer.",
+      "authors": [
+        "Manan Suri",
+        "Dinesh Manocha"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "published_at": "2026-11-16T09:09:55+00:00",
+      "updated_at": "2026-11-16T09:09:55+00:00",
+      "primary_category": "cs.CL",
+      "heuristic_score": 20.231,
+      "summary": "Instant Weight-Space Consolidation for Long-Term Memory in LLMs 是最近值得追踪的一篇 AI 论文。论文摘要显示：Agentic memory systems give LLMs persistent memory by extracting experience into text and retrieving it at query time, but the model itself does not evolve: however many interactions it has had, it starts each query the same. Extraction err...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CL",
+        "作者数: 2"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "llm",
+        "agent",
+        "agentic"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "agent"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：Instant Weight-Space Consolidation for Long-Term Memory in LLMs 是最近值得追踪的一篇 AI 论文。论文摘要显示：Agentic memory systems give LLMs persistent memory by extracting experience into text and retrieving it at query time, but the model itself does not evolve: however many interactions it has had, it starts each query the same. Extraction err...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CL\n- 作者数: 2",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        },
+        {
+          "keyword": "inference",
+          "weight": 1.8
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 178.0,
+      "detail_path": "items/arxiv-instant-weight-space-consolidation-for-long-term-memory-in-llms.html",
+      "first_seen_at": "2026-11-17T05:16:39.964123+00:00",
+      "last_seen_at": "2026-11-17T07:47:52.518992+00:00",
+      "last_curated_at": "2026-11-17T07:47:52.518992+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2611.21605v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "ViRA: Toward Ultra-High-Resolution Visual Agents via Cross-Input Relative Policy Optimization",
+      "html_url": "http://arxiv.org/abs/2611.21605v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.21605v1",
+      "description": "Visual agents answer questions about ultra-high-resolution photos by zooming into the relevant regions. However, existing agents often answer from common sense instead of reading the evidence. Reinforcement learning (RL) on the final answer cannot correct this, because a guess earns the same reward as reading. We propose Cross-Input Relative Policy Optimization (CrossRPO), which trains agents on contrast sets. A contrast set asks one question about several versions of an image that differ only in a small region with the evidence and have different answers, so only reading the evidence solves the whole set. CrossRPO rewards solving the whole set, and we prove that it does not reinforce a set answered from common sense. We build contrast sets for training (ViRA-Train) and evaluation (ViRA-Bench) by editing one small object in images of 21 to 120 megapixels, and we photograph further sets with real changes (ViRA-Bench-Real) to exclude editing traces. We train two Visual Reasoning Agents, ViRA-9B and ViRA-27B, with CrossRPO on only about 3,500 items of ViRA-Train each. CrossRPO achieves 63.3% set accuracy on ViRA-Bench at the maximum resolution, against 59.3% for GRPO. ViRA-9B is the most accurate open model of its size on all benchmarks, and ViRA-27B outperforms Claude Haiku 5.5 and GPT-6-Luna, both at their highest thinking level, on most benchmarks.",
+      "authors": [
+        "Huawei Lin",
+        "Jinting Liu",
+        "Tongyan Wang",
+        "Xuyang Chen",
+        "Ruihua Shi",
+        "Zhichao Xu",
+        "Jiaxin Qin",
+        "Guoshenghui Zhao",
+        "Baijian Yang",
+        "Yingjie Victor Chen",
+        "Tan Yu",
+        "Weijie Zhao"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "published_at": "2026-11-16T18:59:04+00:00",
+      "updated_at": "2026-11-16T18:59:04+00:00",
+      "primary_category": "cs.CV",
+      "heuristic_score": 20.012,
+      "summary": "ViRA: Toward Ultra-High-Resolution Visual Agents via Cross-Input Relative Policy Optimization 是最近值得追踪的一篇 AI 论文。论文摘要显示：Visual agents answer questions about ultra-high-resolution photos by zooming into the relevant regions. However, existing agents often answer from common sense instead of reading the evidence. Reinforcement learning (RL) on the final answer...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CV, cs.AI",
+        "作者数: 12"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "agent",
+        "gpt",
+        "model"
+      ],
+      "themes": [
+        "ai",
+        "agent",
+        "gpt"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：ViRA: Toward Ultra-High-Resolution Visual Agents via Cross-Input Relative Policy Optimization 是最近值得追踪的一篇 AI 论文。论文摘要显示：Visual agents answer questions about ultra-high-resolution photos by zooming into the relevant regions. However, existing agents often answer from common sense instead of reading the evidence. Reinforcement learning (RL) on the final answer...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV, cs.AI\n- 作者数: 12",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 178.0,
+      "detail_path": "items/arxiv-vira-toward-ultra-high-resolution-visual-agents-via-cross-input-relative-policy-optimizati.html",
+      "first_seen_at": "2026-11-17T07:47:52.518992+00:00",
+      "last_seen_at": "2026-11-17T07:47:52.518992+00:00",
+      "last_curated_at": "2026-11-17T07:47:52.518992+00:00",
+      "last_notified_at": null
     }
   ],
   "top_themes": [
@@ -651,31 +634,31 @@
       "count": 5
     },
     {
-      "theme": "llm",
-      "count": 1
-    },
-    {
       "theme": "rag",
       "count": 1
     },
     {
       "theme": "multimodal",
       "count": 1
+    },
+    {
+      "theme": "llm",
+      "count": 1
     }
   ],
   "highlights": [
     {
-      "title": "How to \"train\" a surgeon? Benchmarking generalist agents in surgical scene understanding",
-      "source": "arxiv",
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
-    },
-    {
-      "title": "Reframe: Observation-Aligned Multi-Teacher On-Policy Distillation for Agentic Visual Reasoning",
+      "title": "SciResearch-Eval: Evaluating Scientific Judgment in Autonomous Experimental Agents",
       "source": "arxiv",
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     },
     {
       "title": "Learning When Diffusion Language Models Should Regenerate",
+      "source": "arxiv",
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
+    },
+    {
+      "title": "TraceKV: Policy-Preserving Low-Rank KV Cache Compression for Reasoning Vision-Language Models",
       "source": "arxiv",
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     }
