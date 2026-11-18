@@ -1,10 +1,93 @@
 {
   "label": "月报",
   "window_days": 30,
-  "generated_at": "2026-11-17T15:47:43.511113+08:00",
+  "generated_at": "2026-11-18T12:44:49.396017+08:00",
   "count": 200,
-  "summary": "近 30 天里，最集中的主题是 ai、agent、llm。",
+  "summary": "近 30 天里，最集中的主题是 ai、llm、agent。",
   "top_items": [
+    {
+      "id": "arxiv::http://arxiv.org/abs/2611.23228v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Spool: Low-Latency Streaming Inference for Hybrid Vision-Language Models",
+      "html_url": "http://arxiv.org/abs/2611.23228v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.23228v1",
+      "description": "Applications such as visual accessibility agents and robotics require answering questions about recent video content promptly, over a bounded window of past frames (e.g., the last two minutes). Hybrid vision-language models (VLMs), which interleave attention with linear recurrent layers such as Gated DeltaNet (GDN), are attractive for this setting, but maintaining a sliding window is expensive. The reason is that recurrent layers combine all past frames into a shared state, so expiring old frames normally requires re-running the entire window through the model. We observe that the recurrent update is affine in the state with input-dependent coefficients, so the effect of each frame can be captured as a transformation that composes associatively. We present Spool, a training-free framework that caches per-frame state transformations and composes them efficiently as the window advances, removing expired frames from each recurrent layer's state without replaying frames through the backbone. Removal is exact within each layer; as with key-value eviction in attention, expired frames can retain residual influence through the cached inputs computed by earlier layers. We design a dedicated data structure and GPU kernels to achieve low caching and composition overhead. Across five open-source hybrid VLMs and four video reasoning benchmarks, Spool achieves the lowest p95 time-to-first-token in all 20 model-benchmark tests, reducing it by a geometric mean of $6.6\\times$ over the faster of two recent vLLM baselines, while improving accuracy by 2.3 percentage points on average.",
+      "authors": [
+        "Rui Ning",
+        "Om Chabra",
+        "Hari Balakrishnan"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "published_at": "2026-11-17T18:59:27+00:00",
+      "updated_at": "2026-11-17T18:59:27+00:00",
+      "primary_category": "cs.CV",
+      "heuristic_score": 27.489,
+      "summary": "Spool: Low-Latency Streaming Inference for Hybrid Vision-Language Models 是最近值得追踪的一篇 AI 论文。论文摘要显示：Applications such as visual accessibility agents and robotics require answering questions about recent video content promptly, over a bounded window of past frames (e.g., the last two minutes). Hybrid vision-language models (VLMs), which in...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CV, cs.LG",
+        "作者数: 3"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "llm",
+        "agent",
+        "rag"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "agent"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：Spool: Low-Latency Streaming Inference for Hybrid Vision-Language Models 是最近值得追踪的一篇 AI 论文。论文摘要显示：Applications such as visual accessibility agents and robotics require answering questions about recent video content promptly, over a bounded window of past frames (e.g., the last two minutes). Hybrid vision-language models (VLMs), which in...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV, cs.LG\n- 作者数: 3",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        },
+        {
+          "keyword": "inference",
+          "weight": 1.8
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        },
+        {
+          "keyword": "robotics",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 234.0,
+      "detail_path": "items/arxiv-spool-low-latency-streaming-inference-for-hybrid-vision-language-models.html",
+      "first_seen_at": "2026-11-18T04:44:56.748243+00:00",
+      "last_seen_at": "2026-11-18T04:44:56.748243+00:00",
+      "last_curated_at": "2026-11-18T04:44:56.748243+00:00",
+      "last_notified_at": null
+    },
     {
       "id": "arxiv::http://arxiv.org/abs/2611.05345v1",
       "kind": "paper",
@@ -564,85 +647,6 @@
       "last_seen_at": "2026-11-06T06:32:01.430203+00:00",
       "last_curated_at": "2026-11-06T06:32:01.430203+00:00",
       "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2611.03097v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "DR Pixel: Page-Native Deep Research with Vision-Language Models",
-      "html_url": "http://arxiv.org/abs/2611.03097v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.03097v1",
-      "description": "Complex documents such as scientific papers contain rich information in tables, figures, and equations; however, existing deep research (DR) agents typically reduce papers to OCR-extracted text. We instead ask whether vision-language models (VLMs) can enable page-native deep research: directly retrieving and reasoning over rendered document page images. We introduce DR Pixel, the first open-source end-to-end multimodal DR agent that uses rendered page images as its sole retrieval and reasoning unit, operating over a corpus of 1.06M pages. To evaluate this setting, we construct DRPixelBench, a benchmark on scientific papers requiring reasoning over text, figures, tables, and equations. Surprisingly, page-native DR already works well without training, outperforming OCR-based baselines across state-of-the-art models like GPT-5.4, Gemini-3.5-Flash, and Qwen3.6-27B, while requiring fewer tool calls. We next turn to DR training. A key challenge is that teacher trajectories for agentic supervised finetuning are noisy, mixing critical reasoning and action steps with redundant or failed attempts. To address this, we introduce counterfactual credit reweighting, a fine-grained credit assignment method that weights individual reasoning and action steps by their counterfactual contribution to the final answer. Our training improves retrieval recall by about 15 points and final accuracy by over 10 points on DRPixelBench, and likewise outperforms the untrained baseline on four existing benchmarks. On out-of-distribution ViDoRe-V3, DR Pixel comes within 1.8 points of an oracle that is given the gold pages directly. Our results suggest that the conventional OCR-then-retrieve pipeline is not only unnecessary but suboptimal: directly retrieving and reasoning over visual document pages makes complex DR both more effective and more efficient.",
-      "authors": [
-        "Tiansheng Hu",
-        "Yichuan Wang",
-        "James V. Talwar",
-        "Nicholas Tomlin",
-        "Chen Zhao",
-        "Sewon Min"
-      ],
-      "categories": [
-        "cs.CV",
-        "cs.CL",
-        "cs.IR"
-      ],
-      "published_at": "2026-11-02T13:13:42+00:00",
-      "updated_at": "2026-11-02T13:13:42+00:00",
-      "primary_category": "cs.CV",
-      "heuristic_score": 25.1,
-      "summary": "DR Pixel: Page-Native Deep Research with Vision-Language Models 是最近值得追踪的一篇 AI 论文。论文摘要显示：Complex documents such as scientific papers contain rich information in tables, figures, and equations; however, existing deep research (DR) agents typically reduce papers to OCR-extracted text. We instead ask whether vision-language models...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CV, cs.CL",
-        "作者数: 6"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "agent",
-        "agentic",
-        "gpt"
-      ],
-      "themes": [
-        "ai",
-        "agent",
-        "agentic"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：DR Pixel: Page-Native Deep Research with Vision-Language Models 是最近值得追踪的一篇 AI 论文。论文摘要显示：Complex documents such as scientific papers contain rich information in tables, figures, and equations; however, existing deep research (DR) agents typically reduce papers to OCR-extracted text. We instead ask whether vision-language models...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV, cs.CL\n- 作者数: 6",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "multimodal",
-          "weight": 2.0
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 198.0,
-      "detail_path": "items/arxiv-dr-pixel-page-native-deep-research-with-vision-language-models.html",
-      "first_seen_at": "2026-11-03T06:39:18.609256+00:00",
-      "last_seen_at": "2026-11-03T06:39:18.609256+00:00",
-      "last_curated_at": "2026-11-03T06:39:18.609256+00:00",
-      "last_notified_at": null
     }
   ],
   "top_themes": [
@@ -651,15 +655,20 @@
       "count": 8
     },
     {
-      "theme": "agent",
-      "count": 5
+      "theme": "llm",
+      "count": 4
     },
     {
-      "theme": "llm",
-      "count": 3
+      "theme": "agent",
+      "count": 4
     }
   ],
   "highlights": [
+    {
+      "title": "Spool: Low-Latency Streaming Inference for Hybrid Vision-Language Models",
+      "source": "arxiv",
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
+    },
     {
       "title": "Adversarial Speculative Reasoning Improves Long Horizon Agents",
       "source": "arxiv",
@@ -667,11 +676,6 @@
     },
     {
       "title": "Metacognitive Decoding: Efficient Inference for Diffusion Language Agents",
-      "source": "arxiv",
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
-    },
-    {
-      "title": "How to \"train\" a surgeon? Benchmarking generalist agents in surgical scene understanding",
       "source": "arxiv",
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     }

@@ -1,10 +1,93 @@
 {
   "label": "周报",
   "window_days": 7,
-  "generated_at": "2026-11-17T15:47:43.511113+08:00",
-  "count": 62,
-  "summary": "近 7 天里，最集中的主题是 ai、agent、rag。",
+  "generated_at": "2026-11-18T12:44:49.396017+08:00",
+  "count": 67,
+  "summary": "近 7 天里，最集中的主题是 ai、agent、llm。",
   "top_items": [
+    {
+      "id": "arxiv::http://arxiv.org/abs/2611.23228v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "Spool: Low-Latency Streaming Inference for Hybrid Vision-Language Models",
+      "html_url": "http://arxiv.org/abs/2611.23228v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.23228v1",
+      "description": "Applications such as visual accessibility agents and robotics require answering questions about recent video content promptly, over a bounded window of past frames (e.g., the last two minutes). Hybrid vision-language models (VLMs), which interleave attention with linear recurrent layers such as Gated DeltaNet (GDN), are attractive for this setting, but maintaining a sliding window is expensive. The reason is that recurrent layers combine all past frames into a shared state, so expiring old frames normally requires re-running the entire window through the model. We observe that the recurrent update is affine in the state with input-dependent coefficients, so the effect of each frame can be captured as a transformation that composes associatively. We present Spool, a training-free framework that caches per-frame state transformations and composes them efficiently as the window advances, removing expired frames from each recurrent layer's state without replaying frames through the backbone. Removal is exact within each layer; as with key-value eviction in attention, expired frames can retain residual influence through the cached inputs computed by earlier layers. We design a dedicated data structure and GPU kernels to achieve low caching and composition overhead. Across five open-source hybrid VLMs and four video reasoning benchmarks, Spool achieves the lowest p95 time-to-first-token in all 20 model-benchmark tests, reducing it by a geometric mean of $6.6\\times$ over the faster of two recent vLLM baselines, while improving accuracy by 2.3 percentage points on average.",
+      "authors": [
+        "Rui Ning",
+        "Om Chabra",
+        "Hari Balakrishnan"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "published_at": "2026-11-17T18:59:27+00:00",
+      "updated_at": "2026-11-17T18:59:27+00:00",
+      "primary_category": "cs.CV",
+      "heuristic_score": 27.489,
+      "summary": "Spool: Low-Latency Streaming Inference for Hybrid Vision-Language Models 是最近值得追踪的一篇 AI 论文。论文摘要显示：Applications such as visual accessibility agents and robotics require answering questions about recent video content promptly, over a bounded window of past frames (e.g., the last two minutes). Hybrid vision-language models (VLMs), which in...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CV, cs.LG",
+        "作者数: 3"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "llm",
+        "agent",
+        "rag"
+      ],
+      "themes": [
+        "ai",
+        "llm",
+        "agent"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：Spool: Low-Latency Streaming Inference for Hybrid Vision-Language Models 是最近值得追踪的一篇 AI 论文。论文摘要显示：Applications such as visual accessibility agents and robotics require answering questions about recent video content promptly, over a bounded window of past frames (e.g., the last two minutes). Hybrid vision-language models (VLMs), which in...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV, cs.LG\n- 作者数: 3",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "rag",
+          "weight": 2.2
+        },
+        {
+          "keyword": "inference",
+          "weight": 1.8
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        },
+        {
+          "keyword": "robotics",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 234.0,
+      "detail_path": "items/arxiv-spool-low-latency-streaming-inference-for-hybrid-vision-language-models.html",
+      "first_seen_at": "2026-11-18T04:44:56.748243+00:00",
+      "last_seen_at": "2026-11-18T04:44:56.748243+00:00",
+      "last_curated_at": "2026-11-18T04:44:56.748243+00:00",
+      "last_notified_at": null
+    },
     {
       "id": "arxiv::http://arxiv.org/abs/2611.21541v1",
       "kind": "paper",
@@ -542,86 +625,6 @@
       "last_seen_at": "2026-11-17T07:47:52.518992+00:00",
       "last_curated_at": "2026-11-17T07:47:52.518992+00:00",
       "last_notified_at": null
-    },
-    {
-      "id": "arxiv::http://arxiv.org/abs/2611.21605v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "ViRA: Toward Ultra-High-Resolution Visual Agents via Cross-Input Relative Policy Optimization",
-      "html_url": "http://arxiv.org/abs/2611.21605v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.21605v1",
-      "description": "Visual agents answer questions about ultra-high-resolution photos by zooming into the relevant regions. However, existing agents often answer from common sense instead of reading the evidence. Reinforcement learning (RL) on the final answer cannot correct this, because a guess earns the same reward as reading. We propose Cross-Input Relative Policy Optimization (CrossRPO), which trains agents on contrast sets. A contrast set asks one question about several versions of an image that differ only in a small region with the evidence and have different answers, so only reading the evidence solves the whole set. CrossRPO rewards solving the whole set, and we prove that it does not reinforce a set answered from common sense. We build contrast sets for training (ViRA-Train) and evaluation (ViRA-Bench) by editing one small object in images of 21 to 120 megapixels, and we photograph further sets with real changes (ViRA-Bench-Real) to exclude editing traces. We train two Visual Reasoning Agents, ViRA-9B and ViRA-27B, with CrossRPO on only about 3,500 items of ViRA-Train each. CrossRPO achieves 63.3% set accuracy on ViRA-Bench at the maximum resolution, against 59.3% for GRPO. ViRA-9B is the most accurate open model of its size on all benchmarks, and ViRA-27B outperforms Claude Haiku 5.5 and GPT-6-Luna, both at their highest thinking level, on most benchmarks.",
-      "authors": [
-        "Huawei Lin",
-        "Jinting Liu",
-        "Tongyan Wang",
-        "Xuyang Chen",
-        "Ruihua Shi",
-        "Zhichao Xu",
-        "Jiaxin Qin",
-        "Guoshenghui Zhao",
-        "Baijian Yang",
-        "Yingjie Victor Chen",
-        "Tan Yu",
-        "Weijie Zhao"
-      ],
-      "categories": [
-        "cs.CV",
-        "cs.AI"
-      ],
-      "published_at": "2026-11-16T18:59:04+00:00",
-      "updated_at": "2026-11-16T18:59:04+00:00",
-      "primary_category": "cs.CV",
-      "heuristic_score": 20.012,
-      "summary": "ViRA: Toward Ultra-High-Resolution Visual Agents via Cross-Input Relative Policy Optimization 是最近值得追踪的一篇 AI 论文。论文摘要显示：Visual agents answer questions about ultra-high-resolution photos by zooming into the relevant regions. However, existing agents often answer from common sense instead of reading the evidence. Reinforcement learning (RL) on the final answer...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.CV, cs.AI",
-        "作者数: 12"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "agent",
-        "gpt",
-        "model"
-      ],
-      "themes": [
-        "ai",
-        "agent",
-        "gpt"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：ViRA: Toward Ultra-High-Resolution Visual Agents via Cross-Input Relative Policy Optimization 是最近值得追踪的一篇 AI 论文。论文摘要显示：Visual agents answer questions about ultra-high-resolution photos by zooming into the relevant regions. However, existing agents often answer from common sense instead of reading the evidence. Reinforcement learning (RL) on the final answer...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV, cs.AI\n- 作者数: 12",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "reasoning",
-          "weight": 2.4
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 178.0,
-      "detail_path": "items/arxiv-vira-toward-ultra-high-resolution-visual-agents-via-cross-input-relative-policy-optimizati.html",
-      "first_seen_at": "2026-11-17T07:47:52.518992+00:00",
-      "last_seen_at": "2026-11-17T07:47:52.518992+00:00",
-      "last_curated_at": "2026-11-17T07:47:52.518992+00:00",
-      "last_notified_at": null
     }
   ],
   "top_themes": [
@@ -631,7 +634,11 @@
     },
     {
       "theme": "agent",
-      "count": 5
+      "count": 4
+    },
+    {
+      "theme": "llm",
+      "count": 2
     },
     {
       "theme": "rag",
@@ -640,13 +647,14 @@
     {
       "theme": "multimodal",
       "count": 1
-    },
-    {
-      "theme": "llm",
-      "count": 1
     }
   ],
   "highlights": [
+    {
+      "title": "Spool: Low-Latency Streaming Inference for Hybrid Vision-Language Models",
+      "source": "arxiv",
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
+    },
     {
       "title": "SciResearch-Eval: Evaluating Scientific Judgment in Autonomous Experimental Agents",
       "source": "arxiv",
@@ -654,11 +662,6 @@
     },
     {
       "title": "Learning When Diffusion Language Models Should Regenerate",
-      "source": "arxiv",
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
-    },
-    {
-      "title": "TraceKV: Policy-Preserving Low-Rank KV Cache Compression for Reasoning Vision-Language Models",
       "source": "arxiv",
       "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。"
     }
