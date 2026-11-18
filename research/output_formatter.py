@@ -17,20 +17,29 @@ DISCOVERED_DATA_JS = os.path.join(PROJECT_ROOT, "discovered-data.js")
 
 
 def _decision_report_font_path() -> str:
+    windir = os.environ.get("WINDIR") or "C:\\Windows"
     candidates = [
         os.environ.get("CLP_PDF_FONT_PATH", "").strip(),
+        # macOS
         "/System/Library/Fonts/STHeiti Medium.ttc",
         "/System/Library/Fonts/PingFang.ttc",
         "/Library/Fonts/Arial Unicode.ttf",
+        # Linux (Noto CJK / WenQuanYi)
         "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
         "/usr/share/fonts/opentype/noto/NotoSerifCJK-Regular.ttc",
         "/usr/share/fonts/truetype/noto/NotoSansCJK-Regular.ttc",
+        "/usr/share/fonts/truetype/wqy/wqy-zenhei.ttc",
+        # Windows (DengXian, SimHei, Microsoft YaHei, SimSun)
+        os.path.join(windir, "Fonts", "Deng.ttf"),
+        os.path.join(windir, "Fonts", "simhei.ttf"),
+        os.path.join(windir, "Fonts", "msyh.ttc"),
+        os.path.join(windir, "Fonts", "simsun.ttc"),
     ]
     for path in candidates:
         if path and os.path.exists(path):
             return path
     raise FileNotFoundError(
-        "未找到可用于中文 PDF 的字体。请安装 Noto CJK 字体，或设置 CLP_PDF_FONT_PATH。"
+        "未找到可用于中文 PDF 的字体。请安装 Noto CJK / 中文字体，或设置 CLP_PDF_FONT_PATH。"
     )
 
 
@@ -98,8 +107,6 @@ def generate_pdf(
     tunnel_effects = tunnel_effects or []
     social_conflict_predictions = social_conflict_predictions or []
     metadata = metadata or {}
-
-    CN_FONT = _decision_report_font_path()
 
     class PDF(FPDF):
         def header(self):
@@ -1390,7 +1397,6 @@ def generate_decision_pdf_report(
     font_path = _decision_report_font_path()
     safe_question = _decision_report_pdf_text(question, default="未提供问题")
     generated_at = metadata.get("generated_at") or datetime.now().strftime("%Y-%m-%d %H:%M")
-    decision_logs = _decision_report_lines(decision_data.get("logs") or [])
     compact_decision_logs = _decision_report_compact_lines(decision_data.get("logs") or [])
     decision_result = decision_data.get("result") if isinstance(decision_data.get("result"), dict) else {}
     decision_created_at = _decision_report_text(decision_data.get("created_at"), default="")
@@ -3111,7 +3117,18 @@ def generate_decision_summary_pdf_report(
         "client_memo": client_memo,
     }
 
-    if use_ai and os.environ.get("CLP_SUMMARY_REPORT_DISABLE_AI", "").strip() not in {"1", "true", "yes"}:
+    api_key = os.environ.get("CLP_API_KEY", "").strip()
+    has_real_key = bool(api_key) and not api_key.lower().startswith("sk-xxxx")
+    is_demo = (
+        os.environ.get("CLP_DEMO_MODE", "").strip().lower() in {"1", "true", "yes", "on"}
+        or bool((decision_data.get("meta") or {}).get("demo_mode"))
+        or not has_real_key
+    )
+    if (
+        use_ai
+        and not is_demo
+        and os.environ.get("CLP_SUMMARY_REPORT_DISABLE_AI", "").strip() not in {"1", "true", "yes"}
+    ):
         try:
             try:
                 from research.api import call_agent_json

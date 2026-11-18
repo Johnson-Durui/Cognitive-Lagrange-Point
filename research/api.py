@@ -65,7 +65,7 @@ def print_token_summary() -> None:
     """打印 token 消耗摘要。"""
     s = get_token_summary()
     print(
-        f"\n  📊 Token 消耗摘要",
+        "\n  📊 Token 消耗摘要",
         f"  API 调用次数：{s['api_calls']}",
         f"  Prompt Tokens：{s['prompt_tokens']:,}",
         f"  Completion Tokens：{s['completion_tokens']:,}",
@@ -742,6 +742,9 @@ def _build_json_tiers(
     return tiers or [tiers_by_name["low"], tiers_by_name["medium"], tiers_by_name["high"]]
 
 
+_DEFAULT_JSON_RESPONSE_FORMAT = object()
+
+
 def call_agent_json(
     system_prompt: str,
     user_message: str,
@@ -751,10 +754,12 @@ def call_agent_json(
     temperature: float = 0.5,
     retries: int = 2,
     allow_downgrade: bool = True,
-    response_format: dict | None = {"type": "json_object"},
+    response_format: dict | object | None = _DEFAULT_JSON_RESPONSE_FORMAT,
     timeout_seconds: float | None = None,
 ) -> dict | list:
     """调用期望 JSON 的 Agent。使用 Pydantic schemas 返回更稳定的结果。"""
+    if response_format is _DEFAULT_JSON_RESPONSE_FORMAT:
+        response_format = {"type": "json_object"}
 
     # Fast path for chat-completions style JSON output.
     # GPT-5.* currently走 responses API 兼容路径，很多中转站不会真正执行 response_format；

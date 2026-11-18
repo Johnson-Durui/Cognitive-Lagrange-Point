@@ -1,27 +1,36 @@
+# Python bytecode & caches
 __pycache__/
-*.pyc
-.DS_Store
-.vscode/
-.idea/
-
-# Local env files. Keep examples only.
-.env
-.env.*
-!.env.example
-!.env.*.example
-!.env.clp.example
-
-# Python / test caches
+*.py[cod]
+*$py.class
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
 
-# Node / build outputs
+# OS & editor metadata
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local environment files (keep example templates only)
+.env
+.env.*
+.env.clp
+!.env.example
+!.env.*.example
+!.env.clp.example
+
+# Node / frontend build artifacts
 node_modules/
 dist/
 
-# Runtime outputs and generated reports
+# Runtime outputs, generated PDFs, logs, and local SQLite databases
 research/output/
+*.db
+*.db-journal
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
 *.log
 .omx/
-AI-Daily-Digest/site/

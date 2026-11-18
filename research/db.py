@@ -4,8 +4,8 @@ import json
 from pathlib import Path
 from typing import Optional, List
 
-from sqlalchemy import create_engine, String, Text, select
-from sqlalchemy.orm import declarative_base, Mapped, mapped_column, Session, sessionmaker
+from sqlalchemy import String, Text, create_engine, select
+from sqlalchemy.orm import Mapped, declarative_base, mapped_column, sessionmaker
 
 Base = declarative_base()
 

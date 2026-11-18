@@ -16,7 +16,7 @@ try:
         evaluate_candidate as evaluate_filter2_candidate,
     )
     from .phase2_filter1 import FILTER1_DIFF_THRESHOLD, evaluate_candidate as evaluate_filter1_candidate
-    from .phase2_filter3 import FILTER3_REQUIRED_STABLE, evaluate_candidate as evaluate_filter3_candidate
+    from .phase2_filter3 import evaluate_candidate as evaluate_filter3_candidate
     from .phase3_analysis import analyze_forces
 except ImportError:  # pragma: no cover - allow top-level import from server.py
     from api import call_agent_json
@@ -28,7 +28,7 @@ except ImportError:  # pragma: no cover - allow top-level import from server.py
         evaluate_candidate as evaluate_filter2_candidate,
     )
     from phase2_filter1 import FILTER1_DIFF_THRESHOLD, evaluate_candidate as evaluate_filter1_candidate
-    from phase2_filter3 import FILTER3_REQUIRED_STABLE, evaluate_candidate as evaluate_filter3_candidate
+    from phase2_filter3 import evaluate_candidate as evaluate_filter3_candidate
     from phase3_analysis import analyze_forces
 
 ProgressCallback = Callable[[str, dict], None]

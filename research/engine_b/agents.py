@@ -1373,7 +1373,11 @@ def _fallback_choice_options(original_question: str, recommendation: str, action
     question = str(original_question or "").strip()
     if "还是" in question:
         left, right = question.split("还是", 1)
-        left = left.strip(" ，。？?要不要该是否选择去留")
+        left = re.sub(
+            r"^(请问|我|我们)?(到底|现在|接下来)?(要不要|该不该|是否应该|是否|应该|该|选择)\s*",
+            "",
+            left.strip(" ，。？?"),
+        ).strip(" ，。？?")
         right = right.strip(" ，。？?")
         if left and right:
             return [
@@ -1898,7 +1902,7 @@ def _build_b9_fallback(
         "action_map_a": _build_action_map(choice_a_sim),
         "action_map_b": _build_action_map(choice_b_sim),
         "final_insight": (
-            f"你真正怕的往往不是吃苦，而是吃了苦之后还回不了头，所以先选可承受的那条。"
+            "你真正怕的往往不是吃苦，而是吃了苦之后还回不了头，所以先选可承受的那条。"
         ),
         "regret_score_a": regret_a,
         "regret_score_b": regret_b,

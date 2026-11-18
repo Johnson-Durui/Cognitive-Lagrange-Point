@@ -1,5 +1,6 @@
 """认知拉格朗日点 · 阶段三：力量解剖"""
 
+import os
 import statistics
 
 from .api import call_agent_json

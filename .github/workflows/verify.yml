@@ -37,7 +37,7 @@ jobs:
         run: npm run build
 
       - name: Compile Python
-        run: python -m py_compile server.py server_core.py server_shared.py server_runtime.py server_detection.py decision/pipeline.py research/api.py
+        run: python -m py_compile server.py start.py backend/*.py decision/*.py research/api.py
 
       - name: Run core tests
-        run: python -m unittest tests.test_decision_api_smoke tests.test_decision_tier_regression tests.test_engine_b_runtime tests.test_decision_summary_report
+        run: python -m unittest tests.test_decision_api_smoke tests.test_decision_tier_regression tests.test_engine_b_runtime tests.test_decision_summary_report tests.test_health_and_demo

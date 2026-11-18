@@ -19,7 +19,6 @@ from research.engine_b.agents import normalize_simulator_output
 from .classifier import run_quick_classifier
 from .tiers import get_tier_config, normalize_tier
 
-
 ENGINEB_ACT2_PHASES = {
     "b1_diagnosis",
     "b2_info_fill",
@@ -103,7 +102,13 @@ def _normalize_decision_payload(decision: dict | None) -> dict | None:
     return normalized
 
 
-def _append_decision_log_line(decision: dict, line: str, *, recent_window: int = 1, max_entries: int = 160) -> bool:
+def _append_decision_log_line(
+    decision: dict,
+    line: str,
+    *,
+    recent_window: int = 1,
+    max_entries: int = 160,
+) -> bool:
     text = str(line or "").strip()
     if not text:
         return False
@@ -176,9 +181,27 @@ class DecisionManager:
             },
         }
 
-    def start(self, question: str, tier: str | None = None) -> dict:
+    def start(
+        self,
+        question: str,
+        tier: str | None = None,
+        *,
+        demo: bool | None = None,
+    ) -> dict:
+        from backend.demo import run_demo_decision_into
+        from backend.shared import should_use_demo_mode
+
         normalized_tier = normalize_tier(tier)
         decision = self._base_job(question.strip(), normalized_tier)
+
+        if should_use_demo_mode(demo):
+            run_demo_decision_into(decision, detection_manager=self.detection_manager)
+            with self.lock:
+                self.jobs[decision["decision_id"]] = decision
+                self.latest_job_id = decision["decision_id"]
+                self._persist(decision)
+            return self.get_status(decision["decision_id"])
+
         with self.lock:
             self.jobs[decision["decision_id"]] = decision
             self.latest_job_id = decision["decision_id"]
@@ -280,7 +303,9 @@ class DecisionManager:
                 decision["logs"].append(line)
 
         phase = str(normalized_session.get("phase", "") or "")
-        decision["status_text"] = str(normalized_session.get("last_error", "") or "").strip() or phase or "Engine B 处理中"
+        decision["status_text"] = (
+            str(normalized_session.get("last_error", "") or "").strip() or phase or "Engine B 处理中"
+        )
         decision["step"] = phase or "engineb"
         if phase in ENGINEB_ACT2_PHASES:
             decision["phase"] = "act2"
@@ -304,7 +329,7 @@ class DecisionManager:
         ).start()
 
     def _start_engineb_for_decision(self, decision_id: str, question: str, source_detection: dict) -> None:
-        from server_core import start_engine_b_session
+        from backend.core import start_engine_b_session
 
         tier = str((self.get_status(decision_id).get("decision") or {}).get("tier", "") or "deep")
         session = start_engine_b_session(question, source_detection=source_detection, tier=tier)
@@ -326,7 +351,7 @@ class DecisionManager:
                 decision,
                 "🚀 第一幕已完成，进入第二幕信息抹平"
                 if session_phase == "b1_diagnosis"
-                else "🚀 第一幕已完成，本轮无需追问，直接进入补信息与重评"
+                else "🚀 第一幕已完成，本轮无需追问，直接进入补信息与重评",
             )
 
         self._update_job(decision_id, updater)
@@ -336,7 +361,7 @@ class DecisionManager:
         config = get_tier_config(tier)
         self._append_log(
             decision_id,
-            f"🛰️ {config['label']} 正在进行第一幕分类，复用现有检测链路。"
+            f"🛰️ {config['label']} 正在进行第一幕分类，复用现有检测链路。",
         )
         detect_mode = config.get("detection_mode") or f"decision_{tier}"
         detect_status = self.detection_manager.start(question, mode=detect_mode)
@@ -372,8 +397,8 @@ class DecisionManager:
                         "detection_result": result,
                     }
 
-                    def final_updater(decision: dict) -> None:
-                        decision["result"] = final_result
+                    def final_updater(decision: dict, resolved_result: dict = final_result) -> None:
+                        decision["result"] = resolved_result
                         decision["status_text"] = "第一幕确认：结构性平衡"
                         _append_decision_log_line(decision, "🔴 第一幕确认这是认知拉格朗日点")
 
@@ -416,7 +441,7 @@ class DecisionManager:
                         }
                         self._update_job(
                             decision_id,
-                            lambda decision: _append_decision_log_line(decision, "🔴 第一幕确认这是认知拉格朗日点"),
+                            lambda dec: _append_decision_log_line(dec, "🔴 第一幕确认这是认知拉格朗日点"),
                         )
                         self._complete(decision_id, result=final_result)
                         return
@@ -453,7 +478,7 @@ class DecisionManager:
             if meta.get("simulator_waiting_recheck"):
                 return
 
-            def updater(decision: dict, snapshot=session_data) -> None:
+            def waiting_updater(decision: dict, snapshot: dict = session_data) -> None:
                 decision["engineb_session"] = _normalize_engineb_session_snapshot(snapshot)
                 decision["status_text"] = "第二幕建议已形成，等待二次检测完成"
                 decision.setdefault("meta", {})["simulator_waiting_recheck"] = True
@@ -463,7 +488,7 @@ class DecisionManager:
                     "⏳ 第二幕建议已形成，Engine A 正在二次检测。检测完成后，你可以手动决定是否进入未来模拟。",
                 )
 
-            self._update_job(decision_id, updater)
+            self._update_job(decision_id, waiting_updater)
             return
         if recheck.get("status") == "completed" and recheck_result.get("is_lagrange_point") is True:
             return
@@ -471,7 +496,7 @@ class DecisionManager:
         if meta.get("simulator_ready"):
             return
 
-        def updater(decision: dict, snapshot=session_data) -> None:
+        def ready_updater(decision: dict, snapshot: dict = session_data) -> None:
             decision["engineb_session"] = _normalize_engineb_session_snapshot(snapshot)
             decision["status_text"] = "第二幕建议已形成，可手动启动第三幕未来模拟"
             decision.setdefault("meta", {})["simulator_ready"] = True
@@ -479,7 +504,7 @@ class DecisionManager:
             decision["meta"].pop("simulator_waiting_recheck", None)
             _append_decision_log_line(decision, "🧭 第二幕建议已形成。准备好后，可手动启动第三幕未来模拟。")
 
-        self._update_job(decision_id, updater)
+        self._update_job(decision_id, ready_updater)
 
     def _monitor_engineb_flow(self, decision_id: str) -> None:
         try:
@@ -489,7 +514,7 @@ class DecisionManager:
                 if not session_id:
                     return
 
-                from server_core import get_engine_b_status_for_session
+                from backend.core import get_engine_b_status_for_session
 
                 status = get_engine_b_status_for_session(session_id)
                 session_data = status.get("session")
@@ -497,7 +522,10 @@ class DecisionManager:
                     self._fail(decision_id, "Engine B 会话状态丢失")
                     return
 
-                self._update_job(decision_id, lambda job, snapshot=session_data: self._apply_engineb_snapshot(job, snapshot))
+                self._update_job(
+                    decision_id,
+                    lambda job, snapshot=session_data: self._apply_engineb_snapshot(job, snapshot),
+                )
 
                 phase = str(session_data.get("phase", "") or "")
                 recheck = session_data.get("recheck") if isinstance(session_data.get("recheck"), dict) else {}
@@ -511,12 +539,12 @@ class DecisionManager:
                         "detection_result": recheck_result,
                     }
 
-                    def updater(decision: dict) -> None:
-                        decision["result"] = final_result
+                    def recheck_updater(decision: dict, resolved_result: dict = final_result) -> None:
+                        decision["result"] = resolved_result
                         decision["status_text"] = "补全后再次确认为认知拉格朗日点"
                         _append_decision_log_line(decision, "🔴 第二幕补全后，问题被重新确认为认知拉格朗日点")
 
-                    self._update_job(decision_id, updater)
+                    self._update_job(decision_id, recheck_updater)
                     self._complete(decision_id, result=final_result)
                     return
 
@@ -561,7 +589,11 @@ class DecisionManager:
                 if phase == "b6_sim_params" and _has_pending_questions(session_data, "sim_questions", "sim_answers"):
                     time.sleep(0.5)
                     continue
-                if phase == "b1_diagnosis" and _has_pending_questions(session_data, "diagnosis_questions", "diagnosis_answers"):
+                if phase == "b1_diagnosis" and _has_pending_questions(
+                    session_data,
+                    "diagnosis_questions",
+                    "diagnosis_answers",
+                ):
                     time.sleep(0.5)
                     continue
 
@@ -642,15 +674,39 @@ class DecisionManager:
         current_label = get_tier_config(current_tier)["label"]
         target_config = get_tier_config(target_tier)
         target_label = target_config["label"]
-        should_restart_from_flash = current_tier == "quick"
-        can_continue_detect = bool(linked_detection_job_id) and not decision.get("linked_engineb_session_id")
-        can_restart_from_detect = isinstance(detect_snapshot, dict) and bool(detect_snapshot)
         upgrade_entry = {
             "from_tier": current_tier,
             "to_tier": target_tier,
             "at": now_iso(),
             "from_phase": str(decision.get("phase", "") or ""),
         }
+
+        if bool((decision.get("meta") or {}).get("demo_mode")):
+            from backend.demo import run_demo_decision_into
+
+            def demo_upgrade_updater(job: dict) -> None:
+                meta = job.setdefault("meta", {})
+                history = meta.get("upgrade_history")
+                if not isinstance(history, list):
+                    history = []
+                history.append(upgrade_entry)
+                meta["upgrade_history"] = history[-10:]
+                meta["upgraded_from"] = decision_id
+                meta["upgraded_from_tier"] = current_tier
+                meta["star_visual"] = target_config.get("star_visual", meta.get("star_visual", "standard"))
+                job["tier"] = target_tier
+                job["tier_config"] = target_config
+                _append_decision_log_line(job, f"⬆️ 离线演示模式：从 {current_label} 升级至 {target_label}")
+                run_demo_decision_into(job, detection_manager=self.detection_manager)
+
+            self._update_job(decision_id, demo_upgrade_updater)
+            with self.lock:
+                self.latest_job_id = decision_id
+            return self.get_status(decision_id)
+
+        should_restart_from_flash = current_tier == "quick"
+        can_continue_detect = bool(linked_detection_job_id) and not decision.get("linked_engineb_session_id")
+        can_restart_from_detect = isinstance(detect_snapshot, dict) and bool(detect_snapshot)
 
         def updater(job: dict) -> None:
             meta = job.setdefault("meta", {})
@@ -742,7 +798,7 @@ class DecisionManager:
         return self.get_status(decision_id)
 
     def submit_answer(self, decision_id: str, question_id: str, answer: str) -> dict:
-        from server_core import submit_engine_b_answer, submit_sim_answer
+        from backend.core import submit_engine_b_answer, submit_sim_answer
 
         decision = self.get_status(decision_id).get("decision") or {}
         session_id = str(decision.get("linked_engineb_session_id", "") or "")
@@ -755,13 +811,15 @@ class DecisionManager:
 
         if _has_pending_questions(session_data, "diagnosis_questions", "diagnosis_answers"):
             session = submit_engine_b_answer(session_id, question_id, answer)
-            self._update_job(decision_id, lambda job, snapshot=session.to_dict(): self._apply_engineb_snapshot(job, snapshot))
+            snapshot = session.to_dict()
+            self._update_job(decision_id, lambda job, snap=snapshot: self._apply_engineb_snapshot(job, snap))
             self._ensure_engineb_monitoring(decision_id)
             return self.get_status(decision_id)
 
         if _has_pending_questions(session_data, "sim_questions", "sim_answers"):
             session = submit_sim_answer(session_id, question_id, answer)
-            self._update_job(decision_id, lambda job, snapshot=session.to_dict(): self._apply_engineb_snapshot(job, snapshot))
+            snapshot = session.to_dict()
+            self._update_job(decision_id, lambda job, snap=snapshot: self._apply_engineb_snapshot(job, snap))
             self._ensure_engineb_monitoring(decision_id)
             return self.get_status(decision_id)
 
@@ -773,21 +831,61 @@ class DecisionManager:
         if not session_id:
             raise ValueError("当前决策还没有进入可模拟阶段。")
 
-        from server_core import start_simulator
+        if bool((decision.get("meta") or {}).get("demo_mode")):
+            from backend.demo import build_demo_simulator_for_session
+            from research.engine_b import state as engine_b_state
+            from research.engine_b.models import EngineBPhase, EngineBSession
+
+            session = engine_b_state.load_session(session_id)
+            if session is None and isinstance(decision.get("engineb_session"), dict):
+                session = EngineBSession.from_dict(decision["engineb_session"])
+            if session is None:
+                raise ValueError("找不到对应的 Engine B 会话。")
+
+            session.simulator_output = build_demo_simulator_for_session(session, tier=decision.get("tier"))
+            session.phase = EngineBPhase.SIMULATOR_COMPLETE
+            session.updated_at = now_iso()
+            engine_b_state.save_session(session)
+            demo_snapshot = session.to_dict()
+
+            def demo_sim_updater(job: dict, snap: dict = demo_snapshot) -> None:
+                job["engineb_session"] = snap
+                job["status"] = "completed"
+                job["phase"] = "completed"
+                job["step"] = "done"
+                job["error"] = ""
+                job["completed_at"] = now_iso()
+                job["status_text"] = "离线演示 · 第三幕未来模拟已完成"
+                job["result"] = {
+                    "mode": "decision_complete",
+                    "summary": "离线演示三幕决策流程已完成。",
+                    "engineb_session_id": session_id,
+                    "can_export_report": True,
+                    "demo_mode": True,
+                }
+                job.setdefault("meta", {})["simulator_started"] = True
+                job["meta"]["simulator_ready"] = False
+                _append_decision_log_line(job, "🔮 离线演示：已生成第三幕未来模拟时间线与行动地图。")
+
+            self._update_job(decision_id, demo_sim_updater)
+            return self.get_status(decision_id)
+
+        from backend.core import start_simulator
 
         session = start_simulator(session_id)
+        snapshot = session.to_dict()
 
-        def updater(job: dict, snapshot=session.to_dict()) -> None:
-            job["engineb_session"] = snapshot
+        def updater(job: dict, snap: dict = snapshot) -> None:
+            job["engineb_session"] = snap
             job["status"] = "running"
             job["phase"] = "act3"
-            job["step"] = str(snapshot.get("phase", "") or "b6_sim_params")
+            job["step"] = str(snap.get("phase", "") or "b6_sim_params")
             job["error"] = ""
             job["result"] = None
             job["completed_at"] = None
             job["status_text"] = (
                 "开始第三幕：未来模拟"
-                if snapshot.get("phase") == "b6_sim_params"
+                if snap.get("phase") == "b6_sim_params"
                 else "第三幕已进入未来推演"
             )
             job["meta"]["simulator_started"] = True
@@ -818,8 +916,8 @@ class DecisionManager:
         if satisfaction is not None:
             try:
                 normalized_satisfaction = max(1, min(5, int(satisfaction)))
-            except (TypeError, ValueError):
-                raise ValueError("满意度必须是 1 到 5 之间的整数。")
+            except (TypeError, ValueError) as exc:
+                raise ValueError("满意度必须是 1 到 5 之间的整数。") from exc
 
         def updater(job: dict) -> None:
             feedback = {

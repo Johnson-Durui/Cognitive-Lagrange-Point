@@ -1,7 +1,6 @@
 """Engine B - Session State Persistence (文件方式，支持中断恢复)"""
 
 import json
-import os
 import sys
 from pathlib import Path
 from typing import Optional

@@ -1,0 +1,23 @@
+[project]
+name = "cognitive-lagrange-point"
+version = "2.0.0"
+description = "Dual-engine AI decision breakthrough & Cognitive Lagrange Point simulator"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 120
+exclude = ["dist", "node_modules", "research/output"]
+
+[tool.ruff.lint]
+select = ["E", "F", "B", "ISC"]
+ignore = ["E501"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/pipeline_recheck_guard.py" = ["E402"]
