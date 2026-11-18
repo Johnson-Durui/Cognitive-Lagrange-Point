@@ -1,8 +1,8 @@
 {
   "label": "周报",
   "window_days": 7,
-  "generated_at": "2026-11-18T12:44:49.396017+08:00",
-  "count": 67,
+  "generated_at": "2026-11-18T15:15:51.663490+08:00",
+  "count": 60,
   "summary": "近 7 天里，最集中的主题是 ai、agent、llm。",
   "top_items": [
     {
@@ -84,8 +84,8 @@
       "personalized_score": 234.0,
       "detail_path": "items/arxiv-spool-low-latency-streaming-inference-for-hybrid-vision-language-models.html",
       "first_seen_at": "2026-11-18T04:44:56.748243+00:00",
-      "last_seen_at": "2026-11-18T04:44:56.748243+00:00",
-      "last_curated_at": "2026-11-18T04:44:56.748243+00:00",
+      "last_seen_at": "2026-11-18T07:15:59.360042+00:00",
+      "last_curated_at": "2026-11-18T07:15:59.360042+00:00",
       "last_notified_at": null
     },
     {
@@ -477,87 +477,6 @@
       "last_notified_at": null
     },
     {
-      "id": "arxiv::http://arxiv.org/abs/2611.14009v1",
-      "kind": "paper",
-      "source": "arxiv",
-      "source_tags": [
-        "latest"
-      ],
-      "title": "Coding Agent Memory Post-Training II: Unlocking the Memory Potential of Pre-trained File Operations for Long-Horizon Tasks via On-Policy Distillation",
-      "html_url": "http://arxiv.org/abs/2611.14009v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.14009v1",
-      "description": "Language-model agents increasingly tackle long-horizon tasks whose interaction histories exceed the model's active context. They must therefore decide what to write down and what to read back, and when to do either. Recent work has begun to use on-policy distillation (OPD) to make memory control part of the policy, relying on memory tools and compaction protocols that lie outside either model's pre-training. However, this weakens the distillation on both sides: the teacher cannot give useful guidance on an interface it has never used, and the student samples too few meaningful memory actions for that guidance to take effect. To study this problem, we introduce Coding Agent Memory Gym II (CAMG-II), a suite of long-horizon agentic-RL environments spanning Shop, Coding, AutoResearch, General, and Visual. Alongside each environment's native task interface, CAMG-II provides ordinary Bash access and an episode-persistent workspace, enabling the policy to create, revise, search, and reuse files as memory across context replacements. We also introduce Coding Agent Memory Post-Training II (CAMP-II), which trains a single policy jointly across all five environments with fully asynchronous OPD to learn this file-based memory behavior directly from a frozen teacher with a prior for file operations. On CAMG-II, CAMP-II obtains 2.97 times the gain of the strongest OPD baseline. The memory behavior CAMP-II learns generalizes to two external benchmarks, Terminal-Bench 2.1 and SWE-Bench Pro V2, with improved success rates.",
-      "authors": [
-        "Lirui Luo",
-        "Kelong Mao",
-        "Xinwei Yang",
-        "Rongqing Li",
-        "Luyu Chen",
-        "Kieran Wong",
-        "Yudong Guo",
-        "Xinrui Wang",
-        "Jiayin Zhu",
-        "Gu Simiu",
-        "Sulong Xu",
-        "Cong Fang"
-      ],
-      "categories": [
-        "cs.LG",
-        "cs.AI",
-        "cs.CL"
-      ],
-      "published_at": "2026-11-10T12:49:24+00:00",
-      "updated_at": "2026-11-10T12:49:24+00:00",
-      "primary_category": "cs.LG",
-      "heuristic_score": 20.214,
-      "summary": "Coding Agent Memory Post-Training II: Unlocking the Memory Potential of Pre-trained File Operations for Long-Horizon Tasks via On-Policy Distillation 是最近值得追踪的一篇 AI 论文。论文摘要显示：Language-model agents increasingly tackle long-horizon tasks whose interaction histories exceed the model's active context. They must therefore decide what to write down and what to read back, and when to do either. Recent work has begun to...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
-      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
-      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
-      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
-      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
-      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
-      "highlights": [
-        "分类: cs.LG, cs.AI",
-        "作者数: 12"
-      ],
-      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
-      "relevance_score": 10,
-      "tags": [
-        "ai",
-        "agent",
-        "agentic",
-        "model"
-      ],
-      "themes": [
-        "ai",
-        "agent",
-        "agentic"
-      ],
-      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
-      "summary_markdown": "**摘要**：Coding Agent Memory Post-Training II: Unlocking the Memory Potential of Pre-trained File Operations for Long-Horizon Tasks via On-Policy Distillation 是最近值得追踪的一篇 AI 论文。论文摘要显示：Language-model agents increasingly tackle long-horizon tasks whose interaction histories exceed the model's active context. They must therefore decide what to write down and what to read back, and when to do either. Recent work has begun to...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.LG, cs.AI\n- 作者数: 12",
-      "focus_hits": [
-        {
-          "keyword": "agent",
-          "weight": 3.0
-        },
-        {
-          "keyword": "coding",
-          "weight": 2.6
-        },
-        {
-          "keyword": "benchmark",
-          "weight": 1.6
-        }
-      ],
-      "primary_match": "agent",
-      "personalized_score": 180.0,
-      "detail_path": "items/arxiv-coding-agent-memory-post-training-ii-unlocking-the-memory-potential-of-pre-trained-file-op.html",
-      "first_seen_at": "2026-11-11T03:11:13.179427+00:00",
-      "last_seen_at": "2026-11-11T06:01:58.234237+00:00",
-      "last_curated_at": "2026-11-11T06:01:58.234237+00:00",
-      "last_notified_at": null
-    },
-    {
       "id": "arxiv::http://arxiv.org/abs/2611.20759v1",
       "kind": "paper",
       "source": "arxiv",
@@ -622,6 +541,86 @@
       "personalized_score": 178.0,
       "detail_path": "items/arxiv-instant-weight-space-consolidation-for-long-term-memory-in-llms.html",
       "first_seen_at": "2026-11-17T05:16:39.964123+00:00",
+      "last_seen_at": "2026-11-17T07:47:52.518992+00:00",
+      "last_curated_at": "2026-11-17T07:47:52.518992+00:00",
+      "last_notified_at": null
+    },
+    {
+      "id": "arxiv::http://arxiv.org/abs/2611.21605v1",
+      "kind": "paper",
+      "source": "arxiv",
+      "source_tags": [
+        "latest"
+      ],
+      "title": "ViRA: Toward Ultra-High-Resolution Visual Agents via Cross-Input Relative Policy Optimization",
+      "html_url": "http://arxiv.org/abs/2611.21605v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.21605v1",
+      "description": "Visual agents answer questions about ultra-high-resolution photos by zooming into the relevant regions. However, existing agents often answer from common sense instead of reading the evidence. Reinforcement learning (RL) on the final answer cannot correct this, because a guess earns the same reward as reading. We propose Cross-Input Relative Policy Optimization (CrossRPO), which trains agents on contrast sets. A contrast set asks one question about several versions of an image that differ only in a small region with the evidence and have different answers, so only reading the evidence solves the whole set. CrossRPO rewards solving the whole set, and we prove that it does not reinforce a set answered from common sense. We build contrast sets for training (ViRA-Train) and evaluation (ViRA-Bench) by editing one small object in images of 21 to 120 megapixels, and we photograph further sets with real changes (ViRA-Bench-Real) to exclude editing traces. We train two Visual Reasoning Agents, ViRA-9B and ViRA-27B, with CrossRPO on only about 3,500 items of ViRA-Train each. CrossRPO achieves 63.3% set accuracy on ViRA-Bench at the maximum resolution, against 59.3% for GRPO. ViRA-9B is the most accurate open model of its size on all benchmarks, and ViRA-27B outperforms Claude Haiku 5.5 and GPT-6-Luna, both at their highest thinking level, on most benchmarks.",
+      "authors": [
+        "Huawei Lin",
+        "Jinting Liu",
+        "Tongyan Wang",
+        "Xuyang Chen",
+        "Ruihua Shi",
+        "Zhichao Xu",
+        "Jiaxin Qin",
+        "Guoshenghui Zhao",
+        "Baijian Yang",
+        "Yingjie Victor Chen",
+        "Tan Yu",
+        "Weijie Zhao"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "published_at": "2026-11-16T18:59:04+00:00",
+      "updated_at": "2026-11-16T18:59:04+00:00",
+      "primary_category": "cs.CV",
+      "heuristic_score": 20.012,
+      "summary": "ViRA: Toward Ultra-High-Resolution Visual Agents via Cross-Input Relative Policy Optimization 是最近值得追踪的一篇 AI 论文。论文摘要显示：Visual agents answer questions about ultra-high-resolution photos by zooming into the relevant regions. However, existing agents often answer from common sense instead of reading the evidence. Reinforcement learning (RL) on the final answer...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。",
+      "brief": "这是一篇值得加入今日论文雷达的最新工作。",
+      "problem": "它在某个细分 AI 方向上提出了新的方法、评测或系统设计。",
+      "why_it_matters": "如果这类问题正在升温，这篇论文通常能帮助你快速把握趋势。",
+      "target_reader": "适合正在追踪研究进展、方法演化或评测方向的人优先阅读。",
+      "core_innovation": "核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。",
+      "highlights": [
+        "分类: cs.CV, cs.AI",
+        "作者数: 12"
+      ],
+      "practicality": "如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。",
+      "relevance_score": 10,
+      "tags": [
+        "ai",
+        "agent",
+        "gpt",
+        "model"
+      ],
+      "themes": [
+        "ai",
+        "agent",
+        "gpt"
+      ],
+      "selection_reason": "它与当前高关注研究方向重合度高，适合进入今天的论文观察列表。",
+      "summary_markdown": "**摘要**：ViRA: Toward Ultra-High-Resolution Visual Agents via Cross-Input Relative Policy Optimization 是最近值得追踪的一篇 AI 论文。论文摘要显示：Visual agents answer questions about ultra-high-resolution photos by zooming into the relevant regions. However, existing agents often answer from common sense instead of reading the evidence. Reinforcement learning (RL) on the final answer...它与当前关注方向具有较强重合，适合快速阅读后决定是否深入。\n\n**核心创新**：核心创新需要结合正文确认，但从标题和摘要看，它具备进入每日情报清单的价值。\n\n**实用性**：如果你关心最新研究趋势、模型能力或应用落地，这篇论文值得列入后续阅读。\n\n**相关性评分**：10/10\n\n**亮点**：\n- 分类: cs.CV, cs.AI\n- 作者数: 12",
+      "focus_hits": [
+        {
+          "keyword": "agent",
+          "weight": 3.0
+        },
+        {
+          "keyword": "reasoning",
+          "weight": 2.4
+        },
+        {
+          "keyword": "benchmark",
+          "weight": 1.6
+        }
+      ],
+      "primary_match": "agent",
+      "personalized_score": 178.0,
+      "detail_path": "items/arxiv-vira-toward-ultra-high-resolution-visual-agents-via-cross-input-relative-policy-optimizati.html",
+      "first_seen_at": "2026-11-17T07:47:52.518992+00:00",
       "last_seen_at": "2026-11-17T07:47:52.518992+00:00",
       "last_curated_at": "2026-11-17T07:47:52.518992+00:00",
       "last_notified_at": null
